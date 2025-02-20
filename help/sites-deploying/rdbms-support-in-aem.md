@@ -1,0 +1,110 @@
+---
+title: AEM 6.4 の RDBMS サポート
+description: AEM 6.4 でのリレーショナルデータベース永続性のサポートおよび使用可能な設定オプションについて説明します。
+contentOwner: User
+products: SG_EXPERIENCEMANAGER/6.5/SITES
+content-type: reference
+topic-tags: deploying
+docset: aem65
+feature: Administering
+solution: Experience Manager, Experience Manager Sites
+role: Admin
+source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+workflow-type: tm+mt
+source-wordcount: '592'
+ht-degree: 100%
+
+---
+
+# AEM 6.4 の RDBMS サポート{#rdbms-support-in-aem}
+
+## 概要 {#overview}
+
+AEM でのリレーショナルデータベース永続性のサポートは、Document Microkernel を使用して実装されています。Document Microkernel は、MongoDB 永続性の実装にも使用されている基盤です。
+
+これは、Mongo Java API に基づいた Java API で構成されています。BlobStore API の実装も提供されています。デフォルトで、Blob はデータベース内に保存されます。
+
+実装詳細について詳しくは、[RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) および [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html) のドキュメントを参照してください。
+
+>[!NOTE]
+>
+>**PostgreSQL 9.4** もサポートされていますが、デモ目的に限られます。実稼動環境では使用できません。
+
+## サポートされているデータベース {#supported-databases}
+
+AEM でのリレーショナルデータベースのサポートレベルについて詳しくは、[技術要件のページ](/help/sites-deploying/technical-requirements.md)を参照してください。
+
+## 設定手順 {#configuration-steps}
+
+リポジトリは、`DocumentNodeStoreService` OSGi サービスを設定することで作成されます。このサービスは、MongoDB に加えてリレーショナルデータベース永続性もサポートするように拡張されています。
+
+このサービスが動作するためには、AEM でデータソースを設定する必要があります。この設定は、`org.apache.sling.datasource.DataSourceFactory.config` ファイルを通して行われます。ローカル設定内の OSGi バンドルとは別に、対応するデータベースの JDBC ドライバを指定する必要があります。
+
+JDBC ドライバ用の OSGi バンドルの作成手順については、Apache Sling web サイトのこちらの[ドキュメント](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle)を参照してください。
+
+バンドルを配置したら、以下の手順に従って RDB 永続性を備えた AEM を設定します。
+
+1. データベースのデーモンが起動しており、AEM で使用するためのアクティブなデータベースがあることを確認します。
+1. AEM 6.3 jar をインストールディレクトリにコピーします。
+1. インストールディレクトリ内に `crx-quickstart\install` というフォルダーを作成します。
+1. ドキュメントノードストアを設定するために、この `crx-quickstart\install` ディレクトリ内に、次の名前の設定ファイルを作成します。
+
+   * `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
+
+1. データソースと JDBC パラメーターを設定するために、この `crx-quickstart\install` フォルダー内に、また別の次の名前の設定ファイルを作成します。
+
+   * `org.apache.sling.datasource.DataSourceFactory-oak.config`
+
+   >[!NOTE]
+   >
+   >サポートされているそれぞれのデータベースに関するデータソース設定について詳しくは、[データソース設定オプション](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options)を参照してください。
+
+1. 次に、AEM で使用する JDBC OSGi バンドルを準備します。
+
+   1. `crx-quickstart/install` フォルダーで、`9` という名前のフォルダーを作成します。
+
+   1. この新しいフォルダー内に JDBC jar を配置します。
+
+1. 最後に、`crx3` および `crx3rdb` 実行モードで AEM を起動します。
+
+   ```java
+   java -jar quickstart.jar -r crx3,crx3rdb
+   ```
+
+## データソース設定オプション {#data-source-configuration-options}
+
+AEM とデータベース永続性レイヤー間の通信のために必要になるパラメーターの設定には、`org.apache.sling.datasource.DataSourceFactory-oak.config` OSGi 設定を使用します。
+
+以下の設定オプションを使用できます。
+
+* `datasource.name:`データソース名。デフォルトは、`oak` です。
+
+* `url:` JDBC で使用する必要のあるデータベースの URL 文字列。データベースタイプごとに独自の URL 文字列の形式が設定されています。詳しくは、後述の [URL 文字列の形式](/help/sites-deploying/rdbms-support-in-aem.md#url-string-formats)を参照してください。
+
+* `driverClassName:` JDBC ドライバーのクラス名。これは、使用するデータベースと、その後接続に必要なドライバーによって異なります。AEM でサポートされるすべてのデータベースのクラス名を次に示します。
+
+   * `org.postgresql.Driver`（PostgreSQL の場合）
+   * `com.ibm.db2.jcc.DB2Driver`（DB2 用の場合）
+   * `oracle.jdbc.OracleDriver`（Oracle の場合）
+   * `com.mysql.jdbc.Driver`（MySQL および MariaDB、試行用）
+   * c`om.microsoft.sqlserver.jdbc.SQLServerDriver`（Microsoft SQL Server の場合）（試行用）
+
+* `username:` データベースを実行するユーザー名。
+
+* `password:` データベースのパスワード。
+
+### URL 文字列の形式 {#url-string-formats}
+
+データソース設定では、使用する必要のあるデータベースタイプに応じて、異なる URL 文字列の形式を使用します。以下に、AEM で現在サポートされているデータベース向けの形式を一覧で示します。
+
+* `jdbc:postgresql:databasename`（PostgreSQL の場合）
+* `jdbc:db2://localhost:port/databasename`（DB2 用の場合）
+* `jdbc:oracle:thin:localhost:port:SID`（Oracle の場合）
+* `jdbc:mysql://localhost:3306/databasename`（MySQL および MariaDB、試行用）
+*  `jdbc:sqlserver://localhost:1453;databaseName=name`（Microsoft SQL Server の場合）（試行用）
+
+## 既知の制限事項 {#known-limitations}
+
+単一データベースでの複数の AEM インスタンスの同時使用は RDBMS の永続性によってサポートされていますが、同時インストールはサポートされていません。
+
+この制限を回避するには、まず 1 つのメンバーでインストールを実行し、最初のインストールが完了した後で、他のメンバーを追加します。

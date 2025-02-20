@@ -1,0 +1,38 @@
+---
+title: フォルダー構造について
+description: AEM Forms Workspace ソースコードのフォルダー構造を理解してカスタマイズする方法。
+contentOwner: robhagat
+content-type: reference
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
+topic-tags: forms-workspace
+solution: Experience Manager, Experience Manager Forms
+feature: HTML5 Forms,Adaptive Forms,Mobile Forms
+role: Admin, User, Developer
+source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+workflow-type: tm+mt
+source-wordcount: '145'
+ht-degree: 100%
+
+---
+
+# フォルダー構造について {#understanding-the-folder-structure}
+
+AEM Forms Workspace は Backbone を使用して MVC アーキテクチャ上で設計されています。各コンポーネントには次のファイルがあります。
+
+* ビジネスロジックを含むモデル。
+* インターフェイスコントロールを含む HTML ファイルであるテンプレート。
+* コントローラークラスとしてテンプレートに対して動作する表示。
+
+すべてのコンポーネントのアセットは、以下に示すフォルダー構造内に配置されています。アセットにアクセスするには、CRXDE Lite にログインし、`/libs/ws/js/runtime/` を参照します。
+
+**models**：バックボーンモデルが含まれます。
+
+**views**：バックボーンビューが含まれます。
+
+**templates**：コンポーネント用の HTML テンプレートのみが含まれます。
+
+**routes**：ユニバーサルルートが含まれます。routes 内部の Templates フォルダーには、HTML コードとコンポーネントへの参照が含まれます。
+
+**services**：REST エンドポイント上の Adobe Experience Manager サーバーの API を呼び出すためのサービスインターフェイスが含まれます。
+
+**util**：複数のコンポーネントによって使用可能な一般ユーティリティが含まれます。
