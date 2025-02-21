@@ -5,10 +5,10 @@ topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 1a942dc471cde14fa3b811b31e54644e199f8738
+source-git-commit: 055e99ec1c202acacae1be55b48e828f2634b0f4
 workflow-type: tm+mt
-source-wordcount: '3641'
-ht-degree: 100%
+source-wordcount: '3291'
+ht-degree: 96%
 
 ---
 
@@ -89,23 +89,13 @@ Adobe Experience Manager は、次のバージョンの Java™ 仮想マシン�
 
 | **プラットフォーム** | **サポートレベル** | **リンク** |
 |---|---|---|
-| Oracle Java™ SE 17 JDK | Z：サポート対象外 `[1]` |
-| Oracle Java™ SE 11 JDK - 64 ビット | A：サポート対象 `[1]` | [ダウンロード](https://experience.adobe.com/#/downloads/content/software-distribution/ja/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
-| Oracle Java™ SE 10 JDK | Z：サポート対象外 `[1]` |
-| Oracle Java™ SE 9 JDK | Z：サポート対象外 `[1]` |
-| Oracle Java™ SE 8 JDK - 64 ビット | A：サポート対象 `[1]` | [ダウンロード](https://experience.adobe.com/#/downloads/content/software-distribution/ja/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
-| IBM® J9 VM - ビルド 2.9、JRE 1.8.0 | A：サポート対象 `[2]` |
-| IBM® J9 VM - ビルド 2.8、JRE 1.8.0 | A：サポート対象 `[2]` |
-| Azul Zulu OpenJDK 11 - 64 ビット | A：サポート対象 `[3]` | |
-| Azul Zulu OpenJDK 8 - 64 ビット | A：サポート対象 `[3]` | |
+| Oracle Java™ SE 17 JDK | A：サポート対象 `[1]` |
+| IBM® Semeru J9 VM - ビルド 17.0.13.0 | A：サポート対象 `[2]` |
 
-1. Oracle は Oracle Java™ SE 製品の「長期サポート」（LTS）モデルに移行しました。Java™ 9、Java™ 10、Java™ 12 は Oracle による非 LTS でのリリースです（[Oracle Java™ SE サポートロードマップ](https://www.oracle.com/jp/technetwork/java/eol-135779.html)を参照）。実稼動環境に AEM をデプロイするために、アドビでは LTS リリース版の Java™ のみサポートします。パブリックアップデート終了後の LTS リリースのすべてのメンテナンスアップデートを含む Oracle Java™ SE JDK のサポートと配布が、アドビによって直接サポートされます。対象となるのは、Oracle Java™ SE テクノロジーを利用するすべての AEM ユーザーです。詳しくは、[Adobe Experience Manager 用 Java™ サポートポリシー](assets/Java_Policy_for_Adobe_Experience_Manager.pdf)を参照してください。
-   **重要：Oracle Java™ 11 は、少なくとも 2026年9月までサポートされます。Oracle Java™ 17 のサポートは準備中です。**
+1. Oracle は Oracle Java™ SE 製品の「長期サポート」（LTS）モデルに移行しました。Java™ 9、Java™ 10、Java™ 12、Java™ 13、Java™ 14、Java™ 15m Java™ 16 は、Oracleによる非 LTS でのリリースです（[Oracle Java™ SE サポートロードマップ ](https://www.oracle.com/jp/technetwork/java/eol-135779.html) を参照）。 実稼動環境に AEM をデプロイするために、アドビでは LTS リリース版の Java™ のみサポートします。パブリックアップデート終了後の LTS リリースのすべてのメンテナンスアップデートを含む Oracle Java™ SE JDK のサポートと配布が、アドビによって直接サポートされます。対象となるのは、Oracle Java™ SE テクノロジーを利用するすべての AEM ユーザーです。詳しくは、[Adobe Experience Manager 用 Java™ サポートポリシー](assets/Java_Policy_for_Adobe_Experience_Manager.pdf)を参照してください。
+   **このリリースでは、Oracle Java™ 17.** がサポートされています
 
 1. IBM® JRE は、WebSphere® Application Server と共に使用する場合にのみサポートされます。
-
-1. Azul Zulu OpenJDK LTS バージョンは、バージョン 6.5 SP9 以降のオンプレミスの AEM デプロイメントでサポートされます。Azul Zulu JDK LTS バージョンのサポートと配布は、アドビのお客様が Azul から直接ライセンスを取得する必要があります。
-
 
 ### ストレージと永続性 {#storage-persistence}
 
@@ -118,28 +108,12 @@ Adobe Experience Manager のリポジトリをデプロイするには、様々�
 | ファイルシステムの TAR ファイルへのバイナリの格納 `[1]` | バイナリ | Z：実稼動環境ではサポートされていません |
 | Amazon S3 | バイナリ | A：サポート対象 |
 | Microsoft® Azure Blob Storage | バイナリ | A：サポート対象 |
-| MongoDB Enterprise 6.0 | リポジトリ | A：サポート対象 `[3, 4]` |
-| MongoDB Enterprise 5.0 | リポジトリ | A：サポート対象 `[3, 4]` |
-| MongoDB Enterprise 4.4 | リポジトリ | A：サポート対象 `[2, 3, 4, 7]` |
-| MongoDB Enterprise 4.2 | リポジトリ | A：サポート対象 `[2, 3, 4, 7]` |
-| MongoDB Enterprise 4.0 | リポジトリ | Z：サポート対象外 |
-| MongoDB Enterprise 3.6 | リポジトリ | Z：サポート対象外 |
-| MongoDB Enterprise 3.4 | リポジトリ | Z：サポート対象外 |
-| IBM® DB2® 10.5 | リポジトリと Forms データベース | R：制限サポート `[5]` |
-| Oracle Database 12c（12.1.x） | リポジトリと Forms データベース | R：制限サポート |
-| Microsoft® SQL Server 2016 | Forms データベース | A：サポート対象 |
+| MongoDB Enterprise 6.0 および 7.0 | リポジトリ | A：サポート対象 `[3, 4]` |
 | **Apache Lucene（Quickstart 組み込み）** | 検索サービス | A：サポート対象 |
-| Apache Solr | 検索サービス | A：サポート対象 |
 
 1. 「ファイルシステム」には、POSIX に準拠したブロックストレージが含まれます。ネットワークストレージテクノロジーが含まれます。ファイルシステムのパフォーマンスは異なり、全体的なパフォーマンスに影響を与える場合があることに注意してください。ネットワーク／リモートファイルシステムを使用してテスト AEM を読み込みます。
-1. MongoDB Enterprise バージョン 4.2 および 4.4 には、最低でも AEM 6.5 SP9 が必要です。
 1. MongoDB Sharding は AEM ではサポートしていません。
 1. MongoDB Storage Engine WiredTiger のみがサポートされています。
-1. AEM Forms のアップグレードのお客様に対してサポートされます。新規インストールの場合はサポートされていません。
-1. AEM Forms にのみ適用可能：
-   * Oracle Database 12c のサポートを削除し、Oracle Database 19c のサポートを追加しました。
-   * Microsoft® SQL Server 2016 のサポートを削除し、Microsoft® SQL Server 2019 のサポートを追加しました。
-1. AEM Forms ではサポートされていません。
 
 >[!NOTE]
 >
@@ -167,23 +141,16 @@ Adobe Experience Manager のリポジトリをデプロイするには、様々�
 
 Adobe Experience Manager は、スタンドアロンサーバー（Quickstart JAR ファイル）として、またはサードパーティのアプリケーションサーバー内の web アプリケーション（WAR ファイル）として実行できます。
 
-サーブレット API の必要な最小バージョンは Servlet 3.1 です
+サーブレット API の必要な最小バージョンは Servlet 3.1 です。さらに、AEMは jar 用に Jakarta サーブレット 5 をサポートしており、war は Jakarta サーブレット API 5/6 を実装するアプリケーションサーバーにデプロイできます。
 
 | Platform | サポートレベル |
 |---|---|
-| **Quickstart 組み込みサーブレットエンジン（Jetty 9.4）** | A：サポート対象 |
-| Oracle WebLogic Server 12.2（12cR2） | Z：サポート対象外 |
-| IBM® WebSphere® Application Server Continuous Delivery（LibertyProfile）（Web Profile 7.0 および IBM® JRE 1.8） | R：新規契約向けの制限サポート `[2]` |
-| IBM® WebSphere® Application Server 9.0 および IBM® JRE 1.8 | R：新規契約向けの制限サポート `[1]` `[2]` |
-| Apache Tomcat 8.5.x | R：新規契約向けの制限サポート `[2]` |
-| JBoss® EAP 7.2.x と JBoss® Application Server | Z：サポート対象外 |
-| JBoss® EAP 7.1.4 と JBoss® Application Server | R：新規契約向けの制限サポート `[1]` `[2]` |
-| JBoss® EAP 7.0.x と JBoss® Application Server | Z：サポート対象外 |
+| **Quickstart 組み込みサーブレットエンジン（Jetty 11.0.x）** | A：サポート対象 |
+| IBM® WebSphere® Application Server Continuous Delivery （LibertyProfile）（Web Profile 24.0.0.7 およびIBM® Sumeru open JRE® 17） | R：新規契約向けの制限サポート `[2]` |
+| Apache Tomcat 10.1.x | R：新規契約向けの制限サポート `[2]` |
 
 1. AEM Forms を使用したデプロイメントに推奨されます。
 1. アプリケーションサーバーで AEM 6.5 デプロイメントを開始すると、制限付きサポートに移行します。既存のお客様は AEM 6.5 にアップグレードして、引き続きアプリケーションサーバーを使用することができます。新規のお客様には、前述のレベル R の説明にあるサポート基準とサポートプログラムが適用されます。
-1. 適用可能 AEM Forms のみ：
-   * JBoss® EAP 7.1.4 のサポートを削除し、JBoss® EAP 7.4.10 のサポートを追加しました。
 
 ### サーバーオペレーティングシステム {#server-operating-systems}
 
@@ -194,13 +161,8 @@ Adobe Experience Manager は、実稼動環境では次のサーバープラッ�
 | **Linux®（Red Hat® ディストリビューションに基づく）** | A：サポート対象 `[1]` `[3]` |
 | Linux®、Debian ディストリビューションベース（Ubuntu | A：サポート対象 `[1]` `[2]` |
 | Linux®、SUSE® ディストリビューションベース | A：サポート対象 `[1]` |
-| Microsoft® Windows Server 2019 `[4]` | R：新規契約向けの制限サポート `[5]` |
-| Microsoft® Windows Server 2016 `[4]` | R：新規契約向けの制限サポート `[5]` |
-| Microsoft® Windows Server 2012 R2 | Z：サポート対象外 |
-| Oracle Solaris™ 11 | Z：サポート対象外 |
-| IBM® AIX® 7.2 | Z：サポート対象外 |
 
-1. Linux® Kernel 2.6、3. x、4. x、5.x および 6.x には Red Hat® ディストリビューションの派生 OS（Red Hat® Enterprise Linux®、CentOS、Oracle Linux®、Amazon Linux® など）が含まれます。AEM Forms のアドオン機能は、CentOS 7、Red Hat® Enterprise Linux® 7、Red Hat® Enterprise Linux® 8 および Red Hat® Enterprise Linux® 9 でのみサポートされています。
+1. Linux® カーネル 5。 x および 6.x には Red Hat® ディストリビューションの派生 OS（Red Hat® Enterprise Linux®、CentOS、Oracle Linux®、Amazon Linux® など）が含まれます。AEM Forms のアドオン機能は、CentOS 7、Red Hat® Enterprise Linux® 7、Red Hat® Enterprise Linux® 8 および Red Hat® Enterprise Linux® 9 でのみサポートされています。
 1. AEM Forms は Ubuntu 20.04 LTS でサポートされています。
 1. Adobe Managed Services でサポートされている Linux® ディストリビューション。
 
@@ -329,7 +291,7 @@ AEM のユーザーインターフェイスは、大きめの画面（通常は�
 </table>
 
 1. Firefox の拡張サポートリリース。[詳しくは、mozilla.org を参照してください。](https://www.mozilla.org/en-US/firefox/enterprise/)
-1. Apple iPad のサポート
+1. Apple iPadのサポート
 
 ### Web サイトでサポートされているブラウザー {#supported-browsers-for-websites}
 

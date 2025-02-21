@@ -1,40 +1,40 @@
 ---
 title: インプレースアップグレードの実行
-description: AEM 6.5 のインプレースアップグレードの実行方法について説明します。
+description: AEM 6.5 LTS のインプレースアップグレードを実行する方法を説明します。
 topic-tags: upgrading
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: f66bb283e5c2a746821839269e112be8c2714ba7
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 99%
+source-wordcount: '533'
+ht-degree: 52%
 
 ---
 
-# インプレースアップグレードの実行{#performing-an-in-place-upgrade}
+# インプレースアップグレードの実行 {#performing-an-in-place-upgrade}
 
 >[!NOTE]
 >
->このページでは、AEM 6.5 のアップグレード手順の概要を説明します。インストールがアプリケーションサーバーにデプロイされている場合は、[アプリケーションサーバーのインストールのアップグレード手順](/help/sites-deploying/app-server-upgrade.md)を参照してください。
+>ここでは、AEM 6.5 LTS のアップグレード手順の概要を説明します。 アプリケーションサーバーにデプロイされたインストールがある場合は、[ アプリケーションサーバーインストールのアップグレード手順 ](/help/sites-deploying/app-server-upgrade.md) を参照してください。
 
 ## アップグレード前の手順 {#pre-upgrade-steps}
 
-アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。詳しくは、[コードのアップグレードとカスタマイズ](/help/sites-deploying/upgrading-code-and-customizations.md)および[アップグレード前のメンテナンスタスク](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。また、システムが新しいバージョンの AEM の要件を満たしていることを確認してください。パターン検出によってアップグレードの複雑性を推定できます。また、詳しくは、[アップグレードの計画](/help/sites-deploying/upgrade-planning.md)の「アップグレードの範囲と要件」の節を参照してください。
+アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。詳しくは、[コードのアップグレードとカスタマイズ](/help/sites-deploying/upgrading-code-and-customizations.md)および[アップグレード前のメンテナンスタスク](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。さらに、お使いのシステムがAEM 6.5 LTS の要件を満たしていることを確認してください。 アップグレードの複雑さを見積もるのに Analyzer がどのように役立つかをご確認ください。また、詳細については、「アップグレードの計画 [ の「アップグレードの範囲と要件 ](/help/sites-deploying/upgrade-planning.md) のセクションをご覧ください。
 
 <!--Finally, the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## 移行の前提条件 {#migration-prerequisites}
 
-* **Java バージョンの最小要件：**&#x200B;移行ツールは、Java バージョン 7 以降でのみ機能します。AEM 6.3 以上では、サポートされているバージョンは Oracle の JRE 8 と IBM の JRE 7 および 8 のみです。
-
-* **アップグレード対象のインスタンス：****5.6 よりも古い**&#x200B;バージョンからアップグレードする場合は、6.0 バージョンのアップグレードに関するドキュメントに記載されている手順に従って、AEM 6.0 へのインプレースアップグレードを事前に行うようにしてください。
+* **必要な Java の最小バージョン：** システムにOracleの JRE 17 がインストールされていることを確認します。
 
 ## AEM クイックスタート jar ファイルの準備 {#prep-quickstart-file}
 
-1. インスタンスが実行中である場合は停止します。
+1. インスタンスが実行中である場合は停止します
 
-1. 新しい AEM jar ファイルをダウンロードし、それを使用して `crx-quickstart` フォルダーの外部にある古いファイルを置き換えます。
+1. 新しいAEM 6.5 LTS jar ファイルをダウンロードし、それを使用して `crx-quickstart` フォルダーの外部にある古いファイルを置き換えます
+
+1. `sling.properties` ファイル（通常は `crx-quickstart/conf/` に存在）のバックアップを作成してから、削除します
 
 1. 次のコマンドを実行して新しいクイックスタート jar を解凍します。
 
@@ -42,40 +42,44 @@ ht-degree: 99%
    java -Xmx4096m -jar aem-quickstart.jar -unpack
    ```
 
-## コンテンツリポジトリの移行 {#content-repository-migration}
+1. unpack コマンドを実行すると、`crx-quickstart/conf/` フォルダーの下に新しい `sling.properties` ファイルが生成されます。 これで、新しく生成された `sling.properties` ファイルにカスタムの変更を適用できるようになりました。
 
-AEM 6.3 からアップグレードする場合、この移行は必要ありません。アドビでは 6.3 以前のバージョン向けに、リポジトリを AEM 6.3 で使用される新しいバージョンの Oak Segment Tar に移行するためのツールを提供しています。このツールはクイックスタートパッケージの一部として提供され、TarMK を使用するすべてのアップグレードに必須です。MongoMK を使用している環境のアップグレードには、リポジトリの移行は必要ありません。新しい Segment Tar 形式のメリットについて詳しくは、[Oak Segment Tar への移行に関する FAQ](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions) を参照してください。
+<!-- Alexandru: drafting temporarily
 
-実際の移行は、標準の AEM クイックスタート jar ファイルを使用して行います。この jar ファイルは、新しい `-x crx2oak` オプションを指定して実行します。このオプションによって crx2oak ツールが実行され、アップグレードがより容易で堅牢になります。
+## Content Repository Migration {#content-repository-migration}
+
+This migration is not required if you are upgrading from AEM 6.3. For versions older than 6.3, Adobe provides a tool that can be used to migrate the repository to the new version of the Oak Segment Tar present in AEM 6.3. It is provided as part of the quickstart package and is mandatory for any upgrades that will be using TarMK. Upgrades for environments that are using MongoMK do not require repository migration. For more information on what the benefits of the new Segment Tar format are, see the [Migrating to Oak Segment Tar FAQ](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
+
+The actual migration is performed using the standard AEM quickstart jar file, executed with a new `-x crx2oak` option which executes the crx2oak tool to simplify the upgrade and make it more robust.
 
 >[!NOTE]
 >
->CRX2Oak Quickstart 拡張を使用して TarMK リポジトリのコンテンツ移行を実行する場合は、移行コマンドラインに以下を追加することで **samplecontent** 実行モードを削除できます。
+>If you are performing TarMK repository content migration using the CRX2Oak Quickstart extension, you might remove the **samplecontent** runmode by adding the following to the migration command line:
 >
 >* `--promote-runmode nosamplecontent`
 >
 
-実行すべきコマンドを決定するには、次のコマンドを使用します。
+To determine the command that you should run, use the following command:
 
 ```shell
 java -Xmx4096m -jar aem-quickstart.jar -v -x crx2oak -xargs -- --load-profile <<YOUR_PROFILE>> <<ADDITIONAL_FLAGS>>
 ```
 
- `<<YOUR_PROFILE>>` と `<<ADDITIONAL_FLAGS>>` は、次の表にリストされているプロファイルとフラグに置き換えてください。
+Where `<<YOUR_PROFILE>>` and `<<ADDITIONAL_FLAGS>>` are replaced with the profile and flags listed in the following table:
 
 <table>
  <tbody>
   <tr>
-   <td><strong>ソースリポジトリ</strong></td>
-   <td><strong>ターゲットリポジトリ</strong></td>
-   <td><strong>プロファイル</strong></td>
-   <td><strong>追加のフラグ</strong><br /> </td>
+   <td><strong>Source Repository</strong></td>
+   <td><strong>Target Repository</strong></td>
+   <td><strong>Profile</strong></td>
+   <td><strong>Additional Flags</strong><br /> </td>
   </tr>
   <tr>
-   <td>crx2 または TarMK <code>FileDataStore</code></td>
+   <td>crx2 or TarMK with <code>FileDataStore</code></td>
    <td>TarMK</td>
    <td>segment-fds</td>
-   <td>以下のトラブルシューティングの節を参照</td>
+   <td>See Troubleshooting section below</td>
   </tr>
   <tr>
    <td>crx2</td>
@@ -84,13 +88,13 @@ java -Xmx4096m -jar aem-quickstart.jar -v -x crx2oak -xargs -- --load-profile <<
    <td><code>-T mongo-uri=mongo://mongo-host:mongo-port -T mongo-db=mongo-database-name</code></td>
   </tr>
   <tr>
-   <td>TarMK または crx2 <code>S3DataStore</code></td>
+   <td>TarMK or crx2 with <code>S3DataStore</code></td>
    <td>TarMK</td>
    <td>segment-custom-ds</td>
-   <td>以下のトラブルシューティングの節を参照</td>
+   <td>See Troubleshooting section below</td>
   </tr>
   <tr>
-   <td>データストアなしの TarMK</td>
+   <td>TarMK with no datastore</td>
    <td>TarMK</td>
    <td>segment-no-ds</td>
    <td> </td>
@@ -98,57 +102,59 @@ java -Xmx4096m -jar aem-quickstart.jar -v -x crx2oak -xargs -- --load-profile <<
   <tr>
    <td>MongoMK</td>
    <td>MongoMK</td>
-   <td>移行は不要</td>
+   <td>No migration is needed</td>
    <td> </td>
   </tr>
  </tbody>
 </table>
 
-**この場合：**
+**Where:**
 
-* `mongo-host` は、MongoDB サーバーの IP です（例：127.0.0.1）
+* `mongo-host` is the MongoDB server IP (for example, 127.0.0.1)
 
-* `mongo-port` は、MongoDB サーバーのポートです（例：27017）
+* `mongo-port` is the MongoDB server port (for example: 27017)
 
-* `mongo-database-name` は、データベースの名前です（例：aem-author）
+* `mongo-database-name` represents the name of the database (for example: aem-author)
 
-**次のシナリオでは、追加のスイッチが必要となる場合もあります。**
+**You may also require additional switches for the following scenarios:**
 
-* Java メモリマップが正しく処理されない Windows システムでアップグレードを実行する場合は、`--disable-mmap` パラメーターをコマンドに追加します。
+* If you are performing the upgrade on a Windows system where Java memory mapping is not handled correctly, add the `--disable-mmap` parameter to the command.
 
-crx2oak ツールの使用手順について詳しくは、[CRX2Oak 移行ツールの使用](/help/sites-deploying/using-crx2oak.md)を参照してください。crx2oak ヘルパー JAR は、必要に応じて手動でアップグレードできます。その場合は、クイックスタートを解凍した後に、手動で新しいバージョンに置き換えます。AEM インストールフォルダー内の場所は `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar` です。最新バージョンの CRX2Oak 移行ツールは、アドビリポジトリ（[https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)）からダウンロードできます。
+For additional instructions on using the crx2oak tool, see Using the [CRX2Oak Migration Tool](/help/sites-deploying/using-crx2oak.md). The crx2oak helper JAR can be manually upgraded if needed, by manually replacing it with newer versions after unpacking the quickstart. Its location in the AEM installation folder is: `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. The newest version of the CRX2Oak migration tool is available for download from the Adobe Repository at: [https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
 
-移行が正常に完了すると、ツールは終了コード 0 で終了します。さらに、AEM インストールディレクトリの `crx-quickstart/logs` にある `upgrade.log` ファイルで WARN および ERROR メッセージがないかどうかを確認してください。これらのメッセージは、移行中に発生した致命的ではないエラーを示している場合があります。
+If the migration has completed successfully, the tool will exit with an exit code of zero. Additionally, check for WARN and ERROR messages in the `upgrade.log` file, located under `crx-quickstart/logs` in the AEM installation directory, as these could indicate non-fatal errors that occurred during the migration.
 
-`crx-quickstart/install`フォルダーにある設定ファイルを確認します。移行が必要だった場合は、ターゲットリポジトリを反映するように更新されます。
+Check the configuration files beneath `crx-quickstart/install` folder. If a migration was necessary these will be updated to reflect the target repository.
 
-**データストアに関するメモ：**
+**A note on datastores:**
 
-AEM 6.3 インストールでは新しく `FileDataStore` がデフォルトになっていますが、外部データストアの使用は必須ではありません。実稼動デプロイメントのベストプラクティスとして外部データストアを使用することをお勧めしますが、これはアップグレードの前提条件ではありません。AEM のアップグレードは既に複雑な処理なので、データストアを移行せずにアップグレードを行うことをお勧めします。必要に応じて、後でデータストアの移行を別の作業として実行できます。
+While `FileDataStore` is the new default for AEM 6.3 installations, using an external datastore is not required. While using an external datastore is recommended as a best practice for production deployments, it is not a prerequisite to upgrade. Due to the complexity already present in upgrading AEM, Adobe recommends performing the upgrade without doing a datastore migration. If desired, a datastore migration can be executed afterwards as a separate effort.
 
-## 移行に関する問題のトラブルシューティング {#troubleshooting-migration-issues}
+## Troubleshooting Migration Issues {#troubleshooting-migration-issues}
 
-6.3 からアップグレードする場合、この節の説明はスキップします。提供されている crx2oak プロファイルはほとんどの顧客のニーズに適合しますが、追加のパラメーターが必要になる場合もあります。移行中にエラーが発生する場合は、お使いの環境に、追加の設定オプションの指定が必要な事項が存在する可能性があります。その場合は、次のエラーが発生することがあります。
+Skip this section if you are upgrading from 6.3. While the provided crx2oak profiles should meet the needs of most customers, there are times when additional parameters will be necessary. If you run into an error during your migration, it is possible that there are aspects of your environment that require additional configuration options to be provided. If so, you will likely encounter the following error:
 
-**外部データストアが指定されていないため、チェックポイントはコピーされません。これにより、最初の起動時にリポジトリ全体のインデックスが再作成されます。--skip-checkpoints を使用して移行を強制するか、https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration で詳細を確認してください。**
+**Checkpoints are not copied, because no external datastore has been specified. This will result in the full repository reindexing on the first start. Use --skip-checkpoints to force the migration or see https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration for more info.**
 
-何らかの理由で、移行プロセスがデータストア内のバイナリにアクセスする必要がありますが、データストアを見つけることができません。データストア設定を指定するには、移行コマンドの `<<ADDITIONAL_FLAGS>>` 部分に以下のフラグを挿入します。
+For some reason, the migration process needs access to binaries in the datastore and is unable to find it. To specify your datastore configuration, include the following flags in the `<<ADDITIONAL_FLAGS>>` portion of your migration command:
 
-**S3 データストアの場合：**
+**For S3 datastores:**
 
 ```shell
 --src-s3config=/path/to/SharedS3DataStore.config --src-s3datastore=/path/to/datastore
 ```
 
-`/path/to/SharedS3DataStore.config`は、S3 データストア設定ファイルのパスを表します。`/path/to/datastore`は、S3 データストアのパスを表します。
+Where `/path/to/SharedS3DataStore.config` represents the path to your S3 datastore config file and `/path/to/datastore` represents the path to your S3 datastore.
 
-**ファイルデータストアの場合：**
+**For File datastores:**
 
 ```shell
 --src-datastore=/path/to/datastore
 ```
 
-`/path/to/datastore`は、ファイルデータストアのパスを表します。
+Where `/path/to/datastore` represents the path to your File Datastore.
+
+-->
 
 ## アップグレードの実行 {#performing-the-upgrade}
 
@@ -156,17 +162,22 @@ AEM 6.3 インストールでは新しく `FileDataStore` がデフォルトに�
 
 1. 以前のバージョンの S3 コネクタに関連する、`crx-quickstart/install` 内の jar を削除します。
 
-1. [https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) から 1.10.x S3 コネクタの最新リリースをダウンロードします。
+1. [https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) <!-- Alexandru: this is a stub link for now --> から 1.60.2 S3 コネクタの最新リリースをダウンロードします。
 
-1. パッケージを一時フォルダーに抽出し、`jcr_root/libs/system/install` の内容を `crx-quickstart/install` フォルダーにコピーします。
+1. S3 コネクタ（バージョン 1.60.2）を抽出し、次のように `crx-quickstart/install` の下の次のフォルダーの内容をコピーします。
+
+   1. `crx-quickstart/install/1` の下 `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/1` コピー
+   1. `crx-quickstart/install/15` の下 `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/15` コピー
+
+次に、「正しいアップグレード開始コマンドの特定 [ セクションの情報を使用して特定された新しいコマンドを使用して、AEM インスタンスを起動し ](#determining-the-correct-upgrade-start-command) す。
 
 ### 適切なアップグレード開始コマンドの確認 {#determining-the-correct-upgrade-start-command}
 
-アップグレードを実行するには、jar ファイルを使用して AEM を起動し、インスタンスを起動することが重要です。6.5 にアップグレードする場合は、アップグレードコマンドで選択できる[遅延コンテンツ移行](/help/sites-deploying/lazy-content-migration.md)のその他のコンテンツ再構築および移行オプションを検討します。
-
->[!IMPORTANT]
+>[!NOTE]
 >
->Oracle Java 11（または一般にバージョン 8 より新しい Java）を実行している場合は、AEM の起動時にコマンドラインにさらにスイッチを追加する必要があります。詳しくは、 [Java 11 に関する考慮事項](/help/sites-deploying/custom-standalone-install.md#java-considerations)を参照してください。
+>Java 8/11 引数の一部のサポートは、Java 17 で削除されました。詳しくは、AEM 6.5 LTS （リンクスタブ）の Java 引数に関する考慮事項を参照してください。
+
+アップグレードを実行するには、jar ファイルを使用してAEMを起動してインスタンスを起動することが重要です。
 
 起動スクリプトから AEM を起動した場合、アップグレードは開始されません。ほとんどの顧客は、起動スクリプトを使用して AEM を起動します。また、起動スクリプトをカスタマイズし、メモリ設定やセキュリティ証明書など、環境設定に関するスイッチを含めています。そのため、次の手順に従って、適切なアップグレードコマンドを確認することをお勧めします。
 
@@ -185,7 +196,7 @@ AEM 6.3 インストールでは新しく `FileDataStore` がデフォルトに�
 1. 既存の jar のパス（この場合は `crx-quickstart/app/aem-quickstart*.jar`）を `crx-quickstart` フォルダーと同じ階層にある新しい jar に置き換えて、コマンドを変更します。例として前述のコマンドを使用すると、コマンドは次のようになります。
 
    ```shell
-   /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.5.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
+   /usr/bin/java -server -Xmx4096m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.6.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
    これにより、適切なメモリ設定、カスタム実行モードおよびその他の環境パラメーターすべてがアップグレードに適用されます。アップグレードが完了すると、それ以降の起動時には起動スクリプトからインスタンスを起動できます。
