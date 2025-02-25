@@ -1,7 +1,7 @@
 ---
 title: Adobe Experience Manager 6.5 LTS の最新のリリースノート
 description: Adobe Experience Manager 6.5 LTS の最新のリリースノートです。
-source-git-commit: e062ab3ff820c85ebcbd0052c28e9e719222154f
+source-git-commit: 37dca00eef6918b1a0d3a56c87e0859fbc062e03
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 40%
@@ -17,7 +17,7 @@ ht-degree: 40%
 |---|---|
 | バージョン | 6.5 LTS |
 | 種類 | メジャーリリース |
-| 一般公開日 | 2025年2月28日（PT） |
+| 一般公開日 | 2025年3月7日（PT） |
 
 ## 新機能 {#what-s-new}
 
