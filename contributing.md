@@ -1,13 +1,13 @@
 ---
-source-git-commit: 0deac9cb7fb13c6fec515739168eb2dbfd9a58c7
+source-git-commit: dc9fe33c0b32fe8bd11ddbf8d25339a6a2003857
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '503'
 ht-degree: 68%
 
 ---
-# Adobe Experience Manager 6.6 ドキュメントへの投稿
+# Adobe Experience Manager 6.5 LTS ドキュメントへの投稿
 
-Adobe Experience Manager 6.6 ドキュメントへの投稿にご協力いただきありがとうございます。 ドキュメントチームは、リーダーコミュニティ全体とAdobeの社員からのコンテンツ投稿を歓迎します。
+Adobe Experience Manager 6.5 LTS ドキュメントへの投稿にご協力いただきありがとうございます。 ドキュメントチームは、リーダーコミュニティ全体とAdobeの社員からのコンテンツ投稿を歓迎します。
 
 このファイルは、投稿方法と、投稿をおこなう際に従うべきガイドラインを示しています。
 
