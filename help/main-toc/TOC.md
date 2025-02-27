@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 の仕組みと機能については、このソフトウェアのドキュメントを参照してください。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM 6.5
-source-git-commit: 0f125455f975417590e7481e2d34da372d5428c2
+source-git-commit: 1d306a12ebff41e5f31e5b7fbe8086cd2e657500
 workflow-type: tm+mt
-source-wordcount: '7022'
-ht-degree: 98%
+source-wordcount: '7019'
+ht-degree: 99%
 
 ---
 
@@ -213,7 +213,6 @@ ht-degree: 98%
          + [Dynamic Media Classic（Scene7）との統合](/help/sites-administering/scene7.md)
          + [統合に関する問題のトラブルシューティング](/help/sites-administering/troubleshooting-integration-issues.md)
          + [BrightEdge Content Optimizer との結合](/help/sites-administering/brightedge.md)
-         + [カタログ作成機能](/help/sites-administering/catalog-producer.md)
          + [Silverpop Engage との統合](/help/sites-administering/silverpop.md)
          + [Adobe Campaign との統合](/help/sites-administering/campaign.md)
          + [ExactTarget との統合](/help/sites-administering/exacttarget.md)
@@ -1100,12 +1099,12 @@ ht-degree: 98%
       + [Windows Server 上で Word または Excel ファイルを PDF に変換できない](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
       + [Google Chrome、Firefox、Microsoft Edge、Microsoft Internet Explorer または Apple Safari で XFA ベースの PDF フォームを開けない](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
       + [CRX リポジトリを復元できない](/help/forms/using/restore-crx-repository.md)
-      + [AEM 6.5.15.0 サービスパックのインストール後に、サービスを利用できないエラーが発生しました](/help/forms/using/aem-service-pack-installation-solution.md)
-      + [JBoss Linux 環境でのAEM Forms JEE 6.5.15.0 サービスパックのインストールの問題](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
+      + [AEM 6.5.15.0 サービスパックのインストール後に、サービスを利用できないエラーが発生する](/help/forms/using/aem-service-pack-installation-solution.md)
+      + [JBoss Linux 環境での AEM Forms JEE 6.5.15.0 サービスパックのインストールの問題](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
       + [AEM Forms サーバーが完全に起動および実行されていない場合でもドキュメントを処理](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [Output サービス、Forms サービスまたは DoR（レコードのドキュメント）サービスを使用できない](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [Experience Manager Forms の Struts 2 RCE 脆弱性の緩和](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
-      + [MySQL の 6.5.12.0 へのアップグレード中にデータベースのバックアップに失敗しました](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
+      + [MySQL 用に 6.5.12.0 にアップグレードする際にデータベースをバックアップできない](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [WorkBench で多数の PDF を PDF 生成で印刷できない](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [AEM SDK を適切に再起動する方法](/help/forms/using/restart-aem-sdk.md)
       + [PaperCapture サービスが PDF に対して OCR を実行できない](/help/forms/using/papercapture-service-resolution.md)
@@ -1442,7 +1441,6 @@ ht-degree: 98%
          + [oak-run.jar でのインデックス作成の使用例](/help/sites-deploying/oak-run-indexing-usecases.md)
          + [Oak インデックスのトラブルシューティング](/help/sites-deploying/troubleshooting-oak-indexes.md)
          + [集計した使用状況の統計の収集をオプトインする方法](/help/sites-deploying/opt-in-aggregated-usage-statistics.md)
-         + [トラブルシューティング](/help/sites-deploying/troubleshooting.md)
       + AEM の設定 {#configuring}
          + [設定の基本概念](/help/sites-deploying/configuring.md)
          + [ログ](/help/sites-deploying/configure-logging.md)

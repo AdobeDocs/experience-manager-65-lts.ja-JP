@@ -8,9 +8,9 @@ topic-tags: deploying
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1151'
 ht-degree: 100%
 
 ---
@@ -247,8 +247,3 @@ deployment-scanner を使用して AEM web アプリケーションをインス�
    * ファイルを Tomcat の webapps フォルダーにコピーします。
    * AEM がインストールされるまで待ちます。
 
-## トラブルシューティング {#troubleshooting}
-
-インストール時に発生する可能性のある問題の対処方法について詳しくは、以下を参照してください。
-
-* [トラブルシューティング](/help/sites-deploying/troubleshooting.md)

@@ -1,9 +1,9 @@
 ---
 title: Adobe Experience Manager 6.5 LTS の最新のリリースノート
 description: Adobe Experience Manager 6.5 LTS の最新のリリースノートです。
-source-git-commit: 37dca00eef6918b1a0d3a56c87e0859fbc062e03
+source-git-commit: baa7e84c30117645d6a2e4ef8d8e182a9dd73321
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '796'
 ht-degree: 40%
 
 ---
@@ -95,6 +95,7 @@ Quickstart は、サーブレットエンジンとして Eclipse Jetty 11.0.x �
 | ソリューション | ソーシャル / コミュニティはサポートされていません。 | 代替機能はありません。 | 6.5 LTS GA |
 | Screens | Screensはサポートされていません。 | 代替機能はありません。 | 6.5 LTS GA |
 | アセット | バンドルがソーシャルに依存しているので、`dam-pim` と `dam-rating` はサポートされていません。 | 代替機能はありません。 | 6.5 LTS GA |
+| アセット | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` は削除されました。 | 追加された別の api `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()` を使用します。 | 6.5 LTS GA |
 | Granite | バンドル `com.adobe.granite.socketio` は削除されました。 | 代替機能はありません。 | 6.5 LTS GA |
 | Granite | `com.adobe.granite.crx-explorer` はサポートされていません。 | 代替機能はありません。 | 6.5 LTS GA |
 | グアバ | すべての guava の依存関係がAEMで削除され、`com.adobe.granite.osgi.wrapper.guava-15.0.0-0002` バンドルがAEMに含まれなくなりました。 | guava に依存している場合は、顧客が自分で guava を追加できます。また、guava コードを java コレクションやその他の代替品に置き換えることもできます。 | 6.5 LTS GA |

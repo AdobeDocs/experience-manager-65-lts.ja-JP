@@ -9,9 +9,9 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 1a942dc471cde14fa3b811b31e54644e199f8738
+source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1759'
 ht-degree: 100%
 
 ---
@@ -43,7 +43,6 @@ ht-degree: 100%
 * [推奨されるデプロイメント](/help/sites-deploying/recommended-deploys.md)
 * [カスタムスタンドアロンインストール](/help/sites-deploying/custom-standalone-install.md)
 * [アプリケーションサーバーのインストール](/help/sites-deploying/application-server-install.md)
-* [トラブルシューティング](/help/sites-deploying/troubleshooting.md)
 * [コマンドラインによる起動と停止](/help/sites-deploying/command-line-start-and-stop.md)
 * [設定](/help/sites-deploying/configuring.md)
 * [AEM 6.5 へのアップグレード](/help/sites-deploying/upgrade.md)
@@ -295,7 +294,6 @@ AEM が起動し、Web ブラウザーが適切なページに自動的にリダ
 * [推奨されるデプロイメント](/help/sites-deploying/recommended-deploys.md)
 * [カスタムスタンドアロンインストール](/help/sites-deploying/custom-standalone-install.md)
 * [アプリケーションサーバーのインストール](/help/sites-deploying/application-server-install.md)
-* [トラブルシューティング](/help/sites-deploying/troubleshooting.md)
 * [コマンドラインによる起動と停止](/help/sites-deploying/command-line-start-and-stop.md)
 * [設定](/help/sites-deploying/configuring.md)
 * [AEM 6.5 へのアップグレード](/help/sites-deploying/upgrade.md)

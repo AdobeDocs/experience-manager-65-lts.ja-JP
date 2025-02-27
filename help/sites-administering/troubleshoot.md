@@ -9,9 +9,9 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '484'
 ht-degree: 100%
 
 ---
@@ -61,13 +61,6 @@ ht-degree: 100%
  </tbody>
 </table>
 
-## インストールの問題 {#installation-issues}
-
-次のトラブルシューティングシナリオについて詳しくは、[一般的なインストールの問題](/help/sites-deploying/troubleshooting.md#common-installation-issues)を参照してください。
-
-* クイックスタート jar をダブルクリックしても何も起こらないか、JAR ファイルに別のプログラム（アーカイブマネージャーなど）が含まれている。
-* CRX で動作しているアプリケーションでメモリ不足のエラーが発生する。
-* AEM Quickstart をダブルクリックした後、ブラウザーに AEM ようこそ画面が表示されない。
 
 ## トラブルシューティング分析の方法 {#methods-for-troubleshooting-analysis}
 
