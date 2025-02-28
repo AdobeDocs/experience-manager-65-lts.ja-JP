@@ -5,9 +5,9 @@ topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 055e99ec1c202acacae1be55b48e828f2634b0f4
+source-git-commit: e77dfbdbe5d540590f7552ddd07f5f7b10f7b41e
 workflow-type: tm+mt
-source-wordcount: '3291'
+source-wordcount: '3044'
 ht-degree: 96%
 
 ---
@@ -129,14 +129,6 @@ Adobe Experience Manager のリポジトリをデプロイするには、様々�
 >
 >詳しくは、[MongoDB for Adobe Experience Manager のページ](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager)を参照してください。
 
->[!NOTE]
->
->サポートされる上記のリレーショナルデータベースはサードパーティのソフトウェアであり、AEM ライセンスパッケージには含まれていません。
->
->サポートされているリレーショナルデータベースで AEM 6.5 を実行するには、データベースベンダーとの個別のサポート契約が必要です。アドビカスタマーケアは、リレーショナルデータベースを AEM 6.5 で利用することに関連する問題の絞り込みを支援いたします。
->
->**現在、ほとんどのリレーショナルデータベースは、AEM 6.5 のレベル R でサポートされています。ここでは、上記のレベル R の説明に記載されているサポート基準とサポートプログラムが提供されます。**
-
 ### サーブレットエンジン / アプリケーションサーバー {#servlet-engines-application-servers}
 
 Adobe Experience Manager は、スタンドアロンサーバー（Quickstart JAR ファイル）として、またはサードパーティのアプリケーションサーバー内の web アプリケーション（WAR ファイル）として実行できます。
@@ -146,10 +138,9 @@ Adobe Experience Manager は、スタンドアロンサーバー（Quickstart JA
 | Platform | サポートレベル |
 |---|---|
 | **Quickstart 組み込みサーブレットエンジン（Jetty 11.0.x）** | A：サポート対象 |
-| IBM® WebSphere® Application Server Continuous Delivery （LibertyProfile）（Web Profile 24.0.0.7 およびIBM® Sumeru open JRE® 17） | R：新規契約向けの制限サポート `[2]` |
-| Apache Tomcat 10.1.x | R：新規契約向けの制限サポート `[2]` |
+| IBM® WebSphere® Application Server Continuous Delivery （LibertyProfile）（Web Profile 24.0.0.7 およびIBM® Sumeru open JRE® 17） | R：新規契約向けの制限サポート `[1]` |
+| Apache Tomcat 11.0.x | R：新規契約向けの制限サポート `[1]` |
 
-1. AEM Forms を使用したデプロイメントに推奨されます。
 1. アプリケーションサーバーで AEM 6.5 デプロイメントを開始すると、制限付きサポートに移行します。既存のお客様は AEM 6.5 にアップグレードして、引き続きアプリケーションサーバーを使用することができます。新規のお客様には、前述のレベル R の説明にあるサポート基準とサポートプログラムが適用されます。
 
 ### サーバーオペレーティングシステム {#server-operating-systems}
@@ -174,21 +165,6 @@ Adobe Experience Manager は、実稼動環境では次のサーバープラッ�
    >* zlib.x86-64（1.2.7-17）
    >* libxcb.x86_64（1.13-1.el7）
    >* libXau.x86_64（1.0.8-2.1.el7）
-
-1. Microsoft® Windows 版の実稼働デプロイメントは、お客様が 6.5 にアップグレードする場合と、実稼動以外の用途に使用する場合にサポートされています。AEM Sites および AEM Assets の新規デプロイメントは、お客様の依頼に応じて提供されます。
-1. AEM Forms は、Microsoft® Window Server でサポートされていますが、サポートレベル R 制限はありません。
-1. AEM Forms では、Microsoft® Windows Server 2016 のサポートが削除されました。
-
->[!NOTE]
->
->AEM Forms 6.5 をインストールする場合は、次の 32 ビット版の Microsoft® Visual C++ 再頒布可能パッケージがインストールされていることを確認してください。
->
->* Microsoft® Visual C++ 2008 再頒布可能パッケージ
->* Microsoft® Visual C++ 2010 再頒布可能パッケージ
->* Microsoft® Visual C++ 2012 再頒布可能パッケージ
->* Microsoft® Visual C++ 2013 再頒布可能パッケージ
->* Microsoft® Visual C++ 2019（VC14.28 以降）再頒布可能パッケージ
-
 
 ### 仮想／クラウドコンピューティング環境 {#virtual-cloud-computing-environments}
 
@@ -296,18 +272,6 @@ AEM のユーザーインターフェイスは、大きめの画面（通常は�
 ### Web サイトでサポートされているブラウザー {#supported-browsers-for-websites}
 
 一般に、AEM Sites でレンダリングされる web サイトのブラウザーサポートは、AEM ページテンプレートの実装、設計およびコンポーネントの出力に依存するので、これらの部分を実装する当事者の管理下にあります。
-
-### WebDAV クライアント {#webdav-clients}
-
-**Microsoft® Windows 7+**
-
-Microsoft® Windows 7 以降で、SSL で保護されていない AEM インスタンスに正常に接続するには、セキュリティで保護されていないネットワークを介したベーシック認証を Windows で有効にする必要があります。Web クライアントの Windows レジストリを次のように変更する必要があります。
-
-1. 以下のレジストリサブキーを探します。
-
-   * HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters
-
-1. 2 つ以上の値を使用して、このサブキーに BasicAuthLevel レジストリのエントリを追加します。
 
 ## プラットフォームに関するその他の注意事項 {#additional-platform-notes}
 
