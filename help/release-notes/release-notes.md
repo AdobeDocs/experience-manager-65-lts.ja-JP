@@ -1,9 +1,9 @@
 ---
 title: Adobe Experience Manager 6.5 LTS の最新のリリースノート
 description: Adobe Experience Manager 6.5 LTS の最新のリリースノートです。
-source-git-commit: baa7e84c30117645d6a2e4ef8d8e182a9dd73321
+source-git-commit: 54f3f3019dcceda4307160aa2126c37835f6626e
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '783'
 ht-degree: 40%
 
 ---
@@ -37,17 +37,13 @@ Quickstart は、サーブレットエンジンとして Eclipse Jetty 11.0.x �
 * 最適なパフォーマンスを得るには、デフォルトの GC 値を他の値に置き換えてください。詳しくは、[インストールとアップデート](/help/sites-deploying/custom-standalone-install.md)の節を参照してください。
 * Java™ 17 メンテナンスアップデートがAdobeから公開されない場合は、AEM関連プロジェクトで使用するお客様向けにOracleが配布します。
 
-#### Java™ の開発 {#java-development}
+#### Uberjar のパッケージ {#uber-jar-packaging}
 
-* [Uberjar の 2 つのバージョン ](/help/sites-developing/ht-projects-maven.md#experience-manager-api-dependencies)、廃止予定としてマークされていないパブリックインターフェイスを使用した推奨バージョン、廃止予定としてマークされているインターフェイスのみを含むバージョンがリリースされました。
+* AEM 6.5 LTS の Uberjar パッケージにはわずかな違いがあります。 詳細については [ を参照してください ](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version-update-the-aem-uber-jar-version)。
 
 #### アップグレード {#upgrade}
 
 * アップグレードの手順について詳しくは、[ アップグレードドキュメント ](/help/sites-deploying/upgrade.md) を参照してください。
-
-#### リポジトリ {#repository}
-
-* Adobe Experience Manager 6.5 LTS の基盤は、アップデートバージョンの OSGi ベースのフレームワーク（Apache Sling および Apache Felix）と Java™ コンテンツリポジトリの Apache Jackrabbit Oak 1.68.0 上に構築されています。
 
 ## インストールとアップデート {#install-update}
 
@@ -98,13 +94,17 @@ Quickstart は、サーブレットエンジンとして Eclipse Jetty 11.0.x �
 | アセット | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` は削除されました。 | 追加された別の api `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()` を使用します。 | 6.5 LTS GA |
 | Granite | バンドル `com.adobe.granite.socketio` は削除されました。 | 代替機能はありません。 | 6.5 LTS GA |
 | Granite | `com.adobe.granite.crx-explorer` はサポートされていません。 | 代替機能はありません。 | 6.5 LTS GA |
+| Granite | `crx2oak` はサポートされていません。 | 関連するバージョンの選択 [oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) | 6.5 LTS GA |
+| アドビ | `com.adobe.cq.cq-searchpromote-integration` はサポートされていません。 | 代替機能はありません。 | 6.5 LTS GA |
 | グアバ | すべての guava の依存関係がAEMで削除され、`com.adobe.granite.osgi.wrapper.guava-15.0.0-0002` バンドルがAEMに含まれなくなりました。 | guava に依存している場合は、顧客が自分で guava を追加できます。また、guava コードを java コレクションやその他の代替品に置き換えることもできます。 | 6.5 LTS GA |
 | We.Retail | We-retail サンプルサイトはサポートされていません。 | 代替機能はありません。 | 6.5 LTS GA |
 | オープンソース | バ `oak-solr-osgi` ドルはサポートされていません。 | 代替機能はありません。 | 6.5 LTS GA |
 | オープンソース | `org.apache.servicemix.bundles.abdera-parser`、`org.apache.servicemix.bundles.jdom` および `org.apache.sling.atom.taglib` はサポートされていません。 | 代替機能はありません。 | 6.5 LTS GA |
-| オープンソース | `org.apache.commons.io packages` を `org.apache.commons.commons-io` から書き出すようになりました。 | 変更は不要です。 | 6.5 LTS GA |
+| オープンソース | `org.apache.commons.io` パッケージが `org.apache.commons.commons-io` から書き出されるようになりました。 | 変更は不要です。 | 6.5 LTS GA |
 | オープンソース | `javax.mail` パッケージを `com.sun.javax.mail` バンドルから書き出しています。 | 変更は不要です。 | 6.5 LTS GA |
 | オープンソース | パッケ `org.apache.jackrabbit.api` ジが `org.apache.jackrabbit.oak-jackrabbit-api` バンドルから書き出されるようになりました。 | 変更は不要です。 | 6.5 LTS GA |
+| オープンソース | `com.github.jknack.handlebars` はサポートされていません。 | 関連する [ バージョン ](https://mvnrepository.com/artifact/com.github.jknack/handlebars) を選択 | 6.5 LTS GA |
+
 
 ## 制限付き Web サイト{#restricted-sites}
 
