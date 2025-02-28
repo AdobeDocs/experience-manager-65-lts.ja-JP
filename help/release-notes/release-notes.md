@@ -1,9 +1,9 @@
 ---
 title: Adobe Experience Manager 6.5 LTS の最新のリリースノート
 description: Adobe Experience Manager 6.5 LTS の最新のリリースノートです。
-source-git-commit: 54f3f3019dcceda4307160aa2126c37835f6626e
+source-git-commit: 6a69d4e143c54b22127a1e1ff3546898fcdd0b2d
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '796'
 ht-degree: 40%
 
 ---
@@ -59,7 +59,6 @@ Quickstart は、サーブレットエンジンとして Eclipse Jetty 11.0.x �
 >
 >AEM 6.5 LTS で使用するバージョンとしては、Java™ 17 をお勧めします。
 
-
 ## 廃止される機能および削除された機能 {#deprecated-and-removed-features}
 
 アドビでは、製品の機能を絶えず評価して、常に後方互換性を慎重に考慮しながら、古い機能を作成し直したり、より近代的な機能に置き換えて、お客様にとっての全体的な価値を向上させています。
@@ -92,6 +91,7 @@ Quickstart は、サーブレットエンジンとして Eclipse Jetty 11.0.x �
 | Screens | Screensはサポートされていません。 | 代替機能はありません。 | 6.5 LTS GA |
 | アセット | バンドルがソーシャルに依存しているので、`dam-pim` と `dam-rating` はサポートされていません。 | 代替機能はありません。 | 6.5 LTS GA |
 | アセット | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` は削除されました。 | 追加された別の api `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()` を使用します。 | 6.5 LTS GA |
+| ポータル | AEM Portal Director はサポートされていません。 | 代替機能はありません。 | 6.5 LTS GA |
 | Granite | バンドル `com.adobe.granite.socketio` は削除されました。 | 代替機能はありません。 | 6.5 LTS GA |
 | Granite | `com.adobe.granite.crx-explorer` はサポートされていません。 | 代替機能はありません。 | 6.5 LTS GA |
 | Granite | `crx2oak` はサポートされていません。 | 関連するバージョンの選択 [oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) | 6.5 LTS GA |
@@ -104,7 +104,6 @@ Quickstart は、サーブレットエンジンとして Eclipse Jetty 11.0.x �
 | オープンソース | `javax.mail` パッケージを `com.sun.javax.mail` バンドルから書き出しています。 | 変更は不要です。 | 6.5 LTS GA |
 | オープンソース | パッケ `org.apache.jackrabbit.api` ジが `org.apache.jackrabbit.oak-jackrabbit-api` バンドルから書き出されるようになりました。 | 変更は不要です。 | 6.5 LTS GA |
 | オープンソース | `com.github.jknack.handlebars` はサポートされていません。 | 関連する [ バージョン ](https://mvnrepository.com/artifact/com.github.jknack/handlebars) を選択 | 6.5 LTS GA |
-
 
 ## 制限付き Web サイト{#restricted-sites}
 

@@ -9,10 +9,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: cf067a359d9f1fbe46e1614d91ce55bf3ee5bf18
 workflow-type: tm+mt
-source-wordcount: '6073'
-ht-degree: 100%
+source-wordcount: '6081'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ AEM では JSR 286 準拠のポートレットを実行できます。ポート�
 
 >[!CAUTION]
 >
->AEM Portal Director は、AEM 6.4 以降では使用されなくなりました。[廃止される機能および削除された機能](https://helpx.adobe.com/jp/experience-manager/6-4/release-notes/deprecated-removed-features.html)を参照してください。
+>AEM ポータルディレクターは、AEM 6.4 以降で非推奨となり、AEM 6.5 LTS ではサポートされなくなりました。 [廃止される機能および削除された機能](/help/release-notes/release-notes.md#deprecated-and-removed-features)を参照してください。
 
 ## AEM コンテンツポートレットの管理 {#administering-the-aem-content-portlet}
 
