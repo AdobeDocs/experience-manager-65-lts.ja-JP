@@ -1,20 +1,20 @@
 ---
 cloud: Experience Cloud
 product: Adobe Experience Manager
-sub-product: Adobe Experience Manager 6.5
+sub-product: Adobe Experience Manager 6.5 LTS
 solution-title: Experience Cloud
-user-guide-description: Adobe Experience Manager 6.5 の仕組みと機能については、このソフトウェアのドキュメントを参照してください。
+user-guide-description: Adobe Experience Manager 6.5 LTS のドキュメントを参照して、その仕組みと機能を確認してください。
 breadcrumb-title: ユーザーガイド
-user-guide-title: AEM 6.5
-source-git-commit: 1d306a12ebff41e5f31e5b7fbe8086cd2e657500
+user-guide-title: AEM 6.5 LTS
+source-git-commit: 4a13ad21a3ea4ce6a1db9dac459b2b9ffd0d27c3
 workflow-type: tm+mt
-source-wordcount: '7019'
-ht-degree: 99%
+source-wordcount: '7020'
+ht-degree: 98%
 
 ---
 
 
-# Adobe Experience Manager 6.5 ドキュメント {#content}
+# Adobe Experience Manager 6.5 LTS ドキュメント {#content}
 
 + リリースノート {#release-notes}
    + [リリースノート](/help/release-notes/release-notes.md)
@@ -44,7 +44,7 @@ ht-degree: 99%
    + [AEM の基盤での GDPR 要求の処理](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md)
    + [権限管理のプリンシパルビュー](/help/sites-administering/touch-ui-principal-view.md)
    + [Content Disposition フィルター](/help/sites-administering/content-disposition-filter.md)
-   + [AEM 6.5 のカスタムユーザグループマッピング](/help/sites-administering/cug-mapping.md)
+   + [カスタムユーザーグループマッピング](/help/sites-administering/cug-mapping.md)
    + [同じサイト cookie サポート](/help/sites-administering/same-site-cookie-support.md)
    + [Adobe Developer Console での JWT 資格情報の廃止](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [AEM の IMS 統合の設定](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
@@ -1424,7 +1424,7 @@ ht-degree: 99%
       + AEM プラットフォームの概要 {#introduction}
          + [AEM プラットフォームの概要](/help/sites-deploying/platform.md)
          + [技術要件](/help/sites-deploying/technical-requirements.md)
-         + [AEM 6.5 のストレージ要素](/help/sites-deploying/storage-elements-in-aem-6.md)
+         + [AEMのストレージ要素](/help/sites-deploying/storage-elements-in-aem-6.md)
          + [MongoDB を備えた AEM](/help/sites-deploying/aem-with-mongodb.md)
       + AEM のデプロイ {#deploying}
          + [デプロイとメンテナンス](/help/sites-deploying/deploy.md)
@@ -1436,7 +1436,7 @@ ht-degree: 99%
          + [リビジョンクリーンアップ](/help/sites-deploying/revision-cleanup.md)
          + [Oak クエリとインデックス作成](/help/sites-deploying/queries-and-indexing.md)
          + [TarMK コールドスタンバイによる AEM の実行方法](/help/sites-deploying/tarmk-cold-standby.md)
-         + [AEM 6.5 の RDBMS サポート](/help/sites-deploying/rdbms-support-in-aem.md)
+         + [AEMの RDBMS サポート](/help/sites-deploying/rdbms-support-in-aem.md)
          + [Oak-run Jar を使用したインデックス作成](/help/sites-deploying/indexing-via-the-oak-run-jar.md)
          + [oak-run.jar でのインデックス作成の使用例](/help/sites-deploying/oak-run-indexing-usecases.md)
          + [Oak インデックスのトラブルシューティング](/help/sites-deploying/troubleshooting-oak-indexes.md)
@@ -1462,11 +1462,11 @@ ht-degree: 99%
          + [アセットパフォーマンスガイド](/help/sites-deploying/assets-performance-sizing.md)
          + [設定方法に関する記事](/help/sites-deploying/ht-deploy.md)
          + [Web コンソールの設定](/help/sites-deploying/configuring-web-console.md)
-      + AEM 6.5 へのアップグレード {#upgrading}
-         + [AEM 6.5 へのアップグレード](/help/sites-deploying/upgrade.md)
+      + AEM 6.5 LTS {#upgrading} へのアップグレード
+         + [AEM 6.5 LTS へのアップグレード](/help/sites-deploying/upgrade.md)
          + [アップグレードの計画](/help/sites-deploying/upgrade-planning.md)
          + [パターン検出を使用したアップグレードの複雑性の評価](/help/sites-deploying/pattern-detector.md)
-         + [AEM 6.5 における後方互換性](/help/sites-deploying/backward-compatibility.md)
+         + [AEM 6.5 LTS における後方互換性](/help/sites-deploying/backward-compatibility.md)
          + [アップグレード手順](/help/sites-deploying/upgrade-procedure.md)
          + [インプレースアップグレードの実行](/help/sites-deploying/in-place-upgrade.md)
          + [オフラインでのインデックス再作成を使用したアップグレード中のダウンタイムの削減](/help/sites-deploying/upgrade-offline-reindexing.md)

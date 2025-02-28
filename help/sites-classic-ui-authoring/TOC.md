@@ -1,14 +1,14 @@
 ---
 cloud: Experience Cloud
 product: Adobe Experience Manager
-sub-product: Adobe Experience Manager 6.5 2025
+sub-product: Adobe Experience Manager 6.5 LTS
 solution-title: Experience Cloud
-user-guide-description: Adobe Experience Manager 6.5 2025 のドキュメントを参照して、その仕組みと機能を確認してください。
+user-guide-description: Adobe Experience Manager 6.5 LTS のドキュメントを参照して、その仕組みと機能を確認してください。
 breadcrumb-title: ユーザーガイド
-user-guide-title: AEM 6.5 2025
+user-guide-title: AEM 6.5 LTS
 role: user
 hide: true
-source-git-commit: 728db3fc315f1e7830d2133c63d096e4f616e9f8
+source-git-commit: 96d94c843d1912abd91577b3373e38bd9fd9ed6c
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 88%
