@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS のドキュメントを参照して、その仕組みと機能を確認してください。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 4a13ad21a3ea4ce6a1db9dac459b2b9ffd0d27c3
+source-git-commit: fe361e43288ad0242faa1d82af086aee9fc7804b
 workflow-type: tm+mt
-source-wordcount: '7020'
+source-wordcount: '7044'
 ht-degree: 98%
 
 ---
@@ -1472,12 +1472,15 @@ ht-degree: 98%
          + [オフラインでのインデックス再作成を使用したアップグレード中のダウンタイムの削減](/help/sites-deploying/upgrade-offline-reindexing.md)
          + [遅延コンテンツ移行](/help/sites-deploying/lazy-content-migration.md)
          + [CRX2Oak 移行ツールの使用](/help/sites-deploying/using-crx2oak.md)
+         + [Oak-upgrade を使用したAEM 6.5 からAEM 6.5 LTS へのコンテンツの移行](/help/sites-deploying/aem-65-to-aem-65lts-content-migration-using-oak-upgrade.md)
          + [アップグレード前のメンテナンスタスク](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
          + [アップグレード後のチェックおよびトラブルシューティング](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
          + [カスタム検索フォームのアップグレード](/help/sites-deploying/upgrading-custom-search-forms.md)
          + [持続可能なアップグレード](/help/sites-deploying/sustainable-upgrades.md)
          + [コードのアップグレードとカスタマイズ](/help/sites-deploying/upgrading-code-and-customizations.md)
          + [アプリケーションサーバーのインストール環境のアップグレード手順](/help/sites-deploying/app-server-upgrade.md)
+         + [アプリケーションサーバーインストール（WLP）のアップグレード手順](/help/sites-deploying/app-server-upgrade-wlp.md)
+         + [アプリケーションサーバーのインストールのアップグレード手順（Tomcat）](/help/sites-deploying/app-server-upgrade-tomcat.md)
          + [アップグレード後にアンインストールされる廃止されたバンドルの一覧](/help/sites-deploying/obsolete-bundles.md)
       + ベストプラクティス {#practices}
          + [デプロイのベストプラクティス](/help/sites-deploying/best-practices.md)
