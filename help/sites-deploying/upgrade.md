@@ -9,10 +9,10 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f66bb283e5c2a746821839269e112be8c2714ba7
+source-git-commit: 598d6eecbdd3887c41a36a14daa215e2e8e6e09a
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 29%
+source-wordcount: '195'
+ht-degree: 34%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 29%
 >[!NOTE]
 >AEM 6.5 LTS へのアップグレードは、最新の 6 つのサービスパックからサポートされています。
 
-この節では、AEM 6.5 への AEM インストール環境のアップグレードについて説明します。
+このセクションでは、AEM インストールからAEM 6.5 LTS へのアップグレードについて説明します。
 
 <!-- Alexandru: drafting for now 
 
@@ -50,31 +50,6 @@ ht-degree: 29%
 
 ### 更新 {#updates}
 
-以下に、AEM の最近のいくつかのリリースでの注目すべき主な変更点を示します。
+Foundation layer は、Apache Sling、Felix、Jackrabbit Oakの最新のオープンソースバンドルを組み込んで、Java 17 をサポートするようになりました。 さらに、AEM 6.5 LTS uber-jar のパッケージが変更されました。 さらに、AEM 6.5 LTS からは、従来の機能がいくつか削除されています。 詳細については、「[ リリース ノート ](/help/release-notes/release-notes.md#whats-new-what-s-new)」および [ アップグレード後にアンインストールされる廃止されたバンドルの一覧 ](/help/sites-deploying/obsolete-bundles.md) を参照してください。
 
-1. 基盤レイヤーは、Java 17 （Apache Sling、Apache Felix、Apache Jackrabbit Oakのバンドルのオープンソースレイヤーで構成）をサポートするようにアップグレードされました
-
-1. AEM 6.5 LTS jar パッケージで Jarkarta サーブレット API 仕様 5 がサポートされるようになり、war パッケージを Jakarta サーブレット API 仕様 5/6 を実装するサーブレットコンテナにデプロイできるようになりました
-
-1. AEM 6.5 LTS uber-jar のパッケージが変更されました。 詳しくは、[ コードとカスタマイズのアップグレード ](/help/sites-deploying/upgrading-code-and-customizations.md) を参照してください。
-
-### 従来の機能/アーティファクトの削除 {#removed-legacy-features-artifacts}
-
-次の従来のソリューションは、AEM 6.5 LTS から削除されました。 詳しくは、TBD：リリースノートへのリンクおよび [ アップグレード後にアンインストールされる廃止されたバンドルのリスト ](/help/sites-deploying/obsolete-bundles.md) を参照してください。
-
-1. Social
-1. Commerce
-1. Screens
-1. We-retail
-1. Search と Promote の統合
-
-**削除されたアーティファクト**
-
-1. CRX-explorer
-1. Crx2oak
-1. Google guava （セキュリティの脆弱性により削除）
-1. Abdera-parser （セキュリティの脆弱性により削除）
-1. jdom （`org.apache.servicemix.bundles.jdom`） （セキュリティの脆弱性により削除されました）
-1. `com.github.jknack.handlebars` （セキュリティの脆弱性により削除されました）
-
-AEM 6.5 LTS は、機能の後方互換性に重点を置いており、アナライザーツールが付属しています。 アップグレードの計画を開始する際の複雑性の評価については、[AEM Analyzer を使用したアップグレードの複雑性の評価 ](/help/sites-deploying/pattern-detector.md) を参照してください。 その他の変更点について詳しくは、こちらの完全なリリースノートを参照してください。 未定：AEM 6.5 LTS のリリースノートへのリンク
+AEM 6.5 LTS は、機能の後方互換性に重点を置いており、アナライザーツールが付属しています。 開始時の複雑性の評価 [ アップグレードの計画 ](/help/sites-deploying/pattern-detector.md) については、[AEM Analyzer を使用したアップグレードの複雑性の評価 ](/help/sites-deploying/upgrade-planning.md) を参照してください。
