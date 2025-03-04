@@ -5,10 +5,10 @@ topic-tags: upgrading
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f66bb283e5c2a746821839269e112be8c2714ba7
+source-git-commit: c3df47efd4b13dcd8061e5cdac32a75fbf36df4b
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 52%
+source-wordcount: '538'
+ht-degree: 47%
 
 ---
 
@@ -16,23 +16,27 @@ ht-degree: 52%
 
 >[!NOTE]
 >
->ここでは、AEM 6.5 LTS のアップグレード手順の概要を説明します。 アプリケーションサーバーにデプロイされたインストールがある場合は、[ アプリケーションサーバーインストールのアップグレード手順 ](/help/sites-deploying/app-server-upgrade.md) を参照してください。
+>ここでは、AEM 6.5 LTS のインプレースアップグレード手順の概要を説明します。 アプリケーションサーバーにデプロイされたインストールがある場合は、[ アプリケーションサーバーインストールのアップグレード手順 ](/help/sites-deploying/app-server-upgrade.md) を参照してください。
 
 ## アップグレード前の手順 {#pre-upgrade-steps}
 
-アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。詳しくは、[コードのアップグレードとカスタマイズ](/help/sites-deploying/upgrading-code-and-customizations.md)および[アップグレード前のメンテナンスタスク](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。さらに、お使いのシステムがAEM 6.5 LTS の要件を満たしていることを確認してください。 アップグレードの複雑さを見積もるのに Analyzer がどのように役立つかをご確認ください。また、詳細については、「アップグレードの計画 [ の「アップグレードの範囲と要件 ](/help/sites-deploying/upgrade-planning.md) のセクションをご覧ください。
+アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。詳しくは、[コードのアップグレードとカスタマイズ](/help/sites-deploying/upgrading-code-and-customizations.md)および[アップグレード前のメンテナンスタスク](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。また、システムが [AEM 6.5 LTS の要件 ](/help/sites-deploying/technical-requirements.md) を満たしていることを確認し、[ アップグレード計画に関する考慮事項 ](/help/sites-deploying/upgrade-planning.md) と、[Analyzer](/help/sites-deploying/pattern-detector.md) を使用して複雑さを見積もる方法を確認します。
 
 <!--Finally, the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## 移行の前提条件 {#migration-prerequisites}
 
-* **必要な Java の最小バージョン：** システムにOracleの JRE 17 がインストールされていることを確認します。
+* **必要な Java の最小バージョン：** システムにOracleの Java™ 17 がインストールされていることを確認します。
 
 ## AEM クイックスタート jar ファイルの準備 {#prep-quickstart-file}
 
+1. 新しいAEM 6.5 LTS jar ファイルをダウンロードします
+
+1. [正しいアップグレード開始コマンドを確認します](/help/sites-deploying/in-place-upgrade.md#determining-the-correct-upgrade-start-command-determining-the-correct-upgrade-start-command)
+
 1. インスタンスが実行中である場合は停止します
 
-1. 新しいAEM 6.5 LTS jar ファイルをダウンロードし、それを使用して `crx-quickstart` フォルダーの外部にある古いファイルを置き換えます
+1. 新しいAEM 6.5 LTS jar を使用して、`crx-quickstart` フォルダーの外部にある古い jar を置き換えます
 
 1. `sling.properties` ファイル（通常は `crx-quickstart/conf/` に存在）のバックアップを作成してから、削除します
 
@@ -169,13 +173,13 @@ Where `/path/to/datastore` represents the path to your File Datastore.
    1. `crx-quickstart/install/1` の下 `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/1` コピー
    1. `crx-quickstart/install/15` の下 `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/15` コピー
 
-次に、「正しいアップグレード開始コマンドの特定 [ セクションの情報を使用して特定された新しいコマンドを使用して、AEM インスタンスを起動し ](#determining-the-correct-upgrade-start-command) す。
+次に、「正しいアップグレード開始コマンドの特定 [ セクションの情報を使用して確認した新しいコマンドを使用して、AEM インスタンスを開始し ](#determining-the-correct-upgrade-start-command) す。
 
 ### 適切なアップグレード開始コマンドの確認 {#determining-the-correct-upgrade-start-command}
 
 >[!NOTE]
 >
->Java 8/11 引数の一部のサポートは、Java 17 で削除されました。詳しくは、AEM 6.5 LTS （リンクスタブ）の Java 引数に関する考慮事項を参照してください。
+>Java 8/11 引数の一部のサポートは、Java 17 で削除されました。[Oracle Java™ 17 ドキュメント ](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) および [AEM 6.5 LTS の Java&amp;trade 引数に関する考慮事項 ](https://git.corp.adobe.com/AdobeDocs/experience-manager-65-lts.en/blob/main/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations) を参照してください。
 
 アップグレードを実行するには、jar ファイルを使用してAEMを起動してインスタンスを起動することが重要です。
 
@@ -193,10 +197,10 @@ Where `/path/to/datastore` represents the path to your File Datastore.
    /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.5.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
-1. 既存の jar のパス（この場合は `crx-quickstart/app/aem-quickstart*.jar`）を `crx-quickstart` フォルダーと同じ階層にある新しい jar に置き換えて、コマンドを変更します。例として前述のコマンドを使用すると、コマンドは次のようになります。
+1. 既存の jar のパス（この場合は `crx-quickstart/app/aem-quickstart*.jar`）を `crx-quickstart` フォルダーと同じ階層にある新しいAEM 6.5 LTS jar に置き換えて、コマンドを変更します。 例として前述のコマンドを使用すると、コマンドは次のようになります。
 
    ```shell
-   /usr/bin/java -server -Xmx4096m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.6.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
+   /usr/bin/java -server -Xmx4096m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar <AEM-6.5-LTS.jar> -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
    これにより、適切なメモリ設定、カスタム実行モードおよびその他の環境パラメーターすべてがアップグレードに適用されます。アップグレードが完了すると、それ以降の起動時には起動スクリプトからインスタンスを起動できます。
