@@ -10,9 +10,9 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 6a06ad15782b5cff7978547d005aaa312a837647
+source-git-commit: ae78421de75518894f3996829e554acd9003a6d1
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '820'
 ht-degree: 98%
 
 ---
@@ -100,7 +100,6 @@ AEM 環境をアップグレードする際は、オーサー環境またはパ�
 1. プライマリオーサーを再起動して、正常に再起動することを確認します。
 1. プライマリオーサーのレプリケーションエージェントを無効にします。
 1. プライマリオーサーインスタンスで[アップグレード前のメンテナンスタスク](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を実行します。
-1. 必要に応じて、プライマリ Mongo インスタンスの MongoDB を WiredTiger が搭載されたバージョン 3.2 にアップグレードします。
 
 ### アップグレードの実行 {#Upgrade-execution-1}
 
@@ -114,7 +113,7 @@ AEM 環境をアップグレードする際は、オーサー環境またはパ�
 
 ![mongo-secondaries](assets/mongo-secondaries.jpg)
 
-1. アップグレードされた Mongo インスタンスに接続する新しい 6.5.2025 オーサーインスタンスを作成します。
+1. アップグレードされた Mongo インスタンスに接続する新しいAEM 6.5 LTS オーサーインスタンスを作成します。
 
 1. クラスターから削除された MongoDB ノードを再構築します。
 
