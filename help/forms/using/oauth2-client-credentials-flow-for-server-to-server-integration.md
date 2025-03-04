@@ -4,7 +4,7 @@ description: OAuth 2.0 クライアント資格情報フローを使用した Sa
 solution: Experience Manager, Experience Manager Forms
 feature: Form Data Model
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 99%
@@ -69,4 +69,4 @@ Salesforce アプリケーションと AEM 環境間の通信を設定する前�
 1. 「**[!UICONTROL 接続をテスト]**」をクリックします。
 1. 接続に成功した場合は、「**[!UICONTROL 作成]**」ボタンをクリックします。
 
-これで、[フォームデータモデルを作成](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/form-data-model/create-form-data-models.html?lang=en)して、設定したデータソースをアダプティブフォームと統合できます。
+これで、[フォームデータモデルを作成](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/form-data-model/create-form-data-models.html?lang=en)して、設定したデータソースをアダプティブフォームと統合できます。

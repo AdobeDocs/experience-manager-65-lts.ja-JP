@@ -8,7 +8,7 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1790'
 ht-degree: 99%
@@ -119,7 +119,7 @@ Google の PageSpeed ツールは、ページパフォーマンスに関する�
 1. /crx-quickstart/install フォルダーの下に配置します。
 
 >[!NOTE]
->詳しくは、[AEM 6.x |パフォーマンスチューニングのヒント](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/configuring-performance.html)を参照してください
+>詳しくは、[AEM 6.x |パフォーマンスチューニングのヒント](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html)を参照してください
 
 デフォルト設定は 10,000 ですが、ほとんどのデプロイメントでは 20,000 または 50,000 に引き上げる必要があります。
 
@@ -147,7 +147,7 @@ Google の PageSpeed ツールは、ページパフォーマンスに関する�
 * エラーログで、エラーや警告を確認します。詳しくは、[ログ](/help/sites-deploying/configure-logging.md)を参照してください。
 * メモリと CPU の使用率、ディスク I/O、ネットワーク I/O などのシステムハードウェアリソースを監視します。これらのリソースが、パフォーマンスのボトルネックの原因になっていることがよくあります。
 * ページのアーキテクチャとページの処理方法を最適化して、URL パラメーターの使用を最小限に抑え、できるだけ多くのキャッシュを可能にします。
-* [パフォーマンスの最適化](/help/sites-deploying/configuring-performance.md)と[パフォーマンスチューニングのヒント](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/configuring-performance.html)のドキュメントに従ってください。
+* [パフォーマンスの最適化](/help/sites-deploying/configuring-performance.md)と[パフォーマンスチューニングのヒント](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html)のドキュメントに従ってください。
 
 * オーサーインスタンス上の特定のページやコンポーネントの編集に問題がある場合は、タッチ UI 開発者モードを使用して、該当するページを調べます。これにより、ページ上の各コンテンツ領域の内訳とそれぞれの読み込み時間がわかります。
 * サイト上のすべての JS と CSS を最小限にします。この[ブログ投稿](https://blogs.adobe.com/foxes/enable-js-and-css-minification/)を参照してください。

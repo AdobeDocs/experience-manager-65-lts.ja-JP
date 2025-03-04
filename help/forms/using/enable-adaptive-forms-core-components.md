@@ -5,7 +5,7 @@ keywords: コアコンポーネントの有効化, コアコンポーネント�
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 8efb1eb0b4a69cf59fa5853aa335dbf3d6061185
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 98%
@@ -31,7 +31,7 @@ AEM 6.5 Forms 環境でアダプティブフォームコアコンポーネント
 
 AEM 6.5 Forms 環境でアダプティブフォームコアコンポーネントを有効にする前に、以下の操作が必要です。
 
-* [AEM 6.5 Forms サービスパック 16 （6.5.16.0）以降へのアップグレード ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html)。
+* [AEM 6.5 Forms サービスパック 16 （6.5.16.0）以降へのアップグレード ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html)。
 
 * [Apache Maven](https://maven.apache.org/download.cgi) の最新リリースをインストールします。
 
@@ -130,7 +130,7 @@ AEM アーキタイプ 41 [以降](https://github.com/adobe/aem-project-archetyp
 
    AEM アーキタイププロジェクトが正常にビルドされると、AEM パッケージが生成されます。パッケージは、[AEM Archetype Project Folder]\all\target\[appid].all-[version].zip になります。
 
-1. [パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-65-2025/administering/contentmanagement/package-manager.html?lang=en)を使用して、[AEM Archetype Project Folder]\all\target\[appid].all-[version].zip パッケージをすべてのオーサーインスタンスとパブリッシュインスタンスにデプロイします。
+1. [パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html?lang=en)を使用して、[AEM Archetype Project Folder]\all\target\[appid].all-[version].zip パッケージをすべてのオーサーインスタンスとパブリッシュインスタンスにデプロイします。
 
 >[!NOTE]
 >

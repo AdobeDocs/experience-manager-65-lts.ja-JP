@@ -5,7 +5,7 @@ keywords: カスタム関数の追加, カスタム関数の使用, カスタム
 content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '3385'
 ht-degree: 99%
@@ -571,7 +571,7 @@ jsdoc コメントを含むまたは含まないカスタム関数を作成で�
 
 >[!NOTE]
 >
-> 次の[カスタム関数](/help/forms/using/assets/customfunctions.zip)フォルダーを参照できます。[パッケージマネージャー](https://experienceleague.adobe.com/en/docs/experience-manager-65-2025/content/sites/administering/contentmanagement/package-manager)を使用して、このフォルダーをダウンロードして AEM インスタンスにインストールします。
+> 次の[カスタム関数](/help/forms/using/assets/customfunctions.zip)フォルダーを参照できます。[パッケージマネージャー](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager)を使用して、このフォルダーをダウンロードして AEM インスタンスにインストールします。
 
 ### カスタム関数での非同期関数のサポート {#support-of-async-functions}
 

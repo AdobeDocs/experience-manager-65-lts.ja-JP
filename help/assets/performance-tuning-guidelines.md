@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2728'
 ht-degree: 99%
@@ -242,7 +242,7 @@ Sites の実装などで、アセットを多数のパブリッシュインス�
 
 ## 検索インデックス {#search-indexes}
 
-[最新のサービスパック](/help/release-notes/release-notes.md)およびパフォーマンス関連のホットフィックスをインストールしてください。多くの場合、これらはシステムインデックスの更新を含みます。一部のインデックスの最適化については、[パフォーマンスチューニングのヒント](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/administer/performance-tuning-guidelines.html?lang=en)を参照してください。
+[最新のサービスパック](/help/release-notes/release-notes.md)およびパフォーマンス関連のホットフィックスをインストールしてください。多くの場合、これらはシステムインデックスの更新を含みます。一部のインデックスの最適化については、[パフォーマンスチューニングのヒント](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/administer/performance-tuning-guidelines.html?lang=en)を参照してください。
 
 頻繁に実行するクエリにカスタムインデックスを作成します。詳しくは、[スロークエリの分析手法（英語）](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html)と[カスタムインデックスの作成](/help/sites-deploying/queries-and-indexing.md)を参照してください。クエリやインデックスについての追加のインサイトやベストプラクティスについては、[クエリとインデックスに関するベストプラクティス](/help/sites-deploying/best-practices-for-queries-and-indexing.md) を参照してください。
 

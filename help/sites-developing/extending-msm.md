@@ -9,7 +9,7 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2444'
 ht-degree: 99%
@@ -31,8 +31,8 @@ ht-degree: 99%
 >このページは、[コンテンツの再利用：Multi Site Manager](/help/sites-administering/msm.md) と併せて読んでください。
 >
 >Sites のリポジトリ再構築に関する次の節も参考になる場合があります。
->* [Multi-site Manager のブループリント設定](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-blueprint-configurations)
->* [Multi-site Manager のロールアウト設定](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-rollout-configurations)
+>* [Multi-site Manager のブループリント設定](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-blueprint-configurations)
+>* [Multi-site Manager のロールアウト設定](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-rollout-configurations)
 
 >[!CAUTION]
 >

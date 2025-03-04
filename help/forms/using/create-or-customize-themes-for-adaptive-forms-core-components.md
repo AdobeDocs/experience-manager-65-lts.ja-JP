@@ -8,7 +8,7 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1939'
 ht-degree: 99%
@@ -80,7 +80,7 @@ AEM Forms 6.5 は、コアコンポーネントベースのアダプティブフ
 
 * [Apache Maven の最新リリースをインストールします。](https://maven.apache.org/download.cgi) Apache Maven は、主に Java™ プロジェクトで使用されるビルド自動処理ツールです。最新のリリースをインストールすると、テーマのカスタマイズに必要な依存関係が確保されます。
 
-* [Adobe Experience Manager のクライアントライブラリ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/introduction/clientlibs.html)の作成方法を学ぶAEM は、クライアントライブラリを提供しています。これにより、クライアントサイドコードをリポジトリに格納し、カテゴリ別に整理して、それぞれのカテゴリのコードをクライアントに提供するタイミングと方法を定義できます。
+* [Adobe Experience Manager のクライアントライブラリ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/introduction/clientlibs.html)の作成方法を学ぶAEM は、クライアントライブラリを提供しています。これにより、クライアントサイドコードをリポジトリに格納し、カテゴリ別に整理して、それぞれのカテゴリのコードをクライアントに提供するタイミングと方法を定義できます。
 
 * プレーンテキストエディターをインストールします。例えば Microsoft® Visual Studio Code などです。Microsoft® Visual Studio Code などのプレーンテキストエディターを使用すると、テーマファイルの編集と変更を行う際に使いやすい環境を利用できます。
 

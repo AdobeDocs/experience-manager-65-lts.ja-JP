@@ -11,7 +11,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Image Presets
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '3792'
 ht-degree: 99%
@@ -394,7 +394,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
      <li><strong>適用先</strong> - アンシャープを各カラーまたは明るさに適用するかを指定します。</li>
     </ul>
     <div>
-      シャープニングについては、<a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/sharpening_images.pdf">画像のシャープニング</a>を参照してください。
+      シャープニングについては、<a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/sharpening_images.pdf">画像のシャープニング</a>を参照してください。
     </div> </td>
   </tr>
   <tr>

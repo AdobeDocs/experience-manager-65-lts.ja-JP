@@ -6,7 +6,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: eded255b54ff83f60f73cece8824c778d3a87680
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 99%
@@ -175,4 +175,4 @@ MySQL を使用する場合は、ユーザー ID に拡張文字を含めるこ�
 
 CQ にはデフォルトの 404 ハンドラ jsp を上書きするメカニズムが提供されています。
 
-エラーハンドリングページのカスタマイズ方法については、Adobe Experience Manager ドキュメントの[エラーハンドラーによって表示されるページのカスタマイズ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/platform/customizing-errorhandler-pages.html?lang=en)を参照してください。
+エラーハンドリングページのカスタマイズ方法については、Adobe Experience Manager ドキュメントの[エラーハンドラーによって表示されるページのカスタマイズ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html?lang=en)を参照してください。

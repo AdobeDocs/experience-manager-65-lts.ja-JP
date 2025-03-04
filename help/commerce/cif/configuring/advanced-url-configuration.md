@@ -10,7 +10,7 @@ kt: 4933
 thumbnail: 34350.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 99%
@@ -21,7 +21,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->検索エンジン最適化（SEO）は、多くのマーケターにとって重要な課題となっています。そのため、多くの AEM プロジェクトで SEO 対策に取り組む必要があります。詳しくは、[SEO および URL 管理のベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-65-2025/managing/managing-further-reference/seo-and-url-management.html)を参照してください。
+>検索エンジン最適化（SEO）は、多くのマーケターにとって重要な課題となっています。そのため、多くの AEM プロジェクトで SEO 対策に取り組む必要があります。詳しくは、[SEO および URL 管理のベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-65-lts/managing/managing-further-reference/seo-and-url-management.html)を参照してください。
 
 [AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)は、製品ページとカテゴリページの URL をカスタマイズする高度な設定を提供します。多くの実装では、検索エンジン最適化（SEO）用にこれらの URL をカスタマイズします。次のビデオでは、`UrlProvider` サービスと [Sling マッピング](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)の機能を設定して、製品ページとカテゴリページの URL をカスタマイズする方法について詳しく説明します。
 
@@ -109,5 +109,5 @@ URL の書き換えは、`mod_rewrite` モジュールを備えた AEM Dispatche
 ## その他のリソース
 
 * [Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM リソースマッピング](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/resource-mapping.html)
+* [AEM リソースマッピング](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/resource-mapping.html)
 * [Sling マッピング](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

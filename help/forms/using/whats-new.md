@@ -7,7 +7,7 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Release Information
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 93%
@@ -24,7 +24,7 @@ ht-degree: 93%
 
 ## Adobe Experience Manager 6.5 Forms サービスパック 19 の内容（6.5.19.0）
 
-Experience Manager 6.5.19.0 には、2019 年 4 月の 6.5 リリースの公開当初にリリースされた新機能、お客様からリクエストされた主な機能強化、バグ修正およびパフォーマンス、安定性、セキュリティの向上が含まれています。 Experience Manager 6.5 で[このサービスパックをインストール](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html)します。
+Experience Manager 6.5.19.0 には、2019 年 4 月の 6.5 リリースの公開当初にリリースされた新機能、お客様からリクエストされた主な機能強化、バグ修正およびパフォーマンス、安定性、セキュリティの向上が含まれています。 Experience Manager 6.5 で[このサービスパックをインストール](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html)します。
 
 ### 新機能
 
@@ -60,12 +60,12 @@ AEM Forms では、[フォームデータを SharePoint リストに直接送信
 
 ## バグの修正
 
-このリリースには、お客様から報告された 20 件以上の問題の修正も含まれています。サービスパックに含まれる修正のリストについて詳しくは、[リリースノート](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/release-notes.html?lang=en#forms-6519)を参照してください
+このリリースには、お客様から報告された 20 件以上の問題の修正も含まれています。サービスパックに含まれる修正のリストについて詳しくは、[リリースノート](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html?lang=en#forms-6519)を参照してください
 
 
 ## サービスパックのインストール
 
-このサービスパックには、JEE 上の AEM Forms と OSGi 上の AEM Forms の両方に新機能とバグ修正が含まれます。インストール手順は、以前のサービスパックと比較して変更されます。インストール手順について詳しくは、[AEM Forms サービスパックのインストール手順](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en)を参照してください。
+このサービスパックには、JEE 上の AEM Forms と OSGi 上の AEM Forms の両方に新機能とバグ修正が含まれます。インストール手順は、以前のサービスパックと比較して変更されます。インストール手順について詳しくは、[AEM Forms サービスパックのインストール手順](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en)を参照してください。
 
 
 

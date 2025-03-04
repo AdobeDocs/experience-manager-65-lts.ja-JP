@@ -6,7 +6,7 @@ role: Architect, Leader
 feature: Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 99%
@@ -93,6 +93,6 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 
 >[!MORELIKETHIS]
 >
->* [ [!DNL Experience Manager Assets] の DAM 機能](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/home.html)
+>* [ [!DNL Experience Manager Assets] の DAM 機能](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/home.html)
 >* [[!DNL Experience Manager] 6.5 Managed Services 製品の説明](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-experience-manager-managed-services.html)
 >* [[!DNL Experience Manager] 6.5 オンプレミス製品の説明](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-experience-manager-on-premise.html)

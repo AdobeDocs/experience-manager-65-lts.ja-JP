@@ -8,7 +8,7 @@ docset: aem65
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 99%
@@ -36,7 +36,7 @@ AEM Forms は、アダプティブフォームだけでなく、XFA フォーム
 
 >[!NOTE]
 >
->[AEM 6.5 クイックスタート](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/deploying/deploy.html)で使用できるアダプティブフォーム機能は、探索と評価のみを目的として設計されています。 アダプティブフォームの機能には適切なライセンスが必要なので、実稼動環境で使用する場合は、AEM Forms の有効なライセンスを取得することが不可欠です。
+>[AEM 6.5 クイックスタート](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/deploy.html)で使用できるアダプティブフォーム機能は、探索と評価のみを目的として設計されています。 アダプティブフォームの機能には適切なライセンスが必要なので、実稼動環境で使用する場合は、AEM Forms の有効なライセンスを取得することが不可欠です。
 
 ![AEM Forms の機能](do-not-localize/4th-draft-updated.gif)
 
@@ -117,7 +117,7 @@ AEM Forms を使用するビジネスユーザーは、ドキュメントテン�
 * テンプレート、コンテンツブロックやビジネスルールなどをサポートする対応オーサリング環境
 * ドキュメントの変換およびアセンブリ
 * Web、メール、および紙面などの複数のチャネルを介した、オンデマンドまたはバッチ文書配信のサポート
-* 変更履歴を伴う監査証跡
+* 変更履歴を伴う監査記録
 * コンテンツの完全性と署名者の身元を検証するデジタル署名のサポート
 * ドキュメントの AEM Forms 用セキュリティアドオンにより、暗号化、使用ポリシー、トラッキング、および監査などに対応
 

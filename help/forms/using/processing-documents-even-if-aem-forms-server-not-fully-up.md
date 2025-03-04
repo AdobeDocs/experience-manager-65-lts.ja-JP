@@ -4,7 +4,7 @@ description: AEM Forms サーバーは、JEE サーバーおよび OSGi サー�
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 99%
@@ -26,4 +26,4 @@ AEM Forms サーバーが完全に起動し、すべてのアプリケーショ�
 
 ## 解決策 {#solution}
 
-この問題を解決するには、サーバーの起動時に引数 `Dcom.adobe.livecycle.dsc.deferServiceStart=true` を[バッチファイル](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/deploying/command-line-start-and-stop.html#windows-platform-start-bat-script-example)に追加します。
+この問題を解決するには、サーバーの起動時に引数 `Dcom.adobe.livecycle.dsc.deferServiceStart=true` を[バッチファイル](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/command-line-start-and-stop.html#windows-platform-start-bat-script-example)に追加します。

@@ -9,7 +9,7 @@ discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2357'
 ht-degree: 99%
@@ -186,7 +186,7 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
 
 ## ルールエディターを使用したエラーハンドラーの追加 {#add-error-handler-using-rule-editor}
 
-[ルールエディターのサービスの呼び出し](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke)アクションを使用して、アダプティブフォームで使用するデータソースに基づいて検証条件を定義します。RESTful Web サービスをデータソースとして使用する場合、Swagger 定義ファイルで検証条件を定義できます。アダプティブフォームのエラーハンドラー関数とルールエディターを利用すると、エラー処理を効率的に管理およびカスタマイズできます。ルールエディターを使用して条件を定義し、ルールがトリガーされたときに実行するアクションを設定します。アダプティブフォームは、事前設定された検証条件に基づいて、フィールドに入力した内容を検証します。入力値が検証条件を満たさない場合、アダプティブフォームのフィールドレベルでエラーメッセージが表示されます。
+[ルールエディターのサービスの呼び出し](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke)アクションを使用して、アダプティブフォームで使用するデータソースに基づいて検証条件を定義します。RESTful Web サービスをデータソースとして使用する場合、Swagger 定義ファイルで検証条件を定義できます。アダプティブフォームのエラーハンドラー関数とルールエディターを利用すると、エラー処理を効率的に管理およびカスタマイズできます。ルールエディターを使用して条件を定義し、ルールがトリガーされたときに実行するアクションを設定します。アダプティブフォームは、事前設定された検証条件に基づいて、フィールドに入力した内容を検証します。入力値が検証条件を満たさない場合、アダプティブフォームのフィールドレベルでエラーメッセージが表示されます。
 
 >[!NOTE]
 >
@@ -202,7 +202,7 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
 ### デフォルトのエラーハンドラー関数を追加 {#add-default-errror-handler}
 
 デフォルトのエラーハンドラーは、エラー応答が標準スキーマの場合、またはサーバーサイドの検証エラーの場合に、フィールドにエラーメッセージを表示する機能をサポートしています。
-[ルールエディターのサービスの呼び出し](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke)アクションを使用してデフォルトのエラーハンドラーを使用する方法を理解するために、「**ペット ID**」と「**ペット名**」という 2 つのフィールドがある簡単なアダプティブフォームの例を見てみましょう。「**ペット ID**」フィールドでデフォルトのエラーハンドラーを使用して、外部サービス（`200 - OK`、`404 - Not Found`、`400 - Bad Request` など）を呼び出すように設定された REST エンドポイントが返す様々なエラーを確認します。ルールエディターのサービスの呼び出しアクションを使用してデフォルトのエラーハンドラーを追加するには、次の手順を実行します。
+[ルールエディターのサービスの呼び出し](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke)アクションを使用してデフォルトのエラーハンドラーを使用する方法を理解するために、「**ペット ID**」と「**ペット名**」という 2 つのフィールドがある簡単なアダプティブフォームの例を見てみましょう。「**ペット ID**」フィールドでデフォルトのエラーハンドラーを使用して、外部サービス（`200 - OK`、`404 - Not Found`、`400 - Bad Request` など）を呼び出すように設定された REST エンドポイントが返す様々なエラーを確認します。ルールエディターのサービスの呼び出しアクションを使用してデフォルトのエラーハンドラーを追加するには、次の手順を実行します。
 
 1. アダプティブフォームをオーサリングモードで開き、フォームコンポーネントを選択してから、**[!UICONTROL ルールエディター]**&#x200B;を選択してルールエディターを開きます。
 1. 「**[!UICONTROL 作成]**」を選択します。
@@ -231,7 +231,7 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
 
 カスタムエラーハンドラーは、外部サービスから返されたエラーに応答し、カスタマイズされた応答をエンドユーザーに配信するように設計された関数（クライアントライブラリ）です。注釈 `@errorHandler` 付きのクライアントライブラリは、カスタムエラーハンドラー関数と見なされます。この注釈は、`.js` ファイルで指定されたエラーハンドラー関数を特定するのに役立ちます。
 
-[ルールエディターのサービスの呼び出し](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke)アクションを使用してカスタムエラーハンドラーを作成および使用する方法を理解するために、「**ペット ID**」と「**ペット名**」という 2 つのフィールドがあるアダプティブフォームの例を見てみましょう。「**ペット ID**」フィールドでカスタムエラーハンドラーを使用して、外部サービス（`200 - OK`、`404 - Not Found`、`400 - Bad Request` など）を呼び出すように設定された REST エンドポイントが返す様々なエラーを確認します。
+[ルールエディターのサービスの呼び出し](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke)アクションを使用してカスタムエラーハンドラーを作成および使用する方法を理解するために、「**ペット ID**」と「**ペット名**」という 2 つのフィールドがあるアダプティブフォームの例を見てみましょう。「**ペット ID**」フィールドでカスタムエラーハンドラーを使用して、外部サービス（`200 - OK`、`404 - Not Found`、`400 - Bad Request` など）を呼び出すように設定された REST エンドポイントが返す様々なエラーを確認します。
 
 アダプティブフォームにカスタムエラーハンドラーを追加して使用するには、次の手順を実行します。
 

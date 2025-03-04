@@ -8,7 +8,7 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 86%
@@ -31,9 +31,9 @@ Java EE web アプリケーションを開発するための一般的なオー�
 
 | リリース | 現在のバージョン | ユーザーアクション |
 |---|---|---|
-| JEE 版 Experience Manager 6.5 Forms | 6.5.19.0 | [最新のサービスパックのインストール](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) |
-| JEE 版 Experience Manager 6.5 Forms | 6.5.13.0 - 6.5.18.0 | 次のいずれかの方法を使用します。 <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en"> 最新のサービスパックのインストール </a> </li> <li> <a href ="#use-manual-mitigation-steps"> 手動の緩和手順の使用 </a> |
-| JEE 版 Experience Manager 6.5 Forms | 6.5 - 6.5.12.0 | [最新のサービスパックのインストール](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en)  </br> </br> **注意：** AEM Formsは現在、6.5.13.0 ～ 6.5.19.0 のバージョンをサポートしています。 古いバージョンを使用している場合は、6.5.13.0 以降のリリースにアップグレードすることをお勧めします。 AEM 6.5.13.0 以降のリリースのインストール手順については、リリースノートを参照してください。 |
+| JEE 版 Experience Manager 6.5 Forms | 6.5.19.0 | [最新のサービスパックのインストール](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) |
+| JEE 版 Experience Manager 6.5 Forms | 6.5.13.0 - 6.5.18.0 | 次のいずれかの方法を使用します。 <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en"> 最新のサービスパックのインストール </a> </li> <li> <a href ="#use-manual-mitigation-steps"> 手動の緩和手順の使用 </a> |
+| JEE 版 Experience Manager 6.5 Forms | 6.5 - 6.5.12.0 | [最新のサービスパックのインストール](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en)  </br> </br> **注意：** AEM Formsは現在、6.5.13.0 ～ 6.5.19.0 のバージョンをサポートしています。 古いバージョンを使用している場合は、6.5.13.0 以降のリリースにアップグレードすることをお勧めします。 AEM 6.5.13.0 以降のリリースのインストール手順については、リリースノートを参照してください。 |
 
 ### 手動の緩和手順の使用 {#use-manual-mitigation-steps}
 

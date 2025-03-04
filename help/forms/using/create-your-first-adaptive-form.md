@@ -4,7 +4,7 @@ description: ここでは、インタラクティブでレスポンシブな高�
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 9bb44a58e919fd038c83cab89620256501137bef
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 99%
@@ -42,7 +42,7 @@ Web サイトでは、さまざまな顧客向けに幅広い製品を提供し�
 
 ### 前提条件 {#prerequisite}
 
-* [AEM オーサーインスタンス](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)を設定します。
+* [AEM オーサーインスタンス](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)を設定します。
 * [AEM Forms アドオン](../../forms/using/installing-configuring-aem-forms-osgi.md)をオーサーインスタンスにインストールします。
 * JDBC データベースドライバー（JAR ファイル）をデータベースプロバイダーから取得します。このチュートリアルに記載されている例は、[!DNL MySQL] データベースに基づいています。これらの例では、[!DNL Oracle's] [MySQL JDBC データベースドライバー](https://dev.mysql.com/downloads/connector/j/5.1.html)を使用しています。
 

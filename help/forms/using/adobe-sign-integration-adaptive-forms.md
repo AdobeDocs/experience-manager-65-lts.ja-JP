@@ -8,7 +8,7 @@ docset: aem65
 feature: Adaptive Forms,Foundation Components,Acrobat Sign
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2071'
 ht-degree: 99%
@@ -146,7 +146,7 @@ ht-degree: 99%
 1. **[!UICONTROL Forms 共通設定サービス]を開きます。**
 1. 「**[!UICONTROL 許可]**」フィールドで、「すべてのユーザー - すべてのユーザーに（匿名かログインしているかによらず）添付ファイルのプレビューとフォームの検証と署名を許可」を&#x200B;**選択**&#x200B;して「**[!UICONTROL 保存]」をクリックします。**&#x200B;オーサーインスタンスが [!DNL Adobe Sign] を使用するように設定されます。
 1. 設定を公開します。
-1. [レプリケーション](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/replication.html)を使用して、対応する公開インスタンスに同一の構成を作成します。
+1. [レプリケーション](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/replication.html)を使用して、対応する公開インスタンスに同一の構成を作成します。
 
 これで [!DNL Adobe Sign] が AEM [!DNL Forms] に統合され、アダプティブフォームで使用できるようになりました。[アダプティブフォームで Adobe Sign サービスを使用する](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form)には、上記のとおりアダプティブフォームのプロパティで作成した設定コンテナを指定します。
 
@@ -261,7 +261,7 @@ Adobe Acrobat Sign for Government Solutions チームは、AEM Forms と Adobe A
 1. 「**[!UICONTROL 許可]**」フィールドで、「すべてのユーザー - すべてのユーザーに（匿名かログインしているかによらず）添付ファイルのプレビューとフォームの検証と署名を許可」を&#x200B;**選択**&#x200B;して「**[!UICONTROL 保存]」をクリックします。**&#x200B;オーサーインスタンスが [!DNL Adobe Sign] を使用するように設定されます。
 
 1. 設定を公開します。
-1. [レプリケーション](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/replication.html)を使用して、対応する公開インスタンスに同一の構成を作成します。
+1. [レプリケーション](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/replication.html)を使用して、対応する公開インスタンスに同一の構成を作成します。
 
 これで、[アダプティブフォーム](working-with-adobe-sign.md)または [AEM ワークフローで Adobe Acrobat Sign のフィールドの追加を使用](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)できます。[!DNL Adobe Acrobat Sign] 用に有効化するすべてのアダプティブフォームに、Cloud Service の設定に使用する設定コンテナを追加してください。設定コンテナは、アダプティブフォームのプロパティから指定できます。
 

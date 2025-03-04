@@ -6,7 +6,7 @@ topic-tags: author
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 99%
@@ -36,11 +36,11 @@ ht-degree: 99%
   </tr>
   <tr>
    <td><p>AEM Forms および AEM Forms を他の Adobe 製品と統合するための方法に関する一般的な情報</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/getting-started/introduction-aem-forms.html?lang=en">AEM Forms の概要</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/getting-started/introduction-aem-forms.html?lang=en">AEM Forms の概要</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>AEM Forms 用のすべてのドキュメント</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/getting-started/introduction-aem-forms.html?lang=en">AEM Forms のドキュメント</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/getting-started/introduction-aem-forms.html?lang=en">AEM Forms のドキュメント</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>この製品バージョンに関するパッチアップデート、テクニカルノートおよび追加情報</p> </td>
@@ -189,7 +189,7 @@ Workbench を使用するには、通常は別のコンピューターで AEM Fo
 
 ### タイムアウトの設定 {#configuring-timeout-settings}
 
-デフォルトでは、Workbench は動作状況に関係なく 2 時間後にタイムアウトになります。タイムアウトの設定を編集するには、<a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">管理コンソールヘルプ</a> の「User Management の設定」の「詳細なシステム属性の設定」を参照してください。
+デフォルトでは、Workbench は動作状況に関係なく 2 時間後にタイムアウトになります。タイムアウトの設定を編集するには、<a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">管理コンソールヘルプ</a> の「User Management の設定」の「詳細なシステム属性の設定」を参照してください。
 
 ### HTTPS 経由で接続するための Workbench の設定 {#configuring-workbench-to-connect-over-HTTPS}
 

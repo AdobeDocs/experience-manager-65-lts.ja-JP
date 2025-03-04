@@ -8,7 +8,7 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: eff477824f2d1e5dfe5417835e8ced4b7eb85a0f
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 99%
@@ -39,7 +39,7 @@ AEM には、ワークフローモデルを作成し、ワークフローステ�
 >
 >* ワークフローへの参加については、[ワークフローの使用](/help/sites-authoring/workflows.md)を参照してください。
 >* ワークフローとワークフローインスタンスの管理については、[ワークフローの管理](/help/sites-administering/workflows.md)を参照してください。
->* コミュニティの詳細に関する記事については、[Adobe Experience Manager ワークフローを使用したデジタルアセットの変更](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/assets-workflow.html)を参照してください。
+>* コミュニティの詳細に関する記事については、[Adobe Experience Manager ワークフローを使用したデジタルアセットの変更](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html)を参照してください。
 >* [AEM エキスパートへのワークフローに関する質問のウェビナー](https://communities.adobeconnect.com/p5s33iburd54/)を参照してください。
 >* 情報の場所の変更点については、[ ワークフローのベストプラクティス – 場所 ](/help/sites-developing/workflows-best-practices.md#locations) を参照してください。
 >

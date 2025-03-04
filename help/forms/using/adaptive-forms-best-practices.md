@@ -6,7 +6,7 @@ topic-tags: author
 feature: Adaptive Forms,Foundation Components,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '5538'
 ht-degree: 99%
@@ -104,9 +104,9 @@ AEM プロジェクトのセットアップを完了したら、アダプティ�
 
 * **nosamplecontent** 実行モードは、オーサーノードに対してのみ推奨され、パブリッシュノードに対しては推奨されません。
 * アダプティブフォーム、テーマ、テンプレート、クラウド設定などのアセットのオーサリングはオーサーノード上でのみ実行でき、設定済みのパブリッシュノードで公開できます。
-詳しくは、[フォームとドキュメントの公開と非公開](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)を参照してください。
+詳しくは、[フォームとドキュメントの公開と非公開](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)を参照してください。
 * ドキュメントサービスの運用をサポートするためには、オーサリングとパブリッシュに Forms アドオンパッケージが必要であることから、これを依存関係と見なすことができます。
-Forms 関連のサンプルテンプレート、テーマおよび DOR パッケージのみ必要な場合は、[aemforms-references-* パッケージ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)からダウンロードすることができます。
+Forms 関連のサンプルテンプレート、テーマおよび DOR パッケージのみ必要な場合は、[aemforms-references-* パッケージ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)からダウンロードすることができます。
 
 詳しくは、[アダプティブフォームのオーサリングの概要](/help/forms/using/introduction-forms-authoring.md)のベストプラクティスの節を参照してください。
 
@@ -328,7 +328,7 @@ AEM プロジェクトをある環境から別の環境に移動する必要が�
 
 * Web サーバー圧縮モジュールを経由して、HTML を有効にします。詳しくは、[AEM Forms サーバーのパフォーマンス調整](/help/forms/using/performance-tuning-aem-forms.md)を参照してください。
 * 大規模なフォームではリクエストあたりの呼び出し数の設定を増やします。[大規模フォームおよび複雑なフォームのパフォーマンスの最適化](/help/forms/using/adaptive-forms-best-practices.md#optimizing-performance-of-large-and-complex-forms)を参照してください。
-* [エラーハンドラーにより表示されるカスタムエラーページ](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/platform/customizing-errorhandler-pages.html)を作成します。
+* [エラーハンドラーにより表示されるカスタムエラーページ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html)を作成します。
 * AEM Forms サーバーを保護します。
 
    * `nosamplecontent` 実行モードを使用して、実稼働サーバーにサンプルコンテンツおよびサンプルユーザーがデプロイされていないことを確認します。[AEM の実稼動準備完了モードでの実行](/help/sites-administering/production-ready.md)を参照してください。

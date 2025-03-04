@@ -8,7 +8,7 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 99%
@@ -292,7 +292,7 @@ css.newLoginContentArea {
 1. `/apps/livecycle/core/content/login` に新しい画像を追加します。画像を追加するには、次の手順に従います。
 
    1. WebDAV クライアントをインストールします。
-   1. webDAV クライアントを使用して、`/apps/livecycle/core/content/login` フォルダーに移動します。詳しくは、[WebDAV アクセス](https://experienceleague.adobe.com/docs/experience-manager-65-2025/administering/contentmanagement/webdav-access.html?lang=en)を参照してください。
+   1. webDAV クライアントを使用して、`/apps/livecycle/core/content/login` フォルダーに移動します。詳しくは、[WebDAV アクセス](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/webdav-access.html?lang=en)を参照してください。
 
    1. 新しい画像を追加します。
 

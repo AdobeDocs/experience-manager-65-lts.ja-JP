@@ -8,7 +8,7 @@ topic-tags: interactive-communication
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 99%
@@ -86,7 +86,7 @@ JSON ファイルに保存されたレコードからインタラクティブ通
    1. フォルダーの&#x200B;**[!UICONTROL 名前]**&#x200B;と物理的&#x200B;**[!UICONTROL パス]**&#x200B;を指定します。例えば、`c:\batchprocessing` のように指定します。
    1. **[!UICONTROL 次を使用してファイルを処理]**&#x200B;フィールドで「**[!UICONTROL サービス]**」オプションを選択します。
    1. **[!UICONTROL サービス名]**&#x200B;フィールドで、**[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** サービスを選択します。
-   1. **[!UICONTROL 出力ファイルパターン]**&#x200B;を指定します。例：%F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) は、監視フォルダーが Watched Folder\input フォルダーのサブフォルダー内で入力ファイルを見つけることを指定します。
+   1. **[!UICONTROL 出力ファイルパターン]**&#x200B;を指定します。例：%F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) は、監視フォルダーが Watched Folder\input フォルダーのサブフォルダー内で入力ファイルを見つけることを指定します。
 1. 以下の手順に従って、詳細設定パラメーターを設定します。
    1. 「**[!UICONTROL 詳細]**」タブを開いて、次のカスタムプロパティを追加します。
 
@@ -146,7 +146,7 @@ JSON ファイルに保存されたレコードからインタラクティブ通
    1. フォルダーの&#x200B;**[!UICONTROL 名前]**&#x200B;と物理的&#x200B;**[!UICONTROL パス]**&#x200B;を指定します。例えば、`c:\batchprocessing` のように指定します。
    1. **[!UICONTROL 次を使用してファイルを処理]**&#x200B;フィールドで「**[!UICONTROL サービス]**」オプションを選択します。
    1. **[!UICONTROL サービス名]**&#x200B;フィールドで、**[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** サービスを選択します。
-   1. **[!UICONTROL 出力ファイルパターン]**&#x200B;を指定します。例：%F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) は、監視フォルダーが Watched Folder\input フォルダーのサブフォルダー内で入力ファイルを見つけることを指定します。
+   1. **[!UICONTROL 出力ファイルパターン]**&#x200B;を指定します。例：%F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) は、監視フォルダーが Watched Folder\input フォルダーのサブフォルダー内で入力ファイルを見つけることを指定します。
 1. 以下の手順に従って、詳細設定パラメーターを設定します。
    1. 「**[!UICONTROL 詳細]**」タブを開いて、次のカスタムプロパティを追加します。
 
@@ -170,7 +170,7 @@ JSON ファイルに保存されたレコードからインタラクティブ通
 
 ## REST リクエストを使用した Batch API の呼び出し
 
- [Batch API](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html) は Representational State Transfer（REST）リクエストを通じて呼び出すことができます。これにより、他のユーザーに REST エンドポイントを提供し、API へのアクセス、インタラクティブ通信の処理、保存とカスタマイズのための独自のメソッドを設定できます。独自のカスタム Java™ サーブレットを開発して、AEM インスタンスに API をデプロイできます。
+[Batch API](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html) は Representational State Transfer（REST）リクエストを通じて呼び出すことができます。これにより、他のユーザーに REST エンドポイントを提供し、API へのアクセス、インタラクティブ通信の処理、保存とカスタマイズのための独自のメソッドを設定できます。独自のカスタム Java™ サーブレットを開発して、AEM インスタンスに API をデプロイできます。
 
 Java™ サーブレットをデプロイする前に、インタラクティブ通信があり、対応するデータファイルの準備が整っていることを確認します。次の手順を実行して、Java™ サーブレットの作成とデプロイを行います。
 
@@ -362,4 +362,4 @@ JSON ファイルが `C:\batch\mergedJsonPath.json` にあり、次のインタ�
 
 >[!NOTE]
 >
->デフォルトでは、CRX プロトコルのみが有効になっています。その他のサポートされているプロトコルを有効にするには、[Configuration Manager を使用した事前入力サービスの設定](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en)を参照してください。
+>デフォルトでは、CRX プロトコルのみが有効になっています。その他のサポートされているプロトコルを有効にするには、[Configuration Manager を使用した事前入力サービスの設定](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en)を参照してください。
