@@ -3,9 +3,9 @@ title: ユニバーサルエディター
 description: ユニバーサルエディターの柔軟性と、AEM 6.5 を使用してヘッドレスエクスペリエンスを強化する方法について説明します。
 feature: Developing
 role: Developer
-source-git-commit: 229fdd9f17bdeb1c4cc1a1ba064d285169dc1cbc
+source-git-commit: 1f4024310858c6973681c079439ae82834cf716f
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1264'
 ht-degree: 20%
 
 ---
@@ -33,6 +33,18 @@ ht-degree: 20%
 * Dispatcherと同じホスト上で動作するユニバーサルエディターサービスが、変更内容をAEM オーサーインスタンスに書き戻します。
 
 ![ ユニバーサルエディターを使用したオーサーフロー ](assets/author-flow.png)
+
+## 要件 {#requirements}
+
+ユニバーサルエディターは、以下でサポートされています。
+
+* AEM 6.5 LTS
+   * オンプレミスおよび AMS の両方のホスティングがサポートされています。
+* [AEM 6.5](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) （サービスパック 21 または 22 に機能パック）
+   * オンプレミスおよび AMS の両方のホスティングがサポートされています。
+* [AEM as a Cloud Service](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) （リリース `2023.8.13099` 以降）
+
+このドキュメントでは、ユニバーサルエディターのAEM 6.5 LTS サポートに焦点を当てます。
 
 ## 設定 {#setup}
 
