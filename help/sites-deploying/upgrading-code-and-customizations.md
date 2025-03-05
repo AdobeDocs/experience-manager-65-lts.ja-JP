@@ -10,10 +10,10 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 168e9f5865d20a53f9abed4bb90aceae9a1c7b6a
+source-git-commit: 3d4e458e4c96c547b94c08d100271ca6cf96f707
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 49%
+source-wordcount: '1006'
+ht-degree: 51%
 
 ---
 
@@ -22,18 +22,15 @@ ht-degree: 49%
 アップグレードを計画するときは、実装の次の領域を調査して対処する必要があります。
 
 * [コードベースのアップグレード](#upgrade-code-base)
-* [6.5 のリポジトリ構造への準拠](#align-repository-structure)
-* [AEM のカスタマイズ](#aem-customizations)
 * [手順のテスト](#testing-procedure)
 
 ## 概要 {#overview}
 
-1. **AEM アナライザー** - アップグレード計画の説明と、「AEM アナライザーによるアップグレードの複雑性の評価 [ ページで詳しく説明しているように、AEM アナライザーを実行し ](/help/sites-deploying/pattern-detector.md) す。 Target バージョンのAEMで使用できない API やバンドルに加え、対処する必要がある領域の詳細を含むAEM アナライザーレポートが得られます。 PAEM アナライザーレポートは、コードに互換性のない箇所があることを示します。 何も存在しない場合、デプロイメントはすでに 6.5 LTS 互換です。 6.5 LTS 機能を使用するために新しい開発を行うことは引き続き選択できますが、互換性を維持するためだけの開発は必要ありません。
-
-1. **6.5 LTS のコードベースの開発** - Target バージョンのコードベース専用のブランチまたはリポジトリを作成します。 アップグレード前の互換性の情報を使用して、更新するコードの領域を計画します。
-1. **6.5 LTS Uber Jar でのコンパイル** - 6.5.2025 Uber Jar を指すようにコードベース POM を更新し、それに対してコードをコンパイルします。
-1. **6.5 LTS 環境へのデプロイ** - AEM 6.5 LTS のクリーンなインスタンス（オーサー+ パブリッシュ）を開発環境と QA 環境で立ち上げる必要があります。 更新したコードベースと、現在の実稼動環境にある代表的なコンテンツのサンプルをデプロイする必要があります。
-1. **QA 検証とバグ修正** - QA では、6.5.2025 のオーサーインスタンスとパブリッシュインスタンスの両方でアプリケーションを検証する必要があります。検出されたバグは修正し、6.5 LTS コードベースにコミットする必要があります。 すべてのバグが修正されるまで、必要に応じて開発サイクルを繰り返します。
+1. **AEM アナライザー** - [AEM アナライザーを使用したアップグレードの複雑性の評価 ](/help/sites-deploying/pattern-detector.md) のページで定義されている方法でAEM アナライザーを実行します。 Target バージョンのAEMで使用できない API やバンドルに加え、対処する必要がある領域の詳細を含むAEM アナライザーレポートが得られます。 AEM アナライザーレポートは、コード内の非互換性を示します。 何も存在しない場合は、デプロイメントはAEM 6.5 LTS 互換です。 AEM 6.5 LTS を使用するために新しい開発を行うことは引き続き可能ですが、互換性を保つためだけに開発を行う必要はありません。
+1. **6.5 LTS のコードベースの開発** - Target AEM バージョンのコードベース専用のブランチまたはリポジトリを作成します。 アップグレード前の互換性の情報を使用して、更新するコードの領域を計画します。
+1. **6.5 LTS Uber jar でのコンパイル** - AEM 6.5 LTS Uber jar を指すようにコードベース POM を更新し、それに対してコードをコンパイルします。
+1. **6.5 LTS 環境へのデプロイ** - AEM 6.5 LTS のクリーンなインスタンス（オーサー+ パブリッシュ）を開発環境と QA 環境にセットアップする必要があります。 更新したコードベースと、現在の実稼動環境にある代表的なコンテンツのサンプルをデプロイする必要があります。
+1. **QA 検証とバグ修正** - QA では、AEM 6.5 LTS のオーサーインスタンスとパブリッシュインスタンスの両方でアプリケーションを検証する必要があります。 検出されたバグは修正し、AEM 6.5 LTS コードベースにコミットする必要があります。 すべてのバグが修正されるまで、必要に応じて開発サイクルを繰り返します。
 
 アップグレードを進める前に、AEM 6.5 LTS に対して徹底的にテストされた、安定したアプリケーションコードベースが必要です。
 
@@ -61,23 +58,22 @@ AEM Uber Jar では、すべての AEM API を単一の依存関係として Mav
 >
 >AEM 6.5 とAEM 6.5 LTS Uber Jar のパッケージ化には、わずかな違いがあります。 以下の節を参照してください。
 
-**AEM 6.5.x には、2 種類の Uber Jar があります**
+**AEM 6.5 の Uber Jar**
 
-1. `uber-jar-6.5.x.jar` - AEM 6.5.x のすべてのパブリック API が含まれます
-1. `uber-jar-6.5.x-apis-with-deprecations.jar` - AEM 6.5.x のパブリック API と非推奨 API の両方が含まれています。
+1. `uber-jar-6.5.x.jar` - AEM 6.5 のすべてのパブリック API が含まれます。
+1. `uber-jar-6.5.x-apis-with-deprecations.jar` - AEM 6.5 のパブリック API と非推奨 API の両方が含まれています。
 
-**AEM 6.5.2025.x の Uber Jar**
+**AEM 6.5 LTS 向け Uber Jar**
 
-AEM 6.5.2025.x の場合、Uber Jar にも次の 2 種類があります。
+AEM 6.5 LTS の場合も、次の 2 種類の Uber Jar があります。
 
-1. `uber-jar-6.5.2025.x.jar` - AEM 6.5.2025.x のすべてのパブリック API が含まれます。
-1. `uber-jar-6.5.2025.x-deprecated.jar` - AEM 6.5.2025.x からの非推奨（廃止予定）の API のみが含まれます
+1. `uber-jar-6.6.x-apis.jar` - AEM 6.5 LTS のすべてのパブリック API が含まれます。
+1. `uber-jar-6.6.x-deprecated-apis.jar` - AEM 6.5 LTS から廃止された API のみが含まれます。
 
-**主な違い：AEM 6.5.x とAEM 6.5.2025.x Uber Jar の比較**
+**主な違い：AEM 6.5 とAEM 6.5 LTS Uber Jar**
 
-* AEM 6.5.x では、パブリック API と非推奨（廃止予定） API の両方が必要な場合は、`pom.xml` ファイルに `uber-jar-6.5.x-apis-with-deprecations.jar` して include single jar を使用できます。
-* AEM 6.5.2025.x では、パブリック API と非推奨（廃止予定） API の両方が必要な場合、パブリック API 用の `uber-jar-6.5.2025.x.jar` と非推奨（廃止予定） API 用の `uber-jar-6.5.2025.x-deprecated.jar` という 2 つの異なる jar を含める必要があります。
-* AEM 6.5.2025.x では、パブリック API と非推奨（廃止予定） API の両方が必要な場合、パブリック API 用の `uber-jar-6.5.2025.x.jar` と非推奨（廃止予定） API 用の `uber-jar-6.5.2025.x-deprecated.jar` という 2 つの異なる jar を含める必要があります。
+* AEM 6.5 では、公開 API と非推奨 API の両方が必要な場合は、`pom.xml` ファイルに `uber-jar-6.5.x-apis-with-deprecations.jar` して include single jar を使用できます。
+* AEM 6.5 LTS では、公開 API と非推奨 API の両方が必要な場合、公開 API 用の `uber-jar-6.6.x-apis.jar` と非推奨 API 用の `uber-jar-6.6.x-deprecated-apis.jar` という 2 つの異なる jar を含める必要があります。
 
 **非推奨（廃止予定）の API JAR の Maven 座標**
 
@@ -93,7 +89,7 @@ AEM 6.5.2025.x の場合、Uber Jar にも次の 2 種類があります。
 
 ### 開発者向けメモ {#developer-notes}
 
-* AEM 6.5.2025 には、Google guava ライブラリが標準で含まれていません。必要に応じて、必要なバージョンをインストールできます。
+* AEM 6.5 LTS には、Google guava ライブラリは含まれていません。必要に応じて、必要なバージョンをインストールできます。
 * Sling XSS バンドルで Java HTML Sanitizer ライブラリが使用されるようになりました。HTML コンテンツを安全にレンダリングするには、他の API にデータを渡すには、`XSSAPI#filterHTML()` メソッドを使用する必要があります。
 
 ## 手順のテスト {#testing-procedure}
@@ -102,7 +98,7 @@ AEM 6.5.2025.x の場合、Uber Jar にも次の 2 種類があります。
 
 ### アップグレード手順のテスト {#testing-upgrade-procedure}
 
-ここで説明されているアップグレード手順は、カスタマイズしたランブックに記載されているとおりに開発環境および QA 環境でテストする必要があります（[アップグレードの計画](/help/sites-deploying/upgrade-planning.md)を参照してください）。アップグレードの手順は、すべての手順がアップグレード実行ブックに記載され、アップグレードプロセスがスムーズになるまで繰り返す必要があります
+ここで説明されているアップグレード手順は、カスタマイズしたランブックに記載されているとおりに開発環境および QA 環境でテストする必要があります（[アップグレードの計画](/help/sites-deploying/upgrade-planning.md)を参照してください）。アップグレード手順は、すべてのステップがアップグレードランブックに記載され、アップグレードプロセスが問題なく実行されるようになるまで繰り返す必要があります。
 
 ### 実装テスト領域  {#implementation-test-areas-}
 
