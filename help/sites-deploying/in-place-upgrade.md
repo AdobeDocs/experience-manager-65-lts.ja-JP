@@ -5,9 +5,9 @@ topic-tags: upgrading
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: c3df47efd4b13dcd8061e5cdac32a75fbf36df4b
+source-git-commit: 67bd9b29ccc525111710a397cca5de1c961486ac
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '537'
 ht-degree: 47%
 
 ---
@@ -179,7 +179,7 @@ Where `/path/to/datastore` represents the path to your File Datastore.
 
 >[!NOTE]
 >
->Java 8/11 引数の一部のサポートは、Java 17 で削除されました。[Oracle Java™ 17 ドキュメント ](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) および [AEM 6.5 LTS の Java&amp;trade 引数に関する考慮事項 ](https://git.corp.adobe.com/AdobeDocs/experience-manager-65-lts.en/blob/main/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations) を参照してください。
+>Java 8/11 引数の一部のサポートは、Java 17 で削除されました。[Oracle Java™ 17 ドキュメント ](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) および [AEM 6.5 LTS の Java&amp;trade 引数に関する考慮事項 ](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations) を参照してください。
 
 アップグレードを実行するには、jar ファイルを使用してAEMを起動してインスタンスを起動することが重要です。
 

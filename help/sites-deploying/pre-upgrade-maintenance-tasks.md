@@ -9,10 +9,10 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 2eb9307f37098ee9f57ba9383600f74a5e3b2501
+source-git-commit: b7304709729915dbcc27533caf88b61cd5657a2c
 workflow-type: tm+mt
-source-wordcount: '1187'
-ht-degree: 83%
+source-wordcount: '1117'
+ht-degree: 81%
 
 ---
 
@@ -32,17 +32,15 @@ ht-degree: 83%
 * [オフラインでのリビジョンクリーンアップの実行](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-offline-revision-cleanup)
 * [データストアのガベージコレクションの実行](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-datastore-garbage-collection)
 * [必要に応じてデータベーススキーマをアップグレード](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#upgradethedatabaseschemaifneeded)
-* [アップグレードの妨げになる可能性のあるユーザーの削除](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#delete-users-that-might-hinder-the-upgrade)
-
 * [ログファイルのローテーション](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#rotate-log-files)
 
 ## インデックスの定義 {#index-definitions}
 
-AEM サービスパック 22 に含まれるAEM 6.5 サービスパックでリリースされた必須のインデックス定義が少なくともインストールされていることを確認します（詳しくは、[AEM 6.5 servicepack リリースノート ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/release-notes/release-notes) を参照）。
+AEM サービスパック 22 以前に提供されたAEM 6.5 サービスパックでリリースされた必須のインデックス定義がインストールされていることを確認してください。 （詳しくは、[AEM 6.5 servicepack リリースノート ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/release-notes/release-notes) を参照してください）。
 
 ## 十分なディスク領域の確保 {#ensure-sufficient-disk-space}
 
-アップグレードを実行する際には、コンテンツとコードのアップグレードアクティビティに加えて、リポジトリの移行を実行する必要があります。この移行により、新しいセグメント Tar 形式でリポジトリのコピーが作成されます。その結果、大容量になり得るリポジトリの 2 番目のバージョンを保持するために十分なディスク領域が必要になります。
+アップグレードを実行する際は、十分なディスク容量があることを確認します。
 
 ## AEM の完全なバックアップ {#fully-back-up-aem}
 
@@ -56,7 +54,6 @@ jar ファイルから AEM を起動すると、`crx-quickstart/conf` の下に 
 
 `WorkflowPurgeTask` タスクと `com.day.cq.audit.impl.AuditLogMaintenanceTask` タスクには個別の OSGi 設定が必要であり、この設定がない場合は機能しません。アップグレード前のタスクの実行中にこれらのタスクが失敗した場合、最も考えられる原因は、タスクに設定がないことです。したがって、これらのタスクに OSGi 設定を追加するか、タスクを実行しない場合はアップグレード前の最適化タスクリストから完全に削除してください。ワークフローのパージタスクの設定に関するドキュメントは[ワークフローインスタンスの管理](/help/sites-administering/workflows-administering.md)で、監査ログのメンテナンスタスクの設定に関するドキュメントは [AEM 6 の監査ログのメンテナンス](/help/sites-administering/operations-audit-log.md)で参照できます。
 
-CQ 5.6 でのワークフローと監査ログのパージ、AEM 6.0 での監査ログのパージについては、[ワークフローと監査ノードのパージ](https://helpx.adobe.com/jp/experience-manager/kb/howtopurgewf.html)を参照してください。
 
 ## アップグレード前のタスクのインストール、設定および実行 {#install-configure-run-pre-upgrade-tasks}
 
@@ -144,7 +141,7 @@ TarMK コールドスタンバイを使用している場合は、すべての�
 >
 >この手順は、TarMK インストール環境でのみ必要です。
 
-TarMK を使用している場合は、アップグレードの前にオフラインでのリビジョンクリーンアップを実行してください。これにより、リポジトリの移行ステップが作成され、後続のアップグレードタスクがより迅速に実行されます。また、アップグレード完了後に、オンラインでのリビジョンクリーンアップが正常に実行されるようになります。オフラインでのリビジョンクリーンアップの実行について詳しくは、[オフラインでのリビジョンクリーンアップの実行](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup)を参照してください。
+TarMK を使用している場合は、アップグレードの前にオフラインでのリビジョンクリーンアップを実行してください。これにより、リポジトリの移行ステップが作成され、後続のアップグレードタスクがより迅速に実行されます。また、アップグレード完了後に、オンラインでのリビジョンクリーンアップが正常に実行されるようになります。オフラインでのリビジョンクリーンアップの実行について詳しくは、[オフラインでのリビジョンクリーンアップの実行](/help/sites-deploying/revision-cleanup.md#revision-cleanuprevision-cleanup)を参照してください。
 
 ## データストアのガベージコレクションの実行 {#execute-datastore-garbage-collection}
 
