@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS のドキュメントを参照して、その仕組みと機能を確認してください。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 8253f7c3b779f9ef08a15c9a5dfc9ae1b437756a
+source-git-commit: d4f89be13039e53564cd3a3148a4b845bcc183a7
 workflow-type: tm+mt
-source-wordcount: '7044'
+source-wordcount: '7052'
 ht-degree: 98%
 
 ---
@@ -1466,6 +1466,7 @@ ht-degree: 98%
          + [AEM 6.5 LTS へのアップグレード](/help/sites-deploying/upgrade.md)
          + [アップグレードの計画](/help/sites-deploying/upgrade-planning.md)
          + [パターン検出を使用したアップグレードの複雑性の評価](/help/sites-deploying/pattern-detector.md)
+         + [AEM Analyzer を使用したアップグレードの複雑性の評価](/help/sites-deploying/aem-analyzer.md)
          + [AEM 6.5 LTS における後方互換性](/help/sites-deploying/backward-compatibility.md)
          + [アップグレード手順](/help/sites-deploying/upgrade-procedure.md)
          + [インプレースアップグレードの実行](/help/sites-deploying/in-place-upgrade.md)

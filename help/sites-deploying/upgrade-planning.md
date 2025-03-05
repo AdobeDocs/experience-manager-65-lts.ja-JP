@@ -9,7 +9,7 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: ac803ef9ac38380d7ce7fdf4490c428fd0039688
+source-git-commit: d4f89be13039e53564cd3a3148a4b845bcc183a7
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 61%
@@ -112,9 +112,9 @@ New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/rel
 
 ### アップグレードの複雑性の評価 {#assessing-upgrade-complexity}
 
-Adobeのお客様がAEM環境に適用するカスタマイズの量と性質には様々な種類があるので、アップグレードで期待される全体的な作業レベルを判断するには、事前にしばらく時間を置くことが重要です。 [AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) 用AEM アナライザーは、アップグレードの複雑さを評価するのに役立ちます。
+Adobeのお客様がAEM環境に適用するカスタマイズの量と性質には様々な種類があるので、アップグレードで期待される全体的な作業レベルを判断するには、事前にしばらく時間を置くことが重要です。 [AEM 6.5 LTS](/help/sites-deploying/aem-analyzer.md) 用AEM アナライザーは、アップグレードの複雑さを評価するのに役立ちます。
 
-AEM 6.5 LTS 用の [AEM アナライザーは ](/help/sites-deploying/pattern-detector.md) ほとんどの場合、アップグレード中に予想される作業について、かなり正確な予測を提供します。 ただし、互換性のない変更点が存在する、より複雑なカスタマイズやデプロイメントの場合は、[ インプレースアップグレードの実行 ](/help/sites-deploying/in-place-upgrade.md) の手順に従い開発インスタンスをAEM 6.5 LTS にアップグレードできます。 完了したら、この環境で全体的なスモークテストを実行します。この演習の目的は、テストケースのインベントリを完全に作成し、欠陥の正式なインベントリを作成することではなく、AEM 6.5 LTS 互換のコードをアップグレードするために必要な作業量の概算を提供することです。 [AEM アナライザー ](/help/sites-deploying/pattern-detector.md) および前の節で決定したアーキテクチャの変更と組み合わせると、アップグレードを計画するプロジェクト管理チームに、大まかな見積もりを提供できます。
+AEM 6.5 LTS 用の [AEM アナライザーは ](/help/sites-deploying/pattern-detector.md) ほとんどの場合、アップグレード中に予想される作業について、かなり正確な予測を提供します。 ただし、互換性のない変更点が存在する、より複雑なカスタマイズやデプロイメントの場合は、[ インプレースアップグレードの実行 ](/help/sites-deploying/in-place-upgrade.md) の手順に従い開発インスタンスをAEM 6.5 LTS にアップグレードできます。 完了したら、この環境で全体的なスモークテストを実行します。この演習の目的は、テストケースのインベントリを完全に作成し、欠陥の正式なインベントリを作成することではなく、AEM 6.5 LTS 互換のコードをアップグレードするために必要な作業量の概算を提供することです。 [AEM アナライザー ](/help/sites-deploying/aem-analyzer.md) および前の節で決定したアーキテクチャの変更と組み合わせると、アップグレードを計画するプロジェクト管理チームに、大まかな見積もりを提供できます。
 
 ### アップグレードおよびロールバックのランブックの作成 {#building-the-upgrade-and-rollback-runbook}
 
