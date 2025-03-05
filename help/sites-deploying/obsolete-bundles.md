@@ -8,7 +8,7 @@ content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 34693070f2fcb5b468c72118cd5d5fc26d6d9dd0
+source-git-commit: 5b31b74b89334efcae647c216d2ae2be35545b22
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 15%
@@ -17,7 +17,7 @@ ht-degree: 15%
 
 # アップグレード後にアンインストールされる廃止されたバンドルの一覧{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
 
-AEM 6.5.2025 にアップグレードすると、アップグレードされたAEM 6.5 servicepack のバージョンに応じて、以下のバンドルが自動的にアンインストールされます。
+AEM 6.5 LTS にアップグレードすると、アップグレードされたAEM 6.5 servicepack のバージョンに応じて、以下のバンドルが自動的にアンインストールされます。
 
 * com.adobe.cq.social.cq-social-activitystreams
 * com.adobe.cq.social.cq-social-as-provider
@@ -95,7 +95,7 @@ AEM 6.5.2025 にアップグレードすると、アップグレードされたA
 * org.apache.jackrabbit.oak-solr-osgi
 * com.adobe.cq.cq-searchpromote-integration
 
-次のバンドルは、新しいAEM 6.5.2025 インスタンスには含まれていません。 アップグレード後、これらのバンドルが非アクティブ状態になる場合があります。 これらは手動で削除できます。
+次のバンドルは、新しいAEM 6.5 LTS インスタンスには含まれていません。 アップグレード後、これらのバンドルが非アクティブ状態になる場合があります。 これらは手動で削除できます。
 
 * org.apache.sling.atom.taglib
 * com.github.jknack.handlebars
