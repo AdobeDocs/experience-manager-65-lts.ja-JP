@@ -3,7 +3,8 @@ title: アダプティブフォームでのカスタム関数の作成と追加
 description: AEM Forms は、ユーザーがルールエディター内で独自の関数を作成および使用できるカスタム関数をサポートしています。
 feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 40329e80-d794-4e43-8ed4-d88ce3c48751
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 100%

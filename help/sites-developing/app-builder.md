@@ -4,7 +4,8 @@ description: Adobe Developer App Builder を使用した  [!DNL Adobe Experience
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: f9b3df58-c94b-4143-aeec-85ff031bac2e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 99%
@@ -64,4 +65,3 @@ App Builder には、開発者向けのビデオとドキュメントが用意�
 開発を開始する準備はできていますか？迅速に作業を進めるのに役立つサンプルアプリケーションが多数用意されています。
 
 * [Adobe Developer web サイトの App Builder コードラボ](https://developer.adobe.com/app-builder/docs/resources/?lang=ja)
-

@@ -6,7 +6,8 @@ topic-tags: author
 feature: Adaptive Forms,Foundation Components,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: b87629fa-85a9-4024-963a-4761bc093e62
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '5538'
 ht-degree: 99%
@@ -416,6 +417,3 @@ AEM Forms（Adobe Experience Manager Forms）でカスタムクライアント�
 * **効率的な開発プロセス：**
    * モジュール性により、開発者は特定の機能に専念できます。
    * コードベース全体の複雑さを軽減して開発者の負担を軽減し、より効率的な開発プロセスを実現します。
-
-
-

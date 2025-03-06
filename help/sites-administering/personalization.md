@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
-source-git-commit: 2a406ca2870e241539819ae62c6a14904ee71211
+exl-id: 558cf29b-34f4-4ead-b8d6-67ef8aaa5dc5
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1528'
 ht-degree: 100%
@@ -166,4 +167,3 @@ ht-degree: 100%
 | ログアウト | 現在ログインしているユーザーを示し、ログアウトするためのリンクを提供します。 |
 | タグクラウド | Web サイト内の一連のタグをグラフィカルに表現したタグクラウドです。 |
 | ティーザー | メインページに表示される 1 つのコンテンツ（通常は画像）であり、その基になるコンテンツにアクセスするようにユーザーを「誘導」します。 |
-

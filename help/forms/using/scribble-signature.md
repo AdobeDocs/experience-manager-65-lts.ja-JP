@@ -9,7 +9,8 @@ docset: aem65
 feature: Forms Designer,Designer
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b364d618-57fa-4e43-a1cd-049b7313e6a6
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 100%
@@ -71,7 +72,7 @@ HTML5 フォームはタッチデバイスでの使用が増加しており、�
 
 >[!NOTE]
 >
->iPad では、デフォルトで、位置情報の埋め込みは必須です。
+iPad では、デフォルトで、位置情報の埋め込みは必須です。
 
 iPad では、位置情報アイコンはデフォルトで表示されず、位置情報は「**OK**」をクリックすると自動的に埋め込まれます。
 

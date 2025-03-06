@@ -6,13 +6,13 @@ content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 2645745a83477509bac81cb5e122eabc44db3961
+exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 23%
 
 ---
-
 
 # AEM Analyzer を使用したアップグレードの複雑性の評価 {#assessing-the-upgrade-complexity-with-the-aem-analyzer}
 
@@ -235,8 +235,3 @@ AEM アナライザーレポートの残りの有効期限がサイドパネル�
 
 * 削除操作で「*一部のパスが正常に削除されていません。ログを確認して、もう一度試してください。*」と表示されます。 ただし、パスが実際に削除されている場合は、このメッセージを無視しても問題ありません
 * 同様に、パッケージ操作が次のエラーで失敗する場合があります。*「目的の操作を実行中にエラーが発生しました。ログを確認して、もう一度試してください。*」と表示されます。 これは、セッションの有効期限が切れていることが原因である可能性があります。 このような場合は、操作を再試行すると問題が解決します。
-
-
-
-
-

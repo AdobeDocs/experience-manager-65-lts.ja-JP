@@ -3,8 +3,9 @@ title: JEE 上の AEM Forms のカスタムコンポーネント API のトラ�
 description: TransactionRecorder API を使用してカスタムコンポーネントのトランザクションを記録する方法について説明します。
 feature: Transaction Reports
 role: Admin, User, Developer
-solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+solution: Experience Manager, Experience Manager Forms
+exl-id: 346ebc2a-ac8c-48e6-a80b-1c0e34a7b3ff
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 100%

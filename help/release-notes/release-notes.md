@@ -1,13 +1,13 @@
 ---
 title: Adobe Experience Manager 6.5 LTS の最新のリリースノート
 description: Adobe Experience Manager 6.5 LTS の最新のリリースノートです。
-source-git-commit: 6a69d4e143c54b22127a1e1ff3546898fcdd0b2d
+exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
+source-git-commit: 9bbd7acd498a1a0614db246f9d1326a62c199806
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 40%
 
 ---
-
 
 # Adobe Experience Manager 6.5 LTS の最新のリリースノート {#release-notes}
 
@@ -111,3 +111,4 @@ Quickstart は、サーブレットエンジンとして Eclipse Jetty 11.0.x �
 
 * [licensing.adobe.com からの製品ダウンロード](https://licensing.adobe.com/)
 * [アドビカスタマーサポートに連絡](https://experienceleague.adobe.com/ja/docs/customer-one/using/home)。
+

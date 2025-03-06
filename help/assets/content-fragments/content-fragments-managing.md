@@ -4,7 +4,8 @@ description: ヘッドレスコンテンツの基礎となる AEM コンテン�
 feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: cb22ff03-6de1-4cab-8a3e-d3d0fa1d29e2
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1712'
 ht-degree: 100%

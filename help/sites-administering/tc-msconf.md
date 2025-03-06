@@ -4,7 +4,8 @@ description: AEM を Microsoft Translator に接続して翻訳ワークフロ�
 feature: Language Copy
 role: Admin
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 80d3540a47afd9c9cc09e7913b8d27065833c180
+exl-id: e4beda86-2d74-44b9-a5f4-e3671ba9a2da
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 100%

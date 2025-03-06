@@ -4,7 +4,8 @@ description: AEM における特定のデプロイメントタスクの実行方
 feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 343eefa0e1351cbfc296a883107f0e9d8719178b
+exl-id: c316a5d6-0e4a-4710-b4d0-3467f1d5085b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '43'
 ht-degree: 100%

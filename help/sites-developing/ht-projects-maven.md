@@ -4,7 +4,8 @@ description: このドキュメントでは、Apache Maven に基づいて AEM �
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ddc629ac-cf76-4608-9e9b-c8bd3e89da3c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 100%

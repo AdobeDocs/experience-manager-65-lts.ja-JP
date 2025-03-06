@@ -4,7 +4,8 @@ description: AEM Forms は Adobe Analytics と統合されているので、公�
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 1444b0fc0811cbb187d2a4d83b626444e44ef73f
+exl-id: 5d1bd8c9-2d9b-47a5-9204-9328eadfb102
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1809'
 ht-degree: 99%

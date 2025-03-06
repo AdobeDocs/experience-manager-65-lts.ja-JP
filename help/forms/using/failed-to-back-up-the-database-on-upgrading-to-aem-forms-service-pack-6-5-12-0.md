@@ -4,14 +4,15 @@ description: Experience Manager 6.5.12.0 にアップグレードして「Upgrad
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: afc09a9f-58ef-4292-a2f2-b62d3246c006
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '101'
-ht-degree: 30%
+ht-degree: 39%
 
 ---
 
-# MySQL の 6.5.12.0 へのアップグレード中にデータベースのバックアップに失敗しました {#issue}
+# MySQL 用に 6.5.12.0 にアップグレードする際にデータベースをバックアップできない {#issue}
 
 Experience Manager 6.5.12.0 にアップグレードして「Upgrade MySQL」をクリックすると、Configuration Manager で以前のExperience Manager Forms Database のバックアップに失敗し、次のエラーが表示されます。
 

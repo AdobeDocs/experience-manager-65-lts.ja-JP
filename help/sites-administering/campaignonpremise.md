@@ -8,13 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a3108797-8085-4683-971f-509e7bfa06b0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 100%
 
 ---
-
 
 # AEM 6.5 と Adobe Campaign Classic の統合 {#integrating-campaign-classic}
 
@@ -204,7 +204,7 @@ Externalizer が設定され、Adobe Campaign がコンテンツにアクセス�
 
 >[!NOTE]
 >
->パブリッシュインスタンスは、Adobe Campaign サーバーからアクセス可能である必要があります。`localhost:4503` または Adobe Campaign が到達できない別のサーバーを指している場合、AEM からの画像は Adobe Campaign コンソールに表示されません。
+パブリッシュインスタンスは、Adobe Campaign サーバーからアクセス可能である必要があります。`localhost:4503` または Adobe Campaign が到達できない別のサーバーを指している場合、AEM からの画像は Adobe Campaign コンソールに表示されません。
 
 ## AEM での campaign-remote ユーザーを設定 {#configure-user}
 

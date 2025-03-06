@@ -4,7 +4,8 @@ description: GraphQL とコンテンツキャッシュを有効にしてコマ�
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7da2c607-b407-4e4b-bfba-bfaa78aff475
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 100%

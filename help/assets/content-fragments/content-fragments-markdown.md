@@ -4,7 +4,8 @@ description: コンテンツフラグメントエディターでマークダウ�
 feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 5ca53958-dfcd-4058-a04c-c750ab4d9a6e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 100%
@@ -165,7 +166,7 @@ ht-degree: 100%
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-コードの範囲を示すには、バッククォート（&grave;）で囲みます。事前に書式設定されたコードブロックとは異なり、コード範囲は通常の段落内のコードを示します。
+コードの範囲を示すには、バッククォート（`）で囲みます。事前に書式設定されたコードブロックとは異なり、コード範囲は通常の段落内のコードを示します。
 
 例：
 

@@ -8,7 +8,8 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e64a3b6f-7248-4426-9f13-f703eab3632d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1710'
 ht-degree: 100%
@@ -281,5 +282,3 @@ AEM Forms 環境には、環境が設定された時点からのデータが含�
 * **[!UICONTROL 同期]**：埋め込まれたプロセスレポートリポジトリを AEM Forms データベースと同期します。
 * **[!UICONTROL ヘルプ]**：プロセスレポートに関するヘルプドキュメントを表示します。
 * **[!UICONTROL ログアウト]**：プロセスレポートからログアウトします
-
-

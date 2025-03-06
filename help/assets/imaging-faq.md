@@ -8,7 +8,8 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 feature: Asset Management,Renditions
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9f95a54d-6c5e-44c1-965e-631ec7487308
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3322'
 ht-degree: 100%
@@ -442,4 +443,3 @@ PNG は可逆形式なので、以前配信されていた WebP および AVIF �
 スマートイメージングでは、画質レベルに応じた非可逆変換をサポートするようになりました。会社の設定を通じて画質を 100 に設定するか、画像の URL パスに `qlt=100` を追加して、可逆変換を引き続き使用できます。
 
 +++
-

@@ -8,7 +8,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: eded255b54ff83f60f73cece8824c778d3a87680
+exl-id: ba02f9b1-209e-42f2-b1df-2ed64fc9fdbc
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1716'
 ht-degree: 100%
@@ -195,4 +196,3 @@ https://lcserver:8080 などのコンピューター名を使用してサーバ�
    ![ユーザーグループの検索](/help/forms/using/assets/search-user-group.png)
 1. 必要に応じて、役割をユーザーまたはグループに割り当てます。
    ![ユーザーの役割の割り当て](/help/forms/using/assets/user-role-assign.png)
-

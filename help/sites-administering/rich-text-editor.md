@@ -5,7 +5,8 @@ contentOwner: AG
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: e12f12862c31cef81b2808897fab5cf8e19dfa86
+exl-id: 5511817e-dcf8-463d-8e62-cbbef64ad162
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2817'
 ht-degree: 99%
@@ -384,4 +385,3 @@ CRXDE に保存されていてページにレンダリングされていない�
 **管理者が利用できる設定を、作成者が利用できない**
 
 インターフェイス設定の更新が管理者には反映されているが作成者アカウントには反映されていない場合、設定ノードに `config` という名前が付けられていないか確認してください。[`configPath`プロパティ](/help/sites-developing/components-basics.md#cq-inplaceediting)を使用します。
-

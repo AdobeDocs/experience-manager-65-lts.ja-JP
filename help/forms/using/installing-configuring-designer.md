@@ -4,7 +4,8 @@ description: WorkBench にバンドルされている Designer は、スタン�
 role: Admin, User, Developer
 feature: Forms Designer,Designer
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 1444b0fc0811cbb187d2a4d83b626444e44ef73f
+exl-id: 526bbc59-62c3-4e6d-a938-e368d07fe6b0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 77%
@@ -118,4 +119,3 @@ AEM Forms Designer でスタンドアロンのインストーラーを使用す�
       1. Designer を開き、「ヘルプ」に移動し、「Designer について」をクリックすると、Designer のバージョン情報とビット情報が表示されます。例えば、次に示すように、バージョンの最後に 64 ビットと記載されていることがわかります。
          `6.5.21.20240522.1.161 | 64 bit`
       1. Designer を開くと、左上に、製品名と 64 ビット情報を含むブランディングアイコンが表示されます。
-

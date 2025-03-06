@@ -9,7 +9,8 @@ legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a6121f570f7840c9b7a63d10c7a95cd2894fe4ec
+exl-id: 3b3cff43-4edc-4250-8e6d-08eb5906ffcd
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 100%
@@ -129,4 +130,3 @@ AEM で開発を行う場合は、編集可能テンプレートを使用する�
 テンプレートの `jcr:content` ノードの `cq:allowedTemplates` プロパティを使用すると、このテンプレートを使用するすべての新規作成ページにこの設定を適用できます。
 
 例えばテンプレート階層に対してさらに制約を追加する場合は、テンプレートの `allowedParents/allowedChildren` プロパティを使用できます。その後、テンプレート T から作成されたページが、テンプレート T から作成されたページと親子である必要があることを明示的に指定できます。
-

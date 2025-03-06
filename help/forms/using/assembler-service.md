@@ -4,7 +4,8 @@ description: Assembler サービスでは、PDF ドキュメントや XDP ドキ
 feature: Document Services
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1444b0fc0811cbb187d2a4d83b626444e44ef73f
+exl-id: 5e1c5e07-1848-4784-9bdc-4d3b464baebe
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2159'
 ht-degree: 100%

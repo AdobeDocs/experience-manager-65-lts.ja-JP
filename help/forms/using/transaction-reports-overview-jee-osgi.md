@@ -4,8 +4,9 @@ description: 送信されたすべてのフォーム、送信されたドキュ�
 topic-tags: forms-manager
 feature: Transaction Reports
 role: Admin, User, Developer
-solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+solution: Experience Manager, Experience Manager Forms
+exl-id: 4a075532-5ad9-4b1d-9e04-c0b80d215e00
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 100%

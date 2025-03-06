@@ -3,8 +3,9 @@ title: JEE における AEM Forms のトランザクションレポートの概�
 description: 送信されたフォーム、レンダリングされたフォーム、別の形式に変換されたフォームの合計数を保持します
 feature: Transaction Reports
 role: Admin, User, Developer
-solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+solution: Experience Manager, Experience Manager Forms
+exl-id: 4dd61c94-0108-49e8-a6c0-dd77e7c09cf1
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 100%

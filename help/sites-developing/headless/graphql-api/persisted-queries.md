@@ -4,7 +4,8 @@ description: Adobe Experience Manager で GraphQL クエリを永続化してパ
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 686d5510-8cdb-49eb-9ed0-f360be9bdc6d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 100%

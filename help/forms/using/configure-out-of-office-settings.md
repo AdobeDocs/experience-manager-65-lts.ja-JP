@@ -4,7 +4,8 @@ description: 不在設定を Adobe Experience Manager Forms インスタンス�
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ea10d2e1-9f17-4757-ae2e-67447ff0ad0a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 100%

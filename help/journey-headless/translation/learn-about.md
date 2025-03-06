@@ -4,7 +4,8 @@ description: ヘッドレスの概念、AEM へのマッピング方法、AEM �
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
 role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b81293da-772a-4ff1-8606-cec92d8cbd72
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 100%

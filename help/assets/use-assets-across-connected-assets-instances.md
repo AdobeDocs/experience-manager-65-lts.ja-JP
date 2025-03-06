@@ -7,7 +7,8 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 61a1c41a-7aec-4ffb-b622-905b3ca62c1b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3909'
 ht-degree: 100%
@@ -367,4 +368,3 @@ Connected Assets の設定後、[!DNL Dynamic Media] アセットは、[!DNL Sit
   ![アセットのリモート参照の再試行に失敗](assets/reference-report-failure.png)
 
 * Google Chrome で Cookie が Sites サーバーから Assets サーバーに送信されない場合、これは Assets 接続が HTTPS を介していないことが理由です。Assets インスタンスで HTTPS を使用しない場合、Assets サーバーでの認証後は、`SameSite=None` ヘッダーを応答に追加できません。
-

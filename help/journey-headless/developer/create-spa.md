@@ -4,7 +4,8 @@ description: Adobe Experience Manager（AEM）ヘッドレス開発者ジャー�
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer
-source-git-commit: 71b7f46de3619605c8a5aedc496cfb85ed582f59
+exl-id: 47e73efa-997d-44d9-bb41-6f550eac137a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1248'
 ht-degree: 100%

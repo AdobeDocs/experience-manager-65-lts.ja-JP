@@ -6,7 +6,8 @@ contentOwner: Rick Brough
 solution: Experience Manager, Experience Manager Assets
 role: User, Admin
 feature: Collaboration,Dynamic Media Classic
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ee098fae-cc6f-4c6e-8475-1737134543df
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1014'
 ht-degree: 100%
@@ -160,4 +161,3 @@ Experience League 提供の Dynamic Media ニュースレターは、Dynamic Med
    * お客様のリッチメディア戦略の策定をサポートできるよう、アドビのオンデマンドウェビナーシリーズについて説明します。
    * 主要なリッチメディア使用例とそれに対応するアドビのソリューションについて
    * その他多数
-
