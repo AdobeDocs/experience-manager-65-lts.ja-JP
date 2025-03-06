@@ -4,10 +4,10 @@ description: AEM の IMS 統合の設定方法について説明します
 feature: Security
 role: Admin
 exl-id: 05ba39fc-4b53-43c0-9a9f-7da3293b1ca2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 100%
+source-wordcount: '397'
+ht-degree: 95%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->アドビのお客様は、[Adobe Developer Console](https://developer.adobe.com/console) を使用すると、様々な API へのアクセスを可能にする資格情報を生成できます。お客様は、OAuth サーバー間からシングルページアプリまで、様々な資格情報タイプから選択できます。資格情報タイプのサービスアカウント（JWT）は、サービスパック 20 では OAuth サーバー間資格情報に代わって非推奨（廃止予定）になりました。この変更は、[ダウンロード](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aem.html?package=/content/software-distribution/jp/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip)できるホットフィックスを使用して、サービスパック 11 からサービスパック 20 までの古いサービスパックに移植できます。
+>アドビのお客様は、[Adobe Developer Console](https://developer.adobe.com/console) を使用すると、様々な API へのアクセスを可能にする資格情報を生成できます。お客様は、OAuth サーバー間からシングルページアプリまで、様々な資格情報タイプから選択できます。資格情報タイプのサービスアカウント（JWT）は非推奨（廃止予定）になり、OAuth サーバー間資格情報に置き換わりました。
 
 Adobe Experience Manager（AEM）は、他の多くのアドビソリューションと統合できます。例えば、Adobe Target、Adobe Analytics などです。
 

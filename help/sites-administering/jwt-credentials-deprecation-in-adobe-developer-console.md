@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: 7b6b02fd-fcb2-45ae-a239-e0c68de2bcbb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 100%
+source-wordcount: '352'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 **アクション**：AEM で OAuth 資格情報をサポートするようになったので、設定を移行します。
 
-**関連する AEM バージョン**：Adobe Managed Services（サービスパック 21 以降）。
+**関連するAEMのバージョン**:Adobe Managed Services。
 
 AEM のお客様は、AEM を使用して他のすべてのアドビソリューションとの統合を設定します。例えば、Adobe Target、Adobe Analytics などです。
 
@@ -44,6 +44,6 @@ AEM のお客様は、AEM を使用して他のすべてのアドビソリュー
 
 **アクション**：JWT 資格情報から OAuth 資格情報に移行できるタイミングを確認します。
 
-**関連する AEM バージョン**：Adobe Managed Services（サービスパック 21 以降）。
+**関連するAEMのバージョン**:Adobe Managed Services。
 
 お客様は Adobe Developer Console プロジェクトを作成すると、[Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) を呼び出すことができます。非推奨の JWT 資格情報の有効期限が 2025年1月に切れる前に、Adobe Developer プロジェクトの資格情報を OAuth サーバー間資格情報タイプに移行する必要があります。

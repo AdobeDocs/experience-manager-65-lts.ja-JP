@@ -6,13 +6,12 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS のドキュメントを参照して、その仕組みと機能を確認してください。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM 6.5 LTS
-source-git-commit: d4f89be13039e53564cd3a3148a4b845bcc183a7
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '7052'
-ht-degree: 98%
+source-wordcount: '6816'
+ht-degree: 97%
 
 ---
-
 
 # Adobe Experience Manager 6.5 LTS ドキュメント {#content}
 
@@ -305,7 +304,6 @@ ht-degree: 98%
       + [Dynamic Media アセットを公開する](/help/assets/publishing-dynamicmedia-assets.md)
       + [Dynamic Media で選択的公開を使用する](/help/assets/selective-publishing.md)
       + [Dynamic Media を使用した CDN キャッシュの無効化](/help/assets/invalidate-cdn-cache-dynamic-media.md)
-      + [Dynamic Media Classic を使用した CDN キャッシュの無効化](/help/assets/invalidate-cdn-cache-dm-classic.md)
       + [一括アセット移行用の機能パック 18912 をインストールする](/help/assets/bulk-ingest-migrate.md)
       + [セレクターを操作する](/help/assets/working-with-selectors.md)
    + Assets の拡張 {#extending}
@@ -445,20 +443,7 @@ ht-degree: 98%
          + [OSGi での Forms 中心のワークフローのインストールと設定](/help/forms/using/installing-configuring-forms-centric-workflow-on-osgi.md)
          + [インタラクティブ通信をインストールして設定する](/help/forms/using/installing-configuring-intreactive-communication-correspondence-management.md)
          + [インストールサービスのフォームの自動コンバージョンサービスと設定](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=ja)
-      + AEM Forms の JEE へのインストール {#jee-installation}
-         + [JEE 上の AEM Forms でサポートされているプラットフォーム](/help/forms/using/aem-forms-jee-supported-platforms.md)
-         + [JEE 上における AEM Forms のインストールおよびデプロイ（JBoss Turnkey を使用）](https://www.adobe.com/go/learn_aemforms_installTurnkey_65_jp)
-         + [AEM Forms Document Security サーバーのインストールと設定](/help/forms/using/installing-and-configuring-the-document-security-server.md)
-         + [AEM Forms のインストールの準備（シングルサーバー）](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65_jp)
-         + [JEE 上の Adobe Experience Manager Forms のインストールおよびデプロイ（JBoss 版）](https://www.adobe.com/go/learn_aemforms_installJBoss_65_jp)
-         + [JEE 上の Adobe Experience Manager Forms のインストールおよびデプロイ（WebSphere 版）](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_jp)
-         + [JEE 上の AEM Forms のインストールおよびデプロイ（WebLogic 版）](https://www.adobe.com/go/learn_aemforms_installWebLogic_65_jp)
-         + [AEM Forms ワークベンチのインストール](/help/forms/using/install-workbench.md)
-         + [Designer のインストールと設定](/help/forms/using/installing-configuring-designer.md)
-         + [AEM Forms のインストールの準備（サーバークラスタ）](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_65_jp)
-         + [JBoss クラスターでの JEE 上の Adobe Experience Manager Forms の設定](https://www.adobe.com/go/learn_aemforms_clusterJBoss_65_jp)
-         + [WebSphere クラスターでの JEE 上の Adobe Experience Manager Forms の設定](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_65_jp)
-         + [WebLogic クラスターでの JEE 上の Adobe Experience Manager Forms の設定](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_65_jp)
+      + [Designer のインストールと設定](/help/forms/using/installing-configuring-designer.md)
       + AEM Forms の設定 {#configure-aem-forms}
          + [AEM Forms サーバーのパフォーマンスチューニング](/help/forms/using/performance-tuning-aem-forms.md)
          + [アダプティブフォームのキャッシュの設定](/help/forms/using/configure-adaptive-forms-cache.md)
@@ -471,17 +456,10 @@ ht-degree: 98%
    + AEM Forms をアップグレード {#upgrade-aem-forms}
       + [有効なアップグレードパス](/help/forms/using/upgrade.md)
       + OSGi での AEM Forms のアップグレード {#aem-forms-osgi-upgrade}
-         + [OSGi 上の AEM 6.5 Forms へのアップグレード](/help/forms/using/upgrade-forms-osgi.md)
+         + [OSGi 上のAEM 6.5 LTS Forms へのアップグレード](/help/forms/using/upgrade-forms-osgi.md)
          + [互換性パッケージをインストールする](/help/forms/using/compatibility-package.md)
          + [AEM Forms のアセットとドキュメントの移行](/help/forms/using/migration-utility.md)
-      + JEE 上の AEM Forms のアップグレード {#aem-forms-jee-upgrade}
-         + [AEM Forms へのアップグレードの準備](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65_jp)
-         + [JEE 上の Adobe Experience Manager Forms 用アップグレードのチェックリストと計画](https://www.adobe.com/go/learn_aemforms_upgrade_checklist_65_jp)
       + [JEE 上の AEM 6.5 Forms へのアップグレード](/help/forms/using/upgrade-forms-jee.md)
-      + [JEE 上の Adobe Experience Manager Forms へのアップグレード（JBoss 版）](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65_jp)
-      + [JEE 上の AEM Forms への自動アップグレード（JBoss 版）](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65_jp)
-      + [JEE 上の Adobe Experience Manager Forms へのアップグレード（WebSphere 版）](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_jp)
-      + [JEE 上の Adobe Experience Manager Forms へのアップグレード（WebLogic 版）](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65_jp)
    + AEM Forms の管理 {#manage-administer-aem-forms}
       + [OSGi 上の AEM Forms のグループと権限](/help/forms/using/forms-groups-privileges-tasks.md)
       + [フォームを分類するための新しいフォルダーの作成](/help/forms/using/creating-new-folders-categorize-forms.md)
@@ -809,7 +787,6 @@ ht-degree: 98%
          + [トランザクションレポートの表示と理解](/help/forms/using/viewing-and-understanding-transaction-reports.md)
          + [OSGi 版 AEM Forms の課金対象 API のリスト](/help/forms/using/transaction-reports-billable-apis.md)
          + [カスタム実装のトランザクションの記録](/help/forms/using/record-transaction-custom-implementation.md)
-      + JEE 版 AEM Forms のトランザクションレポート {#transaction-reports-jee}
          + [トランザクションレポートの有効化と表示](/help/forms/using/transaction-report-overview-jee.md)
          + [JEE 版 AEM Forms の課金対象 API のリスト](/help/forms/using/transaction-reports-billable-apis-jee.md)
          + [カスタムコンポーネント API のトランザクションの記録](/help/forms/using/record-transaction-custom-component-jee.md)
@@ -1099,12 +1076,8 @@ ht-degree: 98%
       + [Windows Server 上で Word または Excel ファイルを PDF に変換できない](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
       + [Google Chrome、Firefox、Microsoft Edge、Microsoft Internet Explorer または Apple Safari で XFA ベースの PDF フォームを開けない](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
       + [CRX リポジトリを復元できない](/help/forms/using/restore-crx-repository.md)
-      + [AEM 6.5.15.0 サービスパックのインストール後に、サービスを利用できないエラーが発生する](/help/forms/using/aem-service-pack-installation-solution.md)
-      + [JBoss Linux 環境での AEM Forms JEE 6.5.15.0 サービスパックのインストールの問題](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
       + [AEM Forms サーバーが完全に起動および実行されていない場合でもドキュメントを処理](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [Output サービス、Forms サービスまたは DoR（レコードのドキュメント）サービスを使用できない](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
-      + [Experience Manager Forms の Struts 2 RCE 脆弱性の緩和](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
-      + [MySQL 用に 6.5.12.0 にアップグレードする際にデータベースをバックアップできない](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [WorkBench で多数の PDF を PDF 生成で印刷できない](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [AEM SDK を適切に再起動する方法](/help/forms/using/restart-aem-sdk.md)
       + [PaperCapture サービスが PDF に対して OCR を実行できない](/help/forms/using/papercapture-service-resolution.md)

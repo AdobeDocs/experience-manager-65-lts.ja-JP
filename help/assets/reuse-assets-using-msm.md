@@ -8,9 +8,9 @@ feature: Asset Management,Multi Site Manager
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 29365a8a-7d29-41b2-9a54-d12fe802f6ed
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '3284'
+source-wordcount: '3261'
 ht-degree: 100%
 
 ---
@@ -27,10 +27,6 @@ ht-degree: 100%
 * 一度アセットを作成した後、そのアセットのコピーを作成して、サイトの他の領域で再利用する。
 * 複数のコピーを同期させ、元のプライマリコピーの変更を子コピーにプッシュする。
 * 親アセットと子アセットの間のリンクを一時的または永続的に休止してローカルに変更を行う。
-
-## 前提条件 {#prereq}
-
-MSM for [!DNL Assets] を使用するには、少なくとも [!DNL Experience Manager] 6.5 サービスパック 1 をインストールしてください。詳しくは、[最新のサービスパックのリリースノート](/help/release-notes/release-notes.md)を参照してください。
 
 ## 利点と概念の理解 {#concepts}
 

@@ -1,19 +1,14 @@
 ---
 title: Dynamic Media - Scene7 モードの設定
 description: Dynamic Media - Scene7 モードの設定方法を学習します。
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-docset: aem65
 role: User, Admin
 mini-toc-levels: 4
 feature: Configuration,Scene7 Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 98bd0c24-6c5e-4b96-a3aa-a3e4ef802baf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '6507'
+source-wordcount: '6491'
 ht-degree: 99%
 
 ---
@@ -131,7 +126,7 @@ Experience Manager Dynamic Media を 6.3 から 6.4 または 6.5 にアップ�
 
    * **[!UICONTROL アセットの公開]** - 次の 3 つのオプションから選択できます。
       * **[!UICONTROL 即時公開]**&#x200B;とは、アセットがアップロードされると、システムがアセットを取り込み、URL／埋め込みをすぐに提供することを意味します。アセットを公開するためにユーザーが操作する必要はありません。
-      * **[!UICONTROL アクティベーション時]**&#x200B;とは、URL／埋め込みリンクが提供される前に、最初にアセットを明示的に公開する必要があることを意味します。<br><!-- CQDOC-17478, Added March 9, 2021-->Experience Manager 6.5.8 以降では、Experience Manager パブリッシュインスタンスは、**[!UICONTROL アクティベーション時]**&#x200B;公開モードでのみ`dam:scene7Domain`や `dam:scene7FileStatus` などの正確な Dynamic Media メタデータ値を反映します。この機能を有効にするには、Service Pack 8 をインストールしてから、Experience Manager を再起動します。Sling Config Manager に移動します。`Scene7ActivationJobConsumer Component` の設定を検索または新しく作成します）。「**[!UICONTROL Dynamic Media の公開後にメタデータをレプリケート]**」チェックボックスを選択してから「 **[!UICONTROL 保存]**」を選択します。
+      * **[!UICONTROL アクティベーション時]**&#x200B;とは、URL／埋め込みリンクが提供される前に、最初にアセットを明示的に公開する必要があることを意味します。<br><!-- CQDOC-17478, Added March 9, 2021-->Experience Manager 6.5.8 以降では、Experience Manager パブリッシュインスタンスは、**[!UICONTROL アクティベーション時]**&#x200B;公開モードでのみ`dam:scene7Domain`や `dam:scene7FileStatus` などの正確な Dynamic Media メタデータ値を反映します。Sling Config Manager に移動します。`Scene7ActivationJobConsumer Component` の設定を検索または新しく作成します）。「**[!UICONTROL Dynamic Media の公開後にメタデータをレプリケート]**」チェックボックスを選択してから「 **[!UICONTROL 保存]**」を選択します。
 
         ![「 Dynamic Media の公開後にメタデータをレプリケート」チェックボックス](assets-dm/replicate-metadata-setting.png)
 
@@ -249,7 +244,7 @@ Dynamic Media - Scene7 モードでは、デフォルトのアセットアップ
 
 この機能を使用する場合は、前提条件を含む以下の点に注意してください。
 
-* Dynamic Media - Scene7 モードで、Experience Manager 6.5 と Service Pack 6.5.4.0 以降を実行している必要があります。
+* Experience Manager 6.5 LTS を Dynamic Media - Scene7 モードで実行している必要があります。
 * 大きなアセットのアップロード機能は、[*Managed Services*](https://business.adobe.com/jp/products/experience-manager/managed-services.html) をご利用のお客様に対してのみサポートされます。
 * Experience Manager インスタンスに Amazon S3 または Microsoft® Azure Blob ストレージが設定されていることを確認してください。
 

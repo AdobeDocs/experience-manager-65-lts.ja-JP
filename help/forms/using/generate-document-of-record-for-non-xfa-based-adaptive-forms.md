@@ -1,18 +1,14 @@
 ---
 title: アダプティブフォームにおけるレコードのドキュメントの生成
 description: ここでは、アダプティブフォーム向けのレコードのドキュメント（DoR）を生成する方法について説明します。
-content-type: reference
-topic-tags: adaptive_forms, develop
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '4307'
-ht-degree: 99%
+source-wordcount: '4283'
+ht-degree: 100%
 
 ---
 
@@ -31,11 +27,6 @@ ht-degree: 99%
 フォームを送信した後、顧客は通常、印刷するかまたはドキュメント形式で保存するかのどちらかで、フォームに記入した情報を今後の参考のために記録しておきたいと考えます。これを、レコードのドキュメントといいます。
 
 この記事では、アダプティブフォームまたはアダプティブフォームフラグメントのレコードのドキュメントを生成する方法について説明します。
-
->[!NOTE]
->
-> アダプティブフォームエディターでアダプティブフォームフラグメントとそのフィールドをカスタマイズするサポートが、AEM 6.5 Forms サービスパック 19 （6.5.19.0）で導入されました。
-
 
 >[!NOTE]
 >

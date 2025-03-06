@@ -9,10 +9,10 @@ role: User, Admin
 feature: CDN Cache
 solution: Experience Manager, Experience Manager Assets
 exl-id: bce11a49-bbbe-4dda-8144-7f135bb666d9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '1372'
-ht-degree: 100%
+source-wordcount: '1277'
+ht-degree: 99%
 
 ---
 
@@ -21,18 +21,11 @@ ht-degree: 100%
 Dynamic Media アセットは、顧客との配信を高速化するために、CDN（コンテンツ配信ネットワーク）によってキャッシュされます。ただし、これらのアセットを更新する場合に、その変更を Web サイトに即座に反映させたいことがあります。CDN キャッシュの削除または無効化を行うと、Dynamic Media によって配信されるアセットをすばやく更新できます。TTL（有効期限）の値（デフォルトは 10 時間）を使用してキャッシュの有効期限が切れるのを待つ代わりに、キャッシュを数分で有効期限切れにするリクエストを Dynamic Media から送信することができます。
 
 
-
->[!IMPORTANT]
->
->次の手順は、Dynamic Media - Scene7 モード（Adobe Experience Manager 6.5、サービスパック 6（Experience Manager 6.5.6）以降）にのみ適用されます。この CDN 無効化の機能を使用するには、Adobe Experience Manager - Dynamic Media にバンドルされている標準搭載の CDN を使用する必要があります。その他のカスタム CDN では、この機能はサポートしていません。<br>Experience Manager 6.5、サービスパック 5（Experience Manager 6.5.5）以前で Dynamic Media を使用している場合は、[Dynamic Media Classic を使用した CDN キャッシュの無効化](/help/assets/invalidate-cdn-cache-dm-classic.md)の手順に従ってください。
-
-<!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Caching overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
-
 **Dynamic Media Assets の CDN にキャッシュされたコンテンツを無効にするには：**
 
 *パート 1／2：CDN 無効化テンプレートの作成*
 
-1. Experience Manager 6.5.6 以降で、**[!UICONTROL ツール]**／**[!UICONTROL Assets]**／**[!UICONTROL CDN 無効化]**&#x200B;に移動します。
+1. **[!UICONTROL ツール]** / **[!UICONTROL Assets]** / **[!UICONTROL CDN 無効化]** に移動します。
 
    ![CDN 検証機能](/help/assets/assets-dm/cdn-invalidation-template2.png)
 

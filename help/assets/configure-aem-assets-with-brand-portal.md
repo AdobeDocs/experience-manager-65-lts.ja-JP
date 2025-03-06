@@ -10,10 +10,10 @@ role: Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 22a2428d-3ebd-4368-983e-d140f99de2dd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 97%
+source-wordcount: '675'
+ht-degree: 89%
 
 ---
 
@@ -68,11 +68,11 @@ AEM Assets と Brand Portal の連携を設定するには以下が必要です�
 
 [最新の AEM サービスパックをダウンロードしてインストールする](#servicepack)
 
-### AEM 6.5 のダウンロードとインストール {#aemquickstart}
+### AEM 6.5 LTS をダウンロードしてインストールする {#aemquickstart}
 
-AEM オーサーインスタンスを設定するには、AEM 6.5 の使用をお勧めします。AEM が稼働していない場合は、以下の場所から AEM をダウンロードしてください。
+AEM オーサーインスタンスを設定するには、AEM 6.5 LTS を使用することをお勧めします。 AEM が稼働していない場合は、以下の場所から AEM をダウンロードしてください。
 
-* 既に AEM を使用している場合は、[Adobe ライセンス web サイト](https://licensing.adobe.com)から AEM 6.5 をダウンロードしてください。
+* 既にAEMを使用している場合は、[Adobe Licensing web サイト ](https://licensing.adobe.com) からAEM 6.5 LTS をダウンロードしてください。
 
 * Adobe パートナーの場合は、[Adove パートナートレーニングプログラム](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q)から AEM 6.5 をリクエストしてください。
 
@@ -80,7 +80,7 @@ AEM をダウンロードしたら、[デプロイとメンテナンス](https:/
 
 ### 最新の AEM サービスパックをダウンロードしてインストールする {#servicepack}
 
-手順について詳しくは、現在の [AEM 6.5 サービスパックに関するリリースノート](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html)を参照してください。
+手順について詳しくは、現在の [AEM 6.5 LTS サービスパックリリースノート ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html) を参照してください。
 
 最新の AEM パッケージまたはサービスパックが見つからない場合、**Adobe カスタマーサポートにお問い合わせください**。
 
