@@ -10,7 +10,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8b3d8d0f-10f7-4736-881d-8f1f21c69182
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a037dc7cbb13abfeb8a7289baded50d3d788cbf6
 workflow-type: tm+mt
 source-wordcount: '1200'
 ht-degree: 80%
@@ -65,7 +65,7 @@ OSGi コンソール `/system/console/bundles` に移動し、開始されてい
 
 ### Oak バージョンの確認 {#verify-oak-version}
 
-アップグレード後、Oakのバージョンが **1.68.1-B002** に更新されていることがわかります。 Oak バージョンを確認するには、OSGi コンソールに移動し、Oak バンドル（Oak Core、Oak Commons、Oak Segment Tar）に関連付けられているバージョンを調べます。
+アップグレード後、Oakのバージョンが **1.68.x** に更新されていることがわかります。 Oak バージョンを確認するには、OSGi コンソールに移動し、Oak バンドル（Oak Core、Oak Commons、Oak Segment Tar）に関連付けられているバージョンを調べます。
 
 ### ページの初期検証 {#initial-validation-of-pages}
 
