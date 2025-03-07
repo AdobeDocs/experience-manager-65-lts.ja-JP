@@ -9,10 +9,10 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: 8ddfc767-08a5-4045-86a7-97150e028a14
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 100%
+source-wordcount: '346'
+ht-degree: 96%
 
 ---
 
@@ -59,10 +59,12 @@ ht-degree: 100%
 
 TarMK はパフォーマンスを考慮して設計されています。一方、MongoMK と RDBMK はスケーラビリティを考慮して設計されています。オーサーインスタンスとパブリッシュインスタンスの両方において、「[TarMK の代わりに Mongo またはリレーショナルデータベース Microkernel を選択する](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p)」セクションで説明されている使用例を除き、すべての AEM Forms デプロイメントシナリオのデフォルトの永続性テクノロジーとして TarMK を使用することを強くお勧めします。
 
-サポートされる Microkernel リストについては、「[AEM Forms on OSGi の技術要件](/help/sites-deploying/technical-requirements.md)」または「[AEM Forms on JEE でサポートされるプラットフォームの組み合わせ](/help/forms/using/aem-forms-jee-supported-platforms.md)」の記事を参照してください。
+サポートされているマイクロカーネルの一覧については、[OSGi 技術要件のAEM Forms](/help/sites-deploying/technical-requirements.md) <!--or [AEM Forms on JEE supported platform combinations](/help/forms/using/aem-forms-jee-supported-platforms.md) articles--> を参照してください。
 
 ## TarMK の代わりに Mongo またはリレーショナルデータベース Microkernel を選択する {#choosing-mongo-or-a-relational-database-microkernel-over-tarmk}
 
 スケーラブルなクラスター化された AEM Forms 環境は、並列に設定された 2 つ以上のアクティブなオーサーインスタンスの組み合わせです。そのため、すべての同時オーサリングのアクティビティをサポートする 1 つのサーバーが維持できなくなるような場合は、複数のオーサリングインスタンスを実行することができます。
 
-スケーラブルな（クラスター化された）AEM Forms on JEE 環境に対応しているのは、MongoMK および RDBMK の永続性タイプのみです。サーバーの数やスケーラブル環境の規模は、インストールごとに異なります。考慮事項と使用例のリストについては、「[推奨されるデプロイメント](/help/sites-deploying/recommended-deploys.md)」および「[AEM Forms のアーキテクチャとデプロイメントトポロジー](/help/forms/using/aem-forms-architecture-deployment.md)」の記事を参照してください。RDBMK や TarMK を使用した AEM Forms の運用規模を計画するにあたって詳細情報が必要な場合は、AEM Forms のサポートにお問い合わせいただくこともできます。
+<!--Only MongoMK and RDBMK persistence type are supported for a scalable (clustered) AEM Forms on JEE environment.-->
+
+サーバーの数やスケーラブル環境の規模は、インストールごとに異なります。考慮事項と使用例のリストについては、「[推奨されるデプロイメント](/help/sites-deploying/recommended-deploys.md)」および「[AEM Forms のアーキテクチャとデプロイメントトポロジー](/help/forms/using/aem-forms-architecture-deployment.md)」の記事を参照してください。RDBMK や TarMK を使用した AEM Forms の運用規模を計画するにあたって詳細情報が必要な場合は、AEM Forms のサポートにお問い合わせいただくこともできます。

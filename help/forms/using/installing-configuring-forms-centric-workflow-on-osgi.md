@@ -7,10 +7,10 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,AEM Forms on OSGi
 exl-id: 4b316ade-4431-41fc-bb8a-7262a17fb456
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1624'
-ht-degree: 99%
+source-wordcount: '1551'
+ht-degree: 98%
 
 ---
 
@@ -28,9 +28,7 @@ AEM Forms は強力なエンタープライズクラスのプラットフォー�
 
 >[!NOTE]
 >
->OSGi での Forms 中心のワークフローを使用すると、JEE スタックに本格的なプロセス管理機能をインストールしなくても、OSGi スタックで様々なタスクのワークフローを迅速に構築およびデプロイできます。OSGi 上の Forms ベースの AEM ワークフローと JEE 上のプロセスマネジメントの[比較](capabilities-osgi-jee-workflows.md)を参照して、機能の違いと類似点を学びます。
->
->比較の後、JEE スタックにプロセス管理機能をインストールする場合は、JEE スタックとプロセス管理機能のインストールと設定の詳細について、 [JEE での AEM Forms のインストールまたはアップグレード](/help/forms/using/introduction-aem-forms.md) を参照してください。
+>OSGi 上のForms中心のワークフローを使用すると、OSGi スタック上の様々なタスクのワークフローを迅速に構築およびデプロイできます <!--, without having to install the full-fledged Process Management capability on JEE stack-->.<!-- See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE to learn the difference and similarities in the capabilities.--><!--After the comparison, If you choose to install the Process Management capability on JEE stack, see [Install or Upgrade AEM Forms on JEE](/help/forms/using/introduction-aem-forms.md) for detailed information about installing and configuring JEE stack and the Process Management capabilities.-->
 
 ## デプロイメントトポロジ {#deployment-topology}
 

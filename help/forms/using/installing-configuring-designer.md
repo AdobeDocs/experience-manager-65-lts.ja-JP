@@ -5,10 +5,10 @@ role: Admin, User, Developer
 feature: Forms Designer,Designer
 solution: Experience Manager, Experience Manager Forms
 exl-id: 526bbc59-62c3-4e6d-a938-e368d07fe6b0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
 source-wordcount: '797'
-ht-degree: 77%
+ht-degree: 76%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 77%
 >
 >* 64 ビット版の Designer は、AEM 6.5 Forms サービスパック 19 （6.5.19.0）で導入されました。
 >* 20}AEM Forms サービスパック 21 （6.5.21.0） ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) のリリース以降、32 ビットバージョンの Designer は非推奨になりました。[
-> * Forms Designer でサポートされているプラットフォームは、AEM Forms でサポートされているプラットフォームと一致します。Forms Designer でサポートされているプラットフォームについて詳しくは、[こちらをクリック](/help/forms/using/aem-forms-jee-supported-platforms.md)してください。
+> * Forms Designer でサポートされているプラットフォームは、AEM Forms でサポートされているプラットフォームと一致します。Forms Designerでサポートされているプラットフォームについては、[ ここをクリック ](/help/sites-deploying/technical-requirements.md) してください。
 
 フォームデザイナーのインストールに関して詳しくは、[よくある質問](#fandq)を参照してください。
 

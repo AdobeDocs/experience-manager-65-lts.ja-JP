@@ -9,8 +9,10 @@ docset: aem65
 feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
+hide: true
+hidefromtoc: true
 exl-id: cc0a3d56-3adc-4d6e-87a3-9a8587bbe3f2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 100%
@@ -19,7 +21,7 @@ ht-degree: 100%
 
 # PDF Generator の操作の概要 {#introduction-to-working-with-pdf-generator}
 
-PDF Generator では、様々な形式のファイルを PDF に変換できます。また、PDF を他のファイル形式に変換し、PDF ドキュメントのサイズを最適化します。サポートされるファイル形式のリストについては、「[PDF Generator のソフトウェアサポート](/help/forms/using/aem-forms-jee-supported-platforms.md)」を参照してください。
+PDF Generator では、様々な形式のファイルを PDF に変換できます。また、PDF を他のファイル形式に変換し、PDF ドキュメントのサイズを最適化します。サポートされるファイル形式のリストについては、「[PDF Generator のソフトウェアサポート](/help/sites-deploying/technical-requirements.md)」を参照してください。
 
 **ファイルを処理するために PDF Generator に送信**
 

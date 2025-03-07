@@ -8,10 +8,11 @@ docset: aem65
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+hide: true
+hidefromtoc: true
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '3989'
+source-wordcount: '4005'
 ht-degree: 94%
 
 ---
@@ -486,6 +487,8 @@ AEM Forms アプリケーションで Apache Cordova がサポートされるよ
 >さらに、次の点に注意してください。
 >
 >- PDF Generator では、32 ビットリテール版の Microsoft® Office Professional Plus および変換に必要なその他のソフトウェアのみサポートしています。
+>- Microsoft® Office Professional Plus のインストールでは、リテールまたは MAK／KMS／AD ベースのボリュームライセンスを使用する場合があります。
+>- ボリュームライセンスインストールで指定期間内に KMS ホストが見つからないなど、何らかの理由で Microsoft® Office インストールが非アクティブ化またはライセンス解除された場合、インストールのライセンスを再度取得して再アクティブ化するまでは、変換が失敗する場合があります。
 >- PDF Generator は Microsoft® Office 365 をサポートしていません。
 >- PDF Generator の OpenOffice 向け変換機能は、Windows と Linux® でのみサポートされています。
 >- OCR PDF、Optimize PDF、Export PDF の各機能は、Windows でのみサポートされます。
@@ -493,7 +496,6 @@ AEM Forms アプリケーションで Apache Cordova がサポートされるよ
 >- PDF Generator サービスでは Microsoft® Windows 10 をサポートしていません。
 >- PDF Generator は、Microsoft® Visio 2019 を使用してファイルを変換できません。
 >- PDF Generator は、Microsoft® Project 2019 を使用してファイルを変換できません。
->- ボリュームライセンスインストールで指定期間内に KMS ホストが見つからないなど、何らかの理由で Microsoft® Office インストールが非アクティブ化またはライセンス解除された場合、インストールが再ライセンスされて再アクティブ化されるまで変換は失敗する場合があります。
 
 <!-- Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.-->

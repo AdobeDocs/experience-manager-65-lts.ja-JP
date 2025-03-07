@@ -6,7 +6,7 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
 source-wordcount: '5660'
 ht-degree: 99%
@@ -74,8 +74,8 @@ AEM Forms ドキュメントサービスのインストールおよび設定に�
 
 * PDF Generator を使用して Microsoft® Windows や Linux® で変換を実行するには、必要なクライアントソフトウェアをインストールする必要があります。
 
-   * **Microsoft® Windows**：[Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p) または [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) をインストールします
-   * **Linux®**：[Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p) をインストールします
+   * **Microsoft® Windows**：**Microsoft® Office** または **Apache OpenOffice** をインストールします
+   * **Linux®**：**Apache OpenOffice** をインストールします
 
 >[!NOTE]
 >
@@ -654,7 +654,7 @@ SRT ツールが報告する問題をすべて修正した後でも問題が発�
 
 +++ Adobe Acrobat
 
-* Microsoft® Office（32 ビット）と Adobe Acrobat の[サポート対象バージョン](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)のみがインストールされ、ダイアログを開く操作がキャンセルされていることを確認します。
+* Microsoft® Office（32 ビット）と Adobe Acrobat の[サポート対象バージョン](/help/sites-deploying/technical-requirements.md)のみがインストールされ、ダイアログを開く操作がキャンセルされていることを確認します。
 * Adobe Acrobat アップデートサービスが無効になっていることを確認します。
 * [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) バッチファイルが管理者権限で実行されたことを確認します。
 * PDF Generator ユーザーが PDF 設定 UI に追加されていることを確認します。
@@ -667,7 +667,7 @@ SRT ツールが報告する問題をすべて修正した後でも問題が発�
 
 **Microsoft® Windows**
 
-* Microsoft Office 32 ビット[サポート対象バージョン](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)のインストールが完了していること、およびすべてのアプリケーションでダイアログを開くことがキャンセルされていることを確認します。
+* Microsoft Office 32 ビット[サポート対象バージョン](/help/sites-deploying/technical-requirements.md)のインストールが完了していること、およびすべてのアプリケーションでダイアログを開くことがキャンセルされていることを確認します。
 * PDF Generator ユーザーが PDF 設定 UI に追加されていることを確認します。
 * PDF Generator ユーザーが管理グループのメンバーであり、[プロセスレベルトークンの置き換え](#grant-the-replace-a-process-level-token-privilege)権限がそのユーザーに対して設定されていることを確認します。
 * ユーザーが PDF Generator UI で設定されており、次のアクションを実行していることを確認します。
@@ -681,7 +681,7 @@ SRT ツールが報告する問題をすべて修正した後でも問題が発�
 
 **Linux®**
 
-* OpenOffice の[サポート対象バージョン](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)をインストールします。AEM Formsは、32 ビットバージョンと 64 ビットバージョンの両方をサポートしています。  インストール後、すべての OpenOffice アプリケーションを開き、すべてのダイアログウィンドウをキャンセルして、アプリケーションを閉じます。 アプリケーションを再度開き、OpenOffice アプリケーションを開く際にダイアログボックスが表示されないことを確認します。
+* サポートされているバージョンの OpenOffice をインストールします。 AEM Formsは、32 ビットバージョンと 64 ビットバージョンの両方をサポートしています。  インストール後、すべての OpenOffice アプリケーションを開き、すべてのダイアログウィンドウをキャンセルして、アプリケーションを閉じます。 アプリケーションを再度開き、OpenOffice アプリケーションを開く際にダイアログボックスが表示されないことを確認します。
 
 * 環境変数 `OpenOffice_PATH` を作成し、[コンソール](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/)または dt（デバイスツリー）プロファイルに設定されている OpenOffice のインストール先を指すように設定します。
 * OpenOffice のインストールに問題がある場合は、OpenOffice のインストールに必要な [32 ビットライブラリ](#extrarequirements)が利用可能であることを確認します。

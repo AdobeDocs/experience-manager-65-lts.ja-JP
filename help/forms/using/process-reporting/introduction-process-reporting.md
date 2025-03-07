@@ -8,11 +8,13 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
+hide: true
+hidefromtoc: true
 exl-id: 755df7e2-3603-4c0d-ad07-ec6f27de8c64
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -26,7 +28,7 @@ ht-degree: 100%
 
 さらに、プロセスレポートには、アドホッククエリを実行し、カスタムレポートビューをプロセスレポートユーザーインターフェイスに統合するためのインターフェイスが用意されています。
 
-サポートされているブラウザーの一覧については、 [AEM Forms サポートプラットフォーム](/help/forms/using/aem-forms-jee-supported-platforms.md)を参照してください。
+サポートされているブラウザーの一覧については、[AEM Forms サポートプラットフォームを参照してください ](/help/sites-deploying/technical-requirements.md)
 
 プロセスレポートは、以下のモジュールにもとづいて構築されています。
 

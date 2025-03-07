@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User
 exl-id: 7ec29926-a5f6-4080-a981-597f9632f6e8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1566'
-ht-degree: 100%
+source-wordcount: '1544'
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ AEM には、フォーム、ドキュメントおよび関連アセットを作�
 
 ### フォームとドキュメント  {#forms-documents}
 
-フォームとドキュメントには、インタラクティブ通信、アダプティブフォーム、アダプティブフォームフラグメント、フォームセットを作成するためのオプションが用意されています。JEE 上の AEM [!DNL Forms] の場合のみ、ローカルストレージからファイルを読み込むオプションと AEM [!DNL Forms] アセットを Workbench と同期するオプションが「フォームとドキュメント」に表示されます。
+Formsとドキュメントには、インタラクティブ通信、アダプティブフォーム、アダプティブフォームフラグメント、フォームセットを作成するためのオプションが用意されています。<!--Only for AEM [!DNL Forms] on JEE, Forms & Documents provides an option to import files from local storage and sync AEM [!DNL Forms] assets with Workbench.-->
 
 作成ボタンは、AEM [!DNL Forms] アセットを作成またはアップロードする処理の開始点になります。次の項目を作成するためのオプションが用意されています。
 

@@ -9,9 +9,9 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 4009c85e-cb8a-4bed-a6ff-7c76fe78a47f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '795'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,10 @@ ht-degree: 100%
 AEM Forms のキャッシュ戦略は、次の場所にある AEM web 設定コンソールの **Mobile Forms の設定**&#x200B;コンポーネントで設定および制御できます。
 
 * (OSGi 上の AEM Forms) `https://'[server]:[port]'/system/console/configMgr`
-* (JEE での AEM Forms) `https://'[server]:[port]'/lc/system/console/configMgr`
+
+<!--
+* (AEM Forms on JEE) `https://'[server]:[port]'/lc/system/console/configMgr`
+-->
 
 キャッシュに使用できるオプションを次に示します。
 
@@ -149,26 +152,29 @@ Apache は HTTP プロトコルを使用して CRX と通信できます。こ�
    * [AEM インストールディレクトリ]\crx-repository\repository
    * [AEM インストールディレクトリ]\crx-repository\launchpad
 
-* アプリケーションサーバーの一時ディレクトリ。デフォルトの場所は以下のとおりです。
+<!--
 
-   * （JBoss®）[AEM installation directory]\jboss\standalone\tmp
-   * （WebLogic）\Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
-   * （WebSphere®）\Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
+* Application server temporary directory. The default location is:
 
-* **（AEM Forms on JEE のみ）**&#x200B;グローバルドキュメントストレージ（GDS）ディレクトリ。デフォルトの場所は以下のとおりです。
+    * (JBoss&reg;) [AEM installation directory]\jboss\standalone\tmp
+    * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
+    * (WebSphere&reg;) \Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
-   * （JBoss®）[appserver root]/server/&#39;server&#39;/svcnative/DocumentStorage
-   * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
-   * （WebSphere®）[appserver root]/installedApps/adobe/&#39;server&#39;/DocumentStorage
+* **(AEM Forms on JEE only)** Global Document Storage (GDS) directory. The default location is:
 
-* **（AEM Forms on JEE のみ）** AEM Forms サーバーのログと一時ディレクトリ。デフォルトの場所は以下のとおりです。
+    * (JBoss&reg;) [appserver root]/server/'server'/svcnative/DocumentStorage
+    * (WebLogic) [appserverdomain]/'server'/adobe/LiveCycleServer/DocumentStorage
+    * (WebSphere&reg;) [appserver root]/installedApps/adobe/'server'/DocumentStorage
 
-   * サーバーログ - [AEM Forms インストールディレクトリ]\Adobe\AEM forms\[app-server]\server\all\logs
-   * 一時ディレクトリ - [AEM Forms インストールディレクトリ]\temp
+* **(AEM Forms on JEE only)** AEM Forms Server logs and temporary directory. The default location is:
+
+    * Server logs - [AEM Forms installation directory]\Adobe\AEM forms\[app-server]\server\all\logs
+    * Temp directory - [AEM Forms installation directory]\temp
+-->
 
 >[!NOTE]
 >
 >* GDS と一時ディレクトリで異なる場所を使用している場合は、AdminUI`https://'[server]:[port]'/adminui` を開いて&#x200B;**ホーム／設定／コアシステム設定／コア設定**&#x200B;に移動し、現在使用している場所を確認してください。
 >
->* 上記のディレクトリを除外しても AEM Forms サーバーのパフォーマンスが改善されない場合は、Java™ 実行可能ファイル（java.exe）も除外してください。
+* 上記のディレクトリを除外しても AEM Forms サーバーのパフォーマンスが改善されない場合は、Java™ 実行可能ファイル（java.exe）も除外してください。
 >

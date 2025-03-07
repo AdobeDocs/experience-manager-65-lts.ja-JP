@@ -1,31 +1,26 @@
 ---
 title: 'AEM Forms のアセットとドキュメントの移行 '
-description: 移行ユーティリティを使用すると、Adobe Experience Manager（AEM）Forms のアセットとドキュメントを AEM 6.3 Forms またはそれ以前のバージョンから AEM 6.4 Forms に移行できます。
+description: 移行ユーティリティを使用すると、Adobe Experience Manager（AEM）FormsのアセットとドキュメントをAEM 6.5.22.0 FormsからAEM 6.5 Forms LTS に移行できます。
 content-type: reference
-topic-tags: correspondence-management, installing
-geptopics: SG_AEMFORMS/categories/jee
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-content-strategy: max-2018
-docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 636f7b61-549e-45c7-ab21-94bb90db2b22
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1723'
-ht-degree: 99%
+source-wordcount: '1698'
+ht-degree: 91%
 
 ---
 
 # AEM Forms のアセットとドキュメントの移行 {#migrate-aem-forms-assets-and-documents}
 
-移行ユーティリティを実行すると、[アダプティブフォームのアセット](../../forms/using/introduction-forms-authoring.md)、[クラウドの設定](/help/sites-developing/extending-cloud-config.md)、[Correspondence Management のアセット](/help/forms/using/cm-overview.md)が、旧バージョンの AEM Forms で使用されていた形式から、AEM 6.5 Forms で使用される形式に変換されます。移行ユーティリティを実行すると、以下の項目が移行されます。
+移行ユーティリティを実行すると、[ アダプティブ Forms アセット ](../../forms/using/introduction-forms-authoring.md)、[ クラウド設定 ](/help/sites-developing/extending-cloud-config.md) および [Correspondence Management アセット ](/help/forms/using/cm-overview.md) が、旧バージョンの AEM Assets で使用されていた形式から、Adobe Experience Manager（AEM） 6.5 LTS Formsで使用される形式に変換されます。 移行ユーティリティを実行すると、以下の項目が移行されます。
 
 * アダプティブフォームのカスタムコンポーネント
 * アダプティブフォームと Correspondence Management テンプレート
 * クラウドの設定情報
-* Correspondence Management とアダプティブフォームのアセット
+* Correspondence Management とアダプティブFormsのアセット
 
 >[!NOTE]
 >
@@ -33,11 +28,11 @@ ht-degree: 99%
 
 ## 移行のアプローチ {#approach-to-migration}
 
-AEM Forms 6.4、6.3 または 6.2 を最新バージョンである AEM Forms 6.5 に[アップグレード](../../forms/using/upgrade.md)することも、新規インストールを実行することもできます。以前のインストールをアップグレードしたか、新規インストールを実行したかに応じて、次のいずれかを実行する必要があります。
+AEM Forms 6.5.22.0](/help/forms/using/upgrade-forms-osgi.md) から [AEM Forms 6.5 LTS へ [ アップグレード ](../../forms/using/upgrade.md) できます。 以前のインストールをアップグレードしたか、新規インストールを実行したかに応じて、次のいずれかを実行する必要があります。
 
 **インプレースアップグレードの場合**
 
-インプレースアップグレードを実行した場合、アップグレードされたインスタンスには既にアセットとドキュメントが含まれています。ただし、アセットやドキュメントを使用する前に、[AEMFD 互換性パッケージ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ja)（Correspondence Management 互換性パッケージを含む）をインストールする必要があります。
+[ インプレースアップグレード ](/help/sites-deploying/in-place-upgrade.md) を実行した場合、アップグレードされたインスタンスには既にアセットとドキュメントが存在します。 ただし、アセットやドキュメントを使用する前に、[AEMFD 互換性パッケージ ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ja) （Correspondence Management 互換性パッケージが含まれています）をインストールする必要があります。
 
 その後、[移行ユーティリティを実行](#runningmigrationutility)して、アセットとドキュメントを更新する必要があります。
 
@@ -62,7 +57,7 @@ Correspondence Management のアセットを移行する場合は、以下の点
 * AEM 6.1 Forms 以降では、「発行準備完了」の状態は廃止されました。このため、「発行準備完了」の状態にあったすべてのアセットは、変更済みの状態に変更されます。
 * AEM Forms 6.3 ではユーザーインターフェイスが更新されているため、カスタマイズを実行する手順も異なります。6.3 以前のバージョンから移行する場合は、カスタマイズをやり直します。
 * レイアウトフラグメントは `/content/apps/cm/layouts/fragmentlayouts/1001` から `/content/apps/cm/modules/fragmentlayouts` へ移動します。アセットのデータディクショナリ参照では、データディクショナリの名前ではなくパスが表示されます。
-* テキストモジュールの調整にタブスペースを使用した場合は、再調整する必要があります。詳しくは、[Correspondence Management - タブスペースを使用したテキスト調整](https://helpx.adobe.com/jp/aem-forms/kb/cm-tab-spacing-limitations.html)を参照してください。
+* テキストモジュールの整列に使用されるタブスペースは、再調整する必要があります。<!--For more information, see [Correspondence Management - Using tab spacing for arranging text](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html)-->。
 * Asset Composer の設定は、Correspondence Management 設定に変更されました。
 * アセットは、「Existing Text」や「Existing List」などの名前のフォルダーに移動されます。
 

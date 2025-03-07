@@ -4,8 +4,10 @@ description: Adobe Experience Manager（AEM）Forms on JEE サーバークラス
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
+hide: true
+hidefromtoc: true
 exl-id: f7279bba-b889-4431-9cfd-79e140d46e05
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '3943'
 ht-degree: 99%

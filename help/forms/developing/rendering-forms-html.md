@@ -9,8 +9,10 @@ topic-tags: operations
 role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
+hide: true
+hidefromtoc: true
 exl-id: f1e6adca-0591-4974-9c12-66706aa35247
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '4099'
 ht-degree: 100%
@@ -93,7 +95,7 @@ form:ready イベントにあるフォームスクリプトは、フォームの
 
 >[!NOTE]
 >
->複数ページフォームでは、JavaScript によってページに加えられた変更は、別のページに移動しても保持されません。
+複数ページフォームでは、JavaScript によってページに加えられた変更は、別のページに移動しても保持されません。
 
 フォームを送信する前にカスタムスクリプトを呼び出すことができます。この機能は、使用可能なすべてのブラウザーで機能します。ただし、`Output Type` プロパティが `Form Body` に設定されている HTML フォームをレンダリングする場合にのみ使用できます。`Output Type` が `Full HTML` の場合には機能しません。この機能を設定する手順については、管理ヘルプの「フォームの設定」を参照してください。
 
@@ -167,7 +169,7 @@ HTML ページ（パネル）間を移動すると、データの状態のみが
 
 >[!NOTE]
 >
->テーブルのセル内にネストされている場合、スタティックオブジェクトはレンダリングされた HTML フォームには表示されません。例えば、テーブルのセル内にネストされた円や長方形は、レンダリングされた HTML フォーム内には表示されません。ただし、テーブルの外側に配置されている場合は、同じスタティックオブジェクトが正しく表示されます。
+テーブルのセル内にネストされている場合、スタティックオブジェクトはレンダリングされた HTML フォームには表示されません。例えば、テーブルのセル内にネストされた円や長方形は、レンダリングされた HTML フォーム内には表示されません。ただし、テーブルの外側に配置されている場合は、同じスタティックオブジェクトが正しく表示されます。
 
 ## デジタル署名用 HTML フォーム {#digitally-signing-html-forms}
 
@@ -190,7 +192,7 @@ HTML ページ（パネル）間を移動すると、データの状態のみが
 
 >[!NOTE]
 >
->Forms サービスについて詳しくは、[AEM Forms のサービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
+Forms サービスについて詳しくは、[AEM Forms のサービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
 
 ## 手順の概要 {#summary-of-steps}
 
@@ -226,11 +228,11 @@ HTML フォーム上に HTML ツールバーが表示されている場合、ユ
 
 >[!NOTE]
 >
->ツールバーを含む HTML フォームのレンダリングはオプションです。
+ツールバーを含む HTML フォームのレンダリングはオプションです。
 
 >[!NOTE]
 >
->AHTML フォームをレンダリングする場合は、ツールバーをフォームに追加しないことをお勧めします。
+AHTML フォームをレンダリングする場合は、ツールバーをフォームに追加しないことをお勧めします。
 
 **HTML フォームをレンダリング**
 
@@ -282,7 +284,7 @@ Forms API (Java) を使用して HTML フォームをレンダリングします
 
    >[!NOTE]
    >
-   >`StandAlone` オプションが `true` で、`ApplicationWebRoot` が AEM Forms をホストする J2EE アプリケーションサーバー以外を参照している場合、Forms は正常にレンダリングされません（`ApplicationWebRoot` の値は、`FormsServiceClient` オブジェクトの `(Deprecated) renderHTMLForm` メソッドに渡される `URLSpec` オブジェクトを使用して指定します）。`ApplicationWebRoot` が AEM Forms をホストするサーバーとは別のサーバーである場合、管理コンソールの web ルート URI の値を Forms の web アプリケーション URI 値として設定する必要があります。これを行うには、管理コンソールにログインして、サービス／Formsをクリックし、「 Web ルート URI 」を https://server-name:port/FormServer に設定します。次に、設定を保存します。
+   `StandAlone` オプションが `true` で、`ApplicationWebRoot` が AEM Forms をホストする J2EE アプリケーションサーバー以外を参照している場合、Forms は正常にレンダリングされません（`ApplicationWebRoot` の値は、`FormsServiceClient` オブジェクトの `(Deprecated) renderHTMLForm` メソッドに渡される `URLSpec` オブジェクトを使用して指定します）。`ApplicationWebRoot` が AEM Forms をホストするサーバーとは別のサーバーである場合、管理コンソールの web ルート URI の値を Forms の web アプリケーション URI 値として設定する必要があります。これを行うには、管理コンソールにログインして、サービス／Formsをクリックし、「 Web ルート URI 」を https://server-name:port/FormServer に設定します。次に、設定を保存します。
 
 1. HTML フォームのレンダリング
 
@@ -340,7 +342,7 @@ Forms API（web サービス）を使用して HTML フォームをレンダリ�
 
    >[!NOTE]
    >
-   >`StandAlone` オプションが `true` で、`ApplicationWebRoot` が AEM Forms をホストする J2EE アプリケーションサーバー以外のサーバーを参照している場合、フォームは HTML で正常にレンダリングされません（`ApplicationWebRoot` 値は `FormsServiceClient` オブジェクトの `(Deprecated) renderHTMLForm` メソッドに渡される `URLSpec` オブジェクトを使用して指定されます）。`ApplicationWebRoot` が AEM Forms をホストするサーバーとは別のサーバーである場合、管理コンソールの web ルート URI の値を Forms の web アプリケーション URI 値として設定する必要があります。これを行うには、管理コンソールにログインして、サービス／Formsをクリックし、「 Web ルート URI 」を https://server-name:port/FormServer に設定します。次に、設定を保存します。
+   `StandAlone` オプションが `true` で、`ApplicationWebRoot` が AEM Forms をホストする J2EE アプリケーションサーバー以外のサーバーを参照している場合、フォームは HTML で正常にレンダリングされません（`ApplicationWebRoot` 値は `FormsServiceClient` オブジェクトの `(Deprecated) renderHTMLForm` メソッドに渡される `URLSpec` オブジェクトを使用して指定されます）。`ApplicationWebRoot` が AEM Forms をホストするサーバーとは別のサーバーである場合、管理コンソールの web ルート URI の値を Forms の web アプリケーション URI 値として設定する必要があります。これを行うには、管理コンソールにログインして、サービス／Formsをクリックし、「 Web ルート URI 」を https://server-name:port/FormServer に設定します。次に、設定を保存します。
 
 1. HTML フォームのレンダリング
 

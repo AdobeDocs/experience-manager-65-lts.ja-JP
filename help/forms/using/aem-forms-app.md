@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 9cc83733-630a-4846-bd9e-72fd76a3286d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '2410'
-ht-degree: 99%
+source-wordcount: '2337'
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 99%
 
 ## 概要 {#overview}
 
-AEM Forms アプリケーションでは、アダプティブフォーム、モバイルフォーム、モバイルデバイスのフォームセットをサーバーに基づいて同期することができます。[OSGi 上の Forms 中心ワークフロー](/help/forms/using/aem-forms-workflow.md)または JEE 上の Forms ワークフローを定義することができます。例えば、金融関係の会社を経営していて、顧客の申請と問い合わせの管理に AEM Forms を使用するとします。顧客はフォームを記入し、それを送信して承認を求めます。モバイルデバイスのフォームを有効にしている場合、顧客はフォームを AEM Forms アプリケーションで記入することができます。また、会社側も、モバイルデバイス上でのフォームの認証を有効にすることで、承認のワークフローを管理することができます。フィールドワーカーはモバイルデバイスを顧客のところに持参し、詳細を確認して、フォームを送信します。AEM Forms アプリケーションは AEM Forms サーバーと同期して、モバイルデバイスで有効になっているフォームを取得します。アプリケーションがオフラインの場合、データはローカルに保存されます。
+AEM Forms アプリケーションでは、アダプティブフォーム、モバイルフォーム、モバイルデバイスのフォームセットをサーバーに基づいて同期することができます。OSGi 上の [Forms中心のワークフロー ](/help/forms/using/aem-forms-workflow.md)<!--or Forms workflows on JEE--> を定義することができます。 例えば、金融関係の会社を経営していて、顧客の申請と問い合わせの管理に AEM Forms を使用するとします。顧客はフォームを記入し、それを送信して承認を求めます。モバイルデバイスのフォームを有効にしている場合、顧客はフォームを AEM Forms アプリケーションで記入することができます。また、会社側も、モバイルデバイス上でのフォームの認証を有効にすることで、承認のワークフローを管理することができます。フィールドワーカーはモバイルデバイスを顧客のところに持参し、詳細を確認して、フォームを送信します。AEM Forms アプリケーションは AEM Forms サーバーと同期して、モバイルデバイスで有効になっているフォームを取得します。アプリケーションがオフラインの場合、データはローカルに保存されます。
 
 AEM Forms アプリケーションのソースコードは、ソフトウェアディストリビューションにより、使用することができます。ソフトウエア配布のソースコードパッケージは、`adobe-aemfd-forms-app-src-pkg-<version>.zip` として入手できます。
 
@@ -61,9 +61,13 @@ AEM Forms アプリケーションでは、次のようにフォームを同期�
 
 フォームが公開されると、アプリケーションはサーバーと同期してフォームを取得します。複数のフォームを同期するには、オーサーインスタンスで、フォームマネージャーから複数のフォームを選択して、「**[!UICONTROL AEM Forms アプリケーションと同期]**」を選択します。
 
-## モバイルデバイスのサポート {#mobile-device-support}
+<!--
 
-[AEM Forms アプリケーション（旧称 Mobile Workspace）](/help/forms/using/aem-forms-jee-supported-platforms.md#aem-forms-workspace-app)を参照してください
+## Mobile device support {#mobile-device-support}
+
+See [AEM Forms app (previously known as Mobile Workspace)](/help/forms/using/aem-forms-jee-supported-platforms.md#aem-forms-workspace-app)
+
+-->
 
 ## AEM Forms アプリケーションの主な機能 {#key-features-of-aem-forms-app}
 
@@ -71,7 +75,7 @@ AEM Forms アプリケーションでは、次のようにフォームを同期�
 
 AEM Forms サーバーでアプリケーションを同期して、モバイルデバイスでフォームを使用して作業することができます。
 
-AEM Forms Workflow サーバーでは、フォームをワークベンチプロセスおよび AEM インボックスアプリケーションのスタートポイントに関連付けることができます。AEM インボックスアプリケーションには、アダプティブフォームを関連付けることができます。スタートポイントにはアダプティブフォーム、HTML5 フォーム、または関連するフォームセットを設定することができます。スタートポイントをタスクとして送信したり、タスクをドラフトとして保存したりできます。AEM インボックスアプリケーションとスタートポイントとの違いについて詳しくは、[OSGi 上の Forms ベース AEM ワークフローおよび AEM Forms JEE ワークフローのアクションと機能](capabilities-osgi-jee-workflows.md)を参照してください。
+AEM Forms Workflow サーバーでは、フォームをワークベンチプロセスおよび AEM インボックスアプリケーションのスタートポイントに関連付けることができます。AEM インボックスアプリケーションには、アダプティブフォームを関連付けることができます。スタートポイントにはアダプティブフォーム、HTML5 フォーム、または関連するフォームセットを設定することができます。スタートポイントは、タスクとして送信することも、タスクをドラフトとして保存することもできます。<!--For more information on differences between an AEM Inbox application and a startpoint see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).-->
 
 AEM Forms Workflow を使用しない AEM Forms サーバーがある場合、アプリケーション内で同期が有効になっているフォームは AEM Forms アプリケーション内でレンダリングされます。フォームは、アプリケーションの「フォーム」タブで使用することができ、ドラフトとして送信または保存することができます。アプリケーションでは、アダプティブフォームおよびモバイルフォームがサポートされています。
 
@@ -122,7 +126,7 @@ AEM Forms Workflow を使用しない AEM Forms サーバーがある場合、�
 
 ## AEM インボックスの機能と AEM Forms アプリケーションの機能との違い {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Forms 中心のワークフローを起動するには、[AEM インボックス](/help/forms/using/manage-applications-inbox.md)と AEM Forms アプリケーションの 2 つの方法があります。ただし、AEM インボックスの機能と AEM Forms アプリケーションの機能は異なっています。AEM インボックスは [Forms 中心のワークフロー](/help/forms/using/aem-forms-workflow.md)でのみ機能するのに対して、AEM Forms アプリケーションは Forms 中心のワークフローと Process Management で機能します。AEM インボックスアプリケーションと AEM Forms アプリケーションの機能の違いについて詳しくは、[OSGi 上の Forms ベース AEM ワークフローおよび AEM Forms JEE ワークフローのアクションと機能](capabilities-osgi-jee-workflows.md)を参照してください。
+Forms 中心のワークフローを起動するには、[AEM インボックス](/help/forms/using/manage-applications-inbox.md)と AEM Forms アプリケーションの 2 つの方法があります。ただし、AEM インボックスの機能と AEM Forms アプリケーションの機能は異なっています。AEM インボックスは [Forms中心のワークフローでのみ機能するのに対して ](/help/forms/using/aem-forms-workflow.md)AEM Forms アプリはForms中心のワークフローとプロセス管理の両方で機能します。<!--For more information on differences between AEM Inbox and AEM Forms app capabilities, see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).-->
 
 ## サポートされているフォーム {#supported-forms}
 
