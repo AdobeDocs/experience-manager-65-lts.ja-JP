@@ -5,9 +5,9 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
 workflow-type: tm+mt
-source-wordcount: '11126'
+source-wordcount: '10487'
 ht-degree: 99%
 
 ---
@@ -129,7 +129,7 @@ Dynamic Media のビデオは、高品質のアダプティブビデオを簡単
 
 アルゴリズムの技術情報について詳しくは、[https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp) を参照してください。
 
-単一のビデオとアダプティブビデオセットの管理では、次の機能がサポートされています。
+単一のビデオおよびアダプティブビデオセットの管理では、次の方法がサポートされています。
 
 * サポートされている様々な形式でビデオをアップロードし、複数の画面で再生できるように MP4 H.264 にエンコードします。事前定義済みのアダプティブビデオセット、1 つのビデオのエンコーディングプリセットを使用するか、独自のエンコーディングをカスタマイズしてビデオの品質とサイズを制御できます。
 
@@ -262,10 +262,6 @@ DASH は国際標準であり、HLS は Apple の標準です。どちらもア�
   </tr>
  </tbody>
 </table>
-
->[!IMPORTANT]
->
->*ビデオに DASH を使用するには、まずアドビテクニカルサポートが使用するアカウントで有効にする必要があります。詳しくは、[Dynamic Media アカウントで DASH を有効にする](#enable-dash)を参照してください。
 
 ## Dynamic Media ビデオソリューションのアーキテクチャ {#architecture-of-dynamic-media-video-solution}
 
@@ -417,60 +413,6 @@ VBR と CRB のどちらを使用するべきかVBR と CBR のどちらを選�
 
 Dynamic Media では、MP4 H.264 ビデオエンコーディングプリセットの使用をお勧めします。MP4 ファイルでは H.264 ビデオコーデックが使用されるので、高品質のビデオを圧縮されたファイルサイズで作成できます。
 
-### Dynamic Media アカウントで DASH、複数のキャプションおよびオーディオトラックのサポートを有効にする {#enable-dash}
-
-**アカウントでの DASH の有効化について**
-DASH（Digital Adaptive Streaming over HTTP）は、ビデオストリーミングの国際標準で、様々なビデオビューアで広く採用されています。アカウントで DASH が有効になっている場合は、アダプティブビデオストリーミング用に DASH または HLS のいずれかを選択できます。ビューアのプリセットで再生タイプとして「**[!UICONTROL 自動]**」が選択されていると、プレーヤー間の自動切り替えで両方を選択できます。
-
-アカウントで DASH を有効にする場合の主なメリットには、次のようなものがあります。
-
-* アダプティブビットレートストリーミング用に DASH ストリームビデオをパッケージ化できます。この方法では配信の効率が向上します。アダプティブストリーミングにより、顧客に最適な視聴エクスペリエンスが提供されます。
-* Dynamic Media プレイヤーでブラウザーに最適化されたストリーミングにより、HLS と DASH のストリーミングを切り替え、最高のサービス品質を確保できます。Safari ブラウザーを使用すると、ビデオプレーヤーが HLS に自動的に切り替わります。
-* ビデオビューアプリセットを編集して、優先ストリーミング方式（HLS または DASH）を設定できます。
-* 最適化されたビデオエンコーディングにより、DASH 機能を有効にしながら、追加のストレージを使用しなくて済みます。HLS と DASH の両方に対して 1 つのビデオエンコーディングセットが作成され、ビデオの保存コストが最適化されます。
-* 顧客がビデオ配信をアクセスしやすくなります。
-* API を使用してストリーミング URL を取得することもできます。
-
-アカウントで DASH を有効にするには、次の 2 つの手順が必要です。
-
-* DASH を使用するように Dynamic Media を設定します。これは、自分で簡単に行えます。
-* Experience Managerで DASH を使用するように設定します。これは、Adobe カスタマーサポートにケースを作成して送信することにより行います。
-
-アドビサポートのケースを作成してアカウントで DASH を有効にすると、複数のキャプションとオーディオトラックのサポートも自動的に有効になります。アクティブ化すると、新しくアップロードしたすべてのビデオは、複数のキャプションとオーディオトラックの追加をサポートする更新されたバックエンドアーキテクチャを使用して処理されます。
-
->[!IMPORTANT]
->
->Dynamic Media アカウントで複数のキャプションおよびオーディオトラックのサポートを有効化する&#x200B;*前*&#x200B;にアップロードしたビデオは、[再処理する必要があります](/help/assets/processing-profiles.md#reprocessing-assets)。このビデオ再処理の手順は、複数のキャプションとオーディオトラック機能を使用できるようにするために必要です。再処理後も、ビデオ URL は引き続き通常通り動作し、再生することができます。
-
-**Dynamic Media アカウントで DASH、複数のキャプションおよび複数のオーディオトラックのサポートを有効にするには次の手順に従います。**
-
-<!-- 1. **Configure Dynamic Media for DASH** - In Dynamic Media on Experience Manager, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-
-1. Search for **AEM Assets Dynamic Media Video Advanced Streaming** feature flag.
-1. To enable (turn on) DASH, select the checkbox. -->
-1. まず **Dynamic Media を DASH 用に設定**&#x200B;します。Experience Manager から、**[!UICONTROL ツール]**／**[!UICONTROL 操作]**／**[!UICONTROL Web コンソール]**&#x200B;に移動します。
-
-1. **[!UICONTROL Adobe Experience Manager web コンソールの設定]**&#x200B;ページから、*AEM Assets Dynamic Media のビデオの高度なストリーミング機能フラグ*&#x200B;という名前までスクロールします。
-
-1. 名前の左側で、DASH を有効（オン）にするチェックボックスを選択します。
-
-1. 「**[!UICONTROL 保存]**」を選択します。
-
-1. 次に、Admin Console を使用して、[新しいサポートケースの作成](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)を開始します。
-1. サポートケースを作成するには、手順に従いながら次の情報を入力します。
-
-   * 主要連絡先の氏名、メールアドレス、電話番号。
-   * Dynamic Media アカウントの名前。
-   * Experience Managerで、Dynamic Media アカウントに対して DASH、複数キャプションおよび複数のオーディオトラックのサポートを有効にするように指定します。
-
-1. アドビカスタマーサポートでは、リクエストが送信された順序に基づいて、お客様の待機リストに追加します。
-1. アドビがお客様のリクエストを処理する準備が整うと、カスタマーサポートがお客様に連絡し、有効化の目標日を調整して設定します。
-1. カスタマーサポートから、完了後に通知があります。
-1. 次のいずれかを実行できます。
-
-   * 通常通り、[ビデオビューアプリセット](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset)を作成します。
-   * ビデオに[複数のキャプションとオーディオトラックを追加します](#add-msma)。
-
 ## ビデオレポートの表示 {#viewing-video-reports}
 
 >[!NOTE]
@@ -606,7 +548,6 @@ Dynamic Media で複数のキャプションおよびオーディオトラック
 
 * Dynamic Media が AEM 環境で設定されている。
 * [Dynamic Media ビデオプロファイルが、ビデオが取り込まれるフォルダーに適用されている](/help/assets/video-profiles.md#applying-a-video-profile-to-folders)。
-* [Dynamic Media アカウントで複数のキャプションおよびオーディオトラックが有効になっている](#enable-dash)。
 
 追加されたキャプションは、WebVTT および Adobe `.vtt` 形式でサポートされています。また、追加されたオーディオトラックファイルでサポートされる形式は、MP3 形式です。
 
@@ -836,10 +777,6 @@ Dynamic Media では、URL 修飾子を使用して、ビデオにキャプシ�
 
 
 ## ビデオへのクローズドキャプションの追加 {#adding-captions-to-video}
-
->[!IMPORTANT]
->
->Dynamic Media アカウントで[複数のキャプションおよびオーディオトラック機能を有効にする](#enable-dash)ことをお勧めします。そうすることで、最新の Dynamic Media バックエンドアーキテクチャと、キャプション、サブタイトル、オーディオトラックをビデオに追加するための簡素化されたワークフローを利用できるようになります。
 
 1 つのビデオまたはアダプティブビデオセットにクローズドキャプションを追加すると、ビデオの配信先をグローバルマーケットまで拡大できます。クローズドキャプションを追加すると、音声をダビングする必要も、異なる言語ごとにネイティブスピーカーの音声を使って再録音する必要もなくなります。ビデオは、録画された言語で再生されます。外国語のキャプションが表示されるので、異なる言語を使用する視聴者もオーディオ部分を理解できます。
 
