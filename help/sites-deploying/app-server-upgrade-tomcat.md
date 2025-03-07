@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 7f8de16f-9e9a-4d37-9978-d26c496b911c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b835dbf6fd7f40a2a1e1ca26c8a6870b69a19cbe
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '468'
 ht-degree: 17%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 17%
 
 ## アップグレード前の手順 {#pre-upgrade-steps}
 
-アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。詳しくは、[コードのアップグレードとカスタマイズ](/help/sites-deploying/upgrading-code-and-customizations.md)および[アップグレード前のメンテナンスタスク](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。また、システムが [AEM 6.5 LTS の要件 ](/help/sites-deploying/technical-requirements.md) を満たしていることを確認し、[ アップグレード計画に関する考慮事項 ](/help/sites-deploying/upgrade-planning.md) と、[Analyzer](/help/sites-deploying/pattern-detector.md) を使用して複雑さを見積もる方法を確認します。
+アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。詳しくは、[コードのアップグレードとカスタマイズ](/help/sites-deploying/upgrading-code-and-customizations.md)および[アップグレード前のメンテナンスタスク](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。また、システムが [AEM 6.5 LTS の要件 ](/help/sites-deploying/technical-requirements.md) を満たしていることを確認し、[ アップグレード計画に関する考慮事項 ](/help/sites-deploying/upgrade-planning.md) と、[Analyzer](/help/sites-deploying/aem-analyzer.md) を使用して複雑さを見積もる方法を確認します。
 
 
 ### 移行の前提条件 {#migration-prerequisites}
@@ -42,7 +42,7 @@ ht-degree: 17%
    ```
 
 1. AEM 6.5 LTS 互換の Tomcat サーバーの設定
-1. AEM サーバーの開始パラメーターを確認し、システム要件に従ってパラメーターを更新してください。 詳しくは、[Java 17 に関する考慮事項 ](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations) を参照してください
+1. AEM サーバーの開始パラメーターを確認し、システム要件に従ってパラメーターを更新してください。 詳しくは、[Java 17 に関する考慮事項 ](/help/sites-deploying/custom-standalone-install.md#java-considerations) を参照してください
 1. Java 17 を使用して、新しくダウンロードした 6.5 LTS war を Tomcat サーバーにデプロイし、次のコマンドを実行してAEM 6.5 LTS Tomcat サーバーを起動します。
 
    ```

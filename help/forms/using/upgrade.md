@@ -9,7 +9,7 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade
 exl-id: 93126750-4645-4084-a21b-5362e3cc08a9
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: dde49ddf344d197d07dce883e03d002cc0934b82
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 88%
@@ -30,7 +30,7 @@ AEM 6.5 Forms には、いくつかの新機能と機能強化が導入されて
 
 次の図は、OSGi 上の AEM Forms で使用可能なアップグレードパスを示しています。
 
-![OSGi アップグレードフロー](/help/forms/using/assets/upgrade-22-lts.png)
+![OSGi アップグレードフロー](/help/forms/using/assets/updated-img-forms-upgrade-lts.png)
 
 次の場所から直接アップグレードを実行できます。
 

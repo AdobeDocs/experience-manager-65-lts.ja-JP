@@ -5,7 +5,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 2a5d9026-49bc-4766-bcbe-38d834c14f72
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 82af7ee5b3665dcc33b47e05c8580e9981728888
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 17%
@@ -22,7 +22,7 @@ ht-degree: 17%
 
 アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。詳しくは、[コードのアップグレードとカスタマイズ](/help/sites-deploying/upgrading-code-and-customizations.md)および[アップグレード前のメンテナンスタスク](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。さらに、お使いのシステムが [AEM 6.5 LTS の要件 ](/help/sites-deploying/technical-requirements.md) を満たしていることを確認してください。
 
-[ アップグレードの計画 ](/help/sites-deploying/upgrade-planning.md) や、[AEM Analyzer](/help/sites-deploying/pattern-detector.md) を使用してAEMのアップグレードの複雑さを見積もる方法を確認してください。
+[ アップグレードの計画 ](/help/sites-deploying/upgrade-planning.md) や、[AEM Analyzer](/help/sites-deploying/aem-analyzer.md) を使用してAEMのアップグレードの複雑さを見積もる方法を確認してください。
 
 ### 移行の前提条件 {#migration-prerequisites}
 
@@ -82,7 +82,7 @@ ht-degree: 17%
    java -version
    ```
 
-1. AEM サーバーの開始パラメーターを確認し、必要に応じてパラメーターを更新してください。 詳しくは、[Java 17 に関する考慮事項 ](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations) を参照してください
+1. AEM サーバーの開始パラメーターを確認し、必要に応じてパラメーターを更新してください。 詳しくは、[Java 17 に関する考慮事項 ](/help/sites-deploying/custom-standalone-install.md#java-considerations) を参照してください。
 1. 新しい 6.5 LTS war をダウンロードし、`/<path-to-aem-server>/dropins/` にある dropins フォルダーにコピーします。
 1. AEM インスタンスを起動します。通常は、次のコマンドを使用して起動できます。
 

@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8c4ffb0e-b4dc-4a81-ac43-723754cbc0de
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9bf502146a309cd0d91f2aaa1778d5b550d424a8
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -87,3 +87,5 @@ Checkpoints won't be copied, because no external datastore has been specified. T
 この警告は無視される場合もありますが、この場合、リポジトリは最初の起動時に完全にインデックスが再作成されます。 これは、特に大きなインスタンスにとっては長いプロセスになる可能性があります。 リポジトリーは、インデックス再作成プロセスが完了するまで使用できません。 `--skip-checkpoints` オプションを使用して、警告を抑制します。
 
 AEMを起動する前に、[ オフラインでのインデックス再作成 ](/help/sites-deploying/upgrade-offline-reindexing.md) を使用してリポジトリのオフラインでのインデックス再作成を行うこともできます。初回の起動時には、完全なインデックス再作成を回避してください。
+
+oak-upgrade ツールと高度な使用方法について詳しくは、[ 公式ドキュメント ](https://jackrabbit.apache.org/oak/docs/migration.html) を参照してください。

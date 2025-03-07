@@ -1,18 +1,14 @@
 ---
 title: 実行モード
 description: 実行モードを使用して、特定の目的に合わせて AEM インスタンスを調整する方法を説明します。
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: configuring
-content-type: reference
 feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b21555f2-bc07-4653-a5da-966b9aa7ea1f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3370d62eafb9339a9f9c638f3fb2e2ce0f14d9ec
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 100%
+source-wordcount: '679'
+ht-degree: 96%
 
 ---
 
@@ -38,18 +34,14 @@ ht-degree: 100%
 
 * `author`
 * `publish`
-* `samplecontent`
-* `nosamplecontent`
 
 これらは相互に排他的な実行モードの 2 つのペアです。例えば、次のことが可能です。
 
 * `author` または `publish` を定義できますが、両方を同時に定義することはできません。
 
-* `author` を `samplecontent` または `nosamplecontent` と組み合わせることができますが、両方と組み合わせることはできません。
-
 >[!CAUTION]
 >
->上記のいずれかの実行モード（author、publish、samplecontent、nosamplecontent）を使用するときは、インストール時に使用する値が、そのインストールの全期間の実行モードを定義します&#x200B;*。*
+>上記のいずれかの実行モード（author、publish）を使用するときは、インストール時に使用する値が、そのインストールの *全期間* の実行モードを定義します。
 >
 >これらの実行モードは、インストール後は変更できません&#x200B;*。*
 
@@ -68,16 +60,6 @@ ht-degree: 100%
 * 必要に応じて
 
 カスタマイズされた実行モードは、起動のたびに選択することもできます。
-
-## samplecontent と nosamplecontent の使用 {#using-samplecontent-and-nosamplecontent}
-
-これらのモードを使用すると、サンプルコンテンツの使用を制御できます。サンプルコンテンツは、クイックスタートの構築前に定義され、パッケージや設定などを含めることができます。
-
-* `samplecontent` 実行モードでは、サンプルコンテンツがインストールされます（デフォルトモード）。
-
-* `nosamplecontent` モードでは、サンプルコンテンツはインストールされません。
-
-nosamplecontent 実行モードは、実稼動インストール用に設計されています。
 
 ## 実行モードの設定プロパティの定義 {#defining-configuration-properties-for-a-run-mode}
 

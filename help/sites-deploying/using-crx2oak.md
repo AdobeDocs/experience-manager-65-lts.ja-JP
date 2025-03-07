@@ -1,15 +1,13 @@
 ---
 title: CRX2Oak 移行ツールの使用
 description: Adobe Experience Manager での CRX2Oak 移行ツールの使用方法について説明します。このツールは、異なるリポジトリ間でデータを移行する際に役立つように設計されています。
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: upgrading
-content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
+hide: true
+hidefromtoc: true
 exl-id: 542967b2-e2cf-40d1-a805-456dc6e671a9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e13340d0ab84d68a2e7c676787909380d2f516a0
 workflow-type: tm+mt
 source-wordcount: '1175'
 ht-degree: 100%

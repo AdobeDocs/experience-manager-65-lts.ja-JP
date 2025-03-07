@@ -2,14 +2,13 @@
 title: AEM Analyzer を使用したアップグレードの複雑性の評価
 description: AEM アナライザーを使用して、アップグレードの複雑さを評価する方法を説明します。
 topic-tags: upgrading
-content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 6b846e456466492f4be2c1e5a1f6b3913ae4dab4
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2069'
 ht-degree: 23%
 
 ---
@@ -34,17 +33,17 @@ AEM 6.5 LTS アナライザーレポートには、次のカテゴリが含ま�
 * AEM 6.5 の機能は、新機能によって削除されたか、AEM 6.5 LTS で現在サポートされていません
 * Java および Guava API の使用を削除
 
-カテゴリ、およびそれらのカテゴリに関連する可能性のある影響や解決策に関する追加情報は、AEM 6.5 LTS アナライザーレポート内のリンクから提供されます。
+これらのカテゴリに関連するカテゴリおよび考えられる影響と解決策に関する追加情報は、AEM 6.5 LTS アナライザーレポート内のリンクから提供されます。
 
 ## 入手方法 {#analyzer-availability}
 
-AEM Analyzer は、[ ソフトウェア配布ポータル ](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html) から zip ファイルでダウンロードできます。 [ パッケージマネージャー ](/help/sites-administering/package-manager.md) を使用して、このパッケージをソース AEM インスタンスにインストールできます。
+AEM Analyzer は、[ ソフトウェア配布ポータル ](https://experience.adobe.com/#/downloads/content/software-distribution/ja/aem.html) から zip ファイルでダウンロードできます。 [ パッケージマネージャー ](/help/sites-administering/package-manager.md) を使用して、このパッケージをソース AEM インスタンスにインストールできます。
 
 ## AEM Analyzer 使用時の重要な考慮事項 {#important-considerations-for-using-aem-analyzer}
 
 AEM アナライザーを実行する際の重要な考慮事項については、次の節に従います。
 
-* アナライザーレポートは、AEMの出力 [ パターン検出 ](/help/sites-deploying/pattern-detector.md) を使用して作成されています。 Analyzer で使用するパターン検出ツールのバージョンは、AEM Analyzer のインストール・パッケージに含まれています
+* アナライザーレポートは、AEM パターン検出の出力を使用して作成されます。 Analyzer で使用するパターン検出ツールのバージョンは、AEM Analyzer のインストール・パッケージに含まれています
 * AEM Analyzer を実行できるのは、**admin** ユーザーまたは **administrators** グループに属するユーザーのみです
 * Analyzer は、バージョン 6.5 以降のAEM インスタンスでサポートされます。
 
