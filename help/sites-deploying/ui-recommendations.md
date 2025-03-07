@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: f65f9e94-0837-48d1-a565-cfb880963790
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e7fc1120d12160ba866ceaddd087fc9acdfcd51d
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '754'
 ht-degree: 100%
 
 ---
@@ -91,10 +91,6 @@ Adobe Experience Manager 6.5 に関する製品管理からの推奨事項を以
   </tr>
  </tbody>
 </table>
-
-### FAQ {#faq}
-
-詳しくは、ナレッジベースの記事 [Touch UI Authoring FAQ](https://helpx.adobe.com/jp/experience-manager/kb/index/touchui_faq.html) を参照してください。クラシック UI の廃止予定に関する情報も提供しています。
 
 ### UI の選択 {#selecting-your-ui}
 

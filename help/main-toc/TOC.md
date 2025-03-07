@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS のドキュメントを参照して、その仕組みと機能を確認してください。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: b4a1806c48ab0945f83691a597cad214c6d1b645
 workflow-type: tm+mt
-source-wordcount: '6816'
+source-wordcount: '6819'
 ht-degree: 97%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 97%
 
 + リリースノート {#release-notes}
    + [リリースノート](/help/release-notes/release-notes.md)
+   + [よくある質問](/help/release-notes/faq.md)
 + セキュリティ {#security}
    + [ユーザー管理とセキュリティ](/help/sites-administering/security.md)
    + [ユーザー、グループおよびアクセス権限の管理](/help/sites-administering/user-group-ac-admin.md)
