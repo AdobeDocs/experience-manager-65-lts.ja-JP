@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: 57302061656ebf37a49041753dd5eb34e7ba22ef
+source-git-commit: 6a94b2e2e1d387401bf11810c46d371c538407f9
 workflow-type: tm+mt
 source-wordcount: '1221'
 ht-degree: 93%
@@ -118,7 +118,7 @@ AEM の用語では、「インスタンス」とはサーバー上で実行さ�
 
 AEM に習熟したい場合や、AEM で開発する場合は、Apple OS X またはデスクトップ版の Microsoft® Windows または Linux® を実行しているローカルマシンにインストールされたインスタンスを使用するのが一般的です。
 
-クライアント側では、AEMは、デスクトップとタブレットの両方のオペレーティングシステムにおけるすべてのブラウザー（**Microsoft®Edge**、**Chrome **51 以上****、**Firefox**47 以上、**Safari** 8 以上）に対応します。 詳細に関しては、[サポートされているクライアントプラットフォーム](/help/sites-deploying/technical-requirements.md#supported-client-platforms)を参照してください。
+クライアント側では、AEMは、デスクトップとタブレットの両方のオペレーティングシステムにおけるすべてのブラウザー（**Microsoft®Edge**、**Chrome 51 以上**、**Firefox 47 以上**、**Safari 8 以上**）に対応します。 詳細に関しては、[サポートされているクライアントプラットフォーム](/help/sites-deploying/technical-requirements.md#supported-client-platforms)を参照してください。
 
 ### ソフトウェアの入手 {#getting-the-software}
 
@@ -265,6 +265,7 @@ AEM が起動し、Web ブラウザーが適切なページに自動的にリダ
 `https://localhost:4502/`
 
 ![ログイン画面](assets/screen_shot_2019-04-08at83533am.png)
+
 <!-- 
 After you are logged in, you have access to AEM. For more information, depending on your role, see the following:
 

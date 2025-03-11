@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: d716571f490fe4bf3b7e58ea2ca85bbe6703ec0d
+source-git-commit: 5f968f5dc0696a683cc063d330c8edfba05f11ab
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 99%
+source-wordcount: '841'
+ht-degree: 42%
 
 ---
 
@@ -45,9 +45,9 @@ AEM は、単一の war ファイルとしてデプロイされます。
 デプロイすると、デフォルトで次のようになります。
 
 * 実行モードは `author`
-* インスタンス（リポジトリ、Felix OSGI 環境、バンドルなど）が、`${user.dir}/crx-quickstart` にインストールされる（ここで、`${user.dir}` は現在の作業ディレクトリで、crx-quickstart へのこのバスを `sling.home` と呼ぶ）
+* インスタンス（リポジトリ、Felix OSGI 環境、バンドルなど）は `${user.dir}/crx-quickstart` にインストールされます。`${user.dir}` は現在の作業ディレクトリです。 crx-quickstart へのこのパスは `sling.home` です。
 
-* コンテキストルートは war ファイル名（例：`aem-65-lts`）
+* コンテキストルートは war ファイル名です。 例えば、`aem-65-lts` のように指定します。
 
 #### 設定 {#configuration}
 
@@ -63,64 +63,64 @@ AEM は、単一の war ファイルとしてデプロイされます。
 
 パブリッシュインスタンスをデプロイするには、実行モードを publish に設定する必要があります。
 
-* AEM war ファイルから WEB-INF/web.xml を展開
-* sling.run.modes パラメーターを publish に変更
-* web.xml ファイルを AEM war ファイルに再圧縮
+* AEM war ファイルから `WEB-INF/web.xml` を解凍します
+* パラメーター `sling.run.modes` 公開に変更
+* `web.xml` ファイルをAEM war ファイルに再圧縮します。
 * AEM war ファイルをデプロイします。
 
 #### インストールの確認 {#installation-check}
 
-すべてがインストールされているかどうかは、次の手順で確認します。
+すべてがインストールされているかどうかを確認するには、次の操作を行います。
 
 * `error.log` ファイルに対して「テール」を実行して、すべてのコンテンツがインストールされていることを確認
 * `/system/console` を調べて、すべてのバンドルがインストールされていることを確認
 
 #### 同じアプリケーションサーバーに 2 つのインスタンス {#two-instances-on-the-same-application-server}
 
-デモンストレーション目的で、オーサーインスタンスとパブリッシュインスタンスを 1 つのアプリケーションサーバーにインストールすることが適切な場合があります。そのためには、次の手順に従います。
+デモ目的で、オーサーインスタンスとパブリッシュインスタンスの両方を 1 つのアプリケーションサーバーにインストールするのが適切な場合があります。 これを実現するには、次の手順を実行する必要があります。
 
-1. パブリッシュインスタンスの sling.home 変数と sling.run.modes 変数を変更します。
-1. AEM war ファイルから WEB-INF/web.xml ファイルを展開します。
-1. sling.home パラメーターを別のパス（絶対パスと相対パスが指定可能）に変更します。
-1. sling.run.modes を、パブリッシュインスタンス用に publish に変更します。
-1. web.xml ファイルを再圧縮します。
-1. war ファイルの名前を、別々の名前になるように変更します。例えば、一方を aemauthor.war に、もう一方を aempublish.war に変更します。
+1. パブリッシュインスタンス `sling.home` 変数と `sling.run.modes` 変数の変更
+1. AEM war ファイルから `WEB-INF/web.xml` ファイルを解凍します
+1. `sling.home` パラメーターを別のパスに変更する（絶対パスと相対パスが指定可能）
+1. パブリッシュインスタンスの `sling.run.modes` を `publish` に変更します
+1. `web.xml` ファイルを再圧縮
+1. war ファイルの名前を、別々の名前になるように変更します。例えば、一方の名前を `aemauthor.war` に、もう一方の名前を `aempublish.war` に変更します
 1. 高めのメモリ設定を使用します。例えば、デフォルトの AEM インスタンスの場合は、`-Xmx3072m` などを使用します。
-1. 2 つの web アプリケーションをデプロイします。
-1. デプロイメント後、2 つの web アプリケーションを停止します。
-1. オーサーインスタンスとパブリッシュインスタンスの両方で、sling.properties ファイルで property felix.service.urlhandlers=false が false に設定されていると仮定します（デフォルトでは true に設定）。
+1. 2 つの web アプリケーションをデプロイします
+1. デプロイメント後、2 つの Web アプリケーションを停止します
+1. オーサーインスタンスとパブリッシュインスタンスの両方で、`sling.properties` ファイルでプロパティ `felix.service.urlhandlers` が `false` に設定されていることを確認します。 （デフォルトでは `true` に設定されています）。
 1. 2 つの web アプリケーションを再起動します。
 
 ## アプリケーションサーバーのインストール手順 {#application-servers-installation-procedures}
 
 ### WebSphere® 24.0.0.7 {#websphere}
 
-デプロイメントの前に、上記の[概要](#general-description)をお読みください。
+デプロイメントの前に、上記の [ 概要 ](#general-description) をお読みください。
 
 **サーバーの準備**
 
 * Basic 認証ヘッダーを無効にします。
 
-   * AEM にユーザーを認証させる方法の 1 つは、WebSphere® サーバーのグローバル管理セキュリティを無効にすることです。無効にするには、セキュリティ／グローバル セキュリティに移動し、「Enable administrative security」チェックボックスをオフにして、保存し、サーバーを再起動します。
+   * AEMによるユーザー認証を可能にする 1 つの方法は、WebSphere® サーバーのグローバル管理セキュリティを無効にすることです。 これをおこなうには、**セキュリティ/Global Security** に移動し、**Enable administrative security （管理セキュリティを有効にする）チェックボックス** のチェックを外して、サーバーを保存して再起動します。
 
 * `"JAVA_OPTS= -Xmx2048m"` の設定
 * コンテキストルート = / を使用して AEM をインストールする場合は、既存のデフォルト web アプリケーションのコンテキストルートを変更します。
 
-**AEM web アプリケーションのデプロイ**
+**AEM Web アプリケーションのデプロイ**
 
-* AEM war ファイルをダウンロードします。
-* 必要に応じて、web.xml で設定します（上記の概要を参照）。
+* AEM war ファイルをダウンロードします
+* 必要に応じて、`web.xml` ファイルで設定を行います。 詳しくは、上記の [ 概要 ](#general-description) を参照してください。
 
-   * WEB-INF/web.xml ファイルを解凍
-   * sling.run.modes パラメーターを publish に変更
-   * sling.home 初期パラメーターをコメント解除し、必要に応じてこのパスを設定
-   * web.xml ファイルを再圧縮
+   * `WEB-INF/web.xml` ファイルを解凍します
+   * `sling.run.modes` パラメーターを `publish` に変更します
+   * 最初の `sling.home` パラメーターのコメントを解除し、必要に応じてこのパスを設定します
+   * `web.xml` ファイルを再圧縮します。
 
-* AEM war ファイルをデプロイします。
+* AEM war ファイルのデプロイ
 
-   * コンテキストルートを選択します（Sling 実行モードを設定する場合は、デプロイウィザードの詳細な手順を選択し、ウィザードの手順 6 で指定する必要があります）。
+   * コンテキストルートを選択してください Sling 実行モードを設定する場合は、デプロイウィザードの詳細手順を選択してから、ウィザードの手順 6 で指定する必要があります。
 
-* AEM web アプリケーションの起動
+* AEM Web アプリケーションの起動
 
 #### Tomcat 11.0.x {#tomcat}
 
@@ -131,9 +131,12 @@ AEM は、単一の war ファイルとしてデプロイされます。
    * VM メモリ設定の値を増やします。
 
       * `bin/catalina.bat`（UNIX® の場合は `catalina.sh`）に、次の設定を追加します。
-      * `set "JAVA_OPTS= -Xmx2048m`
 
-   * Tomcat では、インストール時に管理者もマネージャーもアクセスできません。そのため、次のアカウントへのアクセスを許可するには `tomcat-users.xml` を手動で編集する必要があります。
+        ```
+        set "JAVA_OPTS= -Xmx2048m`
+        ```
+
+   * Tomcat では、インストール時に管理者またはマネージャーによるアクセスは有効になりません。 そのため、次のアカウントへのアクセスを許可するには `tomcat-users.xml` を手動で編集する必要があります。
 
       * `tomcat-users.xml` を編集して、管理者およびマネージャーのアクセスを含めます。設定は次の例のようになります。
 
@@ -154,15 +157,15 @@ AEM は、単一の war ファイルとしてデプロイされます。
 
    * コンテキストルート「/」を使用して AEM をデプロイする場合は、既存の ROOT web アプリケーションのコンテキストルートを変更する必要があります。
 
-      * ROOT web アプリケーションを停止してデプロイ解除します。
-      * Tomcat の web アプリケーションフォルダーで ROOT.war フォルダーの名前を変更します。
-      * Web アプリケーションを再起動します。
+      * ルート Web アプリケーションを停止してデプロイ解除します
+      * Tomcat の webapps フォルダーにある `ROOT.war` フォルダーの名前を変更します。
+      * Web アプリを再起動します。
 
-   * manager-gui を使用して AEM web アプリケーションをインストールする場合は、アップロードファイルの最大サイズを増やす必要があります。デフォルトで許可されているアップロードサイズは 50 MB のみです。これに対して、マネージャー web アプリケーションの web.xml を開き、
+   * manager-gui を使用してAEM web アプリケーションをインストールする場合は、アップロードするファイルの最大サイズを増やす必要があります。デフォルトでは、アップロードできるサイズは 50 MB までです。 これを実現するには、マネージャー web アプリケーションの `web.xml` を開きます。
 
      `webapps/manager/WEB-INF/web.xml`
 
-     max-file-size と max-request-size を 500 MB 以上に増やします。そのような `web.xml` ファイルの例として、次の `multipart-config` の例を参照してください。
+     `max-file-size` と `max-request-size` を 500 MB 以上に増やします。 以下の `web.xml` ファイルの例で、次の `multipart-config` を参照してください。
 
      ```xml
      <multipart-config>
@@ -173,16 +176,16 @@ AEM は、単一の war ファイルとしてデプロイされます。
      </multipart-config>
      ```
 
-* **AEM web アプリケーションのデプロイ**
+* **AEM Web アプリケーションのデプロイ**
 
    * AEM war ファイルをダウンロードします。
-   * 必要に応じて、web.xml で設定を行います（上記の概要を参照）。
+   * 必要に応じて、`web.xml` ファイルで設定を行います。
 
-      * WEB-INF/web.xml ファイルを展開します。
-      * sling.run.modes パラメーターを publish に変更します。
-      * sling.home 初期パラメーターをコメント解除し、必要に応じてこのパスを設定します。
-      * web.xml ファイルを再圧縮します。
+      * `WEB-INF/web.xml` ファイルを解凍します
+      * `sling.run.modes` パラメーターを `publish` に変更します
+      * 最初の `sling.home` パラメーターのコメントを解除し、必要に応じてこのパスを設定します
+      * `web.xml` ファイルを再圧縮します。
 
-   * AEM war ファイルをルート web アプリケーションとしてデプロイする場合は、名前を ROOT.war に変更します。aemauthor をコンテキストルートとして使用する場合は、名前を aemauthor.war に変更します。
-   * ファイルを Tomcat の webapps フォルダーにコピーします。
+   * ルート Web アプリケーションとしてデプロイする場合は、AEM war ファイルの名前を `ROOT.war` に変更します。 `aemauthor` をコンテキストルートにする場合は、名前を `aemauthor.war` に変更します。
+   * Tomcat の webapps フォルダーにコピーします。
    * AEM がインストールされるまで待ちます。
