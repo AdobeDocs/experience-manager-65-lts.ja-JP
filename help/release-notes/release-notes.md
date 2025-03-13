@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: e7fc1120d12160ba866ceaddd087fc9acdfcd51d
+source-git-commit: 0afd255ec5c9d3db37f2f059782b35052761b1cf
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '801'
 ht-degree: 40%
 
 ---
@@ -42,7 +42,7 @@ Quickstart は、サーブレットエンジンとして Eclipse Jetty 11.0.x �
 
 #### Uberjar のパッケージ {#uber-jar-packaging}
 
-* AEM 6.5 LTS の Uberjar パッケージにはわずかな違いがあります。 詳細については [ を参照してください ](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version-update-the-aem-uber-jar-version)。
+* AEM 6.5 LTS の Uberjar パッケージにはわずかな違いがあります。 詳しくは、[AEM Uber Jar のバージョンの更新 ](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version) を参照してください。
 
 #### アップグレード {#upgrade}
 

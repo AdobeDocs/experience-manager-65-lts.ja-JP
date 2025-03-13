@@ -1,19 +1,14 @@
 ---
 title: 作成者が AEM でコンテンツを作成する際の最初の手順
-description: AEM 6.5 でのコンテンツの作成とオーサリングに関する主要な概念について説明します。また、タグ、テンプレート、その他のページ機能の使用に関する情報も提供します。
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
-docset: aem65
+description: AEM 6.5 LTS でのコンテンツの作成とオーサリングに関する主要な概念について説明します。 また、タグ、テンプレート、その他のページ機能の使用に関する情報もあります。
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 8fc30cfe-cb10-47ba-911c-e4fdfaa970b5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 31370571843508acfb5d1e5cc491fdb043153a8f
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 100%
+source-wordcount: '414'
+ht-degree: 93%
 
 ---
 
