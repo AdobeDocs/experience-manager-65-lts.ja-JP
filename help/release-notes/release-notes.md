@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager 6.5 LTS の最新のリリースノート
-description: Adobe Experience Manager 6.5 LTS の最新のリリースノートです。
+description: これらは、Adobe Experience Manager 6.5 LTS の最新のリリースノートです。
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
@@ -8,7 +8,7 @@ exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: 0afd255ec5c9d3db37f2f059782b35052761b1cf
 workflow-type: tm+mt
 source-wordcount: '801'
-ht-degree: 40%
+ht-degree: 41%
 
 ---
 
