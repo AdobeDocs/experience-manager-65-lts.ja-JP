@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: e51842b5-fa91-42d2-a490-5a7e867dada7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3cc47de71aec7e110b55f511ceaa0d314a1369ef
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 100%
+source-wordcount: '733'
+ht-degree: 92%
 
 ---
 
@@ -40,10 +40,10 @@ AEM 6 で最も重要な変更の 1 つは、リポジトリレベルでのイ�
 
 デフォルトでは、AEM 6 は Tar ストレージを使用して、デフォルトの設定オプションを使用してノードとバイナリを保存します。次の操作を行うことで、ストレージ設定を手動で設定できます。
 
-1. AEM 6 quickstart jar をダウンロードし、新しいフォルダーに配置します。
+1. AEM 6.5 LTS クイックスタート jar をダウンロードして、新しいフォルダーに配置します。
 1. 次を実行して AEM を解凍します。
 
-   `java -jar cq-quickstart-6.jar -unpack`
+   `java -jar <aem-65-lts>.jar -unpack`
 
 1. インストールディレクトリ内に `crx-quickstart\install` というフォルダーを作成します。
 
@@ -60,12 +60,12 @@ AEM 6 で最も重要な変更の 1 つは、リポジトリレベルでのイ�
 
 #### 新規にインストールした AEM インスタンスと Mongo ストレージの実行 {#running-a-freshly-installed-aem-instance-with-mongo-storage}
 
-次の手順に従って、AEM 6 を MongoDB ストレージと共に実行するように設定できます。
+次の手順に従って、AEM 6.5 LTS を MongoDB ストレージと共に実行するように設定できます。
 
-1. AEM 6 quickstart jar をダウンロードし、新しいフォルダーに配置します。
+1. AEM 6.5 LTS クイックスタート jar をダウンロードし、新しいフォルダーに配置します。
 1. 次のコマンドを実行して AEM を解凍します。
 
-   `java -jar cq-quickstart-6.jar -unpack`
+   `java -jar <aem-65-lts>.jar -unpack`
 
 1. MongoDB がインストールされていること、および `mongod` のインスタンスが実行されていることを確認します。詳しくは、[MongoDB のインストール](https://docs.mongodb.org/manual/installation/)を参照してください。
 1. インストールディレクトリ内に `crx-quickstart\install` というフォルダーを作成します。
@@ -83,10 +83,10 @@ AEM 6 で最も重要な変更の 1 つは、リポジトリレベルでのイ�
 
 1. 使用するデータストアの PID を持つ設定ファイルを作成し、そのファイルを編集して設定オプションを指定します。詳しくは、[ノードストアとデータストアの設定](/help/sites-deploying/data-store-config.md)を参照してください。
 
-1. 次のコマンドを実行して、AEM 6 jar を MongoDB ストレージバックエンドと共に起動します。
+1. 次のコマンドを実行して、AEM 6.5 LTS jar を MongoDB ストレージバックエンドと共に起動します。
 
    ```shell
-   java -jar cq-quickstart-6.jar -r crx3,crx3mongo
+   java -jar <aem-65-lts>.jar -r crx3,crx3mongo
    ```
 
    バックエンドの実行モードが **`-r`** の場合、MongoDB のサポートで始まる例です。

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS のドキュメントを参照して、その仕組みと機能を確認してください。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 96fdfc1f754358bc358595c10ba908a4aabce4af
+source-git-commit: 3cc47de71aec7e110b55f511ceaa0d314a1369ef
 workflow-type: tm+mt
-source-wordcount: '6802'
+source-wordcount: '6798'
 ht-degree: 97%
 
 ---
@@ -1407,7 +1407,6 @@ ht-degree: 97%
          + [リビジョンクリーンアップ](/help/sites-deploying/revision-cleanup.md)
          + [Oak クエリとインデックス作成](/help/sites-deploying/queries-and-indexing.md)
          + [TarMK コールドスタンバイによる AEM の実行方法](/help/sites-deploying/tarmk-cold-standby.md)
-         + [AEMの RDBMS サポート](/help/sites-deploying/rdbms-support-in-aem.md)
          + [Oak-run Jar を使用したインデックス作成](/help/sites-deploying/indexing-via-the-oak-run-jar.md)
          + [oak-run.jar でのインデックス作成の使用例](/help/sites-deploying/oak-run-indexing-usecases.md)
          + [Oak インデックスのトラブルシューティング](/help/sites-deploying/troubleshooting-oak-indexes.md)

@@ -12,10 +12,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: af957cd7-ad3d-46f2-9ca5-e175538104f1
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b87199e70b4fefc345c86eabbe89054d4b240e95
 workflow-type: tm+mt
-source-wordcount: '6216'
-ht-degree: 100%
+source-wordcount: '6217'
+ht-degree: 99%
 
 ---
 
@@ -56,7 +56,7 @@ AEM オーサーは `mongod` インスタンスに接続されます。各 AEM �
 
 ### オペレーティングシステム {#operating-systems}
 
-AEM 6 でサポートされているオペレーティングシステムのリストについては、[技術要件のページ](/help/sites-deploying/technical-requirements.md)を参照してください。
+AEM 6.5 LTS でサポートされているオペレーティングシステムのリストについては、[ 技術要件のページ ](/help/sites-deploying/technical-requirements.md) を参照してください。
 
 ### 環境 {#environments}
 
