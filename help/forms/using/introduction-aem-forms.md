@@ -1,6 +1,6 @@
 ---
 title: AEM Forms の概要
-description: このAEM 6.5 LTS ガイドを使用して、デジタルフォームを作成、管理、公開および更新します。 アダプティブフォームのインストール、アップグレード、設定に関するヘルプ、アダプティブフォームのオーサリングに関する詳細を確認します。
+description: この AEM 6.5 LTS ガイドを使用して、デジタルフォームを作成、管理、公開および更新します。アダプティブフォームのインストール、アップグレード、設定に関するヘルプ、アダプティブフォームのオーサリングに関する詳細を確認します。
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
@@ -8,7 +8,7 @@ exl-id: e9549ac9-0ada-4661-969a-709f0ed3b133
 source-git-commit: 3b83225e1150f1e623997c9ece6329de995148be
 workflow-type: tm+mt
 source-wordcount: '951'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
