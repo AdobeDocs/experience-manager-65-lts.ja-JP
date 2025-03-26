@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS のドキュメントを参照して、その仕組みと機能を確認してください。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 3cc47de71aec7e110b55f511ceaa0d314a1369ef
+source-git-commit: 5405b449377e464b7311b09f2f854488e404c1fd
 workflow-type: tm+mt
 source-wordcount: '6798'
 ht-degree: 97%
@@ -1281,7 +1281,7 @@ ht-degree: 97%
          + [React の使用を開始する](/help/sites-developing/spa-getting-started-react.md)
          + [SPA への React コンポーネントの実装](/help/sites-developing/spa-implementing-react-component.md)
          + [Angular の使用を開始する](/help/sites-developing/spa-getting-started-angular.md)
-         + [SPA の詳細](/help/sites-developing/spa-deep-dives.md)
+         + [SPA の詳細](/help/sites-developing/spa-deep-dives-gems.md)
          + [AEM 向け SPA の開発](/help/sites-developing/spa-architecture.md)
          + [SPA エディターの概要](/help/sites-developing/spa-overview.md)
          + [SPA ブループリント](/help/sites-developing/spa-blueprint.md)
