@@ -4,10 +4,11 @@ description: AEM 6.5 LTS に関するよくある質問です。
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 2e9f8f59fd068e9e296c20e1d930fdbe2f5d30b1
+exl-id: d18c9dc3-fdcc-4558-b9b6-ecf1ce61048a
+source-git-commit: 3677c3921a7dd603afd251aebf4be67947fb1e02
 workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -21,7 +22,7 @@ Adobeは、提供するアプリケーションのセキュリティと安定性
 
 ## オンプレミス環境のお客様は、AEM 6.5 LTS にアップグレードしない場合はどうなりますか？
 
-AEM 6.5 LTS には、Oracle Java 17 のサポートなど、重要なセキュリティと安定性の更新が含まれています。 Adobeは少なくとも今後 3 年間はAEM 6.5 をサポートしますが、6.5 LTS へのアップグレードの計画を始めることをお勧めします。
+AEM 6.5 LTS には、Oracle Java 17 のサポートなど、重要なセキュリティと安定性の更新が含まれています。 Adobeは少なくとも今後 2 年間はAEM 6.5 をサポートし続けますが、6.5 LTS へのアップグレードの計画を始めることをお勧めします。
 
 ## 既存のカスタマイズと統合は影響を受けますか？
 
