@@ -1,6 +1,6 @@
 ---
-title: AEM 6.5 のストレージ要素
-description: AEM 6.5 で使用可能なノードストレージ実装およびリポジトリのメンテナンス方法について説明します。
+title: AEM 6.5 LTS のストレージ要素
+description: AEM 6.5 LTS で使用可能なノードストレージ実装およびリポジトリのメンテナンス方法について説明します。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -10,35 +10,31 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: e51842b5-fa91-42d2-a490-5a7e867dada7
-source-git-commit: 3cc47de71aec7e110b55f511ceaa0d314a1369ef
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 92%
+source-wordcount: '712'
+ht-degree: 75%
 
 ---
 
-# AEM 6.5 のストレージ要素{#storage-elements-in-aem}
+# AEM 6.5 LTS のストレージ要素{#storage-elements-in-aem}
 
 この記事では、次の内容について説明します。
 
-* [AEM 6 のストレージの概要](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
+* [AEM 6.5 LTS のストレージの概要](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
 * [リポジトリのメンテナンス](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)
 
-## AEM 6 のストレージの概要 {#overview-of-storage-in-aem}
+## AEM 6.5 LTS のストレージの概要 {#overview-of-storage-in-aem}
 
-AEM 6 で最も重要な変更の 1 つは、リポジトリレベルでのイノベーションです。
+AEM 6.5 LTS で最も重要な変更の 1 つは、リポジトリレベルでのイノベーションです。
 
-現在、AEM6 では 2 つのストレージ実装（Tar ストレージと MongoDB ストレージ）を使用できます。
+現在、AEM 6.5 LTS では 2 つのストレージ実装（Tar ストレージと MongoDB ストレージ）を使用できます。
 
 ### Tar ストレージ {#tar-storage}
 
 #### 新規にインストールした AEM インスタンスと Tar ストレージの実行 {#running-a-freshly-installed-aem-instance-with-tar-storage}
 
->[!CAUTION]
->
->セグメントノードストアの PID は、以前のバージョンの AEM 6 の org.apache.jackrabbit.oak.AEM 6 の旧バージョンの **plugins**.segment.SegmentNodeStoreService から AEM 6.3 の org.apache.jackrabbit.oak.segment.SegmentNodeStoreService。変更が反映されるように、必要な設定調整が行われていることを確認します。
-
-デフォルトでは、AEM 6 は Tar ストレージを使用して、デフォルトの設定オプションを使用してノードとバイナリを保存します。次の操作を行うことで、ストレージ設定を手動で設定できます。
+デフォルトでは、AEM 6.5 LTS は Tar ストレージを使用して、デフォルトの設定オプションを使用してノードとバイナリを保存します。 次の操作を行うことで、ストレージ設定を手動で設定できます。
 
 1. AEM 6.5 LTS クイックスタート jar をダウンロードして、新しいフォルダーに配置します。
 1. 次を実行して AEM を解凍します。
@@ -47,7 +43,7 @@ AEM 6 で最も重要な変更の 1 つは、リポジトリレベルでのイ�
 
 1. インストールディレクトリ内に `crx-quickstart\install` というフォルダーを作成します。
 
-1. 新しく作成したフォルダー内に `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg` というファイルを作成します。
+1. 新しく作成したフォルダー内に `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` というファイルを作成します。
 
 1. ファイルを編集して、設定オプションを指定します。AEM Tar ストレージ実装の基盤となるセグメントノードストアでは、次のオプションを使用できます。
 
@@ -57,6 +53,10 @@ AEM 6 で最も重要な変更の 1 つは、リポジトリレベルでのイ�
 1. AEM を起動します。
 
 ### Mongo ストレージ {#mongo-storage}
+
+>[!NOTE]
+>
+>Mongo のサポートされている最小バージョンは Mongo 6 です。
 
 #### 新規にインストールした AEM インスタンスと Mongo ストレージの実行 {#running-a-freshly-installed-aem-instance-with-mongo-storage}
 
@@ -71,12 +71,12 @@ AEM 6 で最も重要な変更の 1 つは、リポジトリレベルでのイ�
 1. インストールディレクトリ内に `crx-quickstart\install` というフォルダーを作成します。
 1. 使用する設定の名前を持つ設定ファイルを `crx-quickstart\install` ディレクトリに作成することで、ノードストアを設定します。
 
-   ドキュメントノードストア（AEM の MongoDB ストレージ実装の基盤）では、`org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg` というファイルを使用します。
+   ドキュメントノードストア（AEM の MongoDB ストレージ実装の基盤）では、`org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config` というファイルを使用します。
 
 1. ファイルを編集して、設定オプションを指定します。以下のオプションが利用できます。
 
    * `mongouri`：Mongo データベースに接続するために必要な [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) です。デフォルトは `mongodb://localhost:27017` です
-   * `db`：Mongo データベースの名前です。新しい AEM 6 のインストールでは、デフォルトのデータベース名として **aem-author** を使用します。
+   * `db`：Mongo データベースの名前です。新しいAEM 6.5 LTS のインストールでは、デフォルトのデータベース名として **aem-author** を使用します。
    * `cache`：キャッシュサイズ（メガバイト単位）です。このキャッシュサイズは、DocumentNodeStore で使用される様々なキャッシュに分散されます。デフォルトは 256 です。
    * `changesSize`：Mongo で差分出力のキャッシュに使用される capped コレクションのサイズ（MB 単位）です。デフォルトは 256 です。
    * `customBlobStore`：カスタムデータストアが使用されることを示すブール値です。デフォルトは false です。

@@ -12,14 +12,18 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: af957cd7-ad3d-46f2-9ca5-e175538104f1
-source-git-commit: b87199e70b4fefc345c86eabbe89054d4b240e95
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '6217'
-ht-degree: 99%
+source-wordcount: '5965'
+ht-degree: 98%
 
 ---
 
 # Adobe Experience Manager と MongoDB{#aem-with-mongodb}
+
+>[!NOTE]
+>
+>Mongo のサポートされている最小バージョンは Mongo 6 です。
 
 この記事では、MongoDB を備えた AEM（Adobe Experience Manager）を正常にデプロイするために必要なタスクと考慮事項に関する知識を深めることを目的としています。
 
@@ -74,8 +78,6 @@ MongoDB インスタンスの I/O 処理能力については特定の要件が�
 
 ### RAM {#ram}
 
-MMAP ストレージエンジンを使用する MongoDB バージョン 2.6 および 3.0 では、データベースの作業セットとそのインデックスが RAM に収まる必要があります。
-
 十分な RAM がないと、パフォーマンスが大幅に低下します。作業セットとデータベースのサイズは、アプリケーションに大きく依存します。ある程度の推定は可能ですが、必要な RAM の量を判断するための最も信頼できる方法は、AEM アプリケーションを構築して負荷テストを実施することです。
 
 負荷テストを実施する場合は、テストプロセスを支援するために、データベースの合計サイズに対する作業セットの比率を次のように想定することができます。
@@ -85,11 +87,9 @@ MMAP ストレージエンジンを使用する MongoDB バージョン 2.6 お�
 
 つまり、SSD デプロイメントの場合は、2 TB のデータベースに 200 GB の RAM が必要になります。
 
-MongoDB 3.0 の WiredTiger ストレージエンジンにも同じ制限が適用されますが、作業セット、RAM およびページフォールトの間の相関関係はそれほど強くありません。WiredTiger は、MMAP ストレージエンジンとは異なり、メモリマッピングを使用しません。
-
 >[!NOTE]
 >
->MongoDB 3.0 を使用する AEM 6.1 のデプロイメントには、WiredTiger ストレージエンジンを使用することをお勧めします。
+>Adobeでは、MongoDB 6 以降を使用するAEM 6.5 LTS デプロイメントには、WiredTiger ストレージエンジンを使用することをお勧めします。
 
 ### データストア {#data-store}
 
@@ -234,8 +234,6 @@ I/O の読み取りパフォーマンスを高くして環境での処理速度�
 
 ### オペレーティングシステムのサポート {#operating-system-support}
 
-MongoDB 2.6 で使用しているメモリマップストレージエンジンは、RAM とディスク間のオペレーティングシステムレベル管理のいくつかの側面に影響されます。MongoDB インスタンスのクエリと読み取りのパフォーマンスを向上させるには、ページフォールトと呼ばれることが多い低速な I/O 操作を回避または排除する必要があります。これらの問題は、特に `mongod` プロセスに適用されるページフォールトです。これをオペレーティングシステムレベルのページフォールトと混同しないでください。
-
 高速な操作のためには、既に RAM に存在しているデータにのみ MongoDB データベースがアクセスする必要があります。アクセスする必要があるデータは、インデックスとデータで構成されています。インデックスとデータのこのコレクションは、作業セットと呼ばれます。使用可能な RAM よりも作業セットが大きい場合、MongoDB はディスクからそのデータをページインする必要があり（これにより、I/O コストが発生します）、既にメモリ内にある他のデータが消去されます。この消去が原因となってデータがディスクから再度読み込まれると、ページフォールトが増えてパフォーマンスが低下します。作業セットが動的で変動する場合は、操作をサポートするために、さらに多くのページフォールトが発生します。
 
 MongoDB は、Linux® の様々なフレーバー、Windows、Mac OS を含む、いくつかのオペレーティングシステムで動作します。詳しくは、[https://docs.mongodb.com/manual/installation/#supported-platforms](https://docs.mongodb.com/manual/installation/#supported-platforms) を参照してください。MongoDB のオペレーティングシステムレベルのレコメンデーションは、選択したオペレーティングシステムによって異なります。これらは [https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration](https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration) に掲載されていますが、ここでも簡単にまとめておきます。
@@ -245,7 +243,6 @@ MongoDB は、Linux® の様々なフレーバー、Windows、Mac OS を含む�
 * Transparent Huge Page（THP）および defrag を無効にします。詳しくは、[Transparent Huge Page（THP）の設定についての説明](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/)を参照してください。
 * 使用状況に合わせて、データベースファイルを格納するデバイスの [readahead 設定を調整](https://docs.mongodb.com/manual/administration/production-notes/#readahead)します。
 
-   * MMAPv1 ストレージエンジンでは、作業セットが利用可能な RAM よりも大きく、ドキュメントのアクセスパターンがランダムな場合、readahead を 32 または 16 に下げることを検討します。様々な設定を評価して、常駐メモリを最大化しページフォールト回数を低減できる最適な値を見つけます。
    * WiredTiger ストレージエンジンでは、ストレージメディアタイプ（回転式のディスク、SSD など）にかかわらず、readahead を 0 に設定します。一般に、readahead の値を大きくすることで測定可能、再現可能かつ信頼性の高いメリットがあることがテストの結果わかる場合を除き、readahead の推奨設定を使用します。[MongoDB のプロフェッショナルサポート](https://docs.mongodb.com/manual/administration/production-notes/#readahead)で、0 以外の readahead 設定を使用する場合のアドバイスとガイダンスを受けることができます。
 
 * 仮想環境で RHEL 7／CentOS 7 を実行している場合は、Tuned ツールを無効にします。
@@ -357,11 +354,13 @@ WiredTiger の内部キャッシュのサイズを調整するには、[storage.
 
 ### NUMA {#numa}
 
-NUMA（Non Uniform Memory Access）を使用すると、プロセッサーコアにメモリをマップする方法をカーネルで管理できます。このプロセスでは、コアのメモリアクセスを高速化し、必要なデータに確実にアクセスできるように試みますが、NUMA が MMAP に干渉し、読み取りを予測できないのでさらに遅延が発生します。そのため、対応できるすべてのオペレーティングシステムで、`mongod` プロセスの NUMA を無効にする必要があります。
+NUMA （Non Uniform Memory Access）を使用すると、プロセッサーコアにメモリをマッピングする方法をカーネルで管理できます。
 
 基本的に、NUMA アーキテクチャでは、メモリは複数の CPU に接続され、複数の CPU はバスに接続されます。SMP または UMA アーキテクチャでは、メモリはバスに接続され、複数の CPU によって共有されます。スレッドが NUMA CPU のメモリを割り当てる際には、ポリシーに従って割り当てられます。デフォルトでは、空きがない場合を除いて、スレッドのローカル CPU に接続されたメモリが割り当てられます。空きがない場合は、よりコストの高い空き CPU のメモリが使用されます。一度割り当てられたメモリは CPU 間で移動しません。割り当ては、親スレッド（最終的にはプロセスを開始したスレッド）から継承されたポリシーに従って実行されます。
 
-コンピューターをマルチコアの均一なメモリアーキテクチャと見なす多くのデータベースでは、このシナリオの結果、初めの CPU がまずいっぱいになり、サブ CPU がその後にいっぱいになります。中核となるスレッドがメモリバッファの割り当てを担当する場合は、特にそうなります。これを解決するには、次のコマンドを実行して、`mongod` プロセスを開始するために使用されるメインスレッドの NUMA ポリシーを変更します。
+不均等なメモリアクセス（NUMA）を使用するシステムで MongoDB を実行すると、パフォーマンスの一定期間の低下、使用可能なすべての RAM を使用できない、システムプロセスの使用量が多くなるなど、多くの運用上の問題が発生する可能性があります。
+
+これを解決するには、次のコマンドを実行して、`mongod` プロセスを開始するために使用されるメインスレッドの NUMA ポリシーを変更します。
 
 ```shell
 numactl --interleaved=all <mongod> -f config
@@ -675,10 +674,6 @@ MongoDB のパフォーマンスに関する一般的な情報については、
 MongoMK では、1 つのデータベースで複数の AEM インスタンスを同時に使用することがサポートされていますが、同時インストールはサポートされていません。
 
 この問題を回避するには、まず 1 つのメンバーでインストールを実行し、最初のインストールが完了した後で、他のメンバーを追加します。
-
-### ページ名の長さ {#page-name-length}
-
-AEM が MongoMK 永続性マネージャーのデプロイメントで実行されている場合、[ページ名は 150 文字に制限されます。](/help/sites-authoring/managing-pages.md)
 
 >[!NOTE]
 >

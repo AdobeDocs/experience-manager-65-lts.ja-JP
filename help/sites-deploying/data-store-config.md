@@ -1,5 +1,5 @@
 ---
-title: AEM 6 でのノードストアとデータストアの設定
+title: AEM 6.5 LTS でのノードストアとデータストアの設定
 description: ノードストアとデータストアの設定方法およびデータストアのガベージコレクションの実行方法について説明します。
 content-type: reference
 topic-tags: deploying
@@ -10,14 +10,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '3461'
-ht-degree: 100%
+source-wordcount: '3330'
+ht-degree: 94%
 
 ---
 
-# AEM 6 でのノードストアとデータストアの設定 {#configuring-node-stores-and-data-stores-in-aem}
+# AEM 6.5 LTS でのノードストアとデータストアの設定{#configuring-node-stores-and-data-stores-in-aem}
 
 ## はじめに {#introduction}
 
@@ -46,19 +46,10 @@ Adobe Experience Manager（AEM）では、バイナリデータをコンテン�
 
 ## ノードストア設定 {#node-store-configurations}
 
->[!CAUTION]
->
->新しいバージョンの Oak では、OSGi 設定ファイルの命名スキームと形式が新しく採用されています。新しい命名スキームでは、設定ファイルの名前は **.config** とし、新しい形式では、値を入力する必要があります。詳しくは、[Apache Sling Provisioning Model と Apache SlingStart - デフォルト設定形式](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format)を参照してください。
->
->古いバージョンの Oak からアップグレードする場合は必ず、`crx-quickstart/install` フォルダーのバックアップを最初に作成してください。アップグレード後、アップグレードしたインストール環境にフォルダーの内容を復元し、設定ファイルの拡張子を **.cfg** から **.config** に変更します。
-
 ### セグメントノードストア {#segment-node-store}
 
-セグメントノードストアは、AEM6 におけるアドビの TarMK 実装の基盤です。このストアでは、`org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` という PID を設定に使用します。
+セグメントノードストアは、AEM 6.5 LTS におけるAdobeの TarMK 実装の基盤です。 このストアでは、`org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` という PID を設定に使用します。
 
->[!CAUTION]
->
->セグメントノードストアの PID が、AEM 6 の `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions` から AEM 6.3 の `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` に変更されました。この変更を反映するために必要な設定の調整を行ってください。
 
 以下のオプションを設定できます。
 
@@ -86,7 +77,7 @@ customBlobStore=B"true"
 
 * `mongouri`：Mongo データベースに接続するために必要な [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) です。デフォルトは `mongodb://localhost:27017` です
 
-* `db`：Mongo データベースの名前です。デフォルトは **Oak** です。``. However, new AEM 6 installations use **aem-author** `` デフォルトのデータベース名として使用します。
+* `db`：Mongo データベースの名前です。デフォルトは **aem-author** です。
 
 * `cache`：キャッシュサイズ（MB 単位）です。これは DocumentNodeStore で使用される様々なキャッシュに分散されます。デフォルトは `256` です
 
@@ -143,9 +134,9 @@ Amazon の Simple Storage Service（S3）にデータを格納するように AE
 
 >[!NOTE]
 >
->AEM 6.5 では、Amazon S3 でのデータの保存がサポートされますが、他のプラットフォームでのデータ保存までサポートが拡張されるわけではありません。他のプラットフォームでは、Amazon S3 API の独自の実装方法がある可能性があります。
+>AEM 6.5 LTS は、Amazon S3 でのデータの保存をサポートしていますが、サポートは、Amazon S3 API を独自に実装している他のプラットフォームでのデータの保存には拡張されません。
 
-S3 データストア機能を有効にするには、S3 データストアコネクタを含む機能パックをダウンロードしてインストールする必要があります。[アドビリポジトリ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)に移動し、1.10.x バージョンの機能パックの中から最新のバージョン（com.adobe.granite.oak.s3connector-1.10.0.zip など）をダウンロードします。さらに、[AEM 6.5 リリースノート](/help/release-notes/release-notes.md)ページに記載されている最新の AEM サービスパックをダウンロードしてインストールする必要もあります。
+S3 データストア機能を有効にするには、S3 データストアコネクタを含む機能パックをダウンロードしてインストールする必要があります。[Adobe リポジトリに移動し ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)1.60.x バージョンの機能パックの中から最新バージョン（com.adobe.granite.oak.s3connector-1.60.2.zip など）をダウンロードします。 また、[AEM 6.5 LTS リリースノート ](/help/release-notes/release-notes.md) ページに記載されている最新のAEM サービスパックをダウンロードしてインストールする必要もあります。
 
 >[!NOTE]
 >
@@ -189,9 +180,9 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 1. ファイルを編集し、設定に必要な設定オプションを追加します。
 1. AEM を起動します。
 
-## 1.10.x S3 コネクターの新しいバージョンへのアップグレード {#upgrading-to-a-new-version-of-the-s-connector}
+## 1.60.x S3 コネクタの新しいバージョンへのアップグレード {#upgrading-to-a-new-version-of-the-s-connector}
 
-1.10.x S3 コネクターを新しいバージョンにアップグレードする必要がある場合は（1.10.0 から 1.10.4 へのアップグレードなど）、次の手順に従います。
+1.60.x S3 コネクタを新しいバージョンにアップグレードするには、次の手順に従います。
 
 1. AEM インスタンスを停止します。
 
@@ -205,7 +196,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
    >
    >上記のファイル名は説明の目的でのみ使用されます。
 
-1. [アドビリポジトリ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)から最新バージョンの 1.10.x 機能パックをダウンロードします。
+1. [ ソフトウェア配布。](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/s3-connector/6-5-lts/com.adobe.granite.oak.s3connector-1.60.2.zip) から最新バージョンの 1.60.x 機能パックをダウンロードします。
 1. 機能パックの内容を別のフォルダーに展開して、`jcr_root/libs/system/install/15` に移動します。
 1. jar ファイルを AEM インストールフォルダーの **&lt;aem-install>**/crx-quickstart/install/15 にコピーします。
 1. AEM を起動して、コネクタの機能を確認します。
@@ -413,7 +404,7 @@ S3 でバイナリレスレプリケーションを設定するには、次の�
 
 AEM は、Microsoft®の Azure ストレージサービスにデータを保存するように設定できます。このストアでは、`org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` という PID を設定に使用します。
 
-Azure データストア機能を有効にするには、Azure コネクタを含む機能パックをダウンロードしてインストールする必要があります。[アドビリポジトリ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/)にアクセスし、1.6.x バージョンの機能パックの中から最新バージョン（com.adobe.granite.oak.azureblobconnector-1.6.3.zip など）をダウンロードします。
+Azure データストア機能を有効にするには、Azure コネクタを含む機能パックをダウンロードしてインストールする必要があります。[ ソフトウェア配布 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/azure-connector/6-5-lts/com.adobe.granite.oak.azureblobconnector-1.9.16.zip) に移動し、1.9.x バージョンの機能パックの中から最新バージョン（com.adobe.granite.oak.azureblobconnector-1.9.16.zip など）をダウンロードします。
 
 >[!NOTE]
 >
