@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
 exl-id: cafc7120-114e-487a-8b81-9c695318731e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a061c19dcb883b94ee61be21459c46e21eaf696a
 workflow-type: tm+mt
 source-wordcount: '2791'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -139,13 +139,13 @@ Web クライアントには、`cq:ClientLibraryFolder` ノードにアクセス
 >
 >コードをコンテンツおよび設定から適切に分離するには、`/apps` の下にクライアントライブラリを配置し、`allowProxy` プロパティを使用して `/etc.clientlibs` を介して公開することをお勧めします。
 
-`/apps` にあるクライアントライブラリにアクセスできるようにするために、プロキシサーブレットが使用されます。ACL は依然としてクライアントライブラリフォルダーで適用されますが、サーブレットを使用すると、`/etc.clientlibs/` プロパティが `allowProxy` に設定されている場合、`true` を介してコンテンツを読み取ることができます。
+`/apps` のクライアントライブラリにアクセスできるようにするには、プロキシサーブレットを使用します。 ACL は依然としてクライアントライブラリフォルダーで適用されますが、サーブレットを使用すると、`/etc.clientlibs/` プロパティが `allowProxy` に設定されている場合、`true` を介してコンテンツを読み取ることができます。
 
 静的リソースは、クライアントライブラリフォルダーの下のリソースにある場合、プロキシ経由でのみアクセスできます。
 
 次に例を示します。
 
-* clientlib は `/apps/myproject/clientlibs/foo` にあります。
+* clientlib は `/apps/myprojects/clientlibs/foo` にあります。
 * 静的画像は `/apps/myprojects/clientlibs/foo/resources/icon.png` にあります。
 
 次に、`foo` の `allowProxy` プロパティを true に設定します。
