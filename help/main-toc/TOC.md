@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS のドキュメントを参照して、その仕組みと機能を確認してください。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM 6.5 LTS
-source-git-commit: bec8386db59691ae2d0346afc0cbd48fbc4890de
+source-git-commit: 3f644c8df73281bc35bd91a552f8e86aaae2dd4a
 workflow-type: tm+mt
-source-wordcount: '6800'
-ht-degree: 93%
+source-wordcount: '6797'
+ht-degree: 94%
 
 ---
 
@@ -558,7 +558,7 @@ ht-degree: 93%
       + [アダプティブフォームと XFA フォームテンプレートとの同期](/help/forms/using/synchronizing-adaptive-forms-xfa.md)
       + [Adobe Sign の AEM Forms への統合](/help/forms/using/adobe-sign-integration-adaptive-forms.md)
       + [フォームのアセットのレビューの作成と管理](/help/forms/using/create-reviews-forms.md)
-      + [AEM Sites の単一ページアプリケーションへのアダプティブフォームやインタラクティブコミュニケーションの組み込み](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
+      + [AEM Sites の単一ページアプリケーションへのアダプティブフォームやインタラクティブコミュニケーションの埋め込み](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
       + [アダプティブフォームでのカスタム関数の作成と使用](/help/forms/using/create-and-use-custom-functions.md)
       + [アダプティブフォームのカスタムエラーハンドラーを作成して使用](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
    + インタラクティブ通信 {#interactive-communications}
@@ -1432,7 +1432,6 @@ ht-degree: 93%
          + [パフォーマンスの最適化](/help/sites-deploying/configuring-performance.md)
          + [アセットパフォーマンスガイド](/help/sites-deploying/assets-performance-sizing.md)
          + [設定方法に関する記事](/help/sites-deploying/ht-deploy.md)
-         + [Web コンソールの設定](/help/sites-deploying/configuring-web-console.md)
       + AEM 6.5 LTS へのアップグレード {#upgrading}
          + [AEM 6.5 LTS へのアップグレード](/help/sites-deploying/upgrade.md)
          + [アップグレードの計画](/help/sites-deploying/upgrade-planning.md)

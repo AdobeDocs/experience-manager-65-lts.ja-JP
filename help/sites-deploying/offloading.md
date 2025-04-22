@@ -11,10 +11,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c0b285b7-3b20-4412-88b8-04de4a703f42
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 3f644c8df73281bc35bd91a552f8e86aaae2dd4a
 workflow-type: tm+mt
-source-wordcount: '2318'
-ht-degree: 99%
+source-wordcount: '2323'
+ht-degree: 98%
 
 ---
 
@@ -80,9 +80,9 @@ JobManager でジョブが作成されると、オフロードフレームワー
 * インスタンスがどのジョブトピックについてオフロード用に登録されているか
 * インスタンスによって処理されるジョブトピック
 
-1. タッチ UI を使用して、「ツール」タブをクリックします。([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
-1. Granite の操作エリアで、「オフロードするブラウザー」をクリックします。
-1. ナビゲーションパネルで、「トポロジブラウザー」をクリックします。
+1. タッチ UI を使用して、「ツール」タブをクリックします。（[http://localhost:4502/aem/start.html](http://localhost:4502/aem/start.html)）
+1. オフロードを表示するには、「デプロイメント」セクションのオフロードタイルをクリックします。
+1. トポロジを表示するには、「デプロイメント」セクションのトポロジタイルをクリックします。
 
    トポロジに参加しているクラスターが表示されます。
 
@@ -100,7 +100,7 @@ Web コンソールを使用してトポロジ情報を表示することもで�
 以下の手順を使用して、web コンソールの Topology Management ページを開きます。
 
 1. ブラウザーで web コンソールを開きます。([http://localhost:4502/system/console](http://localhost:4502/system/console))
-1. Main／Topology Management をクリックします。
+1. Sling / トポロジ管理をクリックします。
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
