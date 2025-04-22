@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 86613671-dacd-487e-b6ff-88365289e591
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b76c11f28fab1be574142d73c13ea9555143bf9a
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '636'
 ht-degree: 100%
 
 ---
@@ -41,10 +41,6 @@ AEM では、以下の設定が可能です。
 * 保存するバージョンの数
 * バージョンのローテーション（最大サイズまたは期間）
 * ログメッセージを書き込むときに使用する形式
-
->[!NOTE]
->
->この[ナレッジベースの記事](https://helpx.adobe.com/jp/experience-manager/kb/HowToRotateRequestAndAccessLog.html)では、request.log ファイルと access.log ファイルのローテーション方法について説明します。
 
 ## 個々のサービス用のロガーとライター {#loggers-and-writers-for-individual-services}
 

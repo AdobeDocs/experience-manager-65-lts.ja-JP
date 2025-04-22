@@ -11,10 +11,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3bf3ba2e-f5f2-428a-a1fc-36f885350f6b
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b76c11f28fab1be574142d73c13ea9555143bf9a
 workflow-type: tm+mt
-source-wordcount: '1954'
-ht-degree: 100%
+source-wordcount: '1900'
+ht-degree: 97%
 
 ---
 
@@ -174,9 +174,6 @@ Web コンソールを使用するほかに、リポジトリで設定の詳細�
 * サービス名に従ってフィルター処理
 * 実行モードに従ってフィルター処理
 
->[!NOTE]
->
->[特定のインスタンスのためだけにリポジトリベースの設定を定義する方法](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html?lang=ja)も参照してください。
 
 ### リポジトリへの新しい設定の追加 {#adding-a-new-configuration-to-the-repository}
 
@@ -186,9 +183,9 @@ Web コンソールを使用するほかに、リポジトリで設定の詳細�
 
 1. サービスの **永続 ID**（PID）。
 
-   Web コンソールの「**設定** 」フィールドを参照します。この名前は、バンドル名の後に括弧でくくって（またはページの下部に向かって&#x200B;**設定情報**&#x200B;に）表示されます。
+   Web コンソールで **設定** を参照します。 この名前は、ページの下部に向かって **設定情報** に表示されます。
 
-   例えば、`com.day.cq.wcm.core.impl.VersionManagerImpl.` ノードを作成して、**AEM WCM バージョンマネージャー**&#x200B;を設定します。
+   例えば、**AEM WCM Version Manager** を設定するには `com.day.cq.wcm.core.impl.VersionManagerImpl.` と入力します。
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
@@ -237,13 +234,13 @@ Web コンソールを使用するほかに、リポジトリで設定の詳細�
 
    >[!NOTE]
    >
-   >ファクトリ設定を作成する場合は、`-<identifier>` を名前に付加します。
+   >ファクトリ設定を作成する場合は、`~<identifier>` を名前に付加します。
    >
-   >例： `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
+   >例： `org.apache.sling.commons.log.LogManager.factory.config~<identifier>`
    >
    >`<identifier>` の部分は、インスタンスを識別するフリーテキストに置き換えます（この情報は省略できません）。次に例を示します。
    >
-   >`org.apache.sling.commons.log.LogManager.factory.config-MINE`
+   >`org.apache.sling.commons.log.LogManager.factory.config~MINE`
 
 1. 設定するパラメーターごとに、このノードでプロパティを作成します。
 
@@ -310,23 +307,7 @@ Web コンソールを使用するほかに、リポジトリで設定の詳細�
 
 ### 標準設定 {#standard-configurations}
 
-次のリストは、リポジトリで（標準インストールで）使用できる設定の一部を示しています。
-
-* 作成者 - AEM WCM フィルター：
-
-  `libs/wcm/core/config.author/com.day.cq.wcm.core.WCMRequestFilter`
-
-* 公開 - AEM WCM フィルター：
-
-  `libs/wcm/core/config.publish/com.day.cq.wcm.core.WCMRequestFilter`
-
-* 公開 - AEM WCM ページ統計：
-
-  `libs/wcm/core/config.publish/com.day.cq.wcm.core.stats.PageViewStatistics`
-
->[!NOTE]
->
->これらの設定は `/libs` 内にあるので、直接編集はせず、アプリケーション領域（`/apps`）にコピーしてからカスタマイズしてください。
+標準設定が `/libs` にある場合は、直接編集はせず、アプリケーション領域（`/apps`）にコピーしてからカスタマイズしてください。
 
 インスタンスに含まれるすべての設定ノードをリストするには、CRXDE Lite の&#x200B;**クエリ**&#x200B;機能を使用して、次の SQL クエリを送信します。
 

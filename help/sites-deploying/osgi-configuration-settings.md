@@ -12,10 +12,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: d3356f5f-f80f-4ce0-b4e2-3ee927208ab1
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b76c11f28fab1be574142d73c13ea9555143bf9a
 workflow-type: tm+mt
-source-wordcount: '3360'
-ht-degree: 100%
+source-wordcount: '3247'
+ht-degree: 98%
 
 ---
 
@@ -36,10 +36,6 @@ OSGi は「*標準化されたプリミティブを提供し、小さく再利�
 >必要な設定は、プロジェクトによって異なります。
 >
 >使用する値およびパラメーターについて詳しくは、web コンソールを確認してください。
-
->[!NOTE]
->
->OSGi 設定の差分ツール（[AEM ツール](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=ja)の一部）を使用して、デフォルトの OSGi 設定のリストを表示できます。
 
 >[!NOTE]
 >
@@ -81,7 +77,7 @@ OSGi は「*標準化されたプリミティブを提供し、小さく再利�
 
 詳しくは、[AEM のログ](/help/sites-deploying/configure-logging.md)および [Sling のログ](https://sling.apache.org/documentation/development/logging.html)を参照してください。
 
-**Apache Sling Eventing Thread Pool** 設定：
+**Apache Sling Thread Pool** 設定：
 
 * **Min Pool Size** および **Max Pool Size**：イベントスレッドを保持するために使用するプールのサイズ。
 
@@ -101,7 +97,7 @@ JSON を無効にしないでください。
 >
 >AEM を[実稼動準備完了モード](/help/sites-administering/production-ready.md)で実行している場合は、この設定は自動的に実稼動インスタンス用に設定されます。
 
-**Apache Sling JavaScript ハンドラー** .java ファイルをスクリプト（サーブレット）としてコンパイルするための設定を行います。
+**Apache Sling Java Script Handler**：.java ファイルのコンパイルを、スクリプト（サーブレット）として設定します。
 
 特定の設定がパフォーマンスに影響を与える場合があります。特に実稼動インスタンスの場合は、可能な限りこれらの設定を無効にします。
 
@@ -117,9 +113,9 @@ JSON を無効にしないでください。
 
 * **Search Path**：インストールするリソースを jcrinstall が検索するパスのリストです。そのパスの重み付け係数を示す数値も表示されます。
 
-**Apache Sling Job Event Handler**：ジョブのスケジュール設定を管理するパラメーターを設定します。
+**Apache Sling Queue Configuration** ジョブのスケジュール設定を管理するパラメーターを設定します。
 
-* **再試行間隔**、**再試行の最大回数**、**並列ジョブの最大数**、**待機時間の確認**&#x200B;など。
+* **再試行間隔**、**再試行の最大回数**、**並列ジョブの最大数** など。
 
 * これらの設定を変更すると、多数のジョブが存在するシナリオのパフォーマンスが向上します。例えば、AEM DAM とワークフローの使用頻度が高い場合などです。
 * テストを実施して、状況に応じた値を確立する必要があります。
@@ -176,7 +172,7 @@ JSON を無効にしないでください。
 
 * **Number of Calls per Request** および **Recursion Depth**：無限再帰および過度のスクリプトの呼び出しからシステムを保護します。
 
-**Apache Sling MIME Type Service** 設定：
+**Apache Sling Commons MIME Type Service** 以下を設定します。
 
 * **MIME タイプ**：プロジェクトに必要なタイプをシステムに追加します。これにより、ファイルに対する `GET` リクエストで適切な content-type ヘッダーを設定し、ファイルタイプとアプリケーションをリンクすることができます。
 
@@ -238,23 +234,11 @@ JSON を無効にしないでください。
 * **Execution Paths**：実行可能なスクリプトを検索するパスを表示します。特定のパスを設定することで、実行可能なスクリプトを制限できます。パスを設定しない場合は、デフォルト値（`/` = ルート）を使用し、すべてのスクリプトの実行が許可されます。
 設定したパス値がスラッシュで終わる場合は、サブツリー全体が検索対象となります。末尾にスラッシュを指定しないと、完全一致の場合にのみスクリプトが実行されます。
 
-* **Script User**：このオプションのプロパティでは、スクリプトの読み取りに使用するリポジトリユーザーアカウントを指定できます。アカウントを指定しない場合は、`admin` ユーザーがデフォルトで使用されます。
-
 * **Default Extensions**：デフォルトの動作が使用される拡張子のリストです。リソースタイプの最後のパスセグメントをスクリプト名として使用できます。
 
 **Apache HTTP Components Proxy Configuration** - Apache HTTP クライアントを使用するすべてのコード用のプロキシ設定です。HTTP の作成時に使用されます（レプリケーション時など）。
 
 設定を作成する際には、工場出荷時の設定に変更を加えないでください。代わりに、設定マネージャー（**https://localhost:4502/system/console/configMgr/**）を使用して、このコンポーネントの工場出荷時の設定を作成してください。このプロキシ設定は、**org.apache.http.proxyconfigurator** で利用できます。
-
->[!NOTE]
->
->AEM 6.0 以前のリリースでは、プロキシは Day Commons HTTP Client で設定されていました。AEM 6.1 以降のリリースでは、プロキシ設定は、「Day Commons HTTP Client」設定ではなく、「Apache HTTP Components Proxy Configuration」に移動されました。
-
-**Day CQ Antispam**：使用するスパム対策サービス （Akismet）を設定します。この機能は、次の項目を登録する必要があります。
-
-* **プロバイダー**
-* **API キー**
-* **登録済みの URL**
 
 **Adobe Granite HTML Library Manager**：クライアントライブラリ（css または js）の処理（例えば、基盤となる構造の表示形式）を制御するために設定します。
 
@@ -280,7 +264,7 @@ JSON を無効にしないでください。
 >
 >AEM を[実稼動準備完了モード](/help/sites-administering/production-ready.md)で実行している場合は、この設定は自動的に実稼動インスタンス用に設定されます。
 
-**Day CQ HTTP Header Authentication Handler**：HTTP リクエストの基本的な認証方法に関するシステム全体の設定です。
+**Adobe Granite HTTP Header Authentication Handler** HTTP リクエストの基本的な認証方法に関するシステム全体の設定です。
 
 [閉じられたユーザーグループ](/help/sites-administering/cug.md)を使用すると、（特に）以下を設定できます。
 
@@ -375,7 +359,7 @@ OSGi フレームワークサービスランキングの値は、このサービ
 >
 >AEM を[実稼動準備完了モード](/help/sites-administering/production-ready.md)で実行している場合は、この設定は自動的に実稼動インスタンス用に設定されます。
 
-**Day CQ WCM Link Checker Configurator**：以下の項目を設定します。
+**Day CQ WCM Link Checker** 以下の項目を設定します。
 
 * **書き換え設定のリスト**：コンテンツベースのリンクチェックツール設定の場所のリストを指定します。設定は実行モードに基づくことができます。これはオーサー環境とパブリッシュ環境を区別するために重要です。それぞれの環境でリンクチェッカーの設定が異なる場合があるからです。
 
@@ -425,7 +409,7 @@ OSGi フレームワークサービスランキングの値は、このサービ
 
 **Day CQ Workflow Email Notification Service**：ワークフローから送信されるメール通知を設定します。
 
-**CQ Rewriter HTML Parser Factory**
+**Adobe AEM Rewriter HTML パーサーファクトリ**
 
 CQ リライターの HTML パーサーを制御します。
 
