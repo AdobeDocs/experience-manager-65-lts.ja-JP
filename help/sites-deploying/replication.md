@@ -12,10 +12,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: b840d970-9365-4df3-8467-e34abd940074
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
 workflow-type: tm+mt
-source-wordcount: '3286'
-ht-degree: 100%
+source-wordcount: '3287'
+ht-degree: 99%
 
 ---
 
@@ -60,18 +60,26 @@ ht-degree: 100%
 
 ### レプリケーション（デフォルト） {#replication-out-of-the-box}
 
-AEM の標準インストールに含まれている we-retail web サイトを使用して、レプリケーションの仕組みを見ていきましょう。
+[ ページの作成と整理 ](/help/sites-authoring/managing-pages.md) に従ってページを作成します。
 
 この例に従ってデフォルトのレプリケーションエージェントを使用するには、次の環境を使用して [AEM をインストール](/help/sites-deploying/deploy.md)します。
 
+
 * オーサー環境（ポート `4502`）
 * パブリッシュ環境（ポート `4503`）
+
+このレプリケーションは、次のエージェントによりオーサー環境から実行されます。
+
+* **デフォルトエージェント（パブリッシュ）**
+このエージェントは、デフォルトのパブリッシュインスタンスにコンテンツをレプリケーションします。
+この設定およびログの詳細には、オーサー環境のツールコンソールまたは次の URL からアクセスすることができます。あるいは以下のようにしてください。
+  `http://localhost:4502/etc/replication/agents.author/publish.html`。
 
 >[!NOTE]
 >
 >以下はデフォルトで有効になっています。
 >
->* オーサー環境のエージェント：デフォルトエージェント（publish）
+>* オーサー環境のエージェント：デフォルトエージェント（パブリッシュ）を有効にしない場合は、先に進む前に必ず有効にします。
 >
 >事実上、以下はデフォルトで無効になっています（AEM 6.1 以降）。
 >
@@ -84,19 +92,13 @@ AEM の標準インストールに含まれている we-retail web サイトを�
 #### レプリケーション（オーサー環境からパブリッシュ環境へ） {#replication-author-to-publish}
 
 1. オーサー環境でサポートページに移動します。
-   **https://localhost:4502/content/we-retail/us/en/experience.html** `<pi>`
+   **https://localhost:4502/content/site1/test.html** `<pi>`
 1. 新しいテキストを追加できるようにページを編集します。
 1. **ページをアクティベート**&#x200B;して、変更内容を公開できるようにします。
 1. パブリッシュ環境でサポートページを開きます。
-   **https://localhost:4503/content/we-retail/us/en/experience.html**
+   **https://localhost:4503/content/site1/test.html**
 1. オーサー環境で入力した変更内容を確認できるようになりました。
 
-このレプリケーションは、次のエージェントによりオーサー環境から実行されます。
-
-* **デフォルトエージェント（パブリッシュ）**
-このエージェントは、デフォルトのパブリッシュインスタンスにコンテンツをレプリケーションします。
-この設定およびログの詳細には、オーサー環境のツールコンソールまたは次の URL からアクセスすることができます。あるいは以下のようにしてください。
-  `https://localhost:4502/etc/replication/agents.author/publish.html`
 
 #### レプリケーションエージェント（デフォルト） {#replication-agents-out-of-the-box}
 
@@ -108,7 +110,7 @@ AEM の標準インストールに含まれている we-retail web サイトを�
 * Dispatcher フラッシュ
 Dispatcher キャッシュの管理に使用します。詳しくは、[オーサリング環境からの Dispatcher キャッシュの無効化](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=ja#invalidating-dispatcher-cache-from-the-authoring-environment)および[パブリッシュインスタンスからの Dispatcher キャッシュの無効化](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=ja#invalidating-dispatcher-cache-from-a-publishing-instance)を参照してください。
 
-* [リバースレプリケーション](#reverse-replication-publish-to-author)
+* [リバースレプリケーション](#configuring-reverse-replication)
 パブリッシュ環境からオーサー環境へのレプリケーションに使用します。リバースレプリケーションは、フォーラム、ブログ、コメントなどのコミュニティ機能には使用されません。アウトボックスが有効化されていないので、事実上、この機能は無効になっています。リバースレプリケーションを使用するには、カスタム設定が必要になります。
 
 * 静的エージェント
@@ -425,7 +427,7 @@ MSSL を使用してレプリケーションエージェントをパブリッシ
    * 「**トランスポート**」タブで、次のように設定します。
 
       * 新しいパブリッシュインスタンスに必要な URI を入力します。次に例を示します。
-        `https://localhost:4504/bin/receive`
+        `https://localhost:4504/bin/receive`。
 
       * レプリケーションに使用する、サイト固有のユーザーアカウントを入力します。
       * 必要に応じて、その他のパラメーターを設定できます。
@@ -468,7 +470,7 @@ MSSL を使用してレプリケーションエージェントをパブリッシ
    * 「**トランスポート**」タブで、次のように設定します。
 
       * 新しいパブリッシュインスタンスに必要な URI を入力します。次に例を示します。
-        `https://localhost:80/dispatcher/invalidate.cache`
+        `https://localhost:80/dispatcher/invalidate.cache`。
 
       * レプリケーションに使用する、サイト固有のユーザーアカウントを入力します。
       * 必要に応じて、その他のパラメーターを設定できます。

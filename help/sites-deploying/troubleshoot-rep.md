@@ -12,10 +12,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 015def31-c7de-42b3-8218-1284afcb6921
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
 workflow-type: tm+mt
-source-wordcount: '1224'
-ht-degree: 100%
+source-wordcount: '1221'
+ht-degree: 96%
 
 ---
 
@@ -33,8 +33,7 @@ ht-degree: 100%
 
 **「アクティベート」ボタンをクリックすると、レプリケーションがトリガーされますか？トリガーされない場合は、次の操作を行います。**
 
-1. /crx/explorer に移動し、管理者としてログインします。
-1. 「Content Explorer」を開きます。
+1. /crx/de/index.jspに移動して、管理者としてログインします。
 1. ノード /bin/replicate または /bin/replicate.json が存在するかを確認します。ノードが存在する場合は、削除して保存します。
 
 **レプリケーションがレプリケーションエージェントのキュー内で待機している状態ですか？**
@@ -76,12 +75,12 @@ ht-degree: 100%
 すべてのレプリケーションログを、個別のログファイルに DEBUG レベルで追加するように設定すると役に立つことがあります。次の手順を実行します。
 
 1. https://host:port/system/console/configMgr にアクセスし、Admin でログインします。
-1. Apache Sling Logging Logger ファクトリを探して、ファクトリ設定の右側の「**+**」ボタンをクリックしてインスタンスを作成します。新しいログロガーが作成されます。
+1. Apache Sling Logging Logger Configuration を探し、ファクトリ設定の右側の「**+**」ボタンをクリックしてインスタンスを作成します。 新しいログロガーが作成されます。
 1. 次のように設定します。
 
    * ログレベル：DEBUG
-   * ログファイルのパス：logs/replication.log
-   * カテゴリ：com.day.cq.replication
+   * ログファイル：logs/replication.log
+   * ロガー：com.day.cq.replication
 
 1. 問題が何らかの形で Sling イベントまたはジョブに関連する疑いがある場合は、この Java™ パッケージをカテゴリ org.apache.sling.event に追加することもできます。
 
