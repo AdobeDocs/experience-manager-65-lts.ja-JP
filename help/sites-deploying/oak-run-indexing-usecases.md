@@ -11,10 +11,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: a7a8a20a-e513-43df-80b7-1e6daf957f20
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
 source-wordcount: '1380'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -24,7 +24,7 @@ Oak-run は、コマンドラインでインデックス作成のユースケー
 
 oak-run.jar インデックスコマンドの方法を使用して Oak インデックスを管理する全般的なメリットは次のとおりです。
 
-1. Oak-run index コマンドは、AEM 6.4 用の新しいインデックス作成ツールセットを提供します。
+1. Oak-run index コマンドは、AEM 6.4 以降の新しいインデックス作成ツールセットを提供します。
 1. Oak-run を使用すると、インデックス再作成の時間を短縮でき、大規模なリポジトリでのインデックス再作成時間を削減できます。
 1. Oak-run を使用すると、インデックス再作成中の AEM でのリソース消費を低減できるので、システム全体のパフォーマンスが向上します。
 1. Oak-run は out-of-band のインデックス再作成機能を備えており、実稼動環境を利用できる状態で、メンテナンスやダウンタイムが許容されない場合にインデックスを再作成する必要がある状況をサポートします。

@@ -1,6 +1,6 @@
 ---
 title: Oak クエリとインデックス作成
-description: Adobe Experience Manager（AEM）6.5 でのインデックスの設定方法について説明します。
+description: Adobe Experience Manager（AEM） 6.5 LTS でインデックスを設定する方法について説明します。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -12,10 +12,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 432fc767-a6b8-48f8-b124-b13baca51fe8
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
-source-wordcount: '3034'
-ht-degree: 100%
+source-wordcount: '2577'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->この記事は、AEM 6 でのインデックス設定について説明しています。クエリおよびインデックス作成のパフォーマンスの最適化のベストプラクティスについては、[クエリとインデックスに関するベストプラクティス](/help/sites-deploying/best-practices-for-queries-and-indexing.md)を参照してください。
+>ここでは、AEM 6.5 LTS でのインデックスの設定について説明します。 クエリおよびインデックス作成のパフォーマンスの最適化のベストプラクティスについては、[クエリとインデックスに関するベストプラクティス](/help/sites-deploying/best-practices-for-queries-and-indexing.md)を参照してください。
 
 ## はじめに {#introduction}
 
@@ -50,7 +50,7 @@ Apache Oak ベースのバックエンドでは、様々なインデクサーを
 
 インデクサーの 1 つは、**プロパティインデックス**&#x200B;です。このインデクサーでは、インデックス定義がリポジトリ自体に格納されます。
 
-デフォルトでは、**Apache Lucene** および **Solr** の実装も使用できます。どちらもフルテキストのインデックスをサポートしています。
+デフォルトでは、**Apache Lucene** の実装が使用可能で、フルテキストのインデックスをサポートしています。
 
 使用できるインデクサーがない場合は、**トラバーサルインデックス**&#x200B;が使用されます。つまり、コンテンツにインデックスが作成されず、クエリに一致するものを見つけるために、コンテンツノードが走査されます。
 
@@ -109,7 +109,7 @@ Apache Oak ベースのバックエンドでは、様々なインデクサーを
 
 ### Lucene フルテキストインデックス {#the-lucene-full-text-index}
 
-AEM 6 では、Apache Lucene に基づいたフルテキストインデクサーを使用できます。
+Apache Lucene に基づくフルテキストインデクサーは、AEM 6.5 LTS で使用できます。
 
 フルテキストインデックスが設定されている場合、インデックス付けされる他の条件があるかどうか、およびパスの制約があるかどうかに関係なく、フルテキスト条件を持つすべてのクエリでフルテキストインデックスを使用します。
 
@@ -308,7 +308,7 @@ Oak ではバージョン 1.2.0 以降、Lucene アナライザーをサポー�
 
 #### 設定によるアナライザーの構成 {#creating-analyzers-via-composition}
 
-アナライザーは、`Tokenizers`、`TokenFilters`、`CharFilters` に基づいて構成することもできます。そのためには、アナライザーを指定し、オプションのトークナイザーとフィルターの子ノードを作成します。これらはリストされた順序で適用されます。[https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema) も参照してください。
+アナライザーは、`Tokenizers`、`TokenFilters`、`CharFilters` に基づいて構成することもできます。そのためには、アナライザーを指定し、オプションの tokenizer および filters の子ノードをリストされた順序で適用して作成します。
 
 例えば、次のノード構造について考えてみます。
 
@@ -359,87 +359,6 @@ Oak ではバージョン 1.2.0 以降、Lucene アナライザーをサポー�
 ファクトリに必要なすべての設定パラメーターは、対象ノードのプロパティとして指定します。
 
 ストップワードの読み込みなど、外部ファイルのコンテンツを読み込む必要がある場合は、対象ファイル用の子ノード（タイプ `nt:file`）を作成することによってコンテンツを指定できます。
-
-### Solr インデックス {#the-solr-index}
-
-Solr インデックスの目的は主にフルテキスト検索ですが、パス、プロパティの制約および主タイプ制約による検索のインデックス作成にも使用できます。つまり、Oak の Solr インデックスは、あらゆる種類の JCR クエリに使用できます。
-
-AEM での統合はリポジトリレベルで実行されるので、Solr は、Oak（AEM に付属する新しいリポジトリ実装）で使用できるインデックスの候補の 1 つです。
-
-AEM インスタンスでリモートサーバーとして機能するように設定できます。
-
-### AEM での単一リモート Solr サーバーの設定 {#configuring-aem-with-a-single-remote-solr-server}
-
-AEM は、リモート Solr サーバーインスタンスと連動するように設定することもできます。
-
-1. 最新バージョンの Solr をダウンロードして解凍します。この方法について詳しくは、[Apache Solr のインストールドキュメント](https://solr.apache.org/guide/6_6/installing-solr.html)を参照してください。
-1. 2 つの Solr シャードを作成します。そのためには、Solr の展開先フォルダー内に、各シャード用のフォルダーを作成します。
-
-   * 1 つ目のシャード用に、次のフォルダーを作成します。
-
-   `<solrunpackdirectory>\aemsolr1\node1`
-
-   * 2 つ目のシャード用に、次のフォルダーを作成します。
-
-   `<solrunpackdirectory>\aemsolr2\node2`
-
-1. Solr パッケージ内のサンプルインスタンスを探します。パッケージのルート内の「`example`」というフォルダーにあります。
-1. サンプルインスタンスの次のフォルダーを、2 つのシャードフォルダー（`aemsolr1\node1` と `aemsolr2\node2`）にコピーします。
-
-   * `contexts`
-   * `etc`
-   * `lib`
-   * `resources`
-   * `scripts`
-   * `solr-webapp`
-   * `webapps`
-   * `start.jar`
-
-1. 2 つのシャードフォルダーのそれぞれに、「`cfg`」というフォルダーを新しく作成します。
-1. 新規作成した `cfg` フォルダーに、Solr および Zookeeper 設定ファイルを配置します。
-
-   >[!NOTE]
-   >
-   >Solr および ZooKeeper 設定について詳しくは、[Solr の設定に関するドキュメント](https://cwiki.apache.org/confluence/display/solr/ConfiguringSolr)および [ZooKeeper 入門ガイド](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html)を参照してください。
-
-1. 1 つ目のシャードを ZooKeeper サポート付きで起動するために、`aemsolr1\node1` に移動し、次のコマンドを実行します。
-
-   ```xml
-   java -Xmx2g -Dbootstrap_confdir=./cfg/oak/conf -Dcollection.configName=myconf -DzkRun -DnumShards=2 -jar start.jar
-   ```
-
-1. 2 つ目のシャードを起動するために、`aemsolr2\node2` に移動し、次のコマンドを実行します。
-
-   ```xml
-   java -Xmx2g -Djetty.port=7574 -DzkHost=localhost:9983 -jar start.jar
-   ```
-
-1. 両方のシャードが起動したら、Solr インターフェイスに接続し（`http://localhost:8983/solr/#/`）、すべてが稼働していることをテストします。
-1. AEM を起動し、次の Web コンソール（`http://localhost:4502/system/console/configMgr`）にアクセスします
-1. 「**Oak Solr remote server configuration**」で次の設定を行います。
-
-   * Solr HTTP URL：`http://localhost:8983/solr/`
-
-1. 「**Oak Solr**」サーバープロバイダー下のドロップダウンリストで「**Remote Solr**」を選択します。
-
-1. CRXDE に移動し、管理者としてログインします。
-1. **solrIndex** というノードを **oak:index** の下に作成し、次のプロパティを設定します。
-
-   * **タイプ：** solr（文字列タイプ）
-   * **async：** async（文字列型）
-   * **reindex：** true（ブール値型）
-
-1. 変更を保存します。
-
-#### Solr の推奨設定 {#recommended-configuration-for-solr}
-
-以下に、この記事で説明する 3 つの Solr デプロイメントすべてで使用できる基本設定の例を示します。AEM に既に存在する専用プロパティインデックスに対応しているため、他のアプリケーションでは使用しないでください。
-
-この設定を適切に使用するには、アーカイブのコンテンツを直接 Solr ホームディレクトリに配置する必要があります。複数のノードから成るデプロイメントの場合は、各ノードの root フォルダー直下に配置してください。
-
-Solr 推奨設定ファイル
-
-[ファイルを入手](assets/recommended-conf.zip)
 
 ### AEM インデックス作成ツール {#aem-indexing-tools}
 

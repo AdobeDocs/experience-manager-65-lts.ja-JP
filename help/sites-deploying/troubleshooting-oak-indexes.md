@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 6f92750a-4eaa-43cf-8f67-b1a65b1c6930
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1375'
 ht-degree: 100%
 
 ---
@@ -52,10 +52,6 @@ AEM の内部インデックス再作成プロセスは、リポジトリデー�
 1. AEM が通常の非同期インデックス作成操作を再開するまで、約 45 分待ちます。
 
 ## スレッドプールが過負荷 {#thread-pool-overloaded}
-
->[!NOTE]
->
->AEM 6.1 では、[AEM 6.1 CFP 11](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ja) がインストールされていることを確認してください。
 
 例外的な状況では、非同期インデックス作成の管理に使用するスレッドプールが過負荷になる場合があります。インデックス作成プロセスを分離するために、スレッドプールを構成して、他の AEM 作業がコンテンツをタイムリーにインデックス作成する Oak の機能に干渉しないようにすることができます。その場合は、次の操作を行います。
 
