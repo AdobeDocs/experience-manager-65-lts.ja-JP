@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS のドキュメントを参照して、その仕組みと機能を確認してください。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 3f644c8df73281bc35bd91a552f8e86aaae2dd4a
+source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
 workflow-type: tm+mt
-source-wordcount: '6797'
+source-wordcount: '6795'
 ht-degree: 94%
 
 ---
@@ -1428,7 +1428,6 @@ ht-degree: 94%
          + [ジョブのオフロード](/help/sites-deploying/offloading.md)
          + [リソースマッピング](/help/sites-deploying/resource-mapping.md)
          + [整合性チェックとトラバーサルチェック](/help/sites-deploying/consistency-check.md)
-         + [パフォーマンスガイドライン](/help/sites-deploying/performance-guidelines.md)
          + [パフォーマンスの最適化](/help/sites-deploying/configuring-performance.md)
          + [アセットパフォーマンスガイド](/help/sites-deploying/assets-performance-sizing.md)
          + [設定方法に関する記事](/help/sites-deploying/ht-deploy.md)

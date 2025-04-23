@@ -12,10 +12,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c8bab030-053f-47d1-94f7-b7ff08bfaab0
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
 workflow-type: tm+mt
-source-wordcount: '5792'
-ht-degree: 100%
+source-wordcount: '5601'
+ht-degree: 99%
 
 ---
 
@@ -60,10 +60,6 @@ AEM インスタンスがデプロイされた後は、操作、パフォーマ�
 >実稼動インスタンスのバックアップを実装する場合、バックアップを正常に復元できることを確認するためにテストを行う&#x200B;*必要があります*。
 >
 >このテストを行わないと、最悪の場合、バックアップが無駄になる可能性があります。
-
->[!NOTE]
->
->バックアップのパフォーマンスについての詳細情報は、[バックアップのパフォーマンス](/help/sites-deploying/configuring-performance.md#backup-performance)セクションを参照してください。
 
 ### ソフトウェアインストールのバックアップ {#backing-up-your-software-installation}
 
@@ -370,7 +366,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
    >
    >と指定されている場合、書き込み先は以下となります。
    >
-   >`<cq-installation-dir>/crx-quickstart/logs/thelog.log`
+   >`<cq-installation-dir>/crx-quickstart/logs/thelog.log`。
    >
    >また、ログファイルが
    >
@@ -653,11 +649,6 @@ OSGi イベントで生成される監査記録は、AEM web コンソールの&
    <td><p>使用方法：jconsole</p> <p><a href="https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html">jconsole</a> および <a href="#monitoring-performance-using-jconsole">JConsole を使用したパフォーマンスの監視</a> を参照してください。</p> <p><strong>メモ：</strong>JDK 1.8 では、Top や TDA（Thread Dump Analyzer）などのプラグインを使用して JConsole を拡張できます。</p> </td>
   </tr>
   <tr>
-   <td>Java™ VisualVM</td>
-   <td>JVM の指標、スレッド、メモリ、プロファイリングを監視します。</td>
-   <td><p>使用法：jvisualvm または visualvm<br /> </p> <p><a href="https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/">visualvm</a> および <a href="#monitoring-performance-using-j-visualvm">(J)VisualVM</a> を使用したパフォーマンスの監視を参照してください。</p> <p><strong>メモ：</strong>JDK 1.8 では、プラグインを使用して VisualVM を拡張できます。VisualVM は JDK 9 以降で廃止されます。その代わりに、Java™ Flight Recorder を使用します。</p> </td>
-  </tr>
-  <tr>
    <td>truss/strace、lsof</td>
    <td>カーネル呼び出しとプロセスの詳細な分析（UNIX®）。</td>
    <td>Unix／Linux コマンド。</td>
@@ -925,31 +916,6 @@ Percentage of the requests served within a certain time (ms)
 
    次に、他のオプションを選択できます。
 
-### （J）VisualVM を使用したパフォーマンスの監視 {#monitoring-performance-using-j-visualvm}
-
-JDK 6～8 の場合、ツールコマンド `visualvm` を使用できます。JDK をインストールすると、以下を実行できます。
-
-1. AEM インスタンスを起動します。
-
-   >[!NOTE]
-   >
-   >Java™ 5 を使用している場合は、JVM を起動する Java™ コマンドラインに `-Dcom.sun.management.jmxremote` 引数を追加できます。JMX は、Java 6 ではデフォルトで有効になっています。
-
-1. 次のいずれかを実行します。
-
-   * `jvisualvm`：JDK 1.6 bin フォルダー内（テスト済みバージョン）
-   * `visualvm`：[VisualVM](https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/) からダウンロードできます（最先端バージョン）
-
-1. `Local` アプリケーション内から、`com.day.crx.quickstart.Main` をダブルクリックします。デフォルトで概要が表示されます。
-
-   ![chlimage_1-2](assets/chlimage_1-2.png)
-
-   次に、監視などのその他のオプションを選択できます。
-
-   ![chlimage_1-3](assets/chlimage_1-3.png)
-
-このツールを使用すると、スレッドダンプとメモリヘッドダンプを生成できます。この情報は、テクニカルサポートチームからよく依頼されるものです。
-
 ### 情報収集 {#information-collection}
 
 インストールに関する情報をできる限り把握することで、パフォーマンスの変化を引き起こした可能性のある原因を追跡し、その変化が適正であるかどうかを確認することができます。インストール環境に関する指標を定期的に収集し、有意な変化を発見しやすくします。
@@ -1103,16 +1069,11 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 >* [スレッドダンプ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=ja)
 >* [メモリの問題の分析](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=ja)
 >* [ビルトインプロファイラーによる分析](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=ja)
->* [低速のプロセスとブロックされたプロセスの分析](https://helpx.adobe.com/jp/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
 ### 100％の CPU 使用率 {#cpu-at}
 
-システムの CPU が常に 100％で稼働している場合は、次の点を確認してください。
-
-* ナレッジベース
-
-   * [遅延しているプロセスおよびブロックされたプロセスの分析](https://helpx.adobe.com/jp/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+システムのCPUが常に 100% で動作している場合は、AEMのログを確認し、top、htop、jstack などのツールを使用してCPUの高いスレッドを特定します。 無限ループ、ブロックされたスレッド、過剰なガベージコレクションに対するスレッドダンプを分析します。
 
 ### メモリ不足 {#out-of-memory}
 
@@ -1146,20 +1107,17 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * ナレッジベース
 
    * [開いているファイルが多すぎる](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=ja)
-   * [ジャーナルの消費ディスク領域が大きすぎる](https://helpx.adobe.com/jp/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### 通常のパフォーマンス低下 {#regular-performance-degradation}
 
 再起動するたびに（場合によっては 1 週間後またはそれ以降）インスタンスのパフォーマンスが低下する場合は、次のことを確認します。
 
 * [メモリ不足](#outofmemory)
-* ナレッジベース
-
-   * [閉じられていないセッション](https://helpx.adobe.com/jp/experience-manager/kb/AnalyzeUnclosedSessions.html)
+* [閉じられていないセッション](/help/sites-administering/troubleshoot.md#checking-for-unclosed-jcr-sessions-checking-for-unclosed-jcr-sessions)
 
 ### JVM の調整 {#jvm-tuning}
 
-Java™ 仮想マシン（JVM）の調整は改善されました（特に Java™ 7 以降）。そのため、適切な固定 JVM サイズを指定し、デフォルトを使用すればよいことが多いです。
+Java™ 仮想マシン（JVM）の調整が改善されました。 そのため、適切な固定 JVM サイズを指定し、デフォルトを使用すればよいことが多いです。
 
 デフォルトの設定が適切でない場合は、GC のパフォーマンスを監視および評価するメソッドを確立することが重要です。JVM の調整を行う前に、これを行ってください。このプロセスには、ヒープサイズ、アルゴリズム、その他の側面を含む要素の監視が含まれる場合があります。
 
@@ -1190,12 +1148,6 @@ JConsole の場合は以下のとおりです。
   ```
 
 * 次に、JConsole を使用して JVM に接続します。次を参照してください。
-  ` [https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html)`
+  ` [https://docs.oracle.com/en/java/javase/17/management/using-jconsole.html](https://docs.oracle.com/en/java/javase/17/management/using-jconsole.html)`
 
 使用されているメモリの量や GC アルゴリズム、実行に要する時間、このプロセスがアプリケーションのパフォーマンスに与える影響を確認できます。これがなければ、調整は単に「ランダムにノブをひねる」だけの作業になります。
-
->[!NOTE]
->
->Oracle の VM に関する情報は、次の場所でも確認できます。
->
->[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)
