@@ -11,10 +11,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c83fcf96-cc45-40a0-9a50-c60406096de1
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 100%
+source-wordcount: '1075'
+ht-degree: 98%
 
 ---
 
@@ -154,7 +154,7 @@ ht-degree: 100%
   <tr>
    <td><strong>手順 19</strong></td>
    <td>CPU 100％</td>
-   <td><a href="/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance">https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ja</a></td>
+   <td><a href="/help/sites-deploying/monitoring-and-maintaining.md#cpu-at">CPU（100%</a>）を参照</td>
   </tr>
   <tr>
    <td><strong>手順 20</strong></td>
@@ -288,7 +288,7 @@ ht-degree: 100%
   <tr>
    <td><strong>手順 45<br /> および 47</strong><br /> </td>
    <td>HTTP/2 の使用</td>
-   <td>手順 37、38 および 39 の Gem セッションを参照してください。HTTP/2 サポートに関する<a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">こちら</a>のフォーラムへの投稿も参照してください。<br /> </td>
+   <td>手順 37、38 および 39 の Gem セッションを参照してください。<br /> </td>
   </tr>
   <tr>
    <td><strong>手順 49</strong></td>

@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4f830ee9-e0e3-48df-b67d-709258cb1991
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '374'
 ht-degree: 100%
 
 ---
@@ -71,10 +71,6 @@ ht-degree: 100%
 </table>
 
 ## UI {#ui}
-
-ユーザーインターフェイスに関するベストプラクティスは、こちらで説明しています。
-
-[顧客向けのユーザーインターフェイスのレコメンデーション](/help/sites-deploying/ui-recommendations.md)
 
 AEM には現在、クラシック UI とタッチ操作向け UI の 2 つが同じリリースに含まれています。そのため、どちらを使用するかを、プロジェクトの実装時にユーザーが決断する必要があります。このドキュメントは、適切な選択肢を見つける際に役立ちます。
 

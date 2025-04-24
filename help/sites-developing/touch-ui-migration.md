@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e9b26de3-6e14-4187-8f25-6e56ee3092a7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '611'
 ht-degree: 100%
 
 ---
@@ -100,10 +100,6 @@ ht-degree: 100%
 </table>
 
 つまり、UI の一部をクラシック UI からタッチ UI に移行するということは、*ExtJS ウィジェット*&#x200B;を *Sling コンポーネント*&#x200B;に移行することを意味します。これを容易にするために、タッチ UI は、Granite UI フレームワークに基づいています。このフレームワークは、既に UI 用の Sling コンポーネント（Granite UI コンポーネントと呼ばれます）を提供しています。
-
-開始する前に、ステータスと関連するレコメンデーションを確認してください。
-
-* [顧客向けのユーザーインターフェイスのレコメンデーション](/help/sites-deploying/ui-recommendations.md)
 
 タッチ UI の開発の基本は、堅牢な基礎を提供します。
 

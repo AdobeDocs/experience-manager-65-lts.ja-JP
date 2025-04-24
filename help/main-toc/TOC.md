@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS のドキュメントを参照して、その仕組みと機能を確認してください。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM 6.5 LTS
-source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '6795'
+source-wordcount: '6790'
 ht-degree: 94%
 
 ---
@@ -1457,7 +1457,6 @@ ht-degree: 94%
          + [パフォーマンスツリー](/help/sites-deploying/performance-tree.md)
          + [パフォーマンステストに関するベストプラクティス](/help/sites-deploying/best-practices-for-performance-testing.md)
          + [クエリとインデックスに関するベストプラクティス](/help/sites-deploying/best-practices-for-queries-and-indexing.md)
-         + [顧客向けのユーザーインターフェイスのレコメンデーション](/help/sites-deploying/ui-recommendations.md)
          + [パフォーマンスとスケーラビリティ](/help/sites-deploying/performance.md)
    + Fluid Experience {#fluid-experiences}
       + [機能一覧](/help/fluid-experiences/feature-list.md)

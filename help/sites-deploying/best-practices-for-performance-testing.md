@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 29c20cf3-1694-4d06-ab7c-688018808c44
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '1790'
+source-wordcount: '1762'
 ht-degree: 99%
 
 ---
@@ -63,7 +63,6 @@ ht-degree: 99%
 
 * **Load Runner** はエンタープライズレベルの負荷テスト製品です。無償の評価版も提供されています。詳しくは、[https://www.microfocus.com/ja-jp/portfolio/performance-engineering/overview](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview) を参照してください。
 
-* また、[Vercara](https://vercara.com/website-performance-management) などの web サイト負荷テストツールも使用できます。
 * モバイル web サイトやレスポンシブ web サイトをテストする際は、別のツールセットを使用する必要があります。こうしたツールでは、ネットワーク帯域幅の制限、3G や EDGE などの低速なモバイル接続のシミュレーションを行えます。広く利用されているツールには以下のものがあります。
 
    * **[Network Link Conditioner](https://nshipster.com/network-link-conditioner/)** - 簡単に使用できる UI を備えており、またかなり低いレベルのネットワークスタックで動作します。OS X と iOS のバージョンがあります。
@@ -108,21 +107,18 @@ Google の PageSpeed ツールは、ページパフォーマンスに関する�
 
 * **統合キャッシュ統計** MBean。次の場所から直接アクセスできます。
 
-`https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
+`https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DConsolidated+Cache+statistics%2Ctype%3DConsolidatedCacheStats`
 
 **Document-Diff** という名前のキャッシュは、ヒット率を `.90` 以上にする必要があります。ヒット率が 90 ％を下回る場合は、`DocumentNodeStoreService` の設定を変更しなければならない可能性があります。お使いの環境に最適な設定はアドビの製品サポートからご案内できます。
 
 * **Oak リポジトリ統計** Mbean。次の場所から直接アクセスできます。
 
-`https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D16%2Cname%3D%22Oak+Repository+Statistics%22%2Ctype%3D%22RepositoryStats%22`
+`https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DOak+Repository+Statistics%2Ctype%3DRepositoryStats`
 
 **ObservationQueueMaxLength** のセクションには、直前の数時間、数分、数秒、数週間の Oak の観測キュー内のイベント数が表示されます。「1 時間あたり」セクションで最も多いイベント数を見つけます。この数を `oak.observation.queue-length` の設定値と比較します。監視キューに表示される最大数が `queue-length` 設定を超える場合：
 
-1. パラメーター `oak.observation.queue‐length=50000` を含む `com.adobe.granite.repository.impl.SlingRepositoryManager.cfg` という名前のファイルを作成します。
+1. パラメーター `oak.observation.queue‐length=50000` を含む `com.adobe.granite.repository.impl.SlingRepositoryManager.config` という名前のファイルを作成します。
 1. /crx-quickstart/install フォルダーの下に配置します。
-
->[!NOTE]
->詳しくは、[AEM 6.x |パフォーマンスチューニングのヒント](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html)を参照してください
 
 デフォルト設定は 10,000 ですが、ほとんどのデプロイメントでは 20,000 または 50,000 に引き上げる必要があります。
 
@@ -150,10 +146,9 @@ Google の PageSpeed ツールは、ページパフォーマンスに関する�
 * エラーログで、エラーや警告を確認します。詳しくは、[ログ](/help/sites-deploying/configure-logging.md)を参照してください。
 * メモリと CPU の使用率、ディスク I/O、ネットワーク I/O などのシステムハードウェアリソースを監視します。これらのリソースが、パフォーマンスのボトルネックの原因になっていることがよくあります。
 * ページのアーキテクチャとページの処理方法を最適化して、URL パラメーターの使用を最小限に抑え、できるだけ多くのキャッシュを可能にします。
-* [パフォーマンスの最適化](/help/sites-deploying/configuring-performance.md)と[パフォーマンスチューニングのヒント](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html)のドキュメントに従ってください。
-
+* [ パフォーマンスの最適化 ](/help/sites-deploying/configuring-performance.md) のドキュメントに従ってください。
 * オーサーインスタンス上の特定のページやコンポーネントの編集に問題がある場合は、タッチ UI 開発者モードを使用して、該当するページを調べます。これにより、ページ上の各コンテンツ領域の内訳とそれぞれの読み込み時間がわかります。
-* サイト上のすべての JS と CSS を最小限にします。この[ブログ投稿](https://blogs.adobe.com/foxes/enable-js-and-css-minification/)を参照してください。
+* サイト上のすべての JS と CSS を最小限にします。
 * 埋め込まれた CSS および JS を、コンポーネントから削除します。ページのレンダリングに必要な要求の数を最小限に抑えるには、ページをクライアント側ライブラリに含めて最小化する必要があります。
 * サーバーリクエストを調べ、最も長くかかっているリクエストを確認するには、Chrome の「ネットワーク」タブなどのブラウザーツールを使用します。
 
