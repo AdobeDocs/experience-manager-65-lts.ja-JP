@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: e337b682a0ee2b35940671991bd82b30d9d50128
 workflow-type: tm+mt
-source-wordcount: '3064'
-ht-degree: 95%
+source-wordcount: '2961'
+ht-degree: 94%
 
 ---
 
@@ -130,7 +130,7 @@ Adobe Experience Manager のリポジトリをデプロイするには、様々�
 >
 >詳しくは、[MongoDB for Adobe Experience Manager のページ](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager)を参照してください。
 
-### サーブレットエンジン / アプリケーションサーバー {#servlet-engines-application-servers}
+### サーブレットエンジン／アプリケーションサーバー {#servlet-engines-application-servers}
 
 Adobe Experience Manager は、スタンドアロンサーバー（Quickstart JAR ファイル）として、またはサードパーティのアプリケーションサーバー内の web アプリケーション（WAR ファイル）として実行できます。
 
@@ -153,13 +153,14 @@ Adobe Experience Manager は、実稼動環境では次のサーバープラッ�
 | **Linux®（Red Hat® ディストリビューションに基づく）** | A：サポート対象 `[1]` `[2]` |
 | Linux®、Debian ディストリビューションベース（Ubuntu | A：サポート対象 `[1]` |
 | Linux®、SUSE® ディストリビューションベース | A：サポート対象 `[1]` |
+| Microsoft® Windows Server 2022 | R：サポート対象 |
 
 1. Linux® カーネル 5。 x および 6.x には Red Hat® ディストリビューションの派生 OS （Red Hat® Enterprise Linux®、CentOS、Oracle Linux®、Amazon Linux® など）が含まれます。
 1. Adobe Managed Services でサポートされている Linux® ディストリビューション。
 
    >[!NOTE]
    >
-   >Linux ベースのサーバー（OSGI および JEE スタック）の場合、AEM Forms アドオンには次のようなランタイム依存関係が必要です。
+   >Linux ベースのサーバーの場合、AEM Forms アドオンには、次のようなランタイム依存関係が必要です。
    >* glibc.x86_64（2.17-196）
    >* libX11.x86_64（1.6.7-4）
    >* zlib.x86-64（1.2.7-17）
@@ -386,15 +387,7 @@ Windows x86 の場合：
    <td>XPS、画像形式（BMP、GIF、JPEG、JPG、TIF、TIFF、PNG、JPF、JPX、JP2、J2K、J2C、JPC）、HTML、HTM、DWG、DXF、DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/jp/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 Classic トラック</a> 最新バージョン（非推奨）</td>
-   <td>XPS、画像形式（BMP、GIF、JPEG、JPG、TIF、TIFF、PNG、JPF、JPX、JP2、J2K、J2C、JPC）、HTML、HTM、DWG、DXF、DWF</td>
-  </tr>
-  <tr>
    <td>Microsoft® Office 2019</td>
-   <td>DOC、DOCX、XLS、XLSX、PPT、PPTX、RTF、TXT</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Office 2016 （非推奨）</td>
    <td>DOC、DOCX、XLS、XLSX、PPT、PPTX、RTF、TXT</td>
   </tr>
   <tr>
@@ -402,29 +395,13 @@ Windows x86 の場合：
    <td>WP、WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2016（非推奨）<br /> </td>
-   <td>VSD、VSDX</td>
-  </tr>
-  <tr>
    <td>Microsoft® Publisher 2019<br /> </td>
    <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Publisher 2016（非推奨）<br /> </td>
-   <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Project 2016（非推奨）<br /> </td>
-   <td>MPP</td>
   </tr>
   <tr>
    <td>OpenOffice 4.1.10</td>
    <td>ODT、ODP、ODS、ODG、ODF、SXW、SXI、SXC、SXD、XLS、XLSX、DOC、DOCX、PPT、PPTX、画像形式（BMP、GIF、JPEG、JPG、TIF、TIFF、PNG、JPF、JPX 、JP2、J2K、J2C、JPC）、HTML、HTM、RTF、TXT</td>
   </tr>
-  <tr>
-   <td>OpenOffice 4.1.2 （非推奨）</td>
-   <td>ODT、ODP、ODS、ODG、ODF、SXW、SXI、SXC、SXD、XLS、XLSX、DOC、DOCX、PPT、PPTX、画像形式（BMP、GIF、JPEG、JPG、TIF、TIFF、PNG、JPF、JPX 、JP2、J2K、J2C、JPC）、HTML、HTM、RTF、TXT</td>
-  </tr>  
  </tbody>
 </table>
 
@@ -461,7 +438,7 @@ Windows x86 の場合：
 * Acrobat Pro DC、Acrobat Standard DC または Adobe Acrobat Reader DC
 * Designer をインストールするための管理者権限。
 * 32 ビット AEM Forms Designer 用の Microsoft Visual C++ 2019（VC 14.28 以降）32 ビットランタイム
-* 64 ビットAEM Forms Designer 用の Microsoft Visual C++ 2019（VC 14.28 以降）64 ビットランタイム（OSGI と JEE スタックの両方に対応）
+* 64 ビット AEM Forms Designer用Microsoft Visual C++ 2019 （VC 14.28 以降） 64 ビットランタイム
 
 [AEM Forms Designer のインストールと設定](/help/forms/using/installing-configuring-designer.md)
 
