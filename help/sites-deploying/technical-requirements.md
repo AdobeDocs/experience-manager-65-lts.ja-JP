@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: e337b682a0ee2b35940671991bd82b30d9d50128
+source-git-commit: 45b0c2c3a2cf1e3d55ad9184878cb8ebc3add672
 workflow-type: tm+mt
-source-wordcount: '2961'
+source-wordcount: '2955'
 ht-degree: 94%
 
 ---
@@ -153,7 +153,8 @@ Adobe Experience Manager は、実稼動環境では次のサーバープラッ�
 | **Linux®（Red Hat® ディストリビューションに基づく）** | A：サポート対象 `[1]` `[2]` |
 | Linux®、Debian ディストリビューションベース（Ubuntu | A：サポート対象 `[1]` |
 | Linux®、SUSE® ディストリビューションベース | A：サポート対象 `[1]` |
-| Microsoft® Windows Server 2022 | R：サポート対象 |
+
+<!--| Microsoft&reg; Windows Server 2022 |R: Supported|-->
 
 1. Linux® カーネル 5。 x および 6.x には Red Hat® ディストリビューションの派生 OS （Red Hat® Enterprise Linux®、CentOS、Oracle Linux®、Amazon Linux® など）が含まれます。
 1. Adobe Managed Services でサポートされている Linux® ディストリビューション。
