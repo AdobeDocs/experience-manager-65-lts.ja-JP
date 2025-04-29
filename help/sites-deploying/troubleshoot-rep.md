@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 015def31-c7de-42b3-8218-1284afcb6921
-source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
+source-git-commit: 262b73813a0e1ccb9c45a4e099461d4dd8eccd00
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '927'
 ht-degree: 96%
 
 ---
@@ -59,16 +59,6 @@ ht-degree: 96%
    1. 「Query」ボックスに、次のクエリーを入力します。/jcr:root/var/eventing/jobs//element(&#42;、slingevent:Job) order by @slingevent:created
    1. 「検索」をクリックします。
    1. 検索結果の上位の項目が、最新の Sling イベントジョブです。各ジョブをクリックして、キューの一番上に表示されるものと同じ、動きのないレプリケーションを見つけます。
-
-1. Sling イベントフレームワークジョブのキューに問題が発生している可能性があります。/system/console の org.apache.sling.event バンドルを再起動してみます。
-1. ジョブの処理が完全に無効になっている可能性があります。Felix コンソールの「Sling Eventing」タブで確認できます。Apache Sling Eventing (JOB PROCESSING IS DISABLED!) と表示されるか確認します。
-
-   * 表示される場合は、Felix コンソールの「Configuration」タブで Apache Sling Job Event Handler を確認します。「Job processing Enabled」チェックボックスがオンになっていない場合があります。このチェックボックスがオンになっているのに「job processing is disabled」と表示される場合は、ジョブの処理を無効にしているオーバーレイが /apps/system/config にないか確認します。osgi:config ノードを作成し、jobmanager.enabled のブール値を true にして、アクティベートを開始したらキューにジョブが残っていないかを再確認します。
-
-1. また、DefaultJobManager 設定に不整合がある状態になる場合もあります。OSGi コンソール経由で「Apache Sling Job Event Handler」を手動で変更したユーザーがいる場合にこのような事態になります（例えば、「Job Processing Enabled」プロパティを無効にした後に再度有効にして、設定を保存した場合）。
-
-   * この時点で、crx-quickstart/launchpad/config/org/apache/sling/event/impl/jobs/DefaultJobManager.config に保存されている DefaultJobManager 設定に不整合がある状態になります。さらに、「Apache Sling Job Event Handler」プロパティで「Job Processing Enabled」がオンになった状態でも、いずれかのユーザーが「Sling Eventing」タブに移動すると、「JOB PROCESSING IS DISABLED」というメッセージが表示され、レプリケーションが動作しません。
-   * この問題を解決するには、OSGi コンソールの Configuration ページに移動して、「Apache Sling Job Event Handler」設定を削除します。次に、クラスターのマスターノードを再起動して、設定を整合性のある状態に戻します。この操作によって問題が修正され、レプリケーションが再び動作を開始します。
 
 **replication.log の作成**
 

@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS のドキュメントを参照して、その仕組みと機能を確認してください。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 013c9155817811913963ca514f7a6369b338d487
+source-git-commit: 262b73813a0e1ccb9c45a4e099461d4dd8eccd00
 workflow-type: tm+mt
-source-wordcount: '6790'
-ht-degree: 94%
+source-wordcount: '6786'
+ht-degree: 98%
 
 ---
 
@@ -119,7 +119,7 @@ ht-degree: 94%
          + [オーディエンスの管理](/help/sites-authoring/managing-audiences.md)
          + [オファーの作成と管理](/help/sites-authoring/offerlib.md)
          + [セグメント化について](/help/sites-authoring/segmentation-overview.md)
-      + AEMとAdobe Campaign {#aem-adobe-campaign}
+      + AEM と Adobe Campaign {#aem-adobe-campaign}
          + [Adobe Campaign の使用](/help/sites-authoring/adobe-campaign.md)
          + [Adobe Campaign Classic および Adobe Campaign Standard の使用](/help/sites-authoring/campaign.md)
          + [Adobe Campaign のターゲット設定](/help/sites-authoring/target-adobe-campaign.md)
@@ -149,7 +149,7 @@ ht-degree: 94%
          + [翻訳のベストプラクティス](/help/sites-administering/tc-bp.md)
          + [設定と設定ブラウザー](/help/sites-administering/configurations.md)
          + [AEM FAQ](/help/sites-administering/aem-faqs.md)
-      + 運用 {#operations}
+      + 操作 {#operations}
          + [ダッシュボード](/help/sites-administering/dashboards.md)
          + [操作ダッシュボード](/help/sites-administering/operations-dashboard.md)
          + [バックアップと復元](/help/sites-administering/backup-and-restore.md)
@@ -238,11 +238,11 @@ ht-degree: 94%
          + [ページエクスポーター](/help/sites-administering/page-exporter.md)
          + [クラシック UI のタグ付けコンソール](/help/sites-administering/classic-console.md)
          + [WebDAV アクセス](/help/sites-administering/webdav-access.md)
-+ アセット {#assets}
++ Assets {#assets}
    + [DAM について](/help/assets/assets.md)
    + [Assets のベストプラクティス](/help/assets/best-practices-for-assets.md)
    + [ [!DNL Assets] でのアクセシビリティ](/help/assets/accessibility.md)
-   + Experience Manager Assetsの使用 {#using}
+   + Experience Manager Assets の使用 {#using}
       + [[!DNL Assets] のホームページエクスペリエンス](/help/assets/assets-home-page.md)
       + [デジタルアセットの検索](/help/assets/search-assets.md)
       + [アセットメタデータの操作](/help/assets/metadata.md)
@@ -308,7 +308,7 @@ ht-degree: 94%
       + [Dynamic Media を使用した CDN キャッシュの無効化](/help/assets/invalidate-cdn-cache-dynamic-media.md)
       + [一括アセット移行用の機能パック 18912 をインストールする](/help/assets/bulk-ingest-migrate.md)
       + [セレクターを操作する](/help/assets/working-with-selectors.md)
-   + Assetsの拡張 {#extending}
+   + Assets の拡張 {#extending}
       + [ [!DNL Assets] のカスタマイズと拡張](/help/assets/extending-assets.md)
       + [メディアハンドラーとワークフローを使用したアセットの処理](/help/assets/media-handlers.md)
       + [検索機能の拡張](/help/assets/searchx.md)
@@ -323,7 +323,7 @@ ht-degree: 94%
       + [コンテンツフラグメントに対するリモート GraphQL クエリの認証](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md)
       + [GraphQL API とコンテンツフラグメント - コンテンツとクエリの例](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
       + [[!DNL Assets] プロキシ開発](/help/assets/proxy.md)
-   + Assetsの管理 {#administer}
+   + アセットの管理 {#administer}
       + [サポートされているファイル形式](/help/assets/assets-formats.md)
       + [検索ファセット](/help/assets/search-facets.md)
       + [メタデータの概念について](/help/assets/metadata-concepts.md)
@@ -376,7 +376,7 @@ ht-degree: 94%
       + [構造ツリー](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [プレビュー - JSON 表現](/help/assets/content-fragments/content-fragments-json-preview.md)
       + [コンテンツフラグメントの翻訳プロジェクトの作成](/help/assets/creating-translation-projects-for-content-fragments.md)
-   + Assetsの管理 {#managing}
+   + アセットの管理 {#managing}
       + [デジタルアセットの管理](/help/assets/manage-assets.md)
       + [コレクションの管理](/help/assets/manage-collections.md)
       + [アセットセレクター](/help/assets/asset-selector.md)
@@ -397,7 +397,7 @@ ht-degree: 94%
       + [関連アセット](/help/assets/related-assets.md)
       + [プライベートフォルダーの共有](/help/assets/private-folder.md)
       + [ビデオレンディション](/help/assets/video-renditions.md)
-   + 他のソリューションとの統合  {#integrations}
+   + 他のソリューションとの統合 {#integrations}
       + [ [!DNL Adobe Workfront] との統合](/help/assets/workfront-integrations.md)
       + [ [!DNL Workfront] への  [!DNL enhanced connector]  のインストール](/help/assets/workfront-connector-install.md)
       + [ [!DNL Workfront] への  [!DNL enhanced connector]  の設定](/help/assets/workfront-connector-configure.md)
@@ -418,7 +418,7 @@ ht-degree: 94%
          + [チュートリアル：アダプティブフォームのフィールド l にルールを適用する](/help/forms/using/apply-rules-to-adaptive-form-fields.md)
          + [チュートリアル：アダプティブフォームのスタイルを設定](/help/forms/using/style-your-adaptive-form.md)
          + [チュートリアル：アダプティブフォームの公開](/help/forms/using/publish-your-adaptive-form.md)
-      + チュートリアル：最初のインタラクティブ通信を作成 {#create-first-interactive-communication}
+      + チュートリアル：最初のインタラクティブなコミュニケーションを作成する {#create-first-interactive-communication}
          + [チュートリアル：最初のインタラクティブ通信を作成する](/help/forms/using/create-your-first-interactive-communication.md)
          + [チュートリアル：インタラクティブ通信の計画](/help/forms/using/planning-interactive-communications.md)
          + [チュートリアル：フォームデータモデルの作成](/help/forms/using/create-form-data-model0.md)
@@ -435,10 +435,10 @@ ht-degree: 94%
          + [リファレンステーマ](/help/forms/using/reference-themes.md)
          + [参照レターテンプレート](/help/forms/using/reference-cm-layout-templates.md)
          + [We.Finance リファレンスサイトの住宅ローンワークフローのための Microsoft Dynamics 365 の設定](/help/forms/using/ms-dynamics-configuration-home-mortgage.md)
-   + AEM Formsのインストールと設定 {#install-aem-forms}
+   + AEM Forms のインストールと設定 {#install-aem-forms}
       + [AEM Forms のアーキテクチャとデプロイメントトポロジー](/help/forms/using/aem-forms-architecture-deployment.md)
       + [AEM Forms のインストールに永続性タイプを選択する](/help/forms/using/choosing-persistence-type-for-aem-forms.md)
-      + AEM Formsの OSGi へのインストール {#osgi-installation}
+      + OSGi 上の AEM Forms のインストール {#osgi-installation}
          + [OSGi 上の AEM Forms でサポートされるプラットフォーム](/help/forms/using/supported-platforms.md)
          + [ドキュメントサービスのインストールと設定](/help/forms/using/install-configure-document-services.md)
          + [データ取得機能をインストールして設定する](/help/forms/using/installing-configuring-aem-forms-osgi.md)
@@ -455,14 +455,14 @@ ht-degree: 94%
          + [AEM Forms と Adobe LiveCycle の接続](/help/forms/using/aem-livecycle-connector.md)
          + [AEM Forms がフォームデータを JEE 上の AEM Forms プロセスに送信するための設定](/help/forms/using/submit-form-data-livecycle-process.md)
          + [AEM Forms の AEM デスクトップアプリケーション](/help/forms/using/aem-desktop-app-for-aem-forms.md)
-   + AEM Formsのアップグレード {#upgrade-aem-forms}
+   + AEM Forms のアップグレード {#upgrade-aem-forms}
       + [有効なアップグレードパス](/help/forms/using/upgrade.md)
-      + OSGi でのAEM Formsのアップグレード {#aem-forms-osgi-upgrade}
+      + OSGi 上の AEM Forms のアップグレード {#aem-forms-osgi-upgrade}
          + [OSGi 上のAEM 6.5 LTS Forms へのアップグレード](/help/forms/using/upgrade-forms-osgi.md)
          + [互換性パッケージをインストールする](/help/forms/using/compatibility-package.md)
          + [AEM Forms のアセットとドキュメントの移行](/help/forms/using/migration-utility.md)
       + [JEE 上の AEM 6.5 Forms へのアップグレード](/help/forms/using/upgrade-forms-jee.md)
-   + AEM Formsの管理 {#manage-administer-aem-forms}
+   + AEM Forms の管理 {#manage-administer-aem-forms}
       + [OSGi 上の AEM Forms のグループと権限](/help/forms/using/forms-groups-privileges-tasks.md)
       + [フォームを分類するための新しいフォルダーの作成](/help/forms/using/creating-new-folders-categorize-forms.md)
       + [フォームおよびアセットの検索](/help/forms/using/searching-forms-or-assets.md)
@@ -476,11 +476,11 @@ ht-degree: 94%
          + [OSGi でのフォームに特化したワークフロー](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
          + [Forms のユーザー管理](/help/forms/using/user-management-handling-user-data.md)
          + [Forms の JEE ワークフロー](/help/forms/using/forms-workflow-jee-handling-user-data.md)
-         + [Forms ポータル](/help/forms/using/forms-portal-handling-user-data.md)
+         + [フォームポータル](/help/forms/using/forms-portal-handling-user-data.md)
          + [Correspondence Management](/help/forms/using/correspondence-management-handling-user-data.md)
          + [Adobe Sign との統合](/help/forms/using/integration-adobe-sign-handling-user-data.md)
          + [Document Security](/help/forms/using/document-security-handling-user-data.md)
-      + AEM Forms環境の強化 {#hardening-aem-forms-environment}
+      + AEM Forms 環境の堅牢化 {#hardening-aem-forms-environment}
          + [OSGi 環境における AEM Forms のセキュリティの強化](/help/forms/using/hardening-securing-aem-forms-environment.md)
          + [JEE 上の AEM Forms のセキュリティに関する一般的な考慮事項](/help/forms/using/general-security-considerations.md)
          + [JEE 上の AEM Forms 環境の堅牢化](/help/forms/using/hardening-aem-forms-jee-environment.md)
@@ -493,7 +493,7 @@ ht-degree: 94%
       + [フォームデータモデルの作成](/help/forms/using/create-form-data-models.md)
       + [フォームデータモデルの操作](/help/forms/using/work-with-form-data-model.md)
       + [フォームデータモデルの使用](/help/forms/using/using-form-data-model.md)
-   + アダプティブForms - コアコンポーネント {#adaptive-forms-core-components}
+   + アダプティブフォーム - コアコンポーネント {#adaptive-forms-core-components}
       + [環境でコアコンポーネントを有効にする](/help/forms/using/enable-adaptive-forms-core-components.md)
       + [コアコンポーネントベースのアダプティブフォームを作成](/help/forms/using/create-an-adaptive-form-core-components.md)
       + [アダプティブフォームでのアダプティブフォームフラグメントの作成と使用](/help/forms/using/adaptive-form-fragment-core-components.md)
@@ -504,7 +504,7 @@ ht-degree: 94%
       + [アダプティブフォームへのバージョン管理、コメント、注釈の追加](/help/forms/using/add-versioning-reviews-comments.md)
       + [アダプティブフォームの比較](/help/forms/using/compare-forms-core-components.md)
       + [機能切替スイッチの有効化](/help/forms/using/enable-feature-toggle.md)
-   + アダプティブForms – 基本オーサリング {#adaptive-forms-basic-authoring}
+   + アダプティブフォーム - 基本オーサリング {#adaptive-forms-basic-authoring}
       + [アダプティブフォームの操作のベストプラクティス](/help/forms/using/adaptive-forms-best-practices.md)
       + [アダプティブフォームの作成](/help/forms/using/creating-adaptive-form.md)
       + [AEM Sites ページへのアダプティブフォームの作成または追加](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
@@ -535,7 +535,7 @@ ht-degree: 94%
       + [フォームのフィールドのための文脈依存ヘルプの作成](/help/forms/using/authoring-in-field-help.md)
       + [レイアウトモードを使用したコンポーネントのサイズ変更](/help/forms/using/resize-using-layout-mode.md)
       + [アダプティブフォームデータを Microsoft に接続して送信](/help/forms/using/forms-microsoft-power-automate-integration.md)
-   + アダプティブForms – 高度なオーサリング {#adaptive-forms-advanced-authoring}
+   + アダプティブフォーム - 高度なオーサリング {#adaptive-forms-advanced-authoring}
       + [JSON スキーマを使用したアダプティブフォームの作成](/help/forms/using/adaptive-form-json-schema-form-model.md)
       + [XML スキーマを使ったアダプティブフォームの作成](/help/forms/using/adaptive-form-xml-schema-form-model.md)
       + [アダプティブフォームで Adobe Sign を使用する](/help/forms/using/working-with-adobe-sign.md)
@@ -707,14 +707,14 @@ ht-degree: 94%
       + [インタラクティブ通信とレターのインライン条件と繰り返し構造](/help/forms/using/cm-inline-condition.md)
       + [ドキュメントフラグメント](/help/forms/using/lists.md)
       + [Correspondence Management設定プロパティ](/help/forms/using/cm-configuration-properties.md)
-   + AEM FormsとExperience Cloud ソリューションの統合 {#integrate-aem-forms-with-experience-cloud-solutions}
+   + AEM Forms と Experience Cloud ソリューションとの統合 {#integrate-aem-forms-with-experience-cloud-solutions}
       + [AEM Forms でターゲット設定されたエクスペリエンスを作成する](/help/forms/using/experience-targeting-forms.md)
       + [フォームのコンバージョン率の測定と効率性の改善](/help/forms/using/measure-improve-performance-forms-documents.md)
       + [Cloud Service フレームワークを使用した Analytics](/help/forms/using/configure-analytics-forms-documents.md)
       + [Adobe Launch を使用した Analytics](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md)
       + [AEM Forms の分析レポートの確認方法と詳細](/help/forms/using/view-understand-aem-forms-analytics-reports.md)
       + [アダプティブフォームの A/B テストの作成と管理](/help/forms/using/ab-testing-adaptive-forms.md)
-   + AEM Formsの公開と処理 {#publish-process-aem-forms}
+   + AEM Forms の公開と処理 {#publish-process-aem-forms}
       + [ポータル上のフォーム公開の概要](/help/forms/using/introduction-publishing-forms.md)
       + [ドラフトと送信コンポーネントとデータベースの統合のサンプル](/help/forms/using/integrate-draft-submission-database.md)
       + [ドラフトと送信に使用するストレージサービスの設定](/help/forms/using/configuring-draft-submission-storage.md)
@@ -767,7 +767,7 @@ ht-degree: 94%
          + [フォームのアクセシビリティをテストするためのテクニック](/help/forms/using/techniques-for-testing-form-accessibility.md)
          + [ガイドラインとベストプラクティス間のマッピング](/help/forms/using/mapping-between-guidelines-and-best-practices.md)
          + [役に立つリンク](/help/forms/using/useful-links-accessibility-forms-designer.md)
-   + AEM Formsのカスタマイズ {#customize-aem-forms}
+   + AEM Forms のカスタマイズ {#customize-aem-forms}
       + [アダプティブフォームおよび HTML5 フォームの外観フレームワーク](/help/forms/using/introduction-widgets.md)
       + [カスタムアダプティブフォームのテンプレートの作成](/help/forms/using/custom-adaptive-forms-templates.md)
       + [アダプティブフォームのカスタムレイアウトコンポーネントの作成](/help/forms/using/custom-layout-components-forms.md)
@@ -792,7 +792,7 @@ ht-degree: 94%
          + [トランザクションレポートの有効化と表示](/help/forms/using/transaction-report-overview-jee.md)
          + [JEE 版 AEM Forms の課金対象 API のリスト](/help/forms/using/transaction-reports-billable-apis-jee.md)
          + [カスタムコンポーネント API のトランザクションの記録](/help/forms/using/record-transaction-custom-component-jee.md)
-   + JEE 上のAEM Formsの管理者ヘルプ {#administrator-help}
+   + JEE 上の AEM Forms の管理者ヘルプ {#administrator-help}
       + はじめに {#get-started}
          + [AEM Forms の一般設定](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
          + [デプロイメントのライセンスの種類の更新](/help/forms/using/admin-help/update-license-type-deployment.md)
@@ -826,7 +826,7 @@ ht-degree: 94%
          + [Connector for IBM FileNet の設定](/help/forms/using/admin-help/configuring-connector-ibm-filenet.md)
          + [Connector for IBM Content Manager の設定](/help/forms/using/admin-help/configuring-connector-ibm-content-manager.md)
          + [Connector for Microsoft SharePoint の設定](/help/forms/using/admin-help/configuring-connector-microsoft-sharepoint.md)
-      + 証明書と秘密鍵証明書の管理 {#manage-certificates-credentials}
+      + 証明書と資格情報の管理 {#manage-certificates-credentials}
          + [ユーザー名とパスワードの資格情報の追加と削除](/help/forms/using/admin-help/adding-removing-user-name-password.md)
          + [証明書失効リストの管理](/help/forms/using/admin-help/certificate-revocation-lists.md)
          + [証明書と資格情報の管理の基本事項](/help/forms/using/admin-help/overview-2.md)
@@ -858,7 +858,7 @@ ht-degree: 94%
          + [Adobe Reader Web ブラウザープラグインのオンライン注釈を有効にする](/help/forms/using/admin-help/enabling-online-commenting-reader-web.md)
          + [Acrobat Reader DC Extensions で使用するタイムアウト値の設定](/help/forms/using/admin-help/setting-timeout-values-acrobat-reader.md)
          + [期限切れの Reader Extension サービス証明書を更新しています](/help/forms/using/admin-help/updating-expired-reader-extension-certificates.md)
-      + PDF Generatorの操作 {#work-with-pdf-generator}
+      + PDF Generator の操作 {#work-with-pdf-generator}
          + [PDF Generator の操作の概要](/help/forms/using/admin-help/overview-5.md)
          + [マルチスレッドファイル変換の有効化](/help/forms/using/admin-help/enabling-multi-threaded-file-conversions.md)
          + [Adobe PDF 設定の指定](/help/forms/using/admin-help/configuring-pdf-settings.md)
@@ -886,7 +886,7 @@ ht-degree: 94%
          + [Document Security Web ページの使用](/help/forms/using/admin-help/using-document-security-web-pages.md)
          + [ポリシーセットの作成および管理](/help/forms/using/admin-help/creating-policy-sets.md)
          + [ユーザーの登録](/help/forms/using/admin-help/registering-as-a-user.md)
-      + Formsの設定 {#configure-forms}
+      + Forms の設定 {#configure-forms}
          + [Forms 設定の基本事項](/help/forms/using/admin-help/overview-7.md)
          + [国際化対応オプションの設定](/help/forms/using/admin-help/setting-internationalization-options.md)
          + [Forms のキャッシュの構成](/help/forms/using/admin-help/configuring-caching-forms.md)
@@ -905,7 +905,7 @@ ht-degree: 94%
          + [埋め込むフォントの指定](/help/forms/using/admin-help/specify-fonts-embed.md)
          + [セキュリティ設定の指定](/help/forms/using/admin-help/specify-security-settings.md)
          + [文字セットの変更](/help/forms/using/admin-help/change-character-set.md)
-      + Forms ワークフローの設定{#configure-forms-workflow}
+      + Forms Workflow の設定{#configure-forms-workflow}
          + [管理およびプロセスの用語について](/help/forms/using/admin-help/administration-process-terminology.md)
          + [プロセスの管理](/help/forms/using/admin-help/processes.md)
          + [業務カレンダーの設定](/help/forms/using/admin-help/configuring-business-calendars.md)
@@ -916,7 +916,7 @@ ht-degree: 94%
          + [停止した操作および停止したブランチの使用](/help/forms/using/admin-help/stalled-operations-branches.md)
          + [共有キューの設定](/help/forms/using/admin-help/configuring-shared-queues.md)
          + [タスクの操作](/help/forms/using/admin-help/tasks.md)
-      + Workspaceの設定 {#configure-workspace}
+      + Workspace の設定 {#configure-workspace}
          + [Workspace の概要](/help/forms/using/admin-help/overview-10.md)
          + [グローバル設定の読み込みと書き出し](/help/forms/using/admin-help/importing-exporting-global-settings.md)
          + [今日のお知らせの設定](/help/forms/using/admin-help/setting-message-day.md)
@@ -934,14 +934,14 @@ ht-degree: 94%
          + [AEM Forms のデプロイメントの監視](/help/forms/using/admin-help/monitoring-aem-forms-deployments.md)
          + [ワークマネージャーとスロットリング](/help/forms/using/admin-help/manager-throttling.md)
          + [メンテナンスモードでの AEM Forms の実行](/help/forms/using/admin-help/running-aem-forms-maintenance-mode.md)
-      + AEM Forms データベースの管理 {#maintain-aem-forms-database}
+      + AEM Forms データベースの保守 {#maintain-aem-forms-database}
          + [DB2 データベース：週単位のプロセス実行](/help/forms/using/admin-help/db2-database-running-process-weekly.md)
          + [Oracle データベースの最大オープンカーソル数のしきい値](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
          + [IBM DB2 データベース：定期保守のコマンドの実行](/help/forms/using/admin-help/ibm-db2-database-running-commands.md)
          + [プロセスデータの削除](/help/forms/using/admin-help/purging-process-data.md)
          + [Microsoft SQL Server データベース：設定の最適なチューニング](/help/forms/using/admin-help/microsoft-sql-server-database-fine.md)
          + [データベースの増大を最小にするためのヒント](/help/forms/using/admin-help/tips-minimizing-database-growth.md)
-      + アプリケーションサーバーの保守 {#manage-application-server}
+      + アプリケーションサーバーの管理 {#manage-application-server}
          + [アプリケーションサーバーの Web サイト](/help/forms/using/admin-help/application-server-websites.md)
          + [グローバルドキュメントストレージディレクトリ](/help/forms/using/admin-help/global-document-storage-directory.md)
          + [管理コンソール実行時の考慮事項](/help/forms/using/admin-help/considerations-running-administration-console.md)
@@ -975,15 +975,15 @@ ht-degree: 94%
       + [HTML5 フォームの Form Bridge API](/help/forms/using/form-bridge-apis.md)
       + [アダプティブフォームの JavaScript ライブラリ API リファレンス](https://helpx.adobe.com/jp/experience-manager/6-5/forms/javascript-api/index.html)
       + [Assembler サービスおよび DDX リファレンス](https://www.adobe.com/go/learn_aemforms_ddxRef_65_jp)
-      + JEE 上のAEM Formsでのプログラミング {#programming-aem-forms-jee}
-         + JEE 上のAEM Formsでのプログラミングの概要 {#introduction-programming-aem-forms-jee}
+      + JEE 上の AEM Forms でのプログラミング {#programming-aem-forms-jee}
+         + JEE 上の AEM Forms でのプログラミングの概要 {#introduction-programming-aem-forms-jee}
             + [Java API クイックスタートの概要](/help/forms/developing/introducing-java-api-soap-quick.md)
             + [API を使用した AEM Forms の呼び出し](/help/forms/developing/invoking-aem-forms-using-apis.md)
          + [AEM Forms プロセスについて](/help/forms/developing/aem-forms-processes.md)
          + [サービスコンテナ](/help/forms/developing/service-container.md)
-         + AEM Forms向け SPI の開発 {#developing-spis-aem-forms}
+         + AEM Forms 向け SPI の開発 {#developing-spis-aem-forms}
             + [外部ユーザー招待ハンドラーの作成](/help/forms/developing/creating-invite-external-users-handler.md)
-         + Java API クイックスタート – コード例 {#java-api-quick-start-code-examples}
+         + Java API クイックスタート - コード例 {#java-api-quick-start-code-examples}
             + [Application Manager クライアント Java API クイックスタート（SOAP）](/help/forms/developing/application-manager-client-java-api.md)
             + [Application Manager サービス JavaAPI クイックスタート（SOAP）](/help/forms/developing/application-manager-service-java-api.md)
             + [Assembler サービス Java API クイックスタート（SOAP）](/help/forms/developing/assembler-service-java-api-quick.md)
@@ -1011,7 +1011,7 @@ ht-degree: 94%
             + [Task Manager サービス Java API クイックスタート（SOAP）](/help/forms/developing/task-manager-service-java-api.md)
             + [User Manager Java API クイックスタート（SOAP）](/help/forms/developing/user-manager-java-api-quick.md)
             + [XMP Utilities サービス Java API クイックスタート（SOAP）](/help/forms/developing/xmp-utilities-service-java-api.md)
-         + API を使用した JEE 上のAEM Formsの呼び出し {#invoking-aem-forms-jee-apis}
+         + API を使用した JEE 上の AEM Forms の呼び出し {#invoking-aem-forms-jee-apis}
             + [REST リクエストを使用した AEM Forms の呼び出し](/help/forms/developing/invoking-aem-forms-using-rest.md)
             + [Web サービスを使用した AEM Forms の呼び出し](/help/forms/developing/invoking-aem-forms-using-web.md)
             + [Remoting を使用した AEM Forms の呼び出し](/help/forms/developing/invoking-aem-forms-using-remoting.md)
@@ -1093,7 +1093,7 @@ ht-degree: 94%
       + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
       + [サードパーティコマースソリューション](/help/commerce/cif/integrating/third-party.md)
    + AEM ストアフロント {#storefront}
-      + [概要](/help/commerce/cif/getting-started.md)
+      + [はじめに](/help/commerce/cif/getting-started.md)
       + オーサリング {#authoring}
          + [コマースエクスペリエンス](/help/commerce/cif/authoring/authoring-commerce-experiences.md)
          + [製品コックピット](/help/commerce/cif/authoring/product-cockpit.md)
@@ -1275,7 +1275,7 @@ ht-degree: 94%
             + [AEM GraphQL API とコンテンツフラグメント - コンテンツとクエリの例](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/content-fragments-graphql-samples.html)
          + ユニバーサルエディター {#universal-editor}
             + [はじめに](/help/sites-developing/universal-editor/introduction.md)
-      + ハイブリッドおよび SPA のAEM開発 {#spas}
+      + ハイブリッドおよび SPA の AEM 開発 {#spas}
          + [AEM でのハイブリッドと SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [SPA の概要およびガイド](/help/sites-developing/spa-walkthrough.md)
          + [SPA WKND チュートリアル](/help/sites-developing/spa-wknd.md)
@@ -1323,7 +1323,7 @@ ht-degree: 94%
          + ClientContext{#client-context}
             + [ClientContext の詳細](/help/sites-developing/client-context.md)
             + [Client Context JavaScript API](/help/sites-developing/ccjsapi.md)
-      + AEMの拡張 {#extending-aem}
+      + AEM の拡張 {#extending-aem}
          + [Adobe Developer App Builder を使用した AEM の拡張](/help/sites-developing/app-builder.md)
          + [ページオーサリングのカスタマイズ](/help/sites-developing/customizing-page-authoring-touch.md)
          + [コンソールのカスタマイズ](/help/sites-developing/customizing-consoles-touch.md)
@@ -1398,7 +1398,7 @@ ht-degree: 94%
          + [技術要件](/help/sites-deploying/technical-requirements.md)
          + [AEMのストレージ要素](/help/sites-deploying/storage-elements-in-aem-6.md)
          + [MongoDB を備えた AEM](/help/sites-deploying/aem-with-mongodb.md)
-      + AEMのデプロイ {#deploying}
+      + AEM のデプロイ {#deploying}
          + [デプロイとメンテナンス](/help/sites-deploying/deploy.md)
          + [推奨されるデプロイメント](/help/sites-deploying/recommended-deploys.md)
          + [アプリケーションサーバーのインストール](/help/sites-deploying/application-server-install.md)
@@ -1420,7 +1420,6 @@ ht-degree: 94%
          + [実行モード](/help/sites-deploying/configure-runmodes.md)
          + [Web コンソール](/help/sites-deploying/web-console.md)
          + [レプリケーション](/help/sites-deploying/replication.md)
-         + [相互 SSL を使用したレプリケーション](/help/sites-deploying/mssl-replication.md)
          + [レプリケーションのトラブルシューティング](/help/sites-deploying/troubleshoot-rep.md)
          + [静的オブジェクトの有効期限](/help/sites-deploying/expiration-static-objects.md)
          + [バージョンのパージ](/help/sites-deploying/version-purging.md)
@@ -1461,12 +1460,12 @@ ht-degree: 94%
    + Fluid Experience {#fluid-experiences}
       + [機能一覧](/help/fluid-experiences/feature-list.md)
 + 管理 {#managing}
-   + 管理 – ベストプラクティスチェックリスト {#managing-best-practices-checklist}
+   + 管理 - ベストプラクティスチェックリスト {#managing-best-practices-checklist}
       + [プロジェクトの管理 - ベストプラクティスチェックリスト](/help/managing/best-practices.md)
       + [チェックリスト](/help/managing/best-practices-checklist.md)
       + [用語集](/help/managing/best-practices-glossary.md)
       + [チェックリスト - 詳細情報](/help/managing/best-practices-further-reference.md)
-   + 管理 – 詳細なリファレンス {#managing-further-reference}
+   + 管理 - その他のリファレンス {#managing-further-reference}
       + [ハードウェアのサイジングのガイドライン](/help/managing/hardware-sizing-guidelines.md)
       + [Enterprise DevOps](/help/managing/enterprise-devops.md)
       + [SEO と URL 管理のベストプラクティス](/help/managing/seo-and-url-management.md)
