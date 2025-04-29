@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
+source-git-commit: 79551cfa77420fae965ecac8060fd2005beff558
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1376'
 ht-degree: 93%
 
 ---
@@ -38,20 +38,20 @@ ht-degree: 93%
    * [展開されたインストールディレクトリ](#unpacked-install-directory)
    * [起動と停止](#starting-and-stopping)
 
-<!-- Once you have familiarized yourself with these basics, you can find in more advanced and detailed information in the following subpages:
+これらの基本を理解したうえで、より高度かつ詳細な情報を習得するには、次のサブページを参照してください。
 
-* [Technical Requirements](/help/sites-deploying/technical-requirements.md)
-* [Recommended Deployments](/help/sites-deploying/recommended-deploys.md)
-* [Custom Standalone Install](/help/sites-deploying/custom-standalone-install.md)
-* [Application Server Install](/help/sites-deploying/application-server-install.md)
-* [Command Line Start and Stop](/help/sites-deploying/command-line-start-and-stop.md)
-* [Configuring](/help/sites-deploying/configuring.md)
-* [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md)
-* [Configuration How-To Articles](/help/sites-deploying/ht-deploy.md)
-* [Web Console](/help/sites-deploying/web-console.md)
-* [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md)
-* [Best Practices](/help/sites-deploying/best-practices.md)
-* [Introduction to the AEM Platform](/help/sites-deploying/platform.md) -->
+* [技術要件](/help/sites-deploying/technical-requirements.md)
+* [推奨されるデプロイメント](/help/sites-deploying/recommended-deploys.md)
+* [カスタムスタンドアロンインストール](/help/sites-deploying/custom-standalone-install.md)
+* [アプリケーションサーバーのインストール](/help/sites-deploying/application-server-install.md)
+* [コマンドラインによる起動と停止](/help/sites-deploying/command-line-start-and-stop.md)
+* [設定](/help/sites-deploying/configuring.md)
+* [AEM 6.5 LTS へのアップグレード](/help/sites-deploying/upgrade.md)
+* [設定方法に関する記事](/help/sites-deploying/ht-deploy.md)
+* [Web コンソール](/help/sites-deploying/web-console.md)
+* [レプリケーションのトラブルシューティング](/help/sites-deploying/troubleshoot-rep.md)
+* [ベストプラクティス](/help/sites-deploying/best-practices.md)
+* [AEM プラットフォームの概要](/help/sites-deploying/platform.md)
 
 ## 基本概念 {#basic-concepts}
 
@@ -265,28 +265,28 @@ AEM が起動し、Web ブラウザーが適切なページに自動的にリダ
 
 ![ログイン画面](assets/screen_shot_2019-04-08at83533am.png)
 
-<!-- 
-After you are logged in, you have access to AEM. For more information, depending on your role, see the following:
 
-* [Authoring](/help/sites-authoring/first-steps.md)
-* [Administering](/help/sites-administering/home.md)
-* [Developing](/help/sites-developing/getting-started.md)
-* [Managing](/help/managing/best-practices.md)
+ログインすると、AEM にアクセスできるようになります。詳しくは、ご自分の役割に応じて以下を参照してください。
 
-## Advanced Deployment {#advanced-deployment}
+* [オーサリング](/help/sites-authoring/first-steps.md)
+* [管理](/help/sites-administering/home.md)
+* [開発](/help/sites-developing/getting-started.md)
+* [管理](/help/managing/best-practices.md)
 
-The above section should give you a good understanding of the basics of AEM installation. However, installing a full production system of AEM can involve considerably more complexity. For full coverage of advanced installation see the following subpages:
+## 高度なデプロイメント {#advanced-deployment}
 
-* [Technical Requirements](/help/sites-deploying/technical-requirements.md)
-* [Recommended Deployments](/help/sites-deploying/recommended-deploys.md)
-* [Custom Standalone Install](/help/sites-deploying/custom-standalone-install.md)
-* [Application Server Install](/help/sites-deploying/application-server-install.md)
-* [Command Line Start and Stop](/help/sites-deploying/command-line-start-and-stop.md)
-* [Configuring](/help/sites-deploying/configuring.md)
-* [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md)
-* [Configuration How-To Articles](/help/sites-deploying/ht-deploy.md)
-* [Web Console](/help/sites-deploying/web-console.md)
-* [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md)
-* [Best Practices](/help/sites-deploying/best-practices.md)
-* [Introduction to the AEM Platform](/help/sites-deploying/platform.md)
- -->
+上記のセクションは、基本的な AEM のインストールについて説明したものです。ただし、AEM の完全な実稼動システムをインストールする場合は、大幅に複雑になる可能性があります。高度なインストールについての詳しい説明は、次のサブページを参照してください。
+
+* [技術要件](/help/sites-deploying/technical-requirements.md)
+* [推奨されるデプロイメント](/help/sites-deploying/recommended-deploys.md)
+* [カスタムスタンドアロンインストール](/help/sites-deploying/custom-standalone-install.md)
+* [アプリケーションサーバーのインストール](/help/sites-deploying/application-server-install.md)
+* [コマンドラインによる起動と停止](/help/sites-deploying/command-line-start-and-stop.md)
+* [設定](/help/sites-deploying/configuring.md)
+* [AEM 6.5 LTS へのアップグレード](/help/sites-deploying/upgrade.md)
+* [設定方法に関する記事](/help/sites-deploying/ht-deploy.md)
+* [Web コンソール](/help/sites-deploying/web-console.md)
+* [レプリケーションのトラブルシューティング](/help/sites-deploying/troubleshoot-rep.md)
+* [ベストプラクティス](/help/sites-deploying/best-practices.md)
+* [AEM プラットフォームの概要](/help/sites-deploying/platform.md)
+
