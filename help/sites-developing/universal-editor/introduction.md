@@ -4,10 +4,10 @@ description: ユニバーサルエディターの柔軟性と、AEM 6.5 を使�
 feature: Developing
 role: Developer
 exl-id: 495df631-5bdd-456b-b115-ec8561f33488
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3f6d0791968ad3017256dcd5ecea617bc7c8ed83
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 20%
+source-wordcount: '1174'
+ht-degree: 26%
 
 ---
 
@@ -38,10 +38,10 @@ ht-degree: 20%
 
 ユニバーサルエディターは、以下でサポートされています。
 
-* AEM 6.5 LTS
-   * オンプレミスおよび AMS の両方のホスティングがサポートされています。
-* [AEM 6.5](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) （サービスパック 21 または 22 に機能パック）
-   * オンプレミスおよび AMS の両方のホスティングがサポートされています。
+* AEM 6.5 LTS GA
+   * オンプレミスと AMS ホスティングの両方がサポートされています。
+* [AEM 6.5](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) （サービスパック 21 または 22 に機能パック以降）
+   * オンプレミスと AMS ホスティングの両方がサポートされています。
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) （リリース `2023.8.13099` 以降）
 
 このドキュメントでは、ユニバーサルエディターのAEM 6.5 LTS サポートに焦点を当てます。
@@ -50,29 +50,15 @@ ht-degree: 20%
 
 ユニバーサルエディターをテストするには、次の操作が必要です。
 
-1. [AEM オーサリングインスタンスを更新および設定します。](#update-configure-aem)
+1. [AEM オーサーインスタンスでサービスを設定します。](#configure-aem)
 1. [ローカルのユニバーサルエディターサービスを設定します。](#set-up-ue)
 1. [ユニバーサルエディターサービスを許可するように Dispatcher を調整します。](#update-dispatcher)
 
 設定が完了したら、[ ユニバーサルエディターを使用するようにアプリケーションをインストルメント ](#instrumentation) できます。
 
-### AEMの更新 {#update-aem}
+### サービスの設定 {#configure-aem}
 
-AEM 6.5 でユニバーサルエディターを使用するには、サービスパック 21 または 22、AEMの機能パックが必要です。
-
-#### 最新のサービスパックを適用 {#latest}
-
-AEM 6.5 の Service Pack 21 または 22 以降を実行していることを確認してください。最新のサービスパックは、[ ソフトウェア配布 ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ja) からダウンロードできます。
-
-#### ユニバーサルエディター機能パックのインストール {#feature-pack}
-
-**AEM 6.5 用ユニバーサルエディター機能パック** ソフトウェア配布で入手可能 [ をインストールします ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)。
-
-既にサービスパック 23 以降を実行している場合、機能パックは必要ありません。
-
-### サービスの設定 {#configure-services}
-
-機能パックにより、追加の設定が必要な多数の新しいパッケージがインストールされます。
+ユニバーサルエディターは、設定が必要な多数のサービスに依存しています。
 
 #### `login-token` cookie に SameSite 属性を設定します。 {#samesite-attribute}
 
@@ -108,7 +94,7 @@ AEM 6.5 の Service Pack 21 または 22 以降を実行していることを確
    * 「**ユニバーサルエディターを開くマッピング**」フィールドに、ユニバーサルエディターを開くパスを指定します。
    * 「**ユニバーサルエディターで開く Sling:resourceTypes**」フィールドに、ユニバーサルエディターによって直接開かれるリソースのリストを指定します。
 1. 「**保存**」をクリックします。
-1. [externalizer 設定 ](/help/sites-developing/externalizer.md) を確認し、少なくともローカル、オーサー、パブリッシュ環境が次の例のように設定されていることを確認します。
+1. [Externalizer の設定](/help/sites-developing/externalizer.md)を確認し、少なくともローカル、オーサー、パブリッシュ環境が次の例のように設定されていることを確認します。
 
    ```text
    "local $[env:AEM_EXTERNALIZER_LOCAL;default=http://localhost:4502]",
@@ -116,7 +102,7 @@ AEM 6.5 の Service Pack 21 または 22 以降を実行していることを確
    "publish $[env:AEM_EXTERNALIZER_PUBLISH;default=http://localhost:4503]"
    ```
 
-これらの設定手順が完了すると、AEMは次の順序でページのユニバーサルエディターを開きます。
+これらの設定手順が完了すると、AEM は次の順序でページのユニバーサルエディターを開きます。
 
 1. AEM は `Universal Editor Opening Mapping` の下にあるマッピングを確認し、コンテンツがそこに定義されているパスの下にある場合は、ユニバーサルエディターが開かれます。
 1. `Universal Editor Opening Mapping` で定義されたパスの下にないコンテンツの場合、AEM はコンテンツの `resourceType` が、**ユニバーサルエディターで開かれる Sling:resourceTypes**&#x200B;で定義されたものと一致するかどうかを確認し、コンテンツがこれらのタイプのいずれかに一致する場合は、`${author}${path}.html` でユニバーサルエディターが開かれます。
