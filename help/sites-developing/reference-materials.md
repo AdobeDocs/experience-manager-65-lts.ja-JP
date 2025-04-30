@@ -11,10 +11,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 34dbd86b-7131-405b-a963-7b332232997c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a27a4a2aa0a6b4864908fc56ff7de53208cfcf7f
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -22,12 +22,12 @@ ht-degree: 100%
 
 Adobe Experience Manager（AEM）では、アプリケーション開発および AEM 拡張用の API をいくつか提供しています。以下は、AEM でサポートされている API のドキュメントの一覧です。
 
-* [Adobe AEM 6.5.0 API](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/index.html)
-* [Granite UI（タッチ操作対応）API ドキュメント](https://www.adobe.io/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
-* [Coral UI ガイド](https://www.adobe.io/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
-* [ウィジェット API（クラシック UI）ドキュメント](https://www.adobe.io/experience-manager/reference-materials/6-5/widgets-api/index.html)
-* [UI テストフレームワーク JavaScript API リファレンス](https://www.adobe.io/experience-manager/reference-materials/6-5/test-api/index.html)
-* [Editor Core JavaScript API リファレンス](https://www.adobe.io/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)
+* [Adobe AEM 6.5 LTS API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html)
+* [Granite UI（タッチ操作対応）API ドキュメント](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
+* [Coral UI ガイド](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
+* [ウィジェット API（クラシック UI）ドキュメント](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+* [UI テストフレームワーク JavaScript API リファレンス](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)
+* [Editor Core JavaScript API リファレンス](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)
 
 AEM シングルページアプリケーション（SPA）Editor SDK Framework JavaScript API リファレンス：
 
@@ -46,11 +46,11 @@ AEM 配信およびコンテンツ管理 API
 
 * **Assets**：Assets HTTP API を使用すると、バイナリ、メタデータ、レンディション、コメントなどのアセットに対して作成、読み出し、更新、削除（CRUD）操作を実行できます。[AEM Assets HTTP API](/help/assets/mac-api-assets.md) を参照してください。
 
-* **コンテンツフラグメント**（CF）：[Assets HTTP API での CF サポート](/help/assets/assets-api-content-fragments.md)および [AEM Assets API - コンテンツフラグメント](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* **コンテンツフラグメント**（CF）：[Assets HTTP API での CF サポート](/help/assets/assets-api-content-fragments.md)および [AEM Assets API - コンテンツフラグメント](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 
 次の外部リソースは参照用です。
 
 * [Apache Sling 11 API](https://sling.apache.org/apidocs/sling11/)
 * [Jackrabbit Oak API](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)
-* [Java Content Repository API](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)
+* [Java Content Repository API](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)
 * [Apache Jackrabbit API](https://jackrabbit.apache.org/api)

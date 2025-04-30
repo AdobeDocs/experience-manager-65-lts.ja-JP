@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: eb75efb8-c59a-4d51-af54-942cca178f2e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1910'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ AEM ワークフローモデルでは、次のことができます。
 * [変数の値を設定する](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable)には、「変数を設定する」ワークフローステップを使用します。
 * OR 分岐と移動 AEM ワークフローステップで[変数を使用](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable)して、ルーティングを決定するための式を定義できるようにします。また、AEM Forms のすべてのワークフローステップで変数を使用することもできます。
 
-変数は、[MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) インターフェイスの拡張です。ECMAScript で [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) を使用すると、変数を使用して保存されたメタデータにアクセスできます。
+変数は、[MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) インターフェイスの拡張です。ECMAScript で [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) を使用すると、変数を使用して保存されたメタデータにアクセスできます。
 
 ## 変数の作成 {#create-a-variable}
 
@@ -169,7 +169,7 @@ OR 分割ステップと同様に、ルール定義、ECMA スクリプト、ま
 
 ### 変数をサポートしないワークフローステップ {#workflow-steps-without-support-for-variables}
 
-[MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) インターフェイスを使用して、変数をサポートしないワークフロー手順の変数にアクセスできます。
+[MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) インターフェイスを使用して、変数をサポートしないワークフロー手順の変数にアクセスできます。
 
 #### 変数値の取得 {#retrieve-the-variable-value}
 
@@ -211,7 +211,7 @@ workItem.getWorkflowData().getMetaDataMap().put(salary, 50000)
 
 API を使用して変数を設定し、それらを渡してワークフローインスタンスを呼び出すことができます。
 
-[workflowSession.startWorkflows](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/WorkflowSession.html?lang=ja#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) は、モデル、wfData、metaData を引数として使用します。MetaDataMap を使用して変数の値を設定します。
+[workflowSession.startWorkflows](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) は、モデル、wfData、metaData を引数として使用します。MetaDataMap を使用して変数の値を設定します。
 
 この API では、 **variableName** 変数は metaData.put(variableName, value) を使用して **value** に設定されます。
 

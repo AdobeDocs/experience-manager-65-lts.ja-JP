@@ -9,10 +9,10 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 8294cbbe-f37f-41d0-b8e8-298f9413462e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '1854'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -321,7 +321,7 @@ Adobe Asset Composer 構築ブロックバンドルを再起動すると、通�
       '</div>';
       ```
 
-### LiveCycle プロセスを追加してアクション<span class="acrolinxCursorMarker"></code>処理を有効にする {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### LiveCycle プロセスを追加してアクション<span class="acrolinxCursorMarker"></code>処理  {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 このシナリオでは、以下のコンポーネントを有効にします。これらのコンポーネントは、添付されている components.zip ファイルに含まれています。
 
@@ -424,11 +424,11 @@ Correspondence Management API を使用するには、DSCSample.jar（このド�
    >
    >サーバーサイドで変更を加えるたびに LiveCycle サーバーは再起動します。
 
-   DSCSample.jar ファイルは renderLetter API を使用します。renderLetter API について詳しくは、[インターフェイス LetterRenderService](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html)を参照してください。
+   DSCSample.jar ファイルは renderLetter API を使用します。renderLetter API について詳しくは、[インターフェイス LetterRenderService](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html)を参照してください。
 
 #### LiveCyle への DSC の読み込み {#import-dsc-to-livecyle}
 
-DSCSample.jar ファイルは renderLetter API を使用して、DSC で入力された XML データの PDF バイトとしてレターをレンダリングします。renderLetter およびその他の API について詳しくは、[レターのレンダリングサービス](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html)を参照してください。
+DSCSample.jar ファイルは renderLetter API を使用して、DSC で入力された XML データの PDF バイトとしてレターをレンダリングします。renderLetter およびその他の API について詳しくは、[レターのレンダリングサービス](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html)を参照してください。
 
 1. Workbench を起動してログインします。
 1. **Window／表示を確認／コンポーネント**&#x200B;をクリックします。コンポーネント表示が Workbench ES2 に追加されます。

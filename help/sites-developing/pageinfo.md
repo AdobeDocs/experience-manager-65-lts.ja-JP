@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6c54197f-86da-41bd-93e6-ee78ece91013
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '931'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -554,7 +554,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 ### PageInfoProvider の実装例 {#example-pageinfoprovider-implementation}
 
-次の Java クラスは、[PageInfoProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) を実装しており、現在のページリソースの公開済み URL を返します。
+次の Java クラスは、[PageInfoProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html) を実装しており、現在のページリソースの公開済み URL を返します。
 
 ```java
 package com.adobe.example;

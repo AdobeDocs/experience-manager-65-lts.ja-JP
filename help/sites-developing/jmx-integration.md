@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: ca929fe7-8393-42df-983d-e2005d8434ac
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1621'
 ht-degree: 98%
@@ -38,11 +38,11 @@ CQ5 または CRX リソースを管理するために作成Monitoring する MB
 
 ### 注釈を使用した MBean 情報の提供 {#using-annotations-to-provide-mbean-information}
 
-[com.adobe.granite.jmx.annotation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) パッケージには、MBean メタデータを JMX コンソールに簡単に提供するための注釈とクラスがいくつか用意されています。MBean の MBeanInfo オブジェクトに情報を直接追加する代わりに、これらの注釈とクラスを使用します。
+[com.adobe.granite.jmx.annotation](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) パッケージには、MBean メタデータを JMX コンソールに簡単に提供するための注釈とクラスがいくつか用意されています。MBean の MBeanInfo オブジェクトに情報を直接追加する代わりに、これらの注釈とクラスを使用します。
 
 **注釈**
 
-注釈を管理インターフェイスに追加して、MBean メタデータを指定します。この情報は、デプロイされている実装クラスごとに JMX コンソールに表示されます。次の注釈を使用できます（詳しくは、[com.adobe.granite.jmx.annotation に関する JavaDoc](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) を参照してください）。
+注釈を管理インターフェイスに追加して、MBean メタデータを指定します。この情報は、デプロイされている実装クラスごとに JMX コンソールに表示されます。次の注釈を使用できます（詳しくは、[com.adobe.granite.jmx.annotation に関する JavaDoc](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) を参照してください）。
 
 * **Description：** MBean クラスまたはメソッドの説明を提供します。クラスの宣言に対して使用する場合、MBean の JMX コンソールページに説明が表示されます。メソッドに対して使用する場合、対応する属性または操作のテキストにマウスポインターを置くと、説明が表示されます。
 * **Impact：**&#x200B;メソッドの影響。有効なパラメーター値は、[javax.management.MBeanOperationInfo](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html) によって定義されるフィールドです。

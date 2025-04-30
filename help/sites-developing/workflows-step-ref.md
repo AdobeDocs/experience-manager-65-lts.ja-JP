@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e82d97c2-c26a-48df-9210-47dc017c68c8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '3227'
 ht-degree: 99%
@@ -76,7 +76,7 @@ ht-degree: 99%
    * グループ全体にステップを割り当てた場合、ワークフローがこのステップに到達すると、グループのユーザーすべての&#x200B;**ワークフローのインボックス**&#x200B;にアクションが表示されます。
    * 詳しくは、[ワークフローへの参加](/help/sites-authoring/workflows-participating.md)を参照してください。
 
-## AND 分割 {#and-split}
+## AND 分岐 {#and-split}
 
 **AND 分岐**&#x200B;は、ワークフローで分割を作成し、両方のブランチをアクティブにします。必要に応じて、各分岐にワークフローステップを追加できます。この手順では、複数の処理パスをワークフローに導入できます。例えば、特定のレビュー手順を並行して実行することで、時間を節約できます。
 
@@ -86,7 +86,7 @@ ht-degree: 99%
 
 分岐を設定するには、次の手順に従います。
 
-* **AND 分割のプロパティ**&#x200B;を編集します。
+* **AND 分岐のプロパティ**&#x200B;を編集します。
 
    * **名前を分割**：わかりやすい名前を割り当てます。
    * 必要なブランチの数、2、3、4 または 5 を選択します。
@@ -426,7 +426,7 @@ function check(){
 
 * **OSGi サービス**
 
-  サービスは、[com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) インターフェイスを実装する必要があります。このインターフェイスは、次の構成要素を定義します。
+  サービスは、[com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) インターフェイスを実装する必要があります。このインターフェイスは、次の構成要素を定義します。
 
    * `SERVICE_PROPERTY_LABEL` フィールド：このフィールドを使用して、参加者選択の名前を指定します。この名前が、**動的参加者ステップ**&#x200B;のプロパティで使用可能な参加者選択のリストに表示されます。
 

@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 997637d5-1627-4102-8b7c-a0cfd871a7b2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '997'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -64,7 +64,7 @@ Adobe Experience Manager（AEM）を使用すると、画像ファイル、`.js`
 
 ## サイト用のページエクスポーター設定の作成 {#creating-a-page-exporter-configuration-for-your-site}
 
-ページエクスポーターは、[コンテンツ同期フレームワーク](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html)に基づいています。「**ページプロパティ**」ダイアログで利用できる設定は、ページに必要な依存関係を定義するエクスポートテンプレートです。
+ページエクスポーターは、[コンテンツ同期フレームワーク](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/package-summary.html)に基づいています。「**ページプロパティ**」ダイアログで利用できる設定は、ページに必要な依存関係を定義するエクスポートテンプレートです。
 
 ページのエクスポートがトリガーされると、エクスポートテンプレートが参照され、ページパスとデザインパスの両方が動的に適用されます。その後、標準のコンテンツ同期機能を使用して、zip ファイルが作成されます。
 
@@ -108,7 +108,7 @@ Adobe Experience Manager（AEM）を使用すると、画像ファイル、`.js`
 
 ### ページエクスポーター設定ノード {#page-exporter-configuration-nodes}
 
-[コンテンツ同期フレームワーク](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html)を使用しているため、テンプレートはノード構造で構成されています。各ノードには、zip ファイルの作成プロセスで特定のアクションを定義する `type` プロパティが含まれています。
+[コンテンツ同期フレームワーク](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/package-summary.html)を使用しているため、テンプレートはノード構造で構成されています。各ノードには、zip ファイルの作成プロセスで特定のアクションを定義する `type` プロパティが含まれています。
 
 <!-- For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
 -->
@@ -178,14 +178,14 @@ design ノードを使用して、エクスポートされるページに使用�
 As you may have noticed in the node structure, the **Geometrixx** page export template has a `logo` node with a `type` property set to `image`. This is a special configuration type that has been created to copy the image logo to the zip file. 
 -->
 
-特定の要件を満たすには、[カスタム更新ハンドラー](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html)を実装する必要があります。
+特定の要件を満たすには、[カスタム更新ハンドラー](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/handler/package-summary.html)を実装する必要があります。
 
 <!-- To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## プログラムによるページの書き出し {#programmatically-exporting-a-page}
 
-プログラムによってページを書き出すには、[PageExporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) OSGI サービスを使用できます。このサービスを使用すると、次のことができます。
+プログラムによってページを書き出すには、[PageExporter](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) OSGI サービスを使用できます。このサービスを使用すると、次のことができます。
 
 * ページを書き出して HTTP サーブレット応答に書き込む。
 * ページを書き出して zip ファイルを特定の場所に保存する。

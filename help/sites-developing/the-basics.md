@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: fe3735ff-5c9b-4eb8-bf1d-f2189ec7e26f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '3251'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -390,7 +390,7 @@ AEM 内では、多くの場合、コンポーネントを使用してリソー�
 
 S`tring pageName = currentPage.getName();`
 
-TcurrentPage は現在のページオブジェクトです。Page オブジェクトの操作方法について詳しくは、[Java™ docs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html) を参照してください。
+TcurrentPage は現在のページオブジェクトです。Page オブジェクトの操作方法について詳しくは、[Java™ docs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html) を参照してください。
 
 **ページマネージャー** - ページマネージャーは、ページレベルの操作方法を提供するインターフェイスです。
 
@@ -398,7 +398,7 @@ TcurrentPage は現在のページオブジェクトです。Page オブジェ�
 
 Page myPage = pageManager.getContainingPage(myResource);
 
-pageManager はページマネージャーオブジェクトで、myResource はリソースオブジェクトです。ページマネージャーが提供するメソッドについて詳しくは、[Java™ docs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html) を参照してください。
+pageManager はページマネージャーオブジェクトで、myResource はリソースオブジェクトです。ページマネージャーが提供するメソッドについて詳しくは、[Java™ docs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html) を参照してください。
 
 ## リポジトリ内の構造 {#structure-within-the-repository}
 

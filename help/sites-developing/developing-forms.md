@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d1475168-6625-4d27-9c3b-01e415c2f398
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1930'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -316,7 +316,7 @@ JavaScript の場合、条件にはエレメント名プロパティの値を使
 
 ### Forms で使用するスクリプトの作成 {#developing-scripts-for-use-with-forms}
 
-スクリプトを記述する際に使用できる API 要素について詳しくは、[フォームに関連する javadoc](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html) を参照してください。
+スクリプトを記述する際に使用できる API 要素について詳しくは、[フォームに関連する javadoc](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html) を参照してください。
 
 これは、フォームが送信される前にサービスを呼び出し、呼び出しに失敗した場合にサービスをキャンセルするなどのアクションに使用できます。
 

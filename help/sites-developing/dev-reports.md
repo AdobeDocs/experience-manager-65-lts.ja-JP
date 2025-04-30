@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6ca4f66d-993b-4cfb-9b09-84bb20a54d4c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '5177'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -107,7 +107,7 @@ AEM に用意されている標準レポートの特徴：
 クエリ：
 
 * [`reportbase`](#report-base) コンポーネントの一部として定義されます。
-* [CQ QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/QueryBuilder.html) に基づいています。
+* [CQ QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html) に基づいています。
 * レポートの基本要素として使用するデータを取得します。結果セット（テーブル）の各行が、ノードに 1 つずつ関連付けられ、クエリから返されます。[それぞれの列](#column-base-component)の具体的な情報はこのデータセットから抽出されます。
 
 * 通常、次で構成されます。

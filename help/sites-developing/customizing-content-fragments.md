@@ -8,10 +8,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments
 role: Developer
 exl-id: 705bffea-ef70-40b5-81d8-b130d3908073
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '2687'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -241,7 +241,7 @@ ht-degree: 100%
 
 サーバー側 API を使用して、コンテンツフラグメントにアクセスできます。以下を参照してください。
 
-[com.adobe.cq.dam.cfm](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
+[com.adobe.cq.dam.cfm](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
 
 >[!CAUTION]
 >
@@ -251,7 +251,7 @@ ht-degree: 100%
 
 次の 3 つのインターフェイスが、入口の役割を果たします。
 
-* **フラグメントテンプレート**（[FragmentTemplate](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)）
+* **フラグメントテンプレート**（[FragmentTemplate](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)）
 
   フラグメントを作成する場合は、`FragmentTemplate.createFragment()` を使用します。
 
@@ -294,7 +294,7 @@ ht-degree: 100%
 
       * 基本データ（名前、タイトル、説明）を取得
 
-* **コンテンツフラグメント**（[ContentFragment](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html)）
+* **コンテンツフラグメント**（[ContentFragment](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html)）
 
   このインターフェイスでは、コンテンツフラグメントを抽象化して使用できます。
 
@@ -326,7 +326,7 @@ ht-degree: 100%
 
   フラグメントの主要要素を表すインターフェイスは、次のとおりです。
 
-   * **コンテンツ要素**（[ContentElement](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html)）
+   * **コンテンツ要素**（[ContentElement](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html)）
 
       * 基本データ（名前、タイトル、説明）を取得
       * コンテンツを取得／設定する
@@ -340,7 +340,7 @@ ht-degree: 100%
 
       * バリエーションを解決するためのショートカット（要素に指定されたバリエーションを使用できない場合は実装固有の追加のフォールバックロジックを適用）
 
-   * **コンテンツのバリエーション**（[ContentVariation](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html)）
+   * **コンテンツのバリエーション**（[ContentVariation](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html)）
 
       * 基本データ（名前、タイトル、説明）を取得
       * コンテンツを取得／設定する

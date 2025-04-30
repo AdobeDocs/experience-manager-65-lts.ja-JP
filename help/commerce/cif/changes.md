@@ -5,10 +5,10 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: aced89a0-dec1-49fe-afbc-3ddf1318b900
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '312'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -60,4 +60,4 @@ AEM は、製品やカテゴリに割り当てられた AEM カタログテン�
 
 >[!NOTE]
 >
->AEM Managed Service または AEM オンプレミスで CIF を使用する方法に関する追加ドキュメントについて詳しくは、[コマース統合フレームワーク](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)を参照してください。
+>AEM Managed Service または AEM オンプレミスで CIF を使用する方法に関する追加ドキュメントについて詳しくは、[コマース統合フレームワーク](https://developer.adobe.com/apis/experiencecloud/commerce-integration-framework/getting-started.html)を参照してください。

@@ -9,7 +9,7 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 63f42a35-fbd5-4b1b-bba1-1bdcfd23dd33
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '1601'
 ht-degree: 98%
@@ -104,7 +104,7 @@ CSV ファイルをアップロードしてユーザーをまとめて登録す�
 
 このツールを使用すると、システム管理者はお客様のディレクトリにあるユーザーグループを [!DNL Admin Console] の製品設定とユーザーグループにマッピングできます。また、新しいバージョンの UST では、[!DNL Admin Console] でユーザーグループを動的に作成することもできます。
 
-ユーザー同期を設定するには、[[!DNL User Management] API](https://www.adobe.io/apis/cloudplatform/usermanagement/docs/setup.html) を使用する場合と同様に、お客様の組織で一連の資格情報を作成する必要があります。
+ユーザー同期を設定するには、[[!DNL User Management] API](https://developer.adobe.com/apis/cloudplatform/usermanagement/docs/setup.html) を使用する場合と同様に、お客様の組織で一連の資格情報を作成する必要があります。
 
 ![image2018-9-23_13-36-56](assets/image2018-9-23_13-36-56.png)
 

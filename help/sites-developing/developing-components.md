@@ -11,10 +11,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: ff9c9e25-13a8-4ca7-a347-1da1352ef223
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '3200'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -110,13 +110,13 @@ AEM コンポーネントを使用して、web ページ上で使用できるコ
 
 ## プレビュー動作の設定 {#configuring-the-preview-behavior}
 
-**プレビュー**&#x200B;モードに切り替えると、ページが更新されなくても [WCM モード](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) Cookie が設定されます。
+**プレビュー**&#x200B;モードに切り替えると、ページが更新されなくても [WCM モード](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html) Cookie が設定されます。
 
 レンダリングが WCM モードの影響を受けるコンポーネントの場合は、明確にそのコンポーネントを更新し、この Cookie の値を使用するように定義する必要があります。
 
 >[!NOTE]
 >
->値 `EDIT` と `PREVIEW` は、タッチ操作対応 UI でのみ [WCM モード](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) Cookie に使用されます。
+>値 `EDIT` と `PREVIEW` は、タッチ操作対応 UI でのみ [WCM モード](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html) Cookie に使用されます。
 
 ## ダイアログの作成と設定 {#creating-and-configuring-a-dialog}
 

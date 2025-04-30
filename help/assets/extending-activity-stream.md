@@ -6,10 +6,10 @@ role: Developer
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 44604607-e49d-469c-a6f1-dedbcd657d65
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -59,4 +59,4 @@ ht-degree: 100%
 
 ## 記録されたイベントの読み取り {#reading-recorded-events}
 
-記録されたイベントはアクティビティとして保存されます。[ActivityManager API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html) を使用すると、プログラムで読み取ることができます。
+記録されたイベントはアクティビティとして保存されます。[ActivityManager API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/activitystreams/ActivityManager.html) を使用すると、プログラムで読み取ることができます。

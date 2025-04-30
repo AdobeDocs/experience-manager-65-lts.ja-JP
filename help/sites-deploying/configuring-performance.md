@@ -9,10 +9,10 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '5052'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -218,7 +218,7 @@ AEM 6.0 以降、Adobe Experience Manager は Oak ベースのリポジトリア
 
 <!-- TODO: Change the reference to 6.5 LTS javadocs -->
 * Granite Workflow Queue：ワークフローのほとんどのステップ（DAM アセットを処理するステップなど）では、Granite Granite Workflow Queue サービスを使用します。
-* Granite Workflow External Process Job Queue：このサービスは、通常は外部システムへのアクセスや結果のポーリングに使用される、特殊な外部ワークフローのステップに使用します。例えば、InDesign のメディア抽出プロセスステップは外部プロセスとして実装されます。ワークフローエンジンでは、ポーリングの処理に外部キューを使用します。（[com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html) を参照してください）。
+* Granite Workflow External Process Job Queue：このサービスは、通常は外部システムへのアクセスや結果のポーリングに使用される、特殊な外部ワークフローのステップに使用します。例えば、InDesign のメディア抽出プロセスステップは外部プロセスとして実装されます。ワークフローエンジンでは、ポーリングの処理に外部キューを使用します。（[com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html) を参照してください）。
 
 これらのサービスを設定して、同時に実行するワークフロープロセスの最大数を制限します。
 
