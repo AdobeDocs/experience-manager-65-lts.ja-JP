@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7d6e3662-f541-4755-b2a6-b35724dd8932
-source-git-commit: c23ab1f6cb5b96c35df3644780abcc9a0c5a6324
+source-git-commit: afbaff634a0bc25f04e2ba4320c719d82db58c9b
 workflow-type: tm+mt
-source-wordcount: '2343'
-ht-degree: 98%
+source-wordcount: '2310'
+ht-degree: 100%
 
 ---
 
@@ -104,14 +104,7 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
 * **1 行のテキスト**
    * 1 行のテキストのフィールドを 1 つ以上追加（最大長は定義可能）
 * **複数行テキスト**
-   * リッチテキスト、プレーンテキストまたはマークダウンのテキストエリア
-
-     >[!NOTE]
-     >
-     パフォーマンス上の理由から、1 つのモデルに 10 個を超えるリッチテキストフィールドを含めることはお勧めしません。
-     >
-     必要に応じて、[ ネストされたコンテンツフラグメント ](#fragment-reference-nested-fragments) を使用して読み込みを広めることをお勧めします。
-
+   * リッチテキスト、プレーンテキストまたはマークダウンのテキスト領域
 * **数値**
    * 1 つ以上の数値フィールドを追加
 * **ブール型**
