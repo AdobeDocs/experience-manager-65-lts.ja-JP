@@ -87,6 +87,6 @@ Microsoft のスタイルガイド『[The Microsoft® Manual of Style](https://l
 
 ### 呼称としての Day、AEM、CQ、CRX の使用
 
-商品は、記事内で初めて **フルネーム** Adobe Experience Manager} で呼び出す必要があり、その後、**AEM** と呼ばれます。
+商品は、記事内で初めて **フルネーム** Adobe Experience Manager&rbrace; で呼び出す必要があり、その後、**AEM** と呼ばれます。
 
 Day、Day Software、CQ、CRX は使用しないでください。ただし、クラス名や AEM の履歴を参照する場合など、避けられない場合を除きます。

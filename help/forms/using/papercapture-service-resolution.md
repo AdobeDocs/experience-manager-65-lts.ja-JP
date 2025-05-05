@@ -32,8 +32,10 @@ AEM Forms サービスパック 6.5.21.0 にアップグレードした後、`Pa
 1. ダウンロードしたフォルダーのコンテンツを抽出してコピーします。
 1. 対応するアプリケーションサーバーの以下のパスに移動します。
    * **JBoss**：
+
      `..\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\PaperCaptureSvc`
    * **WebLogic**：
+
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`
    * **WebSphere**：\
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`

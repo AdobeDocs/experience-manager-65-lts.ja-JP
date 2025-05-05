@@ -113,7 +113,7 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
 1. 「**[!UICONTROL プロジェクトに追加]**」をクリックして、「**[!UICONTROL API]**」を選択します。
 1. 「**[!UICONTROL Adobe Stock]**」を選択して、「**[!UICONTROL 次へ]**」をクリックします。
 1. **[!UICONTROL 資格情報名]**&#x200B;を指定し、**[!UICONTROL OAuth サーバー間]**&#x200B;が選択されていることを確認して、「**[!UICONTROL 次へ]**」をクリックします。
-1. **[!UICONTROL AEM Assets]** **[!UICONTROL 製品プロファイル]**&#x200B;を選択して、「**[!UICONTROL 設定済み API を保存]**」をクリックします。[!DNL Developer Console] でプロジェクトを作成したことを確認する成功メッセージが表示されます。プロジェクトのダッシュボードが開き、上部にプロジェクト名、**[!UICONTROL APIS]** の下に **[!UICONTROL Adobe Stock]**、**[!UICONTROL 製品プロファイル]**&#x200B;の下に **[!UICONTROL AEM Assets]**、**[!UICONTROL 接続された資格情報]**&#x200B;の下に **[!UICONTROL OAuth サーバー間]**資格情報カードが表示されます。
+1. **[!UICONTROL AEM Assets]** **[!UICONTROL 製品プロファイル]**&#x200B;を選択して、「**[!UICONTROL 設定済み API を保存]**」をクリックします。[!DNL Developer Console] でプロジェクトを作成したことを確認する成功メッセージが表示されます。プロジェクトのダッシュボードが開き、上部にプロジェクト名、**[!UICONTROL APIS]** の下に **[!UICONTROL Adobe Stock]**、**[!UICONTROL 製品プロファイル]**&#x200B;の下に **[!UICONTROL AEM Assets]**、**[!UICONTROL 接続された資格情報]**&#x200B;の下に **[!UICONTROL OAuth サーバー間]**&#x200B;資格情報カードが表示されます。
    ![AEM Assets と Adobe Stock の統合](/help/assets/assets/adc-project-name.png)
 1. **[!UICONTROL OAuth サーバー間]**&#x200B;資格情報カードを選択すると、**[!UICONTROL 資格情報の詳細]**&#x200B;が表示されます。**[!UICONTROL クライアント ID]**、**[!UICONTROL クライアント秘密鍵]**、**[!UICONTROL 範囲]**、**[!UICONTROL 資格情報名]**、**[!UICONTROL テクニカルアカウント ID]**、**[!UICONTROL 組織 ID]** など、プロジェクトの [!DNL OAuth Server-to-Server] 資格情報の詳細を使用して、[AEM オーサーインスタンスに設定を追加](#add-configuration-in-the-aem-author-instance)します。
    ![AEM Assets と Adobe Stock](/help/assets/assets/oauth-server-server-credentials-details-page.png)
@@ -141,6 +141,7 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
    * **[!UICONTROL 範囲]**：プロジェクトダッシュボードに移動し、左側のパネルにある「**[!UICONTROL OAuth サーバー間]**」オプションをクリックし、「**[!UICONTROL 資格情報の詳細]**」を選択して、**[!UICONTROL 範囲]**&#x200B;をコピーしてここにペーストします（[手順 7](#set-up-a-program-in-developer-console) を参照）。
 
    * **[!UICONTROL 組織 ID]**：プロジェクトダッシュボードに移動し、左側のパネルにある「**[!UICONTROL OAuth サーバー間]**」オプションをクリックし、「**[!UICONTROL 資格情報の詳細]**」を選択、**[!UICONTROL 組織 ID]** をコピーしてここにペーストします（[手順 7](#set-up-a-program-in-developer-console) を参照）。
+
      ![AEM Assets と Adobe Stock](/help/assets/assets/adobe-ims-technical-account-configuration.png)
 1. 「**[!UICONTROL 作成]**」をクリックすると、**[!UICONTROL Adobe IMS 設定]**&#x200B;ページが開き、作成した [!DNL Adobe Stock] 統合が表示されます。
 

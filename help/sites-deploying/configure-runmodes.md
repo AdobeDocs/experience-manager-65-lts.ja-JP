@@ -103,8 +103,8 @@ ht-degree: 96%
 複数の実行モードの設定を定義した場合は、起動時にどれを使用するかを定義する必要があります。使用する実行モードを指定する方法はいくつかあります。解決の順序は次のとおりです。
 
 1. [システムプロパティ (](#using-a-system-property-in-the-start-script)
-1. [](#using-the-sling-properties-file)
-1. [](#using-the-r-option)
+1. [&#128279;](#using-the-sling-properties-file)
+1. [&#128279;](#using-the-r-option)
 1. [ファイル名検出](#filename-detection-renaming-the-jar-file)
 
 アプリケーションサーバーを使用している場合は、[web.xml で実行モードを定義](#defining-the-run-mode-in-web-xml-with-application-server)することもできます。
@@ -123,7 +123,7 @@ ht-degree: 96%
 
 ### -r オプションの使用 {#using-the-r-option}
 
-カスタム実行モードは、クイックスタート起動時に`-r`オプションを使用することで起動することができます。例えば、次のコマンドを使用して、実行モードを dev `` に設定したAEMインスタンスを起動してください。
+カスタム実行モードは、クイックスタート起動時に`-r`オプションを使用することで起動することができます。例えば、次のコマンドを使用して、実行モードを dev &grave;&grave; に設定したAEMインスタンスを起動してください。
 
 ```shell
 java -jar cq-56-p4545.jar -r dev

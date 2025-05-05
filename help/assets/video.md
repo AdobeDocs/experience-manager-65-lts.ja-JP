@@ -65,6 +65,7 @@ ht-degree: 99%
    * ビデオアセットをプレビューして公開します。
 
       * ソースビデオとビデオのエンコードされたレンディションを、関連するサムネールと共に表示します。
+
         [ビデオをプレビュー](managing-video-assets.md#upload-and-preview-video-assets)するか[アセットをプレビュー](previewing-assets.md)します。
         [ビデオレンディションを表示](video-renditions.md)
         [ビデオレンディションを管理します](manage-assets.md#managing-renditions)。
@@ -75,9 +76,11 @@ ht-degree: 99%
    * ビデオのメタデータを操作します。
 
       * フレームレート、オーディオおよびビデオのビットレート、コーデックなど、エンコードされたビデオレンディションのプロパティを表示します。
+
         [ビデオレンディションのプロパティを表示](video-renditions.md)
 
       * タイトル、説明、タグ、カスタムメタデータフィールドなど、ビデオのプロパティを編集します。
+
         [ビデオのプロパティを編集します](manage-assets.md#editing-properties)。
 
       * [デジタルアセットのメタデータの管理](metadata.md)
@@ -102,9 +105,11 @@ ht-degree: 99%
    * サードパーティの web コンテンツ管理システムを使用している場合、web ページにビデオをリンクするか、ビデオを埋め込むことができます。
 
       * URL を使用したビデオの統合：
+
         [Web アプリケーションに URL をリンクします](linking-urls-to-yourwebapplication.md)。
 
       * Web ページの埋め込みコードを使用したビデオの統合：
+
         [Web ページにビデオビューアを埋め込みます](embed-code.md)。
 
    * [ビデオレポートを生成します](#viewing-video-reports)。
@@ -718,7 +723,7 @@ Dynamic Media では、URL 修飾子を使用して、ビデオにキャプシ�
 
    ![ビデオビューアーのオーディオとキャプションのポップアップリスト。](assets-dm/msma-selectaudiosubtitle.png)*ビデオ再生用のオーディオとキャプションを選択するユーザーのシミュレーション。*
 
-1. 再生を開始するには、ビデオの&#x200B;**[!UICONTROL 再生]**ボタンを選択します。
+1. 再生を開始するには、ビデオの&#x200B;**[!UICONTROL 再生]**&#x200B;ボタンを選択します。
 左下隅には「**[!UICONTROL URL]**」ボタンと「**[!UICONTROL 埋め込み]**」ボタンがあります。これらのボタンはそれぞれ、[web アプリケーションにビデオの URL をリンクする](/help/assets/linking-urls-to-yourwebapplication.md)ため、[web ページにビデオを埋め込む](/help/assets/embed-code.md)ために使用します。
 1. プレビューページの右上隅付近にある「**[!UICONTROL 閉じる]**」を選択します。
 

@@ -37,7 +37,7 @@ ht-degree: 52%
 
 ## コードベースのアップグレード {#upgrade-code-base}
 
-### Version Control {#create-a-dedicated-branch-for-6.5-lts-code-in-version-control} で 6.5 LTS コード専用のブランチを作成します。
+### Version Control で 6.5 LTS コード専用のブランチを作成します。 {#create-a-dedicated-branch-for-6.5-lts-code-in-version-control}
 
 AEM 実装に必要なすべてのコードおよび設定は、何らかの形式のバージョン管理を使用して管理する必要があります。AEM のターゲットバージョンのコードベースに必要な変更を管理するために、バージョン管理に専用ブランチを作成する必要があります。AEM のターゲットバージョンに対するコードベースの繰り返しテストとその後のバグ修正は、このブランチで管理されます。
 

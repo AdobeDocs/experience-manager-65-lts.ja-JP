@@ -24,7 +24,7 @@ ht-degree: 94%
 <div class="preview">
 
 Adobeでは、JEE 版AEM 6.5 Forms サービスパック 18 （6.5.18.0）を含んだ [ 完全なインストーラー ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ja) のほか、パッチインストーラーがリリースされました。 完全なインストーラーは新しいプラットフォームをサポートするのに対して、パッチインストーラーはバグ修正のみを含んでいます。
-6.5.18.0 新規インストールを実行する場合や、JEE 版AEM 6.5 Formsの最新ソフトウェアを使用することを計画している場合、Adobeでは、2019 年 4 月 8 日（PT）にリリースされたAEM 6.5 Forms インストーラー ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ja) または 2022 年 3 月 3 日（PT）にリリースされたAEM 6.5 Forms インストーラーではなく、2023 年 8 月 31 日（PT）にリリースされたAEM 6.5 Forms フルインストーラーを使用することをお勧めします。[
+6.5.18.0 新規インストールを実行する場合や、JEE 版AEM 6.5 Formsの最新ソフトウェアを使用することを計画している場合、Adobeでは、2019 年 4 月 8 日（PT）にリリースされたAEM 6.5 Forms インストーラー [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ja) または 2022 年 3 月 3 日（PT）にリリースされたAEM 6.5 Forms インストーラーではなく、2023 年 8 月 31 日（PT）にリリースされたAEM 6.5 Forms フルインストーラーを使用することをお勧めします。
 
 </div>
 

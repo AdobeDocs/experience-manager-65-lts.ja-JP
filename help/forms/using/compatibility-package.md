@@ -27,7 +27,7 @@ AEMFD 互換パッケージを使用すると [AEM Forms 6.5 LTS でAEM Forms 6.
 
 詳細については、[互換性パッケージをインストールすることにより AEM Forms 6.5 と互換性を持つようになったアセット](../../forms/using/compatibility-package.md#assetsmadecompatible)を参照してください。
 
-## AEM Forms 6.5 LTS {#add-support-for-aem-forms-and-assets-in-aem-forms-6.5.lts} でAEM Forms 6.5、6.4、6.3 および 6.2 アセットのサポートを追加
+## AEM Forms 6.5 LTS でAEM Forms 6.5、6.4、6.3 および 6.2 アセットのサポートを追加 {#add-support-for-aem-forms-and-assets-in-aem-forms-6.5.lts}
 
 アップグレードを実行した後、AEMFD 互換性パッケージをインストールしてアセットに 6.5 との互換性を持たせるには、以下を実行します。
 

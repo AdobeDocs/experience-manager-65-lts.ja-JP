@@ -114,6 +114,7 @@ Experience Manager Dynamic Media を 6.3 から 6.4 または 6.5 にアップ�
 1. 接続に成功したら、次のように設定します。アスタリスク（*）を含む見出しが必須です。
 
    * **[!UICONTROL 会社]** - Dynamic Media アカウントの名前です。
+
      >[!IMPORTANT]
      >
      >Experience Manager の 1 つのインスタンスでサポートされる、Cloud Services の Dynamic Media 設定は 1 つだけです。複数の設定を追加しないでください。1 つの Experience Manager インスタンスでの複数の Dynamic Media 設定は、アドビではサポートも推奨もされて&#x200B;_いません_。
