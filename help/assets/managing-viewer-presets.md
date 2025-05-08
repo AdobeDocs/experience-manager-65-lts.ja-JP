@@ -420,7 +420,7 @@ Experience Managerでは、（詳細ビュー **[!UICONTROL /（ビューア]** 
 
 **ビューアプリセットを作成するには：:**
 
-1. Experience Manager の左上隅にある Experience Manager ロゴを選択します。次に、左側のレールで **[!UICONTROL ツール]** （ハンマーアイコン）/**[!UICONTROL Assets]/[!UICONTROL  ビューアプリセット]** をクリックします。
+1. Experience Manager の左上隅にある Experience Manager ロゴを選択します。次に、左側のレールで **[!UICONTROL ツール]** （ハンマーアイコン）/**[!UICONTROL Assets]/[!UICONTROL &#x200B; ビューアプリセット]** をクリックします。
 
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 

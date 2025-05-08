@@ -208,7 +208,7 @@ Web コンソールまたは sling:OsgiConfig ノードを使用して、org.apa
 | ジョブトピック | サービス PID | 説明 |
 |---|---|---|
 | ／ | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Apache Sling と共にインストールされます。後方互換性のために、OSGi イベント管理によって生成されたジョブを処理します。 |
-| com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | ジョブペイロードをレプリケートするレプリケーションエージェント。 |
+| com/day/cq/replication/job/&ast; | com.day.cq.replication.impl.AgentManagerImpl | ジョブペイロードをレプリケートするレプリケーションエージェント。 |
 
 <!--
 | com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
@@ -226,7 +226,7 @@ Web コンソールまたは `sling:OsgiConfig` ノードを使用して、以�
 
 | Web コンソールでのプロパティ名 | OSGi ID | 説明 |
 |---|---|---|
-| トピック許可リスト | job.consumermanager.whitelist | ローカル JobManager サービスによって処理されるトピックのリスト。デフォルト値の &amp;ast; では、すべてのトピックが登録済み TopicConsumer サービスに送信されます。 |
+| トピック許可リスト | job.consumermanager.whitelist | ローカル JobManager サービスによって処理されるトピックのリスト。デフォルト値の &ast; では、すべてのトピックが登録済み TopicConsumer サービスに送信されます。 |
 | トピックブロックリスト | job.consumermanager.blacklist | ローカル JobManager サービスによって処理されないトピックのリスト。 |
 
 ## オフロードのレプリケーションエージェントの作成 {#creating-replication-agents-for-offloading}

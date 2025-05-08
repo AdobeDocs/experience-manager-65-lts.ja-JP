@@ -18,7 +18,7 @@ ht-degree: 99%
 「Dynamic Media 公開設定の指定」オプションは、次の条件が満たされている場合にのみ使用できます。
 
 * Scene7 モードで Dynamic Media を実行している。詳しくは、 [Scene7 モードの Dynamic Media の有効化](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode)を参照してください。
-* Adobe Experience Managerに *existing***[!UICONTROL Dynamic Media Configuration]** （**[!UICONTROL Cloud Services]** 内）がある。 [Cloud Services での Dynamic Media 設定の作成](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)を参照してください。
+* Adobe Experience Managerに *existing&#x200B;***[!UICONTROL Dynamic Media Configuration]** （**[!UICONTROL Cloud Services]** 内）がある。 [Cloud Services での Dynamic Media 設定の作成](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)を参照してください。
 * 自身が管理者権限を持つ Experience Manager システム管理者である。
 
 Dynamic Media の公開設定は、経験豊富な web サイト開発者やプログラマーを使用対象としています。Adobe Dynamic Media では、Adobe Dynamic Media、HTTP プロトコルの標準と規則、基本的な画像技術に精通しているユーザーが、これらの公開設定を変更することをお勧めします。

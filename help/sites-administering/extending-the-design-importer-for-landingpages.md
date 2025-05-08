@@ -470,7 +470,7 @@ data-cq-component 内のパスは、コンポーネントの resourceType にす
 これは、&lt;div>タグのような追加の html 要素が、生成された Html にインポート後に追加されるためです。
 
 * 上記と同様の構造に依存するスクリプトについても、AEM コンポーネントへの変換用にマークされた要素で使用することはお勧めしません。
-* &lt;div data-cq-component=&quot;&amp;ast;&quot;> などコンポーネントの変換用のマークアップタグに、スタイルを使用することは推奨されません。
+* &lt;div data-cq-component=&quot;&ast;&quot;> などコンポーネントの変換用のマークアップタグに、スタイルを使用することは推奨されません。
 * デザインレイアウトは、HTML5 Boilerplate のベストプラクティスに従って作成する必要があります。詳しくは、[https://html5boilerplate.com/](https://html5boilerplate.com/) を参照してください。
 
 ## OSGi モジュールの設定 {#configuring-osgi-modules}
@@ -531,7 +531,7 @@ OSGi コンソールから設定可能なプロパティを公開するコンポ
 >
 >例えば、デフォルト設定が
 >
->>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>&#x200B;>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 > `CQ_DESIGN_PATH` を `VIPURL` と置換する必要がある場合、検索パターンは次のようになります。
 >
