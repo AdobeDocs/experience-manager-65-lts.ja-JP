@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: aed65a14-2b4f-45ac-8b20-fdb08b3c9038
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 100%
+source-wordcount: '781'
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 Correspondence Management ソリューションで使用できる、一般的な JSP EL の例は以下のとおりです。
 
 * 2 つの数値の追加： ${number1 + number2}
-* 2 つの文字列の連結： ${str1} ${str2}
+* 2 つの文字列の連結：${str1} ${str2}
 * 2 つの数値の比較： ${age &lt; 18}
 
 詳細な情報は、「[JSP EL 仕様](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf)」で確認できます。クライアント側の Expression Manager は、JSP EL 仕様の特定の変数や関数をサポートしていません。以下に例を示します。

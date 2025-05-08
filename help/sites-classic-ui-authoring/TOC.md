@@ -11,7 +11,7 @@ hide: true
 source-git-commit: 96d94c843d1912abd91577b3373e38bd9fd9ed6c
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 88%
    + [ローンチの作成](/help/sites-classic-ui-authoring/classic-launches-creating.md)
    + [ローンチの編集](/help/sites-classic-ui-authoring/classic-launches-editing.md)
    + [ローンチの昇格](/help/sites-classic-ui-authoring/classic-launches-promoting.md)
-+ パーソナライズ機能 {#personalization}
++ パーソナライゼーション {#personalization}
    + [セグメント化について](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
    + [キャンペーン管理](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)
    + [ランディングページ](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)

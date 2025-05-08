@@ -8,7 +8,7 @@ exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
 source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
 workflow-type: tm+mt
 source-wordcount: '10487'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,6 @@ ht-degree: 99%
    * ビデオアセットをプレビューして公開します。
 
       * ソースビデオとビデオのエンコードされたレンディションを、関連するサムネールと共に表示します。
-
         [ビデオをプレビュー](managing-video-assets.md#upload-and-preview-video-assets)するか[アセットをプレビュー](previewing-assets.md)します。
         [ビデオレンディションを表示](video-renditions.md)
         [ビデオレンディションを管理します](manage-assets.md#managing-renditions)。
@@ -76,11 +75,9 @@ ht-degree: 99%
    * ビデオのメタデータを操作します。
 
       * フレームレート、オーディオおよびビデオのビットレート、コーデックなど、エンコードされたビデオレンディションのプロパティを表示します。
-
         [ビデオレンディションのプロパティを表示](video-renditions.md)
 
       * タイトル、説明、タグ、カスタムメタデータフィールドなど、ビデオのプロパティを編集します。
-
         [ビデオのプロパティを編集します](manage-assets.md#editing-properties)。
 
       * [デジタルアセットのメタデータの管理](metadata.md)
@@ -105,11 +102,9 @@ ht-degree: 99%
    * サードパーティの web コンテンツ管理システムを使用している場合、web ページにビデオをリンクするか、ビデオを埋め込むことができます。
 
       * URL を使用したビデオの統合：
-
         [Web アプリケーションに URL をリンクします](linking-urls-to-yourwebapplication.md)。
 
       * Web ページの埋め込みコードを使用したビデオの統合：
-
         [Web ページにビデオビューアを埋め込みます](embed-code.md)。
 
    * [ビデオレポートを生成します](#viewing-video-reports)。
@@ -134,7 +129,7 @@ Dynamic Media のビデオは、高品質のアダプティブビデオを簡単
 
 アルゴリズムの技術情報について詳しくは、[https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp) を参照してください。
 
-単一のビデオおよびアダプティブビデオセットの管理では、次の方法がサポートされています。
+単一のビデオとアダプティブビデオセットの管理では、次の機能がサポートされています。
 
 * サポートされている様々な形式でビデオをアップロードし、複数の画面で再生できるように MP4 H.264 にエンコードします。事前定義済みのアダプティブビデオセット、1 つのビデオのエンコーディングプリセットを使用するか、独自のエンコーディングをカスタマイズしてビデオの品質とサイズを制御できます。
 
@@ -284,9 +279,9 @@ Dynamic Media を有効にし、ビデオクラウドサービスを設定済み
 
 <!-- DEAD The following are best-practice tips for encoding source video files.
 
-For advice about video encoding, see [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_jp).
+For advice about video encoding, see [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en).
 
-* [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_jp). -->
+* [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en). -->
 
 ### ソースビデオファイル {#source-video-files}
 
@@ -723,7 +718,7 @@ Dynamic Media では、URL 修飾子を使用して、ビデオにキャプシ�
 
    ![ビデオビューアーのオーディオとキャプションのポップアップリスト。](assets-dm/msma-selectaudiosubtitle.png)*ビデオ再生用のオーディオとキャプションを選択するユーザーのシミュレーション。*
 
-1. 再生を開始するには、ビデオの&#x200B;**[!UICONTROL 再生]**&#x200B;ボタンを選択します。
+1. 再生を開始するには、ビデオの&#x200B;**[!UICONTROL 再生]**ボタンを選択します。
 左下隅には「**[!UICONTROL URL]**」ボタンと「**[!UICONTROL 埋め込み]**」ボタンがあります。これらのボタンはそれぞれ、[web アプリケーションにビデオの URL をリンクする](/help/assets/linking-urls-to-yourwebapplication.md)ため、[web ページにビデオを埋め込む](/help/assets/embed-code.md)ために使用します。
 1. プレビューページの右上隅付近にある「**[!UICONTROL 閉じる]**」を選択します。
 

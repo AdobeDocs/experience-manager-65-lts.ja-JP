@@ -80,7 +80,7 @@ ht-degree: 100%
 
 ## バックグラウンドジョブのスケジュール設定 {#scheduling-background-job}
 
-アセットインサイトは、Adobe Analytics レポートスイートから定期的にアセットの使用状況データを取得します。デフォルトでは、アセットインサイトはデータを取得するためのバックグラウンドジョブを 24 時間おきに午前 2 時に実行します。この間隔と時刻は、**[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** サービスを Web コンソールで設定して変更できます。
+アセットインサイトは、Adobe Analytics レポートスイートから定期的にアセットの使用状況データを取得します。デフォルトでは、アセットインサイトはデータを取得するためのバックグラウンドジョブを 24 時間おきに午前 2 時に実行します。この頻度と時刻は、**[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** サービスを Web コンソールで設定して変更できます。
 
 1. [!DNL Experience Manager] のロゴをクリックし、**[!UICONTROL ツール]**／**[!UICONTROL 運営]**／**[!UICONTROL Web コンソール]**&#x200B;に移動します。
 1. **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** サービス設定を開きます。

@@ -8,7 +8,7 @@ exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: 0afd255ec5c9d3db37f2f059782b35052761b1cf
 workflow-type: tm+mt
 source-wordcount: '801'
-ht-degree: 41%
+ht-degree: 48%
 
 ---
 
@@ -92,8 +92,8 @@ Quickstart は、サーブレットエンジンとして Eclipse Jetty 11.0.x �
 | Commerce | AEM CIF Classic はサポートされていません。 | [AEM CIF](/help/commerce/cif/migration.md) に移行してください。 | 6.5 LTS GA |
 | ソリューション | ソーシャル / コミュニティはサポートされていません。 | 代替機能はありません。 | 6.5 LTS GA |
 | Screens | Screensはサポートされていません。 | 代替機能はありません。 | 6.5 LTS GA |
-| アセット | バンドルがソーシャルに依存しているので、`dam-pim` と `dam-rating` はサポートされていません。 | 代替機能はありません。 | 6.5 LTS GA |
-| アセット | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` は削除されました。 | 追加された別の api `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()` を使用します。 | 6.5 LTS GA |
+| Assets | バンドルがソーシャルに依存しているので、`dam-pim` と `dam-rating` はサポートされていません。 | 代替機能はありません。 | 6.5 LTS GA |
+| Assets | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` は削除されました。 | 追加された別の api `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()` を使用します。 | 6.5 LTS GA |
 | ポータル | AEM Portal Director はサポートされていません。 | 代替機能はありません。 | 6.5 LTS GA |
 | Granite | バンドル `com.adobe.granite.socketio` は削除されました。 | 代替機能はありません。 | 6.5 LTS GA |
 | Granite | `com.adobe.granite.crx-explorer` はサポートされていません。 | 代替機能はありません。 | 6.5 LTS GA |

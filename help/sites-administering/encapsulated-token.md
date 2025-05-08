@@ -70,7 +70,7 @@ MongoMK オーサーインスタンスと TarMK パブリッシュインスタ�
 インスタンス間で鍵をレプリケーションするには、次の手順に従います。
 
 1. コピーする鍵要素を含む AEM インスタンス（通常はオーサーインスタンス）にアクセスします。
-1. ローカルファイルシステム内で、`com.adobe.granite.crypto.file` を見つけます。例えば、次のパスにあります。
+1. ローカルファイルシステムにバンドルされている、`com.adobe.granite.crypto.file` を見つけます。例えば、次のパスにあります。
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25`
 

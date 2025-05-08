@@ -246,7 +246,7 @@ GitHub のコード
 
 そのようなアクティベーションに対する動作をカスタマイズするために、**アクティベーションをリクエスト**&#x200B;ワークフローをオーバーレイできます。
 
-1. `/apps`で **Sites** ウィザードをオーバーレイします。
+1.  `/apps`で **Sites** ウィザードをオーバーレイします。
 
    `/libs/wcm/core/content/common/managepublicationwizard`
 

@@ -55,7 +55,7 @@ AEM Forms のデータ取得機能をインストールして設定する前に�
 * オーサーインスタンスとパブリッシュインスタンスに対してレプリケーションとリバースレプリケーションが設定されていること。詳しくは、[レプリケーション](/help/sites-deploying/replication.md)を参照してください。
 * UNIX ベースのシステムの場合：
 
-   * インストールメディアから次の 32 ビット版パッケージをインストールします。
+   *  インストールメディアから次の 32 ビット版パッケージをインストールします。
 
 <table>
  <tbody>
@@ -214,7 +214,7 @@ Dispatcher は、Adobe Experience Manager のキャッシュやロードバラ�
 
 #### フォームデータモデルに SSL 通信を設定 {#configure-ssl-communcation-for-form-data-model}
 
-フォームデータモデルの SSL 通信を有効にすることができます。フォームデータモデルの SSL 通信を有効にするには、任意の AEM Forms インスタンスを起動する前に、すべてのインスタンスの Java Trust Store に証明書を追加します。次のコマンドを実行して証明書を追加することができます。 &grave;&grave;
+フォームデータモデルの SSL 通信を有効にすることができます。フォームデータモデルの SSL 通信を有効にするには、任意の AEM Forms インスタンスを起動する前に、すべてのインスタンスの Java Trust Store に証明書を追加します。次のコマンドを実行して証明書を追加することができます。 ``
 
 `keytool -import -alias <alias-name> -file <pathTo .cer certificate file> -keystore <<pathToJRE>\lib\security\cacerts>`
 

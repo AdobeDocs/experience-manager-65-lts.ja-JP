@@ -4,7 +4,8 @@ description: AEM 6.5 LTS に関する技術的な FAQ
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 2352420843c613884ad3cae487ed048bd775e294
+exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
+source-git-commit: deb273c5ee96c7352de3157b4360007fc065d1a4
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 2%

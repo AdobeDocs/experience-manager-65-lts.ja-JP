@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 3eb9c0e3-950e-4dd5-a4c9-2d8f486ea3cf
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1242'
-ht-degree: 100%
+source-wordcount: '1239'
+ht-degree: 95%
 
 ---
 
@@ -149,9 +149,9 @@ AEM Forms ユーザーインターフェイスでは、すべてのフォーム�
 
 *注意：*
 
-1. ドラフト&amp;送信コンポーネントの下のドラフトセクションにある削除のオプションについては、CSS クラスを &quot;__FP_deleteDraft&quot; と名付けます。さらに、対応するドラフトのドラフト ID である値 **${draftID}** を持つ属性 &quot;draftID&quot; を含めます。
+1. ドラフト&amp;送信コンポーネントの下のドラフトセクションにある削除のオプションについては、CSS クラスを &quot;__FP_deleteDraft&quot; と名付けます。さらに、対応するドラフトのドラフト ID である値 **${draftID}** を持つ属性&quot;draftID&quot;を含めます。
 
-1. ドラフトと提出を開くためのリンクの作成中に、アンカータグの **href** 属性の値として **${path}.htm** を指定することができます。
+1. ドラフトと提出を開くためのリンクの作成中に、アンカータグの **href** 属性の値として **${path}.html** を指定することができます。
 
 ![ドラフトと送信ノード](assets/raw-image-with-index.png)
 

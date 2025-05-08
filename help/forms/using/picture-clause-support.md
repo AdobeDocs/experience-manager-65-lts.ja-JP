@@ -12,8 +12,8 @@ role: Admin, User, Developer
 exl-id: 21afdc66-0b27-4c73-9cb4-1efd5c0aefae
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 100%
+source-wordcount: '644'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 HTML5 フォームは、日付、テキストおよび数値記号の表示値と形式設定された値の XFA パターン形式文字列をサポートしています。次のパターン形式文字列の式がサポートされています。
 
-* category(locale){picture-clause} | category(locale){picture-clause} | category(locale){picture-clause}
+* category （locale） {picture-clause} | category （locale） {picture-clause} | category （locale）{picture-clause}
 * category.subcategory{}
 
 >[!NOTE]
@@ -37,7 +37,7 @@ HTML5 フォームは、日付、テキストおよび数値記号の表示値�
 * date.medium{}
 * date.full{}
 * date.short{}
-* date{日付のパターン形式文字列の記号}
+* date{date Picture Clause symbols}
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ PDF フォームでは、1000000 の数字は 1,000,000 として形式設定さ
 * num.decimal{}
 * num.currency{}
 * num.percent{}
-* num{数値のパターン形式文字列の記号}
+* num{Numeric Picture Clause Symbols}
 
 <table>
  <tbody>
@@ -207,7 +207,7 @@ PDF フォームでは、1000000 の数字は 1,000,000 として形式設定さ
 
 HTML5 フォームは、次のテキストのパターン形式文字列の式をサポートしています。
 
-* text{テキストのパターン形式文字列の記号}
+* text{text Picture clause symbols}
 
 | **記号** | **解釈** |
 |---|---|

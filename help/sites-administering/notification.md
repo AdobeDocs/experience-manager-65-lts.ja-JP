@@ -12,7 +12,7 @@ exl-id: 3ef72c05-1301-402e-94ce-49fbaf26fb98
 source-git-commit: aff6c41e13293a1c83eca226354f5c16cff18d99
 workflow-type: tm+mt
 source-wordcount: '2147'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -66,24 +66,24 @@ AEM でメールを送信できるようにするには、**Day CQ Mail Service*
 
    `com.day.cq.wcm.notification.email.impl.EmailChannel`リソースのタイプは次のとおりとします。`sling:OsgiConfig`
 
-1. `String` プロパティを `email.from` という名前のノードに追加します。値には、使用するメールアドレスを指定します。
+1.  `String` プロパティを `email.from` という名前のノードに追加します。値には、使用するメールアドレスを指定します。
 
 1. 「**すべて保存**」をクリックします。
 
 次の手順を実行して、コンテンツパッケージのソースフォルダーでノードを定義します。
 
-1. `jcr_root/apps/*app_name*/config folder` に、`com.day.cq.wcm.notification.email.impl.EmailChannel.xml` という名前のファイルを作成します。
+1.  `jcr_root/apps/*app_name*/config folder` に、`com.day.cq.wcm.notification.email.impl.EmailChannel.xml` という名前のファイルを作成します。
 
 1. このノードを表現する次の XML を追加します。
 
    `<?xml version="1.0" encoding="UTF-8"?> <jcr:root xmlns:sling="https://sling.apache.org/jcr/sling/1.0" xmlns:jcr="https://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig" email.from="name@server.com"/>`
 1. `email.from` 属性の値（`name@server.com`）を、実際のメールアドレスに置き換えます。
 
-1. ファイルを保存します。
+1.  ファイルを保存します。
 
 ## ワークフローメール通知サービスの設定 {#configuring-the-workflow-email-notification-service}
 
-ワークフローのメール通知を受け取ると、送信元メールアドレスおよびホスト URL プレフィックスの両方がデフォルト値に設定されます。Web コンソールで **Day CQ Workflow Email Notification Service** を設定して、これらの値を変更できます。その場合は、リポジトリ内の変更内容を保持する必要があります。
+ワークフローのメール通知を受け取ると、送信元メールアドレスおよびホスト URL プレフィックスの両方がデフォルト値に設定されます。Web コンソールで **Day CQ Workflow Email Notification Service** を設定して、これらの値を変更できます。その場合は、リポジトリ内の変更内容を保存する必要があります。
 
 デフォルト設定は、web コンソールに次のように表示されます。
 

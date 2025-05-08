@@ -12,8 +12,8 @@ role: User, Developer
 exl-id: 17d1976e-96bd-4f8a-8be5-ea208c5ba93f
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2357'
-ht-degree: 99%
+source-wordcount: '2355'
+ht-degree: 98%
 
 ---
 
@@ -181,7 +181,7 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
 
 アダプティブフォームでカスタムエラーハンドラーを使用する前に、次が必要です。
 
-* [カスタム関数作成](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=ja#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.)の基本知識。
+* [カスタム関数作成](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.)の基本知識。
 * [Apache Maven](https://maven.apache.org/download.cgi) の最新リリースをインストールします。
 
 
@@ -209,7 +209,7 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
 1. 「**[!UICONTROL 作成]**」を選択します。
 1. ルールの「**When**」セクションで条件を作成します。例えば、**[ペット ID フィールドの名前]**&#x200B;が変更された場合という条件が考えられます。選択は、**状態を選択**&#x200B;ドロップダウンリストから変更できます。
 1. 「**Then**」セクションの&#x200B;**[!UICONTROL アクションの選択]**&#x200B;ドロップダウンリストで「**サービスの呼び出し**」を選択します。
-1. **Post サービス**&#x200B;とそれに対応するデータ連結を「**入力**」セクションから選択します。例えば、**ペット ID**&#x200B;を検証する場合は、**Post サービス**&#x200B;を&#x200B;**GET /pet/{petId}**&#x200B;として選択し、「**入力**」セクションで「**ペット ID**」を選択します。
+1. **Post サービス**&#x200B;とそれに対応するデータ連結を「**入力**」セクションから選択します。例えば、**ペット ID** を検証するには、**Post サービス** を **GET /pet/{petId}** として選択し、「**入力**」セクションで **ペット ID** を選択します。
 1. 「**出力**」セクションからデータ連結を選択します。「**出力**」セクションで「**ペット名**」を選択します。
 1. 「**エラーハンドラー**」セクションから「**[!UICONTROL デフォルトのエラーハンドラー]**」を選択します。
 1. 「**[!UICONTROL 完了]**」をクリックします。
@@ -313,7 +313,7 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
 1. 「**[!UICONTROL 作成]**」を選択します。
 1. ルールの「**When**」セクションで条件を作成します。例えば、**[ペット ID の名前フィールド]**&#x200B;が変更された場合は、「**状態を選択** 」ドロップダウンリストから「**変更済み**」を選択します。
 1. 「**Then**」セクションの&#x200B;**[!UICONTROL アクションの選択]**&#x200B;ドロップダウンリストで「**サービスの呼び出し**」を選択します。
-1. **Post サービス**&#x200B;とそれに対応するデータ連結を「**入力**」セクションから選択します。例えば、**ペット ID**&#x200B;を検証する場合は、**Post サービス**&#x200B;を&#x200B;**GET /pet/{petId}**&#x200B;として選択し、「**入力**」セクションで「**ペット ID**」を選択します。
+1. **Post サービス**&#x200B;とそれに対応するデータ連結を「**入力**」セクションから選択します。例えば、**ペット ID** を検証するには、**Post サービス** を **GET /pet/{petId}** として選択し、「**入力**」セクションで **ペット ID** を選択します。
 1. 「**出力**」セクションからデータ連結を選択します。例えば、「**出力**」セクションで「**ペット名**」を選択します。
 1. 「**[!UICONTROL エラーハンドラー]**」セクションから「**[!UICONTROL カスタムエラーハンドラー]**」を選択します。
 1. 「**[!UICONTROL 完了]**」をクリックします。

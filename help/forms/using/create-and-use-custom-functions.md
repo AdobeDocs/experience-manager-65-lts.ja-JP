@@ -6,8 +6,8 @@ role: Admin, User, Developer
 exl-id: 40329e80-d794-4e43-8ed4-d88ce3c48751
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 100%
+source-wordcount: '1083'
+ht-degree: 99%
 
 ---
 
@@ -87,7 +87,8 @@ function ValidateEmail(inputText)
 * **戻り値のタイプ**
 構文：`@return {type}`
 または、`@returns {type}` を使用できます。
-目的などの、関数に関する情報を追加します。{type} は、関数の戻り値のタイプを表します。許可されている戻り値のタイプは次のとおりです。
+目的などの、関数に関する情報を追加します。
+  {type} は、関数の戻り値のタイプを表します。許可されている戻り値のタイプは次のとおりです。
 
    1. 文字列
    1. 数値

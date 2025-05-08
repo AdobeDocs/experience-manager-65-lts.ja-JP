@@ -12,8 +12,8 @@ role: Admin
 exl-id: c5907a0b-031f-4e3a-8a5c-5daf31eb71fc
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4830'
-ht-degree: 100%
+source-wordcount: '4826'
+ht-degree: 99%
 
 ---
 
@@ -691,7 +691,7 @@ CRX リポジトリに関する情報
 * **ドメイン：** com.adobe.granite.replication
 * **タイプ：**&#x200B;エージェント
 * **名前：**&#x200B;値なし
-* **プロパティ：** {id=&quot;*Name*&quot;}。*Name* は、エージェントの名前プロパティの値です。
+* **Properties:** {id="*Name*"}。*Name* は、エージェントの名前プロパティの値です。
 
 ### 属性 {#attributes-3}
 
@@ -751,7 +751,7 @@ HTTP リクエストに関する統計を提供し、SlingRequestProcessor サ�
 
 * ドメイン：org.apache.sling
 * タイプ：エンジン
-* プロパティ：{service=RequestProcessor}
+* プロパティ : {service=RequestProcessor}
 
 ### 属性 {#attributes-4}
 

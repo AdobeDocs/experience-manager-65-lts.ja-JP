@@ -104,13 +104,13 @@ AEM は、完全なヘッドレスと、CMS の従来のフルスタックまた
 
 このモデルでは、AEM は、AEM コンテンツフラグメントを使用してコンテンツを作成および提供する目的でのみ使用されます。コンテンツのレンダリングとインタラクションは、それを使用する外部アプリケーションに委ねられます。多くの場合、これは単一ページアプリケーション（SPA）です。
 
-#### レベル 2：SPA を AEM に組み込む - ハイブリッドモデル {#level-2}
+#### レベル 2：SPA を AEM に埋め込む - ハイブリッドモデル {#level-2}
 
 このレベルの統合は、第 1 レベルに基づいて構築されますが、外部アプリケーション（SPA）を AEM に組み込むことができるため、コンテンツ作成者は、AEM 内の外部アプリケーションのコンテキストでコンテンツ表示することができます。また、AEM 内での外部アプリケーションの編集（制限付き）もサポートされます。
 
 このレベルの利点は、コンテンツ作成者が、組み込みの外部 SPA でコンテンツをコンテキスト内で表示しながら、ヘッドフルな方法で AEM でコンテンツを柔軟に作成し、ヘッドレスでコンテンツを配信できることです。
 
-#### レベル 3：SPA を AEM に組み込んで完全に有効にする - ハイブリッドモデル {#level-3}
+#### レベル 3：SPA を AEM に埋め込んで完全に有効にする - ハイブリッドモデル {#level-3}
 
 このレベルの統合は、レベル 2 に基づいて構築され、外部 SPA のほとんどのコンテンツを AEM 内で編集できるようにします。
 
@@ -285,7 +285,7 @@ AEM を使用した[一般的なヘッドレス実装](#level-1)の場合、デ�
 * [AEM ヘッドレス翻訳ジャーニー](/help/journey-headless/translation/overview.md) - このドキュメントジャーニーでは、ヘッドレステクノロジー、AEM によるヘッドレスコンテンツの提供方法、ヘッドレスコンテンツの翻訳方法について幅広く理解できます。
 
 * [AEM ヘッドレスチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja) - これらの実践チュートリアルでは、AEM を使用してヘッドレスエンドポイントにコンテンツを配信するための様々なオプションの使用方法と、適切なオプションを選択する方法を調べます。
-* [GraphQL API を使用したヘッドレスコンテンツ管理](https://experienceleague.adobe.com/ja?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - AEM に実装されている GraphQL API の概要についてのコースです。Adobe ID を使用した認証が必要です。
+* [GraphQL API を使用したヘッドレスコンテンツ管理](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - AEM に実装されている GraphQL API の概要についてのコースです。Adobe ID を使用した認証が必要です。
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)（英語のみ）- この GitHub プロジェクトには、AEM の GraphQL API を紹介するためのサンプルアプリケーションが含まれています。
 * [オーサリングの概念](/help/sites-authoring/author.md) - オーサーとパブリッシュの設定の詳細など、AEM のオーサリング環境に関する技術ドキュメント
 * [ページの公開](/help/sites-authoring/publishing-pages.md) - AEM でのコンテンツの公開に関する技術ドキュメント

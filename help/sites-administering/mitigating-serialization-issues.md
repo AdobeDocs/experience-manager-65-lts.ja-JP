@@ -42,7 +42,7 @@ NotSoSerial は Java™ レベルの問題を解決する Java™ レベルの�
 
 1. **com.adobe.cq.cq-serialization-tester** バンドルをインストールします。
 
-1. Web コンソール（`https://server:port/system/console/bundles`）にアクセスします。
+1. Bundle Web コンソール（`https://server:port/system/console/bundles`）にアクセスします。
 1. シリアル化バンドルを探して起動します。これにより、NotSoSerial エージェントが動的に自動でロードされます。
 
 ## アプリケーションサーバーへのエージェントのインストール {#installing-the-agent-on-application-servers}

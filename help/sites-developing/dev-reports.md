@@ -360,7 +360,7 @@ N:charting
 
          * `totals`（`Boolean`）
 
-           **合計**&#x200B;を示す線を追加表示する場合は、true を指定します。
+           **合計**を示す線を追加表示する場合は、true を指定します。
 デフォルト：`false`
 
          * `series`（`Long`）
@@ -1120,7 +1120,7 @@ N:cq:editConfig [cq:EditConfig]
 * `cq/reporting/components/reportpage` に `sling:resourceType` を設定
 
 * 使用するデザインを示す
-* `sling:resourceType` プロパティでコンテナ（`reportbase`）コンポーネントを参照する `report` 子ノードを作成
+*  `sling:resourceType` プロパティでコンテナ（`reportbase`）コンポーネントを参照する `report` 子ノードを作成
 
 （コンポーネントレポートテンプレートから取得される）テンプレートスニペットの例を次に示します。
 

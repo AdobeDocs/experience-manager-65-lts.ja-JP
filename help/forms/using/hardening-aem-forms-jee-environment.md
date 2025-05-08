@@ -12,7 +12,7 @@ feature: Document Security,Adaptive Forms
 exl-id: 3de38e4d-6a12-470e-aded-7eb75a9cdcd8
 source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '7605'
+source-wordcount: '7604'
 ht-degree: 99%
 
 ---

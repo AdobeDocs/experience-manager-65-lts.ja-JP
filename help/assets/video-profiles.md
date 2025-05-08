@@ -297,7 +297,7 @@ Dynamic Media には、最高の閲覧エクスペリエンスを実現できる
    <td><code>audioBitrateCustom</code></td>
    <td>オーディオコーデックでサポートされている場合、オーディオストリームに固定ビットレートを強制的に適用するには、値を <code>true</code> に設定します。</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>／<code>false</code></p> <p>デフォルトは <code>false</code> です。</p> <p>DASH またはHLSの推奨値は <code>false</code> です。</p> <p> </p> </td>
+   <td><p><code>true</code>／<code>false</code></p> <p>デフォルトは <code>false</code> です。</p> <p>DASH または HLS の推奨値は <code>false</code> です。</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>

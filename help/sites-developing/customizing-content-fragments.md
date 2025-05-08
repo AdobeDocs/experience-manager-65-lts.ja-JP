@@ -82,7 +82,6 @@ ht-degree: 99%
 * すべてのコンテンツはアセットの `jcr:content/data` ノードに格納されます。
 
    * 要素データは次のプライマリサブノードに格納されます。
-
      `jcr:content/data/master`
 
    * バリエーションは、そのバリエーション名のサブノードに格納されます。例：`jcr:content/data/myvariation`

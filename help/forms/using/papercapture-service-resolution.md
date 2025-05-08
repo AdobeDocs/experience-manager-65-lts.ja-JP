@@ -10,7 +10,7 @@ exl-id: de3cd0ad-0b18-4d9a-8c6b-72cc16149cfc
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '195'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 90%
 
 ## 問題
 
-AEM Forms サービスパック 6.5.21.0 にアップグレードした後、`PaperCapture` サービスで PDF に対して OCR （光学式文字認識）操作を実行できなくなります。 このサービスでは、PDF やログファイルの形式で出力を生成しません。
+AEM Forms サービスパック 6.5.21.0 へのアップグレード後、`PaperCapture` サービスが、PDF に対して OCR（光学文字認識）処理を実行できない。このサービスでは、PDF やログファイルの形式で出力を生成しません。
 
 ## 適用先
 
@@ -32,10 +32,8 @@ AEM Forms サービスパック 6.5.21.0 にアップグレードした後、`Pa
 1. ダウンロードしたフォルダーのコンテンツを抽出してコピーします。
 1. 対応するアプリケーションサーバーの以下のパスに移動します。
    * **JBoss**：
-
      `..\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\PaperCaptureSvc`
    * **WebLogic**：
-
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`
    * **WebSphere**：\
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`

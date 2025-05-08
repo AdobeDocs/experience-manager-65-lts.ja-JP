@@ -315,7 +315,7 @@ REST を使用すると、*MyApplication/EncryptDocument* という名前の短�
     </body>
    ```
 
-**Acrobat からの MyApplication/EncryptDocument プロセスの呼び出し** {#invoke-process-acrobat}
+**Acrobatからの MyApplication/EncryptDocument プロセスの呼び出し** {#invoke-process-acrobat}
 
 REST リクエストを使用して、Acrobat から Forms プロセスを呼び出すことができます。例えば、*MyApplication/EncryptDocument* プロセスを呼び出すことができます。Acrobat から Forms プロセスを呼び出すには、Designer 内の XDP ファイルに送信ボタンを配置します。（「[Designer ヘルプ](https://www.adobe.com/go/learn_aemforms_designer_63_jp)」を参照。）
 

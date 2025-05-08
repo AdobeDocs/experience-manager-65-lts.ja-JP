@@ -33,7 +33,7 @@ ht-degree: 98%
 
 * ビデオを一時停止する場合は、サムネールを選択し、製品のクイックビューを開きます。例えば、ビデオ内の KitchenAid のサムネール画像を選択すると、このミキサーの 360 度のスピンビューを見たり、細部を拡大表示したりすることができます。
 
-<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html?lang=ja. This now needs to call a new interactive video-->
+<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
 ![インタラクティブなショッパブルビデオのフレーム](assets/chlimage_1-126.png) *インタラクティブなショッパブルビデオからのビデオフレームキャプチャ。*
 
@@ -82,8 +82,8 @@ ht-degree: 98%
    >
    >MXF ビデオ形式は、Dynamic Media のインタラクティブビデオでの使用は、まだサポートされていません。
 
-1. **ビデオへのインタラクティビティの追加** - ビデオに 1 つ以上の時間セグメントを追加します。次に、それらの時間セグメント内で画像サムネールを関連付けます。各画像サムネールを、ハイパーリンク、クイックビュー、エクスペリエンスフラグメントなどのアクションに割り当てます（インタラクティブコンテンツに相対 URL のリンク（特にExperience Manager Sites ページへのリンク）がある場合、URL ベースのリンク方法は使用できません）。
-インタラクティブビデオアセットを公開して作業は完了です。 公開によって埋め込みコードまたは URL が生成されます。最終的には、このコードまたは URL をコピーして、Web サイトのランディングページに適用します。[ビデオへのインタラクティビティの追加](#adding-interactivity-to-your-video)を参照してください。[アセットの公開](/help/assets/publishing-dynamicmedia-assets.md)を参照してください。
+1. **ビデオへのインタラクティビティの追加** - ビデオに 1 つ以上の時間セグメントを追加します。次に、それらの時間セグメント内で画像サムネールを関連付けます。各画像サムネールを、ハイパーリンク、クイックビュー、エクスペリエンスフラグメントなどのアクションに割り当てます（インタラクティブコンテンツに相対 URL のリンク（特に Experience Manager Sites ページへのリンク）がある場合、URL ベースのリンク方法は使用できません）。
+インタラクティブビデオアセットを公開して作業は完了です。公開によって埋め込みコードまたは URL が生成されます。最終的には、このコードまたは URL をコピーして、Web サイトのランディングページに適用します。[ビデオへのインタラクティビティの追加](#adding-interactivity-to-your-video)を参照してください。[アセットの公開](/help/assets/publishing-dynamicmedia-assets.md)を参照してください。
 
 1. **Web サイトまたは Experience Manager の web サイトにインタラクティブビデオを追加** - Experience Manager Sites または e コマース、あるいはその両方を使用している場合、インタラクティブビデオを web ページに追加できます。インタラクティブメディアコンポーネントを Experience Manager のページにドラッグします。[ページへの Dynamic Media アセットの追加](/help/assets/adding-dynamic-media-assets-to-pages.md)を参照してください。埋め込みコードまたは URL を使用して、インタラクティブビデオを Web サイトエクスペリエンスに統合します。[インタラクティブビデオの Web サイトへの統合](#integrating-an-interactive-video-with-your-website) を参照してください。サードパーティの WCM（Web Content Manager）を使用している場合は、新しいインタラクティブビデオを、Web サイトで使用されている既存のクイックビュー実装に統合する必要があります。[インタラクティブビデオの既存のクイックビューへの統合](#integrating-an-interactive-video-with-an-existing-quickview) を参照してください。
    [ページへの Dynamic Media アセットの追加](/help/assets/adding-dynamic-media-assets-to-pages.md)
@@ -648,27 +648,27 @@ Adobe Experience Manager によって返される埋め込みコードには、�
   <tbody>
   <tr>
     <td><p>単一の SKU（クエリ文字列内）</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td>単一の SKU（URL パス内）</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td><p>SKU とカテゴリ ID（クエリ文字列内）</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   </tbody>
 </table>

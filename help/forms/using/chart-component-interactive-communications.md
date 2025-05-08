@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 2d2b3fb7-80f7-4b55-84c5-c10a03d2a4e1
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2621'
-ht-degree: 100%
+source-wordcount: '2619'
+ht-degree: 99%
 
 ---
 
@@ -268,7 +268,7 @@ Multiply(valueArray, category) {
 * **[!UICONTROL グラフのタイプ]** - ドロップダウンリストから「**[!UICONTROL ドーナツ]**」を選択します。
 * **[!UICONTROL データモデルオブジェクト]** - データモデルオブジェクトのプロパティを選択して、X 軸（支出タイプ）と Y 軸（取引額）のデータ連結を作成します。
 * **[!UICONTROL 内半径]** - 内半径の値を 150 に指定して、グラフ内の内側の円の半径（ピクセル単位）を指定します。
-* **[!UICONTROL ツールヒント]** - デフォルトの ${x}(${y}) 形式を使用してツールヒントを表示します。ツールヒントは、「支出タイプ（取引額）」として表示されます。例：ビットコインへの支払い（10000）
+* **[!UICONTROL ツールヒント]** - デフォルトの${x} （${y}）形式を使用してツールヒントを表示します。 ツールヒントは、「支出タイプ（取引額）」として表示されます。例：ビットコインへの支払い（10000）
 
 ![インタラクティブ通信の web チャネルのドーナツグラフ](assets/sample_chart_web_new.png)
 

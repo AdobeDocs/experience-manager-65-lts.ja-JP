@@ -9,8 +9,8 @@ feature: Adaptive Forms,Document Services
 exl-id: b3b3567f-df0a-4a24-849c-dcc0b745de63
 source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '873'
+ht-degree: 100%
 
 ---
 

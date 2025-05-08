@@ -13,7 +13,7 @@ hidefromtoc: true
 source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
 source-wordcount: '4005'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,8 +23,8 @@ ht-degree: 94%
 
 <div class="preview">
 
-Adobeでは、JEE 版AEM 6.5 Forms サービスパック 18 （6.5.18.0）を含んだ [ 完全なインストーラー ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ja) のほか、パッチインストーラーがリリースされました。 完全なインストーラーは新しいプラットフォームをサポートするのに対して、パッチインストーラーはバグ修正のみを含んでいます。
-6.5.18.0 新規インストールを実行する場合や、JEE 版AEM 6.5 Formsの最新ソフトウェアを使用することを計画している場合、Adobeでは、2019 年 4 月 8 日（PT）にリリースされたAEM 6.5 Forms インストーラー [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ja) または 2022 年 3 月 3 日（PT）にリリースされたAEM 6.5 Forms インストーラーではなく、2023 年 8 月 31 日（PT）にリリースされたAEM 6.5 Forms フルインストーラーを使用することをお勧めします。
+アドビでは、JEE 版 AEM 6.5 Forms サービスパック 18（6.5.18.0）を含んだ[完全なインストーラー](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ja)のほか、パッチインストーラーをリリースしました。完全なインストーラーは新しいプラットフォームをサポートするのに対して、パッチインストーラーはバグ修正のみを含んでいます。
+新規インストールを実行する場合や、JEE 環境での AEM 6.5 Forms の最新ソフトウェアを使用することを計画している場合は、AEM 6.5 Forms インストーラー（2019年4月8日（PT）にリリース）または AEM 6.5.12 Forms インストーラー（2022年3月3日（PT）にリリース）ではなく、[JEE 上の AEM 6.5.18.0 Forms の完全なインストーラー](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ja)（2023年8月31日（PT）にリリース）を使用することをお勧めします。
 
 </div>
 
@@ -43,7 +43,7 @@ JEE サーバー上の AEM Forms は、サポートされているオペレー�
 
 #### 完全なインストーラー
 
-- **完全なインストーラーのアップグレードサポート**：完全なインストーラーは、6 回の AEM サービスパックリリースごとにリリースされます。たとえば、6.5.12.0 および 6.5.18.0 SP リリースで完全なインストーラがリリースされました。 AEM Forms では、最新の 2 つの完全なインストーラーからのみ直接アップグレードできます。例えば、AEM Formsは、最後の 2 つの完全なインストーラー（6.5.12.0 と 6.5.6.0）からのみ、バージョン 6.5.18.0 への直接アップグレードを容易にします。 以前のアップグレードからアップグレードする必要がある場合は、マルチホップアップグレードを使用して、まずサポートされている完全なインストーラーリリースに移動してから、最新のリリースに移動できます。
+- **完全なインストーラーのアップグレードサポート**：完全なインストーラーは、6 回の AEM サービスパックリリースごとにリリースされます。例えば、6.5.12.0 および 6.5.18.0 SP リリースでは完全なインストーラーがリリースされました。AEM Forms では、最新の 2 つの完全なインストーラーからのみ直接アップグレードできます。例えば、AEM Forms では、最新の 2 つの完全なインストーラー（6.5.12.0 と 6.5.6.0）からのみバージョン 6.5.18.0 への直接アップグレードを簡単に行うことができます。以前のアップグレードからアップグレードする必要がある場合は、マルチホップアップグレードを使用して、最初にサポートされている完全なインストーラーリリースに移行した後、最新のリリースに移行できます。
 
 - **非推奨と削除**：プラットフォームのサポートは、完全なインストーラーリリースごとに更新されます。完全なインストーラーリリース中にプラットフォーム一覧で非推奨としてマークされたソフトウェアは、後続の完全なインストーラーリリースでサポートされるプラットフォーム一覧から削除され、ソフトウェアのサポートが終了することが示されます。
 
@@ -51,9 +51,9 @@ JEE サーバー上の AEM Forms は、サポートされているオペレー�
 
 - **サービスパックの対象範囲**：アドビでは、最新の 6 つのサービスパックのいずれかを使用して、AEM Forms 環境のテクニカルサポートを提供します。現在のバージョンが最新の 6 つのサービスパックよりも古い場合、最適なパフォーマンス、セキュリティ、継続的なサポートを実現するために、アドビでは最新バージョンにアップグレードすることを強くお勧めします。
 
-- **パッチインストーラーのガイドライン**：パッチインストーラーを使用して更新する場合、基になる完全なインストーラーバージョンが 2 リリース以内のものであることを確認することが重要です。例えば、サービスパック 6.5.19.0 のインストール中に、基になる完全なインストーラーバージョンが 6.5.18.0 または 6.5.12.0 であることを確認します。
+- **パッチインストーラーのガイドライン**：パッチインストーラーを使用して更新する場合、基になる完全なインストーラーバージョンが 2 リリース以内のものであることを確認することが重要です。例えば、サービスパック 6.5.19.0 のインストール中に、基になる完全なインストーラーのバージョンが 6.5.18.0 または 6.5.12.0 であることを確認します。
 
-- **パッチアップグレードのサポート**：サポートされている最新のプラットフォームにアップグレードするまで、最新のサービスパックへのアップグレードを続行できます。例えば、6.5.19.0 でサポートされているプラットフォームの組み合わせに移行する場合には、サービスパック 6.5.12.0 から 6.5.19.0 にアップグレードすることができます。
+- **パッチアップグレードのサポート**：サポートされている最新のプラットフォームにアップグレードするまで、最新のサービスパックへのアップグレードを続行できます。例えば、6.5.19.0 でサポートされているプラットフォームの組み合わせに移行する場合、サービスパック 6.5.12.0 から 6.5.19.0 へのアップグレードが可能です。
 
 ### 推奨設定 {#recommendedconfigurations}
 
@@ -744,7 +744,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/jp/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -827,7 +827,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/jp/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -836,7 +836,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 -->
 
-### リリース 6.5.19.1 （2023 年 12 月 15 日（PT））
+### リリース 6.5.19.1（2023年12月15日（PT））
 
 | 追加したサポート | 削除したサポート | 非推奨のサポート |
 | -------------- | --------------- | ------------------- |
@@ -844,13 +844,13 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | MongoDB Enterprise 5.0 |  |  |
 |  | |  |
 
-### リリース 6.5.18.0 （2023 年 8 月 31 日（PT））
+### リリース 6.5.18.0（2023年8月31日（PT））
 
 | 追加したサポート | 削除したサポート | 非推奨のサポート |
 | -------------- | --------------- | ------------------- |
 | MongoDB Enterprise 4.4 | Windows Server 2016（64 ビット版） | Microsoft® Windows Server 2019（64 ビット版） |
 | Oracle WebLogic Server 14c | MongoDB Enterprise 4.0 | Microsoft® Active Directory 2016 |
-| My SQL JDBC Connector 8 | Oracle Database 12c リリース 2 （12.2.0.1.0） |  |
+| My SQL JDBC Connector 8 | Oracle Database 12c リリース 2（12.2.0.1.0） |  |
 | Active Directory 2022 | MySQL 5.7.35 |  |
 | Microsoft® Windows Server 2022（64 ビット版） | Microsoft® SQL Server 2016 |  |
 |  | JBoss® EAP 7.1.4 |  |
@@ -869,14 +869,14 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 |  | Acrobat 2017（クラシックトラック）バージョン 17.011.30078 以降 |  |
 
 
-### リリース 6.5.13.0 （2022 年 6 月 2 日（PT））
+### リリース 6.5.13.0（2022年6月2日（PT））
 
 | 追加したサポート | 削除したサポート | 非推奨のサポート |
 | -------------- | --------------- | ------------------- |
 |  |  | Microsoft® SharePoint 2016 |
 
 
-### リリース 6.5.12.0 （2022 年 3 月 3 日（PT））
+### リリース 6.5.12.0（2022年3月3日（PT））
 
 | 追加したサポート | 削除したサポート | 非推奨のサポート |
 | -------------- | --------------- | ------------------- |
@@ -892,7 +892,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 |  | | Microsoft® SQL Server 2016 |
 |  | | Microsoft® Windows Server 2016 |
 
-### リリース 6.5.10.0 （20222 年 9 月 1 日（Pt））
+### リリース 6.5.10.0（2022年9月1日（PT））
 
 | 追加したサポート | 削除したサポート | 非推奨のサポート |
 | -------------- | --------------- | ------------------- |

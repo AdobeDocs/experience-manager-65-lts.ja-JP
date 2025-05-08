@@ -8,11 +8,11 @@ exl-id: 56b4a767-1210-47f3-b022-766b0dda9943
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '402'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
-# OAuth 2.0 クライアント資格情報フローを使用した Salesforce の統合 {#configure-salesforce-with-ouath-2.0-client-credential}
+# OAuth 2.0 クライアント資格情報フローを使用したSalesforceの統合  {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |

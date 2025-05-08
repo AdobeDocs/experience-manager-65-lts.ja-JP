@@ -383,27 +383,27 @@ AEM では、ページの段落システムを設定するときに、常に空�
 
    それぞれが以下のプロパティを持ちます。
 
-   * `assetGroup`：
+   *  `assetGroup`：
 
       * 型：`String`
       * 値：関連アセットが所属するグループ（例：`media`）
 
-   * `assetMimetype`：
+   *  `assetMimetype`：
 
       * 型：`String`
       * 値：関連アセットの MIME タイプ（例：`image/*`）
 
-   * `droptarget`：
+   *  `droptarget`：
 
       * 型：`String`
       * 値：ドロップターゲット（例：`image`）
 
-   * `resourceType`：
+   *  `resourceType`：
 
       * 型：`String`
       * 値：関連コンポーネントリソース（例：`foundation/components/image`）
 
-   * `type`：
+   *  `type`：
 
       * 型：`String`
       * 値：タイプ（例：`Images`）

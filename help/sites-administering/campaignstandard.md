@@ -65,7 +65,7 @@ Adobe Campaign Standard には、AEM が Adobe Campaign に接続する際に使
 
 `aemserver` ユーザーに、AEM が Adobe Campaign と通信するために必要な権限が付与されました。
 
-ただし、AEMが `aemserver` ユーザーを使用する前に、そのパスワードを設定する必要があります。 これは、Adobe Campaign では実行することができません。この作業は、アドビのサポートエンジニアが行う必要があります。[アドビカスタマーケアでチケットを発行](https://experienceleague.adobe.com/ja?lang=ja&amp;support-tab=home#support)して、`aemserver` パスワードのリセットをリクエストします。パスワードをアドビカスタマーケアから取得したら、安全な場所に保管します。
+ただし、AEMが `aemserver` ユーザーを使用する前に、そのパスワードを設定する必要があります。 これは、Adobe Campaign では実行することができません。この作業は、アドビのサポートエンジニアが行う必要があります。[アドビカスタマーケアでチケットを発行](https://experienceleague.adobe.com/?lang=ja&amp;support-tab=home#support)して、`aemserver` パスワードのリセットをリクエストします。パスワードをアドビカスタマーケアから取得したら、安全な場所に保管します。
 
 ## Campaign の AEMResourceTypeFilter を確認 {#resource-type-filter}
 
@@ -201,7 +201,7 @@ Externalizer が設定され、Adobe Campaign がコンテンツにアクセス�
 
 >[!NOTE]
 >
->パブリッシュインスタンスは、Adobe Campaign サーバーからアクセス可能である必要があります。`localhost:4503` または Adobe Campaign が到達できない別のサーバーを指している場合、AEM からの画像は Adobe Campaign コンソールに表示されません。
+パブリッシュインスタンスは、Adobe Campaign サーバーからアクセス可能である必要があります。`localhost:4503` または Adobe Campaign が到達できない別のサーバーを指している場合、AEM からの画像は Adobe Campaign コンソールに表示されません。
 
 ## AEM での campaign-remote ユーザーを設定 {#campaign-remote-user}
 

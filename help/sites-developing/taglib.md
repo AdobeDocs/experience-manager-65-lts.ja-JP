@@ -11,8 +11,8 @@ role: Developer
 exl-id: 15f30571-7129-402c-98be-270a142c4cbb
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2452'
+ht-degree: 100%
 
 ---
 
@@ -176,7 +176,7 @@ JSP における `<cq:text>` タグの使用例を次に示します。
 
 `source` 属性が設定されていない場合：
 
-* `language` 属性が設定されている場合は、`source` 属性のデフォルト値が &grave;&grave; `static` になります。
+* `language` 属性が設定されている場合は、`source` 属性のデフォルト値が `` `static` になります。
 
 * `language` 属性が設定されていない場合は、`source` 属性のデフォルト値が `auto` になります。
 

@@ -9,8 +9,8 @@ role: Admin, User, Developer
 exl-id: 64d4ef01-ee33-4c8b-977f-0c9b31755820
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 100%
+source-wordcount: '870'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ![デフォルトのメールテンプレート](assets/default_email_template_metadata_new.png)
 
-メタデータは、キーと値のペアで保存されます。メールテンプレートでキーを指定すると、そのキーが実行される際（メール通知が生成されるとき）、値に置き換えられます。例えば、下記のコードサンプルでは、「$ {workitem_title}」がキーになります。これは、実行時には「Loan-Request」の値で置き換えられます。
+メタデータは、キーと値のペアで保存されます。メールテンプレートでキーを指定すると、そのキーが実行される際（メール通知が生成されるとき）、値に置き換えられます。例えば、以下のコードサンプルでは、「$ {workitem_title}」がキーです。 これは、実行時には「Loan-Request」の値で置き換えられます。
 
 ```html
 subject=Task Assigned - ${workitem_title}

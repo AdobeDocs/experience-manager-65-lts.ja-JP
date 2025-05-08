@@ -293,7 +293,6 @@ Experience Manager Assets でバナー画像にホットスポットまたは画
    * 「**[!UICONTROL ハイパーリンク]**」を選択します。
 
       * Adobe Experience Manager Sites のユーザーである場合は、サイトセレクターアイコン（フォルダー）を選択して URL に移動します。
-
         >[!NOTE]
         >
         >インタラクティブコンテンツに相対 URL のリンク（特に Experience Manager Sites ページへのリンク）がある場合、URL ベースのリンク方法は使用できません。

@@ -364,7 +364,7 @@ MongoDB インスタンスのインデックスを削除する場合、削除の
 
 >[!NOTE]
 >
->AEM 6.5 LTS では、MongoMK または RDBMK リポジトリでのインデックス再作成に [&#128279;](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree)oak-run.jar が唯一サポートされている方法です 。
+>AEM 6.5 LTS では、MongoMK または RDBMK リポジトリでのインデックス再作成に ](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree)oak-run.jar が唯一サポートされている方法です [。
 
 #### プロパティインデックスのインデックス再作成 {#re-indexing-property-indexes}
 

@@ -184,7 +184,7 @@ AEM では、複数のテンプレートが標準提供されています。使�
 
 コンテンツの作成を開始する前に、事前に各ページが作成されていない場合は、ページを作成する必要があります。
 
-1. Sites コンソールを開きます（例：[https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)）。
+1.  Sites コンソールを開きます（例：[https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)）。
 1. 新しいページを作成する場所に移動します。
 1. ツールバーの「**作成**」を使用してドロップダウンセレクターを開き、リストから「**ページ**」を選択します。
 

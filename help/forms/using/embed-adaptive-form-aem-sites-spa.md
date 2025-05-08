@@ -1,6 +1,6 @@
 ---
-title: AEM Sites の単一ページアプリケーションへのアダプティブフォームやインタラクティブコミュニケーションの組み込み
-description: AEM Sites ページにアダプティブフォームやインタラクティブコミュニケーションを組み込みます。ユーザーは、Sites のページから移動せずにフォームを記入および送信できます。
+title: AEM Sites の単一ページアプリケーションへのアダプティブフォームやインタラクティブコミュニケーションの埋め込み
+description: AEM Sites ページにアダプティブフォームやインタラクティブコミュニケーションを埋め込みます。ユーザーは、Sites のページから移動せずにフォームを記入および送信できます。
 topic-tags: author, interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
@@ -15,13 +15,13 @@ ht-degree: 100%
 
 ---
 
-# AEM Sites の単一ページアプリケーションへのアダプティブフォームやインタラクティブコミュニケーションの組み込み{#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-single-page-application}
+# AEM Sites の単一ページアプリケーションへのアダプティブフォームやインタラクティブコミュニケーションの埋め込み{#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-single-page-application}
 
 <span class="preview">[アダプティブフォームの新規作成](/help/forms/using/create-an-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
 
 ## 概要 {#overview}
 
-AEM Forms を使用すると、フォーム開発者は AEM Sites 単一ページアプリケーション（SPA）ページにアダプティブフォームおよびインタラクティブ通信をシームレスに組み込むことができます。組み込まれたアダプティブフォームおよびインタラクティブ通信ではすべての機能を使用できるため、ユーザーは、ページから移動せずにフォームの記入や送信ができます。これにより、ユーザーは Web ページのその他の要素とのコンテキストを保ったまま、同時にアダプティブフォームやインタラクティブ通信の操作を行うことができます。
+AEM Forms を使用すると、フォーム開発者は AEM Sites 単一ページアプリケーション（SPA）ページにアダプティブフォームおよびインタラクティブ通信をシームレスに埋め込むことができます。組み込まれたアダプティブフォームおよびインタラクティブ通信ではすべての機能を使用できるため、ユーザーは、ページから移動せずにフォームの記入や送信ができます。これにより、ユーザーは Web ページのその他の要素とのコンテキストを保ったまま、同時にアダプティブフォームやインタラクティブ通信の操作を行うことができます。
 
 AEM Sites 単一ページアプリケーションでは、[AEM Forms SPA Container コンポーネント](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)[を使用してアダプティブフォームやインタラクティブ通信を追加できます。](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)これは AEM Sites SPA 用の AEM Forms コンポーネントで、Sites ページに追加できます。
 
@@ -29,7 +29,7 @@ SPA AEM Sites 以外でのアダプティブフォームの組み込みについ
 
 ## 前提条件 {#prerequisites}
 
-AEM Forms SPA コンテナコンポーネントを使用して、アダプティブフォームやインタラクティブ通信を AEM Sites SPA に組み込むには、以下がインストールされていることを確認します。
+AEM Forms SPA コンテナコンポーネントを使用して、アダプティブフォームやインタラクティブ通信を AEM Sites SPA に埋め込むには、以下がインストールされていることを確認します。
 
 * Java SE Development Kit 8 以降
 * Apache Maven 3.3.1 以降
@@ -48,19 +48,19 @@ AEM Forms SPA コンテナコンポーネントを使用して、アダプティ
 1. [React ベースの SPA プロジェクトをクローンまたはダウンロード](https://github.com/adobe/aem-sample-we-retail-journal)します。
 1. [README.md](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa/react-component#aem-form-react-component-for-spa---editor) ファイルにある説明に従って、SPA コンテナコンポーネントと React ベースの SPA プロジェクトを統合します。
 
-   AEM Forms SPA コンテナコンポーネントをインストールし、そのコンポーネントを React ベースの SPA プロジェクトに統合した後、AEM Sites ページにアダプティブフォームとインタラクティブ通信を組み込むことができます。
+   AEM Forms SPA コンテナコンポーネントをインストールし、そのコンポーネントを React ベースの SPA プロジェクトに統合した後、AEM Sites ページにアダプティブフォームとインタラクティブ通信を埋め込むことができます。
 
-## アダプティブフォームまたはインタラクティブ通信を組み込む {#af-component}
+## アダプティブフォームまたはインタラクティブ通信を埋め込む {#af-component}
 
-AEM Forms コンテナコンポーネントを使用してアダプティブフォームやインタラクティブ通信を組み込むには：
+AEM Forms コンテナコンポーネントを使用してアダプティブフォームやインタラクティブ通信を埋め込むには：
 
-1. アダプティブフォームやインタラクティブ通信を組み込む AEM Sites ページを、編集モードで開きます。
+1. アダプティブフォームやインタラクティブ通信を埋め込む AEM Sites ページを、編集モードで開きます。
 1. 次のいずれかのオプションを使用して、ページ上で **AEM Form for SPA** コンポーネントを挿入します。
 
    * Sites ページのレイアウトコンテナを選択し、**+** をクリックして、**AEM form for SPA** コンポーネントを選択します。
 
    * コンポーネントブラウザーパネルから、**AEM Form for SPA** コンポーネントをページ上にドラッグアンドドロップします。
-   * または、アセットブラウザーでアダプティブフォームまたはインタラクティブ通信を検索して、Sites ページにドラッグアンドドロップします。これにより、AEM Formsにフォームが組み込まれ、SPA コンポーネントコンテナに格納されます。
+   * または、アセットブラウザーでアダプティブフォームまたはインタラクティブ通信を検索して、Sites ページにドラッグアンドドロップします。これにより、AEM Formsにフォームが埋め込まれ、SPA コンポーネントコンテナに格納されます。
 
    >[!NOTE]
    >

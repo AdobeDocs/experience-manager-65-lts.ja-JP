@@ -12,7 +12,7 @@ exl-id: 30038003-e307-46d1-b5f9-624d98a672a7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1497'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -88,7 +88,7 @@ Experience Manager を使用すれば、取得時、配信時またはその両�
 
 モノクロパラメーターの設定は 0 のままにします。
 
-### JPEG 圧縮（`&qlt=`）のベストプラクティス{#best-practices-for-jpeg-compression-qlt}
+### JPEG圧縮（`&qlt=`）のベストプラクティス {#best-practices-for-jpeg-compression-qlt}
 
 * このパラメーターでは、JPG エンコーディング品質を制御します。値が大きいほど高画質になりますがファイルサイズも大きくなります。逆に、値が小さいほど低画質になりますがファイルサイズは小さくなります。このパラメーターの範囲は 0～100 です。
 * 画質を最適化するには、このパラメーターの値を 100 に設定しないでください。90 や 95 の設定と 100 の設定では、画質の差はほとんど感じられませんが、100 に設定すると画像ファイルのサイズが不必要に増加します。したがって、画質を最適化しながら画像ファイルが大きくなりすぎないようにするために、`qlt= value` を 90 または 95 に設定します。
@@ -101,7 +101,7 @@ Experience Manager を使用すれば、取得時、配信時またはその両�
 
 JPG 圧縮のベストプラクティスとしては、`&qlt=85,0` を使用します。
 
-## JPEG サイズ設定（`&jpegSize=`）のベストプラクティス {#best-practices-for-jpeg-sizing-jpegsize}
+## JPEG サイジングのベストプラクティス（`&jpegSize=`） {#best-practices-for-jpeg-sizing-jpegsize}
 
 jpegSize は、メモリ容量が限られているデバイスに配信される画像が特定のサイズを超えないようにしたい場合に便利なパラメーターです。
 

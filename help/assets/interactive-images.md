@@ -436,27 +436,27 @@ Experience Manager Assets によって返される埋め込みコードには、
  <tbody>
   <tr>
    <td><p>単一の SKU（クエリ文字列内）</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
-      var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      &rbrace;,
-      &rbrace;);</code></td>
+   <td><code class="code">s7interactiveimageviewer.setHandlers({
+      "quickViewActivate": function(inData) {
+      var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;amp;source=100";
+      },
+      });</code></td>
   </tr>
   <tr>
    <td><p>単一の SKU（URL パス内）</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+   <td><code class="code">s7interactiveimageviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
    <td><p>SKU とカテゴリ ID（クエリ文字列内）</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
-      var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+   <td><code class="code">s7interactiveimageviewer.setHandlers({
+      "quickViewActivate": function(inData) {
+      var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;amp;prodId=" + inData.sku;
+      },
+      });</code></td>
   </tr>
  </tbody>
 </table>

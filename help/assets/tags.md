@@ -436,7 +436,7 @@ Adobe Analytics を設定した後、統合のために次の設定が行われ�
 * Analytics 変数がトラッキングデータを受け取るために使用可能になる。
 * Adobe Analytics 内で収集されたデータを表示するレポートが使用可能になる。
 
-[Analytics 導入ガイド](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=ja)も参照してください。
+詳しくは、[Analytics 導入ガイド](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=ja)も参照してください。
 
 **統合のために Adobe Analytics を設定するには**：
 
