@@ -14,7 +14,7 @@ ht-degree: 99%
 
 # [!DNL Adobe Launch] を使用した Analytics {#analyticsusingadobelaunch}
 
-AEM Forms は [Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/overview) と統合されているので、公開したフォームのパフォーマンス指標を取得および追跡できます。これらの指標を分析する目的は、ビジネスユーザーがエンドユーザーの行動に関するインサイトを得て、データキャプチャエクスペリエンスを最適化できるようにすることです。Adobe Analytics for Adaptive Forms を介して、ログインしているユーザーとログインしていない（匿名）ユーザーの両方の動作を取得および追跡できます。
+AEM Forms は [Adobe Analytics](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/overview) と統合されているので、公開したフォームのパフォーマンス指標を取得および追跡できます。これらの指標を分析する目的は、ビジネスユーザーがエンドユーザーの行動に関するインサイトを得て、データキャプチャエクスペリエンスを最適化できるようにすることです。Adobe Analytics for Adaptive Forms を介して、ログインしているユーザーとログインしていない（匿名）ユーザーの両方の動作を取得および追跡できます。
 
 Cloud Service フレームワークを使用して分析を実行することもできます。AEM Forms を Cloud Service フレームワークと統合する方法について詳しくは、[Cloud Service フレームワークを使用した Analytics](/help/forms/using/configure-analytics-forms-documents.md) を参照してください。Cloud Service フレームワークを使用して Analytics よりも Adobe Launch を使用する主な利点は、標準のイベントに加えて、カスタムイベントも定義できる点です。 カスタマイズされたイベントは、ルールエディターまたは顧客の clientlib を使用して定義され、[!DNL Adobe Analytics] のイベントにマップされます。
 
@@ -235,7 +235,7 @@ Adobe Launch 設定を作成するには、次の手順を実行します。
 1. 「**[!UICONTROL 保存して閉じる]**」を選択します。アダプティブフォームは [!DNL Adobe Analytics] に対して有効になっています。
 1. フォームを公開します。
 
-アダプティブフォームで [!DNL Adobe Analytics] を有効にすると、AEM Forms と [!DNL Adobe Analytics] の間に適切なデータイベントフローがあるかどうかを[検証](https://experienceleague.adobe.com/en/docs/platform-learn/implement-in-websites/implement-solutions/analytics#validate-the-page-view-beacon)できます。AEM Forms と Adobe Analytics の統合が完了しました。これで [Adobe Analytics でのレポートの設定と表示](#view-reports-adobe-analytics)を行えるようになりました。
+アダプティブフォームで [!DNL Adobe Analytics] を有効にすると、AEM Forms と [!DNL Adobe Analytics] の間に適切なデータイベントフローがあるかどうかを[検証](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-in-websites/implement-solutions/analytics#validate-the-page-view-beacon)できます。AEM Forms と Adobe Analytics の統合が完了しました。これで [Adobe Analytics でのレポートの設定と表示](#view-reports-adobe-analytics)を行えるようになりました。
 
 >[!NOTE]
 >[クラウドサービスのフレームワークを使用した分析](/help/forms/using/configure-analytics-forms-documents.md)機能と **Adobe Launch を使用した分析**&#x200B;機能の両方が同時に有効になっている場合、**Adobe Launch を使用した分析**&#x200B;機能が優先されます。
