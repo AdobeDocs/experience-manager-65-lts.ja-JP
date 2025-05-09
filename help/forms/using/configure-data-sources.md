@@ -95,7 +95,7 @@ AEM web コンソールでユーザープロファイルコネクタ設定を使
 
 >[!NOTE]
 >
-RESTful サービス、SOAP サービス、OData サービスのクラウドサービスを設定するには、クラウドサービス用のフォルダーを設定する必要があります。
+>RESTful サービス、SOAP サービス、OData サービスのクラウドサービスを設定するには、クラウドサービス用のフォルダーを設定する必要があります。
 
 AEM におけるすべてのクラウドサービス設定は、AEM リポジトリの `/conf` フォルダー内に保存されます。デフォルトの場合、`conf` フォルダーには `global` フォルダーが含まれています。このフォルダーで、クラウドサービスの設定を作成できます。ただし、このフォルダーを手動でクラウド設定用に有効にする必要があります。追加のフォルダーを `conf` フォルダー内に作成して、クラウドサービスの作成と編集を行うこともできます。
 
@@ -181,7 +181,7 @@ SOAP ベースの web サービスは、[Web Services Description Language（WSD
    * SOAP サービスにアクセスするための認証タイプ（なし、OAuth2.0（[認証コード](https://oauth.net/2/grant-types/authorization-code/)、[クライアント資格情報](https://oauth.net/2/grant-types/client-credentials/)）、基本認証、API キー認証、カスタム認証、X509 トークン、相互認証）を選択し、その選択内容に応じて認証の詳細を指定します。
 
      認証の種類として **[!UICONTROL X509 トークン]**&#x200B;を選択した場合は、X509 証明書を設定します。詳しくは、[証明書の設定](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service)を参照してください。
-X509 証明書のキーストアエイリアスを**[!UICONTROL キーエイリアス]**&#x200B;フィールドに指定します。**[!UICONTROL 有効期間]**&#x200B;フィールドに、認証リクエストが有効なままになるまでの時間（秒）を指定します。オプションで、メッセージの本文、タイムスタンプヘッダーまたはその両方に署名することを選択します。
+X509 証明書のキーストアエイリアスを&#x200B;**[!UICONTROL キーエイリアス]**&#x200B;フィールドに指定します。**[!UICONTROL 有効期間]**&#x200B;フィールドに、認証リクエストが有効なままになるまでの時間（秒）を指定します。オプションで、メッセージの本文、タイムスタンプヘッダーまたはその両方に署名することを選択します。
 
      認証タイプとして&#x200B;**[!UICONTROL 相互認証]**&#x200B;を選択した場合は、[RESTful web サービスおよび SOAP web サービスの証明書ベースの相互認証](#mutual-authentication)を参照してください。
 
@@ -193,8 +193,8 @@ OData サービスは、そのサービスのルート URL によって識別さ
 
 >[!NOTE]
 >
-フォームデータモデルは [OData バージョン 4](https://www.odata.org/documentation/) をサポートします。
-オンライン環境またはオンプレミス環境で Microsoft Dynamics 365 を設定する詳しい手順については、[Microsoft Dynamics OData 設定](/help/forms/using/ms-dynamics-odata-configuration.md)を参照してください。
+>フォームデータモデルは [OData バージョン 4](https://www.odata.org/documentation/) をサポートします。
+>オンライン環境またはオンプレミス環境で Microsoft Dynamics 365 を設定する詳しい手順については、[Microsoft Dynamics OData 設定](/help/forms/using/ms-dynamics-odata-configuration.md)を参照してください。
 
 1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーを選択します。
 
@@ -208,7 +208,7 @@ OData サービスは、そのサービスのルート URL によって識別さ
 
    >[!NOTE]
    >
-   OData エンドポイントをサービスルートとして使用して Microsoft Dynamics サービスに接続する場合は、OAuth 2.0 認証タイプを選択します。
+   >OData エンドポイントをサービスルートとして使用して Microsoft Dynamics サービスに接続する場合は、OAuth 2.0 認証タイプを選択します。
 
 1. 「**作成**」を選択して、OData サービス用のクラウド設定を作成します。
 
