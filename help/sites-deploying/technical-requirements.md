@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 3e7947935e9632ff6f5a68c2104896e01f52a3ed
+source-git-commit: 296810c9fda3a0aa093154562884bd5c0c482d44
 workflow-type: tm+mt
-source-wordcount: '2961'
+source-wordcount: '2980'
 ht-degree: 94%
 
 ---
@@ -91,10 +91,12 @@ Adobe Experience Manager は、次のバージョンの Java™ 仮想マシン�
 | **プラットフォーム** | **サポートレベル** | **リンク** |
 |---|---|---|
 | Oracle Java™ SE 17 JDK | A：サポート対象 `[1]` |
+| Oracle Java™ SE 21 JDK | A：サポート対象 `[1]` |
 | IBM® Semeru J9 VM - ビルド 17.0.13.0 | A：サポート対象 `[2]` |
+| IBM® Semeru J9 VM - ビルド 21.0.6.0 | A：サポート対象 `[2]` |
 
 1. Oracle は Oracle Java™ SE 製品の「長期サポート」（LTS）モデルに移行しました。Java™ 9、Java™ 10、Java™ 12、Java™ 13、Java™ 14、Java™ 15m Java™ 16 は、Oracleによる非 LTS でのリリースです（[Oracle Java™ SE サポートロードマップ ](https://www.oracle.com/jp/technetwork/java/eol-135779.html) を参照）。 実稼動環境に AEM をデプロイするために、アドビでは LTS リリース版の Java™ のみサポートします。パブリックアップデート終了後の LTS リリースのすべてのメンテナンスアップデートを含む Oracle Java™ SE JDK のサポートと配布が、アドビによって直接サポートされます。対象となるのは、Oracle Java™ SE テクノロジーを利用するすべての AEM ユーザーです。詳しくは、[Adobe Experience Manager 用 Java™ サポートポリシー](assets/Java_Policy_for_Adobe_Experience_Manager.pdf)を参照してください。
-   **このリリースでは、Oracle Java™ 17.** がサポートされています
+   **このリリースでは、Oracle Java™ 17 およびOracle Java™ 21.** がサポートされています
 
 1. IBM® JRE は、WebSphere® Application Server と共に使用する場合にのみサポートされます。
 
@@ -139,7 +141,7 @@ Adobe Experience Manager は、スタンドアロンサーバー（Quickstart JA
 | Platform | サポートレベル |
 |---|---|
 | **Quickstart 組み込みサーブレットエンジン（Jetty 11.0.x）** | A：サポート対象 |
-| IBM® WebSphere® Application Server Continuous Delivery （LibertyProfile）（Web Profile 24.0.0.7 およびIBM® Sumeru open JRE® 17） | R：新規契約向けの制限サポート `[1]` |
+| IBM® WebSphere® Application Server Continuous Delivery （LibertyProfile）（Web Profile 24.0.0.7 およびIBM® Sumeru open JRE® 17/21） | R：新規契約向けの制限サポート `[1]` |
 | Apache Tomcat 11.0.x | R：新規契約向けの制限サポート `[1]` |
 
 1. アプリケーションサーバーで AEM 6.5 デプロイメントを開始すると、制限付きサポートに移行します。既存のお客様は AEM 6.5 にアップグレードして、引き続きアプリケーションサーバーを使用することができます。新規のお客様には、前述のレベル R の説明にあるサポート基準とサポートプログラムが適用されます。

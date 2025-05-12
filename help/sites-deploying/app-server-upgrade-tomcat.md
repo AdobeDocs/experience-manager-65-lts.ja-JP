@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 7f8de16f-9e9a-4d37-9978-d26c496b911c
-source-git-commit: b835dbf6fd7f40a2a1e1ca26c8a6870b69a19cbe
+source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '475'
 ht-degree: 17%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 17%
 
 ### 移行の前提条件 {#migration-prerequisites}
 
-* **最低限必要な Java バージョン**:Tomcat サーバーにOracle® JRE 17 がインストールされていることを確認します。
+* **最低限必要な Java バージョン**:Tomcat サーバーにOracle® JRE 17/21 がインストールされていることを確認します。
 * **Tomcat サーバー**: 6.5 LTS に必要な Tomcat サーバーのバージョンは **11.0.x** です。
 
 ### アップグレードの実行 {#performing-the-upgrade}
@@ -35,15 +35,15 @@ ht-degree: 17%
 1. AEM 6.5 が既にデプロイされている場合は、*`https://<serveraddress:port>/system/console/bundles`* にアクセスしてバンドルが正常に動作していることを確認します。
 1. 次に、AEM 6.5 を停止します。これは、次の場所にある Tomcat App Manager から実行できます。*`https://<serveraddress:port>/manager/html`*
 1. アップグレードアクティビティを実行する前に、AEM 6.5 サーバーのバックアップなどの [ アップグレード前 ](#pre-upgrade-steps) アクティビティが完了していることを確認してください
-1. Java 17 をインストールし、次のコマンドを実行して正しくインストールされていることを確認します。
+1. Java 17/Java 21 をインストールし、次のコマンドを実行して正しくインストールされていることを確認します。
 
    ```
    java –version
    ```
 
 1. AEM 6.5 LTS 互換の Tomcat サーバーの設定
-1. AEM サーバーの開始パラメーターを確認し、システム要件に従ってパラメーターを更新してください。 詳しくは、[Java 17 に関する考慮事項 ](/help/sites-deploying/custom-standalone-install.md#java-considerations) を参照してください
-1. Java 17 を使用して、新しくダウンロードした 6.5 LTS war を Tomcat サーバーにデプロイし、次のコマンドを実行してAEM 6.5 LTS Tomcat サーバーを起動します。
+1. AEM サーバーの開始パラメーターを確認し、システム要件に従ってパラメーターを更新してください。 詳しくは、[Java 17/Java 21 に関する考慮事項 ](/help/sites-deploying/custom-standalone-install.md#java-considerations) を参照してください
+1. Java 17/Java 21 を使用して、新しくダウンロードした 6.5 LTS war を Tomcat サーバーにデプロイし、次のコマンドを実行してAEM 6.5 LTS Tomcat サーバーを起動します。
 
    ```
    $CATALINA_HOME/bin/catalina.sh start

@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 0afd255ec5c9d3db37f2f059782b35052761b1cf
+source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 48%
+source-wordcount: '805'
+ht-degree: 45%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 48%
 
 ## 新機能 {#what-s-new}
 
-[!DNL Adobe Experience Manager] 6.5 LTS は、[!DNL Adobe Experience Manager] 6.5 コードベースのアップグレードリリースです。 新機能と強化された機能、お客様向けの重要な修正、お客様向けの優先順位の高い機能強化、製品の安定性向上のための全般的なバグ修正が加えられています。また、[!DNL Adobe Experience Manager] 6.5 の SP22 までのサービスパックリリースも含まれています。
+[!DNL Adobe Experience Manager] 6.5 LTS は、[!DNL Adobe Experience Manager] 6.5 コードベースのアップグレードリリースです。 お客様向けの主要な修正、お客様向けの優先順位の高い機能強化、製品の安定性向上のための全般的なバグ修正が含まれています。 また、[!DNL Adobe Experience Manager] 6.5 の SP22 までのサービスパックリリースも含まれています。
 
 次のリストはその概要です。詳細については以降のページを参照してください。
 
@@ -36,9 +36,9 @@ Quickstart は、サーブレットエンジンとして Eclipse Jetty 11.0.x �
 
 #### Java™ サポート  {#java-support}
 
-* Java™ 17 のサポート。
+* Java™ 17 および Java™ 21 のサポート。
 * 最適なパフォーマンスを得るには、デフォルトの GC 値を他の値に置き換えてください。詳しくは、[インストールとアップデート](/help/sites-deploying/custom-standalone-install.md)の節を参照してください。
-* Java™ 17 メンテナンスアップデートがAdobeから公開されない場合は、AEM関連プロジェクトで使用するお客様向けにOracleが配布します。
+* Java™ 17 および Java™ 21 メンテナンスアップデートがOracleから公開されない場合は、Adobe関連プロジェクトで使用するお客様向けにAEMが配布します。
 
 #### Uberjar のパッケージ {#uber-jar-packaging}
 
@@ -60,7 +60,7 @@ Quickstart は、サーブレットエンジンとして Eclipse Jetty 11.0.x �
 
 >[!NOTE]
 >
->AEM 6.5 LTS で使用するバージョンとしては、Java™ 17 をお勧めします。
+>AEM 6.5 LTS で使用するバージョンとしては、Java™ 17/Java™ 21 をお勧めします。
 
 ## 廃止される機能および削除された機能 {#deprecated-and-removed-features}
 

@@ -6,10 +6,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: db9bf14ec9fefcbafb7b6d749de966e97c54abda
+source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 47%
+source-wordcount: '544'
+ht-degree: 46%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 47%
 
 ## 移行の前提条件 {#migration-prerequisites}
 
-* **必要な Java の最小バージョン：** システムにOracleの Java™ 17 がインストールされていることを確認します。
+* **最低限必要な Java バージョン：** Oracleの Java™ 17/21 がインストールされていることを確認します。
 
 ## AEM クイックスタート jar ファイルの準備 {#prep-quickstart-file}
 
@@ -180,7 +180,7 @@ Where `/path/to/datastore` represents the path to your File Datastore.
 
 >[!NOTE]
 >
->Java 8/11 引数の一部のサポートは、Java 17 で削除されました。[Oracle Java™ 17 ドキュメント ](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) および [AEM 6.5 LTS の Java&amp;trade 引数に関する考慮事項 ](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations) を参照してください。
+>Java 8/11 引数の一部のサポートは、Java 17/21 で削除されました。[Oracle Java™ 17 ドキュメント ](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html)、[Oracle Java™ 21 ドキュメント ](https://docs.oracle.com/en/java/javase/21/docs/specs/man/java.html) および [AEM 6.5 LTS](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations) の Java&amp;trade 引数に関する考慮事項を参照してください。
 
 アップグレードを実行するには、jar ファイルを使用してAEMを起動してインスタンスを起動することが重要です。
 

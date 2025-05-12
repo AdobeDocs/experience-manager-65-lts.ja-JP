@@ -10,9 +10,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: ebc34847-dc3d-41ed-b0d6-f004c3debcd9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '198'
 ht-degree: 34%
 
 ---
@@ -51,6 +51,6 @@ ht-degree: 34%
 
 ### 更新 {#updates}
 
-Foundation layer は、Apache Sling、Felix、Jackrabbit Oakの最新のオープンソースバンドルを組み込んで、Java 17 をサポートするようになりました。 さらに、AEM 6.5 LTS uber-jar のパッケージが変更されました。 さらに、AEM 6.5 LTS からは、従来の機能がいくつか削除されています。 詳細については、「[ リリース ノート ](/help/release-notes/release-notes.md#whats-new-what-s-new)」および [ アップグレード後にアンインストールされる廃止されたバンドルの一覧 ](/help/sites-deploying/obsolete-bundles.md) を参照してください。
+Foundation layer は、Apache Sling、Felix、Jackrabbit Oakの最新のオープンソースバンドルを組み込んで、Java 17 および Java 21 をサポートするようになりました。 さらに、AEM 6.5 LTS uber-jar のパッケージが変更されました。 さらに、AEM 6.5 LTS からは、従来の機能がいくつか削除されています。 詳細については、「[ リリース ノート ](/help/release-notes/release-notes.md#whats-new-what-s-new)」および [ アップグレード後にアンインストールされる廃止されたバンドルの一覧 ](/help/sites-deploying/obsolete-bundles.md) を参照してください。
 
 AEM 6.5 LTS は、機能の後方互換性に重点を置いており、アナライザーツールが付属しています。 開始時の複雑性の評価 [ アップグレードの計画 ](/help/sites-deploying/aem-analyzer.md) については、[AEM Analyzer を使用したアップグレードの複雑性の評価 ](/help/sites-deploying/upgrade-planning.md) を参照してください。
