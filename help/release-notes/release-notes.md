@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
+source-git-commit: 8f6d152ceeae12cdadd0096e114584ce2a63a2ac
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 45%
+source-wordcount: '927'
+ht-degree: 40%
 
 ---
 
@@ -107,6 +107,24 @@ Quickstart は、サーブレットエンジンとして Eclipse Jetty 11.0.x �
 | オープンソース | `javax.mail` パッケージを `com.sun.javax.mail` バンドルから書き出しています。 | 変更は不要です。 | 6.5 LTS GA |
 | オープンソース | パッケ `org.apache.jackrabbit.api` ジが `org.apache.jackrabbit.oak-jackrabbit-api` バンドルから書き出されるようになりました。 | 変更は不要です。 | 6.5 LTS GA |
 | オープンソース | `com.github.jknack.handlebars` はサポートされていません。 | 関連する [ バージョン ](https://mvnrepository.com/artifact/com.github.jknack/handlebars) を選択 | 6.5 LTS GA |
+
+## 既知の問題 {#known-issues}
+
+### SSL のみの機能を使用したDispatcher接続の失敗 {#ssl-only-feature}
+
+AEMのデプロイメントで SSL のみの機能を有効にする場合、Dispatcher インスタンスとAEM インスタンス間の接続に影響を与える既知の問題があります。 この機能を有効にすると、ヘルスチェックが失敗し、Dispatcher インスタンスとAEM インスタンス間の通信が中断される可能性があります。
+
+**影響：**
+* HTTP 500 応答コードを含むヘルスチェックエラー
+* Dispatcher インスタンスとAEM インスタンスの間のトラフィックの破損
+* Dispatcher を介してコンテンツを適切に提供できない
+
+**影響を受ける環境：**
+* dispatcher 設定を使用したAEM デプロイメント
+* SSL のみの機能が有効になっているシステム
+
+**解決策：**
+この問題が発生した場合は、Adobe カスタマーサポートにお問い合わせください。 この問題を解決するためのホットフィックス [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.0.zip) が利用可能です。 必要なホットフィックスが適用されるまで、SSL のみの機能を有効にしないでください。
 
 ## 制限付き Web サイト{#restricted-sites}
 
