@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 296810c9fda3a0aa093154562884bd5c0c482d44
+source-git-commit: b9b5492b1bf5f717dec6a48ffbe808bf75cbce6a
 workflow-type: tm+mt
-source-wordcount: '2980'
+source-wordcount: '2981'
 ht-degree: 94%
 
 ---
@@ -142,7 +142,7 @@ Adobe Experience Manager は、スタンドアロンサーバー（Quickstart JA
 |---|---|
 | **Quickstart 組み込みサーブレットエンジン（Jetty 11.0.x）** | A：サポート対象 |
 | IBM® WebSphere® Application Server Continuous Delivery （LibertyProfile）（Web Profile 24.0.0.7 およびIBM® Sumeru open JRE® 17/21） | R：新規契約向けの制限サポート `[1]` |
-| Apache Tomcat 11.0.x | R：新規契約向けの制限サポート `[1]` |
+| Apache Tomcat 10.0.x/10.1.x | R：新規契約向けの制限サポート `[1]` |
 
 1. アプリケーションサーバーで AEM 6.5 デプロイメントを開始すると、制限付きサポートに移行します。既存のお客様は AEM 6.5 にアップグレードして、引き続きアプリケーションサーバーを使用することができます。新規のお客様には、前述のレベル R の説明にあるサポート基準とサポートプログラムが適用されます。
 

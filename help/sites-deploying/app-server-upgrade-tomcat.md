@@ -5,10 +5,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 7f8de16f-9e9a-4d37-9978-d26c496b911c
-source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
+source-git-commit: b9b5492b1bf5f717dec6a48ffbe808bf75cbce6a
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 17%
+source-wordcount: '478'
+ht-degree: 16%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 17%
 ### 移行の前提条件 {#migration-prerequisites}
 
 * **最低限必要な Java バージョン**:Tomcat サーバーにOracle® JRE 17/21 がインストールされていることを確認します。
-* **Tomcat サーバー**: 6.5 LTS に必要な Tomcat サーバーのバージョンは **11.0.x** です。
+* **Tomcat サーバー**:AEM 6.5 LTS 用の Tomcat サーバーのサポートされているバージョンは、**10.0.x** と **10.1.x** です。
 
 ### アップグレードの実行 {#performing-the-upgrade}
 

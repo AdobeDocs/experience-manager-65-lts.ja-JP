@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: 5f968f5dc0696a683cc063d330c8edfba05f11ab
+source-git-commit: b9b5492b1bf5f717dec6a48ffbe808bf75cbce6a
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '843'
 ht-degree: 42%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 42%
 以下のアプリケーションサーバーのインストール手順について説明します。
 
 * [WebSphere](#websphere)
-* [Tomcat 11.0.x](#tomcat)
+* [Tomcat 10.0.x/10.1.x](#tomcat)
 
 Web アプリケーションのインストール、サーバーの設定、サーバーの起動および停止方法について詳しくは、該当するアプリケーションサーバーのドキュメントを参照してください。
 
@@ -122,7 +122,7 @@ AEM は、単一の war ファイルとしてデプロイされます。
 
 * AEM Web アプリケーションの起動
 
-#### Tomcat 11.0.x {#tomcat}
+#### Tomcat 10.0.x/10.1.x {#tomcat}
 
 デプロイ前に、上記の[概要](#general-description)をお読みください。
 
