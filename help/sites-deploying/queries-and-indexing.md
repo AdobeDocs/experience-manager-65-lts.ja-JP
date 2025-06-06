@@ -10,10 +10,10 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 432fc767-a6b8-48f8-b124-b13baca51fe8
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 7584fa1c544f9dd499b4007a9158e25b783f620c
 workflow-type: tm+mt
-source-wordcount: '2577'
-ht-degree: 97%
+source-wordcount: '2594'
+ht-degree: 96%
 
 ---
 
@@ -211,6 +211,10 @@ Lucene は、2 つのリスト（または、`n` の単語を検索する場合�
 | --- | --- | --- |
 
 複数のエントリが見つかった場合は、スコアで並べ替えられます。
+
+>[!NOTE]
+>
+>この節で説明する検索メカニズムでは、Linux の `grep` コマンドのように部分的に一致するのではなく、Lucene のインデックスを使用します。
 
 ### Lucene プロパティインデックス {#the-lucene-property-index}
 
