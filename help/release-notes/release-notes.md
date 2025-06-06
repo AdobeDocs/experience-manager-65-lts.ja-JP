@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 02b9f90dc9ef504f04a9b1f692358089d4626094
+source-git-commit: 2a83d6d4f25a866eacd87d6e2a4318b99c158ea0
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 30%
+source-wordcount: '1002'
+ht-degree: 31%
 
 ---
 
@@ -122,9 +122,7 @@ AEM 6.5.21、6.5.22、6.5.23、およびAEM 6.5 LTS GA には、既知の問題�
 * `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
 * `java.io.FileNotFoundException`
 
-このエラーが発生した場合は、AEM インスタンスを再起動するしかありません。
-
-Adobeのカスタマーサポートに連絡し、このリリースノートを参照して解決してください。
+この問題を解決するためのホットフィックス [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) が利用可能です。
 
 ### SSL のみの機能を使用したDispatcher接続の失敗 {#ssl-only-feature}
 
@@ -142,7 +140,7 @@ AEMのデプロイメントで SSL のみの機能を有効にする場合、Dis
 * SSL のみの機能が有効になっているシステム
 
 **解決策：**
-この問題が発生した場合は、Adobe カスタマーサポートにお問い合わせください。 この問題を解決するためのホットフィックス [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.0.zip) が利用可能です。 必要なホットフィックスが適用されるまで、SSL のみの機能を有効にしないでください。
+この問題が発生した場合は、Adobe カスタマーサポートにお問い合わせください。 この問題を解決するためのホットフィックス [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) が利用可能です。 必要なホットフィックスが適用されるまで、SSL のみの機能を有効にしないでください。
 
 ## 制限付き Web サイト{#restricted-sites}
 
