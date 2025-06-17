@@ -9,12 +9,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: 0a72d11c-1411-4b95-bcde-bf7458b7856e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 100%
 
 ---
+
 
 # SPA WKND チュートリアル{#spa-wknd-tutorial}
 

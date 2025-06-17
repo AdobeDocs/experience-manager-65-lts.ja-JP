@@ -10,12 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: aa4471bf-8477-4377-b474-861269f69334
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 100%
 
 ---
+
 
 # SPA と Adobe Experience Platform Launch の統合{#spa-and-adobe-experience-platform-launch-integration}
 

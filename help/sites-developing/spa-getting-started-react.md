@@ -10,12 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: 9889b0fe-f39c-42dc-bc7b-8743d68e7503
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 100%
 
 ---
+
 
 # React を使用した AEM での SPA の概要{#getting-started-with-spas-in-aem-react}
 

@@ -5,12 +5,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: 37a403c3-666c-46f3-84be-c622baeeccbc
-source-git-commit: 5405b449377e464b7311b09f2f854488e404c1fd
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 100%
 
 ---
+
 
 # SPA の詳細{#spa-deep-dives}
 
