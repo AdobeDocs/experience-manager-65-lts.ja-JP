@@ -99,7 +99,7 @@ AEM プロジェクトのセットアップを完了したら、アダプティ�
 
 ### フォームテンプレートの作成
 
-**設定ブラウザー**&#x200B;で有効になっているフォームテンプレートを使用して、アダプティブ フォームを作成できます。フォームテンプレートを有効にするには、[アダプティブフォームテンプレートの作成](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template)を参照してください。
+**設定ブラウザー**&#x200B;で有効になっているフォームテンプレートを使用して、アダプティブ フォームを作成できます。フォームテンプレートを有効にするには、[アダプティブフォームテンプレートの作成](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template)を参照してください。
 
 フォームテンプレートは、別のオーサーマシンで作成されたアダプティブフォームパッケージからアップロードすることもできます。 [aemforms-references-* パッケージ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)をインストールすると、フォームテンプレートが利用可能になります。推奨されるベストプラクティスの一部を次に示します。
 
