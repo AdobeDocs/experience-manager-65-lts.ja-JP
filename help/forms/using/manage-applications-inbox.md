@@ -1,18 +1,14 @@
 ---
 title: AEM インボックスでの Forms アプリケーションとタスクの管理
 description: AEM インボックスを使用することで、アプリケーションの送信やタスクの管理を通じて Forms 中心のワークフローを起動できます。
-contentOwner: vishgupt
-topic-tags: document_services, publish
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 5454ee3d-45fb-4ed2-b2f2-1fa9e2460759
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 99%
+source-wordcount: '1066'
+ht-degree: 98%
 
 ---
 
@@ -140,7 +136,7 @@ AEM インボックスでは、アクティブなタスクのみが表示され�
      | allowExplicitSharing | allowExplicitSharing | ブール値 |
 
 
-   * AEM パッケージを使用して、インデックスをデプロイします。[AEM アーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja)プロジェクトを使用して、デプロイ可能な AEM パッケージを作成できます。以下のサンプルコードを使用して、AEM アーキタイププロジェクトにインデックスを追加します。
+   * AEM パッケージを使用して、インデックスをデプロイします。[AEM アーキタイプ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/using)プロジェクトを使用して、デプロイ可能な AEM パッケージを作成できます。以下のサンプルコードを使用して、AEM アーキタイププロジェクトにインデックスを追加します。
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
@@ -150,8 +146,6 @@ AEM インボックスでは、アクティブなタスクのみが表示され�
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [プロパティインデックスを作成し、true に設定します](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/queries-and-indexing.html#the-property-index)。
+1. [プロパティインデックスを作成し、true に設定します](/help/sites-deploying/queries-and-indexing.md#the-property-index)。
 
-1. CRX DE でインデックスを設定するか、パッケージを介してデプロイした後、[リポジトリーのインデックスを再作成します](https://helpx.adobe.com/jp/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex)。
-
-https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/queries-and-indexing.html
+1. CRX DE でインデックスを設定するか、パッケージを介してデプロイした後、リポジトリのインデックスを再作成します。

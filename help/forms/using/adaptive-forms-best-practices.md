@@ -7,16 +7,16 @@ feature: Adaptive Forms,Foundation Components,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: b87629fa-85a9-4024-963a-4761bc093e62
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: fef6317a0faf8d7324a83a36a3b441bbda66f970
 workflow-type: tm+mt
-source-wordcount: '5538'
+source-wordcount: '5536'
 ht-degree: 99%
 
 ---
 
 # アダプティブフォームの操作のベストプラクティス {#best-practices-for-working-with-adaptive-forms}
 
-<span class="preview">[アダプティブフォームの新規作成](/help/forms/using/create-an-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
+<span class="preview">[アダプティブフォームの新規作成](/help/forms/using/create-an-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/introduction)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
 
 ## 概要 {#overview}
 
@@ -99,15 +99,15 @@ AEM プロジェクトのセットアップを完了したら、アダプティ�
 
 ### フォームテンプレートの作成
 
-**設定ブラウザー**&#x200B;で有効になっているフォームテンプレートを使用して、アダプティブ フォームを作成できます。フォームテンプレートを有効にするには、[アダプティブフォームテンプレートの作成](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=ja)を参照してください。
+**設定ブラウザー**&#x200B;で有効になっているフォームテンプレートを使用して、アダプティブ フォームを作成できます。フォームテンプレートを有効にするには、[アダプティブフォームテンプレートの作成](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template)を参照してください。
 
-フォームテンプレートは、別のオーサーマシンで作成されたアダプティブフォームパッケージからアップロードすることもできます。 [aemforms-references-* パッケージ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ja)をインストールすると、フォームテンプレートが利用可能になります。推奨されるベストプラクティスの一部を次に示します。
+フォームテンプレートは、別のオーサーマシンで作成されたアダプティブフォームパッケージからアップロードすることもできます。 [aemforms-references-* パッケージ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)をインストールすると、フォームテンプレートが利用可能になります。推奨されるベストプラクティスの一部を次に示します。
 
 * **nosamplecontent** 実行モードは、オーサーノードに対してのみ推奨され、パブリッシュノードに対しては推奨されません。
 * アダプティブフォーム、テーマ、テンプレート、クラウド設定などのアセットのオーサリングはオーサーノード上でのみ実行でき、設定済みのパブリッシュノードで公開できます。
-詳しくは、[フォームとドキュメントの公開と非公開](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)を参照してください。
+詳しくは、[フォームとドキュメントの公開と非公開](/help/forms/using/publishing-unpublishing-forms.md)を参照してください。
 * ドキュメントサービスの運用をサポートするためには、オーサリングとパブリッシュに Forms アドオンパッケージが必要であることから、これを依存関係と見なすことができます。
-Forms 関連のサンプルテンプレート、テーマおよび DOR パッケージのみ必要な場合は、[aemforms-references-* パッケージ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)からダウンロードすることができます。
+Forms 関連のサンプルテンプレート、テーマおよび DOR パッケージのみ必要な場合は、[aemforms-references-* パッケージ](/help/forms/using/upgrade-forms-osgi.md)からダウンロードすることができます。
 
 詳しくは、[アダプティブフォームのオーサリングの概要](/help/forms/using/introduction-forms-authoring.md)のベストプラクティスの節を参照してください。
 
@@ -137,7 +137,7 @@ AEM Forms が提供する[ルールエディター](/help/forms/using/rule-edito
 * 競合を回避するために、コンポーネントは固有の相対階層で参照します。例えば、`parentName.fieldName` のようになります。
 
 * 複雑なルールやよく使用するルールを扱う場合は、指定できアダプティブフォーム間で再利用できる別個のクライアントライブラリの機能としてビジネスロジックを作成することを検討します。クライアントライブラリは独立のライブラリとし、jQuery および Underscore.js 以外の外部依存はなくす必要があります。クライアントライブラリは、送信されたフォームデータの[サーバーサイドの再検証](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form)を実行するために使用することもできます。
-* アダプティブフォームが提供する一連の API を使用して、アダプティブフォームと通信したり、アダプティブフォーム上でアクションを実行したりできます。主要な API には次の項目が挙げられます。詳しくは、[アダプティブフォームの JavaScript ライブラリ API リファレンス](https://adobe.com/go/learn_aemforms_documentation_63_jp)を参照してください。
+* アダプティブフォームが提供する一連の API を使用して、アダプティブフォームと通信したり、アダプティブフォーム上でアクションを実行したりできます。主要な API には次の項目が挙げられます。詳しくは、[アダプティブフォームの JavaScript ライブラリ API リファレンス](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions)を参照してください。
 
    * `guideBridge.reset()`：フォームをリセットします。
    * `guideBridge.submit()`：フォームを送信します。
@@ -366,11 +366,11 @@ AEM プロジェクトをある環境から別の環境に移動する必要が�
 
 AEM Forms ルールエディターは、ルールを作成および管理するための視覚的なインターフェイスを備えているので、大がかりなコーディングの必要性が軽減されます。この機能は、高度なプログラミングスキルを持たないが、フォーム内のビジネスルールを定義および管理する必要があるビジネスユーザーやフォームデザイナーに特に役に立ちます。ここでは、ルールエディターで以下を行えるいくつかのユースケースについて説明します。
 
-* &#x200B;<!-- Allows you --> 大がかりなプログラミングを必要とせずにフォームのビジネスルールを定義する。
-* &#x200B;<!-- Use the Rule Editor when you need --> フォーム内に条件ロジックを実装する。これには、フォーム要素の表示／非表示の切り替え、特定の条件に基づくフィールド値の変更、フォームの動作の動的な変更などが含まれます。
-* &#x200B;<!--When you want --> フォーム送信時にデータ検証ルールを強制的に適用する。ルールエディターを使用して、検証条件を定義できます。
-* &#x200B;<!-- When you need --> フォームを外部のデータソース（FDM）またはサービスと統合する。ルールエディターを使用して、フォームの操作中にデータを取得、表示または操作するためのルールを定義できます。
-* &#x200B;<!-- If you want -->ユーザーの操作に応じた動的でインタラクティブなフォームを作成する。ルールエディターを使用すると、フォーム要素の動作をリアルタイムで制御するルールを定義できます。
+* <!-- Allows you --> 大がかりなプログラミングを必要とせずにフォームのビジネスルールを定義する。
+* <!-- Use the Rule Editor when you need --> フォーム内に条件ロジックを実装する。これには、フォーム要素の表示／非表示の切り替え、特定の条件に基づくフィールド値の変更、フォームの動作の動的な変更などが含まれます。
+* <!--When you want --> フォーム送信時にデータ検証ルールを強制的に適用する。ルールエディターを使用して、検証条件を定義できます。
+* <!-- When you need --> フォームを外部のデータソース（FDM）またはサービスと統合する。ルールエディターを使用して、フォームの操作中にデータを取得、表示または操作するためのルールを定義できます。
+* <!-- If you want -->ユーザーの操作に応じた動的でインタラクティブなフォームを作成する。ルールエディターを使用すると、フォーム要素の動作をリアルタイムで制御するルールを定義できます。
 
 ルールエディターは、AEM Forms 基盤コンポーネントとコアコンポーネントの両方で使用できます。
 

@@ -6,10 +6,10 @@ feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: 810be820-b577-4035-9fda-3d919361c58c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 99%
+source-wordcount: '1697'
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 99%
 >
 >* アドビは、このコネクターを冗長にする[!DNL Adobe Workfront]および [!DNL Adobe Experience Manager] の更新をリリースする可能性があります。この場合、お客様はこのコネクターの使用から移行する必要が生じることがあります。
 >
->* アドビでは、拡張コネクタバージョン 1.7.4 以降をサポートしています。以前のプレリリースバージョンやカスタムバージョンはサポートされていません。拡張コネクタのバージョンを確認するには、[パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html?lang=en)の左側のパネルで使用可能な `digital.hoodoo` グループに移動します。
+>* アドビでは、拡張コネクタバージョン 1.7.4 以降をサポートしています。以前のプレリリースバージョンやカスタムバージョンはサポートされていません。拡張コネクタのバージョンを確認するには、[パッケージマネージャー](/help/sites-administering/package-manager.md)の左側のパネルで使用可能な `digital.hoodoo` グループに移動します。
 >
 >* 詳しくは、[Workfront for Experience Manager Assets 拡張コネクタに関するパートナー認定試験](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html)を参照してください。試験について詳しくは、[試験ガイド](https://express.adobe.com/page/Tc7Mq6zLbPFy8/)を参照してください。
 
@@ -123,7 +123,7 @@ Adobe Workfront ドキュメントとアセット間のメタデータマッピ�
 
 * `workfront-field` は次になることができます。
 
-   * プレフィックス `DE:` で識別されるカスタムフォームフィールド 。
+   * 接頭辞 `DE:` で識別されるカスタムフォームフィールド 。
    * 名前で識別される編集可能なフィールド。フィールド名は [[!DNL Workfront] API エクスプローラー](https://experience.workfront.com/s/api-explorer)にあります。
 
 * `aem-mapped-property` は次になることができます。

@@ -8,10 +8,10 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
 exl-id: ee917b4b-fd38-4e05-8632-8efb82d9cddc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1882'
-ht-degree: 99%
+source-wordcount: '1881'
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ AEM Forms のデータ取得機能をインストールして設定する前に�
 * オーサーインスタンスとパブリッシュインスタンスに対してレプリケーションとリバースレプリケーションが設定されていること。詳しくは、[レプリケーション](/help/sites-deploying/replication.md)を参照してください。
 * UNIX ベースのシステムの場合：
 
-   * インストールメディアから次の 32 ビット版パッケージをインストールします。
+   *  インストールメディアから次の 32 ビット版パッケージをインストールします。
 
 <table>
  <tbody>
@@ -115,7 +115,7 @@ AEM Forms アドオンパッケージは AEM にデプロイされるアプリ�
    1. 「**[!UICONTROL ソリューション]**」ドロップダウンリストから「**[!UICONTROL Forms]**」を選択します。
    2. パッケージのバージョンとタイプを選択します。また、「**[!UICONTROL ダウンロードを検索]**」オプションを使用して結果をフィルターすることもできます。
 1. お使いのオペレーティングシステムに適した Forms アドオンパッケージの名前を選択し、「**[!UICONTROL EULA 利用条件に同意する]**」を選択して、「**[!UICONTROL ダウンロード]**」を選択します。
-1. [パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)を開き「**[!UICONTROL パッケージをアップロード]**」をクリックしてパッケージをアップロードします。
+1. [パッケージマネージャー](/help/sites-administering/package-manager.md)を開き「**[!UICONTROL パッケージをアップロード]**」をクリックしてパッケージをアップロードします。
 1. パッケージを選択して「**[!UICONTROL インストール]**」をクリックします。
 
    [AEM Forms リリース](https://helpx.adobe.com/jp/aem-forms/kb/aem-forms-releases.html)の記事に記載されている直接リンクからパッケージをダウンロードすることもできます。
@@ -214,7 +214,7 @@ Dispatcher は、Adobe Experience Manager のキャッシュやロードバラ�
 
 #### フォームデータモデルに SSL 通信を設定 {#configure-ssl-communcation-for-form-data-model}
 
-フォームデータモデルの SSL 通信を有効にすることができます。フォームデータモデルの SSL 通信を有効にするには、任意の AEM Forms インスタンスを起動する前に、すべてのインスタンスの Java Trust Store に証明書を追加します。次のコマンドを実行して証明書を追加することができます。 &grave;&grave;
+フォームデータモデルの SSL 通信を有効にすることができます。フォームデータモデルの SSL 通信を有効にするには、任意の AEM Forms インスタンスを起動する前に、すべてのインスタンスの Java Trust Store に証明書を追加します。次のコマンドを実行して証明書を追加することができます。 ``
 
 `keytool -import -alias <alias-name> -file <pathTo .cer certificate file> -keystore <<pathToJRE>\lib\security\cacerts>`
 

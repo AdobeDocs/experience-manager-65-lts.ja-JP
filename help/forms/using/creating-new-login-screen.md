@@ -1,18 +1,14 @@
 ---
 title: ログイン画面の作成
 description: AEM Forms Workspace または Forms Manager を例にした、LiveCycle モジュールのログインページの変更方法。
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: forms-workspace
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 3e20857b-05bb-4f44-8011-550bdaf857c5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 99%
+source-wordcount: '443'
+ht-degree: 100%
 
 ---
 
@@ -293,7 +289,7 @@ css.newLoginContentArea {
 1. `/apps/livecycle/core/content/login` に新しい画像を追加します。画像を追加するには、次の手順に従います。
 
    1. WebDAV クライアントをインストールします。
-   1. webDAV クライアントを使用して、`/apps/livecycle/core/content/login` フォルダーに移動します。詳しくは、[WebDAV アクセス](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/webdav-access.html?lang=en)を参照してください。
+   1. webDAV クライアントを使用して、`/apps/livecycle/core/content/login` フォルダーに移動します。詳しくは、[WebDAV アクセス](/help/sites-administering/webdav-access.md)を参照してください。
 
    1. 新しい画像を追加します。
 

@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 9cc83733-630a-4846-bd9e-72fd76a3286d
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '2337'
+source-wordcount: '2336'
 ht-degree: 97%
 
 ---
@@ -26,11 +26,11 @@ AEM Forms アプリケーションのソースコードは、ソフトウェア�
 
 AEM Forms アプリケーションは、iOS、Android、および Windows デバイスでサポートされます。Android 向けの AEM Forms アプリケーションは Google Play から、iOS 向けの AEM Forms アプリケーションは App Store から、Windows 向けの AEM Forms アプリケーションは Windows ストアからインストールできます。
 
-    [ ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms&amp;hl=ja)
+    [ ! [google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms&amp;hl=ja)
     
-    [ ![app_store](assets/app_store.png)](https://itunes.apple.com/jp/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
+    [ ! [app_store](assets/app_store.png)](https://itunes.apple.com/jp/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
     
-    [ ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
+    [ ! [microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 iOS、Android、または Windows デバイスに AEM Forms アプリケーションをインストール、カスタマイズ、配布する方法については、[AEM Forms アプリケーションのカスタマイズ、構築、配布](#customize-build-distribute)を参照してください。
 
@@ -191,7 +191,7 @@ AEM Forms アプリケーションソースを入手するには、以下の手�
    1. 「**[!UICONTROL ソリューション]**」ドロップダウンリストから「**[!UICONTROL Forms]**」を選択します。
    2. パッケージのバージョンとタイプを選択します。また、「**[!UICONTROL ダウンロードを検索]**」オプションを使用して結果をフィルターすることもできます。
 1. お使いのオペレーティングシステムに適した Forms アドオンパッケージの名前を選択し、「**[!UICONTROL EULA 利用条件に同意する]**」を選択して、「**[!UICONTROL ダウンロード]**」を選択します。
-1. [パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)を開き「**[!UICONTROL パッケージをアップロード]**」をクリックしてパッケージをアップロードします。
+1. [パッケージマネージャー](/help/sites-administering/package-manager.md)を開き「**[!UICONTROL パッケージをアップロード]**」をクリックしてパッケージをアップロードします。
 1. パッケージを選択して、「**[!UICONTROL インストール]**」をクリックします。
 
 **iOS の場合**：

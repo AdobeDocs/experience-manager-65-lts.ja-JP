@@ -7,10 +7,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 exl-id: 9c05a71b-70fa-4470-afdf-823fd5da5ad1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '4534'
-ht-degree: 99%
+source-wordcount: '4533'
+ht-degree: 100%
 
 ---
 
@@ -88,7 +88,7 @@ ht-degree: 99%
    1. 「**[!UICONTROL ソリューション]**」ドロップダウンリストから「**[!UICONTROL Forms]**」を選択します。
    2. パッケージのバージョンとタイプを選択します。また、「**[!UICONTROL ダウンロードを検索]**」オプションを使用して結果をフィルターすることもできます。
 1. **we-gov-forms.pkg.all-&lt;version>.zip** パッケージ名を選択し、「**[!UICONTROL EULA 条項に同意]**」を選択して、「**[!UICONTROL ダウンロード]**」を選択します。
-1. [パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)を開き「**[!UICONTROL パッケージをアップロード]**」をクリックしてパッケージをアップロードします。
+1. [パッケージマネージャー](/help/sites-administering/package-manager.md)を開き「**[!UICONTROL パッケージをアップロード]**」をクリックしてパッケージをアップロードします。
 1. パッケージを選択して、「**[!UICONTROL インストール]**」をクリックします。
 
    ![we gov forms パッケージ](assets/wegov_forms_package.jpg)
@@ -320,7 +320,7 @@ ht-degree: 99%
 
    >[!NOTE]
    >
-   >「Ctrl + C」コマンドを使用して SDK を再起動することをお勧めします。Java プロセスの停止など、別の方法を使用して AEM SDK を再起動すると、AEM 開発環境で不整合が生じる場合があります。
+   > 「Ctrl + C」コマンドを使用して SDK を再起動することをお勧めします。Java プロセスの停止など、別の方法を使用して AEM SDK を再起動すると、AEM 開発環境で不整合が生じる場合があります。
 
 #### フォームデータモデル（Derby）のテスト {#test-fdm-derby}
 
@@ -511,7 +511,7 @@ Manager の左上の ／>ツール／>セキュリティ／ >Adobe IMS設定を�
 
 1. 統合を作成をクリックします。
 
-1. API にアクセスを選択します。
+1.  API にアクセスを選択します。
 
 1. 正しいグループ（右上のドロップダウンリスト）に所属していることを確認します。
 

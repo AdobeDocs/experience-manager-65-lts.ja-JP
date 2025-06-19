@@ -1,17 +1,14 @@
 ---
 title: OSGi 上の Forms 中心のワークフロー - ステップリファレンス
 description: OSGi ステップ上の Forms 中心のワークフローにより、アダプティブフォームをベースとしたワークフローを迅速に構築できます。
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: publish
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: User, Developer
 exl-id: 13d84b04-dab6-453f-bc0d-62a5f557c4f2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '7640'
-ht-degree: 100%
+source-wordcount: '7604'
+ht-degree: 99%
 
 ---
 
@@ -19,14 +16,14 @@ ht-degree: 100%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ja) |
+| AEM as a Cloud Service | [ここをクリックしてください](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference) |
 | AEM 6.5 | この記事 |
 
 ワークフローモデルを使用して、ビジネスロジックを、自動化された繰り返しプロセスに変換します。モデルは、一連の手順を定義して実行するのに役立ちます。ワークフローを一時的なものにするか、複数のリソースを使用するかなど、モデルのプロパティを定義することもできます。[ビジネスロジックを達成するために、様々な AEM ワークフローステップをモデルに含めることができます](/help/sites-developing/workflows-models.md#extending-aem)。
 
 ## Forms のワークフローステップ {#forms-workflow-steps}
 
-Forms ワークフローステップは、AEM ワークフローで AEM Forms 固有の操作を実行します。これらのステップを使用すると、OSGi でアダプティブフォームをベースとした Forms 中心のワークフローを迅速に構築できます。これらのワークフローは、基本的なレビューワークフローおよび承認ワークフローの開発、ファイアウォール内およびファイアウォール間のビジネスプロセスの開発に使用できます。Forms Workflow ステップを使用して、ドキュメントサービスを開始したり Adobe Sign 署名ワークフローと統合したり、その他の AEM Forms の操作を実行することもできます。これらのステップをワークフローで使用するには、[AEM Forms アドオン](https://www.adobe.com/go/learn_aemforms_documentation_63_jp)が必要です。
+Forms ワークフローステップは、AEM ワークフローで AEM Forms 固有の操作を実行します。これらのステップを使用すると、OSGi でアダプティブフォームをベースとした Forms 中心のワークフローを迅速に構築できます。これらのワークフローは、基本的なレビューワークフローおよび承認ワークフローの開発、ファイアウォール内およびファイアウォール間のビジネスプロセスの開発に使用できます。また、Forms Workflowのステップを使用して、ドキュメントサービスの開始、Adobe Sign 署名ワークフローとの統合およびその他のAEM Formsの操作を実行することもできます。
 
 Forms 中心のワークフローステップは、AEM ワークフローで AEM Forms 固有の操作を実行します。これらのステップを使用すると、OSGi でアダプティブフォームをベースとした Forms 中心のワークフローを迅速に構築できます。これらのワークフローを使用すると、レビューや承認の基本的なワークフローを開発したり、組織内およびファイアウォールをまたがるビジネスプロセスを開発したりすることができます。
 
@@ -89,7 +86,7 @@ Forms 中心のワークフローステップは、AEM ワークフローで AEM
    * **次を使用してレイアウトテンプレートを保存：** ペイロードに対する相対パスを使用してレイアウトテンプレートを保存するか、ドキュメントデータタイプの変数に格納します。[レイアウトテンプレート](../../forms/using/layout-design-details.md) は、Forms Designer を使用して作成した XDP ファイルを参照します。このオプションは、「タイプ」ドロップダウンリストから「インタラクティブな通信エージェント UI」を選択した場合にのみ使用できます。
 
 * 「**担当者／割り当て」オプション**：タスクをユーザーに割り当てる方法を指定します。参加者選択スクリプトを使用してタスクを動的にユーザーまたはグループに割り当てることも、タスクを特定の AEM ユーザーまたはグループに割り当てることもできます。
-* **参加者選択**：このオプションは、「割り当てオプション」フィールドで「**ユーザーまたはグループに動的に割り当て**」オプションを選択した場合に使用できます。ユーザーまたはグループを動的に選択するには、ECMAScript またはサービスを使用できます。詳しくは、[ユーザーへのワークフローの動的な割り当て](https://helpx.adobe.com/jp/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html)および[カスタムの Adobe Experience Manager 動的参加者ステップの作成](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja&amp;CID=RedirectAEMCommunityKautuk)を参照してください。
+* **参加者選択**：このオプションは、「割り当てオプション」フィールドで「**ユーザーまたはグループに動的に割り当て**」オプションを選択した場合に使用できます。ECMAScript またはサービスを使用して、ユーザーまたはグループを動的に選択できます。
 
 * **参加者：**&#x200B;このフィールドは、「**参加者選択**」フィールドで「**[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]**」オプションが選択されている場合に使用できます。このフィールドでは、「RandomParticipantChooser」オプションのユーザーまたはグループを選択できます。
 
