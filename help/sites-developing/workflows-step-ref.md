@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e82d97c2-c26a-48df-9210-47dc017c68c8
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '3227'
+source-wordcount: '3226'
 ht-degree: 99%
 
 ---
@@ -186,7 +186,7 @@ function check(){
 
 >[!NOTE]
 >
->詳しくは、[OR 分岐ステップ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable)を参照してください。
+>詳しくは、[OR 分岐ステップ](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable)を参照してください。
 
 ![OR 分割を使用したブランチ](assets/variables_orsplit_new.png)
 
@@ -283,7 +283,6 @@ function check(){
 * **データをペイロードと共に保存**
 
    * ウィジェットデータをワークフローペイロードのプロパティとして保存するには、ウィジェットノードの name プロパティの値に次の形式を使用します。
-
      `./jcr:content/nodename`
 
    * データは、ペイロードのノードの `nodename` プロパティに保存されます。ノードにこのプロパティが含まれていない場合は、プロパティが作成されます。
@@ -292,7 +291,6 @@ function check(){
 * **データを作業項目と共に保存**
 
    * ウィジェットデータを作業項目のメタデータのプロパティとして保存するには、name プロパティの値に次の形式を使用します。
-
      `nodename`
 
    * データは、作業項目 `metadata` の `nodename` プロパティに保存されます。同じペイロードを持つダイアログを使用しても、データは保存されます。

@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 2a94ea8d-2919-4f30-be31-ce559493805d
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 99%
@@ -64,7 +64,7 @@ AEM には、オーサーインスタンスのコンソール（および[ペー
 
 >[!NOTE]
 >
->ヒントおよびツールについて詳しくは、ナレッジベースの記事「[Troubleshooting AEM TouchUI issues](https://helpx.adobe.com/jp/experience-manager/kb/troubleshooting-aem-touchui-issues.html)」を参照してください。
+>ヒントおよびツールについて詳しくは、ナレッジベースの記事「[Troubleshooting AEM TouchUI issues](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935)」を参照してください。
 
 ## コンソールのデフォルト表示のカスタマイズ {#customizing-the-default-view-for-a-console}
 
@@ -151,7 +151,6 @@ AEM には、オーサーインスタンスのコンソール（および[ペー
 1. 省略可能：
 
    * 追加データを挿入する場合は、以下を持つ [PageInforProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) を記述する必要があります。
-
      `pageInfoProviderType` property.
 
    例として、（GitHub から）以下に添付するクラス／バンドルを参照してください。

@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 46300f72-730e-444c-8677-352a890e9910
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '2444'
 ht-degree: 99%
@@ -43,8 +43,8 @@ ht-degree: 99%
 
 マルチサイト管理は、次のパッケージで構成されています。
 
-* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
-* [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
+* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/package-summary.html)
+* [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/commons/package-summary.html)
 
 主な MSM API オブジェクトは、次のようにやり取りします（[使用される用語](/help/sites-administering/msm.md#terms-used)も参照してください）。
 
@@ -208,15 +208,12 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 1. このノードに次のプロパティを追加します。
    * **名前**：`jcr:title`
-
      **型**：`String`
      **値**：UI に表示される識別タイトルです。
    * **名前**：`jcr:description`
-
      **型**：`String`
      **値**：オプションの説明です。
    * **名前**：`cq:trigger`
-
      **型**：`String`
      **値**：[ロールアウトトリガー](/help/sites-administering/msm-sync.md#rollout-triggers)を使用します。 次から選択します。
       * `rollout`
@@ -689,7 +686,6 @@ MSM は、保存されている言語コードと国コードのリストを使�
       * **タイプ**：`String`
 
       * **値**：対象のプロパティ名を保持します（また、`name` プロパティの値と比較できます）。例として、次を参照してください。
-
         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 `cq-msm-lockable` が定義されている場合は、次の方法でチェーンの解除またはクローズを MSM と連携できます。

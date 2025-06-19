@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: a87c571e-7afb-42e7-836c-170dcfb0d03b
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2033'
+source-wordcount: '2032'
 ht-degree: 99%
 
 ---
@@ -32,7 +32,7 @@ REST API は、JSON で送信される応答を使用して、HTTP 経由で同�
 
 >[!NOTE]
 >
->QueryBuilder API は、JCR API を使用して構築されます。また、OSGi バンドル内から JCR API を使用して、Adobe Experience Manager JCR でクエリを実行することもできます。詳しくは、[JCR API を使用した Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/access-jcr.html) を参照してください。
+>QueryBuilder API は、JCR API を使用して構築されます。また、OSGi バンドル内から JCR API を使用して、Adobe Experience Manager JCR でクエリを実行することもできます。詳しくは、[JCR API を使用した Adobe Experience Manager](/help/sites-developing/access-jcr.md) を参照してください。
 
 ## Gem セッション {#gem-session}
 
@@ -225,7 +225,7 @@ group.2_path=/content/geometrixx/en/company/bod
 
 >[!NOTE]
 >
->異なる述語に対してであっても、単一のクエリ内で同じ数値のプレフィックスを使用することはできません。
+>異なる述語に対してであっても、単一のクエリ内で同じ数値の接頭辞を使用することはできません。
 
 ### プロパティの検索 {#search-for-properties}
 
@@ -251,7 +251,7 @@ property.value=/apps/geometrixx/templates/homepage
 
 ### 複数のプロパティの検索 {#search-for-multiple-properties}
 
-property 述語を複数回使用する場合、ここでも、数字のプレフィックスを付加する必要があります。
+property 述語を複数回使用する場合、ここでも、数字の接頭辞を付加する必要があります。
 
 `http://localhost:4502/bin/querybuilder.json?1_property=jcr%3acontent%2fcq%3atemplate&1_property.value=%2fapps%2fgeometrixx%2ftemplates%2fhomepage&2_property=jcr%3acontent%2fjcr%3atitle&2_property.value=English&type=cq%3aPage`
 
@@ -324,7 +324,7 @@ p.properties
 
 `http://localhost:4502/bin/querybuilder.json?p.hits=selective&property=jcr%3atitle&property.value=Triangle`
 
-[`http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle) [p.hits=selective&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.nodedepth=5&amp;p.properties=sling%3aresourceType%20jcr%3apath&amp;property=jcr%3atitle&amp;property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle
+[`http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.properties=sling%3aresourceType%20jcr%3aprimaryType&property=jcr%3atitle&property.value=Triangle) [p.hits=selective&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.nodedepth=5&p.properties=sling%3aresourceType%20jcr%3apath&property=jcr%3atitle&property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle
 
 ```xml
 property=jcr:title
@@ -362,7 +362,7 @@ p.nodedepth=5
 
 [`PredicateEvaluator` クラスの Javadoc](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/PredicateEvaluator.html) も参照してください。これらのクラスの Javadoc ドキュメントには、使用できるプロパティのリストが含まれています。
 
-クラス名のプレフィックス（例えば [`SimilarityPredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html) の &quot;`similar`&quot; など）は、クラスの&#x200B;*プリンシパルプロパティ*&#x200B;です。このプロパティは、クエリ内で使用する述語の名前（小文字で使用）でもあります。
+クラス名の接頭辞（例えば [`SimilarityPredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html) の &quot;`similar`&quot; など）は、クラスの&#x200B;*プリンシパルプロパティ*&#x200B;です。このプロパティは、クエリ内で使用する述語の名前（小文字で使用）でもあります。
 
 このようなプリンシパルプロパティの場合は、クエリを短縮して、完全修飾したバリアント `similar.similar=/content/en` の代わりに `similar=/content/en` を使用できます。完全修飾形式は、クラスのプリンシパルプロパティではないすべてのプロパティに対して使用する必要があります。
 
@@ -424,7 +424,7 @@ p.nodedepth=5
 
 >[!NOTE]
 >
->QueryBuilder API を使用する OSGi バンドルを作成し、その OSGi バンドルを Adobe Experience Manager アプリケーション内で使用する方法については、[Query Builder API を使用する Adobe CQ OSGi バンドルの作成](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja&amp;CID=RedirectAEMCommunityKautuk)を参照してください。
+>QueryBuilder API を使用する OSGi バンドルを作成し、その OSGi バンドルを Adobe Experience Manager アプリケーション内で使用する方法については、[Query Builder API を使用する Adobe CQ OSGi バンドルの作成](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja&CID=RedirectAEMCommunityKautuk)を参照してください。
 
 同じクエリが、Query Builder（JSON）サーブレットを使用して HTTP を介して実行されます。
 

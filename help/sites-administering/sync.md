@@ -10,7 +10,7 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b7b1bce6-9cea-4f13-955f-f9e361f298bf
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '2224'
 ht-degree: 99%
@@ -33,7 +33,7 @@ AEM 6.1 では、ユーザー同期を有効にすると、ユーザーデータ
 
 ## Sling 配布 {#sling-distribution}
 
-ユーザーデータは [ACL](/help/sites-administering/security.md) と共に Oak JCR の下のレイヤーの [Oak Core](/help/sites-deploying/platform.md) に格納され、[Oak API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-tree.html) を使用してアクセスできます。アップデートの頻度が少ない場合は、[Sling コンテンツ配布](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md)（Sling 配布）を使用してユーザーデータを他のパブリッシュインスタンスに同期するのが適切です。
+ユーザーデータは [ACL](/help/sites-administering/security.md) と共に Oak JCR の下のレイヤーの [Oak Core](/help/sites-deploying/platform.md) に格納され、[Oak API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-summary.html) を使用してアクセスできます。アップデートの頻度が少ない場合は、[Sling コンテンツ配布](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md)（Sling 配布）を使用してユーザーデータを他のパブリッシュインスタンスに同期するのが適切です。
 
 従来のレプリケーションと比較して、Sling 配布を使用してユーザーを同期する利点は次のとおりです。
 
@@ -98,7 +98,7 @@ AEM 6.1 では、ユーザー同期を有効にすると、ユーザーデータ
 
 ![Apache Sling Distribution Agent](assets/chlimage_1-20.png)
 
-### 2. 承認済みユーザーの作成 {#createauthuser}
+### &#x200B;2. 承認済みユーザーの作成 {#createauthuser}
 
 **権限の設定**
 
@@ -280,7 +280,7 @@ AEM 6.1 では、ユーザー同期を有効にすると、ユーザーデータ
 
 * 「`Save`」を選択します。
 
-### 8. 一意の Sling ID {#unique-sling-id}
+### &#x200B;8. 一意の Sling ID {#unique-sling-id}
 
 >[!CAUTION]
 >
@@ -303,11 +303,9 @@ Sling ID がパブリッシュファームの複数のパブリッシュイン�
    * *sling.id.file* という名前のファイルを検索して削除する
 
       * Linux® システムの例を次に示します。
-
         `rm -i $(find . -type f -name sling.id.file)`
 
       * Windows システムの例を次に示します。
-
         `use windows explorer and search for *sling.id.file*`
 
 1. パブリッシュインスタンスを開始する

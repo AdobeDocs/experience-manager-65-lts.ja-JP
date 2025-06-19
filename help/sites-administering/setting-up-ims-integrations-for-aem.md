@@ -4,7 +4,7 @@ description: AEM の IMS 統合の設定方法について説明します
 feature: Security
 role: Admin
 exl-id: 05ba39fc-4b53-43c0-9a9f-7da3293b1ca2
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 95%
@@ -50,11 +50,11 @@ Adobe Experience Manager（AEM）は、他の多くのアドビソリューシ�
 
 * 新しい OAuth 資格情報の作成：
 
-   * [OAuth サーバー間資格情報実装ガイド](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+   * [OAuth サーバー間資格情報実装ガイド](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
 * 既存の JWT 資格情報の OAuth 資格情報への移行：
 
-   * [サービスアカウント（JWT）資格情報から OAuth サーバー間資格情報への移行](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
+   * [サービスアカウント（JWT）資格情報から OAuth サーバー間資格情報への移行](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
 
 次に例を示します。
 
@@ -68,7 +68,7 @@ OAuth を使用して新しい Adobe IMS 統合を作成するには：
 
 1. 「**作成**」を選択します。
 
-1. [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/) の詳細に基づいて設定を完了します。次に例を示します。
+1. [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) の詳細に基づいて設定を完了します。次に例を示します。
 
    ![OAuth 設定の作成](assets/ims-create-oauth-configuration.png)
 

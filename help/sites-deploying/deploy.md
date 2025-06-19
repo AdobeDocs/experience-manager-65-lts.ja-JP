@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: 79551cfa77420fae965ecac8060fd2005beff558
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1363'
 ht-degree: 93%
 
 ---
@@ -233,10 +233,6 @@ quickstart jar を初めて起動すると、同じディレクトリの `crx-qu
 インスタンスを UI からインストールした場合は、ブラウザーウィンドウが自動的に開き、デスクトップアプリケーションウィンドウも開いて、インスタンスのホストおよびポートと、オン／オフのスイッチが表示されます。
 
 ![起動画面](assets/screen_shot_.png)
-
->[!NOTE]
->
->symlinks を使用している場合は、[symlink に関する問題](https://helpx.adobe.com/jp/experience-manager/kb/changing-symlink.html)を確認してください。
 
 ### 起動と停止 {#starting-and-stopping}
 

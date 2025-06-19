@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: b9b5492b1bf5f717dec6a48ffbe808bf75cbce6a
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2981'
+source-wordcount: '2960'
 ht-degree: 94%
 
 ---
@@ -450,8 +450,7 @@ XMP の書き戻しは、次のプラットフォームおよびファイル形�
 
 * **オペレーティングシステム：**
 
-   * Linux®（64 ビットシステムでの 32 ビットおよび 32 ビットアプリケーションのサポート）。32 ビットのクライアントライブラリをインストールする手順については、[64 ビット RedHat® Linux® で XMP の抽出と書き戻しを有効にする方法](https://helpx.adobe.com/jp/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)を参照してください。
-
+   * Linux® （64 ビットシステムでの 32 ビットおよび 32 ビットアプリケーションのサポート）。
    * Windows Server
    * macOS X（64 ビット）
 

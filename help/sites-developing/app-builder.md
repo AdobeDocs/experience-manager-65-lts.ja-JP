@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: f9b3df58-c94b-4143-aeec-85ff031bac2e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '519'
 ht-degree: 99%
 
 ---
@@ -26,11 +26,11 @@ App Builder を使用すると、次のような様々なユースケースで A
 * コアサービス拡張 - カスタム機能およびビジネスロジックを使用してデフォルトの動作を拡張することで、コアアプリケーション機能を拡張します。
 * ユーザーエクスペリエンス拡張 - コアエクスペリエンスを拡張してビジネス要件をサポートするか、顧客固有のデジタルプロパティ、ストアフロントおよびバックオフィスアプリを構築します。
 
-Application Builder は、2020 年夏以降、アドビのデベロッパープレビューを通じて、法人のお客様やパートナーが利用できるようになりました。App Builder の一般リリース（GA）は 2021年12月に予定されています。アドビでは、アドビの[体験版プログラム](https://developer.adobe.com/app-builder/trial/)を通じて開発者の方に Application Builder を試していただくことをお勧めします。
+Application Builder は、2020 年夏以降、アドビのデベロッパープレビューを通じて、法人のお客様やパートナーが利用できるようになりました。App Builder の一般リリース（GA）は 2021年12月に予定されています。アドビでは、アドビの[体験版プログラム](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/set-up#access-and-credentials)を通じて開発者の方に Application Builder を試していただくことをお勧めします。
 
 >[!NOTE]
 >
->App Builder の使用を検討する AEM as a Cloud Service ユーザーは、[Adobe Developer Application Builder を使用した Adobe Experience Manager as a Cloud Service の拡張](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/extending-aem/app-builder.html)を参照してください。
+>App Builder の使用を検討する AEM as a Cloud Service ユーザーは、[Adobe Developer Application Builder を使用した Adobe Experience Manager as a Cloud Service の拡張](/help/sites-developing/app-builder.md)を参照してください。
 
 ## アーキテクチャ {#architecture}
 
@@ -45,13 +45,13 @@ Application Builder は、2020 年夏以降、アドビのデベロッパープ�
 
 ![アーキテクチャ](assets/appbuilder-architecture.jpg)
 
-App Builder のアーキテクチャについて詳しくは、[アーキテクチャの概要](https://developer.adobe.com/app-builder/docs/guides/)を参照してください。
+App Builder のアーキテクチャについて詳しくは、[アーキテクチャの概要](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/architecture_overview/architecture-overview)を参照してください。
 
 ## App Builder の基本を学ぶ {#additional-resources}
 
 App Builder の使用を開始する際に役立つように、参考になる一連のドキュメントを作成しました。
 
-* [App Builder の基礎知識](https://developer.adobe.com/app-builder/docs/getting_started/)
+* [App Builder の基礎知識](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app)
 
 ## ドキュメントを利用した学習の続行 {#appbuilder-documentation}
 

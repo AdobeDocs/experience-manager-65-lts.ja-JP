@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: b30bb90b-adca-4d3a-ae15-bede70e1c39a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '683'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -56,7 +56,7 @@ Adobe Experience Manager（AEM）でページを編集する場合は、開発�
 >
 >詳しくは以下を参照してください。
 >
->* ヒントおよびツールの詳細については、ナレッジベースの記事「[AEM TouchUI の問題のトラブルシューティング](https://helpx.adobe.com/jp/experience-manager/kb/troubleshooting-aem-touchui-issues.html)」。
+>* ヒントおよびツールの詳細については、ナレッジベースの記事「[AEM TouchUI の問題のトラブルシューティング](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935)」。
 >* [AEM 6.0 の開発者モード](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=ja)に関する AEM Gems セッション。
 >
 

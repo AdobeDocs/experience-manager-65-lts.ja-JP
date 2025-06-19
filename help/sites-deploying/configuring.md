@@ -1,18 +1,14 @@
 ---
 title: 設定の基本概念
 description: 独自の要件に合わせた Adobe Experience Manager の設定方法を説明します。
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: configuring
-content-type: reference
 feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 338ea82e-c248-4118-9d42-e268d6396e65
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2093'
-ht-degree: 100%
+source-wordcount: '2085'
+ht-degree: 98%
 
 ---
 
@@ -145,7 +141,7 @@ AEM では、以下の設定が可能です。
 
 例えば、これらのマッピングを使用すると次のことが可能です。
 
-* すべてのリクエストに `/content` というプレフィックスを付けて、web サイトの訪問者に内部構造が表示されないようにする。
+* すべてのリクエストに `/content` という接頭辞を付けて、web サイトの訪問者に内部構造が表示されないようにする。
 * Web サイトの `/content/en/gateway` ページへの要求がすべて `https://gbiv.com/` にリダイレクトされるように、リダイレクトを定義する。
 
 詳しくは、[リソースマッピング](/help/sites-deploying/resource-mapping.md)を参照してください。
@@ -184,7 +180,7 @@ Dispatcher は、Adobe Experience Manager のキャッシュ、ロードバラ�
 
 ### AEM LiveCycle Connector の設定 {#configuring-aem-livecycle-connector}
 
-AEM ドキュメントサービスおよび AEM ドキュメントセキュリティのリリースにより、LiveCycle ドキュメントサービスを呼び出して XFA フォームをレンダリングしたり、ドキュメントを PDF に変換したり、ドキュメントをポリシー保護したりできるようになりました。詳しくは、[AEM LiveCycle コネクタ](https://helpx.adobe.com/jp/livecycle/help/aem/aem-livecycle-connector.html)を参照してください。
+AEM ドキュメントサービスおよびAEM ドキュメントセキュリティのリリースにより、AEMでは、LiveCycle ドキュメントサービスを呼び出して XFA フォームをレンダリングしたり、ドキュメントをPDFに変換したり、ドキュメントをポリシー保護したりできるようになりました。
 
 ### ジョブのオフロードとトポロジの管理 {#job-offloading-and-topology-administration}
 
