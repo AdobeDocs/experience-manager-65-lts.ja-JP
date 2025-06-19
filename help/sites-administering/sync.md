@@ -303,9 +303,11 @@ Sling ID がパブリッシュファームの複数のパブリッシュイン�
    * *sling.id.file* という名前のファイルを検索して削除する
 
       * Linux® システムの例を次に示します。
+
         `rm -i $(find . -type f -name sling.id.file)`
 
       * Windows システムの例を次に示します。
+
         `use windows explorer and search for *sling.id.file*`
 
 1. パブリッシュインスタンスを開始する
