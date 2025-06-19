@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 330f5cc5-1af4-4777-b386-b0755e6781df
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d37df3dc09122909adbb62ede6634939af105e06
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 100%
+source-wordcount: '782'
+ht-degree: 98%
 
 ---
 
@@ -55,7 +55,7 @@ AEM の[ワークフローモデル](/help/sites-developing/workflows.md#model)�
 
 >[!CAUTION]
 >
->実行されるステップは、*インスタンスが生成されるときに*&#x200B;ワークフローで定義されます。詳しくは、[ワークフローの開発](/help/sites-developing/workflows.md#model)を参照してください。
+>実行されるステップは、*インスタンスが生成されるときに*&#x200B;ワークフローで定義されます。詳しくは、[ ワークフローの開発と拡張 – モデル ](/help/sites-developing/workflows.md#model) を参照してください。
 
 ワークフローインスタンスのライフサイクルを次に示します。
 
