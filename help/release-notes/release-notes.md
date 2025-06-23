@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 2a83d6d4f25a866eacd87d6e2a4318b99c158ea0
+source-git-commit: d353cde4e9cc2af738e600d5a9b74928d98496cb
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 31%
+source-wordcount: '1019'
+ht-degree: 34%
 
 ---
 
@@ -53,6 +53,10 @@ Eclipse Jetty 11.0.x は、Quickstart のサーブレットエンジンとして
 設定要件について詳しくは、[インストール手順](/help/sites-deploying/custom-standalone-install.md)を参照してください。
 
 手順について詳しくは、[ アップグレードドキュメント ](/help/sites-deploying/upgrade.md) を参照してください。
+
+>[!NOTE]
+>
+> AEM 6.5 LTS の新規インストールの場合、インデックス定義は個別にインストールする必要があります。 詳しくは、[ この ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions) を参照してください。
 
 ## サポートされているプラットフォーム {#supported-platforms}
 
@@ -113,7 +117,7 @@ Adobeは、製品の機能を継続的にレビューし、古い機能を最新
 
 ### AEM 6.5.21-6.5.23 およびAEM 6.5 LTS GA の JSP スクリプティングバンドルの問題
 
-AEM 6.5.21、6.5.22、6.5.23、およびAEM 6.5 LTS GA には、既知の問題を含む `org.apache.sling.scripting.jsp:2.6.0` バンドルが付属しています。 この問題は、通常、AEM インスタンスが多数の同時リクエストを処理する際に高負荷で発生します。
+AEM 6.5.21、6.5.22、6.5.23、およびAEM 6.5 LTS GA には、既知の問題を含む `org.apache.sling.scripting.jsp:2.6.0` バンドルが付属しています。 この問題は、通常、AEM インスタンスが多数の同時リクエストを処理する際の高負荷時に発生します。
 
 この問題が発生すると、`org.apache.sling.scripting.jsp:2.6.0` への参照と共に、次の例外のいずれかがエラーログに表示される場合があります。
 

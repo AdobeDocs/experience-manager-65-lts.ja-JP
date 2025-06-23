@@ -10,10 +10,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 8f7bbc3887601e10cf29e99ee54959a10c8a3f98
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 81%
+source-wordcount: '1110'
+ht-degree: 82%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 81%
 
 ## インデックスの定義 {#index-definitions}
 
-AEM サービスパック 22 以前に提供されたAEM 6.5 サービスパックでリリースされた必須のインデックス定義がインストールされていることを確認してください。 （詳しくは、[AEM 6.5 servicepack リリースノート ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/release-notes/release-notes) を参照してください）。
+最新のAEM 6.5 サービスパックでリリースされた必要なインデックス定義がインストールされていることを確認してください。 （詳しくは、[AEM 6.5 servicepack リリースノート ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/release-notes/release-notes) を参照してください）。
 
 ## 十分なディスク領域の確保 {#ensure-sufficient-disk-space}
 
