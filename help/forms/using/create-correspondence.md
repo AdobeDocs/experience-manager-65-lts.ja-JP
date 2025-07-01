@@ -299,7 +299,7 @@ ht-degree: 99%
 
 1. パブリッシュインスタンスで、[!UICONTROL Adobe Manager web コンソールの設定]を開きます。デフォルトの URL は、`https://publish-server:port/system/console/configMgr` です。
 
-1.  **[!UICONTROL Correspondence Management - オーサーインスタンスバージョンの復元設定]**&#x200B;コンポーネントを検索して開きます。
+1. **[!UICONTROL Correspondence Management - オーサーインスタンスバージョンの復元設定]**&#x200B;コンポーネントを検索して開きます。
 
 1. 「**[!UICONTROL VersionRestoreManager Author URL]**」フィールドを見つけて、オーサーインスタンスの URL を指定します。
 
