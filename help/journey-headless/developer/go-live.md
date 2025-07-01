@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 exl-id: 8837e7cd-c949-46cc-9c39-3c7a82cc1daf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 84ef35149332330e040b8d94cae151708e3c6829
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1801'
 ht-degree: 99%
 
 ---
@@ -217,7 +217,7 @@ AEM でヘッドレスストアを停止する必要はありません。[ジャ
 
 ## その他のリソース {#additional-resources}
 
-* [AEM 開発ガイド](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/introduction/the-basics.html)
+* [AEM開発ガイド](/help/sites-developing/the-basics.md)
 
 * [WKND チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja)
 
@@ -227,7 +227,7 @@ AEM でヘッドレスストアを停止する必要はありません。[ジャ
 
    * [CDN キャッシュの制御](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja#controlling-a-cdn-cache)
 
-   * [CDN Rewriter](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/osgi-configuration-settings.html) の設定（*CDN Rewriter の検索*）
+   * [CDN Rewriter](/help/sites-deploying/osgi-configuration-settings.md) の設定（*CDN Rewriter の検索*）
 
 * [ヘッドレス CMS としての AEM の概要](/help/sites-developing/headless/introduction.md)
 * [AEM 開発者ポータル](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)

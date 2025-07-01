@@ -1,15 +1,14 @@
 ---
 title: ' [!DNL Assets]  と  [!DNL InDesign Server] の統合'
 description: ' [!DNL Adobe Experience Manager Assets] と [!DNL Adobe InDesign Server] を統合する方法について説明します。'
-contentOwner: AG
 role: Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: f0db5ec6-45ea-418e-ae5f-e6e307a40a38
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 8489976fbcee595ee8230c530597523e7cd0f6b7
 workflow-type: tm+mt
-source-wordcount: '1555'
-ht-degree: 100%
+source-wordcount: '1548'
+ht-degree: 98%
 
 ---
 
@@ -20,11 +19,11 @@ ht-degree: 100%
 * プロキシ：特定の処理タスクのロードを分配するために使用します。プロキシとは、プロキシワーカーと通信して特定のタスクを実行し、他の [!DNL Experience Manager] インスタンスと通信して結果を送信する [!DNL Experience Manager] インスタンスです。
 * プロキシワーカー：特定のタスクを定義し管理するために使用します。これらは幅広いタスクを取り扱うことができます。例えば、[!DNL InDesign Server] を使用してファイルを処理することができます。
 
-[!DNL Adobe InDesign] で作成したファイルを [!DNL Experience Manager Assets] に完全にアップロードするために、プロキシが使用されます。このプロキシはプロキシワーカーを使用して [!DNL Adobe InDesign Server] と通信します。そこでは、メタデータを抽出して [!DNL Experience Manager Assets] 用の様々なレンディションを生成するための[スクリプト](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)が実行されます。プロキシワーカーは、クラウド設定における [!DNL InDesign Server] インスタンスと [!DNL Experience Manager] インスタンスとの双方向通信を実現します。
+[!DNL Adobe InDesign] で作成したファイルを [!DNL Experience Manager Assets] に完全にアップロードするために、プロキシが使用されます。このプロキシはプロキシワーカーを使用して [!DNL Adobe InDesign Server] と通信します。そこでは、メタデータを抽出して [!DNL Experience Manager Assets] 用の様々なレンディションを生成するための[スクリプト](https://helpx.adobe.com/indesign/using/scripting.html)が実行されます。プロキシワーカーは、クラウド設定における [!DNL InDesign Server] インスタンスと [!DNL Experience Manager] インスタンスとの双方向通信を実現します。
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] は、2 つの異なる製品として提供されます。[Adobe InDesign](https://www.adobe.com/jp/products/indesign.html) は、印刷およびデジタル配布用のページレイアウトのデザインに使用するデスクトップアプリケーションです。[Adobe InDesign Server](https://www.adobe.com/jp/products/indesignserver.html) は、[!DNL InDesign] で作成した内容に基づいて、ドキュメントをプログラムによって自動生成できるようにします。これは、[ExtendScript](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) エンジンへのインターフェイスを提供するサービスとして動作します。スクリプトは、[!DNL JavaScript] に似た [!DNL ExtendScript]で記述されます。[!DNL InDesign] のスクリプトについて詳しくは、[https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) を参照してください。
+>[!DNL Adobe InDesign] は、2 つの異なる製品として提供されます。[Adobe InDesign](https://www.adobe.com/jp/products/indesign.html) は、印刷およびデジタル配布用のページレイアウトのデザインに使用するデスクトップアプリケーションです。[Adobe InDesign Server](https://www.adobe.com/jp/products/indesignserver.html) は、[!DNL InDesign] で作成した内容に基づいて、ドキュメントをプログラムによって自動生成できるようにします。これは、[ExtendScript](https://helpx.adobe.com/indesign/using/scripting.html) エンジンへのインターフェイスを提供するサービスとして動作します。スクリプトは、[!DNL JavaScript] に似た [!DNL ExtendScript] で記述されます。
 
 ## 抽出の仕組み {#how-the-extraction-works}
 
@@ -49,7 +48,7 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >IDML は、 [!DNL InDesign] ファイルのすべてのコンテンツをレンダリングする XML ベースの形式です。[ZIP](https://www.techterms.com/definition/zip) 圧縮を使用した圧縮パッケージとして保存されます。詳しくは、 [InDesign の交換形式 INX および IDML](https://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8) を参照してください。
+   >IDML は、 [!DNL InDesign] ファイルのすべてのコンテンツをレンダリングする XML ベースの形式です。[ZIP](https://www.techterms.com/definition/zip) 圧縮を使用した圧縮パッケージとして保存されます。詳しくは、 [InDesign の交換形式 INX および IDML](https://www.peachpit.com/articles/article.aspx?p=1381880&seqNum=8) を参照してください。
 
    >[!CAUTION]
    >

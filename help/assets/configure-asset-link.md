@@ -6,10 +6,10 @@ role: Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 110b7175-d398-40ff-886e-5817a1df0ec9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ce0da5056e0821c94eb06a05c663a3939b37f940
 workflow-type: tm+mt
-source-wordcount: '3059'
-ht-degree: 99%
+source-wordcount: '3056'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Experience Manager Assetsを Asset Link と共に使用するように設定す�
 
 1. Creative Cloud のライセンス取得済みユーザーを Experience Manager ユーザーにマッピングするには、 [ユーザーのアクセス制御](#user-access)を管理します。
 
-1. [カスタムクエリインデックス](#create-custom-index)作成し、InDesign の [FPO レンディション](/help/assets/configure-fpo-renditions.md)を設定し、 [Adobe Stock の統合](/help/assets/aem-assets-adobe-stock.md)を設定し、[ビジュアル検索または類似性検索](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/search-assets.html#configvisualsearch)を設定します。
+1. [カスタムクエリインデックス](#create-custom-index)作成し、InDesign の [FPO レンディション](/help/assets/configure-fpo-renditions.md)を設定し、 [Adobe Stock の統合](/help/assets/aem-assets-adobe-stock.md)を設定し、[ビジュアル検索または類似性検索](/help/assets/search-assets.md#configvisualsearch)を設定します。
 
 ## 様々な機能の前提条件とサポート {#prerequisites}
 
@@ -243,8 +243,7 @@ Experience Manager 6.4 および Experience Manager 6.5 では、管理者は、
 
 この設定は、同業種のユーザーやマーケターにとって有用で、例えば、いくつかの特定のフォルダーにカスタムワークフローを作成することができます。具体的には、代理店の撮影したすべてのアセットに透かしを入れたり、フリーランサーがアップロードしたすべてのアセットに特定のレンディションを作成するよう処理したりできます。
 
-これらの方法や Experience Manager の設定について詳しくは、[アセットでのワークフローの自動実行](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets)を参照してください。
-
+これらの方法や Experience Manager の設定について詳しくは、[アセットでのワークフローの自動実行](/help/assets/assets-workflow.md#auto-execute-workflow-on-some-assets)を参照してください。
 
 ## Experience Manager 6.4.x バージョンでのカスタムインデックスの作成 {#create-custom-index}
 
@@ -261,7 +260,7 @@ Experience Manager には、クエリに使用するためのインデックス�
 
 ## ビジュアル検索または類似性検索の設定 {#configure-visual-similarity-search}
 
-ビジュアル検索機能を使用すると、Adobe Asset Link パネルを使用して、AEM Assets リポジトリ内で視覚的に類似したアセットを検索できます。この機能は 6.5.0 以降のバージョンで使用可能で、インデックス付きのアセットのみが検索されます。詳しくは、[ビジュアル検索の設定方法](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/search-assets.html#configvisualsearch)を参照してください。
+ビジュアル検索機能を使用すると、Adobe Asset Link パネルを使用して、AEM Assets リポジトリ内で視覚的に類似したアセットを検索できます。この機能は 6.5.0 以降のバージョンで使用可能で、インデックス付きのアセットのみが検索されます。詳しくは、[ビジュアル検索の設定方法](/help/assets/search-assets.md#configvisualsearch)を参照してください。
 
 ## Adobe InDesign 用の配置専用レンディションの生成 {#fpo-renditions}
 

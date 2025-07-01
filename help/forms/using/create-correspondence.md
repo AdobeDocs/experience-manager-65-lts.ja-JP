@@ -8,10 +8,10 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: cb6528fd-6761-412d-8413-c72049acf91d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d9eb2edf01200b575c6f99a47e5c010e3b3ca28a
 workflow-type: tm+mt
-source-wordcount: '3832'
-ht-degree: 100%
+source-wordcount: '3805'
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## 通信を作成ユーザーインターフェイスでの通信の作成 {#create-correspondence-in-the-create-correspondence-user-interface}
 
-[Correspondence Management](../../forms/using/create-letter.md) でレターテンプレートが作成されたら、エンドユーザー／エージェント／要求処理担当者は、レターを通信作成用ユーザーインターフェイスで開き、データを入力してコンテンツを設定し、添付ファイルを管理することによって、通信を作成できます。最終的に、要求処理担当者またはエージェントはプレビューモードでコンテンツを管理し、レターを送信します。
+[Correspondence Management](/help/forms/using/create-letter.md) でレターテンプレートが作成されたら、エンドユーザー／エージェント／要求処理担当者は、レターを通信作成用ユーザーインターフェイスで開き、データを入力してコンテンツを設定し、添付ファイルを管理することによって、通信を作成できます。最終的に、要求処理担当者またはエージェントはプレビューモードでコンテンツを管理し、レターを送信します。
 
 ### 通信のプレビュー {#preview-a-correspondence}
 
@@ -51,13 +51,13 @@ ht-degree: 100%
 
 1. デフォルトでは、使用中の「データ」タブでレターの HTML プレビュー（モバイルフォームプレビュー）が開きます。
 
-   モバイルフォームとサポートされる機能について詳しくは、[モバイルフォームと PDF フォームの違い](https://helpx.adobe.com/jp/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html)を参照してください。
+   モバイルフォームとサポートされる機能について詳しくは、[モバイルフォームと PDF フォームの違い](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md)を参照してください。
 
    3 つのタブ（データ、コンテンツ、添付ファイル）があります。データ要素（プレースホルダー変数およびレイアウトフィールド）がない場合、レターは直接開き、「コンテンツ」タブが表示されます。「添付ファイル」タブは、添付ファイルが存在するかライブラリアクセスが有効な場合にのみ使用できます。
 
    >[!NOTE]
    >
-   >レタープレビューの HTML または PDF レンディションモードの切り替えについて詳しくは、[レターのレンディションモードの切り替え](#changerenditionmode)を参照してください。Correspondence Management と AEM での PDF サポートについて詳しくは、[NPAPI ブラウザープラグインのサポート終了とその影響](https://helpx.adobe.com/jp/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)を参照してください。<!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
+   >レタープレビューの HTML または PDF レンディションモードの切り替えについて詳しくは、[レターのレンディションモードの切り替え](#changerenditionmode)を参照してください。Correspondence Management とAEMでのPDF サポートについて詳しくは、[NPAPI ブラウザープラグインのサポート終了とその影響 ](https://helpx.adobe.com/jp/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html) を参照してください。
 
 ### データの入力 {#enterdata}
 
@@ -111,17 +111,13 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >ただし、貼り付けられたテキストの書式設定にはいくつかの[制約](https://helpx.adobe.com/jp/aem-forms/kb/cm-copy-paste-text-limitations.html)があります。
+   >ただし、貼り付けられたテキストの書式設定にはいくつかの制約があります。
 
    Tab キーを使用すると、レターのテキストや数値をインデントすることができます。例えば、Tab キーを使用して、リスト内の複数のテキスト列を表形式に整列させることができます。
 
    ![tabspaces](assets/tabspaces.png)
 
    例：Tab キーを使用して複数のテキスト列を表形式に整列させる
-
-   >[!NOTE]
-   >
-   >テキストモジュールやレターのタブスペースの設定について詳しくは、[タブスペースを使用したテキスト調整の詳細](https://helpx.adobe.com/jp/aem-forms/kb/cm-tab-spacing-limitations.html)を参照してください。
 
 1. 必要に応じて、通信に特殊文字を挿入します。例えば、特殊文字パレットを使用して、以下の特殊文字を挿入することができます。
 

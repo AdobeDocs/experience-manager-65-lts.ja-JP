@@ -1,18 +1,13 @@
 ---
 title: Adobe Experience Manager コンポーネント - 基本
 description: 新しいコンポーネントの開発にとりかかる際は、その構造と設定の基本を理解する必要があります。
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: components
-content-type: reference
-legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 3265ad97-75c2-4dc1-8180-71b65cf73d31
-source-git-commit: 013c9155817811913963ca514f7a6369b338d487
+source-git-commit: a0fe5bbfe93719641118521c6861bcb2cca76d60
 workflow-type: tm+mt
-source-wordcount: '4834'
+source-wordcount: '4819'
 ht-degree: 100%
 
 ---
@@ -312,7 +307,7 @@ AEM コンポーネントの構造は強力で、柔軟性があります。主�
   <tr>
    <td><code>cq:cellName</code></td>
    <td><code>String</code></td>
-   <td>設定した場合、このプロパティはセル ID として取得されます。詳しくは、ナレッジベースの記事の<a href="https://helpx.adobe.com/jp/experience-manager/kb/DesigneCellId.html">デザインのセル ID の作成方法</a>を参照してください。<br /> </td>
+   <td>設定した場合、このプロパティはセル ID として取得されます。<br /> </td>
   </tr>
   <tr>
    <td><code>cq:childEditConfig</code></td>
@@ -858,12 +853,12 @@ AEM 内のコンポーネントは、次の 3 つの異なる階層の影響を�
 
 `cq:actionConfigs` ノード（ノードタイプ `nt:unstructured`）では、`cq:actions` プロパティで定義されたリストに追加する新しいアクションのリストを定義します。`cq:actionConfigs` のそれぞれの子ノードでは、ウィジェットを定義することにより新しいアクションを定義します。
 
-次の設定例では、（クラシック UI 用の区切り文字を持つ）新しいボタンを定義しています。
+次の設定例では、（クラシック UI 用の区切り記号を持つ）新しいボタンを定義しています。
 
-* xtype `tbseparator` で定義される区切り文字。
+* xtype `tbseparator` で定義される区切り記号。
 
    * クラシック UI でのみ使用されます。
-   * タッチ操作対応 UI では xtype が無視されるので、この定義は無視されます（また、タッチ操作対応 UI ではアクションツールバーの構造が異なるので、区切り文字は不要です）。
+   * タッチ操作対応 UI では xtype が無視されるので、この定義は無視されます（また、タッチ操作対応 UI ではアクションツールバーの構造が異なるので、区切り記号は不要です）。
 
 * ハンドラー関数 `CQ_collab_forum_openCollabAdmin()` を実行する「**コメントを管理**」という名前のボタン。
 

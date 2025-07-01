@@ -1,17 +1,13 @@
 ---
 title: AEM Forms Workspace の操作
 description: AEM Forms Workspace のプロセスワークフローについて概要を簡単に説明します。
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: forms-workspace
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
 exl-id: 7374797f-4154-402b-bb59-075134763c58
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 823923ab074bae1705cc1991e4079897e4c5cac8
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '980'
 ht-degree: 100%
 
 ---
@@ -133,8 +129,4 @@ AEM Forms Workspace の成果物には、CRX にデプロイされる CRX パッ
 
 新しいプロセスではデフォルトで、デスクトップ上では PDF 形式、タブレット上では HTML 形式で XDP フォームがレンダリングされます。XDP フォームはいつでも HTML 形式でレンダリングできます。詳しくは、[新しいレンダリングと送信サービス](/help/forms/using/new-render-submit-service.md)を参照してください。
 
-[プロファイル](https://helpx.adobe.com/jp/livecycle/help/mobile-forms/creating-profile.html)を使用する [Mobile Forms](https://helpx.adobe.com/jp/livecycle/help/mobile-forms/introduction.html) 機能を使用すると、XDP フォームの HTML レンダリングを有効にできます。「新規 HTML フォームのレンダリング」はデフォルトで `default.html` プロファイルを使用しますが、これは変更することができます。XDP フォームを HTML 形式でレンダリングする前に実行されたカスタム変更を追加することもできます。
-
-## AEM Forms Workspace アプリケーション {#aem-forms-workspace-app}
-
-モバイルデバイスでビジネスプロセスを操作するには、AEM Forms の AEM Forms Workspace アプリケーションサービスを使用します。詳しくは、[AEM Forms Workspace アプリ：概要](https://helpx.adobe.com/jp/livecycle/help/mobile-workspace/mobile-workspace-overview.html)を参照してください。
+[プロファイル](/help/forms/using/custom-profile.md)を使用する [Mobile Forms](/help/forms/using/introduction.md) 機能を使用すると、XDP フォームの HTML レンダリングを有効にできます。「新規 HTML フォームのレンダリング」はデフォルトで `default.html` プロファイルを使用しますが、これは変更することができます。XDP フォームを HTML 形式でレンダリングする前に実行されたカスタム変更を追加することもできます。

@@ -9,9 +9,9 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 2fcdc5df5a4b901c177d8e4158663c6b09793146
 workflow-type: tm+mt
-source-wordcount: '5052'
+source-wordcount: '5054'
 ht-degree: 99%
 
 ---
@@ -418,14 +418,14 @@ Web サイトが公開されてからの最初の数日間は、より高い関�
 
 エラーシナリオをテストし、システムが正しく適切に対応していることを確認します。エラー自体の処理方法だけでなく、エラーがパフォーマンスに与える影響についても説明します。次に例を示します。
 
-* ユーザーが検索ボックスに検索用語を入力しようとするとどうなるか
-* 検索用語が一般的すぎて、返される結果の数が非常に多い場合はどうなるか
+* ユーザーが検索ボックスに検索語を入力しようとするとどうなるか
+* 検索語が一般的すぎて、返される結果の数が非常に多い場合はどうなるか
 
 このようなテストの策定時には、すべてのシナリオが定期的に発生するわけではない点に注意してください。ただし、テストがシステム全体に及ぼす影響は重要です。
 
 | エラーのシナリオ | エラータイプ | いいえ。/ユーザー | トランザクション/秒（予想値） | トランザクション/秒（テスト値） | 説明 |
 |---|---|---|---|---|---|
-| 検索コンポーネントのオーバーロード | グローバルワイルドカード（アスタリスク）で検索 | 10 | 1 |  | &ast;&ast;&ast; のみが検索されます。 |
+| 検索コンポーネントのオーバーロード | グローバルワイルドカード（アスタリスク）で検索 | 10 | 1 |  | &amp;ast;&amp;ast;&amp;ast; のみが検索されます。 |
 |   | ストップワード | 20 | 2 |  | ストップワードの検索。 |
 |   | 空の文字列 | 10 | 1 |  | 空の文字列の検索。 |
 |   | 特殊文字 | 10 | 1 |  | 特殊文字の検索。 |
@@ -454,7 +454,7 @@ Web サイトが公開されてからの最初の数日間は、より高い関�
 負荷の生成、パフォーマンスの監視および結果の分析に役立つ様々なツールが用意されています。これらのツールの一部を次に示します。
 
 * [JMeter](https://jmeter.apache.org/)
-* [Load Runner](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
+* [OpenText プロフェッショナルパフォーマンスエンジニアリング ](https://www.opentext.com/products/professional-performance-engineering)。
 * [Java™ Interactive Profile](https://jiprof.sourceforge.net/)
 
 最適化後、再度テストして影響を確認します。

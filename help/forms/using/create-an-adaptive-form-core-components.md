@@ -2,18 +2,14 @@
 title: アダプティブフォームの作成方法
 description: ' [!DNL Experience Manager Forms] を使用したアダプティブフォームの作成方法を説明します。アダプティブフォームは、情報の収集および処理を合理化するレスポンシブ HTML5 フォームです。フォームデータモデルと XML または JSON スキーマに基づいてアダプティブフォームを作成する方法について詳しく調べます。'
 Keywords: create adaptive form core component, create core component based adaptive form, creare adaptive form
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-contentOwner: Khushwant Singh
-topic-tags: Adaptive Forms
-docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: eb857ab1-ab1b-4c77-af3b-4507f53a8241
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 254366c95c1aa1e3f5ba01441741a8dc1cfed42c
 workflow-type: tm+mt
-source-wordcount: '1794'
-ht-degree: 99%
+source-wordcount: '1793'
+ht-degree: 100%
 
 ---
 
@@ -57,12 +53,12 @@ ht-degree: 99%
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=ja) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## アダプティブフォームを作成 {#create-an-adaptive-form}
 
-1. ローカルの [AEM オーサーインスタンス](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/deploy.html?lang=en#author-and-publish-installs)にログインします。
+1. ローカルの [AEM オーサーインスタンス](/help/sites-deploying/deploy.md#author-and-publish-installs)にログインします。
 
 1. Experience Manager のログインページに資格情報を入力します。ログイン後、左上隅の **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
 

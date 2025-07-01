@@ -8,9 +8,9 @@ feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User
 exl-id: de6f259f-87d9-4862-a20e-3825be15dd6e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ab105ae9c322cf1149062ee7ec30b2007f06dcfb
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2273'
 ht-degree: 98%
 
 ---
@@ -170,12 +170,12 @@ AEM Forms バージョンの機能の改善とその後の更新に伴い、既�
 アダプティブフォームでエラーハンドラーを使用する前に、次が必要です。
 
 * [環境でのアダプティブフォームコアコンポーネントの有効化](enable-adaptive-forms-core-components.md)。
-* [カスタム関数作成](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=ja#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.)の基本知識。
+* [カスタム関数作成](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.)の基本知識。
 * [Apache Maven](https://maven.apache.org/download.cgi) の最新リリースをインストールします。
 
 ## ルールエディターを使用したエラーハンドラーの追加 {#add-error-handler-using-rule-editor}
 
-[ルールエディターのサービスの呼び出し](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke)アクションを使用して、アダプティブフォームで使用するデータソースに基づいて検証条件を定義します。RESTful Web サービスをデータソースとして使用する場合、Swagger 定義ファイルで検証条件を定義できます。アダプティブフォームのエラーハンドラー関数とルールエディターを利用すると、エラー処理を効率的に管理およびカスタマイズできます。ルールエディターを使用して条件を定義し、ルールがトリガーされたときに実行するアクションを設定します。アダプティブフォームは、事前設定された検証条件に基づいて、フィールドに入力した内容を検証します。入力値が検証条件を満たさない場合、アダプティブフォームのフィールドレベルでエラーメッセージが表示されます。
+[ルールエディターのサービスの呼び出し](/help/forms/using/rule-editor.md#invoke)アクションを使用して、アダプティブフォームで使用するデータソースに基づいて検証条件を定義します。RESTful Web サービスをデータソースとして使用する場合、Swagger 定義ファイルで検証条件を定義できます。アダプティブフォームのエラーハンドラー関数とルールエディターを利用すると、エラー処理を効率的に管理およびカスタマイズできます。ルールエディターを使用して条件を定義し、ルールがトリガーされたときに実行するアクションを設定します。アダプティブフォームは、事前設定された検証条件に基づいて、フィールドに入力した内容を検証します。入力値が検証条件を満たさない場合、アダプティブフォームのフィールドレベルでエラーメッセージが表示されます。
 
 >[!NOTE]
 >
@@ -191,7 +191,7 @@ AEM Forms バージョンの機能の改善とその後の更新に伴い、既�
 ### デフォルトのエラーハンドラー関数を追加 {#add-default-errror-handler}
 
 デフォルトのエラーハンドラーは、エラー応答が標準スキーマの場合、またはサーバーサイドの検証エラーの場合に、フィールドにエラーメッセージを表示する機能をサポートしています。
-[ルールエディターのサービスの呼び出し](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke)アクションを使用してデフォルトのエラーハンドラーを使用する方法を理解するために、「**ペット ID**」と「**ペット名**」という 2 つのフィールドがある簡単なアダプティブフォームの例を見てみましょう。「**ペット ID**」フィールドでデフォルトのエラーハンドラーを使用して、外部サービス（`200 - OK`、`404 - Not Found`、`400 - Bad Request` など）を呼び出すように設定された REST エンドポイントが返す様々なエラーを確認します。ルールエディターのサービスの呼び出しアクションを使用してデフォルトのエラーハンドラーを追加するには、次の手順を実行します。
+[ルールエディターのサービスの呼び出し](/help/forms/using/rule-editor.md#invoke)アクションを使用してデフォルトのエラーハンドラーを使用する方法を理解するために、「**ペット ID**」と「**ペット名**」という 2 つのフィールドがある簡単なアダプティブフォームの例を見てみましょう。「**ペット ID**」フィールドでデフォルトのエラーハンドラーを使用して、外部サービス（`200 - OK`、`404 - Not Found`、`400 - Bad Request` など）を呼び出すように設定された REST エンドポイントが返す様々なエラーを確認します。ルールエディターのサービスの呼び出しアクションを使用してデフォルトのエラーハンドラーを追加するには、次の手順を実行します。
 
 1. アダプティブフォームをオーサリングモードで開き、フォームコンポーネントを選択してから、**[!UICONTROL ルールエディター]**&#x200B;を選択してルールエディターを開きます。
 1. 「**[!UICONTROL 作成]**」を選択します。
@@ -220,14 +220,14 @@ AEM Forms バージョンの機能の改善とその後の更新に伴い、既�
 
 カスタムエラーハンドラーは、外部サービスから返されたエラーに応答し、カスタマイズされた応答をエンドユーザーに配信するように設計された関数（クライアントライブラリ）です。注釈 `@errorHandler` 付きのクライアントライブラリは、カスタムエラーハンドラー関数と見なされます。この注釈は、`.js` ファイルで指定されたエラーハンドラー関数を特定するのに役立ちます。
 
-[ルールエディターのサービスの呼び出し](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke)アクションを使用してカスタムエラーハンドラーを作成および使用する方法を理解するために、「**ペット ID**」と「**ペット名**」という 2 つのフィールドがあるアダプティブフォームの例を見てみましょう。「**ペット ID**」フィールドでカスタムエラーハンドラーを使用して、外部サービス（`200 - OK`、`404 - Not Found`、`400 - Bad Request` など）を呼び出すように設定された REST エンドポイントが返す様々なエラーを確認します。
+[ルールエディターのサービスの呼び出し](/help/forms/using/rule-editor.md#invoke)アクションを使用してカスタムエラーハンドラーを作成および使用する方法を理解するために、「**ペット ID**」と「**ペット名**」という 2 つのフィールドがあるアダプティブフォームの例を見てみましょう。「**ペット ID**」フィールドでカスタムエラーハンドラーを使用して、外部サービス（`200 - OK`、`404 - Not Found`、`400 - Bad Request` など）を呼び出すように設定された REST エンドポイントが返す様々なエラーを確認します。
 
 アダプティブフォームにカスタムエラーハンドラーを追加して使用するには、次の手順を実行します。
 
 1. [カスタムエラーハンドラーを作成](#create-custom-error-message)
 1. [ルールエディターを使用してカスタムエラーハンドラーを設定](#use-custom-error-handler)
 
-#### 1. カスタムエラーハンドラーを作成 {#create-custom-error-message}
+#### &#x200B;1. カスタムエラーハンドラーを作成 {#create-custom-error-message}
 
 カスタムエラー関数を作成するには、次の手順を実行します。
 
@@ -287,7 +287,7 @@ AEM Forms バージョンの機能の改善とその後の更新に伴い、既�
 
 次に、AEM Forms でルールエディターのサービスの呼び出しを使用して、カスタムエラーハンドラーを設定および使用する方法を説明します。
 
-#### 2. ルールエディターを使用して、カスタムエラーハンドラーを設定 {#use-custom-error-handler}
+#### &#x200B;2. ルールエディターを使用して、カスタムエラーハンドラーを設定 {#use-custom-error-handler}
 
 アダプティブフォームにカスタムエラーハンドラーを実装する前に、クライアントライブラリ名が **[!UICONTROL クライアントライブラリカテゴリ]**&#x200B;のクライアントライブラリ名が、`.content.xml` ファイルのカテゴリオプションで指定された名前と一致していることを確認します。
 

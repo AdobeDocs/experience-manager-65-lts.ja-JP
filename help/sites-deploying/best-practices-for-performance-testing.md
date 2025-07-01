@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 29c20cf3-1694-4d06-ab7c-688018808c44
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 4087a6f44bd87e3f841feb09220a9ea34ec1dc1c
 workflow-type: tm+mt
-source-wordcount: '1762'
-ht-degree: 99%
+source-wordcount: '1765'
+ht-degree: 98%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 99%
 * AEM には、問題のあるクエリ、リクエスト、エラーメッセージを迅速に確認するための、すぐに使用できるツールが用意されています。詳細情報は、操作ダッシュボードのドキュメントの[診断ツール](/help/sites-administering/operations-dashboard.md#diagnosis-tools)セクションを参照してください。
 * Apache では、パフォーマンスと負荷のテスト、機能動作に使用できる **JMeter** という製品を提供しています。オープンソースソフトウェアであり無料で使用できますが、エンタープライズ製品よりも機能セットが少なく、使い方を覚えるのが簡単です。JMeter は Apache の web サイト（[https://jmeter.apache.org/](https://jmeter.apache.org/)）で入手できます。
 
-* **Load Runner** はエンタープライズレベルの負荷テスト製品です。無償の評価版も提供されています。詳しくは、[https://www.microfocus.com/ja-jp/portfolio/performance-engineering/overview](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview) を参照してください。
+* **Load Runner** はエンタープライズレベルの負荷テスト製品です。無償の評価版も提供されています。詳しくは、[OpenText Professional Performance Engineering](https://www.opentext.com/products/professional-performance-engineering) を参照してください。
 
 * モバイル web サイトやレスポンシブ web サイトをテストする際は、別のツールセットを使用する必要があります。こうしたツールでは、ネットワーク帯域幅の制限、3G や EDGE などの低速なモバイル接続のシミュレーションを行えます。広く利用されているツールには以下のものがあります。
 

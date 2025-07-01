@@ -10,10 +10,10 @@ role: Admin, User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 4db457d2-fefb-410d-8e74-58147f52bbd3
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 4ce7de628810e13f96361c0b253ef12850985ade
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 93%
+source-wordcount: '624'
+ht-degree: 90%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 93%
 
 ## Adobe Experience Manager 6.5 Forms サービスパック 19 の内容（6.5.19.0）
 
-Experience Manager 6.5.19.0 には、2019 年 4 月の 6.5 リリースの公開当初にリリースされた新機能、お客様からリクエストされた主な機能強化、バグ修正およびパフォーマンス、安定性、セキュリティの向上が含まれています。 Experience Manager 6.5 で[このサービスパックをインストール](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html)します。
+Experience Manager 6.5.19.0 には、2019 年 4 月の 6.5 リリースの公開当初にリリースされた新機能、お客様からリクエストされた主な機能強化、バグ修正およびパフォーマンス、安定性、セキュリティの向上が含まれています。
 
 ### 新機能
 
@@ -60,17 +60,14 @@ AEM Forms では、[フォームデータを SharePoint リストに直接送信
 64 ビット反復の XMLFM により、パフォーマンス、スケーラビリティ、洗練されたメモリ管理が導入されます。これは、サーバーサイドにデプロイされた最初の 64 ビットネイティブサービスです。XMLFM 64 ビットでは、32 ビット版と比較して大幅により大きなメモリリソースにアクセスする固有の機能を利用することで、より大きなレンダリングワークロードをシームレスに処理できます。このマイルストーンは、パフォーマンスの飛躍的な向上を示すだけでなく、AEM Forms サーバー内のネイティブサービスフレームワークに重要な機能強化も導入します。この更新により、AEM Forms サーバーでは 64 ビットのネイティブサービスをシームレスにサポートできます。
 
 
-
 ## バグの修正
 
-このリリースには、お客様から報告された 20 件以上の問題の修正も含まれています。サービスパックに含まれる修正のリストについて詳しくは、[リリースノート](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html?lang=en#forms-6519)を参照してください
+このリリースには、お客様から報告された 20 件以上の問題の修正も含まれています。サービスパックに含まれる修正のリストについて詳しくは、[リリースノート](/help/release-notes/release-notes.md)を参照してください
 
 
 ## サービスパックのインストール
 
-このサービスパックには、JEE 上の AEM Forms と OSGi 上の AEM Forms の両方に新機能とバグ修正が含まれます。インストール手順は、以前のサービスパックと比較して変更されます。インストール手順について詳しくは、[AEM Forms サービスパックのインストール手順](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en)を参照してください。
-
-
+このサービスパックには、JEE 上の AEM Forms と OSGi 上の AEM Forms の両方に新機能とバグ修正が含まれます。インストール手順が以前のサービスパックと比較して変更されています。 インストール手順については、[AEM Forms サービスパックのインストール手順 ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) を参照してください。
 
 
 
@@ -134,7 +131,7 @@ There are several improvements in the Web channel layout auto-generated using th
 
 ### Use Adobe Sign's cloud-based digital signatures in Adaptive Forms {#use-adobe-sign-s-cloud-based-digital-signatures-in-adaptive-forms}
 
-[Cloud-based digital signatures](https://helpx.adobe.com/jp/sign/kb/digital-certificate-providers.html) or remote signatures are a new generation of digital signatures that work across desktop, mobile, and the web — and meet the highest levels of compliance and assurance for signer authentication. You can now [sign an Adaptive Form](../../forms/using/working-with-adobe-sign.md) with Cloud-based digital signatures.
+[Cloud-based digital signatures](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) or remote signatures are a new generation of digital signatures that work across desktop, mobile, and the web — and meet the highest levels of compliance and assurance for signer authentication. You can now [sign an Adaptive Form](../../forms/using/working-with-adobe-sign.md) with Cloud-based digital signatures.
 
 #### Embed an Adaptive Form or Interactive Communication in AEM Sites Single Page Applications {#embed-an-adaptive-form-or-interactive-communcation-in-aem-sites-single-page-applications}
 

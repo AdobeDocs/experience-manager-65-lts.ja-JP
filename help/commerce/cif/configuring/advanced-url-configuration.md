@@ -11,9 +11,9 @@ thumbnail: 34350.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 5f6171f8-20ca-4c31-a99f-a5bc07a63baf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e4cf6ae3392cef2ffd7e8fff3226b50c95f5a248
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '803'
 ht-degree: 99%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->検索エンジン最適化（SEO）は、多くのマーケターにとって重要な課題となっています。そのため、多くの AEM プロジェクトで SEO 対策に取り組む必要があります。詳しくは、[SEO および URL 管理のベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-65-lts/managing/managing-further-reference/seo-and-url-management.html)を参照してください。
+>検索エンジン最適化（SEO）は、多くのマーケターにとって重要な課題となっています。そのため、多くの AEM プロジェクトで SEO 対策に取り組む必要があります。詳しくは、[SEO および URL 管理のベストプラクティス](/help/managing/seo-and-url-management.md)を参照してください。
 
 [AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)は、製品ページとカテゴリページの URL をカスタマイズする高度な設定を提供します。多くの実装では、検索エンジン最適化（SEO）用にこれらの URL をカスタマイズします。次のビデオでは、`UrlProvider` サービスと [Sling マッピング](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)の機能を設定して、製品ページとカテゴリページの URL をカスタマイズする方法について詳しく説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/38583/?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## 設定 {#configuration}
 
@@ -110,5 +110,5 @@ URL の書き換えは、`mod_rewrite` モジュールを備えた AEM Dispatche
 ## その他のリソース
 
 * [Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM リソースマッピング](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/resource-mapping.html)
+* [AEM リソースマッピング](/help/sites-deploying/resource-mapping.md)
 * [Sling マッピング](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

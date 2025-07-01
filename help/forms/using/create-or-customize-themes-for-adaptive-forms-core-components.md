@@ -2,17 +2,14 @@
 title: カスタムアダプティブフォームテーマの作成方法
 description: BEM 仕様を使用してアダプティブフォームコアコンポーネントのテーマを作成またはカスタマイズする方法を説明します。
 keywords: アダプティブフォームコアコンポーネントのテーマの作成、新しいテーマの作成、テーマのカスタマイズ、新しいテーマのアップロード、Forms でのテーマの使用、テーマの削除、AEM 6.5 Forms でのテーマの作成
-contentOwner: Khushwant Singh
-topic-tags: Adaptive Forms
-docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 59b54622-55c4-4526-b584-c08bbd1d08bb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 7eddd03e7b1256f2f2b54bdd92672d5a1e4440d1
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 99%
+source-wordcount: '1938'
+ht-degree: 100%
 
 ---
 
@@ -81,7 +78,7 @@ AEM Forms 6.5 は、コアコンポーネントベースのアダプティブフ
 
 * [Apache Maven の最新リリースをインストールします。](https://maven.apache.org/download.cgi) Apache Maven は、主に Java™ プロジェクトで使用されるビルド自動処理ツールです。最新のリリースをインストールすると、テーマのカスタマイズに必要な依存関係が確保されます。
 
-* [Adobe Experience Manager のクライアントライブラリ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/introduction/clientlibs.html)の作成方法を学ぶAEM は、クライアントライブラリを提供しています。これにより、クライアントサイドコードをリポジトリに格納し、カテゴリ別に整理して、それぞれのカテゴリのコードをクライアントに提供するタイミングと方法を定義できます。
+* [Adobe Experience Manager のクライアントライブラリ](/help/sites-developing/clientlibs.md)の作成方法を学ぶAEM は、クライアントライブラリを提供しています。これにより、クライアントサイドコードをリポジトリに格納し、カテゴリ別に整理して、それぞれのカテゴリのコードをクライアントに提供するタイミングと方法を定義できます。
 
 * プレーンテキストエディターをインストールします。例えば Microsoft® Visual Studio Code などです。Microsoft® Visual Studio Code などのプレーンテキストエディターを使用すると、テーマファイルの編集と変更を行う際に使いやすい環境を利用できます。
 
@@ -111,7 +108,7 @@ AEM Forms 6.5 は、コアコンポーネントベースのアダプティブフ
 
 このドキュメントで示す例は、**カンバス**&#x200B;テーマに基づいていますが、任意のテーマを複製し、同じ手順を使用してカスタマイズできます。これらの手順はどのテーマにも適用でき、特定のニーズに応じてテーマを変更できます。
 
-#### 1. テーマの Git リポジトリを複製する {#clone-git-repo-of-theme}
+#### &#x200B;1. テーマの Git リポジトリを複製する {#clone-git-repo-of-theme}
 
 コアコンポーネントベースのアダプティブフォームのテーマを複製するには、次のいずれかのテーマを選択します。
 
@@ -141,7 +138,7 @@ AEM Forms 6.5 は、コアコンポーネントベースのアダプティブフ
 
 コマンドを正常に実行すると、そのテーマのローカルコピーがお使いのコンピューターの `aem-forms-theme-canvas` フォルダーで使用可能になります。
 
-#### 2. テーマをカスタマイズ {#customize-the-theme}
+#### &#x200B;2. テーマをカスタマイズ {#customize-the-theme}
 
 個々のコンポーネントをカスタマイズしたり、テーマのグローバル変数を使用してテーマレベルを変更したりできる柔軟性があります。グローバル変数を変更すると、個々のコンポーネントすべてにカスケードエフェクトが適用されます。例えば、グローバル変数を利用して、アダプティブフォーム内のすべてのコンポーネントの境界線の色を変更したり、鮮やかな塗りつぶし色をコールトゥアクション (CTA) ボタンに適用したりできます。以下の操作を実行できます。
 
@@ -190,7 +187,7 @@ AEM Forms 6.5 は、コアコンポーネントベースのアダプティブフ
 >
 > テーマレベルとコンポーネントレベルの両方でスタイルを定義する場合、コンポーネントレベルで定義されたスタイルが優先されます。
 
-#### 3. デプロイメント用にテーマを準備 {#generate-the-clientlib}
+#### &#x200B;3. デプロイメント用にテーマを準備 {#generate-the-clientlib}
 
 AEM インスタンスにテーマをデプロイするには、テーマをクライアントライブラリに変換する必要があります。テーマをクライアントライブラリに変換するには、次の手順に従います。
 
@@ -215,7 +212,7 @@ AEM インスタンスにテーマをデプロイするには、テーマをク�
 
    ![クライアントライブラリの場所](/help/forms/using/assets/adaptiveform.theme.easel.png)
 
-#### 4. ローカル環境にテーマをデプロイ {#deploy-the-theme-on-a-local-environment}
+#### &#x200B;4. ローカル環境にテーマをデプロイ {#deploy-the-theme-on-a-local-environment}
 
 ローカル開発またはテスト環境にテーマをデプロイするには、次の手順に従います。
 
@@ -266,7 +263,7 @@ An Adaptive Form with the selected theme is created.
 The selected theme is applied to the Adaptive Form. 
 -->
 
-#### 5. 実稼動環境にテーマをデプロイ {#deploy-theme}
+#### &#x200B;5. 実稼動環境にテーマをデプロイ {#deploy-theme}
 
 ローカル開発環境でテーマのテストを正常に行うことができたら、オーサーインスタンスとパブリッシュインスタンスの両方を含む実稼動環境にテーマをデプロイする手順を実行できます。実稼動環境にテーマをデプロイするには、次の手順に従います。
 

@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 46300f72-730e-444c-8677-352a890e9910
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: c033a676eb746befd43803d1ae00c564890cb945
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2422'
 ht-degree: 99%
 
 ---
@@ -30,10 +30,6 @@ ht-degree: 99%
 >[!NOTE]
 >
 >このページは、[コンテンツの再利用：Multi Site Manager](/help/sites-administering/msm.md) と併せて読んでください。
->
->Sites のリポジトリ再構築に関する次の節も参考になる場合があります。
->* [Multi-site Manager のブループリント設定](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-blueprint-configurations)
->* [Multi-site Manager のロールアウト設定](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-rollout-configurations)
 
 >[!CAUTION]
 >
@@ -208,15 +204,12 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 1. このノードに次のプロパティを追加します。
    * **名前**：`jcr:title`
-
      **型**：`String`
      **値**：UI に表示される識別タイトルです。
    * **名前**：`jcr:description`
-
      **型**：`String`
      **値**：オプションの説明です。
    * **名前**：`cq:trigger`
-
      **型**：`String`
      **値**：[ロールアウトトリガー](/help/sites-administering/msm-sync.md#rollout-triggers)を使用します。 次から選択します。
       * `rollout`
@@ -689,7 +682,6 @@ MSM は、保存されている言語コードと国コードのリストを使�
       * **タイプ**：`String`
 
       * **値**：対象のプロパティ名を保持します（また、`name` プロパティの値と比較できます）。例として、次を参照してください。
-
         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 `cq-msm-lockable` が定義されている場合は、次の方法でチェーンの解除またはクローズを MSM と連携できます。

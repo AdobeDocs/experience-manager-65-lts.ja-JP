@@ -2,16 +2,11 @@
 title: Dynamic Media ビューアと Adobe Analytics および Experience Platform タグとの統合
 description: Experience Platform タグおよび Dynamic Media ビューア 5.13 用の Dynamic Media ビューア拡張機能について説明します。この拡張機能によって、Adobe Analytics および Experience Platform タグのユーザーは、Experience Platform タグの設定で Dynamic Media ビューアに固有のイベントやデータを使用することができます。
 mini-toc-levels: 3
-contentOwner: Rick Brough
-topic-tags: dynamic-media
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-content-type: reference
-docset: aem65
 feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 solution: Experience Manager, Experience Manager Assets
 exl-id: 3aea14f7-052d-4f23-b65d-e648623146e7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e38c229bd535ae6f2b058058b1a595cd9b4ddcdc
 workflow-type: tm+mt
 source-wordcount: '6663'
 ht-degree: 100%
@@ -508,7 +503,7 @@ Experience Platform タグを設定した後、統合のために次の設定が
 
 1. まず、Experience Cloud の[ホームページ](https://experience.adobe.com/#/home)から Experience Platform タグにアクセスします。メニューバーで、ページの右上隅付近にある「**[!UICONTROL ソリューション]**」アイコン（3 x 3 のドットテーブル）を選択し、「**[!UICONTROL タグ]**」を選択します。
 
-   また、[Experience Platform タグを直接開く](https://launch.adobe.com/)こともできます。
+   また、[Experience Platform タグを直接開く](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/home)こともできます。
 
    ![image2019-7-8_15-38-44](assets/image2019-7-8_15-38-44.png)
 

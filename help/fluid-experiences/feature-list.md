@@ -6,10 +6,10 @@ feature: Authoring
 solution: Experience Manager Sites,Experience Manager Assets
 role: Admin
 exl-id: 9bb1ff8b-5fcb-44df-8c45-2306e127410d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 6e6e04a2532f812596f00557b5d3dc4dccdab66d
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 99%
+source-wordcount: '267'
+ht-degree: 90%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 
 Adobe Experience Manager の Fluid Experiences は、AEM Sites、AEM Dynamic Media、AEM Assets の強力な機能セットに基づいており、ヘッドレスコンテンツ配信のための堅牢なソリューションを提供します。
 
-AEM Fluid Experience は、ヘッドレス配信のユースケースにのみ対処するという点で、従来の AEM とは異なります。ヘッドフルなコンテンツのオーサリングと配信および AEM のハイブリッドユースケースの強力なサポートは、[AEM Sites、Assets および Dynamic Media のフルソリューション](https://experienceleague.adobe.com/docs/experience-manager-65-lts/user-guide/home.html)で利用可能です。
+AEM Fluid Experience は、ヘッドレス配信のユースケースにのみ対処するという点で、従来の AEM とは異なります。ヘッドフルなコンテンツのオーサリングと配信およびAEMのハイブリッドユースケースの強力なサポートは、AEM Sites、Assetsおよび Dynamic Media のフルソリューションで利用可能です。
 
 AEM Fluid Experience の機能と、関連するサポートドキュメントへのリンクを次の表に示します。
 
