@@ -336,9 +336,9 @@ TTL を調整するには：
 >**X-Adobe-Smart-Imaging = -1 で WebP を配信中**
 >
 >`X-Adobe-Smart-Imaging` の値が -1 で、WebP がまだ配信中の場合、スマートイメージングはアクティブです。ただし、キャッシュが古いので、サイズのメリットは計算されませんでした。画像の URL で `cache=update` を（1 回だけ）使用して、この問題を修正できます。
->>この修飾子の使用例を次に示します。
->>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
->>キャッシュ全体を無効にするには、サポートケースを作成する必要があります。
+>&#x200B;>この修飾子の使用例を次に示します。
+>&#x200B;>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+>&#x200B;>キャッシュ全体を無効にするには、サポートケースを作成する必要があります。
 
 +++
 
