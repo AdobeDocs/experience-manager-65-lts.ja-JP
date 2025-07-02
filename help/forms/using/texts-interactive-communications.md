@@ -1,17 +1,14 @@
 ---
 title: インタラクティブ通信内のテキスト
 description: ここでは、インタラクティブ通信で使用するテキストドキュメントフラグメントの作成方法と編集方法について説明します。インタラクティブ通信の作成では 4 種類のドキュメントフラグメントが使用されますが、テキストフラグメントはそのうちの 1 つです。他の 3 つは、条件フラグメント、リストフラグメント、レイアウトフラグメントです。
-topic-tags: interactive-communications
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: ca18b9f4-9d06-4b15-81dd-68a6821e2e3e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 6db207b08535c063e41b333054561036481e8db9
 workflow-type: tm+mt
-source-wordcount: '2474'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -239,11 +236,7 @@ ht-degree: 100%
 
 ![pastetexteditablemodule-1](assets/pastetexteditablemodule-1.png)
 
->[!NOTE]
->
->ただし、貼り付けたテキストの書式設定にはいくつかの[制約](https://helpx.adobe.com/jp/aem-forms/kb/cm-copy-paste-text-limitations.html)があります。
-
-## テキストへの特殊文字の挿入 {#special}
+## テキストに特殊文字を挿入 {#special}
 
 必要に応じて、ドキュメントフラグメントに特殊文字を挿入します。例えば、特殊文字パレットを使用して、以下の特殊文字を挿入することができます。
 

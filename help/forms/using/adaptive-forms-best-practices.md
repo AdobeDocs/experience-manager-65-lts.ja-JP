@@ -1,15 +1,12 @@
 ---
 title: アダプティブフォームの操作のベストプラクティス
 description: AEM Forms プロジェクトの設定、アダプティブフォームの開発、AEM Forms システムのパフォーマンスの最適化のための、ベストプラクティスを説明します。
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: author
-feature: Adaptive Forms,Foundation Components,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: b87629fa-85a9-4024-963a-4761bc093e62
-source-git-commit: fef6317a0faf8d7324a83a36a3b441bbda66f970
+source-git-commit: d0529c8bce32e192cbbc7686f14825df57762363
 workflow-type: tm+mt
-source-wordcount: '5536'
+source-wordcount: '5535'
 ht-degree: 99%
 
 ---
@@ -99,7 +96,7 @@ AEM プロジェクトのセットアップを完了したら、アダプティ�
 
 ### フォームテンプレートの作成
 
-**設定ブラウザー**&#x200B;で有効になっているフォームテンプレートを使用して、アダプティブ フォームを作成できます。フォームテンプレートを有効にするには、[アダプティブフォームテンプレートの作成](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template)を参照してください。
+**設定ブラウザー**&#x200B;で有効になっているフォームテンプレートを使用して、アダプティブ フォームを作成できます。フォームテンプレートを有効にするには、[アダプティブフォームテンプレートの作成](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template)を参照してください。
 
 フォームテンプレートは、別のオーサーマシンで作成されたアダプティブフォームパッケージからアップロードすることもできます。 [aemforms-references-* パッケージ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)をインストールすると、フォームテンプレートが利用可能になります。推奨されるベストプラクティスの一部を次に示します。
 
@@ -328,8 +325,8 @@ AEM プロジェクトをある環境から別の環境に移動する必要が�
 * `/content/forms/af/` パス および `/content/dam/formsanddocuments/*` パスはキャッシュしないでください。アダプティブフォームのキャッシュ設定について詳しくは、[アダプティブフォームのキャッシュ](/help/forms/using/configure-adaptive-forms-cache.md)を参照してください。
 
 * Web サーバー圧縮モジュールを経由して、HTML を有効にします。詳しくは、[AEM Forms サーバーのパフォーマンス調整](/help/forms/using/performance-tuning-aem-forms.md)を参照してください。
-* 大規模なフォームではリクエストあたりの呼び出し数の設定を増やします。[大規模フォームおよび複雑なフォームのパフォーマンスの最適化](/help/forms/using/adaptive-forms-best-practices.md#optimizing-performance-of-large-and-complex-forms)を参照してください。
-* [エラーハンドラーにより表示されるカスタムエラーページ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html)を作成します。
+* 大規模なフォームではリクエストあたりの呼び出し数の設定を増やします。[大規模フォームおよび複雑なフォームのパフォーマンスの最適化](#optimizing-performance-of-large-and-complex-forms)を参照してください。
+* [エラーハンドラーにより表示されるカスタムエラーページ](/help/sites-developing/customizing-errorhandler-pages.md)を作成します。
 * AEM Forms サーバーを保護します。
 
    * `nosamplecontent` 実行モードを使用して、実稼働サーバーにサンプルコンテンツおよびサンプルユーザーがデプロイされていないことを確認します。[AEM の実稼動準備完了モードでの実行](/help/sites-administering/production-ready.md)を参照してください。
@@ -366,11 +363,11 @@ AEM プロジェクトをある環境から別の環境に移動する必要が�
 
 AEM Forms ルールエディターは、ルールを作成および管理するための視覚的なインターフェイスを備えているので、大がかりなコーディングの必要性が軽減されます。この機能は、高度なプログラミングスキルを持たないが、フォーム内のビジネスルールを定義および管理する必要があるビジネスユーザーやフォームデザイナーに特に役に立ちます。ここでは、ルールエディターで以下を行えるいくつかのユースケースについて説明します。
 
-* &#x200B;<!-- Allows you --> 大がかりなプログラミングを必要とせずにフォームのビジネスルールを定義する。
-* &#x200B;<!-- Use the Rule Editor when you need --> フォーム内に条件ロジックを実装する。これには、フォーム要素の表示／非表示の切り替え、特定の条件に基づくフィールド値の変更、フォームの動作の動的な変更などが含まれます。
-* &#x200B;<!--When you want --> フォーム送信時にデータ検証ルールを強制的に適用する。ルールエディターを使用して、検証条件を定義できます。
-* &#x200B;<!-- When you need --> フォームを外部のデータソース（FDM）またはサービスと統合する。ルールエディターを使用して、フォームの操作中にデータを取得、表示または操作するためのルールを定義できます。
-* &#x200B;<!-- If you want -->ユーザーの操作に応じた動的でインタラクティブなフォームを作成する。ルールエディターを使用すると、フォーム要素の動作をリアルタイムで制御するルールを定義できます。
+* <!-- Allows you --> 大がかりなプログラミングを必要とせずにフォームのビジネスルールを定義する。
+* <!-- Use the Rule Editor when you need --> フォーム内に条件ロジックを実装する。これには、フォーム要素の表示／非表示の切り替え、特定の条件に基づくフィールド値の変更、フォームの動作の動的な変更などが含まれます。
+* <!--When you want --> フォーム送信時にデータ検証ルールを強制的に適用する。ルールエディターを使用して、検証条件を定義できます。
+* <!-- When you need --> フォームを外部のデータソース（FDM）またはサービスと統合する。ルールエディターを使用して、フォームの操作中にデータを取得、表示または操作するためのルールを定義できます。
+* <!-- If you want -->ユーザーの操作に応じた動的でインタラクティブなフォームを作成する。ルールエディターを使用すると、フォーム要素の動作をリアルタイムで制御するルールを定義できます。
 
 ルールエディターは、AEM Forms 基盤コンポーネントとコアコンポーネントの両方で使用できます。
 

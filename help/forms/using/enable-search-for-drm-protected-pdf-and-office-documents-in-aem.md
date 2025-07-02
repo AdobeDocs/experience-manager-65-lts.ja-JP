@@ -1,18 +1,15 @@
 ---
 title: Document Security によって保護された PDF ドキュメントと Microsoft Office ドキュメントを AEM で検索可能にする
 description: ネイティブ AEM 検索を有効にし、DRM 保護された PDF ドキュメントで全テキストの検索を実行する方法について説明します。
-content-type: reference
-geptopics: SG_AEMFORMS/categories/working_with_document_security
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 noindex: true
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 5e9d3f3c-8fc4-4d01-9f1e-62d3c29ab9e5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: cd6caaf9de907488db14df2a6396fa60efa2d42c
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 100%
+source-wordcount: '664'
+ht-degree: 98%
 
 ---
 
@@ -49,7 +46,7 @@ Adobe Experience Manager には、AEM に保存された様々なアセットを
 
 ### 相互認証を使用した AEM Forms Client SDK Bundle の設定 {#configure-aem-forms-client-sdk-bundle-using-mutual-authentication}
 
-1. AEM Forms on JEE の相互認証を有効にします。詳しくは、[CAC および相互認証](https://helpx.adobe.com/jp/livecycle/kb/cac-mutual-authentication.html)を参照してください。
+1. JEE 上のAEM Formsの相互認証を有効にします。
 1. AEM Configuration Manager を開き、管理者としてログインします。デフォルトの URL は https://&lt;serverName>:&lt;port>/lc/system/console/configMgr です。
 1. AEM Forms クライアント SDK バンドルを探して開きます。次の各プロパティの値を指定します。
 

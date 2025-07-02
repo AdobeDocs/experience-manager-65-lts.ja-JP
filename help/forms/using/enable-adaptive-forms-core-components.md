@@ -6,9 +6,9 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: a163598d-0a6e-45a8-b3b2-1f260007952b
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: f21858421f2e84643fab1add5116b033cb6dd122
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '956'
 ht-degree: 98%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 98%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=ja) |
+| AEM as a Cloud Service | [ここをクリックしてください](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components) |
 | AEM 6.5 | この記事 |
 
 <!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
@@ -30,9 +30,7 @@ AEM 6.5 Forms 環境でアダプティブフォームコアコンポーネント
 
 ## 前提条件 {#prerequisites}
 
-AEM 6.5 Forms 環境でアダプティブフォームコアコンポーネントを有効にする前に、以下の操作が必要です。
-
-* [AEM 6.5 Forms サービスパック 16 （6.5.16.0）以降へのアップグレード ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html)。
+AEM 6.5 LTS Forms環境でアダプティブ Forms コアコンポーネントを有効にする前に、以下の点を確認してください。
 
 * [Apache Maven](https://maven.apache.org/download.cgi) の最新リリースをインストールします。
 

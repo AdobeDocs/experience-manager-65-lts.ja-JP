@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a28b084e-ec74-4c05-a90c-d447792faa41
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9421c7d0b5cf80a0f2d2d82034091ffe4f875af6
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,6 +22,6 @@ ht-degree: 99%
 * Acrobat と Reader は、Microsoft® Windows® 上では、PDF を保護ビューモードで開くように設定することができます。これにより、XFA ベースの PDF フォームを開けなくなります。Acrobat または Reader の保護ビューモードが無効になっていることを確認します。 詳しくは、[保護されたビュー（Windows のみ）](https://helpx.adobe.com/jp/reader/using/protected-mode-windows.html)を参照してください。
 * （フォーム開発者向け）Adobe Experience Manager Forms は次の機能もサポートしています。
 
-   * [XFA ベースのフォームを HTML5 フォームにレンダリング](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/html5-forms/introduction.html?#key-capabilities-of-html-forms-br)して、iPad のようなモバイルデバイスで動作するブラウザーなど、HTML5 をサポートしているブラウザーでフォームを開くことができるようにします。フォームの HTML5 レンディションは、フォームデザインのレイアウトを保持し、XFA フォームテンプレートに埋め込まれたほとんどのフォームロジック（JavaScript、フォーム計算、フォーム検証など）をサポートします。
-   * [XFA ベースのフォームをモバイルレスポンシブなアダプティブフォームに変換](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?#create-an-adaptive-form-based-on-an-xfa-form-template)します。これらのフォームは、レスポンシブレイアウトやパーソナライズ機能を提供し、フィールドやセクションを必要に応じて追加または削除することで、ユーザーの応答に動的に適応します。また、様々なデータソース、レコードのドキュメント機能、パフォーマンス評価のための Adobe Analytics への簡単な接続を利用するためにすぐに使用できるコネクタも用意されています。詳細情報は、[主な特長と機能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=ja)を参照してください。
+   * [XFA ベースのフォームを HTML5 フォームにレンダリング](/help/forms/using/introduction.md#key-capabilities-of-html-forms-br)して、iPad のようなモバイルデバイスで動作するブラウザーなど、HTML5 をサポートしているブラウザーでフォームを開くことができるようにします。フォームの HTML5 レンディションは、フォームデザインのレイアウトを保持し、XFA フォームテンプレートに埋め込まれたほとんどのフォームロジック（JavaScript、フォーム計算、フォーム検証など）をサポートします。
+   * [XFA ベースのフォームをモバイルレスポンシブなアダプティブフォームに変換](/help/forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)します。これらのフォームは、レスポンシブレイアウトやパーソナライズ機能を提供し、フィールドやセクションを必要に応じて追加または削除することで、ユーザーの応答に動的に適応します。また、様々なデータソース、レコードのドキュメント機能、パフォーマンス評価のための Adobe Analytics への簡単な接続を利用するためにすぐに使用できるコネクタも用意されています。詳細情報は、[主な特長と機能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=ja)を参照してください。
 これにより、XFA フォームに対するテクノロジー投資が保護され、エンドユーザーに最適なエクスペリエンスを継続的に提供することができます。詳しくは、[Adobe Experience Manager Forms 製品ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=ja)を参照してください。

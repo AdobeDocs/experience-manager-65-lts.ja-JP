@@ -1,19 +1,14 @@
 ---
 title: HTML5 フォームのベストプラクティス
 description: 最適なパフォーマンスが得られるように XFA ベースの HTML5 フォームを調整します。
-contentOwner: khsingh
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: hTML5_forms
-content-type: reference
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 7f66832f-c9d1-43e1-b3a4-a25ea9a8a224
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 7a52531c6c9c1c81ab563fd85f67ba4b7f81d318
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -76,7 +71,6 @@ Adobe Experience Manager（AEM）Forms を使用すると、複雑なトラン�
 * [AEM 管理のベストプラクティス](/help/sites-administering/administer-best-practices.md)
 * [ソリューション開発のベストプラクティス](/help/sites-developing/best-practices.md)
 * [アダプティブフォーム操作のベストプラクティス](/help/forms/using/adaptive-forms-best-practices.md)
-* [AEM Formsサーバーがダイナミック PDF フォームにフォントを埋め込まない](https://helpx.adobe.com/jp/aem-forms/kb/aem-forms-server-does-not-embed-fonts-to-dynamic-pdf-form.html)
 
 ## クイックリファレンスカード {#quick-reference-card}
 

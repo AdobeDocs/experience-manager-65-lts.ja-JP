@@ -9,10 +9,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 7da165ac-2039-4ac8-810d-fbe6f771453a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: c03b3e3e4526530715718b68804ac26d2562bdb8
 workflow-type: tm+mt
-source-wordcount: '2372'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
-> [フォームフラグメントコンポーネントの設定ダイアログとデザインダイアログ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html?lang=ja)を使用して、ユーザーのフラグメントエクスペリエンスを簡単にカスタマイズできます。
+> [フォームフラグメントコンポーネントの設定ダイアログとデザインダイアログ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment)を使用して、ユーザーのフラグメントエクスペリエンスを簡単にカスタマイズできます。
 
 ## フラグメントの作成 {#create-a-fragment}
 

@@ -1,19 +1,14 @@
 ---
 title: Document Security によって保護された PDF ドキュメントを AEM で検索可能にする
 description: ネイティブ AEM 検索を有効にし、DRM 保護された PDF ドキュメントで全テキストの検索を実行する方法について説明します。
-contentOwner: khsingh
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-geptopics: SG_AEMFORMS/categories/working_with_document_security
-docset: aem65
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: ad86398d-0dc9-4168-b409-4d231b8d586b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 757c26274b39f5fb37a090f320493abd1af44c42
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 100%
+source-wordcount: '709'
+ht-degree: 98%
 
 ---
 
@@ -66,7 +61,7 @@ AEM 検索では、AEM アセットを検索して場所を特定することが
 
 #### 相互認証を使用した Adobe LiveCycle Client SDK Bundle の設定 {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
-1. AEM Forms on JEE の相互認証を有効にします。詳しくは、[CAC および相互認証](https://helpx.adobe.com/jp/livecycle/kb/cac-mutual-authentication.html)を参照してください。
+1. JEE 上のAEM Formsの相互認証を有効にします。
 1. AEM Web コンソールを開きます。URL は https://&#39;[server]:[port]&#39;/system/console/configMgr です。
 1. **Adobe LiveCycle Client SDK** バンドルを探して開きます。次の各プロパティの値を指定します。
 
