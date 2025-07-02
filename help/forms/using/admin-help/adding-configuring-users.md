@@ -1,18 +1,16 @@
 ---
 title: ユーザーの追加および設定
 description: 管理コンソールの User Management 設定では、ユーザーの作成または削除、および他のユーザー設定を行うことができます。
-contentOwner: admin
-geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: b3f8e1d6-3e6e-4b2c-8528-3346bbda3396
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9dcdf84b70a3b0ea6fb332cd2cf8ccf1d4476489
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 99%
+source-wordcount: '1713'
+ht-degree: 100%
 
 ---
 
@@ -41,10 +39,6 @@ ht-degree: 99%
 
 1. （オプション）ユーザーにロールを割り当てるには、「**[!UICONTROL ロールを検索]**」をクリックし、割り当てるロールのチェックボックスを選択して「**[!UICONTROL OK]**」をクリックします。
 1. 「**[!UICONTROL 完了]**」をクリックします。
-
-   >[!NOTE]
-   >
-   >ユーザーのログインに関する問題が発生した場合は、[AEM Forms on JEE ユーザーが OSGi サイドで AEM Forms にログインできない](https://helpx.adobe.com/jp/aem-forms/kb/AEM-users-fails-to-login.html)を参照してください。
 
 ## ユーザー設定 {#user-settings}
 
@@ -178,4 +172,4 @@ MySQL を使用する場合は、ユーザー ID に拡張文字を含めるこ�
 
 CQ にはデフォルトの 404 ハンドラ jsp を上書きするメカニズムが提供されています。
 
-エラーハンドリングページのカスタマイズ方法については、Adobe Experience Manager ドキュメントの[エラーハンドラーによって表示されるページのカスタマイズ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html?lang=en)を参照してください。
+エラーハンドリングページのカスタマイズ方法については、Adobe Experience Manager ドキュメントの[エラーハンドラーによって表示されるページのカスタマイズ](/help/sites-developing/customizing-errorhandler-pages.md)を参照してください。

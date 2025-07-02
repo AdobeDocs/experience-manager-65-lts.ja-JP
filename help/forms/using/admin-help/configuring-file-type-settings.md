@@ -10,10 +10,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9d4681c0b184cc7769a8da20a4c50d420e1137c7
 workflow-type: tm+mt
-source-wordcount: '6200'
-ht-degree: 100%
+source-wordcount: '6185'
+ht-degree: 99%
 
 ---
 
@@ -88,7 +88,7 @@ PDF Generator では、サポートされるファイルタイプについてア
 
 1. すべてのセクションの情報を入力したら、**[!UICONTROL 保存]**&#x200B;または&#x200B;**[!UICONTROL 別名で保存]**&#x200B;をクリックして、設定の名前を指定します。
 
-様々なファイルタイプのサポートをカスタマイズできます（詳しくは、「[AEM Forms によるプログラミング](https://www.adobe.com/go/learn_lc_programming_11_jp)」の「[追加のネイティブファイル形式に対するサポートの追加](https://help.adobe.com/ja_JP/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)」を参照。）
+様々なファイルタイプのサポートをカスタマイズできます。
 
 ## デフォルト設定を変更 {#change-the-default-settings}
 
@@ -261,7 +261,7 @@ PDF Generator では、PDF ファイルのサイズを低減することがで�
 
    >[!NOTE]
    >
-   >*ドキュメントにサブセットが埋め込まれているフォントの埋め込みを解除する場合、+ 記号をフォント名のプレフィックスとして指定します。例えば、「+Helvetica」とします。*
+   >*ドキュメントにサブセットが埋め込まれているフォントの埋め込みを解除する場合、+ 記号をフォント名の接頭辞として指定します。例えば、「+Helvetica」とします。*
 
 1. 埋め込まれたフォントの使用中のサブセットのみを埋め込む場合、「**すべての埋め込まれたフォントをサブセット化**」を選択します。
 

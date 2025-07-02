@@ -9,10 +9,10 @@ feature: Asset Management,Renditions
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9f95a54d-6c5e-44c1-965e-631ec7487308
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: dc405bec510b0f72e916df343790572b3cd51526
 workflow-type: tm+mt
-source-wordcount: '3322'
-ht-degree: 100%
+source-wordcount: '3307'
+ht-degree: 99%
 
 ---
 
@@ -46,12 +46,12 @@ ht-degree: 100%
 
 次の画像アセットの例は、追加されたスマートイメージングの最適化を示しています。
 
-| 画像（URL） | サムネール | サイズ（JPEG） | サイズ（WebP）（スマートイメージングを使用） | サイズ（AVIF）（スマートイメージングを使用） | WebP による削減率 | AVIF による削減率 |
+| 画像（URL） | サムネイル | サイズ（JPEG） | サイズ（WebP）（スマートイメージングを使用） | サイズ（AVIF）（スマートイメージングを使用） | WebP による削減率 | AVIF による削減率 |
 |---|---|---|---|---|---|---|
-| [画像 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 145 KB | 106 KB | 90.2 KB | 26.89％ | 37.79％ |
-| [画像 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 412 KB | 346 KB | 113 KB | 16.01％ | 72.57％ |
-| [画像 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture3](/help/assets/assets-dm/picture3.png) | 221 KB | 189 KB | 87.1 KB | 14.47％ | 60.58％ |
-| [画像 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 594 KB | 545 KB | 286 KB | 8.25％ | 51.85％ |
+| [画像 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 145 KB | 106 KB | 90.2 KB | 26.89％ | 37.79％ |
+| [画像 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 412 KB | 346 KB | 113 KB | 16.01％ | 72.57％ |
+| [画像 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture3](/help/assets/assets-dm/picture3.png) | 221 KB | 189 KB | 87.1 KB | 14.47％ | 60.58％ |
+| [画像 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 594 KB | 545 KB | 286 KB | 8.25％ | 51.85％ |
 
 上記と同様に、アドビでも、より大きなサンプルセットを使用してテストを実行しました。AVIF 形式は WebP よりもサイズ削減率が 20％向上しました（WebP では JPEG に対して 27％の削減を実現）。視覚的な質はすべて同じです。全体的に見て、AVIF は JPEG よりも最大で平均 41％のサイズ削減を実現しています。
 
@@ -134,7 +134,7 @@ DPR とネットワーク帯域幅の値は、バンドルされた CDN のク�
 * Adobe Sensei テクノロジーを使用して、イメージリクエストで指定された品質（`qlt`）に従って変換します。
 * TTL（Time To Live）独立。以前は、スマートイメージングを機能させるには、最小 TTL 値 12 時間が必要でした。
 * 以前は、元の画像と派生画像の両方がキャッシュされていて、キャッシュを無効にする 2 つの手順がありました。最新のスマートイメージングでは、派生画像のみがキャッシュされ、1 ステップでキャッシュを無効化できます。
-* ルールセットでカスタムヘッダーを使用しているユーザーは、以前のバージョンのスマートイメージングとは異なってこれらのヘッダーがブロックされないので、最新のスマートイメージングのメリットが得られます。例えば、[画像応答へのカスタムヘッダー値の追加 | Dynamic Media Classic](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html) で推奨される「Timing Allow Origin」、「X-Robot」などです。
+* ルールセットでカスタムヘッダーを使用しているユーザーは、以前のバージョンのスマートイメージングとは異なってこれらのヘッダーがブロックされないので、最新のスマートイメージングのメリットが得られます。例えば、「Timing Allow Header」や「X-Robot」などです。
 
 ## よくある質問
 
@@ -336,9 +336,9 @@ TTL を調整するには：
 >**X-Adobe-Smart-Imaging = -1 で WebP を配信中**
 >
 >`X-Adobe-Smart-Imaging` の値が -1 で、WebP がまだ配信中の場合、スマートイメージングはアクティブです。ただし、キャッシュが古いので、サイズのメリットは計算されませんでした。画像の URL で `cache=update` を（1 回だけ）使用して、この問題を修正できます。
->この修飾子の使用例を次に示します。
->`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
->キャッシュ全体を無効にするには、サポートケースを作成する必要があります。
+>>この修飾子の使用例を次に示します。
+>>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+>>キャッシュ全体を無効にするには、サポートケースを作成する必要があります。
 
 +++
 

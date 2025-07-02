@@ -1,19 +1,15 @@
 ---
 title: クラスター環境でのバックアップと復元の方策
 description: AEM Forms の実装で、追加のカスタムデータを別のデータベースに格納する場合、そのカスタムデータをバックアップするための方法を導入し、AEM Forms データと同期させる必要があります。
-contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 0fe9b02a-96b4-462f-a940-a2d6084ed0a4
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 1b7e0c532ab46346059de01cee4a1adecf3a0a13
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1391'
 ht-degree: 100%
 
 ---
@@ -53,7 +49,7 @@ ht-degree: 100%
    1. すべてのセカンダリクラスターノードのすべてのファイル（サブディレクトリも含む）をバックアップします。
    1. 各クラスターノードのリポジトリ / システム ID を別々にバックアップします。
 
-   手順について詳しくは、[バックアップと復旧](https://helpx.adobe.com/jp/experience-manager/kb/CRXBackupAndRestoreProcedure.html)を参照してください。
+   手順について詳しくは、[バックアップと復旧](/help/sites-administering/backup-and-restore.md)を参照してください。
 
 1. カスタマーフォントなど、その他すべてのデータをバックアップします。
 1. クラスターを再起動します。
@@ -72,7 +68,7 @@ ht-degree: 100%
    1. すべてのセカンダリクラスターノードのすべてのファイル（サブディレクトリも含む）をバックアップします。
    1. 各クラスターノードのリポジトリ / system.id を別々にバックアップします。
 
-   手順について詳しくは、[バックアップとリストア](https://helpx.adobe.com/jp/experience-manager/kb/CRXBackupAndRestoreProcedure.html)を参照してください。
+   手順について詳しくは、[バックアップとリストア](/help/sites-administering/backup-and-restore.md)を参照してください。
 
 1. カスタマーフォントなど、その他すべてのデータをバックアップします。
 1. クラスターを再起動します。
@@ -178,15 +174,15 @@ AEM セカンダリノードの災害時復旧シナリオのためにこのフ�
 
 ## Correspondence Management Solution パブリッシュノードのバックアップと復元 {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-パブリッシャーノードは、クラスター環境ではプライマリとセカンダリの関係がありません。パブリッシャーノードのバックアップは、「[バックアップと復元](https://helpx.adobe.com/jp/experience-manager/kb/CRXBackupAndRestoreProcedure.html)」に従って行うことができます。
+パブリッシャーノードは、クラスター環境ではプライマリとセカンダリの関係がありません。パブリッシャーノードのバックアップは、「[バックアップと復元](/help/sites-administering/backup-and-restore.md)」に従って行うことができます。
 
 ### 単一パブリッシャーノードの復元 {#recover-a-single-publisher-node}
 
 1. 回復する必要のあるノードをシャットダウンし、そのノードが再び立ち上がるまではパブリッシュ作業を行わないようにします。
-1. [復元とバックアップ](https://helpx.adobe.com/jp/experience-manager/kb/CRXBackupAndRestoreProcedure.html)に従って、パブリッシュノードを復元します。
+1. [復元とバックアップ](/help/sites-administering/backup-and-restore.md)に従って、パブリッシュノードを復元します。
 
 ### クラスターの復元 {#recover-a-cluster}
 
 1. クラスターをシャットダウンします。
-1. [復元とバックアップ](https://helpx.adobe.com/jp/experience-manager/kb/CRXBackupAndRestoreProcedure.html)に従って、パブリッシュノードを復元します。
+1. [復元とバックアップ](/help/sites-administering/backup-and-restore.md)に従って、パブリッシュノードを復元します。
 1. オーサークラスターのプライマリノードを起動してからセカンダリノードを起動します。

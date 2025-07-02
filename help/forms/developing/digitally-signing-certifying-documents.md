@@ -1,19 +1,15 @@
 ---
 title: ドキュメントのデジタル署名と認証
 description: Signature サービスを使用して、PDF ドキュメントに対するデジタル署名フィールドの追加と削除、PDF ドキュメント内の署名フィールドの名前の取得、署名フィールドの変更、PDF ドキュメントのデジタル署名、PDF ドキュメント内の認証、PDF ドキュメント内にあるデジタル署名の検証、PDF ドキュメント内にあるすべてのデジタル署名の検証および署名フィールドからのデジタル署名の削除を行います。
-contentOwner: admin
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: operations
 role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 30ed51ad-4f69-41eb-9fca-d29d644aa4ba
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9a11887b6bb8446772e5a41246da1023f40ce507
 workflow-type: tm+mt
-source-wordcount: '16917'
+source-wordcount: '16909'
 ht-degree: 99%
 
 ---
@@ -150,7 +146,7 @@ Signature API (Java) を使用して署名フィールドを追加します。
 1. PDFドキュメントを PDF ファイルとして保存する
 
    * `java.io.File` オブジェクトを作成し、ファイル拡張子が .pdf であることを確認します。
-   * `com.adobe.idp` を呼び出します。`Document` オブジェクトの `copyToFile` メソッドで、`Document` オブジェクトの内容をファイルにコピーします。必ず `com.adobe.idp` を使用してください。`addSignatureField` メソッドによって返された `Document`オブジェクトです。
+   *  `com.adobe.idp` を呼び出します。`Document` オブジェクトの `copyToFile` メソッドで、`Document` オブジェクトの内容をファイルにコピーします。必ず `com.adobe.idp` を使用してください。`addSignatureField` メソッドによって返された `Document`オブジェクトです。
 
 **関連トピック**
 
@@ -403,9 +399,9 @@ Signature サービスの操作をプログラムで実行する前に、Signatu
 次のシード値ディクショナリ値を設定できます。
 
 * **リビジョンの確認**：署名フィールドに署名が適用された場合に失効確認を実行するかどうかを指定します。
-* **証明書オプション**：証明書のシード値ディクショナリに値を割り当てます。証明書のオプションを指定する前に、証明書のシード値ディクショナリに慣れておくことをお勧めします。（[PDF リファレンス](https://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf)を参照してください）。
+* **証明書オプション**：証明書のシード値ディクショナリに値を割り当てます。証明書オプションを指定する前に、証明書のシード値ディクショナリに慣れておくことをお勧めします。
 * **ダイジェストオプション**：署名に使用するダイジェストアルゴリズムを割り当てます。有効な値は 、SHA1、SHA256、SHA384、SHA512 および RIPEMD160 です。
-* **フィルター**：署名フィールドで使用するフィルタを指定します。例えば、Adobe.PPKLite フィルターを使用できます。（[PDF リファレンス](https://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf)を参照してください）。
+* **フィルター**：署名フィールドで使用するフィルタを指定します。例えば、Adobe.PPKLite フィルターを使用できます。
 * **フラグオプション**：この署名フィールドに関連付けられているフラグ値を指定します。値が 1 の場合、署名者は指定された値のみをエントリに使用する必要があります。値が 0 の場合、他の値も許可されています。ビット位置は次のとおりです。
 
    * **1（フィルター）：**&#x200B;署名フィールドへの署名に使用する署名ハンドラー
@@ -1482,7 +1478,7 @@ Signature Service API（Web サービス）を使用してデジタル署名を�
 
    * コンストラクタを使用して `BLOB` オブジェクトを作成します。`BLOB` オブジェクトは、検証するデジタルまたは認証済み署名が含まれる PDF ドキュメントを格納するために使用されます。
    * コンストラクタを使用して `System.IO.FileStream` オブジェクトを作成します。署名済み PDF ドキュメントのファイルの場所と、ファイルを開くモードを表す文字列値を渡します。
-   * `System.IO.FileStream` オブジェクトのコンテンツを格納するバイト配列を作成します。`System.IO.FileStream` オブジェクトの `Length` プロパティを取得して、バイト配列のサイズを決定することができます。
+   *  `System.IO.FileStream` オブジェクトのコンテンツを格納するバイト配列を作成します。`System.IO.FileStream` オブジェクトの `Length` プロパティを取得して、バイト配列のサイズを決定することができます。
    * `System.IO.FileStream` オブジェクトの `Read` メソッドを呼び出して、バイト配列にストリームデータを入力します。読み取り対象のバイト配列、開始位置、ストリーム長を渡します。
    * `MTOM` プロパティにバイト配列のコンテンツを割り当てて、`BLOB` オブジェクトを設定します。
 

@@ -1,14 +1,13 @@
 ---
 title: アセットテンプレート
 description: ' [!DNL Adobe Experience Manager Assets] のアセットテンプレートについて、およびアセットテンプレートを使用してマーケティング用の販促物を作成する方法について説明します。'
-contentOwner: AG
 role: User
 feature: Asset Management,Developer Tools
 solution: Experience Manager, Experience Manager Assets
 exl-id: 8584d5ea-6ef2-4e81-8b18-5aa2d4226ea6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9ed889c74a886e1b41c379dac77bb570ef5c2c39
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1557'
 ht-degree: 100%
 
 ---
@@ -126,8 +125,6 @@ Web インターフェイスから [!DNL Adobe InDesign] テンプレートを�
    >
    >* [!DNL InDesign] テンプレート作成時に画像を埋め込む（[リンクと埋め込み画像について](https://helpx.adobe.com/jp/indesign/using/graphics-links.html)を参照）。
    >* [!DNL Experience Manager] をローカルファイルシステムにマウントし、足りないアイコンを [!DNL Experience Manager] の既存アセットとマッピングします。
-   >
-   >[!DNL InDesign] ドキュメントでの作業の詳細については、「[ Experience ManagerでInDesignドキュメントを使用するためのベストプラクティス](https://helpx.adobe.com/jp/experience-manager/kb/best-practices-idd-docs-aem.html)」を参照してください。
 
 1. パンフレットの PDF レンディションを生成するには、ダイアログで Acrobat オプションを選択し、「**[!UICONTROL 続行]**」をクリックします。
 1. 開始時のフォルダーに販促物が作成されます。レンディションを表示するには、販促物を開いて、グローバルナビゲーションリストから「**[!UICONTROL レンディション]**」を選択します。

@@ -1,15 +1,14 @@
 ---
 title: レンディションへの XMP の書き戻し
 description: XMP の書き戻し機能を使用して、アセットのメタデータの変更を、そのアセットのすべてのレンディションまたは特定のレンディションに反映させる方法を説明します。
-contentOwner: AG
 role: User, Admin
 feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e3972784-9ded-4da8-b90c-ec2da9c3297a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 863ec2b6d8a6e22705c2f48a4f7bbb76fa34f7c7
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '780'
 ht-degree: 100%
 
 ---
@@ -19,7 +18,7 @@ ht-degree: 100%
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=ja) |
-| AEM 6.5 | この記事 |
+| AEM 6.5 LTS | この記事 |
 
 [!DNL Adobe Experience Manager Assets] の XMP の書き戻し機能では、メタデータの変更内容を元のアセットのレンディションに複製します。アセット内からアセットのメタデータを変更すると、またはアセットをアップロードすると、変更内容はまずアセット階層のメタデータノードに保存されます。
 
@@ -69,8 +68,6 @@ XMP の書き戻し機能でメタデータをレンディションサムネー�
 メタデータの変更がアセットのレンディション thumbnail.140.100.png と thumbnail.319.319.png のみに反映され、他のレンディションには反映されなくなります。
 
 >[!NOTE]
->
->64 ビット Linux での XMP の書き戻しに関する問題については、[64 ビット RedHat Linux で XMP の書き戻しを有効にする方法](https://helpx.adobe.com/jp/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)を参照してください。
 >
 >サポートしているプラットフォームについては、[XMP メタデータの書き戻しの前提条件](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back)を参照してください。
 

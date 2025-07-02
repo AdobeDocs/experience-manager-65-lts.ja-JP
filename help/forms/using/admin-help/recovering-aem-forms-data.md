@@ -2,17 +2,14 @@
 title: AEM Forms データの回復
 description: ここでは、AEM Forms データの回復に必要な手順について説明します。
 contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 6345edda-cdc6-4e13-ade6-2dd6de9d9616
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f7adcbe7700d0ea9cbd18eb0b59bcd76f56e8cc5
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 97%
+source-wordcount: '1117'
+ht-degree: 95%
 
 ---
 
@@ -98,7 +95,7 @@ AEM Forms は、以下の障害から確実に回復します。
 
    * **スタンドアロン**
 
-     *作成者インスタンスおよび発行インスタンスの復元*：事故が発生した場合は、[バックアップと復元](https://helpx.adobe.com/jp/experience-manager/kb/CRXBackupAndRestoreProcedure.html)に説明されている手順を実行して、リポジトリを最新のバックアップ状態に復元できます。
+     *作成者インスタンスおよび発行インスタンスの復元*：事故が発生した場合は、[ バックアップと復元 ](/help/sites-administering/backup-and-restore.md) に説明されている手順を実行して、リポジトリを最新のバックアップ状態に復元できます。
 
      Author ノードを完全に復元すると、Forms Manager および AEM Forms Workspace データも復元されます。
 

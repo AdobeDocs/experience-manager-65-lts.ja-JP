@@ -1,16 +1,15 @@
 ---
 title: サポートしているファイル形式と MIME タイプ
 description: ' [!DNL Assets]  および  [!DNL Dynamic Media]  でサポートしているファイル形式と MIME タイプおよび各形式でサポートされる機能。'
-contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin
 feature: Asset Management,Renditions
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e48f7950-1b6e-4896-8abc-523552e42ed9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2a328b703d691a23ca46a4171624a4184a8392dd
 workflow-type: tm+mt
-source-wordcount: '1872'
+source-wordcount: '1554'
 ht-degree: 100%
 
 ---
@@ -283,9 +282,9 @@ Imaging Transcoding ライブラリは、JPG／JPEG、PNG（8 ビットおよび
 | HEIC | − | − | − | ✓ | − | − |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [画像](/help/assets/image-sets.md)、 [混在メディア](/help/assets/mixed-media-sets.md) および [スピン](/help/assets/spin-sets.md) |
 | PICT | ✓ | − | − | − | − | − |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [画像](/help/assets/image-sets.md)、[混在メディア](/help/assets/mixed-media-sets.md)および [スピン](/help/assets/spin-sets.md) |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [画像](/help/assets/image-sets.md), [混在メディア](/help/assets/mixed-media-sets.md)および [スピン](/help/assets/spin-sets.md) |
 | PSD ‡ | ✓ | − | − | − | − | − |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [画像](/help/assets/image-sets.md)、[混在メディア](/help/assets/mixed-media-sets.md)および [スピン](/help/assets/spin-sets.md) |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [画像](/help/assets/image-sets.md)、[混在メディア](/help/assets/mixed-media-sets.md)および[スピン](/help/assets/spin-sets.md) |
 | WEBP | − | − | − | ✓ | − | − |
 
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
@@ -301,8 +300,6 @@ Imaging Transcoding ライブラリは、JPG／JPEG、PNG（8 ビットおよび
 ## Dynamic Media — サポートされていないラスタライズ画像形式 {#unsupported-image-formats-dynamic-media}
 
 以下のリストは、Dynamic Media でサポートされて&#x200B;*いない*&#x200B;ラスタライズ画像ファイル形式のサブタイプに関する説明です。
-
-ナレッジベース記事「[Dynamic Mediaでサポートされていないファイル形式を検出する](https://helpx.adobe.com/jp/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html)」も参照してください。
 
 * 100 MB を超える IDAT チャンクサイズを持つ PNG ファイル。
 * PSB ファイル。

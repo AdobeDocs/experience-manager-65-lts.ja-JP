@@ -1,17 +1,16 @@
 ---
-title: でのデジタルアセットと画像の検索 [!DNL Adobe Experience Manager]
+title: ' [!DNL Adobe Experience Manager] でのデジタルアセットと画像の検索'
 description: フィルターパネルを使用した [!DNL Adobe Experience Manager] での必要なアセットの検索方法と検索で表示されたアセットの使用方法を説明します。
-contentOwner: AG
 mini-toc-levels: 1
 feature: Search, Metadata
 role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 3511e07b-f6d0-435a-aa80-55357d3dccf5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: df4b8b9c80734917569c40d01ea5789e16bfb4e3
 workflow-type: tm+mt
-source-wordcount: '5650'
-ht-degree: 100%
+source-wordcount: '5645'
+ht-degree: 99%
 
 ---
 
@@ -20,9 +19,9 @@ ht-degree: 100%
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=ja) |
-| AEM 6.5 | この記事 |
+| AEM 6.5 LTS | この記事 |
 
-[!DNL Adobe Experience Manager Assets] は、コンテンツ速度の向上を達成するのに役立つ堅牢なアセット検出方法を備えています。標準搭載の機能とカスタム方法を使用すると、シームレスでインテリジェントな検索エクスペリエンスでチームが市場投入までの時間を短縮できます。アセットの検索は、デジタルアセット管理システムの利用の中核を成します。用途は、クリエイティブ担当者によるさらなる利用、ビジネスユーザーやマーケターによるアセットの堅牢な管理、DAM 管理者による管理などです。[!DNL Assets] ユーザーインターフェイスまたは他のアプリやサーフェスで実行できる簡易検索、詳細検索、カスタム検索は、これらの使用目的を達成するのに役立ちます。
+[!DNL Adobe Experience Manager Assets] は、コンテンツ速度の向上を実現するのに役立つ堅牢なアセット検出方法を提供しています。標準搭載の機能とカスタム方法を使用すると、シームレスでインテリジェントな検索エクスペリエンスでチームが市場投入までの時間を短縮できます。アセットの検索は、デジタルアセット管理システムの利用の中核を成します。用途は、クリエイティブ担当者によるさらなる利用、ビジネスユーザーやマーケターによるアセットの堅牢な管理、DAM 管理者による管理などです。[!DNL Assets] ユーザーインターフェイスまたは他のアプリやサーフェスで実行できる簡易検索、詳細検索、カスタム検索は、これらの使用目的を達成するのに役立ちます。
 
 [!DNL Experience Manager Assets] は次の使用例をサポートしています。ここでは、これらの使用例での使用法、概念、設定、制限事項、トラブルシューティングについて説明します。
 
@@ -65,13 +64,13 @@ ht-degree: 100%
 
 ## 検索結果および動作について {#searchbehavior}
 
-### 基本的な検索用語と検索結果 {#searchbasics}
+### 基本的な検索語と検索結果 {#searchbasics}
 
 オムニサーチフィールドからキーワード検索を実行できます。キーワード検索は、（一般的に使用されるすべてのメタデータフィールドの）全文検索で、大文字と小文字が区別されません。複数のキーワードを使用する場合は、`AND` がキーワード間のデフォルトの演算子になります。
 
-結果は、最も近い一致を先頭に関連性の高い順に並べ替えられます。複数のキーワードがある場合は、メタデータに含まれるキーワードが多いアセットが、より関連性の高い結果になります。メタデータ内では、スマートタグとして表示されるキーワードは、他のメタデータフィールドに表示されるキーワードより高くランク付けされます。[!DNL Experience Manager] では、特定の検索用語に、より高い重みを付けることができます。また、特定の検索用語について、対象となるいくつかのアセットの[ランクを上げる](#searchrank)こともできます。
+結果は、最も近い一致を先頭に関連性の高い順に並べ替えられます。複数のキーワードがある場合は、メタデータに含まれるキーワードが多いアセットが、より関連性の高い結果になります。メタデータ内では、スマートタグとして表示されるキーワードは、他のメタデータフィールドに表示されるキーワードより高くランク付けされます。[!DNL Experience Manager] では、特定の検索語に、より高い重みを付けることができます。また、特定の検索語について、対象となるいくつかのアセットの[ランクを上げる](#searchrank)こともできます。
 
-関連性の高いアセットをすばやく見つけるために、この機能豊富なインターフェイスには、フィルタリング、並べ替え、選択のメカニズムが用意されています。複数の条件に基づいて結果をフィルタリングし、検索されたアセットの数を様々なフィルター別に確認できます。または、オムニサーチフィールドのクエリを変更して検索を再実行することもできます。検索用語やフィルターを変更しても、その他のフィルターは依然として適用され、検索のコンテキストが保たれます。
+関連性の高いアセットをすばやく見つけるために、この機能豊富なインターフェイスには、フィルタリング、並べ替え、選択のメカニズムが用意されています。複数の条件に基づいて結果をフィルタリングし、検索されたアセットの数を様々なフィルター別に確認できます。または、オムニサーチフィールドのクエリを変更して検索を再実行することもできます。検索語やフィルターを変更しても、その他のフィルターは依然として適用され、検索のコンテキストが保たれます。
 
 結果が多数のアセットである場合、[!DNL Experience Manager] では最初の 100 件がカードで、200 件がリストで表示されます。ユーザーがスクロールすると、アセットがさらに読み込まれます。これは、パフォーマンスの向上のためです。[表示されるアセット数](https://www.youtube.com/watch?v=LcrGPDLDf4o)のデモビデオをご覧ください。
 
@@ -126,7 +125,7 @@ ht-degree: 100%
 
 ターゲットを絞ったキーワードの検索結果で一部のアセットのランクを上げることで、この機能をうまく利用できます。以下の例（ビデオ）を参照してください。詳しくは、「[ での検索](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=ja)」を参照してください。 [!DNL Experience Manager]
 
->[!VIDEO](https://video.tv.adobe.com/v/3410338/?quality=6&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *ビデオ：検索結果のランク付けの方法とランクへの影響について*
 
@@ -268,7 +267,7 @@ ht-degree: 100%
 [!DNL Experience Manager Assets] の検索機能には、次の制限事項があります。
 
 * 検索クエリの先頭にスペースを入れないでください。スペースを入れると、検索が機能しません。
-* 検索結果からアセットのプロパティを選択すると、検索をキャンセルした後も、検索用語が [!DNL Experience Manager] に引き続き表示される場合があります。<!-- (CQ-4273540) -->
+* 検索結果からアセットのプロパティを選択すると、検索をキャンセルした後も、検索語が [!DNL Experience Manager] に引き続き表示される場合があります。<!-- (CQ-4273540) -->
 * フォルダーまたはファイルとフォルダーを検索する場合、どのパラメーターでも検索結果を並べ替えることはできません。
 * オムニサーチバーで何も入力せずに `Return` を選択すると、[!DNL Experience Manager] はファイルのみのリストを返し、フォルダーは返しません。キーワードを使用せずに特定のフォルダーを検索した場合は、[!DNL Experience Manager] は結果をかえしません。
 * フォルダーに対して全文検索を実行することができます。検索が機能するための検索語句を指定します。
@@ -315,9 +314,9 @@ ht-degree: 100%
 
 ![アセット検索でのアスタリスクワイルドカードの使用例](assets/search_with_asterisk_run.gif)
 
-*図：アセット検索でのアスタリスクワイルドカードの使用例*
+*図：アセット検索でのアスタリスクワイルドカードの使用例。*
 
-**疑問符ワイルドカードを使用した検索**：検索の範囲を広げるには、1 つ以上の「?」文字を使用して正確な数の文字に一致するようにします。例えば、次の例では、
+**疑問符ワイルドカードを使用して検索**：検索範囲を広げるには、文字数：正確な文字数に一致します。 例えば、次の例では、
 
 * `run???` クエリはどのアセットとも一致しません。
 
@@ -387,7 +386,7 @@ ht-degree: 100%
 
 PSD ファイルや PDF ファイルなどのアセットをユーザーがアップロードする際に、アセットからテキストを抽出するように [!DNL Experience Manager] を設定することができます。[!DNL Experience Manager] は、抽出されたテキストにインデックスを付け、抽出されたテキストに基づいてこれらのアセットをユーザーが検索できるようにします。[アセットのアップロード](/help/assets/manage-assets.md#uploading-assets)を参照してください。
 
-テキストの抽出がデプロイメントでリソースを大量に消費するような場合は、[テキスト抽出の無効にする](https://helpx.adobe.com/jp/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html)ことを検討してください。
+テキストの抽出がデプロイメントでリソースを大量に消費するような場合は、テキスト抽出の無効にすることを検討してください。
 
 ### 検索結果を絞り込むためのカスタム述語 {#custompredicates}
 
@@ -493,5 +492,4 @@ PSD ファイルや PDF ファイルなどのアセットをユーザーがア�
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] 検索実装ガイド](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=ja)
->* [検索結果を高めるための詳細設定](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=ja)
->* [スマート翻訳検索の設定](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html?lang=ja)
+>* [検索結果を高めるための詳細設定](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/search-and-discovery/search-boost)

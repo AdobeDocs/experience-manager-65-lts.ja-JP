@@ -1,21 +1,16 @@
 ---
 title: ドキュメントセキュリティとは？
 description: Document Security を使用して、事前定義の機密設定を作成、保存および適用し、情報を安全に配布する方法について説明します。
-contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/working_with_document_security
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5e7fe85e-3c7f-4a37-8f65-5c0ad4bbd66c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 32da9c3f13cb1eba130e96e03ab97617d18e1486
 workflow-type: tm+mt
-source-wordcount: '3219'
-ht-degree: 99%
+source-wordcount: '3218'
+ht-degree: 100%
 
 ---
 
@@ -26,7 +21,7 @@ Document Security を使用すると、許可されたユーザーのみがド�
 * Adobe PDF ファイル
 * Microsoft® Word、Excel、PowerPoint ファイル
 
-サポートされるファイルタイプをポリシーで保護する方法について詳しくは、「[その他のドキュメントセキュリティ情報](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/use-document-security/document-security-offerings.html?lang=en)」を参照してください。
+サポートされるファイルタイプをポリシーで保護する方法について詳しくは、「[その他のドキュメントセキュリティ情報](/help/forms/using/document-security-offerings.md)」を参照してください。
 
 Document Security を使用すると、定義済みの機密性設定を簡単に作成および保存し、ドキュメントに適用できます。また、管理できる範囲を超えて情報が拡散しないように、ドキュメントの配布後に、受信者がドキュメントをどのように使用するかを監視および制御することもできます。
 
