@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: d353cde4e9cc2af738e600d5a9b74928d98496cb
+source-git-commit: 2c2e8defbaab13a31beeb7c6978af5da19535e70
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 34%
+source-wordcount: '1074'
+ht-degree: 32%
 
 ---
 
@@ -130,18 +130,21 @@ AEM 6.5.21、6.5.22、6.5.23、およびAEM 6.5 LTS GA には、既知の問題�
 
 ### SSL のみの機能を使用したDispatcher接続の失敗 {#ssl-only-feature}
 
-AEMのデプロイメントで SSL のみの機能を有効にする場合、Dispatcher インスタンスとAEM インスタンス間の接続に影響を与える既知の問題があります。 この機能を有効にすると、ヘルスチェックが失敗し、Dispatcher インスタンスとAEM インスタンス間の通信が中断される可能性があります。
+AEMのデプロイメントで SSL のみの機能を有効にする場合、Dispatcher インスタンスとAEM インスタンス間の接続に影響を与える既知の問題があります。 この機能を有効にすると、ヘルスチェックが失敗し、Dispatcher インスタンスとAEM インスタンス間の通信が中断される可能性があります。 この問題は、特に、お客様が `https + IP` を使用してDispatcherからAEM インスタンスに接続しようとした場合に発生し、SNI （Server Name Indication）検証の問題に関連しています。
 
 **影響：**
 
-* HTTP 500 応答コードを含むヘルスチェックエラー
+* HTTP 400 応答コードを含むヘルスチェックエラー
 * Dispatcher インスタンスとAEM インスタンス間のトラフィックの破損
 * コンテンツがDispatcherを通じて適切に提供されない
+* Dispatcher設定の IP アドレスで HTTPS を使用すると、接続エラーが発生する
+* HTTPS と IP を使用して接続する場合の HTTP 400 「Invalid SNI」エラー
 
 **影響を受ける環境：**
 
 * Dispatcher設定を使用したAEM デプロイメント
 * SSL のみの機能が有効になっているシステム
+* AEM インスタンスへ `https + IP` 接続方法を使用するDispatcher設定
 
 **解決策：**
 この問題が発生した場合は、Adobe カスタマーサポートにお問い合わせください。 この問題を解決するためのホットフィックス [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) が利用可能です。 必要なホットフィックスが適用されるまで、SSL のみの機能を有効にしないでください。
