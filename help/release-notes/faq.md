@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: d18c9dc3-fdcc-4558-b9b6-ecf1ce61048a
-source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
+source-git-commit: 3d0353f207aeaf39198ba55dc37cc4194f25133d
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '278'
 ht-degree: 1%
 
 ---
@@ -37,3 +37,7 @@ AEM 6.5 LTS は後方互換性を保つことを目的としていますが、�
 * [AEM アナライザーツール ](/help/sites-deploying/aem-analyzer.md) を使用して、アップグレードの複雑さを評価します。
 * アップグレードプロセスに十分な時間とリソースを計画し、割り当てます。
 * Adobeのサポートや実施可能性セッションに参加して、ガイダンスや支援を受けます。
+
+## AEM 6.5 LTS ではユーザー同期はサポートされますか。
+
+はい、AEM 6.5 LTS ではユーザー同期がサポートされています。
