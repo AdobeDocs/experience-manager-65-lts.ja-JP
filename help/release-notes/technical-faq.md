@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
-source-git-commit: deb273c5ee96c7352de3157b4360007fc065d1a4
+source-git-commit: ec722773ce3acff1d0de861523db8ff7df552c4b
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '247'
 ht-degree: 2%
 
 ---
@@ -29,6 +29,14 @@ Felix ヘルスチェックフレームワークに関する詳細なドキュ�
 ### AEM Groovy コンソールのサポート
 
 AEM 6.5 で使用されていたAEM Groovy コンソールバージョンは、guava の依存関係がないので、AEM 6.5 LTS では機能しない可能性があります。 AEM Groovy コンソールの新しくサポートされているバージョンは [19.0.8](https://mvnrepository.com/artifact/be.orbinson.aem/aem-groovy-console/19.0.8) です。
+
+### AEM 6.5 LTS はユーザー同期をサポートしていますか？
+
+はい、AEM 6.5 LTS はユーザー同期をサポートしています。 AEM 6.5 と 6.5 LTS の間では、ユーザー同期の機能は変わりません。
+
+### Maven Central の Uber JAR が破損しているように見えます。何が問題ですか？
+
+`apis` 分類子を持つ Uber JAR を使用していることを確認します。 Uber JAR のパッケージ構造は、AEM 6.5 LTS で変更されました。 詳しくは、[AEM Uber Jar のバージョンの更新 ](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version) を参照してください。
 
 ## 追加のヘルプを取得しています
 
