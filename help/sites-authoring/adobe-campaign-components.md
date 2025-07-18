@@ -10,12 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
 exl-id: 20de763d-dd07-4ba6-a54d-a2b3b9b7e1ec
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '2859'
-ht-degree: 100%
+source-wordcount: '2857'
+ht-degree: 99%
 
 ---
+
 
 # Adobe Campaign コンポーネント{#adobe-campaign-components}
 
@@ -265,7 +267,7 @@ web サイト内のアセットまたはその他のページへのリンクを�
 
 >[!NOTE]
 >
->**nms:seedMember** スキーマまたはその拡張で定義されているフィールドのみが考慮されます。**nms:seedMember** にリンクしているテーブルの属性は使用できません。
+>**nms:seedMember** スキーマまたはその拡張で定義されているフィールドのみが考慮されます。 **nms:seedMember** にリンクしているテーブルの属性は使用できません。
 
 ## Adobe Campaign フォームコンポーネント {#adobe-campaign-form-components}
 
