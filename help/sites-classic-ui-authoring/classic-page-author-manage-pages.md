@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: bff63900-0007-472d-a910-bf20b8013668
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
-source-wordcount: '1895'
-ht-degree: 100%
+source-wordcount: '1898'
+ht-degree: 99%
 
 ---
 
@@ -263,7 +263,7 @@ AEM には、名前変更または移動が行われるページへの内部リ�
 
    ![screen_shot_2012-02-15at121336pm](assets/screen_shot_2012-02-15at121336pm.png)
 
-   このページには、移動するページを参照しているページのリストが表示されます。参照元のページのステータスに応じて、リンクの調整やページの再公開を行うことができます。
+   また、このページには、移動するページを直接または間接的に参照するすべてのページが一覧表示されます。 参照元のページのステータスに応じて、リンクの調整やページの再公開を行うことができます。
 
 1. 以下のフィールドを適宜入力します。
 
