@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: d69e5dccb5583ad310a52128e4bd534fc90cd186
+source-git-commit: 925a53bbf8a8ec28a8b3e5000bf83437ab18f513
 workflow-type: tm+mt
 source-wordcount: '2970'
 ht-degree: 94%
@@ -111,9 +111,9 @@ Adobe Experience Manager のリポジトリをデプロイするには、様々�
 | ファイルシステムの TAR ファイルへのバイナリの格納 `[1]` | バイナリ | Z：実稼動環境ではサポートされていません |
 | Amazon S3 | バイナリ | A：サポート対象 |
 | Microsoft® Azure Blob Storage | バイナリ | A：サポート対象 |
-| MongoDB Enterprise 8.0 | リポジトリ | A：サポート対象 `[3, 4]` |
-| MongoDB Enterprise 7.0 | リポジトリ | A：サポート対象 `[3, 4]` |
-| MongoDB Enterprise 6.0 | リポジトリ | A：サポート対象 `[3, 4]` |
+| MongoDB Enterprise 8.0 | リポジトリ | A：サポート対象 `[2, 3]` |
+| MongoDB Enterprise 7.0 | リポジトリ | A：サポート対象 `[2, 3]` |
+| MongoDB Enterprise 6.0 | リポジトリ | A：サポート対象 `[2, 3]` |
 | **Apache Lucene（Quickstart ビルトイン）** | 検索サービス | A：サポート対象 |
 
 1. 「ファイルシステム」には、POSIX に準拠したブロックストレージが含まれます。ネットワークストレージテクノロジーが含まれます。ファイルシステムのパフォーマンスは異なり、全体的なパフォーマンスに影響を与える場合があることに注意してください。ネットワーク／リモートファイルシステムを使用してテスト AEM を読み込みます。
