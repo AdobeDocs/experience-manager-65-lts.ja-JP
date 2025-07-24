@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: d69e5dccb5583ad310a52128e4bd534fc90cd186
 workflow-type: tm+mt
-source-wordcount: '2960'
+source-wordcount: '2970'
 ht-degree: 94%
 
 ---
@@ -111,8 +111,10 @@ Adobe Experience Manager のリポジトリをデプロイするには、様々�
 | ファイルシステムの TAR ファイルへのバイナリの格納 `[1]` | バイナリ | Z：実稼動環境ではサポートされていません |
 | Amazon S3 | バイナリ | A：サポート対象 |
 | Microsoft® Azure Blob Storage | バイナリ | A：サポート対象 |
-| MongoDB Enterprise 6.0 および 7.0 | リポジトリ | A：サポート対象 `[3, 4]` |
-| **Apache Lucene（Quickstart 組み込み）** | 検索サービス | A：サポート対象 |
+| MongoDB Enterprise 8.0 | リポジトリ | A：サポート対象 `[3, 4]` |
+| MongoDB Enterprise 7.0 | リポジトリ | A：サポート対象 `[3, 4]` |
+| MongoDB Enterprise 6.0 | リポジトリ | A：サポート対象 `[3, 4]` |
+| **Apache Lucene（Quickstart ビルトイン）** | 検索サービス | A：サポート対象 |
 
 1. 「ファイルシステム」には、POSIX に準拠したブロックストレージが含まれます。ネットワークストレージテクノロジーが含まれます。ファイルシステムのパフォーマンスは異なり、全体的なパフォーマンスに影響を与える場合があることに注意してください。ネットワーク／リモートファイルシステムを使用してテスト AEM を読み込みます。
 1. MongoDB Sharding は AEM ではサポートしていません。
@@ -450,7 +452,7 @@ XMP の書き戻しは、次のプラットフォームおよびファイル形�
 
 * **オペレーティングシステム：**
 
-   * Linux® （64 ビットシステムでの 32 ビットおよび 32 ビットアプリケーションのサポート）。
+   * Linux®（64 ビットシステムでの 32 ビットおよび 32 ビットアプリケーションのサポート）。
    * Windows Server
    * macOS X（64 ビット）
 
