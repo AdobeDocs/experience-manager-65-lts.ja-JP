@@ -16,7 +16,7 @@ ht-degree: 99%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ここをクリックしてください](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference) |
+| AEM as a Cloud Service | [ここをクリックしてください](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference) |
 | AEM 6.5 | この記事 |
 
 ワークフローモデルを使用して、ビジネスロジックを、自動化された繰り返しプロセスに変換します。モデルは、一連の手順を定義して実行するのに役立ちます。ワークフローを一時的なものにするか、複数のリソースを使用するかなど、モデルのプロパティを定義することもできます。[ビジネスロジックを達成するために、様々な AEM ワークフローステップをモデルに含めることができます](/help/sites-developing/workflows-models.md#extending-aem)。

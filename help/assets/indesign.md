@@ -19,11 +19,11 @@ ht-degree: 98%
 * プロキシ：特定の処理タスクのロードを分配するために使用します。プロキシとは、プロキシワーカーと通信して特定のタスクを実行し、他の [!DNL Experience Manager] インスタンスと通信して結果を送信する [!DNL Experience Manager] インスタンスです。
 * プロキシワーカー：特定のタスクを定義し管理するために使用します。これらは幅広いタスクを取り扱うことができます。例えば、[!DNL InDesign Server] を使用してファイルを処理することができます。
 
-[!DNL Adobe InDesign] で作成したファイルを [!DNL Experience Manager Assets] に完全にアップロードするために、プロキシが使用されます。このプロキシはプロキシワーカーを使用して [!DNL Adobe InDesign Server] と通信します。そこでは、メタデータを抽出して [!DNL Experience Manager Assets] 用の様々なレンディションを生成するための[スクリプト](https://helpx.adobe.com/indesign/using/scripting.html)が実行されます。プロキシワーカーは、クラウド設定における [!DNL InDesign Server] インスタンスと [!DNL Experience Manager] インスタンスとの双方向通信を実現します。
+[!DNL Adobe InDesign] で作成したファイルを [!DNL Experience Manager Assets] に完全にアップロードするために、プロキシが使用されます。このプロキシはプロキシワーカーを使用して [!DNL Adobe InDesign Server] と通信します。そこでは、メタデータを抽出して [!DNL Experience Manager Assets] 用の様々なレンディションを生成するための[スクリプト](https://helpx.adobe.com/jp/indesign/using/scripting.html)が実行されます。プロキシワーカーは、クラウド設定における [!DNL InDesign Server] インスタンスと [!DNL Experience Manager] インスタンスとの双方向通信を実現します。
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] は、2 つの異なる製品として提供されます。[Adobe InDesign](https://www.adobe.com/jp/products/indesign.html) は、印刷およびデジタル配布用のページレイアウトのデザインに使用するデスクトップアプリケーションです。[Adobe InDesign Server](https://www.adobe.com/jp/products/indesignserver.html) は、[!DNL InDesign] で作成した内容に基づいて、ドキュメントをプログラムによって自動生成できるようにします。これは、[ExtendScript](https://helpx.adobe.com/indesign/using/scripting.html) エンジンへのインターフェイスを提供するサービスとして動作します。スクリプトは、[!DNL ExtendScript] に似た [!DNL JavaScript] で記述されます。
+>[!DNL Adobe InDesign] は、2 つの異なる製品として提供されます。[Adobe InDesign](https://www.adobe.com/jp/products/indesign.html) は、印刷およびデジタル配布用のページレイアウトのデザインに使用するデスクトップアプリケーションです。[Adobe InDesign Server](https://www.adobe.com/jp/products/indesignserver.html) は、[!DNL InDesign] で作成した内容に基づいて、ドキュメントをプログラムによって自動生成できるようにします。これは、[ExtendScript](https://helpx.adobe.com/jp/indesign/using/scripting.html) エンジンへのインターフェイスを提供するサービスとして動作します。スクリプトは、[!DNL ExtendScript] に似た [!DNL JavaScript] で記述されます。
 
 ## 抽出の仕組み {#how-the-extraction-works}
 

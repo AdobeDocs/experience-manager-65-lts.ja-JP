@@ -102,7 +102,7 @@ AEM アナライザーレポートを表示するには、次の手順に従い�
 
 >[!NOTE]
 >
->各カテゴリの検索について詳しくは、[パターン検出のカテゴリ](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/aso)を参照してください。
+>各カテゴリの検索について詳しくは、[パターン検出のカテゴリ](https://experienceleague.adobe.com/ja/docs/experience-manager-pattern-detection/table-of-contents/aso)を参照してください。
 
 重要度レベルを理解するには、次の表に従います。
 

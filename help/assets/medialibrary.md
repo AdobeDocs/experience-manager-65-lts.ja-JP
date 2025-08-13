@@ -93,6 +93,6 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 
 >[!MORELIKETHIS]
 >
->* [ [!DNL Experience Manager Assets] の DAM 機能](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/assets/assets)
+>* [ [!DNL Experience Manager Assets] の DAM 機能](https://experienceleague.adobe.com/ja/docs/experience-manager-65-lts/content/assets/assets)
 >* [[!DNL Experience Manager] 6.5 Managed Services 製品の説明](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-experience-manager-managed-services.html)
 >* [[!DNL Experience Manager] 6.5 オンプレミス製品の説明](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-experience-manager-on-premise.html)
