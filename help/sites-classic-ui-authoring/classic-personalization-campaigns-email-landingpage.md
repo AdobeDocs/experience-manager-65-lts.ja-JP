@@ -31,7 +31,7 @@ ht-degree: 97%
 >[!NOTE]
 >
 >この機能（リードおよびリストの管理）がさらに強化される予定はありません。
->>[Adobe Campaign や AEM との統合](/help/sites-administering/campaign.md)を利用することをお勧めします。
+>&#x200B;>[Adobe Campaign や AEM との統合](/help/sites-administering/campaign.md)を利用することをお勧めします。
 
 ## ニュースレター用リストの作成 {#creating-a-list-for-the-newsletter}
 

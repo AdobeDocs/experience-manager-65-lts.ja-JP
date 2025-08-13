@@ -38,7 +38,7 @@ AEM 6.2 では、カスタマイズされた検索フォームのリポジトリ
 
 1. `https://server:port/crx/de/index.jsp` に移動して CRXDE Lite を開きます
 1. 以下の[カスタム検索フォーム](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms)のリストに指定されているとおり、変更の必要があるノードの場所を参照します。
-1.  ノードをクリックします。右側のプロパティパネルで、をクリックして **sling:resourceType** プロパティを変更します。
+1. ノードをクリックします。右側のプロパティパネルで、をクリックして **sling:resourceType** プロパティを変更します。
 1. 最後に、「**すべて保存**」ボタンをクリックして、変更を保存します。
 
 ## カスタム検索フォームのリスト {#list-of-custom-search-forms}

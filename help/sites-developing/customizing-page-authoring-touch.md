@@ -193,7 +193,7 @@ GitHub のコード
 >[!NOTE]
 >
 >例として、次を参照してください。
->>`/libs/cq/gui/components/authoring/editors/clientlibs/core/js/editors/editorExample.js`
+>&#x200B;>`/libs/cq/gui/components/authoring/editors/clientlibs/core/js/editors/editorExample.js`
 
 1. 実装方法：
 
@@ -246,7 +246,7 @@ GitHub のコード
 
 そのようなアクティベーションに対する動作をカスタマイズするために、**アクティベーションをリクエスト**&#x200B;ワークフローをオーバーレイできます。
 
-1.  `/apps`で **Sites** ウィザードをオーバーレイします。
+1. `/apps`で **Sites** ウィザードをオーバーレイします。
 
    `/libs/wcm/core/content/common/managepublicationwizard`
 

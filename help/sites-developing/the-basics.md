@@ -44,7 +44,7 @@ Java™ コンテンツリポジトリ（JCR）の規格である [JSR 283](http
 
 仕様を主導しているのは、Adobe Research（スイス）AG です。
 
-[JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) パッケージ、javax.jcr。「&amp;ast;」は、リポジトリコンテンツの直接アクセスと操作に使用されます。
+[JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) パッケージ、javax.jcr。「&ast;」は、リポジトリコンテンツの直接アクセスと操作に使用されます。
 
 ## Experience Server（CRX）と Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -284,7 +284,7 @@ Sling 内では、スクリプトを直接呼び出しできません。REST サ
 
 ### Sling API {#sling-api}
 
-これは、Sling API パッケージ、org.apache.sling.&amp;ast;、およびタグライブラリを使用します。
+これは、Sling API パッケージ、org.apache.sling.&ast;、およびタグライブラリを使用します。
 
 ### Sling を使用した既存の要素の参照 :include {#referencing-existing-elements-using-sling-include}
 

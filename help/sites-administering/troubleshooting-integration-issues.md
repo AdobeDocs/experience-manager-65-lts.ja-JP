@@ -101,10 +101,10 @@ AEM でのカスタムデータインポーターサービスの作成につい�
 * `/etc/cloudservices` 上の ACL をチェックします。ACL は次のようになります。
 
    * allow; jcr:read; webservice-support-servicelibfinder
-   * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/defaults/`&amp;ast;
-   * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/defaults`
-   * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/public/`&amp;ast;
-   * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/public`
+   * allow; jcr:read; everyone; `rep:glob:`&ast;`/defaults/`&ast;
+   * allow; jcr:read; everyone; `rep:glob:`&ast;`/defaults`
+   * allow; jcr:read; everyone; `rep:glob:`&ast;`/public/`&ast;
+   * allow; jcr:read; everyone; `rep:glob:`&ast;`/public`
 
 ACL 管理について詳しくは、[ユーザー管理とセキュリティ](/help/sites-administering/security.md#permissions-in-aem)ページを参照してください。
 

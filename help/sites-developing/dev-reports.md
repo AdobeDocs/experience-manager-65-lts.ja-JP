@@ -48,9 +48,9 @@ AEM に用意されている標準レポートの特徴：
 >以下の例と定義で使用している表記は次のとおりです。
 >
 >* 各行では、次のようにノードまたはプロパティを定義しています。
->  >  `N:<name> [<nodeType>]` ：名前が `<*name*>` でノードタイプが `<*nodeType*>`*のノードを表します。*
->  >  `P:<name> [<propertyType]` ：名前が `<*name*>` でプロパティタイプが `<*propertyType*>` のプロパティを表します。
->  >  `P:<name> = <value>` ：プロパティ `<name>` に値 `<value>` を設定する必要があることを表します。
+>  &#x200B;>  `N:<name> [<nodeType>]` ：名前が `<*name*>` でノードタイプが `<*nodeType*>`*のノードを表します。*
+>  &#x200B;>  `P:<name> [<propertyType]` ：名前が `<*name*>` でプロパティタイプが `<*propertyType*>` のプロパティを表します。
+>  &#x200B;>  `P:<name> = <value>` ：プロパティ `<name>` に値 `<value>` を設定する必要があることを表します。
 >
 >* インデントは、ノード間の階層的依存関係を示します。
 >* | で区切られた項目は、タイプや名前など、指定可能な項目のリストを示します。例えば `String|String[]` は、プロパティに String または String [] を指定できることを示します。
@@ -360,7 +360,7 @@ N:charting
 
          * `totals`（`Boolean`）
 
-           **合計**を示す線を追加表示する場合は、true を指定します。
+           **合計**&#x200B;を示す線を追加表示する場合は、true を指定します。
 デフォルト：`false`
 
          * `series`（`Long`）
@@ -1120,7 +1120,7 @@ N:cq:editConfig [cq:EditConfig]
 * `cq/reporting/components/reportpage` に `sling:resourceType` を設定
 
 * 使用するデザインを示す
-*  `sling:resourceType` プロパティでコンテナ（`reportbase`）コンポーネントを参照する `report` 子ノードを作成
+* `sling:resourceType` プロパティでコンテナ（`reportbase`）コンポーネントを参照する `report` 子ノードを作成
 
 （コンポーネントレポートテンプレートから取得される）テンプレートスニペットの例を次に示します。
 

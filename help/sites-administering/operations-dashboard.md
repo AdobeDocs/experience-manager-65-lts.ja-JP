@@ -451,7 +451,7 @@ DATE+TIME [MaintanceLogger] Name=<MT_NAME>, Status=<MT_STATUS>, Time=<MT_TIME>, 
 
 インデックスマネージャーの目的は、インデックスのメンテナンスや、ステータスの表示などのインデックス管理を容易にすることです。
 
-これには、AEM のようこそ画面から**ツール／操作／診断を選択し、「**インデックスマネージャー**」ボタンをクリックしてアクセスできます。
+これには、AEM のようこそ画面から&#x200B;**ツール／操作／診断を選択し、「**&#x200B;インデックスマネージャー**」ボタンをクリックしてアクセスできます。
 
 この URL から直接アクセスすることもできます。`https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 

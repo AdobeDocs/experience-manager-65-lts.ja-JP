@@ -60,7 +60,7 @@ Web ページによってニーズは異なります。例えば、HTML5 ビュ�
 >[!NOTE]
 >
 >既製のすべてのビューアを、初めて使用する前にすべて公開します。
->>[ビューアプリセットの公開]を参照してください。（#publishing-viewer-presets）
+>&#x200B;>[ビューアプリセットの公開]を参照してください。（#publishing-viewer-presets）
 
 ### ビューアプリセットのシステム互換性 {#viewer-preset-system-compatibility}
 
@@ -163,10 +163,10 @@ Dynamic Media に付属するすべての標準提供のビューアのプリセ
 >[!NOTE]
 >
 >Dynamic Media の標準提供のビューアプリセットはすべてアクティベート済み（オン）になっていますが、それらを公開する必要があります。
->>[ビューアプリセットの公開](#publishing-viewer-presets)を参照してください。
+>&#x200B;>[ビューアプリセットの公開](#publishing-viewer-presets)を参照してください。
 >
 >作成および追加した新しいすべてのビューアプリセットは、アクティベートされ公開されている必要があります。
->>[ビューアプリセットのアクティベートとアクティベート解除](#activating-or-deactivating-viewer-presets)と[ビューアプリセットの公開](#publishing-viewer-presets)を参照してください。
+>&#x200B;>[ビューアプリセットのアクティベートとアクティベート解除](#activating-or-deactivating-viewer-presets)と[ビューアプリセットの公開](#publishing-viewer-presets)を参照してください。
 
 <table>
  <tbody>
@@ -420,7 +420,7 @@ Experience Managerでは、（詳細ビュー **[!UICONTROL /（ビューア]** 
 
 **ビューアプリセットを作成するには：:**
 
-1. Experience Manager の左上隅にある Experience Manager ロゴを選択します。次に、左側のレールで **[!UICONTROL ツール]** （ハンマーアイコン）/**[!UICONTROL Assets]/[!UICONTROL  ビューアプリセット]** をクリックします。
+1. Experience Manager の左上隅にある Experience Manager ロゴを選択します。次に、左側のレールで **[!UICONTROL ツール]** （ハンマーアイコン）/**[!UICONTROL Assets]/[!UICONTROL &#x200B; ビューアプリセット]** をクリックします。
 
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 

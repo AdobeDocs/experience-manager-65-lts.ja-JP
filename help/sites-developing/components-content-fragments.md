@@ -104,7 +104,7 @@ Adobe Experience Manager（AEM）のコンテンツフラグメントは、[ペ�
 * HTL レンダリングスクリプトとそれに関連する POJO を再利用すると、中間コンテンツ機能の実装方法を確認できます。
 * コンテンツフラグメントノード `cq:editConfig` を再利用します。
 
-   *  `afterinsert`／`afteredit`／`afterdelete` リスナーを使用して JS イベントを呼び出します。このイベントは `cq.authoring.editor.plugin.cfm` クライアントライブラリで処理されて、関連コンテンツがサイドパネルに表示されます。
+   * `afterinsert`／`afteredit`／`afterdelete` リスナーを使用して JS イベントを呼び出します。このイベントは `cq.authoring.editor.plugin.cfm` クライアントライブラリで処理されて、関連コンテンツがサイドパネルに表示されます。
    * コンテンツフラグメントアセットのドラッグをサポートするように `cq:dropTargets` を設定します。
    * ページエディターでコンテンツフラグメントのオーサリングをサポートするように `cq:inplaceEditing` を設定します。フラグメントのインプレースエディターは `cq.authoring.editor.plugin.cfm` クライアントライブラリで定義され、クイックリンクによって現在の[要素／バリエーション](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)を[フラグメントエディター](/help/assets/content-fragments/content-fragments-variations.md)で開けるようにします。
 

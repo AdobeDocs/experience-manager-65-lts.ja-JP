@@ -168,7 +168,7 @@ Correspondence Management のアセットを移行する場合は、以下の点
 1. レイアウトおよびフラグメントレイアウトの XFA バージョンが 3.3 以降であることを確認してください。旧バージョンのレイアウトおよびフラグメントレイアウトを使用している場合、レターのレンダリングで問題が発生する可能性があります。旧バージョンの XFA を最新バージョンの XFA に更新するには、以下の手順を行います。
 
    1. Forms ユーザーインターフェイスから [XFA を zip ファイルとしてダウンロード](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p)します。
-   1.  ファイルを解凍します。
+   1. ファイルを解凍します。
    1. 最新の Designer で XFA ファイルを開き、保存します。XFA が最新バージョンに更新されます。
    1. XFA を Forms ユーザーインターフェイスでアップロードします。
 
