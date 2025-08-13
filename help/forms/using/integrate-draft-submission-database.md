@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: b9b989e3-f204-4929-a03a-857cbb786185
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 100%
+source-wordcount: '1501'
+ht-degree: 99%
 
 ---
 
@@ -330,7 +330,7 @@ AEM Forms ポータルのドラフトと送信コンポーネントにより、�
 次の手順を実行して、[クライアントライブラリ](/help/sites-developing/clientlibs.md)を作成し、次のスクリプトを使用します。
 
 1. CRXDE にログインし、/etc/clientlibs/ に移動します。
-1. **cq:ClientLibraryFolder** タイプのノードを作成して、ノードの名前を指定します。（例：`validation`）。
+1. **cq:ClientLibraryFolder** タイプのノードを作成し、ノードの名前を指定します。 （例：`validation`）。
 
    「**[!UICONTROL すべて保存]**」をクリックします。
 

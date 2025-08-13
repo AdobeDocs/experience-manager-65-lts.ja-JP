@@ -64,11 +64,11 @@ ht-degree: 100%
 
 ### AEM の認定試験 {#aem-certification-exam}
 
-関連する[認定試験](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager)を受けるために、適切なペルソナが登録されていることを確認します。
+関連する[認定試験](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager)を受けるために、適切なペルソナが登録されていることを確認します。
 
 ### AEM 認定 {#aem-certified}
 
-適切なペルソナが、関連する[認定試験](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager)に合格していることを確認します。
+適切なペルソナが、関連する[認定試験](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager)に合格していることを確認します。
 
 ### AEM テクニカルトレーニング {#aem-technical-training}
 

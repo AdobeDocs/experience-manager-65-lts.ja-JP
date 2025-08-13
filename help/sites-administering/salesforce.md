@@ -12,8 +12,8 @@ role: Admin
 exl-id: 68003650-76d7-40b3-860b-70454c13211e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1530'
-ht-degree: 100%
+source-wordcount: '1537'
+ht-degree: 97%
 
 ---
 
@@ -46,7 +46,7 @@ AEM を Salesforce と統合するよう設定するには、以下のように�
 
 >[!CAUTION]
 >
->手順を続行する前に、[Salesforce Force API](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=salesforce*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcom.adobe.cq.mcm.salesforce.content-1.0.4.zip) 統合パッケージをインストールします。パッケージの操作方法について詳しくは、[パッケージの使用方法](/help/sites-administering/package-manager.md#package-share)ページを参照してください。
+>手順を続行する前に、[Salesforce Force API](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=salesforce*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=2&package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcom.adobe.cq.mcm.salesforce.content-1.0.4.zip) 統合パッケージをインストールします。パッケージの操作方法について詳しくは、[パッケージの使用方法](/help/sites-administering/package-manager.md#package-share)ページを参照してください。
 
 1. AEM で「**クラウドサービス**」に移動します。「サードパーティのサービス」で、「**Salesforce**」の「**今すぐ設定**」をクリックします。
 
@@ -56,7 +56,7 @@ AEM を Salesforce と統合するよう設定するには、以下のように�
 
    >[!NOTE]
    >
-   >新しい設定は、新しいページ（**http://localhost:4502/etc/cloudservices/salesforce/developer.html**）にリダイレクトされます。これは、Salesforce でリモートアクセスアプリケーションを作成するときに「Callback URL」で指定する必要がある値とまったく同じ値です。これらの値が一致しなければなりません。
+   >新しい構成が新しいページ **http://localhost:4502/etc/cloudservices/salesforce/developer.html** にリダイレクトされます。 これは、Salesforce でリモートアクセスアプリケーションを作成するときに「Callback URL」で指定する必要がある値とまったく同じ値です。これらの値が一致しなければなりません。
 
 1. Salesforce アカウントにログインします（アカウントがない場合は [https://developer.salesforce.com](https://developer.salesforce.com) で作成します）。
 1. Salesforce で、**Create**／**Apps** に移動して、「**Connected Apps**」に移動します（以前のバージョンの Salesforce のワークフローは **Deploy**／**Remote Access**）。
@@ -214,7 +214,7 @@ AEM ユーザーを Salesforce ID にマッピングして、クライアント�
 
 Salesforce Client Context Store のデータを使用するセグメントを作成できます。次の手順を実行します。
 
-1. **ツール**／**セグメント化**&#x200B;に移動するか、[http://localhost:4502/miscadmin#/etc/segmentation](http://localhost:4502/miscadmin#/etc/segmentation) に移動して、AEM のセグメント化に移動します。
+1. **ツール**/**セグメント化** または [http://localhost:4502/miscadmin#/etc/segmentation](http://localhost:4502/miscadmin#/etc/segmentation) に移動して、AEMのセグメント化に移動します。
 1. Salesforce のデータを含めるように、セグメントを作成または更新します。詳しくは、[セグメント化](/help/sites-administering/campaign-segmentation.md)を参照してください。
 
 ## リードの検索 {#searching-leads}

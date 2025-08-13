@@ -56,7 +56,7 @@ fscCSS は、特定のノードに関連付けられているスタイルシー�
 >
 >これらのファイルの参照方法を混在させることはお勧めしません。つまり、すべての URI は、`FSToolBarURI` キーワードまたは絶対位置のいずれかを使用して、参照する必要があります。
 
-JS ファイルと CSS ファイルを取得するには、adobe-forms-&lt;appserver>.ear ファイルを開きます。このファイル内で、adobe-forms-res.war を開きます。これらのファイルはすべて WAR ファイル内にあります。adobe-forms-&lt;appserver>.ear ファイルは、AEM Forms のインストールフォルダー内にあります（C:\ はインストールディレクトリです）。adobe-forms-&lt;appserver>.ear は、WinRAR などのファイル展開ツールを使用して開くことができます。
+JS ファイルと CSS ファイルを取得するには、adobe-forms-&lt;appserver>.ear ファイルを開きます。このファイル内で、adobe-forms-res.war を開きます。これらのファイルはすべて WAR ファイル内にあります。adobe-forms-&lt;appserver>.ear ファイルは、AEM Forms のインストールフォルダー内にあります（C:\ はインストールディレクトリです）。adobe-forms-&lt;appserver>.ear は、WinRAR などのファイル解凍ツールを使用して開くことができます。
 
 次の XML 構文は、サンプルの fscmenu.xml ファイルを示しています。
 

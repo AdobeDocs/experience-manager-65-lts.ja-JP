@@ -12,8 +12,8 @@ role: User
 exl-id: 92f4946d-1f49-4286-a51e-84b2a46a6b8a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 100%
+source-wordcount: '602'
+ht-degree: 97%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 >[!NOTE]
 >
 >この機能（リードおよびリストの管理）がさらに強化される予定はありません。
->[Adobe Campaign や AEM との統合](/help/sites-administering/campaign.md)を利用することをお勧めします。
+>>[Adobe Campaign や AEM との統合](/help/sites-administering/campaign.md)を利用することをお勧めします。
 
 ## ニュースレター用リストの作成 {#creating-a-list-for-the-newsletter}
 
@@ -49,7 +49,7 @@ ht-degree: 100%
 
 次の例の非表示フィールドには、必要最小限の情報（メール）が示されます。また、後でフィールドを追加することもできますが、その場合は変換速度に影響があります。
 
-https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html で作成するフォームの例は次にとおりです。
+https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.htmlで作成するフォームの例は次のとおりです。
 
 1. フォームを作成します。
 

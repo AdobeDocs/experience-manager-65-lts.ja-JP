@@ -7,8 +7,8 @@ role: Admin, Developer
 exl-id: e8f2a771-b2e3-4f3e-85a0-480f783fc313
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2305'
-ht-degree: 100%
+source-wordcount: '2328'
+ht-degree: 96%
 
 ---
 
@@ -55,7 +55,7 @@ Venia ブランドは最近、持続可能な資材を使用して一部の製�
 
 1. 必要な OSGi 設定を追加して、AEM インスタンスを Adobe Commerce インスタンスに接続したり、新しく作成したプロジェクトに設定を追加したりできるようにします。
 
-1. この時点で、Adobe Commerce インスタンスに接続されたストアフロントの作業用のバージョンが必要です。`US`／`Home` ページ（[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)）にアクセスします。
+1. この時点で、Adobe Commerce インスタンスに接続されたストアフロントの作業用のバージョンが必要です。`US`/`Home` ページ（[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)）に移動します。
 
    ストアフロントは現在 Venia テーマを使用しています。ストアフロントのメインメニューを展開すると、様々なカテゴリが表示され、Adobe Commerce への接続が機能していることが示されます。
 
@@ -65,7 +65,7 @@ Venia ブランドは最近、持続可能な資材を使用して一部の製�
 
 製品ティーザーコンポーネントの拡張は、このチュートリアル全体で行われます。最初の手順として、製品ティーザーのインスタンスをホームページに追加し、ベースライン機能を理解します。
 
-1. サイトの&#x200B;**ホームページ**（[http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)）に移動します。
+1. サイトの **ホームページ** に移動します：[http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
 2. ページのメインレイアウトコンテナに新しい&#x200B;**製品ティーザー**&#x200B;コンポーネントを挿入します。
 
@@ -110,7 +110,7 @@ AEM に表示された製品と製品データは Adobe Commerce に格納され
 
    終了したら「**属性を保存**」をクリックします。
 
-1. 製品の下部までスクロールし、「**属性**」見出しを展開します。新しい「**エコフレンドリー**」フィールドが表示されます。切り替えボタンを「**はい**」に切り替えます。
+1. 製品の下部までスクロールし、「**属性**」見出しを展開します。新しい「**エコフレンドリー**」フィールドが表示されます。切替スイッチボタンを「**はい**」に切り替えます。
 
    ![「はい」に切り替える](../assets/customize-cif-components/eco-friendly-toggle-yes.png)
 
@@ -395,7 +395,7 @@ AEM コンポーネントの一般的な拡張機能は、コンポーネント�
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-1. 新しいブラウザーウィンドウを開いて AEM に移動し、**OSGi コンソール**／**ステータス**／**Sling モデル**：[http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels) に移動します。
+1. 新しいブラウザーウィンドウを開き、AEMと **OSGi コンソール**/**ステータス**/**Sling モデル**:[http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels) に移動します。
 
 1. `MyProductTeaserImpl` を検索すると、次のような行が表示されます。
 
@@ -405,7 +405,7 @@ AEM コンポーネントの一般的な拡張機能は、コンポーネント�
 
    これは、Sling モデルが正しくデプロイされ、正しいコンポーネントにマッピングされていることを示します。
 
-1. **Venia ホームページ**（[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)）を更新します。製品ティーザーが追加されています。
+1. 製品ティーザーが追加された **Venia ホームページ** [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) を更新します。
 
    ![エコフレンドリーメッセージの表示](../assets/customize-cif-components/eco-friendly-text-displayed.png)
 
@@ -474,7 +474,7 @@ AEM コンポーネントの一般的な拡張機能は、コンポーネント�
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-1. **Venia ホームページ**（[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)）を更新します。製品ティーザーが追加されています。
+1. 製品ティーザーが追加された **Venia ホームページ** [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) を更新します。
 
    ![エコフレンドリーバッジの最終実装](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 

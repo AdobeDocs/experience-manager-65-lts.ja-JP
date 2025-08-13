@@ -12,8 +12,8 @@ role: Admin, Developer
 exl-id: 92689d52-6485-4cd5-a04f-4738096a0dba
 source-git-commit: d571dc696e42bae873cd58f2e7f321bd3002f42e
 workflow-type: tm+mt
-source-wordcount: '2338'
-ht-degree: 100%
+source-wordcount: '2377'
+ht-degree: 93%
 
 ---
 
@@ -58,7 +58,7 @@ Venia プロジェクト[のクローンを作成して](https://github.com/adob
 
 1. AEM インスタンスを Adobe Commerce インスタンスに接続するために必要な OSGi 構成を追加するか、新しく作成されたプロジェクトに構成を追加します。
 
-1. この時点で、Adobe Commerce インスタンスに接続されたストアフロントの作業用のバージョンが必要です。`US`／`Home` ページ（[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)）にアクセスします。
+1. この時点で、Adobe Commerce インスタンスに接続されたストアフロントの作業用のバージョンが必要です。`US`/`Home` ページ（[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)）に移動します。
 
    ストアフロントは現在 Venia テーマを使用しています。ストアフロントのメインメニューを展開すると、様々なカテゴリが表示され、Adobe Commerce への接続が機能していることが示されます。
 
@@ -204,7 +204,7 @@ Venia プロジェクト[のクローンを作成して](https://github.com/adob
 
 コードのアップデートがデプロイされたので、AEM オーサリングツールを使用して、製品ティーザーコンポーネントの新しいインスタンスをサイトのホームページに追加します。こうすることで、更新されたスタイルを表示できます。
 
-1. 新しいブラウザータブを開き、サイトの&#x200B;**ホームページ**（[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)）に移動します。
+1. 新しいブラウザータブを開き、サイトの **ホームページ** （[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)）に移動します。
 
 1. **編集**&#x200B;モードでアセットファインダー（サイドレール）を展開します。アセットフィルターを&#x200B;**製品**&#x200B;に切り替えます。
 
@@ -220,7 +220,7 @@ Venia プロジェクト[のクローンを作成して](https://github.com/adob
 
 次に、クライアントライブラリがページに含まれていることを確認します。
 
-1. サイトの&#x200B;**ホームページ**（[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)）に移動します。
+1. サイトの **ホームページ** に移動します：[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)。
 
 1. **ページ情報**&#x200B;メニューを選択し、「**公開済みとして表示**」をクリックします。
 
@@ -248,7 +248,7 @@ Venia プロジェクト[のクローンを作成して](https://github.com/adob
    </html>
    ```
 
-   クライアントライブラリは、ページに配信される際に `/etc.clientlibs` プレフィックスが付けられ、[プロキシ](/help/sites-developing/clientlibs.md)経由で提供され、`/apps` や `/libs` で機密事項が公開されないようになります。
+   クライアントライブラリは、ページに配信される際に `/etc.clientlibs` 接頭辞が付けられ、[プロキシ](/help/sites-developing/clientlibs.md)経由で提供され、`/apps` や `/libs` で機密事項が公開されないようになります。
 
    `venia/clientlibs/clientlib-site.min.css` と `venia/clientlibs/clientlib-site.min.js` に注意してください。これらは、`ui.frontend` モジュールから派生したコンパイル済みの CSS ファイルと JavaScript ファイルです。
 
@@ -256,7 +256,7 @@ Venia プロジェクト[のクローンを作成して](https://github.com/adob
 
 クライアントサイドライブラリを含める方法には、いくつかのオプションがあります。次に、生成されたプロジェクトに、[ページテンプレート](/help/sites-developing/templates.md)を介してどのように `clientlib-site` ライブラリがインクルードされるかを調べます。
 
-1. AEM エディター内でサイトの&#x200B;**ホームページ**（[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)）に移動します。 
+1. AEM Editor 内のサイトの **ホームページ** に移動します。[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)。
 
 1. **ページ情報**&#x200B;メニューを選択し、「**テンプレートを編集**」をクリックします。
 
@@ -291,7 +291,7 @@ Venia プロジェクト[のクローンを作成して](https://github.com/adob
 
 webpack-dev-server は、AEM のローカルインスタンスから画像と一部の CSS/JavaScript をプロキシしますが、デベロッパーは、`ui.frontend` モジュール内のスタイルと JavaScript を変更できます。
 
-1. ブラウザーで&#x200B;**ホーム**&#x200B;ページ（[http://localhost:4502/content/venia/us/en.html?wcmmode=disabled](http://localhost:4502/content/venia/us/en.html?wcmmode=disabled)）に移動し、「**公開済みとして表示**」に移動します。
+1. ブラウザーで **ホーム** ページに移動し、**公開済みとして表示**:[http://localhost:4502/content/venia/us/en.html?wcmmode=disabled](http://localhost:4502/content/venia/us/en.html?wcmmode=disabled) を選択します。
 
 1. ページのソースとページの生の HTML **コピー**&#x200B;を表示します。
 
@@ -325,13 +325,13 @@ webpack-dev-server は、AEM のローカルインスタンスから画像と一
    $ npm start
    ```
 
-   [http://localhost:8080/](http://localhost:8080/) で webpack-dev-server が起動します。
+   これにより、[http://localhost:8080/](http://localhost:8080/) で webpack-dev-server が起動します
 
    >[!CAUTION]
    >
    >Sass 関連のエラーが発生した場合は、サーバーを停止し、`npm rebuild node-sass` コマンドを実行して上記の手順を繰り返します。これは、プロジェクト `aem-cif-guides-venia/pom.xml` で指定された `npm` と `node` のバージョンが異なる場合に発生する可能性があります。
 
-1. AEM のログインインスタンスと同じブラウザーを使用して、新しいタブで [http://localhost:8080/](http://localhost:8080/) に移動します。Venia ホームページは webpack-dev-server で確認できます。
+1. AEMのログインしたインスタンスと同じブラウザーを使用して、新しいタブで [http://localhost:8080/](http://localhost:8080/) に移動します。 Venia ホームページは webpack-dev-server で確認できます。
 
    ![ポート 80 の Webpack Dev サーバー](../assets/style-cif-component/webpack-dev-server-port80.png)
 
@@ -450,7 +450,7 @@ IDE と生成されたプロジェクトに戻ります。
 
 プロジェクトのコードを AEM にデプロイした後は、製品ティーザーの変更を確認できるようになります。
 
-1. ブラウザーに戻り、ホームページ（[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)）を更新します。アップデートされた製品ティーザースタイルが適用されていることが確認できます。
+1. ブラウザーに戻り、ホームページを更新します：[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)。 アップデートされた製品ティーザースタイルが適用されていることが確認できます。
 
    ![製品ティーザースタイルのアップデート](../assets/style-cif-component/product-teaser-new-style.png)
 
@@ -460,7 +460,7 @@ IDE と生成されたプロジェクトに戻ります。
 
 ## トラブルシューティング {#troubleshooting}
 
-[CRXDE-Lite](http://localhost:4502/crx/de/index.jsp) で、アップデートされた CSS ファイルがデプロイされたことを確認できます（[http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css](http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css)）。
+更新された CSS ファイルがデプロイされていることを [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp) で確認できます：[http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css](http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css)
 
 新しい CSS ファイルや JavaScript ファイルをデプロイする場合は、ブラウザーで古いファイルが提供されないようにすることも重要です。これは、ブラウザーのキャッシュをクリアするか、新しいブラウザーセッションを開始することで解消できます。
 

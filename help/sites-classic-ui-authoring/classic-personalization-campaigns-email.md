@@ -22,7 +22,7 @@ ht-degree: 100%
 >[!NOTE]
 >
 >アドビでは、AEM SMTP サービスが送信したメールの開封／バウンス（配信不能）をトラッキングする機能をさらに強化する計画はありません。
->[Adobe Campaign や AEM との統合](/help/sites-administering/campaign.md)を利用することをお勧めします。
+>>[Adobe Campaign や AEM との統合](/help/sites-administering/campaign.md)を利用することをお勧めします。
 
 メールマーケティング（ニュースレターなど）は、どのようなマーケティングキャンペーンにおいても、コンテンツをリードにプッシュするときに重要な部分を占めます。AEM では、既存の AEM コンテンツからニュースレターを作成でき、ニュースレター特有の新しいコンテンツを追加できます。
 
@@ -221,7 +221,7 @@ ht-degree: 100%
 >[!NOTE]
 >
 >アドビでは、AEM SMTP サービスが送信したメールの開封やバウンス（配信不能）をトラッキングする機能をさらに強化する計画はありません。
->[Adobe Campaign や AEM との統合](/help/sites-administering/campaign.md)を利用することをお勧めします。
+>>[Adobe Campaign や AEM との統合](/help/sites-administering/campaign.md)を利用することをお勧めします。
 
 ニュースレターまたはリストからニュースレターを送信できます。両方の手順について説明します。
 

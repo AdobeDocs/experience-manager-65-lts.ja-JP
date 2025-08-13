@@ -54,7 +54,7 @@ ExactTarget 設定は、クラウドサービスまたはツールを使用し�
 
    これで、ExactTarget が設定されました。「**編集**」をクリックして、この設定を編集できます。「**ExactTarget に移動**」をクリックして、ExactTarget に移動できます。
 
-1. AEM にデータ拡張機能が追加されました。ExactTarget データ拡張列を読み込むことができます。ExactTarget データ拡張列は、作成後に ExactTarget 設定の横に表示される「+」記号をクリックして設定できます。ドロップダウンリストから既存のデータ拡張を選択できます。データ拡張の設定方法についての詳細情報は、[ExactTarget のドキュメント](https://help.salesforce.com/s/articleView?id=sf.mc_es_data_extension_data_relationships_classic.htm&amp;type=5)を参照してください。
+1. AEM にデータ拡張機能が追加されました。ExactTarget データ拡張列を読み込むことができます。ExactTarget データ拡張列は、作成後に ExactTarget 設定の横に表示される「+」記号をクリックして設定できます。ドロップダウンリストから既存のデータ拡張を選択できます。データ拡張の設定方法についての詳細情報は、[ExactTarget のドキュメント](https://help.salesforce.com/s/articleView?id=sf.mc_es_data_extension_data_relationships_classic.htm&type=5)を参照してください。
 
    読み込まれたデータ拡張列は、後で&#x200B;**テキストおよびパーソナライゼーション**&#x200B;コンポーネントを通じて使用できます。
 

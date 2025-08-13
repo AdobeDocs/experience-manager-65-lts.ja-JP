@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 18458c49-ab84-4d49-95b5-52922fba1365
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 100%
+source-wordcount: '577'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +51,7 @@ CRXDE Lite では縦横比のデフォルト設定は 2 ですが、次で上書
 1. 同じ Image Server 公開ページで、「**[!UICONTROL 要求属性]**」という見出しを探します。
 1. 「要求属性」の見出しの下で、「**[!UICONTROL 返信画像のサイズ制限]**」を探します。次に、関連する「幅」フィールドと「高さ」フィールドで、パノラマ画像で許容される最大画像サイズを大きくします。
 
-   Dynamic Media Classic には、25,000,000 ピクセルという制限があります。縦横比が 2:1 の画像の最大許容サイズは 7000 x 3500 です。ただし、通常のデスクトップ画面の場合、4096 x 2048 ピクセルで十分です。
+   Dynamic Media Classic には、25,000,000 ピクセルという制限があります。縦横比が 2 :1 の画像の最大許容サイズは 7000 x 3500 です。 ただし、通常のデスクトップ画面の場合、4096 x 2048 ピクセルで十分です。
 
    >[!NOTE]
    >

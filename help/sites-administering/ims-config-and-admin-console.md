@@ -24,7 +24,7 @@ ht-degree: 98%
 
 ## はじめに {#introduction}
 
-AEM 6.4.3.0 では、**AEM Managed Services** のお客様を対象に、AEM インスタンスおよびAdobe IMS（Identity Management System）ベースの認証を [!DNL Admin Console] しくサポートするようになりました。
+AEM 6.4.3.0 では、[!DNL Admin Console]AEM Managed Services **のお客様を対象に、AEM インスタンスおよびAdobe IMS（Identity Management System）ベースの認証を** しくサポートするようになりました。
 
 AEM が [!DNL Admin Console] をオンボーディングしたことにより、AEM Managed Services のお客様は 1 つのコンソールですべての Experience Cloud ユーザーを管理できます。ユーザーとグループは AEM インスタンスに関連付けられている製品プロファイルに割り当てることができ、特定のインスタンスにログインできます。
 

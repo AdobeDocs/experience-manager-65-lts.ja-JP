@@ -7,8 +7,8 @@ role: Developer
 exl-id: 3265ad97-75c2-4dc1-8180-71b65cf73d31
 source-git-commit: a0fe5bbfe93719641118521c6861bcb2cca76d60
 workflow-type: tm+mt
-source-wordcount: '4819'
-ht-degree: 100%
+source-wordcount: '4805'
+ht-degree: 98%
 
 ---
 
@@ -184,7 +184,7 @@ AEM コンポーネントの構造は強力で、柔軟性があります。主�
 
    * `cq:editConfig (cq:EditConfig)` - コンポーネントの編集プロパティを定義し、コンポーネントをコンポーネントブラウザーに表示できるようにします。
 
-     メモ：コンポーネントにダイアログがある場合は、cq:editConfig が存在しなくても、コンポーネントは自動的にコンポーネントブラウザーまたはサイドキックに表示されます。
+     メモ：コンポーネントにダイアログがある場合は、cq:editConfig が存在しなくても、コンポーネントブラウザーまたはSidekickに自動的に表示されます。
 
    * `cq:childEditConfig (cq:EditConfig)` - 独自の `cq:editConfig` を定義しない子コンポーネントの作成者 UI の側面を制御します。
    * タッチ操作対応 UI：
@@ -565,7 +565,7 @@ AEM 内のコンポーネントは、次の 3 つの異なる階層の影響を�
       * 複数のドロップターゲットはクラシック UI でのみ使用できます。
       * タッチ操作対応 UI では、単一のドロップターゲットが許可されます。
 
-   * `cq:actionConfigs`（ノードタイプ `nt:unstructured`）：cq:actions リストに追加する新しいアクションのリストを定義します。
+   * `cq:actionConfigs` （ノードタイプ `nt:unstructured`）:cq:actions リストに追加する新しいアクションのリストを定義します。
    * `cq:formParameters`（ノードタイプ `nt:unstructured`）：ダイアログフォームに追加するその他のパラメーターを定義します。
    * `cq:inplaceEditing`（ノードタイプ `cq:InplaceEditingConfig`）：コンポーネントのインプレース編集設定を定義します。
    * `cq:listeners`（ノードタイプ `cq:EditListenersConfig`）：コンポーネントでアクションを実行する前後の処理を定義します
@@ -629,7 +629,7 @@ AEM 内のコンポーネントは、次の 3 つの異なる階層の影響を�
 
 このテンプレートの使用例は、コアコンポーネント[（タイトルコンポーネントなど）](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)で確認できます。
 
-### cq:EditConfig プロパティを使用した設定 {#configuring-with-cq-editconfig-properties}
+### cq:EditConfig プロパティを使用したの設定 {#configuring-with-cq-editconfig-properties}
 
 ### cq:actions {#cq-actions}
 
@@ -690,7 +690,7 @@ AEM 内のコンポーネントは、次の 3 つの異なる階層の影響を�
     jcr:primaryType="cq:EditConfig"/>
 ```
 
-### cq:layout（クラシック UI のみ） {#cq-layout-classic-ui-only}
+### cq:layout （クラシック UI のみ） {#cq-layout-classic-ui-only}
 
 `cq:layout` プロパティ（`String`）では、クラシック UI でコンポーネントを編集可能にする方法を定義します。使用可能な値を次に示します。
 
@@ -729,7 +729,7 @@ AEM 内のコンポーネントは、次の 3 つの異なる階層の影響を�
 </jcr:root>
 ```
 
-### cq:dialogMode（クラシック UI のみ） {#cq-dialogmode-classic-ui-only}
+### cq:dialogMode （クラシック UI のみ） {#cq-dialogmode-classic-ui-only}
 
 コンポーネントを編集ダイアログにリンクできます。`cq:dialogMode` プロパティ（`String`）では、クラシック UI でコンポーネントダイアログを開く方法を定義します。使用可能な値を次に示します。
 
@@ -786,7 +786,7 @@ AEM 内のコンポーネントは、次の 3 つの異なる階層の影響を�
 * ユーザーは、ダイアログ内で全画面モードを常に切り替えることができます。
 * クラシック UI には適用されません。
 
-### cq:EditConfig の子ノードを使用した設定 {#configuring-with-cq-editconfig-child-nodes}
+### cq:EditConfig 子ノードを使用した設定 {#configuring-with-cq-editconfig-child-nodes}
 
 ### cq:dropTargets {#cq-droptargets}
 
@@ -849,7 +849,7 @@ AEM 内のコンポーネントは、次の 3 つの異なる階層の影響を�
     </cq:dropTargets>
 ```
 
-### cq:actionConfigs（クラシック UI のみ） {#cq-actionconfigs-classic-ui-only}
+### cq:actionConfigs （クラシック UI のみ） {#cq-actionconfigs-classic-ui-only}
 
 `cq:actionConfigs` ノード（ノードタイプ `nt:unstructured`）では、`cq:actions` プロパティで定義されたリストに追加する新しいアクションのリストを定義します。`cq:actionConfigs` のそれぞれの子ノードでは、ウィジェットを定義することにより新しいアクションを定義します。
 

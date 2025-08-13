@@ -11,8 +11,8 @@ role: Developer
 exl-id: 6a32bd9d-268d-4d03-b495-47ec6660c138
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1610'
-ht-degree: 100%
+source-wordcount: '1611'
+ht-degree: 99%
 
 ---
 
@@ -146,7 +146,7 @@ s.trackingServerSecure = "xxxxxxx.net";
 
 1. JavaScript コードを **s_doPlugins** 関数に追加します。
 
-次の例では、一般的な区切り文字「|」を使用して、ページ上でキャプチャされたデータを階層順に連結しています。
+次の例では、一般的な区切り記号「|」を使用して、ページ上でキャプチャされたデータを階層順に連結しています。
 
 Adobe Analytics フレームワークには、以下の設定があります。
 
@@ -267,7 +267,7 @@ AEM では次の Adobe Analytics プラグインをインストールして、�
 
 以下の手順を実行して、プラグイン用のクライアントライブラリフォルダーを作成します。この手順は 1 回だけ実行する必要があります。プラグインをクライアントライブラリフォルダーに追加するには、次の手順を実行します。
 
-1. Web ブラウザーで CRXDE Lite を開きます。([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
+1. Web ブラウザーで CRXDE Lite を開きます。（[http://localhost:4502/crx/de](http://localhost:4502/crx/de)）
 
 1. /apps/my-app/clientlibs フォルダーを右クリックして、作成／ノードを作成をクリックします。次のプロパティ値を入力して、「OK」をクリックします。
 

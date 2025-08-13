@@ -26,7 +26,7 @@ HTML5 フォームは、日付、テキストおよび数値記号の表示値�
 
 >[!NOTE]
 >
->現在 Mobiles Forms はパターン形式文字列の編集をサポートしていません。また、DateTime と Time のパターン形式文字列の記号もサポートされていません。
+>現在 Mobiles Forms はパターン形式文字列の編集をサポートしていません。また、DateTime と Time のパターン形式文字列のシンボルもサポートされていません。
 
 ## サポートされている日付フィールドの記号 {#supported-date-field-symbols}
 
@@ -46,7 +46,7 @@ HTML5 フォームは、日付、テキストおよび数値記号の表示値�
 <table>
  <tbody>
   <tr>
-   <th><strong>記号</strong></th>
+   <th><strong>シンボル</strong></th>
    <th>解釈</th>
   </tr>
   <tr>
@@ -121,7 +121,7 @@ PDF フォームでは、1000000 の数字は 1,000,000 として形式設定さ
 <table>
  <tbody>
   <tr>
-   <th><strong>記号</strong></th>
+   <th><strong>シンボル</strong></th>
    <th><strong>解釈</strong></th>
    <th>入力の解析</th>
   </tr>
@@ -209,7 +209,7 @@ HTML5 フォームは、次のテキストのパターン形式文字列の式�
 
 * text{text Picture clause symbols}
 
-| **記号** | **解釈** |
+| **シンボル** | **解釈** |
 |---|---|
 | A | 英字 1 文字。 |
 | X | 1 文字。 |

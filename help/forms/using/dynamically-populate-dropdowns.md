@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## 前提条件 {#prerequisites}
 
-* [OSGi バンドルの作成](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja&amp;CID=RedirectAEMCommunityKautuk)
+* [OSGi バンドルの作成](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja&CID=RedirectAEMCommunityKautuk)
 * [AEM コンポーネントの開発](/help/sites-developing/components.md)
 * [アダプティブフオームの作成](../../forms/using/creating-adaptive-form.md)
 * [アダプティブフォームのオーサリング](../../forms/using/introduction-forms-authoring.md)

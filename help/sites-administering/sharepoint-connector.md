@@ -11,8 +11,8 @@ role: Admin
 exl-id: 3f8ec723-2705-4ce5-8cb2-e7e6bfe94512
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1482'
-ht-degree: 100%
+source-wordcount: '1504'
+ht-degree: 95%
 
 ---
 
@@ -160,7 +160,7 @@ AEM でバンドルを許可リストに追加するには、次の手順を実�
 
 SharePoint Assets を AEM と同期するには、次の手順を実行します。
 
-1. OSGi Management Console（[http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)）に移動します。
+1. OSGi Management コンソール（[http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)）に移動します。
 1. 「Default DAMAssetSynchronization」サービスを探します。
 1. 設定値を編集.
 1. SharePoint サイトへのアクセス権を持つユーザーのユーザー名とそれに対応するパスワードを設定します。
@@ -168,13 +168,13 @@ SharePoint Assets を AEM と同期するには、次の手順を実行します
 
 DAM 同期サービスを有効にします（デフォルトでは無効になっています）。
 
-1. OSGi web コンソールのコンポーネント（[http://localhost:4502/system/console/components](http://localhost:4502/system/console/components)）に移動します。
+1. OSGi web コンソールの Components: [http://localhost:4502/system/console/components](http://localhost:4502/system/console/components) に移動します。
 1. 「com.day.cq.dam.jcrconnectors.impl.AssetSynchronizationService」を探します。
 1. 「有効化」をクリックします。
 
 オプションで、異なる同期サイクル間の同期遅延を設定できます。
 
-1. OSGi Management Console（[http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)）に移動します。
+1. OSGi Management Console （[http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)）に移動します。
 1. 「DAY CQ DAM JCR Connector Asset Synchronization Service」を探します。
 1. 設定値を編集.
 1. 「同期期間」（秒単位）の値を設定します。
@@ -225,14 +225,14 @@ Microsoft SharePoint 2010 および Microsoft SharePoint 2013 のバージョン
 
 AEM でユーザーを作成するには、以下の手順に従います。
 
-1. admin ユーザーとして http://localhost:9502/ にログインします。
+1. 管理者ユーザーでhttp://localhost:9502/にログインします。
 1. 「ツール」をクリックします。
 1. 「セキュリティ」をクリックします。
 1. 「ユーザー」をクリックします。
 1. 「**ユーザーを作成**」をクリックします。
 1. ユーザー ID（SharePoint へのアクセス権限を持つユーザー名）を指定します。
 1. 対応するパスワードを指定します。
-1. 緑色のチェックマークをクリックして、ユーザーを作成します。
+1. 緑色のチェックマークシンボルをクリックして、ユーザーを作成します。
 
 admin グループにユーザーを追加するには：
 
@@ -240,7 +240,7 @@ admin グループにユーザーを追加するには：
 1. 「a」ノードをクリックします。
 1. 「管理者」をクリックします。
 1. 「**参照**」ボタンの前のテキストボックスに、先ほど作成したユーザー ID を入力します。
-1. 緑色のチェックマークをクリックして、admin グループにユーザーを追加します。
+1. 緑色のチェックマークシンボルをクリックして、admin グループにユーザーを追加します。
 
 ### トークン認証の無効化 {#disable-token-authentication}
 

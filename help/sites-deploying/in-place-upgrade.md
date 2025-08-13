@@ -171,8 +171,8 @@ Where `/path/to/datastore` represents the path to your File Datastore.
 
 1. S3 コネクタ（バージョン 1.60.2）を抽出し、次のように `crx-quickstart/install` の下の次のフォルダーの内容をコピーします。
 
-   1. `crx-quickstart/install/1` の下 `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/1` コピー
-   1. `crx-quickstart/install/15` の下 `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/15` コピー
+   1. `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/1` の下 `crx-quickstart/install/1` コピー
+   1. `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/15` の下 `crx-quickstart/install/15` コピー
 
 次に、「正しいアップグレード開始コマンドの特定 [ セクションの情報を使用して確認した新しいコマンドを使用して、AEM インスタンスを開始し ](#determining-the-correct-upgrade-start-command) す。
 

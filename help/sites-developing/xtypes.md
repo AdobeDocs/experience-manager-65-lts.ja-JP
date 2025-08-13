@@ -328,7 +328,7 @@ Adobe Experience Manager で使用可能な xtype を以下に示します。
 
   [CQ.Ext.Editor](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Editor)
 
-  要求に応じて表示／非表示を処理し、いくつかの組み込みのサイズ変更およびイベント処理ロジックを持つ基本エディターフィールド。
+  要求に応じて表示／非表示を処理し、いくつかのビルトインのサイズ変更およびイベント処理ロジックを持つ基本エディターフィールド。
 
 * editorgrid
 
@@ -542,7 +542,7 @@ Adobe Experience Manager で使用可能な xtype を以下に示します。
 
   [CQ.Ext.menu.TextItem](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.menu.TextItem)
 
-  見出しやグループ区切りとして使用される静的テキスト文字列をメニューに追加します。
+  見出しやグループ区切り記号として使用される静的テキスト文字列をメニューに追加します。
 
 * メタデータ
 
@@ -784,7 +784,7 @@ Adobe Experience Manager で使用可能な xtype を以下に示します。
 
   [CQ.Ext.SplitButton](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.SplitButton)
 
-  デフォルトのボタンのクリックイベントとは別に、イベントを発生させることのできる組み込みのドロップダウン矢印を提供する分割ボタン。これは通常、プライマリボタンのアクションに追加のオプションを提供するドロップダウンメニューの表示用に使用されます。ただし、カスタムハンドラーにより、矢印クリックの実装を提供できます。
+  デフォルトのボタンのクリックイベントとは別に、イベントを発生させることのできるビルトインのドロップダウン矢印を提供する分割ボタン。これは通常、プライマリボタンのアクションに追加のオプションを提供するドロップダウンメニューの表示用に使用されます。ただし、カスタムハンドラーにより、矢印クリックの実装を提供できます。
 
 * static
 
@@ -862,7 +862,7 @@ Adobe Experience Manager で使用可能な xtype を以下に示します。
 
   基本テキストフィールド。従来のテキスト入力と直接置き換えて使用できます。また、より高度な入力コントロール（[CQ.Ext.form.TextArea](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextArea)、[CQ.Ext.form.ComboBox](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.ComboBox) など）の基底クラスとして使用できます。
 
-* thumbnail
+* サムネイル
 
   [CQ.form.Thumbnail](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.Thumbnail)
 
@@ -882,7 +882,7 @@ Adobe Experience Manager で使用可能な xtype を以下に示します。
 
   [CQ.menu.TitleSeparator](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.menu.TitleSeparator)
 
-  メニューに区切りバーを追加します。区切りバーは、メニューアイテムを論理的なグループに分けるために使用されます。この区切りには、タイトルを追加することもできます。
+  メニューに区切りバーを追加します。区切りバーは、メニューアイテムを論理的なグループに分けるために使用されます。このセパレーターには、タイトルを追加することもできます。
 
 * toolbar
 

@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: a27c4469-6430-4a68-ba2c-7fb0ddebb263
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 100%
+source-wordcount: '1329'
+ht-degree: 98%
 
 ---
 
@@ -82,7 +82,7 @@ Correspondence Management をカスタマイズしてレターのフラットな
 
       **名前：** downloadFlatPDF（または、このプロパティに与える任意の名前）
 
-      **型：** nt:unstructured
+      **タイプ：** nt:unstructured
 
    1. 新しく作成したノードをクリックします（ここでは downloadFlatPDF）。CRX にノードのプロパティが表示されます。
 
@@ -254,7 +254,7 @@ Correspondence Management をカスタマイズしてレターのフラットな
 
       **名前：** letterpdfdownloader（またはこのプロパティに与える任意の名前。一意の名前である必要があります。これ以外の名前を使用する場合、formaction.js ファイルの ACTION_URL の変数にも同一の名前を指定する必要があります）。
 
-      **型：** nt:unstructured
+      **タイプ：** nt:unstructured
 
    1. 新しく作成したノードをクリックします（ここでは downloadFlatPDF）。CRX にノードのプロパティが表示されます。
 

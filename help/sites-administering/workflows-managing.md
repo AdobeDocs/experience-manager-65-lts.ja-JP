@@ -11,8 +11,8 @@ role: Admin
 exl-id: 084c59b1-1e72-475e-8ec9-2cbc6e695876
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 100%
+source-wordcount: '569'
+ht-degree: 90%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 100%
 
 ワークフローモデルが `/var/workflow/models` 内に保存されている場合、（そのワークフローにのみ関連する）特定の ACL をフォルダーに割り当てることができます。
 
-1. Web ブラウザーで CRXDE Lite を開きます（例：[http://localhost:4502/crx/de](http://localhost:4502/crx/de)）。
+1. Web ブラウザーでCRXDE Liteを開きます（例：[http://localhost:4502/crx/de](http://localhost:4502/crx/de)）。
 1. ノードツリーで、次のワークフローモデルフォルダーのノードを選択します。
 
    `/var/workflow/models`
@@ -66,7 +66,7 @@ ht-degree: 100%
    * **プリンシパル**：`content-authors`
    * **型**：`Deny`
    * **権限**：`jcr:read`
-   * **rep:glob**： 特定のワークフローへの参照
+   * **rep:glob**：特定のワークフローへの参照
 
    ![wf-108](assets/wf-108.png)
 
@@ -90,7 +90,7 @@ ht-degree: 100%
 
 その後、ACL をフォルダー自体に追加できます。
 
-1. Web ブラウザーで CRXDE Lite を開きます（例：[http://localhost:4502/crx/de](http://localhost:4502/crx/de)）。
+1. Web ブラウザーでCRXDE Liteを開きます（例：[http://localhost:4502/crx/de](http://localhost:4502/crx/de)）。
 1. ノードツリーで、ワークフローモデルフォルダーの個別のフォルダー用に、例えば次のようなノードを選択します。
 
    `/var/workflow/models/prototypes`
@@ -106,7 +106,7 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >[特定のワークフローモデル用の ACL の /var/workflow/models への適用](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models)にあるように、rep:glob を指定して、特定のワークフローに対するアクセスを制限できます。
+   >[ 特定のワークフローモデル用の ACL の/var/workflow/models への適用 ](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models) にあるように :globrep を含めて、特定のワークフローに対するアクセスを制限できます。
 
    ![wf-110](assets/wf-110.png)
 

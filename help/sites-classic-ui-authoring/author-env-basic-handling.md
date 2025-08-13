@@ -131,15 +131,15 @@ ht-degree: 100%
 >siteadmin ノードで次のように設定します。
 >
 >次のプロパティの値を設定します。
->`treeAutoExpandMax`
->次の場所にあります。
->`/apps/wcm/core/content/siteadmin`
+>>`treeAutoExpandMax`
+>>次の場所にあります。
+>>`/apps/wcm/core/content/siteadmin`
 >
 >または、テーマ内でグローバルに次のように設定します。
->次の値を設定します。
->`TREE_AUTOEXPAND_MAX`
->次の場所にあります。
->`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
+>>次の値を設定します。
+>>`TREE_AUTOEXPAND_MAX`
+>>次の場所にあります。
+>>`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
 >詳しくは、[CQ Widget API の SiteAdmin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) を参照してください。
 
@@ -149,7 +149,7 @@ ht-degree: 100%
 
 ![page-info](assets/page-info.png)
 
-利用可能なフィールドは次のとおりです。これらのフィールドの一部がデフォルトとして表示されます。
+利用可能なフィールドは次のとおりです。これらのフィールドのサブセットがデフォルトとして表示されます。
 
 <table>
  <tbody>

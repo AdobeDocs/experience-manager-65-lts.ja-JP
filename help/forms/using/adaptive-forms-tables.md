@@ -10,8 +10,8 @@ role: User, Developer
 exl-id: f1cea461-1d16-4944-b4c0-77be81b821e7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2459'
-ht-degree: 100%
+source-wordcount: '2464'
+ht-degree: 98%
 
 ---
 
@@ -287,7 +287,7 @@ XML ファイルからのデータを使って銀行取引概略表に入力す�
 
 サンプル XML では、行のデータは、テーブルの行の要素名である `<Row1>` タグによって定義されています。`<Row1>` タグ内では、各セルのデータは、タグ内の `<tableItem1>`、`<tableItem2>`、`<tableItem3>`、`<type>` などの要素名で定義されています。
 
-このデータを実行時にテーブルと統合するには、wcmmode を無効にした状態で、XML の絶対位置をテーブルを含むアダプティブフォームに示す必要があります。例えば、アダプティブフォームが *https://localhost:4502/myForms/bankTransaction.html* にあり、データ XML ファイルが *C:/myTransactions/bankSummary.xml* に保存されている場合、データが入ったテーブルは次の URL で確認することができます。
+このデータを実行時にテーブルと統合するには、wcmmode を無効にした状態で、XML の絶対位置をテーブルを含むアダプティブフォームに示す必要があります。例えば、アダプティブフォームが *https://localhost:4502/myForms/bankTransaction.html* にあり、データ XML ファイルが *C:/myTransactions/bankSummary.xml* に保存されている場合、以下の URL でデータを含むテーブルを確認できます。
 
 *https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 

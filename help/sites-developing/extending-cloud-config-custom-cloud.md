@@ -11,8 +11,8 @@ role: Developer
 exl-id: 7ae41982-8438-41a6-91f9-3b3b6755a39b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 100%
+source-wordcount: '399'
+ht-degree: 96%
 
 ---
 
@@ -147,8 +147,8 @@ ht-degree: 100%
    * **Title**= `Google Analytics Configuration`
    * **allowedPath** = `/etc/cloudservices/googleanalytics(/.*)?`
    * **allowedChildren** = `/apps/acs/analytics/templates/googleanalytics`
-   * **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage`（jcr:content ノードではなくテンプレートノード）
-   * **cq:designPath** = `/etc/designs/cloudservices/googleanalytics`（jcr:content）
+   * **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` （jcr:content ノードではなくテンプレートノード）
+   * **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` を使用（jcr:content）
 
 1. `/apps/acs/analytics/components/googleanalytics` の下にコンポーネントを作成します。
 

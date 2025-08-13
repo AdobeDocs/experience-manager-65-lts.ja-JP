@@ -11,8 +11,8 @@ role: Developer
 exl-id: 7b870221-2946-4e3d-b606-71a46bdfc568
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 100%
+source-wordcount: '532'
+ht-degree: 93%
 
 ---
 
@@ -106,7 +106,7 @@ AEM の&#x200B;**ページのプロパティ**&#x200B;で、クラウドサー�
 
 フィールドの設定が完了したら、手動でマッピングを変更する必要があります。
 
-CRXDE Lite で、（ページ）ノードの **jcr:content** に移動して、**acMapping** の値を&#x200B;**ターゲットマッピング**&#x200B;の内部名に変更します。
+CRXDE-lite で、（ページの） **jcr:content** ノードに移動して、**acMapping** 値を **ターゲットマッピング** の内部名に変更します。
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
@@ -122,7 +122,7 @@ CRXDE Lite で、（ページ）ノードの **jcr:content** に移動して、*
 
 ## トラブルシューティング {#troubleshooting}
 
-**&quot;Invalid type for value &#39;02/02/2015&#39; from element &#39;@eventdate&#39; (document of type &#39;Event ([adb:event])&#39;)&quot;**
+**要素「@eventdate」（タイプ「Event （[adb:event]）」のドキュメント）の値「02/02/2015」に対して無効なタイプです」**
 
 フォームを送信すると、このエラーが AEM の **error.log** に記録されます。
 

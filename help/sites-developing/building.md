@@ -11,8 +11,8 @@ role: Developer
 exl-id: c835a110-89cf-4857-9ee0-c0ad781a66ae
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 99%
+source-wordcount: '866'
+ht-degree: 95%
 
 ---
 
@@ -152,7 +152,7 @@ http://localhost:4502/system/console/configMgr/com.day.cq.tagging.impl.TagGarbag
 
 タグの管理に関するドキュメントの[他の言語でのタグ管理](/help/sites-administering/tags.md#managing-tags-in-different-languages)の節で説明されているように、タグの `title` は別の言語で定義できます。言語に依存するプロパティがタグノードに追加されます。このプロパティは `jcr:title.<locale>` の形式を持ちます（例：フランス語訳は `jcr:title.fr`）`<locale>` は、小文字の ISO ロケール文字列で、「-」ではなく「_」を使用する必要があります（例：`de_ch`）。
 
-**Animals** タグが **Products** ページに追加されると、値 `stockphotography:animals` は /content/geometrixx/en/products/jcr:content ノードの `cq:tags` プロパティに追加されます。翻訳は、タグノードから参照されます。
+**Animals** タグが **Products** ページに追加されると、`stockphotography:animals` の値が/content/geometrixx/en/products/jcr`cq:tags` ノードの :content プロパティに追加されます。 翻訳は、タグノードから参照されます。
 
 サーバーサイド API には、ローカライズされた `title` 関連のメソッドがあります。
 
@@ -180,7 +180,7 @@ AEM では、言語はページ言語またはユーザー言語のどちらか�
 
    * `slingRequest.getLocale()`
 
-`currentPage` および `slingRequest` は、[&lt;cq:definedObjects>](/help/sites-developing/taglib.md) タグを介して JSP で使用できます。
+`currentPage` と `slingRequest` は、[&lt;cq:definedObjects>](/help/sites-developing/taglib.md) タグを介して JSP で使用できます。
 
 タグ付けの場合、ローカライズはコンテキストに依存します。タグの `titles` はページ言語、ユーザー言語またはそれ以外の任意の言語で表示することができます。
 

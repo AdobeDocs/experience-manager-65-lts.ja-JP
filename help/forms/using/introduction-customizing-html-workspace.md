@@ -202,7 +202,7 @@ AEM Forms Workspace は容易にカスタマイズや再利用が可能なコン
       * js:
 
          * libs - AEM Forms Workspace で使用されているすべてのサードパーティライブラリを含みます。
-         * licenses - HTML と JS ファイルのライセンスおよびこれらのライセンスをそれぞれのソースファイルの前に置くコードを含みます。
+         * licenses - HTML と JS ファイルのライセンスおよびこれらのライセンスをそれぞれのソースファイルの前に接頭辞として付けるコードを含みます。
          * minifier - カスタマイズされた JavaScript コードの結合、縮小および醜怪化に使用されます。
          * resourcejs_optimizer - JavaScript ソースの結合、縮小および醜怪化に使用されます。
          * resource_generator - register.js および modelcontrollerpath.js の生成に使用されます。
@@ -220,7 +220,7 @@ AEM Forms Workspace は容易にカスタマイズや再利用が可能なコン
          * router.js
 
       * libs/ws：pdf.html および pluginPing.pdf は、PDF フォームを AEM Forms Workspace に読み込むのに使用されます。WSNextAdapter.swf は、SWF フォームおよび Guide を AEM Forms Workspace に読み込むのに使用されます。
-      * locales:
+      * ロケール：
 
          * de-DE - ドイツ語の translation.json を含みます。
          * en-US - 英語の translation.json を含みます。
@@ -273,7 +273,7 @@ CRX パッケージは CRX™ リポジトリにデプロイできます。こ�
    * ws - pluginPing.pdf、pdf.html および WSNextAdapter.swf を含みます。
 
 * Locale - .content.xml を含みます。
-* locales:
+* ロケール：
 
    * de-DE - ドイツ語の translation.json を含みます。
    * en-US - 英語の translation.json を含みます。
@@ -318,7 +318,7 @@ CRX パッケージは CRX™ リポジトリにデプロイできます。こ�
    * ws - pluginPing.pdf、pdf.html および WSNextAdapter.swf を含みます。
 
 * Locale - .content.xml を含みます。
-* locales:
+* ロケール：
 
    * de-DE - ドイツ語の translation.json を含みます。
    * en-US - 英語の translation.json を含みます。
@@ -367,7 +367,7 @@ client-pkg への mvn clean -P Dev インストール
    * ws - pluginPing.pdf、pdf.html および WSNextAdapter.swf を含みます。
 
 * Locale - .content.xml を含みます。
-* locales:
+* ロケール：
 
    * de-DE - ドイツ語の translation.json を含みます。
    * en-US - 英語の translation.json を含みます。

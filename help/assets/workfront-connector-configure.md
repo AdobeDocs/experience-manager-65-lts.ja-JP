@@ -8,8 +8,8 @@ solution: Experience Manager, Workfront
 exl-id: 810be820-b577-4035-9fda-3d919361c58c
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1697'
-ht-degree: 100%
+source-wordcount: '1696'
+ht-degree: 99%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 100%
 
 1. クラウドサービスの「プロジェクトにリンクされたフォルダー」タブに移動します。
 1. リンクされたフォルダーの親パス：DAM 内で、リンクされたフォルダーを作成するフォルダーを選択します。空のままにすると、デフォルトで /content/dam に設定されます。Workfront ツールのメタデータスキーマと Workfront リンクフォルダーのメタデータスキーマが、選択したフォルダーに適用されていることを確認します。
-1. リンクされたフォルダー構造：コンマ区切り値を入力します。各値は `DE:<some-project-custom-form-field>`、Portfolio、プログラム、年、名前または「リテラル文字列値」（最後の 1 つには引用符がいります）のいずれかです。現在は、Portfolio、プログラム、年、DE:プロジェクトの種類、名前に設定されています。
+1. リンクされたフォルダー構造：コンマ区切り値を入力します。各値は `DE:<some-project-custom-form-field>`、Portfolio、プログラム、年、名前または「リテラル文字列値」（最後の 1 つには引用符がいります）のいずれかです。現在は、Portfolio、プログラム、年、DE、タイプ :Project 名前に設定されています。
 1. 権限の設定：`wf-workfront-users` グループに、`/conf/workfront-tools/settings/cloudconfigs` に対する `jcr:all permissions` 権限を追加します。
 1. Workfront のフォルダーのタイトルに構造内のすべてのフォルダーを含める必要がある場合は、「フォルダー構造名を使用して Workfront でリンクされたフォルダーのタイトルを作成」チェックボックスをオンにする必要があります。それ以外の場合は、最後のフォルダーのタイトルになります。
 1. サブフォルダーのマルチフィールドでは、リンクされたフォルダーの子フォルダーとして作成するフォルダーのリストを指定できます。

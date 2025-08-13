@@ -64,4 +64,4 @@ AEM には、開発に役立つその他のツールが付属しています。
 >[!NOTE]
 >
 >新しい AEM プロジェクトを開始する際には、次のチュートリアルが参考になる場合があります。
->[AEM Sites の概要（第 1 章）- プロジェクトの設定](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)
+>>[AEM Sites の概要（第 1 章）- プロジェクトの設定](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)

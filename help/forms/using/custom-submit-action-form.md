@@ -7,8 +7,8 @@ feature: Adaptive Forms,Foundation Components,Form Data Model
 exl-id: dc3bd697-5b1a-4efe-9554-c6aa1575c1c0
 source-git-commit: 98097c29b1b9cfb436f9431e8b7dca6e6a58634a
 workflow-type: tm+mt
-source-wordcount: '1543'
-ht-degree: 99%
+source-wordcount: '1535'
+ht-degree: 97%
 
 ---
 
@@ -89,16 +89,16 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 ## 送信アクション {#submit-action}
 
-送信アクションは、次のファイルを含む sling:Folder です。
+送信アクションは、次の :Folder うな Sling です。
 
 * **addfields.jsp**：このスクリプトは、レンディション中に HTML ファイルに追加されるアクションフィールドを指定します。post.POST.jsp スクリプトでの送信中に必要な非表示の入力パラメーターの追加には、このスクリプトを使用します。
 * **dialog.xml**：このスクリプトは、CQ コンポーネントダイアログに似ています。作成者がカスタマイズする設定情報を提供します。フィールドは、送信アクションを選択するときに、アダプティブフォーム編集ダイアログの送信アクションタブに表示されます。
 * **post.POST.jsp**：送信サーブレットは、送信されたデータおよび前のセクションからの追加データで、このスクリプトを呼び出します。このページで言及されるアクションの実行は、post.POST.jsp スクリプトの実行を意味します。送信アクションをアダプティブフォームに登録して、アダプティブフォーム編集ダイアログに表示するには、次のプロパティを `sling:Folder` に追加します。
 
    * 文字列型で値が **fd/af/components/guidesubmittype** の **guideComponentType**
-   * 送信アクションが適用されるアダプティブフォームのタイプを指定する文字列型の **guideDataModel**&#x200B;**xfa** は、XFA ベースのアダプティブフォームでサポートされており、また **xsd** は、XSD ベースのアダプティブフォームでサポートされています。**basic** は、XDP や XSD を使用しないアダプティブフォームでサポートされています。複数のタイプのアダプティブフォームでのアクションを表示するには、対応する文字列を追加します。各文字列はカンマで区切ります。例えば、XFA および XSD ベースのアダプティブフォームでアクションを表示したい場合、**xfa** および **xsd** を値にそれぞれ指定します。
+   * 送信アクションが適用されるアダプティブフォームのタイプを指定する文字列型の **guideDataModel****xfa** は、XFA ベースのアダプティブフォームでサポートされており、また **xsd** は、XSD ベースのアダプティブフォームでサポートされています。**basic** は、XDP や XSD を使用しないアダプティブフォームでサポートされています。複数のタイプのアダプティブフォームでのアクションを表示するには、対応する文字列を追加します。各文字列はカンマで区切ります。例えば、XFA および XSD ベースのアダプティブフォームでアクションを表示したい場合、**xfa** および **xsd** を値にそれぞれ指定します。
 
-   * 文字列型の **jcr:description**。このプロパティの値は、アダプティブフォーム編集ダイアログボックスの「送信アクション」タブにある送信アクションリストに表示されます。標準アクションは、**/libs/fd/af/components/guidesubmittype** にある CRX リポジトリに存在します。
+   * **jcr:description**（タイプ - 文字列）。このプロパティの値は、アダプティブフォーム編集ダイアログボックスの「送信アクション」タブにある送信アクションリストに表示されます。標準アクションは、**/libs/fd/af/components/guidesubmittype** にある CRX リポジトリに存在します。
 
 ## カスタム送信アクションの作成 {#creating-a-custom-submit-action}
 
@@ -106,7 +106,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 1. URL https://&lt;server>:&lt;port>/crx/de/index.jspから、CRXDE Lite にログインします。/apps/custom_submit_action フォルダー内に sling:Folder プロパティを持つノードを作成し、名前を store_and_mail に設定します。custom_submit_action フォルダーが存在しない場合は作成します。
 
-   ![sling:Folder プロパティを持つノードの作成を示したスクリーンショット](assets/step1.png)
+   ![sling:Folder](assets/step1.png) プロパティを持つノードの作成を示したスクリーンショット
 
 1. **必須の設定フィールドを指定します。**
 
@@ -128,7 +128,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
    * **文字列**&#x200B;型の **guideDataModel** と値 **xfa、xsd、basic**
 
-   * **文字列**&#x200B;型の **jcr:description** と値 **Store and Email Action**
+   * **文字列**&#x200B;型の **jcr:description** および値 **Store and Email Action**
 
 1. 任意のアダプティブフォームを開きます。「**開始**」の横にある「**編集**」ボタンをクリックし、アダプティブフォームコンテナの&#x200B;**編集**&#x200B;ダイアログを開きます。新しいアクションが、「**送信アクション**」タブに表示されます。**格納およびメール送信アクション**&#x200B;を選択すると、ダイアログノードに追加された設定が表示されます。
 

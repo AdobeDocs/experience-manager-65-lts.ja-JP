@@ -11,8 +11,8 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 20e958d7-5976-4ccd-99b6-0e3bdb424d2d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 100%
+source-wordcount: '1264'
+ht-degree: 96%
 
 ---
 
@@ -117,9 +117,9 @@ simpleEnrollmentTemplate などのカスタムテンプレートを作成する�
 
 ## アダプティブフォームのページコンポーネントの作成 {#create-an-adaptive-form-page-component}
 
-テンプレートは /libs/fd/af/components/page/base のページコンポーネントを参照するので、カスタムテンプレートはデフォルトのテンプレートと同じスタイルを持ちます。コンポーネントの参照は、/apps/mycompany/templates/enrollment-template/jcr:content ノードで定義された `sling:resourceType` プロパティで検索できます。ベースはコア製品のコンポーネントのため、変更を加えないでください。
+テンプレートは /libs/fd/af/components/page/base のページコンポーネントを参照するので、カスタムテンプレートはデフォルトのテンプレートと同じスタイルを持ちます。プロパティ `sling:resourceType`/apps/mycompany/templates/enrollment-template/jcr:content で定義されているので、コンポーネントの参照を確認できます。 ベースはコア製品のコンポーネントのため、変更を加えないでください。
 
-1. /apps/mycompany/templates/enrollment-template/jcr:content のノードに移動し、`sling:resourceType` プロパティの値を /apps/mycompany/components/page/enrollmentpage に変更します。
+1. /apps/mycompany/templates/enrollment-template/jcr のノードに移動し :content プロパティ `sling:resourceType` の値を/apps/mycompany/components/page/enrollmentpage に変更します。
 1. /libs/fd/af/components/page/base のノードを /apps/mycompany/components/page フォルダーにコピーします。
 
 1. コピーしたコンポーネントの名前を `enrollmentpage` に変更します。

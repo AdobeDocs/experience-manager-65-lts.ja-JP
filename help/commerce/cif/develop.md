@@ -11,8 +11,8 @@ role: Admin, Developer
 exl-id: 22fcdadf-12c0-4545-a854-76345806386f
 source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 92%
+source-wordcount: '770'
+ht-degree: 90%
 
 ---
 
@@ -159,7 +159,7 @@ AEM Commerce アドオンと CIF コアコンポーネントは、AEM サーバ�
 
 CIF アドオンは、`/api/graphql` で GraphQL プロキシサーブレットを提供します。ローカルの AEM Dispatcher を使用する予定がない場合は、GraphQL プロキシサーブレットも設定することをお勧めします。
 
-http://localhost:4502/system/console/configMgr に移動し、`Adobe CIF GraphQL Proxy Configuration` サービスの OSGI 設定を作成します。上記の GraphQL クライアントで使用したのと同じ GraphQL エンドポイントを、コマースシステムで使用します。
+http://localhost:4502/system/console/configMgr に移動し、`Adobe CIF GraphQL Proxy Configuration` サービスの OSGI 設定を作成します。 上記の GraphQL クライアントで使用したのと同じ GraphQL エンドポイントを、コマースシステムで使用します。
 
 ## その他のリソース
 

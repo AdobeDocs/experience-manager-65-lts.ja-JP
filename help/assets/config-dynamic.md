@@ -24,26 +24,26 @@ ht-degree: 100%
 >[!IMPORTANT]
 >
 >Secure Socket Layer 2.0 および 3.0 と Transport Layer Security 1.0 および 1.1 のサポートを終了します。
->2024年4月30日（PT）を以て、Adobe Dynamic Media は以下のサポートを終了します。
+>>2024年4月30日（PT）を以て、Adobe Dynamic Media は以下のサポートを終了します。
 >
 >* SSL（Secure Socket Layer）2.0
 >* SSL 3.0
 >* TLS（Transport Layer Security）1.0 および 1.1
 >* TLS 1.2 での以下の脆弱な暗号：
-> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
-> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
-> `TLS_RSA_WITH_AES_256_GCM_SHA384`
-> `TLS_RSA_WITH_AES_256_CBC_SHA256`
-> `TLS_RSA_WITH_AES_256_CBC_SHA`
-> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
-> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
-> `TLS_RSA_WITH_AES_128_GCM_SHA256`
-> `TLS_RSA_WITH_AES_128_CBC_SHA256`
-> `TLS_RSA_WITH_AES_128_CBC_SHA`
-> `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
-> `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
-> `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
-> `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
+>  > `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
+>  > `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
+>  > `TLS_RSA_WITH_AES_256_GCM_SHA384`
+>  > `TLS_RSA_WITH_AES_256_CBC_SHA256`
+>  > `TLS_RSA_WITH_AES_256_CBC_SHA`
+>  > `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
+>  > `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
+>  > `TLS_RSA_WITH_AES_128_GCM_SHA256`
+>  > `TLS_RSA_WITH_AES_128_CBC_SHA256`
+>  > `TLS_RSA_WITH_AES_128_CBC_SHA`
+>  > `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
+>  > `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
+>  > `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
+>  > `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
 >
 > [Dynamic Media の制限](/help/assets/limitations.md)も参照してください。
 
@@ -1251,23 +1251,23 @@ Dynamic Media のカラーマネジメント機能を使用するには、機能
   <tr>
    <td>ビューアーの埋め込みコードをコピー</td>
    <td><p>「埋め込みコードをコピー」ダイアログボックスに、次のようなコードスニペットが表示されます（コード例はデモ専用です）。</p> <p><code class="code">&lt;style type="text/css"&gt;
-       &#x200B;#s7basiczoom_div.s7basiczoomviewer&lbrace;
+       #s7basiczoom_div.s7basiczoomviewer{
        width:100%;
        height:auto;
-       &rbrace;
+       }
        &lt;/style&gt;
        &lt;script
        type="text/javascript" src="https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/js/BasicZoomViewer.js"&gt;&lt;/script&gt;
        &lt;div id="s7basiczoom_div"&gt;&lt;/div&gt;
        &lt;script type="text/javascript"&gt;
-       var s7basiczoomviewer = new s7viewers.BasicZoomViewer(&lbrace;
+       var s7basiczoomviewer = new s7viewers.BasicZoomViewer({
        "containerId" : "s7basiczoom_div",
-       "params" : &lbrace;
+       "params" : {
        "serverurl" : "https://IMAGESERVICEPUBLISHNODE/is/image/",
        "contenturl" : "https://PUBLISHNODE/",
        "config" : "/conf/global/settings/dam/dm/presets/viewer/Zoom_dark",
-       "asset" : "/content/dam/path/to/Image.jpg" &rbrace;
-       &rbrace;).init();
+       "asset" : "/content/dam/path/to/Image.jpg" }
+       }).init();
        &lt;/script&gt;</code></p> <p>ここで<code>PUBLISHNODE</code>は標準の Experience Manager パブリッシュノードを表し、<code>IMAGESERVICEPUBLISHNODE</code>は画像サービスの URL を表します。</p> <p><a href="/help/assets/delivering-dynamic-media-assets.md">Dynamic Media アセットの配信</a>も参照してください。</p> </td>
   </tr>
  </tbody>

@@ -559,7 +559,7 @@ Document Security では、保護されたドキュメントで実行される�
 
 登録メールには、登録ページへのリンクと登録方法に関する情報が含まれています。招待ユーザーによって登録が行われると、アクティベートページへのリンクが記載されたアクティベート用のメールが Document Security から送信されます。アカウントがアクティベートされると、アクティベートを解除するか削除するまで、そのアカウントは有効のままです。
 
-組み込み登録を有効にした場合は、SMTP サーバー、登録メールの詳細、アクセス権限およびパスワードリセット用メールの情報を一度だけ指定します。組み込み登録を有効にする前に、User Management 内にローカルドメインを作成済みであること、および「Document Security ユーザーの招待」の役割を組織内の適切なユーザーとグループに割り当てていることを確認してください。（[ローカルドメインの追加](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain)および[役割の作成および設定](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)を参照。）組み込み登録を使用しない場合は、AEM Forms SDK を使用して、独自のユーザー登録システムを作成する必要があります。詳しくは、[AEM Forms によるプログラミング](/help/forms/developing/introducing-java-api-soap-quick.md)の「AEM Forms 向け SPI の開発」を参照してください。組み込み登録オプションを使用しない場合は、アクティベート用のメールにメッセージを設定すると共に、クライアントのログイン画面で、新しいパスワードやその他の情報について管理者に問い合わせる方法をユーザーに知らせることをお勧めします。
+ビルトインの登録を有効にした場合は、SMTP サーバー、登録メールの詳細、アクセス権限およびパスワードリセット用メールの情報を一度だけ指定します。ビルトインの登録を有効にする前に、User Management 内にローカルドメインを作成済みであること、および「Document Security ユーザーの招待」の役割を組織内の適切なユーザーとグループに割り当てていることを確認してください。（[ローカルドメインの追加](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain)および[役割の作成および設定](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)を参照。）ビルトインの登録を使用しない場合は、AEM Forms SDK を使用して、独自のユーザー登録システムを作成する必要があります。詳しくは、[AEM Forms によるプログラミング](/help/forms/developing/introducing-java-api-soap-quick.md)の「AEM Forms 向け SPI の開発」を参照してください。ビルトインの登録オプションを使用しない場合は、アクティベート用のメールにメッセージを設定すると共に、クライアントのログイン画面で、新しいパスワードやその他の情報について管理者に問い合わせる方法をユーザーに知らせることをお勧めします。
 
 **招待ユーザー登録の有効化と設定**
 
@@ -575,7 +575,7 @@ Document Security では、保護されたドキュメントで実行される�
    * [アクティベーションメールの設定](configuring-client-server-options.md#activation-email-settings)
    * [パスワードリセットメールの設定](configuring-client-server-options.md#configure-a-password-reset-email)
 
-1. （オプション）「組み込み登録」で「はい」を選択して、このオプションを有効にします。組み込み登録を有効にしない場合は、独自のユーザー登録システムを設定する必要があります。
+1. （オプション）「ビルトインの登録」で「はい」を選択して、このオプションを有効にします。ビルトインの登録を有効にしない場合は、独自のユーザー登録システムを設定する必要があります。
 1. 「OK」をクリックします。
 
 ### 外部ユーザーまたはグループの除外または組み入れ {#exclude-or-include-an-external-user-or-group}
@@ -869,7 +869,7 @@ Acrobat Reader DC Extensions for Microsoft Office は、Microsoft Word、Microso
 
    `APPFamilies` は、Client API によって定義されます。
 
-   `AppName` は、クライアントアプリケーションの名前を指定します。コンマは名前の区切り文字として使用されます。名前にコンマを含めるには、バックスラッシュ（\）でエスケープします。例えば、「*Adobe Systems\, Inc.*」と入力します。
+   `AppName` は、クライアントアプリケーションの名前を指定します。コンマは名前の区切り記号として使用されます。名前にコンマを含めるには、バックスラッシュ（\）でエスケープします。例えば、「*Adobe Systems\, Inc.*」と入力します。
 
    `AppVersions` は、クライアントアプリケーションのバージョンを指定します。
 

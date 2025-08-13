@@ -13,8 +13,8 @@ role: User,Admin,Architect,Developer
 exl-id: b47591ac-10ff-4b87-b75d-68ed635ceca8
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 100%
+source-wordcount: '437'
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 100%
 >
 >更新期間を変更するには、[読み込み間隔を設定](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval)します。
 
-1. **Sites** コンソールを開きます（例：[http://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)）。
+1. **Sites** コンソールを開きます（例：[https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)）。
 1. ツールバーの右端（右上隅）で、アイコンをクリックして、「**リスト表示**」（表示されるアイコンは、[現在の表示](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)によって異なる）を選択します。
 
 1. もう一度、ツールバーの右端（右上隅）でアイコンをクリックして、「**表示設定**」を選択します。**列を構成**&#x200B;ダイアログが開きます。必要な変更を加えて、「**更新**」で確定します。

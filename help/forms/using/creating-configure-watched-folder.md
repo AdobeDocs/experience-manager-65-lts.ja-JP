@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: 8f52ec13-80a9-4b28-824f-0f09fb988529
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1831'
-ht-degree: 100%
+source-wordcount: '1830'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 100%
    * **次を使用してファイルを処理**：開始するプロセスのタイプです。ワークフロー、スクリプト、またはサービスを指定できます。
    * **サービス名／スクリプトパス/ワークフローパス**：このフィールドの動作は、「**次を使用してファイルを処理**」フィールドに指定されている値に基づきます。次の値を指定できます。
 
-      * ワークフローに関しては、実行するワークフローモデルを指定します（/etc/workflow/models/&lt;workflow_name>/jcr:content/model など）。
+      * ワークフローに関しては、実行するワークフローモデルを指定します例：/etc/workflow/models/&lt;workflow_name>/jcr:content/model
       * スクリプトに関しては、実行するスクリプトの JCR パスを指定します（/etc/watchfolder/test/testScript.ecma など）。
       * サービスに関しては、OSGi サービスの特定に使用するフィルターを指定します。サービスは com.adobe.aemfd.watchfolder.service.api.ContentProcessor インターフェイスの実装として登録されます。例えば、以下のコードはカスタムの foo=bar プロパティを持つ ContentProcessor インターフェイスのカスタム実装です。
 

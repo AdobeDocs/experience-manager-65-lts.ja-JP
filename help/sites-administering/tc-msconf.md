@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Microsoft Translator への接続 {#connecting-to-microsoft-translator}
 
-AEM には、ページのコンテンツまたはアセットを翻訳する [Microsoft Translator](https://www.microsoft.com/ja-jp/translator/business/) の組み込みコネクタが用意されています。Microsoft Translator を使用するためのライセンスを Microsoft から取得したら、このページの手順に従ってコネクタを設定してください。
+AEM には、ページのコンテンツまたはアセットを翻訳する [Microsoft Translator](https://www.microsoft.com/ja-jp/translator/business/) のビルトインのコネクタが用意されています。Microsoft Translator を使用するためのライセンスを Microsoft から取得したら、このページの手順に従ってコネクタを設定してください。
 
 | プロパティ | 説明 |
 |---|---|

@@ -55,7 +55,7 @@ AEM は、単一の war ファイルとしてデプロイされます。
 
 * 実行モード：デプロイメント前に、AEM war ファイルの `sling.run.modes` ファイルで `WEB-INF/web.xml` パラメーターを設定
 
-* sling.home：デプロイメント前に、AEM war ファイルの `WEB-INF/web.xml` ファイルで `sling.home` パラメーターを設定
+* sling.home：デプロイメント前に、AEM war ファイルの `sling.home` ファイルで `WEB-INF/web.xml` パラメーターを設定
 
 * コンテキストルート：AEM war ファイル名を変更
 
@@ -165,7 +165,7 @@ AEM は、単一の war ファイルとしてデプロイされます。
 
      `webapps/manager/WEB-INF/web.xml`
 
-     `max-file-size` と `max-request-size` を 500 MB 以上に増やします。 以下の `web.xml` ファイルの例で、次の `multipart-config` を参照してください。
+     `max-file-size` と `max-request-size` を 500 MB 以上に増やします。 以下の `multipart-config` ファイルの例で、次の `web.xml` を参照してください。
 
      ```xml
      <multipart-config>
@@ -186,6 +186,6 @@ AEM は、単一の war ファイルとしてデプロイされます。
       * 最初の `sling.home` パラメーターのコメントを解除し、必要に応じてこのパスを設定します
       * `web.xml` ファイルを再圧縮します。
 
-   * ルート Web アプリケーションとしてデプロイする場合は、AEM war ファイルの名前を `ROOT.war` に変更します。 `aemauthor` をコンテキストルートにする場合は、名前を `aemauthor.war` に変更します。
+   * ルート Web アプリケーションとしてデプロイする場合は、AEM war ファイルの名前を `ROOT.war` に変更します。 `aemauthor.war` をコンテキストルートにする場合は、名前を `aemauthor` に変更します。
    * Tomcat の webapps フォルダーにコピーします。
    * AEM がインストールされるまで待ちます。

@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 1ab2fe5d-5fac-4a11-8d27-7c7607f98653
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 100%
+source-wordcount: '284'
+ht-degree: 97%
 
 ---
 
@@ -60,8 +60,8 @@ Apache は HTTP または AJP プロトコルを使用して JBoss と通信で�
    >プロキシを使用する場合、次の設定変更が必要です。
    >
    >* アクセス：*https://&lt;server>:&lt;port>/system/console/configMgr*
-   * Apache Sling Referrer Filter 設定の編集
-   * 「Allow Hosts」フィールドで、プロキシサーバーのエントリを追加します。
+   >* Apache Sling Referrer Filter 設定の編集
+   >* 「Allow Hosts」フィールドで、プロキシサーバーのエントリを追加します。
 
 1. 圧縮を有効化します。
 

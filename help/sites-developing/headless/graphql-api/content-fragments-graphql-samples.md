@@ -7,8 +7,8 @@ role: Developer
 exl-id: 9a953caa-47d3-4e06-a27d-2a0c3fc72597
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 100%
+source-wordcount: '1577'
+ht-degree: 99%
 
 ---
 
@@ -658,9 +658,9 @@ query {
 }
 ```
 
-### サンプルクエリ - `_path` が特定のプレフィックスで始まるすべてのアドベンチャー {#sample-wknd-all-adventures-cycling-path-filter}
+### サンプルクエリ - `_path` が特定の接頭辞で始まるすべてのアドベンチャー {#sample-wknd-all-adventures-cycling-path-filter}
 
-`_path` が特定のプレフィックス（`/content/dam/wknd/en/adventures/cycling`）で始まるすべての `adventures`。
+`_path` が特定の接頭辞（`/content/dam/wknd/en/adventures/cycling`）で始まるすべての `adventures`。
 
 **サンプルクエリ**
 
@@ -1738,10 +1738,10 @@ query {
 
 | 名前 | 国 | 人口 | カテゴリ |
 |--- |--- |--- |--- |
-| Basel | スイス | 172258 | city:emea |
+| Basel | スイス | 172258 | 市区町村 :emea |
 | Berlin | Germany | 3669491 | city:capital<br>city:emea |
 | Bucharest | Romania | 1821000 |  city:capital<br>city:emea |
 | San Francisco |  USA |  883306 |  city:beach<br>city:na |
-| San Jose |  USA |  102635 |  city:na |
-| Stuttgart |  Germany |  634830 |  city:emea |
+| San Jose |  USA |  102635 |  市区町村 :na |
+| Stuttgart |  Germany |  634830 |  市区町村 :emea |
 |  Zurich |  Switzerland |  415367 |  city:capital<br>city:emea |

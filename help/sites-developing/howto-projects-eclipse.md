@@ -11,8 +11,8 @@ role: Developer
 exl-id: 951e436c-adf4-4277-895f-383aaef17940
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 100%
+source-wordcount: '432'
+ht-degree: 98%
 
 ---
 
@@ -54,7 +54,7 @@ Eclipse で AEM の開発を開始するには、次の手順を実行する必�
 Eclipse では、JSP との連携もサポートされます。サポートされる項目の例を次に示します。
 
 * タグライブラリのオートコンプリート
-* &lt;cq:defineObjects /> と &lt;sling:defineObjects /> で定義されたオブジェクトの Eclipse での認識
+* &lt;cq:defineObjects /> および &lt;sling:defineObjects /> で定義されるオブジェクトの Eclipse 対応
 
 サポートを有効にするには、次の手順を実行します。
 

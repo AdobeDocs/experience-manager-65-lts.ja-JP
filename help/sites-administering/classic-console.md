@@ -12,8 +12,8 @@ role: Admin
 exl-id: 4d4c96ea-b7dd-49b9-86b5-2507e7518ba4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 100%
+source-wordcount: '892'
+ht-degree: 99%
 
 ---
 
@@ -29,8 +29,8 @@ ht-degree: 100%
 
 * オーサー環境で
 * 管理者権限でログインします
-* コンソールに移動します。
-例： [https://localhost:4502/tagging](https://localhost:4502/tagging)
+* コンソールを参照します
+例：[https://localhost:4502/tagging](https://localhost:4502/tagging)
 
 ![クラシックコンソールウィンドウ](assets/managing_tags_usingthetagasministrationconsole.png)
 

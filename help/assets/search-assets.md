@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 3511e07b-f6d0-435a-aa80-55357d3dccf5
 source-git-commit: df4b8b9c80734917569c40d01ea5789e16bfb4e3
 workflow-type: tm+mt
-source-wordcount: '5645'
+source-wordcount: '5635'
 ht-degree: 99%
 
 ---
@@ -125,7 +125,7 @@ ht-degree: 99%
 
 ターゲットを絞ったキーワードの検索結果で一部のアセットのランクを上げることで、この機能をうまく利用できます。以下の例（ビデオ）を参照してください。詳しくは、「[ での検索](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=ja)」を参照してください。 [!DNL Experience Manager]
 
->[!VIDEO](https://video.tv.adobe.com/v/3410338/?quality=6&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *ビデオ：検索結果のランク付けの方法とランクへの影響について*
 
@@ -163,27 +163,27 @@ ht-degree: 99%
 
 | メタデータフィールド | ファセット値と使用法 |
 |---|---|
-| タイトル | title:John |
-| 作成者 | creator:John |
-| 場所 | location:NA |
+| タイトル | タイトル :John |
+| 作成者 | 作成者 :John |
+| 場所 | 場所 :NA |
 | 説明 | description:&quot;Sample Image&quot; |
 | 作成ツール | creatortool:&quot;Adobe Photoshop&quot; |
 | 著作権の所有者 | copyrightowner:&quot;Adobe Systems&quot; |
-| 投稿者 | contributor:John |
+| 投稿者 | 投稿者 :John |
 | 使用条件 | usageterms:&quot;CopyRights Reserved&quot; |
-| 作成日 | created:YYYY-MM-DDTHH |
-| 有効期限 | expires:YYYY-MM-DDTHH |
+| 作成日 | 作成日時 :YYYY-MM-DDTHH |
+| 有効期限 | 有効期限 :YYYY-MM-DDTHH |
 | オンタイム | ontime:YYYY-MM-DDTHH |
-| オフタイム | offtime:YYYY-MM-DDTHH |
+| オフタイム | オフタイム :YYYY-MM-DDTHH |
 | 時間の範囲（有効期限、オンタイム、オフタイム） | facet field : lowerbound..upperbound |
 | パス | /content/dam/&lt;folder name> |
 | PDF タイトル | pdftitle:&quot;Adobe Document&quot; |
 | 件名 | subject:&quot;Training&quot; |
 | タグ | tags:&quot;Location And Travel&quot; |
 | タイプ | type:&quot;image\png&quot; |
-| 画像の幅 | width:lowerbound..upperbound |
-| 画像の高さ | height:lowerbound..upperbound |
-| Person | person:John |
+| 画像の幅 | 幅 :lowerbound..upperbound |
+| 画像の高さ | 高さ :lowerbound..upperbound |
+| Person | 人物 :John |
 
 `path`、`limit`、`size`、`orderby` プロパティは、`OR` 演算子を使用して他のプロパティと組み合わせることはできません。
 
@@ -248,7 +248,7 @@ ht-degree: 99%
 
 | 名前 | 値 | 例 | 目的 |
 |---|---|---|---|
-| リソースサフィックス（B） | URL のリソースサフィックスとしてのフォルダーパス：[https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | 特定のフォルダーが選択された状態でアセットセレクターを起動するには、例えば、フォルダー `/content/dam/we-retail/en/activities` を選択した場合、URL は次のような形式になります。`https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | アセットセレクターの起動時に特定のフォルダーを選択する必要がある場合、そのフォルダーをリソースサフィックスとして渡します。 |
+| リソースサフィックス（B） | URL のリソースサフィックスとしてのフォルダーパス：[https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | 特定のフォルダーが選択された状態でアセットセレクターを起動するには、例えば、フォルダー `/content/dam/we-retail/en/activities` が選択されている場合、URL は次のような形式になります。`https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | アセットセレクターの起動時に特定のフォルダーを選択する必要がある場合、そのフォルダーをリソースサフィックスとして渡します。 |
 | `mode` | single、multiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | 複数モードでは、アセットセレクターを使用して、いくつかのアセットを同時に選択できます。 |
 | `dialog` | true、false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | アセットセレクターを Granite ダイアログとして開くには、これらのパラメーターを使用します。このオプションは、Granite パスフィールドを使用してアセットセレクターを起動し、pickerSrc URL として設定する場合にのみ適用できます。 |
 | `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | このオプションを使用して、アセットセレクターのルートフォルダーを指定します。この場合、アセットセレクターを使用すると、ルートフォルダーの下の子アセット（直接／間接）のみを選択できます。 |

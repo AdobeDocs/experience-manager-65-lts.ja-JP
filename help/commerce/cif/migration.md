@@ -18,7 +18,7 @@ ht-degree: 96%
 
 ## CIF アドオン
 
-CIF アドオンは、[ ソフトウェア配布ポータル ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=commerce*&amp;2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;2_group.propertyvalues.operation=equals&amp;2_group.propertyvalues.0_values=target-version%3Aaem%2F6-5&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=16) を通じて入手できます。 このアドオンは Experience Manager as a Cloud Service 向けの CIF アドオンと互換性があり、同じ機能を提供します。
+CIF アドオンは、[ ソフトウェア配布ポータル ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=commerce*&2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&2_group.propertyvalues.operation=equals&2_group.propertyvalues.0_values=target-version%3Aaem%2F6-5&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=16) を通じて入手できます。 このアドオンは Experience Manager as a Cloud Service 向けの CIF アドオンと互換性があり、同じ機能を提供します。
 
 [AEM Content and Commerce 使用の手引き](getting-started.md)を参照してください。
 

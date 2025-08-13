@@ -12,8 +12,8 @@ role: Developer
 exl-id: 8f00a86f-0fd0-480d-84a9-89a948840a0b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 100%
+source-wordcount: '756'
+ht-degree: 99%
 
 ---
 
@@ -105,7 +105,7 @@ AEM 内で自動化されたテストを使用する場合は、次の用語を�
 
 独自のテストスイートの作成について詳しくは、[Hobbes.js API のドキュメント](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)を参照してください。
 
-1. CRXDE Lite を開きます。([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
+1. CRXDE Lite を開きます。（[https://localhost:4502/crx/de](https://localhost:4502/crx/de)）
 1. `/etc/clientlibs` フォルダーを右クリックして、**作成／フォルダーを作成**&#x200B;をクリックしてください。名前に`myTests`と入力して、「**OK**」をクリックします。
 1. `/etc/clientlibs/myTests` フォルダーを右クリックし、**作成／ノードを作成**&#x200B;をクリックしてください。以下のプロパティ値を使用して「**OK**」をクリックします。
 

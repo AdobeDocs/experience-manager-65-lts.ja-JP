@@ -12,8 +12,8 @@ role: Developer
 exl-id: 5d1c2c73-c457-49dc-b519-eba5ad9d5722
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1627'
-ht-degree: 99%
+source-wordcount: '1624'
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 99%
 * タグ付けされたコンテンツノードの `NodeType` には、[`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin が含まれている必要があります。
 * [`TagID`](#tagid) がコンテンツノードの [`cq:tags`](#tagged-content-cq-tags-property) プロパティに追加され、` [cq:Tag](#tags-cq-tag-node-type)` タイプのノードに解決されます。
 
-## タグ：cq:Tag ノードタイプ  {#tags-cq-tag-node-type}
+## タグ :cq:Tag ノードタイプ  {#tags-cq-tag-node-type}
 
 タグの宣言は、リポジトリにおける `cq:Tag` タイプのノードにキャプチャされます。
 

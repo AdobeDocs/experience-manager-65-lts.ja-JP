@@ -13,7 +13,7 @@ exl-id: 90558227-c2c2-4130-9031-03efda5b1d94
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
 source-wordcount: '507'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -23,10 +23,10 @@ ht-degree: 100%
 
 例えば、これらのマッピングを使用すると次のことが可能です。
 
-* すべてのリクエストに `/content` というプレフィックスを付けて、web サイトの訪問者に内部構造が表示されないようにする。
+* すべてのリクエストに `/content` という接頭辞を付けて、web サイトの訪問者に内部構造が表示されないようにする。
 * Web サイトの `/content/en/gateway` ページへのリクエストがすべて `https://gbiv.com/` にリダイレクトされるように、リダイレクトを定義する。
 
-HTTP マッピングの一例として、`localhost:4503` に対するすべてのリクエストに `/content` というプレフィックスを指定します。このようなマッピングを使用すると、Web サイトの訪問者に対して内部構造を非表示にすることができます。例えば、次のページの場合は、
+HTTP マッピングの一例として、`localhost:4503` に対するすべてのリクエストに `/content` という接頭辞を指定します。このようなマッピングを使用すると、Web サイトの訪問者に対して内部構造を非表示にすることができます。例えば、次のページの場合は、
 
 `localhost:4503/content/we-retail/en/products.html`
 
@@ -98,7 +98,7 @@ AEM の標準インストールでは、次のフォルダーを検索できま�
 
 #### /content への内部リダイレクトの設定 {#configuring-an-internal-redirect-to-content}
 
-https://localhost:4503/ に対するリクエストに `/content` というプレフィックスを指定するマッピングを作成するには：
+https://localhost:4503/に対するリクエストに `/content` というプレフィックスを指定するマッピングを作成するには：
 
 1. CRXDE を使用して `/etc/map/http` に移動します。
 

@@ -12,8 +12,8 @@ role: Developer
 exl-id: 7822a108-f128-4ccf-bd9f-348f0c2688da
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2462'
-ht-degree: 100%
+source-wordcount: '2464'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 100%
 
 エディターを使用してワークフローを作成するには：
 
-1. **ツール**／**ワークフロー**／**モデル**&#x200B;の順にクリックするか、[https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow) などから&#x200B;**ワークフローモデル**&#x200B;コンソールを開きます。
+1. **ツール**、**ワークフロー**、**モデル** または **8}https://localhost**/aem/workflow[ から :4502 ワークフローモデル コンソールを開きます。](https://localhost:4502/aem/workflow)
 1. 「**作成**」を選択してから、「**モデルを作成**」を選択します。
 1. **ワークフローモデルを追加**&#x200B;ダイアログが表示されます。「**タイトル**」と「**名前**」（オプション）を入力してから、「**完了**」を選択します。
 1. 新しいモデルが&#x200B;**ワークフローモデル**&#x200B;コンソールに表示されます。

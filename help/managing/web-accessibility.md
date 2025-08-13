@@ -38,7 +38,7 @@ Adobe Experience Manager は、[World Wide Web Consortium](#world-wide-web-conso
 
 ## Web Content Accessibility Guidelines（WCAG）2.1 {#wcag-accessibility-guidelines}
 
-Web デザイナーや開発者がアクセシブルな Web サイトを作成できるように、[Web Accessibility Initiative（WAI）](https://www.w3.org/WAI/)は [2018 年 6 月に Web Content Accessibility Guidelines（WCAG）2.1](https://www.w3.org/TR/WCAG/) を発行しました。
+Web デザイナーや開発者がアクセシブルな web サイトを作成できるように、[Web Accessibility Initiative（WAI）](https://www.w3.org/WAI/)は [2018年6月に Web Content Accessibility Guidelines（WCAG）2.1](https://www.w3.org/TR/WCAG/) を発行しました。
 
 WCAG 2.1 では、[アクセシビリティレベルとそれらの準拠方法に関するガイドライン（および関連する成功基準）を提供](https://www.w3.org/TR/WCAG/#conformance)しています。
 

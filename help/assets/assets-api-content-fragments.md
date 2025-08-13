@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: c1f80437-275a-48b6-99b9-bec070577da0
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '1902'
-ht-degree: 99%
+source-wordcount: '1901'
+ht-degree: 98%
 
 ---
 
@@ -344,7 +344,7 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
   以下に、このエラーステータスが返される場合の一般的なシナリオと、生成されるエラーメッセージ（等幅）を示します。
 
    * 親フォルダーが存在しない（`POST` でコンテンツフラグメントを作成する場合）
-   * コンテンツフラグメントモデルが指定されていない（cq:model が見つからない）、読み取れない（パスが無効か権限の問題が原因）、または有効なフラグメントモデルがありません。
+   * コンテンツフラグメントモデルが指定されていません（cq:model がありません）。読み取れません（パスが無効か、権限に問題があります）。または、有効なフラグメントモデルがありません。
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`

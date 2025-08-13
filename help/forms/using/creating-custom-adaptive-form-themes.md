@@ -10,8 +10,8 @@ feature: Adaptive Forms,Foundation Components
 exl-id: e9853779-e22c-484e-8480-8e724d584ab7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 100%
+source-wordcount: '789'
+ht-degree: 97%
 
 ---
 
@@ -228,7 +228,7 @@ ht-degree: 100%
 
    1. **オプション**：カスタムページでは、header.jsp、footer.jsp、the body.jsp を必要に応じて上書きしてください。
 
-1. jcr:content が、前の手順で作成されたカスタムページ（例：`/apps/myAfCustomizations/myAfTemplates/forestTemplate`）を指すカスタムテンプレート（例：`myAfCustomizations/myAfPages/forestPage)`）を作成します。
+1. jcr`/apps/myAfCustomizations/myAfTemplates/forestTemplate` が前の手順で作成されたカスタムページ（例：:content）を指しているカスタムテンプレート（例：`myAfCustomizations/myAfPages/forestPage)`）を作成します。
 
    ![CRX リポジトリのスナップショット](assets/2-1.png)
 

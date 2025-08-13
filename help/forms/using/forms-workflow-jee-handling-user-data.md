@@ -131,7 +131,7 @@ AEM Forms JEE ワークフロープロセスの作成について詳しくは、
 
    詳しくは、[Class ProcessManager](https://helpx.adobe.com/jp/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html) の Java™ API リファレンスを参照してください。
 
-1. ワークフローインスタンスのステータスを確認します。ステータスが 2（COMPLETE）または 4（TERMINATED）以外の場合、次のメソッドを呼び出して最初にインスタンスを停止します。
+1. ワークフローインスタンスのステータスを確認します。ステータスが 2（COMPLETE）または 4（TERMINATED）以外の場合、次のメソッドを呼び出して最初にインスタンスを終了します。
 
    `ProcessManager.terminateProcess(<long_lived_invocation_id>)`。
 

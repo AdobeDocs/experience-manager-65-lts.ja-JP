@@ -65,7 +65,7 @@ Adobe Campaign Standard には、AEM が Adobe Campaign に接続する際に使
 
 `aemserver` ユーザーに、AEM が Adobe Campaign と通信するために必要な権限が付与されました。
 
-ただし、AEMが `aemserver` ユーザーを使用する前に、そのパスワードを設定する必要があります。 これは、Adobe Campaign では実行することができません。この作業は、アドビのサポートエンジニアが行う必要があります。[アドビカスタマーケアでチケットを発行](https://experienceleague.adobe.com/ja?lang=ja&amp;support-tab=home#support)して、`aemserver` パスワードのリセットをリクエストします。パスワードをアドビカスタマーケアから取得したら、安全な場所に保管します。
+ただし、AEMが `aemserver` ユーザーを使用する前に、そのパスワードを設定する必要があります。 これは、Adobe Campaign では実行することができません。この作業は、アドビのサポートエンジニアが行う必要があります。[アドビカスタマーケアでチケットを発行](https://experienceleague.adobe.com/?lang=ja&support-tab=home#support)して、`aemserver` パスワードのリセットをリクエストします。パスワードをアドビカスタマーケアから取得したら、安全な場所に保管します。
 
 ## Campaign の AEMResourceTypeFilter を確認 {#resource-type-filter}
 
@@ -127,7 +127,7 @@ Adobe Campaign Standard には、AEM が Adobe Campaign に接続する際に使
 
 ## AEM で Campaign 統合を設定 {#campaign-integration}
 
-AEM は、組み込まれた統合機能と、Adobe Campaign で設定した `aemserver` ユーザーを使用して Adobe Campaign と通信します。この統合を設定するには、次の手順に従います。
+AEM は、ビルトインの統合機能と、Adobe Campaign で設定した `aemserver` ユーザーを使用して Adobe Campaign と通信します。この統合を設定するには、次の手順に従います。
 
 1. AEM オーサリングインスタンスに管理者としてログインします。
 

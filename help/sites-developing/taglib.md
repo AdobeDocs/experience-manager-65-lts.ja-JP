@@ -11,8 +11,8 @@ role: Developer
 exl-id: 15f30571-7129-402c-98be-270a142c4cbb
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '2452'
-ht-degree: 100%
+source-wordcount: '2441'
+ht-degree: 99%
 
 ---
 
@@ -513,7 +513,7 @@ Sling タグライブラリには、Sling の便利な機能が含まれてい�
 
 ### &lt;sling:include> {#sling-include}
 
-`<sling:include>`タグは、現在のページにリソースをインクルードします。
+`<sling:include>` タグは、現在のページにリソースをインクルードします。
 
 このタグの属性を以下に示します。
 
@@ -643,4 +643,4 @@ l **ogName resourceResolverName**
 <%@taglib prefix="fn" uri="https://java.sun.com/jsp/jstl/functions" %>
 ```
 
-前述のとおり、`/libs/foundation/global.jsp` ファイルを読み込むと、`c`、`fmt`、`fn` の各プレフィックスを使用して、これらのタグライブラリにアクセスできます。JSTL の公式ドキュメントは [Java™ EE 5 チュートリアルの JavaServer Pages 標準タグライブラリ](https://docs.oracle.com/javaee/5/tutorial/doc/bnakc.html)にあります。
+前述のとおり、`/libs/foundation/global.jsp` ファイルを読み込むと、`c`、`fmt`、`fn` の各接頭辞を使用して、これらのタグライブラリにアクセスできます。JSTL の公式ドキュメントは [Java™ EE 5 チュートリアルの JavaServer Pages 標準タグライブラリ](https://docs.oracle.com/javaee/5/tutorial/doc/bnakc.html)にあります。

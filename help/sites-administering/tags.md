@@ -11,8 +11,8 @@ role: Admin
 exl-id: 6659ca39-f297-40b9-88e2-d942aa653e9b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 100%
+source-wordcount: '1745'
+ht-degree: 99%
 
 ---
 
@@ -249,7 +249,7 @@ AEM 内のタグには以下のような機能があります。
    * 管理者権限でログインします
    * [セキュリティコンソール](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console)にアクセスします。
 
-      * 例えば、http://localhost:4502/useradmin に移動します
+      * 例えば、http://localhost:4502/useradmin を参照します。
 
    * 左側のペインで、[読み取り権限](/help/sites-administering/security.md#permissions)を付与するグループ（またはユーザー）を選択します
    * 右側のペインで、タグの名前空間への**パス **を見つけます

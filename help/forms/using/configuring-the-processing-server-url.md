@@ -11,8 +11,8 @@ feature: Adaptive Forms
 exl-id: 8ad3afd6-e1c6-4f21-bb0f-4d97ef50710e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 100%
+source-wordcount: '240'
+ht-degree: 89%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 100%
 次に、**[!UICONTROL AEM DS 設定]**&#x200B;を行う手順を示します。
 
 1. 次の URL で、パブリッシュインスタンスにある Configuration Manager を開きます。\
-   *https://localhost:port/system/console/configMgr*
+   *https://localhost:port/system/console/configMgr*。
 
    ![AEM web コンソールの設定](assets/web_configuration_console_new.png)
 
@@ -44,7 +44,7 @@ ht-degree: 100%
 
 1. 次の情報をそれぞれのフィールドに追加します。
 
-   **[!UICONTROL 処理サーバー URL]**：処理サーバーは、Forms または AEM ワークフローをトリガーする必要のあるサーバーです。これは、AEM オーサーインスタンスの URL と同じか、他のサーバー URL（つまり、https://localhost:port/）になります。
+   **[!UICONTROL 処理サーバー URL]**：処理サーバーは、Forms または AEM ワークフローをトリガーする必要のあるサーバーです。これは、AEM オーサーインスタンスの URL と同じか、他のサーバー URL （つまり、https://localhost:port/）である場合があります。
 
    **[!UICONTROL 処理サーバーのユーザー名]**：ワークフローユーザーのユーザー名は、[使用するサーバー URL に基づいています]
 

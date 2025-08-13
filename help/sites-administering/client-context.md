@@ -12,8 +12,8 @@ role: Admin
 exl-id: 976512a9-5edf-4d55-82c0-24fe97dc71a1
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1961'
-ht-degree: 100%
+source-wordcount: '1964'
+ht-degree: 99%
 
 ---
 
@@ -228,7 +228,7 @@ ClientContext を編集して、特定のプロパティの値を設定（また
 
 1. AEM オーサーインスタンスの Geometrixx Outdoors サイトの英語のホームページを開きます（[https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)）。
 1. ClientContext を開くには、Ctrl + Alt + C キー（Windows）または Control + Option + C キー（Mac）を押します。
-1. ClientContext の上部にある編集アイコンをクリックして、ClientContext デザイナーを開きます。
+1. ClientContext の上部にある編集アイコンをクリックして、ClientContext designer を開きます。
 
    ![リンクアイコン](do-not-localize/chlimage_1.png)
 

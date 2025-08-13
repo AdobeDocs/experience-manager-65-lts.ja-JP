@@ -7,8 +7,8 @@ role: Admin, User, Developer
 exl-id: fdf95738-3075-43d6-9d51-64c83cf0f0b7
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2069'
-ht-degree: 99%
+source-wordcount: '2070'
+ht-degree: 98%
 
 ---
 
@@ -87,7 +87,7 @@ ht-degree: 99%
 
    各パラメーターの意味は次のとおりです。
 
-   **na1** は、デフォルトのデータベースシャードを参照します。データベースシャードの値を更新することができます。[!DNL &#x200B; Adobe Acrobat Sign] クラウド設定で、[正しいシャード](https://helpx.adobe.com/jp/sign/using/identify-account-shard.html)をポイントしていることを確認します。
+   **na1** は、デフォルトのデータベースシャードを参照します。データベースシャードの値を更新することができます。[!DNL  Adobe Acrobat Sign] クラウド設定で、[正しいシャード](https://helpx.adobe.com/jp/sign/using/identify-account-shard.html)をポイントしていることを確認します。
 
    >[!NOTE]
    >
@@ -211,7 +211,7 @@ Adobe Acrobat Sign for Government Solutions チームは、AEM Forms と Adobe A
 
 1. ブラウザーで `re-direct URL` を開きます。「[AEM インスタンスにリダイレクト URL を作成](#create-redirect-url)」セクションの最後の手順で `re-direct URL` を作成し、書き留めました。
 
-1. **[!UICONTROL Adobe Sign 設定を作成]**&#x200B;ページの「**[!UICONTROL 一般]**」タブで、設定の&#x200B;**[!UICONTROL 名前]**&#x200B;を指定して「**[!UICONTROL 次へ]**」を選択します。必要に応じて&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定し、設定の&#x200B;**[!UICONTROL サムネ―ル]**&#x200B;を参照して選択することもできます。「**[!UICONTROL 次へ]**」をクリックします。
+1. **[!UICONTROL Adobe Sign 設定を作成]**&#x200B;ページの「**[!UICONTROL 一般]**」タブで、設定の&#x200B;**[!UICONTROL 名前]**&#x200B;を指定して「**[!UICONTROL 次へ]**」を選択します。必要に応じて&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定し、設定の&#x200B;**[!UICONTROL サムネイル]**&#x200B;を参照して選択することもできます。「**[!UICONTROL 次へ]**」をクリックします。
 
 1. **[!UICONTROL Adobe Sign 設定を作成]**&#x200B;ページの「**[!UICONTROL 設定]**」タブの、「**[!UICONTROL ソリューションを選択]**」オプションで、[!DNL Adobe Acrobat Sign Solutions for Government] を選択します。
 
@@ -236,7 +236,7 @@ Adobe Acrobat Sign for Government Solutions チームは、AEM Forms と Adobe A
 
    各パラメーターの意味は次のとおりです。
 
-   **na1** は、デフォルトのデータベースシャードを参照します。データベースシャードの値を更新することができます。[!DNL &#x200B; Adobe Acrobat Sign] クラウド設定で、[正しいシャード](https://helpx.adobe.com/jp/sign/using/identify-account-shard.html)をポイントしていることを確認します。
+   **na1** は、デフォルトのデータベースシャードを参照します。データベースシャードの値を更新することができます。[!DNL  Adobe Acrobat Sign] クラウド設定で、[正しいシャード](https://helpx.adobe.com/jp/sign/using/identify-account-shard.html)をポイントしていることを確認します。
 
    >[!NOTE]
    >
@@ -272,7 +272,7 @@ Adobe Acrobat Sign for Government Solutions チームは、AEM Forms と Adobe A
    ブラウザーウィンドウで、以下の URL に移動することもできます。
    `https://[localhost]:'port'/system/console/configMgr`
 
-1. 「**[!UICONTROL Adobe Sign 設定サービス]**」オプションを探して選択します。「**[!UICONTROL ステータス更新スケジューラーの式]**」フィールドで [Cron 式](https://en.wikipedia.org/wiki/Cron#CRON_expression)を指定して「**[!UICONTROL 保存]**」をクリックします。例えば、毎日午前 0 時に設定サービスを実行するには、**[!UICONTROL ステータス更新スケジューラー式]**&#x200B;フィールドに `0 0 0 1/1 * ? *` を指定します。
+1. 「**[!UICONTROL Adobe Sign 設定サービス]**」オプションを探して選択します。「**[!UICONTROL ステータス更新スケジューラーの式]**」フィールドで [Cron 式](https://en.wikipedia.org/wiki/Cron#CRON_expression)を指定して「**[!UICONTROL 保存]**」をクリックします。例えば、毎日午前 0:00 に設定サービスを実行するには、「`0 0 0 1/1 * ? *` ステータス更新スケジューラー式 **[!UICONTROL 」フィールドに]** を指定します。
 
 これで、[!DNL Adobe Sign] のステータスを同期するデフォルトの間隔が変更されました。
 

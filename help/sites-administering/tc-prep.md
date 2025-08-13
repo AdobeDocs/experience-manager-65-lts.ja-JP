@@ -8,8 +8,8 @@ role: Admin
 exl-id: 3db57dbc-757d-44be-8d32-ea5bc1f02fc8
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 100%
+source-wordcount: '672'
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 100%
 
 * `<language-code>_<country-code>` または `<language-code>-<country-code>`サポートされている国コードは、ISO 3166 で定義されている小文字または大文字 2 文字のコード（例：`en_US`、`en_us`、`en_GB`、`en-gb`）です。
 
-グローバルサイト用に選択した構造に従って、どちらかの形式を使用できます。例えば、Geometrixx サイトのフランス語の言語コピーのルートページの「名前」プロパティは `fr` になります。「名前」プロパティは、リポジトリ内のページノードの名前として使用されます。そのため、このプロパティによってページのパスが指定されます（http://localhost:4502/content/geometrixx/fr.html）。
+グローバルサイト用に選択した構造に従って、どちらかの形式を使用できます。例えば、Geometrixx サイトのフランス語の言語コピーのルートページの「名前」プロパティは `fr` になります。「名前」プロパティは、リポジトリ内のページノードの名前として使用されます。そのため、このプロパティによってページのパスが指定されます（http://localhost:4502/content/geometrixx/fr.html）
 
 次の手順では、タッチ操作向け UI を使用して Web サイトの言語コピーを作成します。クラシック UI を使用する手順については、[クラシック UI による言語ルートの作成](/help/sites-administering/tc-lroot-classic.md)を参照してください。
 

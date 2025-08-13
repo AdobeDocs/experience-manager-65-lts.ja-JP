@@ -12,8 +12,8 @@ role: Admin
 exl-id: b840d970-9365-4df3-8467-e34abd940074
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '3270'
-ht-degree: 99%
+source-wordcount: '3276'
+ht-degree: 98%
 
 ---
 
@@ -84,8 +84,8 @@ ht-degree: 99%
 >* オーサー環境のエージェント：リバースレプリケーションエージェント（publish_reverse）
 >* パブリッシュ環境のエージェント：リバースレプリケーション（outbox）
 >
->エージェントまたはキューのステータスを確認するには、**ツール**&#x200B;コンソールを使用します。
->[レプリケーションエージェントの監視](#monitoring-your-replication-agents)を参照してください。
+>エージェントまたはキューのステータスを確認するには、**ツール**コンソールを使用します。
+>>[レプリケーションエージェントの監視](#monitoring-your-replication-agents)を参照してください。
 
 #### レプリケーション（オーサー環境からパブリッシュ環境へ） {#replication-author-to-publish}
 
@@ -423,7 +423,6 @@ Dispatcher キャッシュの管理に使用します。詳しくは、[オー�
    * 「**トランスポート**」タブで、次のように設定します。
 
       * 新しいパブリッシュインスタンスに必要な URI を入力します。次に例を示します。
-
         `https://localhost:4504/bin/receive`。
 
       * レプリケーションに使用する、サイト固有のユーザーアカウントを入力します。
@@ -467,7 +466,6 @@ Dispatcher キャッシュの管理に使用します。詳しくは、[オー�
    * 「**トランスポート**」タブで、次のように設定します。
 
       * 新しいパブリッシュインスタンスに必要な URI を入力します。次に例を示します。
-
         `https://localhost:80/dispatcher/invalidate.cache`。
 
       * レプリケーションに使用する、サイト固有のユーザーアカウントを入力します。

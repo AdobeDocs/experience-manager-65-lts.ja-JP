@@ -7,8 +7,8 @@ role: Admin,Architect,Data Architect,Developer
 exl-id: 40211033-7084-4117-a3e2-73e504283266
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 95%
+source-wordcount: '250'
+ht-degree: 94%
 
 ---
 
@@ -34,8 +34,8 @@ AEMの 6.5.17.0 リリース以降がインストールされていることを�
 
 1. ダイアログで、これら 2 つのパラメーターを次のように設定します。
 
-   * **ContentFragmentMigration:Enabled**：`1`
-   * **ContentFragmentMigration:Enforce**：`1`
+   * **ContentFragmentMigration:Enabled** : `1`
+   * **ContentFragmentMigration:Enforce** : `1`
 
 1. 指定した値を&#x200B;**保存**&#x200B;します。更新手続きが開始されます。
 
@@ -45,8 +45,8 @@ AEMの 6.5.17.0 リリース以降がインストールされていることを�
 
    **コンテンツフラグメント移行ジョブ設定**&#x200B;のダイアログで、これら 2 つのパラメータを次のように設定します。
 
-   * **ContentFragmentMigration:Enabled**：`0`
-   * **ContentFragmentMigration:Enforce**：`0`
+   * **ContentFragmentMigration:Enabled** : `0`
+   * **ContentFragmentMigration:Enforce** : `0`
 
 ## 制限事項 {#limitations}
 

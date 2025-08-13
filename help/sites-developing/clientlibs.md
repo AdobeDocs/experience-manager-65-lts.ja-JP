@@ -12,8 +12,8 @@ role: Developer
 exl-id: cafc7120-114e-487a-8b81-9c695318731e
 source-git-commit: a061c19dcb883b94ee61be21459c46e21eaf696a
 workflow-type: tm+mt
-source-wordcount: '2791'
-ht-degree: 100%
+source-wordcount: '2800'
+ht-degree: 97%
 
 ---
 
@@ -97,7 +97,7 @@ HTL では、クライアントライブラリは AEM 提供のヘルパーテ�
 <script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
 ```
 
-JS、CSS またはテーマライブラリをフィルタリングするための属性を含めた詳細については、[ui:includeClientLib](/help/sites-developing/taglib.md#lt-ui-includeclientlib) を参照してください。
+JS、CSS、テーマライブラリをフィルタリングするための属性を含め、詳しくは [ui:includeClientLib](/help/sites-developing/taglib.md#lt-ui-includeclientlib) を参照してください。
 
 >[!CAUTION]
 >
@@ -133,7 +133,7 @@ Web クライアントには、`cq:ClientLibraryFolder` ノードにアクセス
 
 >[!NOTE]
 >
->クライアントライブラリフォルダーの下にある静的リソースは、*resources* というフォルダーに配置する必要があります。*resources* フォルダーの下に画像などの静的リソースがない場合、公開インスタンスで参照することはできません。以下に例を示します。https://localhost:4503/etc.clientlibs/geometrixx/components/clientlibs/resources/example.gif
+>クライアントライブラリフォルダーの下にある静的リソースは、*resources* というフォルダーに配置する必要があります。*resources* フォルダーの下に画像などの静的リソースがない場合、公開インスタンスで参照することはできません。次に例を示します。https://localhost:4503/etc.clientlibs/geometrixx/components/clientlibs/resources/example.gif
 
 >[!NOTE]
 >
@@ -163,7 +163,7 @@ Web クライアントには、`cq:ClientLibraryFolder` ノードにアクセス
 
 ### クライアントライブラリフォルダーの作成 {#create-a-client-library-folder}
 
-1. Web ブラウザーで CRXDE Lite を開きます（[https://localhost:4502/crx/de](https://localhost:4502/crx/de)）。
+1. Web ブラウザーでCRXDE Liteを開きます（[https://localhost:4502/crx/de](https://localhost:4502/crx/de)）。
 1. クライアントライブラリフォルダーの配置先のフォルダーを選択して、**作成／ノードを作成**&#x200B;をクリックします。
 1. ライブラリファイルの名前を入力し、タイプリストで「`cq:ClientLibraryFolder`」を選択します。「**OK**」をクリックし、「**すべて保存**」をクリックします。
 1. ライブラリが所属するカテゴリ（1 つまたは複数）を指定するには、`cq:ClientLibraryFolder` ノードを選択し、次のプロパティを追加して、「**すべて保存**」をクリックします。
@@ -206,7 +206,7 @@ Web クライアントには、`cq:ClientLibraryFolder` ノードにアクセス
 
 * **名前：** dependencies
 * **タイプ：** String[]
-* **値：**&#x200B;現在のライブラリフォルダーの依存先である cq:ClientLibraryFolder ノードの categories プロパティの値。
+* **Values:** 現在のライブラリフォルダーが依存する cq:ClientLibraryFolder ノードの categories プロパティの値。
 
 例えば、/ `etc/clientlibs/myclientlibs/publicmain` は `cq.jquery` ライブラリに依存しています。メインのクライアントライブラリを参照する JSP は、以下のコードを含む HTML を生成します。
 
@@ -303,7 +303,7 @@ body {
 
 * **名前：**&#x200B;チャネル
 * **タイプ：**&#x200B;文字列[]
-* **値：**&#x200B;モバイルグループの名前。ライブラリフォルダーをグループから除外するには、名前の先頭に感嘆符（「!」）を付けます。
+* **値：**&#x200B;モバイルグループの名前。ライブラリフォルダーをグループから除外するには、名前に接頭辞として感嘆符（「!」）を付けます。
 
 例えば、次の表は、`cq.widgets` カテゴリの各クライアントライブラリフォルダーの `channels` プロパティの値を示しています。
 
@@ -393,7 +393,7 @@ GCC オプションについて詳しくは、[GCC ドキュメント](https://d
 
 YUI は、AEM のデフォルトの縮小ツールとして設定されています。これを GCC に変更するには、次の手順に従います。
 
-1. Apache Felix Config Manager（[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)）に移動します。
+1. Apache Felix Config Manager （[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)）に移動します
 1. **Adobe Granite HTML ライブラリマネージャー**&#x200B;を検索して編集します。
 1. 「**Minify**」オプションを有効にします（まだ有効でない場合）。
 1. **JS Processor Default Configs** の値を `min:gcc` に設定します。

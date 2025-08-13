@@ -11,7 +11,7 @@ role: Developer
 exl-id: 6c54197f-86da-41bd-93e6-ee78ece91013
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '933'
 ht-degree: 99%
 
 ---
@@ -479,11 +479,11 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 サービスの ID は、`com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider` です。フィルターを作成するには、`workflowpackageinfoprovider.filter` プロパティの値を指定します。
 
-プロパティの値の前には、+ または - の文字があり、その後にパッケージのパスが続きます。
+プロパティの値の前には接頭辞として、+ または - の文字があり、その後にパッケージのパスが続きます。
 
 * このパスは、ワークフローパッケージのルートノードのパスです。パスでは、FileVault 構文が使用されます。
-* パッケージを組み込むには、+ プレフィックスを使用します。
-* パッケージを除外するには、- プレフィックスを使用します。
+* パッケージを組み込むには、+ 接頭辞を使用します。
+* パッケージを除外するには、- 接頭辞を使用します。
 
 サービスにより、すべてのフィルターを累積した結果が適用されます。例えば、次のフィルター値を指定すると、Editions フォルダー内にあるものを除き、すべてのワークフローパッケージが除外されます。
 

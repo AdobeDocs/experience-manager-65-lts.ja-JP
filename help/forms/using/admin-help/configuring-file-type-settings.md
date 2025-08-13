@@ -12,8 +12,8 @@ hidefromtoc: true
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
 source-git-commit: 9d4681c0b184cc7769a8da20a4c50d420e1137c7
 workflow-type: tm+mt
-source-wordcount: '6185'
-ht-degree: 99%
+source-wordcount: '6180'
+ht-degree: 98%
 
 ---
 
@@ -267,7 +267,7 @@ PDF Generator では、PDF ファイルのサイズを低減することがで�
 
    >[!NOTE]
    >
-   >*このオプションを「**いくつかのフォントの埋め込みを解除**」と組み合わせて使用すると、**埋め込み解除するフォントを追加**&#x200B;リストのフォントは、完全に埋め込みが解除されたままになります。*
+   >*このオプションを「**いくつかのフォントの埋め込みを解除**」と組み合わせて使用すると、**埋め込み解除するフォントを追加**リストのフォントは、完全に埋め込みが解除されたままになります。*
 
    >[!NOTE]
    >
@@ -417,7 +417,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 **ファイル名の拡張子**：このアプリケーションで使用できるファイルタイプのファイル拡張子をコンマで区切って指定します。デフォルトは`xls,xlsx` です。エクステンションの前にピリオドを含めたり、間にスペースを入れたりしないでください。
 
-**PDF/A-1a に準拠するファイルを作成**：PDF/A-1b:2005 RGB Adobe PDF 設定が強制的に使用されます。
+**PDF/A-1a に準拠するファイルを作成**:RGB Adobe PDFのPDF/A-1b 設定を強制的 :2005 使用します。
 
 **Adobe PDF にブックマークを追加**：Excel ワークシート名がブックマークに変換されます。このオプションはデフォルトで選択されています。
 
@@ -471,7 +471,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 **[!UICONTROL 非表示のスライドを PDF ページに変換]**：非表示のスライドを変換します。
 
-**[!UICONTROL PDF/A-1a に準拠するファイルを作成]**：PDF/A-1b:2005 RGB Adobe PDF 設定が強制的に使用されます。PDF ファイルの生成時、PowerPoint の機能の一部は変換されません。PowerPoint の効果と同等の効果が Acrobat では保持されない場合、同様の効果で置き換えます。同じスライドに複数のアニメーション効果がある場合は、1 つの効果が使用されます。ページ効果と箇条書きのフライインは変換されます。
+**[!UICONTROL PDF/A-1a に準拠するファイルを作成]**:RGB Adobe PDFのPDF/A-1b 設定を強制的 :2005 使用します。 PDF ファイルの生成時、PowerPoint の機能の一部は変換されません。PowerPoint の効果と同等の効果が Acrobat では保持されない場合、同様の効果で置き換えます。同じスライドに複数のアニメーション効果がある場合は、1 つの効果が使用されます。ページ効果と箇条書きのフライインは変換されます。
 
 ## Microsoft Project の設定（Windows のみ） {#microsoft-project-settings-windows-only}
 
@@ -481,7 +481,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 1. **[!UICONTROL ドキュメント情報を変換]**：ソースファイルのプロパティダイアログボックスから、タイトル、サブジェクト、作成者、キーワード、管理者、会社情報、カテゴリおよびコメントなどのドキュメント情報が追加されます。このオプションはデフォルトで選択されています。
 1. **[!UICONTROL Adobe PDF にソースファイルを添付]**：ソースファイルを添付ファイルとして PDF ファイルに追加します。
-1. **[!UICONTROL PDF/A-1a に準拠するファイルを作成]**：PDF/A-1b:2005 RGB Adobe PDF 設定が強制的に使用されます。
+1. **[!UICONTROL PDF/A-1a に準拠するファイルを作成]**:RGB Adobe PDFのPDF/A-1b 設定を強制的 :2005 使用します。
 1. **[!UICONTROL マクロを自動的に実行]**：ドキュメントを変換する前に、Microsoft Project ドキュメントでマクロ（現在の時刻を挿入するマクロなど）を実行します。
 
 ## Microsoft Word の設定（Windows のみ） {#microsoft-word-settings-windows-only}
@@ -502,7 +502,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 **[!UICONTROL タグ付き Adobe PDF によってアクセシビリティと折り返しを有効にする]**：PDF ファイルにタグを埋め込みます。このオプションはデフォルトで選択されています。
 
-**[!UICONTROL PDF/A-1a に準拠するファイルを作成]**：選択すると、PDF/A-1b:2005 RGB Adobe PDF 設定が強制的に使用されます。
+**[!UICONTROL PDF/A-1a に準拠するファイルを作成]**：選択すると、PDF/A-1b:2005 RGB Adobe PDFの設定が強制的に使用されます。
 
 **[!UICONTROL マクロを自動的に実行]**：ドキュメントを変換する前に Word ドキュメントのマクロ（現在の時刻を挿入するマクロなど）を実行します。
 
@@ -544,7 +544,7 @@ Microsoft Word のスタイル名にコンマ（,）または等号（=）が含
 
 **Adobe Acrobat で表示するときにレイヤーパネルを開く**：Visio レイヤーを統合しない場合に、Acrobat で PDF ファイルを開くと、PDF ファイルで保持するレイヤーを指定できるウィンドウが開きます。このオプションはデフォルトで選択されています。
 
-**PDF/A-1b 準拠ファイルを作成**：Adobe PDF の PDF/A-1b:2005（RGB）設定を強制的に使用します。
+**PDF/A-1b に準拠するファイルを作成**:PDF/A-1b:2005 （RGB）のAdobe PDF設定を強制的に使用します。
 
 **コメントを Adobe PDF コメントに変換**：Visio のメモを PDF のコメントに変換します。
 
@@ -584,7 +584,7 @@ Microsoft Word のスタイル名にコンマ（,）または等号（=）が含
 
 **[!UICONTROL 現在のレイアウトを変換]**：PDF に現在のレイアウトのみを含めます。
 
-**[!UICONTROL 変換する AutoCAD レイアウトの一覧]**：AutoCAD 図面には複数のレイアウトが含まれることがあります。このボックスを空にすると、生成される PDF ドキュメントに AutoCAD 図面のすべてのレイアウトが含まれます。レイアウトの一部を選択して変換するには、レイアウト名をコンマで区切ったリストを指定します。
+**[!UICONTROL 変換する AutoCAD レイアウトの一覧]**：AutoCAD 図面には複数のレイアウトが含まれることがあります。このボックスを空にすると、生成される PDF ドキュメントに AutoCAD 図面のすべてのレイアウトが含まれます。レイアウトのサブセットを選択して変換するには、レイアウト名をコンマで区切ったリストを指定します。
 
 ## OpenOffice の設定 {#openoffice-settings}
 

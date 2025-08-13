@@ -8,8 +8,8 @@ role: Admin
 exl-id: c6e00da5-804f-46cf-b7a9-52e667574394
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 100%
+source-wordcount: '318'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 次の手順では、クラシック UI を使用してサイトの言語ルートを作成します。詳しくは、[言語ルートの作成](/help/sites-administering/tc-prep.md#creating-a-language-root)を参照してください。
 
-1. Web サイトコンソールの web サイトツリーで、サイトのルートページを選択します。([http://localhost:4502/siteadmin#](http://localhost:4502/siteadmin#))
+1. Web サイトコンソールの web サイトツリーで、サイトのルートページを選択します。（[http://localhost:4502/siteadmin#](http://localhost:4502/siteadmin#)）
 1. サイトの言語バージョンを表す新しい子ページを追加します。
 
    1. 新規／新しいページをクリックします。

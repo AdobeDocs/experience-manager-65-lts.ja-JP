@@ -12,7 +12,7 @@ role: User
 exl-id: abdb803b-a770-4f4b-8788-45d067341e0f
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2548'
+source-wordcount: '2547'
 ht-degree: 100%
 
 ---
@@ -216,7 +216,7 @@ web サイト内のアセットまたはその他のページへのリンクを�
 
 >[!NOTE]
 >
->**nms:seedMember** スキーマまたはその拡張で定義されているフィールドのみが考慮されます。`nms:seedMember` にリンクしているテーブルの属性は使用できません。
+>**nms:seedMember** スキーマまたはその拡張で定義されているフィールドのみが考慮されます。 `nms:seedMember` にリンクしているテーブルの属性は使用できません。
 
 ## Adobe Campaign フォームコンポーネント {#adobe-campaign-form-components}
 
@@ -398,7 +398,7 @@ Adobe Campaign プロファイルデータを表示および変更する各フ�
 
 このドロップダウンリストを使用すると、受信者の性別やステータスなどのオプションを選択できます。
 
-オプションフィールド（Campaign）コンポーネントでは、[大部分の Adobe Campaign コンポーネントに共通の設定](#settings-common-to-most-components)を使用できます。ドロップダウンリストに値を入力するには、Adobe Campaign の記号をクリックまたはタップして Adobe Campaign のパーソナライゼーションフィールドに移動して、適切なフィールドを選択します。
+オプションフィールド（Campaign）コンポーネントでは、[大部分の Adobe Campaign コンポーネントに共通の設定](#settings-common-to-most-components)を使用できます。ドロップダウンリストに値を入力するには、Adobe Campaign のシンボルをクリックまたはタップして Adobe Campaign のパーソナライゼーションフィールドに移動して、適切なフィールドを選択します。
 
 オプションフィールド（Campaign）コンポーネントの表示例を以下に示します。
 

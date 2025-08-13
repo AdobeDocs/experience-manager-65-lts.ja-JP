@@ -12,8 +12,8 @@ role: User
 exl-id: 9a29bdbf-0f5d-4656-bd65-a63fd804c9e7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 100%
+source-wordcount: '285'
+ht-degree: 96%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 100%
 
 ローンチの作成後、ローンチ名およびローンチ日を変更できます。また、ローンチに関連付ける画像を指定できます。
 
-1. ローンチの管理ページ（[http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)）を開きます。
+1. ローンチの管理ページ （[http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)）を開きます。
 
 1. 必要なローンチを選択し、「**編集**」をクリックしてダイアログを開きます。
 

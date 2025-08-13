@@ -11,14 +11,14 @@ role: Developer
 exl-id: 20fd27e2-0eb7-4fab-a56a-f83816947579
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 100%
+source-wordcount: '1071'
+ht-degree: 98%
 
 ---
 
 # ワークフロープロセスのリファレンス{#workflow-process-reference}
 
-AEM には、ワークフローモデルの作成に使用できるプロセスステップがいくつか用意されています。組み込みステップに含まれていないタスクについては、カスタムのプロセスステップを追加することができます（[ワークフローモデルの作成](/help/sites-developing/workflows-models.md)を参照）。
+AEM には、ワークフローモデルの作成に使用できるプロセスステップがいくつか用意されています。ビルトインのステップに含まれていないタスクについては、カスタムのプロセスステップを追加することができます（[ワークフローモデルの作成](/help/sites-developing/workflows-models.md)を参照）。
 
 ## プロセスの特徴 {#process-characteristics}
 

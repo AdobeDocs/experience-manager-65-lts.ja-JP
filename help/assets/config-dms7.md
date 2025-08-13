@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 98bd0c24-6c5e-4b96-a3aa-a3e4ef802baf
 source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '6491'
+source-wordcount: '6494'
 ht-degree: 99%
 
 ---
@@ -80,7 +80,7 @@ Experience Manager Dynamic Media を 6.3 から 6.4 または 6.5 にアップ�
 
 ## Cloud Services での Dynamic Media 設定の作成 {#configuring-dynamic-media-cloud-services}
 
-<!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
+<!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
@@ -114,7 +114,6 @@ Experience Manager Dynamic Media を 6.3 から 6.4 または 6.5 にアップ�
 1. 接続に成功したら、次のように設定します。アスタリスク（*）を含む見出しが必須です。
 
    * **[!UICONTROL 会社]** - Dynamic Media アカウントの名前です。
-
      >[!IMPORTANT]
      >
      >Experience Manager の 1 つのインスタンスでサポートされる、Cloud Services の Dynamic Media 設定は 1 つだけです。複数の設定を追加しないでください。1 つの Experience Manager インスタンスでの複数の Dynamic Media 設定は、アドビではサポートも推奨もされて&#x200B;_いません_。
@@ -520,7 +519,7 @@ Dynamic Media では、バッチセットプリセットを使用して、アセ
 
    デフォルトでは、アセットはアルファベット順に並んでいます。ただし、コンマ区切りの正規表現リストを使用して順序を定義できます。
 
-1. 命名規則と作成オプションの設定では、アセットの命名規則で定義したベース名にサフィックスとプレフィックスを指定します。また、Dynamic Media のフォルダー構造内のセットの作成場所を定義します。
+1. 命名規則と作成オプションの設定では、アセットの命名規則で定義したベース名にサフィックスと接頭辞を指定します。また、Dynamic Media のフォルダー構造内のセットの作成場所を定義します。
 
    多数のセットを定義する場合は、アセット自体を含むフォルダーとは別にセットを保存してください。例えば、画像セットフォルダーを作成して、そこに生成されたセットを配置できます。
 
@@ -600,7 +599,7 @@ spin-01-01
    >
    >行と列の正規表現の組み合わせから、多次元スピンセットの配列内でアセットの位置を特定できない場合、そのアセットはセットに追加されません。また、エラーがログに記録されます。
 
-1. 命名規則と作成オプションの設定では、アセットの命名規則で定義したベース名にサフィックスとプレフィックスを指定します。
+1. 命名規則と作成オプションの設定では、アセットの命名規則で定義したベース名にサフィックスと接頭辞を指定します。
 
    また、Dynamic Media Classic のフォルダー構造内のスピンセットの作成場所を定義します。
 
@@ -650,7 +649,7 @@ Granite の一時的なワークフローキューは、**[!UICONTROL DAM アセ
 
 **Granite の一時的なワークフローキューを更新するには：**
 
-1. [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) に移動して、**Queue: Granite Transient Workflow Queue** を検索します。
+1. [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) に移動して、「**Queue: Granite Transient Workflow Queue**」を検索します。
 
    >[!NOTE]
    >

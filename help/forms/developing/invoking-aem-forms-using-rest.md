@@ -13,8 +13,8 @@ hidefromtoc: true
 exl-id: 11a7278e-efaa-402c-8add-5280bf5a156a
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
-source-wordcount: '2481'
-ht-degree: 98%
+source-wordcount: '2485'
+ht-degree: 97%
 
 ---
 
@@ -321,7 +321,7 @@ REST リクエストを使用して、Acrobat から Forms プロセスを呼び
 
 次の図に示すように、ボタンの&#x200B;*送信先 URL* フィールド内でプロセスを呼び出す URL を指定します。
 
-プロセスを呼び出すための完全な URL は https://hiro-xp:8080/rest/services/MyApplication/EncryptDocument です。
+プロセスを呼び出すための完全な URL はhttps://hiro-xp:8080/rest/services/MyApplication/EncryptDocument です。
 
 プロセスで PDF ドキュメントを入力値として必要とする場合は、前の図に示すように、必ず PDF としてフォームを送信してください。また、プロセスを正常に呼び出すには、プロセスが PDF ドキュメントを返す必要があります。そうしないと、Acrobat は戻り値を処理できず、エラーが発生します。入力プロセス変数の名前を指定する必要はありません。例えば、*MyApplication/EncryptDocument* プロセスには、`inDoc` という入力変数があります。フォームが PDF として送信されている限り、inDoc を指定する必要はありません。
 

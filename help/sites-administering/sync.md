@@ -12,8 +12,8 @@ role: Admin
 exl-id: b7b1bce6-9cea-4f13-955f-f9e361f298bf
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2224'
-ht-degree: 99%
+source-wordcount: '2240'
+ht-degree: 95%
 
 ---
 
@@ -109,7 +109,7 @@ AEM 6.1 では、ユーザー同期を有効にすると、ユーザーデータ
    * 管理者権限でログインします
    * [セキュリティコンソール](/help/sites-administering/security.md)にアクセスします
 
-      * 例： [https://localhost:4503/useradmin](https://localhost:4503/useradmin)
+      * 例：[https://localhost:4503/useradmin](https://localhost:4503/useradmin)
 
    * ユーザーを作成します
 
@@ -131,7 +131,7 @@ AEM 6.1 では、ユーザー同期を有効にすると、ユーザーデータ
 
 * CRXDE Lite にアクセスします
 
-   * 例： [https://localhost:4503/crx/de](https://localhost:4503/crx/de)
+   * 例：[https://localhost:4503/crx/de](https://localhost:4503/crx/de)
 
 * `/home` ノードを選択します
 * 右側のペインで「`Access Control`」タブを選択します
@@ -186,7 +186,7 @@ AEM 6.1 では、ユーザー同期を有効にすると、ユーザーデータ
 
       * 例：[https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
-   * `Apache Sling Distribution Agent - Queue Agents Factory` を見つけます
+   * `Apache Sling Distribution Agent - Queue Agents Factory` を見つけます。
 
       * 編集用に開くには、既存の設定（鉛筆アイコン）を選択します
 `Name`: `socialpubsync-reverse` を確認します
@@ -209,7 +209,7 @@ AEM 6.1 では、ユーザー同期を有効にすると、ユーザーデータ
 
       * 例：[https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
-   * **`Adobe Social Sync - Diff Observer Factory`** を見つけます
+   * **`Adobe Social Sync - Diff Observer Factory`** を見つけます。
 
       * 編集用に開くには、既存の設定（鉛筆アイコン）を選択します
 
@@ -267,13 +267,13 @@ AEM 6.1 では、ユーザー同期を有効にすると、ユーザーデータ
 ![Sync Agents Factory](assets/chlimage_1-25.png)
 
 * **エクスポーターエンドポイント**
-各パブリッシュインスタンスにエクスポーターエンドポイントが必要です。例えば、パブリッシュインスタンスが localhost:4503 と 4504 の 2 つの場合、次の 2 つのエントリが必要です。
+各パブリッシュインスタンスにエクスポーターエンドポイントが必要です。例えば、パブリッシュインスタンスが localhost と 4504 の 2 つの場合 :4503 次の 2 つのエントリが必要です。
 
    * `https://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse`
    * `https://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse`
 
 * **インポーターエンドポイント**
-各パブリッシュインスタンスにインポーターエンドポイントが必要です。例えば、パブリッシュインスタンスが localhost:4503 と 4504 の 2 つの場合、次の 2 つのエントリが必要です。
+各パブリッシュインスタンスにインポーターエンドポイントが必要です。例えば、パブリッシュインスタンスが localhost と 4504 の 2 つの場合 :4503 次の 2 つのエントリが必要です。
 
    * `https://localhost:4503/libs/sling/distribution/services/importers/socialpubsync`
    * `https://localhost:4504/libs/sling/distribution/services/importers/socialpubsync`
@@ -303,11 +303,9 @@ Sling ID がパブリッシュファームの複数のパブリッシュイン�
    * *sling.id.file* という名前のファイルを検索して削除する
 
       * Linux® システムの例を次に示します。
-
         `rm -i $(find . -type f -name sling.id.file)`
 
       * Windows システムの例を次に示します。
-
         `use windows explorer and search for *sling.id.file*`
 
 1. パブリッシュインスタンスを開始する

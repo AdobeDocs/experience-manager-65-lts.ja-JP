@@ -12,8 +12,8 @@ role: Admin
 exl-id: e1771229-b2ce-406a-95a5-99b11fafbe34
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 100%
+source-wordcount: '521'
+ht-degree: 90%
 
 ---
 
@@ -52,13 +52,13 @@ Test &amp; Target [レプリケーションエージェント](/help/sites-deplo
 
 パブリッシュインスタンスでアクティビティ設定ノード **cq:ActivitySettings** を保護し、通常のユーザーがアクセスできないようにします。アクティビティ設定ノードには、Adobe Target へのアクティビティの同期を処理するサービスのみがアクセスできるようにしてください。
 
-**cq:ActivitySettings** ノードは、*アクティビティ jcr:content ノードの下*&#x200B;の `/content/campaigns/*nameofbrand*`* の下の CRXDE Lite で利用できます（例：`/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`）。このノードは、コンポーネントのターゲティング後にのみ作成されます。
+**cq:ActivitySettings** ノードは、`/content/campaigns/*nameofbrand*`*の下の *アクティビティ jcr:content ノードの下の* *の下の CRXDE Lite で利用できます（例：`/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`）。 このノードは、コンポーネントのターゲティング後にのみ作成されます。
 
-アクティビティの jcr:content の下にある **cq:ActivitySettings** ノードは、次の ACL によって保護されています。
+アクティビティの jcr **の下にある:ActivitySettings** cq:content ノードは、次の ACL によって保護されています。
 
 * すべて拒否（全員）
-* &quot;target-activity-authors&quot; に jcr:read,rep:write を許可（デフォルトで作成者はこのグループのメンバー）
-* &quot;targetservice&quot; に jcr:read,rep:write を許可
+* 「target-activity-authors」に jcr:read,rep:write を許可する（作成者は、標準でこのグループのメンバーです）
+* 「targetservice」に jcr:read,rep:write を許可
 
 これらの設定により、権限を持たないユーザーがノードプロパティにアクセスできなくなります。オーサーインスタンスとパブリッシュインスタンスの両方で同じ ACL を使用します。詳しくは、[ユーザー管理とセキュリティ](/help/sites-administering/security.md)を参照してください。
 

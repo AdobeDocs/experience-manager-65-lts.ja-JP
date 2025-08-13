@@ -283,7 +283,6 @@ function check(){
 * **データをペイロードと共に保存**
 
    * ウィジェットデータをワークフローペイロードのプロパティとして保存するには、ウィジェットノードの name プロパティの値に次の形式を使用します。
-
      `./jcr:content/nodename`
 
    * データは、ペイロードのノードの `nodename` プロパティに保存されます。ノードにこのプロパティが含まれていない場合は、プロパティが作成されます。
@@ -292,7 +291,6 @@ function check(){
 * **データを作業項目と共に保存**
 
    * ウィジェットデータを作業項目のメタデータのプロパティとして保存するには、name プロパティの値に次の形式を使用します。
-
      `nodename`
 
    * データは、作業項目 `metadata` の `nodename` プロパティに保存されます。同じペイロードを持つダイアログを使用しても、データは保存されます。
@@ -580,7 +578,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 
    * **プロセス**：実行するプロセス実装。ドロップダウンメニューを使用して、ECMAScript または OSGi サービスを選択します。参考情報：
 
-      * 標準の ECMAScript および OSGi サービスについては、[プロセスステップの組み込みプロセス](/help/sites-developing/workflows-process-ref.md)を参照してください。
+      * 標準の ECMAScript および OSGi サービスについては、[プロセスステップのビルトインのプロセス](/help/sites-developing/workflows-process-ref.md)を参照してください。
       * プロセスステップ用の ECMAScript の作成については、[ECMAScript を使用したプロセスステップの実装](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript)を参照してください。
       * プロセスステップ用の OSGi サービスの作成については、[Java™クラスを使用したプロセスステップの実装](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class)を参照してください。
 

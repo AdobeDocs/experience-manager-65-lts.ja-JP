@@ -12,8 +12,8 @@ role: Developer
 exl-id: efa4b828-0807-40ac-81a0-1090cac9a257
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2967'
-ht-degree: 99%
+source-wordcount: '2973'
+ht-degree: 97%
 
 ---
 
@@ -302,7 +302,7 @@ personalization.ui クライアントライブラリフォルダー（/etc/clien
 
 genericstore コンポーネントを使用してストアデータをレンダリングするには、次の操作を実行する必要があります。
 
-* セッションストアの名前を識別するために、personalization:storeRendererTag タグをコンポーネントの JSP スクリプトに追加します。
+* セッションストアの名前を識別するために、personalization:storeRendererTag タグをコンポーネント JSP スクリプトに追加します。
 * セッションストアクラスにレンダラーメソッドを実装します。
 
 #### genericstore セッションストアの識別 {#identifying-the-genericstore-session-store}
@@ -490,7 +490,7 @@ window.CQMobileSlider["geometrixx-outdoors"] = {
 
 CQ アプリケーションを作成し、ジオロケーションコンポーネントを追加します。
 
-1. Web ブラウザーで CRXDE Lite を開きます（[https://localhost:4502/crx/de](https://localhost:4502/crx/de)）。
+1. Web ブラウザーでCRXDE Liteを開きます（[https://localhost:4502/crx/de](https://localhost:4502/crx/de)）。
 1. `/apps` フォルダーを右クリックして、作成／フォルダーを作成をクリックします。「`myapp`」の名前を指定して、「OK」をクリックします。
 1. 同様に、`myapp` の下に `contextstores` というフォルダーを作成します。
 1. `/apps/myapp/contextstores` フォルダーを右クリックして、作成／コンポーネントを作成をクリックします。次のプロパティ値を指定して、「次へ」をクリックします。
@@ -513,7 +513,7 @@ CQ アプリケーションを作成し、ジオロケーションコンポー�
 
    * store
    * properties
-   * thumbnail
+   * サムネイル
 
 1. `/apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items` ノードを右クリックして、作成／ノードを作成をクリックします。以下のプロパティ値を指定して、「OK」をクリックします。
 
@@ -595,9 +595,9 @@ ClientContext でストアデータをレンダリングするには、ジオロ
 
 ページの読み込み時に初期化されるように、場所ストアコンポーネントを ClientContext に追加します。
 
-1. オーサーインスタンス上で Geometrixx Outdoors のホームページを開きます（[https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)）。
+1. オーサーインスタンス上でGeometrixx Outdoorsのホームページを開きます（[https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)）。
 1. Ctrl + Alt + C キー（Windows）または Control + Option + C キー（Mac）を押して、ClientContext を開きます。
-1. ClientContext の上部にある編集アイコンをクリックして、ClientContext デザイナーを開きます。
+1. ClientContext の上部にある編集アイコンをクリックして、ClientContext designer を開きます。
 
    ![正方形内に鉛筆で示される編集アイコン。](do-not-localize/chlimage_1.png)
 

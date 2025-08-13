@@ -8,7 +8,7 @@ role: Admin
 exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
 source-git-commit: 6b846e456466492f4be2c1e5a1f6b3913ae4dab4
 workflow-type: tm+mt
-source-wordcount: '2069'
+source-wordcount: '2071'
 ht-degree: 23%
 
 ---
@@ -102,7 +102,7 @@ AEM アナライザーレポートを表示するには、次の手順に従い�
 
 >[!NOTE]
 >
->各カテゴリの検索について詳しくは、[パターン検出のカテゴリ](https://experienceleague.adobe.com/ja/docs/experience-manager-pattern-detection/table-of-contents/aso)を参照してください。
+>各カテゴリの検索について詳しくは、[パターン検出のカテゴリ](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/aso)を参照してください。
 
 重要度レベルを理解するには、次の表に従います。
 
@@ -184,7 +184,7 @@ Content Transformer は、AEM 6.5 LTS アナライザーにバンドルされて
 
 ### コンテンツ変換サービスを開く {#opening-the-content-transformer}
 
-1. ソース AEM インスタンスに管理者としてログインし、「スタート」ページ（*https://host:port/aem/start.htm*）に移動します
+1. ソース AEM インスタンスに管理者としてログインし、*https://host:port/aem/start.htm* のスタートページに移動します
 1. **ツール/操作/6.5 LTS Modernizer** に移動します。
 
    ![ コンテンツトランスフォーマー 1 を開く ](/help/sites-deploying/assets/opening-content-transformer-1.png)

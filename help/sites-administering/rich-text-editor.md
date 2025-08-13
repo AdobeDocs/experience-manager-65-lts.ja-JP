@@ -8,8 +8,8 @@ role: Admin
 exl-id: 5511817e-dcf8-463d-8e62-cbbef64ad162
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2817'
-ht-degree: 99%
+source-wordcount: '2816'
+ht-degree: 98%
 
 ---
 
@@ -145,7 +145,7 @@ RTE の基本機能は、該当するプラグインのノードにある `featu
 
 ダイアログ編集モードで適用される次のプロパティを設定します（タッチ UI のみ）。
 
-* `useFixedInlineToolbar`：RTE ツールバーをフロートではなく固定にするには、RTE ノード（sling:resourceType= `cq/gui/components/authoring/dialog/richtext` のもの）に定義されているこのブール値プロパティを `True` に設定します。
+* `useFixedInlineToolbar`:RTE ノードで定義されたこのブール値プロパティ（sling:resourceType= `cq/gui/components/authoring/dialog/richtext` を持つもの）を `True` に設定して、RTE ツールバーを floating ではなく fixed にします。
 
    このプロパティが true のときは、デフォルト動作により、リッチテキスト編集が「foundation-contentloaded」イベントで開始します。
 
@@ -240,7 +240,7 @@ AEM では、リッチテキストエディターのインターフェイスを�
 
 ボタンがポップオーバー（プラグインのいくつかの機能を含む）の場合は、`#PluginName` と指定されます（例：`#format`）。
 
-ボタンのグループの間の区切り文字（`|`）は、`-` で指定できます。
+ボタンのグループの間の区切り記号（`|`）は、`-` で指定できます。
 
 インラインまたはフルスクリーンモードのポップアップノードには、使用するポップオーバーのリストが含まれます。「popovers」ノードの下の各子ノードは、プラグインの名前を取って名付けられます（例：format）。プラグインの機能のリストが含まれるプロパティ「items」があります（例：format#bold）。
 

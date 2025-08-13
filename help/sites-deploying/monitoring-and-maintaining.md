@@ -12,8 +12,8 @@ role: Admin
 exl-id: c8bab030-053f-47d1-94f7-b7ff08bfaab0
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '5601'
-ht-degree: 99%
+source-wordcount: '5607'
+ht-degree: 98%
 
 ---
 
@@ -673,7 +673,7 @@ OSGi イベントで生成される監査記録は、AEM web コンソールの&
 
 このファイルには、AEMに対して行われたすべてのリクエストに関する基本情報が記載されます。このことから、貴重な結論を引き出すことができます。
 
-`request.log` は、リクエストにかかる時間を確認するための組み込みの方法を提供します。開発目的では、`request.log` を `tail -f` して、応答時間の遅延を監視することが有用です。より大きな `request.log` を分析するには、[応答時間の並べ替えおよびフィルタリングが可能な `rlog.jar` の使用を推奨します](#using-rlog-jar-to-find-requests-with-long-duration-times)。
+`request.log` は、リクエストにかかる時間を確認するためのビルトインの方法を提供します。開発目的では、`request.log` を `tail -f` して、応答時間の遅延を監視することが有用です。より大きな `request.log` を分析するには、[応答時間の並べ替えおよびフィルタリングが可能な `rlog.jar` の使用を推奨します](#using-rlog-jar-to-find-requests-with-long-duration-times)。
 
 アドビでは、`request.log` から「遅い」ページを分離し、個別にチューニングしてパフォーマンスを向上させることをお勧めします。コンポーネントごとにパフォーマンス指標を含めるか、` [yourkit](https://www.yourkit.com/)` などのパフォーマンスプロファイリングツールを使用します。
 
@@ -1064,8 +1064,8 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 >
 >詳しくは、以下の記事も参照してください。
 >
->* [スレッドダンプ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=ja)
->* [メモリの問題の分析](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=ja)
+>* [スレッドダンプ](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-17452)
+>* [メモリの問題の分析](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-17482)
 >* [ビルトインプロファイラーによる分析](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=ja)
 >
 
@@ -1086,7 +1086,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * [AEM を起動](/help/sites-deploying/deploy.md#getting-started)するために使用される JVM 設定
 * ナレッジベース
 
-   * [メモリの問題の分析](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=ja)
+   * [メモリの問題の分析](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-17482)
 
 ### ディスク I/O {#disk-i-o}
 

@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 074b0cb2-b060-4180-ab16-ff8f7a4ee625
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 100%
+source-wordcount: '1340'
+ht-degree: 99%
 
 ---
 
@@ -46,7 +46,7 @@ Adobe PDF、HTML、および SWF ファイルを含め、様々なタイプの�
 
 1. タスクをクリックしてプロセスを選択します。プロセスに関連付けられているフォームが「フォーム」タブに開きます。
 
-   プロセス内の各フォームには一意の URL が割り当てられます。この一意の URL を使用すると、特定のプロセスとフォームで HTML Workspace を直接起動できます。URL の形式は https://&lt;server>:&lt;port>/lc/libs/ws/index.html#/startprocess/&lt;ApplicationName>%2F&lt;ProcessName> です。この &lt;applicationname>%2F&lt;processname> 文字列は常に URL エンコードされます。URL の例は http://localhost:8080/lc/libs/ws/index.html#/startprocess/MyApplication%2FNewProcess です。この例の ApplicationName%2FProcessName 文字列は URL エンコードされています。
+   プロセス内の各フォームには一意の URL が割り当てられます。この一意の URL を使用すると、特定のプロセスとフォームで HTML Workspace を直接起動できます。URL の形式は https://&lt;server>:&lt;port>/lc/libs/ws/index.html#/startprocess/&lt;ApplicationName>%2F&lt;ProcessName> です。この &lt;applicationname>%2F&lt;processname> 文字列は常に URL エンコードされます。URL の例はhttp://localhost:8080/lc/libs/ws/index.html#/startprocess/MyApplication%2FNewProcess です。 この例の ApplicationName%2FProcessName 文字列は URL エンコードされています。
 
 1. フォームと共に表示される指示に従ってフォームに入力します。必要に応じて、「**最大化**」をクリックして、フォームの表示可能な領域を拡大します。
 1. 「添付ファイル」タブが使用可能である場合は、必要に応じて添付ファイルを追加します。

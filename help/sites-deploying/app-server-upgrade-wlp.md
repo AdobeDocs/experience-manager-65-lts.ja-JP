@@ -43,7 +43,7 @@ ht-degree: 17%
 
 1. 不要なファイルとフォルダーを削除します。具体的に削除する必要のある項目は次のとおりです。
 
-   * 通常、`dropins` フォルダーの **cq-quickstart-65.war** と `expanded` フォルダーはそれぞれ `<path-to-aem-server>/dropins/cq-quickstart-65.war` と `<path-to-aem-server>/apps/expanded/cq-quickstart-65.war` にあります
+   * 通常、**フォルダーの** cq-quickstart-65.war`dropins` と `expanded` フォルダーはそれぞれ `<path-to-aem-server>/dropins/cq-quickstart-65.war` と `<path-to-aem-server>/apps/expanded/cq-quickstart-65.war` にあります
    * `launchpad/startup` フォルダー。 サーバーフォルダーにいると仮定して、ターミナルで次のコマンドを実行して削除できます。
 
      ```shell
@@ -75,7 +75,7 @@ ht-degree: 17%
      ```
 
 1. `sling.properties` ファイル（通常 `crx-quickstart/conf/` に存在）のバックアップを作成して削除します
-1. `server.xml` ファイルで servlet のバージョンを **6.0** に変更します
+1. **ファイルで servlet のバージョンを** 6.0`server.xml` に変更します
 1. Java 17/Java 21 をインストールし、次を実行して正しくインストールされていることを確認します。
 
    ```shell

@@ -9,8 +9,8 @@ hidefromtoc: true
 exl-id: c499432d-6aa4-481f-821d-bd2f9b7a911d
 source-git-commit: 90f1b2ca07bec5a3be6c312a5f048abaa088df16
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 100%
+source-wordcount: '502'
+ht-degree: 95%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 100%
 
 * **Felix Inventory コンソールを使用：**
 
-1. AEM web コンソールに移動します（*https://serveraddress:serverport/system/console/configMgr*）。
+1. AEM web コンソールに移動します（*https://serveraddress:serverport/system/console/configMgr*）
 1. 次の図に示すように、**ステータス - パターン検出**&#x200B;を選択します。
 
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
@@ -111,7 +111,7 @@ curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-det
     "code": "ECU",
     "type": "extraneous.content.usage",
     "detective": "ContentAccessDetector",
-    "moreInfo": "https://www.adobe.com/go/aem6_ECU_jp"
+    "moreInfo": "https://www.adobe.com/go/aem6_ECU"
   },
   "item": {
     "id": "a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f",
@@ -215,7 +215,7 @@ curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-det
 * Sling リソースタイプとスーパータイプ（検索パスコンテンツオーバーレイを含む）の過剰使用
 * Oak インデックスの定義（互換性）
 * VLT パッケージ（過剰使用）
-* rep：ユーザーノードの互換性（OAuth 設定のコンテキストで）
+* rep:User ノードの互換性（OAuth 設定のコンテキスト内）
 
 >[!NOTE]
 >

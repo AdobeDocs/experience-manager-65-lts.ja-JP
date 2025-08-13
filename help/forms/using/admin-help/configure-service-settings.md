@@ -74,7 +74,7 @@ Barcoded Forms サービスでは、以下の設定を使用できます。
 
 ## Central Migration Bridge サービス（非推奨）の設定 {#central-migration-bridge-service-settings}
 
-Central Migration Bridge サービス（`CentralMigrationBridge`）は Adobe Central Pro Output Server（Central）機能の一部を呼び出します（JFMERGE、JFTRANS、XMLIMPORT コマンドなど）。Central Migration Bridge サービス操作を使用すると、AEM Forms で次の Central アセットを再利用できます。
+Central Migration Bridge サービス（`CentralMigrationBridge`）は Adobe Central Pro Output Server（Central）機能のサブセットを呼び出します（JFMERGE、JFTRANS、XMLIMPORT コマンドなど）。Central Migration Bridge サービス操作を使用すると、AEM Forms で次の Central アセットを再利用できます。
 
 * テンプレートデザイン（&amp;ast;.ifd）
 * 出力テンプレート（&amp;ast;.mdf）
@@ -500,7 +500,7 @@ PDFG Config サービス（`PDFGConfigService`）では、以下の設定を使�
 
 **Server Global Timeout：** PDF の変換中、Forms サーバーはタイムアウトの制限を考慮します。この問題を解決するには、タイムアウトの値を設定します。
 
-**Job Options Prefix：** ジョブオプションファイルに短い文字列を追加するために Generate PDF サービスで使用されるプレフィックスです。Acrobat Distiller でこれらのジョブオプションファイルを一時的に使用するために作成されます。デフォルト値は「pdfg」です。
+**Job Options Prefix：** ジョブオプションファイルに短い文字列を追加するために Generate PDF サービスで使用される接頭辞です。Acrobat Distiller でこれらのジョブオプションファイルを一時的に使用するために作成されます。デフォルト値は「pdfg」です。
 
 **Non Unicode Apps：** Unicode に対応していないことがわかっているアプリケーション名のコンマ区切りリストです。このリストには複数のアプリケーションの名前が事前に入力されており、それらのアプリケーションのサポートが PDF Generator で事前設定されています。Unicode に対応していない他のサードパーティアプリケーションで PDF 変換のサポートを追加する場合は、このリストに追加する必要があります。デフォルト値は「Autocad,Excel,PowerPoint,Project,Publisher,Visio,Word,WordPerfect」です。
 

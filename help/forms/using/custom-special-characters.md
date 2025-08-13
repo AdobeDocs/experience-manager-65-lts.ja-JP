@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## 概要 {#overview}
 
-Correspondence Managementhas では 210 種類の特殊文字に初期状態から対応しており、レターに簡単に挿入できます。
+Correspondence Managementhas には 210 種類の特殊文字がビルトインでサポートされており、レターに簡単に挿入できます。
 
 たとえば、次の特殊文字を挿入できます。
 

@@ -10,8 +10,8 @@ role: Admin
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '3330'
-ht-degree: 94%
+source-wordcount: '3337'
+ht-degree: 93%
 
 ---
 
@@ -79,7 +79,7 @@ customBlobStore=B"true"
 
 * `cache`：キャッシュサイズ（MB 単位）です。これは DocumentNodeStore で使用される様々なキャッシュに分散されます。デフォルトは `256` です
 
-* `changesSize`：Mongo で差分出力のキャッシュに使用される capped コレクションのサイズ（MB 単位）です。デフォルトは `256` です
+* `changesSize`：Mongo で差分出力のキャッシュに使用されるキャップ付きコレクションのサイズ（MB 単位）です。デフォルトは `256` です
 
 * `customBlobStore`：カスタムデータストアが使用されることを示すブール値です。デフォルトは `false` です。
 
@@ -436,7 +436,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 * azureSas=&quot;&quot;：コネクタのバージョン 1.6.3 で、Azure Shared Access Signature（SAS）のサポートが追加されました。**SAS とストレージ資格情報の両方が設定ファイルに存在する場合は、SAS が優先されます。** SAS について詳しくは、[公式ドキュメント](https://learn.microsoft.com/ja-jp/azure/storage/common/storage-sas-overview)を参照してください。「=」文字は必ず、「\=」のようにエスケープしてください。
 
 * azureBlobEndpoint=&quot;&quot;：Azure Blob エンドポイントです。例えば、https://&lt;storage-account>.blob.core.windows.net などです。
-* accessKey=&quot;&quot;：ストレージアカウント名です。Microsoft® Azure の認証資格情報について詳しくは、[公式ドキュメント](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create)を参照してください。
+* accessKey=&quot;&quot;：ストレージアカウント名です。Microsoft® Azure の認証資格情報について詳しくは、[公式ドキュメント](https://learn.microsoft.com/ja-jp/azure/storage/common/storage-account-create?tabs=azure-portal)を参照してください。
 
 * secretKey=&quot;&quot;：ストレージアクセスキーです。「=」文字は必ず、「\=」のようにエスケープしてください。
 * container=&quot;&quot;：Microsoft® Azure Blob ストレージコンテナ名。コンテナは、一連の Blob をグループ化したものです。詳しくは、[公式ドキュメント](https://learn.microsoft.com/ja-jp/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN)を参照してください。

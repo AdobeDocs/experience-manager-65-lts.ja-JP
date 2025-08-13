@@ -12,8 +12,8 @@ role: User
 exl-id: 02fd32c8-7def-45d4-ba3b-d4cb346f5103
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 100%
+source-wordcount: '369'
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 次の手順で、ローンチを作成します。
 
-1. Web サイトの管理ページ（[http://localhost:4502/siteadmin](http://localhost:4502/siteadmin)）を開きます。
+1. Web サイト管理ページ （[http://localhost:4502/siteadmin](http://localhost:4502/siteadmin)）を開きます。
 1. 「**新規...**」をクリックし、「**新しいローンチ...**」をクリックします。
 1. **ローンチを作成**&#x200B;ダイアログで、次のプロパティの値を指定します。
 

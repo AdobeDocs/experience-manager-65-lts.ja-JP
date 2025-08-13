@@ -7,8 +7,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 8d0271c0-a795-4ff6-a2ae-72329f05a401
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 100%
+source-wordcount: '668'
+ht-degree: 96%
 
 ---
 
@@ -39,7 +39,7 @@ Adobe Experience Manager (AEM) を使用すると、AEM GraphQL API（標準 Gra
 
 AEM のコンテンツフラグメントのオーサリングとは、次のことを意味します。
 
-* コンテンツフラグメントを使用すると、主にフォーマットされたページに直接公開することを目的としていない（1:1）コンテンツを作成できます。
+* コンテンツフラグメントを使用して、フォーマットされたページに直接公開（1:1）することを主な目的としていないコンテンツを作成できます。
 
 * コンテンツフラグメントのコンテンツは、コンテンツフラグメントモデルに従って、あらかじめ決められた方法で構造化されます。これにより、アプリケーションへのアクセスが簡素化され、コンテンツの処理が促進されます。
 

@@ -40,7 +40,7 @@ ht-degree: 100%
 1. ノードタイプ管理ページ（`https://[aem_server]:[port]/crx/explorer/nodetypes/index.jsp`）にアクセスします。
 1. 名前空間管理ページにアクセスするには、ページ上部の「**[!UICONTROL 名前空間]**」をクリックします。
 1. 名前空間を追加するには、ページ下部の「**[!UICONTROL 新規]**」をクリックします。
-1. XML 名前空間規則に従って、カスタム名前空間を指定します。URI およびその ID に関連付けられたプレフィックスの形式で ID を指定します。「**[!UICONTROL 保存]**」をクリックします。
+1. XML 名前空間規則に従って、カスタム名前空間を指定します。URI およびその ID に関連付けられた接頭辞の形式で ID を指定します。「**[!UICONTROL 保存]**」をクリックします。
 
 ## バルクメタデータ更新の制限の設定 {#bulk-metadata-update-limit}
 
@@ -118,7 +118,7 @@ ht-degree: 100%
 1. ダイアログで、「**[!UICONTROL 削除]**」をクリックして、削除操作を確定します。メタデータプロファイルがリストから削除されます。
 
 <!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/jp/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 

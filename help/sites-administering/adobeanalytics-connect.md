@@ -12,8 +12,8 @@ role: Admin
 exl-id: a39ed93e-4276-48ff-ba49-d0f630409222
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1484'
-ht-degree: 100%
+source-wordcount: '1487'
+ht-degree: 99%
 
 ---
 
@@ -67,7 +67,7 @@ Adobe Analytics [データセンター](https://experienceleague.adobe.com/docs/
 
 ![aa-07](assets/aa-07.png)
 
-1. Web コンソールを Web ブラウザーで開きます。([https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr))
+1. Web コンソールを Web ブラウザーで開きます。（[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)）
 1. コンソールにアクセスするには、資格情報を入力します。
 
    >[!NOTE]

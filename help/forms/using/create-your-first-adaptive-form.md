@@ -37,13 +37,13 @@ ht-degree: 99%
 
 最初に、このチュートリアルで使用するユースケースについて説明します。
 
-Web サイトでは、さまざまな顧客向けに幅広い製品を提供しています。顧客がポータルを参照し、製品を選択して注文します。すべての顧客がアカウントを作成し、配送先と請求先の住所を提供します。既存の顧客である Sara Rose は、Web サイトに配送先住所を追加しようとしています。この web サイトには、配送先住所を追加および更新できるオンラインフォームが用意されています。
+Web サイトでは、さまざまな顧客向けに幅広い製品を提供しています。顧客がポータルを参照し、製品を選択して注文します。すべての顧客がアカウントを作成し、発送先と請求先の住所を提供します。既存の顧客である Sara Rose は、web サイトに発送先住所を追加しようとしています。この web サイトには、発送先住所を追加および更新できるオンラインフォームが用意されています。
 
 この web サイトは Adobe Experience Manager（AEM）上で稼働し、AEM [!DNL Forms] を使用してデータの取得と処理を行います。住所の追加とフォームの更新は、アダプティブフォームを使用して行います。Web サイトでは、顧客の詳細情報をデータベースに保存します。住所の追加と更新を行うフォームを使用して、有効な住所を取得して表示します。また、アダプティブフォームを使用して、更新後の住所と新しい住所を入力します。
 
 ### 前提条件 {#prerequisite}
 
-* [AEM オーサーインスタンス](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html?lang=ja#author-and-publish-installs)を設定します。
+* [AEM オーサーインスタンス](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)を設定します。
 * [AEM Forms アドオン](../../forms/using/installing-configuring-aem-forms-osgi.md)をオーサーインスタンスにインストールします。
 * JDBC データベースドライバー（JAR ファイル）をデータベースプロバイダーから取得します。このチュートリアルに記載されている例は、[!DNL MySQL] データベースに基づいています。これらの例では、[!DNL Oracle's] [MySQL JDBC データベースドライバー](https://dev.mysql.com/downloads/connector/j/5.1.html)を使用しています。
 
@@ -59,7 +59,7 @@ Web サイトでは、さまざまな顧客向けに幅広い製品を提供し�
 
 目標：
 
-* 顧客が配送先住所を追加できるアダプティブフォームを作成。
+* 顧客が発送先住所を追加できるアダプティブフォームを作成。
 * 顧客の情報を表示して保存するアダプティブフォームフィールドのレイアウトを設定します。
 * フォームコンテンツを含むメールを送信する送信アクションを作成します。
 * アダプティブフォームのプレビューと送信を行います。

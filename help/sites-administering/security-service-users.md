@@ -11,8 +11,8 @@ role: Admin
 exl-id: 893d04cb-3a71-4400-9ca4-62ad46aacfdd
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 100%
+source-wordcount: '1740'
+ht-degree: 99%
 
 ---
 
@@ -94,7 +94,7 @@ ht-degree: 100%
 * `service-id` = `service-name` [&quot;:&quot; subservice-name]
 
 * `service-id` は、認証用にリソースリゾルバーまたは JCR リポジトリユーザー ID（あるいはその両方）にマッピングされます。
-* `service-name` は、サービスを提供するバンドルの記号名です。
+* `service-name` は、サービスを提供するバンドルのシンボリック名です。
 
 ## その他の推奨事項 {#other-recommendations}
 
@@ -189,7 +189,7 @@ ht-degree: 100%
 
 1. バンドルをインストールし、ファクトリ設定がインストールされていることを確認します。手順は次のとおりです。
 
-   * Web コンソール（*https://serverhost:serveraddress/system/console/configMgr*）にアクセスします。
+   * Web コンソール（*https://serverhost:serveraddress/system/console/configMgr*）にアクセスします
    * **Apache Sling Service User Mapper Service Amendment** を探します。
    * リンクをクリックすると、設定が適切に行われていることを確認できます。
 

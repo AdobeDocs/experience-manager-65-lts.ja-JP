@@ -11,8 +11,8 @@ role: Developer
 exl-id: eb47f730-ac26-47a0-9bd7-3b7e94c79ecd
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 100%
+source-wordcount: '416'
+ht-degree: 92%
 
 ---
 
@@ -46,7 +46,7 @@ David モデルについては、Jackrabbit wiki（[https://wiki.apache.org/jack
 
 ### 新しいノードタイプの定義を回避 {#avoid-defining-new-node-types}
 
-ノードタイプはインフラストラクチャレイヤー内の下位レベルで機能し、ほとんどの要件は nt:unstructured、oak:Unstructured、sling:Folder または cq:Page のノードタイプに割り当てられた sling:resourceType を使用することで満たすことができます。ノードタイプはリポジトリではスキーマと同等で、ノードタイプを変更すると後でコストがかかる可能性があります。
+ノードタイプはインフラストラクチャレイヤー内の下位レベルで機能し、ほとんどの要件は nt:resourceType、oak:unstructured、sling:Unstructured または cq:Folder ノードタイプに割り当てられた sling:Page を使用することで満たすことができます。 ノードタイプはリポジトリではスキーマと同等で、ノードタイプを変更すると後でコストがかかる可能性があります。
 
 ### JCR の命名規則に準拠 {#adhere-to-naming-conventions-in-the-jcr}
 

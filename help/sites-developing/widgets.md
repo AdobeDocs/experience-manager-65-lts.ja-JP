@@ -12,8 +12,8 @@ role: Developer
 exl-id: 20a8e6d7-dab5-476a-9235-0abca3da5ff3
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4896'
-ht-degree: 100%
+source-wordcount: '4886'
+ht-degree: 98%
 
 ---
 
@@ -64,9 +64,9 @@ AEM で使用可能なすべてのウィジェットについて詳しくは、[
 
    `Note: <category-name> is the name of the custom library (for example, "cq.extjstraining") and is used to include the library on the page.`
 
-1. `clientlib` の下に `css` フォルダーと `js` フォルダー（nt:folder）を作成します。
+1. `clientlib` の下に、`css` フォルダーと `js` フォルダー（nt:folder）を作成します。
 
-1. `clientlib` の下に `css.txt` ファイルと `js.txt` ファイル（nt:file）を作成します。これらの .txt ファイルには、ライブラリに組み込むファイルを記述します。
+1. `clientlib` 下に `css.txt` ファイルと `js.txt` ファイル（nt:files）を作成します。 これらの .txt ファイルには、ライブラリに組み込むファイルを記述します。
 
 1. `js.txt` を編集します。このファイルは、先頭に「`#base=js`」を指定し、その後に CQ クライアントライブラリサービスによって集約されるファイルのリストを指定する必要があります。以下に例を示します。
 
@@ -241,7 +241,7 @@ AEM で使用可能なすべてのウィジェットについて詳しくは、[
 
 * タブ切り換えダイアログ（`switchtabs` ノード）：2 つのタブを持つウィンドウが表示されます。最初のタブでは、ラジオボタンにより、3 つのオプションのいずれかを選択できます。オプションを選択すると、選択したオプションに関連付けられているタブが表示されます。2 番目のタブには、2 つのテキストフィールドがあります。
 *  任意ダイアログ（`arbitrary` ノード）。タブが 1 つあるウィンドウが表示されます。このタブには、フィールドが 2 つあります。一つは、アセットをドロップまたはアップロードするためのフィールド、もう一つは、コンポーネントを含むページに関する情報とアセットに関する情報（アセットが参照されている場合）を表示するフィールドです。
-* フィールド切り換えダイアログ（`togglefield` ノード）：タブが 1 つあるウィンドウが表示されます。このタブには、チェックボックスが 1 つあります。このチェックボックスを選択すると、テキストフィールドを 2 つ含むフィールドセットが表示されます。
+* フィールドを切り替えダイアログ（`togglefield` ノード）：タブが 1 つあるウィンドウが表示されます。このタブには、チェックボックスが 1 つあります。このチェックボックスを選択すると、テキストフィールドを 2 つ含むフィールドセットが表示されます。
 
 **2. 動的ダイアログ**&#x200B;コンポーネントをサンプルページに組み込むには：
 
@@ -361,7 +361,7 @@ AEM で使用可能なすべてのウィジェットについて詳しくは、[
 
 **Toggle Fields** ダイアログを使用するには、次の手順を実行します。
 
-1. **動的ダイアログ**&#x200B;コンポーネントのダイアログを&#x200B;**フィールドを切り換え**ダイアログに置き換えます。
+1. **動的ダイアログ**&#x200B;コンポーネントのダイアログを&#x200B;**フィールドを切り替え**ダイアログに置き換えます。
 [例 2：単一パネルダイアログ](#example-single-panel-dialog)で説明している手順に従います。
 1. コンポーネントを編集します。次のようなダイアログが表示されます。
 
@@ -413,7 +413,7 @@ AEM 付属のすぐに使用できるウィジェットは、ほとんどのユ�
    * `allowField` は「select」型のオブジェクト [CQ.form.Selection](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.Selection) です。optionsProvider は、ダイアログで定義された CustomWidget の optionsProvider 設定でインスタンス化される Selection オブジェクトの設定です。
    * `otherField` は、[CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField) オブジェクトです。
 * [CQ.form.CompositeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField) のメソッド `setValue`、`getValue`、`getRawValue` を上書きして、次の形式の CustomWidget の値を設定および取得します。
-  `<allowField value>/<otherField value>, for example: 'Bla1/hello'`
+  `<allowField value>/<otherField value>, for example: 'Bla1/hello'`。
 * 自分自身を「`ejstcustom`」 xtype として登録します。
   `CQ.Ext.reg('ejstcustom', Ejst.CustomWidget);`
 
@@ -675,5 +675,5 @@ Grid Overview コンポーネント：
    * 選択できる行は一度に 1 つのみです。
      `sm: new [CQ.Ext.grid.RowSelectionModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.RowSelectionModel)({singleSelect:true})`
    * `afteredit` リスナーは、「**テスト**」列のセルが編集されたことを確認します。
-      * 「**jcr:path**」列で定義されたパスにあるノードのプロパティ「`test`」は、セルの値とともにリポジトリに設定されます。
+      * 「`test`jcr **」列で定義されたパスにあるノードのプロパティ「:path**」は、セルの値とともにリポジトリに設定されます。
       * POST が成功した場合は、値が `store` オブジェクトに追加されます。POST が失敗した場合は、値が拒否されます。

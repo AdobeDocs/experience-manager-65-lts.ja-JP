@@ -54,7 +54,7 @@ Adobe Experience Manager（AEM）6.5 では、すべての機能が後方互換�
 
 ## 設定方法 {#how-to-set-up}
 
-**6.5 用 AEM 6.4 互換性パック**&#x200B;は、パッケージマネージャーを使用してパッケージとしてインストールできます。[6.5 用 AEM 6.4 互換性パックは、ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64)サイトからダウンロードできます。
+**6.5 用 AEM 6.4 互換性パック**&#x200B;は、パッケージマネージャーを使用してパッケージとしてインストールできます。[6.5 用 AEM 6.4 互換性パックは、ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=20&package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64)サイトからダウンロードできます。
 
 互換パッケージがインストールされると、次に示すように、OSGI 設定のスイッチを使用して、ルーティングを有効または無効にできます。
 

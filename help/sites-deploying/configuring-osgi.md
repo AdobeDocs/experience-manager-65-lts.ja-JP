@@ -11,7 +11,7 @@ role: Admin
 exl-id: 3bf3ba2e-f5f2-428a-a1fc-36f885350f6b
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1896'
 ht-degree: 97%
 
 ---
@@ -45,7 +45,7 @@ OSGi は「*標準化されたプリミティブを提供し、小さく再利�
    * Web コンソールで定義される設定を含みます。
    * 他のインスタンスで使用できるよう、コンテンツパッケージに含めることができます。
 
-* [リポジトリ内のコンテンツノード（sling:osgiConfig）](#osgi-configuration-in-the-repository)
+* [コンテンツノード（sling）](#osgi-configuration-in-the-repository)
 
    * CRXDE Lite を使用した手動による設定が必要です。
    * `sling:OsgiConfig` ノードの命名規則により、設定を特定の[実行モード](/help/sites-deploying/configure-runmodes.md)に関連付けることができます。同じリポジトリに複数の実行モードの設定を保存することもできます。
@@ -183,7 +183,7 @@ Web コンソールを使用するほかに、リポジトリで設定の詳細�
 
    Web コンソールで **設定** を参照します。 この名前は、ページの下部に向かって **設定情報** に表示されます。
 
-   例えば、**AEM WCM Version Manager** を設定するには `com.day.cq.wcm.core.impl.VersionManagerImpl.` と入力します。
+   例えば、`com.day.cq.wcm.core.impl.VersionManagerImpl.`AEM WCM Version Manager **を設定するには** と入力します。
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 

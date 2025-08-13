@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 1f7c1213-4100-45d2-8083-531ff8d413e0
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 100%
+source-wordcount: '654'
+ht-degree: 95%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 プロファイルは [Apache Sling](https://sling.apache.org/) のリソースノードです。それは HTML5 フォームレンダリングサービスのカスタマイズされたバージョンを表します。HTML5 フォームレンダリングサービスを使用して、HTML5 フォームの外観、動作、インタラクションをカスタマイズできます。Profile ノードは JCR リポジトリーの `/content` フォルダーにあります。ノードは `/content` フォルダー直下か、`/content` フォルダーのサブフォルダーに入れることができます。
 
-Profile ノードには **xfaforms/profile** のデフォルト値を持つ **sling:resourceSuperType** プロパティがあります。このノードのレンダリングスクリプトは、/libs/xfaforms/profile にあります。
+profile ノードには **sling:resourceSuperType** プロパティがあり、デフォルト値は **xfaforms/profile** です。 このノードのレンダリングスクリプトは、/libs/xfaforms/profile にあります。
 
 Sling スクリプトは JSP スクリプトです。JSP スクリプトはリクエストされたフォームと必要な JS／CSS アーティファクトの HTML を組み立てるためのコンテナとして機能します。これらの Sling スクリプトは&#x200B;**プロファイルレンダラースクリプト**&#x200B;とも呼ばれます。プロファイルレンダラーは要求されたフォームをレンダリングするために Forms OSGi サービスを呼び出します。
 
@@ -64,7 +64,7 @@ footer.jsp モジュールは空です。これにより、ユーザーインタ
 
 1. default ノードをコピーし、*hrform* という名前で別のフォルダー（*/content/profiles*）にそのノードをペーストします。
 
-1. 新しいノード、*hrform* を選択し、*hrform/demo* の値を持つ文字列プロパティ *sling:resourceType* を追加します。
+1. 新しいノード *hrform* を選択し、値 *hrform/demo:resourceType* を持つ文字列プロパティ *sling* を追加します。
 
 1. ツールバーメニューで「すべて保存」をクリックして、変更を保存します。
 

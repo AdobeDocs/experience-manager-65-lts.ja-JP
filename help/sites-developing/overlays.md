@@ -11,8 +11,8 @@ role: Developer
 exl-id: d8fe6fb6-8ede-4fa7-95da-adee313bf768
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 100%
+source-wordcount: '585'
+ht-degree: 94%
 
 ---
 
@@ -32,7 +32,7 @@ AEM 6.0 以降、オーバーレイの実装方法と使用方法が以下のよ
 
       * `/apps` の下に適切な `/libs` 構造を再構築します。
 
-        これには 1:1 のコピーは不要です。[Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) は、必要な元の定義を相互参照するために使用されるからです。Sling Resource Merger は、差分メカニズムによってリソースにアクセスおよびマージするサービスを提供します。
+        これには 1:1 コピーは不要です。[Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) は、必要な元の定義を相互参照するために使用されるからです。 Sling Resource Merger は、差分メカニズムによってリソースにアクセスおよびマージするサービスを提供します。
 
       * `/apps` の下に、変更を加えます。
 
@@ -81,7 +81,7 @@ AEM 6.0 以降、オーバーレイの実装方法と使用方法が以下のよ
    * 検索パスの順序は、上から下の順で、それぞれの優先順位を示します。
    * 標準インストールの場合、主なデフォルトは `/apps` と `/libs` で、`/apps` のコンテンツの方が `/libs` のコンテンツより優先されます（つまり、前者が後者を&#x200B;*オーバーレイ*&#x200B;します）。
 
-* スクリプトの保存場所への JCR:READ アクセス権を 2 人のサービスユーザーに付与する必要があります。この 2 人のユーザーは、components-search-service（com.day.cq.wcm.core でコンポーネントのアクセス／キャッシュに使用）と sling-scripting（org.apache.sling.servlets.resolver でサーブレットの検索に使用）です。
+* スクリプトの保存場所への JCR:READ アクセスは、2 人のサービスユーザーが必要です。 この 2 人のユーザーは、components-search-service（com.day.cq.wcm.core でコンポーネントのアクセス／キャッシュに使用）と sling-scripting（org.apache.sling.servlets.resolver でサーブレットの検索に使用）です。
 * 次の設定も、スクリプトの保存場所に応じて設定する必要があります（この例では /etc、/libs または /apps の下）。
 
   ```

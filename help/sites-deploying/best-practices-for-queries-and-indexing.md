@@ -11,7 +11,7 @@ role: Admin
 exl-id: 3ffa7c80-ce59-41cf-bb50-c6caf77d9baa
 source-git-commit: 09f3d38e9f9c7f882d8b03dcf86db68cb8885a08
 workflow-type: tm+mt
-source-wordcount: '4196'
+source-wordcount: '4202'
 ht-degree: 98%
 
 ---
@@ -282,7 +282,7 @@ MongoDB インスタンスのインデックスを削除する場合、削除の
 
       * 既存の内容が変更の影響を受けない場合は、更新のみが必要です。
 
-         * [oak:queryIndexDefinition]@refresh=true を設定して、Lucene インデックスを[更新](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition)します。
+         * [oak](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition)@refresh=true を設定して [ 更新 :queryIndexDefinition]Lucene インデックス
 
       * それ以外の場合は、Lucene インデックスを[インデックス再作成](#how-to-re-index)します。
 
@@ -364,7 +364,7 @@ MongoDB インスタンスのインデックスを削除する場合、削除の
 
 >[!NOTE]
 >
->AEM 6.5 LTS では、MongoMK または RDBMK リポジトリでのインデックス再作成に [&#128279;](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree)oak-run.jar が唯一サポートされている方法です 。
+>AEM 6.5 LTS では、MongoMK または RDBMK リポジトリでのインデックス再作成に [oak-run.jar が唯一サポートされている方法です ](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree)。
 
 #### プロパティインデックスのインデックス再作成 {#re-indexing-property-indexes}
 

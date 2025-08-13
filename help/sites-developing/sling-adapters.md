@@ -230,7 +230,7 @@ null ケースを適切に処理することが重要です。JSP レンダリ�
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/designer/Designer.html">デザイナー</a></td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/designer/Designer.html">Designer</a></td>
    <td> </td>
   </tr>
   <tr>
@@ -338,7 +338,7 @@ null ケースを適切に処理することが重要です。JSP レンダリ�
 
 #### セキュリティ {#security}
 
-**Authorizable**、**User および &#x200B;** Group** は以下に適応します。
+**Authorizable**、**User および **Group** は以下に適応します。
 
 | [Node](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | ユーザーまたはグループのホームノードを返します。 |
 |---|---|

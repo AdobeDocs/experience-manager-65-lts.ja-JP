@@ -9,8 +9,8 @@ role: User, Developer
 exl-id: 0860f059-d599-4f87-9611-e7fe1c6bc059
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2001'
-ht-degree: 97%
+source-wordcount: '1999'
+ht-degree: 96%
 
 ---
 
@@ -149,10 +149,10 @@ Multiply(valueArray, category) {
 カスタム関数を作成したら、次の手順を実行して、グラフの設定で使用できるようにします。
 
 1. アダプティブフォームまたはドキュメントに関連付けられているクライアントライブラリにカスタム関数を追加します。
-1. CRXDE Lite で、次のプロパティを持つ nt:unstructured ノードを apps フォルダーに作成します。
+1. CRXDE Liteで、次のプロパティを持つ apps フォルダーに nt:unstructured ノードを作成します。
    * guideComponentType を fd/af/reducer に設定します。（必須）
    * カスタム JavaScript 関数の完全修飾名に値を設定します。（必須）
-   * jcr:description を意味のある名前に設定します。これは、「**関数を使用**」ドロップダウンリストに表示されます。例えば、**Multiply** と表示されます。
+   * jcr:description を意味のある名前に設定します。 これは、「**関数を使用**」ドロップダウンリストに表示されます。例えば、**Multiply** と表示されます。
    * qtip に関数の短い説明を設定します。「関数を使用」ドロップダウンリストの関数名にポインタを合わせると、ここで指定した説明がツールヒントとして表示されます。
    * 「**すべて保存**」をクリックして設定を保存します。
    * これで関数をグラフで使用できるようになります。

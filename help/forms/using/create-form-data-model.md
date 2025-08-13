@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: 12f99159-d252-44a5-8daa-938640360445
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 100%
+source-wordcount: '1547'
+ht-degree: 97%
 
 ---
 
@@ -57,7 +57,7 @@ AEM [!DNL Forms] のデータ統合モジュールを使用すると、AEM ユ�
 1. [!DNL MySQL] データベース用の JDBC ドライバーを OSGi バンドルとしてインストールします。
 
    1. [!DNL MySQL] JDBC ドライバー OSGi バンドルを `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html` からダウンロードします。<!-- This URL is an insecure link but using https is not possible -->
-   1. AEM [!DNL Forms] のオーサーインスタンスに管理者としてログインし、AEM Web コンソールのバンドルに移動します。デフォルトの URL は、[https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles) です。
+   1. AEM [!DNL Forms] のオーサーインスタンスに管理者としてログインし、AEM Web コンソールのバンドルに移動します。デフォルトの URL は [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles) です。
 
    1. 「**[!UICONTROL Install/Update]**」を選択します。「[!UICONTROL Upload / Install Bundles]」ダイアログが表示されます。
 
@@ -65,7 +65,7 @@ AEM [!DNL Forms] のデータ統合モジュールを使用すると、AEM ユ�
 
 1. [!DNL MySQL] データベースをデータソースとして設定します。
 
-   1. AEM web コンソール（[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)）に移動します。
+   1. AEM Web コンソール（[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)）に移動します。
    1. 「**Apache Sling Connection Pooled DataSource**」という設定を探し、その設定を選択して編集モードで開きます。
    1. 設定ダイアログで、次の詳細を指定します。
 
@@ -83,7 +83,7 @@ AEM [!DNL Forms] のデータ統合モジュールを使用すると、AEM ユ�
 
       >[!NOTE]
       >
-      >AEM Forms は、[!DNL MySQL] の NT 認証をサポートしていません。[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) で AEM web コンソールに移動し、「Apache Sling Connection Pooled Datasource」を検索します。「JDBC 接続 URI」プロパティでは、「integratedSecurity」の値を False に設定し、作成したユーザー名とパスワードを使用して [!DNL MySQL] データベースに接続します。
+      >AEM Forms は、[!DNL MySQL] の NT 認証をサポートしていません。[https://localhost:4502/system/console/configMgr でAEM Web コンソールに移動し ](https://localhost:4502/system/console/configMgr) 「Apache Sling Connection Pooled Datasource」を検索します。 「JDBC 接続 URI」プロパティでは、「integratedSecurity」の値を False に設定し、作成したユーザー名とパスワードを使用して [!DNL MySQL] データベースに接続します。
 
       * **Test on Borrow：** は **[!UICONTROL Test on Borrow]** オプションを有効にします。
       * **Test on Return：** は **[!UICONTROL Test on Return]** オプションを有効にします。
@@ -120,7 +120,7 @@ AEM [!DNL Forms] には、設定済みデータソースから[フォームデ�
 
 フォームデータモデルを設定するには、次の手順に従います。
 
-1. AEM オーサーインスタンスで、**[!UICONTROL フォーム]**／**[!UICONTROL データ統合]**&#x200B;に移動します。デフォルトの URL は、[https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) です。
+1. AEM オーサーインスタンスで、**[!UICONTROL フォーム]**／**[!UICONTROL データ統合]**&#x200B;に移動します。デフォルトの URL は [https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) です。
 1. 前の手順で作成した **customer-shipping-billing-details** というフォームデータモデルが表示されます。編集モードで開きます。
 
    選択したデータソース **WeRetailMySQL** がフォームデータモデルで設定されます。
@@ -177,10 +177,10 @@ AEM [!DNL Forms] には、設定済みデータソースから[フォームデ�
    1. **[!UICONTROL get]** サービスを選択して「**[!UICONTROL プロパティの編集]**」を選択します。プロパティダイアログが開きます。
    1. プロパティを編集ダイアログで、以下のプロパティを指定します。
 
-      * **タイトル**：サービスのタイトルを指定します。例：配送先住所を取得します。
+      * **タイトル**：サービスのタイトルを指定します。例：発送先住所を取得します。
       * **説明**：サービスの詳細な機能を含む説明を指定します。例：
 
-        このサービスは [!DNL MySQL] データベースから配送先住所などの顧客についての詳細を取得します
+        このサービスは [!DNL MySQL] データベースから発送先住所などの顧客についての詳細を取得します
 
       * **出力モデルオブジェクト**：顧客データを保管するスキーマを選択します。例：
 
@@ -197,10 +197,10 @@ AEM [!DNL Forms] には、設定済みデータソースから[フォームデ�
 
    1. [!UICONTROL プロパティを編集]ダイアログで、以下を指定します。
 
-      * **タイトル**：サービスのタイトルを指定します。例えば、「配送先住所を更新」などです。
+      * **タイトル**：サービスのタイトルを指定します。例えば、「発送先住所を更新」などです。
       * **説明**：サービスの詳細な機能を含む説明を指定します。例：
 
-        このサービスは、配送先住所とそれに関連するフィールドを MySQL データベース内で更新します
+        このサービスは、発送先住所とそれに関連するフィールドを MySQL データベース内で更新します
 
       * **入力モデルオブジェクト**：顧客データを保管するスキーマを選択します。例：
 

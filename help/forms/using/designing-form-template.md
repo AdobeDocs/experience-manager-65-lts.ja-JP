@@ -32,7 +32,7 @@ HTML5 フォームの動作は、その大部分が PDF フォームの動作に
 
 #### HTML をプレビューする {#preview-html}
 
-フォームデザイナーのデザインモードに、HTML5 形式でフォームをプレビューするための「HTML のプレビュー」タブが追加されました。AEM Forms Designer でこの機能を有効化して設定する方法について詳しくは、[HTML のプレビュー](../../forms/using/preview-xdp-forms-html.md)を参照してください。
+デザインモードに「プレビュー HTML」タブが追加され、フォームデザイナーがデザインプロセス中にフォームを HTML5 形式でプレビューできるようになりました。AEM Forms Designer でこの機能を有効化して設定する方法について詳しくは、[HTML のプレビュー](../../forms/using/preview-xdp-forms-html.md)を参照してください。
 
 #### 手書き署名 {#scribble-signature}
 

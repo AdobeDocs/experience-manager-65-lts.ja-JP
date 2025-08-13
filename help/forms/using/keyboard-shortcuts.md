@@ -29,22 +29,22 @@ ht-degree: 100%
 | 選択したアダプティブフォームコンポーネントのプロパティブラウザーを閉じる | Ctrl + Alt + W | Command + Alt + W |
 | 選択したアダプティブフォームコンポーネントの変更内容をプロパティブラウザーに保存する | Ctrl + S | Command + S |
 | 選択したアダプティブフォームコンポーネントのルールを編集する | Ctrl + Alt + Enter | Command + Alt + Return |
-| プレビューと現在選択されているモード（編集モードや基礎モードなど）を切り替える | Ctrl + Shift + M | Ctrl+Shift+M&ast; |
-| 最後におこなった変更操作を取り消す | Ctrl + Z | Ctrl+Z&ast; |
-| 最後におこなった変更操作をやり直す | Ctrl + Y | Ctrl+Y&ast; |
+| プレビューと現在選択されているモード（編集モードや基礎モードなど）を切り替える | Ctrl + Shift + M | Ctrl+Shift+M&amp;ast; |
+| 最後におこなった変更操作を取り消す | Ctrl + Z | Ctrl+Z&amp;ast; |
+| 最後におこなった変更操作をやり直す | Ctrl + Y | Ctrl+Y&amp;ast; |
 | 複数のコンポーネントを選択する | Shift キーを押しながらクリック | Shift キーを押しながらクリック |
-| 選択したコンポーネントをコピーする | Ctrl + C | Ctrl+C&ast; |
-| 選択したコンポーネントを切り取る（カットしたコンポーネントは、新しい場所にペーストするまで非表示になりません）。 | Ctrl + X | Ctrl+X&ast; |
+| 選択したコンポーネントをコピーする | Ctrl + C | Ctrl+C&amp;ast; |
+| 選択したコンポーネントを切り取る（カットしたコンポーネントは、新しい場所にペーストするまで非表示になりません）。 | Ctrl + X | Ctrl+X&amp;ast; |
 | コンポーネントをペーストする | Ctrl + V | Ctrl + V |
-| 選択したコンポーネントを削除する | Ctrl + Del | Ctrl+Del&ast; |
-| 選択したコンポーネントを削除する | Ctrl + Backspace キー | Ctrl+Backspace&ast; |
-| プレビューモードでリッチテキストエディターコンポーネントを使用している場合に、テキストを太字にする | Ctrl + B キー | Ctrl+B&ast; |
-| プレビューモードでリッチテキストエディターコンポーネントを使用している場合に、テキストを斜体にする | Ctrl + I | Ctrl+I&ast; |
-| プレビューモードでリッチテキストエディターコンポーネントを使用している場合に、テキストを太字にする | Ctrl + U | Ctrl+U&ast; |
+| 選択したコンポーネントを削除する | Ctrl + Del | Ctrl+Del&amp;ast; |
+| 選択したコンポーネントを削除する | Ctrl + Backspace キー | Ctrl+Backspace&amp;ast; |
+| プレビューモードでリッチテキストエディターコンポーネントを使用している場合に、テキストを太字にする | Ctrl + B キー | Ctrl+B&amp;ast; |
+| プレビューモードでリッチテキストエディターコンポーネントを使用している場合に、テキストを斜体にする | Ctrl + I | Ctrl+I&amp;ast; |
+| プレビューモードでリッチテキストエディターコンポーネントを使用している場合に、テキストを太字にする | Ctrl + U | Ctrl+U&amp;ast; |
 
 >[!NOTE]
 >
->「&ast;」が付いている macOS のショートカットキーは、Ctrl キーだけでなく、Command キーでも機能します。
+>「&amp;ast;」が付いている macOS のショートカットキーは、Ctrl キーだけでなく、Command キーでも機能します。
 
 >[!NOTE]
 >
@@ -60,13 +60,13 @@ ht-degree: 100%
 |---|---|---|
 | テーマで選択したコンポーネントのプロパティブラウザーを開く | Alt + Enter | Alt + Return |
 | テーマで選択したコンポーネントのプロパティブラウザーを閉じる | Ctrl + Alt + W | Command + Alt + W |
-| 最後におこなった変更操作を取り消す | Ctrl + Z | Ctrl+Z&ast; |
-| 最後におこなった変更操作をやり直す | Ctrl + Y | Ctrl+Y&ast; |
-| テーマで選択したコンポーネントの変更内容をプロパティブラウザーに保存する | Ctrl + S | Ctrl+S&ast; |
+| 最後におこなった変更操作を取り消す | Ctrl + Z | Ctrl+Z&amp;ast; |
+| 最後におこなった変更操作をやり直す | Ctrl + Y | Ctrl+Y&amp;ast; |
+| テーマで選択したコンポーネントの変更内容をプロパティブラウザーに保存する | Ctrl + S | Ctrl+S&amp;ast; |
 
 >[!NOTE]
 >
->「&ast;」が付いている macOS のショートカットキーは、Ctrl キーだけでなく、Command キーでも機能します。
+>「&amp;ast;」が付いている macOS のショートカットキーは、Ctrl キーだけでなく、Command キーでも機能します。
 
 ## コンテンツブラウザー  {#contentbrowser}
 

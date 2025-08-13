@@ -63,7 +63,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 >[!NOTE]
 >
->フォルダーまたはアセットの一部のプロパティは、異なるプレフィックスにマップされます。`jcr:title`、`jcr:description`、`jcr:language` の `jcr` プレフィックスは `dc` プレフィックスに置き換えられます。したがって、返された JSON コードで、`dc:title`、`dc:description` にはそれぞれ `jcr:title`、`jcr:description` の値が含まれています。
+>フォルダーまたはアセットの一部のプロパティは、異なる接頭辞にマップされます。`jcr:title`、`jcr:description`、`jcr:language` の `jcr` 接頭辞は `dc` 接頭辞に置き換えられます。したがって、返された JSON コードで、`dc:title`、`dc:description` にはそれぞれ `jcr:title`、`jcr:description` の値が含まれています。
 
 **リンク**&#x200B;フォルダーは、次の 3 つのリンクを公開します。
 

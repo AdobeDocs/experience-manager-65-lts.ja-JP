@@ -9,8 +9,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: e2b9b13b-c00c-4bfc-8512-84188e90c0ed
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '5466'
-ht-degree: 99%
+source-wordcount: '5472'
+ht-degree: 98%
 
 ---
 
@@ -516,7 +516,7 @@ Experience Manager のビデオアセットを非公開にすると、そのビ�
 
    >[!NOTE]
    >
-   >[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) からの&#x200B;**[!UICONTROL 再試行]**、**[!UICONTROL 再試行遅延]**&#x200B;および&#x200B;**[!UICONTROL タイムアウト]**&#x200B;に関する複数のワークフロー設定があるので、失敗／エラーメッセージが最終的に記録されるまでには時間がかかる可能性があります。例えば、次の設定です。
+   >**[!UICONTROL https://localhost]**/system/console/configMgr **[!UICONTROL からの]** 再試行 **[!UICONTROL 、]** 再試行遅延 [、および :4502 タイムアウト ](https://localhost:4502/system/console/configMgr) に関する複数のワークフロー設定があるので、失敗/エラーメッセージが最終的に記録されるまでには時間がかかる可能性があります。例えば、次の設定です。
    >
    >* Apache Sling ジョブキューの設定
    >* Adobe Granite ワークフロー外部プロセスジョブハンドラー
@@ -548,7 +548,7 @@ Experience Manager のビデオアセットを非公開にすると、そのビ�
 
    >[!NOTE]
    >
-   >[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) からの&#x200B;**[!UICONTROL 再試行]**、**[!UICONTROL 再試行遅延]**、および&#x200B;**[!UICONTROL タイムアウト]**&#x200B;に関する複数のワークフロー設定があるので、エラーメッセージが最終的に記録されるまでには時間がかかる可能性があります。例えば、次の設定です。
+   >**[!UICONTROL https://localhost]**/system/console/configMgr **[!UICONTROL からの]** 再試行 **[!UICONTROL 、]** 再試行遅延 [、および :4502 タイムアウト ](https://localhost:4502/system/console/configMgr) に関する複数のワークフロー設定があるので、エラーメッセージが最終的に記録されるまでには時間がかかる可能性があります。例えば、次の設定です。
    >
    >* Apache Sling ジョブキューの設定
    >* Adobe Granite ワークフロー外部プロセスジョブハンドラー

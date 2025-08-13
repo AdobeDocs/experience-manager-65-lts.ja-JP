@@ -12,8 +12,8 @@ role: User,Admin,Architect,Developer
 exl-id: a0ddb246-64eb-493c-9950-9b7ecb32e555
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4643'
-ht-degree: 100%
+source-wordcount: '4650'
+ht-degree: 99%
 
 ---
 
@@ -107,7 +107,7 @@ ht-degree: 100%
 
 * **テンプレート**&#x200B;コンソールを使用します。これは、**ツール**&#x200B;コンソールの「**一般**」セクションにあります。
 
-   * または、直接アクセスします（例：[https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)）。
+   * または、[https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf) に直接アクセスします
 
 * 必要に応じて、[テンプレート用のフォルダーを作成](#creating-a-template-folder-admin)できます。
 * [テンプレートを作成](#creatinganewtemplateauthor)、（最初は空の状態）

@@ -50,7 +50,7 @@ ht-degree: 100%
 
 ## 同期エラーのトラブルシューティング {#troubleshooting-synchronization-error}
 
-ワークフローデザイナー（LiveCycle Workbench）で新しいアプリケーションを作成できます。
+ワークフロー designer（LiveCycle Workbench）で新しいアプリケーションを作成できます。
 
 新しく作成したアプリケーションと /content/dam/formsanddocuments にあるフォルダーの名前が同一の場合、エラー「*このアプリケーションと同じ名前のアセットがすでにルートレベルで存在します。*」がログに記録されます。
 

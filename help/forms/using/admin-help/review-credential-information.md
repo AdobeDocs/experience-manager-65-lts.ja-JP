@@ -13,8 +13,8 @@ hidefromtoc: true
 exl-id: 5cc5c9fe-50ce-4863-bfa4-a009a6c3b06f
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 100%
+source-wordcount: '194'
+ht-degree: 94%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 1. Web ブラウザーを開いて、次の URL を入力します。
 
-   http://localhost:[port]/ReaderExtensions （*port* は、アプリケーションサーバーのポート番号です）
+   http://localhost:port/ReaderExtensions （*port* は、アプリケーションサーバーのポート番号です）
 
 1. デフォルトのユーザー名とパスワードを使用してログインします。
 

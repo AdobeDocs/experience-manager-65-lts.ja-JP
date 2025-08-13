@@ -11,7 +11,7 @@ role: Admin
 exl-id: 114a77bc-0b7e-49ce-bca1-e5195b4884dc
 source-git-commit: 3cbc2ddd4ff448278e678d1a73c4ee7ba3af56f4
 workflow-type: tm+mt
-source-wordcount: '5139'
+source-wordcount: '5142'
 ht-degree: 98%
 
 ---
@@ -409,7 +409,7 @@ TarMK GC: no base state available, running full compaction instead
     <ol>
      <li>アプリケーションが、推奨されるアクセスメカニズム（Sling や JCR API など）を回避し、下位レベルの API／SPI を使用してリポジトリにアクセスし、セグメントの保持時間を超えている場合。つまり、オンラインでのリビジョンクリーンアップで許可されている保持時間（デフォルトでは 24 時間）より長い間、エンティティへの参照を保持します。このケースは一時的なもので、データの破損にはつながりません。復旧するには、oak-run ツールを使用して、この例外が一時的なものである（oak-run チェックでエラーが報告されない）ことを確認する必要があります。このためには、インスタンスをオフラインにし、後で再起動する必要があります。</li>
      <li>ディスク上のデータの破損を招いた外部イベント。これは、ディスク障害、ディスク容量不足、または必要なデータファイルの誤った変更などになります。この場合は、インスタンスをオフラインにし、oak-run チェックを使用して修復する必要があります。oak-run チェックの実行方法について詳しくは、次の <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Apache ドキュメント</a> を参照してください。</li>
-     <li>他のすべての状況では、<a href="https://experienceleague.adobe.com/ja?support-solution=General&amp;lang=ja&amp;support-tab=home#support" target="_blank">アドビカスタマーケア</a>に連絡して対処します。</li>
+     <li>他のすべての状況では、<a href="https://experienceleague.adobe.com/?support-solution=General&amp;lang=ja&amp;support-tab=home#support" target="_blank">アドビカスタマーケア</a>に連絡して対処します。</li>
     </ol> </td>
    <td> </td>
   </tr>
@@ -555,7 +555,7 @@ java -Dupdate.limit=10000 -Dcompaction-progress-log=150000 -Dlogback.configurati
 
 上記の方法に加えて、次のように JMX コンソールを使用して、リビジョンのクリーンアップメカニズムをトリガーすることもできます。
 
-1. [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx) にアクセスして JMX コンソールを開きます。
+1. [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx) に移動して、JMX コンソールを開きます。
 1. **RevisionGarbageCollection** MBean をクリックします。
 1. 次のウィンドウで、**startRevisionGC()** をクリックし、**起動**&#x200B;して、リビジョンのガベージコレクションジョブを開始します。
 

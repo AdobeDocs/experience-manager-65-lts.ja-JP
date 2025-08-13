@@ -13,7 +13,7 @@ exl-id: 015def31-c7de-42b3-8218-1284afcb6921
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
 source-wordcount: '927'
-ht-degree: 96%
+ht-degree: 90%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 96%
    1. トップメニューから「ツール」をクリックします。
    1. 虫眼鏡ボタンをクリックします。
    1. 種類として「XPath」を選択します。
-   1. 「Query」ボックスに、次のクエリーを入力します。/jcr:root/var/eventing/jobs//element(&#42;、slingevent:Job) order by @slingevent:created
+   1. 「Query」ボックスに、次のクエリーを入力します。/jcr:root/var/eventing/jobs//element （&#42;,slingevent:Job） order by @slingevent:created
    1. 「検索」をクリックします。
    1. 検索結果の上位の項目が、最新の Sling イベントジョブです。各ジョブをクリックして、キューの一番上に表示されるものと同じ、動きのないレプリケーションを見つけます。
 
@@ -62,7 +62,7 @@ ht-degree: 96%
 
 すべてのレプリケーションログを、個別のログファイルに DEBUG レベルで追加するように設定すると役に立つことがあります。次の手順を実行します。
 
-1. https://host:port/system/console/configMgr にアクセスし、Admin でログインします。
+1. https://host:port/system/console/configMgr に移動して、管理者としてログインします。
 1. Apache Sling Logging Logger Configuration を探し、ファクトリ設定の右側の「**+**」ボタンをクリックしてインスタンスを作成します。 新しいログロガーが作成されます。
 1. 次のように設定します。
 
@@ -70,7 +70,7 @@ ht-degree: 96%
    * ログファイル：logs/replication.log
    * ロガー：com.day.cq.replication
 
-1. 問題が何らかの形で Sling イベントまたはジョブに関連する疑いがある場合は、この Java™ パッケージをカテゴリ org.apache.sling.event に追加することもできます。
+1. この問題が sling のイベントやジョブに関係していると思われる場合は、categories:org.apache.sling.event の下にこの Java™ パッケージを追加することもできます
 
 ## レプリケーションエージェントキューの一時停止  {#pausing-replication-agent-queue}
 

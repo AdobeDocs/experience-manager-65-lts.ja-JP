@@ -12,8 +12,8 @@ role: Developer
 exl-id: d918ddf2-aa70-4742-97d5-24a2c51f578a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 100%
+source-wordcount: '1173'
+ht-degree: 98%
 
 ---
 
@@ -143,7 +143,7 @@ S-6-Finished: 665 bytes (1.0 kb/s)
 </html>
 ```
 
-AEM が localhost:4303 で実行されている場合は、プロキシサーバーを次のように起動します。
+AEMが localhost:4303 で動作している場合は、次のようにプロキシサーバーを起動します。
 
 ```xml
 java -jar proxy.jar localhost 4303 4444 -logfile test.log

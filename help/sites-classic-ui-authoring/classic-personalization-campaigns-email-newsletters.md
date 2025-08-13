@@ -36,7 +36,7 @@ ExactTarget や Silverpop Engage などのメールサービスに、ニュー�
 
 ## メールの作成 {#creating-an-email}
 
-メールサービスに公開するメールまたはニュースレターは、**Geometrixx ニュースレター**&#x200B;テンプレートを使用してキャンペーンで作成できます。また、**Geometrixx Outdoors メール**&#x200B;テンプレートも使用できます。**Geometrixx Outdoors メール**&#x200B;テンプレートに基づくメールまたはニュースレターのサンプルは、`https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html` で入手できます。
+メールサービスに公開するメールまたはニュースレターは、**Geometrixx ニュースレター**&#x200B;テンプレートを使用してキャンペーンで作成できます。また、**Geometrixx Outdoors メール**&#x200B;テンプレートも使用できます。**Geometrixx Outdoors メール**&#x200B;テンプレートに基づくサンプルメールまたはサンプルニュースレターは、`https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html` で入手できます。
 
 設定済みのメールサービスに公開するメールを作成するには、以下の手順を実行します。
 

@@ -12,8 +12,8 @@ role: Admin
 exl-id: 1121af36-b07a-4e8d-a60b-6c5b91e56f82
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3442'
-ht-degree: 99%
+source-wordcount: '3432'
+ht-degree: 96%
 
 ---
 
@@ -323,9 +323,9 @@ id や class などの属性が body タグに適用されている場合（例�
 **サポートされている機能**
 
 * 事前定義されたリードフィールド - 名、姓、住所、生年月日、性別、詳細情報、ユーザー ID、メール ID、送信ボタンがサイドキックで使用できます。必要なコンポーネントをリードフォームにドラッグ＆ドロップするだけで使用できます。
-* これらのコンポーネントを使用して、作成者がスタンドアロンのリードフォームをデザインできます。これらのフィールドはリードフォームフィールドに対応しています。スタンドアロンまたは読み込んだ zip アプリケーションで、ユーザーは cq:form または cta リードフォームフィールドを使用して別のフィールドを追加し、要件に応じてデザインすることができます。
+* これらのコンポーネントを使用して、作成者がスタンドアロンのリードフォームをデザインできます。これらのフィールドはリードフォームフィールドに対応しています。スタンドアロンのアプリケーション、または読み込んだ zip アプリケーションで、ユーザーが cq:form または cta リードフォームフィールドを使用して追加フィールドを追加し、要件に応じてデザインすることができます。
 * 特定の事前定義された CTA リードフォーム名を使用してフォームフィールドをマッピングします。例えば、firstName をリードフォームの名にマッピングしたりします。
-* リードフォームにマッピングされないフィールドは、cq:form コンポーネント（テキスト、ラジオボタン、チェックボックス、ドロップダウン、非表示、パスワード）にマッピングされます。
+* リードフォームにマッピングされないフィールドは、cq:form コンポーネント（テキスト、ラジオ、チェックボックス、ドロップダウン、非表示、パスワード）にマッピングされます。
 * ユーザーは「ラベル」タグを使用してタイトルを設定し、スタイル属性「クラス」を使用してスタイルを設定することができます（CTA リードフォームコンポーネントでのみ使用可能）。
 * 「ありがとうございます」ページや購読リストをフォームの非表示パラメーターとして設定（index.htm 内）するか、「リードフォームの最初」の編集バーから追加または編集することができます。
 
@@ -335,7 +335,7 @@ id や class などの属性が body タグに適用されている場合（例�
 
 * required（必須）などの制約を、各コンポーネントの編集設定から指定することができます。
 
-HTML タグを使用して、読み込まれた zip ファイルにグラフィックリンクコンポーネントを含めます。ここでは、「firstName」がリードフォームの firstName にマッピングされたりしています。チェックボックスはこれらとは異なり、2 つのチェックボックスが cq:form ドロップダウンコンポーネントにマッピングされています。
+HTML タグを使用して、読み込まれた zip ファイルにグラフィックリンクコンポーネントを含めます。ここで、「firstName」はリードフォームの firstName にマッピングされ、チェックボックスを除いて同様にマッピングされます。これら 2 つのチェックボックスは、cq:form ドロップダウンコンポーネントにマッピングされます。
 
 ```xml
 <div id="cqcanvas">
@@ -419,11 +419,11 @@ Parsys コンポーネント（`foundation/components/parsys`）をデザイン�
 
 ### 読み込まれた HTML で定義されているメタデータを抽出し、ページプロパティを設定 {#setting-page-properties-by-extracting-metadata-defined-in-imported-html}
 
-読み込まれた HTML の冒頭で宣言されている次のメタデータは、デザインインポーターによって「jcr:description」プロパティとして抽出され保持されます。
+読み込まれたHTMLの先頭で宣言された次のメタデータは、デザインインポーターによってプロパティ「jcr:description」として抽出および保存されます。
 
 * &lt;meta name=&quot;description&quot; content=&quot;&quot;>
 
-HTML タグに設定されている lang 属性セットは、デザインインポーターによって「jcr:language」プロパティとして抽出され保持されます。
+HTML タグで設定された Lang 属性は、デザインインポーターによってプロパティ「jcr:language」として抽出および保存されます。
 
 * &lt;html lang=&quot;en&quot;>
 
@@ -462,15 +462,15 @@ data-cq-component 内のパスは、コンポーネントの resourceType にす
 | E + F | F 要素の直前に E 要素が付く | [隣接兄弟結合子](https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators) |
 | E ~ F | F 要素の前に E 要素が付く | [一般的な兄弟結合子](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
 | E:root | E 要素で、ドキュメントのルート | [構造擬似クラス](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:nth-child(n) | E 要素で、親の n 番目の子 | [構造擬似クラス](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:nth-last-child(n) | E要素で、親の最後の子から数えて n 番目の子 | [構造擬似クラス](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:nth-of-type(n) | E 要素で、この型の n 番目の兄弟 | [構造擬似クラス](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:nth-last-of-type(n) | E要素で、その型の最後から数えて n 番目の兄弟 | [構造擬似クラス](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-child （n） | E 要素で、親の n 番目の子 | [構造擬似クラス](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-last-child （n） | E要素で、親の最後の子から数えて n 番目の子 | [構造擬似クラス](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-of-type （n） | E 要素で、この型の n 番目の兄弟 | [構造擬似クラス](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-last-of-type （n） | E要素で、その型の最後から数えて n 番目の兄弟 | [構造擬似クラス](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 
 これは、&lt;div>タグのような追加の html 要素が、生成された Html にインポート後に追加されるためです。
 
 * 上記と同様の構造に依存するスクリプトについても、AEM コンポーネントへの変換用にマークされた要素で使用することはお勧めしません。
-* &lt;div data-cq-component=&quot;&ast;&quot;> などコンポーネントの変換用のマークアップタグに、スタイルを使用することは推奨されません。
+* &lt;div data-cq-component=&quot;&amp;ast;&quot;> などコンポーネントの変換用のマークアップタグに、スタイルを使用することは推奨されません。
 * デザインレイアウトは、HTML5 Boilerplate のベストプラクティスに従って作成する必要があります。詳しくは、[https://html5boilerplate.com/](https://html5boilerplate.com/) を参照してください。
 
 ## OSGi モジュールの設定 {#configuring-osgi-modules}
@@ -527,11 +527,11 @@ OSGi コンソールから設定可能なプロパティを公開するコンポ
 >[!NOTE]
 >
 >**ランディングページエントリプリプロセッサーの現在の制限事項**
->検索パターンに変更を加える必要がある場合、Felix プロパティエディターを開いたとき、バックスラッシュ文字を手動で追加し正規表現のメタ文字をエスケープ処理する必要があります。バックスラッシュ文字を手動で追加しない場合、正規表現が無効と見なされ、検索前のものが置き換えられません。
+>>検索パターンに変更を加える必要がある場合、Felix プロパティエディターを開いたとき、バックスラッシュ文字を手動で追加し正規表現のメタ文字をエスケープ処理する必要があります。バックスラッシュ文字を手動で追加しない場合、正規表現が無効と見なされ、検索前のものが置き換えられません。
 >
 >例えば、デフォルト設定が
 >
->&#x200B;>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 > `CQ_DESIGN_PATH` を `VIPURL` と置換する必要がある場合、検索パターンは次のようになります。
 >

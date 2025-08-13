@@ -84,7 +84,7 @@ ht-degree: 100%
    <td>印刷出力</td>
   </tr>
   <tr>
-   <td>Schema</td>
+   <td>スキーマ</td>
    <td>フォームデータモデル </td>
    <td>データディクショナリ </td>
   </tr>

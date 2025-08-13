@@ -10,8 +10,8 @@ role: User, Developer
 exl-id: 1cd2aae7-306f-4f7a-b4d2-e8c64827c09a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 100%
+source-wordcount: '429'
+ht-degree: 95%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 100%
 
       このマップのキーは、前の手順の HTML レンダラーで定義したキーと同じである必要があります。
 
-      また、マップに **sling:resourceType** キーを値 **Employees/PtoApplication** と共に追加します。
+      また、値が **Employees/PtoApplication:resourceType** の **sling** キーをマップに追加します。
 
    1. **create PTO summary** プロセスの **ContentRepositoryConnector** サービスからサブプロセス **storeContent** を使用します。このサブプロセスで CRX ノードを作成します。
 
@@ -76,7 +76,7 @@ ht-degree: 100%
 
       * **フォルダーパス**：新しい CRX ノードが作成されるパスです。パスを **/content** に設定します。
       * **ノード名**：入力変数 nodeName をこのフィールドに割り当てます。これは固有のノード名文字列です。
-      * **ノードタイプ**：タイプを **nt:unstructured** として定義します。このプロセスの出力は nodePath です。nodePath は、新しく作成されたノードの CRX パスです。nodePath は、**create PTO** サマリープロセスの最後の出力になります。
+      * **ノードタイプ**：タイプを **nt:unstructured** として定義します。 このプロセスの出力は nodePath です。nodePath は、新しく作成されたノードの CRX パスです。nodePath は、**create PTO** サマリープロセスの最後の出力になります。
 
    1. 送信されたフォームデータ（**employeeName**、**employeeID**、**ptoReason** および **totalDays**）を新しいプロセス **create PTO summary** への入力として渡します。**ptoSummaryNodePath** として出力を取得します。
 

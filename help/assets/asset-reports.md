@@ -9,8 +9,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 434a081a-f9e4-4a0d-8468-55b4ab5a6287
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1155'
-ht-degree: 100%
+source-wordcount: '1154'
+ht-degree: 99%
 
 ---
 
@@ -147,7 +147,7 @@ ht-degree: 100%
 
 1. プロパティパスピッカーを使用して、CRXDE の `jcr:content` ノード下にプロパティパスを追加します。または、プロパティパスフィールドにパスを入力します。
 
-   ![jcr:content 内のパスからプロパティパスをマップします。](assets/property_picker.png)
+   ![jcr のパスからプロパティパスをマッピングする :content](assets/property_picker.png)
 
    カスタム列をさらに追加するには、「**[!UICONTROL 追加]**」をクリックし、手順 5 および 6 を繰り返します。
 

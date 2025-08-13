@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: aed65a14-2b4f-45ac-8b20-fdb08b3c9038
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 99%
+source-wordcount: '780'
+ht-degree: 96%
 
 ---
 
@@ -80,8 +80,8 @@ Correspondence Management ソリューションで使用できる、一般的な
 
    1. **有効**：このメソッドを有効化するかどうかを決定します。Expression Manager では、無効なメソッドは無視されます。
    1. **familyId**：メソッドのファミリー（グループ）を指定します。空の場合、Expression Manager では、メソッドがデフォルトのファミリーに属するものと見なします。関数が選択されたファミリーのレジストリはありません（デフォルトのファミリーを除く）。Expression Manager では、様々なバンドルによって書き出されたすべての関数で指定されているすべてのファミリー ID の和集合を取得すれば、レジストリが動的に作成されます。ここで指定された ID は式オーサリングユーザーインターフェイスにも表示されるため、適切に判読できることを確認します。
-   1. **displayName**：人が判読できる関数の名前です。この名前は、オーサリングユーザーインターフェイスに表示されます。空の場合、Expression Manager では、関数のプレフィックスとローカル名を使用してデフォルトの名前が作成されます。
-   1. **Description**：関数の詳細な説明です。この説明は、オーサリングユーザーインターフェイスに表示されます。空の場合、関数のプレフィックスとローカル名を使用するデフォルトの説明が Expression Manager によって作成されます。
+   1. **displayName**：人が判読できる関数の名前です。この名前は、オーサリングユーザーインターフェイスに表示されます。空の場合、Expression Manager では、関数の接頭辞とローカル名を使用してデフォルトの名前が作成されます。
+   1. **Description**：関数の詳細な説明です。この説明は、オーサリングユーザーインターフェイスに表示されます。空の場合、関数の接頭辞とローカル名を使用するデフォルトの説明が Expression Manager によって作成されます。
 
    ```java
    package mergeandfuse.com;
@@ -126,7 +126,7 @@ Correspondence Management ソリューションで使用できる、一般的な
   @org.apache.felix.scr.annotations.Property(name = "exm.service", boolValue = true)})
 ```
 
-exm.service=true エントリは、式マネージャーに対して、式での使用に適したリモート関数をサービスに含めるように指示します。&lt;service_id> 値は、有効な Java 識別子である必要があります（英数字、$、他の特殊文字なしで _）。この値の先頭に REMOTE_ というキーワードを付けると、式の中で使用されるプレフィックスとなります。例えば、サービスプロパティ内の注釈付きメソッド bar() およびサービス ID foo とのインターフェイスは、REMOTE_foo:bar() を使用して式内で参照できます。
+exm.service=true エントリは、式マネージャーに対して、式での使用に適したリモート関数をサービスに含めるように指示します。&lt;service_id> 値は、有効な Java 識別子である必要があります（英数字、$、他の特殊文字なしで _）。この値の先頭に REMOTE_ というキーワードを付けると、式の中で使用される接頭辞となります。例えば、注釈が付いたメソッド bar （）を持つインターフェイスと、サービスプロパティにサービス ID foo が含まれている場合、REMOTE_foo:bar （）を使用して式内で参照することができます。
 
 ```java
 package mergeandfuse.com;
@@ -155,7 +155,7 @@ public class RemoteFuntionImpl implements RemoteFunction {
 使用するサンプルアーカイブを以下に示します。
 
 * **GoodFunctions.jar.zip** はサンプルのリモート関数の定義を含むバンドルを持っている jar ファイルです。GoodFunctions.jar.zip ファイルをダウンロードし、それを展開して jar ファイルを取得します。
-* **GoodFunctions.zip &#x200B;**&#x200B;は、カスタムのリモート関数を定義しそれに対するバンドルを作成するためのソースコードのパッケージです。
+* **GoodFunctions.zip **&#x200B;は、カスタムのリモート関数を定義しそれに対するバンドルを作成するためのソースコードのパッケージです。
 
 GoodFunctions.jar.zip
 

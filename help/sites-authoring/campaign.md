@@ -11,8 +11,8 @@ role: User,Admin,Architect,Developer
 exl-id: 1d621e12-6da5-4b49-98c9-3fb9b8189ff7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2770'
-ht-degree: 100%
+source-wordcount: '2769'
+ht-degree: 99%
 
 ---
 
@@ -177,7 +177,7 @@ Campaign コンポーネントについて詳しくは、[Adobe Campaign コン�
    >
    >**Adobe Campaign Classic の場合：**
    >
-   >* 使用可能なコンテキストフィールドは、Adobe Campaign の **nms:seedMember** スキーマから動的に復元されます。ターゲット拡張データは、コンテンツと同期される配信を含むワークフローから動的に復元されます。（[AEM で作成されたコンテンツと Adobe Campaign の配信の同期](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic)の節を参照してください）。
+   >* 使用可能なコンテキストフィールドは、Adobe Campaign **nms:seedMember** スキーマから動的に復元されます。 ターゲット拡張データは、コンテンツと同期される配信を含むワークフローから動的に復元されます。（[AEM で作成されたコンテンツと Adobe Campaign の配信の同期](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic)の節を参照してください）。
    >
    >* パーソナライゼーション要素を追加または非表示にするには、[パーソナライゼーションフィールドおよびブロックの管理](/help/sites-administering/campaignonpremise.md#managing-personalization-fields-and-blocks)を参照してください。
    >* **重要**：シードテーブルのフィールドはすべて、受信者テーブル（または対応する連絡先テーブル）にも存在する必要があります。

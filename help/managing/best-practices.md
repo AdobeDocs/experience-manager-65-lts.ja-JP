@@ -12,8 +12,8 @@ role: Admin,Architect,Data Architect,Developer,Leader
 exl-id: 8f8883d8-4e2b-4ba0-bd83-414a96e7d382
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3214'
-ht-degree: 100%
+source-wordcount: '3212'
+ht-degree: 98%
 
 ---
 
@@ -66,7 +66,7 @@ Adobe Experience Manager（AEM）実装プロジェクトの管理では、プ�
 
 >[!NOTE]
 >
->個々の必須ドキュメントと成果物の間には、直接の 1:1 の関係はありません。
+>個々の必須ドキュメントと成果物の間には、直接的な 1:1 関係はありません。
 
 ### 準備 {#preparation}
 
@@ -239,7 +239,7 @@ Adobe Experience Manager（AEM）実装プロジェクトの管理では、プ�
 
   開発の前に、デプロイ、リリース、テスト、問題の報告に必要なすべてのサポートプロセスを設定する必要があります。
 
-  詳しくは、[アドビサポートポータル](https://experienceleague.adobe.com/ja?support-solution=General&amp;lang=ja&amp;support-tab=home#support)も参照してください。
+  詳しくは、[アドビサポートポータル](https://experienceleague.adobe.com/?support-solution=General&lang=ja&support-tab=home#support)も参照してください。
 
 ### 運用計画と運用 {#operations-planning-and-operations}
 
@@ -579,7 +579,7 @@ Adobe Experience Manager（AEM）実装プロジェクトの管理では、プ�
 
 チェックリストは、各マイルストーンの&#x200B;**必須ドキュメント**&#x200B;および&#x200B;**成果物**&#x200B;をカバーしています。
 
-* これらの間には、一対一の関係はありません。例えば、複数の必須ドキュメントのグループが 1 つの成果物になる場合もあります。
+* これらの間には 1:1 の関係はありません。例えば、必須ドキュメントのグループによって 1 つの成果物になる場合などです。
 * 同じマイルストーンの中で、あるペルソナからの成果物が、別のペルソナの必須ドキュメントになる場合もあります。
 
 ### 必須ドキュメント {#required-documents}

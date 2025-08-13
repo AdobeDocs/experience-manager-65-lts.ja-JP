@@ -11,8 +11,8 @@ role: Developer
 exl-id: 9036e26c-74cd-4013-a63d-70ece0f80904
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '3499'
-ht-degree: 99%
+source-wordcount: '3492'
+ht-degree: 97%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 99%
 
   ![wf-22-1](assets/wf-22-1.png)
 
-* [cq:dialog](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog)
+* [cq](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog)
 
   ダイアログには以下のタブがあります。
 
@@ -131,7 +131,7 @@ WorkItem には、作業項目（ステップなど）の実行中にのみ使�
 
    >[!NOTE]
    >
-   >cq:editConfig ノードについて詳しくは、[コンポーネントの編集動作の設定](/help/sites-developing/developing-components.md#configuring-the-edit-behavior)を参照してください。
+   >cq:editConfig ノードについて詳しくは、[ コンポーネントの編集動作の設定 ](/help/sites-developing/developing-components.md#configuring-the-edit-behavior) を参照してください。
 
 1. `cq:EditConfig` ノードの下に、次のノードを追加します。
 
@@ -180,7 +180,7 @@ WorkItem には、作業項目（ステップなど）の実行中にのみ使�
    * 名前：`cq:editConfig`
    * 型：`cq:EditConfig`
 
-   cq:editConfig ノードについて詳しくは、[コンポーネントの編集動作の設定](/help/sites-developing/developing-components.md#configuring-the-edit-behavior)を参照してください。
+   cq:editConfig ノードについて詳しくは、[ コンポーネントの編集動作の設定 ](/help/sites-developing/developing-components.md#configuring-the-edit-behavior) を参照してください。
 
 1. cq:EditConfig ノードの下に、次のノードを追加します。
 
@@ -215,7 +215,7 @@ WorkItem には、作業項目（ステップなど）の実行中にのみ使�
    * 名前：`cq:editConfig`
    * 型：`cq:EditConfig`
 
-   cq:editConfig ノードについて詳しくは、[コンポーネントの編集動作の設定](/help/sites-developing/components-basics.md#edit-behavior)を参照してください。
+   cq:editConfig ノードについて詳しくは、[ コンポーネントの編集動作の設定 ](/help/sites-developing/components-basics.md#edit-behavior) を参照してください。
 
 1. cq:EditConfig ノードの下に、次のノードを追加します。
 

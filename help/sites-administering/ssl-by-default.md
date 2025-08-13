@@ -12,8 +12,8 @@ role: Admin
 exl-id: 3fd6a54b-9220-4bb2-9625-4f459c4d3aa8
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 100%
+source-wordcount: '839'
+ht-degree: 97%
 
 ---
 
@@ -236,7 +236,7 @@ curl -u user:password -F "keystorePassword=password" -F "keystorePasswordConfirm
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
-コマンドを実行したら、すべての証明書がキーストアに送信されたことを確認します。以下から、**キーストア**からのエントリーをチェックしてください。
+コマンドを実行したら、すべての証明書がキーストアに送信されたことを確認します。以下から **キーストア** エントリを確認します。
 [http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service)
 
 ### TLS 1.3 接続の有効化 {#enabling-tls-connection}

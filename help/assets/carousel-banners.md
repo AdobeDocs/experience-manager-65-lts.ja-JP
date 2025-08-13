@@ -39,7 +39,7 @@ Web サイトではカルーセルバナーは次のように表示されます�
 
 ## カルーセルバナーの作成方法の視聴 {#watch-how-carousel-banners-are-created}
 
-[カルーセルバナーの作成方法](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)に関する説明を視聴します（10 分 33 秒）。また、カルーセルバナーのプレビュー、編集および配信方法についても説明します。
+[カルーセルバナーの作成方法](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner)に関する説明を視聴します（10 分 33 秒）。また、カルーセルバナーのプレビュー、編集および配信方法についても説明します。
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ Experience Manager Assets でバナー画像にホットスポットまたは画
 通常は、特別なデバッグツールを使用する必要はありません。最新の Web ブラウザーには、十分なタスクを実行できる Web インスペクターが備わっています。Web インスペクターが搭載されている Web ブラウザーの例を次に示します。
 
 * Google Chrome で、ブラウザーから送信されるすべての HTTP リクエストを参照するには、F12 キー（Windows）または Command + Option + I キー（Mac）を押してデベロッパーツールパネルを開き、「Network」タブを選択します。
-* Firefox では、F12 キー（Windows）または Command + Option + I キー（Mac）を押して Firebug プラグインを有効にして「Net」タブを使用するか、組み込みの Inspector ツールとその「Network」タブを使用します。
+* Firefox では、F12 キー（Windows）または Command + Option + I キー（Mac）を押して Firebug プラグインを有効にして「Net」タブを使用するか、ビルトインの Inspector ツールとその「Network」タブを使用します。
 
 ブラウザーでネットワーク監視をオンにして、ページ上でクイックビューをトリガーします。
 
@@ -293,7 +293,6 @@ Experience Manager Assets でバナー画像にホットスポットまたは画
    * 「**[!UICONTROL ハイパーリンク]**」を選択します。
 
       * Adobe Experience Manager Sites のユーザーである場合は、サイトセレクターアイコン（フォルダー）を選択して URL に移動します。
-
         >[!NOTE]
         >
         >インタラクティブコンテンツに相対 URL のリンク（特に Experience Manager Sites ページへのリンク）がある場合、URL ベースのリンク方法は使用できません。

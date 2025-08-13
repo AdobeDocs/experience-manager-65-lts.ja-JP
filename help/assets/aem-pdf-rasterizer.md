@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 003ca1f1-5653-4b6c-a63f-ad5196adf3f2
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 100%
+source-wordcount: '691'
+ht-degree: 99%
 
 ---
 
@@ -52,7 +52,7 @@ PDF Rasterizer を使用して生成されたサムネールおよびプレビ�
 
    * MIME タイプ： `application/pdf` または `application/postscript`
    * コマンド: `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
-   * 追加するサムネールのサイズ：319:319、140:100、48:48。必要に応じて、サムネールのカスタム設定を追加します。
+   * 追加するサムネールのサイズ：319:319、140:100、48:48 必要に応じて、サムネールのカスタム設定を追加します。
 
    `PDFRasterizer` コマンドのコマンドライン引数には、次を含めることができます。
 

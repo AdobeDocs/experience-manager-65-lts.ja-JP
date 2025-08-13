@@ -11,8 +11,8 @@ role: Developer
 exl-id: c044d541-24d6-4975-9b38-6a4317a16358
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '2313'
-ht-degree: 99%
+source-wordcount: '2321'
+ht-degree: 97%
 
 ---
 
@@ -310,7 +310,7 @@ daterange 述語と同じように、ファセットの抽出に対応してい�
 
 ### orderby {#orderby}
 
-結果の並べ替えを許可します。複数のプロパティ別に並べ替える必要がある場合は、`1_orderby=first`、`2_oderby=second` などの数字のプレフィックスを使用して、この述語を複数回追加する必要があります。
+結果の並べ替えを許可します。複数のプロパティ別に並べ替える必要がある場合は、`1_orderby=first`、`2_oderby=second` などの数字の接頭辞を使用して、この述語を複数回追加する必要があります。
 
 #### プロパティ {#properties-13}
 
@@ -380,7 +380,7 @@ JCR プロパティとその値に一致します。
 
 * **depth**
 
-  その下にプロパティや相対パスが存在できるワイルドカードレベルの数（例えば、`property=size depth=2` は、node/size、node/&ast;/size、node/&ast;/&ast;/size をチェックします）。
+  その下にプロパティや相対パスが存在できるワイルドカードレベルの数（例えば、`property=size depth=2` は、node/size、node/&amp;ast;/size、node/&amp;ast;/&amp;ast;/size をチェックします）。
 
 ### rangeproperty {#rangeproperty}
 
@@ -418,7 +418,7 @@ JCR プロパティと間隔を一致します。`LONG`、`DOUBLE` および `DE
 
 ### relativedaterange {#relativedaterange}
 
-`JCR DATE` プロパティと日時の間隔を照合します（現在のサーバー時間に対する時間オフセットを使用します）。ミリ秒値または Bugzilla 構文 `1s 2m 3h 4d 5w 6M 7y`（それぞれ 1 秒、2 分、3 時間、4 日、5 週間、6 か月、7 年）を使用して、`lowerBound` と `upperBound` を指定できます。先頭に「`-`」を付けると、オフセットが現在の時間より前のマイナスであることを意味します。`lowerBound` または `upperBound` のいずれかのみを指定する場合は、他方がデフォルトで 0（現在の時間）になります。
+`JCR DATE` プロパティと日時の間隔を照合します（現在のサーバー時間に対する時間オフセットを使用します）。ミリ秒値または Bugzilla 構文 `1s 2m 3h 4d 5w 6M 7y`（それぞれ 1 秒、2 分、3 時間、4 日、5 週間、6 か月、7 年）を使用して、`lowerBound` と `upperBound` を指定できます。接頭辞として「`-`」を付けると、オフセットが現在の時間より前のマイナスであることを意味します。`lowerBound` または `upperBound` のいずれかのみを指定する場合は、他方がデフォルトで 0（現在の時間）になります。
 
 例：
 
@@ -482,7 +482,7 @@ daterange 述語と同じように、ファセットの抽出に対応してい�
 
    * **selective**：
 
-     `p.properties` で指定されたプロパティのみ。相対パスのスペース区切り（URL では「+」を使用）のリストです。相対パスの深さが 1 より大きい場合は、子オブジェクトとして表現されます。特殊な jcr:path プロパティにはヒットのパスが含まれます。
+     `p.properties` で指定されたプロパティのみ。相対パスのスペース区切り（URL では「+」を使用）のリストになります。相対パスの深さが 1 より大きい場合は、子オブジェクトとして表現されます。特殊な jcr:path プロパティにはヒットのパスが含まれます。
 
 ### savedquery {#savedquery}
 

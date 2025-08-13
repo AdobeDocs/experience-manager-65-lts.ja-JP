@@ -44,7 +44,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->Experience Manager 6.4.6.0 以降の *Dynamic Media - Scene7 mode* にのみ適用されます。
+>Experience Manager *以降の* Dynamic Media - Scene7 mode6.4.6.0 にのみ適用されます。
 
 後で変更した既存の処理プロファイルがあるフォルダー内のアセットを再処理できます。
 

@@ -13,8 +13,8 @@ hidefromtoc: true
 exl-id: 37f5efaa-db0b-4035-987d-4140fc5a97be
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
-source-wordcount: '4604'
-ht-degree: 100%
+source-wordcount: '4602'
+ht-degree: 99%
 
 ---
 
@@ -286,7 +286,7 @@ AEM Forms プロセスの出力パラメーターは、次の例に示すよう�
 
 次の手順を実行して `MyApplication/EncryptDocument` プロセスを呼び出すことができます。
 
-1. ActionScript または MXML を使用して `mx:RemoteObject` インスタンスを作成します。「mx:RemoteObject インスタンスの作成」を参照してください。
+1. ActionScript または MXML を使用して `mx:RemoteObject` インスタンスを作成します。mx:RemoteObject インスタンスの作成を参照してください。
 1. AEM Forms と通信するための `ChannelSet` インスタンスを設定し、それを `mx:RemoteObject` インスタンスに関連付けます。「AEM Forms へのチャネルを作成」を参照してください。
 1. ChannelSet の `login` メソッドまたはサービスの `setCredentials` メソッドを呼び出して、ユーザー識別情報の値とパスワードを指定します。（[シングルサインオンの使用](invoking-aem-forms-using-remoting.md#using-single-sign-on)を参照。）
 1. `mx.rpc.livecycle.DocumentReference` インスタンスに、`MyApplication/EncryptDocument` プロセスに渡す保護されていない PDF ドキュメントを入力します。（[ドキュメントの入力パラメーターとしての受け渡し](invoking-aem-forms-using-remoting.md#passing-a-document-as-an-input-parameter)を参照。）
@@ -624,7 +624,7 @@ AEM Forms は、アップロードサーブレットに渡されたトークン�
 >[!NOTE]
 >
 >* セキュリティで保護されていないドキュメントを受け入れるように AEM Forms を設定するには、「Flex アプリケーションからのセキュリティで保護されていないドキュメントのアップロードを許可」オプションを選択します。次に、アプリケーションまたはサービスを再起動して、設定が有効になることを確認します。
->* 「Ctrl + C」コマンドを使用して SDK を再起動することをお勧めします。Java プロセスの停止など、別の方法を使用して AEM SDK を再起動すると、AEM 開発環境で不整合が生じる場合があります。
+> * 「Ctrl + C」コマンドを使用して SDK を再起動することをお勧めします。Java プロセスの停止など、別の方法を使用して AEM SDK を再起動すると、AEM 開発環境で不整合が生じる場合があります。
 
 
 ### クイックスタート：Remoting を使用してセキュリティで保護されたドキュメントを渡すことによる短時間のみ有効なプロセスの呼び出し {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}

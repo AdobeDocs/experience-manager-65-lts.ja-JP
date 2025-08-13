@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: cb6528fd-6761-412d-8413-c72049acf91d
 source-git-commit: d9eb2edf01200b575c6f99a47e5c010e3b3ca28a
 workflow-type: tm+mt
-source-wordcount: '3805'
-ht-degree: 99%
+source-wordcount: '3799'
+ht-degree: 98%
 
 ---
 
@@ -285,7 +285,7 @@ ht-degree: 99%
 
 レターを公開する前に、またはパブリッシュインスタンスでドラフトを保存する前に、オーサーインスタンスとパブリッシュインスタンスで次の手順を実行して、「ドラフトとして保存」機能を有効にします。
 
-*cq:lastReplicationAction*、*cq:lastreplicated* および *cq:lastReplicatedBy* プロパティは、デフォルトではパブリッシュインスタンスに引き継がれません。*cq:lastReplicationAction*、*cq:lastreplicated* および *cq:lastReplicatedBy* プロパティをパブリッシュインスタンスに引き継ぐには、[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] コンポーネントを無効にします。コンポーネントを無効にするには：
+*cq:lastReplicationAction*、*cq:lastreplicated* および *cq:lastReplicatedBy* プロパティは、デフォルトではパブリッシュインスタンスに引き継がれません。 *cq:lastReplicationAction*、*cq:lastreplicated* および *cq:lastReplicatedBy* プロパティをパブリッシュインスタンスに引き継ぐには、[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] コンポーネントを無効にします。 コンポーネントを無効にするには：
 
 1. オーサーインスタンスで、 Adobe Experience Manager web コンソールのコンポーネントコンソールを開きます。デフォルトの URL は、`http://author-server:port/system/console/components` です。
 
@@ -299,7 +299,7 @@ ht-degree: 99%
 
 1. パブリッシュインスタンスで、[!UICONTROL Adobe Manager web コンソールの設定]を開きます。デフォルトの URL は、`https://publish-server:port/system/console/configMgr` です。
 
-1. **[!UICONTROL Correspondence Management - オーサーインスタンスバージョンの復元設定]**&#x200B;コンポーネントを検索して開きます。
+1.  **[!UICONTROL Correspondence Management - オーサーインスタンスバージョンの復元設定]**&#x200B;コンポーネントを検索して開きます。
 
 1. 「**[!UICONTROL VersionRestoreManager Author URL]**」フィールドを見つけて、オーサーインスタンスの URL を指定します。
 

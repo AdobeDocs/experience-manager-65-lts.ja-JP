@@ -7,8 +7,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
 source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
 workflow-type: tm+mt
-source-wordcount: '10487'
-ht-degree: 100%
+source-wordcount: '10480'
+ht-degree: 99%
 
 ---
 
@@ -279,9 +279,9 @@ Dynamic Media を有効にし、ビデオクラウドサービスを設定済み
 
 <!-- DEAD The following are best-practice tips for encoding source video files.
 
-For advice about video encoding, see [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_jp).
+For advice about video encoding, see [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en).
 
-* [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_jp). -->
+* [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en). -->
 
 ### ソースビデオファイル {#source-video-files}
 
@@ -323,7 +323,7 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 | 1.78 | 16:9 |
 | 0.56 | 9:16 |
 
-例えば、幅 1,440、高さ 1,080 のビデオの縦横比は 1,440/1,080、つまり 1.33 になります。このビデオファイルをエンコードするには、縦横比 4:3 のビデオエンコーディングプリセットを選択します。
+例えば、幅 1,440、高さ 1,080×ビデオの縦横比は 1,440/1,080 （1.33）になります。この場合、縦横比が 4 :3 のビデオエンコーディングプリセットを選択して、ビデオファイルをエンコードします。
 
 ### ビットレート {#bitrate}
 
@@ -516,7 +516,7 @@ Dynamic Media で標準提供されているビデオビューアを使用して
       appMeasurementBridge);
      ```
 
-   appMeasurementBridge オブジェクトには組み込みのトラッキング関数があります。ただし、複数のトラッキングシステムやその他の機能をサポートするために、独自のトラッキング関数を作成することもできます。
+   appMeasurementBridge オブジェクトにはビルトインのトラッキング関数があります。ただし、複数のトラッキングシステムやその他の機能をサポートするために、独自のトラッキング関数を作成することもできます。
 
 <!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
@@ -927,7 +927,7 @@ Experience Manager 内のすべてのビデオには、サムネールを関連�
 
 `/content/dam/*<folder_name*>/<*video_name*>/jcr:content/manualThumbnail`
 
-ビデオのサムネiルをカスタマイズする機能は、ビデオがあるフォルダーにビデオプロファイルを適用した後でのみ使用できます。
+ビデオのサムネイルをカスタマイズする機能は、ビデオがあるフォルダーにビデオプロファイルを適用した後でのみ使用できます。
 
 「[Dynamic Media - ハイブリッドモード のビデオサムネイルについて](#about-video-thumbnails-in-dynamic-media-hybrid-mode)」も参照してください。
 
@@ -984,7 +984,7 @@ Dynamic Media では、ビデオの合計時間に基づいて 10 個（デフ�
 
 10 個のサムネイルが保持されるので、後で別のサムネールを選択する場合にシリーズを再生成する必要はありません。10 個のサムネール画像をプレビューし、ビデオで使用する画像を選択します。デフォルトに変更する場合は、CRXDE Lite を使用して、サムネール画像が生成される時間間隔を設定できます。例えば、ビデオから均等に配置された 4 つのサムネイル画像のみを生成する場合は、間隔を 24%、49%、74%、99%に設定できます。
 
-ビデオのアップロード後、web サイトにビデオを公開する前に、いつでもビデオサムネiルを追加できるのが理想です。
+ビデオのアップロード後、web サイトにビデオを公開する前に、いつでもビデオサムネイルを追加できるのが理想です。
 
 Dynamic Media で生成されたサムネイルを使用する代わりに、ビデオを表すカスタムサムネイルをアップロードすることもできます。例えば、ビデオのタイトル、人目を引くオープニング画像、またはビデオからキャプチャした特定の画像を含むカスタムサムネール画像を作成できます。アップロードするカスタムビデオサムネール画像は、最大解像度が 1,280 x 720 ピクセル（最小幅 640 ピクセル）で、2 MB を超えないようにします。
 
@@ -1110,7 +1110,7 @@ String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean
 
 >[!TAB pom.xml への依存関係の追加]
 
-+++**pom.xml への依存関係の追加**
++++**pom.xml への依存関係の追加** 
 
 ```java
 dependency> 
@@ -1125,7 +1125,7 @@ dependency>
 
 >[!TAB サンプルサーブレット]
 
-+++**サンプルサーブレット**
++++**サンプルサーブレット** 
 
 ```java
 @Component
@@ -1204,7 +1204,7 @@ public class ManifestServlet extends HttpServlet {
 
 >[!TAB サーブレットの応答クラス]
 
-+++**サーブレットの応答クラス**
++++**サーブレットの応答クラス** 
 
 ```java
 public class ManifestUrl extends VideoResponse { 
@@ -1234,7 +1234,7 @@ public abstract class VideoResponse {
 
 >[!TAB サーブレットで参照される定数ファイル]
 
-+++**サーブレットで参照される定数ファイル**
++++**サーブレットで参照される定数ファイル** 
 
 ```java
 public final class Constants { 
@@ -1253,7 +1253,7 @@ public final class Constants {
 
 >[!TAB ServletContext]
 
-+++**ServletContext**
++++**ServletContext** 
 
 `servletContext` を使用して上記のサーブレットをマウントします。以下は `servletContext` の例です。
 

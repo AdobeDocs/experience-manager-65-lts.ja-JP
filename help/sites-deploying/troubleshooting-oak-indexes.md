@@ -11,8 +11,8 @@ role: Admin
 exl-id: 6f92750a-4eaa-43cf-8f67-b1a65b1c6930
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 100%
+source-wordcount: '1402'
+ht-degree: 88%
 
 ---
 
@@ -30,7 +30,7 @@ AEM の内部インデックス再作成プロセスは、リポジトリデー�
 
 時間がかかっているインデックス作成を最初に検出するには、`IndexStats` JMX MBean を確認する必要があります。影響を受ける AEM インスタンスで、次の手順を実行します。
 
-1. Web コンソールを開いて「JMX」タブをクリックするか、https://&lt;ホスト>:&lt;ポート>/system/console/jmx（例：[http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)）に移動します。
+1. Web コンソールを開いて「JMX」タブをクリックするか、https://&lt; ホスト >:&lt; ポート >/system/console/jmx （例：[http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)）に移動します。
 1. `IndexStats` Mbean に移動します。
 1. 「`async`」および「`fulltext-async`」の `IndexStats` MBean を開きます。
 
@@ -55,7 +55,7 @@ AEM の内部インデックス再作成プロセスは、リポジトリデー�
 
 1. 非同期インデックス作成に使用する Apache Sling スケジューラー用の新しい分離スレッドプールを定義します。
 
-   * 影響を受ける AEM インスタンスで、AEM OSGi web コンソール／OSGi／設定／Apache Sling Scheduler に移動するか、https://&lt;ホスト>:&lt;ポート>/system/console/configMgr（例：[http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)）に移動します。
+   * 影響を受けるAEM インスタンスで、AEM OSGi web コンソール/OSGi/設定/Apache Sling Scheduler に移動するか、https://&lt; ホスト >:&lt; ポート >/system/console/configMgr （例：[http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)）に移動します。
    * 「許可されたスレッドプール」フィールドに、値が「oak」のエントリを追加します。
    * 変更を保存するには、右下の「**保存**」をクリックします。
 
@@ -63,7 +63,7 @@ AEM の内部インデックス再作成プロセスは、リポジトリデー�
 
 1. Apache Sling スケジューラーの新しいスレッドプールが登録され、Apache Sling スケジューラーのステータス web コンソールに表示されていることを確認します。
 
-   * AEM OSGi web コンソール／ステータス／Sling Scheduler に移動するか、https://&lt;ホスト>:&lt;ポート>/system/console/status-slingscheduler（例：[http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler)）に移動します。
+   * AEM OSGi web コンソール/ステータス/Sling Scheduler に移動するか、https://&lt; ホスト >:&lt; ポート >/system/console/status-slingscheduler （例：[http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler)）に移動します。
    * 次のプールエントリが存在することを確認します。
 
       * ApacheSlingoak
@@ -75,7 +75,7 @@ AEM の内部インデックス再作成プロセスは、リポジトリデー�
 
 リポジトリに対する変更やコミットが短時間で多すぎると、監視キューがいっぱいになるので、インデックス作成が遅延する可能性があります。まず、監視キューがいっぱいかどうかを確認します。
 
-1. web コンソールに移動して「JMX」タブをクリックするか、https://&lt;ホスト>:&lt;ポート>/system/console/jmx（例：[http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)）に移動します。
+1. web コンソールに移動して「JMX」タブをクリックするか、https://&lt; ホスト >:&lt; ポート >/system/console/jmx （例：[http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)）に移動します。
 1. Oak リポジトリ統計 MBean を開き、いずれかの `ObservationQueueMaxLength` 値が 10,000 より大きいかどうかを確認します。
 
    * 通常の操作では、この最大値は（特に `per second` セクションでは）最終的に 0 になる必要があるので、`ObservationQueueMaxLength` の秒の指標が 0 であることを確認します。
@@ -124,7 +124,7 @@ AEM の内部インデックス再作成プロセスは、リポジトリデー�
 1. 手順 1 に示されているすべての情報を収集した後、AEM を再起動します。
 
    * 同時負荷が高い場合（監視キューのオーバーフローなど）は、AEM を再起動すると問題が解決することがあります。
-   * 再起動しても問題が解決しない場合は、[アドビサポート](https://experienceleague.adobe.com/ja?support-solution=General&amp;lang=ja&amp;support-tab=home#support)に問題を報告し、手順 1 で収集したすべての情報を提供してください。
+   * 再起動しても問題が解決しない場合は、[アドビサポート](https://experienceleague.adobe.com/?support-solution=General&lang=ja&support-tab=home#support)に問題を報告し、手順 1 で収集したすべての情報を提供してください。
 
 ## 非同期のインデックス再作成の安全な中止 {#safely-aborting-asynchronous-re-indexing}
 
@@ -137,7 +137,7 @@ AEM の内部インデックス再作成プロセスは、リポジトリデー�
 
 1. 停止する必要がある再インデックスレーンを制御する IndexStats MBean を識別します。
 
-   * AEM OSGi web コンソール／メイン／JMX、または https://&lt;ホスト>:&lt;ポート>/system/console/jmx（例：[http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)）に移動して、JMX コンソールから該当する IndexStats MBean に移動します。
+   * AEM OSGi web コンソール/メイン/JMX、またはhttps://&lt; ホスト >:&lt; ポート >/system/console/jmx （例：[http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)）に移動して、JMX コンソールから該当する IndexStats MBean に移動します。
    * 停止するインデックス再作成レーン（`async`、`async-reindex`、`fulltext-async`）に基づいて IndexStats MBean を開きます。
 
       * 該当するレーンを識別し、IndexStats MBean インスタンスを特定するには、Oak インデックスの「async」プロパティを確認します。「async」プロパティには、`async`、`async-reindex` または `fulltext-async` のレーン名が含まれています。

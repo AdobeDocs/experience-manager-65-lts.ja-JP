@@ -73,7 +73,7 @@ AEM 6.5 LTS の場合も、次の 2 種類の Uber Jar があります。
 
 **主な違い：AEM 6.5 とAEM 6.5 LTS Uber Jar**
 
-* AEM 6.5 では、公開 API と非推奨 API の両方が必要な場合は、`pom.xml` ファイルに `uber-jar-6.5.x-apis-with-deprecations.jar` して include single jar を使用できます。
+* AEM 6.5 では、公開 API と非推奨 API の両方が必要な場合は、`uber-jar-6.5.x-apis-with-deprecations.jar` ファイルに `pom.xml` して include single jar を使用できます。
 * AEM 6.5 LTS では、公開 API と非推奨 API の両方が必要な場合、公開 API 用の `uber-jar-6.6.x-apis.jar` と非推奨 API 用の `uber-jar-6.6.x-deprecated-apis.jar` という 2 つの異なる jar を含める必要があります。
 
 **非推奨（廃止予定）の API JAR の Maven 座標**

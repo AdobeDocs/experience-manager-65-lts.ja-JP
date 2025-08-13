@@ -12,8 +12,8 @@ hidefromtoc: true
 exl-id: a8ec523c-b304-41ba-9980-8ba84e076c7d
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 100%
+source-wordcount: '302'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Acrobat Reader DC Extensions サービスでは、次のクイックスタートを使用できます。
 
-[クイックスタート（SOAP モード）：Java API を使用した使用権限の適用](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
+[クイックスタート（SOAP モード）](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
 [PDF ドキュメントから使用権限を削除](#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api)
 
@@ -33,7 +33,7 @@ AEM Forms の操作は、AEM Forms で厳密に型指定された API を使用�
 >
 >「AEM Forms によるプログラミング」のクイックスタートは、Forms サーバーオペレーティングシステムに基づいています。ただし、UNIX などの別のオペレーティングシステムを使用している場合は、Windows 固有のパスを、該当するオペレーティングシステムでサポートされているパスに置き換えます。同様に、別の J2EE アプリケーションサーバーを使用している場合は、有効な接続プロパティを必ず指定してください。（[接続プロパティの設定](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)を参照）。
 
-## クイックスタート（SOAP モード）：Java API を使用した使用権限の適用 {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
+## クイックスタート（SOAP モード） :ApplyingJava API を使用した使用権限 {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
 次の Java コードの例では、 使用権限を *Loan.pdf* という名前の PDF ドキュメントに適用します。権限を持つ PDF ドキュメントは、*LoanUsageRights.pdf* という名前の PDF ファイルとして保存されます。この PDF ドキュメントには、`enabledComments`、`enabledFormFillIn`、および `enabledDigitalSignatures` の使用権限が適用されます。（[PDF ドキュメントへの使用権限の適用](/help/forms/developing/assigning-usage-rights.md)）。
 

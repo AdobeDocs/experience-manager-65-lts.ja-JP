@@ -8,8 +8,8 @@ role: Admin
 exl-id: f185c622-1681-4221-a082-cac71d6b510b
 source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '4381'
-ht-degree: 100%
+source-wordcount: '4379'
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 100%
       * 代替の設定ノード：`.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
       * `text: .../text/dialog/items/tab1/items/text`
 
-   * 型：**jcr:primaryType** `cq:Widget`
+   * **jcr:primaryType** `cq:Widget` タイプです。
    * いずれも次のプロパティを持ちます。
 
       * **名前** `name`
@@ -455,12 +455,10 @@ CRXDE でプロパティを保存すると、HTML 表現された文字が表示
 1. このノード（特殊文字の範囲に従って命名）の下に、次の 2 つのプロパティを追加します。
 
    * **名前** `rangeStart`
-
      **型** `Long`
      **値** 範囲内の最初の文字の [Unicode](https://unicode.org/) 表現（10 進数）
 
    * **名前** `rangeEnd`
-
      **型** `Long`
      **値** 範囲内の最後の文字の [Unicode](https://unicode.org/) 表現（10 進数）
 
@@ -500,8 +498,8 @@ CRXDE でプロパティを保存すると、HTML 表現された文字が表示
    >* **型** `String[]`
    >
    >* **値** 必要に応じて、次のいずれかまたは両方。
-   >* `table`：スタイルを含むテーブルのプロパティの編集を許可する場合。
-   >* `cellprops`：スタイルを含むセルのプロパティの編集を許可する場合。
+   >   * `table`：スタイルを含むテーブルのプロパティの編集を許可する場合。
+   >   * `cellprops`：スタイルを含むセルのプロパティの編集を許可する場合。
 
 1. CSS スタイルシートの場所を定義して、それらを参照できるようにします。これは、[テキストのスタイル](#textstyles)を定義する場合と同じなので、[スタイルシートの場所の指定](#locationofstylesheet)を参照してください。他のスタイルを定義済みであれば、場所は定義されている可能性があります。
 1. `table` ノードの下に、次の新しいノードを作成します（必要に応じて）。
@@ -572,7 +570,7 @@ CRXDE でプロパティを保存すると、HTML 表現された文字が表示
 1. 次のいずれかの操作を行って、使用する言語の辞書を見つけます。
 
    * 使用する言語の辞書を探します。辞書ページで、元のソースまたは作成者の web ページへのリンクを探します。そのページで v2.x の辞書ファイルを見つけます。
-   * [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries) で v2.x 辞書ファイルを探します。
+   * [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries) で v2.x 辞書ファイルを検索します。
 
 1. スペル定義を含むアーカイブをダウンロードします。アーカイブの内容をファイルシステム上に抽出します。
 

@@ -22,7 +22,7 @@ ht-degree: 0%
 
 1. Java との互換性：AEM 6.5 LTS は、Java™ 17 で実行するようにインストールおよび設定する必要があります。 設定が完了したら、AEM インスタンスを起動し、すべてのバンドルがアクティブで問題なく動作していることを確認します
 1. システムリソース：移行プロセス中に両方のリポジトリを処理するのに十分なディスク領域とメモリを確保してください
-1. Oak アップグレードツール：（公式の Maven リポジトリ [ から `oak-upgrade` jar をダウンロード ](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) ます。 バージョンが、AEM 6.5 LTS で使用されている oak-core のバージョンと一致していることを確認します。 Oak アップグレードツールは、Oracle® Java™ 11 以降で実行されます
+1. Oak アップグレードツール：（公式の Maven リポジトリ `oak-upgrade` から [ jar をダウンロード ](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) ます。 バージョンが、AEM 6.5 LTS で使用されている oak-core のバージョンと一致していることを確認します。 Oak アップグレードツールは、Oracle® Java™ 11 以降で実行されます
 
 ## ステップバイステップの移行プロセス {#step-by-step-migration-process}
 

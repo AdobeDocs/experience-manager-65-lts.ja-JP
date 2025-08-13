@@ -11,8 +11,8 @@ role: User
 exl-id: b8d9df45-8b71-4f93-b94a-ecaf3da9b67b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 100%
+source-wordcount: '671'
+ht-degree: 93%
 
 ---
 
@@ -64,7 +64,7 @@ AEM でバウンスメールを追跡するには、バウンスメールが受�
 
    検索するフラグを設定できます。
 
-   `imap.flag.SEEN`：新規または未読のメッセージには false を、既読のメッセージには true を設定します。
+   新規または未読のメッセージには false を、既読のメッセージには true を `imap.flag.SEEN`:Set します。
 
    フラグの完全リストについて詳しくは、[https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html) を参照してください。
 

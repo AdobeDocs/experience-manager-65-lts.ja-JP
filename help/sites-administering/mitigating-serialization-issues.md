@@ -132,7 +132,7 @@ URL にアクセスすると、エージェントに関連するヘルスチェ�
    >
    >Adobe 配布版の NotSoSerial エージェント JAR は、AEM インストールの `crx-quickstart/opt/notsoserial/` フォルダーにあります。
 
-1. JVM を停止して再開します。
+1. JVM を停止して再起動します。
 
 1. 前述の[エージェントのアクティベートの検証](/help/sites-administering/mitigating-serialization-issues.md#verifying-the-agent-s-activation)のステップに従って、エージェントのアクティベートをもう一度検証します。
 

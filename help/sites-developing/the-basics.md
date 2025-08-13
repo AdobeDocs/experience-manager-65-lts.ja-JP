@@ -11,8 +11,8 @@ role: Developer
 exl-id: fe3735ff-5c9b-4eb8-bf1d-f2189ec7e26f
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '3251'
-ht-degree: 99%
+source-wordcount: '3237'
+ht-degree: 96%
 
 ---
 
@@ -44,7 +44,7 @@ Java™ コンテンツリポジトリ（JCR）の規格である [JSR 283](http
 
 仕様を主導しているのは、Adobe Research（スイス）AG です。
 
-[JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) パッケージ、javax.jcr。「&ast;」は、リポジトリコンテンツの直接アクセスと操作に使用されます。
+[JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) パッケージ、javax.jcr。「&amp;ast;」は、リポジトリコンテンツの直接アクセスと操作に使用されます。
 
 ## Experience Server（CRX）と Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -174,7 +174,7 @@ AEM の特定のインスタンスでサポートされているスクリプト�
 
 * GET/HEAD リクエストおよび .html で終わる URL（デフォルトのリクエストタイプ、デフォルトの形式）
 
-  スクリプトは /apps/hr/jobs/jobs.esp です。sling:resourceType の最後のセクションがファイル名となります。
+  スクリプトは/apps/hr/jobs/jobs.espです。Sling の最後のセクションがファイル名 :resourceType なります。
 
 * POST リクエスト（GET／HEAD を除くすべてのリクエストタイプ。メソッド名は大文字にする必要があります）
 
@@ -196,7 +196,7 @@ AEM の特定のインスタンスでサポートされているスクリプト�
 
   スクリプトは `/apps/hr/jobs/jobs.print.esp` です。セレクターがスクリプト名に追加されます。
 
-* sling:resourceType が定義されていない場合は、次のようになります。
+* sling:resourceType が定義されていない場合は、次の操作が行われます。
 
    * コンテンツパスは、適切なスクリプトを検索するために使用されます（パスに基づいた ResourceTypeProvider がアクティブな場合）。
 
@@ -278,21 +278,21 @@ Sling 内では、スクリプトを直接呼び出しできません。REST サ
 * GET 以外の HTTP メソッドの自動処理。これには以下が含まれます。
 
    * Sling のデフォルトの実装で扱う POST、PUT、DELETE
-   * sling:resourceType の場所にある `POST.jsp` スクリプト
+   * sling`POST.jsp` の場所にある :resourceType スクリプト
 
 * コードアーキテクチャに必要なクリーン性や明確な構造が失われます。これは大規模な開発では最も重要です。
 
 ### Sling API {#sling-api}
 
-これは、Sling API パッケージ、org.apache.sling.&ast;、およびタグライブラリを使用します。
+これは、Sling API パッケージ、org.apache.sling.&amp;ast;、およびタグライブラリを使用します。
 
-### sling:include を使用した既存の要素の参照 {#referencing-existing-elements-using-sling-include}
+### Sling を使用した既存の要素の参照 :include {#referencing-existing-elements-using-sling-include}
 
 最後の考慮事項は、スクリプト内にある既存の要素の参照の必要性です。
 
 より複雑なスクリプト（集計スクリプト）は、複数のリソース（ナビゲーション、サイドバー、フッター、リストの要素など）へのアクセスが必要であり、そのために&#x200B;*リソース*&#x200B;を含めます。
 
-これは、sling:include(&quot;/&lt;path>/&lt;resource>&quot;) コマンドを使用して行えます。これにより、参照されるリソースの定義を効率的に含めることができます。例えば、次のステートメントでは、画像をレンダリングするために既存の定義を参照しています。
+それには、sling:include （&quot;/&lt;path>/&lt;resource>&quot;） コマンドを使用します。 これにより、参照されるリソースの定義を効率的に含めることができます。例えば、次のステートメントでは、画像をレンダリングするために既存の定義を参照しています。
 
 ```xml
 %><sling:include resourceType="geometrixx/components/image/img"/><%
@@ -325,7 +325,7 @@ OSGi は、モジュラー型アプリケーションとライブラリを開発
 * 更新
 * アンインストール
 * ステータスの確認
-* 特定のバンドルに関する詳細情報（記号名、バージョン、場所など）へのアクセス
+* 特定のバンドルに関する詳細情報（シンボリック名、バージョン、場所など）へのアクセス
 
 詳しくは、[Web コンソール](/help/sites-deploying/web-console.md)、[OSGI 設定](/help/sites-deploying/configuring-osgi.md)および [OSGi 設定](/help/sites-deploying/osgi-configuration-settings.md)を参照してください。
 
@@ -384,7 +384,7 @@ AEM 内では、多くの場合、コンポーネントを使用してリソー�
 
 **ページ** - ページはテンプレートの「インスタンス」です。
 
-ページには、cq:Page タイプの階層ノードと cq:PageContent タイプのコンテンツノードが含まれています。コンテンツノードの sling:resourceType プロパティは、ページのレンダリングに使用されるページコンポーネントを指しています。
+ページは、cq:Page タイプの階層ノードと cq:PageContent タイプのコンテンツノードを持ちます。 コンテンツノードの sling:resourceType プロパティは、ページのレンダリングに使用されるページコンポーネントを指しています。
 
 例えば、現在のページの名前を取得するには、スクリプト内で次のコードを使用します。
 

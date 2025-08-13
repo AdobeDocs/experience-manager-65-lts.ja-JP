@@ -1,5 +1,5 @@
 ---
-title: カスタム Adobe Campaign拡張機能
+title: カスタム Adobe Campaign 拡張機能
 description: AEM から Adobe Campaign で、または AEM から Adobe Campaign にカスタムコードを呼び出すことができます。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,12 +13,12 @@ index: false
 source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
 source-wordcount: '492'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 
-# カスタム Adobe Campaign拡張機能 {#creating-custom-extensions}
+# カスタム Adobe Campaign 拡張機能 {#creating-custom-extensions}
 
 通常、プロジェクトを実装する場合、AEM と Adobe Campaign の両方にカスタムコードが存在します。既存の API を使用して、AEM から Adobe Campaign で、または AEM から Adobe Campaign にカスタムコードを呼び出すことができます。このドキュメントでは、その方法について説明します。
 
@@ -43,7 +43,7 @@ AEM と Campaign の標準的な統合は、JSON と JSSP（JavaScript Server Pa
 
    ![ページの左上隅付近に星印が付いた新規アイコン。](do-not-localize/chlimage_1-4a.png)
 
-1. この JSSP ファイルの名前を入力します。この例では、**cus:custom.jssp** が使用されます（**cus** 名前空間にあることを意味します）。
+1. この JSSP ファイルの名前を入力します。この例では、**cus:custom.jssp** が使用されています（**cus** 名前空間内にあることを意味する）。
 
    ![chlimage_1-16](assets/chlimage_1-16a.png)
 

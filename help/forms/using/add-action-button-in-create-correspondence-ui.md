@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: 8294cbbe-f37f-41d0-b8e8-298f9413462e
 source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1853'
 ht-degree: 99%
 
 ---
@@ -116,13 +116,13 @@ Correspondence Management ソリューションでは、通信作成ユーザー
 
    | **名前** | **説明** |
    |---|---|
-   | serviceName | customAction に serviceName という名前の子タグが含まれる場合、関連するボタンまたはリンクをクリックすると、serviceName タグで表される名前でプロセスが呼び出されます。このプロセスで Letter PostProcess と同じ署名が使用されていることを確認します。サービス名に「Forms Workflow ->」プレフィックスを追加します。 |
-   | タグ名に cm_ プレフィックスが含まれるパラメーター | customAction に cm_ で始まる名前を持つ子タグが含まれる場合、後処理（レター後処理または serviceName タグで表される特別なプロセス）において、これらのパラメーターは、cm_ プレフィックスを取り除いた関連タグの下の入力 XML コードで使用できます。 |
+   | serviceName | customAction に serviceName という名前の子タグが含まれる場合、関連するボタンまたはリンクをクリックすると、serviceName タグで表される名前でプロセスが呼び出されます。このプロセスで Letter PostProcess と同じ署名が使用されていることを確認します。サービス名に「Forms Workflow ->」接頭辞を追加します。 |
+   | タグ名に cm_ 接頭辞が含まれるパラメーター | customAction に cm_ で始まる名前を持つ子タグが含まれる場合、後処理（レター後処理または serviceName タグで表される特別なプロセス）において、これらのパラメーターは、cm_ 接頭辞を取り除いた関連タグの下の入力 XML コードで使用できます。 |
    | actionName | クリックによって発生した後処理の場合、送信された XML には、ユーザーアクションの名前が付いたタグの下に名前の付いた特別なタグが含まれます。 |
 
 1. 「**すべて保存**」をクリックします。
 
-#### /apps ブランチ内のプロパティファイルを使用してローカルフォルダーを作成 {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
+#### /apps ブランチ内のプロパティファイルを使用してロケールフォルダーを作成 {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
 
 ACMExtensionsMessages.properties ファイルには、通信の作成ユーザーインターフェイス内のさまざまなフィールドのラベルとツールチップメッセージが含まれています。カスタマイズしたアクションやボタンを機能させるために、/apps branch にこのファイルのコピーを作成します。
 
@@ -148,7 +148,7 @@ ACMExtensionsMessages.properties ファイルには、通信の作成ユーザ�
 
    `/apps/fd/cm/config/defaultApp/locale/`
 
-   ACMExtensionsMessages.properties ファイルがローカルフォルダーにコピーされます。
+   ACMExtensionsMessages.properties ファイルが locale フォルダーにコピーされます。
 
 1. 新しく追加されたカスタムアクションまたはボタンのラベルをローカライズするには、関連するロケールの ACMExtensionsMessages.properties ファイルを `/apps/fd/cm/config/defaultApp/locale/` に作成します。
 

@@ -12,8 +12,8 @@ role: Admin
 exl-id: 71e3d2cd-4e22-44a2-88dd-1f165bf2b3d8
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '2672'
-ht-degree: 98%
+source-wordcount: '2678'
+ht-degree: 97%
 
 ---
 
@@ -218,7 +218,7 @@ TarMK コールドスタンバイのセットアップを作成するには、�
 >
 >インスタンスの役割は、Sling 設定 web コンソールで&#x200B;**プライマリ**&#x200B;または&#x200B;**スタンバイ**&#x200B;の実行モードの存在をチェックすることで、いつでも確認できます。
 >
->この操作は、*https://localhost:4502/system/console/status-slingsettings* にアクセスし、「**実行モード**」の行をチェックすることで実行できます。
+>これを行うには、*https://localhost:4502/system/console/status-slingsettings に移動し* 「実行モード **の行をチェック** ます。
 
 ## 初回の同期 {#first-time-synchronization}
 
@@ -325,7 +325,7 @@ TarMK コールドスタンバイのセットアップを作成するには、�
 
 これを行うには、次に示す手順に従います。
 
-1. JMX コンソールに移動し、**org.apache.jackrabbit.oak: Status (&quot;Standby&quot;)**&#x200B;bean を使用してコールドスタンバイインスタンスの同期処理を停止します。この方法について詳しくは、[監視](#monitoring)に関するセクションを参照してください。
+1. JMX コンソールに移動し、**org.apache.jackrabbit.oak: Status (&quot;Standby&quot;)**bean を使用してコールドスタンバイインスタンスの同期処理を停止します。この方法について詳しくは、[監視](#monitoring)に関するセクションを参照してください。
 1. コールドスタンバイインスタンスを停止します。
 1. ホットフィックスをプライマリインスタンスにインストールします。ホットフィックスのインストール方法について詳しくは、[パッケージの使用方法](/help/sites-administering/package-manager.md)を参照してください。
 1. インストール後の問題に対してインスタンスをテストします。

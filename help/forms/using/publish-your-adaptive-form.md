@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: de5cc19f-f3dc-42d5-877d-c15bd00487d7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 100%
+source-wordcount: '899'
+ht-degree: 97%
 
 ---
 
@@ -50,9 +50,9 @@ AEM [!DNL Forms] を使用するとフォーム開発者は、アダプティブ
 
 AEM [!DNL Forms] には AEM [!DNL Forms] コンテナという名前のコンポーネントが用意されており、これを使用してアダプティブフォームを AEM [!DNL Sites] ページに埋め込むことができます。デフォルトでは、このコンポーネントは AEM [!DNL Sites] コンテナには表示されません。次の手順を実行して AEM [!DNL Forms] コンテナコンポーネントを有効にし、アダプティブフォームを AEM [!DNL Sites] ページに埋め込みます。
 
-1. We.Retail サイトでページを作成し、編集用に開きます。（例：[https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html](https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html)）アダプティブフォームが [!DNL Sites] ページに埋め込まれます。
+1. We.Retail サイトでページを作成し、編集用に開きます。例えば、[https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html](https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html) です。 アダプティブフォームが [!DNL Sites] ページに埋め込まれます。
 
-   アダプティブフォームを既存の We.Retail [!DNL Site's] ページに埋め込むこともできます。例えば、「会社概要」ページ（[https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html](https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html)）に埋め込むことができます。これにより、ページを作成する時間を節約できます。以下では、ページを新たに作成する場合の手順を説明します。
+   アダプティブフォームを既存の We.Retail [!DNL Site's] ページに埋め込むこともできます。例えば、「会社概要」ページ [https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html](https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html) に埋め込むことができます。 これにより、ページを作成する時間を節約できます。以下では、ページを新たに作成する場合の手順を説明します。
 
    We.Retail サイトは AEM に付属しています。We.Retail サイトをインストールしていない場合は、[We.Retail 参照実装](https://helpx.adobe.com/jp/experience-manager/6-3/help/sites-developing/we-retail.html)を参照してサイトをインストールします。
 
@@ -60,7 +60,7 @@ AEM [!DNL Forms] には AEM [!DNL Forms] コンテナという名前のコンポ
 1. 「**[!UICONTROL レイアウトコンテナ]**」ボックス内を選択してから、![feedmanagement](assets/feedmanagement.png) を選択します。「**[!UICONTROL 許可されたコンポーネント]**」タブで、「**[!UICONTROL 一般]**」アコーディオンを展開し、「**[!UICONTROL AEM Form]**」オプションを選択して ![save_icon](assets/save_icon.svg) を選択します。AEM [!DNL Forms] コンテナコンポーネントはそのページに対して有効になっています。
 
 1. 手順 1 で開いた AEM [!DNL Sites] ページを含むブラウザータブを開きます。  「**[!UICONTROL コンポーネントをここにドラッグ]**」ボックスを選択して、**+ を選択します。**「**[!UICONTROL 新しいコンポーネントを挿入]**」ボックス内で、「**[!UICONTROL AEM Form]**」を選択します。この「**[!UICONTROL AEM Forms コンテナ]**」コンポーネントがページに追加されます。
-1. **[!UICONTROL AEM Forms コンテナ]**&#x200B;コンポーネントを選択し、![configure-icon](assets/configure-icon.svg) を選択します。AEM [!DNL Forms] コンテナのプロパティを含むダイアログボックス が表示されます。**[!UICONTROL アセットパス]**&#x200B;フィールドで「 shipping-address-add-update-form 」アダプティブフォームを参照して選択してください。![save_icon](assets/save_icon.svg) を選択します。アダプティブフォームがページに埋め込まれました。
+1. **[!UICONTROL AEM Forms コンテナ]**&#x200B;コンポーネントを選択し、![configure-icon](assets/configure-icon.svg) を選択します。AEM [!DNL Forms] コンテナのプロパティを含むダイアログボックス が表示されます。**[!UICONTROL アセットパス]**&#x200B;フィールドで「shipping-address-add-update-form」アダプティブフォームを参照して選択してください。![save_icon](assets/save_icon.svg) を選択します。アダプティブフォームがページに埋め込まれました。
 1. アダプティブフォームと [!DNL Sites] ページの両方を公開します。次の点について考慮してください。
 
    * 初めて AEM [!DNL Sites] ページを公開する場合で、かつ、フォームが埋め込まれている場合は、[!DNL Sites] ページに加えて、埋め込まれたフォームも公開してください。

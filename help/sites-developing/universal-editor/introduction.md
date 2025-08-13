@@ -6,8 +6,8 @@ role: Developer
 exl-id: 495df631-5bdd-456b-b115-ec8561f33488
 source-git-commit: 1529d3309a07aecaab29198f30e752ad00c53fab
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 26%
+source-wordcount: '1190'
+ht-degree: 20%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 26%
 1. Configuration Manager を開きます。
    * `http://<host>:<port>/system/console/configMgr`
 1. リストで **Apache Sling Main Servlet** を見つけ、**設定値を編集** をクリックします。
-1. **追加の応答ヘッダー** 属性（`sling.additional.response.headers`）が存在する場合は、その属性から `X-Frame-Options=SAMEORIGIN` 値を削除します。
+1. `X-Frame-Options=SAMEORIGIN` 追加の応答ヘッダー **属性（**）が存在する場合は、その属性から `sling.additional.response.headers` 値を削除します。
 1. 「**保存**」をクリックします。
 
 #### Adobe Granite クエリパラメーター認証ハンドラーを設定します。 {#query-parameter}
@@ -95,7 +95,7 @@ ht-degree: 26%
 1. リストで&#x200B;**ユニバーサルエディター URL サービス**&#x200B;を見つけて、「**設定値を編集**」をクリックします。
 1. ユニバーサルエディターを開くコンテンツ `sling:resourceTypes` パスまたはパスを定義します。
    * 「**ユニバーサルエディターを開くマッピング**」フィールドに、ユニバーサルエディターを開くパスを指定します。
-   * 「**ユニバーサルエディターで開く Sling:resourceTypes**」フィールドに、ユニバーサルエディターによって直接開かれるリソースのリストを指定します。
+   * ユニバーサルエディターで開く **Sling:resourceTypes フィールドに**、ユニバーサルエディターによって直接開かれるリソースのリストを指定します。
 1. 「**保存**」をクリックします。
 1. [Externalizer の設定](/help/sites-developing/externalizer.md)を確認し、少なくともローカル、オーサー、パブリッシュ環境が次の例のように設定されていることを確認します。
 
@@ -108,7 +108,7 @@ ht-degree: 26%
 これらの設定手順が完了すると、AEM は次の順序でページのユニバーサルエディターを開きます。
 
 1. AEM は `Universal Editor Opening Mapping` の下にあるマッピングを確認し、コンテンツがそこに定義されているパスの下にある場合は、ユニバーサルエディターが開かれます。
-1. `Universal Editor Opening Mapping` で定義されたパスの下にないコンテンツの場合、AEM はコンテンツの `resourceType` が、**ユニバーサルエディターで開かれる Sling:resourceTypes**&#x200B;で定義されたものと一致するかどうかを確認し、コンテンツがこれらのタイプのいずれかに一致する場合は、`${author}${path}.html` でユニバーサルエディターが開かれます。
+1. `Universal Editor Opening Mapping` で定義されたパスに属さないコンテンツの場合、AEMは、コンテンツの `resourceType` が、ユニバーサルエディターによって開かれる **Sling:resourceTypes で定義されたものと一致するかどうかを確認し** コンテンツがこれらのタイプのいずれかに一致する場合、ユニバーサルエディターは `${author}${path}.html` に開かれます。
 1. それ以外の場合は、AEM によってページエディターが開かれます。
 
 `Universal Editor Opening Mapping` の下でマッピングを定義するには、次の変数を使用できます。
@@ -137,7 +137,7 @@ AEMが更新および設定されたので、独自のローカル開発およ�
 1. Node.js のバージョン >=20 をインストールします。
 1. [ ソフトウェア配布 ](https://experienceleague.adobe.com/ja/docs/experience-cloud/software-distribution/home) から最新のユニバーサルエディターサービスをダウンロードして展開します
 1. 環境変数または `.env` ファイルを使用してユニバーサルエディターサービスを設定します。
-   * [ 詳しくは、AEM as a Cloud Service ユニバーサルエディターのドキュメントを参照してください。](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
+   * [ 詳しくは、AEM as a Cloud Service ユニバーサルエディターのドキュメントを参照してください。](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
    * 内部 IP の書き換えが必要な場合は、`UES_MAPPING` オプションを使用する必要がある場合があります。
 1. 実行 `universal-editor-service.cjs`
 
@@ -156,7 +156,7 @@ AEMが設定され、ローカルのユニバーサルエディターサービ�
 
    >[!NOTE]
    >
-   >デフォルトのポートは 8080 です。 [`.env` ファイル ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service) の `UES_PORT` パラメーターを使用してこの値を変更した場合は、ポートの値を適宜調整する必要があります。
+   >デフォルトのポートは 8080 です。 `UES_PORT`[ ファイル `.env` の ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service) パラメーターを使用してこの値を変更した場合は、ポートの値を適宜調整する必要があります。
 
 1. Apache を再起動します。
 
@@ -164,11 +164,11 @@ AEMが設定され、ローカルのユニバーサルエディターサービ�
 
 AEMが更新され、ローカルのユニバーサルエディターサービスが実行されている状態で、ユニバーサルエディターを使用してヘッドレスコンテンツの編集を開始できます。
 
-ただし、ユニバーサルエディターを利用するには、アプリのインストルメントを行う必要があります。 これには、コンテンツを保持する方法と場所をエディターに指示するメタタグを含める必要があります。 この実装について詳しくは、[AEM as a Cloud Serviceのユニバーサルエディターのドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page) を参照してください。
+ただし、ユニバーサルエディターを利用するには、アプリのインストルメントを行う必要があります。 これには、コンテンツを保持する方法と場所をエディターに指示するメタタグを含める必要があります。 この実装について詳しくは、[AEM as a Cloud Serviceのユニバーサルエディターのドキュメント ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page) を参照してください。
 
 AEMを使用したユニバーサルエディターのドキュメントに従う場合、AEM as a Cloud Service 6.5 LTS で使用する際には次の変更が適用されます。
 
-* メタタグのプロトコルは、`aem` ではなく `aem65` にする必要があります。
+* メタタグのプロトコルは、`aem65` ではなく `aem` にする必要があります。
 
   ```html
   <meta name="urn:adobe:aue:system:aemconnection" content={`aem65:${getAuthorHost()}`}/>
@@ -180,16 +180,16 @@ AEMを使用したユニバーサルエディターのドキュメントに従�
   <meta name="urn:adobe:aue:config:service" content={`${getAuthorHost()}/universal-editor`}/>
   ```
 
-* コンポーネント定義の `plugins` セクションでは、`aem` の代わりに `aem65` を使用する必要があります。
+* コンポーネント定義の `plugins` セクションでは、`aem65` の代わりに `aem` を使用する必要があります。
 
 >[!TIP]
 >
->ユニバーサルエディターの使用を開始する開発者向けの包括的なガイドについては、この節で説明したAEM 6.5 LTS サポートに必要な変更に留意しながら、AEM as a Cloud Service ドキュメントの [AEM Developers 向けユニバーサルエディターの概要 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) を参照してください。
+>ユニバーサルエディターの使用を開始する開発者向けの包括的なガイドについては、この節で説明したAEM 6.5 LTS サポートに必要な変更に留意しながら、AEM as a Cloud Service ドキュメントの [AEM Developers 向けユニバーサルエディターの概要 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) を参照してください。
 
 ## AEM 6.5 LTS とAEM as a Cloud Serviceの違い {#differences}
 
 AEM 6.5 LTS のユニバーサルエディターは、UI や多くの設定を含め、AEM as a Cloud Serviceと広く同じように機能します。 ただし、注意すべき違いがあります。
 
 * 6.5 LTS のユニバーサルエディターは、ヘッドレスユースケースのみをサポートしています。
-* ユニバーサルエディターの設定は、（現在のドキュメントで説明されているように [&#128279;](#setup)6.5 LTS の場合  若干異なります。
+* ユニバーサルエディターの設定は、（現在のドキュメントで説明されているように [6.5 LTS の場合 ](#setup) 若干異なります。
 * 6.5 LTS のユニバーサルエディターは、AEM as a Cloud Serviceとは異なるアセットピッカーと異なるコンテンツフラグメントピッカーを使用します。

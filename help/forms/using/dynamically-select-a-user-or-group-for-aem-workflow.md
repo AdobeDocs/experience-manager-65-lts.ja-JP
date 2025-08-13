@@ -9,8 +9,8 @@ feature: Adaptive Forms,Document Services
 exl-id: b3b3567f-df0a-4a24-849c-dcc0b745de63
 source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 100%
+source-wordcount: '870'
+ht-degree: 97%
 
 ---
 
@@ -38,9 +38,9 @@ ECMAScript はスクリプト言語です。 クライアントサイドのス�
 
 1. スクリプトの表示名を追加します。 この名前は、ワークフローステップに表示されます。 名前を指定するには、以下の手順を実行します。
 
-   1. スクリプトノードを拡張します。**[!UICONTROL jcr:content]** ノードを右クリックしてから、「**[!UICONTROL Mixins]**」をクリックします。
+   1. スクリプトノードを展開します。**[!UICONTROL jcr:content]** ノードを右クリックしてから、「**[!UICONTROL Mixins]**」をクリックします。
    1. Mixin を編集ダイアログに `mix:title` プロパティを追加して、「**OK**」をクリックします。
-   1. スクリプトの jcr:content ノードに以下のプロパティを追加します。
+   1. スクリプトの jcr:content ノードに次のプロパティを追加します。
 
       | 名前 | タイプ | 値 |
       |--- |--- |--- |

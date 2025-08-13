@@ -112,7 +112,7 @@ IBM は、データベース管理者がバックアップと回復タスクを�
 * IBM DB2 Archive Log Accelerator
 * IBM DB2 Data Archive エキスパート
 
-DB2 には、Tivoli Storage Manager にデータベースをバックアップするための組み込み機能があります。Tivoli Storage Manager を使用して、DB2 バックアップを他のメディアやローカルのハードドライブに保存できます。
+DB2 には、Tivoli Storage Manager にデータベースをバックアップするためのビルトインの機能があります。Tivoli Storage Manager を使用して、DB2 バックアップを他のメディアやローカルのハードドライブに保存できます。
 
 ### Oracle {#oracle}
 

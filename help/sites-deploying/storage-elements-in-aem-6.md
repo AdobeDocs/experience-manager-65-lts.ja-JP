@@ -78,7 +78,7 @@ AEM 6.5 LTS で最も重要な変更の 1 つは、リポジトリレベルで�
    * `mongouri`：Mongo データベースに接続するために必要な [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) です。デフォルトは `mongodb://localhost:27017` です
    * `db`：Mongo データベースの名前です。新しいAEM 6.5 LTS のインストールでは、デフォルトのデータベース名として **aem-author** を使用します。
    * `cache`：キャッシュサイズ（メガバイト単位）です。このキャッシュサイズは、DocumentNodeStore で使用される様々なキャッシュに分散されます。デフォルトは 256 です。
-   * `changesSize`：Mongo で差分出力のキャッシュに使用される capped コレクションのサイズ（MB 単位）です。デフォルトは 256 です。
+   * `changesSize`：Mongo で差分出力のキャッシュに使用されるキャップ付きコレクションのサイズ（MB 単位）です。デフォルトは 256 です。
    * `customBlobStore`：カスタムデータストアが使用されることを示すブール値です。デフォルトは false です。
 
 1. 使用するデータストアの PID を持つ設定ファイルを作成し、そのファイルを編集して設定オプションを指定します。詳しくは、[ノードストアとデータストアの設定](/help/sites-deploying/data-store-config.md)を参照してください。

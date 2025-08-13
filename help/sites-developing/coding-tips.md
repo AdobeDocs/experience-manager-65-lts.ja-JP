@@ -11,8 +11,8 @@ role: Developer
 exl-id: e431a240-45a2-4222-b854-32b90e5cd100
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 100%
+source-wordcount: '856'
+ht-degree: 98%
 
 ---
 
@@ -79,7 +79,7 @@ API が廃止された場合は常に、廃止された API を使用するの�
 
 ### 安全のためにリソースパスをエスケープする {#escape-resource-paths-for-safety}
 
-JCR のパスにスペースを使用することはできませんが、スペースが使用されていても、コードが中断しないようにする必要があります。Jackrabbit では、*escape()* および *escapePath()* メソッドを含む Text ユーティリティクラスを提供しています。JSP については、Granite UI が *granite:encodeURIPath() EL* 関数を公開しています。
+JCR のパスにスペースを使用することはできませんが、スペースが使用されていても、コードが中断しないようにする必要があります。Jackrabbit では、*escape()* および *escapePath()* メソッドを含む Text ユーティリティクラスを提供しています。JSP については、Granite UI が *granite:encodeURIPath （） EL* 関数を公開しています。
 
 ### XSS API や HTL を使用して、クロスサイトスクリプティング攻撃を防ぐ {#use-the-xss-api-and-or-htl-to-protect-against-cross-site-scripting-attacks}
 

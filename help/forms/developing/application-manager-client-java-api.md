@@ -13,8 +13,8 @@ hidefromtoc: true
 exl-id: 1ac45713-4eca-4def-a030-c7bc3fcdf4c7
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 100%
+source-wordcount: '407'
+ht-degree: 91%
 
 ---
 
@@ -34,9 +34,9 @@ Application Manager Client では、次の Java™ API クイックスタート�
 
 [クイックスタート（SOAP モード）：Java を使用したアプリケーションのステータスの取得](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
 
-[クイックスタート（SOAP モード）：Java を使用した AEM Forms および以降のアプリケーションアーカイブのプレビュー](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
+[クイックスタート（SOAP モード）](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
 
-[クイックスタート（SOAP モード）：Java を使用した AEM Forms アプリケーションアーカイブの削除](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
+[クイックスタート（SOAP モード）](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
 AEM Forms の操作は、AEM Forms で厳密に型指定された API を使用して実行できます。接続モードは、SOAP に設定する必要があります。
 
@@ -644,7 +644,7 @@ public class GetApplicationStatus_SOAP {
 }
 ```
 
-## クイックスタート（SOAP モード）：Java™ API を使用した、LiveCycle ES2 および以降のアプリケーションアーカイブのプレビュー {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
+## クイックスタート（SOAP モード） :PreviewingJava™ API を使用した LiveCycle ES2 および以降のアプリケーションアーカイブ {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
 
 次の Java™ コードの例は、Java™ API を使用した AEM Forms および以降のアプリケーションアーカイブをプレビューする場合に使用します。
 
@@ -723,7 +723,7 @@ public class PreviewLCA_SOAP {
 }
 ```
 
-## クイックスタート（SOAP モード）：Java™ API を使用したアプリケーションアーカイブの削除 {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}
+## クイックスタート（SOAP モード） :DeletingJava™ API を使用したアプリケーションアーカイブ {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}
 
 次の Java™ コードの例は、アプリケーションアーカイブの削除を示しています。
 

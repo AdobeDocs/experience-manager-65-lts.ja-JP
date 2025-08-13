@@ -77,8 +77,8 @@ AEM は、Adobe Analytics 製品関連プロパティにマッピングされる
 | `product.sku` | `product.sku`（コンバージョン変数） | 製品 SKU です。 |
 | `product.quantity` | `product.quantity`（コンバージョン変数） | 購入される製品の数です。 |
 | `product.price` | `product.price`（コンバージョン変数） | 製品価格です。 |
-| `product.events.<eventName>` | レポートで製品に関連付けるための成功イベントです。 | `product.events` は、*eventName* という名前のイベントのプレフィックスです。 |
-| `product.evars.<eVarName>` | 製品に関連付けるためのコンバージョン変数（`eVar`）です。 | `product.evars` は、*eVarName* という名前の eVar 変数のプレフィックスです。 |
+| `product.events.<eventName>` | レポートで製品に関連付けるための成功イベントです。 | `product.events` は、*eventName* という名前のイベントの接頭辞です。 |
+| `product.evars.<eVarName>` | 製品に関連付けるためのコンバージョン変数（`eVar`）です。 | `product.evars` は、*eVarName* という名前の eVar 変数の接頭辞です。 |
 
 いくつかの AEM Commerce コンポーネントは、これらの変数名を使用します。
 
@@ -199,7 +199,7 @@ Analytics 変数を別のトラッキングコンポーネントにある CQ 変
 >すべての表の CQ 変数列は、フィールドをダブルクリックしてテキストを追加することで、インラインで入力することもできます。これらのフィールドは、JavaScript を入力として受け取ります。
 >
 >例えば、`prop3` の隣に 以下を追加できます。
->     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
+>>     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
 >これで、*:*（コロン）を使用し、`prop3` として *Adobe* を接頭辞として使用して、*サイトセクション*&#x200B;と連結されたページの&#x200B;*タイトル*&#x200B;を送信します
 >
 

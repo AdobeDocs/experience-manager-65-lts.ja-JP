@@ -66,7 +66,7 @@ Adobe Experience Manager（AEM）のタッチ対応 UI が標準の UI です。
   >
   >詳しくは、[クラシック UI へのアクセスの有効化](/help/sites-administering/enable-classic-ui.md)を参照してください。
 
-  このオプションが有効になっている場合は、該当するコンソールにマウスを移動するたびに、アイコン（モニターの記号）が表示されます。これをタップまたはクリックすると、適切な場所がクラシック UI で開きます。
+  このオプションが有効になっている場合は、該当するコンソールにマウスを移動するたびに、アイコン（モニターシンボル）が表示されます。これをタップまたはクリックすると、適切な場所がクラシック UI で開きます。
 
   例えば、**Sites** から **siteadmin** へのリンクなどです。
 
@@ -104,11 +104,9 @@ Adobe Experience Manager（AEM）のタッチ対応 UI が標準の UI です。
 * ページのオーサリング時：
 
    * URL で `cf#` を使用してページにアクセスする場合、クラシックエディターが強制的に使用されます。例：
-
      `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
    * URL で `/editor.html` を使用しているか、タッチデバイスを使用している場合、タッチ対応エディターが強制的に使用されます。例：
-
      `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * 強制は一時的なものであり、ブラウザーセッションでのみ有効です。

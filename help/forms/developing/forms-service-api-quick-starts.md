@@ -1972,7 +1972,7 @@ Forms サービス API を使用するアプリケーションロジックは、
 
 * `createDataSource`：フォームの事前入力に使用されるデータソースを表す `org.w3c.dom.Document` オブジェクトを作成します。このユーザー定義メソッドは、`org.w3c.dom.Document` オブジェクトを返します。
 * `convertDataSource`：`org.w3c.dom.Document` オブジェクトを `com.adobe.idp.Document` オブジェクトに変換します。このメソッドは、`org.w3c.dom.Document` オブジェクトを入力パラメーターとして受け入れ、`com.adobe.idp.Document` オブジェクトを返します。
-* `renderPOForm`：Forms サービス Java™ API を使用して、動的な発注書フォームをレンダリングします。`convertDataSource` メソッドにより返される `com.adobe.idp.Document` オブジェクトは、フォームの事前入力に使用されます。
+* `renderPOForm`：Forms サービス Java™ API を使用して、動的な注文書フォームをレンダリングします。`convertDataSource` メソッドにより返される `com.adobe.idp.Document` オブジェクトは、フォームの事前入力に使用されます。
 
   これらのメソッドはすべて、Java™ サーブレットの `doPost` メソッド内から呼び出されます。（[編集可能なレイアウトを使用したフォームのの事前入力](/help/forms/developing/rendering-forms.md#prepopulating-forms-with-flowable-layouts)を参照）。
 

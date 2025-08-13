@@ -153,7 +153,7 @@ ht-degree: 99%
 
    >[!NOTE]
    >
-   > タスク通知に関して詳しくは、 [ここをクリック](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html?lang=ja#create-an-email-endpoint-for-the-complete-task-service)します。
+   > タスク通知に関して詳しくは、 [ここをクリック](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service)します。
 
 ## メールのエンドポイントを設定する手順は次のとおりです。 {#configure_email_endpoint}
 
@@ -167,7 +167,7 @@ ht-degree: 99%
 
    >[!NOTE]
    >
-   > メールエンドポイントの設定に関する詳細は、[メールエンドポイントの設定](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html?lang=ja)をクリックします。
+   > メールエンドポイントの設定に関する詳細は、[メールエンドポイントの設定](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html)をクリックします。
 
 ## トラブルシューティング {#troubleshooting}
 

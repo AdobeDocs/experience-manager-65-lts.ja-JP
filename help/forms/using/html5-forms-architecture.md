@@ -12,8 +12,8 @@ role: Admin, User, Developer
 exl-id: e57d51de-9d98-4b20-8180-22fa81fad4fd
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1976'
-ht-degree: 100%
+source-wordcount: '1971'
+ht-degree: 97%
 
 ---
 
@@ -27,11 +27,11 @@ HTML5 フォーム機能は埋め込み AEM インスタンス内のパッケー
 
 ### Sling フレームワークの使用 {#using-sling-framework}
 
-[Apache Sling](https://sling.apache.org/) はリソース中心です。リクエスト URL を使用して、最初にリソースを解決します。各リソースには **sling:resourceType**（または **sling:resourceSuperType**）プロパティがあります。このプロパティ、リクエストメソッド、およびリクエスト URL のプロパティに基づいて、リクエストを処理する Sling スクリプトが選択されます。この Sling スクリプトは、JSP またはサーブレットにすることができます。HTML5 フォームの場合、**Profile** ノードは Sling リソースとして機能し、**プロファイルレンダラー**&#x200B;はモバイルフォームをレンダリングするために特定のプロファイルで要求を処理する Sling スクリプトとして機能します。**プロファイルレンダラー**&#x200B;は要求からパラメーターを読み取り、Forms OSGi サービスを呼び出す JSP です。
+[Apache Sling](https://sling.apache.org/) はリソース中心です。リクエスト URL を使用して、最初にリソースを解決します。各リソースには **sling:resourceType** （または **sling:resourceSuperType**）プロパティがあります。 このプロパティ、リクエストメソッド、およびリクエスト URL のプロパティに基づいて、リクエストを処理する Sling スクリプトが選択されます。この Sling スクリプトは、JSP またはサーブレットにすることができます。HTML5 フォームの場合、**Profile** ノードは Sling リソースとして機能し、**プロファイルレンダラー**&#x200B;はモバイルフォームをレンダリングするために特定のプロファイルで要求を処理する Sling スクリプトとして機能します。**プロファイルレンダラー**&#x200B;は要求からパラメーターを読み取り、Forms OSGi サービスを呼び出す JSP です。
 
 REST エンドポイントとサポートされているリクエストパラメーターについて詳しくは、[フォームテンプレートのレンダリング](/help/forms/using/rendering-form-template.md)を参照してください。
 
-ユーザーが iOS や Android™ のブラウザーなどのクライアントデバイスからリクエストを行う場合、Sling はまずリクエスト URL に基づいて Profile ノードを解決します。この Profile ノードから、**sling:resourceSuperType** と **sling:resourceType** を読み取り、このフォームレンダーリクエストを処理できるすべての利用可能なスクリプトを決定します。次に、Sling リクエストセレクターとリクエストメソッドを使用して、このリクエストの処理に最適なスクリプトを識別します。リクエストがプロファイルレンダラー JSP に到達すると、JSP は Forms OSGi サービスを呼び出します。
+ユーザーが iOS や Android™ のブラウザーなどのクライアントデバイスからリクエストを行う場合、Sling はまずリクエスト URL に基づいて Profile ノードを解決します。この Profile ノードから、**sling:resourceSuperType** と **sling:resourceType** を読み取り、このフォームレンダーリクエストを処理できるすべての利用可能なスクリプトを決定します。 次に、Sling リクエストセレクターとリクエストメソッドを使用して、このリクエストの処理に最適なスクリプトを識別します。リクエストがプロファイルレンダラー JSP に到達すると、JSP は Forms OSGi サービスを呼び出します。
 
 Sling スクリプトの解決について詳しくは、[AEM Sling チートシートt](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ja)または [Apache Sling Url の分解](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html)を参照してください。
 
@@ -172,7 +172,7 @@ Sling パッケージには、プロファイルとプロファイルレンダ�
 
 #### プロファイルレンダラー {#profile-renderers}
 
-プロファイルノードには、**xfaforms/profile** の値を持つ **sling:resourceSuperType** プロパティがあります。このプロパティは転送リクエストを、**/libs/xfaforms/profile** フォルダーにあるプロファイルノードの Sling スクリプトに内部的に送信します。これらのスクリプトは JSP ページであり、HTML フォームと必要な JS/CSS アーティファクトをまとめるコンテナです。このページには、次への参照が含まれます。
+プロファイルノードには、値が **xfaforms/profile:resourceSuperType** のプロパティ **sling** があります。 このプロパティは転送リクエストを、**/libs/xfaforms/profile** フォルダーにあるプロファイルノードの Sling スクリプトに内部的に送信します。これらのスクリプトは JSP ページであり、HTML フォームと必要な JS/CSS アーティファクトをまとめるコンテナです。このページには、次への参照が含まれます。
 
 * **xfaforms.I18N.&lt;locale>**：このライブラリには、ローカライズされたデータが含まれています。
 * **xfaforms.profile**：このライブラリには、XFA スクリプティングとレイアウトエンジンの実装が含まれています。

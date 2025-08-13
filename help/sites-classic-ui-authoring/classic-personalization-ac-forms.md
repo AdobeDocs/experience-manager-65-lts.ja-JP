@@ -11,8 +11,8 @@ role: User
 exl-id: 3a39c4ba-353a-41ee-bfe6-e7eb4323f170
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 100%
+source-wordcount: '1219'
+ht-degree: 97%
 
 ---
 
@@ -48,7 +48,7 @@ Adobe Campaign 固有のフォームを作成する前に、AEM アプリケー�
 
 >[!NOTE]
 >
->Adobe Campaign 6.1.x または Adobe Campaign Standard を使用する場合は、ページの **jcr:content** ノードの **acMapping** プロパティがそれぞれ **mapRecipient** または **profile** に設定されていることを確認してください。
+>Adobe Campaign Adobe Campaign Standard 6.1.x を使用する場合はページの **jcr** ノードの **acMapping:content** プロパティがそれぞれ **mapRecipient** または **profile** に設定されていることを確認してください。
 >
 
 ### フォームの作成 {#creating-a-form}

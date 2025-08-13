@@ -8,8 +8,8 @@ feature: Adaptive Forms
 exl-id: 636f7b61-549e-45c7-ab21-94bb90db2b22
 source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 91%
+source-wordcount: '1697'
+ht-degree: 90%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 91%
 
 ## 移行のアプローチ {#approach-to-migration}
 
-AEM Forms 6.5.22.0[&#128279;](/help/forms/using/upgrade-forms-osgi.md) から AEM Forms 6.5 LTS へ [ アップグレード ](../../forms/using/upgrade.md) できます。 以前のインストールをアップグレードしたか、新規インストールを実行したかに応じて、次のいずれかを実行する必要があります。
+AEM Forms [ から ](../../forms/using/upgrade.md)AEM Forms 6.5 LTS へ [ アップグレード 6.5.22.0](/help/forms/using/upgrade-forms-osgi.md) できます。 以前のインストールをアップグレードしたか、新規インストールを実行したかに応じて、次のいずれかを実行する必要があります。
 
 **インプレースアップグレードの場合**
 
@@ -168,7 +168,7 @@ Correspondence Management のアセットを移行する場合は、以下の点
 1. レイアウトおよびフラグメントレイアウトの XFA バージョンが 3.3 以降であることを確認してください。旧バージョンのレイアウトおよびフラグメントレイアウトを使用している場合、レターのレンダリングで問題が発生する可能性があります。旧バージョンの XFA を最新バージョンの XFA に更新するには、以下の手順を行います。
 
    1. Forms ユーザーインターフェイスから [XFA を zip ファイルとしてダウンロード](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p)します。
-   1. ファイルを解凍します。
+   1.  ファイルを解凍します。
    1. 最新の Designer で XFA ファイルを開き、保存します。XFA が最新バージョンに更新されます。
    1. XFA を Forms ユーザーインターフェイスでアップロードします。
 

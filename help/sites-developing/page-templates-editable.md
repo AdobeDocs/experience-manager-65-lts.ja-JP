@@ -12,7 +12,7 @@ role: Developer
 exl-id: 7831c056-86f8-41c1-bc45-5e9829bc54bc
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2981'
+source-wordcount: '2980'
 ht-degree: 100%
 
 ---
@@ -45,13 +45,13 @@ ht-degree: 100%
 >[!NOTE]
 >
 >次のチュートリアルは、新しいプロジェクトで編集可能なページテンプレートを設定する場合にも役立つ場合があります。
->[AEM Sites の概要（パート 2）- ベースページとテンプレートの作成](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=ja)
+>>[AEM Sites の概要（パート 2）- ベースページとテンプレートの作成](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=ja)
 
 ## 新しいテンプレートの作成 {#creating-a-new-template}
 
 編集可能テンプレートの作成は、主にテンプレート作成者が、[テンプレートコンソールとテンプレートエディター](/help/sites-authoring/templates.md)を使用して行います。ここでは、そのプロセスの概要を示し、技術的なレベルでどのような処理が行われるかを説明します。
 
-AEM プロジェクトで編集可能テンプレートを使用する方法について詳しくは、「[Lazybones を使用した AEM プロジェクトの作成](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478?profile.language=ja&lang=ja)」を参照してください。
+AEM プロジェクトで編集可能テンプレートを使用する方法について詳しくは、「[Lazybones を使用した AEM プロジェクトの作成](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478?lang=ja)」を参照してください。
 
 編集可能テンプレートを作成する場合は、次の操作を実行します。
 

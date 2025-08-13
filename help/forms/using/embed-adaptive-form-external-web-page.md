@@ -122,7 +122,7 @@ Web ページに数行の JavaScript を挿入することで、アダプティ�
 
 アダプティブフォームを埋め込む外部 web ページは、プライベートネットワークのファイアウォールの内側にある AEM サーバーにリクエストを送信します。リクエストを安全に AEM サーバーに向けるようにするには、リバースプロキシサーバーを設定することをお勧めします。
 
-Dispatcher なしで Apache 2.4 リバースプロキシサーバーをセットアップする例を示します。この例では、AEM サーバーを `/forms` コンテキストパスでホストし、リバースプロキシの `/forms` をマッピングします。これで、Apache サーバーの `/forms` へのすべてのリクエストは、AEM インスタンスにダイレクトされます。このトポロジにより、前に `/forms` の付いたすべてのリクエストが AEM サーバー経由になるため、Dispatcher レイヤーのルールの数を減らすことができます。
+Dispatcher なしで Apache 2.4 リバースプロキシサーバーをセットアップする例を示します。この例では、AEM サーバーを `/forms` コンテキストパスでホストし、リバースプロキシの `/forms` をマッピングします。これで、Apache サーバーの `/forms` へのすべてのリクエストは、AEM インスタンスにダイレクトされます。このトポロジにより、接頭辞として `/forms` の付いたすべてのリクエストが AEM サーバー経由になるため、Dispatcher レイヤーのルールの数を減らすことができます。
 
 1. `httpd.conf`設定ファイルを開き、次のコードの行をコメント解除します。または、これらのコードの行をファイルに追加することができます。
 
@@ -165,8 +165,8 @@ Web ページにアダプティブフォームを埋め込む場合、次のベ�
 
 * Web ページの CSS で定義されたスタイルルールが、フォームオブジェクトの CSS と競合しないようにします。競合を避けるには、AEM クライアントライブラリを使用して、アダプティブフォームテーマの web ページ CSS を再利用します。アダプティブフォームテーマでクライアントライブラリを使用する方法については、[AEM Forms のテーマ](../../forms/using/themes.md)を参照してください。
 * Web ページのフォームコンテナで、ウィンドウの幅全体を使用するようにします。これにより、モバイルデバイス用に設定された CSS ルールが、変更なしで確実に機能するようになります。フォームコンテナがウィンドウの幅全体を取らない場合、フォームを様々なモバイルデバイスに適応させるために、カスタム CSS を記述する必要があります。
-* `[getData](https://helpx.adobe.com/jp/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API を使用して、クライアントのフォームデータの XML または JSON 表現を取得してください。
-* `[unloadAdaptiveForm](https://helpx.adobe.com/jp/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API を使用して、HTML DOM からアダプティブフォームをアンロードします。
+* `[getData](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API を使用して、クライアントのフォームデータの XML または JSON 表現を取得してください。
+* `[unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API を使用して、HTML DOM からアダプティブフォームをアンロードします。
 * AEM サーバーから応答を送信するときは、access-control-origin ヘッダーを設定します。
 
 ## AEM Forms がクロスドメインサイトに対してアダプティブフォームをサーブできるようにする {#cross-site}

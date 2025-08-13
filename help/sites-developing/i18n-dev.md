@@ -11,8 +11,8 @@ role: Developer
 exl-id: a18b1bc9-72a3-4836-a755-db586e56cf89
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1091'
-ht-degree: 100%
+source-wordcount: '1089'
+ht-degree: 97%
 
 ---
 
@@ -169,7 +169,7 @@ UI 文字列は、ほとんどの場合、JCR ノードのプロパティに基�
 
 `${prop}_commentI18n`
 
-例えば、`cq:page` ノードにローカライズされる jcr:title プロパティが含まれるとします。ヒントは、jcr:title_commentI18n という名前のプロパティの値として指定されます。
+例えば、`cq:page` ノードにローカライズされる jcr:title プロパティが含まれるとします。 ヒントは、jcr:title_commentI18n という名前のプロパティの値として指定します。
 
 ### 国際化の実行範囲のテスト {#testing-internationalization-coverage}
 

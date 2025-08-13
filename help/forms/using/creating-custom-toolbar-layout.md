@@ -11,8 +11,8 @@ feature: Adaptive Forms,Foundation Components
 exl-id: f9ff1458-6fc9-476a-a03e-c651464105d4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '522'
+ht-degree: 97%
 
 ---
 
@@ -49,7 +49,7 @@ CustomToolbarLayoutDemo.zip
 
 1. カスタムツールバーレイアウトを保持するフォルダーを作成します。例：
 
-   `/apps/customlayout/toolbar`
+   `/apps/customlayout/toolbar`。
 
    カスタムレイアウトを作成するには、次のフォルダーに用意されている既成のツールバーレイアウトの 1 つを使用（およびカスタマイズ）できます。
 
@@ -65,7 +65,7 @@ CustomToolbarLayoutDemo.zip
 
 1. コピーしたノード `mobileFixedToolbarLayout` の名前を `customToolbarLayout.` に変更します。
 
-   また、ノードに関連する説明も入力します。例えば、ノードの jcr:description を&#x200B;**ツールバーのカスタムレイアウト**&#x200B;に変更します。
+   また、ノードに関連する説明も入力します。例えば、ノードの jcr:description を **ツールバーのカスタムレイアウト** に変更します。
 
    ノードの `guideComponentType` プロパティによりレイアウトタイプが決まります。この場合、レイアウトタイプはツールバーなので、ツールバーレイアウト選択ドロップダウンに表示されます。
 

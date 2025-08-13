@@ -92,7 +92,7 @@ PDF/Aワークフローステップへの変換は、「 Assembler Service API�
 * 変換の&#x200B;*検証*：変換された PDF/A ドキュメントが変換後に PDF/A に準拠しているかどうかを明記します。
 * *ジョブのログレベル*：処理ログのログレベルを指定します。
 
-* *Metadata Extension Schema*：PDF文書のメタデータのXMPプロパティに使用するMetadata extension schemaを指定します。
+* *メタデータ拡張スキーマ*：PDF 文書のメタデータの XMP プロパティに使用するメタデータ拡張スキーマを指定します。
 
 #### 出力ドキュメント {#output-documents-1}
 

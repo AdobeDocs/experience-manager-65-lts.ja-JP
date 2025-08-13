@@ -9,8 +9,8 @@ role: Admin, User, Developer
 exl-id: 64d4ef01-ee33-4c8b-977f-0c9b31755820
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 98%
+source-wordcount: '867'
+ht-degree: 96%
 
 ---
 
@@ -184,8 +184,8 @@ AEM Forms アプリケーションには、すぐに使えるメタデータ変�
 
    タイトルを自分で指定しない場合、カスタムメタデータフィールドには、ECMAScript ファイルの完全なパスが表示されます。次の手順で、スクリプトに有意のタイトルを指定します。
 
-   1. スクリプトノードを拡張します。**[!UICONTROL jcr:content]** ノードを右クリックしてから、「**[!UICONTROL Mixins]**」をクリックします。
-   1. Mixin を編集ダイアログに mix:title と入力して、「**+**」をクリックします。
+   1. スクリプトノードを展開します。**[!UICONTROL jcr:content]** ノードを右クリックしてから、「**[!UICONTROL Mixins]**」をクリックします。
+   1. Mixin を編集ダイアログに mix:title と入力し、**+** をクリックします。
    1. プロパティに次の値を入力します。
 
       | 名前 | jcr:title |

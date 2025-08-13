@@ -7,8 +7,8 @@ role: Admin, User, Developer
 exl-id: ad86398d-0dc9-4168-b409-4d231b8d586b
 source-git-commit: 757c26274b39f5fb37a090f320493abd1af44c42
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 98%
+source-wordcount: '713'
+ht-degree: 97%
 
 ---
 
@@ -31,7 +31,7 @@ AEM 検索では、AEM アセットを検索して場所を特定することが
 * すべてのバンドルが正常に実行していることを確認します。アクティブ状態になっていないバンドルが存在する場合は、すべてのバンドルが起動して実行されるまで待ちます。
 
    * OSGi 上の AEM Forms の場合、バンドルは https://&#39;[server]:[port]&#39;/system/console/bundles に一覧表示されます。
-   * JEE 上の AEM Forms の場合、バンドルは https://&#39;[server]:[port]&#39;/[context-path]/system/console/bundles に一覧表示されます。例：https://localhost:8080/lc/system/console/bundles。
+   * JEE 上の AEM Forms の場合、バンドルは https://&#39;[server]:[port]&#39;/[context-path]/system/console/bundles に一覧表示されます。例えば、https://localhost:8080/lc/system/console/bundles です。
 
 * *sun.util.calendar* パッケージを許可リストに追加します。パッケージを許可リストに追加するには、次の手順を実行します。
 

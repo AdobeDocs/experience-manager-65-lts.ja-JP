@@ -12,8 +12,8 @@ role: User,Admin,Architect,Developer
 exl-id: 22cfa2bc-04af-49e6-b9b1-51112c96ba23
 source-git-commit: c759cb6830810b0b822cd66f8a29cbcf4f2851eb
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 100%
+source-wordcount: '896'
+ht-degree: 99%
 
 ---
 
@@ -115,7 +115,7 @@ ht-degree: 100%
 
 * **ツール**&#x200B;コンソールで、**ツール**／**サイト**／**ローンチ**&#x200B;と選択します。
 
-* または、[http://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html) に直接アクセスします。
+* または、[https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html) で直接確認できます
 
 ## 「参照」のローンチ（サイトコンソール） {#launches-in-references-sites-console}
 

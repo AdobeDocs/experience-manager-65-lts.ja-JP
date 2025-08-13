@@ -11,8 +11,8 @@ role: Developer
 exl-id: 255f52f3-aff4-432c-a541-3ce03e626742
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1848'
-ht-degree: 100%
+source-wordcount: '1774'
+ht-degree: 97%
 
 ---
 
@@ -472,7 +472,7 @@ DAM アセットを表すサムネール。
 
 * `@prop cq:csd` - ページの ContentBus CSD。
 * `@node cq:content` - ページのコンテンツ。この子ノードは、ページノードが「コンテンツなしで存在」または「削除済み」の状態の場合には存在しません。
-* `@node cq:attributes` - ページ属性のリスト（以前の名称はバージョンタグ）。cq:contentPage タイプの場合、このノードは必須です。属性ノードは、ページノードがバージョン設定されるときにバージョン設定されます。
+* `@node cq:attributes` - ページ属性のリスト（以前の名称はバージョンタグ）。cq:contentPage タイプの場合、このノードは必須です。 属性ノードは、ページノードがバージョン設定されるときにバージョン設定されます。
 
 **定義**
 
@@ -489,7 +489,7 @@ DAM アセットを表すサムネール。
 ポールの設定。
 
 * `@prop source (String) mandatory` - データソース URI。これは必須で、空にはできません。
-* `@prop target (String)` - データソースから取得されたデータが保存されるターゲットの場所。これはオプションであり、デフォルトは cq:PollConfig ノードです。
+* `@prop target (String)` - データソースから取得されたデータが保存されるターゲットの場所。（オプション）デフォルトは cq:PollConfig ノードです。
 * `@prop interval (Long)` - データソースから新しいデータまたは更新されたデータをポーリングする間隔（秒）。これはオプションであり、デフォルトでは 30 分（1800 秒）に設定されています。
 * [Adobe Experience Manager の Custom Data Importer Service の作成](https://helpx.adobe.com/jp/experience-manager/using/polling.html)
 
@@ -806,7 +806,7 @@ AEM 5.4 ではリストの最後に以下を追加：
 
 **説明**
 
-すべてのユーザー／公開 Web サイトで、cq:userContent 内部で使用されているコンテンツ（Web 2.0 スタイル）にタグを付けることができます。
+すべてのユーザー/公開 web サイトで、cq:userContent 内部で使用されているコンテンツ（web 2.0 スタイル）にタグを付けることができます。
 
 **定義**
 

@@ -7,8 +7,8 @@ role: Admin, User, Developer
 exl-id: ece49f03-e711-439f-9c2d-6308fe2998ae
 source-git-commit: 4f2374a48687d39f7d365e09d9055edf583e2c20
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '6895'
+ht-degree: 100%
 
 ---
 
@@ -187,7 +187,7 @@ Correspondence Management Solution は、動的データ項目（可変データ
 
 1. 「検索」を再び押すと、検索はページの一番上から続行されます。
 
-   「すべてを置換」オプションを使用すると、テキストモジュール内のテキストのインスタンスがすべて置換されます。us&grave;&grave; を行うと、「検索と置換」ダイアログで置換の数がメッセージとして表示されます。
+   「すべてを置換」オプションを使用すると、テキストモジュール内のテキストのインスタンスがすべて置換されます。us`` を行うと、「検索と置換」ダイアログで置換の数がメッセージとして表示されます。
 
 #### テキストモジュールのベストプラクティス／ヒントとテクニック {#best-practices-tips-and-tricks-for-text-modules}
 

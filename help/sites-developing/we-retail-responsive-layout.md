@@ -11,8 +11,8 @@ role: Developer
 exl-id: 25e035ce-0445-43a3-bd75-513a2e601b6a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 100%
+source-wordcount: '254'
+ht-degree: 96%
 
 ---
 

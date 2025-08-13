@@ -11,8 +11,8 @@ role: Developer
 exl-id: 8d53072b-826d-4ff4-843b-09204fb5a455
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 99%
+source-wordcount: '1263'
+ht-degree: 98%
 
 ---
 
@@ -33,7 +33,7 @@ Adobe Experience Manager（AEM）には、オーサーインスタンスのペ�
 
 * オーバーレイ
 
-  オーバーレイはノード定義に基づいており、標準の機能（`/libs`）にカスタマイズした独自機能（`/apps`）をオーバーレイすることができます。[Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) は継承を許可しているので、オーバーレイを作成するときに、オリジナルの 1 対 1 のコピーは必要ありません。
+  オーバーレイはノード定義に基づいており、標準の機能（`/libs`）にカスタマイズした独自機能（`/apps`）をオーバーレイすることができます。:1sling Resource Merger[ は継承を許可しているので、オーバーレイを作成するときに、オリジナルの 1](/help/sites-developing/sling-resource-merger.md) コピーは必要ありません。
 
 >[!NOTE]
 >
@@ -193,7 +193,7 @@ GitHub のコード
 >[!NOTE]
 >
 >例として、次を参照してください。
->`/libs/cq/gui/components/authoring/editors/clientlibs/core/js/editors/editorExample.js`
+>>`/libs/cq/gui/components/authoring/editors/clientlibs/core/js/editors/editorExample.js`
 
 1. 実装方法：
 
@@ -246,7 +246,7 @@ GitHub のコード
 
 そのようなアクティベーションに対する動作をカスタマイズするために、**アクティベーションをリクエスト**&#x200B;ワークフローをオーバーレイできます。
 
-1. `/apps`で **Sites** ウィザードをオーバーレイします。
+1.  `/apps`で **Sites** ウィザードをオーバーレイします。
 
    `/libs/wcm/core/content/common/managepublicationwizard`
 

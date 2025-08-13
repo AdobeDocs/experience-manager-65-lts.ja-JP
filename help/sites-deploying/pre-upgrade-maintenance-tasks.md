@@ -12,8 +12,8 @@ role: Admin
 exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
 source-git-commit: 8f7bbc3887601e10cf29e99ee54959a10c8a3f98
 workflow-type: tm+mt
-source-wordcount: '1110'
-ht-degree: 82%
+source-wordcount: '1116'
+ht-degree: 80%
 
 ---
 
@@ -64,7 +64,7 @@ jar ファイルから AEM を起動すると、`crx-quickstart/conf` の下に 
 
 `PreUpgradeTasksMBean` OSGI コンポーネントは、アップグレード前のメンテナンスタスクのリストで事前設定されており、それらのすべてのタスクを一度に実行できます。以下の手順に従ってタスクを設定できます。
 
-1. *https://serveraddress:serverport/system/console/configMgr* にブラウジングして web コンソールに移動
+1. Web コンソールに移動します（*https://serveraddress:serverport/system/console/configMgr*）。
 
 1. 「**preupgradetasks**」を検索し、最初に一致したコンポーネントをクリックします。コンポーネントのフルネームは `com.adobe.aem.upgrade.prechecks.mbean.impl.PreUpgradeTasksMBeanImpl` です。
 
@@ -95,7 +95,7 @@ jar ファイルから AEM を起動すると、`crx-quickstart/conf` の下に 
 
 以下の手順で MBean にアクセスできます。
 
-1. JMX コンソール（*https://serveraddress:serverport/system/console/jmx*）に移動
+1. JMX コンソール（*https://serveraddress:serverport/system/console/jmx*）に移動します
 1. 「**PreUpgradeTasks**」を検索し、結果をクリックします。
 
 1. 「**操作**」セクションからメソッドを選択し、次のウィンドウで「**呼び出し**」を選択します。

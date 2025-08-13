@@ -9,8 +9,8 @@ role: Admin, User, Developer
 exl-id: b866ff4a-251c-4402-b426-9c4d97fd181d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3982'
-ht-degree: 100%
+source-wordcount: '3981'
+ht-degree: 99%
 
 ---
 
@@ -159,7 +159,7 @@ Correspondence Management のワークフローは、次の 4 つのフェーズ
 
 * 要求処理担当者やケースワーカーなどのビジネスユーザーが、レターのコンテンツや一部を変更する条件。
 * シナリオで、レターソリューションのユーザーエクスペリエンス、要件および利点を説明。
-* プロジェクトに必要なスキルセットやツールもシナリオで説明。
+* シナリオには :The プロジェクトに必要なスキルセットとツールも含まれています。
 * 実装を計画する際のベストプラクティス。実装の全体的な概要。
 
 ## 分析を行う利点 {#benefits-of-performing-the-analysis}
@@ -455,7 +455,7 @@ Correspondence Management でレターテンプレートを作成したら、エ
   </tr> 
   <tr> 
    <td><strong>signature</strong></td> 
-   <td>不可</td> 
+   <td>いいえ</td> 
    <td>不可</td> 
    <td>不可<br /> </td> 
    <td>はい</td> 

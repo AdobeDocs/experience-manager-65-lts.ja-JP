@@ -13,7 +13,7 @@ exl-id: 281c96e2-24f8-4568-add2-67972148b406
 source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
 source-wordcount: '2919'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -556,7 +556,7 @@ Web Experience Management のドキュメントを表示します。
 
 ### 参照 {#references}
 
-**参照** 選択したリソースへの接続を表示します。 例えば、**Sites** コンソールでは、ページの[参照](/help/sites-authoring/author-environment-tools.md#showingpagereferences)には次が表示されます。
+**参照**&#x200B;には、選択したリソースへの接続が表示されます。例えば、**Sites** コンソールでは、ページの[参照](/help/sites-authoring/author-environment-tools.md#showingpagereferences)には次が表示されます。
 
 * [ブループリント](/help/sites-administering/msm.md)
 * [ローンチ](/help/sites-authoring/launches.md#launches-in-references-sites-console)
@@ -564,8 +564,8 @@ Web Experience Management のドキュメントを表示します。
 * [言語コピー](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * コンテンツは次の項目を参照します。
 
-   * 他のページから選択ページへの直接リンク
-   * 参照コンポーネントで選択したページから借りたコンテンツ、貸したコンテンツ、またはその両方
+   * 他のページから選択したページへの直接リンク
+   * 参照コンポーネントで選択したページから借りたコンテンツや、選択したページに貸したコンテンツ
 
 ![bh-28](assets/bh-28.png)
 

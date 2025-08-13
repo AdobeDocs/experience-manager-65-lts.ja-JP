@@ -11,8 +11,8 @@ role: Admin
 exl-id: c0b285b7-3b20-4412-88b8-04de4a703f42
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '2323'
-ht-degree: 98%
+source-wordcount: '2338'
+ht-degree: 95%
 
 ---
 
@@ -97,7 +97,7 @@ Web コンソールを使用してトポロジ情報を表示することもで�
 
 以下の手順を使用して、web コンソールの Topology Management ページを開きます。
 
-1. ブラウザーで web コンソールを開きます。([http://localhost:4502/system/console](http://localhost:4502/system/console))
+1. ブラウザーで web コンソールを開きます。（[http://localhost:4502/system/console](http://localhost:4502/system/console)）
 1. Sling / トポロジ管理をクリックします。
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
@@ -162,14 +162,14 @@ Web コンソールまたは sling:OsgiConfig ノードを使用して、org.apa
 
 以下の手順を使用して、CQ インスタンスをトポロジのルートメンバーに接続します。この手順では、インスタンスがルートトポロジメンバーの Topology Connector URL を指すようにします。この手順をトポロジのすべてのメンバーで実行します。
 
-1. ブラウザーで web コンソールを開きます。([http://localhost:4502/system/console](http://localhost:4502/system/console))
+1. ブラウザーで web コンソールを開きます。（[http://localhost:4502/system/console](http://localhost:4502/system/console)）
 1. Main／Topology Management をクリックします。
 1. 「Configure Discovery Service」をクリックします。
 1. Topology Connector URL プロパティに項目を追加し、ルートトポロジメンバーの Topology Connector サービスの URL を指定します。URL の形式は、https://rootservername:4502/libs/sling/topology/connector です。
 
 トポロジのルートメンバーで以下の手順を実行します。この手順では、ルートメンバーの Discovery Service 許可リストに他のトポロジメンバーの名前を追加します。
 
-1. ブラウザーで web コンソールを開きます。([http://localhost:4502/system/console](http://localhost:4502/system/console))
+1. ブラウザーで web コンソールを開きます。（[http://localhost:4502/system/console](http://localhost:4502/system/console)）
 1. Main／Topology Management をクリックします。
 1. 「Configure Discovery Service」をクリックします。
 1. トポロジの各メンバーについて、Topology Connector の許可リストプロパティに項目を追加し、トポロジメンバーのホスト名または IP アドレスを指定します。
@@ -180,7 +180,7 @@ Web コンソールまたは sling:OsgiConfig ノードを使用して、org.apa
 
 ジョブは、ラウンドロビンロジックを使用して、関連するトピックが有効なインスタンス間で配布されます。
 
-1. タッチ UI を使用して、「ツール」タブをクリックします。([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
+1. タッチ UI を使用して、「ツール」タブをクリックします。（[http://localhost:4502/tools.html](http://localhost:4502/tools.html)）
 1. Granite の操作エリアで、「オフロードするブラウザー」をクリックします。
 1. ナビゲーションパネルで、「オフロードするブラウザー」をクリックします。
 
@@ -208,7 +208,7 @@ Web コンソールまたは sling:OsgiConfig ノードを使用して、org.apa
 | ジョブトピック | サービス PID | 説明 |
 |---|---|---|
 | ／ | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Apache Sling と共にインストールされます。後方互換性のために、OSGi イベント管理によって生成されたジョブを処理します。 |
-| com/day/cq/replication/job/&ast; | com.day.cq.replication.impl.AgentManagerImpl | ジョブペイロードをレプリケートするレプリケーションエージェント。 |
+| com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | ジョブペイロードをレプリケートするレプリケーションエージェント。 |
 
 <!--
 | com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
@@ -226,7 +226,7 @@ Web コンソールまたは `sling:OsgiConfig` ノードを使用して、以�
 
 | Web コンソールでのプロパティ名 | OSGi ID | 説明 |
 |---|---|---|
-| トピック許可リスト | job.consumermanager.whitelist | ローカル JobManager サービスによって処理されるトピックのリスト。デフォルト値の &ast; では、すべてのトピックが登録済み TopicConsumer サービスに送信されます。 |
+| トピック許可リスト | job.consumermanager.whitelist | ローカル JobManager サービスによって処理されるトピックのリスト。デフォルト値の &amp;ast; では、すべてのトピックが登録済み TopicConsumer サービスに送信されます。 |
 | トピックブロックリスト | job.consumermanager.blacklist | ローカル JobManager サービスによって処理されないトピックのリスト。 |
 
 ## オフロードのレプリケーションエージェントの作成 {#creating-replication-agents-for-offloading}
@@ -315,7 +315,7 @@ Web コンソールまたは `sling:OsgiConfig` ノードを使用して、以�
 
 以下のいずれかの方法を使用して、Experience Manager インスタンスの Sling ID を取得します。
 
-* Web コンソールを開き、Sling 設定で、Sling ID プロパティの値を検索します（[http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)）。この方法は、インスタンスがまだトポロジの一部ではない場合に役立ちます。
+* Web コンソールを開き、Sling 設定で、Sling ID プロパティの値を検索します（[http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)）。 この方法は、インスタンスがまだトポロジの一部ではない場合に役立ちます。
 * インスタンスが既にトポロジの一部である場合は、トポロジブラウザーを使用します。
 
 <!--

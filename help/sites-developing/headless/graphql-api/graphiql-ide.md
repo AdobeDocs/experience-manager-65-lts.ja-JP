@@ -7,8 +7,8 @@ role: Developer
 exl-id: 81d47a8f-569a-4a7c-ba07-6f6c9258547c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 100%
+source-wordcount: '782'
+ht-degree: 97%
 
 ---
 
@@ -139,7 +139,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 >[!NOTE]
 >
->永続クエリのキャッシュ `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} の定義では、デフォルト値は 2 時間（7200 秒）になっています。
+>{&quot;cache-control&quot;:&quot;parameter&quot;`Time To Live`}:value の永続クエリのキャッシュの定義では、デフォルト値は 2 時間（7200 秒）になっています。
 
 ## URL をコピーしてクエリに直接アクセスする {#copy-url}
 

@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 3081dedf-ba92-4205-af67-930524719e60
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 100%
+source-wordcount: '684'
+ht-degree: 92%
 
 ---
 
@@ -66,11 +66,11 @@ agentFolder DDE の値は、Correspondence Management 設定プロパティに�
 
    1. **jcr:content** プロパティをダブルクリックし、タイプを **nt:resource** に設定します。その後、緑色のチェックマークをクリックしてエントリを保存します。
 
-      プロパティが表示されていない場合は、まず、名前が「jcr:content」のプロパティを作成します。
+      プロパティが存在しない場合は、まず、名前が「jcr:content」のプロパティを作成します。
 
-      ![jcr:content property](assets/3_jcrcontentntresource.png)
+      ![jcr:content プロパティ ](assets/3_jcrcontentntresource.png)
 
-      jcr:content サブプロパティの中に、暗く表示されている jcr:data を探します。jcr:data をダブルクリックします。プロパティが編集可能になり、「ファイルの選択」ボタンがエントリに表示されます。「**ファイルを選択**」をクリックし、ロゴとして使用する画像ファイルを選択します。画像ファイルには、拡張子を付ける必要はありません。
+      jcr:content のサブプロパティの中には jcr:data が含まれ、薄く表示されています。 jcr:data をダブルクリックします。 プロパティが編集可能になり、「ファイルの選択」ボタンがエントリに表示されます。「**ファイルを選択**」をクリックし、ロゴとして使用する画像ファイルを選択します。画像ファイルには、拡張子を付ける必要はありません。
 
       ![JCR データ](assets/5_jcrdata.png)
 

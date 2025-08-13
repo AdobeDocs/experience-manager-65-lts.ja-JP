@@ -10,7 +10,7 @@ role: Developer,Leader
 exl-id: 3f3437fb-1fff-4703-a50d-28da89b0a856
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3523'
+source-wordcount: '3522'
 ht-degree: 99%
 
 ---
@@ -39,7 +39,7 @@ SEO に対応した URL を作成する方法について、一般的なヒン�
 
 * ハイフンを使用して単語を区切ります。
 
-   * ページに名前を付けるときには、ハイフン（-）を区切り文字として使用します。
+   * ページに名前を付けるときには、ハイフン（-）を区切り記号として使用します。
    * キャメルケース、アンダースコアおよびスペースの使用は避けます。
 
 * 可能な場合、クエリパラメーターの使用は避けます。必要な場合は、パラメーターを 2 つ以下に制限します。
@@ -52,7 +52,6 @@ SEO に対応した URL を作成する方法について、一般的なヒン�
    * ページでセレクターを使用する場合は、セマンティック値を提供するセレクターが推奨されます。
    * 人間が理解できない URL は、検索エンジンでも理解できません。
    * 次に例を示します。
-
      `mybrand.com/products/product-detail.product-category.product-name.html`
 の方が `mybrand.com/products/product-detail.1234.html` より望ましい
 
@@ -254,10 +253,9 @@ AEM で受信要求のマッピングまたはページ上の URL の書き換�
 
 1. **SlingResourceResolver ルール**
 
-   Web コンソール（localhost:4502/system/console/configMgr など）を使用して、Sling Resource Resolver を設定できます。
+   Web コンソール（localhost/system/console:4502configMgr など）を使用して、Sling Resource Resolver を設定できます。
 
    * **Apache Sling Resource Resolver Factory**
-
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`。
 
    URL を短縮するために必要なマッピングを正規表現として構築した後、ビルドに含まれている OsgiConfignode の `config.publish` でこれらの設定を定義することをお勧めします。

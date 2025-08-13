@@ -7,8 +7,8 @@ role: Admin
 exl-id: 55f100b2-625a-4d0e-b8bb-011c7e3e3580
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2125'
-ht-degree: 100%
+source-wordcount: '2139'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 また、コンテンツをターゲット化するときに、A4T Analytics クラウド設定を変更して、Adobe Analytics をレポートソースとして使用するように Adobe Target を設定できます。
 
 クラウド設定とフレームワークの場所を特定するには、**ツール**／**デプロイメントt**／**クラウド**&#x200B;の **クラウドサービス**&#x200B;に移動します。（[http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)）
-Adobe Target の下で、「**設定を表示**」をクリックします。
+Adobe Targetの下の「**設定を表示**」をクリックします。
 
 ### プロビジョニングされた Target 設定のプロパティ {#provisioned-target-configuration-properties}
 
@@ -52,7 +52,7 @@ Adobe Target の下で、「**設定を表示**」をクリックします。
 >* 単一ページアプリケーション向けの実装オプションの改善
 >* target.js に含まれていたコンポーネントが AT.js にも含まれているので、ターゲットへの呼び出しがなくなりました。
 
-<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=ja -->
+<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
 ### プロビジョニングされた Target フレームワークのプロパティ {#provisioned-target-framework-properties}
 
@@ -115,7 +115,7 @@ Adobe Target の下で、「**設定を表示**」をクリックします。
 >
 >**クライアントライブラリ**&#x200B;ドロップダウンメニューでは、AT.js または mbox.js を選択できます。
 
-<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=ja -->
+<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
 ### Target クラウド設定の作成 {#creating-a-target-cloud-configuration}
 
@@ -175,7 +175,7 @@ AEMで Target クラウド設定を作成するには、以下の手順を実行
    >
    >正確なターゲティングとは、クラウドサービスの設定が、コンテキストの読み込みを待ってからコンテンツを読み込むことを意味します。その結果、パフォーマンスに関しては、正確なターゲティングによって、コンテンツを読み込む前に数ミリ秒の遅延が生じる場合があります。
    >
-   >正確なターゲティングは、オーサーインスタンスで常に有効になっています。ただし、パブリッシュインスタンスでは、クラウドサービス設定（**http://localhost:4502/etc/cloudservices.html**）の「正確なターゲティング」の横にあるチェックマークをオフにすることで、正確なターゲティングをグローバルにオフにできますまた、クラウドサービス設定での設定に関係なく、個々のコンポーネントに対して正確なターゲティングのオン／オフを切り替えることもできます。
+   >正確なターゲティングは、オーサーインスタンスで常に有効になっています。ただし、パブリッシュインスタンスでは、クラウドサービス設定（**http://localhost:4502/etc/cloudservices.html**）の「正確なターゲティング」の横にあるチェックマークをオフにすることで、正確なターゲティングをグローバルにオフにできます また、クラウドサービス設定での設定に関係なく、個々のコンポーネントに対して正確なターゲティングのオン／オフを切り替えることもできます。
    >
    >この設定を変更しても、作成済みの対象コンポーネントには影響しません&#x200B;***。***&#x200B;これらのコンポーネントを直接変更します。
 
@@ -231,7 +231,7 @@ Target クラウド設定を設定したら、Target フレームワークを追
 >
 >* Adobe Target テナント（clientcode）で **xt_only** オプションが&#x200B;**オフ**&#x200B;になっている場合は、XT アクティビティと A/B アクティビティの&#x200B;**両方**&#x200B;を AEM で作成できます。
 >
->**追加のメモ：**&#x200B;**xt_only** オプションは、特定の Target テナント（クライアントコード）に対して適用される設定であり、Adobe Target 内でのみ直接変更できます。このオプションは AEM で有効および無効にすることはできません。
+>**追加のメモ：****xt_only** オプションは、特定の Target テナント（クライアントコード）に対して適用される設定であり、Adobe Target 内でのみ直接変更できます。このオプションは AEM で有効および無効にすることはできません。
 
 ### Target フレームワークとサイトの関連付け {#associating-the-target-framework-with-your-site}
 

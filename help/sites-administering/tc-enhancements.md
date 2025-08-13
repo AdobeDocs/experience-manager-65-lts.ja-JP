@@ -9,8 +9,8 @@ role: Admin
 exl-id: 59b4d716-37a2-4f67-88eb-68c93359242c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 100%
+source-wordcount: '668'
+ht-degree: 95%
 
 ---
 
@@ -102,7 +102,7 @@ AEM は、設定済みの TMS の翻訳メモリ内の既存の文字列の翻�
 
 >[!NOTE]
 >
->言語ルートは、言語の ISO コードだけでなく、任意のページ名を持つことができます。AEM は常に最初にパスと名前を確認しますが、ページ名で言語が識別されない場合は、ページの cq:language プロパティを確認して言語を識別します。
+>言語ルートは、言語の ISO コードだけでなく、任意のページ名を持つことができます。AEMは常に最初にパスと名前を確認しますが、ページ名で言語が識別されない場合、AEMはページの cq:language プロパティを確認して言語を識別します。
 
 ## 翻訳ステータスのレポート {#translation-status-reporting}
 

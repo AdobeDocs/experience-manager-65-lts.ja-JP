@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 31fad2a6-f6e8-4d9c-a2b2-6749635fcf9b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 100%
+source-wordcount: '1090'
+ht-degree: 91%
 
 ---
 
@@ -129,7 +129,7 @@ Correspondence Management を使用すると、ソリューションテンプレ
 
    作成した新しいファイル（ここでは CustomLogo.png）の下に、jcr:content プロパティが表示されます。
 
-1. フォルダー構造内で jcr:content をクリックします。
+1. フォルダー構造内の jcr:content をクリックします。
 
    jcr:content のプロパティが表示されます。
 
@@ -137,9 +137,9 @@ Correspondence Management を使用すると、ソリューションテンプレ
 
 1. **jcr:data** プロパティをダブルクリックします。
 
-   「Edit jcr:data」のダイアログが表示されます。
+   Edit jcr:data ダイアログが表示されます。
 
-   次に、newlogo.png フォルダーをクリックし、jcr:content（dim オプション）をダブルクリックして、タイプ nt:resource を設定します。プロパティが表示されていない場合は、まず、名前が「jcr:content」のプロパティを作成します。
+   次に、newlogo.png フォルダーをクリックし、jcr:content （dim オプション）をダブルクリックして、タイプを nt:resource に設定します。 プロパティが存在しない場合は、jcr:content という名前でプロパティを作成します。
 
 1. 「jcr:data の編集」ダイアログで「**参照**」をクリックし、ロゴとして使用する画像ファイルを選択します（ここでは、「CustomLogo.png」）。
 
@@ -166,7 +166,7 @@ UI でロゴをレンダリングするためのスタイルシートを作成�
 
    1. **css** フォルダーを右クリックし、**作成／ファイルを作成**&#x200B;を選択します。
    1. 新規ファイルダイアログボックスで、CSS の名前を「`customcss.css`」として指定し、「**OK**」をクリックします。異なるファイル名は使用できません。
-   1. 次のコードを、新しく作成した css ファイルに追加します。コードの content:url で、CRXDE の imgs フォルダーにアップロードした画像名を指定します。
+   1. 次のコードを、新しく作成した css ファイルに追加します。コンテンツでは :url コード内で、CRXDE の imgs フォルダーにアップロードした画像名を指定します。
 
       ```css
       .logo, .logo:after {

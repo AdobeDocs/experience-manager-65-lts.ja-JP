@@ -12,8 +12,8 @@ role: Developer
 exl-id: 46300f72-730e-444c-8677-352a890e9910
 source-git-commit: c033a676eb746befd43803d1ae00c564890cb945
 workflow-type: tm+mt
-source-wordcount: '2422'
-ht-degree: 99%
+source-wordcount: '2430'
+ht-degree: 98%
 
 ---
 
@@ -204,15 +204,12 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 1. このノードに次のプロパティを追加します。
    * **名前**：`jcr:title`
-
      **型**：`String`
      **値**：UI に表示される識別タイトルです。
    * **名前**：`jcr:description`
-
      **型**：`String`
      **値**：オプションの説明です。
    * **名前**：`cq:trigger`
-
      **型**：`String`
      **値**：[ロールアウトトリガー](/help/sites-administering/msm-sync.md#rollout-triggers)を使用します。 次から選択します。
       * `rollout`
@@ -533,7 +530,7 @@ GitHub のコード
 
    AEM の `error.log` ファイルに、バンドルが開始されたことが記録されます。
 
-   例えば、[https://localhost:4502/system/console/status-slinglogs](https://localhost:4502/system/console/status-slinglogs) は次のようになります。
+   例えば、[https://localhost:4502/system/console/status-slinglogs](https://localhost:4502/system/console/status-slinglogs) です。
 
    ```xml
    13.08.2013 14:34:55.450 *INFO* [OsgiInstallerImpl] com.adobe.example.msm.MyLiveActionFactory-bundle BundleEvent RESOLVED
@@ -551,7 +548,7 @@ GitHub のコード
 
    * **タイトル**：ロールアウト設定例
    * **名前**： examplerolloutconfig
-   * **cq:trigger**：`publish`
+   * **cq:trigger**: `publish`
 
 ### ロールアウト設定例へのライブアクションの追加 {#add-the-live-action-to-the-example-rollout-configuration}
 
@@ -635,7 +632,7 @@ MSM は、保存されている言語コードと国コードのリストを使�
 
 言語を変更するには、次の手順に従います。
 
-1. Web ブラウザーで CRXDE Lite（例：[https://localhost:4502/crx/de](https://localhost:4502/crx/de)）を開きます。
+1. CRXDE Liteを web ブラウザーで開きます（例：[https://localhost:4502/crx/de](https://localhost:4502/crx/de)）。
 1. `/apps` フォルダーを選択し、「**作成**」をクリックして、「**フォルダーを作成**」をクリックします。
 
    新しいフォルダーに「`wcm`」という名前を付けます。
@@ -672,7 +669,7 @@ MSM は、保存されている言語コードと国コードのリストを使�
 
 * キービジュアルのスタイル：
 
-* 継承がキャンセルされている場合以外はタッチ操作対応 UI でこのプロパティを編集できないようにし、さらに継承を回復できるようにします。継承を制御するには、関連付けのステータスをトグル切り替えするチェーンリンクまたはチェーン解除リンクをクリックします。
+* 継承がキャンセルされている場合以外はタッチ操作対応 UI でこのプロパティを編集できないようにし、さらに継承を回復できるようにします。継承を制御するには、関連付けのステータスを切り替えるチェーンリンクまたはチェーン解除リンクをクリックします。
 
 ページプロパティをロールアウトの対象にするかどうか（したがって編集時に継承をキャンセルまたは復元するかどうか）は、次のダイアログプロパティで制御されます。
 
@@ -685,7 +682,6 @@ MSM は、保存されている言語コードと国コードのリストを使�
       * **タイプ**：`String`
 
       * **値**：対象のプロパティ名を保持します（また、`name` プロパティの値と比較できます）。例として、次を参照してください。
-
         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 `cq-msm-lockable` が定義されている場合は、次の方法でチェーンの解除またはクローズを MSM と連携できます。

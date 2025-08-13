@@ -11,8 +11,8 @@ role: Developer
 exl-id: 94bdf379-d10f-4dd3-b250-f2d1a3e4c251
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1244'
-ht-degree: 100%
+source-wordcount: '1251'
+ht-degree: 97%
 
 ---
 
@@ -294,7 +294,7 @@ topnav コンポーネントを設定し、JSP ファイルを編集して追跡
 
 フレームワークに追加できるように、Adobe Analytics を使用して追跡できるコンポーネントをサイドキックに追加します。
 
-1. Adobe Analytics 設定から Adobe Analytics フレームワークを開きます。([http://localhost:4502/etc/cloudservices/sitecatalyst.html](http://localhost:4502/etc/cloudservices/sitecatalyst.html))
+1. Adobe Analytics 設定から Adobe Analytics フレームワークを開きます。（[http://localhost:4502/etc/cloudservices/sitecatalyst.html](http://localhost:4502/etc/cloudservices/sitecatalyst.html)）
 1. サイドキックで、「デザイン」ボタンをクリックします。
 
    ![正方形の「デザイン」ボタン。](assets/chlimage_1a.png)
@@ -363,7 +363,7 @@ Adobe Analytics 統合モジュールは、AEM コンポーネントが生成す
 * product.evars.eVarName1
 * product.evars.eVarName_n
 
-e コマースモジュールは、s.products 変数データを生成する複数のコンポーネントを提供します。例えば、`submitorder` コンポーネント（[http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)）は、次の例のような JavaScript を生成します。
+e コマースモジュールは、s.products 変数データを生成する複数のコンポーネントを提供します。例えば、`submitorder` コンポーネント（[http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)）は、次の例のようなJavaScriptを生成します。
 
 ```
 <script type="text/javascript">

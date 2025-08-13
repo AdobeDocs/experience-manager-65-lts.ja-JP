@@ -13,8 +13,8 @@ hidefromtoc: true
 exl-id: d8027b43-10c7-435c-8fb5-059508966d42
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
-source-wordcount: '3897'
-ht-degree: 100%
+source-wordcount: '3890'
+ht-degree: 99%
 
 ---
 
@@ -148,7 +148,7 @@ Acrobat Reader DC エクステンション API（Java）を使用して、PDF �
 
 [PDF ドキュメントへの使用権限を適用](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
-[クイックスタート（SOAP モード）：Java API を使用した使用権限の適用](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
+[クイックスタート（SOAP モード）](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
 [AEM Forms Java ライブラリファイルを含める](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

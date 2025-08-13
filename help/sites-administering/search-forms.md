@@ -30,7 +30,7 @@ ht-degree: 100%
 
       * **検索フォーム**
 
-このコンソールに初めてアクセスすると、すべての設定に鍵アイコンが表示されます。これは、該当する設定はデフォルト（標準）の設定であり、削除できないことを示します。設定をカスタマイズすると、鍵アイコンは非表示になります。ただし、[カスタマイズした設定を削除](#deleting-a-configuration-to-reinstate-the-default)した場合は、デフォルトの設定（および鍵アイコン）が復帰します。
+このコンソールに初めてアクセスすると、すべての設定に南京錠シンボルが表示されます。これは、該当する設定はデフォルト（標準）の設定であり、削除できないことを示します。設定をカスタマイズすると、鍵アイコンは非表示になります。ただし、[カスタマイズした設定を削除](#deleting-a-configuration-to-reinstate-the-default)した場合は、デフォルトの設定（および鍵アイコン）が復帰します。
 
 ![検索フォームウィンドウ](assets/chlimage_1-374.png)
 
@@ -332,10 +332,10 @@ ht-degree: 100%
 >[!NOTE]
 >
 >* 一般的な検索用の述語は、次の場所で定義されています。
->  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+>  >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
 >* siteadmin（クラシック UI）にのみ関連する検索用の述語は、次の場所にあります。
->  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
+>  >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * これらは非推奨であり、後方互換性のためにのみ使用できます。
 >
 >この情報は参照用です。`/libs` には変更を加えないでください。
@@ -474,7 +474,7 @@ ht-degree: 100%
 
    ![フォームの削除](assets/chlimage_1-378.png)
 
-1. カスタマイズした設定が削除され、デフォルトが復帰します（このことは、コンソールに南京錠アイコンが再度表示されることで確認できます）。
+1. カスタマイズした設定が削除され、デフォルトが復帰します（このことは、コンソールに南京錠シンボルが再度表示されることで確認できます）。
 
 ### オプションの述語の追加 {#adding-options-predicates}
 

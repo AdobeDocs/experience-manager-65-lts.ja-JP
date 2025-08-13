@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 7da165ac-2039-4ac8-810d-fbe6f771453a
 source-git-commit: c03b3e3e4526530715718b68804ac26d2562bdb8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2372'
+ht-degree: 100%
 
 ---
 
@@ -91,7 +91,6 @@ ht-degree: 0%
 1. 「フラグメントの作成」ダイアログで、次の情報を指定します。
 
    * **名前**：フラグメントの名前。デフォルト値はパネルの要素名です。このフィールドは必須です。
-
      >[!NOTE]
      >
      >フラグメントには一意の名前を指定してください。同じ名前を持つ別のフラグメントが存在する場合、フラグメントの作成は失敗します。

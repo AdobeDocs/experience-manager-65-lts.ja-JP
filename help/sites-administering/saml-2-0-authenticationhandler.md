@@ -11,8 +11,8 @@ role: Admin
 exl-id: ee438c55-88cd-4f55-873e-16376b36fa7b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 100%
+source-wordcount: '827'
+ht-degree: 94%
 
 ---
 
@@ -68,7 +68,7 @@ AEM には、[SAML](https://saml.xml.org/saml-specifications) 認証ハンドラ
 >[!NOTE]
 >
 >この場所は、`request-path` の Cookie が設定されていない場合にのみ使用されます。有効なログイントークンを使用せずに、設定済みのパスの下にあるページを要求すると、要求されたパスは Cookie に格納され、
->認証が成功した後にブラウザーは再びこの場所にリダイレクトされます。
+>>認証が成功した後にブラウザーは再びこの場所にリダイレクトされます。
 
 **ユーザー ID 属性** CRX リポジトリでのユーザーの認証および作成に使用されるユーザー ID を格納する属性の名前です。
 
@@ -86,13 +86,13 @@ AEM には、[SAML](https://saml.xml.org/saml-specifications) 認証ハンドラ
 
 **グループに追加** 認証が成功した後に、CRX グループにユーザーを自動的に追加する必要があるかどうかを示します。
 
-**グループメンバーシップ** このユーザが追加されるべき CRX グループのリストを含む saml:Attribute の名前です。
+**グループメンバーシップ** このユーザーが追加されるべきCRX グループのリストを含む :AttributeSAML の名前です。
 
 ## AEM TrustStore への IdP 証明書の追加 {#add-the-idp-certificate-to-the-aem-truststore}
 
 SAML アサーションは署名されます。オプションとして暗号化することもできます。そのためには、少なくともリポジトリ内の IDP の公開証明書を指定する必要があります。それには、次を実行する必要があります。
 
-1. *http:/serveraddress:serverport/libs/granite/security/content/truststore.html* に移動します。
+1. *http:/serveraddress:serverport/libs/granite/security/content/truststore.html* に移動します
 1. **[!UICONTROL TrustStore リンクを作成]** を押します。
 1. TrustStore のパスワードを入力して「**[!UICONTROL 保存]**」を押します。
 1. 「**[!UICONTROL TrustStore を管理]**」をクリックします。
@@ -107,7 +107,7 @@ SAML アサーションは署名されます。オプションとして暗号化
 >
 >以下のステップは必須です。実行しないと、次の例外が発生します。`com.adobe.granite.keystore.KeyStoreNotInitialisedException: Uninitialised system trust store`
 
-1. [http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html) に移動します。
+1. [http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html) に移動します
 1. `authentication-service` ユーザーを編集します。
 1. **アカウント設定** の **キーストアを作成** をクリックしてキーストアを作成します。
 
@@ -133,7 +133,7 @@ SAML アサーションは署名されます。オプションとして暗号化
 
 SAML の設定ミスにより発生する可能性があるすべての問題をデバッグするようにロガーを設定できます。手順は次のとおりです。
 
-1. Web コンソール（*http://localhost:4502/system/console/configMgr*）に移動
+1. Web コンソール（*http://localhost:4502/system/console/configMgr*）に移動します
 1. **Apache Sling Logging Logger Configuration** という名前のエントリを検索してクリックします。
 1. 次の設定でロガーを作成します。
 
