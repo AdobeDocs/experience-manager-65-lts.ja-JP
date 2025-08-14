@@ -10,7 +10,7 @@ feature: Mixed Media Sets,Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 52325c53-324f-4dd0-93c0-cb8a78a38d6b
-source-git-commit: 8269641db430c78934c2057e2cd7f3545c79950d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 100%
