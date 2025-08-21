@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 70436606-d95c-4208-94f6-e33f3eefdf66
-source-git-commit: 160b27c188f8bcd3f3a668b50d3a824598909688
+source-git-commit: e9c09eebb372fc36ae161959e0465c07ad755130
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 33%
+source-wordcount: '1068'
+ht-degree: 32%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 33%
 |---|---|
 | バージョン | 6.5 LTS |
 | 種類 | メジャーリリース |
-| 一般公開日 | 2025年3月7日（PT） |
+| 一般リリース | 2025年3月7日（PT） |
 
 ## 新機能 {#what-s-new}
 
