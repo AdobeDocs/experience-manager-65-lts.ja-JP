@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
-source-git-commit: ec722773ce3acff1d0de861523db8ff7df552c4b
-workflow-type: ht
+source-git-commit: f983fc1edc613feaa070c4e82a92aabab9d50cbb
+workflow-type: tm+mt
 source-wordcount: '247'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ Felix ヘルスチェックフレームワークに関するドキュメント�
 
 ### AEM Groovy コンソールのサポート
 
-AEM 6.5 で使用されていた AEM Groovy コンソールバージョンは、guava 依存関係が欠落しているので、AEM 6.5 LTS では動作しない可能性があります。 新しくサポートされる AEM Groovy コンソールのバージョンは [19.0.8](https://mvnrepository.com/artifact/be.orbinson.aem/aem-groovy-console/19.0.8) です。
+AEM 6.5 で使用されていた AEM Groovy コンソールバージョンは、guava 依存関係が欠落しているので、AEM 6.5 LTS では動作しない可能性があります。 新しくサポートされる AEM Groovy コンソールのバージョンは [19.0.8](https://github.com/orbinson/aem-groovy-console/releases/download/19.0.8/aem-groovy-console-all-19.0.8.zip) です。
 
 ### AEM 6.5 LTS はユーザー同期をサポートしていますか？
 
