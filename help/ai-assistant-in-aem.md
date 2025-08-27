@@ -1,17 +1,22 @@
 ---
-title: AEMの AI アシスタント
+title: AEM 6.5 の AI アシスタント
 description: AI アシスタントを使用して回答を見つけ、Adobe Experience Managerで使用可能なソリューションのトラブルシューティングを行います。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3cf3d5c83a91fbc582840c2a3b11b3b705f86712
+exl-id: 391d46e3-05c9-4af1-8882-ffd39b04a701
+source-git-commit: 59a3074e339f066bb4803dab4ddbf0bec3cf5da5
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1294'
 ht-degree: 1%
 
 ---
 
-# AEMの AI アシスタント {#about-ai-assistant-in-aem}
+# AEM 6.5 の AI アシスタント {#about-ai-assistant-in-aem}
+
+>[!IMPORTANT]
+>
+>AEM 6.5 およびAEM 6.5 Cloud Manager/Experience Hubを使用していない LTS のお客様は、Adobe カスタマーサクセスエンジニアに連絡して、AI アシスタントへのアクセス権をリクエストする必要があります。
 
 AEM（Adobe Experience Manager） AI アシスタントは、Adobe Experience Manager関連のクエリに対する回答の検索を合理化するように設計された対話型インターフェイスを提供します。 AEM製品に関する質問に即座に回答したり（*すべてのユーザーが利用できます*）、サポートチケットの自動作成を行ったり（*サポート管理者が利用できます*。
 
@@ -128,7 +133,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in the AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
