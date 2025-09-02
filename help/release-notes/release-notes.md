@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6b101bcb474abe07a72d5fd04895f858eef34587
+source-git-commit: e9fc4a6294588b527a3b19d64101c81f0eb7bf55
 workflow-type: tm+mt
-source-wordcount: '5228'
+source-wordcount: '5238'
 ht-degree: 35%
 
 ---
@@ -297,7 +297,6 @@ AEMがアップグレード中に `/apps/system/config` の下で既存の設定
 #### クイックスタート{#foundation-quickstart-65-lts-sp1}
 
 * Guava バンドルのバージョン範囲を調整するためにアンインストールスクリプトを更新し、パッケージマネージャーを使用してインストールする場合に Guava バンドルがブロックリストに加えるされないようにしました。 （GRANITE-59559）
-* JDK 17 を使用して Tomcat 11 に AEMFD パッケージをアップロードする際に発生していた、解析エラーをトリガーせずに大規模なパッケージインストールをサポートするようにサーバー設定を更新することで発生したマルチパート設定エラーを修正しました。 （GRANITE-58327）
 * レプリケーション UI で、インターフェイスでの従来のチェックボックスの処理を修正することで、レプリケーションエージェントを編集する際にエラー（`#1660`）が表示される問題を修正しました。 （GRANITE-58302）
 * 欠落しているサービス権限に対処し、設定処理を更新し、必要なサービスが正しく初期化されるようにすることで、AEM 6.5 LTS を JDK 21 で実行している際の S3 データストアの複数の起動エラーを解決しました。 （GRANITE-57082）
 * AEM 6.5 のメンテナンスおよび維持管理戦略を定義しました。この修正には、次の内容が含まれています。
@@ -369,6 +368,11 @@ AEMがアップグレード中に `/apps/system/config` の下で既存の設定
 ## インストールとアップデート {#install-update}
 
 設定要件について詳しくは、[インストール手順](/help/sites-deploying/custom-standalone-install.md)を参照してください。
+
+>[!NOTE]
+>
+> 旧 6.5 SP から LTS SP1 に直接アップグレードする場合は、6.5 から 6.5 LTS GA [ アップグレード ](/help/sites-deploying/upgrade.md) の手順に従ってください。
+
 
 手順について詳しくは、[アップグレードドキュメント](/help/sites-deploying/upgrade.md)を参照してください。
 
@@ -452,7 +456,11 @@ AEM 6.5.21、6.5.22、6.5.23 および AEM 6.5 LTS GA には、既知の問題�
 
 この問題を解決するためのホットフィックス [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) が使用可能です。
 
-### SSL のみの機能を使用したDispatcher接続の失敗 {#ssl-only-feature}
+### SSL のみの機能を使用したDispatcher接続の失敗（AEM 6.5 LTS SP1 以降で修正）{#ssl-only-feature}
+
+>[!NOTE]
+>
+> この問題は、AEM 6.5 LTS GA リリースでのみ発生します。
 
 AEM デプロイメントで SSL のみの機能を有効にすると、Dispatcher インスタンスと AEM インスタンス間の接続に影響を与える既知の問題があります。 この機能を有効にすると、ヘルスチェックが失敗し、Dispatcher インスタンスと AEM インスタンス間の通信が中断される場合があります。この問題は、お客様が `https + IP` 経由で Dispatcher から AEM インスタンスに接続しようとした場合に特に発生します。これは、SNI（Server Name Indication）検証の問題に関連しています。
 

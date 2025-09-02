@@ -10,17 +10,21 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: ebc34847-dc3d-41ed-b0d6-f004c3debcd9
-source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
+source-git-commit: e9fc4a6294588b527a3b19d64101c81f0eb7bf55
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 34%
+source-wordcount: '241'
+ht-degree: 28%
 
 ---
 
 # Adobe Experience Manager（AEM） 6.5 LTS へのアップグレード {#upgrading-to-aem}
 
 >[!NOTE]
->AEM 6.5 LTS へのアップグレードは、最新の 6 つのサービスパックからサポートされています。
+>AEM 6.5 LTS へのアップグレードは、サポート対象のすべての 6.5 サービスパックで利用できます。
+
+>[!NOTE]
+>
+>技術的には、AEM 6.5 LTS からAEM 6.5 LTS サービスパックへのアップグレードプロセスは、シームレスな [ インプレースアップグレード ](/help/sites-deploying/in-place-upgrade.md) となるように設計されています。 このプロセスは、リリースノートに特に記載されていない限り、通常、顧客によるコードの変更を必要としません。
 
 このセクションでは、AEM インストールからAEM 6.5 LTS へのアップグレードについて説明します。
 
