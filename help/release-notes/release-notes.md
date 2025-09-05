@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 516fb71493cad9d4f4105bb09f56fe95d2971974
+source-git-commit: d6b324ed961dc59a22e8e33109a5ba5262553aa7
 workflow-type: tm+mt
-source-wordcount: '7204'
+source-wordcount: '7221'
 ht-degree: 37%
 
 ---
@@ -456,6 +456,12 @@ AEMがアップグレード中に `/apps/system/config` の下で既存の設定
 >[!NOTE]
 >
 > AEM 6.5 LTS の新規インストールの場合、インデックス定義を個別にインストールする必要があります。 詳しくは、[このページ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions)を参照してください。
+
+## AEM Forms アドオンのインストールと更新 {#install-update-aem-forms-add-on}
+
+詳しい手順については、[AEM Forms サービスパックのインストール手順 ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions) を参照してください。
+
+
 
 ## サポートされているプラットフォーム {#supported-platforms}
 
