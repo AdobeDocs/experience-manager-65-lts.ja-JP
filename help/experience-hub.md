@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 6dbc943b-3bca-4926-896d-f1471a49a70f
-source-git-commit: 66f0240a32830ba629b656e7f9aef84af2efc91c
+source-git-commit: 713dc1615ef1751c2fdbf67b5f97690ce6eed676
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '590'
 ht-degree: 5%
 
 ---
@@ -19,7 +19,7 @@ Experience Hubは、Adobe Experience Manager内のコンテンツ、アセット
 
 再考されたAEM Experience Hub Workspace のクイックツアー（4 分 9 秒）をご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3471442?learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3471396?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -50,11 +50,11 @@ Adobe Experience Managerページが更新され、ナビゲーションが強�
 >
 >表示されるウィジェット、ツールおよびアーティファクトは、ユーザーのペルソナ、使用権限およびAEM デプロイメントタイプ（AEM as a Cloud ServiceまたはManaged Services 6.5/6.5 LTS）によって異なります。
 
-これらのソリューションは、**ツール** または **サービス** の下のメインナビゲーションに移動しました。 さらに、新しいナビゲーション要素を使用すると、有効になっているソリューション（Assets、Sites、Forms、コンテンツフラグメント、ローンチなど）に固有の主なAdobe Experience Manager機能にすばやくアクセスできます。
+これらのソリューションは、**ツール** または **サービス** の下のメインナビゲーションに移動しました。 さらに、新しいナビゲーション要素により、有効になっているソリューションに固有の主なAdobe Experience Manager機能にすばやくアクセスできます。 このようなソリューションには、Assets、Sites、Forms、コンテンツフラグメント、ローンチなどが含まれます。
 
 ![Experience Hub環境 ](/help/assets/assets-experience-hub/experience-hub-author-environments-ams.png)
 
-これらの機能は、アクセス権のあるプライマリ実稼動環境で使用できます。または、複数のAEM インスタンスにアクセスできる場合は、ターゲットにする特定の環境を選択できます。
+これらの機能は、アクセス可能なプライマリ実稼動環境で使用できます。 または、複数のAEM インスタンスにアクセスできる場合は、ターゲットとする特定の環境を選択できます。
 
 ![ 実稼動環境とステージ環境 ](/help/assets/assets-experience-hub/experience-hub-prod-stage-ams.png)
 
@@ -66,7 +66,7 @@ Adobe Experience Managerの中央ハブとして機能するExperience Hub ペ�
 
 ![Experience Hub ウィジェット ](/help/assets/assets-experience-hub/experience-hub-custom-widgets-ams.png)
 
-「**オーサリング環境**」セクションには、アクセス可能なすべてのAEM環境が表示され、使用可能なソリューションやページへの特定のショートカットも含まれています。また、リストの上部に表示する特定の環境をピン留めすることもできます。
+「**オーサリング環境**」セクションには、アクセス可能なすべてのAEM環境が表示されます。 ソリューションとページに使用できる特定のショートカットがあり、リストの上部に表示する特定の環境をピン留めすることもできます。
 
 次の図に示す **最近** セクションには、AEMで最近アクセスしたページが一覧表示されます。 テナントのライセンスに応じて、プログラム、パイプライン実行、Assets、ページエディター、フォームエディターなどがウィジェットに含まれる場合があります。
 
