@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager 6.5 LTS、SP1 の最新のリリースノート
-description: Adobe Experience Manager 6.5 LTS、Service Pack 1 の最新のリリース情報について説明します。
+description: 詳しくは、Adobe Experience Manager 6.5 LTS のサービスパック 1 の最新のリリース情報を参照してください。
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
