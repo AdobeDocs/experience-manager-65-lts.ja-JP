@@ -1,17 +1,18 @@
 ---
-title: 6 [!DNL Adobe Experience Manager] 5 LTS のリリースノート
+title: ' [!DNL Adobe Experience Manager]  6.5 LTS のリリースノート'
 description: Adobe Experience Manager 6.5 LTS の最新のリリース情報について説明します。
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 922b2391b45ac1a08987f286cdbd736fe9a383c8
-workflow-type: tm+mt
+exl-id: dfda31ac-765b-401d-98d0-c19f0de22aab
+source-git-commit: eda8fc347ee8c68c1022495cbe8d48175c819be3
+workflow-type: ht
 source-wordcount: '1068'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager 6.5 LTS の最新のリリースノート {#release-notes}
+# Adobe Experience Manager 6.5 LTS の最新リリースノート {#release-notes}
 
 ## リリース情報 {#release-information}
 
@@ -19,7 +20,7 @@ ht-degree: 93%
 |---|---|
 | バージョン | 6.5 LTS |
 | 種類 | メジャーリリース |
-| 一般リリース | 2025年3月7日（PT） |
+| 一般提供 | 2025年3月7日（PT） |
 
 ## 新機能 {#what-s-new}
 
@@ -39,7 +40,7 @@ ht-degree: 93%
 * 最適なパフォーマンスを得るには、デフォルトの GC 値を他の値に置き換えてください。詳しくは、[インストールとアップデート](/help/sites-deploying/custom-standalone-install.md)の節を参照してください。
 * アドビでは、Oracle から公開されていない場合、AEM 関連プロジェクトで顧客が使用できるように Java™ 17 および Java™ 21 のメンテナンスアップデートを配布します。
 
-#### Uberjar のパッケージング {#uber-jar-packaging}
+#### Uberjar パッケージ {#uber-jar-packaging}
 
 * AEM 6.5 LTS の Uberjar パッケージには、わずかな違いがあります。詳しくは、[AEM Uber Jar バージョンの更新](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version)を参照してください。
 
@@ -101,10 +102,10 @@ ht-degree: 93%
 | ポータル | AEM Portal Director はサポートされていません。 | 代替手段はありません。 | 6.5 LTS GA |
 | Granite | バンドル `com.adobe.granite.socketio` は削除されました。 | 代替手段はありません。 | 6.5 LTS GA |
 | Granite | `com.adobe.granite.crx-explorer` はサポートされていません。 | 代替手段はありません。 | 6.5 LTS GA |
-| Granite | `crx2oak` はサポートされていません。 | 関連するバージョンの [Oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) を選択します | 6.5 LTS GA |
+| Granite | `crx2oak` はサポートされていません。 | [Oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) の関連バージョンを選択します | 6.5 LTS GA |
 | Adobe | `com.adobe.cq.cq-searchpromote-integration` はサポートされていません。 | 代替手段はありません。 | 6.5 LTS GA |
 | Guava | AEM では、すべての guava 依存関係が削除されたので、`com.adobe.granite.osgi.wrapper.guava-15.0.0-0002` バンドルは AEM の一部ではなくなりました。 | 顧客は、guava に依存している場合は独自に guava を追加したり、可能であれば guava コードを java コレクションまたはその他の代替手段に置き換えたりすることができます。 | 6.5 LTS GA |
-| `We.Retail` | サ `We-retail` プルサイトはサポートされていません。 | 代替手段はありません。 | 6.5 LTS GA |
+| `We.Retail` | `We-retail` サンプルサイトはサポートされていません。 | 代替手段はありません。 | 6.5 LTS GA |
 | オープンソース | `oak-solr-osgi` バンドルはサポートされていません。 | 代替手段はありません。 | 6.5 LTS GA |
 | オープンソース | `org.apache.servicemix.bundles.abdera-parser`、`org.apache.servicemix.bundles.jdom`、`org.apache.sling.atom.taglib` はサポートされていません。 | 代替手段はありません。 | 6.5 LTS GA |
 | オープンソース | `org.apache.commons.io` パッケージが `org.apache.commons.commons-io` から書き出されるようになりました。 | 変更は必要ありません。 | 6.5 LTS GA |
@@ -127,9 +128,9 @@ AEM 6.5.21、6.5.22、6.5.23 および AEM 6.5 LTS GA には、既知の問題�
 
 この問題を解決するためのホットフィックス [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) が使用可能です。
 
-### SSL のみの機能を使用したDispatcher接続の失敗 {#ssl-only-feature}
+### SSL のみの機能を使用した Dispatcher 接続の失敗 {#ssl-only-feature}
 
-AEM デプロイメントで SSL のみの機能を有効にすると、Dispatcher インスタンスと AEM インスタンス間の接続に影響を与える既知の問題があります。 この機能を有効にすると、ヘルスチェックが失敗し、Dispatcher インスタンスと AEM インスタンス間の通信が中断される場合があります。この問題は、特に、お客様が `https + IP` 経由でDispatcherからAEM インスタンスに接続しようとした場合に発生します。 これは、SNI （Server Name Indication）検証の問題に関連しています。
+AEM デプロイメントで SSL のみの機能を有効にすると、Dispatcher インスタンスと AEM インスタンス間の接続に影響を与える既知の問題があります。 この機能を有効にすると、ヘルスチェックが失敗し、Dispatcher インスタンスと AEM インスタンス間の通信が中断される場合があります。この問題は、お客様が `https + IP` 経由で Dispatcher から AEM インスタンスに接続しようとした場合に特に発生します。これは、SNI（Server Name Indication）検証の問題に関連しています。
 
 **影響：**
 
