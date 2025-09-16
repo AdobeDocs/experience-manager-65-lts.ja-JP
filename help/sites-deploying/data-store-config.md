@@ -8,10 +8,10 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: 826074f588c60c77c9ec32b3f94b47ab9aa0c12d
 workflow-type: tm+mt
-source-wordcount: '3337'
-ht-degree: 93%
+source-wordcount: '3345'
+ht-degree: 91%
 
 ---
 
@@ -184,19 +184,19 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 
 1. AEM インスタンスを停止します。
 
-1. AEM インストールフォルダーの `<aem-install>/crx-quickstart/install/15` に移動して、その内容のバックアップを作成します。
-1. バックアップ後、古いバージョンの S3 コネクターとその依存関係を削除します。そのためには、`<aem-install>/crx-quickstart/install/15` フォルダー内の jar ファイル（以下のファイルなど）をすべて削除します。
+1. AEM インストールフォルダーの `<aem-install>/crx-quickstart/install` に移動して、そのすべてのサブフォルダーのバックアップを作成します。
+1. バックアップ後、古いバージョンの S3 コネクタとその依存関係を削除します。そのためには、フォルダーのすべてのフォルダー内の jar ファイル（以下のファイルなど） `<aem-install>/crx-quickstart/install/` すべて削除します。
 
-   * **oak-blob-cloud-1.6.1.jar**
-   * **aws-java-sdk-osgi-1.10.76.jar**
+   * **15/oak-blob-cloud-1.78.XXX.jar**
+   * **15/aws-java-sdk-osgi-1.12.XXX.jar**
 
    >[!NOTE]
    >
    >上記のファイル名は説明の目的でのみ使用されます。
 
-1. [ ソフトウェア配布。](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/s3-connector/6-5-lts/com.adobe.granite.oak.s3connector-1.60.2.zip) から最新バージョンの 1.60.x 機能パックをダウンロードします。
-1. 機能パックの内容を別のフォルダーに展開して、`jcr_root/libs/system/install/15` に移動します。
-1. jar ファイルを AEM インストールフォルダーの **&lt;aem-install>**/crx-quickstart/install/15 にコピーします。
+1. [Maven リポジトリ ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) から最新バージョンの 1.60.x 機能パックをダウンロードします。
+1. 機能パックの内容を別のフォルダーに展開して、`jcr_root/libs/system/install/` に移動します。
+1. すべてのサブフォルダーをAEM インストールフォルダーの **&lt;aem-install>**/crx-quickstart/install/にコピーします。
 1. AEM を起動して、コネクタの機能を確認します。
 
 設定ファイルは、以下に説明するオプションと共に使用できます。
