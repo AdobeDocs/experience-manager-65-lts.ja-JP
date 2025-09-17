@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 12e2966754fe317c2a20951ee29b401425de486b
+source-git-commit: 4e4d367b93f1e99cf076df14a15352f664890676
 workflow-type: tm+mt
-source-wordcount: '7223'
+source-wordcount: '7103'
 ht-degree: 83%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 83%
 |---|---|
 | バージョン | サービスパック 1 （SP1）、GRANITE-61551 <!-- UPDATE FOR EACH NEW RELEASE --> のホットフィックス |
 | タイプ | サービスパックのリリース |
-| 日付 | 2025 年 9 月 9 日 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| 日付 | 2025年9月9日（PT）<!-- UPDATE FOR EACH NEW RELEASE --> |
 | ダウンロード URL | [ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq660%2Fhotfixes%2Fcq-6.5.lts.1-hotfix-GRANITE-61551-1.2.zip) |
 
 <!-- OLD URL TO JAR
@@ -317,7 +317,10 @@ AEM がアップグレード中に `/apps/system/config` の下にある既存�
 
 * 複数の `ResourceAccessGate` 参照が `ResourceAccessSecurityImpl` を初期化した際に発生する `ClassCastException` を解決するために、Sling ResourceAccessSecurity をバージョン 1.1.2 に更新しました。（NPR-42750）
 * Adobe Stock 統合でライセンスダイアログボックスがグレー表示される問題を修正しました。この問題は、`sunt:initList` 関数によって必須の入力フィールドが削除されたことにより発生しました。関数は、Coral Foundation クライアントライブラリで見つかりました。必要なフィールドを保持するようにクライアントライブラリを更新し、適切なライセンスダイアログボックス機能を有効にしました。（NPR-42748）
-* パッケージのインストール中に `DataTimeParseException` および `String.length()` の null ポインター例外が発生する Sling スクリプトの問題に対する修正をバックポートしました。 インストールエラーを削減し、安定性を向上させるために、Sling スクリプトをバージョン 2.8.3-1.0.10.6 に更新しました。（NPR-42640）
+* `org.apache.sling.scripting.jsp 2.6.0` での予期しない JSP コンパイルエラーを修正しました。 （NPR-42640）
+
+<!--
+* Backported the fix for Sling Scripting issue that caused `DataTimeParseException` and `String.length()` null pointer exceptions during package installation. Updated Sling Scripting to version 2.8.3-1.0.10.6 to reduce installation errors and improve stability. (NPR-42640) -->
 
 <!--
 #### Translation{#foundation-translation-65-lts-sp1} -->
@@ -352,25 +355,25 @@ AEM がアップグレード中に `/apps/system/config` の下にある既存�
 
 * ユーザーが exportDataAPI を使用して XFA ベースの PDF のデータを書き出すと、結果の XML は、Acrobat Reader を使用して手動で書き出した XML データと比較した際に不一致を示します。Acrobat Reader から生成された出力と比較すると、一部のフィールドの値が出力に含まれていませんでした。（LC-3922791）
 * Workbench の Output サービスでタグ付けされたPDFを生成すると、目次アイテムの参照タグの下に予期しないラベルタグが追加される。 （LC-3922756）
-* Output サービスを使用して、入力可能な動的 PDF をPDF/A 形式にフラット化する場合、動的なステートは保持されません。 これにより、特にタグ付けが有効になっている場合、データの損失や潜在的なコンプライアンスの問題が発生します。 （LC-3922708）
+* Output サービスを使用して、入力可能な動的 PDF をPDF/A 形式にフラット化する場合、動的なステートは保持されません。 この問題は、特にタグ付けが有効になっている場合に、データの損失や潜在的なコンプライアンスの問題を引き起こします。 （LC-3922708）
 * ユーザーが AEM Forms Designer でフィールドのキャプションを下揃えまたは右揃えに配置すると、タグツリーには対応する値のないキャプションのみが含まれ、アクセシビリティのタグ付けが不完全になります。（LC-3922619）
 * 生成された PDF の QR コードは読み取れなくなります。 QR コードの代替テキストはアクセシビリティテストにも失敗し、スクリーンリーダーの互換性に影響を与えます。（LC-3922551）
 * ユーザーがエージェント UI でレターをレンダリングする場合、FormService render （） API が原因でコンテンツが正しく表示されません。 （LC-3922461）
 * AEM Formsで、くぼんだ正方形スタイルの XDP からPDF/A ファイルを作成しようとすると、境界線のレンダリングで問題が発生します。 （LC-3922180）
 * XSD スキーマに連結された動的フォームの一部を統合すると、最終的なPDFで一部の連結されたフォームデータが保持されないので、部分的なデータ損失が発生します。 （LC-3922008）
 * AEM Forms 6.5.13 以降で、ユーザーが extractData API を使用してインタラクティブ PDF からデータをエクスポートしようとすると、手動でのエクスポートと比べてデータが欠落します。 （LC-3921983）
-* アクセシビリティコンプライアンスの問題に直面すると、1 つの統合リンクタグを作成する代わりに、AEM Forms Designerまたは Output サービスを使用して XDP フォームを静的 PDF に変換する際に、複数の Link-OBJR タグが作成されます。 （LC-3921977）
+* AEM Forms Designerまたは Output サービスを使用して XDP フォームを静的 PDF に変換すると、複数の `Link-OBJR` タグが作成される。 単一の統合リンクタグが想定されるので、この問題により、アクセシビリティコンプライアンスの問題が発生します。 （LC-3921977）
 
 ### アダプティブフォーム
 
 * AEM Formsでは、ルートパネルで「タイトルのリッチテキストを許可」を有効にすると、ネストされたパネルの「レコードのドキュメントからタイトルを除外」で、ルートパネルのタイトルが正しく非表示になりません。 これは、生成されたレコードのドキュメントで行われます。（FORMS-19696）
-* システムは、JSON スキーマで aem を通じて割り当てられたカスタム sling:resourceType 無視 :afProperties ます。 レンダリング中、カスタムリソースタイプは無視されます。 （FORMS-19691）
+* システムは、JSON スキーマの `sling:resourceType` を通じて割り当てられたカスタム `aem:afProperties` を無視します。 レンダリング中、カスタムリソースタイプは無視されます。 （FORMS-19691）
 * ユーザーが URI を使用して添付ファイルと事前入力されたアダプティブフォームを送信すると、バイナリデータがないことが原因で、フォームの送信が NullPointerException で失敗します。（FORMS-19371）（FORMS-19486）
 * ユーザーが「Formsとドキュメント」セクションでPDFをアップロードすると、タイムライン機能が機能しなくなります。 （FORMS-19407）（FORMS-19234）
-* AEM Forms の標準（OOTB）ファイル添付コンポーネントを使用してファイルをアップロードすると、セキュリティの脆弱性が特定されます。この問題により、送信プロセスが不正な第三者によって傍受される可能性があります。（FORMS-19271）
+* AEM Forms の標準（OOTB）ファイル添付コンポーネントを使用してファイルをアップロードすると、セキュリティの脆弱性が特定されます。この問題により、権限のないエンティティによって送信プロセスが妨害される可能性があります。 （FORMS-19271）
 * ユーザーが、レコードのドキュメント（DoR）を自動生成するようにAEM Forms内で標準のアダプティブフォームを設定すると、Acrobat Readerのドキュメントプロパティの「タイトル」フィールドに、取得した DoR のタイトルが表示されません。デフォルトでは、フォームのタイトルはファイル名の代わりには表示されません。（FORMS-19263）
 * ユーザーがエージェント UI でインタラクティブなコミュニケーションを開くと、事前入力されたデータは完全には消去されず、削除すると、同じデータが自動的に再入力されます。（FORMS-19151）
-* ユーザーがエージェント UI で日付フィールドをプレビューすると、日付が予期せず変更されます。この問題は、VM の UTC 設定とシステムによる日付の解釈の間のタイムゾーンの不一致が原因で発生します。（FORMS-19115）
+* ユーザーがエージェント UI で日付フィールドをプレビューすると、日付が予期せず変更されます。この問題は、VM の UTC 設定とシステムによる日付の解釈の間のタイムゾーンの不一致が原因で発生します。 （FORMS-19115）
 * ユーザーがフォームを送信すると、添付ファイルが重複して、同じファイルが複数アップロードされる場合があります。（FORMS-19045）（FORMS-19051）
 * Document Security のポリシーセットにコーディネーターを追加すると、実稼動環境と下位環境の両方で失敗します。 （FORMS-18603、FORMS-18212、FORMS-19697）
 * デスクトップモードで、ユーザーが空のフィールドで「datepicker-calendar-icon」をクリックすると、未定義の_$focusedDate 変数が原因でエラーが発生し、関連するカスタムスクリプトが中断されます。 （FORMS-18483）（FORMS-18268）
@@ -384,24 +387,24 @@ AEM がアップグレード中に `/apps/system/config` の下にある既存�
 * ユーザーがエージェント UI でレターをプレビューすると、IC 時間変換の問題により日付フィールドに誤った値が表示されます。これらの不一致は、VM 環境とシステムの時間の解釈（UTC とローカル時間）のタイムゾーンの違いによって生じます。（FORMS-17988）（FORMS-17248）
 * AEM Forms で通知 IC テンプレートを使用してレターをプレビューすると、同じサーバー上であっても、PDF の生成時間が 1.5 秒から 10 秒以上と大きく異なります。この不一致は、ビジネスクリティカルなワークフローに影響を及ぼします。（FORMS-17951）
 * ユーザーが「データソース」オプションを使用して、アダプティブフォーム内の手書き署名オブジェクトを XDP にバインドすると、変更を保存できません。この原因は、有効な値を使用した場合でも、アスペクト比の検証エラーが繰り返し発生するためです。（FORMS-17587）
-* ユーザーがドキュメントフラグメントに対して非表示のフィールドを多く含む特定の XDP を使用すると、AEMは cm:optional プロパティが false に設定されたCRX ノードを作成し、その結果、インタラクティブ通信（IC）の送信が失敗します。 （FORMS-17538）
+* ユーザーがドキュメントフラグメントに対して非表示のフィールドを多く含む特定の XDP を使用すると、AEM は `cm:optional` プロパティを false に設定した CRX ノードを作成し、その結果、インタラクティブなコミュニケーション（IC）の送信が失敗します。（FORMS-17538）
 * 顧客がレターをプレビューする際、リードとフラグメントの数字制限が定義されていると、数値ボックスフィールドが負の値を正しく処理できません。 この問題は、マイナス記号を数字の一部として扱う parseFloat の使用が原因で発生します。（FORMS-17451）
-* レターをプレビューすると、Adobe.json ファイルで「*」ワイルドカードが使用されていることに気づき、その目的と潜在的な変更に関する懸念が生じます。 （FORMS-17317）
+* レターをプレビューすると、Adobe.json ファイルで「*」ワイルドカードが使用されていることに気がつき、その目的と潜在的な変更に関する懸念が生じます。 （FORMS-17317）
 * ユーザーが固定レートセーバーの共同アカウントに適用でスクリーンリーダーを使用すると、見出しが誤ってクリック可能として通知され、アクセシビリティの問題が発生します。 （FORMS-17038）
 * フォームが埋め込まれている場合、生成された iframe にはタイトル属性がなくなり、アクセシビリティ準拠の問題が発生します。（FORMS-17010）
 * Forms Manager UI を使用してフォームをダウンロードすると、テーマやフラグメントなど、関連付けられた依存関係が常に含まれます。（FORMS-15811）
 * ユーザーがモバイルデバイス（iOSおよびAndroid™）上のフォームにアクセスすると、最初のページの「次へ」および「前へ」ボタンが無効になります。ただし、スクリーンリーダーは、それらを無効として識別しません。（FORMS-15773）
 * ユーザーがフラグメントと遅延読み込みを有効にして大きなフォームを保存すると、ドラフトを取得できず、ワークフローが中断されます。（FORMS-19890、FORMS-19808）
-* コアコンポーネントに基づくアダプティブフォームのフォームプロパティを保存する際に問題が発生しました。 これは、基盤コンポーネントエディターに基づくアダプティブフォームの冗長なスクリプトが含まれ、コアコンポーネントに基づくアダプティブフォームで競合が発生することが原因で発生していました。 編集者。 （FORMS-17474）
+* コアコンポーネントに基づくアダプティブフォームのフォームプロパティを保存する際に問題が発生しました。 このエラーは、基盤コンポーネントエディターに基づくアダプティブフォームの冗長なスクリプトが含まれ、コアコンポーネントに基づくアダプティブフォームで競合が発生することが原因で発生しました。 編集者。 （FORMS-17474）
 * ユーザーに、Adobe Sign GovCloud 署名ページが iframe でレンダリングされない問題が発生しました。 （FORMS-16803）
-* コアコンポーネントのアダプティブForms（AF）フラグメントの参照を選択する際にエラーが発生します。 「参照をレンダリングできません：絶対パスではありません」というエラーメッセージが表示され、適切な参照のレンダリングが妨げられています。 （FORMS-19678）
+* コアコンポーネントのアダプティブForms（AF）フラグメントの参照を選択する際にエラーが発生しました。 「参照をレンダリングできません：絶対パスではありません」というエラーメッセージが表示され、適切な参照のレンダリングが妨げられています。 （FORMS-19678）
 * Acrobat DC でのマルチスレッド変換のサポートが追加され、Word、Excel および PowerPoint のドキュメントをPDF ドキュメントへより効率的に同時変換できるようになりました。 （FORMS-21310）
 * AEM サービスパック 24 に `com.adobe.granite.toggle.impl.dev` バンドルが含まれるようになりました。これにより、Forms アドオンから削除することで、開発プロセスをより効率的に実行できます。 （FORMS-20139）
 * forms-foundation から FeatureToggleRenderConditionServlet を、Forms アドオンから com.adobe.granite.toggle.impl.dev バンドルを削除しました。 この更新により、Forms アドオンのインストール後、レンダリング条件が正しく解決され、コンポーネントの機能が向上します。 （FORMS-20138）
 * アダプティブFormsでクエリが長時間実行されたので、パフォーマンスが低下しました。 この更新では、効率を向上させるためにクエリの変更をバックポートします。 お客様は、タグ名が aemformsAFReferences のインデックスを作成できるようになりました。 （FORMS-21411）
 * WebtoPDF を使用してHTMLを Portable Document Format （PDF）に変換する際に、ヘッダーの位置がずれました。 この問題は、ドキュメントのレイアウトの一貫性と出力の読みやすさに影響を与えました。 （FORMS-21502、FORMS-21540）
 * PreFlight の検証に成功したにもかかわらず、PDF/A-1b の検証に失敗しました。 この問題は、PDF検証ツールを使用する大規模法人のお客様に対するドキュメントコンプライアンスチェックに影響を与えました。 （FORMS-20196）
-* UI でユーザーに翻訳されていない文字列が表示され、混乱が生じてインターフェイスを理解するのが困難になりました。 （FORMS-6542）
+* ユーザーの UI で翻訳されていない文字列が発生し、混乱が生じてインターフェイスを理解するのが困難になりました。 （FORMS-6542）
 * ユーザーにメール通知に関する問題が発生しました。 メールを送信ワークフローステップでメールを送信できなかったので、自動化されたコミュニケーションプロセスに影響を与えます。 （FORMS-17961）
 * ユーザーは、フォームワークフローのテストが失敗し、ワークフロープロセスを効率的に完了する機能に影響を与えていました。 （FORMS-16231）
 * AEM forms でPDF ファイルのタイムライン機能が使用できなかった問題を修正しました。 この問題は、ドキュメントの変更と改訂を効果的に追跡するユーザーの機能に影響を与えました。 AEM forms エリアの「PDFとドキュメント」セクションでFormsをアップロードすると、タイムラインビューが機能しなくなります。 （FORMS-19408）
@@ -410,12 +413,12 @@ AEM がアップグレード中に `/apps/system/config` の下にある既存�
 
 ### Forms の Captcha
 
-* 基盤コンポーネントに基づくアダプティブFormsに対する Hcaptcha と Turnstile のサポートを追加。 （FORMS-16562）
-* Captcha 設定を作成ダイアログでアイコンの重複の問題が発生した。 必須フィールドに入力する際に、情報アイコンがエラーアイコンと重なるので、設定セットアップ中に混乱が発生します。 （FORMS-16916）
+* 基盤コンポーネントに基づくアダプティブFormsに対する `Hcaptcha` と `Turnstile` のサポートを追加。 （FORMS-16562）
+* `Create hCaptcha Configuration` ダイアログボックスで、アイコンの重複に関する問題が発生した。 必須フィールドに入力する際に、情報アイコンがエラーアイコンと重なるので、設定セットアップ中に混乱が発生します。 （FORMS-16916）
 * 基盤コンポーネントに基づくアダプティブFormsで、誤った設定が reCAPTCHA 用に取得される。 設定コンテナがフォーム用に選択されていない場合、`conf/global` フォルダー内の複数の設定が原因で問題が発生していました。 （FORMS-19237）
 * reCAPTCHA がレンダリングされない問題が発生しました。 この影響を受けたのは、企業顧客のフォーム送信とセキュリティ検証でした。 （FORMS-17136、FORMS-19596）
 * reCAPTCHA エンタープライズのサイズがユーザーインターフェイス（UI）に反映されない問題が発生します。 （FORMS-16574）
-* ユーザーにおいて、「ReCaptchaConfigurationServiceImpl」の ResourceResolver が閉じられないために ReCaptcha 機能で問題が発生し、フォーム送信中に検証が断続的に失敗しました。 （FORMS-19241）
+* ユーザーは、`ReCaptchaConfigurationServiceImpl` で ResourceResolver が閉じられないために ReCaptcha 機能で問題が発生し、フォーム送信中に断続的な検証エラーが発生しました。 （FORMS-19241）
 * Sites でフォームを作成する際に、reCAPTCHA 検証で問題が発生しました。 AEM forms がフォーム名を正しく認識しなかったため、検証でエラーが発生しました。 （FORMS-20486）
 * エンタープライズ reCAPTCHA スコアが 1.0 の場合でも、フォーム送信が発生し、セキュリティリスクが生じる可能性がありました。 （FORMS-16766） {{$include }}
 * 送信エラーコードを 400 に更新することで、アダプティブフォームの reCAPTCHA アラートを改善しました。また、ログアラートを絞り込んで、タイムアウト、有効期限、ボット検出の失敗を区別し、トラブルシューティングの精度とシステムの可観測性を高めました。（FORMS-19240）
@@ -424,7 +427,7 @@ AEM がアップグレード中に `/apps/system/config` の下にある既存�
 
 ### Forms Management UI
 
-* Forms/監視フォルダーを作成/監視フォルダー作成プロセスで、ローカライズされていない文字列が発生していました。 監視フォルダーを作成する際に、「Watchfolder creation」や「Watchfolder created successfully」などの文字列が見つからず、ユーザーインターフェイスのエクスペリエンスに影響を与えていました。 （FORMS-15234）
+* `Forms`/`Create Watchfolder`/` Watchfolder` の作成プロセスで、ローカライズされていない文字列が発生していました。 監視フォルダーを作成する際に、`Watchfolder creation` や `Watchfolder created successfully` などの文字列が見つからず、ユーザーインターフェイスのエクスペリエンスに影響がありました。 （FORMS-15234）
 
 ## [!DNL Experience Manager Foundation] {#experience-manager-foundation}
 
@@ -530,18 +533,19 @@ AEM がアップグレード中に `/apps/system/config` の下にある既存�
 
 <!-- DO THESE KNOWN ISSUES CARRY OVER EACH RELEASE? THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST. -->
 
-### AEM 6.5.21～6.5.23 および AEM 6.5 LTS GA の JSP スクリプトバンドルの問題
+<!-- REMOVED THIS SECTION AS PER CQDOC-23046
+### Issue with JSP scripting bundle in AEM 6.5.21-6.5.23 and AEM 6.5 LTS GA
 
-AEM 6.5.21、6.5.22、6.5.23 および AEM 6.5 LTS GA には、既知の問題を含む `org.apache.sling.scripting.jsp:2.6.0` バンドルが付属しています。この問題は、通常、AEM インスタンスが多数の同時リクエストを処理する際の高負荷時に発生します。
+AEM 6.5.21, 6.5.22, 6.5.23, and AEM 6.5 LTS GA ship with the `org.apache.sling.scripting.jsp:2.6.0` bundle, which contains a known issue. The issue typically occurs under high load when the AEM instance handles many concurrent requests.
 
-この問題が発生すると、`org.apache.sling.scripting.jsp:2.6.0` への参照と共に、次の例外のいずれかがエラーログに表示される場合があります。
+When this issue occurs, one of the following exceptions may appear in the error logs alongside references to `org.apache.sling.scripting.jsp:2.6.0`:
 
 * `java.io.IOException: classFile.delete() failed`
 * `java.io.IOException: tmpFile.renameTo(classFile) failed`
 * `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
 * `java.io.FileNotFoundException`
 
-この問題を解決するためのホットフィックス [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) が使用可能です。
+A hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) is available to resolve this problem. -->
 
 ### SSL のみの機能を使用したDispatcher接続の失敗（AEM 6.5 LTS SP1 以降で修正）{#ssl-only-feature}
 
