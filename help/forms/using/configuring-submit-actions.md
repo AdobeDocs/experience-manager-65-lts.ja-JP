@@ -54,7 +54,7 @@ AEM as a Cloud Serviceのドキュメントについては、[Cloud ServiceのAE
 >[!NOTE]
 >
 >[AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM フォルダー
->>が存在することを確認します。ディレクトリは、添付ファイルを一時的に保存するために必要になります。ディレクトリが存在しない場合は作成します。
+>&#x200B;>が存在することを確認します。ディレクトリは、添付ファイルを一時的に保存するために必要になります。ディレクトリが存在しない場合は作成します。
 
 >[!CAUTION]
 >

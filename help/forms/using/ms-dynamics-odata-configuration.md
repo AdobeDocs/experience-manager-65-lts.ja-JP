@@ -142,7 +142,7 @@ OAuth クライアントを Active Directory Federation Services（AD FS）マ�
 
 ## フォームデータモデルの作成 {#create-form-data-model}
 
-AEM Forms パッケージをインストールすると、フォームデータモデルの&#x200B;** Microsoft Dynamics FDM** が AEM インスタンスにデプロイされます。デフォルトの場合、MS Dynamics OData Cloud Service（OData サービス）で定義された Microsoft Dynamics サービスが、フォームデータモデルのデータソースとして使用されます。 
+AEM Forms パッケージをインストールすると、フォームデータモデルの&#x200B;**&#x200B; Microsoft Dynamics FDM** が AEM インスタンスにデプロイされます。デフォルトの場合、MS Dynamics OData Cloud Service（OData サービス）で定義された Microsoft Dynamics サービスが、フォームデータモデルのデータソースとして使用されます。 
 
 初めてフォームデータモデルを開くと、設定済みの Microsoft Dynamics サービスに接続され、Microsoft Dynamics インスタンスからエンティティが取得されます。Microsoft Dynamics から取得される「連絡先」エンティティと「潜在顧客」エンティティは、フォームデータモデル内に既に追加されています。
 
