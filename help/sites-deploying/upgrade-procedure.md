@@ -11,7 +11,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 255ef365-0da5-4bc9-b099-2e3bc67dd25a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 57bf39aa914bddca05d526b46b581579965069d6
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 98%
@@ -25,12 +25,6 @@ ht-degree: 98%
 >ほとんどの Adobe Experience Manager（AEM）のアップグレードはインプレースで実行されるので、アップグレードにはオーサー層のダウンタイムが必要になります。これらのベストプラクティスに従うことで、パブリッシュ層のダウンタイムを最小限に抑えたり、なくしたりできます。
 
 AEM 環境をアップグレードする際は、オーサー環境またはパブリッシュ環境のアップグレード方法の違いを考慮して、オーサーとエンドユーザーの両方のダウンタイムを最小限に抑える必要があります。このページでは、AEM 6.x のバージョンで現在実行されている AEM トポロジをアップグレードする手順の概要を説明します。オーサー層とパブリッシュ層および Mongo ベースと TarMK ベースのデプロイメントではプロセスが異なるので、各層およびマイクロカーネルは個別の節に記載されています。デプロイメントを実行するときは、最初にオーサー環境をアップグレードし、成功を確認してから、パブリッシュ環境をアップグレードすることをお勧めします。
-
-<!--
->[!IMPORTANT]
->
->The downtime during the upgrade can be significally reduced by indexing the repository before performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)
--->
 
 ## TarMK オーサー層 {#tarmk-author-tier}
 
@@ -75,7 +69,7 @@ AEM 環境をアップグレードする際は、オーサー環境またはパ�
 
 ### 失敗した場合（ロールバック） {#if-unsuccessful-rollback}
 
-![rollback](assets/rollback.jpg)
+![ロールバック](assets/rollback.jpg)
 
 1. コールドスタンバイインスタンスを新しいプライマリとして起動します。
 
