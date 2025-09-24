@@ -7,9 +7,9 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: 6dbc943b-3bca-4926-896d-f1471a49a70f
-source-git-commit: 4e4d367b93f1e99cf076df14a15352f664890676
+source-git-commit: 2773e1092e63479aa135918e48dd4b01e3dad310
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '594'
 ht-degree: 11%
 
 ---
@@ -20,7 +20,7 @@ Experience Hubは、Adobe Experience Manager内のコンテンツ、アセット
 
 再考されたAEM Experience Hub Workspace のクイックツアー（4 分 9 秒）をご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3471442?learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3471396?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -32,11 +32,12 @@ Available as a private beta, Experience Hub offers an optimized experience focus
    ![Adobe Experience Cloudのホームページ ](/help/assets/assets-experience-hub/experience-cloud-experiencemanager-ams.png)
 
 1. **クイックアクセス** グループ化で、[**Experience Manager**](https://experience.adobe.com) をクリックします。
-1. 初めてアクセスするときは、「**操作を教えてください** ページで目的のオプションをクリックして、Adobeがエクスペリエンスをカスタマイズできるようにします。
+1. 初回アクセス時には、**コンテンツ作成者** プリセット（ページの右上隅付近に表示）が割り当てられます。 表示されるウィジェット、ナビゲーション項目およびコンテンツを制御します。
 
-   この環境設定はいつでも変更できます。
+   このプリセットはいつでも変更できます。
 
-   ![ 何をしたいか教えてくださいページ ](/help/assets/assets-experience-hub/experience-cloud-tellus-ams.png)
+   ![ 「コンテンツ作成者」プリセットを表示するドロップダウンリストが選択されている ](/help/assets/assets-experience-hub/experience-hub-role-selection.png)
+
 
 Adobe Experience Managerページが更新され、ナビゲーションが強化され、インタラクティブウィジェットが追加されました。 以前のソリューションカードのコレクションでは、次のようなツールへのアクセスが可能でした。
 
