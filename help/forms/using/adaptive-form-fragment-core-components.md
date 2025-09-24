@@ -7,19 +7,20 @@ feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, Developer
 exl-id: 708a4ab2-ca66-445d-8d69-bcf12fd5158a
-source-git-commit: 3239416a53382a9f683f90dacd91b40ac20e9f50
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1840'
-ht-degree: 100%
+source-wordcount: '1849'
+ht-degree: 98%
 
 ---
 
 # コアコンポーネントに基づくアダプティブフォームでのアダプティブフォームフラグメントの作成と使用 {#adaptive-form-fragments}
 
-| バージョン | 記事リンク |
-| -------- | ---------------------------- |
-| AEM 6.5 | この記事 |
-| AEM as a Cloud Service | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=ja) |
+## 適用先 {#applies-to}
+
+このドキュメントは、**AEM 6.5 LTS Forms** に適用されます。
+
+AEM as a Cloud Serviceのドキュメントについては、[Cloud ServiceのAEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=ja) を参照してください。
 
 すべてのフォームは特定の目的のために設計されますが、ほとんどのフォームにはいくつかの共通するセグメントがあります（例：名前と住所、家族の詳細、収入の詳細などの個人情報を入力するためのセグメント）。フォーム開発者は、新しいフォームを作成するたびに、これらの共通セグメントを作成する必要があります。
 

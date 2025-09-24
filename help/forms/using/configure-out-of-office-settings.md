@@ -5,19 +5,20 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: ea10d2e1-9f17-4757-ae2e-67447ff0ad0a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 100%
+source-wordcount: '835'
+ht-degree: 97%
 
 ---
 
 # 不在設定の指定 {#configure-out-of-office-settings}
 
-| バージョン | 記事リンク |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/configure-out-of-office-settings.html?lang=ja) |
-| AEM 6.5 | この記事 |
+## 適用先 {#applies-to}
+
+このドキュメントは、**AEM 6.5 LTS Forms** に適用されます。
+
+AEM as a Cloud Serviceのドキュメントについては、[Cloud ServiceのAEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/configure-out-of-office-settings.html?lang=ja) を参照してください。
 
 不在にする予定がある場合は、その期間に割り当てられる項目に対して実行する操作を指定できます。
 

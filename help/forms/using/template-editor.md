@@ -9,10 +9,10 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 6e909f87-4233-4158-a4e1-f0ee2ada366a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2030'
-ht-degree: 100%
+source-wordcount: '2039'
+ht-degree: 98%
 
 ---
 
@@ -20,10 +20,11 @@ ht-degree: 100%
 
 <span class="preview">[アダプティブフォームの新規作成](/help/forms/using/create-an-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
 
-| バージョン | 記事リンク |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html?lang=ja) |
-| AEM 6.5 | この記事 |
+## 適用先 {#applies-to}
+
+このドキュメントは、**AEM 6.5 LTS Forms** に適用されます。
+
+AEM as a Cloud Serviceのドキュメントについては、[Cloud ServiceのAEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html?lang=ja) を参照してください。
 
 
 
@@ -192,7 +193,7 @@ ht-degree: 100%
 1. **FormsManager 設定**&#x200B;を探して開きます。
 
    * アダプティブフォームの初期設定済みテンプレートを表示または非表示にするには、「**AF および AD の初期設定済みテンプレートを含める**」オプションをオンまたはオフにします。
-   * AEM 6.0 Forms または AEM 6.1 Forms リリースで追加され、現在非推奨になっているアダプティブフォームの初期設定済みテンプレートを表示または非表示にするには、「**AEM 6.0 の AF テンプレートを含める**」オプションをオンまたはオフにします。このオプションをオンにした場合、これを有効にするには、「**AF および AD の標準テンプレートを含める**」の設定を有効にする必要があります。
+   * AEM 6.0 Forms または AEM 6.1 Forms リリースで追加され、現在非推奨になっているアダプティブフォームテンプレートのボックスを表示または非表示にするには、「**AEM 6.0 の AF テンプレートを含める**」オプションをオンまたはオフにします。このオプションをオンにした場合、これを有効にするには、「**AF および AD の標準テンプレートを含める**」の設定を有効にする必要があります。
 
 1. 「**保存**」をクリックします。標準テンプレートの表示オプションが変更されます。
 

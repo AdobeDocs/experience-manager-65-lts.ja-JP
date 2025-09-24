@@ -5,19 +5,20 @@ solution: Experience Manager, Experience Manager Forms
 feature: Form Data Model
 role: Admin, User, Developer
 exl-id: 56b4a767-1210-47f3-b022-766b0dda9943
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 97%
+source-wordcount: '410'
+ht-degree: 92%
 
 ---
 
 # OAuth 2.0 クライアント資格情報フローを使用したSalesforceの統合  {#configure-salesforce-with-ouath-2.0-client-credential}
 
-| バージョン | 記事リンク |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [ここをクリックしてください](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/aem-forms-salesforce-integration) |
-| AEM 6.5 | この記事 |
+## 適用先 {#applies-to}
+
+このドキュメントは、**AEM 6.5 LTS Forms** に適用されます。
+
+AEM as a Cloud Serviceのドキュメントについては、[Cloud ServiceのAEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/aem-forms-salesforce-integration) を参照してください。
 
 OAuth 2.0 クライアント資格情報を使用して、AEM Forms を Salesforce アプリケーションと統合できます。OAuth 2.0 クライアント資格情報は、ユーザーの関与なしに直接通信するための標準で安全な方法です。
 
@@ -36,7 +37,7 @@ Salesforce アプリケーションと AEM 環境間の通信を設定する前�
 
 * [OAuth 2.0 クライアント資格情報フローを使用した Salesforce 接続アプリ](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5)および組織の API のみのユーザーを作成し、アプリの Consumer key と Consumer secret を取得します。
 
-* Swagger ファイルが組織の API に合わせて適切に設定されていることを確認します。または、AEM 環境での利用に合わせて、最初から [Swagger ファイルを作成](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api)することもできます。
+* Swagger ファイルが組織の API に合わせて適切に設定されていることを確認します。または、AEM 環境での利用に合わせて、最初から [Swagger ファイルを作成](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api)することもできます。
 >[!NOTE]
 >
 > AEM 6.5 では、Swagger 2.0 ファイル仕様のみをサポートします。

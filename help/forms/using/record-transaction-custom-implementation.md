@@ -8,19 +8,20 @@ feature: Transaction Reports
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 205394bf-4609-4bdd-a030-974e354f9700
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 100%
+source-wordcount: '246'
+ht-degree: 91%
 
 ---
 
 # OSGi 上の AEM Forms のカスタム実装のトランザクションの記録 {#record-a-transaction-for-custom-implementations}
 
-| バージョン | 記事リンク |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [ここをクリックしてください](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/using-communications/record-transaction-custom-implementation) |
-| AEM 6.5 | この記事 |
+## 適用先 {#applies-to}
+
+このドキュメントは、**AEM 6.5 LTS Forms** に適用されます。
+
+AEM as a Cloud Serviceのドキュメントについては、[Cloud ServiceのAEM Forms](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/using-communications/record-transaction-custom-implementation) を参照してください。
 
 トランザクションとして自動的に計上されないアクションを記録するには、TransactionRecorder API を使用します
 

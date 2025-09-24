@@ -9,19 +9,20 @@ feature: Document Services,Reader Extensions, Forms Service,PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 03e87c5a-c106-4b4c-9b42-8ce7a04d9c0c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 100%
+source-wordcount: '1422'
+ht-degree: 98%
 
 ---
 
 # AEM ドキュメントサービスの概要{#overview-of-aem-document-services}
 
-| バージョン | 記事リンク |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ja#) |
-| AEM 6.5 | この記事 |
+## 適用先 {#applies-to}
+
+このドキュメントは、**AEM 6.5 LTS Forms** に適用されます。
+
+AEM as a Cloud Serviceのドキュメントについては、[Cloud ServiceのAEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ja#) を参照してください。
 
 
 AEM ドキュメントサービスは、PDF ドキュメントを作成、アセンブリ、およびセキュリティ保護のための一連の OSGi サービスです。ドキュメントサービスには、次のサービスが含まれています。
@@ -51,11 +52,11 @@ Output サービスを使用して XML データをフォームデザインと�
 * **generatePDFOutputBatch**：複数のテンプレートと複数のデータレコードをマージして、1 回の実行で複数の PDF ファイルを生成します。すべての PDF ファイルをまとめて 1 つの PDF を生成するオプションもあります。
 * **generatePrintedOutputBatch**：複数のテンプレートと複数のデータレコードを結合して、1 回の実行で複数の印刷ドキュメント（PS、PCL、ZPL、DPL、IPL、TPCL）を生成します。1 つの印刷ドキュメントを生成するオプションもあります。
 
-## Assembler サービス {#assembler-service}
+## アセンブラーサービス {#assembler-service}
 
-Assembler サービスでは、PDF ドキュメントや XDP ドキュメントの結合、並べ替えおよび拡張と、PDF ドキュメントに関する情報の取得ができます。Assembler サービスに送信される各ジョブには、Document Description XML（DDX）ドキュメント、ソースドキュメントおよび外部リソース（文字列とグラフィック）が含まれます。DDX ドキュメントには、ソースドキュメントを使用して 1 組の結果ドキュメントを生成する方法が記述されています。
+アセンブラーサービスでは、PDF ドキュメントや XDP ドキュメントの結合、並べ替えおよび拡張と、PDF ドキュメントに関する情報の取得ができます。アセンブラーサービスに送信される各ジョブには、Document Description XML（DDX）ドキュメント、ソースドキュメントおよび外部リソース（文字列とグラフィック）が含まれます。DDX ドキュメントには、ソースドキュメントを使用して 1 組の結果ドキュメントを生成する方法が記述されています。
 
-上記の機能の他に、次の Assembler サービスがあります。
+上記の機能の他に、次のアセンブラーサービスがあります。
 
 * PDF ドキュメントを PDF/A 標準に変換します。
 * PDF フォーム、XML フォーム（Designer で作成）および PDF フォーム（Acrobat で作成）を、PDF/A-1b、PDF/A-2b、PDFA/A-3b に変換します。
@@ -64,7 +65,7 @@ Assembler サービスでは、PDF ドキュメントや XDP ドキュメント�
 
 ### DDX について {#about-ddx}
 
-Assembler サービスを利用するときは、必要な出力を記述するために Document Description XML（DDX）と呼ばれる XML ベースの言語を使用します。DDX は、その要素がドキュメントの構築ブロックを表す宣言型のマークアップ言語です。この構築ブロックには、PDF ドキュメント、XDP ドキュメント、XDP フォームのフラグメントおよびその他の要素（注釈、しおり、スタイルを設定したテキストなど）が含まれます。
+アセンブラーサービスを利用するときは、必要な出力を記述するために Document Description XML（DDX）と呼ばれる XML ベースの言語を使用します。DDX は、その要素がドキュメントの構築ブロックを表す宣言型のマークアップ言語です。この構築ブロックには、PDF ドキュメント、XDP ドキュメント、XDP フォームのフラグメントおよびその他の要素（注釈、しおり、スタイルを設定したテキストなど）が含まれます。
 
 DDX ドキュメントは、次のような特性を持つ結果ドキュメントを指定できます。
 

@@ -9,10 +9,10 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 5455facf-ed09-4266-a43a-61eef3ecc33e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 100%
+source-wordcount: '584'
+ht-degree: 96%
 
 ---
 
@@ -20,10 +20,11 @@ ht-degree: 100%
 
 <span class="preview">[アダプティブフォームの新規作成](/help/forms/using/create-an-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
 
-| バージョン | 記事リンク |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/introduction-form-sequence.html?lang=ja) |
-| AEM 6.5 | この記事 |
+## 適用先 {#applies-to}
+
+このドキュメントは、**AEM 6.5 LTS Forms** に適用されます。
+
+AEM as a Cloud Serviceのドキュメントについては、[Cloud ServiceのAEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/introduction-form-sequence.html?lang=ja) を参照してください。
 
 
 フォーム作成者は、アダプティブフォームを使用すると非常に簡単に複数手順のデータキャプチャエクスペリエンスを作成できます。複数パネルの作成や、各パネルと別の移動パターンとの関連付けに対するビルトインのサポートが付属しています。フォーム作成者は、フォームフィールドを論理セクションでグループ化し、グループをパネルとして表示できます。パネル間の移動はすべてパネルレイアウトを使用して制御されます。作成者は、様々なレイアウトでパネルを配置できます。例えば、ウィザードレイアウトで順番に配置することも、タブ付きレイアウトを使って臨時に配置することもできます。パネルレイアウトについては、[アダプティブフォームのレイアウトの機能](../../forms/using/layout-capabilities-adaptive-forms.md)を参照してください。
@@ -52,6 +53,6 @@ ht-degree: 100%
    * **確認**：ユーザーがフォームに署名してシーケンスの確認（概要）段階に到達したときにフォーム送信の確認メッセージを表示する&#x200B;**概要**&#x200B;コンポーネントが含まれます。作成者は概要コンポーネントのテキストの構成、お礼のメッセージの表示、生成された PDF へのリンクの表示などを設定できます。
 
 1. root パネルのレイアウトを&#x200B;**[!UICONTROL ウィザード]**&#x200B;として選択します。
-1. 残りの手順を完了して、フォームテンプレートを作成します。[カスタムアダプティブフォームのテンプレートの作成](../../forms/using/custom-adaptive-forms-templates.md)を参照してください。
+1. 残りの手順を完了して、フォームテンプレートを作成します。[カスタムアダプティブフォームテンプレートの作成](../../forms/using/custom-adaptive-forms-templates.md)を参照してください。
 
 フォームテンプレートでフォームシーケンスを定義したら、そのテンプレートを使用して、適切なシーケンスで定義した基本構造を持つフォームを作成できます。フォームはいつでも要件に合わせてカスタマイズできます。

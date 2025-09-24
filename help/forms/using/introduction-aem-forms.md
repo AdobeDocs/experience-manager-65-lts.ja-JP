@@ -5,21 +5,20 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: e9549ac9-0ada-4661-969a-709f0ed3b133
-source-git-commit: d9f6415aabcbc55af23824d9e0ab33c418f6761f
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 100%
+source-wordcount: '943'
+ht-degree: 97%
 
 ---
 
-# AEM Forms の概要{#introduction-to-aem-forms}
+# AEM Forms の概要 {#introduction-to-aem-forms}
 
-| バージョン | 記事リンク |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=ja) |
-| AEM 6.5 | この記事 |
+## 適用先 {#applies-to}
 
-AEM Forms における新機能や改良点については、[AEM Forms における新機能](../../forms/using/whats-new.md)を参照してください。
+このドキュメントは、**AEM 6.5 LTS Forms** に適用されます。
+
+AEM as a Cloud Serviceのドキュメントについては、[Cloud ServiceのAEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=ja) を参照してください。
 
 ## AEM Forms について {#about-aem-forms}
 

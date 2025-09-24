@@ -5,10 +5,10 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '4283'
-ht-degree: 100%
+source-wordcount: '4292'
+ht-degree: 99%
 
 ---
 
@@ -16,10 +16,11 @@ ht-degree: 100%
 
 <span class="preview">[アダプティブフォームの新規作成](/help/forms/using/create-an-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
 
-| バージョン | 記事リンク |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ja) |
-| AEM 6.5 | この記事 |
+## 適用先 {#applies-to}
+
+このドキュメントは、**AEM 6.5 LTS Forms** に適用されます。
+
+AEM as a Cloud Serviceのドキュメントについては、[Cloud ServiceのAEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ja) を参照してください。
 
 
 ## 概要 {#overview}
@@ -96,7 +97,7 @@ ht-degree: 100%
    <th>アダプティブフォームコンポーネント</th>
    <th>対応する XFA コンポーネント</th>
    <th>レコードのドキュメントテンプレートにデフォルトで含まれるか。</th>
-   <th>備考</th>
+   <th>メモ</th>
   </tr>
   <tr>
    <td>ボタン</td>
@@ -186,7 +187,7 @@ ht-degree: 100%
   <tr>
    <th>アダプティブフォームコンポーネント</th>
    <th>対応する XFA コンポーネント</th>
-   <th>備考</th>
+   <th>メモ</th>
   </tr>
   <tr>
    <td>パネル<br /> </td>
@@ -198,7 +199,7 @@ ht-degree: 100%
 
 ### 静的コンポーネント {#static-components}
 
-| アダプティブフォームコンポーネント | 対応する XFA コンポーネント | 備考 |
+| アダプティブフォームコンポーネント | 対応する XFA コンポーネント | メモ |
 |---|---|---|
 | 画像 | 画像 | レコードのドキュメントの設定を使用して除外しない限り、TextDraw と Image の各コンポーネントは、連結されているかどうかを問わず、XSD ベースのアダプティブフォーム用のレコードのドキュメントに常に表示されます。 |
 | テキスト | テキスト |

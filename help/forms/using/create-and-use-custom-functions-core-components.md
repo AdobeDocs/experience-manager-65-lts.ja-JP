@@ -6,9 +6,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
 exl-id: 5f6106a9-64a6-45aa-a31d-2075d1e911bf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '3385'
+source-wordcount: '3394'
 ht-degree: 99%
 
 ---
@@ -24,10 +24,11 @@ ht-degree: 99%
 カスタム関数の最新機能を使用するには、AEM Forms コアコンポーネント環境で[最新のフォームバージョン](https://github.com/adobe/aem-core-forms-components/tree/release/650)を設定する必要があります。</span>
 
 
-| バージョン | 記事リンク |
-| -------- | ---------------------------- |
-| AEM 6.5 | この記事 |
-| AEM as a Cloud Service | [ここをクリックしてください](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions) |
+## 適用先 {#applies-to}
+
+このドキュメントは、**AEM 6.5 LTS Forms** に適用されます。
+
+AEM as a Cloud Serviceのドキュメントについては、[Cloud ServiceのAEM Forms](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions) を参照してください。
 
 ## はじめに
 
@@ -60,8 +61,8 @@ AEM Forms 6.5 には、ルールエディターを使用して複雑なビジネ
 
 >[!NOTE]
 >`[functionName]` は関数の名前です。スペースは使用できません。
->&#x200B;>`<Function Name>` アダプティブフォームのルールエディターでの関数の表示名です。
->&#x200B;>関数名が関数自体の名前と同じ場合は、構文から `[functionName]` を省略できます。
+>>`<Function Name>` アダプティブフォームのルールエディターでの関数の表示名です。
+>>関数名が関数自体の名前と同じ場合は、構文から `[functionName]` を省略できます。
 
 #### パラメーター
 
@@ -572,7 +573,7 @@ jsdoc コメントを含むまたは含まないカスタム関数を作成で�
 
 >[!NOTE]
 >
-> 次の[カスタム関数](/help/forms/using/assets/customfunctions.zip)フォルダーを参照できます。[パッケージマネージャー](https://experienceleague.adobe.com/ja/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager)を使用して、このフォルダーをダウンロードして AEM インスタンスにインストールします。
+> 次の[カスタム関数](/help/forms/using/assets/customfunctions.zip)フォルダーを参照できます。[パッケージマネージャー](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager)を使用して、このフォルダーをダウンロードして AEM インスタンスにインストールします。
 
 ### カスタム関数での非同期関数のサポート {#support-of-async-functions}
 

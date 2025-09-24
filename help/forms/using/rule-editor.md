@@ -9,10 +9,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2c0a5185-7759-447a-b4c6-36feaa4a23d3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '6606'
-ht-degree: 100%
+source-wordcount: '6615'
+ht-degree: 99%
 
 ---
 
@@ -20,10 +20,11 @@ ht-degree: 100%
 
 <span class="preview">[アダプティブフォームの新規作成](/help/forms/using/create-an-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
 
-| バージョン | 記事リンク |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=ja) |
-| AEM 6.5 | この記事 |
+## 適用先 {#applies-to}
+
+このドキュメントは、**AEM 6.5 LTS Forms** に適用されます。
+
+AEM as a Cloud Serviceのドキュメントについては、[Cloud ServiceのAEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=ja) を参照してください。
 
 ## 概要 {#overview}
 
@@ -549,7 +550,7 @@ AEM Forms では、ルールを記述するために最後に使用したルー�
 
 forms-power-users グループに追加されたユーザーは、コードエディターを使用できます。ルールエディターは、ビジュアルエディターを使用して作成するルールの JavaScript コードを自動生成します。生成されたコードを表示するには、ビジュアルエディターからコードエディターに切り替えます。ただし、コードエディターでルールコードを変更した場合、ビジュアルエディターに戻すことはできません。ビジュアルエディターではなく、コードエディターでルールを記述したい場合は、コードエディターで新たにルールを記述することもできます。ビジュアルコードエディターの切り替えボタンを使用して、2 つのモードを切り替えることができます。
 
-アダプティブフォームのコードエディターで使用される式言語は JavaScript です。すべての式は、有効な JavaScript™ の式で、アダプティブフォームのスクリプトモデル API を使用しています。これらの式は、特定のタイプの値を返します。アダプティブフォームのクラス、イベント、オブジェクトおよびパブリック API の完全なリストについては、[アダプティブフォーム用 JavaScript ライブラリ API リファレンス](https://helpx.adobe.com/jp/experience-manager/6-5/forms/javascript-api/index.html)を参照してください。
+アダプティブフォームのコードエディターで使用される式言語は JavaScript です。すべての式は、有効な JavaScript™ の式で、アダプティブフォームのスクリプトモデル API を使用しています。これらの式は、特定のタイプの値を返します。アダプティブフォームのクラス、イベント、オブジェクトおよびパブリック API の完全なリストについては、[アダプティブフォーム用 JavaScript ライブラリ API リファレンス](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)を参照してください。
 
 コードエディターでルールを記述する際のガイドラインについて詳しくは、[アダプティブフォームの式](/help/forms/using/adaptive-form-expressions.md)を参照してください。
 
