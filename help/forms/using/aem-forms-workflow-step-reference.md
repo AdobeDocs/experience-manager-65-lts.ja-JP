@@ -18,7 +18,7 @@ ht-degree: 99%
 
 このドキュメントは、**AEM 6.5 LTS Forms** に適用されます。
 
-AEM as a Cloud Serviceのドキュメントについては、[Cloud ServiceのAEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference) を参照してください。
+AEM as a Cloud Serviceのドキュメントについては、[Cloud ServiceのAEM Forms](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference) を参照してください。
 
 ワークフローモデルを使用して、ビジネスロジックを、自動化された繰り返しプロセスに変換します。モデルは、一連の手順を定義して実行するのに役立ちます。ワークフローを一時的なものにするか、複数のリソースを使用するかなど、モデルのプロパティを定義することもできます。[ビジネスロジックを達成するために、様々な AEM ワークフローステップをモデルに含めることができます](/help/sites-developing/workflows-models.md#extending-aem)。
 
