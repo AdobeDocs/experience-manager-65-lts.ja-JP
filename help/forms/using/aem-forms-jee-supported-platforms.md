@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 hide: true
 hidefromtoc: true
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 6ba07ca04dde793e5750b65bbe5fc9c51418ac90
 workflow-type: tm+mt
-source-wordcount: '4005'
-ht-degree: 100%
+source-wordcount: '4117'
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ JEE サーバー上の AEM Forms は、サポートされているオペレー�
 
 - **サービスパックの対象範囲**：アドビでは、最新の 6 つのサービスパックのいずれかを使用して、AEM Forms 環境のテクニカルサポートを提供します。現在のバージョンが最新の 6 つのサービスパックよりも古い場合、最適なパフォーマンス、セキュリティ、継続的なサポートを実現するために、アドビでは最新バージョンにアップグレードすることを強くお勧めします。
 
-- **パッチインストーラーのガイドライン**：パッチインストーラーを使用して更新する場合、基になる完全なインストーラーバージョンが 2 リリース以内のものであることを確認することが重要です。例えば、サービスパック 6.5.19.0 のインストール中に、基になる完全なインストーラーのバージョンが 6.5.18.0 または 6.5.12.0 であることを確認します。
+- **パッチインストーラーのガイドライン**：パッチインストーラーを使用してアップデートする場合、基になる完全なインストーラーバージョンが 2 リリース以内のものであることを確認することが重要です。例えば、サービスパック 6.5.19.0 のインストール中に、基になる完全なインストーラーのバージョンが 6.5.18.0 または 6.5.12.0 であることを確認します。
 
 - **パッチアップグレードのサポート**：サポートされている最新のプラットフォームにアップグレードするまで、最新のサービスパックへのアップグレードを続行できます。例えば、6.5.19.0 でサポートされているプラットフォームの組み合わせに移行する場合、サービスパック 6.5.12.0 から 6.5.19.0 へのアップグレードが可能です。
 
@@ -112,6 +112,11 @@ Adobe Experience Manager Forms を使用するには、Java™ 仮想マシン�
    <th><p><strong>サポートされているパッチ定義</strong></p> </th>
   </tr>
   <tr> 
+   <td><p>Oracle Java™ SE 17（64 ビット）<sup> [8] </sup> </p>  </td>
+   <td><p>A：サポート対象</p> </td>
+   <td><p>マイナーリリースとアップデート </p> </td>
+  </tr>
+  <tr> 
    <td><p>Oracle Java™ SE 11（64 ビット）<sup> [8] </sup> </p>  </td>
    <td><p>A：サポート対象</p> </td>
    <td><p>マイナーリリースとアップデート </p> </td>
@@ -128,6 +133,11 @@ Adobe Experience Manager Forms を使用するには、Java™ 仮想マシン�
   </tr>
   <tr>
    <td>Oracle Java™ SE 8（64 ビット）</td>
+   <td>A：サポート対象</td>
+   <td>マイナーリリースとアップデート</td>
+  </tr>
+  <tr>
+   <td>IBM® J17 Virtual Machine （Websphere Liberty のみ対応） <br /> </td>
    <td>A：サポート対象</td>
    <td>マイナーリリースとアップデート</td>
   </tr>
@@ -164,12 +174,17 @@ Adobe Experience Manager Forms を使用するには、Java™ 仮想マシン�
    <td><p>サポート対象</p> </td>
   </tr>
   <tr>
-   <td><p> MongoDB Enterprise 5.0</p> </td>
+   <td><p> MongoDB Enterprise 7.0 </p> </td>
+   <td><p>リポジトリ Microkernel</p> </td>
+   <td><p>サポート対象</p> </td>
+  </tr>
+  <tr>
+   <td><p> MongoDB Enterprise 6.0</p> </td>
    <td><p>リポジトリ Microkernel</p> </td>
    <td><p>サポート対象</p> </td>
   </tr>
     <tr>
-   <td><p> MongoDB Enterprise 6.0 </p> </td>
+   <td><p> MongoDB Enterprise 5.0 </p> </td>
    <td><p>リポジトリ Microkernel</p> </td>
    <td><p>サポート対象</p> </td>
   </tr>
@@ -183,6 +198,11 @@ Adobe Experience Manager Forms を使用するには、Java™ 仮想マシン�
    <td><p>サポート対象</p> </td>
   </tr>
   <tr>
+   <td><p>Microsoft® SQL Server 2022 </p> </td>
+   <td><p>リポジトリ Microkernel</p> </td>
+   <td><p>サポート対象</p> </td>
+  </tr>
+  <tr>
    <td><p>Microsoft® SQL Server 2019 </p> </td>
    <td><p>リポジトリ Microkernel</p> </td>
    <td><p>サポート対象</p> </td>
@@ -190,6 +210,11 @@ Adobe Experience Manager Forms を使用するには、Java™ 仮想マシン�
   <tr>
    <td>IBM® DB2® 11.1（非推奨）</td>
    <td>リポジトリ Microkernel</td>
+   <td>R：限定サポート</td>
+  </tr>
+  <tr>
+   <td>MySQL 8.4</td>
+   <td>-</td>
    <td>R：限定サポート</td>
   </tr>
   <tr>
@@ -223,8 +248,18 @@ Adobe Experience Manager Forms を使用するには、Java™ 仮想マシン�
   </tr>
   <tr>
    <td>MySQL</td>
+   <td><p>MySQL Connector/J 8.4</p> </td>
+   <td><p>JEE のインストールで AEM Forms に付属</p> </td>
+  </tr>
+  <tr>
+   <td>MySQL</td>
    <td><p>MySQL Connector/J 5.7</p> <p>mysql-connector-java-5.1.44-bin.jar（バージョン 5.1.44）</p> </td>
    <td><p>JEE 上の AEM Forms のインストールに付属</p> </td>
+  </tr>
+  <tr>
+   <td>Microsoft® SQL Server<br /> </td>
+   <td><p>Microsoft® SQL Server JDBC ドライバー 12.10.0<br /> </p> <p>sqljdbc12.10.0.jar</p> </td>
+   <td><p>Microsoft® の web サイトからダウンロードします。</p> </td>
   </tr>
   <tr>
    <td>Microsoft® SQL Server<br /> </td>
@@ -249,6 +284,11 @@ Adobe Experience Manager Forms を使用するには、Java™ 仮想マシン�
    <td><p><strong>サポートされているパッチ定義</strong></p> </td>
   </tr>
   <tr>
+   <td>Oracle WebLogic Server 14.1.2 <sup>[9]</sup></td>
+   <td>A：サポート対象</td>
+   <td>サービスパックと重要なアップデート</td>
+  </tr>
+  <tr>
    <td>Oracle WebLogic Server 12.2.1（12c R2）（非推奨）<sup>[9]</sup></td>
    <td>A：サポート対象</td>
    <td>サービスパックと重要なアップデート</td>
@@ -262,6 +302,11 @@ Adobe Experience Manager Forms を使用するには、Java™ 仮想マシン�
    <td>IBM® WebSphere® Application Server 9.0.0.10 <sup>[1] [4]</sup><br /> </td>
    <td>A：サポート対象</td>
    <td>サービスパックと重要なアップデート</td>
+  </tr>
+  <tr>
+   <td><p>JBoss® Enterprise Application Platform （EAP） 7.4.22 <sup>[2] [3] [7]</sup> </p> </td>
+   <td><p>A：サポート対象</p> </td>
+   <td><p>対応の EAP バージョンのパッチと累積パッチ</p> </td>
   </tr>
   <tr>
    <td><p>JBoss® Enterprise Application Platform (EAP) 7.4 <sup>[2] [3] [7]</sup> </p> </td>
@@ -302,12 +347,12 @@ Adobe Experience Manager Forms を使用するには、Java™ 仮想マシン�
    <td>サービスパックと重要なアップデート</td>
   </tr>
   <tr>
-   <td><p>Red Hat® Enterprise Linux 8（Kernel 4.x）（64 ビット版）</p> </td>
+   <td><p>Red Hat® Enterprise Linux® 9 （Kernel 5.x）（64 ビット版）</p> </td>
    <td><p>A：サポート対象</p> </td>
    <td><p>マイナーリリース、累積アップデート、需要なアップデート</p> </td>
   </tr>
   <tr>
-   <td><p>Red Hat® Enterprise Linux® 7（Kernel 3.x）（64 ビット版）（非推奨）</td>
+   <td><p>Red Hat® Enterprise Linux 8（Kernel 4.x）（64 ビット版）</td>
    <td><p>A：サポート対象</p> </td>
    <td><p>マイナーリリース、累積アップデート、需要なアップデート</p> </td>
   </tr>
@@ -431,6 +476,10 @@ AEM Forms on JEE サーバーの設定でプラットフォームを選択する
    <td>8.5 Fix pack 2</td>
   </tr>
   <tr>
+   <td> IBM® Content Manager クライアント</td>
+   <td>8.7 </td>
+  </tr>
+  <tr>
    <td> IBM® Content Manager クライアント（非推奨）</td>
    <td>8.5 </td>
   </tr>
@@ -472,6 +521,10 @@ AEM Forms アプリケーションで Apache Cordova がサポートされるよ
   <tr>
    <td>Microsoft® Publisher 2019<br /> </td>
    <td>PUB</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Project 2019<br /> </td>
+   <td>MPP</td>
   </tr>
   <tr>
    <td>OpenOffice 4.1.10</td>
@@ -744,7 +797,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/jp/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -827,7 +880,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/jp/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -892,12 +945,12 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 |  | | Microsoft® SQL Server 2016 |
 |  | | Microsoft® Windows Server 2016 |
 
-### リリース 6.5.10.0（2022年9月1日（PT））
+### リリース 6.5.10.0 （2022 年 9 月 1 日（PT））
 
 | 追加したサポート | 削除したサポート | 非推奨のサポート |
 | -------------- | --------------- | ------------------- |
 | アプリケーションサーバー JBoss® EAP 7.4 用の Oracle Java™ SE 11（64 ビット版）SDK | | [Adobe Acrobat 2017 - Adobe Acrobat 2017 のコアサポートは 2022年6月6日（PT）に終了します。](https://helpx.adobe.com/jp/support/programs/eol-matrix.html) |
-|  | | Red Hat® Enterprise Linux® 7（Kernel 3.x）（64 ビット版） |
+|  | Red Hat® Enterprise Linux® 7（Kernel 3.x）（64 ビット版） | |
 |  | | Microsoft® Windows Server 2016（64 ビット版） |
 |  | | Microsoft® Office 2016 |
 |  | | OpenOffice 4.1.2 |

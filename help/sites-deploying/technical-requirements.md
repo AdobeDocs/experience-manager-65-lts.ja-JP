@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 2534fb5af913603b69597e7be713156b427a1094
+source-git-commit: bcfbc3a67b4aa59532c93bd84eed655cee1262c1
 workflow-type: tm+mt
-source-wordcount: '3239'
-ht-degree: 92%
+source-wordcount: '3290'
+ht-degree: 95%
 
 ---
 
@@ -171,7 +171,9 @@ Adobe Experience Manager は、実稼動環境では次のサーバープラッ�
    >* libxcb.x86_64（1.13-1.el7）
    >* libXau.x86_64（1.0.8-2.1.el7）
    >* glibc-locale.x86_64（2.17 以降）
+   >* OpenSSL 3（OS のデフォルトの場所で必要）。
 
+   *OpenSSL 3 のインストールの場合：ライブラリ libcrypto.so.3 および libssl.so.3 は、環境変数 LD_LIBRARY_PATH によって表されるデフォルトのライブラリパスで使用できる必要があります。それらが非標準の場所にインストールされている場合は、サーバーを起動する前に、このパスが LD_LIBRARY_PATH に追加されていることを確認してください。*
 
 ### 仮想／クラウドコンピューティング環境 {#virtual-cloud-computing-environments}
 
@@ -376,7 +378,7 @@ Windows x86 の場合：
 * 10.9.x 以降
 * 体験版およびデモ版のみサポート
 
-### PDF Generatorの考慮事項 {#software-support-for-pdf-generator}
+### PDF Generator に関する考慮事項 {#software-support-for-pdf-generator}
 
 <table>
  <tbody>
@@ -385,12 +387,12 @@ Windows x86 の場合：
    <th><p><strong>PDF への変換でサポートされる形式</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/jp/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> 最新版</td>
+   <td><a href="https://helpx.adobe.com/jp/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> 最新バージョン</td>
    <td>XPS、画像形式（BMP、GIF、JPEG、JPG、TIF、TIFF、PNG、JPF、JPX、JP2、J2K、J2C、JPC）、HTML、HTM</td>
   </tr>
 
 <tr>
-   <td>Microsoft® Office 2021 Professional Plus、小売およびボリュームライセンス</td>
+   <td>Microsoft® Office 2021 Professional Plus、小売ライセンスおよびボリュームライセンス</td>
    <td>DOC、DOCX、XLS、XLSX、PPT、PPTX、RTF、TXT</td>
   </tr>
   <tr>
@@ -407,13 +409,13 @@ Windows x86 の場合：
 >[!NOTE]
 >
 >* PDF Generator は、サポート対象のオペレーティングシステムとアプリケーションの英語版、フランス語版、ドイツ語版、日本語版のみをサポートしています。
->* PDF Generatorで変換を実行するには、Adobe Acrobat Pro DC （32 ビット）が必要です。
+>* PDF Generator で変換を実行するには、Adobe Acrobat Pro DC（32 ビット）が必要です。
 >* PDF Generator では、32 ビット版の Microsoft® Office Professional Plus および変換に必要なその他のソフトウェアのみサポートしています。
 >* ボリュームライセンスインストールで指定期間内に KMS ホストが見つからないなど、何らかの理由で Microsoft® Office インストールが非アクティブ化またはライセンス解除された場合、インストールのライセンスを再度取得して再アクティブ化するまでは、変換が失敗する場合があります。
 >* PDF Generator は Microsoft® Office 365 をサポートしていません。
 >* PDF Generator の OpenOffice 向け変換機能は、Windows と Linux® でのみサポートされています。
 >* OCR PDF、Optimize PDF、Export PDF の各機能は、Windows でのみサポートされます。
->* Acrobat のバージョンは、PDF Generator 機能を有効にするために AEM Forms にバンドルされています。バンドルされたバージョンには、AEM Formsを使用する場合にのみ、AEM Forms ライセンスの期間中にAEM Forms PDF Generatorでプログラム的にアクセスしてください。 詳しくは、デプロイメント（[ オンプレミス ](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-experience-manager-on-premise.html) または [Managed Services](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-experience-manager-managed-services.html)）に応じたAEM Forms製品説明を参照してください。
+>* Acrobat のバージョンは、PDF Generator 機能を有効にするために AEM Forms にバンドルされています。バンドルされたバージョンには、AEM Forms PDF Generator でのみ使用するために、AEM Forms のライセンス期間中に AEM Forms でプログラムでのみアクセスする必要があります。詳しくは、デプロイメント（[オンプレミス](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-experience-manager-on-premise.html)または [Managed Services](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-experience-manager-managed-services.html)）に応じた AEM Forms 製品説明を参照してください。
 >* PDF Generator サービスでは Microsoft® Windows 11 をサポートしていません。
 
 
