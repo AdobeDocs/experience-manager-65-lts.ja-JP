@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: bcfbc3a67b4aa59532c93bd84eed655cee1262c1
+source-git-commit: 075f671d878f9bd9be33a059223800fa9acddf40
 workflow-type: tm+mt
-source-wordcount: '3290'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -171,7 +171,7 @@ Adobe Experience Manager は、実稼動環境では次のサーバープラッ�
    >* libxcb.x86_64（1.13-1.el7）
    >* libXau.x86_64（1.0.8-2.1.el7）
    >* glibc-locale.x86_64（2.17 以降）
-   >* OpenSSL 3（OS のデフォルトの場所で必要）。
+   >* OpenSSL 3 （OS のデフォルトの場所で必要）
 
    *OpenSSL 3 のインストールの場合：ライブラリ libcrypto.so.3 および libssl.so.3 は、環境変数 LD_LIBRARY_PATH によって表されるデフォルトのライブラリパスで使用できる必要があります。それらが非標準の場所にインストールされている場合は、サーバーを起動する前に、このパスが LD_LIBRARY_PATH に追加されていることを確認してください。*
 
