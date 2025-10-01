@@ -1,15 +1,15 @@
 ---
 title: AEM 6.5 LTS の AI
-description: Adobe Experience Manager 6.5 LTS での AI について
+description: Adobe Experience Manager 6.5 LTS の AI について
 feature: Generative AI, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
-source-git-commit: 1faef2add55c8dd7d548a5b2613537566289fc83
+exl-id: 312e1d66-ba2e-4b9a-a679-4e44112f3222
+source-git-commit: 20978122a1d4e935e1384674dd5503f3cc807ef5
 workflow-type: tm+mt
 source-wordcount: '82'
-ht-degree: 30%
+ht-degree: 41%
 
 ---
-
 
 # AEMの AI {#ai-in-aem}
 
