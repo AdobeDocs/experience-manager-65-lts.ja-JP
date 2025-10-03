@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 4e4d367b93f1e99cf076df14a15352f664890676
+source-git-commit: 08f9b6697e298689a91a9b31038f382a908acd5b
 workflow-type: tm+mt
-source-wordcount: '7103'
-ht-degree: 95%
+source-wordcount: '7319'
+ht-degree: 92%
 
 ---
 
@@ -448,6 +448,43 @@ AEM がアップグレード中に `/apps/system/config` の下にある既存�
 ### アップグレード {#upgrade}
 
 * アップグレードの手順について詳しくは、 [アップグレードドキュメント](/help/sites-deploying/upgrade.md)を参照してください。
+
+#### AEM 6.5 LTS サービスパックのアップグレードのベストプラクティス
+
+<!-- THE INFORMATION UNDER THIS HEADING CAME FROM CQDOC-23078 -->
+
+**環境**
+対象：Service Pack 1 （SP1）をインストールしているAEM 6.5 LTS （オンプレミス）のお客様。 SP1 はクイックスタート JAR として配布されます。
+
+**これが重要な理由**
+AEM 6.5 LTS の SP1 は、パッケージマネージャーでインストールする ZIP ではなくクイックスタート JAR として出荷されます。 オンプレミスのお客様は、クイックスタート JAR を置き換え、展開して再起動することでアップグレードします。 この方法は、Adobeのインプレースアップグレード手順と一致します。
+
+**推奨アップグレードフロー（オーサーまたはパブリッシュ）**
+
+1. AEM 6.5 LTS インスタンスが正常でアクセス可能であることを確認します。
+1. ソフトウェア配布から SP1 Quickstart JAR （例：`cq-quickstart-6.6.x.jar`）をダウンロードします。
+1. 実行中のインスタンスを停止します。
+1. AEMのインストールディレクトリ（`crx-quickstart/` の外部）で、以前のクイックスタート JAR を SP1 JAR に置き換えます。
+1. JAR を解凍します。
+
+   ```java
+   java -jar cq-quickstart-6.6.x.jar -unpack
+   ```
+
+   （必要に応じてヒープフラグを調整します）。
+
+1. 展開された JAR の名前を、役割とポートに一致するように変更します（例：`cq-author-4502.jar` または `cq-publish-4503.jar`）。
+1. AEMを起動し、UI （ヘルプ/バージョン情報）とログでアップグレードを確認します。
+
+**良好な衛生状態**
+
+* 実稼動前に、下位/テスト環境でアップグレードを実行します。
+* 開始する前に、復元可能な完全なバックアップ（リポジトリと外部データストア）を取得します。
+* Adobeのインプレースアップグレードガイダンスと技術要件（LTS の場合は Java 17/21 をお勧めします）を確認します。
+
+>[!NOTE]
+>
+>上記のファイル名（例：`cq-quickstart-6.6.x.jar`）は、この LTS リリースで使用される SP1 クイックスタート アーティファクトの名前を反映しています。ソフトウェア配布からダウンロードした正確なファイル名を常に使用してください。
 
 ## インストールとアップデート {#install-update}
 
