@@ -6,10 +6,10 @@ feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: dd6eec1e-fa63-410a-bcd3-61892861fd0c
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: cbcce32b78970bb4aae70f041b2f293a53348fad
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 100%
+source-wordcount: '455'
+ht-degree: 93%
 
 ---
 
@@ -53,6 +53,10 @@ ht-degree: 100%
    * インデックス再作成フラグを `true` に反転させることで、`index /oak:index/ntFolderDamLucene` のインデックスを再作成します。
 
 システムユーザー `workfront-tools` が自動的に作成され、必須の権限が自動的に管理されます。このコネクタを使用するすべての [!DNL Workfront] ユーザーが、このグループの一部として自動的に追加されます。
+
+>[!NOTE]
+>
+> 企業のプロキシサーバーを使用する場合は、[!DNL workfront] 拡張Workfront コネクタ [!UICONTROL  で認識できるように、]Apache HTTP Components Proxy Configuration PID[!UICONTROL  に ] を含めます。 必須の PID 形式は `org.apache.http.proxyconfigurator~workfront` です。
 
 ## [!DNL Experience Manager] と [!DNL Workfront] との接続の設定 {#configure-connection}
 
