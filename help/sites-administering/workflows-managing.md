@@ -106,7 +106,7 @@ ht-degree: 90%
 
    >[!NOTE]
    >
-   >[ 特定のワークフローモデル用の ACL の/var/workflow/models への適用 ](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models) にあるように :globrep を含めて、特定のワークフローに対するアクセスを制限できます。
+   >[&#x200B; 特定のワークフローモデル用の ACL の/var/workflow/models への適用 &#x200B;](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models) にあるように :globrep を含めて、特定のワークフローに対するアクセスを制限できます。
 
    ![wf-110](assets/wf-110.png)
 

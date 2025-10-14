@@ -20,7 +20,7 @@ ht-degree: 16%
 
 ## アップグレード前の手順 {#pre-upgrade-steps}
 
-アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。詳しくは、[コードのアップグレードとカスタマイズ](/help/sites-deploying/upgrading-code-and-customizations.md)および[アップグレード前のメンテナンスタスク](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。また、システムが [AEM 6.5 LTS の要件 ](/help/sites-deploying/technical-requirements.md) を満たしていることを確認し、[ アップグレード計画に関する考慮事項 ](/help/sites-deploying/upgrade-planning.md) と、[Analyzer](/help/sites-deploying/aem-analyzer.md) を使用して複雑さを見積もる方法を確認します。
+アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。詳しくは、[コードのアップグレードとカスタマイズ](/help/sites-deploying/upgrading-code-and-customizations.md)および[アップグレード前のメンテナンスタスク](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。また、システムが [AEM 6.5 LTS の要件 &#x200B;](/help/sites-deploying/technical-requirements.md) を満たしていることを確認し、[&#x200B; アップグレード計画に関する考慮事項 &#x200B;](/help/sites-deploying/upgrade-planning.md) と、[Analyzer](/help/sites-deploying/aem-analyzer.md) を使用して複雑さを見積もる方法を確認します。
 
 
 ### 移行の前提条件 {#migration-prerequisites}
@@ -34,7 +34,7 @@ ht-degree: 16%
 
 1. AEM 6.5 が既にデプロイされている場合は、*`https://<serveraddress:port>/system/console/bundles`* にアクセスしてバンドルが正常に動作していることを確認します。
 1. 次に、AEM 6.5 を停止します。これは、次の場所にある Tomcat App Manager から実行できます。*`https://<serveraddress:port>/manager/html`*
-1. アップグレードアクティビティを実行する前に、AEM 6.5 サーバーのバックアップなどの [ アップグレード前 ](#pre-upgrade-steps) アクティビティが完了していることを確認してください
+1. アップグレードアクティビティを実行する前に、AEM 6.5 サーバーのバックアップなどの [&#x200B; アップグレード前 &#x200B;](#pre-upgrade-steps) アクティビティが完了していることを確認してください
 1. Java 17/Java 21 をインストールし、次のコマンドを実行して正しくインストールされていることを確認します。
 
    ```
@@ -42,7 +42,7 @@ ht-degree: 16%
    ```
 
 1. AEM 6.5 LTS 互換の Tomcat サーバーの設定
-1. AEM サーバーの開始パラメーターを確認し、システム要件に従ってパラメーターを更新してください。 詳しくは、[Java 17/Java 21 に関する考慮事項 ](/help/sites-deploying/custom-standalone-install.md#java-considerations) を参照してください
+1. AEM サーバーの開始パラメーターを確認し、システム要件に従ってパラメーターを更新してください。 詳しくは、[Java 17/Java 21 に関する考慮事項 &#x200B;](/help/sites-deploying/custom-standalone-install.md#java-considerations) を参照してください
 1. Java 17/Java 21 を使用して、新しくダウンロードした 6.5 LTS war を Tomcat サーバーにデプロイし、次のコマンドを実行してAEM 6.5 LTS Tomcat サーバーを起動します。
 
    ```
@@ -56,7 +56,7 @@ ht-degree: 16%
    $CATALINA_HOME/bin/catalina.sh stop
    ```
 
-1. 次の手順に従って、AEM 6.5 からAEM 6.5 LTS にコンテンツを移行します。[AEM 6.5 からAEM 6.5 LTS へのコンテンツ移行Oak-upgrade を使用する ](/help/sites-deploying/aem-65-to-aem-65lts-content-migration-using-oak-upgrade.md)
+1. 次の手順に従って、AEM 6.5 からAEM 6.5 LTS にコンテンツを移行します。[AEM 6.5 からAEM 6.5 LTS へのコンテンツ移行Oak-upgrade を使用する &#x200B;](/help/sites-deploying/aem-65-to-aem-65lts-content-migration-using-oak-upgrade.md)
 1. コンテンツが移行されたら、`sling.properties` ファイルに必要なカスタム変更を適用します
 1. 次のコマンドを実行して、AEM 6.5 LTS Tomcat サーバーを起動します。
 
@@ -73,4 +73,4 @@ ht-degree: 16%
 
 ## アップグレード後のチェックとトラブルシューティングの実行 {#perform-post-upgrade-checks-and-troubleshooting}
 
-詳しくは、[ アップグレード後のチェックとトラブルシューティング ](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md) を参照してください。
+詳しくは、[&#x200B; アップグレード後のチェックとトラブルシューティング &#x200B;](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md) を参照してください。

@@ -18,8 +18,8 @@ ht-degree: 88%
 
 [AEM Modernization Tools を使用すると、以下の変換を容易におこなえるようになります。](https://opensource.adobe.com/aem-modernize-tools/)
 
-* 静的テンプレートから [ 編集可能テンプレート ](page-templates-editable.md)
-* に対するデザイン設定 [ ポリシー ](page-templates-editable.md)
+* 静的テンプレートから [&#x200B; 編集可能テンプレート &#x200B;](page-templates-editable.md)
+* に対するデザイン設定 [&#x200B; ポリシー &#x200B;](page-templates-editable.md)
 * [基盤コンポーネント](/help/sites-authoring/default-components-foundation.md)から[コアコンポーネントへ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
 * [クラシック UI](website.md) [からタッチ操作対応 UI へ](touch-ui-concepts.md)
 

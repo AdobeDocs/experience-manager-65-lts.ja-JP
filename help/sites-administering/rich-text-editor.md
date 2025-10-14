@@ -336,7 +336,7 @@ RTE の設定について詳しくは、[AEM Widget API](https://developer.adobe
 
 AEM RTE 機能には次の制限があります。
 
-* RTE 機能は AEM コンポーネントダイアログでのみサポートされます。RTE は、ウィザードやタッチ操作向け UI の基盤フォーム（「ページプロパティ [ など ](/help/sites-developing/page-properties-views.md) ではサポートされません。
+* RTE 機能は AEM コンポーネントダイアログでのみサポートされます。RTE は、ウィザードやタッチ操作向け UI の基盤フォーム（「ページプロパティ [&#x200B; など &#x200B;](/help/sites-developing/page-properties-views.md) ではサポートされません。
 
 * AEM は[ハイブリッドデバイス](/help/release-notes/release-notes.md)では機能しません。
 

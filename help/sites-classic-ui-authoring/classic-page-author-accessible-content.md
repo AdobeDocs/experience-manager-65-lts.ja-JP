@@ -599,7 +599,7 @@ AEM では、適切な HTML 要素を使用することにより、web ページ
 
 * [達成基準 1.4.1 について](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 * [達成基準 1.4.1 の達成方法](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
-* [3 :1 のコントラスト比を満たすためのガイダンス（「web に安全な」色のリストを含む） ](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+* [3 :1 のコントラスト比を満たすためのガイダンス（「web に安全な」色のリストを含む） &#x200B;](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 
 ### コントラスト（最低限）（1.4.3） {#contrast-minimum}
 

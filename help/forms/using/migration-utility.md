@@ -15,7 +15,7 @@ ht-degree: 90%
 
 # AEM Forms のアセットとドキュメントの移行 {#migrate-aem-forms-assets-and-documents}
 
-移行ユーティリティを実行すると、[ アダプティブ Forms アセット ](../../forms/using/introduction-forms-authoring.md)、[ クラウド設定 ](/help/sites-developing/extending-cloud-config.md) および [Correspondence Management アセット ](/help/forms/using/cm-overview.md) が、旧バージョンの AEM Assets で使用されていた形式から、Adobe Experience Manager（AEM） 6.5 LTS Formsで使用される形式に変換されます。 移行ユーティリティを実行すると、以下の項目が移行されます。
+移行ユーティリティを実行すると、[&#x200B; アダプティブ Forms アセット &#x200B;](../../forms/using/introduction-forms-authoring.md)、[&#x200B; クラウド設定 &#x200B;](/help/sites-developing/extending-cloud-config.md) および [Correspondence Management アセット &#x200B;](/help/forms/using/cm-overview.md) が、旧バージョンの AEM Assets で使用されていた形式から、Adobe Experience Manager（AEM） 6.5 LTS Formsで使用される形式に変換されます。 移行ユーティリティを実行すると、以下の項目が移行されます。
 
 * アダプティブフォームのカスタムコンポーネント
 * アダプティブフォームと Correspondence Management テンプレート
@@ -28,11 +28,11 @@ ht-degree: 90%
 
 ## 移行のアプローチ {#approach-to-migration}
 
-AEM Forms [ から ](../../forms/using/upgrade.md)AEM Forms 6.5 LTS へ [ アップグレード 6.5.22.0](/help/forms/using/upgrade-forms-osgi.md) できます。 以前のインストールをアップグレードしたか、新規インストールを実行したかに応じて、次のいずれかを実行する必要があります。
+AEM Forms [&#x200B; から &#x200B;](../../forms/using/upgrade.md)AEM Forms 6.5 LTS へ [&#x200B; アップグレード 6.5.22.0](/help/forms/using/upgrade-forms-osgi.md) できます。 以前のインストールをアップグレードしたか、新規インストールを実行したかに応じて、次のいずれかを実行する必要があります。
 
 **インプレースアップグレードの場合**
 
-[ インプレースアップグレード ](/help/sites-deploying/in-place-upgrade.md) を実行した場合、アップグレードされたインスタンスには既にアセットとドキュメントが存在します。 ただし、アセットやドキュメントを使用する前に、[AEMFD 互換性パッケージ ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ja) （Correspondence Management 互換性パッケージが含まれています）をインストールする必要があります。
+[&#x200B; インプレースアップグレード &#x200B;](/help/sites-deploying/in-place-upgrade.md) を実行した場合、アップグレードされたインスタンスには既にアセットとドキュメントが存在します。 ただし、アセットやドキュメントを使用する前に、[AEMFD 互換性パッケージ &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ja) （Correspondence Management 互換性パッケージが含まれています）をインストールする必要があります。
 
 その後、[移行ユーティリティを実行](#runningmigrationutility)して、アセットとドキュメントを更新する必要があります。
 

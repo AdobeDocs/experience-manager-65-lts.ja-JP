@@ -27,7 +27,7 @@ AEM Forms は、PDF ドキュメントの作成、アセンブル、配布、ア
 
 * **Encryption サービス：**&#x200B;ドキュメントの暗号化と復号を実行できます。ドキュメントを暗号化すると、その内容は判読できなくなります。許可されたユーザーはドキュメントを復号化して、内容にアクセスできます。詳しくは、[Encryption サービス](/help/forms/using/overview-aem-document-services.md#encryption-service)を参照してください。
 
-* **Forms サービス：**&#x200B;通常 Forms Designer で作成されたフォームを検証、処理、変換および配信する、インタラクティブなデータキャプチャを行うクライアントアプリケーションを作成できます。Forms サービスは、作成したあらゆるフォームデザインを PDF ドキュメントとして処理します。詳しくは、[ Forms サービス](/help/forms/using/forms-service.md)を参照してください。
+* **Forms サービス：**&#x200B;通常 Forms Designer で作成されたフォームを検証、処理、変換および配信する、インタラクティブなデータキャプチャを行うクライアントアプリケーションを作成できます。Forms サービスは、作成したあらゆるフォームデザインを PDF ドキュメントとして処理します。詳しくは、[&#x200B; Forms サービス](/help/forms/using/forms-service.md)を参照してください。
 
 * **Output サービス：** PDF、レーザープリンター形式、ラベルプリンター形式など、様々な形式のドキュメントを作成します。レーザープリンター形式には、PostScript と Printer Control Language（PCL）があります。詳しくは、[Output サービス](/help/forms/using/output-service.md)を参照してください。
 
@@ -210,10 +210,10 @@ Acrobat をインストールしてから、Microsoft® Word を開きます。�
 Acrobatをインストールする前に、これらの必須要件を確認してください。 以下が必要です。
 
 * [Adobe Admin Console](https://helpx.adobe.com/in/enterprise/admin-guide.html) に精通していること
-* [AEM Forms デプロイメントアーキテクチャ ](/help/forms/using/aem-forms-architecture-deployment.md) ついて
+* [AEM Forms デプロイメントアーキテクチャ &#x200B;](/help/forms/using/aem-forms-architecture-deployment.md) ついて
 * Adobe Admin ConsoleとAEM Formsを実行するサーバーの両方での管理者権限。
-* Adobe [2&rbrace;Admin Console&rbrace; への ](https://helpx.adobe.com/in/enterprise/using/admin-roles.html) 管理者アクセス権 [ を持つユーザー。 ](https://adminconsole.adobe.com)通常、組織の管理者には、管理者アクセス権を持つユーザーが既に割り当てられています。 管理者の追加手順については、この [ 手順ビデオ ](https://www.youtube.com/watch?v=xO2T0I6SvsU&list=PLHRegP5ZOj7CpijZyD8pB9rIMJkvO6FnI&t=81s) をご覧ください。
-* Adobe Admin Consoleで [ デプロイメント管理者 ](https://helpx.adobe.com/in/enterprise/global-admin-console/manage-administrators.html) のロールを持つユーザーアカウント。 同じ [ 手順ビデオ ](https://www.youtube.com/watch?v=xO2T0I6SvsU&list=PLHRegP5ZOj7CpijZyD8pB9rIMJkvO6FnI&t=81s) で、デプロイメント管理者の追加方法を示します。
+* Adobe [2&rbrace;Admin Console&rbrace; への &#x200B;](https://helpx.adobe.com/in/enterprise/using/admin-roles.html) 管理者アクセス権 [&#x200B; を持つユーザー。 &#x200B;](https://adminconsole.adobe.com)通常、組織の管理者には、管理者アクセス権を持つユーザーが既に割り当てられています。 管理者の追加手順については、この [&#x200B; 手順ビデオ &#x200B;](https://www.youtube.com/watch?v=xO2T0I6SvsU&list=PLHRegP5ZOj7CpijZyD8pB9rIMJkvO6FnI&t=81s) をご覧ください。
+* Adobe Admin Consoleで [&#x200B; デプロイメント管理者 &#x200B;](https://helpx.adobe.com/in/enterprise/global-admin-console/manage-administrators.html) のロールを持つユーザーアカウント。 同じ [&#x200B; 手順ビデオ &#x200B;](https://www.youtube.com/watch?v=xO2T0I6SvsU&list=PLHRegP5ZOj7CpijZyD8pB9rIMJkvO6FnI&t=81s) で、デプロイメント管理者の追加方法を示します。
 * AEM Formsを実行しているマシンのローカル管理者権限
 * Windows 64 ビットオペレーティングシステム
 * ライセンス認証のための安定したインターネット接続
@@ -227,8 +227,8 @@ Acrobatをインストールする前に、これらの必須要件を確認し�
 
 | ステップ | 推定時間 | 前提条件 |
 |------|----------------|---------------|
-| &#x200B;1. Admin Consoleで FRL パッケージを作成する | 15 ～ 20 分 | [Admin Console アクセス ](https://helpx.adobe.com/in/enterprise/admin-guide.html) |
-| &#x200B;2. ダウンロード権限の付与 | 5 ～ 10 分 | [Admin Console アクセス ](https://helpx.adobe.com/in/enterprise/global-admin-console/manage-administrators.html) |
+| &#x200B;1. Admin Consoleで FRL パッケージを作成する | 15 ～ 20 分 | [Admin Console アクセス &#x200B;](https://helpx.adobe.com/in/enterprise/admin-guide.html) |
+| &#x200B;2. ダウンロード権限の付与 | 5 ～ 10 分 | [Admin Console アクセス &#x200B;](https://helpx.adobe.com/in/enterprise/global-admin-console/manage-administrators.html) |
 | 3.以前のAcrobatをアンインストールする | 10～15 分 | サーバー管理者アクセス |
 | &#x200B;4. Adobe Acrobat Proをダウンロードしてインストールする | 10～15 分 | サーバー管理者アクセス |
 | &#x200B;5. FRL パッケージのダウンロードとデプロイ | 20 ～ 30 分 | サーバー管理者アクセス |
@@ -282,7 +282,7 @@ Adobe Acrobat Pro DC for Microsoft Office のインストールのインスト�
    | Platform の設定 | Windows 64 ビット | Apple macOSは現在サポートされていません |
    | Enable local | &quot;OS 言語を使用&quot; | デフォルト設定 |
    | 言語 | 優先言語 | Acrobat インターフェイスの場合 |
-   | アプリを選択 – 利用可能なアプリケーション | Adobe Acrobatを利用可能なアプリケーションに維持する。 選択したアプリケーションに移動しない | 手順 6 の Adobe Experience League ページから [Adobe Acrobatをダウンロード ](#step-6-download-and-install-adobe-acrobat-pro) します。 |
+   | アプリを選択 – 利用可能なアプリケーション | Adobe Acrobatを利用可能なアプリケーションに維持する。 選択したアプリケーションに移動しない | 手順 6 の Adobe Experience League ページから [Adobe Acrobatをダウンロード &#x200B;](#step-6-download-and-install-adobe-acrobat-pro) します。 |
    | アプリを選択 – 選択したアプリケーション | 選択したアプリケーションでライセンス ファイルのみを保持 | FRL デプロイメントのデフォルト設定 |
    | プラグイン | この画面は変更しないでください | |
    | Options | この画面は変更しないでください | |
@@ -292,7 +292,7 @@ Adobe Acrobat Pro DC for Microsoft Office のインストールのインスト�
 
 ###### 手順 3：ユーザーへのダウンロード権限の付与
 
-FRL パッケージを管理する専用のサービスアカウントを作成することをお勧めします。 専用アカウントをまだ持っていない場合は、[ この手順ビデオ ](https://www.youtube.com/watch?v=w8b36YX2TEM&t=59s) に従って、新しいユーザーをAdobe組織に追加する方法を確認してください。
+FRL パッケージを管理する専用のサービスアカウントを作成することをお勧めします。 専用アカウントをまだ持っていない場合は、[&#x200B; この手順ビデオ &#x200B;](https://www.youtube.com/watch?v=w8b36YX2TEM&t=59s) に従って、新しいユーザーをAdobe組織に追加する方法を確認してください。
 
 適切なアカウントを取得したら、次の手順に従ってダウンロード権限を付与します。
 
@@ -325,7 +325,7 @@ FRL パッケージを管理する専用のサービスアカウントを作成�
 
 以前のバージョンをアンインストールした後、互換バージョンのAdobe Acrobat Proをダウンロードしてインストールする必要があります。
 
-1. [Adobe Acrobat DC のダウンロードページ ](https://helpx.adobe.com/in/acrobat/kb/acrobat-dc-downloads.html) に移動します。
+1. [Adobe Acrobat DC のダウンロードページ &#x200B;](https://helpx.adobe.com/in/acrobat/kb/acrobat-dc-downloads.html) に移動します。
 2. **Acrobat Pro installer** セクションに移動します。
 3. AEM Forms PDF Generatorで使用するには、「For Windows （32 ビット）」インストーラーをダウンロードします。これは、AEM Forms PDF Generatorでサポートされているバージョンです。
 4. 次のページのインストール手順に従います。
@@ -338,7 +338,7 @@ FRL パッケージを管理する専用のサービスアカウントを作成�
 
 ###### 手順 7:FRL パッケージのダウンロード
 
-1. 手順 3 でダウンロード権限を付与した [ ユーザーアカウント ](https://adminconsole.adobe.com/) を使用して ** Adobe Admin Console&rbrace; にログインします。
+1. 手順 3 でダウンロード権限を付与した [&#x200B; ユーザーアカウント &#x200B;](https://adminconsole.adobe.com/) を使用して ** Adobe Admin Console&rbrace; にログインします。
 1. 「**パッケージ**」タブに移動します。
 1. 手順 2 で作成した FRL パッケージ（「Acrobat FRL AEM Forms」またはカスタムパッケージ名という名前）を見つけます。
 1. **ダウンロード** をクリックして、パッケージをサーバーにダウンロードします。
@@ -432,7 +432,7 @@ FRL パッケージを管理する専用のサービスアカウントを作成�
    | Platform の設定 | Windows 64 ビット | Apple macOSは現在サポートされていません |
    | Enable local | &quot;OS 言語を使用&quot; | デフォルト設定 |
    | 言語 | 優先言語 | Acrobat インターフェイスの場合 |
-   | アプリを選択 – 利用可能なアプリケーション | Adobe Acrobatを利用可能なアプリケーションに維持する。 選択したアプリケーションに移動しない | 手順 6 の Adobe Experience League ページから [Adobe Acrobatをダウンロード ](#step-6-download-and-install-adobe-acrobat-pro) します。 |
+   | アプリを選択 – 利用可能なアプリケーション | Adobe Acrobatを利用可能なアプリケーションに維持する。 選択したアプリケーションに移動しない | 手順 6 の Adobe Experience League ページから [Adobe Acrobatをダウンロード &#x200B;](#step-6-download-and-install-adobe-acrobat-pro) します。 |
    | アプリを選択 – 選択したアプリケーション | 選択したアプリケーションでライセンス ファイルのみを保持 | FRL デプロイメントのデフォルト設定 |
    | プラグイン | この画面は変更しないでください | |
    | Options | この画面は変更しないでください | |
@@ -442,7 +442,7 @@ FRL パッケージを管理する専用のサービスアカウントを作成�
 
 ###### 手順 3：ユーザーへのダウンロード権限の付与
 
-FRL パッケージを管理する専用のサービスアカウントを作成することをお勧めします。 専用アカウントをまだ持っていない場合は、[ この手順ビデオ ](https://www.youtube.com/watch?v=w8b36YX2TEM&t=59s) に従って、新しいユーザーをAdobe組織に追加する方法を確認してください。
+FRL パッケージを管理する専用のサービスアカウントを作成することをお勧めします。 専用アカウントをまだ持っていない場合は、[&#x200B; この手順ビデオ &#x200B;](https://www.youtube.com/watch?v=w8b36YX2TEM&t=59s) に従って、新しいユーザーをAdobe組織に追加する方法を確認してください。
 
 適切なアカウントを取得したら、次の手順に従ってダウンロード権限を付与します。
 
@@ -475,7 +475,7 @@ FRL パッケージを管理する専用のサービスアカウントを作成�
 
 以前のバージョンをアンインストールした後、互換バージョンのAdobe Acrobat Proをダウンロードしてインストールする必要があります。
 
-1. [Adobe Acrobat DC のダウンロードページ ](https://helpx.adobe.com/in/acrobat/kb/acrobat-dc-downloads.html) に移動します。
+1. [Adobe Acrobat DC のダウンロードページ &#x200B;](https://helpx.adobe.com/in/acrobat/kb/acrobat-dc-downloads.html) に移動します。
 2. **Acrobat Pro installer** セクションに移動します。
 3. AEM Forms PDF Generatorで使用するには、「For Windows （32 ビット）」インストーラーをダウンロードします。これは、AEM Forms PDF Generatorでサポートされているバージョンです。
 4. 次のページのインストール手順に従います。
@@ -488,7 +488,7 @@ FRL パッケージを管理する専用のサービスアカウントを作成�
 
 ###### 手順 7:FRL パッケージのダウンロード
 
-1. 手順 3 でダウンロード権限を付与した [ ユーザーアカウント ](https://adminconsole.adobe.com/) を使用して ** Adobe Admin Console&rbrace; にログインします。
+1. 手順 3 でダウンロード権限を付与した [&#x200B; ユーザーアカウント &#x200B;](https://adminconsole.adobe.com/) を使用して ** Adobe Admin Console&rbrace; にログインします。
 1. 「**パッケージ**」タブに移動します。
 1. 手順 2 で作成した FRL パッケージ（「Acrobat FRL AEM Forms」またはカスタムパッケージ名という名前）を見つけます。
 1. **ダウンロード** をクリックして、パッケージをサーバーにダウンロードします。
@@ -588,7 +588,7 @@ FRL パッケージを管理する専用のサービスアカウントを作成�
    | Platform の設定 | Windows 64 ビット | Apple macOSは現在サポートされていません |
    | Enable local | &quot;OS 言語を使用&quot; | デフォルト設定 |
    | 言語 | 優先言語 | Acrobat インターフェイスの場合 |
-   | アプリを選択 – 利用可能なアプリケーション | Adobe Acrobatを利用可能なアプリケーションに維持する。 選択したアプリケーションに移動しない | 手順 6 の Adobe Experience League ページから [Adobe Acrobatをダウンロード ](#step-6-download-and-install-adobe-acrobat-pro) します。 |
+   | アプリを選択 – 利用可能なアプリケーション | Adobe Acrobatを利用可能なアプリケーションに維持する。 選択したアプリケーションに移動しない | 手順 6 の Adobe Experience League ページから [Adobe Acrobatをダウンロード &#x200B;](#step-6-download-and-install-adobe-acrobat-pro) します。 |
    | アプリを選択 – 選択したアプリケーション | 選択したアプリケーションでライセンス ファイルのみを保持 | FRL デプロイメントのデフォルト設定 |
    | プラグイン | この画面は変更しないでください | |
    | Options | この画面は変更しないでください | |
@@ -598,7 +598,7 @@ FRL パッケージを管理する専用のサービスアカウントを作成�
 
 ###### 手順 3：ユーザーへのダウンロード権限の付与
 
-FRL パッケージを管理する専用のサービスアカウントを作成することをお勧めします。 専用アカウントをまだ持っていない場合は、[ この手順ビデオ ](https://www.youtube.com/watch?v=w8b36YX2TEM&t=59s) に従って、新しいユーザーをAdobe組織に追加する方法を確認してください。
+FRL パッケージを管理する専用のサービスアカウントを作成することをお勧めします。 専用アカウントをまだ持っていない場合は、[&#x200B; この手順ビデオ &#x200B;](https://www.youtube.com/watch?v=w8b36YX2TEM&t=59s) に従って、新しいユーザーをAdobe組織に追加する方法を確認してください。
 
 適切なアカウントを取得したら、次の手順に従ってダウンロード権限を付与します。
 
@@ -631,7 +631,7 @@ FRL パッケージを管理する専用のサービスアカウントを作成�
 
 以前のバージョンをアンインストールした後、互換バージョンのAdobe Acrobat Proをダウンロードしてインストールする必要があります。
 
-1. [Adobe Acrobat DC のダウンロードページ ](https://helpx.adobe.com/in/acrobat/kb/acrobat-dc-downloads.html) に移動します。
+1. [Adobe Acrobat DC のダウンロードページ &#x200B;](https://helpx.adobe.com/in/acrobat/kb/acrobat-dc-downloads.html) に移動します。
 2. **Acrobat Pro installer** セクションに移動します。
 3. AEM Forms PDF Generatorで使用するには、「For Windows （32 ビット）」インストーラーをダウンロードします。これは、AEM Forms PDF Generatorでサポートされているバージョンです。
 4. 次のページのインストール手順に従います。
@@ -644,7 +644,7 @@ FRL パッケージを管理する専用のサービスアカウントを作成�
 
 ###### 手順 7:FRL パッケージのダウンロード
 
-1. 手順 3 でダウンロード権限を付与した [ ユーザーアカウント ](https://adminconsole.adobe.com/) を使用して ** Adobe Admin Console&rbrace; にログインします。
+1. 手順 3 でダウンロード権限を付与した [&#x200B; ユーザーアカウント &#x200B;](https://adminconsole.adobe.com/) を使用して ** Adobe Admin Console&rbrace; にログインします。
 1. 「**パッケージ**」タブに移動します。
 1. 手順 2 で作成した FRL パッケージ（「Acrobat FRL AEM Forms」またはカスタムパッケージ名という名前）を見つけます。
 1. **ダウンロード** をクリックして、パッケージをサーバーにダウンロードします。
@@ -745,7 +745,7 @@ FRL パッケージを管理する専用のサービスアカウントを作成�
    | Platform の設定 | Windows 64 ビット | Apple macOSは現在サポートされていません |
    | Enable local | &quot;OS 言語を使用&quot; | デフォルト設定 |
    | 言語 | 優先言語 | Acrobat インターフェイスの場合 |
-   | アプリを選択 – 利用可能なアプリケーション | Adobe Acrobatを利用可能なアプリケーションに維持する。 選択したアプリケーションに移動しない | 手順 6 の Adobe Experience League ページから [Adobe Acrobatをダウンロード ](#step-6-download-and-install-adobe-acrobat-pro) します。 |
+   | アプリを選択 – 利用可能なアプリケーション | Adobe Acrobatを利用可能なアプリケーションに維持する。 選択したアプリケーションに移動しない | 手順 6 の Adobe Experience League ページから [Adobe Acrobatをダウンロード &#x200B;](#step-6-download-and-install-adobe-acrobat-pro) します。 |
    | アプリを選択 – 選択したアプリケーション | 選択したアプリケーションでライセンス ファイルのみを保持 | FRL デプロイメントのデフォルト設定 |
    | プラグイン | この画面は変更しないでください | |
    | Options | この画面は変更しないでください | |
@@ -755,7 +755,7 @@ FRL パッケージを管理する専用のサービスアカウントを作成�
 
 ###### 手順 3：ユーザーへのダウンロード権限の付与
 
-FRL パッケージを管理する専用のサービスアカウントを作成することをお勧めします。 専用アカウントをまだ持っていない場合は、[ この手順ビデオ ](https://www.youtube.com/watch?v=w8b36YX2TEM&t=59s) に従って、新しいユーザーをAdobe組織に追加する方法を確認してください。
+FRL パッケージを管理する専用のサービスアカウントを作成することをお勧めします。 専用アカウントをまだ持っていない場合は、[&#x200B; この手順ビデオ &#x200B;](https://www.youtube.com/watch?v=w8b36YX2TEM&t=59s) に従って、新しいユーザーをAdobe組織に追加する方法を確認してください。
 
 適切なアカウントを取得したら、次の手順に従ってダウンロード権限を付与します。
 
@@ -788,7 +788,7 @@ FRL パッケージを管理する専用のサービスアカウントを作成�
 
 以前のバージョンをアンインストールした後、互換バージョンのAdobe Acrobat Proをダウンロードしてインストールする必要があります。
 
-1. [Adobe Acrobat DC のダウンロードページ ](https://helpx.adobe.com/in/acrobat/kb/acrobat-dc-downloads.html) に移動します。
+1. [Adobe Acrobat DC のダウンロードページ &#x200B;](https://helpx.adobe.com/in/acrobat/kb/acrobat-dc-downloads.html) に移動します。
 2. **Acrobat Pro installer** セクションに移動します。
 3. AEM Forms PDF Generatorで使用するには、「For Windows （32 ビット）」インストーラーをダウンロードします。これは、AEM Forms PDF Generatorでサポートされているバージョンです。
 4. 次のページのインストール手順に従います。
@@ -801,7 +801,7 @@ FRL パッケージを管理する専用のサービスアカウントを作成�
 
 ###### 手順 7:FRL パッケージのダウンロード
 
-1. 手順 3 でダウンロード権限を付与した [ ユーザーアカウント ](https://adminconsole.adobe.com/) を使用して ** Adobe Admin Console&rbrace; にログインします。
+1. 手順 3 でダウンロード権限を付与した [&#x200B; ユーザーアカウント &#x200B;](https://adminconsole.adobe.com/) を使用して ** Adobe Admin Console&rbrace; にログインします。
 1. 「**パッケージ**」タブに移動します。
 1. 手順 2 で作成した FRL パッケージ（「Acrobat FRL AEM Forms」またはカスタムパッケージ名という名前）を見つけます。
 1. **ダウンロード** をクリックして、パッケージをサーバーにダウンロードします。

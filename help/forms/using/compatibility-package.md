@@ -16,9 +16,9 @@ ht-degree: 54%
 
 ## 概要 {#overview}
 
-インタラクティブ通信は、AEM Forms 6.5 LTS でカスタマーコミュニケーションを構築するためのデフォルトの方法です。インタラクティブ通信の使用をお勧めします。 AEM Forms 6.5 LTS で引き続きレターを使用するには、最新の [AEMFD 互換性パッケージ ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) をインストールする必要があります。
+インタラクティブ通信は、AEM Forms 6.5 LTS でカスタマーコミュニケーションを構築するためのデフォルトの方法です。インタラクティブ通信の使用をお勧めします。 AEM Forms 6.5 LTS で引き続きレターを使用するには、最新の [AEMFD 互換性パッケージ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) をインストールする必要があります。
 
-AEMFD 互換パッケージを使用すると [AEM Forms 6.5 LTS でAEM Forms 6.5.22.0、6.4、6.3、6.2 の次のアセットを使用 ](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms) できます。
+AEMFD 互換パッケージを使用すると [AEM Forms 6.5 LTS でAEM Forms 6.5.22.0、6.4、6.3、6.2 の次のアセットを使用 &#x200B;](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms) できます。
 
 * ドキュメントフラグメント
 * レター
@@ -33,7 +33,7 @@ AEMFD 互換パッケージを使用すると [AEM Forms 6.5 LTS でAEM Forms 6.
 
 [AEM 互換性パッケージ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)が事前にインストールされていることを確認します。
 
-1. 最新のAEM 6.5 LTS[ 互換性パッケージ ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) をインストールします。
+1. 最新のAEM 6.5 LTS[&#x200B; 互換性パッケージ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) をインストールします。
 
    パッケージのアップロードおよびインストールについて詳しくは、[パッケージの操作方法](/help/sites-administering/package-manager.md)を参照してください。
 

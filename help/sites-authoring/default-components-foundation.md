@@ -16,7 +16,7 @@ ht-degree: 99%
 
 >[!CAUTION]
 >
->ほとんどの基盤コンポーネントは、AEM 6.5 では廃止されています。Adobeでは、より新しく拡張性が高い [ コアコンポーネント ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja) をAEM プロジェクトで使用することをお勧めします。 これらのコンポーネントは [We.Retail サンプルコンテンツ](/help/sites-developing/we-retail.md)の一部であり、管理者が[個別にインストールして開発に使用](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=ja)することもできます。
+>ほとんどの基盤コンポーネントは、AEM 6.5 では廃止されています。Adobeでは、より新しく拡張性が高い [&#x200B; コアコンポーネント &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja) をAEM プロジェクトで使用することをお勧めします。 これらのコンポーネントは [We.Retail サンプルコンテンツ](/help/sites-developing/we-retail.md)の一部であり、管理者が[個別にインストールして開発に使用](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=ja)することもできます。
 >
 >[AEM Modernize Tools Suite](https://opensource.adobe.com/aem-modernize-tools/) を使用して、基盤コンポーネントベースのサイトをリファクタリングし、コアコンポーネントを使用できます。
 

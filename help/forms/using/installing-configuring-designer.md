@@ -34,7 +34,7 @@ ht-degree: 98%
 >
 >* 64 ビット版の Designer は、AEM 6.5 Forms Service Pack 19（6.5.19.0）で導入されました。
 >* [AEM Forms サービスパック 21（6.5.21.0）](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)のリリース以降、32 ビット版の Designer は非推奨になりました。
-> * Forms Designer でサポートされているプラットフォームは、AEM Forms でサポートされているプラットフォームと一致します。Forms Designerでサポートされているプラットフォームについては、[ ここをクリック ](/help/sites-deploying/technical-requirements.md) してください。
+> * Forms Designer でサポートされているプラットフォームは、AEM Forms でサポートされているプラットフォームと一致します。Forms Designerでサポートされているプラットフォームについては、[&#x200B; ここをクリック &#x200B;](/help/sites-deploying/technical-requirements.md) してください。
 
 フォーム designer のインストールに関して詳しくは、[よくある質問](#fandq)を参照してください。
 

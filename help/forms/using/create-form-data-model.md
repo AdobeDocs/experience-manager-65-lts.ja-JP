@@ -83,7 +83,7 @@ AEM [!DNL Forms] のデータ統合モジュールを使用すると、AEM ユ�
 
       >[!NOTE]
       >
-      >AEM Forms は、[!DNL MySQL] の NT 認証をサポートしていません。[https://localhost:4502/system/console/configMgr でAEM Web コンソールに移動し ](https://localhost:4502/system/console/configMgr) 「Apache Sling Connection Pooled Datasource」を検索します。 「JDBC 接続 URI」プロパティでは、「integratedSecurity」の値を False に設定し、作成したユーザー名とパスワードを使用して [!DNL MySQL] データベースに接続します。
+      >AEM Forms は、[!DNL MySQL] の NT 認証をサポートしていません。[https://localhost:4502/system/console/configMgr でAEM Web コンソールに移動し &#x200B;](https://localhost:4502/system/console/configMgr) 「Apache Sling Connection Pooled Datasource」を検索します。 「JDBC 接続 URI」プロパティでは、「integratedSecurity」の値を False に設定し、作成したユーザー名とパスワードを使用して [!DNL MySQL] データベースに接続します。
 
       * **Test on Borrow：** は **[!UICONTROL Test on Borrow]** オプションを有効にします。
       * **Test on Return：** は **[!UICONTROL Test on Return]** オプションを有効にします。

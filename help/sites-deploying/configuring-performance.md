@@ -228,7 +228,7 @@ AEM 6.0 以降、Adobe Experience Manager は Oak ベースのリポジトリア
 
 #### リポジトリでの設定 {#configuration-in-the-repo}
 
-[sling:OsgiConfig ノードを使用 ](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) サービスを設定する場合は、既存のサービスの PID を探す必要があります。例：org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705 Web コンソールを使用すると、PID を検出できます。
+[sling:OsgiConfig ノードを使用 &#x200B;](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) サービスを設定する場合は、既存のサービスの PID を探す必要があります。例：org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705 Web コンソールを使用すると、PID を検出できます。
 
 `queue.maxparallel` という名前のプロパティを設定します。
 
@@ -454,7 +454,7 @@ Web サイトが公開されてからの最初の数日間は、より高い関�
 負荷の生成、パフォーマンスの監視および結果の分析に役立つ様々なツールが用意されています。これらのツールの一部を次に示します。
 
 * [JMeter](https://jmeter.apache.org/)
-* [OpenText プロフェッショナルパフォーマンスエンジニアリング ](https://www.opentext.com/products/professional-performance-engineering)。
+* [OpenText プロフェッショナルパフォーマンスエンジニアリング &#x200B;](https://www.opentext.com/products/professional-performance-engineering)。
 * [Java™ Interactive Profile](https://jiprof.sourceforge.net/)
 
 最適化後、再度テストして影響を確認します。
@@ -472,7 +472,7 @@ Web サイトが公開されてからの最初の数日間は、より高い関�
 
 ## Dispatcher の使用時のパフォーマンスの最適化 {#optimizing-performance-when-using-the-dispatcher}
 
-[Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja) はアドビのキャッシュ／ロードバランシングツールです。Dispatcher を使用する場合は、キャッシュパフォーマンスを確保するために web サイトの最適化を検討してください。
+[Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja) はアドビのキャッシュ／ロードバランシングツールです。Dispatcher を使用する場合は、キャッシュパフォーマンスを確保するために web サイトの最適化を検討してください。
 
 >[!NOTE]
 >

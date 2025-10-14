@@ -30,7 +30,7 @@ ht-degree: 98%
 
 ## Experience Manager Forms 6.5 に含まれる内容
 
-<span class="preview"> AEM Forms Service Pack 6.5 LTS にアップグレードする場合は、[OSGi でのAEM Forms 6.5 LTS へのアップグレード ](/help/forms/using/upgrade-forms-osgi.md) を参照してください。</span>
+<span class="preview"> AEM Forms Service Pack 6.5 LTS にアップグレードする場合は、[OSGi でのAEM Forms 6.5 LTS へのアップグレード &#x200B;](/help/forms/using/upgrade-forms-osgi.md) を参照してください。</span>
 
 Adobe Experience Manager（AEM）Forms サービスパックには、お客様からリクエストされた主な機能強化、パフォーマンス、安定性、セキュリティの改善など、新機能およびアップグレードされた機能が含まれています。 最新の機能と改善を提供するために、AEM Forms リリースのサービスパックを定期的に用意しています。 テクノロジースタックに応じて次のいずれかのパスを選択し、お使いの環境にサービスパックをダウンロードしてインストールします。
 
@@ -130,7 +130,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
    * [AEM Forms for JBoss® のインストールおよびデプロイ](https://www.adobe.com/go/learn_aemforms_installJBoss_65_jp)
    * [AEM Forms for WebSphere® のインストールおよびデプロイ](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_jp)
-   * [ AEM Forms for WebLogic のインストールおよびデプロイ](https://www.adobe.com/go/learn_aemforms_installWebLogic_65_jp)
+   * [&#x200B; AEM Forms for WebLogic のインストールおよびデプロイ](https://www.adobe.com/go/learn_aemforms_installWebLogic_65_jp)
    * [AEM forms for JBoss® Cluste のインストールおよびデプロイ](https://helpx.adobe.com/content/dam/help/ja/experience-manager/6-5/forms/pdf/install-cluster-jboss.pdf)
    * [AEM forms for WebSphere® Cluste のインストールおよびデプロイ](https://helpx.adobe.com/content/dam/help/ja/experience-manager/6-5/forms/pdf/install-cluster-websphere.pdf)
    * [AEM Forms for WebLogic Cluster のインストールおよびデプロイ](https://helpx.adobe.com/content/dam/help/ja/experience-manager/6-5/forms/pdf/install-cluster-weblogic.pdf)

@@ -17,11 +17,11 @@ ht-degree: 43%
 
 >[!NOTE]
 >
->ここでは、AEM 6.5 LTS のインプレースアップグレード手順の概要を説明します。 アプリケーションサーバーにデプロイされたインストールがある場合は、[ アプリケーションサーバーインストールのアップグレード手順 ](/help/sites-deploying/app-server-upgrade.md) を参照してください。
+>ここでは、AEM 6.5 LTS のインプレースアップグレード手順の概要を説明します。 アプリケーションサーバーにデプロイされたインストールがある場合は、[&#x200B; アプリケーションサーバーインストールのアップグレード手順 &#x200B;](/help/sites-deploying/app-server-upgrade.md) を参照してください。
 
 ## アップグレード前の手順 {#pre-upgrade-steps}
 
-アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。詳しくは、[コードのアップグレードとカスタマイズ](/help/sites-deploying/upgrading-code-and-customizations.md)および[アップグレード前のメンテナンスタスク](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。また、システムが [AEM 6.5 LTS の要件 ](/help/sites-deploying/technical-requirements.md) を満たしていることを確認し、[ アップグレード計画に関する考慮事項 ](/help/sites-deploying/upgrade-planning.md) と、[Analyzer](/help/sites-deploying/pattern-detector.md) を使用して複雑さを見積もる方法を確認します。
+アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。詳しくは、[コードのアップグレードとカスタマイズ](/help/sites-deploying/upgrading-code-and-customizations.md)および[アップグレード前のメンテナンスタスク](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。また、システムが [AEM 6.5 LTS の要件 &#x200B;](/help/sites-deploying/technical-requirements.md) を満たしていることを確認し、[&#x200B; アップグレード計画に関する考慮事項 &#x200B;](/help/sites-deploying/upgrade-planning.md) と、[Analyzer](/help/sites-deploying/pattern-detector.md) を使用して複雑さを見積もる方法を確認します。
 
 ## 移行の前提条件 {#migration-prerequisites}
 
@@ -172,13 +172,13 @@ Where `/path/to/datastore` represents the path to your File Datastore.
    1. `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/1` の下 `crx-quickstart/install/1` コピー
    1. `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/15` の下 `crx-quickstart/install/15` コピー
 
-次に、「正しいアップグレード開始コマンドの特定 [ セクションの情報を使用して確認した新しいコマンドを使用して、AEM インスタンスを開始し ](#determining-the-correct-upgrade-start-command) す。
+次に、「正しいアップグレード開始コマンドの特定 [&#x200B; セクションの情報を使用して確認した新しいコマンドを使用して、AEM インスタンスを開始し &#x200B;](#determining-the-correct-upgrade-start-command) す。
 
 ### 適切なアップグレード開始コマンドの確認 {#determining-the-correct-upgrade-start-command}
 
 >[!NOTE]
 >
->Java 8/11 引数の一部のサポートは、Java 17/21 で削除されました。[Oracle Java™ 17 ドキュメント ](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html)、[Oracle Java™ 21 ドキュメント ](https://docs.oracle.com/en/java/javase/21/docs/specs/man/java.html) および [AEM 6.5 LTS](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations) の Java&amp;trade 引数に関する考慮事項を参照してください。
+>Java 8/11 引数の一部のサポートは、Java 17/21 で削除されました。[Oracle Java™ 17 ドキュメント &#x200B;](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html)、[Oracle Java™ 21 ドキュメント &#x200B;](https://docs.oracle.com/en/java/javase/21/docs/specs/man/java.html) および [AEM 6.5 LTS](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations) の Java&amp;trade 引数に関する考慮事項を参照してください。
 
 アップグレードを実行するには、jar ファイルを使用してAEMを起動してインスタンスを起動することが重要です。
 

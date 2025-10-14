@@ -15,9 +15,9 @@ ht-degree: 81%
 
 # OSGi でのAEM 6.5 Forms LTS へのアップグレード {#upgrade-to-aem-forms-osgi}
 
-[AEM 6.5 からAEM 6.5 LTS へのアップグレード ](/help/sites-deploying/upgrade.md) を行うには、AEM 6.5.22.0 Forms以降にアップグレードします。 AEM 6.5.22.0 からAEM 6.5 Forms LTS への直接アップグレードがサポートされています。
+[AEM 6.5 からAEM 6.5 LTS へのアップグレード &#x200B;](/help/sites-deploying/upgrade.md) を行うには、AEM 6.5.22.0 Forms以降にアップグレードします。 AEM 6.5.22.0 からAEM 6.5 Forms LTS への直接アップグレードがサポートされています。
 
-AEM 6.0 Forms、AEM 6.1 Forms、AEM 6.2 Forms、AEM 6.3 Forms、AEM 6.4 FormsまたはAEM 6.5 Formsを使用している場合、AEM 6.5 Forms LTS に直接アップグレードすることはできません。 アップグレードパスについて詳しくは、「[ アップグレードパス ](/help/forms/using/upgrade.md) ドキュメントを参照してください。
+AEM 6.0 Forms、AEM 6.1 Forms、AEM 6.2 Forms、AEM 6.3 Forms、AEM 6.4 FormsまたはAEM 6.5 Formsを使用している場合、AEM 6.5 Forms LTS に直接アップグレードすることはできません。 アップグレードパスについて詳しくは、「[&#x200B; アップグレードパス &#x200B;](/help/forms/using/upgrade.md) ドキュメントを参照してください。
 
 サービスパック AEM Forms 6.5.22.0 にアップグレードした後、次の手順に従ってAEM 6.5 LTS Formsにアップグレードします。
 

@@ -94,7 +94,7 @@ Barcoded Forms サービスは、バーコードのデコード後、次の XML 
 
 ### Barcoded Forms を使用するワークフロー {#workflows-that-use-barcoded-forms}
 
-フォーム作成者は、Designer を使用してインタラクティブなバーコードフォームを作成します。（[Designer ヘルプ ](https://www.adobe.com/go/learn_aemforms_designer_63_jp) を参照） Adobe Reader またはAcrobatを使用してバーコードフォームに入力すると、フォームデータをエンコードするようにバーコードが自動的に更新されます。
+フォーム作成者は、Designer を使用してインタラクティブなバーコードフォームを作成します。（[Designer ヘルプ &#x200B;](https://www.adobe.com/go/learn_aemforms_designer_63_jp) を参照） Adobe Reader またはAcrobatを使用してバーコードフォームに入力すると、フォームデータをエンコードするようにバーコードが自動的に更新されます。
 
 Barcoded Forms サービスは、紙面上のデータを電子的なフォーマットに変換させる場合に役立ちます。例えば、バーコードフォームに記入して印刷した後で、その印刷出力をスキャンし、Barcoded Forms サービスへの入力として使用できます。
 

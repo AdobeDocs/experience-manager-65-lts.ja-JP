@@ -87,7 +87,7 @@ MongoMK または新しい TarMK セグメント形式を使用する場合は�
 
 ### レプリケーションエージェントの有効化 {#enable-replication-agents}
 
-パブリッシュ環境を完全にアップグレードして検証したら、オーサー環境でレプリケーションエージェントを有効にします。エージェントがそれぞれのパブリッシュインスタンスに接続できることを確認します。イベントの順序について詳しくは、[ アップグレード手順 ](/help/sites-deploying/upgrade-procedure.md) を参照してください。
+パブリッシュ環境を完全にアップグレードして検証したら、オーサー環境でレプリケーションエージェントを有効にします。エージェントがそれぞれのパブリッシュインスタンスに接続できることを確認します。イベントの順序について詳しくは、[&#x200B; アップグレード手順 &#x200B;](/help/sites-deploying/upgrade-procedure.md) を参照してください。
 
 ### スケジュール済みカスタムジョブの有効化 {#enable-custom-scheduled-jobs}
 
@@ -95,7 +95,7 @@ MongoMK または新しい TarMK セグメント形式を使用する場合は�
 
 ### テスト計画の実行 {#execute-test-plan}
 
-[ コードとカスタマイズのアップグレード **の「テスト手順** セクション ](/help/sites-deploying/upgrading-code-and-customizations.md#testing-procedure-testing-procedure) の定義に従って、詳細なテスト計画を実行します。
+[&#x200B; コードとカスタマイズのアップグレード **の「テスト手順** セクション &#x200B;](/help/sites-deploying/upgrading-code-and-customizations.md#testing-procedure-testing-procedure) の定義に従って、詳細なテスト計画を実行します。
 
 ## アップグレードに関する問題の分析 {#analyzing-issues-with-the-upgrade}
 

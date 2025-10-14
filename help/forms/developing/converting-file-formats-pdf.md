@@ -733,7 +733,7 @@ PDF の生成サービスで、以前にリストされたファイルのいず�
 1. WinZip や WinRAR などのツールを使用して、adobe-livecycle-native-jboss-x86_win32.earfile ／ adobe-Native2PDFSvc.war\WEB-INF\lib ／ adobe-native.jar ／ Native2PDFSvc-native.jar\bin ／ adobe-appmondata.jar ファイルを開きます。
 1. appmondata.jar ファイルにダイアログおよびスクリプト XML ファイルを追加するか、このファイル内の既存の XML ファイルを変更します。（[ネイティブアプリケーション用のスクリプト XML ファイルの作成または変更](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)および [ネイティブアプリケーション用の追加のダイアログ XML ファイルの作成または変更](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application)を参照してください）
 1. WinZip や WinRAR などのツールを使用して、adobe-generatepdf-dsc.jar／adobe-appmondata.jar を開きます。
-1. appmondata.jar ファイルにダイアログおよびスクリプト XML ファイルを追加するか、このファイル内の既存の XML ファイルを変更します。（[ ネイティブアプリケーション用のスクリプト XML ファイルの作成または変更 ](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application) および [ ネイティブアプリケーション用の追加のダイアログ XML ファイルの作成または変更 ](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application) を参照） XML ファイルを adobe-appmondata.jar ファイルに追加した後、新しい adobe-appmondata.jar ファイルを adobe-generatepdf-dsc.jar ファイルに配置します。
+1. appmondata.jar ファイルにダイアログおよびスクリプト XML ファイルを追加するか、このファイル内の既存の XML ファイルを変更します。（[&#x200B; ネイティブアプリケーション用のスクリプト XML ファイルの作成または変更 &#x200B;](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application) および [&#x200B; ネイティブアプリケーション用の追加のダイアログ XML ファイルの作成または変更 &#x200B;](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application) を参照） XML ファイルを adobe-appmondata.jar ファイルに追加した後、新しい adobe-appmondata.jar ファイルを adobe-generatepdf-dsc.jar ファイルに配置します。
 1. 追加でイティブファイル形式のサポートを加えた場合は、アプリケーションのパスを提供するシステム環境変数を作成します（[ネイティブアプリケーションを見つけるための環境変数の作成](converting-file-formats-pdf.md#creating-an-environment-variable-to-locate-the-native-application)を参照）。
 
 **PDF 生成コンポーネントを再デプロイするには**
@@ -862,7 +862,7 @@ Microsoft Spy++ を使用して、ネイティブアプリケーションのウ�
 
 >[!NOTE]
 >
->native2pdfconfig.xml 設定ファイルで指定された一般のアプリケーションには、プライマリダイアログ XML ファイルが含まれていません。この仕様については、[ ネイティブファイル形式に対するサポートの追加または変更](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format)のセクションで説明します。
+>native2pdfconfig.xml 設定ファイルで指定された一般のアプリケーションには、プライマリダイアログ XML ファイルが含まれていません。この仕様については、[&#x200B; ネイティブファイル形式に対するサポートの追加または変更](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format)のセクションで説明します。
 
 `window` 要素で子として表示される `windowList` 要素に順序を付けます。（[window 要素と windowList 要素の順序](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements)を参照してください。）
 

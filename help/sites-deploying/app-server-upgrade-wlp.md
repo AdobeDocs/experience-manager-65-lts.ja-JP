@@ -20,9 +20,9 @@ ht-degree: 17%
 
 ## アップグレード前の手順 {#pre-upgrade-steps}
 
-アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。詳しくは、[コードのアップグレードとカスタマイズ](/help/sites-deploying/upgrading-code-and-customizations.md)および[アップグレード前のメンテナンスタスク](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。さらに、お使いのシステムが [AEM 6.5 LTS の要件 ](/help/sites-deploying/technical-requirements.md) を満たしていることを確認してください。
+アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。詳しくは、[コードのアップグレードとカスタマイズ](/help/sites-deploying/upgrading-code-and-customizations.md)および[アップグレード前のメンテナンスタスク](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。さらに、お使いのシステムが [AEM 6.5 LTS の要件 &#x200B;](/help/sites-deploying/technical-requirements.md) を満たしていることを確認してください。
 
-[ アップグレードの計画 ](/help/sites-deploying/upgrade-planning.md) や、[AEM Analyzer](/help/sites-deploying/aem-analyzer.md) を使用してAEMのアップグレードの複雑さを見積もる方法を確認してください。
+[&#x200B; アップグレードの計画 &#x200B;](/help/sites-deploying/upgrade-planning.md) や、[AEM Analyzer](/help/sites-deploying/aem-analyzer.md) を使用してAEMのアップグレードの複雑さを見積もる方法を確認してください。
 
 ### 移行の前提条件 {#migration-prerequisites}
 
@@ -30,10 +30,10 @@ ht-degree: 17%
 
 ### アップグレードの実行 {#performing-the-upgrade}
 
-1. アップグレードアクティビティを実行する前に、AEM 6.5 サーバーのバックアップなどの [ アップグレード前 ](#pre-upgrade-steps) 手順を完了していることを確認してください
+1. アップグレードアクティビティを実行する前に、AEM 6.5 サーバーのバックアップなどの [&#x200B; アップグレード前 &#x200B;](#pre-upgrade-steps) 手順を完了していることを確認してください
 1. 要件に応じて、次のいずれかのアップグレードパスを選択します。
    1. **インプレースアップグレード**：現在の WLP サーバーがサーブレット 6 をサポートしている場合は、インプレースアップグレードを実行して手順 3 を続行できます。
-   1. **サイドグレード**：新しい設定を希望する場合、または WLP サーバーがサーブレット 6 をサポートしていない場合は、[AEM AEM 6.5 to AEM 6.5 LTS Content Migration Using Oak-upgrade](/help/sites-deploying/aem-65-to-aem-65lts-content-migration-using-oak-upgrade.md) ガイドに従って、新しい WLP インスタンスを設定し、コンテンツを移行します。[ アップグレードされたコードベースのデプロイ ](#deploy-upgraded-codebase) の節にスキップします
+   1. **サイドグレード**：新しい設定を希望する場合、または WLP サーバーがサーブレット 6 をサポートしていない場合は、[AEM AEM 6.5 to AEM 6.5 LTS Content Migration Using Oak-upgrade](/help/sites-deploying/aem-65-to-aem-65lts-content-migration-using-oak-upgrade.md) ガイドに従って、新しい WLP インスタンスを設定し、コンテンツを移行します。[&#x200B; アップグレードされたコードベースのデプロイ &#x200B;](#deploy-upgraded-codebase) の節にスキップします
 
 1. AEM インスタンスを停止します。通常は、次のコマンドを使用して実行できます。
 
@@ -82,7 +82,7 @@ ht-degree: 17%
    java -version
    ```
 
-1. AEM サーバーの開始パラメーターを確認し、必要に応じてパラメーターを更新してください。 詳しくは、[Java 17/Java 21 に関する考慮事項 ](/help/sites-deploying/custom-standalone-install.md#java-considerations) を参照してください。
+1. AEM サーバーの開始パラメーターを確認し、必要に応じてパラメーターを更新してください。 詳しくは、[Java 17/Java 21 に関する考慮事項 &#x200B;](/help/sites-deploying/custom-standalone-install.md#java-considerations) を参照してください。
 1. 新しい 6.5 LTS war をダウンロードし、`/<path-to-aem-server>/dropins/` にある dropins フォルダーにコピーします。
 1. AEM インスタンスを起動します。通常は、次のコマンドを使用して起動できます。
 

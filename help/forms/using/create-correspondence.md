@@ -57,7 +57,7 @@ ht-degree: 98%
 
    >[!NOTE]
    >
-   >レタープレビューの HTML または PDF レンディションモードの切り替えについて詳しくは、[レターのレンディションモードの切り替え](#changerenditionmode)を参照してください。Correspondence Management とAEMでのPDF サポートについて詳しくは、[NPAPI ブラウザープラグインのサポート終了とその影響 ](https://helpx.adobe.com/jp/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html) を参照してください。
+   >レタープレビューの HTML または PDF レンディションモードの切り替えについて詳しくは、[レターのレンディションモードの切り替え](#changerenditionmode)を参照してください。Correspondence Management とAEMでのPDF サポートについて詳しくは、[NPAPI ブラウザープラグインのサポート終了とその影響 &#x200B;](https://helpx.adobe.com/jp/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html) を参照してください。
 
 ### データの入力 {#enterdata}
 

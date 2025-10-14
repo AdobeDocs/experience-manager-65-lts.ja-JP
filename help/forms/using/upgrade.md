@@ -25,7 +25,7 @@ ht-degree: 78%
 AEM as a Cloud Serviceのドキュメントについては、[Cloud ServiceのAEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html?lang=ja) を参照してください。
 
 
-AEM 6.5 Forms には、いくつかの新機能と機能強化が導入されています。これにより、フォームと通信の作成、管理、ユーザーエクスペリエンスが簡素化されます。AEM 6.5 のすべての新機能と機能強化については、[ 新機能の概要についてのドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/release-notes/release-notes) を参照してください。
+AEM 6.5 Forms には、いくつかの新機能と機能強化が導入されています。これにより、フォームと通信の作成、管理、ユーザーエクスペリエンスが簡素化されます。AEM 6.5 のすべての新機能と機能強化については、[&#x200B; 新機能の概要についてのドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/release-notes/release-notes) を参照してください。
 
 既存の LiveCycle または AEM Forms のインストール環境をアップグレードすると、AEM 6.5 Forms に導入された新機能と機能強化を使用できるようになります。既存のデータ、プロセス、アセットはそのまま保存されます。アップグレード時には、メタデータとプロセスの状態も保持されます。アップグレードを開始するためのアップグレードパスを選択できます。
 

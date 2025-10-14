@@ -323,7 +323,7 @@ AEM WCM の様々な設定を行うことができますが、インストール
 
 >[!NOTE]
 >
-> AEM 6.5 LTS の新規インストールの場合、インデックス定義は個別にインストールする必要があります。 詳しくは、[ この ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions) を参照してください。
+> AEM 6.5 LTS の新規インストールの場合、インデックス定義は個別にインストールする必要があります。 詳しくは、[&#x200B; この &#x200B;](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions) を参照してください。
 
 ## CRXDE Lite および web コンソールへのアクセス {#accessing-crxde-lite-and-the-web-console}
 

@@ -11,4 +11,4 @@ ht-degree: 19%
 
 # OSGi 上の AEM Forms でサポートされるプラットフォーム {#supported-platforms}
 
-OSGi でのAEM Formsのサポートプラットフォームについては、[ 技術要件 ](/help/sites-deploying/technical-requirements.md) のドキュメントを参照してください。
+OSGi でのAEM Formsのサポートプラットフォームについては、[&#x200B; 技術要件 &#x200B;](/help/sites-deploying/technical-requirements.md) のドキュメントを参照してください。

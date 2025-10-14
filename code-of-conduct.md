@@ -47,4 +47,4 @@ Adobeドキュメントチームは、オープンで親しみやすい環境を
 
 ## 帰属
 
-本行動規範は、「Contributor Covenant Code of Conduct[ にある ](https://www.contributor-covenant.org/)Contributor Covenant[ バージョン 1.4](https://www.contributor-covenant.org/version/1/4/code-of-conduct/) に適合しています。
+本行動規範は、「Contributor Covenant Code of Conduct[&#x200B; にある &#x200B;](https://www.contributor-covenant.org/)Contributor Covenant[&#x200B; バージョン 1.4](https://www.contributor-covenant.org/version/1/4/code-of-conduct/) に適合しています。

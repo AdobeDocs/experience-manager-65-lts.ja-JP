@@ -23,7 +23,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->AEM 6.5 でのスマートタグの設定については、[ スマートタグ用にAssetsを準備する ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/administer/config-smart-tagging) を参照してください。
+>AEM 6.5 でのスマートタグの設定については、[&#x200B; スマートタグ用にAssetsを準備する &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/administer/config-smart-tagging) を参照してください。
 
 **新規ユーザー**
 

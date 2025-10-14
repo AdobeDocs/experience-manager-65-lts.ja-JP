@@ -22,7 +22,7 @@ ht-degree: 20%
 * 作成者は、ユニバーサルエディターがAEM ヘッドレスコンテンツのすべてのフォームに対して同じ一貫性のあるビジュアル編集をサポートするので、ユニバーサルエディターの柔軟性の利点を活用できます。
 * ユニバーサルエディターは実装の真の分離をサポートするので、開発者はユニバーサルエディターの汎用性のメリットを受けます。 SDKやテクノロジに制約を課すことなく、任意のフレームワークやアーキテクチャを使用できます。
 
-詳しくは、ユニバーサルエディターの [AEM as a Cloud Service ドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) を参照してください。
+詳しくは、ユニバーサルエディターの [AEM as a Cloud Service ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) を参照してください。
 
 ## アーキテクチャ {#architecture}
 
@@ -32,7 +32,7 @@ ht-degree: 20%
 * AEMページは、ユニバーサルエディターによって、AEM オーサーインスタンスから Dispatcher を介して読み取られます。
 * Dispatcherと同じホスト上で動作するユニバーサルエディターサービスが、変更内容をAEM オーサーインスタンスに書き戻します。
 
-![ ユニバーサルエディターを使用したオーサーフロー ](assets/author-flow.png)
+![&#x200B; ユニバーサルエディターを使用したオーサーフロー &#x200B;](assets/author-flow.png)
 
 ## 要件 {#requirements}
 
@@ -57,7 +57,7 @@ ht-degree: 20%
 1. [ローカルのユニバーサルエディターサービスを設定します。](#set-up-ue)
 1. [ユニバーサルエディターサービスを許可するように Dispatcher を調整します。](#update-dispatcher)
 
-設定が完了したら、[ ユニバーサルエディターを使用するようにアプリケーションをインストルメント ](#instrumentation) できます。
+設定が完了したら、[&#x200B; ユニバーサルエディターを使用するようにアプリケーションをインストルメント &#x200B;](#instrumentation) できます。
 
 ### サービスの設定 {#configure-aem}
 
@@ -135,15 +135,15 @@ ht-degree: 20%
 AEMが更新および設定されたので、独自のローカル開発およびテスト用にローカルのユニバーサルエディターサービスをセットアップできます。
 
 1. Node.js のバージョン >=20 をインストールします。
-1. [ ソフトウェア配布 ](https://experienceleague.adobe.com/ja/docs/experience-cloud/software-distribution/home) から最新のユニバーサルエディターサービスをダウンロードして展開します
+1. [&#x200B; ソフトウェア配布 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud/software-distribution/home) から最新のユニバーサルエディターサービスをダウンロードして展開します
 1. 環境変数または `.env` ファイルを使用してユニバーサルエディターサービスを設定します。
-   * [ 詳しくは、AEM as a Cloud Service ユニバーサルエディターのドキュメントを参照してください。](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
+   * [&#x200B; 詳しくは、AEM as a Cloud Service ユニバーサルエディターのドキュメントを参照してください。](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
    * 内部 IP の書き換えが必要な場合は、`UES_MAPPING` オプションを使用する必要がある場合があります。
 1. 実行 `universal-editor-service.cjs`
 
 ### Dispatcherの更新 {#update-dispatcher}
 
-AEMが設定され、ローカルのユニバーサルエディターサービスが実行されている場合は、（Dispatcher で [ 新しいサービスのリバースプロキシを許可する必要があ ](https://experienceleague.adobe.com/ja/docs/experience-manager-dispatcher/using/dispatcher) ます。
+AEMが設定され、ローカルのユニバーサルエディターサービスが実行されている場合は、（Dispatcher で [&#x200B; 新しいサービスのリバースプロキシを許可する必要があ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-dispatcher/using/dispatcher) ます。
 
 1. オーサーインスタンスの vhost ファイルを調整して、リバースプロキシが組み込まれるようにします。
 
@@ -156,7 +156,7 @@ AEMが設定され、ローカルのユニバーサルエディターサービ�
 
    >[!NOTE]
    >
-   >デフォルトのポートは 8080 です。 `UES_PORT`[ ファイル `.env` の ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service) パラメーターを使用してこの値を変更した場合は、ポートの値を適宜調整する必要があります。
+   >デフォルトのポートは 8080 です。 `UES_PORT`[&#x200B; ファイル `.env` の &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service) パラメーターを使用してこの値を変更した場合は、ポートの値を適宜調整する必要があります。
 
 1. Apache を再起動します。
 
@@ -164,7 +164,7 @@ AEMが設定され、ローカルのユニバーサルエディターサービ�
 
 AEMが更新され、ローカルのユニバーサルエディターサービスが実行されている状態で、ユニバーサルエディターを使用してヘッドレスコンテンツの編集を開始できます。
 
-ただし、ユニバーサルエディターを利用するには、アプリのインストルメントを行う必要があります。 これには、コンテンツを保持する方法と場所をエディターに指示するメタタグを含める必要があります。 この実装について詳しくは、[AEM as a Cloud Serviceのユニバーサルエディターのドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page) を参照してください。
+ただし、ユニバーサルエディターを利用するには、アプリのインストルメントを行う必要があります。 これには、コンテンツを保持する方法と場所をエディターに指示するメタタグを含める必要があります。 この実装について詳しくは、[AEM as a Cloud Serviceのユニバーサルエディターのドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page) を参照してください。
 
 AEMを使用したユニバーサルエディターのドキュメントに従う場合、AEM as a Cloud Service 6.5 LTS で使用する際には次の変更が適用されます。
 
@@ -184,12 +184,12 @@ AEMを使用したユニバーサルエディターのドキュメントに従�
 
 >[!TIP]
 >
->ユニバーサルエディターの使用を開始する開発者向けの包括的なガイドについては、この節で説明したAEM 6.5 LTS サポートに必要な変更に留意しながら、AEM as a Cloud Service ドキュメントの [AEM Developers 向けユニバーサルエディターの概要 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) を参照してください。
+>ユニバーサルエディターの使用を開始する開発者向けの包括的なガイドについては、この節で説明したAEM 6.5 LTS サポートに必要な変更に留意しながら、AEM as a Cloud Service ドキュメントの [AEM Developers 向けユニバーサルエディターの概要 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) を参照してください。
 
 ## AEM 6.5 LTS とAEM as a Cloud Serviceの違い {#differences}
 
 AEM 6.5 LTS のユニバーサルエディターは、UI や多くの設定を含め、AEM as a Cloud Serviceと広く同じように機能します。 ただし、注意すべき違いがあります。
 
 * 6.5 LTS のユニバーサルエディターは、ヘッドレスユースケースのみをサポートしています。
-* ユニバーサルエディターの設定は、（現在のドキュメントで説明されているように [6.5 LTS の場合 ](#setup) 若干異なります。
+* ユニバーサルエディターの設定は、（現在のドキュメントで説明されているように [6.5 LTS の場合 &#x200B;](#setup) 若干異なります。
 * 6.5 LTS のユニバーサルエディターは、AEM as a Cloud Serviceとは異なるアセットピッカーと異なるコンテンツフラグメントピッカーを使用します。

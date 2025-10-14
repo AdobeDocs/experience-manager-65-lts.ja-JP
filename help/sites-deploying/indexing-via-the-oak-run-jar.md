@@ -62,7 +62,7 @@ Oak-run は、コマンドラインでのすべてのインデックス作成の
 
 ### SegmentNodeStore および DocumentNodeStore のテキスト事前抽出 {#textpre-extraction}
 
-[ テキスト事前抽出 ](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) （AEM 6.3 以降に存在する機能）を使用して、インデックス再作成の時間を短縮できます。 テキスト事前抽出は、すべてのインデックス再作成アプローチと連携して使用できます。
+[&#x200B; テキスト事前抽出 &#x200B;](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) （AEM 6.3 以降に存在する機能）を使用して、インデックス再作成の時間を短縮できます。 テキスト事前抽出は、すべてのインデックス再作成アプローチと連携して使用できます。
 
 `oak-run.jar` のインデックス作成アプローチに応じて、次の図に示す「インデックス再作成の実行」ステップのどちら側にも様々なステップがあります。
 

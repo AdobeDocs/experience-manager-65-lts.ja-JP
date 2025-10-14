@@ -31,7 +31,7 @@ AEM アップグレードプロセスでは、プランニング、分析およ�
 >
 >AEM 6.5 LTS へのアップグレードは、最新の 6 つのサービスパックからサポートされています
 
-サポート対象のオペレーティングシステム、Java™ ランタイム、httpd および Dispatcher バージョンを実行していることを確認することが重要です。詳しくは、[AEM 6.5 LTS の技術要件 ](/help/sites-deploying/technical-requirements.md) を参照してください。 これらのコンポーネントのアップグレードは、アップグレード計画で考慮する必要があり、AEMのアップグレード前に行う必要があります。
+サポート対象のオペレーティングシステム、Java™ ランタイム、httpd および Dispatcher バージョンを実行していることを確認することが重要です。詳しくは、[AEM 6.5 LTS の技術要件 &#x200B;](/help/sites-deploying/technical-requirements.md) を参照してください。 これらのコンポーネントのアップグレードは、アップグレード計画で考慮する必要があり、AEMのアップグレード前に行う必要があります。
 
 <!-- Alexandru: drafting for now
 
@@ -115,7 +115,7 @@ New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/rel
 
 Adobeのお客様がAEM環境に適用するカスタマイズの量と性質には様々な種類があるので、アップグレードで期待される全体的な作業レベルを判断するには、事前にしばらく時間を置くことが重要です。 [AEM 6.5 LTS](/help/sites-deploying/aem-analyzer.md) 用AEM アナライザーは、アップグレードの複雑さを評価するのに役立ちます。
 
-AEM 6.5 LTS 用の [AEM アナライザーは ](/help/sites-deploying/pattern-detector.md) ほとんどの場合、アップグレード中に予想される作業について、かなり正確な予測を提供します。 ただし、互換性のない変更点が存在する、より複雑なカスタマイズやデプロイメントの場合は、[ インプレースアップグレードの実行 ](/help/sites-deploying/in-place-upgrade.md) の手順に従い開発インスタンスをAEM 6.5 LTS にアップグレードできます。 完了したら、この環境で全体的なスモークテストを実行します。この演習の目的は、テストケースのインベントリを完全に作成し、欠陥の正式なインベントリを作成することではなく、AEM 6.5 LTS 互換のコードをアップグレードするために必要な作業量の概算を提供することです。 [AEM アナライザー ](/help/sites-deploying/aem-analyzer.md) および前の節で決定したアーキテクチャの変更と組み合わせると、アップグレードを計画するプロジェクト管理チームに、大まかな見積もりを提供できます。
+AEM 6.5 LTS 用の [AEM アナライザーは &#x200B;](/help/sites-deploying/pattern-detector.md) ほとんどの場合、アップグレード中に予想される作業について、かなり正確な予測を提供します。 ただし、互換性のない変更点が存在する、より複雑なカスタマイズやデプロイメントの場合は、[&#x200B; インプレースアップグレードの実行 &#x200B;](/help/sites-deploying/in-place-upgrade.md) の手順に従い開発インスタンスをAEM 6.5 LTS にアップグレードできます。 完了したら、この環境で全体的なスモークテストを実行します。この演習の目的は、テストケースのインベントリを完全に作成し、欠陥の正式なインベントリを作成することではなく、AEM 6.5 LTS 互換のコードをアップグレードするために必要な作業量の概算を提供することです。 [AEM アナライザー &#x200B;](/help/sites-deploying/aem-analyzer.md) および前の節で決定したアーキテクチャの変更と組み合わせると、アップグレードを計画するプロジェクト管理チームに、大まかな見積もりを提供できます。
 
 ### アップグレードおよびロールバックのランブックの作成 {#building-the-upgrade-and-rollback-runbook}
 
@@ -148,7 +148,7 @@ AEM 6.5 LTS 用の [AEM アナライザーは ](/help/sites-deploying/pattern-de
 
 ### 開発および QA の実行 {#performing-development-and-qa}
 
-Adobeには、AEM 6.5 LTS との互換性を保つため、[ コードとカスタマイズのアップグレード ](/help/sites-deploying/upgrading-code-and-customizations.md) 手順が用意されています。 この反復プロセスを実行する際は、必要に応じて Runbook を変更する必要があります。
+Adobeには、AEM 6.5 LTS との互換性を保つため、[&#x200B; コードとカスタマイズのアップグレード &#x200B;](/help/sites-deploying/upgrading-code-and-customizations.md) 手順が用意されています。 この反復プロセスを実行する際は、必要に応じて Runbook を変更する必要があります。
 
 <!--Alexandru: drafting for now
 

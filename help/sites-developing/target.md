@@ -318,7 +318,7 @@ String orderID = session.getOrderId();
 
 ## Target コンポーネントについて {#understanding-the-target-component}
 
-Target コンポーネントを使用すると、CQ コンテンツコンポーネントから動的 mbox を作成できます。（[ コンテンツのターゲット設定 ](/help/sites-authoring/content-targeting-touch.md) を参照） Target コンポーネントは、/libs/cq/personalization/components/target にあります。
+Target コンポーネントを使用すると、CQ コンテンツコンポーネントから動的 mbox を作成できます。（[&#x200B; コンテンツのターゲット設定 &#x200B;](/help/sites-authoring/content-targeting-touch.md) を参照） Target コンポーネントは、/libs/cq/personalization/components/target にあります。
 
 target.jsp スクリプトは、ページのプロパティにアクセスして、コンポーネントに使用するターゲティングエンジンを決定し、適切なスクリプトを実行します。
 

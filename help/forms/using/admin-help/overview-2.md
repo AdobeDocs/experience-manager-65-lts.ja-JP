@@ -23,7 +23,7 @@ ht-degree: 94%
 *資格情報*&#x200B;には、ドキュメントへの署名や識別に必要な秘密鍵情報が格納されています。*証明書*&#x200B;は、信頼のために設定する公開鍵情報です。AEM Forms が証明書と資格情報を使用する目的はいくつかあります。
 
 * Acrobat Reader DC Extensions では、資格情報を使用して、PDF ドキュメントで Adobe Reader の使用権限を有効にします。（[証明書を Acrobat Reader DC Extensions で使用するための設定](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)を参照）。
-* Acrobat での使用を目的として、信頼された発行者からの秘密鍵証明書のみを表示するように Rights Management を設定できます（[Rights Managementの表示設定の指定 ](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings) を参照）。共通名（CN）が証明書に存在する必要があります。
+* Acrobat での使用を目的として、信頼された発行者からの秘密鍵証明書のみを表示するように Rights Management を設定できます（[Rights Managementの表示設定の指定 &#x200B;](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings) を参照）。共通名（CN）が証明書に存在する必要があります。
 * Signature サービスは、証明書と資格情報にアクセスします。Signature サービスについて詳しくは、[サービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_65_jp)を参照してください。
 
 **ペアとなる鍵の生成**

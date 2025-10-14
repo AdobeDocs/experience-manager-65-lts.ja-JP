@@ -272,7 +272,7 @@ AEM Forms JEE の操作は、AEM Forms で厳密に型指定された API を使
 
 ## クイックスタート（SOAP モード）：Java API を使用した署名フィールドの変更 {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
 
-次の Java コードの例では、署名フィールドに署名が適用されている場合にフォーム内のすべてのフィールドをロックし、変更が許可されていないことを確認して、SignatureField1 という名前の署名フィールドを変更します。Signature サービスが変更された署名フィールドを含む PDF ドキュメントを返すと、その PDF ドキュメントは LoanSig.pdf という名前の PDF ファイルとして保存されます。（この例は、Signature サービスに渡されたPDF ファイルを上書きします）（[ 署名フィールドの変更 ](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields) を参照してください）。
+次の Java コードの例では、署名フィールドに署名が適用されている場合にフォーム内のすべてのフィールドをロックし、変更が許可されていないことを確認して、SignatureField1 という名前の署名フィールドを変更します。Signature サービスが変更された署名フィールドを含む PDF ドキュメントを返すと、その PDF ドキュメントは LoanSig.pdf という名前の PDF ファイルとして保存されます。（この例は、Signature サービスに渡されたPDF ファイルを上書きします）（[&#x200B; 署名フィールドの変更 &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields) を参照してください）。
 
 ```java
  /*

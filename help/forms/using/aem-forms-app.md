@@ -20,17 +20,17 @@ ht-degree: 97%
 
 ## 概要 {#overview}
 
-AEM Forms アプリケーションでは、アダプティブフォーム、モバイルフォーム、モバイルデバイスのフォームセットをサーバーに基づいて同期することができます。OSGi 上の [Forms中心のワークフロー ](/help/forms/using/aem-forms-workflow.md)<!--or Forms workflows on JEE--> を定義することができます。 例えば、金融関係の会社を経営していて、顧客の申請と問い合わせの管理に AEM Forms を使用するとします。顧客はフォームを記入し、それを送信して承認を求めます。モバイルデバイスのフォームを有効にしている場合、顧客はフォームを AEM Forms アプリケーションで記入することができます。また、会社側も、モバイルデバイス上でのフォームの認証を有効にすることで、承認のワークフローを管理することができます。フィールドワーカーはモバイルデバイスを顧客のところに持参し、詳細を確認して、フォームを送信します。AEM Forms アプリケーションは AEM Forms サーバーと同期して、モバイルデバイスで有効になっているフォームを取得します。アプリケーションがオフラインの場合、データはローカルに保存されます。
+AEM Forms アプリケーションでは、アダプティブフォーム、モバイルフォーム、モバイルデバイスのフォームセットをサーバーに基づいて同期することができます。OSGi 上の [Forms中心のワークフロー &#x200B;](/help/forms/using/aem-forms-workflow.md)<!--or Forms workflows on JEE--> を定義することができます。 例えば、金融関係の会社を経営していて、顧客の申請と問い合わせの管理に AEM Forms を使用するとします。顧客はフォームを記入し、それを送信して承認を求めます。モバイルデバイスのフォームを有効にしている場合、顧客はフォームを AEM Forms アプリケーションで記入することができます。また、会社側も、モバイルデバイス上でのフォームの認証を有効にすることで、承認のワークフローを管理することができます。フィールドワーカーはモバイルデバイスを顧客のところに持参し、詳細を確認して、フォームを送信します。AEM Forms アプリケーションは AEM Forms サーバーと同期して、モバイルデバイスで有効になっているフォームを取得します。アプリケーションがオフラインの場合、データはローカルに保存されます。
 
 AEM Forms アプリケーションのソースコードは、ソフトウェアディストリビューションにより、使用することができます。ソフトウエア配布のソースコードパッケージは、`adobe-aemfd-forms-app-src-pkg-<version>.zip` として入手できます。
 
 AEM Forms アプリケーションは、iOS、Android、および Windows デバイスでサポートされます。Android 向けの AEM Forms アプリケーションは Google Play から、iOS 向けの AEM Forms アプリケーションは App Store から、Windows 向けの AEM Forms アプリケーションは Windows ストアからインストールできます。
 
-    [ ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms&amp;hl=ja)
+    [&#x200B; ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms&hl=ja)
     
-    [ ![app_store](assets/app_store.png)](https://itunes.apple.com/jp/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
+    [&#x200B; ![app_store](assets/app_store.png)](https://itunes.apple.com/jp/app/adobe-experience-manager-forms/id1129625976?ls=1&mt=8)
     
-    [ ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
+    [&#x200B; ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 iOS、Android、または Windows デバイスに AEM Forms アプリケーションをインストール、カスタマイズ、配布する方法については、[AEM Forms アプリケーションのカスタマイズ、構築、配布](#customize-build-distribute)を参照してください。
 
@@ -126,7 +126,7 @@ AEM Forms Workflow を使用しない AEM Forms サーバーがある場合、�
 
 ## AEM インボックスの機能と AEM Forms アプリケーションの機能との違い {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Forms 中心のワークフローを起動するには、[AEM インボックス](/help/forms/using/manage-applications-inbox.md)と AEM Forms アプリケーションの 2 つの方法があります。ただし、AEM インボックスの機能と AEM Forms アプリケーションの機能は異なっています。AEM インボックスは [Forms中心のワークフローでのみ機能するのに対して ](/help/forms/using/aem-forms-workflow.md)AEM Forms アプリはForms中心のワークフローとプロセス管理の両方で機能します。<!--For more information on differences between AEM Inbox and AEM Forms app capabilities, see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).-->
+Forms 中心のワークフローを起動するには、[AEM インボックス](/help/forms/using/manage-applications-inbox.md)と AEM Forms アプリケーションの 2 つの方法があります。ただし、AEM インボックスの機能と AEM Forms アプリケーションの機能は異なっています。AEM インボックスは [Forms中心のワークフローでのみ機能するのに対して &#x200B;](/help/forms/using/aem-forms-workflow.md)AEM Forms アプリはForms中心のワークフローとプロセス管理の両方で機能します。<!--For more information on differences between AEM Inbox and AEM Forms app capabilities, see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).-->
 
 ## サポートされているフォーム {#supported-forms}
 

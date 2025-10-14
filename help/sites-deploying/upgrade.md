@@ -24,7 +24,7 @@ ht-degree: 28%
 
 >[!NOTE]
 >
->技術的には、AEM 6.5 LTS からAEM 6.5 LTS サービスパックへのアップグレードプロセスは、シームレスな [ インプレースアップグレード ](/help/sites-deploying/in-place-upgrade.md) となるように設計されています。 このプロセスは、リリースノートに特に記載されていない限り、通常、顧客によるコードの変更を必要としません。
+>技術的には、AEM 6.5 LTS からAEM 6.5 LTS サービスパックへのアップグレードプロセスは、シームレスな [&#x200B; インプレースアップグレード &#x200B;](/help/sites-deploying/in-place-upgrade.md) となるように設計されています。 このプロセスは、リリースノートに特に記載されていない限り、通常、顧客によるコードの変更を必要としません。
 
 このセクションでは、AEM インストールからAEM 6.5 LTS へのアップグレードについて説明します。
 
@@ -55,6 +55,6 @@ ht-degree: 28%
 
 ### 更新 {#updates}
 
-Foundation layer は、Apache Sling、Felix、Jackrabbit Oakの最新のオープンソースバンドルを組み込んで、Java 17 および Java 21 をサポートするようになりました。 さらに、AEM 6.5 LTS uber-jar のパッケージが変更されました。 さらに、AEM 6.5 LTS からは、従来の機能がいくつか削除されています。 詳細については、「[ リリース ノート ](/help/release-notes/release-notes.md#whats-new-what-s-new)」および [ アップグレード後にアンインストールされる廃止されたバンドルの一覧 ](/help/sites-deploying/obsolete-bundles.md) を参照してください。
+Foundation layer は、Apache Sling、Felix、Jackrabbit Oakの最新のオープンソースバンドルを組み込んで、Java 17 および Java 21 をサポートするようになりました。 さらに、AEM 6.5 LTS uber-jar のパッケージが変更されました。 さらに、AEM 6.5 LTS からは、従来の機能がいくつか削除されています。 詳細については、「[&#x200B; リリース ノート &#x200B;](/help/release-notes/release-notes.md#whats-new-what-s-new)」および [&#x200B; アップグレード後にアンインストールされる廃止されたバンドルの一覧 &#x200B;](/help/sites-deploying/obsolete-bundles.md) を参照してください。
 
-AEM 6.5 LTS は、機能の後方互換性に重点を置いており、アナライザーツールが付属しています。 開始時の複雑性の評価 [ アップグレードの計画 ](/help/sites-deploying/aem-analyzer.md) については、[AEM Analyzer を使用したアップグレードの複雑性の評価 ](/help/sites-deploying/upgrade-planning.md) を参照してください。
+AEM 6.5 LTS は、機能の後方互換性に重点を置いており、アナライザーツールが付属しています。 開始時の複雑性の評価 [&#x200B; アップグレードの計画 &#x200B;](/help/sites-deploying/aem-analyzer.md) については、[AEM Analyzer を使用したアップグレードの複雑性の評価 &#x200B;](/help/sites-deploying/upgrade-planning.md) を参照してください。

@@ -19,7 +19,7 @@ ht-degree: 51%
 
 ## 前提条件 {#prerequisite-versioning}
 
-アダプティブフォームでバージョン管理機能、コメント機能、注釈機能を使用するには、ご利用のAEM Formsで [ アダプティブフォームのコアコンポーネント ](/help/forms/using/enable-adaptive-forms-core-components.md) が有効になっていることを確認してください。
+アダプティブフォームでバージョン管理機能、コメント機能、注釈機能を使用するには、ご利用のAEM Formsで [&#x200B; アダプティブフォームのコアコンポーネント &#x200B;](/help/forms/using/enable-adaptive-forms-core-components.md) が有効になっていることを確認してください。
 
 ## アダプティブフォームのバージョン管理 {#adaptive-form-versioning}
 
@@ -59,7 +59,7 @@ ht-degree: 51%
 レビューとは、1 人以上のレビュー担当者に対してフォームへのコメントを許可するメカニズムです。フォームユーザーは誰でもフォームにコメントしたり、コメントを通じてフォームをレビューしたりできます。フォームにコメントするには、「**[!UICONTROL フォーム]**」を選択し、フォームに&#x200B;**[!UICONTROL コメント]**&#x200B;を追加します。
 
 >[!NOTE]
-> 前述のように、アダプティブフォームのコアコンポーネントでコメントを使用すると、フォーム機能 [ フォームへのレビュー担当者の追加 ](/help/forms/using/create-reviews-forms.md) が無効になります。
+> 前述のように、アダプティブフォームのコアコンポーネントでコメントを使用すると、フォーム機能 [&#x200B; フォームへのレビュー担当者の追加 &#x200B;](/help/forms/using/create-reviews-forms.md) が無効になります。
 
 
 ![フォームにコメントの追加](assets/form-comments.png)

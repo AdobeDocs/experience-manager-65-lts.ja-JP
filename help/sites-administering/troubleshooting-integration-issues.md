@@ -55,7 +55,7 @@ ${ myHtlVariable }
 この問題を解決するには、次の方法を試してください。
 
 * 大量の PollingImporter が登録されていないことを確認します（下記の「PollingImporter が原因でシャットダウンに時間がかかる」の節を参照）。
-* `ManagedPollingImporter`OSGi コンソール[で ](/help/sites-deploying/configuring-osgi.md) を設定する CRON 式を使用して、特定の時刻にレポートインポーターを実行します。
+* `ManagedPollingImporter`OSGi コンソール[で &#x200B;](/help/sites-deploying/configuring-osgi.md) を設定する CRON 式を使用して、特定の時刻にレポートインポーターを実行します。
 
 AEM でカスタムデータインポーターサービスを作成について詳しくは、以下の記事を参照してください。[https://helpx.adobe.com/jp/experience-manager/using/polling.html](https://helpx.adobe.com/jp/experience-manager/using/polling.html)
 

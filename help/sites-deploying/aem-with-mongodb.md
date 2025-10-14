@@ -58,7 +58,7 @@ AEM オーサーは `mongod` インスタンスに接続されます。各 AEM �
 
 ### オペレーティングシステム {#operating-systems}
 
-AEM 6.5 LTS でサポートされているオペレーティングシステムのリストについては、[ 技術要件のページ ](/help/sites-deploying/technical-requirements.md) を参照してください。
+AEM 6.5 LTS でサポートされているオペレーティングシステムのリストについては、[&#x200B; 技術要件のページ &#x200B;](/help/sites-deploying/technical-requirements.md) を参照してください。
 
 ### 環境 {#environments}
 

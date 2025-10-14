@@ -516,7 +516,7 @@ Experience Manager のビデオアセットを非公開にすると、そのビ�
 
    >[!NOTE]
    >
-   >**[!UICONTROL https://localhost]**/system/console/configMgr **[!UICONTROL からの]** 再試行 **[!UICONTROL 、]** 再試行遅延 [、および :4502 タイムアウト ](https://localhost:4502/system/console/configMgr) に関する複数のワークフロー設定があるので、失敗/エラーメッセージが最終的に記録されるまでには時間がかかる可能性があります。例えば、次の設定です。
+   >**[!UICONTROL https://localhost]**/system/console/configMgr **[!UICONTROL からの]** 再試行 **[!UICONTROL 、]** 再試行遅延 [、および :4502 タイムアウト &#x200B;](https://localhost:4502/system/console/configMgr) に関する複数のワークフロー設定があるので、失敗/エラーメッセージが最終的に記録されるまでには時間がかかる可能性があります。例えば、次の設定です。
    >
    >* Apache Sling ジョブキューの設定
    >* Adobe Granite ワークフロー外部プロセスジョブハンドラー
@@ -548,7 +548,7 @@ Experience Manager のビデオアセットを非公開にすると、そのビ�
 
    >[!NOTE]
    >
-   >**[!UICONTROL https://localhost]**/system/console/configMgr **[!UICONTROL からの]** 再試行 **[!UICONTROL 、]** 再試行遅延 [、および :4502 タイムアウト ](https://localhost:4502/system/console/configMgr) に関する複数のワークフロー設定があるので、エラーメッセージが最終的に記録されるまでには時間がかかる可能性があります。例えば、次の設定です。
+   >**[!UICONTROL https://localhost]**/system/console/configMgr **[!UICONTROL からの]** 再試行 **[!UICONTROL 、]** 再試行遅延 [、および :4502 タイムアウト &#x200B;](https://localhost:4502/system/console/configMgr) に関する複数のワークフロー設定があるので、エラーメッセージが最終的に記録されるまでには時間がかかる可能性があります。例えば、次の設定です。
    >
    >* Apache Sling ジョブキューの設定
    >* Adobe Granite ワークフロー外部プロセスジョブハンドラー

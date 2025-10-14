@@ -58,7 +58,7 @@ ht-degree: 98%
 
 ### レプリケーション（デフォルト） {#replication-out-of-the-box}
 
-[ ページの作成と整理 ](/help/sites-authoring/managing-pages.md) に従ってページを作成します。
+[&#x200B; ページの作成と整理 &#x200B;](/help/sites-authoring/managing-pages.md) に従ってページを作成します。
 
 この例に従ってデフォルトのレプリケーションエージェントを使用するには、次の環境を使用して [AEM をインストール](/help/sites-deploying/deploy.md)します。
 

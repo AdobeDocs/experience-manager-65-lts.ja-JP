@@ -134,7 +134,7 @@ Amazon の Simple Storage Service（S3）にデータを格納するように AE
 >
 >AEM 6.5 LTS は、Amazon S3 でのデータの保存をサポートしていますが、サポートは、Amazon S3 API を独自に実装している他のプラットフォームでのデータの保存には拡張されません。
 
-S3 データストア機能を有効にするには、S3 データストアコネクタを含む機能パックをダウンロードしてインストールする必要があります。[Adobe リポジトリに移動し ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)1.60.x バージョンの機能パックの中から最新バージョン（com.adobe.granite.oak.s3connector-1.60.2.zip など）をダウンロードします。 また、[AEM 6.5 LTS リリースノート ](/help/release-notes/release-notes.md) ページに記載されている最新のAEM サービスパックをダウンロードしてインストールする必要もあります。
+S3 データストア機能を有効にするには、S3 データストアコネクタを含む機能パックをダウンロードしてインストールする必要があります。[Adobe リポジトリに移動し &#x200B;](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)1.60.x バージョンの機能パックの中から最新バージョン（com.adobe.granite.oak.s3connector-1.60.2.zip など）をダウンロードします。 また、[AEM 6.5 LTS リリースノート &#x200B;](/help/release-notes/release-notes.md) ページに記載されている最新のAEM サービスパックをダウンロードしてインストールする必要もあります。
 
 >[!NOTE]
 >
@@ -194,7 +194,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
    >
    >上記のファイル名は説明の目的でのみ使用されます。
 
-1. [Maven リポジトリ ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) から最新バージョンの 1.60.x 機能パックをダウンロードします。
+1. [Maven リポジトリ &#x200B;](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) から最新バージョンの 1.60.x 機能パックをダウンロードします。
 1. 機能パックの内容を別のフォルダーに展開して、`jcr_root/libs/system/install/` に移動します。
 1. すべてのサブフォルダーをAEM インストールフォルダーの **&lt;aem-install>**/crx-quickstart/install/にコピーします。
 1. AEM を起動して、コネクタの機能を確認します。
@@ -402,7 +402,7 @@ S3 でバイナリレスレプリケーションを設定するには、次の�
 
 AEM は、Microsoft®の Azure ストレージサービスにデータを保存するように設定できます。このストアでは、`org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` という PID を設定に使用します。
 
-Azure データストア機能を有効にするには、Azure コネクタを含む機能パックをダウンロードしてインストールする必要があります。[ ソフトウェア配布 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/azure-connector/6-5-lts/com.adobe.granite.oak.azureblobconnector-1.9.16.zip) に移動し、1.9.x バージョンの機能パックの中から最新バージョン（com.adobe.granite.oak.azureblobconnector-1.9.16.zip など）をダウンロードします。
+Azure データストア機能を有効にするには、Azure コネクタを含む機能パックをダウンロードしてインストールする必要があります。[&#x200B; ソフトウェア配布 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/azure-connector/6-5-lts/com.adobe.granite.oak.azureblobconnector-1.9.16.zip) に移動し、1.9.x バージョンの機能パックの中から最新バージョン（com.adobe.granite.oak.azureblobconnector-1.9.16.zip など）をダウンロードします。
 
 >[!NOTE]
 >

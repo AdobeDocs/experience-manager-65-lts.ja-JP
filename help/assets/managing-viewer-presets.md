@@ -55,7 +55,7 @@ Adobe Experience Manager でビューアプリセットの追加、編集、削�
 
 Web ページによってニーズは異なります。例えば、HTML5 ビューアが別のブラウザーウィンドウで 開くリンクを提供する web ページが必要な場合があります。ホスティングページに直接 HTML5 ビューアを埋め込む必要が生じる場合があります。後者の場合は、web ページのレイアウトが静的な場合や、「レスポンシブ」な場合があり、デバイスの違いやブラウザーウィンドウのサイズの違いによって表示が異なります。これらのニーズに対応するために、Dynamic Media に付属する事前定義済みの標準提供 HTML5 ビューアはすべて、静的な Web ページとレスポンシブデザイン Web ページの両方をサポートしています。
 
-レスポンシブビューアを Web ページに埋め込む方法については、[ レスポンシブ画像ライブラリ ](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library) を参照してください。
+レスポンシブビューアを Web ページに埋め込む方法については、[&#x200B; レスポンシブ画像ライブラリ &#x200B;](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library) を参照してください。
 
 >[!NOTE]
 >
@@ -446,7 +446,7 @@ Experience Managerでは、（詳細ビュー **[!UICONTROL /（ビューア]** 
 
      CSS ファイルを読み込むと、Visual Editor は、その CSS に正しいビューアマーカーが使用されているかを確認します。例えば、ズームビューアを作成している場合、読み込むすべての CSS ルールが、親のビューア要素に定義されているズームビューアのクラス名 `.s7mixedmediaviewer` を使用して定義されている必要があります。
 
-     指定ビューアの CSS マーカーが正しく定義された CSS であれば、自作した任意の CSS を読み込むことができます（CSS マーカーについては、『 *ビューアリファレンスガイド』の「*&lt; ビューア名 >[ ビューアのカスタマイズ」ヘルプトピックを参照してください ](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources)。 例えば、ズームビューアの CSS マーカーについては [ ズームビューアのカスタマイズ ](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer) を参照してください。ただし、Visual Editor が一部の CSS 値を認識できない場合があります。 そのような場合、Visual Editor は、CSS が正常に機能するように、エラーを上書きしようとします。
+     指定ビューアの CSS マーカーが正しく定義された CSS であれば、自作した任意の CSS を読み込むことができます（CSS マーカーについては、『 *ビューアリファレンスガイド』の「*&lt; ビューア名 >[&#x200B; ビューアのカスタマイズ」ヘルプトピックを参照してください &#x200B;](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources)。 例えば、ズームビューアの CSS マーカーについては [&#x200B; ズームビューアのカスタマイズ &#x200B;](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer) を参照してください。ただし、Visual Editor が一部の CSS 値を認識できない場合があります。 そのような場合、Visual Editor は、CSS が正常に機能するように、エラーを上書きしようとします。
 
    >[!NOTE]
    >
@@ -629,6 +629,6 @@ Experience Managerでは、（詳細ビュー **[!UICONTROL /（ビューア]** 
 
 ## ビューアプリセットを使用するアセットの配信 {#delivering-assets-with-viewer-presets}
 
-ビューアプリセットの URL を取得する方法については、[Web アプリケーションへの URL のリンク ](/help/assets/linking-urls-to-yourwebapplication.md) を参照してください。 [Web ページへのビデオビューアの埋め込み](/help/assets/embed-code.md)も参照してください。
+ビューアプリセットの URL を取得する方法については、[Web アプリケーションへの URL のリンク &#x200B;](/help/assets/linking-urls-to-yourwebapplication.md) を参照してください。 [Web ページへのビデオビューアの埋め込み](/help/assets/embed-code.md)も参照してください。
 
 Adobe Experience Manager を WCM として使用している場合は、ビューアプリセットを使用するアセットをページに直接追加できます。[ページへの Dynamic Media アセットの追加](/help/assets/adding-dynamic-media-assets-to-pages.md)を参照してください。

@@ -243,7 +243,7 @@ Sites の実装などで、アセットを多数のパブリッシュインス�
 
 ## 検索インデックス {#search-indexes}
 
-[ 最新のサービスパック ](/help/release-notes/release-notes.md) およびパフォーマンス関連のホットフィックスをインストールしてください。多くの場合、これらはシステムインデックスの更新を含みます。
+[&#x200B; 最新のサービスパック &#x200B;](/help/release-notes/release-notes.md) およびパフォーマンス関連のホットフィックスをインストールしてください。多くの場合、これらはシステムインデックスの更新を含みます。
 
 頻繁に実行するクエリにカスタムインデックスを作成します。詳しくは、[スロークエリの分析手法（英語）](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html)と[カスタムインデックスの作成](/help/sites-deploying/queries-and-indexing.md)を参照してください。クエリやインデックスについての追加のインサイトやベストプラクティスについては、[クエリとインデックスに関するベストプラクティス](/help/sites-deploying/best-practices-for-queries-and-indexing.md) を参照してください。
 

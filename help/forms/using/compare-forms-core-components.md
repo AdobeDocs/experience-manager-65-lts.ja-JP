@@ -19,7 +19,7 @@ ht-degree: 7%
 
 ## 前提条件 {#prerequisite-versioning}
 
-コアコンポーネントに基づくアダプティブフォームで比較機能を使用するには、AEM 6.5 Forms環境で [ アダプティブフォームのコアコンポーネント ](/help/forms/using/enable-adaptive-forms-core-components.md) が有効になっていることを確認してください。
+コアコンポーネントに基づくアダプティブフォームで比較機能を使用するには、AEM 6.5 Forms環境で [&#x200B; アダプティブフォームのコアコンポーネント &#x200B;](/help/forms/using/enable-adaptive-forms-core-components.md) が有効になっていることを確認してください。
 
 ## 個別のアダプティブフォームの比較 {#compare-af-65}
 
@@ -27,11 +27,11 @@ ht-degree: 7%
 
 1. アダプティブフォームを選択して、「**[!UICONTROL 比較]**」をクリックします。
 
-   ![ アダプティブフォームの比較 ](/help/forms/using/assets/compare-two-forms.png)
+   ![&#x200B; アダプティブフォームの比較 &#x200B;](/help/forms/using/assets/compare-two-forms.png)
 
 1. クリックすると、2 つのフォームがプレビューモードで表示されます。 2 番目のフォームと比較するベースフォームとして最初のフォームを選択し、類似していて差異がある 2 つのフォーム間でコンテンツを比較します。 図に示すように、最初のフォームの差別化されたコンテンツは緑色でマークされます。
 
-   ![ 比較されたフォーム ](/help/forms/using/assets/compared-forms.png)
+   ![&#x200B; 比較されたフォーム &#x200B;](/help/forms/using/assets/compared-forms.png)
 
 ## 関連トピック
 
