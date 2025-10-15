@@ -7,9 +7,9 @@ role: Architect, Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 43079a69-cd12-4853-9fff-96f9d177987a
-source-git-commit: e432b4e74f453ed222b2a295f1a6ef9e7b409223
+source-git-commit: d4772c8844861ee82263e16d9c8608662e2e4870
 workflow-type: tm+mt
-source-wordcount: '2708'
+source-wordcount: '2709'
 ht-degree: 99%
 
 ---
@@ -211,7 +211,7 @@ accessKey=<snip>
 
 >[!NOTE]
 >
->ImageMagick `policy.xml` および `configure.xml` ファイルは `/usr/lib64/ImageMagick-&#42;/config/` で `/etc/ImageMagick/` の代わりに利用できます。設定ファイルの場所については、[ImageMagick のドキュメント](https://www.imagemagick.org/script/resources.php) を参照してください。
+>ImageMagick `policy.xml` および `configure.xml` ファイルは、`/etc/ImageMagick/` ではなく `/usr/lib64/ImageMagick-&#42;/config/` から入手できます。設定ファイルの場所については、ImageMagick のドキュメント（`https://www.imagemagick.org/script/resources.php` web サイト）を参照してください。
 
 Adobe Managed Services（AMS）で [!DNL Experience Manager] を使用しており、大きな PSD ファイルまたは PSB ファイルを大量に処理する予定がある場合は、アドビサポートにお問い合わせください。アドビカスタマーサポート担当者と協力して、AMS デプロイメントに関するこれらのベストプラクティスを実装し、アドビ独自の形式に対する最適なツールとモデルを選択します。[!DNL Experience Manager] では、30000 x 23000 ピクセルを超える高解像度の PSB ファイルを処理できない場合があります。
 
@@ -243,7 +243,7 @@ Sites の実装などで、アセットを多数のパブリッシュインス�
 
 ## 検索インデックス {#search-indexes}
 
-[&#x200B; 最新のサービスパック &#x200B;](/help/release-notes/release-notes.md) およびパフォーマンス関連のホットフィックスをインストールしてください。多くの場合、これらはシステムインデックスの更新を含みます。
+[ 最新のサービスパック ](/help/release-notes/release-notes.md) およびパフォーマンス関連のホットフィックスをインストールしてください。多くの場合、これらはシステムインデックスの更新を含みます。
 
 頻繁に実行するクエリにカスタムインデックスを作成します。詳しくは、[スロークエリの分析手法（英語）](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html)と[カスタムインデックスの作成](/help/sites-deploying/queries-and-indexing.md)を参照してください。クエリやインデックスについての追加のインサイトやベストプラクティスについては、[クエリとインデックスに関するベストプラクティス](/help/sites-deploying/best-practices-for-queries-and-indexing.md) を参照してください。
 

@@ -7,10 +7,10 @@ role: User
 feature: Workflow,Renditions
 solution: Experience Manager, Experience Manager Assets
 exl-id: f96a2642-f923-481e-9735-14a62a80e6f1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d4772c8844861ee82263e16d9c8608662e2e4870
 workflow-type: tm+mt
-source-wordcount: '2113'
-ht-degree: 100%
+source-wordcount: '2116'
+ht-degree: 99%
 
 ---
 
@@ -449,7 +449,7 @@ Eclipse に [!DNL Maven] プラグインをインストールして設定する�
 
 以下の変換を自動的に実行し、[!DNL Assets] 内に保存することができます。
 
-* [ImageMagick](https://www.imagemagick.org/script/index.php) および [Ghostscript](https://www.ghostscript.com/) を使用した EPS および AI 変換。
+* ImageMagick （`https://www.imagemagick.org/script/index.php` web サイト）および [Ghostscript](https://www.ghostscript.com/) を使用したEPSと AI の変換。
 * [FFmpeg](https://ffmpeg.org/) を使用した FLV ビデオのトランスコーディング。
 * [LAME](https://lame.sourceforge.io/) を使用した MP3 エンコーディング。
 * [SOX](https://sourceforge.net/projects/sox/) を使用したオーディオ処理。
@@ -476,7 +476,7 @@ Eclipse に [!DNL Maven] プラグインをインストールして設定する�
 
 [!DNL Experience Manager] サーバーをホストするディスクに [!DNL ImageMagick] をインストールします。
 
-1. [!DNL ImageMagick] のインストール：[ImageMagick のドキュメント](https://www.imagemagick.org/script/download.php)を参照してください。
+1. [!DNL ImageMagick] のインストール：`https://www.imagemagick.org/script/download.php` web サイトで ImageMagick のドキュメントを参照してください。
 1. コマンドラインで `convert` を実行できるようにツールを設定します。
 1. ツールが適切にインストールされているかどうかを確認するには、コマンド `convert -h` をコマンドラインで実行します。
 
