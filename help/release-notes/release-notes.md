@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 08f9b6697e298689a91a9b31038f382a908acd5b
-workflow-type: ht
-source-wordcount: '7319'
-ht-degree: 100%
+source-git-commit: 6023c211220bb500814ecd511b8787d107c3c6cd
+workflow-type: tm+mt
+source-wordcount: '7381'
+ht-degree: 99%
 
 ---
 
@@ -608,6 +608,18 @@ AEM デプロイメントで SSL のみの機能を有効にすると、Dispatch
 
 **解決策：**
 この問題が発生した場合は、アドビカスタマーサポートにお問い合わせください。この問題を解決するためのホットフィックス [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) が使用可能です。必要なホットフィックスを適用するまで、SSL のみの機能を有効にしないでください。
+
+### AEM 6.5 LTS SP1 のセキュリティ UI の空の権限ページ
+
+>[!NOTE]
+>
+> この問題は、AEM 6.5 LTS SP1 リリースでのみ発生します。
+
+AEM 6.5 LTS SP1 で、ツール/セキュリティの権限ページにアクセスすると、ユーザーまたはグループの権限が表示されるのではなく、空白のページが表示されます。
+
+**解決策：**
+この問題を解決するためのホットフィックス [cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip) が利用可能です。
+
 
 ## 含まれている OSGi バンドルとコンテンツパッケージ{#osgi-bundles-and-content-packages-included}
 
