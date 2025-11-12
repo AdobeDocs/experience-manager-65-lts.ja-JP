@@ -18,7 +18,7 @@ ht-degree: 99%
 **[!UICONTROL Dynamic Media 一般設定]**&#x200B;は、次の場合にのみおこなうことができます。
 
 * Scene7 モードで Dynamic Media を実行している。 詳しくは、 [Scene7 モードの Dynamic Media の有効化](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode)を参照してください。
-* *existing***[!UICONTROL Dynamic Media 設定]** （**[!UICONTROL Cloud Services]** 内）がある。 [Cloud Services での Dynamic Media 設定の作成](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)を参照してください。
+* *existing&#x200B;***[!UICONTROL Dynamic Media 設定]** （**[!UICONTROL Cloud Services]** 内）がある。 [Cloud Services での Dynamic Media 設定の作成](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)を参照してください。
 * 自身が管理者権限を持つ Experience Manager システム管理者である。
 
 Dynamic Media の一般設定は、経験豊富な web サイト開発者やプログラマーが使用することを目的としています。 Adobe Dynamic Mediaでは、これらの公開設定を変更するユーザーに、Adobe Experience Manager 上の Dynamic Media と基本的な画像技術に精通することをお勧めします。
@@ -48,7 +48,7 @@ Dynamic Media の公開設定ページでは、Adobe Dynamic Media サーバー�
    * 「[Illustrator](#illustrator-tab)」タブ
 
    ![Dynamic Media 一般設定ページ](/help/assets/assets-dm/dm-general-settings.png)
-   *Dynamic Media の一般設定ページ（**[!UICONTROL 画像編集]**タブが選択済み）*<br><br>
+   *Dynamic Media の一般設定ページ（**[!UICONTROL 画像編集]**&#x200B;タブが選択済み）*<br><br>
 
 1. 作業が完了したら、ページの右上隅付近にある「**[!UICONTROL 保存]**」を選択してください。
 
@@ -82,7 +82,7 @@ Dynamic Media の公開設定ページでは、Adobe Dynamic Media サーバー�
 
   既存の手動切り抜き定義の保存を制御します。
 
-  Dynamic Media ビューアリファレンスガイドの [UploadPostJob ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html?lang=ja) および [ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html?lang=ja) の `preserveCrop` も参照してください。
+  Dynamic Media ビューアリファレンスガイドの [UploadPostJob &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html?lang=ja) および [ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html?lang=ja) の `preserveCrop` も参照してください。
 
 ## デフォルトのアップロードオプション {#default-upload-options}
 

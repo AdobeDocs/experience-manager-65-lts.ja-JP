@@ -28,7 +28,7 @@ AEM Content and Commerce のオンボードは、次の 2 つの手順で構成�
 
 ### AEM Content and Commerce Add-On for AEM 6.5 LTS のインストール {#install-add-on}
 
-[ ソフトウェア配布 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) ポータルからAEM Commerce Add-On for AEM 6.5 LTS をダウンロードしてインストールします。
+[&#x200B; ソフトウェア配布 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) ポータルからAEM Commerce Add-On for AEM 6.5 LTS をダウンロードしてインストールします。
 
 必要なAEM 6.5 LTS サービスパックをインストールして起動します。 入手可能な最新のサービスパックをインストールすることをお勧めします。
 

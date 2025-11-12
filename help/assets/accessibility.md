@@ -43,7 +43,7 @@ Possible topics to cover in this article are below.
 
 準拠レベルの詳細を記載したレポートについては、[アクセシビリティ準拠レポート](https://www.adobe.com/accessibility/compliance.html)（ACR）のページを参照してください。
 
-[!DNL Dynamic Media] のアクセシビリティについて詳しくは、「[ [!DNL Dynamic Media]](/help/assets/accessibility-dm.md) のアクセシビリティ」を参照してください。
+[!DNL Dynamic Media] のアクセシビリティについて詳しくは、「[&#x200B; [!DNL Dynamic Media]](/help/assets/accessibility-dm.md) のアクセシビリティ」を参照してください。
 
 ## 支援テクノロジー {#at-support}
 
@@ -224,7 +224,7 @@ CRUD 操作、アセットのダウンロード、メタデータの追加など
 
 >[!MORELIKETHIS]
 >
->* [  [!DNL Dynamic Media]](/help/assets/accessibility-dm.md) のアクセシビリティ機能。
+>* [&#x200B;  [!DNL Dynamic Media]](/help/assets/accessibility-dm.md) のアクセシビリティ機能。
 >* [各サービスパックのリリースでおこなわれた機能強化のリリースノート](/help/release-notes/release-notes.md)。
 >* [[!DNL Adobe Experience Manager] アクセシビリティガイダンス](/help/managing/web-accessibility.md)
 >* [アドビソリューションのアクセシビリティ準拠レポート（ACR）および VPAT リスト](https://www.adobe.com/accessibility/compliance.html)
