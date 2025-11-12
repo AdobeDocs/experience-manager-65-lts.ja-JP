@@ -6,10 +6,10 @@ role: Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 22a2428d-3ebd-4368-983e-d140f99de2dd
-source-git-commit: 89c9a0416f8d270f172eb42e1e308f2a986a2cb3
+source-git-commit: d00136d794a36b153dd7a965b97c9e5b7c324cf5
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 92%
+source-wordcount: '662'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 92%
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=ja) |
-| AEM 6.5 | この記事 |
+| AEM 6.5 LTS | この記事 |
 
 Adobe Experience Manager Assets Brand Portal では、承認済みのブランドアセットを Adobe Experience Manager Assets から Brand Portal に公開し、Brand Portal ユーザーに配信できます。
 
@@ -60,23 +60,19 @@ AEM Assets と Brand Portal の連携を設定するには以下が必要です�
 * Brand Portal テナント URL
 * Brand Portal テナントの IMS 組織に対するシステム管理者権限を持つユーザー
 
-[AEM 6.5 のダウンロードとインストール](#aemquickstart)
-
-[最新の AEM サービスパックをダウンロードしてインストールする](#servicepack)
-
 ### AEM 6.5 LTS をダウンロードしてインストールする {#aemquickstart}
 
 AEM オーサーインスタンスを設定するには、AEM 6.5 LTS を使用することをお勧めします。 AEM が稼働していない場合は、以下の場所から AEM をダウンロードしてください。
 
-* 既にAEMを使用している場合は、[Adobe Licensing web サイト &#x200B;](https://licensing.adobe.com) からAEM 6.5 LTS をダウンロードしてください。
+* 既にAEMを使用している場合は、[Adobe Licensing web サイト ](https://licensing.adobe.com) からAEM 6.5 LTS をダウンロードしてください。
 
-* Adobe パートナーの場合は、[Adove パートナートレーニングプログラム](https://solutionpartners.adobe.com/)から AEM 6.5 をリクエストしてください。
+* Adobe パートナーの場合は、[Adobe パートナートレーニングプログラム ](https://solutionpartners.adobe.com/) を使用して、AEM 6.5 LTS をリクエストします。
 
 AEM をダウンロードしたら、[デプロイとメンテナンス](/help/sites-deploying/deploy.md#default-local-install)の説明に従って、AEM オーサーインスタンスの設定を行ってください。
 
 ### 最新の AEM サービスパックをダウンロードしてインストールする {#servicepack}
 
-手順について詳しくは、現在の [AEM 6.5 LTS サービスパックリリースノート &#x200B;](/help/release-notes/release-notes.md) を参照してください。
+手順について詳しくは、現在の [AEM 6.5 LTS サービスパックリリースノート ](/help/release-notes/release-notes.md) を参照してください。
 
 最新の AEM パッケージまたはサービスパックが見つからない場合、**Adobe カスタマーサポートにお問い合わせください**。
 
@@ -118,11 +114,11 @@ AEM Assets と Brand Portal を初めて設定する場合は、以下の手順�
 
 #### Adobe Developer Console で OAuth 資格情報を設定 {#config-oauth}
 
-[Adobe Developer Console で OAuth 資格情報を設定](https://experienceleague.adobe.com/ja/docs/experience-manager-65-lts/content/security/setting-up-ims-integrations-for-aem#credentials-in-the-developer-console)し、「Brand Portal API」を選択します。
+[Adobe Developer Console で OAuth 資格情報を設定](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/security/setting-up-ims-integrations-for-aem#credentials-in-the-developer-console)し、「Brand Portal API」を選択します。
 
 #### OAuth を使用して新しい Adobe IMS 統合を作成 {#create-ims-account-configuration}
 
-[OAuth を使用して新しい Adobe IMS 統合を作成](https://experienceleague.adobe.com/ja/docs/experience-manager-65-lts/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration)し、ドロップダウンから「Brand Portal」を選択します。
+[OAuth を使用して新しい Adobe IMS 統合を作成](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration)し、ドロップダウンから「Brand Portal」を選択します。
 
 #### Cloud Service を設定 {#configure-cloud-service}
 
@@ -365,20 +361,20 @@ To configure the IMS account:
    >
    >Avoid disabling any of the replication agents, as it can cause the replication of the assets (running-in-queue) to fail.
    >
-   >Ensure that all the four replication agents are configured to avoid timeout error. See [troubleshoot issues in parallel publishing to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html?lang=ja#connection-timeout).
+   >Ensure that all the four replication agents are configured to avoid timeout error. See [troubleshoot issues in parallel publishing to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
    >
    >Do not modify any autogenerated settings.
 
 You can now:
 
 * [Publish assets from AEM Assets to Brand Portal](../assets/brand-portal-publish-assets.md)
-* [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ja) - Asset Sourcing in Brand Portal 
+* [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Asset Sourcing in Brand Portal 
 * [Publish folders from AEM Assets to Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Publish collections from AEM Assets to Brand Portal](../assets/brand-portal-publish-collection.md) 
-* [Publish presets, schemas, and facets to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html?lang=ja)
-* [Publish tags to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html?lang=ja)
+* [Publish presets, schemas, and facets to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publish tags to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-See the [Brand Portal documentation](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=ja) for more information.
+See the [Brand Portal documentation](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) for more information.
 
 -->
 <!--
@@ -431,5 +427,5 @@ Run the following checklist while deleting the existing configurations:
    ![More detail of replication agent in CRXDE](assets/delete-mac-user.png)
 
 
-You can now [create a configuration](#configure-new-integration-65) by way of the Adobe Developer Console on your AEM 6.5 Author instance. 
+You can now [create a configuration](#configure-new-integration-65) by way of the Adobe Developer Console on your Author instance. 
 -->

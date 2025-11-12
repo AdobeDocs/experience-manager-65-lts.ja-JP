@@ -1,15 +1,11 @@
 ---
 title: ワークフローの操作
 description: Adobe Experience Manager のワークフローでは、ページまたはアセットで実行される一連の手順を自動化できます。
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Architect,Developer
 exl-id: 55382f3d-7aa4-433f-ac0c-c4764c01a8c3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d3ecfb99332ce5e5016f60b329ce5c10bc4593d4
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 100%

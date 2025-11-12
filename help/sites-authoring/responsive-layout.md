@@ -1,15 +1,11 @@
 ---
 title: コンテンツページのレスポンシブレイアウト
 description: Adobe Experience Managerでは、レイアウトコンテナ コンポーネントを使用すると、ページのレスポンシブレイアウトを実現できます。
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 06c1c7bc-aecb-4c35-bf30-dcc852540d6c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e4d365adbfc08ddd51af692237779ed4e11c532d
 workflow-type: tm+mt
 source-wordcount: '1810'
 ht-degree: 99%
@@ -203,7 +199,7 @@ AEM では、デバイスの幅に応じたレイアウトを定義できます�
 
 * [ツールバーのモードメニュー](/help/sites-authoring/author-environment-tools.md#page-modes)を使用して&#x200B;**レイアウト**&#x200B;モードを選択する。
 
-   * **編集**&#x200B;モードまたは&#x200B;**ターゲット設定**&#x200B;モードに切り替える場合と同様に、**レイアウト**&#x200B;モードを選択します。
+   * **編集**&#x200B;モードまたは&#x200B;**ターゲティング**&#x200B;モードに切り替える場合と同様に、**レイアウト**&#x200B;モードを選択します。
    * **レイアウト**&#x200B;モードは持続され、モードセレクターで別のモードを選択するまで、**レイアウト**&#x200B;モードのままです。
 
 * [個別のコンポーネントを編集する](/help/sites-authoring/editing-content.md#edit-component-layout)。

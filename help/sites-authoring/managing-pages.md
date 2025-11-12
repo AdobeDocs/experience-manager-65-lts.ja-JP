@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
-source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
+source-git-commit: c99c7b2616e652ae372e98349d5de3b658a0beb1
 workflow-type: tm+mt
-source-wordcount: '2476'
+source-wordcount: '2468'
 ht-degree: 100%
 
 ---
@@ -148,7 +148,7 @@ We.Retail サイトの例を次に示します。ハイキングショーツの�
 
 AEM では、テンプレートはページの特殊なタイプを指定します。テンプレートは、作成中のあらゆる新規ページの基礎として使用されます。
 
-テンプレートによって、サムネール画像やその他のプロパティなど、ページの構造が定義されます。例えば、商品ページ、サイトマップおよび問い合わせ先に、それぞれ別のテンプレートを使用することができます。テンプレートは、[コンポーネント](#components)で構成されています。
+テンプレートによって、サムネール画像やその他のプロパティなど、ページの構造が定義されます。例えば、製品ページ、サイトマップおよび問い合わせ先に、それぞれ別のテンプレートを使用することができます。テンプレートは、[コンポーネント](#components)で構成されています。
 
 AEM では、複数のテンプレートが標準提供されています。使用できるテンプレートは、個々の web サイトによって異なります。主なフィールドは次のとおりです。
 
@@ -392,10 +392,6 @@ AEM では、名前変更または移動が行われるページへの内部リ�
 >[!NOTE]
 >
 >非同期ジョブ処理の詳細と、ページ移動や名前変更アクションの制限の設定方法については、管理ユーザーガイドの[非同期ジョブ](/help/sites-administering/asynchronous-jobs.md)のドキュメントを参照してください。
-
->[!NOTE]
->
->非同期ページの移動処理には、AEM 6.5.3.0 以降が必要です。
 
 ### ページの削除 {#deleting-a-page}
 

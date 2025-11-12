@@ -7,10 +7,10 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 43fb8af8-9750-44c1-8e02-34b25b92fd65
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 194937f0678ea27a04319197f391dd7cc358ec51
 workflow-type: tm+mt
-source-wordcount: '1978'
-ht-degree: 100%
+source-wordcount: '1980'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=ja) |
-| AEM 6.5 | この記事 |
+| AEM 6.5 LTS | この記事 |
 
 <!-- Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
@@ -118,7 +118,7 @@ ht-degree: 100%
 1. ダイアログで、「**[!UICONTROL 削除]**」をクリックして、削除操作を確定します。メタデータプロファイルがリストから削除されます。
 
 <!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/jp/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -272,7 +272,7 @@ To apply a metadata profile globally, follow these steps:
 
 * カスタム名前空間にメタデータを読み込むには、まず、その名前空間を登録します。
 * プロパティピッカーは、スキーマエディターおよび検索フォームで使用されるプロパティを表示します。プロパティピッカーはアセットからメタデータプロパティを選択しません。
-* [!DNL Experience Manager] 6.5 にアップグレードする前から、既存のメタデータプロファイルが存在している可能性があります。アップグレード後、「[!UICONTROL メタデータプロファイル]」タブのフォルダー[!UICONTROL プロパティ]にそのようなプロファイルを適用すると、メタデータフォームフィールドは表示されません。ただし、新しく作成したメタデータプロファイルを適用すると、フォームのフィールドは表示されますが、期待どおりに使用できません。機能は失われませんが、（使用できない）フォームフィールドを表示したい場合は、既存のメタデータプロファイルを編集して保存します。
+* [!DNL Experience Manager] 6.5 LTS にアップグレードする前から、既存のメタデータプロファイルが存在している可能性があります。 アップグレード後、「[!UICONTROL  メタデータプロファイル ]」タブのフォルダー [!UICONTROL  プロパティ ] にそのようなプロファイルを適用すると、メタデータフォームフィールドは表示されません。 ただし、新しく作成したメタデータプロファイルを適用すると、フォームのフィールドは表示されますが、期待どおりに使用できません。機能は失われませんが、（使用できない）フォームフィールドを表示したい場合は、既存のメタデータプロファイルを編集して保存します。
 
 >[!MORELIKETHIS]
 >
@@ -280,5 +280,5 @@ To apply a metadata profile globally, follow these steps:
 >* [複数コレクションのメタデータプロパティの編集](manage-collections.md#editing-collection-metadata-in-bulk)。
 >* [Experience Manager Assetsでのメタデータの読み込みと書き出し](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=ja)。
 >* [メタデータ、画像およびビデオを処理するためのプロファイル](processing-profiles.md)。
->* [プロファイルを使用するためのデジタルアセットの整理のベストプラクティス](/help/assets/organize-assets.md)。
+>* [処理プロファイルを使用するためのデジタルアセット整理のベストプラクティス](/help/assets/organize-assets.md)。
 >* [XMP の書き戻し](/help/assets/xmp-writeback.md)。

@@ -1,16 +1,11 @@
 ---
 title: 用語集
 description: この用語集には、プロジェクトチェックリストのすべての成果物ドキュメントの詳細が（アルファベット順に）リストされています。
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-topic-tags: managing-checklist
-content-type: reference
-docset: aem65
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Admin,Architect,Data Architect,Developer,Leader
 exl-id: e6542ba9-1182-4b81-b251-537747b89e4c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: fb979ab973476212aeed9ce86d3251eb1aedcb8c
 workflow-type: tm+mt
 source-wordcount: '6926'
 ht-degree: 100%
@@ -321,7 +316,7 @@ ht-degree: 100%
 
 ### 顧客の実稼動リリーススケジュール {#customer-production-release-schedule}
 
-実稼動環境へのリリースに関して顧客が定義するスケジュールです。
+本番環境へのリリースに関して顧客が定義するスケジュールです。
 
 ### 顧客のレポートのポリシーと要件 {#customer-reporting-policies-and-requirements}
 
@@ -417,9 +412,9 @@ AEM のデフォルトのセキュリティ設定が有効化／実装されて�
 
 開発環境のドキュメントです。
 
-### 実稼動環境の設定の文書化 {#document-production-environment-setup}
+### 本番環境の設定の文書化 {#document-production-environment-setup}
 
-実稼動環境のドキュメントです。
+本番環境のドキュメントです。
 
 ### テスト環境の設定の文書化 {#document-test-environment-setup}
 
@@ -881,21 +876,21 @@ URL 処理の概念を実装します。
 
 各デプロイメント前に実行する一連のチェックやタスクを定義するチェックリストです。
 
-### 実稼動環境のベースラインパフォーマンステスト {#production-environment-baseline-performance-tests}
+### 本番環境のベースラインパフォーマンステスト {#production-environment-baseline-performance-tests}
 
 通常、ベースラインテストは AEM の標準インストールで実行します。これはその後、実装とハードウェアをテストするためのベンチマークとして使用されます。
 
-### 実稼動環境の準備完了 {#production-environment-ready}
+### 本番環境の準備完了 {#production-environment-ready}
 
-実稼動環境の準備が整い、自動デプロイメントが設定されていることを確認します。
+本番環境の準備が整い、自動デプロイメントが設定されていることを確認します。
 
 ### ビジネス関係者からの実稼動の承認 {#production-sign-off-from-business-stakeholders}
 
-実稼動環境で運用を開始する前に、実稼動の承認（PSO）を受ける必要があります。これは、実稼動に移行するリリースおよび既知の問題のレビューの結果を判断して行われます。承認は、運用開始スケジュールの一環として与えられます。
+本番環境で運用を開始する前に、本番の承認（PSO）を受ける必要があります。これは、実稼動に移行するリリースおよび既知の問題のレビューの結果を判断して行われます。承認は、運用開始スケジュールの一環として与えられます。
 
 ### 実稼動の承認のプロセスとポリシー {#production-sign-off-process-and-policy}
 
-パッケージを実稼動環境に移行する前に、実稼動の承認を得るために必要なポリシーとプロセスです。
+パッケージを本番環境に移行する前に、本番の承認を得るために必要なポリシーとプロセスです。
 
 ### プロジェクトのコミュニケーション計画 {#project-communication-plan}
 
@@ -970,7 +965,7 @@ AEM は複数のバージョンのアセットおよびコンテンツを維持�
 >
 >例については、[AEM のリリースノート](/help/release-notes/release-notes.md)を参照してください。
 
-### 実稼動環境で実行されているリリース {#release-running-on-production-environment}
+### 本番環境で実行されているリリース {#release-running-on-production-environment}
 
 最終リリースが実行中であり、実稼働環境でアクティブです。
 
@@ -1362,7 +1357,7 @@ AEM プラットフォーム上での通常の開発範囲外と見なされる�
 
 URL 処理の概念では、以下を含む AEM に固有の URL 機能をカバーする必要があります。
 
-* バニティー URL
+* バニティ URL
 * リンクの外部向け変換
 * エラーページ
 * マッピング

@@ -1,19 +1,14 @@
 ---
 title: データ保護とデータプライバシーに関する規制 - Adobe Experience Manager の対応
 description: 様々なデータ保護およびデータプライバシー規制に対する Adobe Experience Manager のサポートについて説明します。これには、EU 一般データ保護規則（GDPR）、カリフォルニア州消費者プライバシー法および新しい AEM プロジェクトを実装する際の準拠方法が含まれます。
-contentOwner: AEM Docs
-topic-tags: introduction, grdp
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-docset: aem65
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
 exl-id: 6faf8e4f-ca2a-4d68-a354-fb0aa6c2644b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4a93e17da1157253a681bf8b3a38252962d8fb59
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 100%
+source-wordcount: '739'
+ht-degree: 98%
 
 ---
 
@@ -81,7 +76,7 @@ Adobe Experience Manager の場合：
 
 アドビは、Adobe Experience Manager のアクセス、削除、オプトアウトに関するプライバシーリクエストを処理するプロシージャを提供しています。場合によっては、自動化に役立つように、顧客が開発したポータルまたはスクリプトから呼び出すことができる API を使用できます。
 
-次の図に、プライバシーリクエストワークフローを示します（Adobe Experience Manager 6.5 を使用した例）。
+次の図に、プライバシーリクエストワークフローを示します。
 
 ![データ保護とプライバシー](assets/data-protection-and-privacy-01.png)
 

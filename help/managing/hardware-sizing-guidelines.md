@@ -1,11 +1,11 @@
 ---
 title: ハードウェアのサイジングのガイドライン
 description: このサイジングのガイドラインでは、AEM プロジェクトのデプロイに必要なハードウェアリソースの概算値を示します。
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader
 exl-id: dac9b87a-cbd2-49e3-bd4d-ebcccdec1659
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a5e7c2326785d6801601eabc71647923ba854f04
 workflow-type: tm+mt
 source-wordcount: '1231'
 ht-degree: 100%
@@ -59,10 +59,10 @@ ht-degree: 100%
 * **パブリッシュテスト環境**
 主にソーシャルコラボレーションのユースケースをテストしたり、オーサーインスタンスと複数のパブリッシュインスタンス間のインタラクションをテストしたりするために使用します。
 
-* **オーサー実稼動環境**
+* **オーサー本番環境**
 作成者がコンテンツを編集するために使用します。
 
-* **パブリッシュ実稼動環境**
+* **パブリッシュ本番環境**
 公開済みコンテンツを提供するために使用します。
 
 また、環境は、AEM とアプリケーションサーバーを実行する単一サーバーシステムから、複数のサーバー、複数の CPU で構成される拡張性の高いクラスターインスタンスに至るまで、多岐にわたります。実稼動システムごとに個別のコンピューターを使用し、これらのコンピューターではその他のアプリケーションを実行しないことをお勧めします。

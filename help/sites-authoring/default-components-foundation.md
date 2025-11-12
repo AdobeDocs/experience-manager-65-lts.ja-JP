@@ -1,13 +1,13 @@
 ---
 title: 基盤コンポーネント
-description: Adobe Experience Manager 6.5 の基盤コンポーネントについて説明します。
+description: Adobe Experience Manager 6.5 LTS の基盤コンポーネントについて説明します。
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: c507bef7-4ddc-4e8c-9947-71cb2ecbbf0a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 1cdde3e82b0abb2be6f3d83020ad4bc0c8d68c2b
 workflow-type: tm+mt
-source-wordcount: '6846'
+source-wordcount: '6848'
 ht-degree: 99%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 >[!CAUTION]
 >
->ほとんどの基盤コンポーネントは、AEM 6.5 では廃止されています。Adobeでは、より新しく拡張性が高い [&#x200B; コアコンポーネント &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja) をAEM プロジェクトで使用することをお勧めします。 これらのコンポーネントは [We.Retail サンプルコンテンツ](/help/sites-developing/we-retail.md)の一部であり、管理者が[個別にインストールして開発に使用](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=ja)することもできます。
+>ほとんどの基盤コンポーネントは、AEM 6.5 LTS では廃止されます。 より新しく拡張性が高い[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)を AEM プロジェクトで活用することをお勧めします。これらのコンポーネントは [We.Retail サンプルコンテンツ](/help/sites-developing/we-retail.md)の一部であり、管理者が[個別にインストールして開発に使用](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=ja)することもできます。
 >
 >[AEM Modernize Tools Suite](https://opensource.adobe.com/aem-modernize-tools/) を使用して、基盤コンポーネントベースのサイトをリファクタリングし、コアコンポーネントを使用できます。
 
@@ -990,7 +990,7 @@ HTML5 要素と共に使用する場合は、[ビデオプロファイルの設�
 
   プロファイルコンポーネントは、訪問者に合わせた個人設定が必要なソーシャルコラボレーションや他の領域に使用する訪問者のプロファイルに関連しています。
 
-フォームの例を以下に示します。 これは、**フォーム**&#x200B;コンポーネント（開始と終了）、入力に使用する 2 つの&#x200B;**フォーム**&#x200B;**テキスト**&#x200B;フィールド、導入部のテキストに使用する 1 つの&#x200B;**一般**&#x200B;**テキスト**&#x200B;フィールド、および「**送信**」ボタンで構成されています。
+フォームの例を以下に示します。 これは、**フォーム**&#x200B;コンポーネント（開始と終了）、入力に使用する 2 つの&#x200B;**フォーム****テキスト**&#x200B;フィールド、導入部のテキストに使用する 1 つの&#x200B;**一般****テキスト**&#x200B;フィールド、および「**送信**」ボタンで構成されています。
 
 ![dc_form](assets/dc_form.png)
 
@@ -1409,7 +1409,7 @@ Captcha コンポーネントでは、画面に表示される英数字の文字
 
 >[!NOTE]
 >
->カスタムアップロードコンポーネントを作成して、Sling サーブレットにファイルをアップロードできます。詳しくは、[Adobe Experience Manager へのファイルのアップロード](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276?profile.language=ja&lang=ja)を参照してください。
+>カスタムアップロードコンポーネントを作成して、Sling サーブレットにファイルをアップロードできます。詳しくは、[Adobe Experience Manager へのファイルのアップロード](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276?lang=ja)を参照してください。
 
 ### 非表示のフィールド {#hidden-field}
 

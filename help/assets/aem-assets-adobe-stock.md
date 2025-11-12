@@ -7,9 +7,9 @@ role: User, Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 33f539d2-ae00-4f43-a27a-55c1b55a6c0c
-source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
+source-git-commit: b40c803de59f85fb34536849370ff3e77bba473a
 workflow-type: tm+mt
-source-wordcount: '2191'
+source-wordcount: '2158'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 100%
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=ja) |
-| AEM 6.5 | この記事 |
+| AEM 6.5 LTS | この記事 |
 
 <!-- old content
 
@@ -451,9 +451,7 @@ To configure the [!DNL Adobe Stock] cloud service:
 
 ## 既知の制限事項 {#known-limitations}
 
-* **[!DNL Experience Manager] サービスパック 6.5.7.0 以降との統合に関する問題**：[!DNL Experience Manager] 6.5.7.0 以降との統合中に予期しない問題が特定されました。この問題はテスト中で、[!DNL Experience Manager] 6.5.11.0 で利用可能になる予定です。すぐにホットフィックスを入手するには、[!DNL Customer Support] にお問い合わせください。
-
-* **ユーザーのライセンスを制限する機能が正しく機能しない**：ストック構成に対する `read` 権限を持つすべてのユーザーは、[!DNL Adobe Stock] アセットを検索してライセンスを取得できます。
+* **ユーザーのライセンスを制限する機能が正しく機能しない**：Stock 設定に対する `read` 権限を持つすべてのユーザーは、[!DNL Adobe Stock] アセットを検索してライセンスを取得できます。
 
 * **管理者以外のユーザーは、[!DNL Adobe Stock] クラウド設定を手動でアクティベートする必要がある**：**[!UICONTROL ユーザー環境設定]**&#x200B;ウィンドウで、**[!UICONTROL Stock 設定]**&#x200B;に [!DNL Adobe Stock] クラウド設定は有効になっていますが、管理者以外のユーザーには機能しません。ユーザーは、「**[!UICONTROL 同意する]**」ボタンをクリックして、Stock 設定をアクティベートする必要があります。この手順がない場合、システムは **[!UICONTROL Assets]** にアクセスする際にエラーメッセージを反映します。
 

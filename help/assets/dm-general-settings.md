@@ -1,19 +1,15 @@
 ---
 title: Dynamic Media の一般設定
 description: Dynamic Media で一般設定を管理する方法を説明します。 ここで公開先サーバー名と公開元サーバー名を設定し、画像の上書きオプションを設定できます。 また、画像のアンシャープマスク用のデフォルトのアップロードオプションや、PostScript、Adobe Photoshop、PDF、Adobe Illustrator の各ファイルを処理する方法に関するアップロードオプションも用意されています。
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 solution: Experience Manager, Experience Manager Assets
 exl-id: 99cd5f46-f1aa-46f5-b112-311724e00490
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 298d0505a6c0561202e77008b3c352066d4e72b7
 workflow-type: tm+mt
-source-wordcount: '2506'
-ht-degree: 100%
+source-wordcount: '2498'
+ht-degree: 99%
 
 ---
 
@@ -22,7 +18,7 @@ ht-degree: 100%
 **[!UICONTROL Dynamic Media 一般設定]**&#x200B;は、次の場合にのみおこなうことができます。
 
 * Scene7 モードで Dynamic Media を実行している。 詳しくは、 [Scene7 モードの Dynamic Media の有効化](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode)を参照してください。
-* Adobe Experience Manager 6.5.11 以降に、*既存の* **[!UICONTROL Dynamic Media 設定]**（**[!UICONTROL クラウドサービス]**&#x200B;内）がある。[クラウドサービスでの Dynamic Media 設定の作成](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)を参照してください。
+* *existing***[!UICONTROL Dynamic Media 設定]** （**[!UICONTROL Cloud Services]** 内）がある。 [Cloud Services での Dynamic Media 設定の作成](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)を参照してください。
 * 自身が管理者権限を持つ Experience Manager システム管理者である。
 
 Dynamic Media の一般設定は、経験豊富な web サイト開発者やプログラマーが使用することを目的としています。 Adobe Dynamic Mediaでは、これらの公開設定を変更するユーザーに、Adobe Experience Manager 上の Dynamic Media と基本的な画像技術に精通することをお勧めします。

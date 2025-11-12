@@ -6,10 +6,10 @@ feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 15face30-3039-49a0-bfee-56bff21e5c27
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: 0b337740dffb9e6421e6d2c44a1ae222dfa37711
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 100%
+source-wordcount: '676'
+ht-degree: 92%
 
 ---
 
@@ -22,15 +22,15 @@ AEM Content and Commerce の使用を開始するには、AEM Content and Commer
 
 AEM Content and Commerce のオンボードは、次の 2 つの手順で構成されています。
 
-1. AEM Content and Commerce Add-On for AEM 6.5 をインストールする
+1. AEM Content and Commerce Add-On for AEM 6.5 LTS のインストール
 
 2. お使いのコマースソリューションに AEM を接続する
 
-### AEM Content and Commerce Add-On for AEM 6.5 をインストールする {#install-add-on}
+### AEM Content and Commerce Add-On for AEM 6.5 LTS のインストール {#install-add-on}
 
-[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)ポータルから AEM Commerce Add-On for AEM 6.5 をダウンロードしてインストールします。
+[ ソフトウェア配布 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) ポータルからAEM Commerce Add-On for AEM 6.5 LTS をダウンロードしてインストールします。
 
-必要な AEM 6.5 サービスパックをインストールして起動します。入手可能な最新のサービスパックをインストールすることをお勧めします。
+必要なAEM 6.5 LTS サービスパックをインストールして起動します。 入手可能な最新のサービスパックをインストールすることをお勧めします。
 
 >[!NOTE]
 >

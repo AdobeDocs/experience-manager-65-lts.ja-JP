@@ -1,15 +1,14 @@
 ---
 title: 画像トランスコーディングライブラリ
 description: エンコーディング、トランスコーディング、画像のリサンプリング、画像のサイズ変更などの中心的な画像処理機能を実行できる画像処理ソリューションであるアドビの画像トランスコーディングライブラリを設定および使用する方法について説明します。
-contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 solution: Experience Manager, Experience Manager Assets
 exl-id: fb24c331-55c3-4166-bd4f-c26cece902fc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 1dd093acdfa571dad9659270ddc6912ab3d5dba5
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 100%
+source-wordcount: '978'
+ht-degree: 99%
 
 ---
 
@@ -76,7 +75,7 @@ ITL 処理を設定するには、設定ファイルを作成し、ワークフ�
 
 ライブラリを設定するには、次の手順で、ライブラリを示す CONF ファイルを作成します。管理者またはルート権限が必要です。
 
-1. [Software Distribution から画像トランスコーディングライブラリパッケージ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg)をダウンロードし、パッケージマネージャーを使用してインストールします。このパッケージは [!DNL Experience Manager] 6.5 と互換性があります。
+1. [Software Distribution から画像トランスコーディングライブラリパッケージ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg)をダウンロードし、パッケージマネージャーを使用してインストールします。このパッケージは [!DNL Experience Manager] 6.5 LTS と互換性があります。
 
 1. `com.day.cq.dam.cq-dam-switchengine` のバンドル ID を調べるには、web コンソールにログインし、 **[!UICONTROL OSGi]**／**[!UICONTROL バンドル]**&#x200B;をクリックします。または、バンドルコンソールを開くには、 `https://[aem_server:[port]/system/console/bundles/` URL にアクセスします。`com.day.cq.dam.cq-dam-switchengine` バンドルとその ID を見つけます。
 

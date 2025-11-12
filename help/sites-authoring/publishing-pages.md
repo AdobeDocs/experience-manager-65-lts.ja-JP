@@ -1,14 +1,14 @@
 ---
 title: コンテンツページの公開
-description: Adobe Experience Manager 6.5 でコンテンツページを公開する方法を説明します。
+description: Adobe Experience Manager 6.5 LTS でコンテンツページを公開する方法を説明します。
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 89bab7e3-f688-4c95-8571-08477e737bc8
-source-git-commit: 4817296c00e094a65744a896d798e429d3ab6c7d
+source-git-commit: 46948a857ccb9d093f946ec9e48ff585b0647314
 workflow-type: tm+mt
-source-wordcount: '1701'
-ht-degree: 100%
+source-wordcount: '1702'
+ht-degree: 99%
 
 ---
 
@@ -26,13 +26,13 @@ ht-degree: 100%
 >公開に関する特定の用語は混同されることがあります。
 >
 >* **公開／非公開**
->  >  環境でコンテンツを公開する（または非公開にする）アクションに対して主に使用される用語です。
+>  環境でコンテンツを公開する（または非公開にする）アクションに対して主に使用される用語です。
 >
 >* **アクティブ化／非アクティブ化**
->  >  公開／非公開と同義です。
+>  公開／非公開と同義です。
 >
 >* **レプリケート／レプリケーション**
->  >  これらは、ユーザーコメントの公開やリバースレプリケーションの際などに行われる、ある環境から別の環境へのデータ（ページコンテンツ、ファイル、コード、ユーザーコメントなど）の移動を説明する技術用語です。
+>  これらは、ユーザーコメントの公開やリバースレプリケーションの際などに行われる、ある環境から別の環境へのデータ（ページコンテンツ、ファイル、コード、ユーザーコメントなど）の移動を説明する技術用語です。
 
 ## 特権が不十分 {#insufficient-privileges}
 

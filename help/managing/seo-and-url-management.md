@@ -1,16 +1,13 @@
 ---
 title: SEO と URL 管理のベストプラクティス
 description: AEM の実装における SEO のベストプラクティスとレコメンデーションについて説明します。
-topic-tags: managing
-content-type: reference
-docset: aem65
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader
 exl-id: 3f3437fb-1fff-4703-a50d-28da89b0a856
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: fd3404f62beb377362db73ab937b58391b15e195
 workflow-type: tm+mt
-source-wordcount: '3522'
+source-wordcount: '3475'
 ht-degree: 99%
 
 ---
@@ -184,7 +181,7 @@ AEM では、すべての Web ページが `/content/my-brand/my-content` に保
 
 #### バニティ URL {#vanity-urls}
 
-作成者が、プロモーション目的で別の場所からアクセス可能なページを作成する場合、ページごとに定義される AEM のバニティー URL が役立つことがあります。ページのバニティー URL を追加するには、 **Sites** コンソールで該当するページに移動し、ページのプロパティを編集します。「**基本**」タブの下部に、バニティー URL を追加できるセクションが表示されます。複数の URL を使用してページにアクセスできるようにすると、ページの SEO 値が分断されるので、正規 URL タグをページに追加して、この問題を回避する必要があることに留意してください。
+作成者が、プロモーション目的で別の場所からアクセス可能なページを作成する場合、ページごとに定義される AEM のバニティ URL が役立つことがあります。ページのバニティ URL を追加するには、 **Sites** コンソールで該当するページに移動し、ページのプロパティを編集します。「**基本**」タブの下部に、バニティ URL を追加できるセクションが表示されます。複数の URL を使用してページにアクセスできるようにすると、ページの SEO 値が分断されるので、正規 URL タグをページに追加して、この問題を回避する必要があることに留意してください。
 
 #### ページ名のローカライズ {#localized-page-names}
 
@@ -362,12 +359,6 @@ Disallow: /
 クローラーでは、web サイトの構造をより的確に把握するために XML サイトマップが使用されます。サイトマップを提供すれば SEO ランキングが上がるという保証はありませんが、ベストプラクティスの 1 つとして認められています。Web サーバー上で XML ファイルを手動で維持し、サイトマップとして使用できます。ただし、Adobeでは、作成者がコンテンツを作成すると、サイトマップにその変更が自動的に反映されるように、プログラムによってサイトマップを生成することを推奨しています。
 
 AEM では、[Apache Sling Sitemap モジュール](https://github.com/apache/sling-org-apache-sling-sitemap)を使用して XML サイトマップを生成し、開発者と編集担当者がサイトの XML サイトマップを最新の状態に保つための様々なオプションを提供します。
-
->[!NOTE]
->
->Adobe Experience Manager バージョン 6.5.11.0 以降、製品機能として使用できます。
-> 
->古いバージョンの場合は、自身で Sling サーブレットを登録し、`sitemap.xml` 呼び出しを待ち受けることができます。サーブレット API を介して提供されるリソースを使用して、現在のページとその子孫を検索し、`sitemap.xml` ファイルを出力します。
 
 Apache Sling Sitemap モジュールは、最上位のサイトマップとネストされたサイトマップを区別します。どちらも、`sling:sitemapRoot` プロパティが `true` に設定されているリソースについて生成されます。一般に、サイトマップは、ツリーの最上位のサイトマップ（他にサイトマップの上位要素を持たないリソース）のパスにあるセレクターを使用してレンダリングされます。また、この最上位のサイトマップルートはサイトマップのインデックスも公開します。このインデックスは通常、サイト所有者が検索エンジンの設定ポータルで設定したり、サイトの `robots.txt` に追加したりするものです。
 

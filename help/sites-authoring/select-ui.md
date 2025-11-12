@@ -1,14 +1,14 @@
 ---
 title: AEM でのユーザーインターフェイスの選択
-description: Adobe Experience Manager 6.5 での作業に使用するインターフェイスを設定します。
+description: Adobe Experience Manager 6.5 LTS で作業するために使用するインターフェイスを設定します。
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 508f9dfb-1a4e-45bd-acdd-48cc910bdd0f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d8057cf9ee86c2ec9c1f556fa7c18f98797fe982
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 98%
+source-wordcount: '705'
+ht-degree: 96%
 
 ---
 

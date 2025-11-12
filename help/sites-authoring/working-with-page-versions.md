@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: ba5cc5fb-934f-4144-8e28-7aa5fdd9b92a
-source-git-commit: 438d383aa7a08334d9977411fd37395f89133834
+source-git-commit: d286db53c2f9605794bdadcc876b5069037edde3
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1562'
 ht-degree: 100%
 
 ---
@@ -203,7 +203,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->AEM 6.5.10.0 以降を実行している場合、[タイムワープをローンチと組み合わせて使用して、未来をプレビューすることもできます](/help/sites-authoring/launches.md)。
+>[タイムワープは、未来をプレビューするローンチと組み合わせて使用することもできます](/help/sites-authoring/launches.md)。
 
 コンテンツの作成は、継続的な共同作業プロセスです。タイムワープの目的は、公開された web サイトを作成者が経時的に追跡することで、コンテンツの変更内容を把握することです。この機能では、ページのバージョンを使用してパブリッシュ環境の状態を判断します。
 

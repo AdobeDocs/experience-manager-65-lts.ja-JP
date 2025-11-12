@@ -1,15 +1,11 @@
 ---
 title: キャンペーン作成時のセグメント化について
 description: キャンペーンを作成する場合、セグメント化を考えることが重要になります。
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: personalization
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
 exl-id: 7167c672-8d24-4493-aff6-b5b453074bff
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 36022b939d598a43ee7f5339ed04122e476205b7
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 100%
@@ -68,7 +64,7 @@ ht-degree: 100%
 
 **サブセグメント** - セグメントはいくつかのサブセグメントに分割できます。これを行うには、追加の特性を定義します。
 
-**ティーザーページ** - 特定の訪問者に向けられているページです。ティーザー段落に使用できる再利用可能なコンテンツが含まれます。
+**ティーザーページ** - 特定のオーディエンスに向けられているページです。ティーザー段落に使用できる再利用可能なコンテンツが含まれます。
 
 **キャンペーン** - ティーザーページと、ニュースレターや招待状などのメールマーケティングページを集めたものです。通常、キャンペーンは期間限定で行われ、期間が終われば別のキャンペーンに差し替えられます。
 

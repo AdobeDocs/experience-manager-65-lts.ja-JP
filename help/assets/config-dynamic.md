@@ -2,19 +2,13 @@
 title: Dynamic Media の設定 - ハイブリッドモード
 description: Dynamic Media - ハイブリッドモードの設定方法を学習します。
 mini-toc-levels: 3
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-docset: aem65
-legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 role: User, Admin
 feature: Configuration,Hybrid Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 6252e61f-44b5-4931-80a0-426c6883092e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 846b45f6ab83599eb709573a77422f2aba1ef047
 workflow-type: tm+mt
-source-wordcount: '7738'
+source-wordcount: '7607'
 ht-degree: 100%
 
 ---
@@ -24,26 +18,26 @@ ht-degree: 100%
 >[!IMPORTANT]
 >
 >Secure Socket Layer 2.0 および 3.0 と Transport Layer Security 1.0 および 1.1 のサポートを終了します。
->>2024年4月30日（PT）を以て、Adobe Dynamic Media は以下のサポートを終了します。
+>2024年4月30日（PT）を以て、Adobe Dynamic Media は以下のサポートを終了します。
 >
 >* SSL（Secure Socket Layer）2.0
 >* SSL 3.0
 >* TLS（Transport Layer Security）1.0 および 1.1
 >* TLS 1.2 での以下の脆弱な暗号：
->  > `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
->  > `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
->  > `TLS_RSA_WITH_AES_256_GCM_SHA384`
->  > `TLS_RSA_WITH_AES_256_CBC_SHA256`
->  > `TLS_RSA_WITH_AES_256_CBC_SHA`
->  > `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
->  > `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
->  > `TLS_RSA_WITH_AES_128_GCM_SHA256`
->  > `TLS_RSA_WITH_AES_128_CBC_SHA256`
->  > `TLS_RSA_WITH_AES_128_CBC_SHA`
->  > `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
->  > `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
->  > `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
->  > `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
+> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
+> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
+> `TLS_RSA_WITH_AES_256_GCM_SHA384`
+> `TLS_RSA_WITH_AES_256_CBC_SHA256`
+> `TLS_RSA_WITH_AES_256_CBC_SHA`
+> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
+> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
+> `TLS_RSA_WITH_AES_128_GCM_SHA256`
+> `TLS_RSA_WITH_AES_128_CBC_SHA256`
+> `TLS_RSA_WITH_AES_128_CBC_SHA`
+> `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
+> `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
+> `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
+> `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
 >
 > [Dynamic Media の制限](/help/assets/limitations.md)も参照してください。
 
@@ -258,22 +252,6 @@ Dynamic Media はデフォルトでは有効になっていません。ただし
    >Dynamic Media 実行モードを無効にすると、`cqdam.pyramid.tiff` レンディションを生成するワークフローステップは自動的にスキップされます。また、動的レンディションのサポートやその他の Dynamic Media 機能も無効になります。
    >
    >また、Experience Manager サーバーを設定した後で Dynamic Media 実行モードを無効にすると、その実行モードの下でアップロードされたアセットがすべて無効になることにも注意してください。
-
-## （オプション）Dynamic Media のプリセットおよび設定を 6.3 から 6.5 にダウンタイムなしで移行 {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
-
-Experience Manager - Dynamic Media を 6.3 から 6.5 にアップグレードする場合（ダウンタイムなしのデプロイメント機能を含むようになりました）、次の curl コマンドを実行する必要があります。このコマンドは、CRXDE Lite ですべてのプリセットと設定を `/etc` から `/conf` に移行します。
-
->[!NOTE]
->
->Experience Manager インスタンスを互換性モードで実行する場合（互換性パッケージがインストールされている場合）、これらのコマンドを実行する必要はありません。
-
-互換パッケージの有無を問わず、すべてのアップグレードについて、次の Linux curl コマンドを実行することにより、Dynamic Media に付属しているデフォルトの標準提供ビューアプリセットをコピーできます。
-
-`curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets/viewer.pushviewerpresets.json`
-
-作成されたカスタムのビューアプリセットと設定のすべてを `/etc` から `/conf` に移行するには、次の Linux® curl コマンドを実行します。
-
-`curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
 
 ## 画像レプリケーションを設定します。 {#configuring-image-replication}
 
@@ -786,7 +764,7 @@ Dynamic Media をビデオのみに使用している場合は、次の手順に
 1. `jcr:content` を探して右クリックし、**[!UICONTROL 作成]**／**[!UICONTROL ノードを作成]**&#x200B;に移動します。タイプ `nt:unstructured` の名前 `damRenditionFilters` を入力します。
 1. `damRenditionFilters` を探して右クリックし、「**[!UICONTROL 貼り付け]**」を選択します。
 
-これらの手順により、Experience Manager パブリッシュインスタンスを設定して、実稼動以外の環境に画像を配信します。また、パブリッシュインスタンスに不要な元の画像と静的なレンディションがフィルターによってレプリケーションから除外されます。
+これらの手順により、Experience Manager パブリッシュインスタンスを設定して、本番環境以外に画像を配信します。また、パブリッシュインスタンスに不要な元の画像と静的なレンディションがフィルターによってレプリケーションから除外されます。
 
 >[!NOTE]
 >

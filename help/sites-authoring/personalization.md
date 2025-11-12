@@ -1,14 +1,14 @@
 ---
 title: パーソナライゼーションとコンテンツのターゲティング
-description: Adobe Experience Manager 6.5 でパーソナライズされたコンテンツを作成する方法について説明します。
+description: Adobe Experience Manager 6.5 LTS でパーソナライズされたコンテンツを作成する方法を説明します。
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Architect,Developer
 exl-id: da8a1341-55a9-46bb-b78d-ced79e22e87e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 8a4f8ce12a67985f659d0e565f2950c97179bc01
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 100%
+source-wordcount: '527'
+ht-degree: 97%
 
 ---
 
@@ -20,11 +20,11 @@ AEM には、ターゲットとなるコンテンツをオーサリングして�
 
 ## ターゲティングモード {#targeting-mode}
 
-[AEM のターゲットモードを使用してターゲットコンテンツをオーサリングします。](/help/sites-authoring/content-targeting-touch.md)ターゲティングモードと Target コンポーネントは、マーケティングアクティビティのエクスペリエンス用コンテンツを作成するためのツールを提供します。
+[AEM のターゲティングモードを使用してターゲットコンテンツをオーサリングします。](/help/sites-authoring/content-targeting-touch.md)ターゲティングモードと Target コンポーネントは、マーケティングアクティビティのエクスペリエンス用コンテンツを作成するためのツールを提供します。
 
 ## アクティビティ {#activities}
 
-アクティビティは、マーケティング戦略を定義し、整理するためのものです。アクティビティは、ターゲットとするオーディエンスと、そのターゲット設定の適用期間から構成されます。
+アクティビティは、マーケティング戦略を定義し、整理するためのものです。アクティビティは、ターゲットにするオーディエンスと、そのターゲティングの適用期間から構成されます。
 
 たとえば、We.Retail の商品カタログには、季節商品に注目したティーザーが掲載されています。Summer Sports アクティビティは、このティーザーが夏季のターゲットとするマーケティングセグメントを定義します。
 
@@ -34,13 +34,13 @@ AEM には、ターゲットとなるコンテンツをオーサリングして�
 
 ## エクスペリエンス {#experiences}
 
-アクティビティごとに、ターゲットとするオーディエンスを識別する 1 つ以上のエクスペリエンスを定義します。AEM では、各エクスペリエンスを構成するコンテンツを自由に制御できます。
+アクティビティごとに、ターゲティングするオーディエンスを識別する 1 つ以上のエクスペリエンスを定義します。AEM では、各エクスペリエンスを構成するコンテンツを自由に制御できます。
 
 オーディエンスは、AEM または Adobe Target で作成されたマーケティングセグメントをベースとします。訪問者が web ページを開くと、そのページのロジックによってオーディエンスが判断され、そのオーディエンス向けに作成されたコンテンツが表示されます。
 
 例えば、あるアクティビティが「30 歳以上の女性」と「30 歳未満の女性」という 2 つの異なるオーディエンス用のエクスペリエンスを定義するものとします。We.Retail の女性向けページでは、エクスペリエンスごとに異なる商品が表示されます。
 
-1 つのアクティビティに複数のエクスペリエンスを定義できます。[アクティビティコンソール](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console)または[ターゲットモード](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode)を使用して、アクティビティにエクスペリエンスを追加できます。
+1 つのアクティビティに複数のエクスペリエンスを定義できます。[アクティビティコンソール](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console)または[ターゲティングモード](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode)を使用して、アクティビティにエクスペリエンスを追加できます。
 
 ## オファー {#offers}
 

@@ -1,15 +1,14 @@
 ---
 title: ' [!DNL Experience Manager Assets] のアクセシブルな機能およびインターフェイス'
-description: 障がいを持つユーザーにとって  [!DNL Adobe Experience Manager] 6.5 [!DNL Assets]  のアクセシビリティ機能がどのように役立つかを説明します。
-contentOwner: AG
+description: 障がいを持つユーザーにとって、 [!DNL Adobe Experience Manager] 6.5 LTS のアクセシビリティ機能がどのように役立  [!DNL Assets]  かを説明します。
 feature: Asset Management
 role: User, Architect, Leader
 solution: Experience Manager, Experience Manager Assets
 exl-id: f9540bfb-1c4f-41f0-9caa-ef9265225648
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 61a1bb55f4b8da8c421f51ee203ca8e433a73a64
 workflow-type: tm+mt
-source-wordcount: '1898'
-ht-degree: 100%
+source-wordcount: '1899'
+ht-degree: 99%
 
 ---
 

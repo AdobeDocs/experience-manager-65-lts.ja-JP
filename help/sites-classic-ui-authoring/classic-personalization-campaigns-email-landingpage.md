@@ -1,16 +1,11 @@
 ---
 title: '効果的なニュースレターのランディングページの作成 '
 description: 効果的なニュースレターのランディングページは、ニュースレター（または他のメールマーケティングキャンペーン）に新規登録するユーザーを増やすことができます。ニュースレターの新規登録で収集する情報は、見込み客の獲得に利用できます。
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: personalization
-content-type: reference
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 92f4946d-1f49-4286-a51e-84b2a46a6b8a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f69262246bafca44f88ff15a4c86125f5335507e
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 97%
@@ -31,7 +26,7 @@ ht-degree: 97%
 >[!NOTE]
 >
 >この機能（リードおよびリストの管理）がさらに強化される予定はありません。
->&#x200B;>[Adobe Campaign や AEM との統合](/help/sites-administering/campaign.md)を利用することをお勧めします。
+>[Adobe Campaign や AEM との統合](/help/sites-administering/campaign.md)を利用することをお勧めします。
 
 ## ニュースレター用リストの作成 {#creating-a-list-for-the-newsletter}
 
@@ -73,7 +68,7 @@ https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.htmlで作�
 
 ### ティーザーの追加 {#adding-teasers}
 
-特定のユーザーを対象とする[ティーザー](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers)を追加します。例えば、ありがとうページとニュースレターの登録ページにティーザーを追加できます。
+特定のオーディエンスを対象とする[ティーザー](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers)を追加します。例えば、ありがとうページとニュースレターの登録ページにティーザーを追加できます。
 
 ティーザーを追加して効果的なニュースレターのランディングページを作成するには：
 

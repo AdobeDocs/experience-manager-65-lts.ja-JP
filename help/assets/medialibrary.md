@@ -1,16 +1,15 @@
 ---
 title: 基本的なデジタルアセット管理での Media Library の使用
 description: '[!DNL Experience Manager Assets] とアセット管理用の Media Library。'
-contentOwner: AG
 role: Architect, Leader
 feature: Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 50a980e5-3b35-4485-9a5b-44d1a42a837c
-source-git-commit: 51f6da4da0bb3f79aa6fa17371b8084b72de7546
+source-git-commit: 92c9dd0043b644e258b75a999ad1d556689907a7
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 99%
+source-wordcount: '541'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +18,7 @@ ht-degree: 99%
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=ja) |
-| AEM 6.5 | この記事 |
+| AEM 6.5 LTS | この記事 |
 
 [!DNL Adobe Experience Manager] プラットフォームには、アセットを管理するための様々な機能が用意されています。Media Library を使用すると、少数のアセットをリポジトリにアップロードし、Web ページで検索して使用し、アセットに対して簡単なアセット管理タスクを実行できます。
 
@@ -90,9 +89,3 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 なお、[!DNL Assets] ライセンスがなければ、スマートタグ、[!DNL Asset] リンク、[!DNL Asset] セレクター、一括タグ付け、アセットワークフローの変更、Media Library にアクセスするための標準 [!DNL Adobe Experience Manager] ユーザーインターフェイスは使用できません。
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
-
->[!MORELIKETHIS]
->
->* [&#x200B; [!DNL Experience Manager Assets] の DAM 機能](https://experienceleague.adobe.com/ja/docs/experience-manager-65-lts/content/assets/assets)
->* [[!DNL Experience Manager] 6.5 Managed Services 製品の説明](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-experience-manager-managed-services.html)
->* [[!DNL Experience Manager] 6.5 オンプレミス製品の説明](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-experience-manager-on-premise.html)

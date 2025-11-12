@@ -8,10 +8,10 @@ feature: Connected Assets,User and Groups
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 61a1c41a-7aec-4ffb-b622-905b3ca62c1b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e591ed82228d38446409951a1ea495a93732f92e
 workflow-type: tm+mt
-source-wordcount: '3909'
-ht-degree: 100%
+source-wordcount: '3915'
+ht-degree: 99%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=ja) |
-| AEM 6.5 | この記事 |
+| AEM 6.5 LTS | この記事 |
 
 
 大企業では、web サイトの作成に必要なインフラストラクチャが分散していることがあります。Web サイト作成機能と、それらの web サイトの作成に使用されたデジタルアセットが、別々のデプロイメントに格納されている場合もあります。その理由の 1 つは、連携して動作する必要がある既存のデプロイメントが地理的に分散していることです。もう 1 つの理由は、買収によって、親会社が一緒に使用したいと考えている [!DNL Experience Manager] のバージョンが異なるなど、インフラストラクチャが異種混在になることです。
@@ -42,13 +42,13 @@ Connected Assets 機能では、[!DNL Experience Manager Sites] と [!DNL Experi
 この機能を使用または設定する前に、以下を確認してください。
 
 * ユーザーがそれぞれのデプロイメント上で適切なユーザーグループに属している。
-* [!DNL Adobe Experience Manager] のデプロイメントタイプでは、サポートされている条件の 1 つが満たされます。[!DNL Experience Manager] 6.5 [!DNL Assets] は [!DNL Experience Manager] as a Cloud Service で使用できます。[!DNL Experience Manager] as a [!DNL Cloud Service] におけるこの機能の動作について詳しくは、[ Experience Manager as a Cloud Service における Connected Assets ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=ja)を参照してください。
+* [!DNL Adobe Experience Manager] のデプロイメントタイプでは、サポートされている条件の 1 つが満たされます。[!DNL Experience Manager] 6.5 LTS [!DNL Assets] は [!DNL Experience Manager] as a Cloud Serviceで動作します。 [!DNL Experience Manager] as a [!DNL Cloud Service] におけるこの機能の動作について詳しくは、[ Experience Manager as a Cloud Service における Connected Assets ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=ja)を参照してください。
 
-  | | [!DNL Sites] as a [!DNL Cloud Service] | AMS 上の [!DNL Experience Manager] 6.5 [!DNL Sites] | [!DNL Experience Manager] 6.5 [!DNL Sites] On-Premise |
+  | | [!DNL Sites] as a [!DNL Cloud Service] | AMS の [!DNL Experience Manager] 6.5 LTS [!DNL Sites] | [!DNL Experience Manager] 6.5 LTS [!DNL Sites] オンプレミス |
   |---|---|---|---|
   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | サポート対象 | サポート対象 | サポート対象 |
-  | AMS 上の **[!DNL Experience Manager]6.5 [!DNL Assets]** | サポート対象 | サポート対象 | サポート対象 |
-  | **[!DNL Experience Manager]6.5 [!DNL Assets] On-Premise** | サポート対象外 | サポート対象外 | サポート対象外 |
+  | **[!DNL Experience Manager]6.5 LTS [!DNL Assets] （AMS の場合）** | サポート対象 | サポート対象 | サポート対象 |
+  | **[!DNL Experience Manager]6.5 LTS [!DNL Assets] オンプレミス** | サポート対象外 | サポート対象外 | サポート対象外 |
 
 ### サポートされているファイル形式 {#mimetypes}
 

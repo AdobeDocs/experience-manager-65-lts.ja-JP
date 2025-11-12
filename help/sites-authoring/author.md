@@ -1,14 +1,14 @@
 ---
 title: オーサリング
-description: Adobe Experience Manager 6.5 でのオーサリングと公開の概念について説明します。
+description: Adobe Experience Manager 6.5 LTS でのオーサリングと公開の概念。
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 314a6c65-9b90-4f4c-9e4a-d551dbb646e9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 71ea867e240d76a2a881f6e7d65b83979b558f46
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 100%
+source-wordcount: '479'
+ht-degree: 97%
 
 ---
 
@@ -70,13 +70,13 @@ AEM には次の 2 種類の環境があります。
 >用語が一部重複して使用されている場合があります。この状況は次の用語で発生しています。
 >
 >* **公開／非公開**
->  >  環境でコンテンツを公開する（または非公開にする）アクションに対して主に使用される用語です。
+>  環境でコンテンツを公開する（または非公開にする）アクションに対して主に使用される用語です。
 >
 >* **アクティブ化／非アクティブ化**
->  >  公開／非公開と同義です。
+>  公開／非公開と同義です。
 >
 >* **レプリケート／レプリケーション**
->  >  これらは、ユーザーコメントの公開やリバースレプリケーションの際などに行われる、ある環境から別の環境へのデータ（ページコンテンツ、ファイル、コード、ユーザーコメントなど）の移動を説明する技術用語です。
+>  これらは、ユーザーコメントの公開やリバースレプリケーションの際などに行われる、ある環境から別の環境へのデータ（ページコンテンツ、ファイル、コード、ユーザーコメントなど）の移動を説明する技術用語です。
 >
 
 #### Dispatcher {#dispatcher}
