@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: a4101e70-85cd-471c-9bf9-fd09bf5fc8e8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e0fb43e63eb876049447d12ab379fd92aa1ee4b6
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 100%
+source-wordcount: '2350'
+ht-degree: 98%
 
 ---
 
@@ -406,6 +406,12 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 バリエーションを使用すると、**マスター**&#x200B;コンテンツを取得し、（必要な場合は）目的に応じて変更することができます。
 
 バリエーションを作成するには：
+
+>[!NOTE]
+>
+>バリエーションにより、オーサー環境と配信時に、コンテンツフラグメントに処理時間も追加されます。 バリエーションの数は管理可能な最小限に抑えることをお勧めします。
+>
+>ベストプラクティスは、コンテンツフラグメントあたり 10 個のバリエーションを超えないようにすることです。
 
 1. フラグメントを開き、サイドパネルが表示されていることを確認します。
 1. サイドパネルのアイコンバーから「**バリエーション**」を選択します。
