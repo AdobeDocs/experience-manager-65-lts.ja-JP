@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6023c211220bb500814ecd511b8787d107c3c6cd
+source-git-commit: 5dfcc115fd2e1991a8a4701597b0fb25b374e3ee
 workflow-type: tm+mt
-source-wordcount: '7381'
-ht-degree: 99%
+source-wordcount: '7405'
+ht-degree: 98%
 
 ---
 
@@ -410,6 +410,7 @@ AEM がアップグレード中に `/apps/system/config` の下にある既存�
 * AEM Forms で PDF ファイルのタイムライン機能を使用できませんでした。この問題は、ドキュメントの変更や改訂を効果的に追跡する機能に影響を与えました。AEM Forms 領域の「フォームとドキュメント」セクションで PDF をアップロードすると、タイムラインビューが機能しなくなります。（FORMS-19408）
 * OData を操作すると、null ポインター例外が発生します。これにより、データ取得プロセスが中断されます。（FORMS-20348）
 * オープンソースの Java ライブラリである Guava の削除後に、google.common.collect ライブラリが削除されました。このアップデートにより、アダプティブフォームを使用する大規模法人の顧客の互換性とパフォーマンスが向上します。（FORMS-17031）
+* サーバーサイド検証（SSV）が有効になっている場合、フォームの送信が失敗する場合があります。 この問題が発生した場合は、[Adobe サポート ](https://business.adobe.com/in/support/main.html) にお問い合わせください。 （FORMS-21966）
 
 ### Forms の Captcha
 
