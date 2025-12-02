@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: eef69d02-2e88-4f44-98bb-d98fa297e3a2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ffb467630ee061bce5a9cab4e8a311e70b2aeb38
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 100%
+source-wordcount: '914'
+ht-degree: 98%
 
 ---
 
@@ -33,6 +33,10 @@ NotSoSerial は Java™ レベルの問題を解決する Java™ レベルの�
 このエージェントの目的は、最新の既知のクラスの脆弱性を軽減することです。プロジェクトで信頼できないデータを逆シリアル化している場合でも、サービス拒否攻撃、メモリ不足攻撃、将来的な未知の逆シリアル化攻撃に対しては依然として脆弱である可能性があります。
 
 アドビは、Java™ 6、7、8 を公式にサポートしています。ただし、アドビでは、NotSoSerial が Java™ 5 もサポートしていると理解しています。
+
+>[!WARNING]
+>
+>NotSoSerial は Java™ 17 以降では使用しないでください。
 
 ## エージェントのインストール {#installing-the-agent}
 
