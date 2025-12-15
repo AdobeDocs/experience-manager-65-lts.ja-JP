@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7d6e3662-f541-4755-b2a6-b35724dd8932
-source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
+source-git-commit: e0a31fe9bc3297a4cb6e72765482c24cebb3ad29
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2326'
 ht-degree: 99%
 
 ---
@@ -25,7 +25,7 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
 
 >[!NOTE]
 >
->コンテンツフラグメントモデルとコンテンツフラグメントを使用する場合は、[&#x200B; ベストプラクティス &#x200B;](/help/assets/content-fragments/content-fragments.md#best-practices) に注意してください。
+>コンテンツフラグメントモデルとコンテンツフラグメントを使用する場合は、[ ベストプラクティス ](/help/assets/content-fragments/content-fragments.md#best-practices) に注意してください。
 
 ## コンテンツフラグメントモデルの作成 {#creating-a-content-fragment-model}
 
@@ -108,14 +108,7 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
 * **1 行のテキスト**
    * 1 行のテキストのフィールドを 1 つ以上追加（最大長は定義可能）
 * **複数行テキスト**
-   * リッチテキスト、プレーンテキストまたはマークダウンのテキストエリア
-
-     >[!NOTE]
-     >
-     >パフォーマンス上の理由から、1 つのモデルに 10 個を超えるリッチテキストフィールドを含めることはお勧めしません。
-     >
-     >必要に応じて、[ネストされたコンテンツフラグメント](#fragment-reference-nested-fragments)を使用することをお勧めします。
-
+   * リッチテキスト、プレーンテキストまたはマークダウンのテキスト領域
 * **数値**
    * 1 つ以上の数値フィールドを追加
 * **ブール型**

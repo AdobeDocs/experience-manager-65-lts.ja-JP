@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7b5a9485-8d07-434e-9871-5f97d6781eaf
-source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
+source-git-commit: e0a31fe9bc3297a4cb6e72765482c24cebb3ad29
 workflow-type: tm+mt
-source-wordcount: '2295'
-ht-degree: 86%
+source-wordcount: '2329'
+ht-degree: 85%
 
 ---
 
@@ -191,7 +191,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
    * 個々のエンティティとして区切られた、テキストのブロック（多くの場合複数行）。
 
-   * [リッチテキスト](/help/assets/content-fragments/content-fragments-variations.md#rich-text)モードと[&#x200B; Markdown &#x200B;](/help/assets/content-fragments/content-fragments-variations.md#markdown)モードでは、段落をヘッダーとして書式設定することができます。その場合、ヘッダーとその後の段落が 1 つのユニットになります。
+   * [リッチテキスト](/help/assets/content-fragments/content-fragments-variations.md#rich-text)モードと[ Markdown ](/help/assets/content-fragments/content-fragments-variations.md#markdown)モードでは、段落をヘッダーとして書式設定することができます。その場合、ヘッダーとその後の段落が 1 つのユニットになります。
 
    * ページ作成中にコンテンツを制御できます。
 
@@ -278,7 +278,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 * **コンテンツモデル**
 
-   * [&#128279;](/help/assets/content-fragments/content-fragments-configuration-browser.md)設定ブラウザーを使用して有効化されます。
+   * ](/help/assets/content-fragments/content-fragments-configuration-browser.md)設定ブラウザーを使用して有効化[されます。
    * [ツールを使用して作成](/help/assets/content-fragments/content-fragments-models.md)されます。
    * [フラグメントを作成](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)するために必要です。
    * フラグメントの構造（タイトル、コンテンツ要素、タグ定義）を定義します。
@@ -321,7 +321,7 @@ AEMで構造化コンテンツをモデリングする場合は、システム�
 
 コンテンツフラグメント参照を頻繁に使用すると、システムのパフォーマンス、UI の応答性およびGraphQLのクエリの実行に大きな影響を与える可能性があります。 10 レベル以下にネストを維持することを目指します。
 
-### モデルあたりのデータ フィールドとタイプの数  {#number-of-data-fields-and-types-per-model}
+### モデルあたりのデータフィールドとタイプの数 {#number-of-data-fields-and-types-per-model}
 
 モデルに本当に必要なデータフィールドとタイプのみを含めます。
 
@@ -329,9 +329,15 @@ AEMで構造化コンテンツをモデリングする場合は、システム�
 
 ### リッチテキストフィールド {#rich-text-fields}
 
-リッチテキストフィールド（**複数行テキスト** データタイプ）の使用を考慮する。
+リッチテキストフィールド（**複数行テキスト** データタイプ）は、以下の点を考慮して使用してください。
 
-モデルあたりのリッチテキストフィールドの数を制限します。 また、各フラグメントに保存されるテキストの量とHTMLの書式設定の量も指定します。 非常に大きなリッチテキストコンテンツは、システムのパフォーマンスに悪影響を及ぼす可能性があります。
+* フィールド
+
+  モデルあたりのリッチテキストフィールドの数を制限します。 パフォーマンス上の理由から、1 つのモデルに 10 個を超えるリッチテキストフィールドを含めることはお勧めしません。 必要に応じて、[ネストされたコンテンツフラグメント](/help/assets/content-fragments/content-fragments-models.md#using-references-to-form-nested-content)を使用することをお勧めします。
+
+* コンテンツ
+
+  また、各フラグメントに保存されるテキストの量や、HTMLの書式設定の量を制限する必要があります。 非常に大きなリッチテキストコンテンツは、システムのパフォーマンスに悪影響を及ぼす可能性があります。
 
 ### バリエーション数 {#number-of-variations}
 
