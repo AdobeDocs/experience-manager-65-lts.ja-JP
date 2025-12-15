@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7d6e3662-f541-4755-b2a6-b35724dd8932
-source-git-commit: 6fccb80857b22ce0ab72f987afc9ce34d66bea54
+source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
 workflow-type: tm+mt
-source-wordcount: '2339'
-ht-degree: 100%
+source-wordcount: '2355'
+ht-degree: 99%
 
 ---
 
@@ -22,6 +22,10 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
 1. コンテンツフラグメントモデルを[作成](#creating-a-content-fragment-model)および[設定](#defining-your-content-fragment-model)
 1. コンテンツフラグメントの作成時に使用するために、[コンテンツフラグメントモデルを有効にする](#enabling-disabling-a-content-fragment-model)
 1. **ポリシー**&#x200B;の設定による[必要なアセットフォルダーに対するコンテンツフラグメントモデルの許可](#allowing-content-fragment-models-assets-folder)
+
+>[!NOTE]
+>
+>コンテンツフラグメントモデルとコンテンツフラグメントを使用する場合は、[ ベストプラクティス ](/help/assets/content-fragments/content-fragments.md#best-practices) に注意してください。
 
 ## コンテンツフラグメントモデルの作成 {#creating-a-content-fragment-model}
 
@@ -239,10 +243,10 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
 >AEM では次のものの繰り返しを防止できます。
 >
 >* コンテンツ参照
->  >  これにより、現在のフラグメントへの参照を追加できなくなります。その結果、空のフラグメント参照選択ダイアログが表示される場合があります。
+>  これにより、現在のフラグメントへの参照を追加できなくなります。その結果、空のフラグメント参照選択ダイアログが表示される場合があります。
 >
 >* GraphQL のフラグメント参照
->  >  相互に参照される複数のコンテンツフラグメントを返すディープクエリを作成した場合、最初に null が返されます。
+>  相互に参照される複数のコンテンツフラグメントを返すディープクエリを作成した場合、最初に null が返されます。
 
 ### コンテンツ参照 {#content-reference}
 

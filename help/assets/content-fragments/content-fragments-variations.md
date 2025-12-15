@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: a4101e70-85cd-471c-9bf9-fd09bf5fc8e8
-source-git-commit: e0fb43e63eb876049447d12ab379fd92aa1ee4b6
+source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
 workflow-type: tm+mt
-source-wordcount: '2350'
-ht-degree: 98%
+source-wordcount: '2309'
+ht-degree: 100%
 
 ---
 
@@ -407,12 +407,6 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 バリエーションを作成するには：
 
->[!NOTE]
->
->バリエーションにより、オーサー環境と配信時に、コンテンツフラグメントに処理時間も追加されます。 バリエーションの数は管理可能な最小限に抑えることをお勧めします。
->
->ベストプラクティスは、コンテンツフラグメントあたり 10 個のバリエーションを超えないようにすることです。
-
 1. フラグメントを開き、サイドパネルが表示されていることを確認します。
 1. サイドパネルのアイコンバーから「**バリエーション**」を選択します。
 1. 「**バリエーションを作成**」を選択します。
@@ -474,7 +468,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 >[!CAUTION]
 >
->同期を使用できるのは、変更内容を&#x200B;***プライマリ**&#x200B;からバリエーションに*&#x200B;コピーする場合のみです。
+>同期を使用できるのは、変更内容を&#x200B;***プライマリ**からバリエーションに*&#x200B;コピーする場合のみです。
 >
 >バリエーションの現在の要素のみが同期されます。
 >
