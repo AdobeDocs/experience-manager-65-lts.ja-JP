@@ -7,10 +7,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: 93aa6218c36b52bfcd7a204e6f0b65871a4b365b
+source-git-commit: 5c7ead37f55175bb565f8661c0c156f76f135131
 workflow-type: tm+mt
 source-wordcount: '1563'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,7 @@ Oracle Java 17 または Java 21 を実行している場合は、AEMの起動�
 * [Formsのみ ] AEM Formsが Java 17/Java21 で動作することを確認するためのサンプルです。次に、追加の JVM パラメーターを含めます。
 
 ```shell
---add-opens=java.base/java.util=ALL-UNNAMED -add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
+--add-opens=java.base/java.util=ALL-UNNAMED --add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
 ```
 
 ## 実行モード {#run-modes}
@@ -260,7 +260,7 @@ Log files
 
 ## Amazon EC2 環境への AEM のインストール {#installing-aem-in-the-amazon-ec-environment}
 
-Amazon Elastic Compute Cloud（EC2）インスタンスに AEM をインストールする場合は、EC2 インスタンスに作成者と発行の両方をインストールすると、[AEM マネージャーのインスタンスのインストール](#installinginstancesofaemmanager)の手順に従って、作成者インスタンスが正しくインストールされます。ただし、発行インスタンスは作成者インスタンスになります。
+Amazon Elastic Compute Cloud（EC2）インスタンスに AEM をインストールする場合は、EC2 インスタンスに作成者と発行の両方をインストールすると、[AEM マネージャーのインスタンスのインストール](#installinginstancesofaemmanager)の手順に従って、オーサーインスタンスが正しくインストールされます。ただし、パブリッシュインスタンスはオーサーインスタンスになります。
 
 EC2 環境にパブリッシュインスタンスをインストールする前に、次の手順を実行してください。
 
@@ -323,7 +323,7 @@ AEM WCM の様々な設定を行うことができますが、インストール
 
 >[!NOTE]
 >
-> AEM 6.5 LTS の新規インストールの場合、インデックス定義は個別にインストールする必要があります。 詳しくは、[&#x200B; この &#x200B;](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions) を参照してください。
+> AEM 6.5 LTS の新規インストールの場合、インデックス定義を個別にインストールする必要があります。 詳しくは、[こちら](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions)を参照してください。
 
 ## CRXDE Lite および web コンソールへのアクセス {#accessing-crxde-lite-and-the-web-console}
 
