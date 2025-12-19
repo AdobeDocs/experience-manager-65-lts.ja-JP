@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 0d68ed7cb5fe2bf942ffc62f99da9b005ce00410
+source-git-commit: 6ca845ce5f4b97bfc5a360b3426f7284fb9cd401
 workflow-type: tm+mt
-source-wordcount: '7405'
+source-wordcount: '7476'
 ht-degree: 98%
 
 ---
@@ -35,7 +35,11 @@ ht-degree: 98%
 
 [!DNL Experience Manager] 6.5 LTS、SP1 には、新機能、お客様からリクエストされた主な機能強化、バグ修正が含まれています。また、2025年3月の 6.5 LTS の公開当初以降にリリースされたパフォーマンス、安定性、セキュリティの改善も含まれています。6.5 LTS で[このサービスパックをインストール](#install-update)します。
 
-<!-- ## Key features and enhancements -->
+## 主な機能および機能強化
+
+### Forms
+
+JEE 上のAEM 6.5 Forms LTS が利用可能になりました。 サポートされる環境について詳しくは、サポートされるプラットフォームの組み合わせのドキュメントを参照してください。 インストーラーのリンクは、AEM Formsのリリースページで利用できます。
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
@@ -213,10 +217,7 @@ XMP メタデータの形式が不適切であったため、`ValidationDataServ
 
 #### [!DNL Dynamic Media] - Hybrid Mode {#assets-dm-hybrid-65-lts-sp1}
 
-
-
 ### [!DNL Forms]{#forms-65-lts-sp1}
-
 
 #### Forms Designer 
 
@@ -231,8 +232,6 @@ XMP メタデータの形式が不適切であったため、`ValidationDataServ
 #### [!DNL Adaptive Forms] {#adaptive-forms-65-lts-sp1}
 
 #### [!DNL Forms Designer] {#forms-designer-65-lts-sp1} -->
-
-
 
 ### 基盤 {#foundation-65-lts-sp1}
 
@@ -407,7 +406,7 @@ AEM がアップグレード中に `/apps/system/config` の下にある既存�
 * AEM Forms で PDF ファイルのタイムライン機能を使用できませんでした。この問題は、ドキュメントの変更や改訂を効果的に追跡する機能に影響を与えました。AEM Forms 領域の「フォームとドキュメント」セクションで PDF をアップロードすると、タイムラインビューが機能しなくなります。（FORMS-19408）
 * OData を操作すると、null ポインター例外が発生します。これにより、データ取得プロセスが中断されます。（FORMS-20348）
 * オープンソースの Java ライブラリである Guava の削除後に、google.common.collect ライブラリが削除されました。このアップデートにより、アダプティブフォームを使用する大規模法人の顧客の互換性とパフォーマンスが向上します。（FORMS-17031）
-* サーバーサイド検証（SSV）が有効になっている場合、フォームの送信が失敗する場合があります。 この問題が発生した場合は、[Adobe サポート &#x200B;](https://business.adobe.com/in/support/main.html) にお問い合わせください。 （FORMS-21966）
+* サーバーサイド検証（SSV）が有効になっている場合、フォームの送信が失敗する場合があります。 この問題が発生した場合は、[Adobe サポート ](https://business.adobe.com/in/support/main.html) にお問い合わせください。 （FORMS-21966）
 
 ### Forms の Captcha
 
@@ -605,6 +604,9 @@ AEM 6.5 LTS SP1 で、ツール/セキュリティの権限ページにアクセ
 **解決策：**
 この問題を解決するためのホットフィックス [cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip) が利用可能です。
 
+### Forms JEE
+
+* Linux 環境のユーザーには、Windows スタイルの行末が原因で、インストーラーまたは Configuration Manager （LCM）スクリプトが失敗する場合があります。 実行エラーを防ぐには、インストーラーまたは LCM を実行する前に、dos2unix を使用してすべての.sh ファイルを変換します。
 
 ## 含まれている OSGi バンドルとコンテンツパッケージ{#osgi-bundles-and-content-packages-included}
 

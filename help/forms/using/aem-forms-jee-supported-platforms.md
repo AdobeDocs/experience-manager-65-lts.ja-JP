@@ -8,27 +8,16 @@ docset: aem65
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-hide: true
-hidefromtoc: true
-source-git-commit: 6ba07ca04dde793e5750b65bbe5fc9c51418ac90
+source-git-commit: 6ca845ce5f4b97bfc5a360b3426f7284fb9cd401
 workflow-type: tm+mt
-source-wordcount: '4117'
-ht-degree: 98%
+source-wordcount: '3094'
+ht-degree: 97%
 
 ---
 
 # JEE 上の AEM Forms でサポートされているプラットフォーム {#supported-platforms-for-aem-forms-on-jee}
 
-## サポートされているプラットフォーム {#supported-platforms}
-
-<div class="preview">
-
-アドビでは、JEE 版 AEM 6.5 Forms サービスパック 18（6.5.18.0）を含んだ[完全なインストーラー](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)のほか、パッチインストーラーをリリースしました。完全なインストーラーは新しいプラットフォームをサポートするのに対して、パッチインストーラーはバグ修正のみを含んでいます。
-新規インストールを実行する場合や、JEE 環境での AEM 6.5 Forms の最新ソフトウェアを使用することを計画している場合は、AEM 6.5 Forms インストーラー（2019年4月8日（PT）にリリース）または AEM 6.5.12 Forms インストーラー（2022年3月3日（PT）にリリース）ではなく、[JEE 上の AEM 6.5.18.0 Forms の完全なインストーラー](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)（2023年8月31日（PT）にリリース）を使用することをお勧めします。
-
-</div>
-
-### サポートレベル {#support-levels}
+## サポートレベル {#support-levels}
 
 JEE サーバー上の AEM Forms は、サポートされているオペレーティングシステム、アプリケーションサーバー、データベース、データベースドライバー、JDK、LDAP サーバー、およびメールサーバーを自由に組み合わせて設定できます。
 
@@ -43,7 +32,7 @@ JEE サーバー上の AEM Forms は、サポートされているオペレー�
 
 #### 完全なインストーラー
 
-- **完全なインストーラーのアップグレードサポート**：完全なインストーラーは、6 回の AEM サービスパックリリースごとにリリースされます。例えば、6.5.12.0 および 6.5.18.0 SP リリースでは完全なインストーラーがリリースされました。AEM Forms では、最新の 2 つの完全なインストーラーからのみ直接アップグレードできます。例えば、AEM Forms では、最新の 2 つの完全なインストーラー（6.5.12.0 と 6.5.6.0）からのみバージョン 6.5.18.0 への直接アップグレードを簡単に行うことができます。以前のアップグレードからアップグレードする必要がある場合は、マルチホップアップグレードを使用して、最初にサポートされている完全なインストーラーリリースに移行した後、最新のリリースに移行できます。
+- **完全なインストーラーのアップグレードサポート**：完全なインストーラーは、6 回目のAEM サービスパックごとにリリースされます。 完全なインストーラーベースのアップグレードは、AEM 6.5.23.0 以降のみサポートされます。
 
 - **非推奨と削除**：プラットフォームのサポートは、完全なインストーラーリリースごとに更新されます。完全なインストーラーリリース中にプラットフォーム一覧で非推奨としてマークされたソフトウェアは、後続の完全なインストーラーリリースでサポートされるプラットフォーム一覧から削除され、ソフトウェアのサポートが終了することが示されます。
 
@@ -90,13 +79,7 @@ JEE サーバー上の AEM Forms は、サポートされているオペレー�
 >[!NOTE]
 >
 >AEM Forms をご利用のお客様がオーナーシップのコストを削減し、開発アーキテクチャを簡略化し、開発スタックを近代化できるようにするために、Adobe Experience Manager のエンタープライズプラットフォームはアプリケーションサーバーベースのデプロイメントから、スタンドアロンの OSGi ベースのデプロイメントに移行します。対応するインフラストラクチャコンポーネントは削減されますが、アドビは引き続き AEM Forms JEE スタックをサポートします。
->
->6.5 のリリースでは、アドビのお客様の中で最も使用率の低い、以下のインフラストラクチャコンポーネントはサポートされなくなりました。
->
->- IBM® DB2® データベース
->- IBM® AIX® および Sun Solaris™ オペレーティングシステム
->
->新規インストールに関しては、可能な場合は AEM Forms を最新の OSGi スタックでデプロイし、モバイル向けのレスポンシブなアダプティブフォーム、マルチチャンネルのインタラクティブ通信、そしてフォームデータモデルを使用したバックエンドのデータ統合などの最新技術を活用することが推奨されます。
+>新規インストールに関しては、可能な場合は AEM Forms を最新の OSGi スタックでデプロイし、モバイル向けのレスポンシブなアダプティブフォーム、マルチチャンネルのインタラクティブなコミュニケーション、そしてフォームデータモデルを使用したバックエンドのデータ統合などの最新技術を活用することが推奨されます。
 >
 >既存のお客様は、AEM Forms を引き続き JEE スタック上でデプロイしていただく必要があります。そのような場合は、AEM Forms JEE を本文書に記載されている対応インフラストラクチャでデプロイしていただく必要があります。前回の AEM Forms リリースをサポート対象ではないプラットフォームでご使用で、AEM 6.5 Forms にアップグレードされる場合は、アドビサポートにご連絡ください。サポート対象のプラットフォームへのアップグレードをお手伝いします。
 
@@ -111,53 +94,23 @@ Adobe Experience Manager Forms を使用するには、Java™ 仮想マシン�
    <th><p><strong>サポートレベル</strong></p> </th>
    <th><p><strong>サポートされているパッチ定義</strong></p> </th>
   </tr>
+   <tr> 
+   <td><p>Oracle Java™ SE 21（64 ビット）<sup> [8] </sup> </p>  </td>
+   <td><p>A：サポート対象</p> </td>
+   <td><p>マイナーリリースとアップデート </p> </td>
+  </tr>
   <tr> 
    <td><p>Oracle Java™ SE 17（64 ビット）<sup> [8] </sup> </p>  </td>
    <td><p>A：サポート対象</p> </td>
    <td><p>マイナーリリースとアップデート </p> </td>
-  </tr>
-  <tr> 
-   <td><p>Oracle Java™ SE 11（64 ビット）<sup> [8] </sup> </p>  </td>
-   <td><p>A：サポート対象</p> </td>
-   <td><p>マイナーリリースとアップデート </p> </td>
-  </tr>
-  <tr>
-   <td>Azul Zulu OpenJDK 11（64 ビット）</td>
-   <td>Z：サポート対象外</td>
-   <td><p> </p> </td>
-  </tr>
-  <tr>
-   <td>Azul Zulu OpenJDK 8（64 ビット）</td>
-   <td>Z：サポート対象外</td>
-   <td><p> </p> </td>
-  </tr>
-  <tr>
-   <td>Oracle Java™ SE 8（64 ビット）</td>
-   <td>A：サポート対象</td>
-   <td>マイナーリリースとアップデート</td>
-  </tr>
-  <tr>
-   <td>IBM® J17 Virtual Machine （Websphere Liberty のみ対応） <br /> </td>
-   <td>A：サポート対象</td>
-   <td>マイナーリリースとアップデート</td>
-  </tr>
-  <tr>
-   <td>IBM® J9 Virtual Machine（ビルド 2.9、JRE 1.8.0）IBM® JDK SR6-FP26<br /> </td>
-   <td>A：サポート対象</td>
-   <td>マイナーリリースとアップデート</td>
-  </tr>
-  <tr>
-   <td>IBM® JAVA1.8.0_291（ビルド 8.0.6.30）<br /> </td>
-   <td>A：サポート対象</td>
-   <td>マイナーリリースとアップデート</td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->- Java™ ベンダーが発表するセキュリティ情報を常に確認し、実稼働環境の安全性とセキュリティを確保すること、および最新の Java™ アップデートをインストールすることをお勧めします。
->- JEE 上の AEM Forms では、実稼動環境に対して 64 ビットの JVM のみがサポートされています。
+>- Java™ ベンダーが発表するセキュリティ情報を常に確認し、本番環境の安全性とセキュリティを確保すること、および最新の Java™ アップデートをインストールすることをお勧めします。
+>- JEE 上の AEM Forms では、本番環境に対して 64 ビットの JVM のみがサポートされています。
 
 ### データベースと CRX の永続性 {#databases-and-crx-persistence}
 
@@ -174,68 +127,45 @@ Adobe Experience Manager Forms を使用するには、Java™ 仮想マシン�
    <td><p>サポート対象</p> </td>
   </tr>
   <tr>
-   <td><p> MongoDB Enterprise 7.0 </p> </td>
+   <td><p> MongoDB Enterprise 9.0 </p> </td>
    <td><p>リポジトリ Microkernel</p> </td>
    <td><p>サポート対象</p> </td>
   </tr>
   <tr>
-   <td><p> MongoDB Enterprise 6.0</p> </td>
+   <td><p> MongoDB Enterprise 8.0</p> </td>
    <td><p>リポジトリ Microkernel</p> </td>
    <td><p>サポート対象</p> </td>
   </tr>
     <tr>
-   <td><p> MongoDB Enterprise 5.0 </p> </td>
+   <td><p> MongoDB Enterprise 7.0 </p> </td>
    <td><p>リポジトリ Microkernel</p> </td>
    <td><p>サポート対象</p> </td>
   </tr>
    <tr>
    <td>Oracle Database 19c（Standard、Real Application Clusters（RAC）および Enterprise エディション） </td>
-   <td>Microkernal リポジトリ </td>
+   <td>-</td>
    <td>サポート対象</td>
   </tr>
   <tr>
-   <td><p>リポジトリ Microkernel</p> </td>
-   <td><p>サポート対象</p> </td>
-  </tr>
-  <tr>
    <td><p>Microsoft® SQL Server 2022 </p> </td>
-   <td><p>リポジトリ Microkernel</p> </td>
+   <td><p>-</p> </td>
    <td><p>サポート対象</p> </td>
-  </tr>
-  <tr>
-   <td><p>Microsoft® SQL Server 2019 </p> </td>
-   <td><p>リポジトリ Microkernel</p> </td>
-   <td><p>サポート対象</p> </td>
-  </tr>
-  <tr>
-   <td>IBM® DB2® 11.1（非推奨）</td>
-   <td>リポジトリ Microkernel</td>
-   <td>R：限定サポート</td>
   </tr>
   <tr>
    <td>MySQL 8.4</td>
    <td>-</td>
    <td>R：限定サポート</td>
   </tr>
-  <tr>
-  <tr>
-   <td>MySQL 8.0.27</td>
-   <td>-</td>
-   <td>R：限定サポート</td>
-  </tr>
  </tbody>
 </table>
 
-- IBM® DB2® は、新規インストールではサポートされていません。AEM 6.5 Forms にアップグレードする既存のお客様の場合のみサポートされます。
 - MongoDB はサードパーティのソフトウェアで、AEM ライセンスパッケージには含まれていません。詳しくは、[MongoDB ライセンスポリシー](https://www.mongodb.org/about/licensing/)を参照してください。
 - AEM のデプロイメントを最大限に活用するには、プロフェッショナルサポートを受けられるように MongoDB Enterprise バージョンのライセンスを取得することをお勧めします。
 - アドビカスタマーケアは、MongoDB を AEM で利用することに関連する問題の絞り込みを支援いたします。詳しくは、[MongoDB for Adobe Experience Manager のページ](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager)を参照してください。
 - 「ファイルシステム」には、POSIX に準拠したブロックストレージが含まれます。これには、ネットワークストレージテクノロジーが含まれます。ファイルシステムのパフォーマンスは異なり、全体的なパフォーマンスに影響を与える場合があることに注意してください。ネットワーク上またはリモートのファイルシステムを使用してテスト AEM を読み込むことをお勧めします。
 - MongoDB Storage Engine WiredTiger のみがサポートされています。
 - MongoDB Sharding は AEM ではサポートしていません。
-- JEE 上のAEM Formsは、RDBMK 永続性タイプの MySQL をサポートしていません。
 - Document Security モジュールは、コンテンツリポジトリを使用しません。つまり、Document Security のみを使用していて、HTML Workspace、HTML5 フォーム、アダプティブフォームを使用する予定がない場合は、コンテンツリポジトリをインストールしないでください。
-- JEE 上の AEM Forms は、AEM リポジトリ（CRX リポジトリ）を永続化するための MySQL の使用をサポートしていません。
 
 ### データベースドライバー {#database-drivers}
 
@@ -252,18 +182,8 @@ Adobe Experience Manager Forms を使用するには、Java™ 仮想マシン�
    <td><p>JEE のインストールで AEM Forms に付属</p> </td>
   </tr>
   <tr>
-   <td>MySQL</td>
-   <td><p>MySQL Connector/J 5.7</p> <p>mysql-connector-java-5.1.44-bin.jar（バージョン 5.1.44）</p> </td>
-   <td><p>JEE 上の AEM Forms のインストールに付属</p> </td>
-  </tr>
-  <tr>
    <td>Microsoft® SQL Server<br /> </td>
    <td><p>Microsoft® SQL Server JDBC ドライバー 12.10.0<br /> </p> <p>sqljdbc12.10.0.jar</p> </td>
-   <td><p>Microsoft® の web サイトからダウンロードします。</p> </td>
-  </tr>
-  <tr>
-   <td>Microsoft® SQL Server<br /> </td>
-   <td><p>Microsoft® SQL Server JDBC ドライバー 8.2.2<br /> </p> <p>sqljdbc8.jar</p> </td>
    <td><p>Microsoft® の web サイトからダウンロードします。</p> </td>
   </tr>
   <tr>
@@ -284,45 +204,16 @@ Adobe Experience Manager Forms を使用するには、Java™ 仮想マシン�
    <td><p><strong>サポートされているパッチ定義</strong></p> </td>
   </tr>
   <tr>
-   <td>Oracle WebLogic Server 14.1.2 <sup>[9]</sup></td>
-   <td>A：サポート対象</td>
-   <td>サービスパックと重要なアップデート</td>
-  </tr>
-  <tr>
-   <td>Oracle WebLogic Server 12.2.1（12c R2）（非推奨）<sup>[9]</sup></td>
-   <td>A：サポート対象</td>
-   <td>サービスパックと重要なアップデート</td>
-  </tr>
-  <tr>
-   <td>Oracle WebLogic Server 14c <sup>[9]</sup></td>
-   <td>A：サポート対象</td>
-   <td>サービスパックと重要なアップデート</td>
-  </tr>
-  <tr>
-   <td>IBM® WebSphere® Application Server 9.0.0.10 <sup>[1] [4]</sup><br /> </td>
-   <td>A：サポート対象</td>
-   <td>サービスパックと重要なアップデート</td>
-  </tr>
-  <tr>
-   <td><p>JBoss® Enterprise Application Platform （EAP） 7.4.22 <sup>[2] [3] [7]</sup> </p> </td>
-   <td><p>A：サポート対象</p> </td>
-   <td><p>対応の EAP バージョンのパッチと累積パッチ</p> </td>
-  </tr>
-  <tr>
-   <td><p>JBoss® Enterprise Application Platform (EAP) 7.4 <sup>[2] [3] [7]</sup> </p> </td>
+   <td><p>JBoss® Enterprise Application Platform （EAP） 8.0.6 <sup>[2] [3] [7]</sup> </p> </td>
    <td><p>A：サポート対象</p> </td>
    <td><p>対応の EAP バージョンのパッチと累積パッチ</p> </td>
   </tr>
  </tbody>
 </table>
 
->[!NOTE]
->
->IBM® WebSphere® のクラスターは、Network Deployment エディションでのみサポートされます。
-
 ### サーバーオペレーティングシステム {#server-operating-systems}
 
-#### 実稼動環境 {#production-environments}
+#### 本番環境 {#production-environments}
 
 <table>
  <tbody>
@@ -330,11 +221,6 @@ Adobe Experience Manager Forms を使用するには、Java™ 仮想マシン�
    <th><p><strong> プラットフォーム</strong></p> </th>
    <th><p><strong>サポートレベル</strong></p> </th>
    <th><p><strong>サポートされているパッチ定義</strong></p> </th>
-  </tr>
-   <tr>
-   <td>Microsoft® Windows Server 2019（64 ビット版）（非推奨）</td>
-   <td>A：サポート対象</td>
-   <td>サービスパックと重要なアップデート</td>
   </tr>
      <tr>
    <td>Microsoft® Windows Server 2022（64 ビット版）</td>
@@ -357,19 +243,9 @@ Adobe Experience Manager Forms を使用するには、Java™ 仮想マシン�
    <td><p>マイナーリリース、累積アップデート、需要なアップデート</p> </td>
   </tr>
   <tr>
-   <td><p>SUSE® Linux® Enterprise Server 12（64 ビット版）</p> </td>
+   <td><p>SUSE® Linux® Enterprise Server 15-SP6 （64 ビット版）</p> </td>
    <td><p>A：サポート対象</p> </td>
    <td><p>サービスパック、累積パッチ、重要なセキュリティアップデート</p> </td>
-  </tr>
-  <tr>
-   <td>OracleLinux® 7 Update 3（64 ビット）</td>
-   <td>A：サポート対象</td>
-   <td>サービスパック、累積パッチ、重要なセキュリティアップデート</td>
-  </tr>
-  <tr>
-   <td>CentOS 7（64 ビット版）<sup>[6]</sup></td>
-   <td>A：サポート対象</td>
-   <td>サービスパック、累積パッチ、重要なセキュリティアップデート</td>
   </tr>
  </tbody>
 </table>
@@ -399,16 +275,8 @@ AEM Forms on JEE は、物理マシンまたは仮想環境で実行できます
 
 AEM Forms on JEE サーバーの設定でプラットフォームを選択するときは、次の例外事項を考慮してください。
 
-1. AEM Forms on JEE では、MySQL を搭載した IBM® WebSphere® をサポートしていません。
-1. AEM Forms on JEE では、SUSE® Linux® Enterprise Server 12 上での JBoss をサポートしていません。SUSE® Linux® Enterprise Server 12 上では、IBM® WebSphere® のみがサポートされています。
-1. AEM Forms on JEE では、Oracle Java™ SE 以外の JBoss® を使用する JDK をサポートしていません。
-1. AEM Forms on JEE では、IBM® JDK 以外の IBM® WebSphere® を使用する JDK をサポートしていません。
-1. CRX リポジトリは、TarMK、MongoDB、およびリレーショナルデータベース（RDBMK）の永続性をサポートします。アプリケーションサーバーと CRX リポジトリ間に 2 つの異なるデータベースシステムを持つことはできません。ただし、AEM Forms on JEE 環境では、CRX リポジトリで MongoMK を使用でき、アプリケーションサーバーでサポートしているリレーショナルデータベースを使用できます。
-1. AEM Forms on JEE では CentOS 上の WebSphere® Application Server をサポートしていません。
+1. CRX リポジトリは、TarMK および MongoDB タイプの永続性をサポートします。
 1. AEM Forms on JEE では、JBoss® ロールベースのアクセス制御（RBAC）をサポートしていません。
-1. AEM Forms on JEE では、アプリケーションサーバー JBoss EAP 7.4 用の Oracle Java™ SE 11（64 ビット版）SDK のみをサポートしています。
-1. 1.8.0_281 より後の JDK バージョンは、WebLogic サーバーではサポートされていません。（FORMS-8498）
-1. JDK 11.0.20 では、AEM Forms on JEE インストーラーのインストールをサポートしていません。AEM Forms on JEE インストーラーのインストールは、JDK 11.0.19 以前のバージョンのみがサポートしています。
 
 <!-- 
 1. [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312) 
@@ -432,10 +300,6 @@ AEM Forms on JEE サーバーの設定でプラットフォームを選択する
   <tr>
    <th><p><strong>製品（基本バージョン）</strong></p> </th>
    <th><p><strong>サポートしているパッチ定義</strong></p> </th>
-  </tr>
-  <tr>
-   <td>Microsoft® Active Directory 2016（非推奨）</td>
-   <td>メンテナンスリリースと修正パック</td>
   </tr>
   <tr>
    <td>Microsoft® Active Directory 2022</td>
@@ -585,7 +449,7 @@ AEM Forms の以下のサブシステムは、[リハビリテーション法 50
    <td>Intel Xeon® E5-2670v2、1 vCPU、2.5 GHz プロセッサー <br />AWS m3.medium（3 つの ECU）<br />RAM：6 GB（64 ビット JVM が付属している 64 ビット OS）<br />空きディスク容量：6 GB の一時的空き容量のほかに、22 GB の容量<br />（JEE 上の AEM Forms 用）<br /> </td>
   </tr>
   <tr>
-   <td>小規模な実稼動環境向けのハードウェア要件</td>
+   <td>小規模な本番環境向けのハードウェア要件</td>
    <td>
     <ul>
      <li><strong>Intel® 搭載環境</strong>：Intel Xeon® E5-2680、2.4 GHz 以上。デュアルコアプロセッサーを使用するとパフォーマンスがさらに向上します。</li>
@@ -635,23 +499,19 @@ AEM Forms の以下のサブシステムは、[リハビリテーション法 50
    <td>サービスパックと重要なアップデート</td>
   </tr>
   <tr>
-   <td>Microsoft® Windows® 2019 Server（非推奨）</td>
-   <td>サービスパックと重要なアップデート</td>
-  </tr>
-  <tr>
    <td>Microsoft® Windows® 2022 Server</td>
    <td>サービスパックと重要なアップデート</td>
   </tr>
  </tbody>
 </table>
 
-- インストールのためのディスク空き容量： 1.7 GB（Workbench のみ）、2.7 GB（Workbench、 Designer 、およびサンプルアセンブリのフルインストールを単一ドライブで行う場合）、400 MB （一時的インストールディレクトリ）、200 MB （ユーザー一時ディレクトリ）、および200 MB（Windows 一時ディレクトリ）。これらの場所がすべて 1 つのドライブ上にある場合は、インストール時に 1.5 GB の空き容量が必要です。一時ディレクトリにコピーされるファイルは、インストールが完了すると削除されます。
+- インストールのためのディスク空き容量：1.7 GB（ワークベンチのみ）、2.7 GB（ワークベンチ、Designer、およびサンプルアセンブリのフルインストールを単一ドライブで行う場合）、400 MB（一時的インストールディレクトリ）、200 Mb（ユーザー一時ディレクトリ）、および 200 MB（Windows 一時ディレクトリ）。これらの場所がすべて 1 つのドライブ上にある場合は、インストール時に 1.5 GB の空き容量が必要です。一時ディレクトリにコピーされるファイルは、インストールが完了すると削除されます。
 
-- Workbench を実行するためのメモリ：2 GB の RAM
+- ワークベンチを実行するためのメモリ：2 GB の RAM
 - ハードウェア要件： Intel® Pentium® 4 または AMD® の同等の 1 GHz プロセッサー
 - 1024 X 768 ピクセル以上のモニター解像度、16 ビットカラー以上
 - JEE サーバー上の AEM Forms に対する TCP/IPv4 または TCP/IPv6 ネットワーク接続
-- Workbench を Windows にインストールするには、管理者権限が必要です。管理者以外のアカウントを使用してインストールする場合は、適切なアカウントの資格情報が求められます。
+- ワークベンチを Windows にインストールするには、管理者権限が必要です。管理者以外のアカウントを使用してインストールする場合は、適切なアカウントの資格情報が求められます。
 
 ### Designer {#designer}
 
@@ -797,7 +657,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/jp/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -806,7 +666,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 -->
 
 
-## 変更履歴 {#revision-history}
+<!--## Revision History {#revision-history}-->
 
 <!--
 
@@ -880,7 +740,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/jp/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -888,78 +748,78 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 
 -->
+<!--
+### Release 6.5.19.1 (Dec 15, 2023)
 
-### リリース 6.5.19.1（2023年12月15日（PT））
-
-| 追加したサポート | 削除したサポート | 非推奨のサポート |
+| Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
-| MongoDB Enterprise 6.0 | MongoDB Enterprise 4.4 |  |
+| MongoDB Enterprise 6.0 |MongoDB Enterprise 4.4   |  |
 | MongoDB Enterprise 5.0 |  |  |
 |  | |  |
 
-### リリース 6.5.18.0（2023年8月31日（PT））
+### Release 6.5.18.0 (Aug 31, 2023)
 
-| 追加したサポート | 削除したサポート | 非推奨のサポート |
+| Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
-| MongoDB Enterprise 4.4 | Windows Server 2016（64 ビット版） | Microsoft® Windows Server 2019（64 ビット版） |
-| Oracle WebLogic Server 14c | MongoDB Enterprise 4.0 | Microsoft® Active Directory 2016 |
-| My SQL JDBC Connector 8 | Oracle Database 12c リリース 2（12.2.0.1.0） |  |
+| MongoDB Enterprise 4.4 | Windows Server 2016 (64-bit) | Microsoft&reg; Windows Server 2019 (64-bit) |
+| Oracle WebLogic Server 14c | MongoDB Enterprise 4.0 | Microsoft&reg; Active Directory 2016 |
+| My SQL JDBC connector 8 | Oracle Database 12c Release 2 (12.2.0.1.0) |  |
 | Active Directory 2022 | MySQL 5.7.35 |  |
-| Microsoft® Windows Server 2022（64 ビット版） | Microsoft® SQL Server 2016 |  |
-|  | JBoss® EAP 7.1.4 |  |
-|  | My SQL JDBC Connector 5.1.44 |  |
-|  | Microsoft® SQL Server JDBC ドライバー 6.2.1.0 |  |
-|  | Microsoft® SQL Server JDBC ドライバー 6.2.2.0 |  |
-|  | Microsoft® JDBC Driver 8.x for SQL Server |  |
+| Microsoft&reg; Windows Server 2022 (64-bit) | Microsoft&reg; SQL Server 2016 |  |
+|  | JBoss&reg; EAP 7.1.4 |  |
+|  | My SQL JDBC connector 5.1.44 |  |
+|  | Microsoft&reg; SQL Server JDBC driver 6.2.1.0 |  |
+|  | Microsoft&reg; SQL Server JDBC driver 6.2.2.0 |  |
+|  | Microsoft&reg; JDBC Driver 8.x for SQL Server |  |
 |  |  |  |
-|  | **削除したサポート（PDF Generator および一般）：** |  |
-|  | Microsoft® Sharepoint 2016 |  |
-|  | Microsoft® Office 2016 |  |
-|  | Microsoft® Office Visio 2016 |  |
-|  | Microsoft® Publisher 2016 |  |
-|  | Microsoft® Project 2016 |  |
+|  | **Removed Support (PDF Generator and In-General):** |  |
+|  | Microsoft&reg; Sharepoint 2016 |  |
+|  | Microsoft&reg; Office 2016 |  |
+|  | Microsoft&reg; Office Visio 2016 |  |
+|  | Microsoft&reg; Publisher 2016 |  |
+|  | Microsoft&reg; Project 2016 |  |
 |  | OpenOffice 4.1.2 |  |
-|  | Acrobat 2017（クラシックトラック）バージョン 17.011.30078 以降 |  |
+|  | Acrobat 2017 (Classic track) Version 17.011.30078 or later |  |
 
 
-### リリース 6.5.13.0（2022年6月2日（PT））
+### Release 6.5.13.0 (June 2, 2022)
 
-| 追加したサポート | 削除したサポート | 非推奨のサポート |
+| Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
-|  |  | Microsoft® SharePoint 2016 |
+|  |  | Microsoft&reg; SharePoint 2016 |
 
 
-### リリース 6.5.12.0（2022年3月3日（PT））
+### Release 6.5.12.0 (March 3, 2022)
 
-| 追加したサポート | 削除したサポート | 非推奨のサポート |
+| Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
-|  | IBM® J9 Virtual Machine（ビルド 2.8、JRE 1.8.0） | MongoDB Enterprise 4.0 |
-|  | Oracle Database 12c リリース 1 | MongoDB Enterprise 4.2 |
-|  | Oracle Database 18c | IBM® DB2® 11.1 |
-|  | Oracle Unified Directory（OUD）11g リリース 2 | Oracle Database 12c リリース 2 |
-|  | IBM® Lotus Domino 9.0 | MySQL 5.7.35 |
-|  | IBM® FileNet 5.2 | Microsoft® SQL Server JDBC ドライバー 6.2.1.0 |
-|  | Adobe Flash Player | JBoss® Enterprise Application Platform (EAP) 7.1.4 |
-|  | | IBM® Content Manager サーバー 8.5 Fix pack 2 |
-|  | | IBM® Content Manager クライアント 8.5 |
-|  | | Microsoft® SQL Server 2016 |
-|  | | Microsoft® Windows Server 2016 |
+|  | IBM&reg; J9 Virtual Machine (build 2.8, JRE 1.8.0) | MongoDB Enterprise 4.0 |
+|  | Oracle Database 12c Release 1 | MongoDB Enterprise 4.2 |
+|  | Oracle Database 18c | IBM&reg; DB2&reg; 11.1 |
+|  | Oracle Unified Directory (OUD) 11g Release 2 | Oracle Database 12c Release 2 |
+|  | IBM&reg; Lotus Domino 9.0 | MySQL 5.7.35 |
+|  | IBM&reg; FileNet 5.2 | Microsoft&reg; SQL Server JDBC driver 6.2.1.0 |
+|  | Adobe Flash Player | JBoss&reg; Enterprise Application Platform (EAP) 7.1.4 |
+|  | | IBM&reg; Content Manager Server 8.5 Fix pack 2 |
+|  | | IBM&reg; Content Manager Client 8.5 |
+|  | | Microsoft&reg; SQL Server 2016 |
+|  | | Microsoft&reg; Windows Server 2016 |
 
-### リリース 6.5.10.0 （2022 年 9 月 1 日（PT））
+### Release 6.5.10.0 (September 01, 2022)
 
-| 追加したサポート | 削除したサポート | 非推奨のサポート |
+| Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
-| アプリケーションサーバー JBoss® EAP 7.4 用の Oracle Java™ SE 11（64 ビット版）SDK | | [Adobe Acrobat 2017 - Adobe Acrobat 2017 のコアサポートは 2022年6月6日（PT）に終了します。](https://helpx.adobe.com/jp/support/programs/eol-matrix.html) |
-|  | Red Hat® Enterprise Linux® 7（Kernel 3.x）（64 ビット版） | |
-|  | | Microsoft® Windows Server 2016（64 ビット版） |
-|  | | Microsoft® Office 2016 |
+| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/support/programs/eol-matrix.html)|
+|  | Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)| |
+|  | | Microsoft&reg; Windows Server 2016 (64-bit)|
+|  | | Microsoft&reg; Office 2016 |
 |  | | OpenOffice 4.1.2 |
 
 
 >[!NOTE]
 >
-> 非推奨のプラットフォームは、次回の完全なインストーラーリリースまで、またはサードパーティベンダーによるプラットフォームのサポートが終了するまでのどちらか早い方までサポートされます。
-
+> A deprecated platform continue to receive support until the next full installer release or until third-party vendor support for the platform reaches its end-of-life, whichever is earlier.
+-->
 <!-- 
 - Oct 10, 2021
 
