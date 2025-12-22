@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 0a050ebdc32e127a093270be91f1eed59f8f4654
+source-git-commit: 6fdc7449673bede6a35151d4e7b97c6aa1605d4e
 workflow-type: tm+mt
-source-wordcount: '7478'
+source-wordcount: '7477'
 ht-degree: 98%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 98%
 
 ### Forms
 
-JEE 上のAEM 6.5 Forms LTS が利用可能になりました。 サポートされる環境について詳しくは、[&#x200B; サポートされるプラットフォーム &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms) の組み合わせのドキュメントを参照してください。 インストーラーリンクは、[AEM Forms リリース &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) ページで利用できます。
+JEE 上のAEM 6.5 Forms LTS が利用可能になりました。 サポートされる環境について詳しくは、[ サポートされるプラットフォーム ](/help/forms/using/aem-forms-jee-supported-platforms.md) の組み合わせのドキュメントを参照してください。 インストーラーリンクは、[AEM Forms リリース ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) ページで利用できます。
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
@@ -406,7 +406,7 @@ AEM がアップグレード中に `/apps/system/config` の下にある既存�
 * AEM Forms で PDF ファイルのタイムライン機能を使用できませんでした。この問題は、ドキュメントの変更や改訂を効果的に追跡する機能に影響を与えました。AEM Forms 領域の「フォームとドキュメント」セクションで PDF をアップロードすると、タイムラインビューが機能しなくなります。（FORMS-19408）
 * OData を操作すると、null ポインター例外が発生します。これにより、データ取得プロセスが中断されます。（FORMS-20348）
 * オープンソースの Java ライブラリである Guava の削除後に、google.common.collect ライブラリが削除されました。このアップデートにより、アダプティブフォームを使用する大規模法人の顧客の互換性とパフォーマンスが向上します。（FORMS-17031）
-* サーバーサイド検証（SSV）が有効になっている場合、フォームの送信が失敗する場合があります。 この問題が発生した場合は、[Adobe サポート &#x200B;](https://business.adobe.com/in/support/main.html) にお問い合わせください。 （FORMS-21966）
+* サーバーサイド検証（SSV）が有効になっている場合、フォームの送信が失敗する場合があります。 この問題が発生した場合は、[Adobe サポート ](https://business.adobe.com/in/support/main.html) にお問い合わせください。 （FORMS-21966）
 
 ### Forms の Captcha
 
