@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6fdc7449673bede6a35151d4e7b97c6aa1605d4e
+source-git-commit: c9a7faf5810e78f8e80b38a87446794488efdd35
 workflow-type: tm+mt
-source-wordcount: '7477'
-ht-degree: 98%
+source-wordcount: '7355'
+ht-degree: 99%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 98%
 
 ### Forms
 
-JEE 上のAEM 6.5 Forms LTS が利用可能になりました。 サポートされる環境について詳しくは、[&#x200B; サポートされるプラットフォーム &#x200B;](/help/forms/using/aem-forms-jee-supported-platforms.md) の組み合わせのドキュメントを参照してください。 インストーラーリンクは、[AEM Forms リリース &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) ページで利用できます。
+JEE 上のAEM 6.5 Forms LTS が利用可能になりました。 サポートされる環境について詳しくは、[ サポートされるプラットフォーム ](/help/forms/using/aem-forms-jee-supported-platforms.md) の組み合わせのドキュメントを参照してください。 インストーラーリンクは、[AEM Forms リリース ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) ページで利用できます。
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
@@ -319,6 +319,10 @@ AEM がアップグレード中に `/apps/system/config` の下にある既存�
 * `org.apache.sling.scripting.jsp 2.6.0` での予期しない JSP コンパイルエラーを修正しました。（NPR-42640）
 
 <!--
+* Backported the fix for Sling Scripting issue that caused `DataTimeParseException` and `String.length()` null pointer exceptions during package installation. Updated Sling Scripting to version 2.8.3-1.0.10.6 to reduce installation errors and improve stability. (NPR-42640) -->
+
+<!--
+
 #### Translation{#foundation-translation-65-lts-sp1} -->
 
 #### ユーザーインターフェイス{#foundation-ui-65-lts-sp1}
@@ -406,7 +410,6 @@ AEM がアップグレード中に `/apps/system/config` の下にある既存�
 * AEM Forms で PDF ファイルのタイムライン機能を使用できませんでした。この問題は、ドキュメントの変更や改訂を効果的に追跡する機能に影響を与えました。AEM Forms 領域の「フォームとドキュメント」セクションで PDF をアップロードすると、タイムラインビューが機能しなくなります。（FORMS-19408）
 * OData を操作すると、null ポインター例外が発生します。これにより、データ取得プロセスが中断されます。（FORMS-20348）
 * オープンソースの Java ライブラリである Guava の削除後に、google.common.collect ライブラリが削除されました。このアップデートにより、アダプティブフォームを使用する大規模法人の顧客の互換性とパフォーマンスが向上します。（FORMS-17031）
-* サーバーサイド検証（SSV）が有効になっている場合、フォームの送信が失敗する場合があります。 この問題が発生した場合は、[Adobe サポート &#x200B;](https://business.adobe.com/in/support/main.html) にお問い合わせください。 （FORMS-21966）
 
 ### Forms の Captcha
 
@@ -567,6 +570,19 @@ AEM 6.5 LTS の SP1 は、パッケージマネージャーでインストール
 
 <!-- DO THESE KNOWN ISSUES CARRY OVER EACH RELEASE? THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST. -->
 
+<!-- REMOVED THIS SECTION AS PER CQDOC-23046
+### Issue with JSP scripting bundle in AEM 6.5.21-6.5.23 and AEM 6.5 LTS GA
+
+AEM 6.5.21, 6.5.22, 6.5.23, and AEM 6.5 LTS GA ship with the `org.apache.sling.scripting.jsp:2.6.0` bundle, which contains a known issue. The issue typically occurs under high load when the AEM instance handles many concurrent requests.
+
+When this issue occurs, one of the following exceptions may appear in the error logs alongside references to `org.apache.sling.scripting.jsp:2.6.0`:
+
+* `java.io.IOException: classFile.delete() failed`
+* `java.io.IOException: tmpFile.renameTo(classFile) failed`
+* `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
+* `java.io.FileNotFoundException`
+
+A hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) is available to resolve this problem. -->
 
 ### SSL のみの機能を使用した Dispatcher 接続の失敗（AEM 6.5 LTS SP1 以降で修正）{#ssl-only-feature}
 
@@ -592,21 +608,6 @@ AEM デプロイメントで SSL のみの機能を有効にすると、Dispatch
 
 **解決策：**
 この問題が発生した場合は、アドビカスタマーサポートにお問い合わせください。この問題を解決するためのホットフィックス [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) が使用可能です。必要なホットフィックスを適用するまで、SSL のみの機能を有効にしないでください。
-
-### AEM 6.5 LTS SP1 のセキュリティ UI の空の権限ページ
-
->[!NOTE]
->
-> この問題は、AEM 6.5 LTS SP1 リリースでのみ発生します。
-
-AEM 6.5 LTS SP1 で、ツール/セキュリティの権限ページにアクセスすると、ユーザーまたはグループの権限が表示されるのではなく、空白のページが表示されます。
-
-**解決策：**
-この問題を解決するためのホットフィックス [cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip) が利用可能です。
-
-### Forms JEE
-
-* Linux 環境のユーザーには、Windows スタイルの行末が原因で、インストーラーまたは Configuration Manager （LCM）スクリプトが失敗する場合があります。 実行エラーを防ぐには、インストーラーまたは LCM を実行する前に、dos2unix を使用してすべての.sh ファイルを変換します。
 
 ## 含まれている OSGi バンドルとコンテンツパッケージ{#osgi-bundles-and-content-packages-included}
 
