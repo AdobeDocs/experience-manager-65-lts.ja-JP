@@ -39,7 +39,7 @@ ht-degree: 99%
 
 ### Forms
 
-JEE 上のAEM 6.5 Forms LTS が利用可能になりました。 サポートされる環境について詳しくは、[ サポートされるプラットフォーム ](/help/forms/using/aem-forms-jee-supported-platforms.md) の組み合わせのドキュメントを参照してください。 インストーラーリンクは、[AEM Forms リリース ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) ページで利用できます。
+JEE 上のAEM 6.5 Forms LTS が利用可能になりました。 サポートされる環境について詳しくは、[&#x200B; サポートされるプラットフォーム &#x200B;](/help/forms/using/aem-forms-jee-supported-platforms.md) の組み合わせのドキュメントを参照してください。 インストーラーリンクは、[AEM Forms リリース &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) ページで利用できます。
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
