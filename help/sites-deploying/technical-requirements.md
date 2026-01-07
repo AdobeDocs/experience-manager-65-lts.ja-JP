@@ -95,7 +95,7 @@ Adobe Experience Manager は、次のバージョンの Java™ 仮想マシン�
 | IBM® Semeru J9 VM - ビルド 17.0.13.0 | A：サポート対象 `[2]` |
 | IBM® Semeru J9 VM - ビルド 21.0.6.0 | A：サポート対象 `[2]` |
 
-1. Oracle は Oracle Java™ SE 製品の「長期サポート」（LTS）モデルに移行しました。Java™ 9、Java™ 10、Java™ 12、Java™ 13、Java™ 14、Java™ 15m Java™ 16 は、Oracleによる非 LTS でのリリースです（[Oracle Java™ SE サポートロードマップ ](https://www.oracle.com/jp/technetwork/java/eol-135779.html) を参照）。 本番環境に AEM をデプロイするために、アドビでは LTS リリース版の Java™ のみサポートします。パブリックアップデート終了後の LTS リリースのすべてのメンテナンスアップデートを含む Oracle Java™ SE JDK のサポートと配布が、アドビによって直接サポートされます。対象となるのは、Oracle Java™ SE テクノロジーを利用するすべての AEM ユーザーです。詳しくは、[Adobe Experience Manager 用 Java™ サポートポリシー](assets/Java_Policy_for_Adobe_Experience_Manager.pdf)を参照してください。
+1. Oracle は Oracle Java™ SE 製品の「長期サポート」（LTS）モデルに移行しました。Java™ 9、Java™ 10、Java™ 12、Java™ 13、Java™ 14、Java™ 15m Java™ 16 は、Oracleによる非 LTS でのリリースです（[Oracle Java™ SE サポートロードマップ &#x200B;](https://www.oracle.com/jp/technetwork/java/eol-135779.html) を参照）。 本番環境に AEM をデプロイするために、アドビでは LTS リリース版の Java™ のみサポートします。パブリックアップデート終了後の LTS リリースのすべてのメンテナンスアップデートを含む Oracle Java™ SE JDK のサポートと配布が、アドビによって直接サポートされます。対象となるのは、Oracle Java™ SE テクノロジーを利用するすべての AEM ユーザーです。詳しくは、[Adobe Experience Manager 用 Java™ サポートポリシー](assets/Java_Policy_for_Adobe_Experience_Manager.pdf)を参照してください。
    **このリリースでは、Oracle Java™ 17 およびOracle Java™ 21.** がサポートされています
 
 1. IBM® JRE は、WebSphere® Application Server と共に使用する場合にのみサポートされます。
