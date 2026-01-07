@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 075f671d878f9bd9be33a059223800fa9acddf40
+source-git-commit: d55edd443081ba21be7f119a77fcd01f68f47d4e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3232'
+ht-degree: 94%
 
 ---
 
@@ -86,7 +86,7 @@ Adobe Experience Manager は、次のバージョンの Java™ 仮想マシン�
 
 >[!CAUTION]
 >
->Java™ ベンダーからのセキュリティ情報をトラックします。これにより、実稼動環境の安全性とセキュリティが確保されます。また、常に最新の Java™ アップデートをインストールしてください。
+>Java™ ベンダーからのセキュリティ情報をトラックします。これにより、本番環境の安全性とセキュリティが確保されます。また、常に最新の Java™ アップデートをインストールしてください。
 
 | **プラットフォーム** | **サポートレベル** | **リンク** |
 |---|---|---|
@@ -95,7 +95,7 @@ Adobe Experience Manager は、次のバージョンの Java™ 仮想マシン�
 | IBM® Semeru J9 VM - ビルド 17.0.13.0 | A：サポート対象 `[2]` |
 | IBM® Semeru J9 VM - ビルド 21.0.6.0 | A：サポート対象 `[2]` |
 
-1. Oracle は Oracle Java™ SE 製品の「長期サポート」（LTS）モデルに移行しました。Java™ 9、Java™ 10、Java™ 12、Java™ 13、Java™ 14、Java™ 15m Java™ 16 は、Oracleによる非 LTS でのリリースです（[Oracle Java™ SE サポートロードマップ &#x200B;](https://www.oracle.com/jp/technetwork/java/eol-135779.html) を参照）。 実稼動環境に AEM をデプロイするために、アドビでは LTS リリース版の Java™ のみサポートします。パブリックアップデート終了後の LTS リリースのすべてのメンテナンスアップデートを含む Oracle Java™ SE JDK のサポートと配布が、アドビによって直接サポートされます。対象となるのは、Oracle Java™ SE テクノロジーを利用するすべての AEM ユーザーです。詳しくは、[Adobe Experience Manager 用 Java™ サポートポリシー](assets/Java_Policy_for_Adobe_Experience_Manager.pdf)を参照してください。
+1. Oracle は Oracle Java™ SE 製品の「長期サポート」（LTS）モデルに移行しました。Java™ 9、Java™ 10、Java™ 12、Java™ 13、Java™ 14、Java™ 15m Java™ 16 は、Oracleによる非 LTS でのリリースです（[Oracle Java™ SE サポートロードマップ ](https://www.oracle.com/jp/technetwork/java/eol-135779.html) を参照）。 本番環境に AEM をデプロイするために、アドビでは LTS リリース版の Java™ のみサポートします。パブリックアップデート終了後の LTS リリースのすべてのメンテナンスアップデートを含む Oracle Java™ SE JDK のサポートと配布が、アドビによって直接サポートされます。対象となるのは、Oracle Java™ SE テクノロジーを利用するすべての AEM ユーザーです。詳しくは、[Adobe Experience Manager 用 Java™ サポートポリシー](assets/Java_Policy_for_Adobe_Experience_Manager.pdf)を参照してください。
    **このリリースでは、Oracle Java™ 17 およびOracle Java™ 21.** がサポートされています
 
 1. IBM® JRE は、WebSphere® Application Server と共に使用する場合にのみサポートされます。
@@ -138,7 +138,7 @@ Adobe Experience Manager のリポジトリをデプロイするには、様々�
 
 Adobe Experience Manager は、スタンドアロンサーバー（Quickstart JAR ファイル）として、またはサードパーティのアプリケーションサーバー内の web アプリケーション（WAR ファイル）として実行できます。
 
-サーブレット API の必要な最小バージョンは Servlet 3.1 です。さらに、AEMは jar 用に Jakarta サーブレット 5 をサポートしており、war は Jakarta サーブレット API 5/6 を実装するアプリケーションサーバーにデプロイできます。
+サーブレット API の必要な最小バージョンは Servlet 3.1 です。さらに、AEM Formsは jar 用に Jakarta サーブレット 5 をサポートしており、war は Jakarta サーブレット API 5/6 を実装するアプリケーションサーバーにデプロイできます。
 
 | Platform | サポートレベル |
 |---|---|
@@ -150,7 +150,7 @@ Adobe Experience Manager は、スタンドアロンサーバー（Quickstart JA
 
 ### サーバーオペレーティングシステム {#server-operating-systems}
 
-Adobe Experience Manager は、実稼動環境では次のサーバープラットフォームで動作します。
+Adobe Experience Manager は、本番環境では次のサーバープラットフォームで動作します。
 
 | **プラットフォーム** | **サポートレベル** |
 |---|---|
@@ -181,7 +181,7 @@ Adobe Experience Manager は、クラウドコンピューティング環境上�
 
 クラウドネイティブな環境の場合は、AEM 製品ラインの最新オファー、Adobe Experience Manager as a Cloud Service をご確認ください。詳しくは、[Adobe Experience Manager as a Cloud Service ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ja)を参照してください。
 
-アドビは、AEM を Azure または AWS にデプロイするための Adobe Managed Services も提供しています。Adobe Managed Services を使用することで、これらのクラウドコンピューティング環境での AEM のデプロイと運用の経験とスキルを持つエキスパートのサポートを活用できます。[Adobe Managed Services に関するドキュメント](https://business.adobe.com/jp/products/experience-manager/managed-services.html?aemClk=t)を参照してください。
+アドビは、AEM を Azure または AWS にデプロイするための Adobe Managed Services も提供しています。Adobe Managed Services を使用することで、これらのクラウドコンピューティング環境での AEM のデプロイと運用の経験とスキルを持つエキスパートのサポートを活用できます。[Adobe Managed Services に関するドキュメント](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t)を参照してください。
 
 AEM を Azure や AWS にデプロイするその他のあらゆる場合、またはその他のクラウドコンピューティング環境にデプロイする場合、アドビによるサポートは、仮想コンピューティング環境に対して提供されます。この仮想環境は、このページに記載されている技術仕様に従って動作する必要があります。これらのクラウド環境のいずれかで動作している AEM に関して報告された問題は、クラウドコンピューティング環境に固有のクラウドサービスとは無関係に再現できる必要があります。つまり、Azure Blob Storage や AWS S3 などのクラウドサービスが、このページに記載されている技術要件の一部としてサポートされている場合を除きます。
 
@@ -413,9 +413,8 @@ Windows x86 の場合：
 >* PDF Generator では、32 ビット版の Microsoft® Office Professional Plus および変換に必要なその他のソフトウェアのみサポートしています。
 >* ボリュームライセンスインストールで指定期間内に KMS ホストが見つからないなど、何らかの理由で Microsoft® Office インストールが非アクティブ化またはライセンス解除された場合、インストールのライセンスを再度取得して再アクティブ化するまでは、変換が失敗する場合があります。
 >* PDF Generator は Microsoft® Office 365 をサポートしていません。
->* PDF Generator の OpenOffice 向け変換機能は、Windows と Linux® でのみサポートされています。
+>* PDF Generatorの OpenOffice 向け変換機能は、Windows と Linux® の両方でサポートされています。
 >* OCR PDF、Optimize PDF、Export PDF の各機能は、Windows でのみサポートされます。
->* Acrobat のバージョンは、PDF Generator 機能を有効にするために AEM Forms にバンドルされています。バンドルされたバージョンには、AEM Forms PDF Generator でのみ使用するために、AEM Forms のライセンス期間中に AEM Forms でプログラムでのみアクセスする必要があります。詳しくは、デプロイメント（[オンプレミス](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-experience-manager-on-premise.html)または [Managed Services](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-experience-manager-managed-services.html)）に応じた AEM Forms 製品説明を参照してください。
 >* PDF Generator サービスでは Microsoft® Windows 11 をサポートしていません。
 
 
