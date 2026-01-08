@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: d55edd443081ba21be7f119a77fcd01f68f47d4e
+source-git-commit: 4097adf1dd533bbf21c8635a1948f9ef4c294896
 workflow-type: tm+mt
-source-wordcount: '3232'
-ht-degree: 94%
+source-wordcount: '2877'
+ht-degree: 92%
 
 ---
 
@@ -95,7 +95,7 @@ Adobe Experience Manager は、次のバージョンの Java™ 仮想マシン�
 | IBM® Semeru J9 VM - ビルド 17.0.13.0 | A：サポート対象 `[2]` |
 | IBM® Semeru J9 VM - ビルド 21.0.6.0 | A：サポート対象 `[2]` |
 
-1. Oracle は Oracle Java™ SE 製品の「長期サポート」（LTS）モデルに移行しました。Java™ 9、Java™ 10、Java™ 12、Java™ 13、Java™ 14、Java™ 15m Java™ 16 は、Oracleによる非 LTS でのリリースです（[Oracle Java™ SE サポートロードマップ &#x200B;](https://www.oracle.com/jp/technetwork/java/eol-135779.html) を参照）。 本番環境に AEM をデプロイするために、アドビでは LTS リリース版の Java™ のみサポートします。パブリックアップデート終了後の LTS リリースのすべてのメンテナンスアップデートを含む Oracle Java™ SE JDK のサポートと配布が、アドビによって直接サポートされます。対象となるのは、Oracle Java™ SE テクノロジーを利用するすべての AEM ユーザーです。詳しくは、[Adobe Experience Manager 用 Java™ サポートポリシー](assets/Java_Policy_for_Adobe_Experience_Manager.pdf)を参照してください。
+1. Oracle は Oracle Java™ SE 製品の「長期サポート」（LTS）モデルに移行しました。Java™ 9、Java™ 10、Java™ 12、Java™ 13、Java™ 14、Java™ 15m Java™ 16 は、Oracleによる非 LTS でのリリースです（[Oracle Java™ SE サポートロードマップ ](https://www.oracle.com/jp/technetwork/java/eol-135779.html) を参照）。 本番環境に AEM をデプロイするために、アドビでは LTS リリース版の Java™ のみサポートします。パブリックアップデート終了後の LTS リリースのすべてのメンテナンスアップデートを含む Oracle Java™ SE JDK のサポートと配布が、アドビによって直接サポートされます。対象となるのは、Oracle Java™ SE テクノロジーを利用するすべての AEM ユーザーです。詳しくは、[Adobe Experience Manager 用 Java™ サポートポリシー](assets/Java_Policy_for_Adobe_Experience_Manager.pdf)を参照してください。
    **このリリースでは、Oracle Java™ 17 およびOracle Java™ 21.** がサポートされています
 
 1. IBM® JRE は、WebSphere® Application Server と共に使用する場合にのみサポートされます。
@@ -181,7 +181,7 @@ Adobe Experience Manager は、クラウドコンピューティング環境上�
 
 クラウドネイティブな環境の場合は、AEM 製品ラインの最新オファー、Adobe Experience Manager as a Cloud Service をご確認ください。詳しくは、[Adobe Experience Manager as a Cloud Service ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ja)を参照してください。
 
-アドビは、AEM を Azure または AWS にデプロイするための Adobe Managed Services も提供しています。Adobe Managed Services を使用することで、これらのクラウドコンピューティング環境での AEM のデプロイと運用の経験とスキルを持つエキスパートのサポートを活用できます。[Adobe Managed Services に関するドキュメント](https://business.adobe.com/jp/products/experience-manager/managed-services.html?aemClk=t)を参照してください。
+アドビは、AEM を Azure または AWS にデプロイするための Adobe Managed Services も提供しています。Adobe Managed Services を使用することで、これらのクラウドコンピューティング環境での AEM のデプロイと運用の経験とスキルを持つエキスパートのサポートを活用できます。[Adobe Managed Services に関するドキュメント](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t)を参照してください。
 
 AEM を Azure や AWS にデプロイするその他のあらゆる場合、またはその他のクラウドコンピューティング環境にデプロイする場合、アドビによるサポートは、仮想コンピューティング環境に対して提供されます。この仮想環境は、このページに記載されている技術仕様に従って動作する必要があります。これらのクラウド環境のいずれかで動作している AEM に関して報告された問題は、クラウドコンピューティング環境に固有のクラウドサービスとは無関係に再現できる必要があります。つまり、Azure Blob Storage や AWS S3 などのクラウドサービスが、このページに記載されている技術要件の一部としてサポートされている場合を除きます。
 
@@ -415,57 +415,7 @@ Windows x86 の場合：
 >* PDF Generator は Microsoft® Office 365 をサポートしていません。
 >* PDF Generatorの OpenOffice 向け変換機能は、Windows と Linux® の両方でサポートされています。
 >* OCR PDF、Optimize PDF、Export PDF の各機能は、Windows でのみサポートされます。
->* PDF Generator サービスでは Microsoft® Windows 11 をサポートしていません。
-
-
-<table>
- <tbody>
-  <tr>
-   <th><p><strong>製品</strong></p> </th>
-   <th><p><strong>PDF への変換でサポートされる形式</strong></p> </th>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/jp/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 Classic トラック</a> 最新バージョン</td>
-   <td>XPS、画像形式（BMP、GIF、JPEG、JPG、TIF、TIFF、PNG、JPF、JPX、JP2、J2K、J2C、JPC）、HTML、HTM、DWG、DXF、DWF</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Office 2019</td>
-   <td>DOC、DOCX、XLS、XLSX、PPT、PPTX、RTF、TXT</td>
-  </tr>
-  <tr>
-   <td>WordPerfect 2020<br /> </td>
-   <td>WP、WPD</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Publisher 2019<br /> </td>
-   <td>PUB</td>
-  </tr>
-  <tr>
-   <td>OpenOffice 4.1.10</td>
-   <td>ODT、ODP、ODS、ODG、ODF、SXW、SXI、SXC、SXD、XLS、XLSX、DOC、DOCX、PPT、PPTX、画像形式（BMP、GIF、JPEG、JPG、TIF、TIFF、PNG、JPF、JPX 、JP2、J2K、J2C、JPC）、HTML、HTM、RTF、TXT</td>
-  </tr>
- </tbody>
-</table>
-
->[!NOTE]
->
->PDF Generator は、サポート対象のオペレーティングシステムとアプリケーションの英語版、フランス語版、ドイツ語版、日本語版のみをサポートしています。
->
->さらに、次の点に注意してください。
->
->* PDF Generator で変換を実行するには、32 ビット版の [Acrobat 2020 Classic トラックバージョン 20.004.30006](https://helpx.adobe.com/jp/acrobat/release-note/release-notes-acrobat-reader.html) または Acrobat 2017 バージョン 17.011.30078 が必要です。
->* PDF Generator では、32 ビットリテール版の Microsoft® Office Professional Plus および変換に必要なその他のソフトウェアのみサポートしています。
->* Microsoft® Office Professional Plus のインストールでは、リテールまたは MAK／KMS／AD ベースのボリュームライセンスを使用する場合があります。
->* ボリュームライセンスインストールで指定期間内に KMS ホストが見つからないなど、何らかの理由で Microsoft® Office インストールが非アクティブ化またはライセンス解除された場合、インストールのライセンスを再度取得して再アクティブ化するまでは、変換が失敗する場合があります。
->* PDF Generator は、Linux® オペレーティングシステム上の 32 ビット版および 64 ビット版の OpenOffice をサポートしています。
->* PDF Generator は Microsoft® Office 365 をサポートしていません。
->* PDF Generator の OpenOffice 向け変換機能は、Windows と Linux® でのみサポートされています。
->* OCR PDF、Optimize PDF、Export PDF の各機能は、Windows でのみサポートされます。
->* Acrobat のバージョンは、PDF Generator 機能を有効にするために AEM Forms にバンドルされています。バンドルされたバージョンには、AEM Forms PDF Generator で使用するために、AEM Forms のライセンス期間中に AEM Forms でのみプログラムでアクセスする必要があります。詳しくは、デプロイメント（[オンプレミス](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-experience-manager-on-premise.html)または [Managed Services](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-experience-manager-managed-services.html)）に応じた AEM Forms 製品説明を参照してください。
->* PDF Generator サービスでは Microsoft® Windows 10 をサポートしていません。
->* PDF Generator は、Microsoft® Visio 2019 を使用してファイルを変換できません。Microsoft® Visio 2016 を引き続き使用して、`.VSD` ファイルや `.VSDX` ファイルを変換できます。
->* PDF Generator は、Microsoft® Project 2019 を使用してファイルを変換できません。Microsoft® Project 2016 を引き続き使用して `.VSD` ファイルや `.VSDX` ファイルを変換できます。
->
+>* PDF Generator サービスは、Microsoft® Windows 11 をサポートしていません。
 
 ### AEM Forms Designer の要件 {#requirements-for-aem-forms-designer}
 
@@ -499,3 +449,5 @@ XMP の書き戻しは、次のプラットフォームおよびファイル形�
 ### AEM Assets がメタデータの多いアセットを Linux® で処理するための要件 {#assetsonlinux}
 
 XMPFilesProcessor プロセスを実行するには、ライブラリ GLIBC_2.14 が必要です。GLIBC_2.14 を含む Linux® カーネルを使用します。例えば、Linux® カーネルバージョン 3.1.x です。PSD ファイルなど、大量のメタデータを含むアセットの処理パフォーマンスが向上します。以前のバージョンの GLIBC を使用するとエラーが発生し、`com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP` で始まるメッセージがログに記録されます。
+
+サポートされている形式やプラットフォームのバージョンに関するご質問については、[AEM Forms サポートにお問い合わせください ](https://business.adobe.com/in/support/main.html)
