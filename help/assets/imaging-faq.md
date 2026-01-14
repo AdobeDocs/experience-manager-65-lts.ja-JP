@@ -9,10 +9,10 @@ feature: Asset Management,Renditions
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9f95a54d-6c5e-44c1-965e-631ec7487308
-source-git-commit: dc405bec510b0f72e916df343790572b3cd51526
+source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
 workflow-type: tm+mt
-source-wordcount: '3307'
-ht-degree: 97%
+source-wordcount: '3306'
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 97%
 
 ## スマートイメージングについて {#what-is-smart-imaging}
 
-スマートイメージングテクノロジーは、Adobe Sensei AI の機能を適用して、既存の「画像プリセット」と連携して動作します。クライアントのブラウザー機能に基づいて画像形式、サイズ、および画質を自動的に最適化し、画像配信のパフォーマンスを向上させます。
+スマートイメージングテクノロジーは、Adobe AI 機能を適用し、既存の「画像プリセット」と連携して動作します。 クライアントのブラウザー機能に基づいて画像形式、サイズ、および画質を自動的に最適化し、画像配信のパフォーマンスを向上させます。
 
 また、AVIF と WebP の両方のサポートに伴うスマートイメージングの改善により、LCP（コンテンツが豊富な最大のペイント）の Google Core Web Vital スコアが向上しました。
 
@@ -131,7 +131,7 @@ DPR とネットワーク帯域幅の値は、バンドルされた CDN のク�
 
 * 最新のスマートイメージングを使用する Web ページの Google SEO ランキングを改善しました。
 * 最適化されたコンテンツをすぐに提供（実行時）
-* Adobe Sensei テクノロジーを使用して、イメージリクエストで指定された品質（`qlt`）に従って変換します。
+* Adobe AI テクノロジーを使用して、イメージリクエストで指定された画質（`qlt`）に従ってコンバージョンを行います。
 * TTL（Time To Live）独立。以前は、スマートイメージングを機能させるには、最小 TTL 値 12 時間が必要でした。
 * 以前は、元の画像と派生画像の両方がキャッシュされていて、キャッシュを無効にする 2 つの手順がありました。最新のスマートイメージングでは、派生画像のみがキャッシュされ、1 ステップでキャッシュを無効化できます。
 * ルールセットでカスタムヘッダーを使用しているユーザーは、以前のバージョンのスマートイメージングとは異なってこれらのヘッダーがブロックされないので、最新のスマートイメージングのメリットが得られます。例えば、「Timing Allow Header」や「X-Robot」などです。
@@ -336,9 +336,9 @@ TTL を調整するには：
 >**X-Adobe-Smart-Imaging = -1 で WebP を配信中**
 >
 >`X-Adobe-Smart-Imaging` の値が -1 で、WebP がまだ配信中の場合、スマートイメージングはアクティブです。ただし、キャッシュが古いので、サイズのメリットは計算されませんでした。画像の URL で `cache=update` を（1 回だけ）使用して、この問題を修正できます。
->&#x200B;>この修飾子の使用例を次に示します。
->&#x200B;>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
->&#x200B;>キャッシュ全体を無効にするには、サポートケースを作成する必要があります。
+>この修飾子の使用例を次に示します。
+>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+>キャッシュ全体を無効にするには、サポートケースを作成する必要があります。
 
 +++
 

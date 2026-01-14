@@ -7,10 +7,10 @@ feature: Asset Management,Search
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: cb7d28ce-c6bd-4760-b5fd-d0ecb3426844
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
 workflow-type: tm+mt
 source-wordcount: '795'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -47,9 +47,9 @@ Microsoft® Office および PDF ドキュメントのすべてのデジタル�
 
 ## タグを使用したアセットの整理 {#use-tags-to-organize-assets}
 
-タグをメタデータとして使用すると、アセットの検索、検索結果を使用したコレクションの作成、一部のアセットの検索ランキングのブースト、アセット検出への Adobe Sensei の AI アルゴリズムの適用を簡単に行うことができます。
+タグをメタデータとして使用すると、アセットの検索、検索結果を使用したコレクションの作成、一部のアセットの検索ランキングの上昇、アセット検出へのAdobe AI の人工知能アルゴリズムの使用を簡単に行えます。
 
-[!DNL Adobe Experience Manager Assets] では、自己学習アルゴリズムを使用して、非常にわかりやすいタグが作成されるので、ユーザーは数回クリックするだけで適切なアセットを見つけることができます。スマートタグでは、アドビの人工知能および機械学習フレームワークである Adobe Sensei を使用します。Adobe Sensei は、標準タグとビジネス固有のタグの両方を認識して画像に適用するようにトレーニングできます。スマートタグでは、コンテンツ、個々の単語またはフレーズを識別して、わかりやすいタグをアセットに自動的に適用することもできます。
+[!DNL Adobe Experience Manager Assets] では、自己学習アルゴリズムを使用して、非常にわかりやすいタグが作成されるので、ユーザーは数回クリックするだけで適切なアセットを見つけることができます。スマートタグでは、Adobe AI、Adobeの人工知能および機械学習フレームワークを使用します。これらは、標準タグとビジネス固有のタグの両方を認識して画像に適用するようにトレーニングできます。 スマートタグでは、コンテンツ、個々の単語またはフレーズを識別して、わかりやすいタグをアセットに自動的に適用することもできます。
 
 詳しくは、次の記事を参照してください。
 

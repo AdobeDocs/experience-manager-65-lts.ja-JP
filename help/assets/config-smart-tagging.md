@@ -5,7 +5,7 @@ role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: be7c294c-149b-4825-8376-573f9e2987e2
-source-git-commit: 1cedead501597fb655c2c7b87336b29cbf048294
+source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
 workflow-type: tm+mt
 source-wordcount: '1896'
 ht-degree: 97%
@@ -14,7 +14,7 @@ ht-degree: 97%
 
 # スマートタグ付けのために [!DNL Assets] を準備 {#configure-asset-tagging-using-the-smart-content-service}
 
-スマートコンテンツサービスを使用してアセットのタグ付けを開始する前に、[!DNL Experience Manager Assets] と Adobe Developer Console を統合して、[!DNL Adobe Sensei] スマートコンテンツサービスを使用します。設定が完了したら、画像とタグをいくつか使用してサービスのトレーニングを行います。
+スマートコンテンツサービスを使用してアセットのタグ付けを開始する前に、[!DNL Experience Manager Assets] と Adobe Developer Console を統合して、[!DNL Adobe AI] スマートコンテンツサービスを使用します。設定が完了したら、画像とタグをいくつか使用してサービスのトレーニングを行います。
 スマートコンテンツサービスを使用する前に、次を確認します。
 
 * [Adobe 開発者コンソールとの統合](#integrate-adobe-io)。
@@ -23,7 +23,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->AEM 6.5 でのスマートタグの設定については、[&#x200B; スマートタグ用にAssetsを準備する &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/administer/config-smart-tagging) を参照してください。
+>AEM 6.5 でのスマートタグの設定については、[ スマートタグ用にAssetsを準備する ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/administer/config-smart-tagging) を参照してください。
 
 **新規ユーザー**
 
