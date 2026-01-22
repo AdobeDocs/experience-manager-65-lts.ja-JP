@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: add91325feaa96338526edcdde977d1f619e09d4
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 93%
@@ -137,7 +137,7 @@ AEM ソフトウェアパッケージには、次の 2 つの形式がありま�
 
    UNIX® のインストール先：**/opt/aem**
 
-   Windows のインストール先： **`C:\Program Files\aem`**
+   Windows のインストール先： **`C:\aem`**
 
    同様に、デスクトップ上のフォルダーにサンプルインスタンスをインストールするのが一般的です。いずれの場合も、通常この場所は次のように参照します。
 
