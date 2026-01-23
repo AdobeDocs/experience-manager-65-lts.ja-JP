@@ -68,7 +68,7 @@ JBoss EAP 8 上のAEM Formsは、安全な資格情報の管理に Elytron を�
 
 ## アップグレード
 
-アップグレード手順について詳しくは、『 [JEE 版AEM Forms 6.5 LTS SP1 のアップグレードガイド』を参照してください ](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+アップグレード手順について詳しくは、『 [JEE 版AEM Forms 6.5 LTS SP1 のアップグレードガイド』を参照してください &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 ## インストール
 
@@ -89,7 +89,7 @@ JBoss EAP 8 上のAEM Formsは、安全な資格情報の管理に Elytron を�
 
 ### `javax` から `jakarta` 名前空間への移行
 
-**AEM Forms 6.5 LTS SP1** 以降は、{Jakarta Servlet API 5/6 **を実装するアプリケーションサーバーのみがサポートされ** す。 **Jakarta EE 9 以降** では、すべての API が `javax.{}` 名前空間から `jakarta.` 名前空間に移行しました。
+**AEM Forms 6.5 LTS SP1** 以降は、&lbrace;Jakarta Servlet API 5/6 **を実装するアプリケーションサーバーのみがサポートされ** す。 **Jakarta EE 9 以降** では、すべての API が `javax.{}` 名前空間から `jakarta.` 名前空間に移行しました。
 
 その結果、**すべてのカスタム DSC は `jakarta` 名前空間を使用する必要があります**。 `javax.{}` API を使用して作成されたカスタムコンポーネントは、サポートされているアプリケーションサーバーと **互換性がありません**。
 
