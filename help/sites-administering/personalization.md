@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
 exl-id: 558cf29b-34f4-4ead-b8d6-67ef8aaa5dc5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '1528'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 100%
 
 ### イントラネットページ {#intranet-pages}
 
-* 内部ネットワークで既に定義されているユーザーの場所、部門、役割に基づいて、コンテンツを提供できます。
+* 内部ネットワークで既に定義されている、ユーザーの場所、部門、役割に基づいてコンテンツを提供できます。
 * 選択肢によっては、ユーザーがより詳細な選択を行うことができます。
 
 ### 特定の、限定されたターゲットユーザーグループ（エクストラネット） {#extranets}

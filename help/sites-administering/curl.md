@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 45d49917-d20f-470c-bf95-6e701de67a11
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '855'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -36,7 +36,7 @@ AEM が構築されている Sling フレームワークの RESTful 特性によ
 
 ## cURL のダウンロード {#downloading-curl}
 
-cURL は、macOS および一部の Linux ディストリビューションに標準で備わっています。実質的にほぼすべてのオペレーティングシステムで使用できます。最新のダウンロードは、[https://curl.haxx.se/download.html](https://curl.haxx.se/download.html) にあります。
+cURL は、macOS および一部の Linux ディストリビューションに標準で備わっています。ただし、ほとんどのオペレーティングシステムで使用できます。 最新のダウンロードは、[https://curl.haxx.se/download.html](https://curl.haxx.se/download.html) にあります。
 
 cURL のソースリポジトリは、GitHub にもあります。
 
@@ -48,7 +48,7 @@ cURL コマンドは、ワークフローのトリガー、OSGi 設定の確認�
 
 次の手順では、例として、Chrome ブラウザー内で新しいページを作成してこの操作を実行する方法について説明します。
 
-1. AEM 内で呼び出すアクションを準備します。この例では、**ページを作成**&#x200B;ウィザードの最後まで進みましたが、まだ「**作成**」はクリックしていません。
+1. AEM 内で呼び出すアクションを準備します。この例では、「**ページを作成** ウィザードの最後まで進みましたが、まだ **作成** をクリックしていません。
 
    ![chlimage_1-66](assets/chlimage_1-66a.png)
 
@@ -61,7 +61,7 @@ cURL コマンドは、ワークフローのトリガー、OSGi 設定の確認�
 
    ![chlimage_1-68](assets/chlimage_1-68a.png)
 
-1. cURL コマンドをテキストエディターにコピーして、コマンドから `-H` で始まるすべてのヘッダー（下図の青い部分）を削除し、`-u <user>:<password>` などの適切な認証パラメーターを追加します。
+1. cURL コマンドをテキストエディターにコピーして、コマンドから `-H` で始まるすべてのヘッダー（下図で青くハイライト表示）を削除し、`-u <user>:<password>` などの適切な認証パラメーターを追加します。
 
    ![chlimage_1-69](assets/chlimage_1-69a.png)
 

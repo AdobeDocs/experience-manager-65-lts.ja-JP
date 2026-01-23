@@ -10,16 +10,16 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: d9ffc796-1c2b-4fa6-b434-fb3ee03d40b5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1449'
-ht-degree: 100%
+source-wordcount: '1450'
+ht-degree: 96%
 
 ---
 
 # コンポーネントデータと Adobe Analytics プロパティとのマッピング{#mapping-component-data-with-adobe-analytics-properties}
 
-Adobe Analytics に送信するデータを収集するフレームワークにコンポーネントを追加します。分析データを収集するために設計されたコンポーネントは、適切な **CQ 変数**&#x200B;にデータを保存します。そのようなコンポーネントをフレームワークに追加する場合、フレームワークは CQ 変数のリストを表示して、適切な **Analytics** 変数にマッピングできるようにします。
+Adobe Analytics に送信するデータを収集するフレームワークにコンポーネントを追加します。分析データを収集するために設計されたコンポーネントは、適切な **CQ 変数**&#x200B;にデータを保存します。そのようなコンポーネントをフレームワークに追加する場合、フレームワークは CQ 変数のリストを表示して、適切な **Analytics 変数** に各コンポーネントをマッピングできるようにします。
 
 ![aa-11](assets/aa-11.png)
 
@@ -90,7 +90,7 @@ AEM は、Adobe Analytics 製品関連プロパティにマッピングされる
 
 1. AEM に提供されたのと同じ資格情報を使用して Adobe Analytics web サイトにログインします。
 1. 選択した RSID が、前の手順で使用したものであることを確認します。
-1. （ページの左側の）**レポート**&#x200B;で、**カスタムコンバージョン**／**カスタムコンバージョン 1～10**&#x200B;を選択して、`eVar7` に対応する変数を選択します。
+1. （ページの左側の） **レポート** で、**カスタムコンバージョン**/**カスタムコンバージョン 1～10** を選択して、`eVar7` に対応する変数を選択します
 
 1. 使用している Adobe Analytics のバージョンに応じて、使用した検索語句（例：aubergine）でレポートが更新されるまで、平均 45 分待つ必要があります。
 
@@ -199,7 +199,7 @@ Analytics 変数を別のトラッキングコンポーネントにある CQ 変
 >すべての表の CQ 変数列は、フィールドをダブルクリックしてテキストを追加することで、インラインで入力することもできます。これらのフィールドは、JavaScript を入力として受け取ります。
 >
 >例えば、`prop3` の隣に 以下を追加できます。
->>     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
+>     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
 >これで、*:*（コロン）を使用し、`prop3` として *Adobe* を接頭辞として使用して、*サイトセクション*&#x200B;と連結されたページの&#x200B;*タイトル*&#x200B;を送信します
 >
 

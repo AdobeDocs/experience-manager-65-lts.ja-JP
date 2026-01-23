@@ -9,10 +9,10 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: ba02f9d4-5286-41d6-995c-307d6e13431b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '951'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -54,7 +54,7 @@ Granite ユーザー管理コンソールとグループ管理コンソールは
 
 1. 次の&#x200B;**ユーザーを追加**&#x200B;アイコンを使用します。
 
-   ![「ユーザーを追加」アイコン](do-not-localize/chlimage_1-1.png)
+   ![ ユーザーを追加アイコン ](do-not-localize/chlimage_1-1.png)
 
 1. **ユーザーを作成**&#x200B;フォームが開きます。
 

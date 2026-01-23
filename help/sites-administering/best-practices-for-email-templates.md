@@ -11,10 +11,10 @@ feature: Integration
 role: Admin
 exl-id: 34678cae-3c7f-4c9f-b7b6-c1dd4e0758ad
 index: false
-source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '1072'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -60,7 +60,7 @@ AEM で利用可能なデモキャンペーンは、これらすべてのベス�
    <td><strong>実装</strong></td>
   </tr>
   <tr>
-   <td><p>ドキュメントタイプを指定して、レンダリングの一貫性を確保します。</p> <p>先頭に DOCTYPE を追加します（HTML または XHTML）。</p> </td>
+   <td><p>一貫したレンダリングを確保するために、ドキュメントタイプを指定します。</p> <p>先頭に DOCTYPE を追加します（HTML または XHTML）。</p> </td>
    <td><p><i>"/etc/designs/default/jcr:content/campaign_newsletterpage"</i> にある <i>cq:doctype</i> プロパティを変更することで、デザインでの設定が可能になります。</p> <p>デフォルトは、"XHTML" です。</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional/EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>「HTML_5」に変更できます。</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td>
   </tr>
   <tr>

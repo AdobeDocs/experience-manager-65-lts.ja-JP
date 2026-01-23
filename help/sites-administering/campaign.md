@@ -1,6 +1,6 @@
 ---
 title: AEM 6.5 と Adobe Campaign の統合
-description: Adobe Campaign との統合に対する AEM 6.5 のサポートについて説明します。
+description: Adobe Campaignとの統合に対するAEM 6.5 のサポートについて説明します。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -9,16 +9,16 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: de6cd8e2-d295-46b2-9068-feb1ff7d15d3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
 # AEM 6.5 と Adobe Campaign の統合{#integrating-with-adobe-campaign}
 
-Adobe Campaign との統合に対する AEM 6.5 のサポートについて説明します。
+Adobe Campaignとの統合に対するAEM 6.5 のサポートについて説明します。
 
 Adobe Campaign は、オンラインおよびオフラインのあらゆるチャネルをまたいでキャンペーンをパーソナライズして実施するための一連のソリューションです。
 

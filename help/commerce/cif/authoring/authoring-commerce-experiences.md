@@ -5,10 +5,10 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: b749ec33-9a78-41d5-889f-73dbdb33ceed
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 97%
+source-wordcount: '712'
+ht-degree: 89%
 
 ---
 
@@ -64,7 +64,7 @@ CIF アドオンは、コマース固有の機能を使用して AEM オーサ�
 
 ![製品データのサイドパネル](/help/commerce/cif/assets/authoring/products-side-panel.png)
 
-アセットと同様に、製品はページ（デフォルトで製品ティーザーコンポーネントを作成）またはコンポーネント（現在サポートされているのは商品ティーザーと商品カルーセル）に DND できます。
+アセットと同様に、製品はページ（デフォルトで製品ティーザーコンポーネントを作成）またはコンポーネント（現在サポートされているのは製品ティーザーと製品カルーセル）にドラッグ&amp;ドロップできます。
 
 ### RTE を使用したテキストフィールドへのリンクの追加 {#rte}
 
