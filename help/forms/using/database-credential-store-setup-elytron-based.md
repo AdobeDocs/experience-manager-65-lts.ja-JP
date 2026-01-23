@@ -1,15 +1,15 @@
 ---
 title: データベース資格情報ストアの設定（Elytron ベース）
-description: JBoss EAP 8 は、ドメインモード設定用の自動スクリプトを使用して、AEM Formsの安全なデータベースパスワード管理のための Elytron 資格情報ストアをサポートしています。
+description: JBoss EAP 8 は、ドメインモード設定用のAEM Formsで、安全なデータベースパスワード管理のための Elytron 資格情報ストアをサポートしています。
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5d020671efaa4527a5f6dbb4b779c7a3351888a4
+source-git-commit: d397e6a51ad2a52da5ccb0a690e1acd3fafcee3c
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '379'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ JBoss EAP 8 では、**Elytron 資格情報ストア** を使用して、AEM For
 
 ### 前提条件
 
-* 資格情報ストア作成スクリプトを実行する前に **&#x200B;**&#x200B;JBoss サーバーを完全に停止する必要があります。
+* 資格情報ストア作成スクリプトを実行する前に **** JBoss サーバーを完全に停止する必要があります。
 * 資格情報ストアの作成は、**オフラインモードのみ** で実行する必要があります。
 
 JBoss が実行中の場合に停止するには：

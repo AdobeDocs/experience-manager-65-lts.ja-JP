@@ -1,15 +1,15 @@
 ---
 title: JBoss EAP 8 を使用したAEM Forms 6.5 LTS でスクリプトが実行できない（Linux）
-description: linux 環境で JBoss EAP 8.0 （AEM Forms 6.5.1 LTS）を設定すると、シェルスクリプトまたはスタートアップファイルの実行中に特定のエラーが発生する場合があります
+description: Linux 環境で JBoss EAP 8.0 を設定すると、シェルスクリプトまたは起動ファイルの実行中に特定のエラーが発生する場合があります
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5d020671efaa4527a5f6dbb4b779c7a3351888a4
+source-git-commit: d397e6a51ad2a52da5ccb0a690e1acd3fafcee3c
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '236'
 ht-degree: 1%
 
 ---
