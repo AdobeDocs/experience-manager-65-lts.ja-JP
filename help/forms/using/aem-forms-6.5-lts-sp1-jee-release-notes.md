@@ -68,7 +68,7 @@ JBoss EAP 8 上のAEM Formsは、安全な資格情報の管理に Elytron を�
 
 ## アップグレード
 
-アップグレード手順について詳しくは、『 [JEE 版AEM Forms 6.5 LTS SP1 のアップグレードガイド』を参照してください &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+アップグレード手順について詳しくは、『 [JEE 版AEM Forms 6.5 LTS SP1 のアップグレードガイド』を参照してください &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 ## インストール
 
