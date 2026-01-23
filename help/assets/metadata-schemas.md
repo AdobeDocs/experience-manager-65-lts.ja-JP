@@ -7,7 +7,7 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: bf5c2dff-db68-4e82-8217-ff35069dcb81
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '3607'
 ht-degree: 98%
@@ -374,7 +374,7 @@ ht-degree: 98%
 
    ![フォルダー内のアセットのアップロード時に、アセットカード表示に必須メタデータが指定されていないというメッセージ](assets/metadata-missing-info-card-view.png)
 
-1. （オプション）`https://[aem_server]:[port]/system/console/components/`にアクセスします。`com.day.cq.dam.core.impl.MissingMetadataNotificationJob` コンポーネントを設定して有効にします。このコンポーネントはデフォルトで無効になっています。アセット上にあるメタデータの妥当性を [!DNL Experience Manager] がチェックする頻度を設定します。この設定により、プロパティ`hasValidMetadata` がアセットの `jcr:content` に追加されます。[!DNL Experience Manager] は、このプロパティを使用して、検索結果内の無効なアセットをフィルタリングします。チェックの後にアセットを追加した場合、次に予定されるチェックが実行されるまでそのアセットは `hasValidMetadata` でフラグは付きません。したがって、次に予定されるチェック後まで、無効なメタデータの検索フィルターにアセットが表示されません。
+1. （オプション）`https://[aem_server]:[port]/system/console/components/`にアクセスします。`com.day.cq.dam.core.impl.MissingMetadataNotificationJob` コンポーネントを設定して有効にします。このコンポーネントはデフォルトで無効になっています。アセット上にあるメタデータの妥当性を [!DNL Experience Manager] がチェックする頻度を設定します。この設定により、プロパティ`hasValidMetadata` がアセットの `jcr:content` に追加されます。[!DNL Experience Manager] は、このプロパティを使用して、検索結果内の無効なアセットをフィルタリングします。チェックの後にアセットを追加した場合、次に予定されるチェックが実行されるまでそのアセットは `hasValidMetadata` でフラグは付きません。したがって、次に予定されるチェックの後まで、無効なメタデータの検索フィルターにアセットが表示されません。
 
    >[!CAUTION]
    >

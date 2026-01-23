@@ -9,10 +9,10 @@ feature: Adaptive Forms,Foundation Components
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 exl-id: 9c516c90-1b1d-406a-b42d-909aae8bb634
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '841'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -50,8 +50,8 @@ AEM as a Cloud Serviceのドキュメントについては、[Cloud ServiceのAE
 
    * ブラウザーのロケールはデフォルトで有効です。ブラウザーロケール設定を変更するには
       * 設定マネージャーを開きます。URL は `http://[server]:[port]/system/console/configMgr` です
-      * 「**[!UICONTROL アダプティブフォームおよびインタラクティブ通信 Web チャネル]**」の設定を検索して開きます。
-      * 「**[!UICONTROL ブラウザーロケールを使用]**」オプションのステータスを変更して設定を「**[!UICONTROL 保存]**」します。
+      * 「**[!UICONTROL アダプティブフォームおよびインタラクティブなコミュニケーション Web チャネル]**」の設定を検索して開きます。
+      * 「**[!UICONTROL ブラウザーロケールを使用]**」オプションのステータスと設定の **[!UICONTROL 保存]** を変更します。
 
 ロケールが識別されると、アダプティブフォームはフォームに固有の辞書を参照します。要求されたロケールに対応するフォーム固有の辞書が見つからない場合、アダプティブフォームが作成された言語の辞書が使用されます。
 

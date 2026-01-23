@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: da8031f2-26ab-41e2-bf54-7032727ca192
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '2643'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -50,7 +50,7 @@ AEM Forms でユーザーからのメールメッセージを受信して処理�
 
    >[!NOTE]
    >
-   >Micfosoft Exchange Server を使用していて、メールアドレスが無効なアドレスの場合、Micfosoft Exchange Server はメールを配信リストに送信できません。この問題を解決するには、Microsoft Exchange Server 上の配信リスト毎に「**外部コミュニケーションを有効化**」オプションを選択します。
+   >Micfosoft Exchange Server を使用していて、メールアドレスが無効なアドレスの場合、Micfosoft Exchange Server はメールを配信リストに送信できません。この問題を解決するには、Microsoft Exchange Server 上の配信リストごとに「**外部コミュニケーションを有効にする**」オプションを個別に選択します。
 
 1. 「保存」をクリックします。
 
@@ -224,9 +224,9 @@ Forms Workflow が、管理者に送信されるメール通知を生成する�
 
 ユーザーまたはグループへのリマインダー、タスクの割り当て、およびデッドラインの場合、「件名」ボックスと「通知テンプレート」ボックスで以下の変数を使用できます。
 
-**description** Workbench 内のプロセスのユーザー手順で定義された説明プロパティの内容。ユーザー手順は、開始ポイント、タスクの割り当て操作、または複数のタスクの割り当て操作です。
+**description** ワークベンチ内のプロセスのユーザー手順で定義された説明プロパティの内容。ユーザー手順は、開始ポイント、タスクの割り当て操作、または複数のタスクの割り当て操作です。
 
-**instructions** Workbench 内のプロセスのユーザー手順で定義された、タスクの手順プロパティの内容。
+**instructions** ワークベンチ内のプロセスのユーザー手順で定義された、タスクの手順プロパティの内容。
 
 **notification-host** AEM Forms アプリケーションサーバーのホスト名。
 

@@ -11,10 +11,10 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 42c85231-9e65-4c3c-8b86-3efdaa577161
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '5333'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 AEM Forms Java API を使用して AEM Forms を呼び出すことができます。AEM Forms Java API を使用している場合、呼び出し API または Java クライアントライブラリを使用できます。Java クライアントライブラリは、Rights Management サービスなどのサービスで使用できます。これらの厳密に型指定された API を使用することによって、AEM Forms を呼び出す Java アプリケーションを開発できます。
 
-呼び出し API は、`com.adobe.idp.dsc` パッケージに含まれるクラスです。これらのクラスを使用して、呼び出しリクエストをサービスに直接送信し、返される呼び出し応答を処理することができます。Workbench を使用して作成された長期間有効なプロセスまたは短時間のみ有効なプロセスを、呼び出し API を使用して呼び出します。
+呼び出し API は、`com.adobe.idp.dsc` パッケージに含まれるクラスです。これらのクラスを使用して、呼び出しリクエストをサービスに直接送信し、返される呼び出し応答を処理することができます。ワークベンチを使用して作成された長期間有効なプロセスまたは短時間のみ有効なプロセスを、呼び出し API を使用して呼び出します。
 
 プログラムでサービスを呼び出すには、呼び出し API ではなくサービスに対応する Java クライアントライブラリを使用することをお勧めします。例えば、Encryption サービスを呼び出すには、Encryption サービスのクライアントライブラリを使用します。Encryption サービスの操作を実行するには、Encryption サービスクライアントオブジェクトに属するメソッドを呼び出します。`EncryptionServiceClient` オブジェクトの `encryptPDFUsingPassword` メソッドを使用して、PDF ドキュメントをパスワードで暗号化することができます。
 
@@ -100,7 +100,7 @@ Java API を使用してプログラムで AEM Forms サービスを呼び出す
   </tr>
   <tr>
    <td><p>adobe-assembler-client.jar</p></td>
-   <td><p>Assembler サービスを呼び出すために必要です。 </p></td>
+   <td><p>アセンブラーサービスを呼び出すために必要です。 </p></td>
    <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
@@ -218,7 +218,7 @@ Java API を使用してプログラムで AEM Forms サービスを呼び出す
 
 ### 接続モードと J2EE アプリケーション JAR ファイル {#connection-mode-and-j2ee-application-jar-files}
 
-次の表に、接続モードと AEM Forms のデプロイ先 J2EE アプリケーションサーバーに依存する JAR ファイルを示します。
+次の表に、接続モードと、AEM Formsがデプロイされている J2EE アプリケーションサーバーに依存する JAR ファイルを示します。
 
 <table>
  <thead>
@@ -444,7 +444,7 @@ AEM Forms サービスを正常に呼び出すには、次の接続プロパテ�
   >
   >注意：文字列を使用して `DSC_SERVER_TYPE` 接続プロパティを設定する代わりに、`ServiceClientFactoryProperties` クラスの静的メンバーを使用できます。使用できる値は `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`、`ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`、`ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE` です。
 
-* **DSC_CREDENTIAL_USERNAME**：AEM Forms ユーザー名を指定します。ユーザーが AEM Forms サービスを正常に呼び出すには、サービスユーザーのロールが必要です。ユーザーは、サービス呼び出し権限を含む別のロールを持つこともできます。権限を持たないユーザーの場合、サービスの呼び出しを試行するときに例外が発生します。サービスセキュリティが無効の場合、この接続プロパティを指定する必要はありません。
+* **DSC_CREDENTIAL_USERNAME**：AEM Forms ユーザー名を指定します。ユーザーがAEM Forms サービスを正常に呼び出すには、サービスユーザーの役割が必要です。 ユーザーは、サービス呼び出し権限を含む別のロールを持つこともできます。権限を持たないユーザーの場合、サービスの呼び出しを試行するときに例外が発生します。サービスセキュリティが無効の場合、この接続プロパティを指定する必要はありません。
 * **DSC_CREDENTIAL_PASSWORD**：対応するパスワード値を指定します。サービスセキュリティが無効の場合、この接続プロパティを指定する必要はありません。
 * **DSC_REQUEST_TIMEOUT**：SOAP 要求のデフォルト要求タイムアウト制限は、1200000 ミリ秒（20 分）です。場合によって、リクエストの操作が完了するのに長い時間を要することがあります。例えば、大量のレコードセットを取得する SOAP リクエストでは、タイムアウト制限を長くする必要が出ることがあります。`ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` を使用して、SOAP 要求の要求呼び出しタイムアウト制限を増やすことができます。
 
@@ -689,7 +689,7 @@ SOAP 接続モードを使用するクライアントアプリケーションは
 
 AEM Forms サービス操作では、通常、PDF ドキュメントを使用または生成します。サービスを呼び出すときに、PDF ドキュメント（または XML データなどの他のドキュメントタイプ）をサービスに渡す必要がある場合があります。同様に、サービスから返される PDF ドキュメントを処理する必要があることもあります。AEM Forms サービスとの間でデータをやりとりできるようにする Java クラスは、`com.adobe.idp.Document` です。
 
-AEM Forms サービスは、PDF ドキュメントを `java.io.InputStream` オブジェクトやバイト配列などの他のデータ型としては受け入れません。`com.adobe.idp.Document` オブジェクトを使用して、XML データなどの他のタイプのデータをサービスに渡すこともできます。
+AEM Forms サービスは、PDF ドキュメントを `java.io.InputStream` オブジェクトやバイト配列などの他のデータタイプとしては受け入れません。`com.adobe.idp.Document` オブジェクトを使用して、XML データなどの他のタイプのデータをサービスに渡すこともできます。
 
 `com.adobe.idp.Document` オブジェクトは Java のシリアライズ可能な型であるため、RMI 呼び出しで渡すことができます。受信側は、同時配置（同じホスト、同じクラスローダー）することも、ローカル（同じホスト、別のクラスローダー）またはリモート（別のホスト）に配置することもできます。ドキュメントコンテンツの引き渡しは、それぞれの場合に最適化されます。例えば、送信者と受信者が同じホスト上にある場合、コンテンツはローカルファイルシステムを介して渡されます（ドキュメントがメモリ内で渡される場合もあります）。
 
@@ -849,7 +849,7 @@ C:/temp/input.pdf ファイルは、（サーバーコンピューターでは�
 
 ### 返されたドキュメントの処理 {#handling-returned-documents}
 
-PDF ドキュメント（または XML データなどの他のデータ型）を出力値として返すサービス操作では、`com.adobe.idp.Document` オブジェクトが返されます。受け取った `com.adobe.idp.Document` オブジェクトは、次の形式に変換できます。
+PDF ドキュメント（または XML データなどの他のデータタイプ）を出力値として返すサービス操作では、`com.adobe.idp.Document` オブジェクトが返されます。受け取った `com.adobe.idp.Document` オブジェクトは、次の形式に変換できます。
 
 * `java.io.File` オブジェクト
 * `java.io.InputStream` オブジェクト
@@ -958,7 +958,7 @@ PDF ドキュメント（または XML データなどの他のデータ型）�
 
 ## Java クライアントライブラリを使用したサービスの呼び出し {#invoking-a-service-using-a-java-client-library}
 
-AEM Forms サービス操作は、サービスの厳密に型指定された API である Java クライアントライブラリを使用して呼び出すことができます。*Java クライアントライブラリ*&#x200B;は、サービスコンテナにデプロイされたサービスへのアクセスを提供する具象クラスのセットです。呼び出し API を使用して `InvocationRequest` オブジェクトを作成する代わりに、呼び出すサービスを表す Java オブジェクトをインスタンス化します。呼び出し API は、Workbench で作成された長期間有効なプロセスなどのプロセスを呼び出すために使用されます。（[人間中心の長期間有効なプロセスの呼び出し](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)を参照。）
+AEM Forms サービス操作は、サービスの厳密に型指定された API である Java クライアントライブラリを使用して呼び出すことができます。*Java クライアントライブラリ*&#x200B;は、サービスコンテナにデプロイされたサービスへのアクセスを提供する具象クラスのセットです。呼び出し API を使用して `InvocationRequest` オブジェクトを作成する代わりに、呼び出すサービスを表す Java オブジェクトをインスタンス化します。呼び出し API は、ワークベンチで作成された長期間有効なプロセスなどのプロセスを呼び出すために使用されます。（[人間中心の長期間有効なプロセスの呼び出し](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)を参照。）
 
 サービス操作を実行するには、Java オブジェクトに属するメソッドを呼び出します。通常、Java クライアントライブラリにはサービス操作に 1 対 1 で対応するメソッドが含まれています。Java クライアントライブラリを使用している場合は、必要な接続プロパティを設定します。（[接続プロパティの設定](invoking-aem-forms-using-java.md#setting-connection-properties)を参照）
 
@@ -1018,7 +1018,7 @@ Java 呼び出し API を使用して、短時間のみ有効なプロセスを�
 
 >[!NOTE]
 >
->このプロセスは、既存の AEM Forms プロセスに基づいていません。このコードの例の流れを追うには、Workbench を使用して `MyApplication/EncryptDocument` という名前のプロセスを作成します。（[Workbench の使用](https://www.adobe.com/go/learn_aemforms_workbench_63_jp)を参照してください）。
+>このプロセスは、既存の AEM Forms プロセスに基づいていません。このコードの例の流れを追うには、ワークベンチを使用して `MyApplication/EncryptDocument` という名前のプロセスを作成します。（[ワークベンチの使用](https://www.adobe.com/go/learn_aemforms_workbench_63_jp)を参照してください）。
 
 このプロセスを呼び出すと、次のアクションが実行されます。
 

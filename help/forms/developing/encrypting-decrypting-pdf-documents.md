@@ -11,7 +11,7 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 9f694358-e502-4fc0-8352-4c5119573756
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '8133'
 ht-degree: 98%
@@ -209,7 +209,7 @@ PDF ドキュメントを暗号化する際に、保護されたドキュメン�
 
    * `PasswordEncryptionOptionSpec` オブジェクトのコンストラクタを使用して、このオブジェクトを作成します。
    * `PasswordEncryptionOption` 列挙値を `PasswordEncryptionOptionSpec` オブジェクトの `encryptOption` データメンバーに割り当てることにより、暗号化する PDF ドキュメントリソースを指定します。メタデータと添付ファイルを含む PDF 全体を暗号化するには、 `PasswordEncryptionOption.ALL` をこのデータメンバーに割り当てます。
-   * `PasswordEncryptionCompatability` 列挙値を `PasswordEncryptionOptionSpec` オブジェクトの `compatability` データメンバーに割り当てることにより、Acrobat の互換性オプションを指定します。例えば、`PasswordEncryptionCompatability.ACRO_7` をこのデータメンバーに割り当てます。
+   * `PasswordEncryptionCompatibility` 列挙値を `PasswordEncryptionOptionSpec` オブジェクトの `compatibility` データメンバーに割り当てることにより、Acrobatの互換性オプションを指定します。 例えば、`PasswordEncryptionCompatibility.ACRO_7` をこのデータメンバーに割り当てます。
    * ユーザーが暗号化された PDF ドキュメントを開くためのパスワード値を指定します。この値を指定するには、開封パスワードを表す文字列値を `PasswordEncryptionOptionSpec` オブジェクトの `documentOpenPassword` データメンバーに割り当てます。
    * ユーザーが PDF ドキュメントの暗号化を削除するためのパスワード値を指定します。この値を指定するには、プライマリパスワードを表す文字列値を `PasswordEncryptionOptionSpec` オブジェクトの `permissionPassword` データメンバーに割り当てます。
 

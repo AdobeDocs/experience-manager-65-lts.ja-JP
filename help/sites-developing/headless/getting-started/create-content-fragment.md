@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Architect,Data Architect,Developer
 exl-id: 7b26e5cb-3aab-4f69-a0f1-42268c39bba8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '375'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ AEM のコンテンツフラグメントを使用して、ページに依存し�
 
 コンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーションおよび公開が可能になります。複数の場所や複数のチャネルで使用可能なコンテンツを用意できるようになります。
 
-コンテンツフラグメントには構造化されたコンテンツが含まれ、JSON 形式で配信できます。
+コンテンツフラグメントには構造化コンテンツが含まれ、JSON 形式で配信できます。
 
 ## コンテンツフラグメントの作成方法 {#how-to-create-a-content-fragment}
 
@@ -45,7 +45,7 @@ AEM のコンテンツフラグメントを使用して、ページに依存し�
 1. コンテンツフラグメントエディターで、コンテンツフラグメントの詳細を指定します。
 
    ![コンテンツフラグメントエディター](assets/content-fragment-edit.png)
-1. 「**保存**」または「**保存して閉じる**」をクリックします。
+1. **保存** または **保存して閉じる** をクリックします。
 
 コンテンツフラグメントは他のコンテンツフラグメントを参照でき、必要に応じてネストされたコンテンツ構造を作成できます。
 

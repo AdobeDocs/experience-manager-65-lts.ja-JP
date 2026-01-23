@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Operations
 role: Admin
 exl-id: c5907a0b-031f-4e3a-8a5c-5daf31eb71fc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '4829'
 ht-degree: 99%
@@ -81,7 +81,7 @@ JMX コンソールを使用して、MBean を作成し、サービスを管理�
 
 * 引数：
 
-   * モデル：問い合わせるモデルの ID。すべてのワークフローモデルについて失敗したワークフローインスタンスの数を確認するには、値を指定しません。ID は model ノードのパスで、例は次のようになります。
+   * モデル：クエリを行うモデルの ID。すべてのワークフローモデルについて失敗したワークフローインスタンスの数を確認するには、値を指定しません。ID は model ノードのパスで、例は次のようになります。
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
@@ -290,7 +290,7 @@ CRX リポジトリに関する情報
   </tr>
   <tr>
    <td>option.observation.supported</td>
-   <td>true はリポジトリ変更の非同期の監視がサポートされていることを示します。非同期の監視のサポートにより、変更が発生するたびに、アプリケーションは通知を受け取ったり、通知に応答したりできます。</td>
+   <td>true はリポジトリ変更の非同期の監視がサポートされていることを示します。非同期監視をサポートすることにより、アプリケーションは、変更が発生するたびに通知を受け取り、応答できます。</td>
   </tr>
   <tr>
    <td>query.jcrscore</td>
@@ -471,7 +471,7 @@ CRX リポジトリに関する情報
   </tr>
   <tr>
    <td>option.activities.supported</td>
-   <td>true は、リポジトリがアクティビティをサポートしていることを示します。アクティビティとは、別のワークスペースに統合されるワークスペースで実行される一連の変更のことです。</td>
+   <td>true は、リポジトリがアクティビティをサポートしていることを示します。アクティビティとは、別のワークスペースに結合されるワークスペースで実行される一連の変更のことです。</td>
   </tr>
   <tr>
    <td>node.type.management.multivalued.properties.supported</td>
