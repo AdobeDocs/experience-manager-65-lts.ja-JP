@@ -28,7 +28,7 @@ ht-degree: 86%
 * 非承認
 * 移動
 
-タイムラインに表示されるアクティビティログは、ログファイルが格納されている CRX の `/var/audit/com.day.cq.dam/content/dam` から取得されます。また、[!DNL Experience Manager]Experience Manager Asset Link または [Adobe デスクトップアプリケーション ](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) により、新しいアセットがアップロードされたり、既存のアセットが変更されて [ にチェックインされたりすると ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=ja) タイムラインアクティビティがログに記録されます。
+タイムラインに表示されるアクティビティログは、ログファイルが格納されている CRX の `/var/audit/com.day.cq.dam/content/dam` から取得されます。また、[!DNL Experience Manager]Experience Manager Asset Link または [Adobe デスクトップアプリケーション &#x200B;](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) により、新しいアセットがアップロードされたり、既存のアセットが変更されて [&#x200B; にチェックインされたりすると &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=ja) タイムラインアクティビティがログに記録されます。
 
 >[!NOTE]
 >

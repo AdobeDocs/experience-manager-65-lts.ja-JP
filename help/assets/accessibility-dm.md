@@ -65,4 +65,4 @@ Dynamic Media では、字幕を使用したビデオおよびアダプティブ
 >[!MORELIKETHIS]
 >
 >* [アドビソリューションのアクセシビリティ](https://www.adobe.com/accessibility.html)
->* [ [!DNL Experience Manager Assets]](/help/assets/accessibility.md)でのアクセシビリティ
+>* [&#x200B; [!DNL Experience Manager Assets]](/help/assets/accessibility.md)でのアクセシビリティ
