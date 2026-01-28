@@ -532,7 +532,7 @@ AEM がアップグレード中に `/apps/system/config` の下にある既存�
 ### アップグレード {#upgrade}
 
 * アップグレードの手順について詳しくは、 [アップグレードドキュメント](/help/sites-deploying/upgrade.md)を参照してください。
-* アップグレード手順について詳しくは、『 [JEE 版AEM Forms 6.5 LTS SP1 のアップグレードガイド』を参照してください &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* アップグレード手順について詳しくは、『 [JEE 版AEM Forms 6.5 LTS SP1 のアップグレードガイド』を参照してください &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### AEM 6.5 LTS サービスパックのアップグレードに関するベストプラクティス
 
