@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: c9a7faf5810e78f8e80b38a87446794488efdd35
+source-git-commit: 8f5a06dc80943362acebfd7b19fed13c051417d1
 workflow-type: tm+mt
-source-wordcount: '7355'
-ht-degree: 99%
+source-wordcount: '7751'
+ht-degree: 93%
 
 ---
 
@@ -39,7 +39,91 @@ ht-degree: 99%
 
 ### Forms
 
-JEE 上のAEM 6.5 Forms LTS が利用可能になりました。 サポートされる環境について詳しくは、[&#x200B; サポートされるプラットフォーム &#x200B;](/help/forms/using/aem-forms-jee-supported-platforms.md) の組み合わせのドキュメントを参照してください。 インストーラーリンクは、[AEM Forms リリース &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) ページで利用できます。
+JEE 上のAEM 6.5 Forms LTS が利用可能になりました。 サポートされる環境について詳しくは、[ サポートされるプラットフォーム ](/help/forms/using/aem-forms-jee-supported-platforms.md) の組み合わせのドキュメントを参照してください。 インストーラーリンクは、[AEM Forms リリース ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) ページで利用できます。
+
+#### AEM Forms 6.5 LTS SP1 の内容
+
+**Java サポートのアップデート**
+
+新しい Java バージョンのサポートが導入されました。
+
+* Java™ 17
+* Java™ 21
+
+**アプリケーションサーバーサポートのアップデート**
+
+* JBoss EAP 8 のサポートが追加されました。
+* 従来の PicketBox セキュリティフレームワークは削除されました。
+* Elytron ベースの秘密鍵証明書ストアが、安全な資格情報管理のためにサポートされるようになりました。
+
+**設定：資格情報ストア（Elytron ベース）**
+
+JBoss EAP 8 上のAEM Formsは、安全な資格情報の管理に Elytron を使用します。 お客様は、サーバの正常な起動とデータベース認証の保護を確実に行うために、Elytron ベースのクレデンシャル・ストアを構成する必要があります。
+
+設定の詳細については、インストールおよび設定ガイドを参照してください。
+
+**プラットフォームと互換性の変更**
+
+* サーブレット仕様 5 以降のサポート
+* Jakarta EE 9 への準拠に基づく
+
+**名前空間の移行要件**
+
+* Jakarta EE 9 では、名前空間が `javax.*` から `jakarta.*` に変更されました
+* すべての **カスタム DSC** を `jakarta.*` 名前空間に移行する必要があります
+* AEM Forms 6.5 LTS SP1 は、**Jakarta EE 9 以降ベースのアプリケーションサーバーのみ** をサポートしています。
+
+詳しくは、**javax から jakarta 名前空間への移行** を参照してください。
+
+**javax からジャカルタ名前空間への移行**
+
+#### `javax` から `jakarta` 名前空間への移行
+
+**AEM Forms 6.5 LTS SP1** 以降は、{Jakarta Servlet API 5/6 **を実装するアプリケーションサーバーのみがサポートされ** す。 **Jakarta EE 9 以降** では、すべての API が `javax.{}` 名前空間から `jakarta.` 名前空間に移行しました。
+
+その結果、**すべてのカスタム DSC は `jakarta` 名前空間を使用する必要があります**。 `javax.{}` API を使用して作成されたカスタムコンポーネントは、サポートされているアプリケーションサーバーと **互換性がありません**。
+
+**カスタム DSC の移行オプション**
+
+次のいずれかの方法を使用して、既存のカスタム DSC を移行できます。
+
+**オプション 1:Source コードの移行（推奨）**
+
+* すべてのインポート文を `javax.{}` から `jakarta.` に更新
+* カスタム DSC プロジェクトの再ビルドと再コンパイル
+* 更新されたコンポーネントをアプリケーションサーバーに再デプロイします。
+
+**メリット：**
+
+* Jakarta EE 9 以降との長期的な互換性を確保
+* アクティブに管理されているプロジェクトに最適
+
+**オプション 2:Eclipse Transformer を使用したバイナリ移行**
+
+* **Eclipse Transformer** ツールを使用して、コンパイル済みのバイナリ（`.jar`、`.war`）を `javax` から `jakarta` に変換します
+* ソースコードの変更や再コンパイルは必要ありません
+* 変換されたバイナリをアプリケーションサーバーに再デプロイします
+
+>[!NOTE]
+>
+> バイナリ変換は **バイトコードレベル** で実行されます。
+
+移行時に必要な名前空間の変更の一般的な例を以下に示します。
+
+前（javax）    後（ジャカルタ）
+javax.servlet. **jakarta.servlet**
+javax.servlet.http。 **jakarta.servlet.http.**
+
+**サンプルインポートマッピング**
+
+次の表に、`javax` から `jakarta` への移行時に必要になる、一般的な名前空間の変更を示します。
+
+| 前（`javax`） | 後（`jakarta`） |
+| ---------------------- | ------------------------ |
+| `javax.servlet.*` | `jakarta.servlet.*` |
+| `javax.servlet.http.*` | `jakarta.servlet.http.*` |
+
+カスタム DSC ソースコードを更新する際や、変換されたバイナリを検証する際には、これらのマッピングを参照として使用してください。
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
@@ -448,6 +532,7 @@ AEM がアップグレード中に `/apps/system/config` の下にある既存�
 ### アップグレード {#upgrade}
 
 * アップグレードの手順について詳しくは、 [アップグレードドキュメント](/help/sites-deploying/upgrade.md)を参照してください。
+* アップグレード手順について詳しくは、『 [JEE 版AEM Forms 6.5 LTS SP1 のアップグレードガイド』を参照してください ](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### AEM 6.5 LTS サービスパックのアップグレードに関するベストプラクティス
 
@@ -520,14 +605,15 @@ AEM 6.5 LTS の SP1 は、パッケージマネージャーでインストール
 
 <!-- CARRY OVER EACH RELEASE -->
 
-アドビでは、古い機能を最新化または置き換えることで顧客価値を向上させるために、製品の機能を継続的にレビューしています。これらの変更は、後方互換性に細心の注意を払って行われます。
+Adobeは、従来の機能を最新化する、または従来の機能に取って代わることで、より大きな顧客価値を提供するよう、製品の機能を継続的に見直し、進化させています。 これらの変更は、後方互換性を慎重に考慮して実装されています。
 
-近い将来行われる Adobe Experience Manager（AEM）機能の削除や置換を通知するため、次のルールが適用されます。
+透明性を確保し、適切な計画を可能にするために、Adobeでは、Adobe Experience Manager（AEM）に対するこの非推奨プロセスに従います。
 
-1. 廃止の発表がまず行われます。廃止中は、機能はまだ使用可能ですが、それ以上の機能強化は行われません。
-1. 廃止された機能の削除は、早ければ、次のメジャーリリースで行われます。実際の削除予定日は、後日発表される予定です。
+* 最初に非推奨（廃止予定）が発表されます。 廃止される機能は引き続き使用できますが、機能強化はされていません。
 
-このプロセスにより、機能が実際に削除されるまでに、廃止される機能の新しいバージョンまたは後継機能にお客様が実装を合わせるためのリリースサイクルが少なくとも 1 回あります。
+* 削除は、次のメジャーリリースよりも早く行われます。 予定されている削除のタイムラインは別途連絡します。
+
+* 機能が削除される前に、サポートされる代替機能に移行できるように、少なくとも 1 つのリリースサイクルが提供されています。
 
 ### 廃止される機能 {#deprecated-features}
 
@@ -543,6 +629,10 @@ AEM 6.5 LTS の SP1 は、パッケージマネージャーでインストール
 ### 削除された機能 {#removed-features}
 
 この節では、AEM 6.5 LTS から削除された機能の一覧を示します。以前のリリースでは、これらの機能は非推奨（廃止予定）としてマークされていました。
+
+* CRX リポジトリ永続性に対する RDBMK のサポートが削除されました。
+
+* クラスター環境では、リポジトリの永続性についてサポートされているオプションが MongoMK のみになりました。
 
 | 領域 | 機能 | 代替手段 | バージョン（SP） |
 | --- | --- | --- | --- |

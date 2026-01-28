@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS のドキュメントを参照して、その仕組みと機能を確認してください。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 3f8da5db05d117cdd57589e39a60484394459dc2
+source-git-commit: 8f5a06dc80943362acebfd7b19fed13c051417d1
 workflow-type: tm+mt
-source-wordcount: '6806'
+source-wordcount: '6803'
 ht-degree: 95%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 95%
    + [Adobe Developer Console での JWT 資格情報の廃止](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [AEM の IMS 統合の設定](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
 + Experience Hub {#experience-hub}
-   + [Experience Hubについて &#x200B;](/help/experience-hub.md)
+   + [Experience Hubについて ](/help/experience-hub.md)
 + Sites {#sites}
    + オーサリング {#authoring}
       + AEM オーサリングの基本的なタスク、ツールおよび概念 {#essentials}
@@ -110,7 +110,7 @@ ht-degree: 95%
          + [ワークフローへの参加](/help/sites-authoring/workflows-participating.md)
          + [プロジェクトワークフローの操作](/help/sites-authoring/projects-with-workflows.md)
       + ページパフォーマンス {#page-performance}
-         + [コンテンツインサイト](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/authoring/siteandpage/content-insights.html?lang=ja)
+         + [コンテンツインサイト](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/authoring/siteandpage/content-insights.html)
          + [ページパフォーマンスの分析](/help/sites-authoring/ci-analyze.md)
          + [ページ分析データの表示](/help/sites-authoring/pa-using.md)
       + パーソナライゼーション {#personalization}
@@ -185,7 +185,7 @@ ht-degree: 95%
          + [管理コンソール](/help/sites-administering/enable-classic-ui-admin.md)
       + パーソナライゼーション {#personalization}
          + [パーソナライゼーション](/help/sites-administering/personalization.md)
-         + [ContextHub の設定](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/personlization/ch-configuring.html?lang=ja)
+         + [ContextHub の設定](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/personlization/ch-configuring.html)
          + [ClientContext](/help/sites-administering/client-context.md)
          + [ContextHub でのセグメント化の設定](/help/sites-administering/segmentation.md)
          + [セグメント化の設定](/help/sites-administering/campaign-segmentation.md)
@@ -228,10 +228,10 @@ ht-degree: 95%
          + [メールテンプレートのベストプラクティス](/help/sites-administering/best-practices-for-email-templates.md)
       + ベストプラクティス {#bestpractices}
          + [ベストプラクティス](/help/sites-administering/administer-best-practices.md)
-         + [翻訳のベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/administering/introduction/tc-bp.html?lang=ja)
-         + [MSM のベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/administering/introduction/msm-best-practices.html?lang=ja)
+         + [翻訳のベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/administering/introduction/tc-bp.html)
+         + [MSM のベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/administering/introduction/msm-best-practices.html)
          + [AEM Sites - GDPR 対応](/help/sites-administering/gdpr-compliance-sites.md)
-         + [AEM の基盤での GDPR 要求の処理](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/security/handling-gdpr-requests-for-aem-platform.html?lang=ja)
+         + [AEM の基盤での GDPR 要求の処理](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/security/handling-gdpr-requests-for-aem-platform.html)
          + [AEM Commerce - GDPR 対応](/help/sites-administering/gdpr-compliance-commerce.md)
       + コンテンツ管理 {#contentmanagement}
          + [パッケージマネージャー](/help/sites-administering/package-manager.md)
@@ -242,7 +242,7 @@ ht-degree: 95%
 + Assets {#assets}
    + [DAM について](/help/assets/assets.md)
    + [Assets のベストプラクティス](/help/assets/best-practices-for-assets.md)
-   + [&#x200B; [!DNL Assets] でのアクセシビリティ](/help/assets/accessibility.md)
+   + [ [!DNL Assets] でのアクセシビリティ](/help/assets/accessibility.md)
    + Experience Manager Assets の使用 {#using}
       + [[!DNL Assets] のホームページエクスペリエンス](/help/assets/assets-home-page.md)
       + [デジタルアセットの検索](/help/assets/search-assets.md)
@@ -310,14 +310,14 @@ ht-degree: 95%
       + [一括アセット移行用の機能パック 18912 をインストールする](/help/assets/bulk-ingest-migrate.md)
       + [セレクターを操作する](/help/assets/working-with-selectors.md)
    + Assets の拡張 {#extending}
-      + [&#x200B; [!DNL Assets] のカスタマイズと拡張](/help/assets/extending-assets.md)
+      + [ [!DNL Assets] のカスタマイズと拡張](/help/assets/extending-assets.md)
       + [メディアハンドラーとワークフローを使用したアセットの処理](/help/assets/media-handlers.md)
       + [検索機能の拡張](/help/assets/searchx.md)
-      + [&#x200B; [!DNL Assets] と連携して使用する  [!DNL ImageMagick]  のインストールと設定](/help/assets/best-practices-for-imagemagick.md)
+      + [ [!DNL Assets] と連携して使用する  [!DNL ImageMagick]  のインストールと設定](/help/assets/best-practices-for-imagemagick.md)
       + [Assets とアクティビティストリームの統合](/help/assets/extending-activity-stream.md)
       + [アセットエディターの拡張](/help/assets/asseteditorx.md)
       + [[!DNL Assets] HTTP API](/help/assets/mac-api-assets.md)
-      + [&#x200B; [!DNL Assets]  HTTP API でのコンテンツフラグメントのサポート](/help/assets/assets-api-content-fragments.md)
+      + [ [!DNL Assets]  HTTP API でのコンテンツフラグメントのサポート](/help/assets/assets-api-content-fragments.md)
       + [コンテンツフラグメント用 GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
       + [GraphiQL IDE の使用](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
       + [永続クエリ](/help/sites-developing/headless/graphql-api/persisted-queries.md)
@@ -345,7 +345,7 @@ ht-degree: 95%
       + [PDF ラスタライザを使用](/help/assets/aem-pdf-rasterizer.md)
       + [アップロード制限の設定](/help/assets/configuring-asset-upload-restrictions.md)
       + [[!DNL Experience Manager] と  [!DNL Creative Cloud]  の統合](/help/assets/aem-cc-integration-best-practices.md)
-      + [&#x200B; [!DNL InDesign Server] との統合](/help/assets/indesign.md)
+      + [ [!DNL InDesign Server] との統合](/help/assets/indesign.md)
       + [Assets の Digital Rights Management](/help/assets/drm.md)
       + [Assets Insights でのデモパッケージの使用](/help/assets/use-demo-package-for-asset-insights.md)
       + [Adobe Asset Link の設定](/help/assets/configure-asset-link.md)
@@ -359,10 +359,10 @@ ht-degree: 95%
       + [アセットの透かしの設定](/help/assets/watermarking.md)
       + [アセットテンプレート](/help/assets/asset-templates.md)
    + Brand Portal {#brandportal}
-      + [&#x200B; [!DNL Assets]  での [!DNL Brand Portal]の設定](/help/assets/configure-aem-assets-with-brand-portal.md)
-      + [&#x200B; [!DNL Brand Portal] へのアセットの公開](/help/assets/brand-portal-publish-assets.md)
-      + [&#x200B; [!DNL Brand Portal] へのフォルダーの公開](/help/assets/brand-portal-publish-folder.md)
-      + [&#x200B; [!DNL Brand Portal] へのコレクションの公開](/help/assets/brand-portal-publish-collection.md)
+      + [ [!DNL Assets]  での [!DNL Brand Portal]の設定](/help/assets/configure-aem-assets-with-brand-portal.md)
+      + [ [!DNL Brand Portal] へのアセットの公開](/help/assets/brand-portal-publish-assets.md)
+      + [ [!DNL Brand Portal] へのフォルダーの公開](/help/assets/brand-portal-publish-folder.md)
+      + [ [!DNL Brand Portal] へのコレクションの公開](/help/assets/brand-portal-publish-collection.md)
    + コンテンツフラグメント {#content-fragments}
       + [コンテンツフラグメントの使用方法](/help/assets/content-fragments/content-fragments.md)
       + [コンテンツフラグメントと GraphQL のヘッドレス配信](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -399,12 +399,11 @@ ht-degree: 95%
       + [プライベートフォルダーの共有](/help/assets/private-folder.md)
       + [ビデオレンディション](/help/assets/video-renditions.md)
    + 他のソリューションとの統合 {#integrations}
-      + [&#x200B; [!DNL Adobe Workfront] との統合](/help/assets/workfront-integrations.md)
-      + [&#x200B; [!DNL Workfront] への  [!DNL enhanced connector]  のインストール](/help/assets/workfront-connector-install.md)
-      + [&#x200B; [!DNL Workfront] への  [!DNL enhanced connector]  の設定](/help/assets/workfront-connector-configure.md)
+      + [ [!DNL Adobe Workfront] との統合](/help/assets/workfront-integrations.md)
+      + [ [!DNL Workfront] への  [!DNL enhanced connector]  のインストール](/help/assets/workfront-connector-install.md)
+      + [ [!DNL Workfront] への  [!DNL enhanced connector]  の設定](/help/assets/workfront-connector-configure.md)
 + Forms {#forms}
    + リリースノート {#release-notes-new-features}
-   + [最新のリリースノート](/help/forms/using/aem-forms-6.5-lts-sp1-jee-release-notes.md)
    + [AEM Forms サービスパックのホットフィックス](/help/forms/using/adobe-experience-manager-forms-65-lts-hotfixes.md)
    + はじめに {#getting-started}
       + [AEM Forms の概要](/help/forms/using/introduction-aem-forms.md)
@@ -441,7 +440,7 @@ ht-degree: 95%
       + [AEM Forms のインストールに永続性タイプを選択する](/help/forms/using/choosing-persistence-type-for-aem-forms.md)
       + JEE 上の AEM Forms のインストール {#jee-installation}
          + [JEE 上の AEM Forms でサポートされているプラットフォーム](/help/forms/using/aem-forms-jee-supported-platforms.md)
-         + [JEE 上におけるAEM Forms 6.5 LTS のインストールおよびデプロイ（JBoss Turnkey を使用） &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-turnkey.pdf)
+         + [JEE 上におけるAEM Forms 6.5 LTS のインストールおよびデプロイ（JBoss Turnkey を使用） ](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-turnkey.pdf)
       + OSGi 上の AEM Forms のインストール {#osgi-installation}
          + [OSGi 上の AEM Forms でサポートされるプラットフォーム](/help/forms/using/supported-platforms.md)
          + [ドキュメントサービスのインストールと設定](/help/forms/using/install-configure-document-services.md)
@@ -466,7 +465,7 @@ ht-degree: 95%
          + [互換性パッケージをインストールする](/help/forms/using/compatibility-package.md)
          + [AEM Forms のアセットとドキュメントの移行](/help/forms/using/migration-utility.md)
       + JEE 上の AEM Forms のアップグレード {#aem-forms-jee-upgrade}
-         + [JEE 上のAEM Forms 6.5 LTS への自動アップグレード（JBoss 版） &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/upgrade-turnkey.pdf)
+         + [JEE 上のAEM Forms 6.5 LTS への自動アップグレード（JBoss 版） ](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/upgrade-turnkey.pdf)
    + AEM Forms の管理 {#manage-administer-aem-forms}
       + [OSGi 上の AEM Forms のグループと権限](/help/forms/using/forms-groups-privileges-tasks.md)
       + [フォームを分類するための新しいフォルダーの作成](/help/forms/using/creating-new-folders-categorize-forms.md)
@@ -1208,7 +1207,7 @@ ht-degree: 95%
          + [レポートの開発](/help/sites-developing/dev-reports.md)
       + コンポーネント{#components}
          + [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
-         + [スタイルシステム](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/authoring/siteandpage/style-system.html?lang=ja)
+         + [スタイルシステム](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/authoring/siteandpage/style-system.html)
          + [コンポーネントの概要](/help/sites-developing/components.md)
          + [AEM コンポーネント - 基本](/help/sites-developing/components-basics.md)
          + [AEM コンポーネントの開発](/help/sites-developing/developing-components.md)
@@ -1238,21 +1237,21 @@ ht-degree: 95%
          + [ヘッドレスと AEM](/help/sites-developing/headless/introduction.md)
          + ヘッドレスジャーニー {#journeys}
             + ヘッドレスデベロッパージャーニー {#developer}
-               + [AEM のヘッドレスについて](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/overview.html?lang=ja)
-               + [CMS ヘッドレス開発について](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/learn-about.html?lang=ja)
-               + [AEM Headless as a Cloud Service の使用を開始する](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/getting-started.html?lang=ja)
-               + [AEM ヘッドレス機能を初めて使用する際の手順](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/path-to-first-experience.html?lang=ja)
-               + [コンテンツを AEM コンテンツモデルとしてモデル化する方法](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/model-your-content.html?lang=ja)
-               + [AEM Delivery API を使用してコンテンツにアクセスする方法](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/access-your-content.html?lang=ja)
-               + [AEM Assets API を使用してコンテンツを更新する方法](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/update-your-content.html?lang=ja)
-               + [すべてをまとめる方法](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/put-it-all-together.html?lang=ja)
-               + [ヘッドレスアプリケーションを運用する方法](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/go-live.html?lang=ja)
-               + [オプション - AEM で単一ページアプリケーション（SPA）を作成する方法](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/create-spa.html?lang=ja)
+               + [AEM のヘッドレスについて](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/overview.html)
+               + [CMS ヘッドレス開発について](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/learn-about.html)
+               + [AEM Headless as a Cloud Service の使用を開始する](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/getting-started.html)
+               + [AEM ヘッドレス機能を初めて使用する際の手順](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/path-to-first-experience.html)
+               + [コンテンツを AEM コンテンツモデルとしてモデル化する方法](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/model-your-content.html)
+               + [AEM Delivery API を使用してコンテンツにアクセスする方法](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/access-your-content.html)
+               + [AEM Assets API を使用してコンテンツを更新する方法](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/update-your-content.html)
+               + [すべてをまとめる方法](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/put-it-all-together.html)
+               + [ヘッドレスアプリケーションを運用する方法](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/go-live.html)
+               + [オプション - AEM で単一ページアプリケーション（SPA）を作成する方法](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/create-spa.html)
             + ヘッドレスコンテンツアーキテクトジャーニー {#architect}
-               + [AEM ヘッドレスコンテンツアーキテクトジャーニーの概要](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/overview.html?lang=ja)
-               + [AEM を使用したヘッドレスのコンテンツモデリング - はじめに](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/introduction.html?lang=ja)
-               + [AEM を使用したヘッドレス向けコンテンツモデリングの基本について](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/basics.html?lang=ja)
-               + [AEM でのコンテンツフラグメントモデルの作成について学ぶ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/model-structure.html?lang=ja)
+               + [AEM ヘッドレスコンテンツアーキテクトジャーニーの概要](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/overview.html)
+               + [AEM を使用したヘッドレスのコンテンツモデリング - はじめに](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/introduction.html)
+               + [AEM を使用したヘッドレス向けコンテンツモデリングの基本について](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/basics.html)
+               + [AEM でのコンテンツフラグメントモデルの作成について学ぶ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/model-structure.html)
          + はじめる前に {#getting-started}
             + [はじめに](/help/sites-developing/headless/getting-started/introduction.md)
             + [設定の作成](/help/sites-developing/headless/getting-started/create-configuration.md)
@@ -1261,28 +1260,28 @@ ht-degree: 95%
             + [コンテンツフラグメントの作成](/help/sites-developing/headless/getting-started/create-content-fragment.md)
             + [コンテンツフラグメントへのアクセスと配信](/help/sites-developing/headless/getting-started/create-api-request.md)
          + コンテンツフラグメント{#content-fragments}
-            + [コンテンツフラグメントと GraphQL のヘッドレス配信](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-graphql.html?lang=ja)
-            + [コンテンツフラグメントの使用方法](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments.html?lang=ja)
-            + [インスタンスに対するコンテンツフラグメント機能の有効化](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-configuration-browser.html?lang=ja)
-            + [コンテンツフラグメントモデル](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-models.html?lang=ja)
-            + [コンテンツフラグメントの管理](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-managing.html?lang=ja)
-            + [バリエーション - フラグメントコンテンツのオーサリング](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-variations.html?lang=ja)
-            + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-markdown.html?lang=ja)
-            + [関連コンテンツの使用](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-assoc-content.html?lang=ja)
-            + [メタデータ - フラグメントのプロパティ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-metadata.html?lang=ja)
-            + [構造ツリー](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-structure-tree.html?lang=ja)
-            + [プレビュー - JSON 表現](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-json-preview.html?lang=ja)
+            + [コンテンツフラグメントと GraphQL のヘッドレス配信](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-graphql.html)
+            + [コンテンツフラグメントの使用方法](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments.html)
+            + [インスタンスに対するコンテンツフラグメント機能の有効化](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-configuration-browser.html)
+            + [コンテンツフラグメントモデル](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-models.html)
+            + [コンテンツフラグメントの管理](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-managing.html)
+            + [バリエーション - フラグメントコンテンツのオーサリング](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-variations.html)
+            + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-markdown.html)
+            + [関連コンテンツの使用](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-assoc-content.html)
+            + [メタデータ - フラグメントのプロパティ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-metadata.html)
+            + [構造ツリー](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-structure-tree.html)
+            + [プレビュー - JSON 表現](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-json-preview.html)
          + 配信 API{#delivery-api}
-            + [Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/mac-api-assets.html?lang=ja)
-            + [コンテンツフラグメント REST API](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/assets-api-content-fragments.html?lang=ja)
-            + [コンテンツフラグメント GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphql-api-content-fragments.html?lang=ja)
+            + [Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/mac-api-assets.html)
+            + [コンテンツフラグメント REST API](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/assets-api-content-fragments.html)
+            + [コンテンツフラグメント GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphql-api-content-fragments.html)
             + [GraphQL エンドポイントの管理](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
-            + [GraphiQL IDE の使用](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphiql-ide.html?lang=ja)
-            + [永続クエリ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/persisted-queries.html?lang=ja)
+            + [GraphiQL IDE の使用](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphiql-ide.html)
+            + [永続クエリ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/persisted-queries.html)
             + [GraphQLクエリの最適化](/help/sites-developing/headless/graphql-api/graphql-optimization.md)
             + [最適化された GraphQL フィルタリング用コンテンツフラグメントの更新](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)
-            + [コンテンツフラグメントに対するリモート AEM GraphQL クエリの認証](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphql-authentication-content-fragments.html?lang=ja)
-            + [AEM GraphQL API とコンテンツフラグメント - コンテンツとクエリの例](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/content-fragments-graphql-samples.html?lang=ja)
+            + [コンテンツフラグメントに対するリモート AEM GraphQL クエリの認証](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphql-authentication-content-fragments.html)
+            + [AEM GraphQL API とコンテンツフラグメント - コンテンツとクエリの例](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/content-fragments-graphql-samples.html)
          + ユニバーサルエディター {#universal-editor}
             + [はじめに](/help/sites-developing/universal-editor/introduction.md)
       + ハイブリッドおよび SPA の AEM 開発 {#spas}
@@ -1303,7 +1302,7 @@ ht-degree: 95%
          + [RemotePage コンポーネント](/help/sites-developing/spa-remote-page.md)
          + [AEM 内での外部 SPA の編集](/help/sites-developing/spa-edit-external.md)
          + [SPA の複合コンポーネント](/help/sites-developing/spa-composite-component.md)
-         + [コンポーネントの JSON 書き出しの有効化](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/components/json-exporter-components.html?lang=ja)
+         + [コンポーネントの JSON 書き出しの有効化](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/components/json-exporter-components.html)
          + [ローンチの統合](/help/sites-developing/spa-launch.md)
          + [SPA 参照資料](/help/sites-developing/spa-reference-materials.md)
       + 開発ツール {#devtools}
@@ -1369,7 +1368,7 @@ ht-degree: 95%
          + クラシック UI の拡張{#extending-classic-ui}
             + [Web サイトコンソールのカスタマイズ（クラシック UI）](/help/sites-developing/customizing-siteadmin.md)
             + [ようこそコンソールのカスタマイズ（クラシック UI）](/help/sites-developing/customizing-the-welcome-console.md)
-            + [レポートの開発](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/platform/dev-reports.html?lang=ja)
+            + [レポートの開発](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/platform/dev-reports.html)
       + テスト {#testing}
          + [計画](/help/sites-developing/planning.md)
          + [必要なテスト環境の種類](/help/sites-developing/test-environments.md)
@@ -1382,10 +1381,10 @@ ht-degree: 95%
          + [次期リリース](/help/sites-developing/the-next-release.md)
          + [チェックリスト](/help/sites-developing/checklists.md)
          + [Tough Day](/help/sites-developing/tough-day.md)
-         + [UI のテスト](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/components/hobbes.html?lang=ja)
+         + [UI のテスト](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/components/hobbes.html)
       + ベストプラクティス {#bestpractices}
          + [ベストプラクティスの概要](/help/sites-developing/best-practices.md)
-         + [AEM の開発ガイドラインとベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/introduction/dev-guidelines-bestpractices.html?lang=ja)
+         + [AEM の開発ガイドラインとベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/introduction/dev-guidelines-bestpractices.html)
          + [開発のベストプラクティス](/help/sites-developing/development-practices.md)
          + [コンテンツのアーキテクチャ](/help/sites-developing/content-architecture.md)
          + [ソフトウェアのアーキテクチャ](/help/sites-developing/software-architecture.md)
