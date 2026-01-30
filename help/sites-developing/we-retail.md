@@ -50,15 +50,15 @@ AEMの標準的な参照実装として、`We.Retail` ではAEMの最も強力�
 
 >[!CAUTION]
 >
->`We.Retail` サイトは最新のAEM テクノロジーに基づいているので、[ クラシック UI オーサリング ](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md) をサポートしていません。
+>`We.Retail` サイトは最新のAEM テクノロジーに基づいているので、[&#x200B; クラシック UI オーサリング &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md) をサポートしていません。
 
 ### 最新バージョン {#latest-version}
 
-`We.Retail` はAEM リリースと共に配布されますが、リリース後にコンテンツおよびその機能が更新される可能性があります。 そのため、[GitHub から最新リリースをダウンロード ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) した後、AEM インスタンスにパッケージとして [ アップロード ](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) および [ インストール ](/help/sites-administering/package-manager.md#installing-packages) することができます。
+`We.Retail` はAEM リリースと共に配布されますが、リリース後にコンテンツおよびその機能が更新される可能性があります。 そのため、[GitHub から最新リリースをダウンロード &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) した後、AEM インスタンスにパッケージとして [&#x200B; アップロード &#x200B;](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) および [&#x200B; インストール &#x200B;](/help/sites-administering/package-manager.md#installing-packages) することができます。
 
 ### 最初の手順 {#first-steps}
 
-1. AEMが起動（またはインストール）され `We.Retail` と、サイトコン **`We.Retail`** ールは [Sites コンソール ](/help/sites-authoring/basic-handling.md#global-navigation) で使用できるようになります。
+1. AEMが起動（またはインストール）され `We.Retail` と、サイトコン **`We.Retail`** ールは [Sites コンソール &#x200B;](/help/sites-authoring/basic-handling.md#global-navigation) で使用できるようになります。
 1. 例えば、次のページを開くことができ、そのページは後述の[付録](#appendix)のように表示されます。
 
    `https://<server name>:<port number>/editor.html/content/we-retail/language-masters/en.html`

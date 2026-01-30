@@ -18,14 +18,14 @@ ht-degree: 65%
 
 +++ 64 ビット版 AEM Forms Designer の場合（推奨）
 
-* 64 ビット版の [Visual C++ 2019 再頒布可能パッケージ（x64） ](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) をインストールします。 インストールを開始する前に、前述の再頒布可能ランタイムパッケージがインストールされていることを確認してください。
+* 64 ビット版の [Visual C++ 2019 再頒布可能パッケージ（x64） &#x200B;](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) をインストールします。 インストールを開始する前に、前述の再頒布可能ランタイムパッケージがインストールされていることを確認してください。
 * AEM Forms Designer をインストールまたはアンインストールするには、管理者権限を持っている必要があります。
 
 +++
 
 +++ 32 ビット版 AEM Forms Designer の場合
 
-* 32 ビット版の [Visual C++ 2019 再頒布可能パッケージ（x64） ](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) をインストールします。 インストールを開始する前に、前述の再頒布可能ランタイムパッケージがインストールされていることを確認してください。
+* 32 ビット版の [Visual C++ 2019 再頒布可能パッケージ（x64） &#x200B;](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) をインストールします。 インストールを開始する前に、前述の再頒布可能ランタイムパッケージがインストールされていることを確認してください。
 * AEM Forms Designer をインストールまたはアンインストールするには、管理者権限を持っている必要があります。
 
 +++
@@ -33,8 +33,8 @@ ht-degree: 65%
 >[!NOTE]
 >
 >* 64 ビット版のDesignerは、AEM 6.5 Forms サービスパック 19 で導入されました（6.5.19.0）。
->* 32 ビットバージョンのDesignerは、[AEM Forms サービスパック 21 （6.5.21.0） ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) のリリース以降、非推奨（廃止予定）となりました。
-> * Forms Designer でサポートされているプラットフォームは、AEM Forms でサポートされているプラットフォームと一致します。Forms Designerでサポートされているプラットフォームについては、[ ここをクリック ](/help/sites-deploying/technical-requirements.md) してください。
+>* 32 ビットバージョンのDesignerは、[AEM Forms サービスパック 21 （6.5.21.0） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) のリリース以降、非推奨（廃止予定）となりました。
+> * Forms Designer でサポートされているプラットフォームは、AEM Forms でサポートされているプラットフォームと一致します。Forms Designerでサポートされているプラットフォームについては、[&#x200B; ここをクリック &#x200B;](/help/sites-deploying/technical-requirements.md) してください。
 
 フォーム designer のインストールに関して詳しくは、[よくある質問](#fandq)を参照してください。
 
@@ -56,7 +56,7 @@ ht-degree: 65%
 
    >[!NOTE]
    >
-   >* Forms Designer ライセンスキーを [Adobe ライセンス web サイト ](https://licensing.adobe.com/) から取得します。
+   >* Forms Designer ライセンスキーを [Adobe ライセンス web サイト &#x200B;](https://licensing.adobe.com/) から取得します。
 
 1. 使用許諾契約に同意する場合は、「次へ」をクリックして先に進みます。
 1. （オプション）Designer を選択した場所にインストールする場合は、既定のインストールパスを変更します。「次へ」をクリックします。
@@ -98,7 +98,7 @@ AEM Forms Designer でスタンドアロンのインストーラーを使用す�
 
 AEM Forms Designer でスタンドアロンのインストーラーを使用する場合は、以下の手順を実行します。
 
-1. [ ソフトウェア配布ポータル ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) から最新バージョンのAEM Forms Designerをダウンロードします。
+1. [&#x200B; ソフトウェア配布ポータル &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) から最新バージョンのAEM Forms Designerをダウンロードします。
 1. ダウンロードしたインストーラーファイルをダブルクリックして、最新バージョンの AEM Forms Designer をインストールします。
 
 +++
