@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: de3cd0ad-0b18-4d9a-8c6b-72cc16149cfc
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: eb6f6b994fdd3b2b01e77700d2deb7bd2830ac8f
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 100%
+source-wordcount: '192'
+ht-degree: 84%
 
 ---
 
@@ -23,19 +23,20 @@ AEM Forms サービスパック 6.5.21.0 へのアップグレード後、`Paper
 ## 適用先
 
 このソリューションは次の場合に適用されます。
-* すべての（JBoss、WebLogic、WebSphere）JEE サーバー上の AEM Forms
+
+* すべての（JBoss®、WebLogic、WebSphere®） JEE サーバーでのAEM Forms
 * OSGi サーバー上の AEM Forms
 
 ## 解決策
 
-1. ソフトウェア配布ポータルから[ホットフィックス](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0)をダウンロードします。
+1. ソフトウェア配布ポータルから [ ホットフィックス ](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0) をダウンロードします。
 1. ダウンロードしたフォルダーのコンテンツを抽出してコピーします。
 1. 対応するアプリケーションサーバーの以下のパスに移動します。
-   * **JBoss**：
+   * **JBoss®**:
      `..\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\PaperCaptureSvc`
-   * **WebLogic**：
+   * **WebLogic**:
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`
-   * **WebSphere**：\
+   * **WebSphere®**:\
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`
    * **OSGi の設定**：\
      `..\quickstart\crx-quickstart\bedrock\svcnative\PaperCaptureSvc`
@@ -45,4 +46,4 @@ AEM Forms サービスパック 6.5.21.0 へのアップグレード後、`Paper
 
    >[!NOTE]
    >
-   > 「Ctrl + C」コマンドを使用して SDK を再起動することをお勧めします。Java プロセスの停止など、別の方法を使用して AEM SDK を再起動すると、AEM 開発環境で不整合が生じる場合があります。
+   >Adobeでは、`Ctrl + C` コマンドを使用してSDKを再起動することをお勧めします。 Java プロセスの停止など、別の方法を使用して AEM SDK を再起動すると、AEM 開発環境で不整合が生じる場合があります。
