@@ -382,7 +382,7 @@ JCR プロパティとその値に一致します。
 
 * **depth**
 
-  その下に、プロパティと相対パスが存在できる多数のワイルドカードレベル。 例えば、`property=size depth=2` はノードとサイズ、node/&amp;ast;/size、node/&amp;ast;/&amp;ast;/size をチェックします。
+  その下に、プロパティと相対パスが存在できる多数のワイルドカードレベル。 例えば、`property=size depth=2` はノードとサイズ、node/&ast;/size、node/&ast;/&ast;/size をチェックします。
 
 ### `rangeproperty` {#rangeproperty}
 
