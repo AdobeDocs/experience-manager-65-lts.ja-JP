@@ -185,7 +185,7 @@ java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-wr
 
 この使用例では、クローン作成された設定でインデックス再作成を実行して、実行中の AEM インスタンスへの影響を最小限に抑えることができます。
 
-1. JMX 操作でチェックポイントを作成します。 [JMX コンソール ](/help/sites-administering/jmx-console.md) に移動して、`CheckpointManager` を検索します。 次に、**createCheckpoint(long p1)** 操作をクリックして、秒単位の有効期限に大きい値（**2592000** など）を使用します。
+1. JMX 操作でチェックポイントを作成します。 [JMX コンソール &#x200B;](/help/sites-administering/jmx-console.md) に移動して、`CheckpointManager` を検索します。 次に、**createCheckpoint(long p1)** 操作をクリックして、秒単位の有効期限に大きい値（**2592000** など）を使用します。
 1. `crx-quickstart` フォルダーを新しいマシンにコピーします。
 1. Oak-run の index コマンドを使用して、インデックスを再作成します。
 
