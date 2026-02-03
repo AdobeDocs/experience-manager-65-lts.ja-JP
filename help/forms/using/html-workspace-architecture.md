@@ -29,7 +29,7 @@ REST エンドポイント上のAEM Forms サーバーにアクセスして、�
 
 AEM Forms サーバーは、JDBC を使用してAEM Forms データベースにアクセスします。 データベースは、タスク、プロセスとそのインスタンス、ユーザー、および関連情報を維持します。
 
-AEM Forms Workspace は、モジュール型のJavaScript コンポーネントで構成されており、これらのコンポーネントは他の web アプリケーションで個別にカスタマイズしたり再利用したりできます。 コンポーネントは、web アプリケーションに構造を提供するJavaScript ライブラリである BackBone に基づいています。 コンポーネントと BackBone の相互作用を説明する詳細な記事は [ こちら ](/help/forms/using/backbone-interaction.md) です。 CRX フォルダー構造のコンポーネントの組織については、[この記事](/help/forms/using/folder-structure.md)で説明しています。
+AEM Forms Workspace は、モジュール型のJavaScript コンポーネントで構成されており、これらのコンポーネントは他の web アプリケーションで個別にカスタマイズしたり再利用したりできます。 コンポーネントは、web アプリケーションに構造を提供するJavaScript ライブラリである BackBone に基づいています。 コンポーネントと BackBone の相互作用を説明する詳細な記事は [&#x200B; こちら &#x200B;](/help/forms/using/backbone-interaction.md) です。 CRX フォルダー構造のコンポーネントの組織については、[この記事](/help/forms/using/folder-structure.md)で説明しています。
 
 AEM Forms Workspace のために配信されるパッケージを以下に示しています。
 

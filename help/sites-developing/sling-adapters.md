@@ -18,7 +18,7 @@ ht-degree: 50%
 
 # Sling アダプターの使用{#using-sling-adapters}
 
-[Sling](https://sling.apache.org) では、[Adaptable](https://sling.apache.org/documentation/the-sling-engine/adapters.html) インターフェイスを実装するオブジェクトを便利に翻訳するための [ アダプタパターン ](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) が提供されています。 このインターフェイスは、オブジェクトを引数として渡されるクラスタイプに変換する汎用の [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) メソッドを提供します。
+[Sling](https://sling.apache.org) では、[Adaptable](https://sling.apache.org/documentation/the-sling-engine/adapters.html) インターフェイスを実装するオブジェクトを便利に翻訳するための [&#x200B; アダプタパターン &#x200B;](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) が提供されています。 このインターフェイスは、オブジェクトを引数として渡されるクラスタイプに変換する汎用の [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) メソッドを提供します。
 
 例えば、リソースオブジェクトを対応するノードオブジェクトに変換するには、次の操作を実行します。
 
@@ -305,7 +305,7 @@ null ケースを適切に処理することが重要です。JSP レンダリ�
  </tbody>
 </table>
 
-**[ コンポーネント ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/components/Component.html)** は次の項目に適応します。
+**[&#x200B; コンポーネント &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/components/Component.html)** は次の項目に適応します。
 
 | [Resource](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/Resource.html) | コンポーネントのリソース |
 | --- | --- |
@@ -313,7 +313,7 @@ null ケースを適切に処理することが重要です。JSP レンダリ�
 | [Node](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html) | コンポーネントのノード |
 | ... | コンポーネントのリソースが適応できるすべての項目 |
 
-**[ テンプレート ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Template.html)** は次の項目に適応します。
+**[&#x200B; テンプレート &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Template.html)** は次の項目に適応します。
 
 <table>
  <tbody>
@@ -338,7 +338,7 @@ null ケースを適切に処理することが重要です。JSP レンダリ�
 
 #### セキュリティ {#security}
 
-**Authorizable**、**User および **Group** は以下に適応します。
+**Authorizable**、**User および &#x200B;** Group** は以下に適応します。
 
 | [Node](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html) | ユーザー/グループのホームノードを返します。 |
 | --- | --- |
@@ -364,4 +364,4 @@ null ケースを適切に処理することが重要です。JSP レンダリ�
 
 #### その他 {#other}
 
-さらに、Sling、JCR、OCM では、カスタム OCM （` [AdapterFactory](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)`Object Content Mapping[）オブジェクトの ](https://jackrabbit.apache.org/jcr/object-content-mapping.html) も提供しています。
+さらに、Sling、JCR、OCM では、カスタム OCM （` [AdapterFactory](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)`Object Content Mapping[）オブジェクトの &#x200B;](https://jackrabbit.apache.org/jcr/object-content-mapping.html) も提供しています。

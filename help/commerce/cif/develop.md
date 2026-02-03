@@ -33,7 +33,7 @@ CIF プロジェクトを使用する場合は、ローカル開発環境を使�
 >
 >以下の手順は、CIF for AEM 6.5 LTS を使用してAEM Commerce用のローカル AEM開発環境をセットアップする場合に役立ちます。 AEM as a Cloud Service を使用している場合は、[AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#) ドキュメントを参照してください。
 
-CIF アドオンと呼ばれるAEM用のAEM Commerce アドオンもローカル開発が可能で、AEM パッケージとして提供されます。 これは、[ ソフトウェア配布ポータル ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) から機能パックとしてダウンロードできます。
+CIF アドオンと呼ばれるAEM用のAEM Commerce アドオンもローカル開発が可能で、AEM パッケージとして提供されます。 これは、[&#x200B; ソフトウェア配布ポータル &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) から機能パックとしてダウンロードできます。
 
 ### 必要なソフトウェア
 
@@ -48,7 +48,7 @@ CIF アドオンと呼ばれるAEM用のAEM Commerce アドオンもローカル
 
 ### CIF アドオンへのアクセス
 
-CIF アドオンは、[ ソフトウェア配布ポータル ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) からダウンロードして、`AEM Commerce add-on` を検索できます。
+CIF アドオンは、[&#x200B; ソフトウェア配布ポータル &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) からダウンロードして、`AEM Commerce add-on` を検索できます。
 
 >[!TIP]
 >
@@ -141,7 +141,7 @@ CIF コアコンポーネントは、任意のプロジェクトで使用でき�
 
 CIF プロジェクトを開始する 2 つ目の方法は、[AEM Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)をコピーして使用する方法です。AEM Venia 参照用ストアは、AEM 用の CIF コアコンポーネントの使用方法を示すサンプルのストアフロントアプリケーションです。これは、ベストプラクティス例として意図されていて、独自機能を開発するための有望な出発点としての役割も果たします。
 
-[Git リポジトリをクローンして Venia 参照用ストアの使用を開始し ](https://github.com/adobe/aem-cif-guides-venia) 必要に応じてプロジェクトをカスタマイズする開始。
+[Git リポジトリをクローンして Venia 参照用ストアの使用を開始し &#x200B;](https://github.com/adobe/aem-cif-guides-venia) 必要に応じてプロジェクトをカスタマイズする開始。
 
 >[!NOTE]
 >
@@ -151,7 +151,7 @@ CIF プロジェクトを開始する 2 つ目の方法は、[AEM Venia 参照�
 
 プロジェクトをコマースシステムに接続するには、コマースシステムのGraphQL エンドポイントをAEMに設定する必要があります。
 
-[AEM プロジェクトアーキタイプで生成されたプロジェクトにも ](https://github.com/adobe/aem-project-archetype)[AEM Venia 参照用ストア ](https://github.com/adobe/aem-cif-guides-venia) で生成されたプロジェクトにも、デフォルト設定が既に含まれており、これを調整する必要があります。
+[AEM プロジェクトアーキタイプで生成されたプロジェクトにも &#x200B;](https://github.com/adobe/aem-project-archetype) [AEM Venia 参照用ストア &#x200B;](https://github.com/adobe/aem-cif-guides-venia) で生成されたプロジェクトにも、デフォルト設定が既に含まれており、これを調整する必要があります。
 
 `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` の `url` の値を、プロジェクトで使用されるコマースシステムの GraphQL エンドポイントに置き換えます。
 
