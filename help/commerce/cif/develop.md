@@ -31,7 +31,7 @@ CIF プロジェクトを使用する場合は、ローカル開発環境を使�
 
 >[!NOTE]
 >
->以下の手順は、CIF for AEM 6.5 LTS を使用してAEM Commerce用のローカル AEM開発環境をセットアップする場合に役立ちます。 AEM as a Cloud Service を使用している場合は、[AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#) ドキュメントを参照してください。
+>以下の手順は、CIF for AEM 6.5 LTS を使用してAEM Commerce用のローカル AEM開発環境をセットアップする場合に役立ちます。 AEM as a Cloud Service を使用している場合は、[AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#) ドキュメントを参照してください。
 
 CIF アドオンと呼ばれるAEM用のAEM Commerce アドオンもローカル開発が可能で、AEM パッケージとして提供されます。 これは、[&#x200B; ソフトウェア配布ポータル &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) から機能パックとしてダウンロードできます。
 
