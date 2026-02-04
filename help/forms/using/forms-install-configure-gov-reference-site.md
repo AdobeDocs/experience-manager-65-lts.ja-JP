@@ -178,7 +178,7 @@ ht-degree: 62%
 
 **メモ：**
 
-1. https://<aemserver>:<port>/aem/inbox に移動すると、上記の参照ドキュメントリンクで説明されているプロセスを完了できます。
+1. https://&lt;aemserver>:&lt;port>/aem/inbox に移動すると、上記の参照ドキュメントリンクで説明されているプロセスを完了できます。
 1. `we-gov-forms.pkg.all-[version].zip` パッケージには、パッケージの一部である `we-gov-forms.pkg.all-[version].zip/ssl` フォルダーを抽出することでアクセスできるサンプル SS キーと証明書が含まれています。
 
 1. SSL 証明書およびキーの詳細：
@@ -234,7 +234,7 @@ ht-degree: 62%
 
 1. 次の URL に移動します。
 
-   https://<aemserver>:<port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
+   https://&lt;aemserver>:&lt;port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
 
    1. MS Dynamics アプリケーションの登録で設定したリダイレクト URL と同じ URL を使用してサーバーにアクセスしていることを確認してください。
 
@@ -299,7 +299,7 @@ ht-degree: 62%
 
    *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments-fdm/we-gov*
 
-1. **We.gov Microsoft®Dynamics CRM FDM を選択し****プロパティ** を選択します。
+1. **We.gov Microsoft®Dynamics CRM FDM を選択し**&#x200B;**プロパティ** を選択します。
 
    ![Dynamics CRM FDM のプロパティ](assets/properties_dynamics_crm.jpg)
 
@@ -376,7 +376,7 @@ ht-degree: 62%
 
    ![We.Gov Adobe Analytics](assets/wegov_adobe_analytics.jpg)
 
-1. フレームワーク設定を更新する場合は、同じページで、「We.Gov Adobe Analytics Framework （Analytics Framework）」をクリックします（オーサリングを有効にするには [AEM オーサリングの有効 ](../../forms/using/forms-install-configure-gov-reference-site.md#enableauthoring) を参照）。
+1. フレームワーク設定を更新する場合は、同じページで、「We.Gov Adobe Analytics Framework （Analytics Framework）」をクリックします（オーサリングを有効にするには [AEM オーサリングの有効 &#x200B;](../../forms/using/forms-install-configure-gov-reference-site.md#enableauthoring) を参照）。
 
 #### Adobe Analytics ユーザー資格情報の検索 {#analytics-locating-user-credentials}
 
@@ -483,13 +483,13 @@ AEM FormsをAdobe Formsと共にインストールして設定するには、変
 
 詳細な手順を読む前に、以下を確認してください。
 
-* [ フォームの自動変換サービスの設定 ](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#)
+* [&#x200B; フォームの自動変換サービスの設定 &#x200B;](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#)
 
 #### IMS 設定の作成 – 第 1 部 {#creating-ims-config}
 
 フォーム変換ツールと正しく通信するようにサービスを設定するユーザーは、Adobe I/Oに登録できるようにIdentity Management System （IMS）サービスを設定する必要があります。
 
-1. https://<aemserver>:<port> > に移動し、「Adobe エクスペリエンス」をクリックします。
+1. https://&lt;aemserver>:&lt;port> > に移動し、「Adobe エクスペリエンス」をクリックします。
 左上の Manager / ツール / セキュリティ / Adobe IMS設定。
 
 1. 「作成」をクリックします。
@@ -582,7 +582,7 @@ IMS の設定が完了したら、AEM でクラウド設定を確認できます
 
 1. この設定では、2 つのチェックボックス値が空のままになっていました。
 
-   これらのオプションについて詳しくは、[ クラウドサービスを設定 ](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service) を参照してください。
+   これらのオプションについて詳しくは、[&#x200B; クラウドサービスを設定 &#x200B;](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service) を参照してください。
 
 #### クラウド設定の指定（`We.Finance` AFC 実稼動） {#configure-cloud-configuration-wefinance}
 
@@ -712,7 +712,7 @@ IMS 設定が完了したら、AEMでクラウド設定を作成する手順に�
 
 [スタイルシステム](../../sites-authoring/style-system.md)
 
-サポートされるスタイルについて詳しくは、[ テンプレートをカスタマイズするためのスタイルシステム ](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) も参照してください。
+サポートされるスタイルについて詳しくは、[&#x200B; テンプレートをカスタマイズするためのスタイルシステム &#x200B;](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) も参照してください。
 
 ### アダプティブフォームのカスタマイズ {#adaptive-forms-customization}
 

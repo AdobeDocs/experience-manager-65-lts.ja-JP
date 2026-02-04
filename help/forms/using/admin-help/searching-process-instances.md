@@ -60,7 +60,7 @@ ht-degree: 66%
 1. 行を追加または削除するには「フィルターを増やす」または「フィルターを減らす」をクリックします。1～4 行まで指定できます。
 1. 「**検索**」をクリックします。プロセスインスタンス ページが表示され、見つかったインスタンスが一覧表示されます。
 
-[ プロセスインスタンスのステータスについて ](/help/forms/using/admin-help/processes.md#about-process-instance-statuses) も参照してください。
+[&#x200B; プロセスインスタンスのステータスについて &#x200B;](/help/forms/using/admin-help/processes.md#about-process-instance-statuses) も参照してください。
 
 ## プロセスの複合検索を実行する {#perform-a-combined-search-for-a-process}
 
