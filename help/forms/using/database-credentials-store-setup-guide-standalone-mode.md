@@ -4,7 +4,7 @@ description: スタンドアロンモードの JBoss/Red Hat EAP でのAEM Forms
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+source-git-commit: f093f39fb535209297940cff13a99c7631812152
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 2%
@@ -17,6 +17,7 @@ ht-degree: 2%
 ## 概要
 
 このガイドでは、JBoss/Red Hat EAP 上のAEM Forms JEE の **データベース資格情報ストアの設定** スタンドアロンモード **について説明** ます。 これは、手動インストールを実行する場合に必要です。
+
 
 **このガイドの内容は次のとおりです。**
 

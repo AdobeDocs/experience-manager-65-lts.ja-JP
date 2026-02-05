@@ -4,7 +4,7 @@ description: JBoss EAP 8 は、ドメインモード設定用のAEM Formsで、�
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+source-git-commit: f093f39fb535209297940cff13a99c7631812152
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 2%
@@ -18,11 +18,12 @@ ht-degree: 2%
 
 JBoss EAP 8 では、**Elytron 資格情報ストア** を使用して、AEM Forms デプロイメントのデータベースパスワードを安全に管理します。 Adobeには、ドメインモードでの Elytron ベースの資格情報ストアの作成と設定を簡単に行うための **自動スクリプト** が用意されています。
 
+
 この設定は、（JBoss ドメインコントローラーを起動する前に **完了する必要があり** す。
 
 ### 前提条件
 
-* 資格情報ストア作成スクリプトを実行する前に **&#x200B;**&#x200B;JBoss サーバーを完全に停止する必要があります。
+* 資格情報ストア作成スクリプトを実行する前に **** JBoss サーバーを完全に停止する必要があります。
 * 資格情報ストアの作成は、**オフラインモードのみ** で実行する必要があります。
 
 JBoss が実行中の場合に停止するには：

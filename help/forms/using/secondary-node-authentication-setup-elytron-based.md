@@ -4,7 +4,7 @@ description: JBoss EAP 8 では、Elytron を使用して、セカンダリノ�
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+source-git-commit: f093f39fb535209297940cff13a99c7631812152
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 5%
@@ -19,6 +19,7 @@ ht-degree: 5%
 JBoss EAP 8 では、**Elytron** を使用して、クラスター化されたデプロイメントで **プライマリノードとセカンダリノード** 間の通信が認証されます。 この構成により、セカンダリ・ノードの安全な登録とプライマリ・ドメイン・コントローラとの通信が確保されます。
 
 環境とセキュリティの要件に応じて、2 つの設定オプションを使用できます。
+
 
 ## 前提条件
 
