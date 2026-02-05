@@ -35,7 +35,7 @@ JSON の書き出しは、[Sling Models](https://sling.apache.org/documentation/
 
 >[!NOTE]
 >
->Sling モデルの使用例について詳しくは、[AEM での Sling モデルエクスポーターの開発](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter)を参照してください。
+>Sling モデルの使用例について詳しくは、[AEM での Sling モデルエクスポーターの開発](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter)を参照してください。
 
 Sling Model の実装クラスに次のような注釈を付ける必要があります。
 
@@ -91,8 +91,8 @@ GitHub のコード
 
 ## 関連ドキュメント {#related-documentation}
 
-* [Assets ユーザーガイドのコンテンツフラグメントに関するトピック](https://experienceleague.adobe.com/en/docs/experience-manager-64/assets/home#)
+* [Assets ユーザーガイドのコンテンツフラグメントに関するトピック](https://experienceleague.adobe.com/ja/docs/experience-manager-64/assets/home#)
 * [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)
 * [コンテンツフラグメントを使用したオーサリング](/help/sites-authoring/content-fragments.md)
 * [コンテンツサービス用の JSON エクスポーター](/help/sites-developing/json-exporter.md)
-* [コアコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction)および[コンテンツフラグメントコンポーネント](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/content-fragment-component)
+* [コアコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction)および[コンテンツフラグメントコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/wcm-components/content-fragment-component)
