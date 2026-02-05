@@ -22,7 +22,7 @@ ht-degree: 56%
 
 ## 概要 {#overview}
 
-JSON の書き出しは、[Sling Models](https://sling.apache.org/documentation/bundles/models.html) と、[Sling Model Exporter](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) フレームワーク（それ自体は [Jackson 注釈 ](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) に依存）に基づいて行われます。
+JSON の書き出しは、[Sling Models](https://sling.apache.org/documentation/bundles/models.html) と、[Sling Model Exporter](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) フレームワーク（それ自体は [Jackson 注釈 &#x200B;](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) に依存）に基づいて行われます。
 
 つまり、JSON を書き出す必要がある場合、コンポーネントには Sling モデルが必要です。 したがって、次の 2 つの手順に従って、任意のコンポーネントで JSON 書き出しを有効にします。
 

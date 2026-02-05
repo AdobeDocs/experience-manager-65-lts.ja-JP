@@ -22,7 +22,7 @@ ht-degree: 50%
 
 ## 試してみる {#trying-it-out}
 
-1. `We.Retail` のサンプルコンテンツでAdobe Experience Manager（AEM）を起動し、[ コンポーネントコンソール ](/help/sites-authoring/default-components-console.md) を開きます。
+1. `We.Retail` のサンプルコンテンツでAdobe Experience Manager（AEM）を起動し、[&#x200B; コンポーネントコンソール &#x200B;](/help/sites-authoring/default-components-console.md) を開きます。
 
    **グローバルナビゲーション／ツール／コンポーネント**
 
@@ -57,7 +57,7 @@ ht-degree: 50%
 
 1. ありがとうページで、テキストコンポーネントを選択し、コンポーネントの編集メニューで、継承をキャンセルアイコンをクリックします。
 
-   [`We.Retail` はグローバル化されたサイト構造を持ち ](/help/sites-developing/we-retail-globalized-site-structure.md) コンテンツがプライマリ言語サイトから [ 継承と呼ばれるメカニズムを通じてライブコピー ](/help/sites-administering/msm.md) にプッシュされます。 このため、ユーザーが手動でテキストを編集できるようにするには、継承をキャンセルする必要があります。
+   [`We.Retail` はグローバル化されたサイト構造を持ち &#x200B;](/help/sites-developing/we-retail-globalized-site-structure.md) コンテンツがプライマリ言語サイトから [&#x200B; 継承と呼ばれるメカニズムを通じてライブコピー &#x200B;](/help/sites-administering/msm.md) にプッシュされます。 このため、ユーザーが手動でテキストを編集できるようにするには、継承をキャンセルする必要があります。
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
@@ -86,10 +86,10 @@ ht-degree: 50%
 
 ## 関連トピック {#further-information}
 
-コアコンポーネントについて詳しくは、オーサリングガイド [ コアコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction) で機能の概要を参照してください。 技術的な概要については、ガイド [ コアコンポーネントの開発 ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview) を参照してください。
+コアコンポーネントについて詳しくは、オーサリングガイド [&#x200B; コアコンポーネント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction) で機能の概要を参照してください。 技術的な概要については、ガイド [&#x200B; コアコンポーネントの開発 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview) を参照してください。
 
 
 
-コアコンポーネントについて詳しくは、オーサリングドキュメント [ コアコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction) でコアコンポーネントの機能の概要を参照し、開発者用ドキュメント [ コアコンポーネントの開発 ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview) で技術的な詳細を参照してください。
+コアコンポーネントについて詳しくは、オーサリングドキュメント [&#x200B; コアコンポーネント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction) でコアコンポーネントの機能の概要を参照し、開発者用ドキュメント [&#x200B; コアコンポーネントの開発 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview) で技術的な詳細を参照してください。
 
-また、[ 編集可能テンプレート ](/help/sites-developing/we-retail-editable-templates.md) を調査することもできます。 編集可能テンプレートについて詳しくは、オーサリングドキュメント [ ページテンプレートの作成 ](/help/sites-authoring/templates.md) または開発者用ドキュメントページ [ テンプレート – 編集可能 ](/help/sites-developing/page-templates-editable.md) を参照してください。
+また、[&#x200B; 編集可能テンプレート &#x200B;](/help/sites-developing/we-retail-editable-templates.md) を調査することもできます。 編集可能テンプレートについて詳しくは、オーサリングドキュメント [&#x200B; ページテンプレートの作成 &#x200B;](/help/sites-authoring/templates.md) または開発者用ドキュメントページ [&#x200B; テンプレート – 編集可能 &#x200B;](/help/sites-developing/page-templates-editable.md) を参照してください。

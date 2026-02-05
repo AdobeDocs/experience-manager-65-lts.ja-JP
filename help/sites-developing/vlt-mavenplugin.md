@@ -23,7 +23,7 @@ Adobe コンテンツパッケージ Maven プラグインは、構築したパ�
 >次のトピックも参照してください。
 >
 >* AEM アプリケーションのデプロイ方法について詳しくは、AEM as a Cloud Service ドキュメントの [Adobe コンテンツパッケージ Maven プラグイン](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/maven-plugin#developer-tools)に関する記事を参照してください。
->* 最新のAEM プロジェクトを構造化する方法については [AEM as a Cloud Service ドキュメントの ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure)AEM プロジェクト構造 } の記事を参照してください。
+>* 最新のAEM プロジェクトを構造化する方法については [AEM as a Cloud Service ドキュメントの &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure)AEM プロジェクト構造 &rbrace; の記事を参照してください。
 >* アーキタイプを使用して新しい AEM プロジェクトを開始する方法については、[AEM プロジェクトのアーキタイプ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/overview)のドキュメントを参照してください。
 >
 >3 つのドキュメントはすべて AEM 6.5 に適用されます。
