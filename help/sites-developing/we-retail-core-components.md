@@ -1,6 +1,6 @@
 ---
-title: We.Retail のコアコンポーネントの使用
-description: We.Retail での Adobe Experience Manager のコアコンポーネントの使用方法について説明します。
+title: We.Retail のコアコンポーネントを試す
+description: We.Retail を使用してAdobe Experience Managerのコアコンポーネントを操作する方法について説明します。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,20 +9,20 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 62b6d299-f44e-4af3-b5e1-b0e92ca0598a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: cc96a14ebaf9f895a798b5f4904f5b4769b990bb
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 100%
+source-wordcount: '560'
+ht-degree: 50%
 
 ---
 
-# We.Retail のコアコンポーネントの使用{#trying-out-core-components-in-we-retail}
+# We.Retail のコアコンポーネントを試す{#trying-out-core-components-in-we-retail}
 
-コアコンポーネントは、柔軟性の高い最新のコンポーネントです。拡張が容易で、プロジェクトに簡単に統合できます。コアコンポーネントは、HTL、設定不要の使いやすさ、設定可能、バージョン管理、拡張性など、いくつかの重要な設計の原理に基づいて構築されています。We.Retail はコアコンポーネントを基盤に構築されています。
+コアコンポーネントは、柔軟性の高い最新のコンポーネントです。拡張が容易で、プロジェクトに簡単に統合できます。コアコンポーネントは、HTL、設定不要の使いやすさ、設定可能、バージョン管理、拡張性など、いくつかの重要な設計の原理に基づいて構築されています。`We.Retail` サイトは、コアコンポーネントに基づいて構築されています。
 
 ## 試してみる {#trying-it-out}
 
-1. We.Retail サンプルコンテンツを使用して Adobe Experience Manager（AEM）を起動し、[コンポーネントコンソール](/help/sites-authoring/default-components-console.md)を開きます。
+1. `We.Retail` のサンプルコンテンツでAdobe Experience Manager（AEM）を起動し、[ コンポーネントコンソール ](/help/sites-authoring/default-components-console.md) を開きます。
 
    **グローバルナビゲーション／ツール／コンポーネント**
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. すべてのコアコンポーネントの名前が **v1** になっています。これは、このコアコンポーネントの最初のバージョンであることを示します。今後、定期的にバージョンがリリースされる予定です。これは、AEM とバージョンの互換性があり、簡単にアップグレードできるので、最新機能を利用できます。
+1. すべてのコアコンポーネントは、**v1** という名前を使用して各コンポーネントの最初のバージョンを示します。 通常のバージョンは今後リリースされる予定です。このバージョンはAEMとバージョン互換性があり、アップグレードが容易なので、最新機能を活用できます。
 1. 「**Text (v1)**」をクリックします。
 
    コンポーネントの&#x200B;**リソースタイプ**&#x200B;が `/apps/core/wcm/components/text/v1/text` であることを確認します。コアコンポーネントは `/apps/core/wcm/components` の下にあり、コンポーネントごとにバージョン管理されます。
@@ -46,7 +46,7 @@ ht-degree: 100%
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
-1. コンポーネントコンソールに戻ります。**We.Retail** グループをフィルタリングし、**テキスト**&#x200B;コンポーネントを選択します。
+1. コンポーネントコンソールに戻ります。グループ **`We.Retail`** をフィルタリングし、「**テキスト**」コンポーネントを選択します。
 1. **リソースタイプ**&#x200B;が `/apps/weretail` 下の想定したコンポーネントを指していることを確認します。ただし、**リソースのスーパータイプ**&#x200B;は元のコアコンポーネント `/apps/core/wcm/components/text/v1/text` を指しています。
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
@@ -57,11 +57,11 @@ ht-degree: 100%
 
 1. ありがとうページで、テキストコンポーネントを選択し、コンポーネントの編集メニューで、継承をキャンセルアイコンをクリックします。
 
-   [We.Retail にはグローバル化されたサイト構造が用意されており](/help/sites-developing/we-retail-globalized-site-structure.md)、この構造では、コンテンツが言語マスターから[継承と呼ばれるメカニズムを通じてライブコピーにプッシュされます](/help/sites-administering/msm.md)。このため、ユーザーが手動でテキストを編集できるよう、継承はキャンセルする必要があります。
+   [`We.Retail` はグローバル化されたサイト構造を持ち ](/help/sites-developing/we-retail-globalized-site-structure.md) コンテンツがプライマリ言語サイトから [ 継承と呼ばれるメカニズムを通じてライブコピー ](/help/sites-administering/msm.md) にプッシュされます。 このため、ユーザーが手動でテキストを編集できるようにするには、継承をキャンセルする必要があります。
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. 「**はい**」をクリックしてキャンセルを確定します。
+1. **はい** をクリックしてキャンセルを確定します。
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
@@ -78,14 +78,18 @@ ht-degree: 100%
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
-1. コアコンポーネントを使用すると、テンプレート作成者は、ページ作成者がどのプロパティを使用できるかを設定できます。これには、許可されるペースト元、書式設定オプション、使用可能な段落スタイルなどの機能が含まれます。
+1. コアコンポーネントを使用すれば、テンプレート作成者は、ページ作成者が使用できるプロパティを設定できます。 これらのプロパティには、許可されている貼り付け元、書式設定オプション、使用可能な段落スタイルなどの機能が含まれます。
 
-   このようなデザインダイアログは、多くのコアコンポーネントで使用可能で、テンプレートエディターと連携して機能します。有効にした機能は、コンポーネントエディターを通じて作成者に提供されます。
+   このようなデザインダイアログボックスは、多くのコアコンポーネントで使用でき、テンプレートエディターと連携して動作します。 有効にした機能は、コンポーネントエディターを通じて作成者に提供されます。
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
-## その他の情報 {#further-information}
+## 関連トピック {#further-information}
 
-コアコンポーネントについて詳しくは、オーサリングドキュメントの[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)でコアコンポーネント機能の概要を参照し、開発者用ドキュメントの[コアコンポーネントの開発](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ja)で技術的な概要を参照してください。
+コアコンポーネントについて詳しくは、オーサリングガイド [ コアコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction) で機能の概要を参照してください。 技術的な概要については、ガイド [ コアコンポーネントの開発 ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview) を参照してください。
 
-また、[編集可能テンプレート](/help/sites-developing/we-retail-editable-templates.md)も詳しく調査することをお勧めします。編集可能テンプレートについて詳しくは、オーサリングドキュメントの[ページテンプレートの作成](/help/sites-authoring/templates.md)または開発者用ドキュメントのページ[テンプレート - 編集可能](/help/sites-developing/page-templates-editable.md)を参照してください。
+
+
+コアコンポーネントについて詳しくは、オーサリングドキュメント [ コアコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction) でコアコンポーネントの機能の概要を参照し、開発者用ドキュメント [ コアコンポーネントの開発 ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview) で技術的な詳細を参照してください。
+
+また、[ 編集可能テンプレート ](/help/sites-developing/we-retail-editable-templates.md) を調査することもできます。 編集可能テンプレートについて詳しくは、オーサリングドキュメント [ ページテンプレートの作成 ](/help/sites-authoring/templates.md) または開発者用ドキュメントページ [ テンプレート – 編集可能 ](/help/sites-developing/page-templates-editable.md) を参照してください。

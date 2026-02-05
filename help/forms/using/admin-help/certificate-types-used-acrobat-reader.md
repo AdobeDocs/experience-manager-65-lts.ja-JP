@@ -1,6 +1,6 @@
 ---
 title: Acrobat Reader DC Extensions で使用される証明書の種類
-description: Acrobat Reader DC Extensions で使用される証明書の種類について説明します。
+description: Acrobat Reader DC Extensions で使用される証明書タイプについて説明します。
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ca919915-c37b-4793-b5e2-21a464c5dcdf
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 253e2b5a39fd4c2fe7ab9aeaafb72930b4aa39ff
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 100%
+source-wordcount: '945'
+ht-degree: 65%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 ## 証明書のわかりやすい名前 {#certificate-friendly-name}
 
-Acrobat Reader DC Extensions 証明書のわかりやすい名前とは、証明書のプロパティが記述されている文字列です。例を以下に示します。
+次の例に示すように、Acrobat Reader DC Extensions 証明書の「わかりやすい」名前は、証明書のプロパティを説明する文字列です。
 
 ARE 2D Barcode Full Production V6.1 P8 0002054
 
@@ -39,7 +39,7 @@ ARE 2D Barcode Full Production V6.1 P8 0002054
 
 **デプロイメントの種類：** 実稼働などの、証明書の使用目的を示します。値は、Evaluation（評価）または Production（実稼働環境）のどちらかです。証明書の各種類に関連付けられているデプロイメントの種類の一覧については、証明書プロファイルの表のデプロイメントの種類の列を参照してください。
 
-**使用権限のバージョン：** 証明書を使用できる使用権限アルゴリズムのバージョンが記述されています（V6.1 など）。これは、Acrobat または Acrobat Reader DC Extensions のバージョンではありません。
+**使用権限のバージョン：** 証明書を使用できる使用権限アルゴリズムのバージョンが記述されています（V6.1 など）。これは、Acrobatまたは Acrobat Reader DC Extensions のバージョンではありません。
 
 **プロファイルコード：** プロファイルコードは、完全な証明書プロパティの簡単な説明です（P8 など）。ファイルの各種類に関連付けられているプロファイルコードの一覧については、証明書プロファイルの表のプロファイルコードの列を参照してください。
 
@@ -47,7 +47,7 @@ ARE 2D Barcode Full Production V6.1 P8 0002054
 
 ## 証明書プロファイル {#certificate-profiles}
 
-次の表に、Acrobat Reader DC Extensions の証明書を分析する際に検出される可能性のある証明書プロファイルの一覧を示します。
+次の表に、Acrobat Reader DC Extensions 証明書の分析時に発生する可能性のある証明書プロファイルを示します。
 
 <table>
  <thead>
@@ -73,13 +73,13 @@ ARE 2D Barcode Full Production V6.1 P8 0002054
   </tr>
   <tr>
    <td><p>P3</p></td>
-   <td><p>Acrobat Reader DC Extensions、実稼動環境</p></td>
+   <td><p>Acrobat Reader DC Extensions、実稼動</p></td>
    <td><p>Max</p></td>
    <td><p>実稼動</p></td>
   </tr>
   <tr>
    <td><p>P4</p></td>
-   <td><p>Acrobat Reader DC Extensions、Adobe 内部使用</p></td>
+   <td><p>Acrobat Reader DC Extensions、内部Adobeの使用</p></td>
    <td><p>2 年</p></td>
    <td><p>実稼動</p></td>
   </tr>
@@ -91,7 +91,7 @@ ARE 2D Barcode Full Production V6.1 P8 0002054
   </tr>
   <tr>
    <td><p>P6</p></td>
-   <td><p>Acrobat Reader DC Extensions、評価</p></td>
+   <td><p>Acrobat Reader DC Extensions，評価</p></td>
    <td><p>60 日</p></td>
    <td><p>評価</p></td>
   </tr>
@@ -109,37 +109,37 @@ ARE 2D Barcode Full Production V6.1 P8 0002054
   </tr>
   <tr>
    <td><p>I10</p></td>
-   <td><p>Forms、OEM で使用可能</p></td>
+   <td><p>Forms。OEM はFormsを使用できます。</p></td>
    <td><p>Max</p></td>
    <td><p>実稼動環境および評価</p></td>
   </tr>
   <tr>
    <td><p>I11</p></td>
-   <td><p>Forms、OEM で使用可能</p></td>
+   <td><p>Forms。OEM はFormsを使用できます。</p></td>
    <td><p>Max</p></td>
    <td><p>実稼動環境および評価</p></td>
   </tr>
   <tr>
    <td><p>I12</p></td>
-   <td><p>署名のみ、OEM で使用可能</p></td>
+   <td><p>署名のみ。OEM は署名のみを使用できます</p></td>
    <td><p>Max</p></td>
    <td><p>実稼動環境および評価</p></td>
   </tr>
   <tr>
    <td><p>I13</p></td>
-   <td><p>オフラインコメントのみ、OEM で使用可能</p></td>
+   <td><p>オフライン コメントのみ（OEM はオフライン コメントを使用できます）</p></td>
    <td><p>Max</p></td>
    <td><p>実稼動環境および評価</p></td>
   </tr>
   <tr>
    <td><p>I14</p></td>
-   <td><p>コメントのみ、OEM で使用可能</p></td>
+   <td><p>コメントのみ（OEM はコメントのみ使用できます）</p></td>
    <td><p>Max</p></td>
    <td><p>実稼動環境および評価</p></td>
   </tr>
   <tr>
    <td><p>I15</p></td>
-   <td><p>全権限、OEM で使用可能</p></td>
+   <td><p>完全なアクセス許可。OEM は完全なアクセス許可を使用できます。</p></td>
    <td><p>Max</p></td>
    <td><p>実稼動環境および評価</p></td>
   </tr>
@@ -148,21 +148,21 @@ ARE 2D Barcode Full Production V6.1 P8 0002054
 
 ## 有効期間 {#validity-period}
 
-評価用証明書は、製品のサンプルアプリケーションを評価および開発できるようにするために、顧客および開発者に対して発行されます。この証明書の有効期間は 60～90 日です。データが発行されてから 2 か月目の月末に期限が切れます。
+評価用証明書は、製品のサンプルアプリケーションを評価および開発できるようにするために、顧客および開発者に対して発行されます。この証明書の有効期間は 60～90 日です。これらは、イシューデータに続く 2 か月目の終わりに期限切れになります。
 
 パートナー統合証明書は、アドビのビジネスパートナーに対して、ソフトウェアの開発、統合、プロトタイピングおよびデモンストレーションをサポートするために発行されます。これらの証明書は、発行日から 2 年間有効です。
 
-アドビ内部使用証明書は、ソフトウェアの開発、統合、プロトタイピングおよびデモンストレーションをサポートするために、アドビ システムズ社内で使用されます。これらの証明書は、発行日から 2 年間有効です。
+Adobeの内部使用証明書は、Adobe内でソフトウェアの開発、統合、プロトタイプ作成およびデモをサポートするために使用されます。 これらの証明書は、発行日から 2 年間有効です。
 
-実稼動環境用の証明書は、Acrobat Reader DC Extensions を購入した顧客に対して発行されます。この種の証明書は、認証局（CA）によって許可された最長期間有効です（証明書プロファイルの表では、「*最大値*」と示されています）。
+実稼働環境用の証明書は、Acrobat Reader DC Extensions を購入したお客様に対して発行されます。 この種の証明書は、認証局（CA）によって許可された最長期間有効です（証明書プロファイルの表では、「*最大値*」と示されています）。
 
 ## Acrobat Reader DC Extensions の使用権限 {#acrobat-reader-dc-extensions-usage-rights}
 
-証明書ビューアで Acrobat Reader DC Extensions 証明書を確認するとき、「詳細」タブで使用権限の項目が設定されている場合にこの項目を選択すると、その証明書で有効にできる Adobe Reader 使用権限の一覧が項目別に表示されます。特定のドキュメントに対して有効にされる使用権限は、証明書によって有効になる権限のサブセットの場合があります。
+証明書ビューアで Acrobat Reader DC Extensions 証明書を確認する際に、「詳細」タブで使用権限項目を選択できます（設定されている場合）。 証明書で有効にできる Adobe Reader 使用権限の項目別リストを確認できます。 特定のドキュメントで有効な使用権限は、証明書で有効になっている権限のサブセットである場合があります。
 
 コラボレーションのない環境でオンラインコメントが必要な場合は、アドビサポートにお問い合わせください。Mode プロパティはデプロイメントの種類と一致し、「*実稼動環境*」または「*評価*」になります。
 
-許可される Acrobat Reader DC Extensions 使用権限は、1 つまたは複数の固有の要素で構成されます。これらの要素を異なる組み合わせで使用することにより、ライセンスされている製品の様々な機能を使用できるようになります。
+許可されている Acrobat Reader DC Extensions 使用権限は、1 つ以上の特定の要素で構成されます。 これらの要素を異なる組み合わせで使用することにより、ライセンスされている製品の様々な機能を使用できるようになります。
 
 <table>
  <thead>
@@ -174,7 +174,7 @@ ARE 2D Barcode Full Production V6.1 P8 0002054
  <tbody>
   <tr>
    <td><p>FormFillInAndSave</p></td>
-   <td><p>フォームフィールドに入力し、ファイルをローカルに保存する。</p></td>
+   <td><p>フォームフィールドに入力し、ファイルをローカルに保存します。</p></td>
   </tr>
   <tr>
    <td><p>FormImportExport</p></td>
@@ -225,4 +225,4 @@ ARE 2D Barcode Full Production V6.1 P8 0002054
 
 >[!NOTE]
 >
->Acrobat Reader DC Extensions の使用権限は、連携して動作する特定の組み合わせでのみ、アドビからライセンスを受けることができます。これらの機能を個別にライセンスすることはできません。使用権限の可能な組み合わせについては、AEM Forms の営業担当者にお問い合わせください。
+>Acrobat Reader DC Extensions の使用権限は、連携する特定の組み合わせでのみAdobeからライセンスできます。 これらの機能を個別にライセンスすることはできません。使用権限の可能な組み合わせについては、AEM Forms の営業担当者にお問い合わせください。

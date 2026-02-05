@@ -10,14 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 410691eb-27a9-4f8e-b926-01027c7f84d4
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: cc96a14ebaf9f895a798b5f4904f5b4769b990bb
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 100%
+source-wordcount: '300'
+ht-degree: 61%
 
 ---
 
-# 集計した使用状況の統計の収集をオプトインする方法{#opting-into-aggregated-usage-statistics-collection}
+# 集計した使用状況の統計の収集をオプトインする{#opting-into-aggregated-usage-statistics-collection}
 
 ## はじめに {#introduction}
 
@@ -33,21 +33,21 @@ Adobe Experience Manager（AEM）とのやり取りに関する Adobe 統計を�
 
 >[!NOTE]
 >
->[Web コンソール](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console)を使用するか、AEM オプトイン画面でオプトインオプションを選択しないことで、いつでもオプトアウトできます。
+>[Web コンソール ] （/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console を使用して、いつでもオプトアウトできます。または、AEMのオプトイン画面でオプトインオプションを選択しないこともできます。
 
 ## タッチ UI を使用したオプトイン {#opt-in-by-using-the-touch-ui}
 
-AEM を初めて起動する場合は、次のようにタッチ UI を使用してオプトインできます。
+AEMを初めて起動する際に、次のようにタッチ UI を使用してオプトインできます。
 
 1. AEM ナビゲーション画面で、**インボックス**（ベル）アイコンをクリックします。
 
    ![usage_statisticsnavigationscreen](assets/usage_statisticsnavigationscreen.png)
 
-1. ドロップダウンリストで、「**集計した使用状況の統計の収集を有効にする**」を選択します。
+1. ドロップダウンリストで、「**Enable Aggregated Usage Statistics Collection**」をクリックします。
 
    ![usage_statisticsnavigationscreen2](assets/usage_statisticsnavigationscreen2.png)
 
-1. オプトイン画面で、「**集計した使用状況の統計の収集を許可**」を選択します。
+1. オプトイン画面で、「**[!UICONTROL 集計した使用状況の統計の収集を許可]**」オプションをクリックします。
 
    ![usage_statisticsopt-inscreen](assets/usage_statisticsopt-inscreen.png)
 
@@ -55,7 +55,7 @@ AEM を初めて起動する場合は、次のようにタッチ UI を使用し
 
 ## Web コンソールを使用したオプトイン {#opt-in-by-using-the-web-console}
 
-次のように web コンソールを使用してオプトイン（またはオプトアウト）できます。
+次のように、web コンソールを使用してオプトイン（またはオプトアウト）できます。
 
 1. AEM ナビゲーション画面で、**ツール**／**操作** の順にクリックします。
 
@@ -65,7 +65,7 @@ AEM を初めて起動する場合は、次のようにタッチ UI を使用し
 
    ![usage_statisticswebconsole](assets/usage_statisticswebconsole.png)
 
-1. 「**Aggregated Usage Statistics Collection**」を探します。
+1. **Aggregated Usage Statistics Collection** を検索します。
 1. **編集**&#x200B;アイコンをクリックします。
 
    ![usage_statisticscollectedit](assets/usage_statisticscollectionedit.png)
