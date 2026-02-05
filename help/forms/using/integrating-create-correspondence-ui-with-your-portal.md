@@ -1,5 +1,5 @@
 ---
-title: カスタムポータルにおける通信を作成の UI の統合
+title: 通信作成用ソリューションのカスタムポータルとの統合
 description: 通信の作成 UI とカスタムポータルを統合する方法について説明します。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,22 +9,22 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 496b125b-b091-4843-ba9f-2479dbeba07b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 100%
+source-wordcount: '403'
+ht-degree: 46%
 
 ---
 
-# 通信作成用 UI のカスタムポータルへの統合{#integrating-create-correspondence-ui-with-your-custom-portal}
+# `Create Correspondence` ソリューションとカスタムポータルの統合{#integrating-create-correspondence-ui-with-your-custom-portal}
 
 ## 概要 {#overview}
 
-ここでは、通信を作成のソリューションをお使いの環境に統合する方法の詳細を説明します。
+この記事では、`Create Correspondence` ソリューションをお使いの環境と統合する方法について詳しく説明します。
 
 ## URL ベースの呼び出し {#url-based-invocation}
 
-通信を作成アプリケーションをカスタムポータルから呼び出す 1 つの方法として、次のリクエストパラメーターを持つ URL を準備する方法が挙げられます。
+カスタムポータルから `Create Correspondence` アプリケーションを呼び出す 1 つの方法は、次のリクエストパラメーターを含む URL を準備することです。
 
 * 文字テンプレートの識別子（cmLetterId パラメーターを使用）。
 
@@ -39,16 +39,16 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->通信を作成アプリケーションを呼び出す前に、データを保存、アップロードして、指定された dataURL で通信を作成の UI を呼び出します。この処理は、カスタムポータル自体で実行されるか、または異なるバックエンドプロセスで実行される可能性があります。
+>`Create Correspondence` アプリケーションを呼び出す前に、データを保存してアップロードし、指定された dataURL で `Create Correspondence` UI を呼び出します。 このプロセスは、カスタムポータル自体から、または別のバックエンドプロセスを通じて実行できます。
 
 ## インラインデータベースの呼び出し {#inline-data-based-invocation}
 
-通信作成用アプリケーションを呼び出す別の（そしてより安全な）方法は、https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html の URL をシンプルにヒットしながら、通信作成用アプリケーションを呼び出すパラメーターとデータを POST リクエストとして送信（エンドユーザーからはそれらを隠して）すること、が考えられます。つまり、通信を作成アプリケーションの XML データを（cmData パラメーターを使用して、同じリクエストの一部として）インラインで渡すことができることも意味します。これは、前述のアプローチでは、不可能で、理想的ではありませんでした。
+`Create Correspondence` アプリケーションを呼び出すもう 1 つの安全な方法は、URL （https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html）に移動することです。 パラメーターとデータを送信しながら、この URL を実行して、`Create Correspondence` アプリケーションを POST リクエストとして呼び出し、エンドユーザーに対して非表示にします。 また、このワークフローでは、`Create Correspondence` アプリケーションの XML データをインラインで（同じリクエストの一部として `cmData` パラメーターを使用して）渡すことができるようになりました。 このワークフローは、以前のアプローチでは不可能または理想的でした。
 
 ### レターを指定するパラメーター {#parameters-for-specifying-letter}
 
 | **名前** | **タイプ** | **説明** |
-|---|---|---|
+| --- | --- | --- |
 | cmLetterInstanceId | 文字列 | レターインスタンスの ID です。 |
 | cmLetterId | 文字列 | レターテンプレートの名前です。 |
 
@@ -66,7 +66,7 @@ ht-degree: 100%
   <tr>
    <td>cmDataUrl<br /> </td> 
    <td>URL</td> 
-   <td>cq、ftp、http、file などの基本的なプロトコルを使用してソースファイルから取得する XML データです。<br /> </td> 
+   <td>cq、ftp、http、file.<br /> などの基本的なプロトコルを使用するソースファイルの XML データ </td> 
   </tr>
   <tr>
    <td>cmLetterInstanceId</td> 
@@ -76,7 +76,7 @@ ht-degree: 100%
   <tr>
    <td>cmUseTestData</td> 
    <td>ブール値</td> 
-   <td>データディクショナリに添付されたテストデータを再利用します。</td> 
+   <td>データディクショナリに添付されたテストデータを再利用する。</td> 
   </tr>
  </tbody>
 </table>
@@ -105,4 +105,4 @@ ht-degree: 100%
  </tbody>
 </table>
 
-cmDataURL に http または cq プロトコルを使用している場合、http または cq の URL には匿名でアクセスできます。
+`cmDataURL` に http または cq プロトコルを使用する場合、`http/cq` の URL には匿名でアクセスできる必要があります。

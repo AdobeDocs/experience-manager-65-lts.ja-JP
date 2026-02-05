@@ -1,6 +1,6 @@
 ---
-title: フォームポータルで送信済みフォームを操作するための API
-description: AEM Forms はフォームポータルで送信済みフォームデータに対してクエリやアクションを実行する際に使用できる API を提供します。
+title: Forms ポータルで送信済みフォームを操作するための API
+description: AEM Formsは、Forms ポータルで送信されたフォームデータに対してクエリを実行したり、アクションを実行したりするために使用できる API を提供します。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish, developer-reference
@@ -8,22 +8,22 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: a24d0218-d534-49c9-81c1-12b38d794caa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 100%
+source-wordcount: '512'
+ht-degree: 77%
 
 ---
 
-# フォームポータルで送信済みフォームを操作するための API {#apis-to-work-with-submitted-forms-on-forms-portal}
+# Forms ポータルで送信済みフォームを操作するための API {#apis-to-work-with-submitted-forms-on-forms-portal}
 
-AEM Forms はフォームポータル経由で送信されたフォームデータに対してクエリーを実行する際に使用できる API を提供します。また、この文書で説明している API を使用して、送信済みフォームに対してコメントを投稿したりプロパティを更新したりできます。
+AEM Formsは、Forms ポータル経由で送信されたフォームデータに対してクエリを実行する際に使用できる API を提供します。 また、この文書で説明している API を使用して、送信済みフォームに対してコメントを投稿したりプロパティを更新したりできます。
 
 >[!NOTE]
 >
->「[フォームへの送信レビュー担当者の関連付け](/help/forms/using/adding-reviewers-form.md)」で説明するように、API を呼び出すユーザーは、レビュー担当者グループに追加する必要があります。
+>API を呼び出すユーザーは、レビュー担当者グループに追加する必要があります。 [ 送信レビュー担当者のフォームへの関連付け ](/help/forms/using/adding-reviewers-form.md) を参照してください。
 
-## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
+## GET `/content/forms/portal/submission.review.json?func=getFormsForSubmissionReview` {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
 すべての有効なフォームのリストを返します。
 
@@ -57,7 +57,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
 [{"formPath":"/content/dam/formsanddocuments/forms-review/form2","formName":"form2"},{"formPath":"/content/dam/formsanddocuments/forms-review/form1","formName":"form1"}]
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getAllSubmissions {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
+## GET `/content/forms/portal/submission.review.json?func=getAllSubmissions` {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
 
 すべての送信済みフォームの詳細を返します。ただし、URL パラメーターを使用して結果を制限できます。
 
@@ -85,11 +85,11 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
   </tr>
   <tr>
    <td><code>orderby</code> <br /> （オプション）</td>
-   <td>結果を並べ替えるプロパティを指定します。デフォルト値は <strong>jcr:lastModified</strong> で、最終変更時刻に基づいて結果を並べ替えます。</td>
+   <td>結果を並べ替えるプロパティを指定します。デフォルト値は <code>jcr:lastModified</code> で、最終変更時間に基づいて結果が並べ替えられます。</td>
   </tr>
   <tr>
    <td><code>sort</code> <br /> （オプション）</td>
-   <td>結果を並べ替える順序を指定します。デフォルト値は <strong>desc</strong> で、結果を降順で並べ替えます。<code>asc</code> を指定すると、結果を昇順で並べ替えられます。</td>
+   <td>結果を並べ替える順序を指定します。デフォルト値は <code>desc</code> で、結果を降順に並べ替えます。 <code>asc</code> を指定すると、結果を昇順で並べ替えられます。</td>
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> （任意）</td>
@@ -97,7 +97,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
   </tr>
   <tr>
    <td><code>search</code> <br /> （任意）</td>
-   <td>フォームプロパティで指定した値で検索し、一致する値を持つフォームを返します。デフォルト値は <strong>""</strong> です。</td>
+   <td>フォームプロパティで指定した値で検索し、一致する値を持つフォームを返します。デフォルト値は <code>""</code> です。</td>
   </tr>
  </tbody>
 </table>
@@ -127,7 +127,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSub
 {"total":1,"items":[{"formName":"form2","formPath":"/content/dam/formsanddocuments/forms-review/form2","submitID":"1403037413508500","formType":"af","jcr:lastModified":"2015-11-05T17:52:32.243+05:30","owner":"admin"}]}
 ```
 
-## POST /content/forms/portal/submission.review.json?func=addComment {#post-content-forms-portal-submission-review-json-func-addcomment-br}
+## 投稿 `/content/forms/portal/submission.review.json?func=addComment` {#post-content-forms-portal-submission-review-json-func-addcomment-br}
 
 指定した送信インスタンスにコメントを追加します。
 
@@ -158,7 +158,7 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 1403873422601300
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getComments {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
+## GET `/content/forms/portal/submission.review.json?func=getComments`   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
 
 指定した送信インスタンスに投稿したすべてのコメントを返します。
 
@@ -196,7 +196,7 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=getCommen
 [{"owner":"fr1","comment":"API test comment","time":1446726988250}]
 ```
 
-## POST /content/forms/portal/submission.review.json?func=updateSubmission {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
+## 投稿 `/content/forms/portal/submission.review.json?func=updateSubmission` {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
 
 指定した送信済みフォームインスタンスの指定したプロパティの値を更新します。
 
@@ -212,7 +212,7 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=getCommen
 
 ### 応答 {#response-4}
 
-投稿された更新に関する情報を持つ JSON オブジェクトを返します。
+更新に関する情報が投稿された JSON オブジェクトを返します。
 
 ### 例 {#example-4}
 
