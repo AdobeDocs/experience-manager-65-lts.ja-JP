@@ -21,7 +21,7 @@ AEM Formsは、Forms ポータル経由で送信されたフォームデータ�
 
 >[!NOTE]
 >
->API を呼び出すユーザーは、レビュー担当者グループに追加する必要があります。 [ 送信レビュー担当者のフォームへの関連付け ](/help/forms/using/adding-reviewers-form.md) を参照してください。
+>API を呼び出すユーザーは、レビュー担当者グループに追加する必要があります。 [&#x200B; 送信レビュー担当者のフォームへの関連付け &#x200B;](/help/forms/using/adding-reviewers-form.md) を参照してください。
 
 ## GET `/content/forms/portal/submission.review.json?func=getFormsForSubmissionReview` {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
