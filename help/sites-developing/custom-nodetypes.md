@@ -655,7 +655,7 @@ AEM 5.4 の場合、リストの最後にを追加します。
 * `@prop cq:lastPublished` – 前回ページが公開された日付（使用されません）。
 * `@prop cq:lastPublishedBy` – 前回ページを公開したユーザー（使用されません）。
 * `@prop cq:lastReplicated` - 前回ページがレプリケートされた日付。
-*  `@prop cq:lastReplicatedBy` - 前回ページをレプリケートしたユーザー。
+* `@prop cq:lastReplicatedBy` - 前回ページをレプリケートしたユーザー。
 * `@prop cq:lastReplicationAction` - レプリケーションアクション：アクティベートまたはアクティベート解除。
 * `@prop cq:lastReplicationStatus` - レプリケーションステータス（使用されません）。
 
