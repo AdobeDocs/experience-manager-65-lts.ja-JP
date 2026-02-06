@@ -74,7 +74,7 @@ AEM Externalizer を設定するには：
 
 >[!NOTE]
 >
->詳しくは、[URL の外部化 ](/help/sites-developing/externalizer.md) を参照してください。
+>詳しくは、[URL の外部化 &#x200B;](/help/sites-developing/externalizer.md) を参照してください。
 
 1. **https://&lt;server>:&lt;port>/system/console/configMgr** の OSGi Web コンソールに移動します。
 1. **Day CQ Link Externalizer** を探し、オーサーノードのドメインを入力します。

@@ -22,7 +22,7 @@ ht-degree: 59%
 
 ExtJS 言語では、xtype はクラスに付与されるシンボル名です。xtype とその使用方法について詳しくは、[ExtJS 2 の概要](https://docs.sencha.com/)の「Component XTypes」の段落を参照してください。
 
-AEMで使用可能なすべてのウィジェットについて詳しくは、[widget API ドキュメント ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を参照してください。
+AEMで使用可能なすべてのウィジェットについて詳しくは、[widget API ドキュメント &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を参照してください。
 
 AEMで特定の xtype が使用されるコンポーネントを調べるには、CRXDE で次の `Xpath` クエリを使用します。 &#39;checkbox&#39;を目的の xtype に置き換えるだけです。
 
@@ -182,7 +182,7 @@ Adobe Experience Manager で使用可能な xtype を以下に示します。
 
   [CQ.Ext.Component](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  すべての `Ext` コンポーネントの基本クラス。 コンポーネントのすべてのサブクラスは、`Ext`Container[ クラスが提供する、作成、レンダリング、破棄の自動 ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) コンポーネントライフサイクルに関与できます。 コンポーネントは、コンテナ作成時に、[items](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) 設定オプションでコンテナに追加されます。
+  すべての `Ext` コンポーネントの基本クラス。 コンポーネントのすべてのサブクラスは、`Ext`Container[&#x200B; クラスが提供する、作成、レンダリング、破棄の自動 &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) コンポーネントライフサイクルに関与できます。 コンポーネントは、コンテナ作成時に、[items](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) 設定オプションでコンテナに追加されます。
 
 * `componentextractor`
 
@@ -512,7 +512,7 @@ Adobe Experience Manager で使用可能な xtype を以下に示します。
 
   メニューオブジェクト。メニュー項目を追加できるコンテナ。 Menu は、別のコンポーネントをベースにした特殊なメニュー（[CQ.Ext.menu.DateMenu](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) など）が必要な場合に、基底クラスとしても利用できます。
 
-  メニューには、[ メニュー項目 ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) または一般的な [ コンポーネント ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を含めることができます。
+  メニューには、[&#x200B; メニュー項目 &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) または一般的な [&#x200B; コンポーネント &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を含めることができます。
 
 * `menubaseitem`
 
@@ -909,7 +909,7 @@ Adobe Experience Manager で使用可能な xtype を以下に示します。
 
   `TreePanel` は、ツリー構造のデータをツリー構造 UI として表示できます。
 
-  [ に追加さ ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) た `TreePanel`TreeNode には、アプリケーションで使用されるメタデータをそれぞれ [attributes](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) プロパティに含めることができます。
+  [&#x200B; に追加さ &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) た `TreePanel`TreeNode には、アプリケーションで使用されるメタデータをそれぞれ [attributes](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) プロパティに含めることができます。
 
 * `trigger`
 
