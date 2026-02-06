@@ -9,16 +9,16 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 255f52f3-aff4-432c-a541-3ce03e626742
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9bc1cad84bb14b7513ede1fff2c1a37768dac442
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 97%
+source-wordcount: '1703'
+ht-degree: 83%
 
 ---
 
 # カスタムノードタイプ{#custom-node-types}
 
-Adobe Experience Manager（AEM）は Sling をベースにし JCR リポジトリを使用しているので、ユーザーは、この両者が提供する次のノードタイプを使用できます。
+Adobe Experience Manager（AEM）は Sling ベースであり JCR リポジトリを使用しているので、両方で提供されるノードタイプを次で使用できます。
 
 * [JCR ノードタイプ](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling ノードタイプ](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
@@ -27,7 +27,7 @@ Adobe Experience Manager（AEM）は Sling をベースにし JCR リポジト�
 
 ## 監査 {#audit}
 
-### cq:AuditEvent {#cq-auditevent}
+### `cq:AuditEvent` {#cq-auditevent}
 
 **説明**
 
@@ -55,7 +55,7 @@ Adobe Experience Manager（AEM）は Sling をベースにし JCR リポジト�
 
 ## コメント {#comment}
 
-### cq:Comment {#cq-comment}
+### `cq:Comment` {#cq-comment}
 
 **説明**
 
@@ -74,7 +74,7 @@ Adobe Experience Manager（AEM）は Sling をベースにし JCR リポジト�
 * `- userIdentifier (string)`
 * `- authorizableId (string)`
 
-### cq:CommentAttachment {#cq-commentattachment}
+### `cq:CommentAttachment` {#cq-commentattachment}
 
 **説明**
 
@@ -86,7 +86,7 @@ Adobe Experience Manager（AEM）は Sling をベースにし JCR リポジト�
    * `- * (undefined)`
    * `- * (undefined) multiple`
 
-### cq:CommentContent {#cq-commentcontent}
+### `cq:CommentContent` {#cq-commentcontent}
 
 **説明**
 
@@ -103,7 +103,7 @@ Adobe Experience Manager（AEM）は Sling をベースにし JCR リポジト�
 * `- userIdentifier (string)`
 * `- authorizableId (string)`
 
-### cq:GeoLocation {#cq-geolocation}
+### `cq:GeoLocation` {#cq-geolocation}
 
 **説明**
 
@@ -118,7 +118,7 @@ Adobe Experience Manager（AEM）は Sling をベースにし JCR リポジト�
 * `- latitude (double)`
 * `- longitude (double)`
 
-### cq:Trackback {#cq-trackback}
+### `cq:Trackback` {#cq-trackback}
 
 **説明**
 
@@ -130,7 +130,7 @@ Adobe Experience Manager（AEM）は Sling をベースにし JCR リポジト�
 
 ## コア {#core}
 
-### cq:Page {#cq-page}
+### `cq:Page` {#cq-page}
 
 **説明**
 
@@ -144,17 +144,17 @@ Adobe Experience Manager（AEM）は Sling をベースにし JCR リポジト�
    * `+ jcr:content (nt:base) = nt:unstructured copy primary`
    * `+ * (nt:base) = nt:base version`
 
-### cq:PseudoPage {#cq-pseudopage}
+### `cq:PseudoPage` {#cq-pseudopage}
 
 **説明**
 
-ノードを疑似ページとしてマークする mixin タイプを定義します。つまり、ページおよび WCM 編集をサポートするようにノードを適応させることができます。
+この Mixin タイプは、ノードを疑似ページとしてマークします。 つまり、ページおよび WCM 編集をサポートするようにノードを適応させることができます。
 
 **定義**
 
 * `[cq:PseudoPage] mixin`
 
-### cq:PageContent {#cq-pagecontent}
+### `cq:PageContent` {#cq-pagecontent}
 
 **説明**
 
@@ -166,7 +166,7 @@ Adobe Experience Manager（AEM）は Sling をベースにし JCR リポジト�
 * `@prop cq:allowedTemplates` - 許可されたテンプレートへのパスを定義するために使用する正規表現のリスト。
 * `@prop pageTitle`- `<title>` タグで表示されるタイトル。
 * `@prop navTitle` - ナビゲーションで使用されるタイトル。
-* `@prop hideInNav` - ナビゲーション内でこのページを非表示にするかを指定します。
+* `@prop hideInNav` - ナビゲーション内でこのページを非表示にするかどうかを指定します。
 * `@prop onTime` - このページが有効になる時刻。
 * `@prop offTime` - このページが無効になる時刻。
 * `@prop cq:lastModified` - ページ（またはその段落）が前回変更された日付。
@@ -178,6 +178,7 @@ Adobe Experience Manager（AEM）は Sling をベースにし JCR リポジト�
 >ページコンテンツでのこのタイプの使用は必須ではありません。
 
 **定義**
+
 * `[cq:PageContent] > nt:unstructured, mix:title, mix:created, cq:OwnerTaggable, sling:VanityPath, cq:ReplicationStatus, sling:Resource orderable`
    * `- cq:template (string)`
    * `- cq:allowedTemplates (string) multiple`
@@ -191,7 +192,7 @@ Adobe Experience Manager（AEM）は Sling をベースにし JCR リポジト�
    * `- cq:designPath (string)`
    * `- jcr:language (string)`
 
-### cq:Template {#cq-template}
+### `cq:Template` {#cq-template}
 
 **説明**
 
@@ -223,7 +224,7 @@ CQ テンプレートを定義します。
    * `- allowedChildren (string) multiple`
    * `- ranking (long)`
 
-### cq:Component {#cq-component}
+### `cq:Component` {#cq-component}
 
 **説明**
 
@@ -238,7 +239,7 @@ CQ コンポーネントを定義します。
 * `@prop cq:isContainer` - コンテナコンポーネントであるかどうかを示します。これにより、パス名の代わりに子コンポーネントのセル名が強制的に使用されます。例えば、`parsys` は、コンテナコンポーネントです。この値が定義されていない場合、チェックは `cq:childEditConfig` の存在に基づいて行われます。
 * `@prop cq:noDecoration` - true の場合、このコンポーネントをインクルードする際に装飾用の `div` タグは描画されません。
 * `@node cq:editConfig` - 編集バーのパラメーターを定義する設定。
-* `@node cq:childEditConfig` - 子コンポーネントによって継承される編集設定。
+* `@node cq:childEditConfig` – 子コンポーネントによって継承される編集設定。
 * `@node cq:htmlTag` - コンポーネントがインクルードされる際に「周囲の」`div` タグに追加される追加タグ属性を定義します。
 * `@node icon.png` - 特有のアイコンを保持するファイル。
 * `@node thumbnail.png` - 特有のサムネール画像を保持するファイル。
@@ -271,7 +272,7 @@ CQ コンポーネントを定義します。
    * `- componentGroup (string)`
    * `+ cq:infoProviders (nt:base) = nt:unstructured copy`
 
-### cq:ComponentMixin {#cq-componentmixin}
+### `cq:ComponentMixin` {#cq-componentmixin}
 
 **説明**
 
@@ -281,17 +282,17 @@ CQ コンポーネントを mixin タイプとして定義します。
 
 `[cq:ComponentMixin] > cq:Component mixin`
 
-### cq:EditConfig {#cq-editconfig}
+### `cq:EditConfig` {#cq-editconfig}
 
 **説明**
 
-「編集バー」用の設定を定義します。
+`editbar` の設定を定義します。
 
 * `@prop cq:dialogMode` - ダイアログのモード：
    * `floating` - 通常のフローティングダイアログの場合
    * `inline` - インライン編集
    * `auto` - 自動検出（空きスペースによって異なる）
-* `@node cq:inplaceEditing` - このコンポーネントのインプレース編集設定。
+* `@node cq:inplaceEditing` – このコンポーネントのインプレース編集設定。
 * `@prop cq:layout` - 編集バーのレイアウト：
    * `editbar` - 編集バー
    * `rollover` - ロールオーバーフレーム
@@ -313,7 +314,7 @@ CQ コンポーネントを mixin タイプとして定義します。
    * `+ cq:dropTargets (nt:base) = nt:unstructured`
    * `+ cq:listeners (nt:base) = cq:EditListenersConfig`
 
-### cq:DropTargetConfig {#cq-droptargetconfig}
+### `cq:DropTargetConfig` {#cq-droptargetconfig}
 
 **説明**
 
@@ -331,7 +332,7 @@ CQ コンポーネントを mixin タイプとして定義します。
    * `- propertyName (string)`
    * `+ parameters (nt:base) = nt:unstructured`
 
-### cq:VirtualComponent {#cq-virtualcomponent}
+### `cq:VirtualComponent` {#cq-virtualcomponent}
 
 **説明**
 
@@ -340,7 +341,7 @@ CQ コンポーネントを mixin タイプとして定義します。
 * `@prop jcr:title` - このコンポーネントのタイトル。
 * `@prop jcr:description` - このコンポーネントの説明。
 * `@node cq:editConfig` - この編集バーのパラメーターを定義する編集設定。
-* `@node cq:childEditConfig` - 子コンポーネントによって継承される編集設定。
+* `@node cq:childEditConfig` – 子コンポーネントによって継承された編集設定。
 * `@node icon.png` - 特有のアイコンを保持するファイル。
 * `@node thumbnail.png` - 特有のサムネール画像を保持するファイル。
 * `@prop allowedParents` - 親コンポーネントとして許可されるコンポーネントのパスを定義するための正規表現パターン。
@@ -360,7 +361,7 @@ CQ コンポーネントを mixin タイプとして定義します。
 `- allowedChildren (string) multiple`
 `- componentGroup (string)`
 
-### cq:EditListenersConfig {#cq-editlistenersconfig}
+### `cq:EditListenersConfig` {#cq-editlistenersconfig}
 
 **説明**
 
@@ -392,7 +393,7 @@ CQ コンポーネントを mixin タイプとして定義します。
 
 ## DAM {#dam}
 
-### dam:AssetContent {#dam-assetcontent}
+### `dam:AssetContent` {#dam-assetcontent}
 
 **説明**
 
@@ -404,7 +405,7 @@ DAM アセットのコンテンツ。
    * `+ metadata (nt:unstructured)`
    * `+ renditions (nt:folder)`
 
-### dam:Asset {#dam-asset}
+### `dam:Asset` {#dam-asset}
 
 **説明**
 
@@ -416,7 +417,7 @@ DAM アセット。
 `+ jcr:content (dam:AssetContent) = dam:AssetContent copy primary`
 `+ * (nt:base) = nt:base version`
 
-### dam:Thumbnail {#dam-thumbnail}
+### `dam:Thumbnail` {#dam-thumbnail}
 
 **説明**
 
@@ -430,7 +431,7 @@ DAM アセットを表すサムネール。
 
 ## 配信コンテナリスト {#delivery-container-list}
 
-### cq:containerList {#cq-containerlist}
+### `cq:containerList` {#cq-containerlist}
 
 **説明**
 
@@ -443,14 +444,14 @@ DAM アセットを表すサムネール。
 
 ## 配信ページ {#delivery-page}
 
-### cq:Cq4PageAttributes {#cq-cq-pageattributes}
+### `cq:Cq4PageAttributes` {#cq-cq-pageattributes}
 
 **説明**
 
-ノードタイプ `cq:attributes` は、ContentBus バージョンタグ用です。このノードには一連のプロパティのみが含まれ、そのうち 3 つのプロパティが「created」、「csd」および「timestampe」として事前定義されています。
+ノードタイプ `cq:attributes` は、ContentBus バージョンタグ用です。このノードには一連のプロパティがあり、`created`、`csd`、`timestamp` の 3 つが事前に定義されています。
 
 * `@prop created (long) mandatory copy` - バージョン情報の作成時のタイムスタンプ。通常は、以前のバージョンのチェックイン時またはページ作成時。
-* `@prop csd (string) mandatory copy` - csd 標準属性。ページノードの cq:csd プロパティのコピー。
+* `@prop csd (string) mandatory copy` - `csd` の標準属性。ページノードの `cq:csd` プロパティのコピー。
 * `@prop timestamp (long) mandatory copy` - 前回のバージョン変更のタイムスタンプ。通常はチェックイン時。
 * `@prop * (string) copy` - 親ノードによってバージョン管理される追加属性。
 
@@ -462,7 +463,7 @@ DAM アセットを表すサムネール。
    * `- timestamp (long) mandatory copy`
    * `- &ast; (string) copy`
 
-### cq:Cq4ContentPage {#cq-cq-contentpage}
+### `cq:Cq4ContentPage` {#cq-cq-contentpage}
 
 **説明**
 
@@ -472,7 +473,7 @@ DAM アセットを表すサムネール。
 
 * `@prop cq:csd` - ページの ContentBus CSD。
 * `@node cq:content` - ページのコンテンツ。この子ノードは、ページノードが「コンテンツなしで存在」または「削除済み」の状態の場合には存在しません。
-* `@node cq:attributes` - ページ属性のリスト（以前の名称はバージョンタグ）。cq:contentPage タイプの場合、このノードは必須です。 属性ノードは、ページノードがバージョン設定されるときにバージョン設定されます。
+* `@node cq:attributes` - ページ属性のリスト（以前の名称はバージョンタグ）。`cq:contentPage` タイプの場合、このノードは必須です。 ページノードがバージョン設定されると、属性ノードもバージョン設定されます。
 
 **定義**
 
@@ -482,7 +483,7 @@ DAM アセットを表すサムネール。
 
 ## インポーター {#importer}
 
-### cq:PollConfig {#cq-pollconfig}
+### `cq:PollConfig` {#cq-pollconfig}
 
 **説明**
 
@@ -491,7 +492,7 @@ DAM アセットを表すサムネール。
 * `@prop source (String) mandatory` - データソース URI。これは必須で、空にはできません。
 * `@prop target (String)` - データソースから取得されたデータが保存されるターゲットの場所。（オプション）デフォルトは cq:PollConfig ノードです。
 * `@prop interval (Long)` - データソースから新しいデータまたは更新されたデータをポーリングする間隔（秒）。これはオプションであり、デフォルトでは 30 分（1800 秒）に設定されています。
-* [Adobe Experience Manager の Custom Data Importer Service の作成](https://helpx.adobe.com/jp/experience-manager/using/polling.html)
+* [Adobe Experience Manager の Custom Data Importer Service の作成](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
 
 **定義**
 
@@ -501,7 +502,7 @@ DAM アセットを表すサムネール。
    * `- target (String)`
    * `- interval (Long)`
 
-### cq:PollConfigFolder {#cq-pollconfigfolder}
+### `cq:PollConfigFolder` {#cq-pollconfigfolder}
 
 **説明**
 
@@ -513,7 +514,7 @@ DAM アセットを表すサムネール。
 
 ## 場所 {#location}
 
-### cq:GeoLocation {#cq-geolocation-1}
+### `cq:GeoLocation` {#cq-geolocation-1}
 
 **説明**
 
@@ -531,7 +532,7 @@ DAM アセットを表すサムネール。
 
 ## メーラー {#mailer}
 
-### cq:mailerMessage {#cq-mailermessage}
+### `cq:mailerMessage` {#cq-mailermessage}
 
 **説明**
 
@@ -547,7 +548,7 @@ MailerService ノードタイプ。メーラーは、この mixin をメッセ�
 
 ## MSM {#msm}
 
-### cq:LiveRelationship {#cq-liverelationship}
+### `cq:LiveRelationship` {#cq-liverelationship}
 
 **説明**
 
@@ -560,7 +561,7 @@ LiveRelationship mixin を定義します。プライマリソース（制御側
    * `- cq:lastRolledoutBy (string)`
    * `- cq:sourceUUID (string)`
 
-### cq:LiveSync {#cq-livesync}
+### `cq:LiveSync` {#cq-livesync}
 
 **説明**
 
@@ -577,7 +578,7 @@ LiveSync mixin を定義します。ノードがプライマリソース（制�
 `+ * (cq:LiveSyncAction) = cq:LiveSyncAction`
 `+ cq:LiveSyncConfig (nt:base) = cq:LiveSyncConfig`
 
-### cq:LiveSyncCancelled {#cq-livesynccancelled}
+### `cq:LiveSyncCancelled` {#cq-livesynccancelled}
 
 **説明**
 
@@ -590,7 +591,7 @@ LiveSyncCancelled mixin を定義します。親の 1 つが原因で LiveRelati
 * `[cq:LiveSyncCancelled] > cq:LiveRelationship mixin`
    * `- cq:isCancelledForChildren (boolean)`
 
-### cq:LiveSyncAction {#cq-livesyncaction}
+### `cq:LiveSyncAction` {#cq-livesyncaction}
 
 **説明**
 
@@ -603,7 +604,7 @@ LiveSync に関連付けられた LiveSyncAction を定義します。
 
 * `[cq:LiveSyncAction] > nt:unstructured`
 
-### cq:LiveSyncConfig {#cq-livesyncconfig}
+### `cq:LiveSyncConfig` {#cq-livesyncconfig}
 
 **説明**
 
@@ -616,11 +617,11 @@ Live Sync 設定。
    * `- cq:isDeep (boolean)`
    * `- cq:trigger (string) /** deprecated **/`
 
-AEM 5.4 ではリストの最後に以下を追加：
+AEM 5.4 の場合、リストの最後にを追加します。
 
 * `- cq:rolloutConfigs (string) multiple /** deprecated **/`
 
-### cq:BlueprintAction {#cq-blueprintaction}
+### `cq:BlueprintAction` {#cq-blueprintaction}
 
 **説明**
 
@@ -632,7 +633,7 @@ AEM 5.4 ではリストの最後に以下を追加：
 
 ## Platform {#platform}
 
-### cq:Console {#cq-console}
+### `cq:Console` {#cq-console}
 
 **説明**
 
@@ -645,16 +646,16 @@ AEM 5.4 ではリストの最後に以下を追加：
 
 ## レプリケーション {#replication}
 
-### cq:ReplicationStatus {#cq-replicationstatus}
+### `cq:ReplicationStatus` {#cq-replicationstatus}
 
 **説明**
 
 レプリケーションステータス情報 mixin を定義します。
 
-* `@prop cq:lastPublished` - 前回ページが公開された日付（使用されません）。
-* `@prop cq:lastPublishedBy` - 前回ページを公開したユーザー（使用されません）。
+* `@prop cq:lastPublished` – 前回ページが公開された日付（使用されません）。
+* `@prop cq:lastPublishedBy` – 前回ページを公開したユーザー（使用されません）。
 * `@prop cq:lastReplicated` - 前回ページがレプリケートされた日付。
-* `@prop cq:lastReplicatedBy` - 前回ページをレプリケートしたユーザー。
+*  `@prop cq:lastReplicatedBy` - 前回ページをレプリケートしたユーザー。
 * `@prop cq:lastReplicationAction` - レプリケーションアクション：アクティベートまたはアクティベート解除。
 * `@prop cq:lastReplicationStatus` - レプリケーションステータス（使用されません）。
 
@@ -671,7 +672,7 @@ AEM 5.4 ではリストの最後に以下を追加：
 
 ## セキュリティ {#security}
 
-### cq:ApplicationPrivilege {#cq-applicationprivilege}
+### `cq:ApplicationPrivilege` {#cq-applicationprivilege}
 
 **説明**
 
@@ -681,7 +682,7 @@ AEM 5.4 ではリストの最後に以下を追加：
 
 * `[cq:ApplicationPrivilege] mixin`
 
-### cq:PrivilegeAcl {#cq-privilegeacl}
+### `cq:PrivilegeAcl` {#cq-privilegeacl}
 
 **説明**
 
@@ -696,7 +697,7 @@ AEM 5.4 ではリストの最後に以下を追加：
    * `- cq:isPathDependent (boolean)`
    * `+ * (cq:PrivilegeAce) = cq:PrivilegeAce`
 
-### cq:PrivilegeAce {#cq-privilegeace}
+### `cq:PrivilegeAce` {#cq-privilegeace}
 
 **説明**
 
@@ -711,7 +712,7 @@ AEM 5.4 ではリストの最後に以下を追加：
    * `- path mandatory`
    * `- deny (boolean)`
 
-### cq:ApplicationPrivilege {#cq-applicationprivilege-1}
+### `cq:ApplicationPrivilege` {#cq-applicationprivilege-1}
 
 **説明**
 
@@ -721,7 +722,7 @@ AEM 5.4 ではリストの最後に以下を追加：
 
 * `[cq:ApplicationPrivilege] mixin`
 
-### cq:PrivilegeAcl {#cq-privilegeacl-1}
+### `cq:PrivilegeAcl` {#cq-privilegeacl-1}
 
 **説明**
 
@@ -736,7 +737,7 @@ AEM 5.4 ではリストの最後に以下を追加：
    * `- cq:isPathDependent (boolean)`
    * `+ * (cq:PrivilegeAce) = cq:PrivilegeAce`
 
-### cq:PrivilegeAce {#cq-privilegeace-1}
+### `cq:PrivilegeAce` {#cq-privilegeace-1}
 
 **説明**
 
@@ -753,7 +754,7 @@ AEM 5.4 ではリストの最後に以下を追加：
 
 ## サイトインポーター {#site-importer}
 
-### cq:ComponentExtractorSource {#cq-componentextractorsource}
+### `cq:ComponentExtractorSource` {#cq-componentextractorsource}
 
 **説明**
 
@@ -765,7 +766,7 @@ AEM 5.4 ではリストの最後に以下を追加：
 
 ## タグ付け {#tagging}
 
-### cq:Tag {#cq-tag}
+### `cq:Tag` {#cq-tag}
 
 **説明**
 
@@ -779,7 +780,7 @@ AEM 5.4 ではリストの最後に以下を追加：
    * `- * (undefined)`
    * `+ * (nt:base) = cq:Tag version`
 
-### cq:Taggable {#cq-taggable}
+### `cq:Taggable` {#cq-taggable}
 
 **説明**
 
@@ -792,7 +793,7 @@ AEM 5.4 ではリストの最後に以下を追加：
 * `[cq:Taggable]`
    * `- cq:tags (string) multiple`
 
-### cq:OwnerTaggable {#cq-ownertaggable}
+### `cq:OwnerTaggable` {#cq-ownertaggable}
 
 **説明**
 
@@ -802,22 +803,22 @@ AEM 5.4 ではリストの最後に以下を追加：
 
 * `[cq:OwnerTaggable] > cq:Taggable`
 
-### cq:UserTaggable {#cq-usertaggable}
+### `cq:UserTaggable` {#cq-usertaggable}
 
 **説明**
 
-すべてのユーザー/公開 web サイトで、cq:userContent 内部で使用されているコンテンツ（web 2.0 スタイル）にタグを付けることができます。
+すべてのユーザーまたは公開 web サイトで、`cq:userContent` 内で使用されるコンテンツ（Web 2.0 スタイル）にタグを付けることができます。
 
 **定義**
 
 * `[cq:UserTaggable] > cq:Taggable`
    * `mixin`
 
-### cq:AllowsUserContent {#cq-allowsusercontent}
+### `cq:AllowsUserContent` {#cq-allowsusercontent}
 
 **説明**
 
-ユーザーが変更できる `cq:userContent` サブノードを追加します。各ユーザーには、独自の `cq:userContent/<userid>` サブノード（通常、`cq:UserTaggable` mixin が含まれる）が与えられます。
+ユーザーが編集できる `cq:userContent` サブノードを追加します。 各ユーザーには、独自の `cq:userContent/<userid>` サブノード（通常、`cq:UserTaggable` mixin が含まれる）が与えられます。
 
 **定義**
 
@@ -831,11 +832,11 @@ AEM 5.4 ではリストの最後に以下を追加：
    * `mixin`
    * `+ cq:userContent (cq:UserContent)`
 
-### cq:UserContent {#cq-usercontent}
+### `cq:UserContent` {#cq-usercontent}
 
 **説明**
 
-ユーザーが変更できます。
+ユーザーが編集できます。
 
 **定義**
 
@@ -845,7 +846,7 @@ AEM 5.4 ではリストの最後に以下を追加：
    * `// other content`
    * `+ * (nt:base)`
 
-### cq:UserData {#cq-userdata}
+### `cq:UserData` {#cq-userdata}
 
 **説明**
 
@@ -857,7 +858,7 @@ AEM 5.4 ではリストの最後に以下を追加：
 
 ## ウィジェット {#widgets}
 
-### cq:ClientLibraryFolder {#cq-clientlibraryfolder}
+### `cq:ClientLibraryFolder` {#cq-clientlibraryfolder}
 
 **説明**
 
@@ -869,7 +870,7 @@ AEM 5.4 ではリストの最後に以下を追加：
    * `- categories (string) multiple`
    * `- dependencies (string) multiple`
 
-### cq:Widget {#cq-widget}
+### `cq:Widget` {#cq-widget}
 
 **説明**
 
@@ -883,7 +884,7 @@ AEM 5.4 ではリストの最後に以下を追加：
    * `- title (string)`
    * `+ items (nt:base) = cq:WidgetCollection copy`
 
-### cq:WidgetCollection {#cq-widgetcollection}
+### `cq:WidgetCollection` {#cq-widgetcollection}
 
 **説明**
 
@@ -895,7 +896,7 @@ AEM 5.4 ではリストの最後に以下を追加：
    * `orderable`
    * `+ * (cq:Widget) = cq:Widget copy`
 
-### cq:Dialog {#cq-dialog}
+### `cq:Dialog` {#cq-dialog}
 
 **説明**
 
@@ -905,7 +906,7 @@ AEM 5.4 ではリストの最後に以下を追加：
 
 * `[cq:Dialog] > cq:Widget orderable`
 
-### cq:Panel {#cq-panel}
+### `cq:Panel` {#cq-panel}
 
 **説明**
 
@@ -915,7 +916,7 @@ AEM 5.4 ではリストの最後に以下を追加：
 
 `[cq:Panel] > cq:Widget orderable`
 
-### cq:TabPanel {#cq-tabpanel}
+### `cq:TabPanel` {#cq-tabpanel}
 
 **説明**
 
@@ -926,7 +927,7 @@ AEM 5.4 ではリストの最後に以下を追加：
 * `[cq:TabPanel]` > `cq:Panel orderable`
    * `- activeTab (long)`
 
-### cq:Field {#cq-field}
+### `cq:Field` {#cq-field}
 
 **説明**
 
@@ -941,7 +942,7 @@ AEM 5.4 ではリストの最後に以下を追加：
 
 ## Wiki {#wiki}
 
-### wiki:Topic {#wiki-topic}
+### `wiki:Topic` {#wiki-topic}
 
 **説明**
 
@@ -962,7 +963,7 @@ Wiki トピック
    * `- wiki:logMessage (string)`
    * `- wiki:quietSave (boolean)`
 
-### wiki:User {#wiki-user}
+### `wiki:User` {#wiki-user}
 
 **説明**
 
@@ -973,7 +974,7 @@ Wiki ユーザー
 * `[wiki:User] mixin`
    * `- wiki:subscriptions (string) multiple`
 
-### wiki:Properties {#wiki-properties}
+### `wiki:Properties` {#wiki-properties}
 
 **説明**
 
@@ -987,7 +988,7 @@ Wiki のプロパティ
 
 ## ワークフロー {#workflow}
 
-### cq:Workflow {#cq-workflow}
+### `cq:Workflow` {#cq-workflow}
 
 **説明**
 
@@ -1012,7 +1013,7 @@ Wiki のプロパティ
    * `+ metaData (nt:unstructured)`
    * `+ workItems (nt:unstructured)`
 
-### cq:WorkItem {#cq-workitem}
+### `cq:WorkItem` {#cq-workitem}
 
 **説明**
 
@@ -1030,7 +1031,7 @@ Wiki のプロパティ
    * `- sling:resourceType (String) = "cq/workflow/components/workitem" mandatory autocreated`
    * `+ metaData (nt:unstructured)`
 
-### cq:Payload {#cq-payload}
+### `cq:Payload` {#cq-payload}
 
 **説明**
 
@@ -1047,7 +1048,7 @@ Wiki のプロパティ
    * `- * (undefined)`
    * `- * (undefined) multiple`
 
-### cq:WorkflowData {#cq-workflowdata}
+### `cq:WorkflowData` {#cq-workflowdata}
 
 **説明**
 
@@ -1061,11 +1062,12 @@ Wiki のプロパティ
    * `+ payload (cq:Payload)`
    * `+ metaData (nt:unstructured) copy`
 
-### cq:WorkflowModel {#cq-workflowmodel}
+### `cq:WorkflowModel` {#cq-workflowmodel}
 
 **説明**
 
 ワークフロー設定を自動で割り当てます。設定は次の構造に従います。
+
 * `workflows`
    * `+ name1`
       * `- cq:path`
@@ -1086,7 +1088,7 @@ Wiki のプロパティ
    * `+ metaData (nt:unstructured)`
       * `copy`
 
-### cq:WorkflowNode {#cq-workflownode}
+### `cq:WorkflowNode` {#cq-workflownode}
 
 **説明**
 
@@ -1106,7 +1108,7 @@ Wiki のプロパティ
    * `+ timeoutConfiguration (nt:unstructured)`
       * `copy`
 
-### cq:WorkflowTransition {#cq-workflowtransition}
+### `cq:WorkflowTransition` {#cq-workflowtransition}
 
 **説明**
 
@@ -1121,7 +1123,7 @@ Wiki のプロパティ
    * `+ metaData (nt:unstructured)`
       * `copy`
 
-### cq:OrTab {#cq-ortab}
+### `cq:OrTab` {#cq-ortab}
 
 **説明**
 
@@ -1130,10 +1132,10 @@ OR タブ
 **定義**
 
 * `[cq:OrTab]`
-   * `- workflowId (String) // not compulsory as this node will already be attached to the workflow node`
+   * `- workflowId (String) // not compulsory as this node is already be attached to the workflow node`
    * `- nodeId (String)`
 
-### cq:Wait {#cq-wait}
+### `cq:Wait` {#cq-wait}
 
 **説明**
 
@@ -1142,11 +1144,11 @@ OR タブ
 **定義**
 
 * `[cq:Wait]`
-   * `- workflowId (String) // not compulsory as this node will be already attached to the workflow node`
+   * `- workflowId (String) // not compulsory as this node is already attached to the workflow node`
    * `- destNodeId (String)`
    * `- fromNodeId (String)`
 
-### cq:WorkflowStack {#cq-workflowstack}
+### `cq:WorkflowStack` {#cq-workflowstack}
 
 **説明**
 
@@ -1159,7 +1161,7 @@ OR タブ
    * `- parentInstanceId (String)`
    * `- nodeId (String)`
 
-### cq:ProcessStack {#cq-processstack}
+### `cq:ProcessStack` {#cq-processstack}
 
 **説明**
 
@@ -1168,12 +1170,12 @@ OR タブ
 **定義**
 
 * `[cq:ProcessStack]`
-   * `- workflowId (String) // not compulsory as this node will be already attached to the workflow node`
+   * `- workflowId (String) // not compulsory as this node is already attached to the workflow node`
    * `- containerWorkflowModelId (String)`
    * `- containerWorkflowNodeId`
    * `- containerWorkflowEndNodeId // still needed (if name already defines that id)`
 
-### cq:WorkflowLauncher {#cq-workflowlauncher}
+### `cq:WorkflowLauncher` {#cq-workflowlauncher}
 
 **説明**
 
