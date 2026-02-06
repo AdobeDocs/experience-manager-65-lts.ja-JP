@@ -10,32 +10,32 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: e1771229-b2ce-406a-95a5-99b11fafbe34
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 90%
+source-wordcount: '511'
+ht-degree: 63%
 
 ---
 
-# Adobe Target との統合の前提条件{#prerequisites-for-integrating-with-adobe-target}
+# Adobe Targetとの統合の前提条件{#prerequisites-for-integrating-with-adobe-target}
 
 [AEM と Adobe Target の統合](/help/sites-administering/target.md)の一環として、Adobe Target を登録し、レプリケーションエージェントを設定して、パブリッシュノードでアクティビティ設定を保護する必要があります。
 
-## Adobe Target の登録 {#registering-with-adobe-target}
+## Adobe Targetへの登録 {#registering-with-adobe-target}
 
 AEM と Adobe Target を統合するには、有効な Adobe Target アカウントが必要です。このアカウントには、**承認者**&#x200B;レベル以上の権限が必要です。Adobe Target に登録すると、クライアントコードを受け取ります。AEM を Adobe Target に接続するには、クライアントコードおよび Adobe Target のログイン名とパスワードが必要です。
 
-クライアントコードは、Adobe Target サーバーを呼び出すときに Adobe Target の顧客アカウントを識別します。
+クライアントコードは、Adobe Target サーバーの呼び出し時にAdobe Targetのカスタマーアカウントを識別します。
 
 >[!NOTE]
 >
->統合を使用するには、Target チームによってご自身のアカウントも有効にされている必要があります。
+>Target チームが統合を使用するには、お使いのアカウントを有効にする必要があります。
 >
->そうでない場合は、[Adobe カスタマーケア](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=ja)にご連絡ください。
+>そうでない場合は、[Adobe カスタマーケア](https://experienceleague.adobe.com/en/docs/target/using/cmp-resources-and-contact-information)にご連絡ください。
 
 ## Target レプリケーションエージェントの有効化 {#enabling-the-target-replication-agent}
 
-Test &amp; Target [レプリケーションエージェント](/help/sites-deploying/replication.md)を作成者インスタンス上で有効にする必要があります。AEM のインストールに [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) 実行モードを使用した場合、このレプリケーションエージェントはデフォルトでは有効になっていません。実稼動環境の保護に関する情報については、[セキュリティチェックリスト](/help/sites-administering/security-checklist.md)を参照してください。
+Test &amp; Target [レプリケーションエージェント](/help/sites-deploying/replication.md)をオーサーインスタンス上で有効にする必要があります。AEM のインストールに [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) 実行モードを使用した場合、このレプリケーションエージェントはデフォルトでは有効になっていません。本番環境の保護に関する情報については、[セキュリティチェックリスト](/help/sites-administering/security-checklist.md)を参照してください。
 
 1. AEM のホームページで、**ツール**／**デプロイメント**／**レプリケーション**&#x200B;をクリックします。
 1. 「**作成者のエージェント**」をクリックします。
@@ -44,21 +44,21 @@ Test &amp; Target [レプリケーションエージェント](/help/sites-deplo
 
    >[!NOTE]
    >
-   >Test &amp; Target レプリケーションエージェントを設定する場合、URI は、「**トランスポート**」タブでデフォルトで **tnt:///** に設定されています。この URI を **https://admin.testandtarget.omniture.com** に置換しないでください。
+   >Test &amp; Target レプリケーションエージェントを設定する際、「**トランスポート**」タブでは、URI はデフォルトで `tnt:///` に設定されます。 この URI を `https://admin.testandtarget.omniture.com` に置き換えないでください。
    >
-   >**tnt:///** を使用して接続をテストしようとすると、エラーが発生します。これは想定されている動作です。この URI は内部でのみ使用されるべきものであり、**接続をテスト**&#x200B;では使用しません。
+   >`tnt:///` を使用して接続をテストしようとすると、期待される動作であるエラーが表示されます。 URI が内部でのみ使用されるからです。 **接続をテスト** では使用しないでください。
 
 ## アクティビティ設定ノードの保護 {#securing-the-activity-settings-node}
 
-パブリッシュインスタンスでアクティビティ設定ノード **cq:ActivitySettings** を保護し、通常のユーザーがアクセスできないようにします。アクティビティ設定ノードには、Adobe Target へのアクティビティの同期を処理するサービスのみがアクセスできるようにしてください。
+通常のユーザーがアクセスできないように、パブリッシュインスタンス上のアクティビティ設定ノード **cq:ActivitySettings** を保護します。 アクティビティ設定ノードには、Adobe Target へのアクティビティの同期を処理するサービスのみがアクセスできるようにしてください。
 
-**cq:ActivitySettings** ノードは、`/content/campaigns/*nameofbrand*`*の下の *アクティビティ jcr:content ノードの下の* *の下の CRXDE Lite で利用できます（例：`/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`）。 このノードは、コンポーネントのターゲティング後にのみ作成されます。
+**cq:ActivitySettings** ノードは、CRXDE Liteのアクティビティ `/content/campaigns/*nameofbrand*` ノードの `jcr:content`* *の下にあります。 （例：`/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`）。このノードは、コンポーネントのターゲティング後にのみ作成されます。
 
-アクティビティの jcr **の下にある:ActivitySettings** cq:content ノードは、次の ACL によって保護されています。
+アクティビティの **の下にある:ActivitySettings** cq`jcr:content` ノードは、次の ACL によって保護されています。
 
-* すべて拒否（全員）
-* 「target-activity-authors」に jcr:read,rep:write を許可する（作成者は、標準でこのグループのメンバーです）
-* 「targetservice」に jcr:read,rep:write を許可
+* 全員にすべてを拒否します。
+* `jcr:read,rep:write` に `target-activity-authors` を許可します（作成者は、標準でこのグループのメンバーです）。
+* `jcr:read,rep:write` に `targetservice` を許可します。
 
 これらの設定により、権限を持たないユーザーがノードプロパティにアクセスできなくなります。オーサーインスタンスとパブリッシュインスタンスの両方で同じ ACL を使用します。詳しくは、[ユーザー管理とセキュリティ](/help/sites-administering/security.md)を参照してください。
 
@@ -74,7 +74,7 @@ AEM Externalizer を設定するには：
 
 >[!NOTE]
 >
->詳しくは、[URL の外部化](/help/sites-developing/externalizer.md)を参照してください。
+>詳しくは、[URL の外部化 ](/help/sites-developing/externalizer.md) を参照してください。
 
 1. **https://&lt;server>:&lt;port>/system/console/configMgr** の OSGi Web コンソールに移動します。
 1. **Day CQ Link Externalizer** を探し、オーサーノードのドメインを入力します。

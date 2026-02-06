@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 4a78de53-33bf-4999-ba3c-7d0bc33196a4
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
 workflow-type: tm+mt
-source-wordcount: '3865'
-ht-degree: 93%
+source-wordcount: '3668'
+ht-degree: 59%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 93%
 
 このページでは、Adobe Experience Manager（AEM）で利用できるすべての xtype について説明します。
 
-ExtJS 言語では、xtype はクラスに付与されるシンボル名です。xtype とその使用方法について詳しくは、[ExtJS 2 の概要](https://www.sencha.com/learn/overview-of-extjs-2)の「Component XTypes」の段落を参照してください。
+ExtJS 言語では、xtype はクラスに付与されるシンボル名です。xtype とその使用方法について詳しくは、[ExtJS 2 の概要](https://docs.sencha.com/)の「Component XTypes」の段落を参照してください。
 
-AEM で利用できるすべてのウィジェットの完全な情報については、[ウィジェット API のドキュメント](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)を参照してください。
+AEMで使用可能なすべてのウィジェットについて詳しくは、[widget API ドキュメント ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を参照してください。
 
-AEM で特定の xtype が使用されるコンポーネントを探すには、CRXDE で次の Xpath クエリを使用します。その際、「checkbox」を検索する xtype に置き換えます。
+AEMで特定の xtype が使用されるコンポーネントを調べるには、CRXDE で次の `Xpath` クエリを使用します。 &#39;checkbox&#39;を目的の xtype に置き換えるだけです。
 
 `//element(*, cq:Widget)[@xtype='checkbox']`
 
@@ -38,914 +38,915 @@ AEM で特定の xtype が使用されるコンポーネントを探すには、
 
 Adobe Experience Manager で使用可能な xtype を以下に示します。
 
-* annotation
+* `annotation`
 
-  [CQ.wcm.Annotation](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.Annotation)
+  [CQ.wcm.Annotation](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  Dialog は、ボディにフォーム、フッターにボタングループを備える特殊なウィンドウです。通常はコンテンツの編集に使用されますが、単に情報のみを表示するために使用されることもあります。
+  `Annotation` は特別な窓です。 本文にフォーム、フッターにボタングループが含まれています。 通常はコンテンツの編集に使用されますが、単に情報のみを表示するために使用されることもあります。
 
-* arraystore
+* `arraystore`
 
-  [CQ.Ext.data.ArrayStore](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.ArrayStore)
+  [CQ.Ext.data.ArrayStore](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  以前は「SimpleStore」として知られていました。
+  以前の名称：`SimpleStore`。
 
-  配列データから [CQ.Ext.data.Store](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.Store) を簡単に作成できるようにする小規模なヘルパークラスです。ArrayStore には自動的に [CQ.Ext.data.ArrayReader](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.ArrayReader) が設定されます。
+  配列データからの [CQ.Ext.data.Store](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)s の作成を容易にする小さなヘルパークラス。 `ArrayStore` は、[CQ.Ext.data.ArrayReader](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) で自動的に設定されます。
 
-* asseteditor
+* `asseteditor`
 
-  [CQ.dam.AssetEditor](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.dam.AssetEditor)
+  [CQ.dam.AssetEditor](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  DAM 管理画面で使用されるアセットエディターです。
+  `Asset Editor` は DAM 管理で使用されます。
 
-* assetreferencesearchdialog
+* `assetreferencesearchdialog`
 
-  [CQ.wcm.AssetReferenceSearchDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.AssetReferenceSearchDialog)
+  [CQ.wcm.AssetReferenceSearchDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  AssetReferenceSearchDialog は、ページがアセットまたはタグを参照する場合にポップアップ表示されるダイアログです。
+  `AssetReferenceSearchDialog` は、ページがアセットまたはタグを参照する場合にポップアップ表示されるダイアログボックスです。
 
-* blueprintconfig
+* `blueprintconfig`
 
-  [CQ.wcm.msm.BlueprintConfig](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.msm.BlueprintConfig)
+  [CQ.wcm.msm.BlueprintConfig](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  BlueprintConfig は、ブループリントのライブコピーを表示したり、このブループリントのプロパティ（同期トリガーと同期操作）を編集したりするパネルを提供します。
+  `BlueprintConfig` にはブループリントのライブコピーを表示したり、このブループリントのプロパティ（同期トリガーと同期操作）を編集したりできるパネルがあります。
 
-* blueprintstatus
+* `blueprintstatus`
 
-  [CQ.wcm.msm.BlueprintStatus](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.msm.BlueprintStatus)
+  [CQ.wcm.msm.BlueprintStatus](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  BlueprintStatus は、ブループリントとライブコピーの関係を表示および編集できるパネルを提供します。[CQ.wcm.msm.BlueprintStatus.Tree](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.msm.BlueprintStatus.Tree) を使用してブラウジングし、[CQ.wcm.msm.BlueprintConfig](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.msm.BlueprintConfig) および [CQ.wcm.msm.LiveCopyProperties](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.msm.LiveCopyProperties) を使用して編集します。
+  BlueprintStatus は、ブループリントとライブコピーの関係を表示および編集できるパネルを提供します。[CQ.wcm.msm.BlueprintStatus.Tree](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を使用してブラウジングし、[CQ.wcm.msm.BlueprintConfig](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) および [CQ.wcm.msm.LiveCopyProperties](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を使用して編集します。
 
-* box
+* `box`
 
-  [CQ.Ext.BoxComponent](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.BoxComponent)
+  [CQ.Ext.BoxComponent](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  [コンポーネント](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Component)の基底クラスであり、幅と高さを使用して、ボックスとしてサイズを変更します。
+  [コンポーネント](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)の基底クラスであり、幅と高さを使用して、ボックスとしてサイズを変更します。
 
   BoxComponent は、サイズと位置を自動的に調整するボックスモデルを提供し、コンポーネントのレンダリングモデルで正常に動作します。
 
-* browsedialog
+* `browsedialog`
 
-  [CQ.BrowseDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.BrowseDialog)
+  [CQ.BrowseDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  BrowseDialog により、ユーザーはパスを選択するためにリポジトリを参照できます。通常は、[BrowseField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.BrowseField) で使用されます。
+  BrowseDialog により、ユーザーはパスを選択するためにリポジトリを参照できます。通常は、[BrowseField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) で使用されます。
 
-* browsefield
+* `browsefield`
 
-  [CQ.form.BrowseField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.BrowseField)
+  [CQ.form.BrowseField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  **非推奨：代わりに [CQ.form.PathField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.PathField) を使用**
+  **非推奨：代わりに [CQ.form.PathField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を使用**
 
-* bulkeditor
+* `bulkeditor`
 
-  [CQ.wcm.BulkEditor](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.BulkEditor)
+  [CQ.wcm.BulkEditor](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  BulkEditor は、検索エンジンと、検索結果を編集するためのグリッドを提供します。
+  `BulkEditor` は、検索エンジンと、検索結果を編集するためのグリッドを提供します。
 
-  BulkEditor は、HTML フォームに挿入する必要があります（読み込み機能によって必須となっています）。[CQ.Dialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Dialog) で適切に動作します。
+  `BulkEditor` は、HTML フォームに挿入する必要があります（読み込み機能で必要）。 [CQ.Dialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) で適切に動作します。
 
-* bulkeditorform
+* `bulkeditorform`
 
-  [CQ.wcm.BulkEditorForm](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.BulkEditorForm)
+  [CQ.wcm.BulkEditorForm](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  BulkEditorForm は、HTML フォームで囲まれた [CQ.wcm.BulkEditor](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.BulkEditor) を提供します。[CQ.wcm.BulkEditor](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.BulkEditor) のスタンドアロンバージョンであり、読み込みボタンに HTML フォームが必要です。
+  BulkEditorForm は、HTML フォームで囲まれた [CQ.wcm.BulkEditor](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を提供します。[CQ.wcm.BulkEditor](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) のスタンドアロンバージョン 「読み込み」ボタンにはHTML フォームが必要です。
 
-* button
+* `button`
 
-  [CQ.Ext.Button](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Button)
+  [CQ.Ext.Button](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   シンプルな Button クラス
 
-* buttongroup
+* `buttongroup`
 
-  [CQ.Ext.ButtonGroup](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.ButtonGroup)
+  [CQ.Ext.ButtonGroup](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   ボタングループのためのコンテナ。
 
-* chart
+* `chart`
 
-  [CQ.Ext.chart.Chart](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.chart.Chart)
+  [CQ.Ext.chart.Chart](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  CQ.Ext.chart パッケージは、Flash ベースのグラフを使用したデータの視覚化を実現します。各グラフは、CQ.Ext.data.Store に直接バインドされ、グラフの自動更新が可能になります。グラフの外観を変更するには、[chartStyle](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.chart.Chart) および [extraStyle](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.chart.Chart) の設定オプションを確認します。
+  CQ.Ext.chart パッケージは、Flash ベースのグラフを使用したデータの視覚化を実現します。各グラフは、CQ.Ext.data.Store に直接バインドされ、グラフの自動更新が可能になります。グラフの外観を変更するには、[chartStyle](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) および [extraStyle](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) の設定オプションを確認します。
 
-* チェックボックス
+* `checkbox`
 
-  [CQ.Ext.form.Checkbox](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.Checkbox)
+  [CQ.Ext.form.Checkbox](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   単一チェックボックスフィールド。従来のチェックボックスフィールドにそのまま置き換えて使用できます。
 
-* checkboxgroup
+* `checkboxgroup`
 
-  [CQ.Ext.form.CheckboxGroup](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.CheckboxGroup)
+  [CQ.Ext.form.CheckboxGroup](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  [CQ.Ext.form.Checkbox](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.Checkbox) コントロールのグループ化コンテナ。
+  [CQ.Ext.form.Checkbox](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) コントロールのグループ化コンテナ。
 
-* clearcombo
+* `clearcombo`
 
-  [CQ.form.ClearableComboBox](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.ClearableComboBox)
+  [CQ.form.ClearableComboBox](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   ClearableComboBox は、値を消去するトリガーを持つ、編集できないコンボボックスです。
 
-* colorfield
+* `colorfield`
 
-  [CQ.form.ColorField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.ColorField)
+  [CQ.form.ColorField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  ColorField は、ユーザーが直接または[CQ.Ext.ColorMenu](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.ColorMenu)を使用して色の hex 値を入力できるようにします。
+  ColorField は、ユーザーが直接または[CQ.Ext.ColorMenu](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)を使用して色の hex 値を入力できるようにします。
 
-* colorlist
+* `colorlist`
 
-  [CQ.form.ColorList](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.ColorList)
+  [CQ.form.ColorList](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
    ColorList は、ユーザーが編集可能なリストから色を選択できるようにします。
 
-* colormenu
+* `colormenu`
 
-  [CQ.Ext.menu.ColorMenu](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.menu.ColorMenu)
+  [CQ.Ext.menu.ColorMenu](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  [CQ.Ext.ColorPalette](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.ColorPalette) コンポーネントを含むメニュー。
+  [CQ.Ext.ColorPalette](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) コンポーネントを含むメニュー。
 
-* colorpalette
+* `colorpalette`
 
-  [CQ.Ext.ColorPalette](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.ColorPalette)
+  [CQ.Ext.ColorPalette](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   色を選択するためのシンプルなカラーパレットクラス。パレットはどのコンテナにもレンダリングできます。
 
-* combo
+* `combo`
 
-  [CQ.Ext.form.ComboBox](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.ComboBox)
+  [CQ.Ext.form.ComboBox](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   オートコンプリート、リモートローディング、ページングなど、その他多くの機能をサポートするコンボボックスコントロール。
 
-  ComboBox は、従来の HTML &lt;select>フィールドと同じように動作します。相違点として、[valueField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.ComboBox) を送信するために、非表示の入力フィールドを作成する [hiddenName](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.ComboBox) を指定する必要があります。
+  ComboBox は、従来の HTML &lt;select>フィールドと同じように動作します。相違点として、[valueField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を送信するために、非表示の入力フィールドを作成する [hiddenName](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を指定する必要があります。
 
-* component
+* `component`
 
-  [CQ.Ext.Component](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Component)
+  [CQ.Ext.Component](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  すべての Ext コンポーネントの基底クラス。コンポーネントのすべてのサブクラスは、[Container](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Container) クラスによって提供される、Ext コンポーネントの自動化された作成、レンダリング、破棄のライフサイクルに参加できます。コンポーネントは、コンテナ作成時に、[items](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Container) 設定オプションでコンテナに追加されます。
+  すべての `Ext` コンポーネントの基本クラス。 コンポーネントのすべてのサブクラスは、`Ext`Container[ クラスが提供する、作成、レンダリング、破棄の自動 ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) コンポーネントライフサイクルに関与できます。 コンポーネントは、コンテナ作成時に、[items](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) 設定オプションでコンテナに追加されます。
 
-* componentextractor
+* `componentextractor`
 
-  [CQ.wcm.ComponentExtractor](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.ComponentExtractor)
+  [CQ.wcm.ComponentExtractor](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   ComponentExtractor は、ユーザーが web サイト／ページからコンポーネントを抽出できるようにします。
 
-* componentselector
+* `componentselector`
 
-  [CQ.form.ComponentSelector](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.ComponentSelector)
+  [CQ.form.ComponentSelector](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   グループ化され、順序付けされた利用可能なコンポーネント群。
 
-* componentstyles
+* `componentstyles`
 
-  [CQ.form.ComponentStyles](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.ComponentStyles)
+  [CQ.form.ComponentStyles](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-* compositefield
+* `compositefield`
 
-  [CQ.form.CompositeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField)
+  [CQ.form.CompositeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   1 つのフォームフィールドまたはフォームフィールドのグループを含む、パネルをベースとした複雑なフォームフィールドの基本クラス。
 
-* container
+* `container`
 
-  [CQ.Ext.Container](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Container)
+  [CQ.Ext.Container](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  その他のコンポーネントを含められる [CQ.Ext.BoxComponent](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.BoxComponent) の基底クラス。コンテナは、アイテムの格納の基本動作（アイテムの追加、挿入、削除など）を処理します。
+  その他のコンポーネントを含められる [CQ.Ext.BoxComponent](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) の基底クラス。コンテナは、アイテムの格納の基本動作（アイテムの追加、挿入、削除など）を処理します。
 
-  最もよく使用される Container クラスは、[CQ.Ext.Panel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Panel)、[CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window) および [CQ.Ext.TabPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.TabPanel) です。
+  最もよく使用される Container クラスは、[CQ.Ext.Panel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)、[CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) および [CQ.Ext.TabPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) です。
 
-* contentfinder
+* `contentfinder`
 
-  [CQ.wcm.ContentFinder](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.ContentFinder)
+  [CQ.wcm.ContentFinder](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  ContentFinder は、左に実際のコンテンツファインダー、右にコンテンツフレームを含む、2 列の専用の[ビューポート](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Viewport)です。
+  ContentFinder は、左に実際のコンテンツファインダー、右にコンテンツフレームを含む、2 列の専用の[ビューポート](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)です。
 
-* contentfindertab
+* `contentfindertab`
 
-  [CQ.wcm.ContentFinderTab](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.ContentFinderTab)
+  [CQ.wcm.ContentFinderTab](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  ContentFinderTab は、[CQ.wcm.ContentFinder](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.ContentFinder) のタブパネルで使用される機能を提供する専用のパネルです。通常は、検索フォーム（クエリボックス）および検索結果を表示するデータ表示画面で使用されます。
+  ContentFinderTab は、[CQ.wcm.ContentFinder](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) のタブパネルで使用される機能を提供する専用のパネルです。通常、検索フォーム（クエリボックス）と、検索を表示するデータビューが備わっています。
 
-* cq.workflow.model.combo
+* `cq.workflow.model.combo`
 
-  [CQ.wcm.WorkflowModelCombo](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.WorkflowModelCombo)
+  [CQ.wcm.WorkflowModelCombo](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  WorkflowModelCombo は、利用できるワークフローモデルのリストを表示する、カスタマイズされた [CQ.Ext.form.ComboBox](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.ComboBox) です。
+  WorkflowModelCombo は、利用できるワークフローモデルのリストを表示する、カスタマイズされた [CQ.Ext.form.ComboBox](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) です。
 
-* cq.workflow.model.selector
+* `cq.workflow.model.selector`
 
-  [CQ.wcm.WorkflowModelSelector](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.WorkflowModelSelector)
+  [CQ.wcm.WorkflowModelSelector](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   WorkflowModelSelector は、WorkflowModelCombo を、ワークフローのサムネール画像のほか、ワークフローモデルの作成および編集のためのボタンと組み合わせたものです。
 
-* createsitewizard
+* `createsitewizard`
 
-  [CQ.wcm.CreateSiteWizard](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.CreateSiteWizard)
+  [CQ.wcm.CreateSiteWizard](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   CreateSiteWizard は、（MSM）サイトを作成するためのステップバイステップ方式のウィザードです。
 
-* createversiondialog
+* `createversiondialog`
 
-  [CQ.wcm.CreateVersionDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.CreateVersionDialog)
+  [CQ.wcm.CreateVersionDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   CreateVersionDialog は、バージョンのページを作成できるダイアログボックスです。
 
-* customcontentpanel
+* `customcontentpanel`
 
-  [CQ.CustomContentPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.CustomContentPanel)
+  [CQ.CustomContentPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  CustomContentPanel は、[CQ.Dialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Dialog) で使用するための特殊なパネルです。CustomContentPanel のコンテンツは、ダイアログ内のその他のフィールドとは異なる URL から取得および送信されます。
+  CustomContentPanel は、[CQ.Dialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) で使用するための特別なパネルです。そのコンテンツは、ダイアログボックス内の他のフィールドとは異なる URL から取得され、送信されます。
 
-* cycle
+* `cycle`
 
-  [CQ.Ext.CycleButton](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.CycleButton)
+  [CQ.Ext.CycleButton](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  [CQ.Ext.menu.CheckItem](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.menu.CheckItem) 要素のメニューを含む専用の SplitButton。このボタンは、アクティブなメニューアイテムに対してボタンの [change](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.CycleButton) イベントを生成しながら（または指定されている場合は、ボタンの [changeHandler](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.CycleButton) 関数を呼び出しながら）、クリックで各メニューアイテムを循環します。
+  [CQ.Ext.menu.CheckItem](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) 要素のメニューを含む専用の SplitButton。このボタンは、アクティブなメニューアイテムに対してボタンの [change](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) イベントを生成しながら（または指定されている場合は、ボタンの [changeHandler](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) 関数を呼び出しながら）、クリックごとに各メニューアイテムを循環します。
 
-* dataview
+* `dataview`
 
-  [CQ.Ext.DataView](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.DataView)
+  [CQ.Ext.DataView](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  カスタムレイアウトテンプレートと書式設定を使用してデータを表示するメカニズム。DataView は、内部テンプレートのメカニズムとして [CQ.Ext.XTemplate](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.XTemplate) を使用し、[CQ.Ext.data.Store](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.Store) にバインドされます。ストア内のデータが変更されると、ビューは変更を反映して自動的に更新されます。
+  カスタムレイアウトテンプレートと書式設定を使用してデータを表示するメカニズム。DataView は、内部テンプレートのメカニズムとして [CQ.Ext.XTemplate](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を使用し、[CQ.Ext.data.Store](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) にバインドされます。ストア内のデータが変更されると、ビューは変更を反映して自動的に更新されます。
 
-* datefield
+* `datefield`
 
-  [CQ.Ext.form.DateField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.DateField)
+  [CQ.Ext.form.DateField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-   [CQ.Ext.DatePicker](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.DatePicker) ドロップダウンと自動日付検証機能を備えた日付入力フィールドを提供します。
+  [CQ.Ext.DatePicker](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) ドロップダウンと自動日付検証機能を備えた日付入力フィールドを提供します。
 
-* datemenu
+* `datemenu`
 
-  [CQ.Ext.menu.DateMenu](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.menu.DateMenu)
+  [CQ.Ext.menu.DateMenu](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  [CQ.Ext.DatePicker](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.DatePicker) コンポーネントを含むメニュー。
+  [CQ.Ext.DatePicker](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) コンポーネントを含むメニュー。
 
-* datepicker
+* `datepicker`
 
-  [CQ.Ext.DatePicker](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.DatePicker)
+  [CQ.Ext.DatePicker](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  ポップアップの日付選択。このクラスは、有効な日付を参照および選択できるようにするために、[DateField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.DateField) クラスで使用されます。
+  ポップアップ日付選択。 このクラスは、有効な日付を参照および選択できるようにするために、[DateField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) クラスで使用されます。
 
-* datetime
+* `datetime`
 
-  [CQ.form.DateTime](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.DateTime)
+  [CQ.form.DateTime](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  DateTime は、[CQ.Ext.form.DateField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.DateField)と[CQ.Ext.form.TimeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TimeField)を組み合わせて、ユーザーが日付と時刻を入力できるようにします。
+  DateTime は、[CQ.Ext.form.DateField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)と[CQ.Ext.form.TimeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)を組み合わせて、ユーザーが日付と時刻を入力できるようにします。
 
-* dialog
+* `dialog`
 
-  [CQ.Dialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Dialog)
+  [CQ.Dialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  Dialog は、ボディにフォーム、フッターにボタングループを備える特殊なウィンドウです。通常はコンテンツの編集に使用されますが、単に情報のみを表示するために使用されることもあります。
+  ダイアログは特別なウィンドウです。 本文にフォーム、フッターにボタングループが含まれています。 通常はコンテンツの編集に使用されますが、単に情報のみを表示するために使用されることもあります。
 
-* dialogfieldset
+* `dialogfieldset`
 
-  [CQ.form.DialogFieldSet](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.DialogFieldSet)
+  [CQ.form.DialogFieldSet](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  DialogFieldSet は、[Dialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.FieldSet) で使用される [FieldSet](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Dialog) です。
+  DialogFieldSet は、[Dialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) で使用される [FieldSet](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) です。
 
-* directstore
+* `directstore`
 
-  [CQ.Ext.data.DirectStore](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.DirectStore)
+  [CQ.Ext.data.DirectStore](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  [CQ.Ext.Direct](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Direct) サーバーサイド[プロバイダー](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.direct.Provider)と簡単にやり取りできるように、[CQ.Ext.data.DirectProxy](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.DirectProxy) と [CQ.Ext.data.JsonReader](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.JsonReader) で設定された [CQ.Ext.data.Store](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.Store) を作成するための小規模なヘルパークラス。
+  [CQ.Ext.data.DirectProxy](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) および [CQ.Ext.data.JsonReader](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) で設定された [CQ.Ext.data.Store](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を作成して、[CQ.Ext.Direct](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) サーバーサイドの [Provider](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) とのやり取りを容易にする小さなヘルパークラス。
 
-* displayfield
+* `displayfield`
 
-  [CQ.Ext.form.DisplayField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.DisplayField)
+  [CQ.Ext.form.DisplayField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   検証されることも送信されることもない、表示専用のテキストフィールド。
 
-* editbar
+* `editbar`
 
-  [CQ.wcm.EditBar](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditBar)
+  [CQ.wcm.EditBar](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   EditBar は、ユーザーがバーのボタンを使用してコンテンツを編集できるようにします。
 
-  ここには記載されていませんが、EditBar には、[CQ.wcm.EditBase](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditBase) のすべてのメンバーがあります。
+  ここには記載されていませんが、EditBar には、[CQ.wcm.EditBase](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) のすべてのメンバーがあります。
 
-* エディター
+* `editor`
 
-  [CQ.Ext.Editor](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Editor)
+  [CQ.Ext.Editor](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   要求に応じて表示／非表示を処理し、いくつかのビルトインのサイズ変更およびイベント処理ロジックを持つ基本エディターフィールド。
 
-* editorgrid
+* `editorgrid`
 
-  [CQ.Ext.grid.EditorGridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)
+  [CQ.Ext.grid.EditorGridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  このクラスは、[GridPanel クラス](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)を拡張し、選択した[列](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.Column)でセルを編集できるようにします。編集可能な列は、[列の設定](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.Column)で[エディター](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel)を提供することで指定されます。
+  このクラスは、[GridPanel クラス](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)を拡張し、選択した[列](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)でセルを編集できるようにします。編集可能な列は、[列の設定](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)で[エディター](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)を提供することで指定されます。
 
-* editrollover
+* `editrollover`
 
-  [CQ.wcm.EditRollover](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover)
+  [CQ.wcm.EditRollover](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   EditRollover は、ユーザーがダブルクリックすることでコンテンツを編集できるようにし、コンテキストメニューを通じてさらに編集操作を提供します。編集可能な領域は、マウスがコンテンツにロールオーバーされたときに、フレームによって示されます。
 
-* feedimporter
+* `feedimporter`
 
-  [CQ.wcm.FeedImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.FeedImporter)
+  [CQ.wcm.FeedImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   FeedImporter は、ユーザーが RSS／Atom フィードをインポートし、フィードエントリごとにページを作成できるようにします。
 
-* field
+* `field`
 
-  [CQ.Ext.form.Field](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.Field)
+  [CQ.Ext.form.Field](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   フォームフィールドの基底クラスであり、デフォルトのイベントの処理、サイズ設定、値の処理およびその他の機能を提供します。
 
-* fieldset
+* `fieldset`
 
-  [CQ.Ext.form.FieldSet](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.FieldSet)
+  [CQ.Ext.form.FieldSet](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  [フォーム](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.FormPanel)内のアイテムのグループ化に使用される標準コンテナ。
+  [フォーム](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)内のアイテムのグループ化に使用される標準コンテナ。
 
-* fileuploaddialogbutton
+* `fileuploaddialogbutton`
 
-  [CQ.form.FileUploadDialogButton](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.FileUploadDialogButton)
+  [CQ.form.FileUploadDialogButton](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  FileUploadDialogButton は、FileUploadField を使用してファイルをアップロードするための新しいダイアログを開くボタンを作成します。アップロードを別のフォームで実行する必要がある編集ダイアログ内で使用できます。
+  FileUploadDialogButton は、FileUploadField を使用してファイルをアップロードするための新しいダイアログボックスを開くボタンを作成します。 別のフォームでアップロードする必要がある、編集ダイアログボックス内で使用できます。
 
-* fileuploadfield
+* `fileuploadfield`
 
-  [CQ.form.FileUploadField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.FileUploadField)
+  [CQ.form.FileUploadField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   FileUploadField は、ユーザーがアップロードする単一のファイルを選択できるようにします。
 
-* findreplacedialog
+* `findreplacedialog`
 
-  [CQ.wcm.FindReplaceDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.FindReplaceDialog)
+  [CQ.wcm.FindReplaceDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  FindReplaceDialog はページおよびその子ページでトークンを検索し、置換するためのダイアログです。
+  FindReplaceDialog は、ページおよびその子ページ内のトークンを検索して置換するためのダイアログ・ボックスです。
 
-* flash
+* `flash`
 
-  [CQ.Ext.FlashComponent](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.FlashComponent)
+  [CQ.Ext.FlashComponent](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-* grid
+* `grid`
 
-  [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)
+  [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   このクラスは、行と列の表形式でデータを表示する、コンポーネントをベースにしたグリッドコントロールのプライマリインターフェイスを表示します。
 
-* groupingstore
+* `groupingstore`
 
-  [CQ.Ext.data.GroupingStore](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.GroupingStore)
+  [CQ.Ext.data.GroupingStore](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  利用可能なフィールドの 1 つでレコードをグループ化できるようにする、専用のストア実装。これは、グループ化された GridPanel のデータモデルを証明するために、[CQ.Ext.grid.GroupingView](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GroupingView) と共に使用されます。
+  利用可能なフィールドの 1 つでレコードをグループ化できるようにする、専用のストア実装。[CQ.Ext.grid.GroupingView](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) と共に使用して、グループ化された GridPanel のデータモデルを証明します。
 
-* heavymovedialog
+* `heavymovedialog`
 
-  [CQ.wcm.HeavyMoveDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.HeavyMoveDialog)
+  [CQ.wcm.HeavyMoveDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-   HeavyMoveDialog は、ページとその子ページを移動するためのダイアログであり、以前アクティブ化したページの再アクティブ化も考慮に入れます（名前の「heavy」はこれを表しています）。
+  HeavyMoveDialog は、ページとその子ページを移動するためのダイアログボックスであり、以前アクティブ化したページの再アクティブ化も考慮に入れます（「heavy」移動）。
 
-* hidden
+* `hidden`
 
-  [CQ.Ext.form.Hidden](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.Hidden)
+  [CQ.Ext.form.Hidden](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   フォームの送信で渡す必要があるフォーム内の非表示の値を格納するための、基本的な非表示フィールド。
 
-* historybutton
+* `historybutton`
 
-  [CQ.HistoryButton](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.HistoryButton)
+  [CQ.HistoryButton](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  HistoryButton は進むボタンと戻るボタンを簡単に提供できる小規模なヘルパークラスです。通常、2 つの関連インスタンスが必要になります。進むボタンのインスタンスは、履歴を処理する戻るボタンのインスタンスに関連付けられたシンプルなボタンです。
+  HistoryButton は、前後のボタンを簡単に提供する小さなヘルパークラスです。 通常、2 つの関連インスタンスが必要になります。進むボタンのインスタンスは、履歴を処理する戻るボタンのインスタンスに関連付けられたシンプルなボタンです。
 
-* htmleditor
+* `htmleditor`
 
-  [CQ.Ext.form.HtmlEditor](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor)
+  [CQ.Ext.form.HtmlEditor](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-   軽量の HTML エディターコンポーネントを提供します。ツールバーの機能の一部は、Safari ではサポートされておらず、必要に応じて自動的に非表示になります。該当する場合、設定オプションに記載されています。
+  軽量のHTML エディターコンポーネントを提供します。 Safari では、一部のツールバー機能をサポートしていないので、必要に応じて自動的に非表示になります。 必要に応じて、設定オプションに記載されます。
 
-  エディターのツールバーボタンには、[buttonTips](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor) プロパティで定義されたツールチップがあります。
+  エディターのツールバーボタンには、[buttonTips](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) プロパティで定義されたツールチップがあります。
 
-* iframedialog
+* `iframedialog`
 
-  [CQ.IframeDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.IframeDialog)
+  [CQ.IframeDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-   iframe のコンテンツを表示したり、iframe でフォームを許可したりするプレーンダイアログ。
+  iframe のコンテンツを表示し、iframe でフォームを許可するプレーンダイアログボックス。
 
-* iframepanel
+* `iframepanel`
 
-  [CQ.IframePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.IframePanel)
+  [CQ.IframePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  iframe を含むパネル。iframe の容易な作成、iframe の読み込みイベント、iframe のコンテンツへの容易なアクセスを可能にします。
+  iframe を含むパネル。iframe の作成、iframe の読み込みイベント、iframe のコンテンツへのアクセスを簡単にします。
 
-* inlinetextfield
+* `inlinetextfield`
 
-  [CQ.form.InlineTextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.InlineTextField)
+  [CQ.form.InlineTextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   InlineField は、フォーカスされていないときにラベルとして表示されるテキストフィールドです。
 
-* jsonstore
+* `jsonstore`
 
-  [CQ.Ext.data.JsonStore](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.JsonStore)
+  [CQ.Ext.data.JsonStore](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  JSON データから容易に [CQ.Ext.data.Store](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.Store) を作成できるようにする小規模なヘルパークラスです。JsonStore には自動的に [CQ.Ext.data.JsonReader](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.JsonReader) が設定されます。
+  JSON データからの [CQ.Ext.data.Store](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)s の作成を容易にする小さなヘルパークラス。 JsonStore には自動的に [CQ.Ext.data.JsonReader](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) が設定されます。
 
-* label
+* `label`
 
-  [CQ.Ext.form.Label](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.Label)
+  [CQ.Ext.form.Label](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
    基本ラベルフィールド。
 
-* languagecopydialog
+* `languagecopydialog`
 
-  [CQ.wcm.LanguageCopyDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.LanguageCopyDialog)
+  [CQ.wcm.LanguageCopyDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-   LanguageCopyDialog は、言語ツリーをコピーするためのダイアログです。
+  LanguageCopyDialog は、言語ツリーをコピーするためのダイアログボックスです。
 
-* linkchecker
+* `linkchecker`
 
-  [CQ.wcm.LinkChecker](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.LinkChecker)
+  [CQ.wcm.LinkChecker](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   linkchecker は、サイト内の外部リンクを確認するためのツールです。
 
-* listview
+* `listview`
 
-  [CQ.Ext.list.ListView](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.list.ListView)
+  [CQ.Ext.list.ListView](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  CQ.Ext.list.ListView は、[Grid](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) に似たビューの高速かつ軽量の実装です。
+  CQ.Ext.list.ListView は、[Grid](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) に似たビューの高速かつ軽量の実装です。
 
-* livecopyproperties
+* `livecopyproperties`
 
-  [CQ.wcm.msm.LiveCopyProperties](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.msm.LiveCopyProperties)
+  [CQ.wcm.msm.LiveCopyProperties](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   LiveCopyProperties は、ライブコピープロパティ（関係の継承、同期のトリガー、同期操作）を表示および編集できるパネルを提供します。
 
-* lvbooleancolumn
+* `lvbooleancolumn`
 
-  [CQ.Ext.list.BooleanColumn](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.list.BooleanColumn)
+  [CQ.Ext.list.BooleanColumn](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  ブーリアン型のデータフィールドをレンダリングする Column 定義クラスです。詳しくは、[CQ.Ext.list.Column](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.list.Column) の [xtype](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.list.Column) 設定オプションを参照してください。
+  ブーリアン型のデータフィールドをレンダリングする Column 定義クラスです。詳しくは、[CQ.Ext.list.Column](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) の [xtype](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) 設定オプションを参照してください。
 
-* lvcolumn
+* `lvcolumn`
 
-  [CQ.Ext.list.Column](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.list.Column)
+  [CQ.Ext.list.Column](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  このクラスは、[ListView](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.list.ListView) の初期化に使用される列設定データをカプセル化します。
+  このクラスは、[ListView](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) の初期化に使用される列設定データをカプセル化します。
 
-* lvdatecolumn
+* `lvdatecolumn`
 
-  [CQ.Ext.list.DateColumn](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.list.DateColumn)
+  [CQ.Ext.list.DateColumn](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  デフォルトのロケールまたは設定された[形式](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.list.DateColumn)に従って渡された日付をレンダリングする Column 定義クラスです。詳しくは、[CQ.Ext.list.Column](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.list.Column) の [xtype](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.list.Column) 設定オプションを参照してください。
+  デフォルトのロケールまたは設定された[形式](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)に従って渡された日付をレンダリングする Column 定義クラスです。詳しくは、[CQ.Ext.list.Column](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) の [xtype](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) 設定オプションを参照してください。
 
-* lvnumbercolumn
+* `lvnumbercolumn`
 
-  [CQ.Ext.list.NumberColumn](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.list.NumberColumn)
+  [CQ.Ext.list.NumberColumn](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  [形式](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.list.NumberColumn)の文字列に従って数値データフィールドをレンダリングする Column 定義クラスです。詳しくは、[CQ.Ext.list.Column](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.list.Column) の [xtype](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.list.Column) 設定オプションを参照してください。
+  [形式](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)の文字列に従って数値データフィールドをレンダリングする Column 定義クラスです。詳しくは、[CQ.Ext.list.Column](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) の [xtype](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) 設定オプションを参照してください。
 
-* mediabrowsedialog
+* `mediabrowsedialog`
 
-  [CQ.MediaBrowseDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.MediaBrowseDialog)
+  [CQ.MediaBrowseDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  **非推奨：代わりに[コンテンツファインダー](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.ContentFinder)を使用して、メディアを参照してください。**
+  **非推奨：代わりに[コンテンツファインダー](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)を使用して、メディアを参照してください。**
 
-  MediaBrowseDialog は、メディアライブラリを参照するためのダイアログです。
+  MediaBrowseDialog は、メディアライブラリを参照するためのダイアログボックスです。
 
-* メニュー
+* `menu`
 
-  [CQ.Ext.menu.Menu](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.menu.Menu)
+  [CQ.Ext.menu.Menu](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  メニューオブジェクト。これは、メニュー項目を追加できるコンテナです。Menu は、別のコンポーネントをベースにした特殊なメニュー（[CQ.Ext.menu.DateMenu](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.menu.DateMenu) など）が必要な場合に、基底クラスとしても利用できます。
+  メニューオブジェクト。メニュー項目を追加できるコンテナ。 Menu は、別のコンポーネントをベースにした特殊なメニュー（[CQ.Ext.menu.DateMenu](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) など）が必要な場合に、基底クラスとしても利用できます。
 
-  Menu には、[メニュー項目](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.menu.Item)または一般的な[コンポーネント](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Component)を含めることができます。
+  メニューには、[ メニュー項目 ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) または一般的な [ コンポーネント ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を含めることができます。
 
-* menubaseitem
+* `menubaseitem`
 
-  [CQ.Ext.menu.BaseItem](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.menu.BaseItem)
+  [CQ.Ext.menu.BaseItem](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   メニューにレンダリングするすべてのアイテムの基本クラス。BaseItem は、すべてのメニューコンポーネントで共有される、デフォルトのレンダリング、アクティベートされた状態の管理、基本設定オプションを提供します。
 
-* menucheckitem
+* `menucheckitem`
 
-  [CQ.Ext.menu.CheckItem](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.menu.CheckItem)
+  [CQ.Ext.menu.CheckItem](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-   デフォルトでチェックボックス（ラジオグループの一部である可能性もあります）を含むメニューアイテムを追加します。
+  デフォルトでチェックボックス（ラジオグループの一部である可能性もあります）を含むメニュー項目が追加されます。
 
-* menuitem
+* `menuitem`
 
-  [CQ.Ext.menu.Item](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.menu.Item)
+  [CQ.Ext.menu.Item](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  メニュー関連の機能（サブメニューなど）を必要とし、静的表示アイテムではないすべてのメニューアイテムの基底クラス。Item は、メニュー専用のアクティベーションとクリック処理を追加することで、[CQ.Ext.menu.BaseItem](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.menu.BaseItem) の基本機能を拡張します。
+  メニュー関連の機能（サブメニューなど）を必要とし、静的表示アイテムではないすべてのメニューアイテムの基底クラス。Item は、メニュー専用のアクティベーションとクリック処理を追加することで、[CQ.Ext.menu.BaseItem](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) の基本機能を拡張します。
 
-* menuseparator
+* `menuseparator`
 
-  [CQ.Ext.menu.Separator](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.menu.Separator)
+  [CQ.Ext.menu.Separator](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  メニューに区切りバーを追加します。区切りバーは、メニューアイテムを論理的なグループに分けるために使用されます。通常、区切りバーは、直接作成するのではなく、add() の呼び出し内またはアイテムの設定内で「-」を使用して追加します。
+  メニューに区切りバーを追加します。区切りバーは、メニュー項目を論理的なグループに分けるために使用されます。 通常は、add （）を呼び出す際に「–」を使用するか、直接作成するのではなく項目設定で「–」を使用して追加します。
 
-* menutextitem
+* `menutextitem`
 
-  [CQ.Ext.menu.TextItem](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.menu.TextItem)
+  [CQ.Ext.menu.TextItem](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  見出しやグループ区切り記号として使用される静的テキスト文字列をメニューに追加します。
+  見出しまたはグループ区切りとして使用される静的テキスト文字列をメニューに追加します。
 
-* メタデータ
+* `metadata`
 
-  [CQ.dam.form.Metadata](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.dam.form.Metadata)
+  [CQ.dam.form.Metadata](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  Metadata は、アセットエディターページなどで使用されるメタデータフィールドに必要な情報を決定するフィールドのセットを提供します。
+  `Metadata` には、例えばアセットエディターページで使用されるメタデータフィールドに必要な情報を決定するための一連のフィールドが用意されています。
 
   以下のフィールドを提供します。
 
-* multifield
+* `multifield`
 
-  [CQ.form.MultiField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.MultiField)
+  [CQ.form.MultiField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  MultiField は、複数値のプロパティを編集するための編集可能なフォームフィールドのリストです。
+  複数値のプロパティを編集するための編集可能なフォームフィールドのリストが `MultiField` に表示されます。
 
-* mvt
+* `mvt`
 
-  [CQ.form.MVT](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.MVT)
+  [CQ.form.MVT](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   多変量分析テストコンポーネントは、バナーの代わりに表示される画像のセットを定義および編集するのに使用されます。クリックスルー率の統計はバナーごとに収集されます。
 
-* notificationinbox
+* `notificationinbox`
 
-  [CQ.wcm.NotificationInbox](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.NotificationInbox)
+  [CQ.wcm.NotificationInbox](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  NotificationInbox は、ユーザーが WCM アクションをサブスクライブし、通知を管理できるようにします。
+  `NotificationInbox` を使用すると、ユーザーは WCM アクションをサブスクライブし、通知を管理できます。
 
-* numberfield
+* `numberfield`
 
-  [CQ.Ext.form.NumberField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.NumberField)
+  [CQ.Ext.form.NumberField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   自動でのキーストロークのフィルター処理および数値の検証を提供する数値テキストフィールド。
 
-* offlineimporter
+* `offlineimporter`
 
-  [CQ.wcm.OfflineImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.OfflineImporter)
+  [CQ.wcm.OfflineImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  OfflineImporter は、Microsoft® Word ドキュメントを AEM ページに読み込んで変換するツールです。この機能により、ワード プロセッサを使用してオフラインでコンテンツを編集することができます。
+  `OfflineImporter` は、Microsoft® Word ドキュメントをAEM ページに読み込んで変換するツールです。 この機能により、ワード プロセッサを使用してオフラインでコンテンツを編集することができます。
 
-* ownerdraw
+* `ownerdraw`
 
-  [CQ.form.OwnerDraw](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.OwnerDraw)
+  [CQ.form.OwnerDraw](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  OwnerDraw には、カスタム HTML コードを含めることができます（直接入力するか、URL から取得します）。
+  `OwnerDraw` には、カスタム HTML コードを含めることができます（直接入力するか、URL から取得します）。
 
-* paging
+* `paging`
 
-  [CQ.Ext.PagingToolbar](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.PagingToolbar)
+  [CQ.Ext.PagingToolbar](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   レコードの量が増えるにつれて、ブラウザーでレンダリングするのに要する時間も増えます。Paging は、クライアントとやり取りするデータの量を減らすために使用されます。
 
-* panel
+* `panel`
 
-  [CQ.Ext.Panel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Panel)
+  [CQ.Ext.Panel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  Panel は特定の機能と構造型コンポーネントを含むコンテナであり、アプリケーション指向のユーザーインターフェイス用の完全な構成ブロックです。
+  `panel` は、特定の機能と構造コンポーネントを備えたコンテナで、アプリケーション指向のユーザーインターフェイスに最適な構築ブロックです。
 
-  Panel は、[CQ.Ext.Container](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Container) からの継承に基づきます。
+  パネルは、その継承により、[CQ.Ext.Container](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) から取得されます。
 
-* paragraphreference
+* `paragraphreference`
 
-  [CQ.form.ParagraphReference](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.ParagraphReference)
+  [CQ.form.ParagraphReference](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   段落の参照フィールドでは、ページを閲覧したり、段落の 1 つを選択したりできます。トリガーフィールドおよび関連する段落の参照ダイアログボックスで構成されます。
 
-* パスワード
+* `password`
 
-  [CQ.form.Password](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.Password)
+  [CQ.form.Password](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  Password は [CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField) に似ていますが、ユーザーが機密データを入力できるように、値を非公開に保ちます。
+  `Password` は [CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) に似ていますが、ユーザーが機密データを入力できるように、値を非公開に保ちます。
 
-* pathcompletion
+* `pathcompletion`
 
-  [CQ.form.PathCompletion](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.PathCompletion)
+  [CQ.form.PathCompletion](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  **非推奨：代わりに [CQ.form.PathField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.PathField) を使用してください。**
+  **非推奨：代わりに [CQ.form.PathField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を使用してください。**
 
-* pathfield
+* `pathfield`
 
-  [CQ.form.PathField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.PathField)
+  [CQ.form.PathField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  PathField は、サーバーリポジトリを閲覧するための [CQ.BrowseDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.BrowseDialog) を開くボタンとパスの入力候補機能を備えた、パス向けの入力フィールドです。高度なリンク作成のために、ページの段落を参照することもできます。
+  `PathField` は、パス完了を含むパス用に設計された入力フィールドと、サーバーリポジトリを参照するための [CQ.BrowseDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を開くためのボタンです。 高度なリンク作成のために、ページの段落を参照することもできます。
 
-* progress
+* `progress`
 
-  [CQ.Ext.ProgressBar](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.ProgressBar)
+  [CQ.Ext.ProgressBar](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   更新可能な進行状況バーコンポーネント。進行状況バーは、手動と自動の 2 つの異なるモードをサポートします。
 
-  手動モードでは、独自のコードから必要に応じて進行状況バーを表示、更新（[updateProgress](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.ProgressBar) を使用）、削除する必要があります。この方法は操作の間中、進行状況を表示する必要がある場合に最も適しています。
+  手動モードでは、独自のコードから必要に応じて進行状況バーを表示、更新（[updateProgress](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を使用）、削除する必要があります。この方法は操作の間中、進行状況を表示する必要がある場合に最も適しています。
 
-* propertygrid
+* `propertygrid`
 
-  [CQ.Ext.grid.PropertyGrid](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.PropertyGrid)
+  [CQ.Ext.grid.PropertyGrid](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  開発 IDE によくあるような従来型のプロパティグリッドを模した、専用のグリッドの実装。グリッドの各列には、いくつかのオブジェクトのプロパティが表示され、このデータは [CQ.Ext.grid.PropertyRecord](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.PropertyRecord) に名前／値のペアのセットとして格納されます。
+  開発 IDE によくあるような従来型のプロパティグリッドを模した、専用のグリッドの実装。グリッドの各列には、いくつかのオブジェクトのプロパティが表示され、このデータは [CQ.Ext.grid.PropertyRecord](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) に名前／値のペアのセットとして格納されます。
 
-* propgrid
+* `propgrid`
 
-  [CQ.PropertyGrid](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.PropertyGrid)
+  [CQ.PropertyGrid](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-   PropertyGrid は、オブジェクトのプロパティの表示と編集に使用される汎用グリッドです。
+  `PropertyGrid` は、オブジェクトのプロパティを表示および編集するために使用される汎用グリッドです。
 
-* quicktip
+* `quicktip`
 
-  [CQ.Ext.QuickTip](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.QuickTip)
+  [CQ.Ext.QuickTip](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-   @xtype quicktip は、マークアップで指定され、グローバル [CQ.Ext.QuickTips](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.QuickTips) インスタンスによって自動的に管理されるツールチップのための専用のツールチップクラスです。その他の使用方法の詳細と例については、QuickTips クラスのヘッダーを参照してください。
+  `@xtype quicktip` - マークアップで指定され、グローバル [CQ.Ext.QuickTips](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) インスタンスによって自動的に管理されるツールチップのための専用のツールチップクラス。 その他の使用方法の詳細と例については、QuickTips クラスのヘッダーを参照してください。
 
-* radio
+* `radio`
 
-  [CQ.Ext.form.Radio](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.Radio)
+  [CQ.Ext.form.Radio](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-   単一ラジオフィールド。チェックボックスと同じですが、入力の種類が自動的に設定されるので便利です。グループ内の各ラジオに同じ名前を付けている場合、ラジオのグループ化は、ブラウザーによって自動的に処理されます。
+  単一の `radio` フィールド。 チェックボックスと同じですが、入力の種類が自動的に設定されるので便利です。グループ内の各ラジオボタンに同じ名前を付けると、ブラウザーによってラジオボタンが自動的にグループ化されます。
 
-* radiogroup
 
-  [CQ.Ext.form.RadioGroup](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.RadioGroup)
+* `radiogroup`
 
-   [CQ.Ext.form.Radio](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.Radio) コントロールのグループ化コンテナ。
+  [CQ.Ext.form.RadioGroup](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-* referencesdialog
+   [CQ.Ext.form.Radio](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) コントロールのグループ化コンテナ。
 
-  [CQ.wcm.ReferencesDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.ReferencesDialog)
+* `referencesdialog`
 
-   ReferencesDialog は、ページでリファレンスを表示するためのダイアログです。
+  [CQ.wcm.ReferencesDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-* restoretreedialog
+  `ReferencesDialog` は、ページ上に参照を表示するためのダイアログボックスです。
 
-  [CQ.wcm.RestoreTreeDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.RestoreTreeDialog)
+* `restoretreedialog`
 
-   RestoreTreeDialog は、ツリーの以前のバージョンを復元するためのダイアログです。
+  [CQ.wcm.RestoreTreeDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-* restoreversiondialog
+  `RestoreTreeDialog` は、ツリーの以前のバージョンを復元するためのダイアログボックスです。
 
-  [CQ.wcm.RestoreVersionDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.RestoreVersionDialog)
+* `restoreversiondialog`
 
-   RestoreVersionDialog は、ページの以前のバージョンを復元するためのダイアログです。
+  [CQ.wcm.RestoreVersionDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-* richtext
+  RestoreVersionDialog は、ページの以前のバージョンを復元するためのダイアログボックスです。
 
-  [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText)
+* `richtext`
 
-  RichText は、スタイル設定されたテキスト情報（リッチテキスト）を編集するためのフォームフィールドを提供します。
+  [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  RichText コンポーネントは現在、以下の機能を提供します。
+  `RichText` には、スタイル設定されたテキスト情報（リッチテキスト）を編集するためのフォームフィールドが用意されています。
 
-* rolloutplan
+  `RichText` コンポーネントは、現在、次の機能を提供しています。
 
-  [CQ.wcm.msm.RolloutPlan](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.msm.RolloutPlan)
+* `rolloutplan`
 
-  RolloutPlan は、ページロールアウトの進捗状況を確認するためのダイアログを表示します。RolloutPlan は、[CQ.wcm.msm.RolloutWizard](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.msm.RolloutWizard) によって開始されます。
+  [CQ.wcm.msm.RolloutPlan](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-* rolloutward
+  RolloutPlan は、ページロールアウトの進行状況を監視するためのダイアログボックスを提供します。 [CQ.wcm.msm.RolloutWizard](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) が RolloutPlan を開始します。
 
-  [CQ.wcm.msm.RolloutWizard](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.msm.RolloutWizard)
+* `rolloutwizard`
 
-  RolloutWizard は、ページロールアウトのためのウィザードを表示します。RolloutWizard は、[CQ.wcm.msm.RolloutPlan](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.msm.RolloutPlan) を開始します。
+  [CQ.wcm.msm.RolloutWizard](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-* searchfield
+  `RolloutWizard` は、ページをロールアウトするためのウィザードを提供します。 RolloutWizard は、[CQ.wcm.msm.RolloutPlan](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を開始します。
 
-  [CQ.form.SearchField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.SearchField)
+* `searchfield`
 
-  SearchField は、リポジトリの検索に使用できるドロップダウンリストで結果を提供する検索フィールドを提供します。
+  [CQ.form.SearchField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-* selection
+  `SearchField` には「検索」フィールドがあります。このフィールドでは、結果がドロップダウンリストに表示され、リポジトリの検索に使用できます。
 
-  [CQ.form.Selection](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.Selection)
+* `selection`
 
-  Selection を使用すると、ユーザーが選択できる複数のオプションを設定できます。オプションは、設定の一部であることも、JSON の応答から読み込むこともできます。Selection は、ドロップダウン（選択）として表示することも、コンボボックス（選択と任意のテキストの入力）として表示することもできます。
+  [CQ.form.Selection](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-* sidekick
+  `Selection` を使用すると、ユーザーは複数のオプションの中から選択できます。 オプションは、設定の一部にすることも、JSON 応答から読み込むこともできます。 選択は、ドロップダウン（選択）またはコンボボックス（選択してフリーテキストエントリを追加）のいずれかでレンダリングできます。
 
-  [CQ.wcm.Sidekick](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.Sidekick)
+* `sidekick`
 
-  Sidekick は、ページ編集でよく使うツールをユーザーに提供するフローティングヘルパーです。
+  [CQ.wcm.Sidekick](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-* siteadmin
+  `Sidekick` は、ページ編集のための一般的なツールをユーザーに提供するフローティングヘルパーです。
 
-  [CQ.wcm.SiteAdmin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin)
+* `siteadmin`
 
-  SiteAdmin は、WCM 管理関数を提供するコンソールです。
+  [CQ.wcm.SiteAdmin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-* siteimporter
+  `SiteAdmin` は、WCM 管理機能を提供するコンソールです。
 
-  [CQ.wcm.SiteImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteImporter)
+* `siteimporter`
 
-  SiteImporter は、ユーザーが完全な Web サイトを読み込み、最初のプロジェクトを作成できるようにします。
+  [CQ.wcm.SiteImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-* sizefield
+  `SiteImporter` を使用すると、ユーザーは完全な web サイトを読み込み、最初のプロジェクトを作成できます。
 
-  [CQ.form.SizeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.SizeField)
+* `sizefield`
 
-  SizeField は、ユーザーが（例えば画像に対して）幅と高さを入力できるようにします。
+  [CQ.form.SizeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-* slider
+  `SizeField` を使用すると、ユーザーは幅と高さを入力できます（画像の場合など）。
 
-  [CQ.Ext.Slider](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Slider)
+* `slider`
 
-  垂直方向または水平方向、キーボードの調節、設定可能なスナップ、軸のクリックおよびアニメーションをサポートする Slider。任意のコンテナにアイテムとして追加できます。使用例：...
+  [CQ.Ext.Slider](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-* slideshow
+  垂直方向または水平方向、キーボードの調節、設定可能なスナップ、軸のクリックおよびアニメーションをサポートする Slider。任意のコンテナに項目として追加できます。 例：使用法：...
 
-  [CQ.form.Slideshow](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.Slideshow)
+* `slideshow`
 
-  Slideshow は、スライドショーとして表示できる画像と画像タイトルのセットを定義および編集するのに使用できるコンポーネントを提供します。
+  [CQ.form.Slideshow](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  Slideshow コンポーネントは、[CQ.form.SmartImage](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.SmartImage) コンポーネントをベースとします。
+  スライドショーコンポーネントを使用すると、一連の画像および画像タイトルを定義して編集できます。 ユーザーは、このセットをスライドショーとして表示できます。
 
-* smartfile
+  Slideshow コンポーネントは、[CQ.form.SmartImage](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) コンポーネントをベースとします。
 
-  [CQ.form.SmartFile](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.SmartFile)
+* `smartfile`
+
+  [CQ.form.SmartFile](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   SmartFile はインテリジェントファイルアップローダーです。
 
   Flash のプラグイン（バージョン 9 以上）がインストールされている場合、アップロードは、アップロードの便利な処理方法を提供する SWFupload ライブラリを使用して実行されます。
 
-* smartimage
+* `smartimage`
 
-  [CQ.form.SmartImage](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.SmartImage)
+  [CQ.form.SmartImage](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  SmartImage はインテリジェント画像アップローダーです。アップロードされた画像を処理するツールを提供します。イメージマップや画像のトリミングを定義するツールを提供します。
+  SmartImage はインテリジェント画像アップローダーです。アップロードされた画像を処理するツールを提供します。画像マップや画像のトリミングを定義するツールを提供します。
 
-  このコンポーネントは、独立したダイアログのタブで使用するために設計されています。
+  このコンポーネントは、別のダイアログボックスのタブで使用するように設計されています。
 
-* spacer
+* `spacer`
 
-  [CQ.Ext.Spacer](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Spacer)
+  [CQ.Ext.Spacer](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   レイアウトでサイズ変更可能なスペースを提供するために使用されます。
 
-* spinner
+* `spinner`
 
-  [CQ.form.Spinner](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.Spinner)
+  [CQ.form.Spinner](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  Spinner は、数値、日付、時刻の値のトリガーフィールドです。この値は、指定されたアップ／ダウンのトリガー、スクロールホイール、スクロールキーを使用して増減できます。
+  `Spinner` は、数値、日付、または時刻値のトリガーフィールドです。 この値は、提供された上下トリガー、スクロールホイールまたはキーを使用して増減させることができます。
 
-* splitbutton
+* `splitbutton`
 
-  [CQ.Ext.SplitButton](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.SplitButton)
+  [CQ.Ext.SplitButton](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  デフォルトのボタンのクリックイベントとは別に、イベントを発生させることのできるビルトインのドロップダウン矢印を提供する分割ボタン。これは通常、プライマリボタンのアクションに追加のオプションを提供するドロップダウンメニューの表示用に使用されます。ただし、カスタムハンドラーにより、矢印クリックの実装を提供できます。
+  ボタンのデフォルトのクリックイベントとは別に、イベントを発生させることのできる組み込みのドロップダウン矢印を提供する `splitbutton` ール。 通常は、プライマリボタンのアクションに追加のオプションを提供するドロップダウンメニューの表示に使用されますが、カスタムハンドラーによって `arrowclick` 実装を提供できます。
 
-* static
+* `static`
 
-  [CQ.Static](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Static)
+  [CQ.Static](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  Static は、任意のテキストまたは HTML を表示するために使用できます。
+  `Static` は、任意のテキストまたはHTMLを表示するために使用できます。
 
-* statistics
+* `statistics`
 
-  [CQ.wcm.Statistics](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.Statistics)
+  [CQ.wcm.Statistics](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  Statistics は、ページインプレッション数をグラフとして表示します。このウィジェットでは、統計を表示する期間を選択できます。
+  `Statistics` は、ページインプレッション数をグラフとして表示します。 このウィジェットでは、統計を表示する期間を選択できます。
 
-* store
+* `store`
 
-  [CQ.Ext.data.Store](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.Store)
+  [CQ.Ext.data.Store](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  Store クラスは、[GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)、[ComboBox](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.ComboBox)、[DataView](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.DataView) などのコンポーネントの入力データを提供する [Record](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.Record) オブジェクトのクライアントサイドキャッシュをカプセル化します。
+  `Store` クラスは、[GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)、[ComboBox](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)、[DataView](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) などのコンポーネントの入力データを提供する [Record](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) オブジェクトのクライアントサイドキャッシュをカプセル化します。
 
-* suggestfield
+* `suggestfield`
 
-  [CQ.form.SuggestField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.SuggestField)
+  [CQ.form.SuggestField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  SuggestField は、ユーザーの入力に基づいた候補を提供します。
+  `SuggestField` は、入力に基づいた候補をユーザーに提供します。
 
-* switcher
+* `switcher`
 
-  [CQ.Switcher](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Switcher)
+  [CQ.Switcher](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  Switcher のコンソールにあるヘッダーバー用のボタングループでは、web サイト、デジタルアセット、ツール、ワークフローおよびセキュリティを切り替えることができます。
+  `Switcher` は、コンソール内のヘッダーバー用のボタングループを提供し、web サイト、デジタルAssets、ツール、ワークフローおよびセキュリティを切り替えることができます。
 
-* tableedit
+* `tableedit`
 
-  [CQ.form.TableEdit](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.TableEdit)
+  [CQ.form.TableEdit](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  **非推奨：代わりに [CQ.form.TableEdit2](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.TableEdit2) を使用してください。**
+  **非推奨：代わりに [CQ.form.TableEdit2](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を使用してください。**
 
-* tableedit2
+* `tableedit2`
 
-  [CQ.form.TableEdit2](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.TableEdit2)
+  [CQ.form.TableEdit2](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  TableEdit2 は表を作成するウィジェットを提供します。
+  この `TableEdit2` は、テーブルを作成するためのウィジェットを提供します。
 
-* tabpanel
+* `tabpanel`
 
-  [CQ.Ext.TabPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.TabPanel)
+  [CQ.Ext.TabPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  基本のタブコンテナ。TabPanel は、レイアウトを目的として、標準の [CQ.Ext.Panel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Panel) と同じように使用できますが、子コンポーネントを含めるための特別なサポートもあります（[`items`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Container)）。
+  基本のタブコンテナ。TabPanel は、レイアウトを目的として、標準の [CQ.Ext.Panel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) と同じように使用できますが、子コンポーネントを含めるための特別なサポートもあります（[`items`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)）。
 
-* タグ
+* `tags`
 
-  [CQ.tagging.TagInputField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.tagging.TagInputField)
+  [CQ.tagging.TagInputField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   ```
   CQ.tagging.TagInputField
   ```
 
-   は、タグを入力するためのフォームウィジェットです。既存のタグから選択できるポップアップメニューを備えており、自動入力などの機能もあります。
+   は、タグを入力するためのフォームウィジェットです。既存のタグから選択できるポップアップメニューを備えており、オートコンプリートなどの機能もあります。
 
-* textarea
+* `textarea`
 
-  [CQ.Ext.form.TextArea](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextArea)
+  [CQ.Ext.form.TextArea](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  multiline（テキストフィールド）従来のテキストエリアフィールドと直接置き換えて使用できます。自動サイズ変更もサポートしています。
+  multiline（テキストフィールド）従来の `textarea` フィールドの直接の置き換えとして使用できるほか、自動サイズ設定のサポートが追加されます。
 
-* textbutton
+* `textbutton`
 
-  [CQ.TextButton](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.TextButton)
+  [CQ.TextButton](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  TextButton は、[CQ.Ext.Button](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Button) の機能を備えたテキストリンクを提供します。
+  `TextButton` は、[CQ.Ext.Button](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) の機能を備えたテキストリンクを提供します。
 
-* textfield
+* `textfield`
 
-  [CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField)
+  [CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  基本テキストフィールド。従来のテキスト入力と直接置き換えて使用できます。また、より高度な入力コントロール（[CQ.Ext.form.TextArea](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextArea)、[CQ.Ext.form.ComboBox](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.ComboBox) など）の基底クラスとして使用できます。
+  基本テキストフィールド。従来のテキスト入力と直接置き換えて使用できます。また、より高度な入力コントロール（[CQ.Ext.form.TextArea](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)、[CQ.Ext.form.ComboBox](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) など）の基底クラスとして使用できます。
 
-* サムネイル
+* `thumbnail`
 
-  [CQ.form.Thumbnail](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.Thumbnail)
+  [CQ.form.Thumbnail](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-* timefield
+* `timefield`
 
-  [CQ.Ext.form.TimeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TimeField)
+  [CQ.Ext.form.TimeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  時刻のドロップダウンと自動時刻検証機能を備えた時刻入力フィールドを提供します。使用例：...
+  時間ドロップダウンと自動時刻検証機能を備えた時間入力フィールドが用意されています。 使用例：...
 
-* tip
+* `tip`
 
-  [CQ.Ext.Tip](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Tip)
+  [CQ.Ext.Tip](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  @xtype tip は、[CQ.Ext.QuickTip](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.QuickTip) と [CQ.Ext.Tooltip](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Tooltip) の基底クラスであり、すべてのヒントベースのクラスで必要な基本のレイアウトと配置を提供します。このクラスは、静的に配置されたシンプルなヒントに直接使用できます。
+  @xtype tip は、[CQ.Ext.QuickTip](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) と [CQ.Ext.Tooltip](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) の基底クラスであり、すべてのヒントベースのクラスで必要な基本のレイアウトと配置を提供します。このクラスは、静的に配置されたシンプルなヒントに直接使用できます。
 
-* titleseparator
+* `titleseparator`
 
-  [CQ.menu.TitleSeparator](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.menu.TitleSeparator)
+  [CQ.menu.TitleSeparator](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  メニューに区切りバーを追加します。区切りバーは、メニューアイテムを論理的なグループに分けるために使用されます。このセパレーターには、タイトルを追加することもできます。
+  メニューに区切りバーを追加します。区切りバーは、メニュー項目を論理的なグループに分けるために使用されます。 このセパレーターには、タイトルを追加することもできます。
 
-* toolbar
+* `toolbar`
 
-  [CQ.Ext.Toolbar](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Toolbar)
+  [CQ.Ext.Toolbar](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  ツールバーの基本クラス。ツールバーの [`defaultType`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Container) は [`button`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Button) ですが、ツールバーの要素（ツールバーコンテナの子アイテム）には、ほとんどのタイプのコンポーネントを使用できます。Toolbar の要素は、そのコンストラクターを使用して明示的に作成できます。
+  基本の `Toolbar` クラス。 ツールバーの [`defaultType`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) は [`button`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) ですが、ツールバー要素（ツールバーコンテナの子アイテム）には、ほとんどのタイプのコンポーネントを使用できます。 Toolbar の要素は、そのコンストラクターを使用して明示的に作成できます。
 
-* tooltip
+* `tooltip`
 
-  [CQ.Ext.ToolTip](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.ToolTip)
+  [CQ.Ext.ToolTip](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  ターゲット要素をポイントしたときに追加の情報を提供するための標準のツールチップの実装。@xtype tooltip。
+  ターゲット要素をポイントしたときに追加情報を提供するための標準 `tooltip` 実装。 @xtype tooltip。
 
-* treegrid
+* `treegrid`
 
-  [CQ.tree.TreeGrid](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.tree.TreeGrid)
+  [CQ.tree.TreeGrid](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  @xtype ツリーグリッド
+  @xtype `treegrid`
 
-* treepanel
+* `treepanel`
 
-  [CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)
+  [CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  TreePanel は、ツリー構造のデータをツリー構造の UI として提供します。
+  `TreePanel` は、ツリー構造のデータをツリー構造 UI として表示できます。
 
-  TreePanel に追加された [TreeNode](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreeNode) には、[attributes](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreeNode) プロパティでアプリケーションが使用するメタデータを含めることができます。
+  [ に追加さ ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) た `TreePanel`TreeNode には、アプリケーションで使用されるメタデータをそれぞれ [attributes](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) プロパティに含めることができます。
 
-* trigger
+* `trigger`
 
-  [CQ.Ext.form.TriggerField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField)
+  [CQ.Ext.form.TriggerField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  クリック可能なトリガーボタン（デフォルトでは、コンボボックスに似ています）を追加する TextField のための便利なラッパーを提供します。トリガーにはデフォルトのアクションが設定されていないので、[onTriggerClick](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField) を上書きすることで、トリガークリックハンドラーを実装するための関数を割り当てる必要があります。TriggerField はコンボボックスとまったく同様にレンダリングされるので、直接作成することもできます。
+  クリック可能なトリガーボタン（デフォルトでは、コ `TextFields` ボボックスに似ています）を追加する便利なラッパーを提供します。 トリガーにはデフォルトのアクションが設定されていないので、[onTriggerClick](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を上書きすることで、トリガークリックハンドラーを実装するための関数を割り当てる必要があります。コンボボックスと同じようにレンダリングされるので、`TriggerField` を直接作成できます。
 
-* uploaddialog
+* `uploaddialog`
 
-  [CQ.UploadDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.UploadDialog)
+  [CQ.UploadDialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  UploadDialog は、ユーザーがリポジトリにファイルをアップロードできるようにします。新しい UploadDialog を作成します。
+  `UploadDialog` を使用すると、ユーザーはリポジトリにファイルをアップロードでき、新しい UploadDialog を作成します。
 
-* userinfo
+* `userinfo`
 
-  [CQ.UserInfo](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.UserInfo)
+  [CQ.UserInfo](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   現在のユーザー名を表示するツールバーアイテムであり、ユーザーがプロパティや権限借用の編集などの操作を行えるようにします。
 
-* viewport
+* `viewport`
 
-  [CQ.Ext.Viewport](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Viewport)
+  [CQ.Ext.Viewport](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   表示可能なアプリケーションの領域（ブラウザービューポート）を表す専用のコンテナ。
 
-  Viewport は、ドキュメントのボディにレンダリングされ、自動的にブラウザーのビューポートのサイズに調節されます。また、ウィンドウのサイズ変更を管理します。作成できるビューポートは 1 つだけです。
+  `Viewport` はドキュメントの本文に合わせて自動的にレンダリングされ、ブラウザーのビューポートのサイズに合わせて自動的にサイズ調整され、ウィンドウのサイズ変更を管理します。 作成できるビューポートは 1 つだけです。
 
-* window
+* `window`
 
-  [CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)
+  [CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  アプリケーションウィンドウとして使用するための専用のパネル。デフォルトでは、ウィンドウはフローティング表示され、[サイズ変更可能](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)かつ[ドラッグ可能](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)です。ウィンドウは、ビューポートいっぱいまで[最大化](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)、前のサイズを復元、および[最小化](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)できます。
+  アプリケーションウィンドウとして使用するための専用のパネル。デフォルトでは、ウィンドウはフローティング表示され、[サイズ変更可能](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)かつ[ドラッグ可能](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)です。ウィンドウは、ビューポートいっぱいまで[最大化](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)、前のサイズを復元、および[最小化](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)できます。
 
-* xmlstore
+* `xmlstore`
 
-  [CQ.Ext.data.XmlStore](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.XmlStore)
+  [CQ.Ext.data.XmlStore](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  JSON データから簡単に [CQ.Ext.data.Store](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.Store) を作成できるようにする小規模なヘルパークラスです。XmlStore には自動的に [CQ.Ext.data.XmlReader](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.XmlReader) が設定されます。
+  XML データからの [CQ.Ext.data.Store](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)s の作成を容易にする小さなヘルパークラス。 `XmlStore` は、[CQ.Ext.data.XmlReader](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) で自動的に設定されます。
 
-  **cqinclude** リポジトリ内の別のパスのウィジェットの定義を含む疑似 xtype。ページダイアログで最もよく使用されます。実際には、この xtype の JavaScript ウィジェットクラスは存在しません。CQ.Util クラスの formatData() 関数によって処理されます。詳しくは、このナレッジベースの記事を参照してください。
+  `cqinclude` - リポジトリ内の別のパスのウィジェットの定義を含む疑似 xtype。 ページダイアログボックスで最も一般的に使用されます。 実際には、この xtype の JavaScript ウィジェットクラスは存在しません。`CQ.Util` クラスは、`formatData()` 関数を使用して処理します。
