@@ -15,11 +15,11 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->ここでは、Tomcat 上のAEM 6.5 LTS からAEM 6.5 LTS Servicepack へのアップグレード（インプレースアップグレード）手順の概要を説明します。 AEM 6.5 から 6.5 LTS へのアップグレードについては [ こちらを参照 ](/help/sites-deploying/app-server-upgrade-tomcat.md)。
+>ここでは、Tomcat 上のAEM 6.5 LTS からAEM 6.5 LTS Servicepack へのアップグレード（インプレースアップグレード）手順の概要を説明します。 AEM 6.5 から 6.5 LTS へのアップグレードについては [&#x200B; こちらを参照 &#x200B;](/help/sites-deploying/app-server-upgrade-tomcat.md)。
 
 ## アップグレード前の手順 {#pre-upgrade-steps}
 
-アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。詳しくは [ アップグレード前のメンテナンスタスク ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) を参照してください。 また、システムが [AEM 6.5 LTS Servicepack の要件 ](/help/sites-deploying/technical-requirements.md) を満たしていることを確認し、[ アップグレード計画に関する考慮事項 ](/help/sites-deploying/upgrade-planning.md) を参照してください。
+アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。詳しくは [&#x200B; アップグレード前のメンテナンスタスク &#x200B;](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) を参照してください。 また、システムが [AEM 6.5 LTS Servicepack の要件 &#x200B;](/help/sites-deploying/technical-requirements.md) を満たしていることを確認し、[&#x200B; アップグレード計画に関する考慮事項 &#x200B;](/help/sites-deploying/upgrade-planning.md) を参照してください。
 
 
 ### 移行の前提条件 {#migration-prerequisites}
@@ -33,7 +33,7 @@ ht-degree: 9%
 
 1. AEM 6.5 LTS が既にデプロイされている場合は、*`https://<serveraddress:port>/system/console/bundles`* にアクセスしてバンドルが正常に動作していることを確認します。
 1. 次に、AEM 6.5 LTS を停止します。 これは、次の場所にある Tomcat App Manager から実行できます。*`https://<serveraddress:port>/manager/html`*
-1. アップグレードアクティビティを実行する前に、AEM 6.5 LTS サーバーのバックアップなどの [ アップグレード前 ](#pre-upgrade-steps) アクティビティが完了していることを確認してください
+1. アップグレードアクティビティを実行する前に、AEM 6.5 LTS サーバーのバックアップなどの [&#x200B; アップグレード前 &#x200B;](#pre-upgrade-steps) アクティビティが完了していることを確認してください
 1. AEM 6.5 LTS Tomcat サーバーを停止します。 ほとんどの状況で、`./catalina.sh` スクリプトを実行することで設定できます。このために、ターミナルから次のコマンドを実行します。
 
    ```
@@ -86,4 +86,4 @@ ht-degree: 9%
 
 ## アップグレード後のチェックとトラブルシューティングの実行 {#perform-post-upgrade-checks-and-troubleshooting}
 
-詳しくは、[ アップグレード後のチェックとトラブルシューティング ](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md) を参照してください。
+詳しくは、[&#x200B; アップグレード後のチェックとトラブルシューティング &#x200B;](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md) を参照してください。

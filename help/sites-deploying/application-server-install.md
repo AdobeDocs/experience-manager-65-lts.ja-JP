@@ -95,7 +95,7 @@ AEM は、単一の war ファイルとしてデプロイされます。
 
 ### WebSphere® 24.0.0.7 {#websphere}
 
-デプロイメントの前に、上記の [ 概要 ](#general-description) をお読みください。
+デプロイメントの前に、上記の [&#x200B; 概要 &#x200B;](#general-description) をお読みください。
 
 **サーバーの準備**
 
@@ -109,7 +109,7 @@ AEM は、単一の war ファイルとしてデプロイされます。
 **AEM Web アプリケーションのデプロイ**
 
 * AEM war ファイルをダウンロードします
-* 必要に応じて、`web.xml` ファイルで設定を行います。 詳しくは、上記の [ 概要 ](#general-description) を参照してください。
+* 必要に応じて、`web.xml` ファイルで設定を行います。 詳しくは、上記の [&#x200B; 概要 &#x200B;](#general-description) を参照してください。
 
    * `WEB-INF/web.xml` ファイルを解凍します
    * `sling.run.modes` パラメーターを `publish` に変更します
