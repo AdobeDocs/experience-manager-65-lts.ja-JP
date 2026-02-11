@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: 2a33cb4b8aa1dcfd989cf61465492d563f9cd99a
+source-git-commit: 1d0fe9ee81a2e38f7887b6f884a13d1ba1462304
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 42%
+source-wordcount: '846'
+ht-degree: 41%
 
 ---
 
@@ -29,6 +29,7 @@ ht-degree: 42%
 
 * [WebSphere](#websphere)
 * [Tomcat 10.0.x/10.1.x](#tomcat)
+* [JBoss EAP 8](/help/forms/using/upgrade-forms-osgi.md)
 
 Web アプリケーションのインストール、サーバーの設定、サーバーの起動および停止方法について詳しくは、該当するアプリケーションサーバーのドキュメントを参照してください。
 
@@ -95,7 +96,7 @@ AEM は、単一の war ファイルとしてデプロイされます。
 
 ### WebSphere® 24.0.0.7 {#websphere}
 
-デプロイメントの前に、上記の [&#x200B; 概要 &#x200B;](#general-description) をお読みください。
+デプロイメントの前に、上記の [ 概要 ](#general-description) をお読みください。
 
 **サーバーの準備**
 
@@ -109,7 +110,7 @@ AEM は、単一の war ファイルとしてデプロイされます。
 **AEM Web アプリケーションのデプロイ**
 
 * AEM war ファイルをダウンロードします
-* 必要に応じて、`web.xml` ファイルで設定を行います。 詳しくは、上記の [&#x200B; 概要 &#x200B;](#general-description) を参照してください。
+* 必要に応じて、`web.xml` ファイルで設定を行います。 詳しくは、上記の [ 概要 ](#general-description) を参照してください。
 
    * `WEB-INF/web.xml` ファイルを解凍します
    * `sling.run.modes` パラメーターを `publish` に変更します
