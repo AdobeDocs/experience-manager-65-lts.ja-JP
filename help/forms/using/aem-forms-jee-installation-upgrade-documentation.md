@@ -28,7 +28,7 @@ ht-degree: 3%
 
 ## インストールとアップグレードのワークフロー {#installation-upgrade-workflow}
 
-1. [JEE 上のAEM Formsでサポートされているプラットフォーム ](/help/forms/using/aem-forms-jee-supported-platforms.md) を確認し、システムが必要なソフトウェアとハードウェアの組み合わせを満たしていることを確認します。
+1. [JEE 上のAEM Formsでサポートされているプラットフォーム &#x200B;](/help/forms/using/aem-forms-jee-supported-platforms.md) を確認し、システムが必要なソフトウェアとハードウェアの組み合わせを満たしていることを確認します。
 2. **新規インストール** と **アップグレード** のどちらを実行しているかを判断します。
 3. 選択したパスについては、以下に説明する順序に従います（シナリオによっては、複数のガイドが必要な場合があります）。
 
@@ -36,9 +36,9 @@ ht-degree: 3%
 
 | ガイド | 説明 |
 | --- | --- |
-| [JEE 上のAEM Formsでサポートされるプラットフォーム ](/help/forms/using/aem-forms-jee-supported-platforms.md) | JEE 上のAEM Formsでサポートされるソフトウェアとハードウェアの組み合わせを示します。 インストールまたはアップグレードを開始する前に、前提条件を検証するために使用します。 |
+| [JEE 上のAEM Formsでサポートされるプラットフォーム &#x200B;](/help/forms/using/aem-forms-jee-supported-platforms.md) | JEE 上のAEM Formsでサポートされるソフトウェアとハードウェアの組み合わせを示します。 インストールまたはアップグレードを開始する前に、前提条件を検証するために使用します。 |
 | [AEM Forms のアーキテクチャとデプロイメントトポロジ](/help/forms/using/aem-forms-architecture-deployment.md) | 推奨されるアーキテクチャとデプロイメントトポロジについて説明し、環境に合ったアプローチ（例えば、単一サーバーとクラスター）を選択できるようにします。 |
-| [AEM Forms インストールの永続性タイプの選択 ](/help/forms/using/choosing-persistence-type-for-aem-forms.md) | 開始する前に、インストールトポロジに適した永続性タイプを選択するのに役立ちます。 |
+| [AEM Forms インストールの永続性タイプの選択 &#x200B;](/help/forms/using/choosing-persistence-type-for-aem-forms.md) | 開始する前に、インストールトポロジに適した永続性タイプを選択するのに役立ちます。 |
 
 ## Adobe Experience Manager Forms（AEM Forms） on JEE を JBoss にインストールするにはどうすればよいですか？ {#installing-aem-forms-jee-jboss}
 
@@ -46,14 +46,14 @@ ht-degree: 3%
 
 | ガイド | 説明 |
 | --- | --- |
-| [JEE 上におけるAEM Forms 6.5 LTS のインストールおよびデプロイ（JBoss Turnkey （PDF）を使用） ](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-turnkey.pdf) | JBoss での **新規の自動インストール** に使用します。 このドキュメントでは、JBoss 自動ディストリビューションを使用して、JEE 上にAEM Formsをインストールおよびデプロイする手順を説明します。 |
+| [JEE 上におけるAEM Forms 6.5 LTS のインストールおよびデプロイ（JBoss Turnkey （PDF）を使用） &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-turnkey.pdf) | JBoss での **新規の自動インストール** に使用します。 このドキュメントでは、JBoss 自動ディストリビューションを使用して、JEE 上にAEM Formsをインストールおよびデプロイする手順を説明します。 |
 
 ### シングルサーバー（自動インストールなし） {#install-jee-jboss-single-server}
 
 | ガイド | 説明 |
 | --- | --- |
-| [AEM Formsのインストールの準備（シングルサーバー）（PDF） ](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-single-server.pdf) | **新規のシングルサーバー（自動インストール以外）のインストール** の前 **** を使用します。 このドキュメントでは、シングルサーバートポロジで JEE 上のAEM Formsをインストールするための前提条件と環境の準備手順を示します。 |
-| [JEE 上のAEM Formsのインストールおよびデプロイ（JBoss （PDF）版） ](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-jboss.pdf) | を使用して、JBoss 上の JEE 上のAEM Formsの **インストールとデプロイメント** 手順を追って実行 **きます（自動インストールは行われません**）。 シングルサーバーのインストールの場合は、このガイド **後** の手順 *AEM Formsのインストールの準備（シングルサーバー）* に従ってください。 |
+| [AEM Formsのインストールの準備（シングルサーバー）（PDF） &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-single-server.pdf) | **新規のシングルサーバー（自動インストール以外）のインストール** の前 **&#x200B;**&#x200B;を使用します。 このドキュメントでは、シングルサーバートポロジで JEE 上のAEM Formsをインストールするための前提条件と環境の準備手順を示します。 |
+| [JEE 上のAEM Formsのインストールおよびデプロイ（JBoss （PDF）版） &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-jboss.pdf) | を使用して、JBoss 上の JEE 上のAEM Formsの **インストールとデプロイメント** 手順を追って実行 **きます（自動インストールは行われません**）。 シングルサーバーのインストールの場合は、このガイド **後** の手順 *AEM Formsのインストールの準備（シングルサーバー）* に従ってください。 |
 
 <!--
 | Preparing to Install AEM Forms (Server Cluster) (PDF) (**TBD**) | Use **before** a **fresh cluster installation**. Describes prerequisites and environment preparation steps for installing AEM Forms on JEE in a server cluster topology. *(Link will be added once the PDF is available.)* |
@@ -66,14 +66,14 @@ ht-degree: 3%
 
 | ガイド | 説明 |
 | --- | --- |
-| [JEE 上のAEM Forms 6.5 LTS への自動アップグレード（JBoss 版）（PDF） ](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/upgrade-turnkey.pdf) | **自動アップグレード** にを使用します。 このドキュメントでは、JEE 上の既存のAEM Forms JBoss 自動インストールをアップグレードする手順を説明します。 |
+| [JEE 上のAEM Forms 6.5 LTS への自動アップグレード（JBoss 版）（PDF） &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/upgrade-turnkey.pdf) | **自動アップグレード** にを使用します。 このドキュメントでは、JEE 上の既存のAEM Forms JBoss 自動インストールをアップグレードする手順を説明します。 |
 
 ### シングルサーバー {#upgrade-jee-jboss-single-server}
 
 | ガイド | 説明 |
 | --- | --- |
-| [AEM Formsへのアップグレードの準備（PDF） ](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-upgrade.pdf) | **前** の **シングルサーバーアップグレード** を使用します。 AEM 6.5 LTS Formsにアップグレードする前に環境を準備する方法について説明します。 これは、シングルサーバーインストールモードで JEE 上のAEM Formsを実行している環境に適用されます。 |
-| [JEE 上のAEM Formsへのアップグレード（JBoss 版）（PDF） ](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/upgrade-jboss.pdf) | **シングルサーバー** インストールモードの JBoss での **ステップバイステップのアップグレード手順** に使用します。 このガイド **事後** に従って、*AEM Formsのアップグレードの準備* を完了します。 |
+| [AEM Formsへのアップグレードの準備（PDF） &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-upgrade.pdf) | **前** の **シングルサーバーアップグレード** を使用します。 AEM 6.5 LTS Formsにアップグレードする前に環境を準備する方法について説明します。 これは、シングルサーバーインストールモードで JEE 上のAEM Formsを実行している環境に適用されます。 |
+| [JEE 上のAEM Formsへのアップグレード（JBoss 版）（PDF） &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/upgrade-jboss.pdf) | **シングルサーバー** インストールモードの JBoss での **ステップバイステップのアップグレード手順** に使用します。 このガイド **事後** に従って、*AEM Formsのアップグレードの準備* を完了します。 |
 
 <!--
 | Preparing to Install AEM Forms (Server Cluster) (PDF) (**TBD**) | Use **before** a **cluster upgrade**. Describes how to prepare the environment for a server cluster before upgrading to AEM 6.5 LTS Forms. It applies to environments running AEM Forms on JEE in a server cluster installation mode. *(Link will be added once the PDF is available.)* |
