@@ -1,20 +1,20 @@
 ---
-title: JEE Workbench 上の AEM Forms で Execute Script サービスを使用して XML データを作成する方法を教えてください。
-description: JEE Workbench 上の AEM Forms の Execute Script サービスを使用した XML データの作成
+title: JEE ワークベンチ上の AEM Forms で Execute Script サービスを使用して XML データを作成する方法を教えてください。
+description: JEE ワークベンチ上の AEM Forms の Execute Script サービスを使用した XML データの作成
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 2f49cb29-698b-43ab-971f-81e2b18e6fa9
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '981'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
-# JEE Workbench 上の AEM Forms の Execute Script サービスを使用した XML データの作成 {#using-execute-script-service-forms-jee-workbench}
+# JEE ワークベンチ上の AEM Forms の Execute Script サービスを使用した XML データの作成 {#using-execute-script-service-forms-jee-workbench}
 
 JEE プロセス管理ワークフロー上の AEM Forms に関連している XML は数多くあります。例えば、XML 情報をプロセス内で構築したり、JEE ワークスペース上の AEM Forms の Flex アプリケーションに送信したり、システム設定に使用したりできますし、フォームとの間で情報を渡す場合に使用することができます。JEE 上の AEM Forms 開発者による XML の管理が必要となるインスタンスは多くありますが、そのうちの多くで、XML を JEE プロセス上の AEM Forms で管理する必要があります。
 
@@ -24,13 +24,13 @@ JEE プロセス管理ワークフロー上の AEM Forms に関連している X
 
 ## プロセスでの Execute Script サービスの使用 {#using-execute-script-service-in-process}
 
-JEE Workbench の AEM Forms で使用可能な JEE サービス上の標準の AEM Forms のセットの中に `Execute Script` サービスがあります。このサービスではプロセスでスクリプトの実行が可能で、そのための `executeScript` 操作を使用できます。
+JEE ワークベンチの AEM Forms で使用可能な JEE サービス上の標準の AEM Forms のセットの中に `Execute Script` サービスがあります。このサービスではプロセスでスクリプトの実行が可能で、そのための `executeScript` 操作を使用できます。
 
 ### 「スクリプトを実行」サービスをアクティビティとして定義したアプリケーションとプロセスの作成 {#create-an-application}
 
 アプリケーションやプロセス全体の作成は、このチュートリアルの対象外ですが、この手順のために、「DemoApplication02」という名前のアプリケーションを作成しました。アプリケーションが既に作成されている場合は、このアプリケーションでプロセスを作成して executeScript サービスを呼び出す必要があります。`Execute Script` サービスが含まれるアプリケーションにプロセスを追加するには、以下の手順に従います。
 
-1. アプリケーションを右クリックし、「**[!UICONTROL 新規]**」を選択します。**[!UICONTROL 新規]**&#x200B;スライドアウトメニューで「**[!UICONTROL プロセス]**」を選択します。プロセスに名前を付け、必要に応じて説明を追加し、このプロセスを表すアイコンを選択してください。このチュートリアル用に、プロセスを作成し、`executeScriptDemoProcess`という名前を付けました。
+1. アプリケーションを右クリックし、「**[!UICONTROL 新規]**」を選択します。**[!UICONTROL 新規]**&#x200B;スライドアウトメニューで「**[!UICONTROL プロセス]**」を選択します。プロセスに名前を付け、必要に応じて説明を追加し、このプロセスを表すアイコンを選択します。 このチュートリアル用に、プロセスを作成し、`executeScriptDemoProcess`という名前を付けました。
 1. スタートポイントを定義するか、後でスタートポイントを追加するよう指定してください。
 1. これでプロセスが作成され、 [!UICONTROL プロセスデザイン]ウィンドウで自動的に開きます。プロセスデザインウィンドウの上部にあるアクティビティピッカーアイコンをクリックし、新しいアクティビティをスイムレーンにドラッグします。この時点で、[!UICONTROL アクティビティを定義ウィンドウ]が表示されます（下図を参照）。
    ![アクティビティを定義](assets/define-activity.jpg)

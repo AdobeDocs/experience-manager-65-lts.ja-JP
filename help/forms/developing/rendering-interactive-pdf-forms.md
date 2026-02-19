@@ -12,10 +12,10 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: de61c579-50ed-423b-adca-60329f3f0b89
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '2455'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -135,7 +135,7 @@ Forms サービスでフォームをレンダリングするために必要な U
 
 >[!NOTE]
 >
->Workbench を使用した Forms アプリケーションの作成について詳しくは、[Workbench ヘルプ](https://www.adobe.com/go/learn_aemforms_workbench_63_jp)を参照してください。
+>ワークベンチを使用して Forms アプリケーションを作成する方法について詳しくは、[ワークベンチヘルプ](https://www.adobe.com/go/learn_aemforms_workbench_63_jp)を参照してください。
 
 Forms アプリケーション内のリソースへのパスは次のとおりです。
 
@@ -152,7 +152,7 @@ URI 値の一例を以下に示します。
 * Designer でフォームデザインを設計する際の「送信」ボタン
 * Forms サービス Client API を使用
 
-ターゲット URL がフォームデザイン内で定義されている場合は、Forms サービス Client API を使用して上書きしないでください。Forms API を使用してターゲット URL を設定すると、フォームデザインで指定された URL が、API を使用して指定された URL にリセットされます。フォームデザインで指定されたターゲット URL に PDF フォームを送信する場合は、プログラムによってターゲット URL を空の文字列に設定します。
+ターゲット URL がフォームデザイン内で定義されている場合は、Forms サービス Client API を使用して上書きしないでください。Forms API を使用してターゲット URL を設定すると、フォームデザインで指定された URL が、API を使用して指定された URL にリセットされます。フォームデザインで指定されたターゲット URL にPDF フォームを送信する場合は、プログラムによってターゲット URL を空の文字列に設定します。
 
 「送信」ボタンと「計算」ボタン（サーバーで実行される対応するスクリプト）を含むフォームがある場合、フォームが送信されるスクリプトの URL をプログラムで定義してスクリプトを実行できます。フォームデザインの送信ボタンを使用して、フォームデータが投稿される URL を指定します（[フォームデータの計算](/help/forms/developing/calculating-form-data.md)を参照）。
 
