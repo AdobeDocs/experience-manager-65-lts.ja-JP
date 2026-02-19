@@ -7,7 +7,7 @@ feature: Assets HTTP API,Developer Tools
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7bb4aec8-e6c0-416a-a318-d3120f9688c4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f0385f595035dfd0dce77fc7eb8b2413eaf5431a
 workflow-type: tm+mt
 source-wordcount: '1775'
 ht-degree: 100%
