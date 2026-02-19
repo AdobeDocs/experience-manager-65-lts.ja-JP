@@ -243,7 +243,7 @@ A.コンポーネントに必要な外部 JAR ファイル B. JAVA ファイル
    > 「Ctrl + C」コマンドを使用して SDK を再起動することをお勧めします。Java プロセスの停止など、別の方法を使用して AEM SDK を再起動すると、AEM 開発環境で不整合が生じる場合があります。
 
 1. 管理コンソールにログインします。
-1.  **[!UICONTROL サービス]**／**[!UICONTROL Rights Management]**／**[!UICONTROL 設定]**／ 招待済み&#x200B;**[!UICONTROL ユーザーの登録]**&#x200B;をクリックします。
+1. **[!UICONTROL サービス]**／**[!UICONTROL Rights Management]**／**[!UICONTROL 設定]**／ 招待済み&#x200B;**[!UICONTROL ユーザーの登録]**&#x200B;をクリックします。
 1. 招待ユーザーの登録を有効にするには、**[!UICONTROL 招待ユーザーの登録を有効にする]**&#x200B;ボックスをオンにします。**[!UICONTROL ビルトインの登録システムを使用]**&#x200B;の下で「**[!UICONTROL いいえ]**」をクリックします。設定を保存します。
 1. 管理コンソールホームページで、**[!UICONTROL 設定]**／**[!UICONTROL User Management]**／**[!UICONTROL ドメイン管理]**&#x200B;をクリックします。
 1. 「**[!UICONTROL 新規ローカルドメイン]**」をクリックします。次のページで、名前と識別子の値が `EDC_EXTERNAL_REGISTERED` のドメインを作成します。変更を保存します。

@@ -362,7 +362,7 @@ XLIFF 形式の問題が原因で、Java 17 または Java 21 でAEM翻訳が失
 ### アップグレード {#upgrade}
 
 * アップグレードの手順について詳しくは、 [アップグレードドキュメント](/help/sites-deploying/upgrade.md)を参照してください。
-* アップグレード手順について詳しくは、『 [JEE 版AEM Forms 6.5 LTS SP1 のアップグレードガイド』を参照してください ](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* アップグレード手順について詳しくは、『 [JEE 版AEM Forms 6.5 LTS SP1 のアップグレードガイド』を参照してください &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### AEM 6.5 LTS サービスパックのアップグレードに関するベストプラクティス
 
@@ -407,7 +407,7 @@ AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストール
 
 >[!NOTE]
 >
-> 旧 6.5 SP から LTS SP1 に直接アップグレードする場合は、6.5 から 6.5 LTS GA [ アップグレード ](/help/sites-deploying/upgrade.md) の手順に従ってください。
+> 旧 6.5 SP から LTS SP1 に直接アップグレードする場合は、6.5 から 6.5 LTS GA [&#x200B; アップグレード &#x200B;](/help/sites-deploying/upgrade.md) の手順に従ってください。
 
 
 手順について詳しくは、[アップグレードドキュメント](/help/sites-deploying/upgrade.md)を参照してください。
