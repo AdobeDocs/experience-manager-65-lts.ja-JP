@@ -1397,7 +1397,7 @@ ht-degree: 94%
          + [UI のテスト](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/components/hobbes.html?lang=ja)
       + ベストプラクティス {#bestpractices}
          + [ベストプラクティスの概要](/help/sites-developing/best-practices.md)
-         + [AEM の開発ガイドラインとベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/introduction/dev-guidelines-bestpractices.html)
+         + [AEM の開発ガイドラインとベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/introduction/dev-guidelines-bestpractices.html?lang=ja)
          + [開発のベストプラクティス](/help/sites-developing/development-practices.md)
          + [コンテンツのアーキテクチャ](/help/sites-developing/content-architecture.md)
          + [ソフトウェアのアーキテクチャ](/help/sites-developing/software-architecture.md)
