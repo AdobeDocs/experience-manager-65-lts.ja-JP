@@ -387,7 +387,7 @@ XLIFF 形式の問題が原因で、Java 17 または Java 21 でAEM翻訳が失
 ### アップグレード {#upgrade}
 
 * アップグレードの手順について詳しくは、 [アップグレードドキュメント](/help/sites-deploying/upgrade.md)を参照してください。
-* アップグレード手順について詳しくは、『 [JEE 版AEM Forms 6.5 LTS SP1 のアップグレードガイド』を参照してください &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* アップグレード手順について詳しくは、『 [JEE 版AEM Forms 6.5 LTS SP1 のアップグレードガイド』を参照してください &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### AEM 6.5 LTS サービスパックのアップグレードに関するベストプラクティス
 
@@ -562,5 +562,5 @@ AEM デプロイメントで SSL のみの機能を有効にすると、Dispatch
 以下の web サイトはお客様のみが参照できます。 アクセス権を必要とするお客様は、アドビのアカウントマネージャーにお問い合わせください。
 
 * [licensing.adobe.com からの製品ダウンロード](https://licensing.adobe.com/)
-* [アドビカスタマーサポートに連絡](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience)。
+* [アドビカスタマーサポートに連絡](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience)。
 
