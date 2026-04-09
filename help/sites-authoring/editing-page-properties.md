@@ -3,10 +3,10 @@ title: ページプロパティの編集
 description: Adobe Experience Manager でページに必要なプロパティを定義します。
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 5148afb9-f447-4475-a15c-1fa345325711
 mini-toc-levels: 2
-source-git-commit: 4817296c00e094a65744a896d798e429d3ab6c7d
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2477'
 ht-degree: 100%
@@ -85,7 +85,7 @@ ht-degree: 100%
 
 このページのバニティ URL を入力して、より短い URL や、より表現力のある URL を指定できます。
 
-例えば、web サイト `http://example.com,` のパス `/v1.0/startpage` で特定されるページに対して、バニティー URL が `welcome` に設定されている場合、`http://example.com/content/v1.0/startpage` のバニティー URL は `http://example.com/welcome` となります。
+例えば、web サイト `http://example.com,` のパス `/v1.0/startpage` で特定されるページに対して、バニティ URL が `welcome` に設定されている場合、`http://example.com/content/v1.0/startpage` のバニティ URL は `http://example.com/welcome` となります。
 
 >[!CAUTION]
 >
@@ -95,11 +95,11 @@ ht-degree: 100%
 >* 正規表現パターンはサポートしていません。
 >* 既存のページには設定しないでください。
 
-バニティー URL へのアクセスを有効にするように Dispatcher を設定します。詳しくは、 [バニティ URL へのアクセスの有効化](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#enabling-access-to-vanity-urls-vanity-urls) を参照してください。
+バニティ URL へのアクセスを有効にするように Dispatcher を設定します。詳しくは、 [バニティ URL へのアクセスの有効化](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#enabling-access-to-vanity-urls-vanity-urls) を参照してください。
 
 * **追加** - タップまたはクリックして、バニティ URL を追加します。
 * **削除** - タップまたはクリックして、バニティ URL を削除します。
-  **バニティー URL をリダイレクト** - ページでバニティー URL を使用するか、ページの実際の URL にリダイレクトするかを示します。
+  **バニティ URL をリダイレクト** - ページでバニティ URL を使用するか、ページの実際の URL にリダイレクトするかを示します。
 
 ### 詳細 {#advanced}
 
@@ -188,7 +188,7 @@ ht-degree: 100%
 
 #### ターゲティング設定 {#targeting}
 
-[ブランドを選択してターゲット設定の範囲](/help/sites-authoring/target-adobe-campaign.md)を選択します。
+[ブランドを選択してターゲティングの範囲](/help/sites-authoring/target-adobe-campaign.md)を選択します。
 
 >[!NOTE]
 >このオプションを使用するには、ユーザーアカウントが `Target Adminstrators` グループに属している必要があります。
@@ -336,7 +336,7 @@ ht-degree: 100%
 
    * タブ
 
-      * 単一ページのプロパティを表示する場合と同様に、プロパティがタブの下で順に並べられます。
+      * 単一ページのプロパティを表示する場合と同様に、プロパティがタブの下で順番に並べられます。
 
    * プロパティのサブセット
 

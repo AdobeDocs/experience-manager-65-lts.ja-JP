@@ -1,11 +1,11 @@
 ---
 title: AEM でのユーザーインターフェイスの選択
-description: Adobe Experience Manager 6.5 LTS で作業するために使用するインターフェイスを設定します。
+description: Adobe Experience Manager 6.5 LTSでの作業に使用するインターフェイスを設定します。
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 508f9dfb-1a4e-45bd-acdd-48cc910bdd0f
-source-git-commit: d8057cf9ee86c2ec9c1f556fa7c18f98797fe982
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 96%
@@ -14,7 +14,7 @@ ht-degree: 96%
 
 # UI の選択{#selecting-your-ui}
 
-Adobe Experience Manager（AEM）のタッチ対応 UI が標準の UI です。 ただし、ユーザーが[クラシック UI](/help/sites-classic-ui-authoring/classicui.md) に切り替えたい場合もあります。そのためのオプションがいくつか用意されています。
+Adobe Experience Manager（AEM）のタッチ操作対応UIは、標準のUIです。 ただし、ユーザーが[クラシック UI](/help/sites-classic-ui-authoring/classicui.md) に切り替えたい場合もあります。そのためのオプションがいくつか用意されています。
 
 使用する UI を様々な場所で定義できます。
 

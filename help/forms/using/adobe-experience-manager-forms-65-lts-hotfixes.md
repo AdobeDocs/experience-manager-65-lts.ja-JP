@@ -1,27 +1,27 @@
 ---
-title: Adobe Experience Manager Forms 6.5 LTS SP1 ホットフィックス
-description: AEM Forms 6.5 LTS のホットフィックスをダウンロードしてインストールする方法について説明します。
+title: Adobe Experience Manager Forms 6.5 LTS SP1のホットフィックス
+description: AEM Forms 6.5 LTSのホットフィックスをダウンロードしてインストールする方法について説明します。
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
-source-git-commit: ff5992fb29c9413cc60e1f0f14c52b1eeff3c3de
+role: User,Admin,Developer
+exl-id: e485100f-3e16-4fd4-a8ce-af771d765dd1
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 45%
 
 ---
 
+# Adobe Experience Manager Forms 6.5 LTSのホットフィックス{#aem-form-hotfix}
 
-# Adobe Experience Manager Forms 6.5 LTS ホットフィックス{#aem-form-hotfix}
-
-この記事では、既知の問題への対処、システムの安定性の向上、AEM Forms 6.5 LTS の全体的なパフォーマンスの向上のために実装された重要な修正を一覧表示しています。
+この記事では、既知の問題に対処し、システムの安定性を向上させ、AEM Forms 6.5 LTSの全体的なパフォーマンスを向上させるために実装された重要な修正を紹介します。
 
 
 >[!NOTE]
 >
 > ホットフィックスは累積的に設計されており、以前のすべての修正が含まれます。 最新のホットフィックスをリリースに適用すると、最新の問題に対処するだけでなく、以前のすべてのバグ修正と機能強化も組み込まれます。
 
-## AEM Forms 6.5 LTS のホットフィックス {#hotfix-for-aem-forms}
+## AEM Forms 6.5 LTSのホットフィックス {#hotfix-for-aem-forms}
 
 <table>
   <tbody>
@@ -32,15 +32,15 @@ ht-degree: 45%
   </tr>
   <tr>
     <td>
-      <strong>2025 年 9 月 9 日 </strong><br>
+      <strong>2025年9月9日</strong><br>
     <td>
     <ul>
-    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]1-hotfix-on-add-on/adobe-aemfd-win-pkg-6.1.176-RHF-002.zip">Windows のAEM サービスパック 6.5 LTS のホットフィックス 2</a></li>
-    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]hotfix-on-add-on/adobe-aemfd-linux-pkg-6.1.176-RHF-002.zip">Linux のAEM サービスパック 6.5 LTS のホットフィックス 2</a></li>
-     <li>MacOS- MacOSのAEM サービスパック 6.5 LTS の <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]1-hotfix-on-add-on/adobe-aemfd-osx-pkg-6.1.176-RHF-002.zip">Hotfix2</a></li>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]1-hotfix-on-add-on/adobe-aemfd-win-pkg-6.1.176-RHF-002.zip">Windows</a>でのAEM Service Pack 6.5 LTSのホットフィックス 2</li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]hotfix-on-add-on/adobe-aemfd-linux-pkg-6.1.176-RHF-002.zip">Linux上のAEM Service Pack 6.5 LTS用ホットフィックス 2</a></li>
+     <li>MacOS- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]1-hotfix-on-add-on/adobe-aemfd-osx-pkg-6.1.176-RHF-002.zip">MacOSのAEM Service Pack 6.5 LTS用ホットフィックス 2</a></li>
     <td>
     <ul>
-    <li>サーバーサイド検証（SSV）が有効になっている場合に送信が失敗する可能性がある問題に対処して、フォーム送信の信頼性を向上しました。問題が発生した場合は、[Adobe Experience Manager Forms サポート ] （https://business.adobe.com/in/support/main.html）にお問い合わせください
+    <li>サーバーサイド検証（SSV）が有効になっている場合に送信が失敗する可能性がある問題に対処することで、フォーム送信の信頼性を向上させます。問題が発生した場合は、[Adobe Experience Manager Forms サポート ] （https://business.adobe.com/in/support/main.html）にお問い合わせください。
     </li>
     </ul>
     </td>    

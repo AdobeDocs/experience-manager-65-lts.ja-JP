@@ -8,9 +8,9 @@ topic-tags: site-features
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: a0ddb246-64eb-493c-9950-9b7ecb32e555
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '4650'
 ht-degree: 99%
@@ -40,7 +40,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->**テンプレートエディター**&#x200B;は、テンプレートレベルで直接ターゲット設定をサポートしません。編集可能テンプレートに基づいて作成されたページは、ターゲット設定できますが、テンプレート自体はできません。
+>**テンプレートエディター**&#x200B;は、テンプレートレベルで直接ターゲティングをサポートしません。編集可能テンプレートに基づいて作成されたページは、ターゲット設定できますが、テンプレート自体はできません。
 
 >[!CAUTION]
 >
@@ -107,7 +107,7 @@ ht-degree: 99%
 
 * **テンプレート**&#x200B;コンソールを使用します。これは、**ツール**&#x200B;コンソールの「**一般**」セクションにあります。
 
-   * または、[https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf) に直接アクセスします
+   * または直接：[https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * 必要に応じて、[テンプレート用のフォルダーを作成](#creating-a-template-folder-admin)できます。
 * [テンプレートを作成](#creatinganewtemplateauthor)、（最初は空の状態）
@@ -474,7 +474,7 @@ ht-degree: 99%
 
   >[!NOTE]
   >
-  >[リッチテキストエディターを実装するコンポーネントのコンテンツポリシー](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638)は、UI 設定を通じて RTE で提供されるオプションに対してのみ定義できます。[&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[リッチテキストエディターを実装するコンポーネントのコンテンツポリシー](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638)は、UI 設定を通じて RTE で提供されるオプションに対してのみ定義できます。[](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)[](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **ポリシーおよびプロパティ（レイアウトコンテナ）**
 

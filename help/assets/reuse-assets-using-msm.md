@@ -3,12 +3,12 @@ title: MSM を使用したアセットの再利用
 description: 親アセットから派生し、親アセットにリンクされているアセットを複数のページ／フォルダーにわたって使用します。アセットはプライマリコピーとの同期が保たれ、数回クリックするだけで、親アセットから更新内容を受け取ります。
 contentOwner: AG
 mini-toc-levels: 1
-role: User, Admin, Architect
+role: User,Admin,Developer
 feature: Asset Management,Multi Site Manager
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 29365a8a-7d29-41b2-9a54-d12fe802f6ed
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '3261'
 ht-degree: 100%
@@ -25,7 +25,7 @@ ht-degree: 100%
 [!DNL Adobe Experience Manager] のマルチサイトマネージャー（MSM）機能を使用すると、一度作成したコンテンツを複数の web サイトで再利用できます。これと同じ機能が、MSM for [!DNL Assets] 機能としてデジタルアセットにも使用できます。MSM for [!DNL Assets] を使用すると、次のことが可能になります。
 
 * 一度アセットを作成した後、そのアセットのコピーを作成して、サイトの他の領域で再利用する。
-* 複数のコピーを同期させ、元のプライマリコピーの変更を子コピーにプッシュする。
+* 複数のコピーを同期させ、元のプライマリコピーを一度更新するだけで変更が子コピーに反映します。
 * 親アセットと子アセットの間のリンクを一時的または永続的に休止してローカルに変更を行う。
 
 ## 利点と概念の理解 {#concepts}

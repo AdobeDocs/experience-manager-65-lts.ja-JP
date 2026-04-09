@@ -8,9 +8,9 @@ topic-tags: site-features
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 18c32ec9-9f6d-4c6e-9790-dc911baa1d75
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1096'
 ht-degree: 97%
@@ -69,7 +69,7 @@ ht-degree: 97%
    >
    >サイトのトップレベルの下に言語ルートがある場合、ローンチのページやブランチは共通の言語ルートに下にある必要があります。
    >
-   >ソースパス内に親ページまたは子ページを持つローンチを作成しようとすると、失敗し、「Destination already exists at :path to the page」というエラーが返されます。
+   >ソースパスで親ページまたは子ページを使用してローンチを作成しようとすると、失敗し、「ページに宛先が既に:pathに存在します」というエラーが返されます。
 
 1. 各エントリに対して、次の操作を行うかどうかを指定できます。
 

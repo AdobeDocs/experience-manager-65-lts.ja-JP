@@ -5,7 +5,7 @@ feature: Content Fragments,GraphQL API
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 exl-id: 9a953caa-47d3-4e06-a27d-2a0c3fc72597
-source-git-commit: c2947923fb83b57bc0e1c068af52558dd0a04867
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
 source-wordcount: '1577'
 ht-degree: 99%
@@ -1717,31 +1717,31 @@ query {
 
 | 名前 | 名 | 授賞歴 |
 |--- |--- |--- |
-| Lincoln |  Abe | |
-| Smith | Adam |   |
-| Slade |  Cutter |  Gameblitz<br>Gamestar |
-| Marsh |  Duke |   |   |
-|  Smith |  Joe |   |
-| Croft |  Lara | Gamestar |
-| Caulfield |  Max |  Gameblitz |
-| Jobs |  Steve |   |
+| Lincoln | Abe | |
+| Smith | Adam | |
+| Slade | Cutter | Gameblitz<br>Gamestar |
+| Marsh | Duke | |
+| Smith | Joe | |
+| Croft | Lara | Gamestar |
+| Caulfield | Max | Gameblitz |
+| ジョブ | Steve | |
 
 #### 賞 {#fragment-award}
 
 | ショートカット／ID | タイトル |
 |--- |--- |
 | GB | Gameblitz |
-|  GS | Gamestar |
-|  OSC | Oscar |
+| GS | Gamestar |
+| OSC | Oscar |
 
 #### 都市 {#fragment-city}
 
 | 名前 | 国 | 人口 | カテゴリ |
 |--- |--- |--- |--- |
-| Basel | スイス | 172258 | 市区町村 :emea |
-| Berlin | Germany | 3669491 | city:capital<br>city:emea |
-| Bucharest | Romania | 1821000 |  city:capital<br>city:emea |
-| San Francisco |  USA |  883306 |  city:beach<br>city:na |
-| San Jose |  USA |  102635 |  市区町村 :na |
-| Stuttgart |  Germany |  634830 |  市区町村 :emea |
-|  Zurich |  Switzerland |  415367 |  city:capital<br>city:emea |
+| Basel | スイス | 172258 | 市区町村:emea |
+| Berlin | Germany | 3669491 | 市区町村:capital<br>市区町村:emea |
+| Bucharest | Romania | 1821000 |  市区町村:capital<br>市区町村:emea |
+| San Francisco |  USA |  883306 |  市区町村:beach<br>市区町村:na |
+| San Jose |  USA |  102635 |  市区町村:na |
+| Stuttgart |  Germany |  634830 |  市区町村:emea |
+|  Zurich |  Switzerland |  415367 |  市区町村:capital<br>市区町村:emea |

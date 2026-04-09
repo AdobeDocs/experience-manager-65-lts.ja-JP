@@ -2,11 +2,11 @@
 title: コレクション、スニペット、スニペットテンプレートのマルチテナント
 description: マルチテナント機能を使用して、お客様の組織に基づいて CRX リポジトリのコンテンツを隔離して、未承認のアクセスを防止する方法を説明します。
 contentOwner: AG
-role: Architect, Admin, Leader
+role: Developer,Admin,Leader
 feature: Collections
 solution: Experience Manager, Experience Manager Assets
 exl-id: 39e14f89-8e60-4b5e-8859-d69ebd51864e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 100%

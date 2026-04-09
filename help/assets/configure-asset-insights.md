@@ -2,11 +2,11 @@
 title: アセットインサイトを設定して分析を取得します。
 description: ' [!DNL Adobe Experience Manager Assets] でアセットインサイトを設定します。'
 contentOwner: AG
-role: Architect, Admin
+role: Developer,Admin
 feature: Asset Insights,Asset Reports
 solution: Experience Manager, Experience Manager Assets
 exl-id: ce0e3ebd-9a72-458c-8bb9-80f00d2f1a74
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 100%

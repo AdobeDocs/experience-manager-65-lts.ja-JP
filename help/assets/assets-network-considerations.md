@@ -2,11 +2,11 @@
 title: ネットワークに関する考慮事項と要件
 description: ' [!DNL Adobe Experience Manager Assets]  のデプロイメントを設計する際のネットワークの考慮事項について説明します。'
 contentOwner: AG
-role: Architect, Admin
+role: Developer,Admin
 feature: Developer Tools
 solution: Experience Manager, Experience Manager Assets
 exl-id: bf1dee29-75bb-445b-a661-fc7c52d78b63
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1010'
 ht-degree: 100%
@@ -46,7 +46,7 @@ ht-degree: 100%
 
 ![chlimage_1-354](assets/chlimage_1-354.png)
 
-図では、企業ネットワーク内で使用されているアップリンクの速度が、通常使用されるものよりも高速になっています。これらのパイプは共有リソースです。共有スイッチが処理するクライアント数が 50 と想定されている場合、ここが渋滞地点となる可能性があります。最初の図では、2 台のコンピューターのみがその特定の接続を共有しています。
+この図には、企業ネットワーク内で一般的に使用されるものよりも高いアップリンク速度が表示されています。これらのパイプは共有リソースです。共有スイッチが処理するクライアント数が 50 と想定されている場合、ここが渋滞地点となる可能性があります。最初の図では、2 台のコンピューターのみがその特定の接続を共有しています。
 
 ## 企業ネットワークと [!DNL Experience Manager] 環境からのインターネットへのアップリンク {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
@@ -93,7 +93,7 @@ Dispatcher では、100 Mbps の接続が 2 つのエンティティ（外部と
 考慮すべき項目は次の通りです。
 
 * XMP メタデータの読み／書き戻し
-* 自動アクティベートおよびレプリケート
+* 自動アクティベーションおよびレプリケーション
 * 透かし処理
 * サブアセットの取り込み／ページの抽出
 * ワークフローのオーバーラップ

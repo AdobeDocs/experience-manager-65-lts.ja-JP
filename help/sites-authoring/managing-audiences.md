@@ -8,9 +8,9 @@ topic-tags: personalization
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 532d8289-a266-4556-ab59-855460c377cb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 100%
@@ -38,7 +38,7 @@ ht-degree: 100%
 
 ## オーディエンスコンソールでの ContextHub セグメントの作成 {#creating-a-contexthub-segment-in-the-audiences-console}
 
-ContextHub セグメントは、オーディエンスコンソールまたはターゲット設定プロセスで作成できます。
+ContextHub セグメントは、オーディエンスコンソールまたはターゲティングプロセスで作成できます。
 
 オーディエンスコンソールで ContextHub セグメントを作成するには：
 

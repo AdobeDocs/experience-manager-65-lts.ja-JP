@@ -3,10 +3,10 @@ title: ' [!DNL Assets] のベストプラクティス'
 description: お客様の展開や構成に応じたベストプラクティスを特定して順守することで、負荷状態でのシステムの安定性とパフォーマンスを向上させます。
 contentOwner: AG
 feature: Asset Management
-role: Architect, Admin
+role: Developer,Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 754659d0-7d5f-4e60-a5a1-9bad177de9bc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 100%

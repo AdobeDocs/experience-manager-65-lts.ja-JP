@@ -3,9 +3,9 @@ title: チェックリスト
 description: プロジェクトチェックリストは、プロジェクトを遂行する際のベストプラクティスをまとめたものです。プロジェクトのライフサイクルの全フェーズを案内し、現在のステータスを全体的に監視します。
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
+role: Admin,Developer,Leader
 exl-id: 4a7d8228-101a-47bd-9bcf-d521a69d87a0
-source-git-commit: 343fe14be5c85eecdd34f7428460ee016e97734b
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 95%
@@ -47,6 +47,6 @@ AEM プロジェクトのベストプラクティスチェックリスト v2
 
    >[!NOTE]
    >
-   >個々の必須ドキュメントと成果物の間には、直接的な 1:1 関係はありません。
+   >個々の必要なドキュメントと成果物の間に、直接1:1の関係がありません。
 
 1. **[必須ドキュメント](/help/managing/best-practices.md#required-documents)**&#x200B;および&#x200B;**[成果物](/help/managing/best-practices.md#deliverables)**&#x200B;のスタータスに基づいて、**[プロジェクトハートビート](/help/managing/best-practices.md#project-heartbeat-dashboard)**&#x200B;と&#x200B;**[役割別のステータス](/help/managing/best-practices.md#status-by-role)**&#x200B;のワークシートが自動的に更新され、プロジェクトの進行状況とヘルスの最新情報が提示されます。

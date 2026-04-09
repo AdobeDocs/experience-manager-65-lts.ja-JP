@@ -8,9 +8,9 @@ topic-tags: site-features
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 22cfa2bc-04af-49e6-b9b1-51112c96ba23
-source-git-commit: c759cb6830810b0b822cd66f8a29cbcf4f2851eb
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 99%
@@ -115,7 +115,7 @@ ht-degree: 99%
 
 * **ツール**&#x200B;コンソールで、**ツール**／**サイト**／**ローンチ**&#x200B;と選択します。
 
-* または、[https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html) で直接確認できます
+* または[https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)に直接入力
 
 ## 「参照」のローンチ（サイトコンソール） {#launches-in-references-sites-console}
 

@@ -3,9 +3,9 @@ title: ヘッドレスをはじめる前に
 description: このクイックスタートガイドでは、コンテンツモデル、コンテンツフラグメント、GraphQL API など、Adobe Experience Manager（AEM）6.5 の強力なヘッドレス機能の基本事項について説明します。
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: 867613e7-59fe-4948-a19a-bd196aec737b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 100%
@@ -28,7 +28,7 @@ ht-degree: 100%
 >
 >AEM またはヘッドレスのいずれかを初めて使用する場合は、[ヘッドレスドキュメントジャーニー](/help/journey-headless/overview.md)を参照し、ヘッドレスについて、および AEM によるヘッドレスのサポートについての包括的な概要を理解してください。
 
-## 対象読者 {#audience}
+## オーディエンス {#audience}
 
 ヘッドレス入門ガイドで説明されているタスクは、AEM のヘッドレス機能の基本的な包括的デモに必要です。テスト用 AEM インスタンスへの管理者アクセス権を持つユーザーは誰でも、これらのガイドに従って AEM でのヘッドレスな配信を理解できますが、開発者の経験を持つユーザーが最適です。
 

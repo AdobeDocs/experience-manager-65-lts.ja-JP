@@ -5,7 +5,7 @@ role: User, Admin
 feature: CDN Cache
 solution: Experience Manager, Experience Manager Assets
 exl-id: bce11a49-bbbe-4dda-8144-7f135bb666d9
-source-git-commit: e13ca0cdc547fb4c83e8e332b3016f3c543b2e5c
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '1277'
 ht-degree: 99%
@@ -21,7 +21,7 @@ Dynamic Media アセットは、顧客との配信を高速化するために、
 
 *パート 1／2：CDN 無効化テンプレートの作成*
 
-1. **[!UICONTROL ツール]** / **[!UICONTROL Assets]** / **[!UICONTROL CDN 無効化]** に移動します。
+1. **[!UICONTROL ツール]** > **[!UICONTROL Assets]** > **[!UICONTROL CDN無効化]**&#x200B;に移動します。
 
    ![CDN 検証機能](/help/assets/assets-dm/cdn-invalidation-template2.png)
 

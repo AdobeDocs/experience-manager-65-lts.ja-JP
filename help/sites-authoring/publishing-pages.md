@@ -1,11 +1,11 @@
 ---
 title: コンテンツページの公開
-description: Adobe Experience Manager 6.5 LTS でコンテンツページを公開する方法を説明します。
+description: Adobe Experience Manager 6.5 LTSでコンテンツページを公開する方法について説明します。
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 89bab7e3-f688-4c95-8571-08477e737bc8
-source-git-commit: 46948a857ccb9d093f946ec9e48ff585b0647314
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1702'
 ht-degree: 99%

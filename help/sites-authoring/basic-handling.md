@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 281c96e2-24f8-4568-add2-67972148b406
-source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2919'
 ht-degree: 100%
@@ -424,7 +424,7 @@ Web Experience Management のドキュメントを表示します。
 
 ![bh-15-1](assets/bh-15-1.png)
 
-* カード表示では、現在のレベルの各項目の情報カードが表示されます。次のような情報が提供されます。
+* カード表示では、現在のレベルの各項目の情報カードが表示されます。 次のような情報が提供されます。
 
    * ページの内容を視覚的に表現したもの。
    * ページのタイトル。

@@ -7,7 +7,7 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: bf5c2dff-db68-4e82-8217-ff35069dcb81
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '3607'
 ht-degree: 98%
@@ -86,20 +86,20 @@ ht-degree: 98%
 
 ### 「[!UICONTROL フォームを作成]」タブ内のコンポーネント  {#components-within-the-build-form-tab}
 
-「**[!UICONTROL フォームを作成]**」タブには、スキーマフォーム内で使用するフォーム項目が表示されます。「**[!UICONTROL 設定]**」タブに、「**[!UICONTROL フォームを作成]**」タブで選択した各項目の属性が表示されます。「**[!UICONTROL フォームを作成]**」タブで使用できるフォーム項目を次の表に示します。
+「**[!UICONTROL フォームを作成]**」タブには、スキーマフォーム内で使用するフォーム項目が表示されます。「**[!UICONTROL 設定]**」タブに、「**[!UICONTROL フォームを作成]**」タブで選択した各項目の属性が表示されます。 「**[!UICONTROL フォームを作成]**」タブで使用できるフォーム項目を次の表に示します。
 
 | コンポーネント名 | 説明 |
 |----|----|
 | **[!UICONTROL セクションヘッダー]** | 共通コンポーネントのリストに対してセクションヘッダーを追加します。 |
-| **[!UICONTROL 1 行のテキスト]** | 1 行のテキストプロパティを追加します。これは文字列として保存されます。 |
-| **[!UICONTROL 複数値テキスト]** | 複数値テキストプロパティを追加します。これは文字列の配列として保存されます。 |
+| **[!UICONTROL 1 行のテキスト]** | 1 行のテキストプロパティを追加します。 これは文字列として保存されます。 |
+| **[!UICONTROL 複数値テキスト]** | 複数値テキストプロパティを追加します。 これは文字列の配列として保存されます。 |
 | **[!UICONTROL 数値]** | 数値コンポーネントを追加します。 |
 | **[!UICONTROL 日付]** | 日付コンポーネントを追加します。 |
 | **[!UICONTROL ドロップダウン]** | ドロップダウンリストを追加します。 |
-| **[!UICONTROL 標準タグ]** | タグを追加します。管理者は、場合によっては、パス値を変更する必要があります。 例えば、Experience Manager Assetsからメタデータスキーマフォームを公開する場合の `/etc/tags/mac/<tenant_id>/<custom_tag_namespace>` では、パスにテナント情報（例：`/etc/tags/<custom_tag_namespace>`）が含まれていません。 |
+| **[!UICONTROL 標準タグ]** | タグを追加します。 管理者は、パスの値を変更する必要がある場合があります。 例えば、`/etc/tags/mac/<tenant_id>/<custom_tag_namespace>`は、Experience Manager Assetsからメタデータスキーマフォームを公開する場合、パスにテナント情報が含まれていません（例：`/etc/tags/<custom_tag_namespace>`）。 |
 | **[!UICONTROL スマートタグ]** | Experience Manager Assets スマートタグアドオンを購入して設定済みの場合に自動検出されるタグです。 |
-| **[!UICONTROL 非表示のフィールド]** | 非表示のフィールドを追加します。このフィールドは、アセットの保存時に POST パラメーターとして送信されます。 |
-| **[!UICONTROL アセットの参照元]** | このコンポーネントを追加して、アセットが参照するアセットのリストを表示します。 |
+| **[!UICONTROL 非表示のフィールド]** | 非表示のフィールドを追加します。 このフィールドは、アセットの保存時に POST パラメーターとして送信されます。 |
+| **[!UICONTROL アセットの参照元]** | このコンポーネントを追加すると、アセットが参照するアセットのリストが表示されます。 |
 | **[!UICONTROL アセットの参照]** | このアセットを参照しているアセットのリストを表示するには、このコンポーネントを追加します。 |
 | **[!UICONTROL コンテキストメタデータ]** | アセットのプロパティページにある他のメタデータタブの表示を制御するために追加します。 |
 
@@ -286,11 +286,11 @@ ht-degree: 98%
 
 ### MIME タイプ用の新しいフォームの追加 {#add-new-forms-for-mime-types}
 
-適切なフォームタイプの下でフォームを作成します。例えば、`image/png` サブタイプのテンプレートを追加するには、「image」フォームの下にフォームを作成します。スキーマフォームのタイトルはサブタイプ名です。この場合、タイトルは「`png`」です。
+適切なフォームタイプの下でフォームを作成します。例えば、`image/png` サブタイプのテンプレートを追加するには、「image」フォームの下にフォームを作成します。スキーマフォームのタイトルはサブタイプ名です。 この場合、タイトルは「`png`」です。
 
 #### 様々な MIME タイプ用の既存スキーマテンプレートの使用 {#use-an-existing-schema-template-for-various-mime-types}
 
-別の MIME タイプに対して既存のテンプレートを使用できます。例えば、MIME タイプ `image/png` のアセットに対して `image/jpeg` フォームを使用します。
+別の MIME タイプに対して既存のテンプレートを使用できます。 例えば、MIME タイプ `image/png` のアセットに対して `image/jpeg` フォームを使用します。
 
 この場合は、CRX リポジトリー内の `/etc/dam/metadataeditor/mimetypemappings` にノードを作成します。そのノードの名前を指定し、次のプロパティを定義します。
 
@@ -374,7 +374,7 @@ ht-degree: 98%
 
    ![フォルダー内のアセットのアップロード時に、アセットカード表示に必須メタデータが指定されていないというメッセージ](assets/metadata-missing-info-card-view.png)
 
-1. （オプション）`https://[aem_server]:[port]/system/console/components/`にアクセスします。`com.day.cq.dam.core.impl.MissingMetadataNotificationJob` コンポーネントを設定して有効にします。このコンポーネントはデフォルトで無効になっています。アセット上にあるメタデータの妥当性を [!DNL Experience Manager] がチェックする頻度を設定します。この設定により、プロパティ`hasValidMetadata` がアセットの `jcr:content` に追加されます。[!DNL Experience Manager] は、このプロパティを使用して、検索結果内の無効なアセットをフィルタリングします。チェックの後にアセットを追加した場合、次に予定されるチェックが実行されるまでそのアセットは `hasValidMetadata` でフラグは付きません。したがって、次に予定されるチェックの後まで、無効なメタデータの検索フィルターにアセットが表示されません。
+1. （オプション）`https://[aem_server]:[port]/system/console/components/`にアクセスします。`com.day.cq.dam.core.impl.MissingMetadataNotificationJob` コンポーネントを設定して有効にします。このコンポーネントはデフォルトで無効になっています。アセット上にあるメタデータの妥当性を [!DNL Experience Manager] がチェックする頻度を設定します。この設定により、プロパティ`hasValidMetadata` がアセットの `jcr:content` に追加されます。[!DNL Experience Manager] は、このプロパティを使用して、検索結果内の無効なアセットをフィルタリングします。チェックの後にアセットを追加した場合、次に予定されるチェックが実行されるまでそのアセットは `hasValidMetadata` でフラグは付きません。したがって、アセットは、次のスケジュールされたチェックの後まで、無効なメタデータの検索フィルターに表示されません。
 
    >[!CAUTION]
    >
