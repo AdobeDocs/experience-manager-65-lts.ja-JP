@@ -9,10 +9,10 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 893d04cb-3a71-4400-9ca4-62ad46aacfdd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4c6423d295aa93f6f7048a5ac919b551f3f305d7
 workflow-type: tm+mt
-source-wordcount: '1740'
-ht-degree: 99%
+source-wordcount: '1872'
+ht-degree: 83%
 
 ---
 
@@ -119,27 +119,39 @@ ht-degree: 99%
 
 ユースケースに適したユーザーが AEM サービスユーザーのリストに存在せず、対応する RTC の発行が承認されていることを確認したら、デフォルトコンテンツに新しいユーザーを追加します。
 
-推奨されるアプローチは、リポジトリエクスプローラー（*https://&lt;server>:&lt;port>/crx/explorer/index.jsp*）を使用するサービスユーザーを作成することです。
+>[!IMPORTANT]
+>
+>CRX エクスプローラー（`/crx/explorer/index.jsp`）はAEM 6.5 LTS環境では使用できないため、サービスユーザーの作成に使用しないでください。 CRX Explorerで作成された既存のサービスユーザーは、引き続き機能します。 新しいサービスユーザーの場合は、次のいずれかの方法を使用します。
 
-目的は、有効な `jcr:uuid` プロパティを取得することです。このプロパティは、コンテンツパッケージのインストール環境を使用してユーザーを作成する場合に必須です。
+>[!NOTE]
+>
+>JCR ノードレベルのサービスユーザーに関連付けられたMixin タイプはありません。 つまり、システムユーザーノードにはアクセス制御ポリシーが直接接続されていません。 アクセス制御は、RepoInit ACL ステートメントやリポジトリーレベルのACL設定など、個別に管理されます。
 
-サービスユーザーは次の方法で作成できます。
+### Sling リポジトリー初期化の使用（RepoInit） {#creating-service-user-repoinit}
 
-1. *https://&lt;server>:&lt;port>/crx/explorer/index.jsp* のリポジトリエクスプローラーにアクセスします。
-1. 画面の左上隅にある「**ログイン**」リンクをクリックして、管理者としてログインします。
-1. 次に、システムユーザーを作成して名前を付けます。ユーザーをシステムユーザーとして作成するには、中間パスとして `system` を設定し、ニーズに合わせてオプションのサブフォルダーを追加します。
+推奨されるアプローチは、[Sling リポジトリ初期化（RepoInit） ](https://sling.apache.org/documentation/bundles/repository-initialization.html)を使用してサービスユーザーを作成することです。 RepoInitでは、シンプルなスクリプト言語を使用して、サービスユーザーとそのACLを宣言的に定義できます。
 
-   ![chlimage_1-102](assets/chlimage_1-102a.png)
+RepoInitを使用してサービスユーザーを作成するには、`scripts`のOSGi設定に`org.apache.sling.jcr.repoinit.RepositoryInitializer` プロパティを追加します。
 
-1. システムユーザーノードが次のようになっていることを確認します。
+```
+create service user my-service-user with path system/cq
 
-   ![chlimage_1-103](assets/chlimage_1-103a.png)
+set ACL for my-service-user
+    allow jcr:read on /content
+end
+```
 
-   >[!NOTE]
-   >
-   >サービスユーザーには mixin タイプが関連付けられていません。これは、システムユーザーに対するアクセス制御ポリシーが存在しないことを意味します。
+`with path system/cq` ディレクティブは、サービスユーザーをリポジトリの`/home/users/system/cq`の下に配置します。 プロジェクトの組織構造（例：`system/myproject`）に一致するパスを選択できます。 中間パスノードが存在しない場合は、`with forced path`を使用して自動的に作成します。
 
-対応する .content.xml をバンドルのコンテンツに追加する際には、`rep:authorizableId` を設定し、プライマリタイプを `rep:SystemUser` にしてください。次のようになります。
+次の理由から、このアプローチをお勧めします。
+
+* サービスユーザーと権限をコードとして定義し、バージョン管理および再現可能にします
+* リポジトリの初期化中に作成を自動的に処理します
+* AEM 6.5 LTSとAEM as a Cloud Serviceの両方で機能しますが、Sling バージョン間には構文の違いが少しあります。ターゲットプラットフォームについては、RepoInitのドキュメントを参照してください
+
+### コンテンツパッケージの使用 {#creating-service-user-content-package}
+
+コンテンツパッケージに`.content.xml`を含めることで、サービスユーザーを作成することもできます。 `rep:authorizableId`が設定されており、プライマリタイプが`rep:SystemUser`であることを確認してください。 コンテンツパッケージのインストール中にユーザーが正しく作成するには、有効な`jcr:uuid` プロパティが必要です。 標準のUUID v4 ジェネレーターを使用してUUIDを生成できます（`uuidgen` コマンドラインツールやオンライン UUID ジェネレーターなど）。 `.content.xml`は次のようになります。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -152,7 +164,7 @@ ht-degree: 99%
 
 ## ServiceUserMapper 設定への修正の追加 {#adding-a-configuration-amendment-to-the-serviceusermapper-configuration}
 
-サービスから対応するシステムユーザーへのマッピングを追加するには、[`ServiceUserMapper` &#x200B;](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html) サービスのファクトリ設定を作成する必要があります。このモジュラーを維持するために、[Sling 修正メカニズム](https://issues.apache.org/jira/browse/SLING-3578)を使用してこのような設定を指定できます。このような設定をバンドルと共にインストールする場合は、[Sling の初期コンテンツ読み込み機能](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html)を使用することをお勧めします。
+サービスから対応するシステムユーザーへのマッピングを追加するには、[`ServiceUserMapper` ](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html) サービスのファクトリ設定を作成する必要があります。このモジュラーを維持するために、[Sling 修正メカニズム](https://issues.apache.org/jira/browse/SLING-3578)を使用してこのような設定を指定できます。このような設定をバンドルと共にインストールする場合は、[Sling の初期コンテンツ読み込み機能](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html)を使用することをお勧めします。
 
 1. バンドルの src/main/resources フォルダーの下にサブフォルダー SLING-INF/content を作成します。
 1. このフォルダーに、ファクトリ設定の内容（すべてのサブサービスユーザーマッピングを含む）を定義した org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-&lt;ファクトリ設定の一意の名前>.xml という名前のファイルを作成します。例：
@@ -189,7 +201,7 @@ ht-degree: 99%
 
 1. バンドルをインストールし、ファクトリ設定がインストールされていることを確認します。手順は次のとおりです。
 
-   * Web コンソール（*https://serverhost:serveraddress/system/console/configMgr*）にアクセスします
+   * *https://serverhost:serveraddress/system/console/configMgr*&#x200B;のWeb コンソールに移動します
    * **Apache Sling Service User Mapper Service Amendment** を探します。
    * リンクをクリックすると、設定が適切に行われていることを確認できます。
 
