@@ -565,7 +565,7 @@ In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL S
 
    * 「**[!UICONTROL 演算子を選択]**」フィールドから「**[!UICONTROL プラス]**」を選択します。
 
-   * 「フォームオブジェクト」タブから、他の&#x200B;**[!UICONTROL ドロップオブジェクトの「**[!UICONTROL  Spouse Salary （配偶者の給与）]**」フィールドを選択またはドラッグ＆ドロップするか、「ここ」]**&#x200B;フィールドを選択します。
+   * 「フォームオブジェクト」タブから、他の&#x200B;**[!UICONTROL ドロップオブジェクトの「**&#x200B;[!UICONTROL &#x200B; Spouse Salary （配偶者の給与）]&#x200B;**」フィールドを選択またはドラッグ＆ドロップするか、「ここ」]**&#x200B;フィールドを選択します。
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 

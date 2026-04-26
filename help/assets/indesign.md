@@ -96,7 +96,7 @@ ht-degree: 94%
 * [メディア抽出](#media-extraction)
 * [ページ抽出](#page-extraction)
 
-このワークフローは、様々なオーサーインスタンスの設定に合わせて調整できるデフォルト値で設定されています（これは標準のワークフローであるため、[ ワークフローの編集](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)で詳細を確認できます）。 デフォルト値（SOAP ポートを含む）を使用している場合、設定は必要ありません。
+このワークフローは、様々なオーサーインスタンスの設定に合わせて調整できるデフォルト値で設定されています（これは標準のワークフローであるため、[&#x200B; ワークフローの編集](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)で詳細を確認できます）。 デフォルト値（SOAP ポートを含む）を使用している場合、設定は必要ありません。
 
 設定後、通常のいずれかの方法で [!DNL InDesign] ファイルを [!DNL Experience Manager Assets] にアップロードすると、そのアセットを処理して各種レンダリングを準備するワークフローがトリガーされます。 INDD ファイルを [!DNL Experience Manager Assets] にアップロードし、IDS で作成された各種レンディションが `<*your_asset*>.indd/Renditions` の下にあることを確認して、設定をテストします。
 

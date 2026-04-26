@@ -119,7 +119,7 @@ New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/rel
 
 アドビの顧客が AEM 環境に適用するカスタマイズの量および性質は様々なので、あらかじめ時間をかけて、アップグレードで予期される全体的な作業量を判断することが重要です。 [AEM Analyzer for AEM 6.5 LTS](/help/sites-deploying/aem-analyzer.md)は、アップグレードの複雑さを評価するのに役立ちます。
 
-AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md)用[AEM Analyerを使用すると、ほとんどの場合、アップグレード時に想定される内容を正確に見積もることができます。 ただし、互換性のない変更がある複雑なカスタマイズとデプロイメントの場合は、[ インプレースアップグレードの実行](/help/sites-deploying/in-place-upgrade.md)の手順に従って、開発インスタンスをAEM 6.5 LTSにアップグレードできます。 完了したら、この環境で全体的なスモークテストを実行します。 この演習の目的は、テストケースインベントリを完全に完成させ、正式な欠陥インベントリを作成することではなく、AEM 6.5 LTS互換のコードをアップグレードするために必要な作業量を大まかに見積もることです。 [AEM Analyzer](/help/sites-deploying/aem-analyzer.md)と前のセクションで決定されたアーキテクチャの変更を組み合わせると、アップグレードを計画するためにプロジェクト管理チームに概算を提供できます。
+AEM 6.5 LTS[&#128279;](/help/sites-deploying/pattern-detector.md)用AEM Analyerを使用すると、ほとんどの場合、アップグレード時に想定される内容を正確に見積もることができます。 ただし、互換性のない変更がある複雑なカスタマイズとデプロイメントの場合は、[&#x200B; インプレースアップグレードの実行](/help/sites-deploying/in-place-upgrade.md)の手順に従って、開発インスタンスをAEM 6.5 LTSにアップグレードできます。 完了したら、この環境で全体的なスモークテストを実行します。 この演習の目的は、テストケースインベントリを完全に完成させ、正式な欠陥インベントリを作成することではなく、AEM 6.5 LTS互換のコードをアップグレードするために必要な作業量を大まかに見積もることです。 [AEM Analyzer](/help/sites-deploying/aem-analyzer.md)と前のセクションで決定されたアーキテクチャの変更を組み合わせると、アップグレードを計画するためにプロジェクト管理チームに概算を提供できます。
 
 ### アップグレードおよびロールバックのランブックの作成 {#building-the-upgrade-and-rollback-runbook}
 
@@ -156,7 +156,7 @@ Alexandru: drafting for now
 
 ### 開発および QA の実行 {#performing-development-and-qa}
 
-Adobeでは、[ コードとカスタマイズ ](/help/sites-deploying/upgrading-code-and-customizations.md)をAEM 6.5 LTSと互換性を持たせるためのアップグレード手順を提供しています。 この反復プロセスが実行されると、必要に応じてRunbookに変更を加える必要があります。
+Adobeでは、[&#x200B; コードとカスタマイズ &#x200B;](/help/sites-deploying/upgrading-code-and-customizations.md)をAEM 6.5 LTSと互換性を持たせるためのアップグレード手順を提供しています。 この反復プロセスが実行されると、必要に応じてRunbookに変更を加える必要があります。
 
 <!--
 Alexandru: drafting for now
