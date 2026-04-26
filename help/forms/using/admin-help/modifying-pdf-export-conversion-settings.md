@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 58657b0a-bcaa-487a-998b-a9ebbdd15870
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 100%
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 # PDF の書き出しの変換設定の変更 {#modifying-the-pdf-export-conversion-settings}
 
-以下の手順で、PDF、EPS、DOC、TXT、RTF、XML、HTML の各ファイルの書き出しに使用される変換設定を変更します。デフォルトでは、PDF ファイルでは、Adobe Acrobat Professional または Acrobat Standard で設定されたデフォルトの「名前を付けて保存」の設定が使用されます。例えば、PDF ファイルを EPS に変換するための Acrobat のデフォルトの「名前を付けて保存」の設定によって、PDF ファイルの 1 ページだけが EPS に変換されます。
+以下の手順で、PDF、EPS、DOC、TXT、RTF、XML、HTML の各ファイルの書き出しに使用される変換設定を変更します。 デフォルトでは、PDF ファイルでは、Adobe Acrobat Professional または Acrobat Standard で設定されたデフォルトの「名前を付けて保存」の設定が使用されます。 例えば、PDF ファイルを EPS に変換するための Acrobat のデフォルトの「名前を付けて保存」の設定によって、PDF ファイルの 1 ページだけが EPS に変換されます。
 
 >[!NOTE]
 >

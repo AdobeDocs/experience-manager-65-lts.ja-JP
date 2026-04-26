@@ -11,16 +11,16 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 93124f35-0323-4f51-9167-9bfcadc819e2
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '336'
 ht-degree: 100%
 
 ---
 
 # システム情報サービス API {#system-information-service-apis}
 
-システム情報サービスは情報を取得する REST API のセットを提供します。次のテーブルは API に関する詳細を提供します。
+システム情報サービスは情報を取得する REST API のセットを提供します。 次のテーブルは API に関する詳細を提供します。
 
 <table>
  <thead>
@@ -34,7 +34,7 @@ ht-degree: 100%
   <tr>
    <td><p>SystemInfo.properties</p></td>
    <td><p>https://'[server]:[port]'/rest/services/SystemInfo.properties'</p></td>
-   <td><p>この API は <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> Java API のラッパーです。それは現在の作業環境の設定を取得します。 </p></td>
+   <td><p>この API は <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> Java API のラッパーです。 それは現在の作業環境の設定を取得します。 </p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.envVar</p></td>
@@ -98,16 +98,16 @@ ht-degree: 100%
   <tr>
    <td><p>SystemInfo.threads?delay=[n]&amp;iterations=[n]</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.threads?delay=[n]&amp;iterations=[n]</p></td>
-   <td><p>アクティブなスレッドの数とスタックトレースを取得します。次のパラメーターを受け取ります。</p>
+   <td><p>アクティブなスレッドの数とスタックトレースを取得します。 次のパラメーターを受け取ります。</p>
     <ul>
-     <li><p>iterations= [n]：反復回数を指定します。n を数字と置き換えます。 </p></li>
+     <li><p>iterations= [n]：反復回数を指定します。 n を数字と置き換えます。 </p></li>
      <li><p>Delay= [n]：次の反復を始める前に待機するミリ秒の数値を指定します。 </p></li>
     </ul><p></p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.info</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.info</p></td>
-   <td><p>この API はすべてのシステム情報サービス API のラッパーです。内部的に、それはすべてのシステム情報 API を実行し、情報を zip 形式でダウンロードします。 </p><p><i><strong>注意</strong>：SystemInfo.info はアクティブなスレッドの数とスタックトレースを提供しません。 </i></p></td>
+   <td><p>この API はすべてのシステム情報サービス API のラッパーです。 内部的に、それはすべてのシステム情報 API を実行し、情報を zip 形式でダウンロードします。 </p><p><i><strong>注意</strong>：SystemInfo.info はアクティブなスレッドの数とスタックトレースを提供しません。 </i></p></td>
   </tr>
  </tbody>
 </table>

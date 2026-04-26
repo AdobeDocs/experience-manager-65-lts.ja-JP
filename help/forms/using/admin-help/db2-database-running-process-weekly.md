@@ -1,6 +1,6 @@
 ---
 title: DB2&reg; データベース：毎週プロセスを実行
-description: AEM Forms DB2® データベースのパフォーマンスを向上させる方法について説明します。
+description: AEM Forms DB2&reg; データベースのパフォーマンスを向上させる方法について説明します。
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: e8cf9e73-345c-4dea-8361-b678c1a3cd1b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 95%
+source-wordcount: '149'
+ht-degree: 85%
 
 ---
 
@@ -34,4 +34,4 @@ ht-degree: 95%
 1. Statistics／Index Statistics に移動します。
 1. 「Collect Statistics For All Indexes」を選択し、「Collect Statistics For Indexes With Extended Detailed Statistics」を選択して、「OK」をクリックします。
 
-プロセスが完了すると、メッセージが表示されます。メッセージを閉じます。
+プロセスが完了すると、メッセージが表示されます。 メッセージを閉じます。

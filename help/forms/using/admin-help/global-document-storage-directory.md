@@ -11,22 +11,22 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 9a93b8f9-33cb-4aec-81e0-a1146bba955a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '690'
 ht-degree: 100%
 
 ---
 
 # グローバルドキュメントストレージディレクトリ{#global-document-storage-directory}
 
-*グローバルドキュメントストレージ（GDS）*&#x200B;ディレクトリは、プロセス内で使用される長期間有効なファイルの保存に使用されるディレクトリです。該当するファイルには、PDF、ポリシーおよびフォームテンプレートなどがあります。長期間有効なファイルは、多くの AEM Forms デプロイメントの全体的な状態の中で重要な部分です。長期間有効なドキュメントが一部でも失われたり破損したりすると、Forms サーバーが不安定な状態になる可能性があります。非同期ジョブの呼び出しの入力ドキュメントも GDS ディレクトリに保存されます。これらのドキュメントは、リクエストを処理するために使用可能な状態になっている必要があります。GDS ディレクトリをホストするファイルシステムの信頼性を考慮することが重要です。品質やサービスのレベルのニーズに適した RAID（Redundant Array of Independent Disks）またはその他のテクノロジーを使用します。
+*グローバルドキュメントストレージ（GDS）*&#x200B;ディレクトリは、プロセス内で使用される長期間有効なファイルの保存に使用されるディレクトリです。 該当するファイルには、PDF、ポリシーおよびフォームテンプレートなどがあります。 長期間有効なファイルは、多くの AEM Forms デプロイメントの全体的な状態の中で重要な部分です。 これらのドキュメントの一部または全部が失われたり破損したりした場合、Forms サーバーが不安定になる可能性があります。 非同期ジョブの呼び出しの入力ドキュメントも GDS ディレクトリに保存されます。これらのドキュメントは、リクエストを処理するために使用可能な状態になっている必要があります。 GDS ディレクトリをホストするファイルシステムの信頼性を考慮することが重要です。 品質やサービスのレベルのニーズに適した RAID（Redundant Array of Independent Disks）またはその他のテクノロジーを使用します。
 
-長期間有効なファイルには、機密性の高いユーザー情報が含まれる場合があります。この情報では、AEM Forms API またはユーザーインターフェイスを使用してアクセスするときに特殊な証明書が必要となる場合があります。オペレーティングシステムによって GDS ディレクトリが適切に保護されていることが重要です。アプリケーションサーバーを実行するために使用される管理者アカウントのみに対して、GDS ディレクトリの読み取りと書き込みのアクセス権を付与する必要があります。
+長期間有効なファイルには、機密性の高いユーザー情報が含まれる場合があります。 この情報では、AEM Forms API またはユーザーインターフェイスを使用してアクセスするときに特殊な証明書が必要となる場合があります。 オペレーティングシステムによって GDS ディレクトリが適切に保護されていることが重要です。 アプリケーションサーバーを実行するために使用される管理者アカウントのみに対して、GDS ディレクトリの読み取りと書き込みのアクセス権を付与する必要があります。
 
-GDS の可用性が高い保護されたディレクトリを選択するほかに、データベースでドキュメントの保存を有効にすることもできます。ドキュメントの保存に AEM Forms データベースを使用しても、AEM Forms には GDS ディレクトリが必要となります（[ドキュメントの保存にデータベースを使用する場合のバックアップオプション](/help/forms/using/admin-help/files-back-recover.md#backup-options-when-database-is-used-for-document-storage)を参照）。
+GDS の可用性が高い保護されたディレクトリを選択するほかに、データベースでドキュメントの保存を有効にすることもできます。 ドキュメントの保存に AEM Forms データベースを使用しても、AEM Forms には GDS ディレクトリが必要となります （[ドキュメントの保存にデータベースを使用する場合のバックアップオプション](/help/forms/using/admin-help/files-back-recover.md#backup-options-when-database-is-used-for-document-storage)を参照）。
 
-AEM Forms アプリケーションデータは、GDS ディレクトリおよび AEM Forms データベースに格納されています。次の表では、データとその格納場所を示します。
+AEM Forms アプリケーションデータは、GDS ディレクトリおよび AEM Forms データベースに格納されています。 次の表では、データとその格納場所を示します。
 
 <table>
  <thead>
@@ -72,15 +72,15 @@ AEM Forms アプリケーションデータは、GDS ディレクトリおよび
 
 ## GDS ディレクトリの設定 {#configuring-the-gds-directory}
 
-GDS ディレクトリの場所は、AEM Forms のインストール時に手動で設定できます。インストール時に場所を指定しないと、次に示すアプリケーションサーバーのインストールディレクトリの下にあるディレクトリがデフォルトの場所になります。
+GDS ディレクトリの場所は、AEM Forms のインストール時に手動で設定できます。 インストール時に場所を指定しないと、次に示すアプリケーションサーバーのインストールディレクトリの下にあるディレクトリがデフォルトの場所になります。
 
-* （JBoss）`[appserver root]/server/[type]/svcnative/DocumentStorage`
+* (JBoss) `[appserver root]/server/[type]/svcnative/DocumentStorage`
 * (WebLogic) `[appserverdomain]/'server'/adobe/DocumentServer/DocumentStorage`
-* （WebSphere）`[appserver root]/installedApps/adobe/'server'/DocumentStorage`
+* (WebSphere) `[appserver root]/installedApps/adobe/'server'/DocumentStorage`
 
 ## GDS のデフォルトの場所の変更 {#change-the-default-gds-location}
 
-AEM Forms のインストールが完了した後、管理コンソールで GDS の場所を変更できます。プロセスを完了するには、データを手動で配置し直します。
+AEM Forms のインストールが完了した後、管理コンソールで GDS の場所を変更できます。 プロセスを完了するには、データを手動で配置し直します。
 
 >[!NOTE]
 >
@@ -95,15 +95,15 @@ AEM Forms のインストールが完了した後、管理コンソールで GDS
 
 ## デプロイメントファイルについて {#about-deployment-files}
 
-AEM Forms は、サービスコンテナおよび Java 2 Platform Enterprise Edition（J2EE）EAR ファイルという 2 種類のデプロイメントファイルで構成されています。EAR ファイルは標準の J2EE アプリケーションバンドルで構成されています。これらのアプリケーションバンドルには AEM Forms のコア機能が含まれています。アプリケーションサーバー固有の EAR ファイルを次に示します。
+AEM Forms は、サービスコンテナおよび Java 2 Platform Enterprise Edition（J2EE）EAR ファイルという 2 種類のデプロイメントファイルで構成されています。 EAR ファイルは標準の J2EE アプリケーションバンドルで構成されています。これらのアプリケーションバンドルには AEM Forms のコア機能が含まれています。 アプリケーションサーバー固有の EAR ファイルを次に示します。
 
 * adobe-core-*[appserver]*.ear
 * adobe-core-*[appserver]*-*[OS]*.ear
 
-AEM Forms の実装では、アセンブリされた複数の EAR ファイルといくつかの補助ファイルを、AEM Forms ソリューションを実行する予定のアプリケーションサーバーにデプロイします。複数のモジュールを設定およびアセンブリした場合は、デプロイ可能なモジュールがデプロイ可能な EAR ファイル内にパッケージ化されます。これらのファイルをデプロイするには、ファイルを *[appserver home]*\server\all\deploy ディレクトリにコピーします。
+AEM Forms の実装では、アセンブリされた複数の EAR ファイルといくつかの補助ファイルを、AEM Forms ソリューションを実行する予定のアプリケーションサーバーにデプロイします。 複数のモジュールを設定およびアセンブリした場合は、デプロイ可能なモジュールがデプロイ可能な EAR ファイル内にパッケージ化されます。 これらのファイルをデプロイするには、ファイルを *[appserver home]*\server\all\deploy ディレクトリにコピーします。
 
-また、モジュールおよび AEM Forms アーカイブファイルは、JAR ファイルにパッケージ化されます。これらのファイルの種類は J2EE ではないので、アプリケーションサーバーにはデプロイされません。代わりに、GDS ディレクトリにコピーされ、それらの場所への参照が AEM Forms データベースに格納されます。このため、GDS ディレクトリをクラスターのすべてのノードで共有する必要があります。すべてのノードが DSC の中央ストレージディレクトリにアクセスできることが必要です。
+また、モジュールおよび AEM Forms アーカイブファイルは、JAR ファイルにパッケージ化されます。 これらのファイルの種類は J2EE ではないので、アプリケーションサーバーにはデプロイされません。 代わりに、GDS ディレクトリにコピーされ、それらの場所への参照が AEM Forms データベースに格納されます。 このため、GDS ディレクトリをクラスターのすべてのノードで共有する必要があります。 すべてのノードが DSC の中央ストレージディレクトリにアクセスできることが必要です。
 
 >[!NOTE]
 >
->サービスコンテナをデプロイする前に、GDS ディレクトリの作成と設定を必ず行ってください（[GDS ディレクトリの設定](global-document-storage-directory.md#configuring-the-gds-directory)を参照）。
+>サービスコンテナをデプロイする前に、GDS ディレクトリの作成と設定を必ず行ってください （[GDS ディレクトリの設定](global-document-storage-directory.md#configuring-the-gds-directory)を参照）。

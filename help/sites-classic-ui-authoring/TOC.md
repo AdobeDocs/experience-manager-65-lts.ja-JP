@@ -3,14 +3,14 @@ cloud: Experience Cloud
 product: Adobe Experience Manager
 sub-product: Adobe Experience Manager 6.5 LTS
 solution-title: Experience Cloud
-user-guide-description: Adobe Experience Manager 6.5 LTS のドキュメントを参照して、その仕組みと機能を確認してください。
+user-guide-description: Adobe Experience Manager 6.5 LTS ドキュメントを使用して、その仕組みと機能について説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM 6.5 LTS
 role: user
 hide: true
-source-git-commit: 96d94c843d1912abd91577b3373e38bd9fd9ed6c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '262'
 ht-degree: 89%
 
 ---
@@ -75,7 +75,7 @@ ht-degree: 89%
    + [Adobe Campaign 6.1 および Adobe Campaign Standard の使用](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md)
    + [Adobe Campaign の使用](/help/sites-classic-ui-authoring/classic-personalization-ac.md)
    + [Adobe Campaign コンポーネント](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
-   + [Adobe Campaign のターゲット設定](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
+   + [Adobe Campaign のターゲティング](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
    + [AEM での Adobe Campaign フォームの作成](/help/sites-classic-ui-authoring/classic-personalization-ac-forms.md)
 + クラシック UI での Assets のオーサリング {#assets}
    + [アセットの操作](/help/sites-classic-ui-authoring/classicui-assets.md)

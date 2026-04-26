@@ -7,16 +7,16 @@ feature: Asset Management,Asset Reports
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: ba54ecc2-a158-462a-8724-f6103b692edc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '190'
 ht-degree: 100%
 
 ---
 
 # 重複アセットの検出の有効化 {#enable-detection-of-duplicate-assets}
 
-[!DNL Adobe Experience Manager Assets] に存在するアセットをアップロードしようとすると、重複項目検出機能によって重複として識別されます。重複項目の検出はデフォルトで無効になっています。この機能を有効にするには、次の手順を実行します。
+[!DNL Adobe Experience Manager Assets] に存在するアセットをアップロードしようとすると、重複項目検出機能によって重複として識別されます。 重複項目の検出はデフォルトで無効になっています。 この機能を有効にするには、次の手順を実行します。
 
 1. `https://[aem_server]:[port]/system/console/configMgr` にアクセスして、[!DNL Experience Manager] web コンソール構成ページを開きます。
 1. サーブレットの **[!UICONTROL Day CQ DAM アセット作成]**&#x200B;の設定を編集します。
@@ -26,7 +26,7 @@ ht-degree: 100%
 
    *サーブレットで「重複項目の検出」オプションを選択します。*
 
-これで、重複項目検出機能が [!DNL Assets] で有効になります。[!DNL Experience Manager] に存在するアセットをアップロードしようとすると、システムが競合をチェックして表示します。`jcr:content/metadata/dam:sha1` に保存されている SHA-1 ハッシュを使用して、アセットが識別されます。つまり、重複アセットはファイル名に関係なく検出されます。
+これで、重複項目検出機能が [!DNL Assets] で有効になります。 [!DNL Experience Manager] に存在するアセットをアップロードしようとすると、システムが競合をチェックして表示します。 `jcr:content/metadata/dam:sha1` に保存されている SHA-1 ハッシュを使用して、アセットが識別されます。つまり、重複アセットはファイル名に関係なく検出されます。
 
 >[!MORELIKETHIS]
 >

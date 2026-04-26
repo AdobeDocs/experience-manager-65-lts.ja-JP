@@ -1,15 +1,15 @@
 ---
 title: インプレースアップグレードの実行
-description: AEM 6.5 LTS のインプレースアップグレードを実行する方法を説明します。
+description: AEM 6.5 LTSのインプレースアップグレードを実行する方法について説明します。
 topic-tags: upgrading
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: 57bf39aa914bddca05d526b46b581579965069d6
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 43%
+source-wordcount: '619'
+ht-degree: 46%
 
 ---
 
@@ -17,27 +17,27 @@ ht-degree: 43%
 
 >[!NOTE]
 >
->ここでは、AEM 6.5 LTS のインプレースアップグレード手順の概要を説明します。 アプリケーションサーバーにデプロイされたインストールがある場合は、[&#x200B; アプリケーションサーバーインストールのアップグレード手順 &#x200B;](/help/sites-deploying/app-server-upgrade.md) を参照してください。
+>このページでは、AEM 6.5 LTSのインプレースアップグレード手順の概要を説明します。 インストールがアプリケーションサーバーにデプロイされている場合は、[ アプリケーションサーバーインストールのアップグレード手順](/help/sites-deploying/app-server-upgrade.md)を参照してください。
 
 ## アップグレード前の手順 {#pre-upgrade-steps}
 
-アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。詳しくは、[コードのアップグレードとカスタマイズ](/help/sites-deploying/upgrading-code-and-customizations.md)および[アップグレード前のメンテナンスタスク](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。また、システムが [AEM 6.5 LTS の要件 &#x200B;](/help/sites-deploying/technical-requirements.md) を満たしていることを確認し、[&#x200B; アップグレード計画に関する考慮事項 &#x200B;](/help/sites-deploying/upgrade-planning.md) と、[Analyzer](/help/sites-deploying/pattern-detector.md) を使用して複雑さを見積もる方法を確認します。
+アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。 詳しくは、[コードのアップグレードとカスタマイズ](/help/sites-deploying/upgrading-code-and-customizations.md)および[アップグレード前のメンテナンスタスク](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。 さらに、お使いのシステムがAEM 6.5 LTS](/help/sites-deploying/technical-requirements.md)の[要件を満たしていることを確認し、[ アップグレード計画に関する考慮事項](/help/sites-deploying/upgrade-planning.md)と、[Analyzer](/help/sites-deploying/pattern-detector.md)による複雑性の見積もり方法を確認してください。
 
 ## 移行の前提条件 {#migration-prerequisites}
 
-* **最低限必要な Java バージョン：** Oracleの Java™ 17/21 がインストールされていることを確認します。
+* **必要なJava バージョンの最小値：** Oracle Java™ 17/21がシステムにインストールされていることを確認します。
 
 ## AEM クイックスタート jar ファイルの準備 {#prep-quickstart-file}
 
-1. 新しいAEM 6.5 LTS jar ファイルをダウンロードします
+1. 新しいAEM 6.5 LTS jar ファイルのダウンロード
 
-1. [正しいアップグレード開始コマンドを確認します](#determining-the-correct-upgrade-start-command)
+1. [適切なアップグレード開始コマンドの決定](#determining-the-correct-upgrade-start-command)
 
-1. インスタンスが実行中である場合は停止します
+1. 実行中のインスタンスを停止します
 
-1. 新しいAEM 6.5 LTS jar を使用して、`crx-quickstart` フォルダーの外部にある古い jar を置き換えます
+1. 新しいAEM 6.5 LTS JARを使用して、`crx-quickstart` フォルダー外の古いJARを置き換えます
 
-1. `sling.properties` ファイル（通常は `crx-quickstart/conf/` に存在）のバックアップを作成してから、削除します
+1. `sling.properties` ファイル （通常は`crx-quickstart/conf/`に存在）のバックアップを取り、それを削除します
 
 1. 次のコマンドを実行して新しいクイックスタート jar を解凍します。
 
@@ -45,9 +45,10 @@ ht-degree: 43%
    java -Xmx4096m -jar aem-quickstart.jar -unpack
    ```
 
-1. カスタムの sling.properties を適用する必要がある場合は、新しいローカル AEM インスタンスを作成し、crx-quickstart/conf ディレクトリから sling.properties ファイルを取得します。 必要なカスタムの変更をこのファイルに適用し、アップグレードするAEM インスタンスの crx-quickstart/conf ディレクトリにコピーします。 カスタムプロパティがない場合、この手順はスキップできます。
+1. カスタム sling.propertiesを適用する必要がある場合は、新しいローカル AEM インスタンスを作成し、crx-quickstart/conf ディレクトリからsling.properties ファイルを取得します。 必要なカスタム変更をこのファイルに適用し、アップグレード中のAEM インスタンスのcrx-quickstart/conf ディレクトリにコピーします。 カスタムプロパティがない場合は、この手順をスキップできます。
 
-<!-- Alexandru: drafting temporarily
+<!--
+Alexandru: drafting temporarily
 
 ## Content Repository Migration {#content-repository-migration}
 
@@ -165,24 +166,24 @@ Where `/path/to/datastore` represents the path to your File Datastore.
 
 1. 以前のバージョンの S3 コネクタに関連する、`crx-quickstart/install` 内の jar を削除します。
 
-1. [https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) <!-- Alexandru: this is a stub link for now --> から 1.60.2 S3 コネクタの最新リリースをダウンロードします。
+1. [https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) <!-- Alexandru: this is a stub link for now -->から1.60.2 S3 コネクタの最新リリースをダウンロードします
 
-1. S3 コネクタ（バージョン 1.60.2）を抽出し、次のように `crx-quickstart/install` の下の次のフォルダーの内容をコピーします。
+1. S3 コネクタ （バージョン 1.60.2）を展開し、`crx-quickstart/install`の下にある次のフォルダーの内容を次のようにコピーします。
 
-   1. `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/1` の下 `crx-quickstart/install/1` コピー
-   1. `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/15` の下 `crx-quickstart/install/15` コピー
+   1. `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/1`を`crx-quickstart/install/1`の下にコピー
+   1. `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/15`を`crx-quickstart/install/15`の下にコピー
 
-次に、「正しいアップグレード開始コマンドの特定 [&#x200B; セクションの情報を使用して確認した新しいコマンドを使用して、AEM インスタンスを開始し &#x200B;](#determining-the-correct-upgrade-start-command) す。
+次に、[正しいアップグレード開始コマンドの決定](#determining-the-correct-upgrade-start-command) セクションの情報を使用して決定された新しいコマンドを使用して、AEM インスタンスを開始します。
 
 ### 適切なアップグレード開始コマンドの確認 {#determining-the-correct-upgrade-start-command}
 
 >[!NOTE]
 >
->Java 8/11 引数の一部のサポートは、Java 17/21 で削除されました。[Oracle Java™ 17 ドキュメント &#x200B;](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html)、[Oracle Java™ 21 ドキュメント &#x200B;](https://docs.oracle.com/en/java/javase/21/docs/specs/man/java.html) および [AEM 6.5 LTS](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations) の Java&amp;trade 引数に関する考慮事項を参照してください。
+>Java 8/11引数の一部のサポートは、Java 17/21で削除されました。AEM 6.5 LTS](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations)の[Oracle Java™ 17 documents](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html)、[Oracle Java™ 21 documents](https://docs.oracle.com/en/java/javase/21/docs/specs/man/java.html)および[Java&amp;trade arguments considerationsを参照してください。
 
-アップグレードを実行するには、jar ファイルを使用してAEMを起動してインスタンスを起動することが重要です。
+アップグレードを実行するには、jar ファイルを使用して AEM を起動し、インスタンスを起動することが重要です。
 
-起動スクリプトから AEM を起動した場合、アップグレードは開始されません。ほとんどの顧客は、起動スクリプトを使用して AEM を起動します。また、起動スクリプトをカスタマイズし、メモリ設定やセキュリティ証明書など、環境設定に関するスイッチを含めています。そのため、次の手順に従って、適切なアップグレードコマンドを確認することをお勧めします。
+起動スクリプトから AEM を起動した場合、アップグレードは開始されません。 ほとんどの顧客は、起動スクリプトを使用して AEM を起動します。また、起動スクリプトをカスタマイズし、メモリ設定やセキュリティ証明書など、環境設定に関するスイッチを含めています。 そのため、次の手順に従って、適切なアップグレードコマンドを確認することをお勧めします。
 
 1. 実行中の AEM インスタンスで、コマンドラインから次のコマンドを実行します。
 
@@ -190,23 +191,23 @@ Where `/path/to/datastore` represents the path to your File Datastore.
    ps -ef | grep java
    ```
 
-1. AEM プロセスを探します。次のように表示されます。
+1. AEM プロセスを探します。 次のように表示されます。
 
    ```shell
    /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.5.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
-1. 既存の jar のパス（この場合は `crx-quickstart/app/aem-quickstart*.jar`）を `crx-quickstart` フォルダーと同じ階層にある新しいAEM 6.5 LTS jar に置き換えて、コマンドを変更します。 例として前述のコマンドを使用すると、コマンドは次のようになります。
+1. 既存のjarへのパス（この場合は`crx-quickstart/app/aem-quickstart*.jar`）を、`crx-quickstart` フォルダーの兄弟である新しいAEM 6.5 LTS jarに置き換えて、コマンドを変更します。 例として前述のコマンドを使用すると、コマンドは次のようになります。
 
    ```shell
    /usr/bin/java -server -Xmx4096m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar <AEM-6.5-LTS.jar> -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
-   これにより、適切なメモリ設定、カスタム実行モードおよびその他の環境パラメーターすべてがアップグレードに適用されます。アップグレードが完了すると、それ以降の起動時には起動スクリプトからインスタンスを起動できます。
+   これにより、適切なメモリ設定、カスタム実行モードおよびその他の環境パラメーターすべてがアップグレードに適用されます。 アップグレードが完了すると、それ以降の起動時には起動スクリプトからインスタンスを起動できます。
 
 ## アップグレードしたコードベースのデプロイ {#deploy-upgraded-codebase}
 
-インプレースアップグレードプロセスが完了したら、更新したコードベースをデプロイする必要があります。ターゲットバージョンの AEM で動作するようにコードベースを更新するための手順については、[コードおよびカスタマイズのアップグレード](/help/sites-deploying/upgrading-code-and-customizations.md)のページを参照してください。
+インプレースアップグレードプロセスが完了したら、更新したコードベースをデプロイする必要があります。 ターゲットバージョンの AEM で動作するようにコードベースを更新するための手順については、[コードおよびカスタマイズのアップグレード](/help/sites-deploying/upgrading-code-and-customizations.md)のページを参照してください。
 
 ## アップグレード後のチェックおよびトラブルシューティングを実行 {#perform-post-upgrade-check-troubleshooting}
 

@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 14264788-a05a-4a8d-b485-33ae1caac094
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '382'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 ## エンドポイントのサービスへの追加 {#add-an-endpoint-to-a-service}
 
-エンドポイントは、サービスのみに追加できます。エンドポイントは単独では存在できず、サービスに関連付ける必要があります。
+エンドポイントは、サービスのみに追加できます。 エンドポイントは単独では存在できず、サービスに関連付ける必要があります。
 
 >[!NOTE]
 >
@@ -37,21 +37,21 @@ ht-degree: 100%
 1. 「エンドポイント」タブにあるリストで、追加するエンドポイントの種類を選択し、「追加」をクリックします。
 1. エンドポイントの種類に応じて、その他のエンドポイント設定を指定します。
 
-[監視フォルダーエンドポイントの設定](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
+   [監視フォルダーエンドポイントの設定](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
 
-[メールエンドポイントの設定](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
+   [メールエンドポイントの設定](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
 
-[タスクマネージャーエンドポイントの設定](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
+   [タスクマネージャーエンドポイントの設定](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
 
-[リモートエンドポイントの設定](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
+   [リモートエンドポイントの設定](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
 
 1. 「追加」をクリックします。
 
 ## エンドポイントの有効化または無効化 {#enable-or-disable-an-endpoint}
 
-デフォルトで、新しいエンドポイントは自動的に有効になります。ただし、エンドポイントを手動で無効にした場合は、有効にしない限りエンドポイントは動作しません。
+デフォルトで、新しいエンドポイントは自動的に有効になります。 ただし、エンドポイントを手動で無効にした場合は、有効にしない限りエンドポイントは動作しません。
 
-サービスに関する問題が発生している場合は、関連するエンドポイントを無効にすると、問題をトラブルシューティングしやすくなります。また、システムの定期保守やサービスのアップグレードを行うときも、エンドポイントを無効にする必要があります。
+サービスに関する問題が発生している場合は、関連するエンドポイントを無効にすると、問題をトラブルシューティングしやすくなります。 また、システムの定期保守やサービスのアップグレードを行うときも、エンドポイントを無効にする必要があります。
 
 1. 管理コンソールで、サービス／アプリケーションおよびサービス／エンドポイントの管理をクリックします。
 1. エンドポイントの管理ページで、有効または無効にするエンドポイントのチェックボックスをオンにして、「有効にする」または「無効にする」をクリックします。
@@ -60,7 +60,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->管理コンソールを使用してエンドポイント設定に加えた変更は、アプリケーションのデザイン時コピーには反映されません。アプリケーションを再デプロイすると、管理コンソールを使用してそのエンドポイントに加えた変更はすべて失われます。
+>管理コンソールを使用してエンドポイント設定に加えた変更は、アプリケーションのデザイン時コピーには反映されません。 アプリケーションを再デプロイすると、管理コンソールを使用してそのエンドポイントに加えた変更はすべて失われます。
 
 1. 管理コンソールで、サービス／アプリケーションおよびサービス／エンドポイントの管理をクリックします。
 1. エンドポイントの管理ページで、変更するエンドポイントをクリックします。
@@ -77,4 +77,4 @@ ht-degree: 100%
 ## エンドポイントの削除 {#remove-an-endpoint}
 
 1. 管理コンソールで、サービス／アプリケーションおよびサービス／エンドポイントの管理をクリックします。
-1. エンドポイントの管理ページで、削除するエンドポイントのチェックボックスをオンにして、「削除」をクリックします。エンドポイントが表示されなくなります。
+1. エンドポイントの管理ページで、削除するエンドポイントのチェックボックスをオンにして、「削除」をクリックします。 エンドポイントが表示されなくなります。

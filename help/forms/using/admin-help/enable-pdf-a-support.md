@@ -1,6 +1,6 @@
 ---
 title: PDF/A サポートの有効化
-description: PDF/A サポートを有効化する方法について説明します。PDF/A 準拠ファイルは、Microsoft Excel、Microsoft PowerPoint および Microsoft Word ファイルから作成できます。
+description: PDF/A サポートを有効化する方法について説明します。 PDF/A 準拠ファイルは、Microsoft Excel、Microsoft PowerPoint および Microsoft Word ファイルから作成できます。
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 6eb93270-bea0-4409-8e80-4d040be41eab
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '120'
+source-wordcount: '122'
 ht-degree: 100%
 
 ---

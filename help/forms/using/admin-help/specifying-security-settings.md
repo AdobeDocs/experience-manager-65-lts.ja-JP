@@ -1,6 +1,6 @@
 ---
 title: セキュリティ設定の指定
-description: XML データファイルを保護するためのセキュリティ設定を指定する方法について説明します。セキュリティ設定機能は、XML 入力内の外部エンティティを制御します。
+description: XML データファイルを保護するためのセキュリティ設定を指定する方法について説明します。 セキュリティ設定機能は、XML 入力内の外部エンティティを制御します。
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 75257aa3-9917-4145-ab8c-88965f01d0f6
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 100%
@@ -24,7 +24,7 @@ ht-degree: 100%
 > 
 > ユーザーが管理者コンソールにアクセスする管理者権限を持っていることを確認します。
 
-Forms で、XML 入力で外部エンティティを解決するかどうかを制御できます。デフォルトでは解決されていますが、この動作を変更して AEM Forms システムのセキュリティを強化することができます。
+Forms で、XML 入力で外部エンティティを解決するかどうかを制御できます。 デフォルトでは解決されていますが、この動作を変更して AEM Forms システムのセキュリティを強化することができます。
 
 **外部エンティティへの参照を含む XML データファイルを処理しないようにする**
 

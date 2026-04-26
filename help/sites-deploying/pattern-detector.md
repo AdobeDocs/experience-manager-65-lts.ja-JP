@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c499432d-6aa4-481f-821d-bd2f9b7a911d
-source-git-commit: 90f1b2ca07bec5a3be6c312a5f048abaa088df16
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '532'
 ht-degree: 95%
 
 ---
@@ -27,13 +27,13 @@ ht-degree: 95%
 
 ## 設定方法 {#how-to-set-up}
 
-パターン検出は、AEM 6.5 のアップグレードをターゲットとした 6.1 から 6.5 までの任意のソース AEM バージョンで機能する [1 つのパッケージ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65)として個別にリリースされます。この機能は、[パッケージマネージャー](/help/sites-administering/package-manager.md)を使用してインストールできます。
+パターン検出は、AEM 6.5 のアップグレードをターゲティングした 6.1 から 6.5 までの任意のソース AEM バージョンで機能する [1 つのパッケージ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65)として個別にリリースされます。 この機能は、[パッケージマネージャー](/help/sites-administering/package-manager.md)を使用してインストールできます。
 
 ## 使用方法 {#how-to-use}
 
 >[!NOTE]
 >
->パターン検出は、ローカル開発インスタンスを含むあらゆる開発で実行できます。ただし、次の目的で使用します。
+>パターン検出は、ローカル開発インスタンスを含むあらゆる開発で実行できます。 ただし、次の目的で使用します。
 >
 >* 検出率を上げる
 >* ビジネスにとって重大なインスタンスの減速を避ける
@@ -44,13 +44,13 @@ ht-degree: 95%
 
 * **Felix Inventory コンソールを使用：**
 
-1. AEM web コンソールに移動します（*https://serveraddress:serverport/system/console/configMgr*）
+1. *https://serveraddress:serverport/system/console/configMgr*&#x200B;を参照して、AEM Web コンソールに移動します
 1. 次の図に示すように、**ステータス - パターン検出**&#x200B;を選択します。
 
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **事後対応テキストベースまたは通常の JSON インターフェイスを使用**
-* **事後対応 JSON Lines インターフェイスを使用し、**&#x200B;各行に個別の JSON ドキュメントを生成します。
+* **事後対応 JSON Lines インターフェイスを使用し、**各行に個別の JSON ドキュメントを生成します。
 
 これらの両方の方法については、以下で詳しく説明します。
 
@@ -65,7 +65,7 @@ ht-degree: 95%
 
 ## プレーンテキストインターフェイスの処理 {#handling-the-plain-text-interface}
 
-出力内の情報は、一連のイベントエントリとして書式設定されます。違反を公開するチャネルと、現在の進行状況を公開するチャネルの 2 つがあります。
+出力内の情報は、一連のイベントエントリとして書式設定されます。 違反を公開するチャネルと、現在の進行状況を公開するチャネルの 2 つがあります。
 
 これらは、次のコマンドを使用して取得できます。
 
@@ -111,7 +111,7 @@ curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-det
     "code": "ECU",
     "type": "extraneous.content.usage",
     "detective": "ContentAccessDetector",
-    "moreInfo": "https://www.adobe.com/go/aem6_ECU_jp"
+    "moreInfo": "https://www.adobe.com/go/aem6_ECU"
   },
   "item": {
     "id": "a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f",
@@ -215,8 +215,8 @@ curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-det
 * Sling リソースタイプとスーパータイプ（検索パスコンテンツオーバーレイを含む）の過剰使用
 * Oak インデックスの定義（互換性）
 * VLT パッケージ（過剰使用）
-* rep:User ノードの互換性（OAuth 設定のコンテキスト内）
+* rep:User ノードの互換性（OAuth設定のコンテキスト）
 
 >[!NOTE]
 >
->パターン検出はアップグレードに関する警告を正確に予測しようとします。ただし、シナリオによっては誤検知が発生する可能性があります。
+>パターン検出はアップグレードに関する警告を正確に予測しようとします。 ただし、シナリオによっては誤検知が発生する可能性があります。

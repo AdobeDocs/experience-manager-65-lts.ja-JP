@@ -1,6 +1,6 @@
 ---
 title: フォーム出力の設定
-description: フォーム出力を設定する方法について説明します。フォーム出力を設定し、この機能を有効にするには、フォームを送信する前にカスタムスクリプトを使用します。
+description: フォーム出力を設定する方法について説明します。 フォーム出力を設定し、この機能を有効にするには、フォームを送信する前にカスタムスクリプトを使用します。
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 2823d38e-f544-408e-9437-3d0fc622dc34
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '257'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 100%
 1. 管理コンソールで、サービス／Forms をクリックします。
 1. 「フォーム出力」の出力タイプのリストで次のいずれかのオプションを選択します。
 
-   **完全な HTML：**&#x200B;完全な HTML タグを含む形（完全な HTML ページ）でフォームをレンダリングします。これがデフォルト値です。
+   **完全な HTML：**&#x200B;完全な HTML タグを含む形（完全な HTML ページ）でフォームをレンダリングします。 これがデフォルト値です。
 
    **Body のみ：** `<BODY>` タグの範囲（完全な HTML ページではない）でフォームを処理します。
 
@@ -35,11 +35,11 @@ ht-degree: 100%
 
 1. 「フォーム出力」のレンダーのリストで次のいずれかのオプションを選択します。
 
-   **クライアント：** Adobe Acrobat または Adobe Reader 内で PDF フォームをレンダリングします。クライアントサイドでレンダリングを行うと AEM Forms のパフォーマンスが向上します。ただし、これは PDFForm 変換にのみ適用されます。
+   **クライアント：** Adobe Acrobat または Adobe Reader 内で PDF フォームをレンダリングします。 クライアントサイドでレンダリングを行うと AEM Forms のパフォーマンスが向上します。ただし、これは PDFForm 変換にのみ適用されます。
 
    **サーバー：**&#x200B;アプリケーションサーバーで PDF フォームをレンダリングします。
 
-   **自動：** XDP ファイルの `dynamicRender` 設定値の示す位置で PDF フォームをレンダリングします。これがデフォルト値です。
+   **自動：** XDP ファイルの `dynamicRender` 設定値の示す位置で PDF フォームをレンダリングします。 これがデフォルト値です。
 
 1. 「保存」をクリックします。
 

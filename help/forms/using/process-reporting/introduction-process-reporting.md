@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 755df7e2-3603-4c0d-ad07-ec6f27de8c64
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '305'
 ht-degree: 96%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 96%
 
 さらに、プロセスレポートには、アドホッククエリを実行し、カスタムレポートビューをプロセスレポートユーザーインターフェイスに統合するためのインターフェイスが用意されています。
 
-サポートされているブラウザーの一覧については、[AEM Forms サポートプラットフォームを参照してください &#x200B;](/help/sites-deploying/technical-requirements.md)
+サポートされているブラウザーの一覧については、[AEM Forms サポート対象プラットフォーム ](/help/sites-deploying/technical-requirements.md)を参照してください
 
 プロセスレポートは、以下のモジュールにもとづいて構築されています。
 
@@ -62,7 +62,7 @@ ID、期間、開始日と終了日、プロセス開始者などで、プロセ
 
 ![file-management](assets/file-management.png)
 
-AEM Forms サーバーは、多数のプロセスを並行して実行します。これらのプロセスは、ある状態から別の状態への移行を続けます。Forms のデータを一定の間隔でプロセスレポートリポジトリーに公開すると、プロセスレポートには、AEM Forms で実行中のプロセスに関する移行情報が保持されます。
+AEM Forms サーバーは、多数のプロセスを並行して実行します。 これらのプロセスは、ある状態から別の状態への移行を続けます。 Forms のデータを一定の間隔でプロセスレポートリポジトリーに公開すると、プロセスレポートには、AEM Forms で実行中のプロセスに関する移行情報が保持されます。
 
 ### アクセス制御 {#access-control-br}
 

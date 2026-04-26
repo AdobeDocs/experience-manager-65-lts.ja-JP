@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 3bd5ef75-7e35-4398-a7a3-0178a9c06db0
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '390'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->カスタムの native2pdfconfig.xml ファイルを読み込むことによって PDF Generator のタイムアウト設定を変更することはできません。このファイルのタイムアウト設定は情報提供のみを目的としており、PDF Generator の現在の設定が表示されます。タイムアウト設定を変更するには、[AEM forms のインストールおよびデプロイ](https://www.adobe.com/go/learn_aemforms_installJBoss_63_jp)の「PDF Generator のパフォーマンスパラメーターの設定」を参照してください。
+>カスタムの native2pdfconfig.xml ファイルを読み込むことによって PDF Generator のタイムアウト設定を変更することはできません。 このファイルのタイムアウト設定は情報提供のみを目的としており、PDF Generator の現在の設定が表示されます。 タイムアウト設定を変更するには、[AEM forms のインストールおよびデプロイ](https://www.adobe.com/go/learn_aemforms_installJBoss_63_jp)の「PDF Generator のパフォーマンスパラメーターの設定」を参照してください。
 
 ## 現在の設定ファイルの書き出し {#export-your-current-configuration-file}
 
@@ -54,7 +54,7 @@ ht-degree: 100%
 
 ## AutoCAD ファイル内のすべてのレイヤーの変換 {#convert-all-layers-within-autocad-files}
 
-デフォルトで、PDF Generator は、AutoCAD ファイル内のすべてのレイヤーではなく、デフォルトのレイヤーのみを PDF に変換します。すべてのレイヤーを変換するには、以下の手順に従います。
+デフォルトで、PDF Generator は、AutoCAD ファイル内のすべてのレイヤーではなく、デフォルトのレイヤーのみを PDF に変換します。 すべてのレイヤーを変換するには、以下の手順に従います。
 
 1. 管理コンソールで、サービス／PDF Generator／設定ファイル／設定を書き出しをクリックします。
 1. 「設定全体をダウンロード」を選択して「ダウンロード」をクリックします。

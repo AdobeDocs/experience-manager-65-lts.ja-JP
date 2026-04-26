@@ -10,25 +10,26 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: ebc34847-dc3d-41ed-b0d6-f004c3debcd9
-source-git-commit: 57bf39aa914bddca05d526b46b581579965069d6
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 28%
+source-wordcount: '244'
+ht-degree: 27%
 
 ---
 
-# Adobe Experience Manager（AEM） 6.5 LTS へのアップグレード {#upgrading-to-aem}
+# Adobe Experience Manager（AEM） 6.5 LTSへのアップグレード {#upgrading-to-aem}
 
 >[!NOTE]
->AEM 6.5 LTS へのアップグレードは、サポート対象のすべての 6.5 サービスパックで利用できます。
+>AEM 6.5 LTSへのアップグレードは、サポートされているすべての6.5 サービスパックで利用できます。
 
 >[!NOTE]
 >
->技術的には、AEM 6.5 LTS からAEM 6.5 LTS サービスパックへのアップグレードプロセスは、シームレスな [&#x200B; インプレースアップグレード &#x200B;](/help/sites-deploying/in-place-upgrade.md) となるように設計されています。 このプロセスは、リリースノートに特に記載されていない限り、通常、顧客によるコードの変更を必要としません。
+>技術的な観点から、AEM 6.5 LTSからAEM 6.5 LTS サービスパックへのアップグレードプロセスは、[のシームレスなインプレースアップグレード ](/help/sites-deploying/in-place-upgrade.md)となるように設計されています。 このプロセスでは、通常、リリースノートに明記されていない限り、顧客からのコードの変更は必要ありません。
 
-このセクションでは、AEM インストールからAEM 6.5 LTS へのアップグレードについて説明します。
+この節では、AEM インストールをAEM 6.5 LTSにアップグレードする方法について説明します。
 
-<!-- Alexandru: drafting for now 
+<!--
+Alexandru: drafting for now 
 
 * [Planning Your Upgrade](/help/sites-deploying/upgrade-planning.md)
 * [Assessing the Upgrade Complexity with Pattern Detector](/help/sites-deploying/pattern-detector.md)
@@ -55,6 +56,6 @@ ht-degree: 28%
 
 ### 更新 {#updates}
 
-Foundation layer は、Apache Sling、Felix、Jackrabbit Oakの最新のオープンソースバンドルを組み込んで、Java 17 および Java 21 をサポートするようになりました。 さらに、AEM 6.5 LTS uber-jar のパッケージが変更されました。 さらに、AEM 6.5 LTS からは、従来の機能がいくつか削除されています。 詳細については、「[&#x200B; リリース ノート &#x200B;](/help/release-notes/release-notes.md#whats-new-what-s-new)」および [&#x200B; アップグレード後にアンインストールされる廃止されたバンドルの一覧 &#x200B;](/help/sites-deploying/obsolete-bundles.md) を参照してください。
+基盤レイヤーでJava 17とJava 21がサポートされるようになり、Apache Sling、Felix、Jackrabbit Oakの最新のオープンソースバンドルが組み込まれています。 さらに、AEM 6.5 LTS uber-jarのパッケージが変更されました。 さらに、AEM 6.5 LTSから一部のレガシー機能が削除されました。 詳しくは、[ リリースノート ](/help/release-notes/release-notes.md#whats-new-what-s-new)および[ アップグレード後にアンインストールされた古いバンドルの一覧](/help/sites-deploying/obsolete-bundles.md)を参照してください
 
-AEM 6.5 LTS は、機能の後方互換性に重点を置いており、アナライザーツールが付属しています。 開始時の複雑性の評価 [&#x200B; アップグレードの計画 &#x200B;](/help/sites-deploying/aem-analyzer.md) については、[AEM Analyzer を使用したアップグレードの複雑性の評価 &#x200B;](/help/sites-deploying/upgrade-planning.md) を参照してください。
+AEM 6.5 LTSは、機能の下位互換性に重点を置いており、アナライザーツールが付属しています。 アップグレードの計画[を開始する際の複雑性の評価については、[AEM Analyzerを使用したアップグレードの複雑性の評価](/help/sites-deploying/aem-analyzer.md)を参照してください](/help/sites-deploying/upgrade-planning.md)。

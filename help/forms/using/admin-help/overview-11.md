@@ -11,16 +11,16 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f187d4e4-7fe6-4f58-a2df-9d415dcff4aa
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '299'
 ht-degree: 100%
 
 ---
 
 # ヘルスモニターの概要 {#overview-of-health-monitor}
 
-ヘルスモニターは、サーバー情報、メモリ使用量、プロセッサー使用量など、AEM Forms システムに関する重要な情報を提供します。また、キュー内の作業項目やジョブの数、そのステータスなど、ワークマネージャーの統計情報も入手できます。ヘルスモニターを使用して次のタスクを実行できます。
+ヘルスモニターは、サーバー情報、メモリ使用量、プロセッサー使用量など、AEM Forms システムに関する重要な情報を提供します。 また、キュー内の作業項目やジョブの数、そのステータスなど、ワークマネージャーの統計情報も入手できます。 ヘルスモニターを使用して次のタスクを実行できます。
 
 * システムが正常に稼動していることの確認
 * システムでの問題発生時の診断に役立つ情報の表示
@@ -29,11 +29,11 @@ ht-degree: 100%
 
 管理コンソールのヘルスモニターページには、次の 3 つのタブがあります。
 
-* 「システム」タブには、リソースモニタリングチャートおよび Forms サーバー（またはクラスター環境のノード）に関する情報が表示されます。（[システム情報の表示](/help/forms/using/admin-help/view-system-information.md#view-system-information)を参照。）
-* 「ワークマネージャー」タブには、ワークマネージャーキュー内の作業項目の数など、ワークマネージャーに関連するデータが表示されます。この情報は様々な条件に基づいてフィルタリングできます。また、操作ツールを使用して作業項目を個別に管理することもできます。（[ワークマネージャーに関連する統計情報の表示](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager)を参照。）
-* 「ジョブクリアスケジューラー」タブでは、ジョブマネージャーのデータベースから古いレコードを削除できます。（[ジョブマネージャーのデータベースからのレコードの削除](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database)を参照。）
+* 「システム」タブには、リソースモニタリングチャートおよび Forms サーバー（またはクラスター環境のノード）に関する情報が表示されます。 （[システム情報の表示](/help/forms/using/admin-help/view-system-information.md#view-system-information)を参照。）
+* 「ワークマネージャー」タブには、ワークマネージャーキュー内の作業項目の数など、ワークマネージャーに関連するデータが表示されます。 この情報は様々な条件に基づいてフィルタリングできます。また、操作ツールを使用して作業項目を個別に管理することもできます。 （[ワークマネージャーに関連する統計情報の表示](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager)を参照。）
+* 「ジョブクリアスケジューラー」タブでは、ジョブマネージャーのデータベースから古いレコードを削除できます。 （[ジョブマネージャーのデータベースからのレコードの削除](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database)を参照。）
 
-ヘルスモニター web ページには、Gemfire API によって集められた統計情報が表示されます。この API ではクラスター内のすべてのノードが自動的に検出されます。また、プロキシサーバーやロードバランサーを経由して統計情報を収集するときに発生する、セキュリティの問題を解決することもできます。Java オプションを利用してヘルスモニターを微調整できるので、AEM Forms 環境のパフォーマンスへの影響を抑えることができます。（[ヘルスモニターのパフォーマンスの最適なチューニング](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md#fine-tuning-health-monitor-performance)を参照。）
+ヘルスモニター web ページには、Gemfire API によって集められた統計情報が表示されます。 この API ではクラスター内のすべてのノードが自動的に検出されます。 また、プロキシサーバーやロードバランサーを経由して統計情報を収集するときに発生する、セキュリティの問題を解決することもできます。 Java オプションを利用してヘルスモニターを微調整できるので、AEM Forms 環境のパフォーマンスへの影響を抑えることができます。 （[ヘルスモニターのパフォーマンスの最適なチューニング](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md#fine-tuning-health-monitor-performance)を参照。）
 
 **ヘルスモニターへのアクセス**
 

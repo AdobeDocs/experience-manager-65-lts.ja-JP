@@ -11,41 +11,41 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 46b3ac33-9c02-4c53-91d5-44ba49ab5c36
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '909'
 ht-degree: 100%
 
 ---
 
 # マルチスレッドファイル変換の有効化 {#enabling-multi-threaded-file-conversions}
 
-PDF Generator では、特定の種類のファイルに対して、マルチスレッドファイル変換を有効にすることができます。マルチスレッドファイル変換では、同時に複数の変換を実行できるので、PDF Generator のパフォーマンスが向上します。
+PDF Generator では、特定の種類のファイルに対して、マルチスレッドファイル変換を有効にすることができます。 マルチスレッドファイル変換では、同時に複数の変換を実行できるので、PDF Generator のパフォーマンスが向上します。
 
 ## OpenOffice、Word および PowerPoint ドキュメントでのマルチスレッドファイル変換の有効化 {#enabling-multi-threaded-file-conversions-for-openoffice-word-and-powerpoint-documents}
 
-PDF Generator は、デフォルトでは一度に 1 つの OpenOffice、Microsoft® Word または PowerPoint ドキュメントのみを変換できます。マルチスレッド変換を有効にすると、PDF Generator は複数のドキュメントを同時に変換できます。PDF Generator から OpenOffice または PDFMaker の複数のインスタンスが起動します（これらのインスタンスは Word 変換および PowerPoint 変換に使用されます）。
+PDF Generator は、デフォルトでは一度に 1 つの OpenOffice、Microsoft® Word または PowerPoint ドキュメントのみを変換できます。 マルチスレッド変換を有効にすると、PDF Generator は複数のドキュメントを同時に変換できます。 PDF Generator から OpenOffice または PDFMaker の複数のインスタンスが起動します（これらのインスタンスは Word 変換および PowerPoint 変換に使用されます）。
 
 >[!NOTE]
 >
->マルチスレッドファイル変換は、Microsoft® Word 2003 および PowerPoint 2003 ではサポートされていません。マルチスレッドファイル変換を有効にするには、Microsoft® Word 2007 および PowerPoint 2007 か、Microsoft® Word 2010 および PowerPoint 2010 にアップグレードします。
+>マルチスレッドファイル変換は、Microsoft® Word 2003 および PowerPoint 2003 ではサポートされていません。 マルチスレッドファイル変換を有効にするには、Microsoft® Word 2007 および PowerPoint 2007 か、Microsoft® Word 2010 および PowerPoint 2010 にアップグレードします。
 
 >[!NOTE]
 >
 >マルチスレッドファイル変換は、Microsoft® Excel、Microsoft® Visio、Microsoft® Project、Microsoft® Publisher ではサポートされていません。
 
-OpenOffice または PDFMaker の各インスタンスは、個別のユーザーアカウントを使用して起動されます。追加する各ユーザーアカウントは、Forms サーバーコンピューター上での管理者権限を持つ有効なユーザーである必要があります。クラスター環境では、同じユーザーセットが、クラスターのすべてのノードで有効である必要があります。
+OpenOffice または PDFMaker の各インスタンスは、個別のユーザーアカウントを使用して起動されます。 追加する各ユーザーアカウントは、Forms サーバーコンピューター上での管理者権限を持つ有効なユーザーである必要があります。 クラスター環境では、同じユーザーセットが、クラスターのすべてのノードで有効である必要があります。
 
-管理コンソールのユーザーアカウントページで、マルチスレッドファイル変換に使用するユーザーアカウントを指定できます。アカウントの追加や削除をしたり、アカウントのパスワードを変更したりすることができます。Windows Server 2003 または Windows Server 2008 で PDF Generator を実行している場合は、管理者権限を持つユーザーアカウントを 3 つ以上追加します。
+管理コンソールのユーザーアカウントページで、マルチスレッドファイル変換に使用するユーザーアカウントを指定できます。 アカウントの追加や削除をしたり、アカウントのパスワードを変更したりすることができます。 Windows Server 2003 または Windows Server 2008 で PDF Generator を実行している場合は、管理者権限を持つユーザーアカウントを 3 つ以上追加します。
 
 Windows Server 2003 または 2008 での OpenOffice、Microsoft® Word または Microsoft® PowerPoint のユーザー、あるいは Linux® または Sun™ Solaris™ での OpenOffice のユーザーを追加する場合、すべてのユーザーに対して最初に表示されるアクティベート用のダイアログを閉じます。
 
 ### プロセスレベルトークンの置き換え権限を追加 {#add-the-right-to-replace-the-process-level-token}
 
-Windows オペレーティングシステムでは、PDF 変換に使用される管理者ユーザーアカウント（PDFG ユーザー）に、プロセスレベルトークンの置き換え権限が必要です。この権限は、グループポリシーエディターを使用して追加できます。
+Windows オペレーティングシステムでは、PDF 変換に使用される管理者ユーザーアカウント（PDFG ユーザー）に、プロセスレベルトークンの置き換え権限が必要です。 この権限は、グループポリシーエディターを使用して追加できます。
 
 1. Windows のスタートメニューで「ファイル名を指定して実行」をクリックし、「gpedit.msc」と入力します。
-1. ローカルコンピューターポリシー／コンピューターの構成／Windows の設定／セキュリティの設定／ローカルポリシー／ユーザー権利の割り当てをクリックします。*プロセスレベルトークンの置き換え*&#x200B;ポリシーを編集し、管理者グループが含まれるようにします。
+1. ローカルコンピューターポリシー／コンピューターの構成／Windows の設定／セキュリティの設定／ローカルポリシー／ユーザー権利の割り当てをクリックします。 *プロセスレベルトークンの置き換え*&#x200B;ポリシーを編集し、管理者グループが含まれるようにします。
 1. 「プロセスレベルトークンの置き換え」エントリにユーザーを追加します。
 
 ### Windows Server 2008 での OpenOffice、Microsoft® Word および Microsoft® PowerPoint に必要な追加設定 {#additional-configuration-required-for-openoffice-microsoft-word-and-microsoft-powerpoint-on-windows-server-2008}
@@ -58,9 +58,9 @@ Windows Server 2008 で OpenOffice、Microsoft® Word または Microsoft® Powe
 
 ### Linux® または Solaris™ での OpenOffice に必要な追加設定 {#additional-configuration-required-for-openoffice-on-linux-or-solaris}
 
-1. ユーザーアカウントを追加します（[ユーザーアカウントを追加](enabling-multi-threaded-file-conversions.md#add-a-user-account)を参照）。
-1. 次に、/etc/sudoers ファイルを変更する必要があります。このファイルのデフォルトの権限は 440 です。このファイルの権限を書き込み可能に変更します。
-1. /etc/sudoers ファイルに、追加のユーザー（Forms サーバーを実行する管理者以外）のエントリを追加します。例えば、lcadm というユーザー名と myhost というサーバー名で AEM Forms を実行していて、user1 および user2 という別のユーザーとして実行する場合は、/etc/sudoers に次のエントリを追加します。
+1. ユーザーアカウントを追加します （[ユーザーアカウントを追加](enabling-multi-threaded-file-conversions.md#add-a-user-account)を参照）。
+1. 次に、/etc/sudoers ファイルを変更する必要があります。 このファイルのデフォルトの権限は 440 です。 このファイルの権限を書き込み可能に変更します。
+1. /etc/sudoers ファイルに、追加のユーザー（Forms サーバーを実行する管理者以外）のエントリを追加します。 例えば、lcadm というユーザー名と myhost というサーバー名で AEM Forms を実行していて、user1 および user2 という別のユーザーとして実行する場合は、/etc/sudoers に次のエントリを追加します。
 
    ```shell
     lcadm myhost=(user1) NOPASSWD: ALL
@@ -71,7 +71,7 @@ Windows Server 2008 で OpenOffice、Microsoft® Word または Microsoft® Powe
 
    >[!NOTE]
    >
-   >必ずシステムユーザーと PDFG ユーザーの役割を「user1」と「user2」に割り当ててください。PDFG の役割をユーザーに割り当てるには、[ユーザーアカウントを追加](enabling-multi-threaded-file-conversions.md#add-a-user-account)を参照してください。
+   >必ずシステムユーザーと PDFG ユーザーの役割を「user1」と「user2」に割り当ててください。 PDFG の役割をユーザーに割り当てるには、[ユーザーアカウントを追加](enabling-multi-threaded-file-conversions.md#add-a-user-account)を参照してください。
 
 1. また、/etc/sudoers ファイルで次の行を見つけて、行の先頭にシャープ記号（#）を追加してコメントアウトします。
 
@@ -82,7 +82,7 @@ Windows Server 2008 で OpenOffice、Microsoft® Word または Microsoft® Powe
    これで、Linux® ユーザーを追加できるようになります。
 
 1. /etc/sudoers ファイルの権限を 440 に戻します。
-1. [ユーザーアカウントを追加](enabling-multi-threaded-file-conversions.md#add-a-user-account)で追加したすべてのユーザーが Forms サーバーに接続できるようにします。例えば、user1 というローカルユーザーに、Forms サーバーに接続する権限を許可するには、次のコマンドを使用します。
+1. [ユーザーアカウントを追加](enabling-multi-threaded-file-conversions.md#add-a-user-account)で追加したすべてのユーザーが Forms サーバーに接続できるようにします。 例えば、user1 というローカルユーザーに、Forms サーバーに接続する権限を許可するには、次のコマンドを使用します。
 
    `xhost +local:user1@`
 
@@ -92,7 +92,7 @@ Windows Server 2008 で OpenOffice、Microsoft® Word または Microsoft® Powe
 
 >[!NOTE]
 >
->OpenOffice は、すべての PDFG ユーザーがアクセスできるディレクトリの場所にインストールする必要があります。これを検証するには、PDFG ユーザーとしてログインし、問題なく OpenOffice を起動できるかどうかを確認します。
+>OpenOffice は、すべての PDFG ユーザーがアクセスできるディレクトリの場所にインストールする必要があります。 これを検証するには、PDFG ユーザーとしてログインし、問題なく OpenOffice を起動できるかどうかを確認します。
 
 ### ユーザーアカウントを追加 {#add-a-user-account}
 
@@ -101,7 +101,7 @@ Windows Server 2008 で OpenOffice、Microsoft® Word または Microsoft® Powe
 > ユーザーが管理者コンソールにアクセスする管理者権限を持っていることを確認します。
 
 1. 管理コンソールで、サービス／PDF Generator／ユーザーアカウントをクリックします。
-1. 「追加」をクリックし、Forms サーバーでの管理者権限を持つユーザーのユーザー名とパスワードを入力します。OpenOffice のユーザーを設定する場合は、最初の OpenOffice アクティベーションダイアログを閉じます。
+1. 「追加」をクリックし、Forms サーバーでの管理者権限を持つユーザーのユーザー名とパスワードを入力します。 OpenOffice のユーザーを設定する場合は、最初の OpenOffice アクティベーションダイアログを閉じます。
 
    >[!NOTE]
    >
@@ -119,4 +119,4 @@ Windows Server 2008 で OpenOffice、Microsoft® Word または Microsoft® Powe
 ### アカウントのパスワードを変更 {#change-the-password-for-an-account}
 
 1. 管理コンソールで、サービス／PDF Generator／ユーザーアカウントをクリックします。
-1. ユーザー名をクリックし、新しいパスワードを入力して確定します。このパスワードは、ユーザーのシステムパスワードと一致させる必要があります。
+1. ユーザー名をクリックし、新しいパスワードを入力して確定します。 このパスワードは、ユーザーのシステムパスワードと一致させる必要があります。

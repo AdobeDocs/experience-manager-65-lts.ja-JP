@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 1ac45713-4eca-4def-a030-c7bc3fcdf4c7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 91%
+source-wordcount: '434'
+ht-degree: 79%
 
 ---
 
@@ -22,27 +22,27 @@ ht-degree: 91%
 
 Application Manager Client では、次の Java™ API クイックスタート（SOAP）を使用できます。
 
-[クイックスタート（SOAP モード）：Java を使用したアプリケーションバージョンの作成](#quick-start-soap-mode-creating-application-version-using-the-java-api)
+[クイックスタート（SOAP モード）：Java API を使用したアプリケーションバージョンの作成](#quick-start-soap-mode-creating-application-version-using-the-java-api)
 
-[クイックスタート（SOAP モード）：Java を使用したアプリケーションのエクスポート](#quick-start-soap-mode-exporting-applications-using-the-java-api)
+[クイックスタート（SOAP モード）:Java™ APIを使用したアプリケーションのエクスポート](#quick-start-soap-mode-exporting-applications-using-the-java-api)
 
-[クイックスタート（SOAP モード）：Java を使用したアプリケーションのインポート](#quick-start-soap-mode-importing-applications-using-the-java-api)
+[クイックスタート（SOAP モード）:Java™ APIを使用したアプリケーションのインポート](#quick-start-soap-mode-importing-applications-using-the-java-api)
 
-[クイックスタート（SOAP モード）：Java を使用した AEM Forms アプリケーションの取得](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
+[クイックスタート（SOAP モード）:Java™ APIを使用したAEM Forms アプリケーションの取得](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
 
-[クイックスタート（SOAP モード）：Java を使用したアプリケーションの取得](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
+[クイックスタート（SOAP モード）：Java™ API を使用したアプリケーションの取得](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
 
-[クイックスタート（SOAP モード）：Java を使用したアプリケーションのステータスの取得](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
+[クイックスタート（SOAP モード）：Java™ API を使用したアプリケーションのステータスの取得](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
 
-[クイックスタート（SOAP モード）](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
+[クイックスタート（SOAP モード） :Previewing:Java™ APIを使用したAEM Forms以降のアプリケーションアーカイブ](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
 
-[クイックスタート（SOAP モード）](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
+[Java™ APIを使用したAEM Forms アプリケーション アーカイブのクイックスタート（SOAP モード） :Deleting](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
 AEM Forms の操作は、AEM Forms で厳密に型指定された API を使用して実行できます。接続モードは、SOAP に設定する必要があります。
 
 >[!NOTE]
 >
->AEM Forms によるプログラミングにあるクイックスタートは、JBoss と Windows オペレーティングシステムにデプロイされる Forms Server に基づいています。UNIX などの別のオペレーティングシステムを使用している場合は、Windows 固有のパスを該当するオペレーティングシステムでサポートされるパスに置き換える必要があります。同様に、別の J2EE アプリケーションサーバーを使用している場合は、有効な接続プロパティを指定する必要があります[接続プロパティの設定](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)を参照してください。
+>AEM Forms によるプログラミングにあるクイックスタートは、JBoss と Windows オペレーティングシステムにデプロイされる Forms Server に基づいています。 UNIX などの別のオペレーティングシステムを使用している場合は、Windows 固有のパスを該当するオペレーティングシステムでサポートされるパスに置き換える必要があります。 同様に、別の J2EE アプリケーションサーバーを使用している場合は、有効な接続プロパティを指定する必要があります （[接続プロパティの設定](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)を参照）。
 
 ## クイックスタート（SOAP モード）：Java API を使用したアプリケーションバージョンの作成 {#quick-start-soap-mode-creating-application-version-using-the-java-api}
 
@@ -252,7 +252,7 @@ public class ExportLCA_SOAP {
 
 >[!NOTE]
 >
->Java™ API importApplication() は、同じ名前の既存のアプリケーションをより新しいアプリケーションに置き換えます。既存のアプリケーションを更新するには、API updateApplication() の代わりに API importApplication() を使用します。
+>Java™ API importApplication() は、同じ名前の既存のアプリケーションをより新しいアプリケーションに置き換えます。 既存のアプリケーションを更新するには、API updateApplication() の代わりに API importApplication() を使用します。
 
 ```java
 /*
@@ -644,7 +644,7 @@ public class GetApplicationStatus_SOAP {
 }
 ```
 
-## クイックスタート（SOAP モード） :PreviewingJava™ API を使用した LiveCycle ES2 および以降のアプリケーションアーカイブ {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
+## Java™ APIを使用したLiveCycle ES2以降のアプリケーションアーカイブのクイックスタート（SOAP モード） :Previewing {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
 
 次の Java™ コードの例は、Java™ API を使用した AEM Forms および以降のアプリケーションアーカイブをプレビューする場合に使用します。
 
@@ -723,7 +723,7 @@ public class PreviewLCA_SOAP {
 }
 ```
 
-## クイックスタート（SOAP モード） :DeletingJava™ API を使用したアプリケーションアーカイブ {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}
+## Java™ APIを使用したアプリケーション アーカイブのクイックスタート（SOAP モード） :Deleting {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}
 
 次の Java™ コードの例は、アプリケーションアーカイブの削除を示しています。
 

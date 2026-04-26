@@ -1,5 +1,5 @@
 ---
-title: 'カスタム検索フォームのアップグレード '
+title: カスタム検索フォームのアップグレード
 description: この記事では、カスタム検索フォームを機能させるために、アップグレード後に必要となる調整について説明します。
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
@@ -7,16 +7,16 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 9df608f8-cdd0-4820-aab1-eab9fd70f961
-source-git-commit: 547d7866346fb148cb66f546d8a2e1141f69f563
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '1796'
 ht-degree: 99%
 
 ---
 
-# カスタム検索フォームのアップグレード {#upgrading-custom-search-forms}
+# カスタム検索フォームのアップグレード{#upgrading-custom-search-forms}
 
-AEM 6.2 では、カスタマイズされた検索フォームのリポジトリ内の保存場所が変更されました。アップグレードすると、次 6.1 の場所から移動します：
+AEM 6.2 では、カスタマイズされた検索フォームのリポジトリ内の保存場所が変更されました。 アップグレードすると、次 6.1 の場所から移動します：
 
 * /apps/cq/gui/content/facets
 
@@ -32,18 +32,18 @@ AEM 6.2 では、カスタマイズされた検索フォームのリポジトリ
 
 ## resourceType プロパティの変更 {#changing-the-resourcetype-property}
 
-特に指定のない限り、アップグレード後に実行する必要がある変更の大部分では、設定済みのカスタム検索フォームの `sling:resourceType` プロパティを変更する必要があります。この変更は、プロパティがレンダリングスクリプトの正しい場所を指すようにするうえで必要です。
+特に指定のない限り、アップグレード後に実行する必要がある変更の大部分では、設定済みのカスタム検索フォームの `sling:resourceType` プロパティを変更する必要があります。 この変更は、プロパティがレンダリングスクリプトの正しい場所を指すようにするうえで必要です。
 
 このプロパティを変更するには、次の手順を実行します。
 
 1. `https://server:port/crx/de/index.jsp` に移動して CRXDE Lite を開きます
 1. 以下の[カスタム検索フォーム](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms)のリストに指定されているとおり、変更の必要があるノードの場所を参照します。
-1. ノードをクリックします。右側のプロパティパネルで、をクリックして **sling:resourceType** プロパティを変更します。
+1. ノードをクリックします。 右側のプロパティパネルで、**sling:resourceType** プロパティをクリックして変更します。
 1. 最後に、「**すべて保存**」ボタンをクリックして、変更を保存します。
 
 ## カスタム検索フォームのリスト {#list-of-custom-search-forms}
 
-すべてのカスタム検索フォームと、アップグレード後に必要な変更点のリストを以下に示します。これらは、 `/conf/global/settings/cq/search/facets/sites/items` の名前を指しています。
+すべてのカスタム検索フォームと、アップグレード後に必要な変更点のリストを以下に示します。 これらは、 `/conf/global/settings/cq/search/facets/sites/items` の名前を指しています。
 
 ### 「fulltext」というノード名を持つフルテキストの述語 {#fulltext-predicate-with-node-name-fulltext}
 
@@ -64,7 +64,7 @@ AEM 6.2 では、カスタマイズされた検索フォームのリポジトリ
  </tbody>
 </table>
 
-AEM 6.1 では、標準のフルテキストの述語は検索フォームの一部でした。6.2 では、フルテキストフィールドが OmniSearch で置き換えられました。この述語はプログラムによってスキップされ、削除可能です。
+AEM 6.1 では、標準のフルテキストの述語は検索フォームの一部でした。 6.2 では、フルテキストフィールドが OmniSearch で置き換えられました。 この述語はプログラムによってスキップされ、削除可能です。
 
 **アクション：** ノードを完全に削除します。
 
@@ -95,7 +95,7 @@ AEM 6.1 では、標準のフルテキストの述語は検索フォームの一
  <tbody>
   <tr>
    <td>6.1 のデフォルト検索フォームのノード<br /> <br /> </td>
-   <td>path</td>
+   <td>パス</td>
   </tr>
   <tr>
    <td><p>6.1 のリソースタイプ</p> </td>
@@ -165,7 +165,7 @@ AEM 6.1 では、標準のフルテキストの述語は検索フォームの一
    * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
    * コピー先：`/conf/global/settings/cq/search/facets/sites/jcr:content/items`
 
-* `analyticspredicate` ノードの `listOrder` プロパティが「**8**」に設定されていることを確認します。この設定は、競合を避けるために必要です。
+* `analyticspredicate` ノードの `listOrder` プロパティが「**8**」に設定されていることを確認します。 この設定は、競合を避けるために必要です。
 
 ### 日付範囲の述語 {#date-range-predicates}
 
@@ -194,7 +194,7 @@ AEM 6.1 では、標準のフルテキストの述語は検索フォームの一
  <tbody>
   <tr>
    <td>6.1 のデフォルトの検索フォームのノード<br /> <br /> </td>
-   <td>type</td>
+   <td>タイプ</td>
   </tr>
   <tr>
    <td><p>6.1 のリソースタイプ</p> </td>
@@ -371,7 +371,7 @@ AEM 6.1 では、標準のフルテキストの述語は検索フォームの一
 | 6.1 のリソースタイプ | dam/gui/components/admin/customsearch/searchpredicates/fulltextpredicate |
 | 6.2 のリソースタイプ | n/a |
 
-6.1 では、標準のフルテキストの述語は検索フォームの一部でした。6.2 では、フルテキストフィールドが OmniSearch で置き換えられました。この述語はプログラムによってスキップされ、削除可能です。
+6.1 では、標準のフルテキストの述語は検索フォームの一部でした。 6.2 では、フルテキストフィールドが OmniSearch で置き換えられました。 この述語はプログラムによってスキップされ、削除可能です。
 
 **アクション：**&#x200B;上述のノードを削除します。
 
@@ -433,7 +433,7 @@ AEM 6.1 では、標準のフルテキストの述語は検索フォームの一
 | 6.1 のリソースタイプ | dam/gui/components/admin/customsearch/searchpredicates/optionspredicate |
 | 6.2 のリソースタイプ | dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate |
 
-**アクション：** `resourceType` プロパティを調整します（上記の 6.2 の場所のように「**/coral**」を付加します）。
+**アクション：** `resourceType` プロパティを変更します（上記の 6.2 の場所のように「**/coral**」を付加します）。
 
 ### 有効期限ステータスの述語 {#expiry-status-predicates}
 
@@ -451,7 +451,7 @@ AEM 6.1 では、標準のフルテキストの述語は検索フォームの一
 | 6.1 のリソースタイプ | dam/gui/components/admin/customsearch/searchpredicates/optionspredicate |
 | 6.2 のリソースタイプ | dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate |
 
-**アクション：** `resourceType` プロパティを調整します（上記の 6.2 の場所のように「**/coral**」を付加します）。
+**アクション：** `resourceType` プロパティを変更します（上記の 6.2 の場所のように「**/coral**」を付加します）。
 
 ### 評価の述語 {#rating-predicates}
 
@@ -471,7 +471,7 @@ AEM 6.1 では、標準のフルテキストの述語は検索フォームの一
 
 **アクション：**
 
-* `resourceType` プロパティを変更します（上記の 6.2 の場所のように「**/coral**」を付加します）。
+* `resourceType` プロパティを調整します（上記の 6.2 の場所のように「**/coral**」を付加します）。
 
 * 同じノードの `fieldLabel` プロパティと同じ値を持つ `text` プロパティを追加します。
 
@@ -488,7 +488,7 @@ AEM 6.1 では、標準のフルテキストの述語は検索フォームの一
 
 **アクション：**
 
-* `resourceType` プロパティを変更します（上記の 6.2 の場所のように「**/coral**」を付加します）。
+* `resourceType` プロパティを調整します（上記の 6.2 の場所のように「**/coral**」を付加します）。
 
 * 同じノードの `fieldLabel` プロパティと同じ値を持つ `text` プロパティを追加します。
 

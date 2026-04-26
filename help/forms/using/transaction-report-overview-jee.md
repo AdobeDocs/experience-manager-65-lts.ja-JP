@@ -7,26 +7,28 @@ solution: Experience Manager, Experience Manager Forms
 hide: true
 hidefromtoc: true
 exl-id: f2703820-8701-4b48-be9c-12daa73d5408
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 100%
+source-wordcount: '535'
+ht-degree: 98%
 
 ---
 
 # JEE 上の AEM Forms のトランザクションレポートの有効化と表示 {#transaction-reports-overview}
 
-<!--Transaction reports in AEM Forms on JEE let you keep a count of all transactions taken place on your AEM Forms deployment. The objective is to provide information about product usage and helps business stakeholders understand their digital processing volumes. Examples of a transaction include:
+<!--
+Transaction reports in AEM Forms on JEE let you keep a count of all transactions taken place on your AEM Forms deployment. The objective is to provide information about product usage and helps business stakeholders understand their digital processing volumes. Examples of a transaction include:
 
 * Submission of a document
 * Rendition of a document
 * Conversion of a document from one file format to another 
 
-For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis-jee.md). Transaction log helps you to gain information about the number of documents submitted, rendered, and converted.-->
+For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis-jee.md). Transaction log helps you to gain information about the number of documents submitted, rendered, and converted.
+-->
 
 ## トランザクションレポートを有効にする {#enable-transaction-reporting}
 
-デフォルトでは、トランザクションの記録は無効になっています。トランザクションレポートを有効にするには、次の手順を実行します。
+デフォルトでは、トランザクションの記録は無効になっています。 トランザクションレポートを有効にするには、次の手順を実行します。
 
 1. JEE における AEM Forms で `/adminui`（例：`http://10.14.18.10:8080/adminui`）に移動します。
 1. **管理者**&#x200B;としてログインします。
@@ -46,11 +48,11 @@ For more information on what is considered a transaction, see [Billable APIs](..
 
 ## トランザクションレポートを表示する {#view-transaction-report}
 
-トランザクションレポートを有効にすると、[ダッシュボードを使用したトランザクションレポート](#transaction-report-dashboard)と[ログファイルを使用した詳細なトランザクションレポート](#transaction-report-logfile)から、トランザクション数に関する情報にアクセスできるようになります。この両方について以下で説明します。
+トランザクションレポートを有効にすると、[ダッシュボードを使用したトランザクションレポート](#transaction-report-dashboard)と[ログファイルを使用した詳細なトランザクションレポート](#transaction-report-logfile)から、トランザクション数に関する情報にアクセスできるようになります。 この両方について以下で説明します。
 
 ### ダッシュボードを使用したトランザクションレポート {#transaction-report-dashboard}
 
-ダッシュボードを使用したトランザクションレポートでは、トランザクションタイプごとにトランザクションの合計数が表示されます。例えば、画像に示すように、レンダリングされたフォーム、変換されたフォームおよび送信されたフォームの合計数に関する情報が得られます。トランザクションレポートを取得するには：
+ダッシュボードを使用したトランザクションレポートでは、トランザクションタイプごとにトランザクションの合計数が表示されます。 例えば、画像に示すように、レンダリングされたフォーム、変換されたフォームおよび送信されたフォームの合計数に関する情報が得られます。 トランザクションレポートを取得するには：
 
 1. JEE における AEM Forms で `/adminui`（例：`http://10.13.15.08:8080/adminui`）に移動します。
 1. **管理者**&#x200B;としてログインします。
@@ -62,7 +64,7 @@ For more information on what is considered a transaction, see [Billable APIs](..
 
 ### ログファイルを使用したトランザクションレポート {#transaction-report-logfile}
 
-ログファイルを使用したトランザクションレポートには、各トランザクションに関する詳細な情報が表示されます。トランザクションログにアクセスするには、サーバー起動を基準とした相対コンテキストパスに従います。トランザクションは、デフォルトでは別個のログファイル `transaction_log.log` に取得されます。**ファイルパス** は、サーバー起動コンテキストを基準とした相対パスです。各種サーバーのデフォルトパスを以下に示します。
+ログファイルを使用したトランザクションレポートには、各トランザクションに関する詳細な情報が表示されます。 トランザクションログにアクセスするには、サーバー起動を基準とした相対コンテキストパスに従います。 トランザクションは、デフォルトでは別個のログファイル `transaction_log.log` に取得されます。 **ファイルパス** は、サーバー起動コンテキストを基準とした相対パスです。 各種サーバーのデフォルトパスを以下に示します。
 
 ```
 For Jboss Turnkey:
@@ -83,7 +85,7 @@ For Jboss Cluster:
 
 #### トランザクションレコード {#transaction-record-structure-jee}
 
-トランザクションログ構造では、サービス、操作、トランザクションタイプなどの様々なパラメーターを使用して、各トランザクションの記録方法を定義します。それぞれの詳細について、以下で説明します。トランザクションレポートの構造は次のとおりです。
+トランザクションログ構造では、サービス、操作、トランザクションタイプなどの様々なパラメーターを使用して、各トランザクションの記録方法を定義します。 それぞれの詳細について、以下で説明します。 トランザクションレポートの構造は次のとおりです。
 
 ```
 TransactionRecord
@@ -130,11 +132,12 @@ TransactionRecord
 
 トランザクションの記録頻度は、正常に送信、レンダリング、変換されたフォームごとに、サーバー上の更新操作によって決まります。
 
-* **ダッシュボード** では、トランザクション数は定期的に更新されます。デフォルトは 1 分に設定されています。頻度を更新するには、`"com.adobe.idp.dsc.transaction.recordFrequency"` でシステムプロパティを設定します。例えば、JBoss® における JEE 向け AEM Forms では、`JAVA_OPTS` に `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` を追加して、更新頻度を 5 分に設定します。
+* **ダッシュボード** では、トランザクション数は定期的に更新されます。デフォルトは 1 分に設定されています。 頻度を更新するには、`"com.adobe.idp.dsc.transaction.recordFrequency"` でシステムプロパティを設定します。 例えば、JBoss® における JEE 向け AEM Forms では、`JAVA_OPTS` に `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` を追加して、更新頻度を 5 分に設定します。
 
 * **トランザクションログ**&#x200B;では、フォームを正常に送信、レンダリング、または変換すると、各トランザクションの更新が即時に行われます。
 
-<!-- A transaction remains in the buffer for a specified period (Flush Buffer time + Reverse replication time). By default, it takes approximately 90 seconds for the transaction count to reflect in the transaction report.
+<!--
+A transaction remains in the buffer for a specified period (Flush Buffer time + Reverse replication time). By default, it takes approximately 90 seconds for the transaction count to reflect in the transaction report.
 
 Actions like submitting a PDF Form, using Agent UI to preview an interactive communication, or using non-standard form submission methods are not accounted as transactions. AEM Forms provides an API to record such transactions. Call the API from your custom implementations to record a transaction.
 
@@ -156,7 +159,8 @@ The transaction count is reverse replicated from publish instances to author or 
 * Enable the **Show transactions from publish only** option on the author instance to view cumulative transactions from all publish instances. You can also view transaction reports on each publish instance for actual transactions on that particular publish instance only.
 * Do not use author instances to run workflows and process documents.
 * Before using transaction reporting, if you are have a toplogy with publish servers, ensure that the reverse replication is enabled for all the publish instances.
-* Transaction data is reverse-replicated from a publish instance to only corresponding author or processing instance. The author or processing instance cannot further replicate data to another instance. For example, if you have author-processing-publish topology, aggregated transaction data is replicated only to the processing instance.-->
+* Transaction data is reverse-replicated from a publish instance to only corresponding author or processing instance. The author or processing instance cannot further replicate data to another instance. For example, if you have author-processing-publish topology, aggregated transaction data is replicated only to the processing instance.
+-->
 
 ## 関連記事 {#related-articles}
 

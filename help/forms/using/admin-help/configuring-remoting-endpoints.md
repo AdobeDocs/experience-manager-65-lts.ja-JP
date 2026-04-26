@@ -1,6 +1,6 @@
 ---
 title: リモートエンドポイントの設定
-description: リモートエンドポイントの設定方法について説明します。このドキュメントでは、Flex で作成されたアプリケーションが AEM Forms Remoting を使用してサービスを呼び出せるようにする方法について説明します。
+description: リモートエンドポイントの設定方法について説明します。 このドキュメントでは、Flex で作成されたアプリケーションが AEM Forms Remoting を使用してサービスを呼び出せるようにする方法について説明します。
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: d19b7265-42cc-41d9-9897-e7b044c4529c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 100%
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 # リモートエンドポイントの設定 {#configuring-remoting-endpoints}
 
-リモートエンドポイントを使用すると、Flex で作成されたアプリケーションから AEM Forms Remoting（AEM Forms では廃止済み）を使用してサービスを呼呼び出すことができます。リモートエンドポイントは、アクティブ化された各サービスに対して自動的に作成されます。エンドポイントと同じ名前を持つ Flex の宛先が作成され、Flex クライアントは、関連するサービスの操作を呼び出すために、この宛先を指すリモートオブジェクトを作成できます。
+リモートエンドポイントを使用すると、Flex で作成されたアプリケーションから AEM Forms Remoting（AEM Forms では廃止済み）を使用してサービスを呼呼び出すことができます。 リモートエンドポイントは、アクティブ化された各サービスに対して自動的に作成されます。 エンドポイントと同じ名前を持つ Flex の宛先が作成され、Flex クライアントは、関連するサービスの操作を呼び出すために、この宛先を指すリモートオブジェクトを作成できます。
 
 ## リモートエンドポイントの設定 {#remoting-endpoint-settings}
 

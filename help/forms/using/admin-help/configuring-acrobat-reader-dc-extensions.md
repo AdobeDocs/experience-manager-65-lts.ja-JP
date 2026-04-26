@@ -11,9 +11,9 @@ feature: Adaptive Forms,Document Services,Reader Extensions
 hide: true
 hidefromtoc: true
 exl-id: f9b01de7-1de5-43aa-bcc3-b15719bfa5c0
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '339'
 ht-degree: 100%
 
 ---
@@ -26,9 +26,9 @@ ht-degree: 100%
 
 AEM Forms インストール環境のユーザーが Content Services（非推奨）のデータキャプチャ機能を使用する場合、このユーザー用に、読み取り専用アクセス権を持つ役割を作成することをお勧めします。
 
-***メモ&#x200B;**：Adobe® LiveCycle® Content Services ES（非推奨）は LiveCycle と共にインストールされるコンテンツ管理システムです。このサービスでは、人間中心のプロセスをデザイン、管理、監視および最適化することができます。Content Services（非推奨）のサポートは 2014年12月31日（PT）をもって終了しています。[アドビ製品のライフサイクルに関するドキュメント](https://helpx.adobe.com/jp/support/programs/eol-matrix.html)を参照してください。*
+***メモ&#x200B;**：Adobe® LiveCycle® Content Services ES（非推奨）は LiveCycle と共にインストールされるコンテンツ管理システムです。 このサービスでは、人間中心のプロセスをデザイン、管理、監視および最適化することができます。 Content Services（非推奨）のサポートは 2014年12月31日（PT）をもって終了しています。 [アドビ製品のライフサイクルに関するドキュメント](https://helpx.adobe.com/jp/support/programs/eol-matrix.html)を参照してください。*
 
-データをキャプチャするには、SampleReaderExtensionsCredential にアクセスするために、ユーザーに役割を割り当てる必要があります。標準のトラスト管理者の役割を割り当てることができます。ただし、この役割を割り当てると、PKI 信頼設定を制御し PKI 認証情報を管理する管理者権限を管理者以外の一般ユーザーに与えることになるため、実稼働環境での AEM Forms インストールのセキュリティが危険にさらされる可能性があることを考慮してください。AEM Forms システム管理者が Trust Store への読み取り専用アクセス権のみを含む役割を作成して、データキャプチャ機能を使用する管理者以外のユーザーにこの役割を割り当てることをお勧めします。
+データをキャプチャするには、SampleReaderExtensionsCredential にアクセスするために、ユーザーに役割を割り当てる必要があります。 標準のトラスト管理者の役割を割り当てることができます。 ただし、この役割を割り当てると、PKI 信頼設定を制御し PKI 認証情報を管理する管理者権限を管理者以外の一般ユーザーに与えることになるため、本番環境での AEM Forms インストールのセキュリティが危険にさらされる可能性があることを考慮してください。 AEM Forms システム管理者が Trust Store への読み取り専用アクセス権のみを含む役割を作成して、データキャプチャ機能を使用する管理者以外のユーザーにこの役割を割り当てることをお勧めします。
 
 ## データキャプチャを行うユーザーの役割を作成 {#create-a-role-for-data-capture-users}
 

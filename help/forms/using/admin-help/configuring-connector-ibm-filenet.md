@@ -11,9 +11,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 5cbb626c-fcd8-4936-acf8-95bac80d06b6
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '748'
 ht-degree: 100%
 
 ---
@@ -24,18 +24,18 @@ ht-degree: 100%
 > 
 > ユーザーが管理者コンソールにアクセスする管理者権限を持っていることを確認します。
 
-Connector for IBM FileNet は、AEM Forms と IBM FileNet 間の通信を実現します。その他の背景情報について詳しくは、[サービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)にある「ECM 用コネクター」を参照してください。
+Connector for IBM FileNet は、AEM Forms と IBM FileNet 間の通信を実現します。 その他の背景情報について詳しくは、[サービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)にある「ECM 用コネクター」を参照してください。
 
 >[!NOTE]
 >
->以前のリリースでは、ECM リポジトリにアセットを格納できていました。このリリースでは、アセットが AEM Forms ネイティブリポジトリに格納され、Repository Provider サービスは推奨されなくなりました。ECM リポジトリから AEM Forms リポジトリへのアセットの移行は、AEM Forms への更新を実行する際に行われます。詳しくは、使用しているアプリケーションサーバー版の AEM Forms アップグレードガイドを参照してください。
+>以前のリリースでは、ECM リポジトリにアセットを格納できていました。 このリリースでは、アセットが AEM Forms ネイティブリポジトリに格納され、Repository Provider サービスは推奨されなくなりました。 ECM リポジトリから AEM Forms リポジトリへのアセットの移行は、AEM Forms への更新を実行する際に行われます。 詳しくは、使用しているアプリケーションサーバー版の AEM Forms アップグレードガイドを参照してください。
 
 ## Content Engine への接続の設定 {#configure-the-connection-to-the-content-engine}
 
 IBM FileNet P8 Content Engine では、FileNet コンテンツリポジトリで企業コンテンツおよび顧客が定義したビジネスオブジェクトを管理するためのソフトウェアサービスを使用できます。
 
 1. 管理コンソールで、サービス／Connector for IBM FileNet をクリックします。
-1. 「コンテンツエンジンの URL」ボックスに、完全な接続 URL を入力します。次に例を示します。
+1. 「コンテンツエンジンの URL」ボックスに、完全な接続 URL を入力します。 次に例を示します。
 
    CEWS トランスポートで FileNet Content Engine 4.x を使用している場合は、次のように入力します。
 
@@ -61,11 +61,11 @@ IBM FileNet P8 Content Engine では、FileNet コンテンツリポジトリで
 
 ## プロセスエンジン設定の指定 {#configure-the-process-engine-settings}
 
-Connector for IBM FileNet には、IBM FileNet Process Engine とのやり取りに使用される Process Engine Connector for IBM FileNet サービスが含まれています。このサービスの設定を指定することができます。
+Connector for IBM FileNet には、IBM FileNet Process Engine とのやり取りに使用される Process Engine Connector for IBM FileNet サービスが含まれています。 このサービスの設定を指定することができます。
 
 1. 管理コンソールで、サービス／Connector for IBM FileNet をクリックします。
 1. Process Engine Connector for IBM FileNet サービスを使用できるようにするには、「プロセスエンジンコネクタサービスを使用」を選択します。
-1. 「プロセスルーター／接続ポイント」ボックスに、ホスト名または IP アドレス、ポート番号、プロセスルーター名を入力します。次に例を示します。
+1. 「プロセスルーター／接続ポイント」ボックスに、ホスト名または IP アドレス、ポート番号、プロセスルーター名を入力します。 次に例を示します。
 
    `rmi://ProcessEngineHostNameorIP:port/Name`
 
@@ -76,12 +76,12 @@ Connector for IBM FileNet には、IBM FileNet Process Engine とのやり取り
 
 Content Engine への接続またはプロセスエンジン設定を指定する場合に誤ったユーザー名やパスワードを入力すると、そのサービスが実行中かどうかに応じて、次の結果になります。
 
-* サービス設定情報を保存したときに IBM FileNet 用の Repository Provider サービスと Content Repository Connector for IBM FileNet サービスの両方が停止している場合、エラーは表示されません。ただし、次回サービスを起動すると、例外が発生し、サービスは開始しません。
-* サービス設定情報を保存したときに IBM FileNet 用の Repository Provider サービスまたは Content Repository Connector for IBM FileNet サービスのいずれかが起動している場合、サービスは資格情報をすぐに確認しようとします。この場合はエラーが発生し、設定情報は保存されません。
+* サービス設定情報を保存したときに IBM FileNet 用の Repository Provider サービスと Content Repository Connector for IBM FileNet サービスの両方が停止している場合、エラーは表示されません。 ただし、次回サービスを起動すると、例外が発生し、サービスは開始しません。
+* サービス設定情報を保存したときに IBM FileNet 用の Repository Provider サービスまたは Content Repository Connector for IBM FileNet サービスのいずれかが起動している場合、サービスは資格情報をすぐに確認しようとします。 この場合はエラーが発生し、設定情報は保存されません。
 
 ## リポジトリサービスプロバイダーの変更 {#change-the-repository-service-provider}
 
-FileNet と共に使用するリポジトリサービスプロバイダーを設定できます。リポジトリサービスの呼び出しは、設定したプロバイダーに委任されます。
+FileNet と共に使用するリポジトリサービスプロバイダーを設定できます。 リポジトリサービスの呼び出しは、設定したプロバイダーに委任されます。
 
 以下のオプションが利用できます。
 

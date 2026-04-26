@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: e31614a9-d670-4d22-88ba-8953797f6e14
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 100%
@@ -24,9 +24,9 @@ ht-degree: 100%
 > 
 > ユーザーが管理者コンソールにアクセスする管理者権限を持っていることを確認します。
 
-システム情報サービスは情報取得のために REST API を提供します。システム情報サービスを使用するには、管理コンソールから REST エンドポイントを有効にします。REST エンドポイントを有効にするには、次の手順を実行します。
+システム情報サービスは情報取得のために REST API を提供します。 システム情報サービスを使用するには、管理コンソールから REST エンドポイントを有効にします。 REST エンドポイントを有効にするには、次の手順を実行します。
 
-1. 管理コンソールにログインします。管理コンソールのデフォルト URL は `https://[hostname]:'port'/adminui.` です。
+1. 管理コンソールにログインします。 管理コンソールのデフォルト URL は `https://[hostname]:'port'/adminui.` です。
 1. サービス／アプリケーションおよびサービス／サービスの管理に移動します。
 1. サービス管理ページで、「**SystemInfo**」サービスをクリックします。
 1. 「エンドポイント」タブのリストで、「REST」を選択して、「**追加**」をクリックします。

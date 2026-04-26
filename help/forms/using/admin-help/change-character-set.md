@@ -1,6 +1,6 @@
 ---
 title: 文字セットの変更
-description: 出力ストリームをエンコードするための文字セットを指定できます。文字セットの変更方法について説明します。
+description: 出力ストリームをエンコードするための文字セットを指定できます。 文字セットの変更方法について説明します。
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1d614736-5897-4fd3-9ca4-94b115139ba3
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 100%
@@ -27,10 +27,10 @@ ht-degree: 100%
 出力ストリームをエンコードするための文字セットを指定できます。
 
 1. 管理コンソールで、**[!UICONTROL サービス／Output]** をクリックします。
-1. 「国際化対応」の「文字セット」リストで、文字セットを選択します。この設定は、API 経由で指定する `TransformationFormat` と `PrintFormat` の値によって異なります。リストにない文字セットを指定するには、「カスタム」を選択し、表示されたボックスでエンコーディング値を指定します。
+1. 「国際化対応」の「文字セット」リストで、文字セットを選択します。 この設定は、API 経由で指定する `TransformationFormat` と `PrintFormat` の値によって異なります。 リストにない文字セットを指定するには、「カスタム」を選択し、表示されたボックスでエンコーディング値を指定します。
 
    `TransformationFormat` が PDF か PDF/A である場合、または `PrintFormat` が PCL、PostScript、Zebra Label、IPL、DPL、TPCL、GenericColorPCL または GenericPSLevel3 である場合、特定の文字セットのみがサポートされます。
 
-   文字セットは、有効な正規名で指定する必要があります。デフォルト値は「ISO-8859-1」です。
+   文字セットは、有効な正規名で指定する必要があります。 デフォルト値は「ISO-8859-1」です。
 
 1. 「**[!UICONTROL 保存]**」をクリックします。

@@ -7,16 +7,16 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 558d9b27-8734-4da2-b498-5bb2361ac65b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '228'
 ht-degree: 100%
 
 ---
 
 # WS-Security ヘッダーを使用した資格情報の受け渡し {#using-execute-script-service-aem-forms-jee-workbench}
 
-Web サービスを使用して JEE サービスで AEM Forms を呼び出す場合、WS-Security ヘッダーを使用して、JEE で AEM Forms に必要なクライアント認証情報を渡すことができます。WS-Security は、クライアント認証、メッセージの機密性、およびメッセージの整合性を実装するための SOAP 拡張機能を定義します。その結果、JEE 上の AEM Forms がスタンドアロンサーバーとして、またはクラスター化された環境内にデプロイされている場合、JEE サービス上で AEM Forms を呼び出すことができます。
+Web サービスを使用して JEE サービスで AEM Forms を呼び出す場合、WS-Security ヘッダーを使用して、JEE で AEM Forms に必要なクライアント認証情報を渡すことができます。 WS-Security は、クライアント認証、メッセージの機密性、およびメッセージの整合性を実装するための SOAP 拡張機能を定義します。 その結果、JEE 上の AEM Forms がスタンドアロンサーバーとして、またはクラスター化された環境内にデプロイされている場合、JEE サービス上で AEM Forms を呼び出すことができます。
 
 WS-Security ヘッダーを JEE 上の AEM Forms に渡す方法は、Axis で生成された Java クラスを使用しているか、サービスのネイティブ SOAP スタックを使用する .NET クライアントアセンブリを使用しているかによって異なります。
 

@@ -7,16 +7,16 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a9790625-af8d-4416-b96f-4724a025260b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 99%
+source-wordcount: '1046'
+ht-degree: 93%
 
 ---
 
 # AEM Forms と Microsoft® Office 365 メールサーバープロトコルの統合 {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
-組織が安全なメールの要件に準拠できるように、AEM Forms では、Microsoft® Office 365 メールサーバープロトコルとの統合のために OAuth 2.0 をサポートしています。Azure Active Directory（Azure AD）OAuth 2.0 認証サービスを使用して、IMAP、POP、SMTP などの様々なプロトコルと接続し、Office 365 ユーザーのメールデータにアクセスできます。OAuth 2.0 サービスを介して認証するように Microsoft® Office 365 メールサーバープロトコルを設定する手順を以下に示します。
+組織が安全なメールの要件に準拠できるように、AEM Forms では、Microsoft® Office 365 メールサーバープロトコルとの統合のために OAuth 2.0 をサポートしています。 Azure Active Directory（Azure AD）OAuth 2.0 認証サービスを使用して、IMAP、POP、SMTP などの様々なプロトコルと接続し、Office 365 ユーザーのメールデータにアクセスできます。 OAuth 2.0 サービスを介して認証するように Microsoft® Office 365 メールサーバープロトコルを設定する手順を以下に示します。
 
 1. [https://portal.azure.com/](https://portal.azure.com/) にログインし、検索バーで **Azure Active Directory** を検索して、結果をクリックします。
 または、[https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) を直接参照することもできます。
@@ -25,8 +25,8 @@ ht-degree: 99%
    ![アプリの登録](/help/forms/using/assets/outh_outlook_microsoft_azure.png)
 
 1. 必要に応じて情報を入力し、「**登録**」をクリックします。
-   ![サポートされているアカウント](/help/forms/using/assets/azure_suuportedaccountype.png)
-上記の場合、「**任意の組織ディレクトリ（任意の Azure AD ディレクトリ - マルチテナント）内のアカウントおよび個人用の Microsoft® アカウント（Skype、Xbox など）**」オプションが選択されています。
+   ![ サポートされているアカウント](/help/forms/using/assets/azure_suuportedaccountype.png)
+上記の場合、**任意の組織ディレクトリ （任意のAzure AD ディレクトリ – マルチテナント）および個人のMicrosoft® アカウント （Skype、Xboxなど）**&#x200B;のアカウントが選択されます。
 
    >[!NOTE]
    >
@@ -34,7 +34,7 @@ ht-degree: 99%
    > * **個人用の Microsoft® アカウントのみ**&#x200B;のアプリケーションはサポートされていません。
    > * **マルチテナントおよび個人用の Microsoft® アカウント**&#x200B;アプリケーションを使用することをお勧めします。
 
-1. 次に、**証明書とシークレット**&#x200B;に移動し、「**新しいクライアントシークレット**」をクリックし、画面上の手順に従ってシークレットを作成します。このシークレットは後で使用するので、必ずメモしてください。
+1. 次に、**証明書とシークレット**&#x200B;に移動し、「**新しいクライアントシークレット**」をクリックし、画面上の手順に従ってシークレットを作成します。 このシークレットは後で使用するので、必ずメモしてください。
 
    ![秘密鍵](/help/forms/using/assets/azure_secretkey.png)
 
@@ -118,9 +118,9 @@ ht-degree: 99%
    > OAuth 2.0 認証サービスを有効にするには、「**SMTP サーバーが認証を必要とするかどうか (SMTP 認証)**」チェックボックスをオンにする必要があります。
 
 1. 「**OAuth 2.0 認証設定**」を `True` に設定します。
-1. **クライアント ID** と&#x200B;**クライアントシークレット**&#x200B;の値を Azure Portal からコピーします。
+1. Azure Portal から&#x200B;**クライアント ID** および&#x200B;**クライアント秘密鍵**&#x200B;の値をコピーします。
 1. 生成された&#x200B;**更新トークン**&#x200B;の値をコピーします。
-1. **Workbench** にログインし、**アクティビティピッカー**&#x200B;から **Email 1.0** を検索します。
+1. **ワークベンチ**&#x200B;にログインし、**アクティビティピッカー**&#x200B;から **Email 1.0** を検索します。
 1. Email 1.0 では、次の 3 つのオプションを使用できます。
    * **ドキュメントと共に送信**：1 つの添付ファイルを含むメールを送信します。
    * **添付ファイルのマップと共に送信**：複数の添付ファイルを含むメールを送信します。
@@ -128,7 +128,7 @@ ht-degree: 99%
 
    >[!NOTE]
    >
-   >* Transport Security プロトコルの有効な値は、「blank」、「SSL」または「TLS」です。oAuth 認証サービスを有効にするために、**SMTP Transport Security** と **Receive Transport Security** の値を **TLS** に設定します。
+   >* Transport Security プロトコルの有効な値は、「blank」、「SSL」または「TLS」です。 oAuth 認証サービスを有効にするために、**SMTP Transport Security** と **Receive Transport Security** の値を **TLS** に設定します。
    >* メールエンドポイントを使用している場合、**POP3 プロトコル**&#x200B;は OAuth でサポートされていません。
 
    ![接続設定](/help/forms/using/assets/oauth_connectionsettings.png)
@@ -139,7 +139,7 @@ ht-degree: 99%
 
    >[!NOTE]
    >
-   >必要に応じて、Workbench で特定のプロセスの Auth 2.0 認証設定を基本認証に変更できます。それには、「**接続設定**」タブの「**グローバル設定を使用**」で「**OAuth 2.0 認証**」の値を「False」に設定します。
+   >必要に応じて、ワークベンチで特定のプロセスの Auth 2.0 認証設定を基本認証に変更できます。 それには、「**接続設定**」タブの「**グローバル設定を使用**」で「**OAuth 2.0 認証**」の値を「False」に設定します。
 
 ## OAuth タスク通知を有効にする手順は次のとおりです。 {#enable_oauth_task}
 
@@ -153,7 +153,7 @@ ht-degree: 99%
 
    >[!NOTE]
    >
-   > タスク通知に関して詳しくは、 [ここをクリック](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html?lang=ja#create-an-email-endpoint-for-the-complete-task-service)します。
+   > タスク通知に関して詳しくは、 [ここをクリック](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service)します。
 
 ## メールのエンドポイントを設定する手順は次のとおりです。 {#configure_email_endpoint}
 
@@ -167,10 +167,10 @@ ht-degree: 99%
 
    >[!NOTE]
    >
-   > メールエンドポイントの設定に関する詳細は、[メールエンドポイントの設定](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html?lang=ja)をクリックします。
+   > メールエンドポイントの設定に関する詳細は、[メールエンドポイントの設定](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html)をクリックします。
 
 ## トラブルシューティング {#troubleshooting}
 
-* メールサービスが正しく動作していない場合は、上記の説明に従って `Refresh Token` を再生成します。新しい値がデプロイされるまで数分かかります。
+* メールサービスが正しく動作していない場合は、上記の説明に従って `Refresh Token` を再生成します。 新しい値がデプロイされるまで数分かかります。
 
-* Workbench を使用してメールエンドポイントでメールサーバーの詳細を設定する際にエラーが発生した場合は、Workbench の代わりに管理 UI を使用してエンドポイントを設定してみます。
+* ワークベンチを使用してメールエンドポイントでメールサーバーの詳細を設定する際にエラーが発生した場合は、 ワークベンチの代わりに管理 UI を使用してエンドポイントを設定してみます。
