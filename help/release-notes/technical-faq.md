@@ -6,8 +6,8 @@ feature: Release Information
 role: User,Admin,Developer
 exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
-workflow-type: tm+mt
-source-wordcount: '247'
+workflow-type: ht
+source-wordcount: '271'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ### AEM 6.5 LTS では `/systemalive` エンドポイントが使用できなくなりました。
 
-`/systemalive` エンドポイントを提供するように設定された Felix System Ready バンドルは非推奨（廃止予定）になり、Apache Felix ヘルスチェックに置き換えられました。このバンドルは、AEM 6.5 LTS には含まれなくなりました。
+`/systemalive` エンドポイントを提供するように設定された Felix System Ready バンドルは非推奨（廃止予定）になり、Apache Felix ヘルスチェックに置き換えられました。 このバンドルは、AEM 6.5 LTS には含まれなくなりました。
 
 新しいヘルスチェックエンドポイントは、`/system/health` で使用でき、Apache Felix ヘルスチェックを使用して実装されます。
 
@@ -32,11 +32,11 @@ AEM 6.5 で使用されていた AEM Groovy コンソールバージョンは、
 
 ### AEM 6.5 LTS はユーザー同期をサポートしていますか？
 
-はい、AEM 6.5 LTS はユーザー同期をサポートしています。AEM 6.5 と 6.5 LTS の間でユーザー同期の機能に変更はありません。
+はい、AEM 6.5 LTS はユーザー同期をサポートしています。 AEM 6.5 と 6.5 LTS の間でユーザー同期の機能に変更はありません。
 
 ### Maven Central の Uber JAR が破損しているようです。問題は何ですか？
 
-`apis` 分類子で Uber JAR を使用していることを確認します。AEM 6.5 LTS では、Uber JAR のパッケージ構造が変更されていることに注意してください。詳しくは、[AEM Uber Jar バージョンの更新](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version)を参照してください。
+`apis` 分類子で Uber JAR を使用していることを確認します。 AEM 6.5 LTS では、Uber JAR のパッケージ構造が変更されていることに注意してください。 詳しくは、[AEM Uber Jar バージョンの更新](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version)を参照してください。
 
 ## 追加のヘルプの入手
 
