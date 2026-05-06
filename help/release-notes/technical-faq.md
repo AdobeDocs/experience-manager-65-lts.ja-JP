@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
-workflow-type: ht
-source-wordcount: '271'
-ht-degree: 100%
+source-git-commit: 89016492c069d61c18f9bf83bfb896cd78fb20fd
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 75%
 
 ---
 
@@ -26,9 +26,17 @@ ht-degree: 100%
 
 Felix ヘルスチェックフレームワークに関するドキュメントについて詳しくは、[felix ドキュメント](https://github.com/apache/felix-dev/blob/master/healthcheck/README.md)を参照してください。
 
-### AEM Groovy コンソールのサポート
+### AEM Groovy Consoleのサポート
 
-AEM 6.5 で使用されていた AEM Groovy コンソールバージョンは、guava 依存関係が欠落しているので、AEM 6.5 LTS では動作しない可能性があります。 新しくサポートされる AEM Groovy コンソールのバージョンは [19.0.8](https://github.com/orbinson/aem-groovy-console/releases/download/19.0.8/aem-groovy-console-all-19.0.8.zip) です。
+AEM 6.5で使用されていたAEM Groovy コンソールバージョンは、guavaの依存関係が欠落しているため、AEM 6.5 LTSで機能しない可能性があります。 新しくサポートされるAEM Groovy Consoleのバージョンは[19.0.8](https://github.com/orbinson/aem-groovy-console/releases/download/19.0.8/aem-groovy-console-all-19.0.8.zip)です。
+
+#### AEM Groovy Consoleに必要な追加の設定
+
+AEM Groovy Consoleを使用している場合は、`com.adobe.granite.apicontroller.FilterResolverHookFactory`に対して次のOSGi設定を明示的に追加する必要があります。 `aem-groovy-console-bundle`を`org.apache.sling.distribution.api` キーの許可されたバンドルリストに追加し、プラットフォームのデフォルトを拡張します。
+
+```
+"org.apache.sling.distribution.api": "com.adobe.*,com.day.*,org.apache.sling.*,aem-groovy-console-bundle"
+```
 
 ### AEM 6.5 LTS はユーザー同期をサポートしていますか？
 
