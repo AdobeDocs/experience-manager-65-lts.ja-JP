@@ -1,16 +1,10 @@
 ---
-source-git-commit: 8c01084831774686c0b02578dfd03e159ce01b50
+source-git-commit: 99ef8b9ae964b5a68b2ce6b5405de3bc21233783
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 64%
+source-wordcount: '7'
+ht-degree: 0%
 
 ---
-# Adobe Experience Manager 6.5 LTS ドキュメント
+# アーカイブ
 
-これは、Adobe Experience Manager 6.5 LTS ドキュメントのリポジトリです。 このドキュメントでは、AEM 6.5 LTS のインストール、管理、オーサリングの使用と、カスタマイズ方法について説明します。
-
-ドキュメントに関するご意見やご提案をお寄せください。 次のリソースを参照してください。
-
-* [contributing.md](contributing.md)：ドキュメントに対する投稿方法の概要。
-* [guidelines.md](guidelines.md)：投稿で期待される内容とドキュメント投稿の作成方法の概要。
-* [code-of-conduct.md](code-of-conduct.md)：このドキュメントプロジェクトへの投稿時に期待される行動の基準の概要。
+このリポジトリは<https://github.com/Adobe-Enterprise-Docs/experience-manager-65-lts.en>に移行されました。
