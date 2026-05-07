@@ -24,7 +24,7 @@ ht-degree: 93%
    ![アプリの登録](/help/forms/using/assets/outh_outlook_microsoft_azure.png)
 
 1. 必要に応じて情報を入力し、「**登録**」をクリックします。
-   ![ サポートされているアカウント](/help/forms/using/assets/azure_suuportedaccountype.png)
+   ![&#x200B; サポートされているアカウント](/help/forms/using/assets/azure_suuportedaccountype.png)
 上記の場合、**任意の組織ディレクトリ （任意のAzure AD ディレクトリ – マルチテナント）および個人のMicrosoft® アカウント （Skype、Xboxなど）**&#x200B;のアカウントが選択されます。
 
    >[!NOTE]
