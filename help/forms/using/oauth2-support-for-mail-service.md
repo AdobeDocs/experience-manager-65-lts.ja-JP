@@ -5,9 +5,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: a9790625-af8d-4416-b96f-4724a025260b
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 93%
@@ -25,7 +24,7 @@ ht-degree: 93%
    ![アプリの登録](/help/forms/using/assets/outh_outlook_microsoft_azure.png)
 
 1. 必要に応じて情報を入力し、「**登録**」をクリックします。
-   ![&#x200B; サポートされているアカウント](/help/forms/using/assets/azure_suuportedaccountype.png)
+   ![ サポートされているアカウント](/help/forms/using/assets/azure_suuportedaccountype.png)
 上記の場合、**任意の組織ディレクトリ （任意のAzure AD ディレクトリ – マルチテナント）および個人のMicrosoft® アカウント （Skype、Xboxなど）**&#x200B;のアカウントが選択されます。
 
    >[!NOTE]

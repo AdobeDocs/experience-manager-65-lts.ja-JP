@@ -10,9 +10,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Workbench, APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 071781e8-990d-4d01-b46e-be1c57bdbe3a
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1869'
 ht-degree: 98%
@@ -147,7 +146,7 @@ Forms サービス API を使用してフラグメントに基づいてフォー
 1. adobe-livecycle-client.jar などのクライアント JAR ファイルを Java プロジェクトのクラスパスに含めます。 これらのファイルの場所については、[AEM Forms Java ライブラリファイルを含める](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)を参照してください。
 1. HTML フォームから送信されたラジオボタンの値を取得し、米国データとカナダデータのどちらを使用するかを指定します。 米国データが送信された場合、*Purchase Order US.xml* のデータを格納する `com.adobe.idp.Document` を作成します。 同様に、カナダの場合は、*Purchase Order Canada.xml* ファイルのデータを格納する `com.adobe.idp.Document` を作成します。
 1. 接続プロパティを含む `ServiceClientFactory` オブジェクトを作成します。 （[接続プロパティの設定](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)を参照。）
-1. コンストラクターを使用して `ServiceClientFactory` オブジェクトを渡すことによって、`FormsServiceClient` オブジェクトを作成します。
+1. コンストラクターを使用して `ServiceClientFactory` オブジェクトを渡すことにより、`FormsServiceClient` オブジェクトを作成します。
 1. コンストラクターを使用して、URI 値を格納する `URLSpec` オブジェクトを作成します。
 1. `URLSpec` オブジェクトの `setApplicationWebRoot` メソッドを呼び出して、アプリケーションの web ルートを表す文字列値を渡します。
 1. `URLSpec` オブジェクトの `setContentRootURI` メソッドを呼び出して、コンテンツルート URI 値を指定する文字列値を渡します。 フォームデザインとフラグメントがコンテンツルート URI に配置されていることを確認します。 そうでない場合、Forms サービスは例外をスローします。 AEM Forms リポジトリを参照するには、`repository://` を指定してください。
@@ -158,7 +157,7 @@ Forms サービス API を使用してフラグメントに基づいてフォー
    * フォームに結合するデータを含む `com.adobe.idp.Document` オブジェクト（手順 2 で作成）。
    * 実行時オプションを保存する `PDFFormRenderSpec` オブジェクト。 詳細情報については、「[AEM Forms API リフェレンス](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ja)」を参照してください。
    * `URLSpec` フラグメントに基づいてフォームをレンダリングするために Forms サービスで必要な URI 値を含むオブジェクト。
-   * 添付ファイルを格納する `java.util.HashMap` オブジェクト。 これはオプションのパラメーターで、フォームにファイルを添付しない場合、`null` を指定できます。
+   * 添付ファイルを格納する `java.util.HashMap` オブジェクト。 これはオプションのパラメーターであり、フォームにファイルを添付しない場合に `null` を指定できます。
 
    `renderPDFForm` メソッドは、クライアントの Web ブラウザーに書き込む必要があるフォームデータストリームを含む `FormsResult` オブジェクトを返します。
 

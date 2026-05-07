@@ -10,9 +10,8 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
-hidefromtoc: true
 exl-id: e3ef1435-d405-482f-9eb5-f9a64ff03322
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 76%
@@ -33,10 +32,10 @@ ht-degree: 76%
 
 AEM には、リポジトリの管理に役立つ様々なメカニズムが備わっています。
 
-* バージョン マネージャー[&#128279;](#version-manager)
+* バージョン マネージャー[](#version-manager)
 これは、新しいバージョンが作成されたときに古いバージョンをパージするように設定できます。
 
-* [&#x200B; バージョンのパージ &#x200B;](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) ツール
+* [ バージョンのパージ ](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) ツール
 これは、リポジトリの監視とメンテナンスの一部として使用されます。
 このツールを使用すると、次のパラメーターに従って、ノードの古いバージョンまたはノードの階層を削除するためにユーザーが介入できます。
 

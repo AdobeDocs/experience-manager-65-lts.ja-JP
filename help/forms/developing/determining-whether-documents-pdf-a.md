@@ -10,9 +10,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services, APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: bda74b30-28c4-490f-86c3-9c6fce14d79d
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '2118'
 ht-degree: 100%
@@ -218,7 +217,7 @@ Assembler Service API（web サービス）を使用して、PDF ドキュメン
    * コンストラクターを呼び出し、入力 PDF ドキュメントのファイルの場所とファイルを開くモードを表す文字列値を渡すことにより、`System.IO.FileStream` オブジェクトを作成します。
    * `System.IO.FileStream` オブジェクトのコンテンツを保存するバイト配列を作成します。 `System.IO.FileStream` オブジェクトの `Length` プロパティを取得することで、バイト配列のサイズを決定できます。
    * バイト配列にストリームデータを入力するには、`System.IO.FileStream` オブジェクトの `Read` メソッドを呼び出し、バイト配列、開始位置、読み取るストリーム長を渡します。
-   * `MTOM` プロパティにバイト配列のコンテンツを割り当てて、`BLOB` オブジェクトを入力します。
+   * `MTOM` プロパティを割り当てることで、`BLOB` オブジェクトにバイト配列のコンテンツを入力します。
    * `MyMapOf_xsd_string_To_xsd_anyType` オブジェクトを作成します。 このコレクションオブジェクトは、PDF ドキュメントの保存に使用されます。
    * `MyMapOf_xsd_string_To_xsd_anyType_Item` オブジェクトを作成します。
    * キー名を表す文字列値を `MyMapOf_xsd_string_To_xsd_anyType_Item` オブジェクトの `key` フィールドに割り当てます。 この値は、DDX ドキュメントで指定された PDF ソース要素の値と一致している必要があります。

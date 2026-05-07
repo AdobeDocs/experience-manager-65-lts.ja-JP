@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: e64a3b6f-7248-4426-9f13-f703eab3632d
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1734'
 ht-degree: 99%
@@ -92,7 +91,7 @@ AEM Forms プロセスデータのパージについて詳しくは、[プロセ
 1. 次の画面で、「**設定**&#x200B;タブ」、「**サーバー起動**」タブをクリックします。
 1. 「引数」ボックスに、JVM 引数 `-Dreporting.publisher.cron = <expression>` を追加します。
 
-   **例**：次の Cron 式を使用すると、プロセスレポートは時間ごとに AEM Forms データをプロセスレポートリポジトリに公開します。
+   **例**：次の Cron 式を使用すると、プロセスレポートは 5 時間ごとに AEM Forms データをプロセスレポートリポジトリに公開します。
 
    `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 

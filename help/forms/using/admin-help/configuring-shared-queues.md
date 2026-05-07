@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 6665b95a-39fd-472a-b3b5-8b97257c69a7
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 83%
@@ -38,7 +37,7 @@ ht-degree: 83%
 
 >[!NOTE]
 >
->Flex Workspace は、AEM Forms のリリースで廃止されています。
+>AEM Forms のリリースでは Flex Workspace は廃止されています。
 
 ### 選択したユーザーキューへのアクセスの設定 {#configuring-access-to-a-selected-user-queue}
 
@@ -70,7 +69,7 @@ ht-degree: 83%
 
 >[!NOTE]
 >
->Flex Workspace は、AEM Forms のリリースで廃止されています。
+>AEM Forms のリリースでは Flex Workspace は廃止されています。
 
 ### 選択したユーザーキューへのアクセスの許可 {#granting-access-to-a-selected-user-queue}
 

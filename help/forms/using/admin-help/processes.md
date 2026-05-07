@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 6459abd5-6341-4c28-a747-bde9a91e3a88
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1643'
 ht-degree: 100%
@@ -30,7 +29,7 @@ ht-degree: 100%
 
    **ステータス：**「アクティブ」は、プロセスが、プロセスバージョンに対してアクティブ化されていることを表します。 「非アクティブ」は、プロセスが、プロセスインスタンスがまだ存在する旧バージョンであることを表します。
 
-   **作成日：** プロセスがデプロイされた日時。
+   **作成日：**&#x200B;プロセスがデプロイされた日時。
 
 1. プロセス名をクリックすると、そのプロセスインスタンスがプロセスインスタンスページに表示されます。
 

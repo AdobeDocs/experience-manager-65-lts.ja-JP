@@ -10,9 +10,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 66736a58-b2ef-404e-b94c-9bc407828359
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1334'
 ht-degree: 100%
@@ -78,7 +77,7 @@ Document Management サービス API を使用して、PDF ドキュメントを
 
 **関連トピック**
 
-[AEM Forms Java ライブラリファイルの追加](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[AEM Forms Java ライブラリファイルを含める](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [接続プロパティの設定](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -125,7 +124,7 @@ Forms、Output、Document Management API（Java）を使用して、送信され
    * `TransformationFormat` 列挙値。 PDF ドキュメントを生成するには、`TransformationFormat.PDF` を指定します。
    * フォームデザイン名を指定する文字列値。 フォームデザインが Forms サービスから取得したフォームデータと互換性があることを確認してください。
    * フォームデザインが配置されているコンテンツルートを指定する文字列の値です。
-   * PDF 実行時オプションを含む `PDFOutputOptionsSpec` オブジェクト。
+   * PDF の実行時オプションを含む `PDFOutputOptionsSpec` オブジェクト。
    * レンダリングの実行時オプションを含む `RenderOptionsSpec` オブジェクト。
    * フォームデザインと結合するデータを含む XML データソースを含む `com.adobe.idp.Document` オブジェクト。 `FormsResult` オブジェクトの `getOutputContent` メソッドによって、このオブジェクトが返されたことを確認してください。
    * `generatePDFOutput` メソッドは、操作の結果を含む `OutputResult` オブジェクトを返します。
@@ -149,6 +148,6 @@ Forms、Output、Document Management API（Java）を使用して、送信され
 
 **関連トピック**
 
-[AEM Forms Java ライブラリファイルの追加](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[AEM Forms Java ライブラリファイルを含める](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [接続プロパティの設定](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)

@@ -4,11 +4,10 @@ description: OSGi 上の Forms ベース AEM ワークフローおよび AEM For
 contentOwner: khsingh
 solution: Experience Manager, Experience Manager Forms
 hide: true
-hidefromtoc: true
 feature: Adaptive Forms,AEM Forms on OSGi
 role: User, Developer
 exl-id: d0f54236-5dc2-4c64-87c5-85e5e85e8cf7
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 100%

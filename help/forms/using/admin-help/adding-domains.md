@@ -5,9 +5,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 70b0472e-2547-4887-b761-b200dc7b714a
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 97%
@@ -25,7 +24,7 @@ ht-degree: 97%
 1. 管理コンソールで、設定／User Management／ドメインの管理をクリックします。
 1. 「新規エンタープライズドメイン」をクリックします。
 1. 「ID」ボックスにドメインの一意の ID を入力し、「名前」ボックスにドメインのわかりやすい名前を入力します （[ドメイン名および ID に関する重要な考慮事項](adding-domains.md#important-considerations-for-domain-names-and-ids)を参照）。
-1. アカウントロックを有効にするかどうかを指定します （[&#x200B; アカウントロック設定の設定](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings)を参照）。 デフォルトでは、「アカウントロックを有効にする」が選択されています。
+1. アカウントロックを有効にするかどうかを指定します （[ アカウントロック設定の設定](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings)を参照）。 デフォルトでは、「アカウントロックを有効にする」が選択されています。
 1. 「認証を追加」をクリックし、「認証プロバイダー」リストで、組織が使用している認証メカニズムに応じてプロバイダーを選択します。 選択できる値は、「LDAP」、「Kerberos」、「SAML」または「カスタム」認証プロバイダーです。
 
    LDAP を選択すると、ディレクトリ設定で指定した LDAP サーバーを使用するか、異なる LDAP サーバーを選択して認証に使用することができます。 異なるサーバーを選択する場合、ユーザーは両方の LDAP サーバーに存在する必要があります。
@@ -41,7 +40,7 @@ ht-degree: 97%
 1. 管理コンソールで、設定／User Management／ドメインの管理をクリックします。
 1. 「新規ローカルドメイン」をクリックします。
 1. 「ID」ボックスにドメインの一意の ID を入力し、「名前」ボックスにドメインのわかりやすい名前を入力します （[ドメイン名および ID に関する重要な考慮事項](adding-domains.md#important-considerations-for-domain-names-and-ids)を参照）。
-1. アカウントロックを有効にするかどうかを指定して、「OK」をクリックします （[&#x200B; アカウントロック設定の設定](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings)を参照）。 デフォルトでは、「アカウントロックを有効にする」が選択されています。
+1. アカウントロックを有効にするかどうかを指定して、「OK」をクリックします （[ アカウントロック設定の設定](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings)を参照）。 デフォルトでは、「アカウントロックを有効にする」が選択されています。
 
 ## ハイブリッドドメインを追加 {#add-a-hybrid-domain}
 

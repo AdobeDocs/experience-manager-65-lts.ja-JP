@@ -5,9 +5,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
 hide: true
-hidefromtoc: true
 exl-id: b3f8e1d6-3e6e-4b2c-8528-3346bbda3396
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1724'
 ht-degree: 99%
@@ -26,7 +25,7 @@ ht-degree: 99%
 
 ユーザーの作成時に、ユーザーをグループに追加したり、ユーザーに役割を割り当てたりすることができます。
 
-1. 管理コンソールで、**[!UICONTROL 設定/ ユーザー管理/ ユーザーとグループ]**&#x200B;をクリックし、**[!UICONTROL 新規ユーザー]**&#x200B;をクリックします。
+1. 管理コンソールで、**[!UICONTROL 設定/ ユーザー管理/ ユーザーとグループ]**&#x200B;をクリックし、**[!UICONTROL 新規ユーザー]**をクリックします。
 .
 1. 「**[!UICONTROL 一般設定]**」で、必要に応じて情報を入力し、「**[!UICONTROL 次へ]**」をクリックします。. この設定について詳しくは、[ユーザー設定](adding-configuring-users.md#user-settings)を参照してください。
 1. （オプション）ユーザーをグループに追加するには、「**[!UICONTROL グループを検索]**」をクリックし、次のタスクを実行します。

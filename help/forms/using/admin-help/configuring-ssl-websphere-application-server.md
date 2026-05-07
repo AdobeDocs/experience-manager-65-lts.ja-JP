@@ -5,9 +5,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Document Security
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 0caac293-98b4-4e73-9440-f1db68c94054
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 99%
@@ -69,7 +68,7 @@ SSL を有効にするには、WebSphere は、システムを管理する権限
 1. 管理セキュリティで、「**管理ユーザーの役割**」を選択します。
 1. 「追加」をクリックして次の操作を行います。
 
-   1. 検索ボックスに「**&ast;**」と入力し、「検索」をクリックします。
+   1. 検索ボックスに「**&amp;ast;**」と入力し、「検索」をクリックします。
    1. 役割の下にある「**管理者**」をクリックします。
    1. 新しく作成したユーザーを「Mapped to role」に追加し、管理者にマップします。
 

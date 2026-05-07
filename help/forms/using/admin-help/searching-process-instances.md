@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: e358ee51-c23f-4737-9dcf-3193ed541bbb
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 66%
@@ -60,7 +59,7 @@ ht-degree: 66%
 1. 行を追加または削除するには「フィルターを増やす」または「フィルターを減らす」をクリックします。 1～4 行まで指定できます。
 1. 「**検索**」をクリックします。 プロセスインスタンスページが表示され、見つかったインスタンスが一覧表示されます。
 
-[&#x200B; プロセスインスタンスのステータスについて](/help/forms/using/admin-help/processes.md#about-process-instance-statuses)も参照してください。
+[ プロセスインスタンスのステータスについて](/help/forms/using/admin-help/processes.md#about-process-instance-statuses)も参照してください。
 
 ## プロセスの複合検索を実行する {#perform-a-combined-search-for-a-process}
 
