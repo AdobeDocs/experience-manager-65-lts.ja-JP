@@ -10,9 +10,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 hide: true
-hidefromtoc: true
 exl-id: d9884c3e-47d2-400a-98c3-13cc37be6786
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1676'
 ht-degree: 100%
@@ -105,7 +104,7 @@ DDX ドキュメントを参照して、PDF ドキュメントをアセンブリ
 
 **関連トピック**
 
-[AEM Forms Java ライブラリファイルの追加](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[AEM Forms Java ライブラリファイルを含める](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [接続プロパティの設定](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -134,7 +133,7 @@ DDX ドキュメントを参照して、PDF ドキュメントをアセンブリ
 
 1. 実行時オプションを設定します。
 
-   * ランタイムオプションを格納する `AssemblerOptionSpec` オブジェクトをコンストラクタで作成します。
+   * コンストラクタを使用して、実行時オプションを格納する `AssemblerOptionSpec` オブジェクトを作成します。
    * `AssemblerOptionSpec` オブジェクトに属するメソッドを呼び出して、ビジネス要件を満たすよう実行時オプションを設定します。 例えば、エラーが発生したときにジョブの処理を続行するようにアセンブラーサービスに指示するには、`AssemblerOptionSpec` オブジェクトの `setFailOnError` メソッドを呼び出して `false` を渡します。
 
 1. ドキュメントを暗号化します。
@@ -164,7 +163,7 @@ DDX ドキュメントを参照して、PDF ドキュメントをアセンブリ
 
    >[!NOTE]
    >
-   >`localhost` を AEM Forms をホストするサーバーの IP アドレスに置き換えます。
+   >`localhost` を、AEM Forms をホストするサーバーの IP アドレスに置き換えます。
 
 1. Assembler クライアントを作成します。
 

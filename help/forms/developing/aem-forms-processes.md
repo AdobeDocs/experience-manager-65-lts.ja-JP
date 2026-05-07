@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 hide: true
-hidefromtoc: true
 exl-id: 228185f0-deef-4d49-a5b9-0c19411e30c2
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 100%
@@ -48,7 +47,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->このプロセスは、既存の AEM Forms プロセスには基づいていません。 このプロセスを呼び出す方法を説明するコード例に沿って理解を深めるには、ワークベンチを使用して `MyApplication/EncryptDocument` という名前のプロセスを作成します。 （[ワークベンチの使用](https://www.adobe.com/go/learn_aemforms_workbench_63_jp)を参照してください）。
+>このプロセスは、既存の AEM Forms プロセスに基づいていません。 このプロセスを呼び出す方法を説明するコード例に沿って理解を深めるには、ワークベンチを使用して `MyApplication/EncryptDocument` という名前のプロセスを作成します。 （[ワークベンチの使用](https://www.adobe.com/go/learn_aemforms_workbench_63_jp)を参照してください）。
 
 この短時間のみ有効なプロセスを呼び出すと、次のアクションを実行します。
 

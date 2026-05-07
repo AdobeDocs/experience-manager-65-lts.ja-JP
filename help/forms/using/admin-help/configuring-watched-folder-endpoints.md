@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: ae001541-ae7f-42ce-8236-5fbb6ddb4c1f
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '7169'
 ht-degree: 96%
@@ -120,7 +119,7 @@ Windows でアプリケーションサーバーがサービスとして実行さ
 
 **名前：**（必須）エンドポイントを識別します。 &lt; は含めないでください。含めると、Workspace に表示される名前の一部が省略されます。 エンドポイント名として URL を入力する場合は、RFC1738 で指定された構文規則に準拠していることを確認します。
 
-**説明：** エンドポイントの説明。 &lt; は含めないでください。含めると、Workspace に表示される説明の一部が省略されます。
+**説明：**&#x200B;エンドポイントの説明。 &lt; は含めないでください。含めると、Workspace に表示される説明の一部が省略されます。
 
 **パス：**：（必須）監視フォルダーの場所を指定します。 クラスター環境では、クラスター内のすべてのコンピューターからアクセスできる共有ネットワークフォルダーを指定する必要があります。
 

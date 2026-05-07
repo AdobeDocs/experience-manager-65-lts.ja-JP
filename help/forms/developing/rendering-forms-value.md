@@ -10,9 +10,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 8ad8cf67-3e90-4790-a063-099134b377a3
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1848'
 ht-degree: 100%
@@ -127,7 +126,7 @@ Forms API（Java）を使用して値でフォームをレンダリング：
    * フォームデザインを含む `com.adobe.idp.Document` オブジェクト。 通常、このパラメーター値はフォームに結合するデータ用に予約されています。
    * 実行時オプションを保存する `PDFFormRenderSpec` オブジェクト。 これはオプションのパラメーターで、実行時オプションを指定しない場合は、`null` を指定できます。
    * Forms サービスで必要な URI 値を格納する `URLSpec` オブジェクト。
-   * 添付ファイルを格納する `java.util.HashMap` オブジェクト。 これはオプションのパラメーターで、フォームにファイルを添付しない場合、`null` を指定できます。
+   * 添付ファイルを格納する `java.util.HashMap` オブジェクト。 これはオプションのパラメーターであり、フォームにファイルを添付しない場合に `null` を指定できます。
 
    `renderPDFForm` メソッドは、クライアント web ブラウザーに書き込むことができるフォームデータストリームを含む `FormsResult` オブジェクトを返します。
 

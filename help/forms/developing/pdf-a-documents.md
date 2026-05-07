@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 387f917c-eae3-4326-88f4-3b77cb9e4d46
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '2382'
 ht-degree: 100%
@@ -115,7 +114,7 @@ Java API を使用して、PDF ドキュメントを PDF/A ドキュメントに
 
 1. PDF ドキュメントを参照して PDF/A ドキュメントに変換
 
-   * コンストラクターを使用して、変換ファイルの場所を指定する文字列値を渡すことによって、変換する PDF ドキュメントを表す `java.io.FileInputStream` オブジェクトを作成します。
+   * コンストラクターを使用して、PDF ファイルの場所を指定する文字列値を渡すことにより、変換するインタラクティブ PDF ドキュメントを表す `java.io.FileInputStream` オブジェクトを作成します。
    * コンストラクターを使用し、`java.io.FileInputStream` オブジェクトを渡すことによって、`com.adobe.idp.Document` オブジェクトを作成します。
 
 1. トラッキング情報を設定
@@ -273,14 +272,14 @@ Java API を使用して PDF/A の準拠を判断します。
 
 1. PDF/A 準拠の判断に使用する PDF ドキュメントを参照
 
-   * コンストラクターを使用して、PDF ファイルの場所を指定する文字列値を渡すことにより、変換するインタラクティブ PDF ドキュメントを表す `java.io.FileInputStream` オブジェクトを作成します。
+   * コンストラクターを使用して、変換ファイルの場所を指定する文字列値を渡すことによって、変換する PDF ドキュメントを表す `java.io.FileInputStream` オブジェクトを作成します。
    * コンストラクターを使用して `java.io.FileInputStream` オブジェクトを渡すことにより、`com.adobe.idp.Document` オブジェクトを作成します。
 
 1. 実行時オプションを設定
 
    * コンストラクターを使用して `PDFAValidationOptionSpec` オブジェクトを作成します。
    * `PDFAValidationOptionSpec` オブジェクトの `setCompliance` メソッドを呼び出し、`PDFAValidationOptionSpec.Compliance.PDFA_1B` を渡して、準拠レベルを設定します。
-   * `PDFAValidationOptionSpec` オブジェクトの `setLogLevel` メソッドを呼び出し、トラッキングレベルを指定する文字列値を渡すことにより、情報のトラッキングレベルを設定します。 例えば、値 `FINE` を渡します。 様々な値について詳しくは、 [AEM Forms API リファレンス](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ja)の `setLogLevel` メソッドを参照してください。
+   * `PDFAValidationOptionSpec` オブジェクトの `setLogLevel` メソッドを呼び出し、トラッキングレベルを指定する文字列値を渡すことにより、情報のトラッキングレベルを設定します。 例えば、値 `FINE` を渡します。 様々な値について詳しくは、[AEM Forms API リファレンス](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ja)の `setLogLevel` メソッドを参照してください。
 
 1. PDF ドキュメントに関する情報を取得
 

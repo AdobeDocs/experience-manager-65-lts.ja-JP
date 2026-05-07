@@ -8,9 +8,8 @@ feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '6249'
 ht-degree: 97%
@@ -535,7 +534,7 @@ Microsoft Word のスタイル名にコンマ（,）または等号（=）が含
 
 **Adobe PDF にリンクを追加**：すべてのリンクを保持します。 このオプションはデフォルトで選択されています。
 
-**Adobe PDFにブックマークを追加**：見出しをブックマークに変換します。 このオプションはデフォルトで選択されています。
+**Adobe PDF にブックマークを追加**：見出しをブックマークに変換します。 このオプションはデフォルトで選択されています。
 
 **Adobe PDF にソースファイルを添付**：ソースファイルを添付ファイルとして PDF ファイルに追加します。
 

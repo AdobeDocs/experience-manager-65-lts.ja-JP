@@ -10,9 +10,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 3508d2d1-e05a-4733-b682-4b022348147a
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 100%
@@ -222,7 +221,7 @@ Assembler Service API（web サービス）を使用して、DDX ドキュメン
 1. DDX ドキュメントを作成します。
 
    * コンストラクターを使用して `System.Xml.XmlElement` オブジェクトを作成します。
-   * `XmlElement` オブジェクトの `CreateElement` メソッドを呼び出して、DDX ドキュメントのルート要素を作成します。 このメソッドは、 ルート要素を表す `Element` オブジェクトを作成します。 要素の名前を表す文字列値を `CreateElement` メソッドに渡します。 `SetAttribute` メソッドを呼び出して、DDX 要素の値を設定します。 最後に、`XmlElement` オブジェクトの `AppendChild` メソッドを呼び出して、DDX ドキュメントに要素を追加します。 DDX オブジェクトを引数として渡します。 次のコード行は、このアプリケーションロジックを示しています。
+   * `XmlElement` オブジェクトの `CreateElement` メソッドを呼び出して、DDX ドキュメントのルート要素を作成します。 このメソッドは、 ルート要素を表す `Element` オブジェクトを作成します。 要素名を表す文字列値を `CreateElement` メソッドに渡します。 `SetAttribute` メソッドを呼び出して、DDX 要素の値を設定します。 最後に、`XmlElement` オブジェクトの `AppendChild` メソッドを呼び出して、DDX ドキュメントに要素を追加します。 DDX オブジェクトを引数として渡します。 次のコード行は、このアプリケーションロジックを示しています。
 
      ` System.Xml.XmlElement root = ddx.CreateElement("DDX");  root.SetAttribute("xmlns", "https://ns.adobe.com/DDX/1.0/");  ddx.AppendChild(root);`
 
@@ -248,13 +247,13 @@ Assembler Service API（web サービス）を使用して、DDX ドキュメン
 
    * コンストラクタを使用して `BLOB` オブジェクトを作成します。 この `BLOB` オブジェクトは、入力 PDF ドキュメントの格納に使用します。 この `BLOB` オブジェクトは引数として `invokeOneDocument` に渡されます。
    * コンストラクターを呼び出して `System.IO.FileStream` オブジェクトを作成します。 入力 PDF ドキュメントのファイルの場所と、ファイルを開くモードを表す文字列値を渡します。
-   * `System.IO.FileStream` オブジェクトのコンテンツを格納するバイト配列を作成します。 `System.IO.FileStream` オブジェクトの `Length` プロパティを取得して、バイト配列のサイズを決定することができます。
-   * `System.IO.FileStream` オブジェクトの `Read` メソッドを呼び出し、バイト配列、開始位置、および読み取るストリーム長を渡して、バイト配列にストリームデータを入力します。
+   * `System.IO.FileStream` オブジェクトのコンテンツを保存するバイト配列を作成します。 `System.IO.FileStream` オブジェクトの `Length` プロパティを取得して、バイト配列のサイズを決定することができます。
+   * バイト配列にストリームデータを入力するには、`System.IO.FileStream` オブジェクトの `Read` メソッドを呼び出し、バイト配列、開始位置、読み取るストリーム長を渡します。
    * `MTOM` プロパティをバイト配列の内容に割り当てることで、`BLOB` オブジェクトを生成します。
 
 1. 実行時オプションを設定します。
 
-   * ランタイムオプションを格納する `AssemblerOptionSpec` オブジェクトをコンストラクタで作成します。
+   * コンストラクタを使用して、実行時オプションを格納する `AssemblerOptionSpec` オブジェクトを作成します。
    * `AssemblerOptionSpec` オブジェクトに属するデータメンバーに値を割り当てることで、ビジネス要件に応じたランタイムオプションを設定します。 例えば、エラーが発生した場合にジョブの処理を続行するようにアセンブラーサービスに指示するには、`false` を `AssemblerOptionSpec` オブジェクトの `failOnError` データメンバーに割り当てます。
 
 1. PDF ドキュメントを分割します。
