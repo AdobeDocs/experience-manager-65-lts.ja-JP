@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 551f915c2fa91a3b099ce5636ae5b7f4439c8236
+source-git-commit: f5a36877c0d051de5c96a8ab89b2886b28865249
 workflow-type: tm+mt
-source-wordcount: '3086'
-ht-degree: 90%
+source-wordcount: '3090'
+ht-degree: 88%
 
 ---
 
@@ -392,12 +392,12 @@ Windows x86 の場合：
   </tr>
 
 <tr>
-   <td>Microsoft® Office 2021 Professional Plus、小売ライセンスおよびボリュームライセンス</td>
+   <td>Microsoft® Office 2024 Professional Plus、小売およびボリュームライセンス</td>
    <td>DOC、DOCX、XLS、XLSX、PPT、PPTX、RTF、TXT</td>
   </tr>
   <tr>
    <td>
-    <strong>OpenOffice 4.1.15</strong>   </td>
+   OpenOffice 4.1.15 </td>
    <td>
     ODT、ODP、ODS、ODG、ODF、SXW、SXI、SXC、SXD、XLS、XLSX、DOC、DOCX、PPT、PPTX、画像形式（BMP、GIF、JPEG、JPG、TIF、TIFF、PNG、JPF、JPX 、JP2、J2K、J2C、JPC）、HTML、HTM、RTF、TXT<br>
 
@@ -408,15 +408,15 @@ Windows x86 の場合：
 
 >[!NOTE]
 >
->* PDF Generatorは、Microsoft® Office 2024をサポートしています。
 >* PDF Generator は、サポート対象のオペレーティングシステムとアプリケーションの英語版、フランス語版、ドイツ語版、日本語版のみをサポートしています。
->* PDF Generator で変換を実行するには、Adobe Acrobat Pro DC（32 ビット）が必要です。
->* PDF Generator では、32 ビット版の Microsoft® Office Professional Plus および変換に必要なその他のソフトウェアのみサポートしています。
->* ボリュームライセンスインストールで指定期間内に KMS ホストが見つからないなど、何らかの理由で Microsoft® Office インストールが非アクティブ化またはライセンス解除された場合、インストールのライセンスを再度取得して再アクティブ化するまでは、変換が失敗する場合があります。
+>* PDF Generatorでは、変換を実行するには、32 ビット版のAdobe Acrobat Pro DCとMicrosoft® Office Professional Plusが必要です。
+>* Microsoft® Office Professional Plus のインストールでは、リテールまたは MAK／KMS／AD ベースのボリュームライセンスを使用する場合があります。
+>* 指定した期間内にKMS ホストを見つけることができないボリュームライセンスのインストールなど、何らかの理由でMicrosoft® Office インストールがディアクティベートまたはライセンス解除された場合、インストールが再ライセンス認証されて再アクティブ化されるまで、コンバージョンが失敗する可能性があります。
 >* PDF Generator は Microsoft® Office 365 をサポートしていません。
 >* OpenOffice向けPDF Generator コンバージョンは、WindowsとLinux®の両方でサポートされています。
 >* OCR PDF、Optimize PDF、Export PDF の各機能は、Windows でのみサポートされます。
->* PDF Generator サービスはMicrosoft®Windows 11をサポートしていません
+>* PDF Generatorは、Microsoft®Windows 11をサポートしていません。
+>* Microsoft® Office 2021 Professional Plusのサポートは廃止されました。
 
 ### AEM Forms Designer の要件 {#requirements-for-aem-forms-designer}
 
