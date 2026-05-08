@@ -5,10 +5,10 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+source-git-commit: 15ab0f87fc3ae9a0e2116bb837a8cb60a6f984a1
 workflow-type: tm+mt
-source-wordcount: '10812'
-ht-degree: 96%
+source-wordcount: '10723'
+ht-degree: 97%
 
 ---
 
@@ -811,20 +811,20 @@ URL での JSON 機能の使用について詳しくは、[静的コンテンツ
    Dynamic Media 以外で WebVTT キャプション／キャプションファイルの作成に使用できる、無料と有料のツールやサービスを提供している web サイトが多数あります。<!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
    <!--
-[WebVTT キャプションメーカー](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
+   [WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
-最適な結果を得るには、Internet Explorer 9以降、Google Chrome、またはSafariのツールを使用します。
+   For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
 
-ツールで、**[!UICONTROL ビデオファイルのURLを入力]** フィールドに、ビデオファイルのコピーしたURLを貼り付け、**[!UICONTROL 読み込み]**&#x200B;をクリックします。 「[ アセットのURLを取得](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)」を参照して、ビデオファイル自体のURLを取得し、**[!UICONTROL ビデオファイルのURLを入力フィールド]**に貼り付けることができます。 Internet Explorer、Chrome、またはSafariは、ビデオをネイティブに再生できます。
--->
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.
+   -->
 
-サイトの画面に表示される指示に従って、WebVTT ファイルを作成して保存します。 完了したら、キャプションファイルの内容をコピーしてプレーンテキストエディターに貼り付け、`.vtt` のファイル名の拡張子で保存します。
+   サイトの画面に表示される指示に従って、WebVTT ファイルを作成して保存します。 完了したら、キャプションファイルの内容をコピーしてプレーンテキストエディターに貼り付け、`.vtt` のファイル名の拡張子で保存します。
 
->[!NOTE]
->
->複数言語のビデオキャプションでグローバル対応する場合、WebVTT 標準では、サポート対象の言語ごとに個別の `.vtt` ファイルと呼び出しを作成する必要があります。
+   >[!NOTE]
+   >
+   >複数言語のビデオキャプションでグローバル対応する場合、WebVTT 標準では、サポート対象の言語ごとに個別の `.vtt` ファイルと呼び出しを作成する必要があります。
 
-一般に、キャプションの `.vtt` ファイルにはビデオファイルと同じ名前を付け、名前の末尾に言語ロケール（-EN、-FR、-DE、-JA など）を追加します。 そうしておくと、既存の web コンテンツ管理システムを使用してビデオの URL を自動的に生成する際に役立ちます。
+   一般に、キャプションの `.vtt` ファイルにはビデオファイルと同じ名前を付け、名前の末尾に言語ロケール（-EN、-FR、-DE、-JA など）を追加します。 そうしておくと、既存の web コンテンツ管理システムを使用してビデオの URL を自動的に生成する際に役立ちます。
 
 1. Experience Manager で、WebVTT キャプションファイルを DAM にアップロードします。
 1. アップロードしたキャプションファイルを関連付ける、*公開済み*&#x200B;ビデオアセットに移動します。
