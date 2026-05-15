@@ -22,7 +22,7 @@ ht-degree: 91%
 
 ## オンプレミスのお客様は、AEM 6.5 LTS にアップグレードしないとどうなりますか？
 
-AEM 6.5 LTS には、Oracle Java 17 および Java 21 のサポートを含む、重要なセキュリティと安定性のアップデートが含まれています。 組織は6.5 LTSへのアップグレードを計画することをお勧めします。 Adobeは、2027年2月28日まで引き続きAEM 6.5をサポートします。 詳細については、[&#x200B; ロードマップ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem65)を確認してください。
+AEM 6.5 LTS には、Oracle Java 17 および Java 21 のサポートを含む、重要なセキュリティと安定性のアップデートが含まれています。 組織は6.5 LTSへのアップグレードを計画することをお勧めします。 Adobeは、2027年2月28日まで引き続きAEM 6.5をサポートします。 詳細については、[&#x200B; ロードマップ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem65)を確認してください。
 
 ## AEM 6.5 LTS にアップグレードすると、既存のカスタマイズや統合は影響を受けますか？
 
