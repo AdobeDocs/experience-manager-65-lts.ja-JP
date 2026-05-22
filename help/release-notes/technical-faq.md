@@ -50,7 +50,7 @@ AEM Groovy Consoleを使用している場合は、`com.adobe.granite.apicontrol
 
 いいえ。 AEM 6.5 LTSは、`jakarta.*` パッケージ名前空間に移行されたSling アーティファクトをサポートしていません。 コードと依存関係で`javax.*`の同等のものを使用します。例えば、`jakarta.annotation.PostConstruct`ではなく`javax.annotation.PostConstruct`をSling モデルで使用します。 AEM 6.5 LTSのSling モデルの実装では、`javax.*`個の注釈のみが認識されるため、`jakarta.*`個の注釈は初期化中に無視されます。
 
-詳しくは、ナレッジベースの記事「[Sling Models with `jakarta.annotation.PostConstruct` fail on AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-30339)」を参照してください。
+詳しくは、ナレッジベースの記事「[Sling Models with `jakarta.annotation.PostConstruct` fail on AEM 6.5 LTS](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-30339)」を参照してください。
 
 ## 追加のヘルプの入手
 
