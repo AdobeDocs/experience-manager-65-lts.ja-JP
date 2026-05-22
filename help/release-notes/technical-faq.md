@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
-source-git-commit: 89016492c069d61c18f9bf83bfb896cd78fb20fd
+source-git-commit: f994a8712a403083de1edc62579846ba99bd3afd
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 75%
+source-wordcount: '392'
+ht-degree: 59%
 
 ---
 
@@ -45,6 +45,12 @@ AEM Groovy Consoleを使用している場合は、`com.adobe.granite.apicontrol
 ### Maven Central の Uber JAR が破損しているようです。問題は何ですか？
 
 `apis` 分類子で Uber JAR を使用していることを確認します。 AEM 6.5 LTS では、Uber JAR のパッケージ構造が変更されていることに注意してください。 詳しくは、[AEM Uber Jar バージョンの更新](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version)を参照してください。
+
+### AEM 6.5 LTSは、`jakarta.*` パッケージ名前空間（例：`jakarta.annotation`）をサポートしていますか？
+
+いいえ。 AEM 6.5 LTSは、`jakarta.*` パッケージ名前空間に移行されたSling アーティファクトをサポートしていません。 コードと依存関係で`javax.*`の同等のものを使用します。例えば、`jakarta.annotation.PostConstruct`ではなく`javax.annotation.PostConstruct`をSling モデルで使用します。 AEM 6.5 LTSのSling モデルの実装では、`javax.*`個の注釈のみが認識されるため、`jakarta.*`個の注釈は初期化中に無視されます。
+
+詳しくは、ナレッジベースの記事「[Sling Models with `jakarta.annotation.PostConstruct` fail on AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-30339)」を参照してください。
 
 ## 追加のヘルプの入手
 
