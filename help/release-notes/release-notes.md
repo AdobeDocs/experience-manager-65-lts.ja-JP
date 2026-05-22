@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 02b7915e1e5554d29577e46960c072d46bcc8b0c
+source-git-commit: c87fd907f2e9b91cc7013be5c12c867fb71dbbe1
 workflow-type: tm+mt
-source-wordcount: '7695'
+source-wordcount: '7679'
 ht-degree: 97%
 
 ---
@@ -659,10 +659,10 @@ AEM デプロイメントで SSL のみの機能を有効にすると、Dispatch
 
 ## 含まれている OSGi バンドルとコンテンツパッケージ{#osgi-bundles-and-content-packages-included}
 
-次のテキストドキュメントには、この [!DNL Experience Manager] 6.5 LTS、サービスパック 2 リリースに含まれている OSGi バンドルとコンテンツパッケージのリストが記載されています。<!-- UPDATE FOR EACH NEW RELEASE -->
+次のzip ファイルには、このExperience Manager 6.5 LTS サービスパック リリースに含まれるOSGi バンドルとコンテンツパッケージを一覧表示するテキストドキュメントが含まれています。
 
-* [Experience Manager 6.5 LTS、サービスパック 2 に含まれている OSGi バンドルのリスト](/help/release-notes/assets/65lts_sp2_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [Experience Manager 6.5 LTS、サービスパック 2 に含まれているコンテンツパッケージのリスト](/help/release-notes/assets/65lts_sp2_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [OSGi バンドル &#x200B;](/help/release-notes/assets/65lts_sp2_bundles.zip)
+* [コンテンツパッケージ](/help/release-notes/assets/65lts_sp2_packages.zip)
 
 ## 制限付き Web サイト{#restricted-sites}
 
