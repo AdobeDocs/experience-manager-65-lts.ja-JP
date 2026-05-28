@@ -27,7 +27,7 @@ ht-degree: 66%
 
 名前空間を使用すると、プロパティの範囲と目的を示すことができます。 カスタム名前空間（多くの場合、会社名）を作成すると、AEM 実装に固有のノードやプロパティを明確に識別し、自社のビジネスに固有のデータを含めることができます。
 
-カスタム名前空間は[Sling リポジトリ初期化（repoinit） ](https://sling.apache.org/documentation/bundles/repository-initialization.html) スクリプトで管理され、プロジェクトの設定パッケージのOSGi設定（例：`ui.config`）としてデプロイされます。
+カスタム名前空間は[Sling リポジトリ初期化（repoinit） &#x200B;](https://sling.apache.org/documentation/bundles/repository-initialization.html) スクリプトで管理され、プロジェクトの設定パッケージのOSGi設定（例：`ui.config`）としてデプロイされます。
 
 ## リソース {#resources}
 
