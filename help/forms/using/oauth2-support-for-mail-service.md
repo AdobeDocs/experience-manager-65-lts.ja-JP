@@ -6,10 +6,10 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 exl-id: a9790625-af8d-4416-b96f-4724a025260b
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: a053ca75d106025fcfeb63ac5ba3c95283861e7e
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 93%
+source-wordcount: '1034'
+ht-degree: 91%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 93%
 
 組織が安全なメールの要件に準拠できるように、AEM Forms では、Microsoft® Office 365 メールサーバープロトコルとの統合のために OAuth 2.0 をサポートしています。 Azure Active Directory（Azure AD）OAuth 2.0 認証サービスを使用して、IMAP、POP、SMTP などの様々なプロトコルと接続し、Office 365 ユーザーのメールデータにアクセスできます。 OAuth 2.0 サービスを介して認証するように Microsoft® Office 365 メールサーバープロトコルを設定する手順を以下に示します。
 
-1. [https://portal.azure.com/](https://portal.azure.com/) にログインし、検索バーで **Azure Active Directory** を検索して、結果をクリックします。
-または、[https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) を直接参照することもできます。
+1. [https://portal.azure.com/](https://portal.azure.com/)にログインし、検索バーで&#x200B;**Azure Active Directory**を検索して、結果をクリックします。
+または、[https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)に直接参照することもできます
 1. **追加**／**アプリの登録**／**新しい登録**&#x200B;をクリックします。
 
    ![アプリの登録](/help/forms/using/assets/outh_outlook_microsoft_azure.png)
 
 1. 必要に応じて情報を入力し、「**登録**」をクリックします。
-   ![&#x200B; サポートされているアカウント](/help/forms/using/assets/azure_suuportedaccountype.png)
+   ![ サポートされているアカウント](/help/forms/using/assets/azure_suuportedaccountype.png)
 上記の場合、**任意の組織ディレクトリ （任意のAzure AD ディレクトリ – マルチテナント）および個人のMicrosoft® アカウント （Skype、Xboxなど）**&#x200B;のアカウントが選択されます。
 
    >[!NOTE]
@@ -72,7 +72,7 @@ ht-degree: 93%
 
 1. `clientID` を `<client_id>` に、`redirect_uri` をアプリケーションのリダイレクト URI に置き換えた後で、次の URL をブラウザーで開きます。
 
-   ```https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=[clientid]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login```
+   `https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=[clientid]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
 
    >[!NOTE]
    >
