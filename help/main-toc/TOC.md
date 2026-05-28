@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS ドキュメントを使用して、その仕組みと機能について説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: c77ad85cf736ee660bfaa662d428a7f7e83a12ff
 workflow-type: tm+mt
-source-wordcount: '7693'
+source-wordcount: '7695'
 ht-degree: 68%
 
 ---
@@ -1412,6 +1412,7 @@ ht-degree: 68%
          + [コードの落とし穴](/help/sites-developing/code-pitfalls.md)
          + [OSGi バンドル](/help/sites-developing/osgi-bundles.md)
          + [JCR 統合](/help/sites-developing/jcr-integration.md)
+         + [カスタム名前空間](/help/sites-developing/custom-namespaces.md)
          + [コードサンプル](/help/sites-developing/code-samples.md)
          + [処理に時間のかかるクエリのトラブルシューティング](/help/sites-developing/troubleshooting-slow-queries.md)
    + デプロイ {#deploying}
