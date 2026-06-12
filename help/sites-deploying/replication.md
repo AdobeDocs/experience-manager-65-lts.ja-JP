@@ -58,7 +58,7 @@ ht-degree: 94%
 
 ### レプリケーション（デフォルト） {#replication-out-of-the-box}
 
-[ ページの作成と整理](/help/sites-authoring/managing-pages.md)に従ってページを作成します。
+[&#x200B; ページの作成と整理](/help/sites-authoring/managing-pages.md)に従ってページを作成します。
 
 この例に従ってデフォルトのレプリケーションエージェントを使用するには、次の環境を使用して [AEM をインストール](/help/sites-deploying/deploy.md)します。
 
@@ -108,7 +108,7 @@ ht-degree: 94%
 * Dispatcher フラッシュ
 これは、Dispatcher キャッシュの管理に使用されます。 詳しくは、[オーサリング環境からの Dispatcher キャッシュの無効化](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=ja#invalidating-dispatcher-cache-from-the-authoring-environment)および[パブリッシュインスタンスからの Dispatcher キャッシュの無効化](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=ja#invalidating-dispatcher-cache-from-a-publishing-instance)を参照してください。
 
-* [ リバースレプリケーション](#configuring-reverse-replication)
+* [&#x200B; リバースレプリケーション](#configuring-reverse-replication)
 パブリッシュからオーサーへのレプリケートに使用します。 リバースレプリケーションは、フォーラム、ブログ、コメントなどのコミュニティ機能には使用されません。 アウトボックスが有効化されていないので、事実上、この機能は無効になっています。 リバースレプリケーションを使用するには、カスタム設定が必要になります。
 
 * 静的エージェント
@@ -440,7 +440,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->これは、[ エージェントユーザーID](#agentuserid)を使用して、個々のパブリッシュ環境にレプリケートする異なるコンテンツを選択すると組み合わせることができます。 パブリッシュ環境ごとに：
+>これは、[&#x200B; エージェントユーザーID](#agentuserid)を使用して、個々のパブリッシュ環境にレプリケートする異なるコンテンツを選択すると組み合わせることができます。 パブリッシュ環境ごとに：
 >
 >1. パブリッシュ環境へのレプリケーション用のレプリケーションエージェントを設定します。
 >1. 特定のパブリッシュ環境にレプリケーションされるコンテンツを読み取るために必要なアクセス権を持つユーザーアカウントを設定します。
