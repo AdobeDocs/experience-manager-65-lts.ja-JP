@@ -11,14 +11,14 @@ role: Admin, User, Developer
 exl-id: e99f1cbd-492e-4cc2-9975-8f17c885dd8c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '142'
 ht-degree: 100%
 
 ---
 
 # ドキュメントへのリンクの更新 {#updating-the-link-to-the-documentation}
 
-AEM Forms Workspace のデフォルトのヘルプコンテンツにアクセスするには、**ヘルプ／Workspace ヘルプ**&#x200B;を選択します。これは、アドビの web サイトのオンラインドキュメントを指しています。ただし、それを更新して他の URL を指定するようにすることができます。
+AEM Forms Workspace のデフォルトのヘルプコンテンツにアクセスするには、**ヘルプ／Workspace ヘルプ**&#x200B;を選択します。 これは、アドビの web サイトのオンラインドキュメントを指しています。 ただし、それを更新して他の URL を指定するようにすることができます。
 
 デフォルトのヘルプ URL を変更する場合は以下の使用事例を考慮してください。
 
