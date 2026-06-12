@@ -13,8 +13,8 @@ hide: true
 exl-id: 3508d2d1-e05a-4733-b682-4b022348147a
 source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
-source-wordcount: '2183'
-ht-degree: 100%
+source-wordcount: '2111'
+ht-degree: 99%
 
 ---
 
@@ -41,7 +41,7 @@ DDX ドキュメントをアセンブラーサービスに渡す前に、XML を
 
 >[!NOTE]
 >
->アセンブラーサービスについて詳しくは、[AEM Forms サービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
+>アセンブラーサービスについて詳しくは、[AEM Formsサービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
 
 >[!NOTE]
 >
@@ -129,7 +129,7 @@ Assembler Service API（Java）を使用して、DDX ドキュメントを動的
    * `DocumentBuilderFactory` クラスの `newInstance` メソッドを呼び出して、Java の `DocumentBuilderFactory` オブジェクトを作成します。
    * `DocumentBuilderFactory` オブジェクトの `newDocumentBuilder` メソッドを呼び出して、Java の `DocumentBuilder` オブジェクトを作成します。
    * `DocumentBuilder` オブジェクトの `newDocument` メソッドを呼び出し、`org.w3c.dom.Document` オブジェクトをインスタンス化します。
-   * `org.w3c.dom.Document` オブジェクトの `createElement` メソッドを呼び出して、DDX ドキュメントのルート要素を作成します。 このメソッドは、 ルート要素を表す `Element` オブジェクトを作成します。 要素名を表す文字列値を `createElement` メソッドに渡します。 戻り値を `Element` にキャストします。 次に、`setAttribute` メソッド呼び出して、子要素の値を設定します。 最後に、ヘッダー要素を要素に追加するには、ヘッダー要素の `appendChild` メソッドを呼び出して、子要素オブジェクトを引数として渡します。 次のコード行は、このアプリケーションロジックを示しています。
+   * `org.w3c.dom.Document` オブジェクトの`createElement` メソッドを呼び出して、DDX ドキュメントのルート要素を作成します。このメソッドは、ルート要素を表す`Element` オブジェクトを作成します。要素の名前を表す文字列値を`createElement` メソッドに渡します。戻り値を`Element`にキャストします。次に、`setAttribute` メソッドを呼び出して、子要素の値を設定します。最後に、ヘッダー要素の`appendChild` メソッドを呼び出してヘッダー要素に要素を追加し、子要素オブジェクトを引数として渡します。次のコード行は、このアプリケーションロジックを示しています。
      ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
 
    * `Document` オブジェクトの `createElement` メソッドを呼び出して、`PDFsFromBookmarks` 要素を作成します。 要素名を表す文字列値を `createElement` メソッドに渡します。 戻り値を `Element` にキャストします。 `setAttribute` メソッドを呼び出して、`PDFsFromBookmarks` 要素の値を設定 します。 DDX 要素の `appendChild` メソッドを呼び出して、`DDX` 要素に `PDFsFromBookmarks` 要素を追加します。 `PDFsFromBookmarks` 要素オブジェクトを引数として渡します。 次のコード行は、このアプリケーションロジックを示しています。
@@ -164,7 +164,7 @@ Assembler Service API（Java）を使用して、DDX ドキュメントを動的
 
 1. 実行時オプションを設定します。
 
-   * コンストラクタを使用して、実行時オプションを格納する `AssemblerOptionSpec` オブジェクトを作成します。
+   * ランタイムオプションを格納する `AssemblerOptionSpec` オブジェクトをコンストラクタで作成します。
    * `AssemblerOptionSpec` オブジェクトに属するメソッドを呼び出して、ビジネス要件を満たすよう実行時オプションを設定します。 例えば、エラーが発生したときにジョブの処理を続行するようにアセンブラーサービスに指示するには、`AssemblerOptionSpec` オブジェクトの `setFailOnError` メソッドを呼び出して `false` を渡します。
 
 1. PDF ドキュメントを分割します。
