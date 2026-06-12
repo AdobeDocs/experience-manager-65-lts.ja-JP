@@ -101,5 +101,5 @@ AEM 6.5 LTSにアップグレードすると、アップグレードが実行さ
 * org.apache.sling.atom.taglib
 * com.github.jknack.handlebars
 * com.adobe.granite.osgi.wrapper.guava
-* com.adobe.cq.core.wcm.components.core （[AEM 6.5 LTS互換バージョン &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/versions)に置き換えられます）
+* com.adobe.cq.core.wcm.components.core （[AEM 6.5 LTS互換バージョン &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/versions)に置き換えられます）
 * com.adobe.cq.core.wcm.components.extension.contentfragment.bundle （AEM 6.5 LTS互換バージョンに置き換えることができます）
