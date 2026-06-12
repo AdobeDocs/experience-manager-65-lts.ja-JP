@@ -20,7 +20,7 @@ ht-degree: 94%
 
 ## 概要 {#overview}
 
-AEM Forms アプリケーションでは、アダプティブフォーム、モバイルフォーム、モバイルデバイスのフォームセットをサーバーに基づいて同期することができます。 OSGi](/help/forms/using/aem-forms-workflow.md) <!--or Forms workflows on JEE-->で[Forms中心のワークフローを定義できます。 例えば、金融関係の会社を経営していて、顧客の申請と問い合わせの管理に AEM Forms を使用するとします。 顧客はフォームを記入し、それを送信して承認を求めます。 モバイルデバイスのフォームを有効にしている場合、顧客はフォームを AEM Forms アプリケーションで記入することができます。 また、会社側も、モバイルデバイス上でのフォームの認証を有効にすることで、承認のワークフローを管理することができます。 フィールドワーカーはモバイルデバイスを顧客のところに持参し、詳細を確認して、フォームを送信します。 AEM Forms アプリケーションは AEM Forms サーバーと同期して、モバイルデバイスで有効になっているフォームを取得します。 アプリケーションがオフラインの場合、データはローカルに保存されます。
+AEM Forms アプリケーションでは、アダプティブフォーム、モバイルフォーム、モバイルデバイスのフォームセットをサーバーに基づいて同期することができます。 OSGi&rbrack;(/help/forms/using/aem-forms-workflow.md) <!--or Forms workflows on JEE-->で&lbrack;Forms中心のワークフローを定義できます。 例えば、金融関係の会社を経営していて、顧客の申請と問い合わせの管理に AEM Forms を使用するとします。 顧客はフォームを記入し、それを送信して承認を求めます。 モバイルデバイスのフォームを有効にしている場合、顧客はフォームを AEM Forms アプリケーションで記入することができます。 また、会社側も、モバイルデバイス上でのフォームの認証を有効にすることで、承認のワークフローを管理することができます。 フィールドワーカーはモバイルデバイスを顧客のところに持参し、詳細を確認して、フォームを送信します。 AEM Forms アプリケーションは AEM Forms サーバーと同期して、モバイルデバイスで有効になっているフォームを取得します。 アプリケーションがオフラインの場合、データはローカルに保存されます。
 
 AEM Forms アプリケーションのソースコードは、ソフトウェアディストリビューションにより、使用することができます。 ソフトウエア配布のソースコードパッケージは、`adobe-aemfd-forms-app-src-pkg-<version>.zip` として入手できます。
 
@@ -28,7 +28,7 @@ AEM Forms アプリケーションは、iOS、Android、および Windows デバ
 
     [ ![google_play] （assets/google_play.png） ] （https://play.google.com/store/apps/details?id=com.adobe.aem.forms） 
     
-    [ ![app_store] （assets/app_store.png） ] （https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8） 
+    [ ![app_store] （assets/app_store.png） ] （https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&mt=8） 
     
     [ ![microsoft-badge-icon] （assets/microsoft-badge-icon.png） ] （https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt） 
 
