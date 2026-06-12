@@ -167,7 +167,7 @@ Dispatcher は、キャッシングとロードバランシングを行うため
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   ファイルを保存して閉じます。 フィルターについて詳しくは、[Dispatcher のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja)を参照してください。
+   ファイルを保存して閉じます。 フィルターについて詳しくは、[Dispatcher のドキュメント](https://helpx.adobe.com/jp/experience-manager/dispatcher/using/dispatcher-configuration.html)を参照してください。
 
 1. リファラーフィルターサービスの設定：
 

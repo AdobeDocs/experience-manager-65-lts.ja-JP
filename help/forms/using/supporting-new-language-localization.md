@@ -1,6 +1,6 @@
 ---
 title: アダプティブフォームのローカリゼーション用に新しいロケールをサポート
-description: AEM Forms は、アダプティブフォームのローカライズ用に新しくロケールを追加できます。デフォルトでサポートされているロケールは、英語、フランス語、ドイツ語、日本語です。
+description: AEM Forms は、アダプティブフォームのローカライズ用に新しくロケールを追加できます。 デフォルトでサポートされているロケールは、英語、フランス語、ドイツ語、日本語です。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 exl-id: 9c516c90-1b1d-406a-b42d-909aae8bb634
 source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 96%
+source-wordcount: '848'
+ht-degree: 95%
 
 ---
 
@@ -20,44 +20,44 @@ ht-degree: 96%
 
 ## 適用先 {#applies-to}
 
-このドキュメントは、**AEM 6.5 LTS Forms** に適用されます。
+このドキュメントは、**AEM 6.5 LTS Forms**&#x200B;に適用されます。
 
-AEM as a Cloud Serviceのドキュメントについては、[Cloud ServiceのAEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html?lang=ja) を参照してください。
+AEM as a Cloud Serviceのドキュメントについては、[Cloud Service上のAEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html?lang=ja)を参照してください。
 
 ## ロケールの辞書について {#about-locale-dictionaries}
 
 アダプティブフォームのローカリゼーションは、次の 2 種類のロケールの辞書に基づいています。
 
-**フォーム固有の辞書**&#x200B;は、アダプティブフォーム使用する文字列を含みます。例えば、ラベル、フィールド名、エラーメッセージ、ヘルプの説明文などです。各ロケールごとに、XLIFF ファイルのセットの形で管理されています。`https://<host>:<port>/libs/cq/i18n/translator.html` からアクセスできます。
+**フォーム固有の辞書**&#x200B;は、アダプティブフォーム使用する文字列を含みます。 例えば、ラベル、フィールド名、エラーメッセージ、ヘルプの説明文などです。 各ロケールごとに、XLIFF ファイルのセットの形で管理されています。`https://<host>:<port>/libs/cq/i18n/translator.html` からアクセスできます。
 
-**グローバル辞書** 2 つのグローバル辞書があり、AEM クライアントライブラリで JSON オブジェクトの形で管理されています。これらの辞書にはデフォルトのエラーメッセージ、12 か月の名前、通貨シンボル、日付と時間のパターンなどが含まれます。これらの辞書は CRXDe Lite の /libs/fd/xfaforms/clientlibs/I18N にあります。これらの場所では、各ロケールごと別々のフォルダーが用意されています。グローバルの辞書が頻繁に更新されることはほとんどありません。各ロケールごとに別の JavaScript ファイルを保持することで、ブラウザーによりそれらがキャッシュされるため、同一サーバー上で異なるアダプティブフォームにアクセスする際に、ネットワーク帯域幅の使用量を減らすことができます。
+**グローバル辞書** 2 つのグローバル辞書があり、AEM クライアントライブラリで JSON オブジェクトの形で管理されています。 これらの辞書にはデフォルトのエラーメッセージ、12 か月の名前、通貨シンボル、日付と時間のパターンなどが含まれます。 これらの辞書は CRXDe Lite の /libs/fd/xfaforms/clientlibs/I18N にあります。 これらの場所では、各ロケールごと別々のフォルダーが用意されています。 グローバルの辞書が頻繁に更新されることはほとんどありません。各ロケールごとに別の JavaScript ファイルを保持することで、ブラウザーによりそれらがキャッシュされるため、同一サーバー上で異なるアダプティブフォームにアクセスする際に、ネットワーク帯域幅の使用量を減らすことができます。
 
 ### アダプティブフォームのローカリゼーションの仕組み {#how-localization-of-adaptive-form-works}
 
-アダプティブフォームのロケールを識別する方法は 2 つあります。アダプティブフォームがレンダリングされると、リクエストされたロケールが次のように識別されます。
+アダプティブフォームのロケールを識別する方法は 2 つあります。 アダプティブフォームがレンダリングされると、リクエストされたロケールが次のように識別されます。
 
-* アダプティブフォームの URL の `[local]` セレクターを確認します。URL の形式は、`http://host:port/content/forms/af/[afName].[locale].html?wcmmode=disabled` です。`[local]` セレクターを使用すると、アダプティブフォームをキャッシュできます。
+* アダプティブフォームの URL の `[local]` セレクターを確認します。 URL の形式は、`http://host:port/content/forms/af/[afName].[locale].html?wcmmode=disabled` です。 `[local]` セレクターを使用すると、アダプティブフォームをキャッシュできます。
 
 * 指定した順序で次のパラメーターを確認します。
 
-   * リクエストパラメーター `afAcceptLang`
-ユーザーのブラウザーロケールを上書きするには、`afAcceptLang` リクエストパラメーターを渡して、ロケールを強制的に指定します。例えば、次の URL はフォームを日本語ロケールで強制的にレンダリングします。
+   * 要求パラメーター`afAcceptLang`
+ユーザーのブラウザーロケールを上書きするには、`afAcceptLang` リクエストパラメーターを渡してロケールを強制的に指定します。例えば、次のURLは、フォームを日本語ロケールでレンダリングすることを強制しました。
      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
    * ユーザー向けに設定されるブラウザーのロケールです。これは、`Accept-Language` ヘッダーを使用したリクエストで指定されます。
 
    * AEM のユーザー指定の言語設定です。
 
-   * ブラウザーのロケールはデフォルトで有効です。ブラウザーロケール設定を変更するには
-      * 設定マネージャーを開きます。URL は `http://[server]:[port]/system/console/configMgr` です
+   * ブラウザーのロケールはデフォルトで有効です。 ブラウザーロケール設定を変更するには
+      * 設定マネージャーを開きます。 URL は `http://[server]:[port]/system/console/configMgr` です
       * 「**[!UICONTROL アダプティブフォームおよびインタラクティブなコミュニケーション Web チャネル]**」の設定を検索して開きます。
-      * 「**[!UICONTROL ブラウザーロケールを使用]**」オプションのステータスと設定の **[!UICONTROL 保存]** を変更します。
+      * 「**[!UICONTROL ブラウザーロケールを使用]**」オプションのステータスを変更して設定を「**[!UICONTROL 保存]**」します。
 
-ロケールが識別されると、アダプティブフォームはフォームに固有の辞書を参照します。要求されたロケールに対応するフォーム固有の辞書が見つからない場合、アダプティブフォームが作成された言語の辞書が使用されます。
+ロケールが識別されると、アダプティブフォームはフォームに固有の辞書を参照します。 要求されたロケールに対応するフォーム固有の辞書が見つからない場合、アダプティブフォームが作成された言語の辞書が使用されます。
 
-ロケール情報が存在しない場合、アダプティブフォームはフォームの元の言語で配信されます。元の言語は、アダプティブフォームの開発時に使用する言語です。
+ロケール情報が存在しない場合、アダプティブフォームはフォームの元の言語で配信されます。 元の言語は、アダプティブフォームの開発時に使用する言語です。
 
-リクエストされたロケールのクライアントライブラリが存在しない場合、ロケールに含まれる言語コードのクライアントライブラリが存在するか確認します。例えば、リクエストされたロケールが `en_ZA`（南アフリカ英語）で、`en_ZA` 用のクライアントライブラリが存在しない場合、アダプティブフォームは、`en`（英語）言語のクライアントライブラリがあればそれを使用します。ただし、どちらも存在しない場合、アダプティブフォームでは`en`ロケールの辞書が使用されます。
+リクエストされたロケールのクライアントライブラリが存在しない場合、ロケールに含まれる言語コードのクライアントライブラリが存在するか確認します。 例えば、リクエストされたロケールが `en_ZA`（南アフリカ英語）で、`en_ZA` 用のクライアントライブラリが存在しない場合、アダプティブフォームは、`en`（英語）言語のクライアントライブラリがあればそれを使用します。 ただし、どちらも存在しない場合、アダプティブフォームでは`en`ロケールの辞書が使用されます。
 
 ## サポートされていないロケールにローカリゼーションのサポートを追加する {#add-localization-support-for-non-supported-locales}
 
@@ -97,11 +97,11 @@ I18N.js
 
 ### アダプティブフォームのクライアントライブラリをロケール用に追加する {#add-adaptive-form-client-library-for-a-locale-br}
 
-`etc/<folderHierarchy>` の下にタイプ `cq:ClientLibraryFolder` のノードを作成します。カテゴリは `guides.I18N.<locale>`、依存関係は `xfaforms.3rdparty`、`xfaforms.I18N.<locale>`、`guide.common` です。
+カテゴリが`guides.I18N.<locale>`、依存関係が`xfaforms.3rdparty`、`xfaforms.I18N.<locale>`および`guide.common`の`etc/<folderHierarchy>`の下にタイプ `cq:ClientLibraryFolder`のノードを作成します。 ``
 
 クライアントライブラリに次のファイルを追加します。
 
-* **i18n.js** は `guidelib.i18n` を定義し、`<locale>` の「calendarSymbols」、`datePatterns`、`timePatterns`、`dateTimeSymbols`、`numberPatterns`、`numberSymbols`、`currencySymbols`、`typefaces` のパターンを持つファイルです。これらは[ロケールセットの仕様](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf)に記載されている XFA 仕様に従います。また、サポート対象の他のロケールがどのように定義されているか、`/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js` で確認することができます。
+* **i18n.js** は `guidelib.i18n` を定義し、`<locale>` の「calendarSymbols」、`datePatterns`、`timePatterns`、`dateTimeSymbols`、`numberPatterns`、`numberSymbols`、`currencySymbols`、`typefaces` のパターンを持つファイルです。これらは[ロケールセットの仕様](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf)に記載されている XFA 仕様に従います。 また、サポート対象の他のロケールがどのように定義されているか、`/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js` で確認することができます。
 * **LogMessages.js** は、`/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js` で定義された `<locale>` の `guidelib.i18n.strings` と `guidelib.i18n.LogMessages` を定義します。
 * 以下を含む **js.txt** ファイル。
 
@@ -129,7 +129,7 @@ LogMessages.js
 
 >[!NOTE]
 >
-> 「Ctrl + C」コマンドを使用して SDK を再起動することをお勧めします。Java プロセスの停止など、別の方法を使用して AEM SDK を再起動すると、AEM 開発環境で不整合が生じる場合があります。
+> 「Ctrl + C」コマンドを使用して SDK を再起動することをお勧めします。 Java プロセスの停止など、別の方法を使用して AEM SDK を再起動すると、AEM 開発環境で不整合が生じる場合があります。
 
 ## スペイン語サポートを追加する場合のサンプルライブラリ {#sample-libraries-for-adding-support-for-spanish}
 
