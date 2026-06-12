@@ -6,7 +6,7 @@ feature: Release Information
 role: User,Admin,Developer
 exl-id: dfda31ac-765b-401d-98d0-c19f0de22aab
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 100%
 
@@ -147,7 +147,7 @@ AEM デプロイメントで SSL のみの機能を有効にすると、Dispatch
 * AEM インスタンスへの `https + IP` 接続方法を使用した Dispatcher 設定
 
 **解決策：**
-この問題が発生した場合は、アドビカスタマーサポートにお問い合わせください。この問題を解決するためのホットフィックス [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) が使用可能です。 必要なホットフィックスを適用するまで、SSL のみの機能を有効にしないでください。
+この問題が発生した場合は、アドビカスタマーサポートにお問い合わせください。 この問題を解決するためのホットフィックス [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) が使用可能です。 必要なホットフィックスを適用するまで、SSL のみの機能を有効にしないでください。
 
 ## 制限付き Web サイト{#restricted-sites}
 

@@ -42,7 +42,7 @@ ht-degree: 100%
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking_a_short_lived_process_using_the_invocation_api">呼び出し API を使用した短時間のみ有効なプロセスの呼び出し</a></p></td>
    <td><p>該当なし</p></td>
-   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_short_lived_process_using_the_invocation_api">クイックスタート：Invocation API を使用した短期間有効なプロセスの呼び出し</a></p></td>
+   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_short_lived_process_using_the_invocation_api">クイックスタート：呼び出し API を使用した短時間のみ有効なプロセスの呼び出し</a></p></td>
    <td><p>該当なし</p></td>
   </tr>
   <tr>

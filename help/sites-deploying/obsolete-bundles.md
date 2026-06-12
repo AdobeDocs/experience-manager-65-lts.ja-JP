@@ -11,14 +11,14 @@ role: Admin
 exl-id: 29f1d07b-925b-4612-aa1b-34c387a5765f
 source-git-commit: b93a65226587936010c3dd53312c66e15f73cf2a
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 15%
+source-wordcount: '384'
+ht-degree: 7%
 
 ---
 
 # アップグレード後にアンインストールされる廃止されたバンドルの一覧{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
 
-AEM 6.5 LTS にアップグレードすると、アップグレードされたAEM 6.5 servicepack のバージョンに応じて、以下のバンドルが自動的にアンインストールされます。
+AEM 6.5 LTSにアップグレードすると、アップグレードが実行されたAEM 6.5 サービスパックのバージョンに応じて、次のバンドルが自動的にアンインストールされます。
 
 * com.adobe.cq.social.cq-social-activitystreams
 * com.adobe.cq.social.cq-social-as-provider
@@ -83,7 +83,7 @@ AEM 6.5 LTS にアップグレードすると、アップグレードされたAE
 * com.adobe.cq.screens
 * com.adobe.cq.screens.sessions
 * com.adobe.granite.socketio
-* org.apache.jackrabbit.jackrabbit-api （新しいバージョン org.apache.jackrabbit.oak-jackrabbit-api に置き換え）
+* org.apache.jackrabbit.jackrabbit-api （新しいバージョンのorg.apache.jackrabbit.oak-jackrabbit-apiに置き換え）
 * com.adobe.cq.commerce.cq-commerce-core
 * com.adobe.cq.commerce.cq-commerce-pim
 * com.adobe.cq.commerce.cq-commerce-social
@@ -91,15 +91,15 @@ AEM 6.5 LTS にアップグレードすると、アップグレードされたAE
 * org.apache.servicemix.bundles.jdom
 * com.day.cq.dam.cq-dam-pim
 * com.day.cq.dam.cq-dam-rating
-* org.apache.commons.io （新しいバージョン org.apache.commons.commons-io に置き換え）
+* org.apache.commons.io （新しいバージョンのorg.apache.commons.commons-ioに置き換え）
 * com.adobe.granite.crx-explorer
 * org.apache.jackrabbit.oak-solr-osgi
 * com.adobe.cq.cq-searchpromote-integration
 
-次のバンドルは、新しいAEM 6.5 LTS インスタンスには含まれていません。 アップグレード後、これらのバンドルが非アクティブ状態になる場合があります。 これらは手動で削除できます。
+以下のバンドルは、新しいAEM 6.5 LTS インスタンスには含まれていません。 アップグレード後、これらのバンドルが非アクティブ状態になる場合があります。 これらは手動で削除できます。
 
 * org.apache.sling.atom.taglib
 * com.github.jknack.handlebars
 * com.adobe.granite.osgi.wrapper.guava
-* com.adobe.cq.core.wcm.components.core （[AEM 6.5 LTS 互換バージョン &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/versions) に置き換えることができます）
-* com.adobe.cq.core.wcm.components.extension.contentfragment.bundle （AEM 6.5 LTS 互換バージョンに置き換え可能）
+* com.adobe.cq.core.wcm.components.core （[AEM 6.5 LTS互換バージョン ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/versions)に置き換えられます）
+* com.adobe.cq.core.wcm.components.extension.contentfragment.bundle （AEM 6.5 LTS互換バージョンに置き換えることができます）
