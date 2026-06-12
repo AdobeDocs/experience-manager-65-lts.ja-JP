@@ -22,7 +22,7 @@ ht-degree: 73%
 
 ExtJS 言語では、xtype はクラスに付与されるシンボル名です。 xtype とその使用方法について詳しくは、[ExtJS 2 の概要](https://docs.sencha.com/)の「Component XTypes」の段落を参照してください。
 
-AEMで使用可能なすべてのウィジェットについて詳しくは、[widget API ドキュメント ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)を参照してください。
+AEMで使用可能なすべてのウィジェットについて詳しくは、[widget API ドキュメント &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)を参照してください。
 
 特定のxtypeがAEMで使用されているコンポーネントを調べるには、CRXDEで次の`Xpath` クエリを使用できます。 「checkbox」を興味のあるxtypeに置き換えるだけです：
 
@@ -308,7 +308,7 @@ Adobe Experience Manager で使用可能な xtype を以下に示します。
 
   [CQ.Ext.data.DirectStore](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  [CQ.Ext.data.DirectProxy](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)と[CQ.Ext.data.JsonReader](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)で構成された[CQ.Ext.data.Store](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)を作成するための小さなヘルパークラスは、[CQ.Ext.Direct](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) サーバーサイド [ プロバイダー](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)との対話を容易にします。
+  [CQ.Ext.data.DirectProxy](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)と[CQ.Ext.data.JsonReader](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)で構成された[CQ.Ext.data.Store](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)を作成するための小さなヘルパークラスは、[CQ.Ext.Direct](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) サーバーサイド [&#x200B; プロバイダー](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)との対話を容易にします。
 
 * `displayfield`
 
@@ -512,7 +512,7 @@ Adobe Experience Manager で使用可能な xtype を以下に示します。
 
   メニューオブジェクト。 メニュー項目を追加できるコンテナ。 メニューは、別のコンポーネント（[CQ.Ext.menu.DateMenu](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)など）に基づく専用メニューを必要とする場合にも、基本クラスとして機能します。
 
-  メニューには、[ メニュー項目](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)または一般[ コンポーネント ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)のいずれかを含めることができます。
+  メニューには、[&#x200B; メニュー項目](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)または一般[&#x200B; コンポーネント &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)のいずれかを含めることができます。
 
 * `menubaseitem`
 
