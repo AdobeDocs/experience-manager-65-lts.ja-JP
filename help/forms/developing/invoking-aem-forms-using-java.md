@@ -56,7 +56,7 @@ Java API は次の機能をサポートしています。
 Java API を使用してプログラムで AEM Forms サービスを呼び出すには、Java プロジェクトのクラスパスに必要なライブラリファイル（JAR ファイル）を含めます。 クライアントアプリケーションのクラスパスに含める JAR ファイルは、以下のいくつかの要因によって異なります。
 
 * 呼び出す AEM Forms サービス。 クライアントアプリケーションは 1 つ以上のサービスを呼び出すことができます。
-* AEM Forms サービスを呼び出すモード。 EJB モードまたは SOAP モードを使用できます。 （[接続プロパティの設定](invoking-aem-forms-using-java.md#setting-connection-properties)を参照）。
+* AEM Forms サービスを呼び出すモード。 EJB モードまたは SOAP モードを使用できます。 （[接続プロパティの設定](invoking-aem-forms-using-java.md#setting-connection-properties)を参照）
 
 >[!NOTE]
 >
@@ -80,12 +80,12 @@ Java API を使用してプログラムで AEM Forms サービスを呼び出す
   <tr>
    <td><p>adobe-livecycle-client.jar</p></td>
    <td><p>Java クライアントアプリケーションのクラスパスに常に含める必要があります。</p></td>
-   <td><p>&lt;<i>インストールディレクトリ</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-usermanager-client.jar</p></td>
    <td><p>Java クライアントアプリケーションのクラスパスに常に含める必要があります。</p></td>
-   <td><p>&lt;<i>インストールディレクトリ</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-utilities.jar</p></td>
@@ -95,42 +95,42 @@ Java API を使用してプログラムで AEM Forms サービスを呼び出す
   <tr>
    <td><p>adobe-applicationmanager-client-sdk.jar</p></td>
    <td><p>Application Manager サービスを呼び出すために必要です。</p></td>
-   <td><p>&lt;<i>インストールディレクトリ</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-assembler-client.jar</p></td>
    <td><p>アセンブラーサービスを呼び出すために必要です。 </p></td>
-   <td><p>&lt;<i>インストールディレクトリ</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-backup-restore-client-sdk.jar</p></td>
    <td><p>バックアップと復元サービス API を呼び出すために必要です。</p></td>
-   <td><p>&lt;<i>インストールディレクトリ</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-barcodedforms-client.jar</p></td>
    <td><p>Barcoded Forms サービスを呼び出すために必要です。 </p></td>
-   <td><p>&lt;<i>インストールディレクトリ</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-convertpdf-client.jar</p></td>
    <td><p>Convert PDF サービスを呼び出すために必要です。 </p></td>
-   <td><p>&lt;<i>インストールディレクトリ</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-distiller-client.jar</p></td>
    <td><p>Distiller サービスを呼び出すために必要です。</p></td>
-   <td><p>&lt;<i>インストールディレクトリ</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-docconverter-client.jar</p></td>
    <td><p>DocConverter サービスを呼び出すために必要です。</p></td>
-   <td><p>&lt;<i>インストールディレクトリ</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-contentservices-client.jar</p></td>
    <td><p>Document Management サービスを呼び出すために必要です。</p></td>
-   <td><p>&lt;<i>インストールディレクトリ</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-encryption-client.jar</p></td>
