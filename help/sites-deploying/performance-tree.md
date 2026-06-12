@@ -11,7 +11,7 @@ role: Admin
 exl-id: c83fcf96-cc45-40a0-9a50-c60406096de1
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1298'
 ht-degree: 98%
 
 ---
@@ -20,15 +20,15 @@ ht-degree: 98%
 
 ## 範囲 {#scope}
 
-以下の図は、パフォーマンスの問題をトラブルシューティングするために実行する手順のガイダンスを示しています。読みやすくするために、これは 5 つのセクションに分けられています。
+以下の図は、パフォーマンスの問題をトラブルシューティングするために実行する手順のガイダンスを示しています。 読みやすくするために、これは 5 つのセクションに分けられています。
 
 図の各手順は、ドキュメントリソースまたはレコメンデーションにリンクされています。
 
 ## 前提条件と想定事項 {#prerequisites-and-assumptions}
 
-パフォーマンスの問題は特定のページ（AEM コンソールまたは Web ページ）で発生し、かつ一貫して再現可能であることを想定しています。パフォーマンスをテストまたは監視するための手段があることが、調査を始めるための前提条件となります。
+パフォーマンスの問題は特定のページ（AEM コンソールまたは Web ページ）で発生し、かつ一貫して再現可能であることを想定しています。 パフォーマンスをテストまたは監視するための手段があることが、調査を始めるための前提条件となります。
 
-分析は手順 0 から開始します。目的は、パフォーマンスの問題の原因であるエンティティ（Dispatcher、外部ホストまたは AEM）を特定し、調査する必要がある領域（サーバーまたはネットワーク）を判別することです。
+分析は手順 0 から開始します。 目的は、パフォーマンスの問題の原因であるエンティティ（Dispatcher、外部ホストまたは AEM）を特定し、調査する必要がある領域（サーバーまたはネットワーク）を判別することです。
 
 ### セクション 1 {#section}
 
@@ -62,12 +62,12 @@ ht-degree: 98%
   <tr>
    <td><strong>手順 0</strong></td>
    <td>要求フローを分析</td>
-   <td><p>ブラウザーで標準 HTTP 要求分析を使用して、要求フローを分析できます。Chrome でこの分析を実行する方法の詳細は、以下を参照してください。<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developer.chrome.com/docs/devtools/</a><br /> </p> </td>
+   <td><p>ブラウザーで標準 HTTP 要求分析を使用して、要求フローを分析できます。 Chrome でこの分析を実行する方法の詳細は、以下を参照してください。<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developer.chrome.com/docs/devtools/</a><br /> </p> </td>
   </tr>
   <tr>
    <td><strong>手順 2</strong></td>
    <td>要求の送信元は外部ホストですか</td>
-   <td>ブラウザーで標準 HTTP 要求分析を使用して、要求フローを分析できます。Chrome でこの分析を実行する方法は、上記のリンクを参照してください。<br /> </td>
+   <td>ブラウザーで標準 HTTP 要求分析を使用して、要求フローを分析できます。 Chrome でこの分析を実行する方法は、上記のリンクを参照してください。<br /> </td>
   </tr>
   <tr>
    <td><strong>手順 3</strong></td>
@@ -82,7 +82,7 @@ ht-degree: 98%
   <tr>
    <td><strong>手順 5</strong></td>
    <td>Dispatcher は AEM を使用して各要求を認証しようとしていますか。</td>
-   <td>Dispatcher が、キャッシュされたリソースを配信する前に、認証のために <code>HEAD</code> リクエストを AEM に送信しているかどうか確認します。AEM <code>access.log</code> で <code>HEAD</code> リクエストを探します。詳しくは、<a href="/help/sites-deploying/configure-logging.md">ログ</a>を参照してください。<br /> </td>
+   <td>Dispatcher が、キャッシュされたリソースを配信する前に、認証のために <code>HEAD</code> リクエストを AEM に送信しているかどうか確認します。 AEM <code>access.log</code> で <code>HEAD</code> リクエストを探します。 詳しくは、<a href="/help/sites-deploying/configure-logging.md">ログ</a>を参照してください。<br /> </td>
   </tr>
   <tr>
    <td><strong>手順 6</strong></td>
@@ -97,7 +97,7 @@ ht-degree: 98%
   <tr>
    <td><strong>手順 8</strong></td>
    <td>ローカルインスタンスで速度の低下を再現できますか</td>
-   <td><br /> <p><a href="/help/sites-developing/tough-day.md">Tough Day</a> を使用して、実稼動インスタンスから「実際の」状況を再現します。使用する開発環境でこのシナリオが現実的でない場合は、別のネットワークコンテキストで実稼動インスタンス（または同一のステージングインスタンス）をテストしてください。<br /> </p> </td>
+   <td><br /> <p><a href="/help/sites-developing/tough-day.md">Tough Day</a> を使用して、実稼動インスタンスから「実際の」状況を再現します。 使用する開発環境でこのシナリオが現実的でない場合は、別のネットワークコンテキストで実稼動インスタンス（または同一のステージングインスタンス）をテストしてください。<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>手順 9</strong></td>
@@ -152,7 +152,7 @@ ht-degree: 98%
   <tr>
    <td><strong>手順 19</strong></td>
    <td>CPU 100％</td>
-   <td><a href="/help/sites-deploying/monitoring-and-maintaining.md#cpu-at">CPU（100%</a>）を参照</td>
+   <td><a href="/help/sites-deploying/monitoring-and-maintaining.md#cpu-at">CPU 100%</a>を参照</td>
   </tr>
   <tr>
    <td><strong>手順 20</strong></td>
@@ -176,7 +176,7 @@ ht-degree: 98%
   <tr>
    <td><strong>手順 23</strong></td>
    <td>処理に時間のかかるクエリ</td>
-   <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">クエリとインデックスに関するベストプラクティス</a></td>
+   <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">クエリとインデックス作成に関するベストプラクティス</a></td>
   </tr>
   <tr>
    <td><strong>手順 24</strong></td>
@@ -276,7 +276,7 @@ ht-degree: 98%
   <tr>
    <td><strong>手順 39</strong></td>
    <td>事前接続を使用して接続オーバーヘッドを減らします</td>
-   <td>上記の Gem セッションを参照してください。また、W3C（<a href="https://html.spec.whatwg.org/#linkTypes">https://html.spec.whatwg.org/#linkTypes</a>）にも事前接続に関する記載があります。</td>
+   <td>上記の Gem セッションを参照してください。 また、W3C（<a href="https://html.spec.whatwg.org/#linkTypes">https://html.spec.whatwg.org/#linkTypes</a>）にも事前接続に関する記載があります。</td>
   </tr>
   <tr>
    <td><strong>手順 40 および 41</strong><br /> </td>
@@ -286,7 +286,7 @@ ht-degree: 98%
   <tr>
    <td><strong>手順 45<br /> および 47</strong><br /> </td>
    <td>HTTP/2 の使用</td>
-   <td>手順 37、38 および 39 の Gem セッションを参照してください。<br /> </td>
+   <td>手順37、38および39については、Gem セッションを参照してください。<br /> </td>
   </tr>
   <tr>
    <td><strong>手順 49</strong></td>
@@ -296,7 +296,7 @@ ht-degree: 98%
   <tr>
    <td><strong>手順 42 および 43</strong></td>
    <td>Keep-Alive</td>
-   <td><p>接続を再利用するために、異なる複数のリクエストに <code>Keep-Alive</code> ヘッダーが存在しますか。存在しない場合は、リクエストごとに別の接続が確立され、不要なオーバーヘッドが発生します（ブラウザーでの標準 HTTP リクエスト分析）。</p> <p><a href="/help/sites-administering/proxy-jar.md">プロキシサーバーツール</a>で、Keep-Alive 接続を確認できます。<br /> </p> </td>
+   <td><p>接続を再利用するために、異なる複数のリクエストに <code>Keep-Alive</code> ヘッダーが存在しますか。 存在しない場合は、リクエストごとに別の接続が確立され、不要なオーバーヘッドが発生します （ブラウザーでの標準 HTTP リクエスト分析）。</p> <p><a href="/help/sites-administering/proxy-jar.md">プロキシサーバーツール</a>で、Keep-Alive 接続を確認できます。<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>手順 44</strong></td>
