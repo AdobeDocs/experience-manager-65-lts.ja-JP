@@ -228,7 +228,7 @@ ht-degree: 61%
 **参照：**
 
 1. [Microsoft® Dynamics OData設定](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [Microsoft® Dynamics for AEM Formsの設定](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
+1. [Microsoft® Dynamics for AEM Formsの設定](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
 
 #### MS Dynamics OData クラウドサービス {#ms-dynamics-odata-cloud-service}
 
@@ -483,7 +483,7 @@ Adobe Formsを使用してAEM Formsをインストールおよび設定するに
 
 詳細な手順を読む前に、以下を確認してください。
 
-* [自動フォーム変換サービスの設定](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#)
+* [自動フォーム変換サービスの設定](https://experienceleague.adobe.com/ja/docs/aem-forms-automated-conversion-service/using/configure-service#)
 
 #### IMS設定の作成 – 第1部 {#creating-ims-config}
 
@@ -582,7 +582,7 @@ IMS の設定が完了したら、AEM でクラウド設定を確認できます
 
 1. この設定では、2つのチェックボックス値は空のままでした。
 
-   これらのオプションについて詳しくは、[&#x200B; クラウドサービスの設定](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service)を参照してください。
+   これらのオプションについて詳しくは、[&#x200B; クラウドサービスの設定](https://experienceleague.adobe.com/ja/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service)を参照してください。
 
 #### クラウド設定の設定（`We.Finance` AFC実稼動） {#configure-cloud-configuration-wefinance}
 
@@ -612,7 +612,7 @@ IMS設定が完了したら、AEMでクラウド設定を作成します。
 
 1. この設定では、2つのチェックボックス値は空のままでした。
 
-   * これらのオプションについて詳しくは、[クラウドサービスを設定](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service)を参照してください。
+   * これらのオプションについて詳しくは、[クラウドサービスを設定](https://experienceleague.adobe.com/ja/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service)を参照してください。
 
 #### フォーム変換のテスト（We.Gov 登録アプリケーション） {#test-forms-conversion}
 
@@ -652,7 +652,7 @@ IMS設定が完了したら、AEMでクラウド設定を作成します。
 
 #### 既知の問題とメモ {#known-issues-notes}
 
-フォーム自動変換サービスには、[ベストプラクティス、既知の複雑なパターン](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices#)、および [既知の問題](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/known-issues#)が含まれています。 AEM Forms自動フォーム変換サービスを使用する前に、この情報を確認してください。
+フォーム自動変換サービスには、[ベストプラクティス、既知の複雑なパターン](https://experienceleague.adobe.com/ja/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices#)、および [既知の問題](https://experienceleague.adobe.com/ja/docs/aem-forms-automated-conversion-service/using/known-issues#)が含まれています。 AEM Forms自動フォーム変換サービスを使用する前に、この情報を確認してください。
 
 1. 変換後にフォームをFDMにバインドする場合は、データバインディングを有効にせずにアダプティブフォームを生成を使用してフォームを作成します。
 
