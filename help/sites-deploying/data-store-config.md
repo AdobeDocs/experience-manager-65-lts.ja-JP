@@ -196,7 +196,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 
 1. 最新バージョンの1.60.x機能パックを[Maven リポジトリからダウンロードします。](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)
 1. 機能パックの内容を別のフォルダーに展開して、`jcr_root/libs/system/install/` に移動します。
-1. すべてのサブフォルダーをAEM インストールフォルダーの&#x200B;**&lt;aem-install>**/crx-quickstart/install/にコピーします。
+1. すべてのサブフォルダーを、**&lt;aem-install>**/crx-quickstart/install/のAEM インストールフォルダーにコピーします。
 1. AEM を起動して、コネクタの機能を確認します。
 
 設定ファイルは、以下に説明するオプションと共に使用できます。
