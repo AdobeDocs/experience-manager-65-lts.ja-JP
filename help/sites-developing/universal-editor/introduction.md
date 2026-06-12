@@ -140,7 +140,7 @@ ht-degree: 46%
 AEM を更新および設定すると、独自のローカル開発およびテスト用にローカルのユニバーサルエディターサービスを設定できます。
 
 1. Node.js バージョン 20 以降をインストールします。
-1. [ ソフトウェア配布](https://experienceleague.adobe.com/ja/docs/experience-cloud/software-distribution/home)から最新のユニバーサルエディターサービスをダウンロードして解凍します
+1. [&#x200B; ソフトウェア配布](https://experienceleague.adobe.com/ja/docs/experience-cloud/software-distribution/home)から最新のユニバーサルエディターサービスをダウンロードして解凍します
 1. 環境変数または`.env` ファイルを使用してユニバーサルエディターサービスを設定します。
    * [詳しくは、AEM as a Cloud Service ユニバーサルエディターのドキュメントを参照してください。](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
    * 内部 IP の書き換えが必要な場合は、`UES_MAPPING` オプションを使用する必要があります。
