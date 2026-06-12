@@ -37,7 +37,7 @@ ht-degree: 80%
 
 ## インデックス定義 {#index-definitions}
 
-最新のAEM 6.5 サービスパックでリリースされた必要なインデックス定義がインストールされていることを確認します。 （詳しくは、[AEM 6.5 サービスパックのリリースノート ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/release-notes/release-notes)を参照してください）。
+最新のAEM 6.5 サービスパックでリリースされた必要なインデックス定義がインストールされていることを確認します。 （詳しくは、[AEM 6.5 サービスパックのリリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/release-notes/release-notes)を参照してください）。
 
 ## 十分なディスク領域の確保 {#ensure-sufficient-disk-space}
 
