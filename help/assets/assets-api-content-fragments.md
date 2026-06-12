@@ -26,7 +26,7 @@ ht-degree: 95%
 >
 >Assets HTTP API でのコンテンツフラグメントのサポートが[廃止](/help/release-notes/release-notes.md#deprecated-features)されました。
 >
->[&#x200B; コンテンツフラグメントおよびコンテンツフラグメントモデル管理OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/65lts/)に置き換えられました。
+>[ コンテンツフラグメントおよびコンテンツフラグメントモデル管理OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/65lts/)に置き換えられました。
 
 >[!NOTE]
 >
