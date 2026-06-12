@@ -9,8 +9,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 3511e07b-f6d0-435a-aa80-55357d3dccf5
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '5797'
-ht-degree: 98%
+source-wordcount: '5754'
+ht-degree: 97%
 
 ---
 
@@ -86,8 +86,8 @@ ht-degree: 98%
 * `woman.running`
 * `woman-running`
 
-ただし、クエリ `woman -running` は、メタデータに `running` を含まないアセットを返します。
-スマートタグを使用すると、スマートタグを検索語として適用し、検索語のいずれかを探すための `OR` 句が追加されます。 スマートタグを使用して `woman` または `running` のどちらかがタグ付けされているアセットも検索クエリに表示されます。 検索結果は、以下を組み合わせたものになります。
+ただし、クエリ `woman -running`は、`running`がメタデータに含まれていないアセットを返します。
+スマートタグを使用すると、追加の`OR`句が追加され、適用されたスマートタグとして任意の検索語が検索されます。スマートタグを使用して`woman`または`running`のタグが付けられたアセットも、そのような検索クエリに表示されます。つまり、検索結果は、モバイル版とweb版を，
 
 * `woman` と `running` の両方のキーワードがメタデータ内にあるアセット（デフォルト動作）。
 
@@ -123,9 +123,9 @@ ht-degree: 98%
 1. 「**[!UICONTROL 昇格を検索]**」ボックスで、画像検索時の強化の対象となるキーワードを指定し、「**[!UICONTROL 追加]**」をクリックします。 同じ方法で複数のキーワードを指定できます。
 1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。 指定したキーワードに対して昇格したアセットが、検索結果の上位に表示されます。
 
-ターゲットを絞ったキーワードの検索結果で一部のアセットのランクを上げることで、この機能をうまく利用できます。 以下の例（ビデオ）を参照してください。 詳しくは、「[&#x200B; での検索](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=ja)」を参照してください。 [!DNL Experience Manager]
+ターゲットを絞ったキーワードの検索結果で一部のアセットのランクを上げることで、この機能をうまく利用できます。 以下の例（ビデオ）を参照してください。 詳しくは、「[ での検索](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=ja)」を参照してください。 [!DNL Experience Manager]
 
->[!VIDEO](https://video.tv.adobe.com/v/3410338/?captions=jpn&quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *ビデオ：検索結果のランク付けの方法とランクへの影響について*
 
@@ -221,7 +221,7 @@ TBD: Where are the limit, size, orderby properties defined?
 
 ### [!DNL Adobe Stock] 画像の検索 {#adobe-stock1}
 
-[!DNL Experience Manager] のユーザーインターフェイス内から Adobe Stock アセットを検索し、必要なアセットのライセンスを取得できます。 オムニサーチフィールドに「`Location: Adobe Stock`」を追加します。 また、**[!UICONTROL フィルター]**&#x200B;パネルを使用して、ライセンス取得済みまたはライセンス未取得のアセットをすべて検索したり、Adobe Stock ファイル番号を使用して特定のアセットを検索したりすることもできます。 「[&#x200B; [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage) の  [!DNL Adobe Stock]  画像の管理」を参照してください。
+[!DNL Experience Manager] のユーザーインターフェイス内から Adobe Stock アセットを検索し、必要なアセットのライセンスを取得できます。 オムニサーチフィールドに「`Location: Adobe Stock`」を追加します。 また、**[!UICONTROL フィルター]**&#x200B;パネルを使用して、ライセンス取得済みまたはライセンス未取得のアセットをすべて検索したり、Adobe Stock ファイル番号を使用して特定のアセットを検索したりすることもできます。 「[ [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage) の  [!DNL Adobe Stock]  画像の管理」を参照してください。
 
 ### [!DNL Dynamic Media] アセットの検索 {#dynamic-media}
 
