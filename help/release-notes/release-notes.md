@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: c87fd907f2e9b91cc7013be5c12c867fb71dbbe1
+source-git-commit: a24394ffd8d54faf9f16245e359d91c0cfbb04e4
 workflow-type: tm+mt
-source-wordcount: '7660'
-ht-degree: 97%
+source-wordcount: '7696'
+ht-degree: 96%
 
 ---
 
@@ -48,6 +48,8 @@ AEM 6.5 LTS SP2 には、[コンテンツフラグメントとモデルの管理
 **AEM Forms 6.5 LTS SP2 の内容**
 
 * JBoss® EAP 8.0 で RDBMK のサポートが追加されました。
+
+* WebSphere® Liberty Profile （WLP）のサポートが追加されました。
 
 * ビジュアルルールエディターでのユーザーエクスペリエンスが向上しました。 このアップデートには、次が含まれます。
 
@@ -580,7 +582,8 @@ AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストール
 ### AEM Forms
 
 * Configuration Manager では、モジュールが選択されていない場合や、制限されたコンポーネントのみが選択されている場合、AEM Forms 6.5 LTS JEE Turnkey Custom モードで Bootstrap 中にデータベースの初期化が失敗します。 依存関係ファイル（xalan-2.7.2.jar）が欠落しているので、エラーが発生します。 JAR ファイルを adobe-livecycle-jboss.ear\lib に追加すると、問題が解決します。 （FORMS-24690）
-* JBoss® 上で実行されている Forms JEE LTS では、メール関連の機能が失敗する場合があります。 メール機能を使用しようとすると、サーバーは `Error IMAPProvider not a subtype` のようなエラーをログに記録する場合があります。 （FORMS-24892）
+* JBoss® 上で実行されている Forms JEE LTS では、メール関連の機能が失敗する場合があります。 メール機能を使用しようとすると、サーバーが次のエラーを記録します：`Error IMAPProvider not a subtype`。 （FORMS-24892）
+* WebSphere® Liberty Profileで実行されているForms JEE LTS Service Pack 2のデプロイメントでは、メール機能が失敗する場合があります。 メール機能を使用しようとすると、サーバーが次のエラーを記録します：`Could not convert socket to TLS`。 （FORMS-24692）
 
 ### オフラインコンパクション後のオンラインコンパクション中のリポジトリの破損（GRANITE-65146） {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
