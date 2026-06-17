@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: a24394ffd8d54faf9f16245e359d91c0cfbb04e4
+source-git-commit: 6795f085b5a4d1ac2836b6c6f2f4d09a5739e639
 workflow-type: tm+mt
-source-wordcount: '7696'
+source-wordcount: '7708'
 ht-degree: 96%
 
 ---
@@ -49,7 +49,7 @@ AEM 6.5 LTS SP2 には、[コンテンツフラグメントとモデルの管理
 
 * JBoss® EAP 8.0 で RDBMK のサポートが追加されました。
 
-* WebSphere® Liberty Profile （WLP）のサポートが追加されました。
+* WebSphere® Liberty Profile （WLP）のサポートが追加されました。 WLPは、Oracle DatabaseおよびIBM® Sumeru JDK 21でのみサポートされています。
 
 * ビジュアルルールエディターでのユーザーエクスペリエンスが向上しました。 このアップデートには、次が含まれます。
 
