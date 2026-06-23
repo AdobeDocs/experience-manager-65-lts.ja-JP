@@ -21,7 +21,7 @@ ht-degree: 14%
 
 | 影響レベル | 影響を受けるバージョン | アクションの提案 |
 | --- | --- | --- |
-| 重大 | JEE 6.5 LTS サービスパック 2 （6.5 LTS SP2）上のAEM Forms | 手動で[ ホットフィックス ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-edcserver-jboss.ear)をインストールする |
+| 重大 | JEE 6.5 LTS サービスパック 2 （6.5 LTS SP2）上のAEM Forms | 手動で[&#x200B; ホットフィックス &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-edcserver-jboss.ear)をインストールする |
 | 影響なし | AEM Forms on OSGi、Workbench、Cloud Service | アクションは必要ありません |
 
 **対処された脆弱性：**
