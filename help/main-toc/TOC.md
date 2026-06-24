@@ -1252,7 +1252,7 @@ ht-degree: 67%
             + ヘッドレスデベロッパージャーニー {#developer}
                + [AEM のヘッドレスについて](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/overview.html?lang=ja)
                + [CMS ヘッドレス開発について](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/learn-about.html?lang=ja)
-               + [AEM Headless as a Cloud Service - はじめに](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/getting-started.html)
+               + [AEM Headless as a Cloud Service - はじめに](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/getting-started.html?lang=ja)
                + [AEM ヘッドレス機能を使用した初めてのエクスペリエンスへの道筋](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/path-to-first-experience.html?lang=ja)
                + [コンテンツを AEM コンテンツモデルとしてモデル化する方法](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/model-your-content.html?lang=ja)
                + [AEM Delivery API を使用してコンテンツにアクセスする方法](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/access-your-content.html?lang=ja)
@@ -1262,7 +1262,7 @@ ht-degree: 67%
                + [オプション - AEM で単一ページアプリケーション（SPA）を作成する方法](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/create-spa.html?lang=ja)
             + ヘッドレスコンテンツアーキテクトジャーニー {#architect}
                + [AEM ヘッドレスコンテンツアーキテクトジャーニーの概要](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/overview.html?lang=ja)
-               + [AEM でのヘッドレス向けコンテンツモデリング - 概要](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/introduction.html)
+               + [AEM でのヘッドレス向けコンテンツモデリング - 概要](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/introduction.html?lang=ja)
                + [AEM でのヘッドレス向けコンテンツモデリングの基本について](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/basics.html?lang=ja)
                + [AEM でのコンテンツフラグメントモデルの作成について](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/model-structure.html?lang=ja)
          + はじめる前に {#getting-started}
@@ -1280,7 +1280,7 @@ ht-degree: 67%
             + [コンテンツフラグメントの管理](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-managing.html?lang=ja)
             + [バリエーション - フラグメントコンテンツのオーサリング](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-variations.html?lang=ja)
             + [マークダウン](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-markdown.html?lang=ja)
-            + [関連コンテンツの使用](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-assoc-content.html)
+            + [関連コンテンツの使用](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-assoc-content.html?lang=ja)
             + [メタデータ - フラグメントのプロパティ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-metadata.html?lang=ja)
             + [構造ツリー](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-structure-tree.html?lang=ja)
             + [プレビュー - JSON 表現](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-json-preview.html?lang=ja)
