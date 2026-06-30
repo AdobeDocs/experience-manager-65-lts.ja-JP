@@ -1,21 +1,18 @@
 ---
 title: JEE 6.5 LTS SP2上のAEM Formsのサーバーサイド要求フォージェリー（SSRF）の脆弱性を軽減する
 description: JEE 6.5 LTS サービスパック 2のデプロイメントがJBossで実行されているAEM Forms上のサーバーサイドリクエストフォージェリー（SSRF）の脆弱性の緩和手順。
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: Security
-solution: Experience Manager, Experience Manager Forms
-feature: Security
-role: Admin
+solution: Experience Manager
+feature: Deploying
+role: User,Admin,Developer
 exl-id: 7c4a9e12-3b8f-4d6a-9f1e-2a5c8d7e6b04
-source-git-commit: 314aafaec6b45d7ea929f32d47e73da293800d4b
+source-git-commit: 1d825cd821609504c5e2cff7f7002bf3afe30434
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 28%
+source-wordcount: '343'
+ht-degree: 30%
 
 ---
 
-# サーバーサイド要求フォージェリー（SSRF）の脆弱性の軽減
+# JEE 6.5 LTS SP2上のAEM Formsのサーバーサイド要求フォージェリー（SSRF）の脆弱性を軽減する
 
 ## クイックリファレンス {#quick-reference}
 
@@ -75,4 +72,4 @@ ht-degree: 28%
 
 ## 参照 {#references}
 
-* [Adobe Experience Manager Formsのセキュリティのベストプラクティス](/help/forms/using/hardening-securing-aem-forms-environment.md)
+* [Adobe Experience Manager Forms セキュリティのベストプラクティス](/help/forms/using/hardening-securing-aem-forms-environment.md)

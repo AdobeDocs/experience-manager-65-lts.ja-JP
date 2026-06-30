@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS ドキュメントを使用して、その仕組みと機能について説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 314aafaec6b45d7ea929f32d47e73da293800d4b
+source-git-commit: 1d825cd821609504c5e2cff7f7002bf3afe30434
 workflow-type: tm+mt
 source-wordcount: '7710'
 ht-degree: 67%
@@ -1096,7 +1096,7 @@ ht-degree: 67%
       + {hide-from-toc}[PaperCapture サービスがPDFでOCRを実行できません](/help/forms/using/papercapture-service-resolution.md)
       + [JBoss EAP 8 （Linux）でAEM Forms 6.5 LTSでスクリプト実行が失敗する](/help/forms/using/script-execution-issues-on-aem-forms-65-lts-with-jboss-eap-8-linux.md)
       + [JBoss ドメインコントローラーを開始できません](/help/forms/using/unable-to-start-jboss-domain-controller-due-to-duplicate-security-tag.md)
-      + [JEE 6.5 LTS SP2上のAEM Formsのサーバーサイド要求フォージェリー（SSRF）の脆弱性を軽減する](/help/forms/using/mitigating-server-side-request-forgery-vulnerabilities-for-aem-forms-on-jee-65-lts-sp2.md)
+      + [JEE 6.5 LTS SP2上のAEM Formsのサーバーサイド要求フォージェリー（SSRF）の脆弱性を軽減する](/help/forms/troubleshooting/mitigating-server-side-request-forgery-vulnerabilities-for-aem-forms-on-jee-65-lts-sp2.md)
    + レガシードキュメント {#legacy-documentation}
       + {hide-from-toc}[JEE Workbench上のAEM Formsで実行スクリプトサービスを使用してXML データを構築する](/help/forms/developing/building-xml.md)
       + {hide-from-toc}[JEE上のAEM Forms カスタム DSCを使用したファイルの圧縮と解凍](/help/forms/developing/compressing-decompressing-custom-dsc.md)
