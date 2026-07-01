@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: c532abc558084ee9b58e618b0fc16677f4c5b6a4
+source-git-commit: ee3cfd977ab2e7f7cadabb2719fb38ef255b6a2a
 workflow-type: tm+mt
-source-wordcount: '7743'
+source-wordcount: '7770'
 ht-degree: 96%
 
 ---
@@ -157,8 +157,7 @@ AEM 6.5 LTS SP2 には、[コンテンツフラグメントとモデルの管理
 
 * 最近の UI スタイルの変更後、コンテンツフラグメント RTE にレイアウトとビジュアルの問題が表示されました。 サービスパック 2 では、RTE のスタイルが調整され、ツールバーと編集領域が正しくレンダリングされ、読み取り可能なままになりました。 コンテンツフラグメントエディターが、ページエディターの外観と動作に一致するようになりました。 （SITES-38684）
 * Polaris アセットセレクターから IMS スコープを削除すると、コンテンツフラグメントと配信エンドポイントの統合が壊れました。 作成者がリモートアセットセレクターを開いてアセットを選択する際に、エラーが発生しました。 このアップデートにより、必要な IMS スコープが再追加され、安定した配信層アクセスが復元されます。 （SITES-35837）
-* 関連するコンテンツパネルで、ハードコードされた「未定義」プレースホルダーがレンダリングされなくなりました。コンテンツフラグメントエディターは、ローカライゼーションリソースを通じてそのテキストを解決するようになり、エディターは翻訳されたUI テキストを確認できるようになりました。（SITES-33675）
-  <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
+* 関連するコンテンツパネルで、ハードコードされた「未定義」プレースホルダーがレンダリングされなくなりました。 コンテンツフラグメントエディターが、ローカライゼーションリソースを通じてそのテキストを解決するようになったので、編集者は翻訳された UI テキストを確認できます。 （SITES-33675）  <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
 * コンテンツフラグメントエディターに、翻訳された「一般」タブラベルがロケールをまたいで表示されるようになりました。 エディターは、ローカライズされていないタブテキストを置き換え、タブタイトルから内部 ID を削除します。 （SITES-30715）
 * コンテンツフラグメントエディターで、許可されたアセットタイプの翻訳名が表示されるようになりました。 作成者がコンテンツ参照制限を設定した際に、ピッカーリストに内部文字列と英語専用ラベルが混在しなくなりました。 （SITES-29699）
 
@@ -540,6 +539,7 @@ AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストール
 
 | 領域 | 機能 | 代替手段 | バージョン（SP） |
 | --- | --- | --- | --- |
+| Sites | コンテンツフラグメントテキスト要約 | 代替手段はありません。 | |
 | クイックスタート | Mongo API | Mongo API は非推奨（廃止予定）となっており、今後のリリースで削除される予定です。 | 6.5 TS SP2 |
 | Sites | AEM Assets REST API でのコンテンツフラグメントのサポート | AEM 6.5 LTS SP2 では、コンテンツフラグメントとモデル管理用の最新の OpenAPI が提供されているので、AEM Assets REST API の古いコンテンツフラグメントサポートエンドポイントは非推奨（廃止予定）となりました。<br>アドビでは、提供終了の発表があるまで、これらの古いエンドポイントの提供を継続する予定です。 アドビでは、非推奨（廃止予定）のエンドポイントに対する今後の機能強化を予定していません。 | 6.5 LTS SP2 |
 | Sites | [SPA Editor](/help/sites-developing/spa-overview.md) | AEM でヘッドレスコンテンツの管理に推奨されるエディターは次のとおりです。<br>- ビジュアル編集用の[ユニバーサルエディター](/help/sites-developing/universal-editor/introduction.md)。<br>- フォームベース用の[コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-managing.md)。 | 6.5 LTS GA |
