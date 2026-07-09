@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS ドキュメントを使用して、その仕組みと機能について説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 1d825cd821609504c5e2cff7f7002bf3afe30434
+source-git-commit: 860d8acb94370142bf47d0e03c554b69c0902222
 workflow-type: tm+mt
-source-wordcount: '7710'
+source-wordcount: '7797'
 ht-degree: 67%
 
 ---
@@ -441,9 +441,13 @@ ht-degree: 67%
       + [JEE上のAEM Formsのインストールとアップグレードのワークフロー](/help/forms/using/aem-forms-jee-installation-upgrade-documentation.md)
       + JEE 上の AEM Forms のインストール {#jee-installation}
          + [JEE 上の AEM Forms でサポートされているプラットフォーム](/help/forms/using/aem-forms-jee-supported-platforms.md)
+         + [AEM Formsのインストールの準備中（シングルサーバー）](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-single-server.pdf)
          + [JBoss ターンキーを使用したJEEでのAEM Forms 6.5 LTSのインストールとデプロイ](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-turnkey.pdf)
          + [JEE for JBossでのAEM Formsのインストールとデプロイ](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-jboss.pdf)
-         + [AEM Formsのインストールの準備中（シングルサーバー）](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-single-server.pdf)
+         + [WebSphere Liberty プロファイル用JEEでのAEM Formsのインストールとデプロイ](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-websphere.pdf)
+         + [AEM Formsのインストールの準備中（クラスターサーバー）](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-cluster.pdf)
+         + [JBoss クラスター上のJEE上のAEM Formsの設定](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/cluster-jboss.pdf)
+         + [WebSphere Liberty プロファイルクラスター上のJEE上のAEM Formsの設定](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/cluster-websphere.pdf)
          + [データベース資格情報ストア設定ガイド （スタンドアロンモード）](/help/forms/using/database-credentials-store-setup-guide-standalone-mode.md)
          + [データベース資格情報ストアの設定（Elytron ベース）](/help/forms/using/database-credential-store-setup-elytron-based.md)
          + [セカンダリノード認証の設定（Elytron ベース）](/help/forms/using/secondary-node-authentication-setup-elytron-based.md)
@@ -464,7 +468,6 @@ ht-degree: 67%
          + [AEM Forms と Adobe LiveCycle の接続](/help/forms/using/aem-livecycle-connector.md)
          + {hide-from-toc}[JEE上のAEM Forms プロセスにフォームデータを送信するようにAEM Formsを設定する](/help/forms/using/submit-form-data-livecycle-process.md)
          + [AEM Forms の AEM デスクトップアプリケーション](/help/forms/using/aem-desktop-app-for-aem-forms.md)
-         + [JBoss クラスター上のJEE上のAEM Formsの設定](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/cluster-jboss.pdf)
    + AEM Forms のアップグレード {#upgrade-aem-forms}
       + [有効なアップグレードパス](/help/forms/using/upgrade.md)
       + OSGi 上の AEM Forms のアップグレード {#aem-forms-osgi-upgrade}
@@ -473,9 +476,10 @@ ht-degree: 67%
          + [AEM Forms のアセットとドキュメントの移行](/help/forms/using/migration-utility.md)
          + [JBoss EAP 8でのAEM 6.5 LTSのアップグレード（Windows）](/help/forms/using/upgrading-aem-65-lts-on-jboss-eap-8.md)
       + JEE 上の AEM Forms のアップグレード {#aem-forms-jee-upgrade}
+         + [AEM Formsのアップグレードの準備](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-upgrade.pdf)
          + [JBoss ターンキー用JEE上のAEM Forms 6.5 LTSへのアップグレード](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/upgrade-turnkey.pdf)
          + [JEE上のAEM Forms for JBossへのアップグレード](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/upgrade-jboss.pdf)
-         + [AEM Formsのアップグレードの準備](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-upgrade.pdf)
+         + [WebSphere Liberty Profile用JEE上のAEM Formsへのアップグレード](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/upgrade-websphere.pdf)
    + AEM Forms の管理 {#manage-administer-aem-forms}
       + [OSGi 上の AEM Forms のグループと権限](/help/forms/using/forms-groups-privileges-tasks.md)
       + [フォームを分類するための新しいフォルダーの作成](/help/forms/using/creating-new-folders-categorize-forms.md)
