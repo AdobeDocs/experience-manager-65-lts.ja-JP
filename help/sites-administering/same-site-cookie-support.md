@@ -8,16 +8,16 @@ role: Admin
 exl-id: 8232d8a9-6df4-45f9-8924-7328a55093cb
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '232'
 ht-degree: 100%
 
 ---
 
 # AEM 6.5 の同一サイト cookie サポート {#same-site-cookie-support-for-aem-65}
 
-バージョン 80 以降、Chrome および以降の Safari では、cookie セキュリティの新しいモデルが導入されました。このモードは、`SameSite` と呼ばれる設定を通じて、cookie の利用に関するセキュリティ制御をサードパーティサイトに導入するように設計されています。詳しくは、こちらの[web.dev - SameSite cookie の説明](https://web.dev/samesite-cookies-explained/)の記事を参照してください。
+バージョン 80 以降、Chrome および以降の Safari では、cookie セキュリティの新しいモデルが導入されました。 このモードは、`SameSite` と呼ばれる設定を通じて、cookie の利用に関するセキュリティ制御をサードパーティサイトに導入するように設計されています。 詳しくは、こちらの[web.dev - SameSite cookie の説明](https://web.dev/samesite-cookies-explained/)の記事を参照してください。
 
-この設定のデフォルト値（`SameSite=Lax`）により、AEM インスタンスまたはサービス間の認証が機能しないことがあります。これは、これらのサービスのドメインや URL 構造が、この cookie ポリシーの制約に該当しない可能性があるためです。
+この設定のデフォルト値（`SameSite=Lax`）により、AEM インスタンスまたはサービス間の認証が機能しないことがあります。 これは、これらのサービスのドメインや URL 構造が、この cookie ポリシーの制約に該当しない可能性があるためです。
 
 これを回避するには、ログイントークンの `SameSite` cookie 属性を `None` に設定する必要があります。
 
