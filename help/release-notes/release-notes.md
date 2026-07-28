@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: ee3cfd977ab2e7f7cadabb2719fb38ef255b6a2a
+source-git-commit: 992c178c97245aa3fef43137498dc45e5ab79c39
 workflow-type: tm+mt
-source-wordcount: '7770'
-ht-degree: 96%
+source-wordcount: '7761'
+ht-degree: 95%
 
 ---
 
@@ -53,11 +53,11 @@ AEM 6.5 LTS SP2 には、[コンテンツフラグメントとモデルの管理
 
 * ビジュアルルールエディターでのユーザーエクスペリエンスが向上しました。 このアップデートには、次が含まれます。
 
-   * 保存後に概要ビューを自動的に再読み込みして、更新されたルールステータスを表示します。
+  * 保存後に概要ビューを自動的に再読み込みして、更新されたルールステータスを表示します。
 
-   * 「追加」/「削除」ボタンを表示し、非表示にするのではなく切り替えることができます。
+  * 「追加」/「削除」ボタンを表示し、非表示にするのではなく切り替えることができます。
 
-   * ルールの保存操作が失敗した場合に明確なフィードバックを提供します（FORMS-21261）。
+  * ルールの保存操作が失敗した場合に明確なフィードバックを提供します（FORMS-21261）。
 
 * AEM Forms に、従来の Extensible Markup Language（XML）書き出しモードを切り替えるランタイムアプリケーションプログラミングインターフェイス（API）を追加し、`Dcom.adobe.fd.forms.export.legacy` パラメーターを置き換えました。 この機能強化により、ユーザーは書き出しモードをより効率的に切り替えることができ、ワークフローの柔軟性が向上します。 （FORMS-23115）
 
@@ -157,7 +157,8 @@ AEM 6.5 LTS SP2 には、[コンテンツフラグメントとモデルの管理
 
 * 最近の UI スタイルの変更後、コンテンツフラグメント RTE にレイアウトとビジュアルの問題が表示されました。 サービスパック 2 では、RTE のスタイルが調整され、ツールバーと編集領域が正しくレンダリングされ、読み取り可能なままになりました。 コンテンツフラグメントエディターが、ページエディターの外観と動作に一致するようになりました。 （SITES-38684）
 * Polaris アセットセレクターから IMS スコープを削除すると、コンテンツフラグメントと配信エンドポイントの統合が壊れました。 作成者がリモートアセットセレクターを開いてアセットを選択する際に、エラーが発生しました。 このアップデートにより、必要な IMS スコープが再追加され、安定した配信層アクセスが復元されます。 （SITES-35837）
-* 関連するコンテンツパネルで、ハードコードされた「未定義」プレースホルダーがレンダリングされなくなりました。 コンテンツフラグメントエディターが、ローカライゼーションリソースを通じてそのテキストを解決するようになったので、編集者は翻訳された UI テキストを確認できます。 （SITES-33675）  <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
+* 関連するコンテンツパネルで、ハードコードされた「未定義」プレースホルダーがレンダリングされなくなりました。コンテンツフラグメントエディターは、ローカライゼーションリソースを通じてそのテキストを解決するようになり、エディターは翻訳されたUI テキストを確認できるようになりました。（SITES-33675）
+  <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
 * コンテンツフラグメントエディターに、翻訳された「一般」タブラベルがロケールをまたいで表示されるようになりました。 エディターは、ローカライズされていないタブテキストを置き換え、タブタイトルから内部 ID を削除します。 （SITES-30715）
 * コンテンツフラグメントエディターで、許可されたアセットタイプの翻訳名が表示されるようになりました。 作成者がコンテンツ参照制限を設定した際に、ピッカーリストに内部文字列と英語専用ラベルが混在しなくなりました。 （SITES-29699）
 
@@ -359,23 +360,23 @@ AEM 6.5 LTS サービスパック 2 には、S3 コネクタ 1.60.10 以降が�
 
   **影響**
 
-   * Sling では、これらの PID は非推奨（廃止予定）となっているので、設定から削除する必要があります。
-      * ファクトリ PID：`org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment`
-      * グローバル PID： `org.apache.sling.jcr.base.internal.LoginAdminWhitelist`
-これらの古い設定では、`whitelist.name` や `whitelist.bundles` などのプロパティを使用します。
+  * Sling では、これらの PID は非推奨（廃止予定）となっているので、設定から削除する必要があります。
+    * ファクトリ PID：`org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment`
+    * グローバル PID： `org.apache.sling.jcr.base.internal.LoginAdminWhitelist`
+      これらの古い設定では、`whitelist.name` や `whitelist.bundles` などのプロパティを使用します。
 
-   * Sling は、非推奨（廃止予定）となった PID に対して部分的な後方互換性を引き続き提供していますが、新しい設定には使用しないでください。 代わりに、新しい `LoginAdminAllowList.*` PID を使用してください。
-   * 非推奨（廃止予定）の許可リスト設定と新しい許可リスト設定を同時に実行しないでください。 設定が混在すると、曖昧さが生じ、意図しない動作を引き起こす場合があります。 AEM 6.5 LTS SP2 に移行する際は、非推奨（廃止予定）となった PID を完全に削除してください。
+  * Sling は、非推奨（廃止予定）となった PID に対して部分的な後方互換性を引き続き提供していますが、新しい設定には使用しないでください。 代わりに、新しい `LoginAdminAllowList.*` PID を使用してください。
+  * 非推奨（廃止予定）の許可リスト設定と新しい許可リスト設定を同時に実行しないでください。 設定が混在すると、曖昧さが生じ、意図しない動作を引き起こす場合があります。 AEM 6.5 LTS SP2 に移行する際は、非推奨（廃止予定）となった PID を完全に削除してください。
 
   **作業の内容**
 
-   1. `LoginAdminWhitelist*` PID を使用している許可リスト設定を検索します。
-   1. これらを適切な新しい PID に置き換えます。
+  1. `LoginAdminWhitelist*` PID を使用している許可リスト設定を検索します。
+  1. これらを適切な新しい PID に置き換えます。
 
-      * ファクトリ PID：`org.apache.sling.jcr.base.LoginAdminAllowList.fragment`
-      * グローバル PID：`org.apache.sling.jcr.base.LoginAdminAllowList`
+     * ファクトリ PID：`org.apache.sling.jcr.base.LoginAdminAllowList.fragment`
+     * グローバル PID：`org.apache.sling.jcr.base.LoginAdminAllowList`
 
-      詳しくは、[管理者ログインの許可リストバンドルに対する非推奨アプローチ](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecated-approach-to-allowlist-bundles-for-administrative-login)を参照してください。
+     詳しくは、[管理者ログインの許可リストバンドルに対する非推奨アプローチ](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecated-approach-to-allowlist-bundles-for-administrative-login)を参照してください。
 
 * AEM 6.5 LTS SP2 では、Sling、Oak、Felix の基盤レイヤーバンドルセットが更新されます。 これらのアップグレードにより、コアランタイムの安定性が強化され、プラットフォーム全体で依存関係のバージョンが一致されます。 （GRANITE-61874）
 
@@ -499,7 +500,7 @@ AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストール
 > 古い 6.5 SP から LTS SP1 に直接アップグレードする場合は、6.5 から 6.5 LTS GA への[アップグレード](/help/sites-deploying/upgrade.md)の手順に従います。
 
 
-手順について詳しくは、[アップグレードドキュメント](/help/sites-deploying/upgrade.md)を参照してください。
+詳細な手順については、[&#x200B; アップグレードドキュメント &#x200B;](/help/sites-deploying/upgrade.md)を参照してください。同じドキュメントがLTS サービスパックの更新に適用されます。
 
 >[!NOTE]
 >
