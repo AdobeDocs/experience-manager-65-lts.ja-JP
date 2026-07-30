@@ -10,14 +10,14 @@ role: User, Developer
 exl-id: 8e1c4cf5-d78a-4d97-b882-a496ac5ed9c6
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '267'
 ht-degree: 100%
 
 ---
 
 # タスクの詳細ページのカスタマイズ {#customizing-the-task-details-page}
 
-タスクの詳細ページには、タスクおよびそのプロセスに関する情報が含まれています。しかしながら、タスクの詳細ページをカスタマイズして情報を追加したり、削除したりすることができます。
+タスクの詳細ページには、タスクおよびそのプロセスに関する情報が含まれています。 しかしながら、タスクの詳細ページをカスタマイズして情報を追加したり、削除したりすることができます。
 
 次の情報をタスクの詳細ページに追加することができます。
 
@@ -56,7 +56,7 @@ ht-degree: 100%
 
 1. `/libs/ws/js/runtime/templates/taskdetails.html` を `/apps/ws/js/runtime/templates/taskdetails.html` にコピーします。
 
-   新しい情報を `/apps/ws/js/runtime/templates/taskdetails.html` に追加します。次は例です。
+   新しい情報を `/apps/ws/js/runtime/templates/taskdetails.html` に追加します。 次は例です。
 
    ```css
    <div class="detailsContainer">
