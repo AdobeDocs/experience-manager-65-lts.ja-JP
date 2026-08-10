@@ -12,7 +12,7 @@ role: Admin
 exl-id: 448715f1-ccec-4fb8-92d7-b7458cf9e6d4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '6108'
+source-wordcount: '6116'
 ht-degree: 96%
 
 ---
@@ -171,7 +171,7 @@ AEM コンテンツポートレットでは、ポータル内に AEM コンテ�
 キャッシュがデプロイされた後は、ポートレットによってパブリッシュインスタンスからコンテンツがキャッシュされます。 ポートレットのキャッシュは、AEM から Dispatcher をフラッシュすることで無効にすることができます。 独自のキャッシュを使用するようにポートレットを設定するには：
 
 1. ポータルサーバーをターゲットとするオーサーインスタンス内で、レプリケーションエージェントを設定します。
-1. **ポータルサーバーがホスト** localhost **、ポート 8080**&#x200B;およびAEM ポートレット web アプリケーションがコンテキスト **cqportlet**&#x200B;にマウントされている場合、キャッシュをフラッシュするためのURLは`https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`です。GETをメソッドとして使用します。
+1. ポータルサーバーがホスト **localhost**、ポート 8080 で実行され、AEM ポートレット Web アプリケーションがコンテキスト **cqportlet** にマウントされていると想定すると、キャッシュをフラッシュするための URL は `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)` になります。 GET メソッドを使用してください。
    **注意：**&#x200B;要求パラメーターを使用する代わりに、**Path** という名前の http ヘッダーを送信できます。
 
 #### レプリケーションエージェントによるキャッシュのフラッシュ {#flushing-the-cache-via-replication-agent}
@@ -389,7 +389,7 @@ Web サイト管理ページを開く場合、またはポートレットから�
    </LoginModule>
    ```
 
-1. OSGi設定コンソールで、https://localhost:4502/system/console/configMgrにあるデフォルトで、ドロップダウンメニューから&#x200B;**CQ PIN認証ハンドラー**&#x200B;を選択します。
+1. OSGi設定コンソールで、デフォルトでhttps://localhost:4502/system/console/configMgrにあるドロップダウンメニューから「**CQ PIN認証ハンドラー**」を選択します。
 1. 「**URL Root Path**」パラメーターを編集し、「**/**」という 1 つの値だけを入力します。
 
 ### 権限 {#privileges}
@@ -776,7 +776,7 @@ AEM WCM によって提供されるコンテンツにアクセスするには、
    * **オーサーベース URL**：AEM オーサーインスタンスのベース URL です。
    * **パブリッシュベース URL**：AEM パブリッシュインスタンスのベース URL です。
    * **作成者はパブリッシュとして使用されています**：オーサーインスタンスはパブリッシュとして使用されます
-例えば（開発用）?
+     例えば（開発用）?
 
    ![chlimage_1-137](assets/chlimage_1-137.png)
 
