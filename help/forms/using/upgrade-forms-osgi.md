@@ -93,7 +93,7 @@ AEM Forms 6.5.17.0以降にアップグレードした後、次の手順に従�
 
    >[!NOTE]
    >
-   >AEM 6.4 Forms では crx-repository の構造が変更されています。 6.3 Forms から AEM 6.5 Forms にアップグレードした場合、新規作成するカスタマイズについては、変更後のパスを使用してください。 変更後のパスの一覧については、「[AEM Forms におけるリポジトリの再構築](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5)」を参照してください。
+   >AEM 6.4 Forms では crx-repository の構造が変更されています。 6.3 Forms から AEM 6.5 Forms にアップグレードした場合、新規作成するカスタマイズについては、変更後のパスを使用してください。 変更後のパスの一覧については、「[AEM Forms におけるリポジトリの再構築](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5)」を参照してください。
 
 
 ## JBoss EAP 8へのAEMのデプロイ（Windows）
