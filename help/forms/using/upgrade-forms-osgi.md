@@ -1,25 +1,25 @@
 ---
 title: OSGiでのAEM 6.5 Forms LTSへのアップグレード
-description: AEM 6.5.22.0 FormsからAEM 6.5 Forms LTSに直接アップグレードできます。
+description: AEM 6.5.17.0 Forms以降からAEM 6.5 Forms LTSに直接アップグレードできます。
 content-type: reference
 role: Admin, User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: b5db6129e83dd7a54516707bbdb8864dc709d54b
+source-git-commit: 818673651f736311d400c71bfeb635b73b25a034
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1619'
 ht-degree: 44%
 
 ---
 
 # OSGiでのAEM 6.5 Forms LTSへのアップグレード {#upgrade-to-aem-forms-osgi}
 
-AEM 6.5からAEM 6.5 LTS[&#128279;](/help/sites-deploying/upgrade.md)に アップグレードするには、AEM 6.5.22.0 Forms以降にアップグレードしてください。 AEM 6.5.22.0からAEM 6.5 Forms LTSへの直接アップグレードがサポートされています。
+AEM 6.5からAEM 6.5 LTS](/help/sites-deploying/upgrade.md)に[ アップグレードするには、AEM 6.5.17.0 Forms以降にアップグレードしてください。 AEM 6.5.17.0 （またはそれ以降）からAEM 6.5 Forms LTSへの直接アップグレードがサポートされています。
 
-AEM 6.0 Forms、AEM 6.1 Forms、AEM 6.2 Forms、AEM 6.3 Forms、AEM 6.4 FormsまたはAEM 6.5 Formsを使用している場合、AEM 6.5 Forms LTSへの直接アップグレードは利用できません。 アップグレードパスについて詳しくは、[&#x200B; アップグレードパス &#x200B;](/help/forms/using/upgrade.md)のドキュメントを参照してください。
+AEM 6.0 Forms、AEM 6.1 Forms、AEM 6.2 Forms、AEM 6.3 Forms、AEM 6.4 FormsまたはAEM 6.5 Formsを使用している場合、AEM 6.5 Forms LTSへの直接アップグレードは利用できません。 アップグレードパスについて詳しくは、[ アップグレードパス ](/help/forms/using/upgrade.md)のドキュメントを参照してください。
 
-サービスパック AEM Forms 6.5.22.0にアップグレードした後、次の手順に従ってAEM 6.5 LTS Formsにアップグレードします。
+AEM Forms 6.5.17.0以降にアップグレードした後、次の手順に従ってAEM 6.5 LTS Formsにアップグレードします。
 
 1. AEM Forms アドオンパッケージのインストール. 手順は次のとおりです。
 
@@ -74,8 +74,8 @@ AEM 6.0 Forms、AEM 6.1 Forms、AEM 6.2 Forms、AEM 6.3 Forms、AEM 6.4 Formsま
 
      AEM 6.5 Formsでは、jQueryのバージョンが3.2.1に更新され、jQuery UIのバージョンが1.12.1に更新されます。 AEM フォームは、**noConflict** モードでJQueryを使用します。 そのため、他の jQuery バージョンを使用している場合、アップグレードの実行中に問題は表示されません。 ただし、AEM 6.5 Forms にアップグレードする場合は、次の手順を実行します。
 
-      * カスタムコンポーネントが（存在する場合）、サポートされる jQuery バージョンと互換性があることを確認します。
-      * サポートされていない API をカスタムコンポーネントから削除します。 削除された API のリストについては、[アップグレードガイド](https://jquery.com/upgrade-guide/3.0/)を参照してください。 例えば、load()、.unload()、.error() の各 API のサポートは削除されています。 前述の API の代わりに.on() メソッドを使用します。 例えば、$(&quot;img&quot;).load(fn) を $(&quot;img&quot;).on(&quot;load&quot;, fn) に変更します。
+     * カスタムコンポーネントが（存在する場合）、サポートされる jQuery バージョンと互換性があることを確認します。
+     * サポートされていない API をカスタムコンポーネントから削除します。 削除された API のリストについては、[アップグレードガイド](https://jquery.com/upgrade-guide/3.0/)を参照してください。 例えば、load()、.unload()、.error() の各 API のサポートは削除されています。 前述の API の代わりに.on() メソッドを使用します。 例えば、$(&amp;quot;img&amp;quot;).load(fn) を $(&amp;quot;img&amp;quot;).on(&amp;quot;load&amp;quot;, fn) に変更します。
 
    * **分析機能とレポートの再設定（バージョン 6.2 以前の AEM Forms をアップグレードする場合のみ）**
 
@@ -87,13 +87,13 @@ AEM 6.0 Forms、AEM 6.1 Forms、AEM 6.2 Forms、AEM 6.3 Forms、AEM 6.4 Formsま
    * **レプリケーションとリバースレプリケーションの検証：**&#x200B;移行されたフォームをいくつか公開、入力および送信します。 送信されたデータも検証します。
    * **管理者および開発者のユーザーインターフェイスへのアクセスを確認：**&#x200B;管理者アカウントで AEM インスタンスにログインし、次の URL にアクセスできることを確認します。
 
-      * `https://'[server]:[port]'/crx/packmgr`
-      * `https://'[server]:[port]'/crx/de`
-      * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
+     * `https://'[server]:[port]'/crx/packmgr`
+     * `https://'[server]:[port]'/crx/de`
+     * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
 
    >[!NOTE]
    >
-   >AEM 6.4 Forms では crx-repository の構造が変更されています。 6.3 Forms から AEM 6.5 Forms にアップグレードした場合、新規作成するカスタマイズについては、変更後のパスを使用してください。 変更後のパスの一覧については、「[AEM Forms におけるリポジトリの再構築](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5)」を参照してください。
+   >AEM 6.4 Forms では crx-repository の構造が変更されています。 6.3 Forms から AEM 6.5 Forms にアップグレードした場合、新規作成するカスタマイズについては、変更後のパスを使用してください。 変更後のパスの一覧については、「[AEM Forms におけるリポジトリの再構築](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5)」を参照してください。
 
 
 ## JBoss EAP 8へのAEMのデプロイ（Windows）
