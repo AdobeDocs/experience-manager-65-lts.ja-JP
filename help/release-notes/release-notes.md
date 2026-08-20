@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 0ce890503d43af340b6ee3c85b1b563613627c78
+source-git-commit: d4d05cf9f295e6c3740ebf1e3559b5d117898342
 workflow-type: tm+mt
-source-wordcount: '6749'
+source-wordcount: '6752'
 ht-degree: 26%
 
 ---
@@ -490,7 +490,7 @@ AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストール
 > 古い 6.5 SP から LTS SP1 に直接アップグレードする場合は、6.5 から 6.5 LTS GA への[アップグレード](/help/sites-deploying/upgrade.md)の手順に従います。
 
 
-詳細な手順については、[&#x200B; アップグレードドキュメント &#x200B;](/help/sites-deploying/upgrade.md)を参照してください。同じドキュメントがLTS サービスパックの更新に適用されます。
+詳細な手順については、[ アップグレードドキュメント ](/help/sites-deploying/upgrade.md)を参照してください。同じドキュメントがLTS サービスパックの更新に適用されます。
 
 >[!NOTE]
 >
@@ -530,7 +530,6 @@ AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストール
 
 | 領域 | 機能 | 代替手段 | バージョン（SP） |
 | --- | --- | --- | --- |
-| Sites | コンテンツフラグメントテキスト要約 | 代替手段はありません。 | |
 | クイックスタート | Mongo API | Mongo API は非推奨（廃止予定）となっており、今後のリリースで削除される予定です。 | 6.5 TS SP2 |
 | Sites | AEM Assets REST API でのコンテンツフラグメントのサポート | AEM 6.5 LTS SP2 では、コンテンツフラグメントとモデル管理用の最新の OpenAPI が提供されているので、AEM Assets REST API の古いコンテンツフラグメントサポートエンドポイントは非推奨（廃止予定）となりました。<br>アドビでは、提供終了の発表があるまで、これらの古いエンドポイントの提供を継続する予定です。 アドビでは、非推奨（廃止予定）のエンドポイントに対する今後の機能強化を予定していません。 | 6.5 LTS SP2 |
 | Sites | [SPA Editor](/help/sites-developing/spa-overview.md) | AEM でヘッドレスコンテンツの管理に推奨されるエディターは次のとおりです。<br>- ビジュアル編集用の[ユニバーサルエディター](/help/sites-developing/universal-editor/introduction.md)。<br>- フォームベース用の[コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-managing.md)。 | 6.5 LTS GA |
@@ -545,6 +544,7 @@ AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストール
 
 | 領域 | 機能 | 代替手段 | バージョン（SP） |
 | --- | --- | --- | --- |
+| Sites | コンテンツフラグメントテキスト要約 | 代替手段はありません。 | 6.5 LTS SP3 |
 | Commerce | AEM CIF Classic はサポートされていません。 | [AEM CIF](/help/commerce/cif/migration.md) に移行します。 | 6.5 LTS GA |
 | ソリューション | ソーシャル／コミュニティはサポートされていません。 | 代替手段はありません。 | 6.5 LTS GA |
 | Screens | Screens はサポートされていません。 | 代替手段はありません。 | 6.5 LTS GA |
@@ -570,7 +570,7 @@ AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストール
 
 * Configuration Manager では、モジュールが選択されていない場合や、制限されたコンポーネントのみが選択されている場合、AEM Forms 6.5 LTS JEE Turnkey Custom モードで Bootstrap 中にデータベースの初期化が失敗します。 依存関係ファイル（xalan-2.7.2.jar）が欠落しているので、エラーが発生します。 JAR ファイルをAdobe-livecycle-jboss.ear\libに追加すると、問題が解決します。 （FORMS-24690）
 * WebSphere® Liberty Profileで実行されているForms JEE LTS Service Pack 2のデプロイメントで、メール機能が失敗します。 メール機能を使用しようとすると、サーバーが次のエラーを記録します：`Could not convert socket to TLS`。 （FORMS-24692）
-* JBoss®で動作しているForms JEE LTSで、メール関連の機能が失敗します。 メール機能を使用しようとすると、サーバーが次のエラーを記録します：`Error IMAPProvider not a subtype`。 この問題を解決するには、[&#x200B; ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-core-jboss.ear)からホットフィックスをインストールしてください。 （FORMS-24892）
+* JBoss®で動作しているForms JEE LTSで、メール関連の機能が失敗します。 メール機能を使用しようとすると、サーバーが次のエラーを記録します：`Error IMAPProvider not a subtype`。 この問題を解決するには、[ ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-core-jboss.ear)からホットフィックスをインストールしてください。 （FORMS-24892）
 
 ### オフラインコンパクション後のオンラインコンパクション中のリポジトリの破損（GRANITE-65146） {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
@@ -590,7 +590,7 @@ JCR リポジトリに対して以前にオフラインコンパクションが�
 
 AEM 6.5 LTS SP2に`com.adobe.granite.apicontroller` バンドルがありません。 このバンドルは、OSGi バンドルの解決方法を制御し、バンドルが他のバンドルに解決されるのを防ぐことができます。これは、公開されたAPIを制限するのに役立ちます。
 
-この機能を使用するには、[&#x200B; ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-67640-1.0.zip)からホットフィックスをインストールします。
+この機能を使用するには、[ ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-67640-1.0.zip)からホットフィックスをインストールします。
 
 >[!NOTE]
 >
@@ -662,7 +662,7 @@ AEM デプロイメントで SSL のみの機能を有効にすると、Dispatch
 
 次のzip ファイルには、このExperience Manager 6.5 LTS サービスパック リリースに含まれるOSGi バンドルとコンテンツパッケージを一覧表示するテキストドキュメントが含まれています。
 
-* [OSGi バンドル &#x200B;](/help/release-notes/assets/65lts_sp3_bundles.zip)
+* [OSGi バンドル ](/help/release-notes/assets/65lts_sp3_bundles.zip)
 * [コンテンツパッケージ](/help/release-notes/assets/65lts_sp3_packages.zip)
 
 ## 制限付き Web サイト{#restricted-sites}
