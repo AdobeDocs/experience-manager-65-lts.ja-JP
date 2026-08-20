@@ -11,7 +11,7 @@ role: Admin
 exl-id: a27cd5c7-c0ea-4b94-9d54-95b47671fb44
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '251'
 ht-degree: 100%
 
 ---
@@ -48,7 +48,7 @@ AEM サイトと ExactTarget の統合については、[ExactTarget との統�
 
 ## Facebook および Twitter との統合 {#integrating-with-facebook-and-twitter}
 
-Facebook および Twitter は広く普及しているソーシャルネットワーキングサービスです。AEM と Facebook および Twitter の統合によって、組織が所有しているデジタル資産に Facebook または Twitter のログインオプションを付けて、プロファイル情報に基づいてユーザーエクスペリエンスをパーソナライズすることができます。マーケターは、プロファイル情報を他のソースのデータ（顧客関係管理システムや web サイトのプロファイルなど）と組み合わせて、統一されたユーザービューを作成することもできます。
+Facebook および Twitter は広く普及しているソーシャルネットワーキングサービスです。 AEM と Facebook および Twitter の統合によって、組織が所有しているデジタル資産に Facebook または Twitter のログインオプションを付けて、プロファイル情報に基づいてユーザーエクスペリエンスをパーソナライズすることができます。 マーケターは、プロファイル情報を他のソースのデータ（顧客関係管理システムや web サイトのプロファイルなど）と組み合わせて、統一されたユーザービューを作成することもできます。
 
 ## その他のプロバイダーとの統合 {#integrating-with-other-providers}
 
