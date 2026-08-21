@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: d4d05cf9f295e6c3740ebf1e3559b5d117898342
+source-git-commit: 79f3d3211a79ce62242273df0cdecd24cd8900cf
 workflow-type: tm+mt
-source-wordcount: '6752'
+source-wordcount: '6705'
 ht-degree: 26%
 
 ---
@@ -415,27 +415,27 @@ UberJar for AEM 6.5 LTS SP3では、AEM 6.5 LTS UberJar バージョン 6.6.3が
 
 パブリック APIに対してコンパイルするには、次を使用します。
 
-    &quot;&#39;xml
-    &lt;dependency>
-    &lt;groupId>com.adobe.aem&lt;/groupId>
-    &lt;artifactId>uber-jar&lt;/artifactId>
-    &lt; バージョン >6.6.3&lt;/version>
-    &lt;classifier>apis&lt;/classifier>
-    &lt;scope>provided&lt;/scope>
-    &lt;/dependency>
-    &quot;
+```xml
+<dependency>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>uber-jar</artifactId>
+    <version>6.6.3</version>
+    <classifier>apis</classifier>
+    <scope>provided</scope>
+</dependency>
+```
 
 コードが非推奨の API にも依存している場合は、次を追加します。
 
-    &quot;&#39;xml
-    &lt;dependency>
-    &lt;groupId>com.adobe.aem&lt;/groupId>
-    &lt;artifactId>uber-jar&lt;/artifactId>
-    &lt; バージョン >6.6.3&lt;/version>
-    &lt;classifier>deprecated-apis&lt;/classifier>
-    &lt;scope>provided&lt;/scope>
-    &lt;/dependency>
-    &quot;
+```xml
+<dependency>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>uber-jar</artifactId>
+    <version>6.6.3</version>
+    <classifier>deprecated-apis</classifier>
+    <scope>provided</scope>
+</dependency>
+```
 
 [AEM Uber Jar バージョンの更新](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version)も参照してください。
 
@@ -462,10 +462,10 @@ AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストール
 1. AEM インストールディレクトリ（`crx-quickstart/`外）で、以前のクイックスタート JARをSP3 JARに置き換えます。
 1. JAR を解凍します。
 
-       &quot;&#39;java
-     java -jar cq-quickstart-6.6.x.jar -unpack
-     &quot;&#39;
-   
+   ```java
+   java -jar cq-quickstart-6.6.x.jar -unpack
+   ```
+
    （必要に応じてヒープフラグを調整します。）
 
 1. 解凍された JAR の名前を、役割とポートに一致するように変更します（例：`cq-author-4502.jar` または `cq-publish-4503.jar`）。
