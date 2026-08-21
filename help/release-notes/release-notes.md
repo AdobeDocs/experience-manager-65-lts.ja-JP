@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: d4d05cf9f295e6c3740ebf1e3559b5d117898342
+source-git-commit: 79f3d3211a79ce62242273df0cdecd24cd8900cf
 workflow-type: tm+mt
-source-wordcount: '6752'
+source-wordcount: '6705'
 ht-degree: 26%
 
 ---
@@ -415,27 +415,27 @@ UberJar for AEM 6.5 LTS SP3では、AEM 6.5 LTS UberJar バージョン 6.6.3が
 
 パブリック APIに対してコンパイルするには、次を使用します。
 
-    &quot;&#39;xml
-    &lt;dependency>
-    &lt;groupId>com.adobe.aem&lt;/groupId>
-    &lt;artifactId>uber-jar&lt;/artifactId>
-    &lt; バージョン >6.6.3&lt;/version>
-    &lt;classifier>apis&lt;/classifier>
-    &lt;scope>provided&lt;/scope>
-    &lt;/dependency>
-    &quot;
+```xml
+<dependency>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>uber-jar</artifactId>
+    <version>6.6.3</version>
+    <classifier>apis</classifier>
+    <scope>provided</scope>
+</dependency>
+```
 
 コードが非推奨の API にも依存している場合は、次を追加します。
 
-    &quot;&#39;xml
-    &lt;dependency>
-    &lt;groupId>com.adobe.aem&lt;/groupId>
-    &lt;artifactId>uber-jar&lt;/artifactId>
-    &lt; バージョン >6.6.3&lt;/version>
-    &lt;classifier>deprecated-apis&lt;/classifier>
-    &lt;scope>provided&lt;/scope>
-    &lt;/dependency>
-    &quot;
+```xml
+<dependency>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>uber-jar</artifactId>
+    <version>6.6.3</version>
+    <classifier>deprecated-apis</classifier>
+    <scope>provided</scope>
+</dependency>
+```
 
 [AEM Uber Jar バージョンの更新](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version)も参照してください。
 
@@ -462,10 +462,10 @@ AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストール
 1. AEM インストールディレクトリ（`crx-quickstart/`外）で、以前のクイックスタート JARをSP3 JARに置き換えます。
 1. JAR を解凍します。
 
-       &quot;&#39;java
-     java -jar cq-quickstart-6.6.x.jar -unpack
-     &quot;&#39;
-   
+   ```java
+   java -jar cq-quickstart-6.6.x.jar -unpack
+   ```
+
    （必要に応じてヒープフラグを調整します。）
 
 1. 解凍された JAR の名前を、役割とポートに一致するように変更します（例：`cq-author-4502.jar` または `cq-publish-4503.jar`）。
@@ -490,7 +490,7 @@ AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストール
 > 古い 6.5 SP から LTS SP1 に直接アップグレードする場合は、6.5 から 6.5 LTS GA への[アップグレード](/help/sites-deploying/upgrade.md)の手順に従います。
 
 
-詳細な手順については、[&#x200B; アップグレードドキュメント &#x200B;](/help/sites-deploying/upgrade.md)を参照してください。同じドキュメントがLTS サービスパックの更新に適用されます。
+詳細な手順については、[ アップグレードドキュメント ](/help/sites-deploying/upgrade.md)を参照してください。同じドキュメントがLTS サービスパックの更新に適用されます。
 
 >[!NOTE]
 >
@@ -570,7 +570,7 @@ AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストール
 
 * Configuration Manager では、モジュールが選択されていない場合や、制限されたコンポーネントのみが選択されている場合、AEM Forms 6.5 LTS JEE Turnkey Custom モードで Bootstrap 中にデータベースの初期化が失敗します。 依存関係ファイル（xalan-2.7.2.jar）が欠落しているので、エラーが発生します。 JAR ファイルをAdobe-livecycle-jboss.ear\libに追加すると、問題が解決します。 （FORMS-24690）
 * WebSphere® Liberty Profileで実行されているForms JEE LTS Service Pack 2のデプロイメントで、メール機能が失敗します。 メール機能を使用しようとすると、サーバーが次のエラーを記録します：`Could not convert socket to TLS`。 （FORMS-24692）
-* JBoss®で動作しているForms JEE LTSで、メール関連の機能が失敗します。 メール機能を使用しようとすると、サーバーが次のエラーを記録します：`Error IMAPProvider not a subtype`。 この問題を解決するには、[&#x200B; ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-core-jboss.ear)からホットフィックスをインストールしてください。 （FORMS-24892）
+* JBoss®で動作しているForms JEE LTSで、メール関連の機能が失敗します。 メール機能を使用しようとすると、サーバーが次のエラーを記録します：`Error IMAPProvider not a subtype`。 この問題を解決するには、[ ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-core-jboss.ear)からホットフィックスをインストールしてください。 （FORMS-24892）
 
 ### オフラインコンパクション後のオンラインコンパクション中のリポジトリの破損（GRANITE-65146） {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
@@ -590,7 +590,7 @@ JCR リポジトリに対して以前にオフラインコンパクションが�
 
 AEM 6.5 LTS SP2に`com.adobe.granite.apicontroller` バンドルがありません。 このバンドルは、OSGi バンドルの解決方法を制御し、バンドルが他のバンドルに解決されるのを防ぐことができます。これは、公開されたAPIを制限するのに役立ちます。
 
-この機能を使用するには、[&#x200B; ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-67640-1.0.zip)からホットフィックスをインストールします。
+この機能を使用するには、[ ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-67640-1.0.zip)からホットフィックスをインストールします。
 
 >[!NOTE]
 >
@@ -662,7 +662,7 @@ AEM デプロイメントで SSL のみの機能を有効にすると、Dispatch
 
 次のzip ファイルには、このExperience Manager 6.5 LTS サービスパック リリースに含まれるOSGi バンドルとコンテンツパッケージを一覧表示するテキストドキュメントが含まれています。
 
-* [OSGi バンドル &#x200B;](/help/release-notes/assets/65lts_sp3_bundles.zip)
+* [OSGi バンドル ](/help/release-notes/assets/65lts_sp3_bundles.zip)
 * [コンテンツパッケージ](/help/release-notes/assets/65lts_sp3_packages.zip)
 
 ## 制限付き Web サイト{#restricted-sites}
