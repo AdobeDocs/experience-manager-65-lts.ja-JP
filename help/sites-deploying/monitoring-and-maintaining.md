@@ -25,7 +25,7 @@ AEM インスタンスがデプロイされた後は、操作、パフォーマ�
 
 >[!NOTE]
 >
->このページのガイダンスは、セルフマネージド（オンプレミス）デプロイメントに適用されます。 Adobe Managed Services上でAEMを実行する場合、アプリケーションとインフラストラクチャのテレメトリが収集され、Observability Insightsを通じて利用できるようになります。これにより、実稼動環境と非実稼動環境のホストビューが提供されます。 詳細については、[&#x200B; オブザーバビリティ インサイト &#x200B;](https://experienceleague.adobe.com/en/docs/ams-observability-insights/content/overview)を参照してください。
+>このページのガイダンスは、セルフマネージド（オンプレミス）デプロイメントに適用されます。 Adobe Managed Services上でAEMを実行する場合、アプリケーションとインフラストラクチャのテレメトリが収集され、Observability Insightsを通じて利用できるようになります。これにより、実稼動環境と非実稼動環境のホストビューが提供されます。 詳細については、[&#x200B; オブザーバビリティ インサイト &#x200B;](https://experienceleague.adobe.com/ja/docs/ams-observability-insights/content/overview)を参照してください。
 
 | チェック項目 | 検討事項 | コメント／アクション |
 |---|---|---|
