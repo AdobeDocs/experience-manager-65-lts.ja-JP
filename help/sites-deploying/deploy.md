@@ -102,7 +102,7 @@ AEM の用語では、「インスタンス」とはサーバー上で実行さ�
 
 ### Cloud Manager を使用した Managed Services {#managed-services-using-cloud-manager}
 
-Adobe Managed Services デプロイメントの場合、AEM環境は[Cloud Manager](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/introduction)を通じてデプロイおよび管理されます。 実稼動環境と非実稼動環境をまたいでアプリケーションのパフォーマンスとインフラストラクチャの正常性を監視するには、[ オブザーバビリティのインサイト ](https://experienceleague.adobe.com/en/docs/ams-observability-insights/content/overview)を参照してください。
+Adobe Managed Services デプロイメントの場合、AEM環境は[Cloud Manager](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/introduction)を通じてデプロイおよび管理されます。 実稼動環境と非実稼動環境をまたいでアプリケーションのパフォーマンスとインフラストラクチャの正常性を監視するには、[&#x200B; オブザーバビリティのインサイト &#x200B;](https://experienceleague.adobe.com/en/docs/ams-observability-insights/content/overview)を参照してください。
 
 ## はじめに {#getting-started}
 
