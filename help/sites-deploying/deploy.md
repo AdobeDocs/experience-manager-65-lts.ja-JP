@@ -1,42 +1,37 @@
 ---
 title: デプロイとメンテナンス
 description: AEM のインストールを開始する方法を説明します。
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: deploying
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: add91325feaa96338526edcdde977d1f619e09d4
+source-git-commit: fc736c74bc5bd584059038ad5a54ffc814d095a2
 workflow-type: tm+mt
-source-wordcount: '1363'
-ht-degree: 93%
+source-wordcount: '1437'
+ht-degree: 90%
 
 ---
 
-# デプロイとメンテナンス {#deploying-and-maintaining}
+# デプロイとメンテナンス{#deploying-and-maintaining}
 
 このページの内容は次のとおりです。
 
 * [基本概念](#basic-concepts)
 
-   * [AEM とは](#what-is-aem)
-   * [典型的な開発](#typical-deployment-scenarios)
+  * [AEM とは](#what-is-aem)
+  * [典型的な開発](#typical-deployment-scenarios)
 
-      * [オンプレミス](#on-premise)
-      * [Cloud Manager を使用した Managed Services](#managed-services-using-cloud-manager)
+    * [オンプレミス](#on-premise)
+    * [Cloud Manager を使用した Managed Services](#managed-services-using-cloud-manager)
 
 * [はじめに](#getting-started)
 
-   * [前提条件](#prerequisites)
-   * [ソフトウェアの入手](#getting-the-software)
-   * [デフォルトのローカルインストール](#default-local-install)
-   * [オーサーとパブリッシュのインストール](#author-and-publish-installs)
-   * [展開されたインストールディレクトリ](#unpacked-install-directory)
-   * [起動と停止](#starting-and-stopping)
+  * [前提条件](#prerequisites)
+  * [ソフトウェアの入手](#getting-the-software)
+  * [デフォルトのローカルインストール](#default-local-install)
+  * [オーサーとパブリッシュのインストール](#author-and-publish-installs)
+  * [展開されたインストールディレクトリ](#unpacked-install-directory)
+  * [起動と停止](#starting-and-stopping)
 
 これらの基本を理解したうえで、より高度かつ詳細な情報を習得するには、次のサブページを参照してください。
 
@@ -46,7 +41,7 @@ ht-degree: 93%
 * [アプリケーションサーバーのインストール](/help/sites-deploying/application-server-install.md)
 * [コマンドラインによる起動と停止](/help/sites-deploying/command-line-start-and-stop.md)
 * [設定](/help/sites-deploying/configuring.md)
-* [AEM 6.5 LTS へのアップグレード](/help/sites-deploying/upgrade.md)
+* [AEM 6.5 LTSへのアップグレード](/help/sites-deploying/upgrade.md)
 * [設定方法に関する記事](/help/sites-deploying/ht-deploy.md)
 * [Web コンソール](/help/sites-deploying/web-console.md)
 * [レプリケーションのトラブルシューティング](/help/sites-deploying/troubleshoot-rep.md)
@@ -57,13 +52,13 @@ ht-degree: 93%
 
 ### AEM とは {#what-is-aem}
 
-Adobe Experience Manager は、商用 web サイトおよび関連サービスを構築、管理、デプロイするための、web ベースのクライアントサーバーシステムです。インフラストラクチャレベルおよびアプリケーションレベルのいくつかの機能を組み合わせて、単一の統合パッケージにします。
+Adobe Experience Manager は、商用 web サイトおよび関連サービスを構築、管理、デプロイするための、web ベースのクライアントサーバーシステムです。 インフラストラクチャレベルおよびアプリケーションレベルのいくつかの機能を組み合わせて、単一の統合パッケージにします。
 
 インフラストラクチャレベルで、AEM は次の機能を提供します。
 
 * **Web アプリケーションサーバー**：AEM は、スタンドアロンモードで（統合 Jetty Web サーバーを含む）、またはサードパーティのアプリケーションサーバー内の web アプリケーションとしてデプロイできます。
 * **Web アプリケーションフレームワーク**：AEM には Sling web アプリケーションフレームワークが組み込まれており、RESTful でコンテンツ指向 web アプリケーションを簡単に記述できます。
-* **コンテンツリポジトリ**：AEM には、非構造化データと半構造化データ用に特別に設計された階層データベースの一種である、Java™ コンテンツリポジトリ（JCR）が含まれています。リポジトリには、ユーザーに表示されるコンテンツだけでなく、アプリケーションで使用されるすべてのコード、テンプレート、内部データも保存されます。
+* **コンテンツリポジトリ**：AEM には、非構造化データと半構造化データ用に特別に設計された階層データベースの一種である、Java™ コンテンツリポジトリ（JCR）が含まれています。 リポジトリには、ユーザーに表示されるコンテンツだけでなく、アプリケーションで使用されるすべてのコード、テンプレート、内部データも保存されます。
 
 この基盤の上に、AEM では以下の管理のためにアプリケーションレベルの機能もいくつか提供しています。
 
@@ -74,24 +69,24 @@ Adobe Experience Manager は、商用 web サイトおよび関連サービス�
 
 最後に、ユーザーはこれらのインフラストラクチャレベルおよびアプリケーションレベルの構築ブロックを使用して、独自のアプリケーションを構築することで、カスタマイズされたソリューションを作成できます。
 
-AEM サーバーは **Java ベース**&#x200B;であり、Java のプラットフォームをサポートするほとんどのオペレーティングシステムで動作します。クライアントと AEM のやり取りはすべて、**web ブラウザー**&#x200B;経由で行います。
+AEM サーバーは **Java ベース**&#x200B;であり、Java のプラットフォームをサポートするほとんどのオペレーティングシステムで動作します。 クライアントと AEM のやり取りはすべて、**web ブラウザー**&#x200B;経由で行います。
 
 >[!NOTE]
 >
->AEM 6.5 LTS QuickStart で使用できるアダプティブ Forms機能は、調査および評価目的でのみ設計されています。 アダプティブフォームの機能には適切なライセンスが必要なので、実稼動環境で使用する場合は、AEM Forms の有効なライセンスを取得することが不可欠です。
+>AEM 6.5 LTS QuickStartで利用できるFormsのアダプティブ機能は、探索と評価の目的でのみ設計されています。 アダプティブフォームの機能には適切なライセンスが必要なので、実稼動環境で使用する場合は、AEM Forms の有効なライセンスを取得することが不可欠です。
 
 ### 典型的なデプロイメントシナリオ {#typical-deployment-scenarios}
 
-AEM の用語では、「インスタンス」とはサーバー上で実行されている AEM のコピーを指します。一般的に、AEM のインストールには少なくとも 2 つのインスタンスが必要であり、通常は別々のコンピューターで実行されます。
+AEM の用語では、「インスタンス」とはサーバー上で実行されている AEM のコピーを指します。 一般的に、AEM のインストールには少なくとも 2 つのインスタンスが必要であり、通常は別々のコンピューターで実行されます。
 
-* **オーサー**：コンテンツの作成、アップロードおよび編集や web サイトの管理に使用される AEM インスタンス。公開の準備が整ったコンテンツは、パブリッシュインスタンスにレプリケートされます。
+* **オーサー**：コンテンツの作成、アップロードおよび編集や web サイトの管理に使用される AEM インスタンス。 公開の準備が整ったコンテンツは、パブリッシュインスタンスにレプリケートされます。
 * **公開**：公開の準備が整ったコンテンツを公開する AEM インスタンス。
 
-インストールされるソフトウェアという点では、これらのインスタンスは同一です。その違いは設定のみです。さらに、ほとんどのインストールでは、次の Dispatcher を使用します。
+インストールされるソフトウェアという点では、これらのインスタンスは同一です。 その違いは設定のみです。 さらに、ほとんどのインストールでは、次の Dispatcher を使用します。
 
-* **Dispatcher**：AEM Dispatcher モジュールで補強された、静的 web サーバー（Apache httpd、Microsoft® IIS など）。パブリッシュインスタンスで生成された web ページをキャッシュして、パフォーマンスを向上します。
+* **Dispatcher**：AEM Dispatcher モジュールで補強された、静的 web サーバー（Apache httpd、Microsoft® IIS など）。 パブリッシュインスタンスで生成された web ページをキャッシュして、パフォーマンスを向上します。
 
-高度なオプションや詳細設定が多数ありますが、オーサー、パブリッシュおよび Dispatcher という基本的なパターンは、多くのデプロイメントの中核となります。ここではまず、比較的シンプルな設定に焦点を当てます。高度なデプロイメントオプションについては、後述します。
+高度なオプションや詳細設定が多数ありますが、オーサー、パブリッシュおよび Dispatcher という基本的なパターンは、多くのデプロイメントの中核となります。 ここではまず、比較的シンプルな設定に焦点を当てます。 高度なデプロイメントオプションについては、後述します。
 
 以下のセクションでは、両方のシナリオについて説明します。
 
@@ -101,13 +96,13 @@ AEM の用語では、「インスタンス」とはサーバー上で実行さ�
 
 ### オンプレミス {#on-premise}
 
-企業環境のサーバーに AEM をインストールできます。一般的なインストールインスタンスには、開発環境、テスト環境、パブリッシュ環境が含まれます。AEM ソフトウェアをローカルにインストールする方法の基本的な詳細については、[はじめに](#getting-started)を参照してください。
+企業環境のサーバーに AEM をインストールできます。 一般的なインストールインスタンスには、開発環境、テスト環境、パブリッシュ環境が含まれます。 AEM ソフトウェアをローカルにインストールする方法の基本的な詳細については、[はじめに](#getting-started)を参照してください。
 
 <!-- To learn more about the typical on-premises deployments, see [Recommended Deployments](/help/sites-deploying/recommended-deploys.md). -->
 
 ### Cloud Manager を使用した Managed Services {#managed-services-using-cloud-manager}
 
-<i> 近日中に発表予定です。</i>
+Adobe Managed Services デプロイメントの場合、AEM環境は[Cloud Manager](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/introduction)を通じてデプロイおよび管理されます。 実稼動環境と非実稼動環境をまたいでアプリケーションのパフォーマンスとインフラストラクチャの正常性を監視するには、[ オブザーバビリティのインサイト ](https://experienceleague.adobe.com/en/docs/ams-observability-insights/content/overview)を参照してください。
 
 ## はじめに {#getting-started}
 
@@ -117,29 +112,29 @@ AEM の用語では、「インスタンス」とはサーバー上で実行さ�
 
 AEM に習熟したい場合や、AEM で開発する場合は、Apple OS X またはデスクトップ版の Microsoft® Windows または Linux® を実行しているローカルマシンにインストールされたインスタンスを使用するのが一般的です。
 
-クライアント側では、AEMは、デスクトップとタブレットの両方のオペレーティングシステムにおけるすべてのブラウザー（**Microsoft®Edge**、**Chrome 51 以上**、**Firefox 47 以上**、**Safari 8 以上**）に対応します。 詳細に関しては、[サポートされているクライアントプラットフォーム](/help/sites-deploying/technical-requirements.md#supported-client-platforms)を参照してください。
+クライアントサイドでは、AEMは、デスクトップとタブレットの両方のオペレーティングシステムで、すべての最新のブラウザー（**Microsoft®Edge**、**Chrome 51+**、**Firefox 47+**、**Safari 8+**）で動作します。 詳細に関しては、[サポートされているクライアントプラットフォーム](/help/sites-deploying/technical-requirements.md#supported-client-platforms)を参照してください。
 
 ### ソフトウェアの入手 {#getting-the-software}
 
-メンテナンスおよびサポートの有効な契約を締結済みのお客様には、コードが記載されているメール通知が届き、[**アドビライセンス web サイト**](https://licensing.adobe.com/)から AEM をダウンロードできます。ビジネスパートナーは、[**spphelp@adobe.com**](mailto:spphelp@adobe.com) 宛てにダウンロードアクセスをリクエストできます。
+メンテナンスおよびサポートの有効な契約を締結済みのお客様には、コードが記載されているメール通知が届き、[**アドビライセンス web サイト**](https://licensing.adobe.com/)から AEM をダウンロードできます。 ビジネスパートナーは、[**spphelp@adobe.com**](mailto:spphelp@adobe.com) 宛てにダウンロードアクセスをリクエストできます。
 
 AEM ソフトウェアパッケージには、次の 2 つの形式があります。
 
-* **CQ AEM 6.5 LTS jar:** スタンドアロンの実行可能 *jar* ファイル。実行するために必要なすべてのものが含まれています。
+* **CQ AEM 6.5 LTS jar:** スタンドアロンの実行可能ファイル *jar* ファイル。実行に必要なものがすべて含まれています。
 
-* **CQ AEM 6.5 LTS war:** サードパーティのアプリケーションサーバーにデプロイするための *war* ファイル。
+* **CQ AEM 6.5 LTS war:** サードパーティのアプリケーションサーバーにデプロイするための&#x200B;*war* ファイル。
 
-次の節では、**スタンドアロンインストール**&#x200B;について説明します。アプリケーションサーバーへの AEM のインストールについて詳しくは、[アプリケーションサーバーのインストール](/help/sites-deploying/application-server-install.md)を参照してください。
+次の節では、**スタンドアロンインストール**&#x200B;について説明します。 アプリケーションサーバーへの AEM のインストールについて詳しくは、[アプリケーションサーバーのインストール](/help/sites-deploying/application-server-install.md)を参照してください。
 
 ### デフォルトのローカルインストール {#default-local-install}
 
-1. ローカルマシンにインストールディレクトリを作成します。例：
+1. ローカルマシンにインストールディレクトリを作成します。 例：
 
    UNIX® のインストール先：**/opt/aem**
 
    Windows のインストール先： **`C:\aem`**
 
-   同様に、デスクトップ上のフォルダーにサンプルインスタンスをインストールするのが一般的です。いずれの場合も、通常この場所は次のように参照します。
+   同様に、デスクトップ上のフォルダーにサンプルインスタンスをインストールするのが一般的です。 いずれの場合も、通常この場所は次のように参照します。
 
    `<aem-install>`
 
@@ -153,7 +148,7 @@ AEM ソフトウェアパッケージには、次の 2 つの形式がありま�
        license.properties
    ```
 
-   `license.properties` ファイルを指定しない場合、AEM の起動時にブラウザーに&#x200B;**ようこそ**&#x200B;画面が表示され、ここでライセンスキーを入力できます。アドビの有効なライセンスキーをお持ちでない場合は、依頼する必要があります。
+   `license.properties` ファイルを指定しない場合、AEM の起動時にブラウザーに&#x200B;**ようこそ**&#x200B;画面が表示され、ここでライセンスキーを入力できます。 アドビの有効なライセンスキーをお持ちでない場合は、依頼する必要があります。
 
 1. GUI 環境でインスタンスを起動するには、**`<aem-65-lts>.jar`** ファイルをダブルクリックします。
 
@@ -163,7 +158,7 @@ AEM ソフトウェアパッケージには、次の 2 つの形式がありま�
        java -Xmx1024M -jar <aem-65-lts>.jar
    ```
 
-AEM では、jar ファイルを解凍し、自身をインストールして起動するまでに数分かかります。上記の手順では、次の結果になります。
+AEM では、jar ファイルを解凍し、自身をインストールして起動するまでに数分かかります。 上記の手順では、次の結果になります。
 
 * **AEM オーサー**&#x200B;インスタンスが、
 * **localhost** 上の
@@ -177,7 +172,7 @@ AEM では、jar ファイルを解凍し、自身をインストールして起
 
 ### オーサーとパブリッシュのインストール {#author-and-publish-installs}
 
-デフォルトのインストール（**上の**&#x200B;オーサー&#x200B;**`localhost:4502`**&#x200B;インスタンス）は、初めて起動する前に `jar` ファイルの名前を変更することによって変更できます。命名パターンは次のとおりです。
+デフォルトのインストール（**上の**&#x200B;オーサー&#x200B;**`localhost:4502`**&#x200B;インスタンス）は、初めて起動する前に `jar` ファイルの名前を変更することによって変更できます。 命名パターンは次のとおりです。
 
 **`cq-<instance-type>-p<port-number>.jar`**
 
@@ -206,7 +201,7 @@ AEM では、jar ファイルを解凍し、自身をインストールして起
 
 ### 展開されたインストールディレクトリ {#unpacked-install-directory}
 
-quickstart jar を初めて起動すると、同じディレクトリの `crx-quickstart` という新しいサブディレクトリの下に解凍されます。最終的に、次のような構成になります。
+quickstart jar を初めて起動すると、同じディレクトリの `crx-quickstart` という新しいサブディレクトリの下に解凍されます。 最終的に、次のような構成になります。
 
 ```xml
 <aem-install>/
@@ -240,7 +235,7 @@ AEM を初めて展開して起動した場合は、インストールディレ�
 
 GUI からインスタンスを停止するには、デスクトップアプリケーションウィンドウの&#x200B;**オン／オフ**&#x200B;スイッチをクリックします。
 
-AEM はコマンドラインからも停止および起動できます。インスタンスの初めてのインストールが完了している場合は、**コマンドラインスクリプト** は次の場所にあります。
+AEM はコマンドラインからも停止および起動できます。 インスタンスの初めてのインストールが完了している場合は、**コマンドラインスクリプト** は次の場所にあります。
 
 **`<aem-install>/crx-quickstart/bin/`**
 
@@ -251,7 +246,7 @@ AEM はコマンドラインからも停止および起動できます。イン�
 * **`status`**: インスタンスのステータスを報告
 * **`quickstart`**：必要に応じて開始情報の設定に使用
 
-Windows 用に同等の **`bat`** ファイルもあります。詳しくは、以下を参照してください。
+Windows 用に同等の **`bat`** ファイルもあります。 詳しくは、以下を参照してください。
 
 * [コマンドラインによる起動と停止](/help/sites-deploying/command-line-start-and-stop.md)
 
@@ -262,7 +257,7 @@ AEM が起動し、Web ブラウザーが適切なページに自動的にリダ
 ![ログイン画面](assets/screen_shot_2019-04-08at83533am.png)
 
 
-ログインすると、AEM にアクセスできるようになります。詳しくは、ご自分の役割に応じて以下を参照してください。
+ログインすると、AEM にアクセスできるようになります。 詳しくは、ご自分の役割に応じて以下を参照してください。
 
 * [オーサリング](/help/sites-authoring/first-steps.md)
 * [管理](/help/sites-administering/home.md)
@@ -271,7 +266,7 @@ AEM が起動し、Web ブラウザーが適切なページに自動的にリダ
 
 ## 高度なデプロイメント {#advanced-deployment}
 
-上記のセクションは、基本的な AEM のインストールについて説明したものです。ただし、AEM の完全な実稼動システムをインストールする場合は、大幅に複雑になる可能性があります。高度なインストールについての詳しい説明は、次のサブページを参照してください。
+上記のセクションは、基本的な AEM のインストールについて説明したものです。 ただし、AEM の完全な実稼動システムをインストールする場合は、大幅に複雑になる可能性があります。 高度なインストールについての詳しい説明は、次のサブページを参照してください。
 
 * [技術要件](/help/sites-deploying/technical-requirements.md)
 * [推奨されるデプロイメント](/help/sites-deploying/recommended-deploys.md)
@@ -279,7 +274,7 @@ AEM が起動し、Web ブラウザーが適切なページに自動的にリダ
 * [アプリケーションサーバーのインストール](/help/sites-deploying/application-server-install.md)
 * [コマンドラインによる起動と停止](/help/sites-deploying/command-line-start-and-stop.md)
 * [設定](/help/sites-deploying/configuring.md)
-* [AEM 6.5 LTS へのアップグレード](/help/sites-deploying/upgrade.md)
+* [AEM 6.5 LTSへのアップグレード](/help/sites-deploying/upgrade.md)
 * [設定方法に関する記事](/help/sites-deploying/ht-deploy.md)
 * [Web コンソール](/help/sites-deploying/web-console.md)
 * [レプリケーションのトラブルシューティング](/help/sites-deploying/troubleshoot-rep.md)
