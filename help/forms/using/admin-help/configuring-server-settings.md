@@ -10,7 +10,7 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 exl-id: da8031f2-26ab-41e2-bf54-7032727ca192
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: d75fc7712b1428471a081508cd5d1d68ec87d9c7
 workflow-type: tm+mt
 source-wordcount: '2665'
 ht-degree: 99%
@@ -283,9 +283,9 @@ Forms Workflow が、管理者に送信されるメール通知を生成する�
 
 `Branch 4868 has stalled! You have received this notification from ServerXYZ.`
 
-## Business Activity Monitoring 接続の設定 {#configuring-business-activity-monitoring-connections}
+## ビジネスアクティビティモニタリング接続の設定 {#configuring-business-activity-monitoring-connections}
 
-オプションで提供されるモジュールである Business Activity Monitoring（BAM）では、操作と主要なパフォーマンスインジケーターのリアルタイムでの表示を可能にする、一連の操作ダッシュボードを使用できます。
+オプションで提供されるモジュールであるビジネスアクティビティモニタリング（BAM）では、操作と主要なパフォーマンスインジケーターのリアルタイムでの表示を可能にする、一連の操作ダッシュボードを使用できます。
 
 BAM の設定ページでは、BAM を実行するサーバーへの接続を設定して、プロセス関連のイベントを追跡し、そのサーバーに送信できます。
 
