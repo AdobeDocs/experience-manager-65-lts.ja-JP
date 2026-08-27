@@ -10,10 +10,10 @@ role: User, Developer
 feature: Adaptive Forms
 hide: true
 exl-id: c68c602f-fa93-4e3d-9a8c-b61c3ab53000
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: d75fc7712b1428471a081508cd5d1d68ec87d9c7
 workflow-type: tm+mt
 source-wordcount: '2503'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -79,7 +79,7 @@ User Management データベースには、次のデフォルトの役割が含�
 
 **AEM Forms ワークスペース管理者：**&#x200B;管理コンソールのワークスペースページで設定を表示および変更できます。
 
-***メモ&#x200B;**：AEM Forms のリリースでは Flex Workspace は廃止されています。*
+***注&#x200B;**: AEM forms リリースでは、Flex Workspaceは非推奨（廃止予定）です。*
 
 **ワークスペースユーザー：** Workspace エンドユーザーアプリケーションにログインできます。
 

@@ -6,10 +6,10 @@ role: User, Developer
 feature: Adaptive Forms
 hide: true
 exl-id: b3f8e1d6-3e6e-4b2c-8528-3346bbda3396
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: d75fc7712b1428471a081508cd5d1d68ec87d9c7
 workflow-type: tm+mt
 source-wordcount: '1724'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -164,7 +164,7 @@ MySQL を使用する場合は、ユーザー ID に拡張文字を含めるこ�
 * Correspondence Management ソリューション
 * AEM Forms Workspace
 
-  ***注意&#x200B;**：AEM Forms のリリースでは Flex Workspace は廃止されています。*
+  ***注&#x200B;**: AEM forms リリースでは、Flex Workspaceは非推奨（廃止予定）です。*
 
 * Forms Manager
 * プロセスレポート
