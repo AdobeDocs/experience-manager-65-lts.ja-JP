@@ -9,14 +9,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: f564bda3-4141-40b3-8c08-140d4da92e2c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9c1795a90f0cd80dcf886477620a5330c5e3fbbf
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 100%
+source-wordcount: '673'
+ht-degree: 93%
 
 ---
 
 # Adobe Classifications{#adobe-classifications}
+
+[!BADGE 廃止]{type=negative tooltip="この機能は提供終了となりました"}
+
+<div class="preview"> Adobe Classificationsでは、ユーザーの資格情報（ユーザー名とパスワード）を使用するAdobe Analytics設定が必要です。これは、<a href="https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/">Adobe Analytics 1.4 APIが提供終了</a>に達した時点でサポートされなくなりました。 その結果、Adobe Classificationsは非推奨（廃止予定）になります。 </div>
 
 Adobe Classifications は、分類データをスケジュールに従って [Adobe Analytics](/help/sites-administering/adobeanalytics.md) にエクスポートします。 SAINT Exporter は、**com.adobe.cq.scheduled.exporter.Exporter** の実装です。
 
@@ -85,13 +89,13 @@ SAINT Exporter は、変換サービスを使用して、書き出しデータ�
 
 * id-classification `nt:unstructured`
 
-   * 1 `nt:unstructured`
+  * 1 `nt:unstructured`
 
-      * Product = ﻿﻿My Product Name (String)
-      * Price = 120.90 (String)
-      * Size = M (String)
-      * Color = black (String)
-      * Color^Code = 101 (String)
+    * Product = ﻿﻿My Product Name (String)
+    * Price = 120.90 (String)
+    * Size = M (String)
+    * Color = black (String)
+    * Color^Code = 101 (String)
 
 **SAINTヘッダーとレコード：**
 
