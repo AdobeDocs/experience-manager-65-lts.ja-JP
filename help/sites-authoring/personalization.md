@@ -35,7 +35,7 @@ AEM には、ターゲットとなるコンテンツをオーサリングして�
 
 アクティビティは、ページが使用する[ターゲティングエンジン](/help/sites-authoring/personalization.md#targeting-engine)も識別します。
 
-ブランドのアクティビティを作成および管理するには、[アクティビティコンソール](/help/sites-authoring/activitylib.md)を使用します。 また、[ ターゲットコンテンツを作成する際にアクティビティを作成することもできます。](/help/sites-authoring/content-targeting-touch.md)
+ブランドのアクティビティを作成および管理するには、[アクティビティコンソール](/help/sites-authoring/activitylib.md)を使用します。 また、[&#x200B; ターゲットコンテンツを作成する際にアクティビティを作成することもできます。](/help/sites-authoring/content-targeting-touch.md)
 
 ## エクスペリエンス {#experiences}
 
@@ -53,7 +53,7 @@ AEM には、ターゲットとなるコンテンツをオーサリングして�
 
 たとえば、We.Retail サンプル Web サイトの女性向けページでは、オファーをティーザー画像として使用して、ページ上部に表示することができます。 30 歳以上の女性向けエクスペリエンスと、30 歳未満の女性向けエクスペリエンスには、それぞれ異なるオファーをティーザーとして使用します。
 
-複数のエクスペリエンスで使用できるオファーを作成するには、[オファーコンソール](/help/sites-authoring/offerlib.md)を使用します。 ターゲットコンテンツを[ オーサリングする際に、1回限りのオファーを作成するか、オファーライブラリからオファーを追加します。](/help/sites-authoring/content-targeting-touch.md)
+複数のエクスペリエンスで使用できるオファーを作成するには、[オファーコンソール](/help/sites-authoring/offerlib.md)を使用します。 ターゲットコンテンツを[&#x200B; オーサリングする際に、1回限りのオファーを作成するか、オファーライブラリからオファーを追加します。](/help/sites-authoring/content-targeting-touch.md)
 
 ## ターゲティングエンジン {#targeting-engine}
 

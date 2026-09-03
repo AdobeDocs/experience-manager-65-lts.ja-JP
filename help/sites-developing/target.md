@@ -23,7 +23,7 @@ ht-degree: 54%
 このセクションでは、コンテンツターゲティングで使用するコンポーネントの開発に関するトピックについて説明します。
 
 * Adobe Targetとの連携について詳しくは、[Adobe Targetとの連携を参照してください。](/help/sites-administering/target.md)
-* ターゲットコンテンツのオーサリングについて詳しくは、[ ターゲットモードを使用したターゲットコンテンツのオーサリングを参照してください。](/help/sites-authoring/content-targeting-touch.md)
+* ターゲットコンテンツのオーサリングについて詳しくは、[&#x200B; ターゲットモードを使用したターゲットコンテンツのオーサリングを参照してください。](/help/sites-authoring/content-targeting-touch.md)
 
 >[!NOTE]
 >
@@ -217,7 +217,7 @@ mboxの作成に使用される既定の`mbox.js` ファイルは`/etc/clientlib
 1. カスタム mbox.js プロパティの場合は、「参照」をクリックし、ファイルを選択します。
 1. 変更を適用するには、Adobe Target アカウントのパスワードを入力し、「Adobe Target に再接続」をクリックして、接続が成功したら「OK」をクリックします。 次に「コンポーネントを編集」ダイアログボックスで「OK」をクリックします。
 
-Target設定にカスタム `mbox.js` ファイルが含まれています。ページのヘッドセクション ](/help/sites-developing/target.md#p-the-head-section-p)で必要なコードは`testandtarget.js` ライブラリへの参照ではなく、クライアントライブラリフレームワークにファイルを追加します。[
+Target設定にカスタム `mbox.js` ファイルが含まれています。ページのヘッドセクション [&#128279;](/help/sites-developing/target.md#p-the-head-section-p)で必要なコードは`testandtarget.js` ライブラリへの参照ではなく、クライアントライブラリフレームワークにファイルを追加します。
 
 ## コンポーネントに対する Target コマンドの無効化 {#disabling-the-target-command-for-components}
 
@@ -325,7 +325,7 @@ String orderID = session.getOrderId();
 
 ## Target コンポーネントについて {#understanding-the-target-component}
 
-Target コンポーネントを使用すると、CQ コンテンツコンポーネントから動的 mbox を作成できます。 詳しくは、[ コンテンツターゲティング ](/help/sites-authoring/content-targeting-touch.md)を参照してください。 ターゲットコンポーネントは`/libs/cq/personalization/components/target`にあります。
+Target コンポーネントを使用すると、CQ コンテンツコンポーネントから動的 mbox を作成できます。 詳しくは、[&#x200B; コンテンツターゲティング &#x200B;](/help/sites-authoring/content-targeting-touch.md)を参照してください。 ターゲットコンポーネントは`/libs/cq/personalization/components/target`にあります。
 
 `target.jsp` スクリプトは、ページプロパティにアクセスして、コンポーネントに使用するターゲティングエンジンを決定し、適切なスクリプトを実行します。
 
