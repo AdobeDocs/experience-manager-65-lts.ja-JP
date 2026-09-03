@@ -419,7 +419,7 @@ AEM UI はタッチ対応なので、タッチデバイス（モバイルやタ�
   * 変更の詳細
   * ページ言語
   * 公開の詳細
-  * [ ページのオン/オフ時間](/help/sites-authoring/editing-page-properties.md#on-off-time) （設定されている場合）
+  * [&#x200B; ページのオン/オフ時間](/help/sites-authoring/editing-page-properties.md#on-off-time) （設定されている場合）
 
 
 ### カード表示 {#card-view}
@@ -469,7 +469,7 @@ AEM UI はタッチ対応なので、タッチデバイス（モバイルやタ�
     * 前回の公開以降にページが更新された場合、列エントリには警告アイコンがバッジされます。
     * ![前回の公開以降に変更](assets/modified.png)
   * **公開** - 公開ステータス
-    * ページに[ オン/オフ時間](/help/sites-authoring/editing-page-properties.md#on-time)が設定されている場合、列エントリには時計アイコンが付けられます。
+    * ページに[&#x200B; オン/オフ時間](/help/sites-authoring/editing-page-properties.md#on-time)が設定されている場合、列エントリには時計アイコンが付けられます。
     * アイコンにカーソルを合わせると、詳細が表示されます。
     * ![時間外設定](assets/on-off-time.png)
   * **テンプレート** - ページがベースにしているテンプレート
@@ -542,7 +542,7 @@ AEM UI はタッチ対応なので、タッチデバイス（モバイルやタ�
     * [コメント](#timelineaddingandviewingcomments)
     * 注釈
     * 編集や公開などのアクティビティ
-      * ページに[ オン/オフ時間](/help/sites-authoring/editing-page-properties.md#on-off-time)が設定されており、現在の時間がオン/オフ時間ウィンドウ外にある場合、「ページ無効」アクティビティが表示される場合があります。
+      * ページに[&#x200B; オン/オフ時間](/help/sites-authoring/editing-page-properties.md#on-off-time)が設定されており、現在の時間がオン/オフ時間ウィンドウ外にある場合、「ページ無効」アクティビティが表示される場合があります。
       * これは、ページが有効ウィンドウ外であることを示すだけで、必ずしもページが非公開であるとは限りません。
     * [ローンチ](/help/sites-authoring/launches.md)
     * [バージョン](/help/sites-authoring/working-with-page-versions.md)
