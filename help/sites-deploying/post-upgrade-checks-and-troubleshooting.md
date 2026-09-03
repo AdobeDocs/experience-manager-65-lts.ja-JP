@@ -89,7 +89,7 @@ MongoMK または新しい TarMK セグメント形式を使用する場合は�
 
 ### レプリケーションエージェントの有効化 {#enable-replication-agents}
 
-パブリッシュ環境を完全にアップグレードして検証したら、オーサー環境でレプリケーションエージェントを有効にします。 エージェントがそれぞれのパブリッシュインスタンスに接続できることを確認します。 イベントの順序について詳しくは、[ アップグレード手順](/help/sites-deploying/upgrade-procedure.md)を参照してください。
+パブリッシュ環境を完全にアップグレードして検証したら、オーサー環境でレプリケーションエージェントを有効にします。 エージェントがそれぞれのパブリッシュインスタンスに接続できることを確認します。 イベントの順序について詳しくは、[&#x200B; アップグレード手順](/help/sites-deploying/upgrade-procedure.md)を参照してください。
 
 ### スケジュール済みカスタムジョブの有効化 {#enable-custom-scheduled-jobs}
 
@@ -99,7 +99,7 @@ MongoMK または新しい TarMK セグメント形式を使用する場合は�
 
 >[!IMPORTANT]
 >
->AEM 6.5 LTS サービスパックのインストールは、技術的には[完全なインプレースアップグレード ](/help/sites-deploying/in-place-upgrade.md)です（更新が適用される前に、AEM クイックスタート jarが完全に置き換えられます）。 そのため、インプレースアップグレード中に実行される標準のアップグレード前クリーンアップタスクも、サービスパックの適用時に実行されるようになりました。
+>AEM 6.5 LTS サービスパックのインストールは、技術的には[完全なインプレースアップグレード &#x200B;](/help/sites-deploying/in-place-upgrade.md)です（更新が適用される前に、AEM クイックスタート jarが完全に置き換えられます）。 そのため、インプレースアップグレード中に実行される標準のアップグレード前クリーンアップタスクも、サービスパックの適用時に実行されるようになりました。
 
 これらのタスクの1つは、古い`install` フォルダー（`install`、および`/libs`の下のどこかに見つかった`install.author`や`install.publish`などの実行モードのバリエーション）を削除して、古いバンドルや構成が再インストールされないようにします。 ソリューションが独自のOSGi バンドルまたは構成を`/libs`の下の`install` フォルダーに保持するアドオンに依存している場合、そのフォルダーは、過去にサービスパックのアップグレードで確認されなかった場合でも、サービスパックの適用の一環として削除できます。
 
@@ -110,7 +110,7 @@ MongoMK または新しい TarMK セグメント形式を使用する場合は�
 
 ### テスト計画の実行 {#execute-test-plan}
 
-「**テスト手順**」セクション ](/help/sites-deploying/upgrading-code-and-customizations.md#testing-procedure-testing-procedure)の「[ コードとカスタマイズのアップグレード」で定義されている詳細なテストプランを実行します。
+「**テスト手順**」セクション [&#128279;](/help/sites-deploying/upgrading-code-and-customizations.md#testing-procedure-testing-procedure)の「 コードとカスタマイズのアップグレード」で定義されている詳細なテストプランを実行します。
 
 ## アップグレードに関する問題の分析 {#analyzing-issues-with-the-upgrade}
 
