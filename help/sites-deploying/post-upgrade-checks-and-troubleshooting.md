@@ -10,10 +10,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8b3d8d0f-10f7-4736-881d-8f1f21c69182
-source-git-commit: a037dc7cbb13abfeb8a7289baded50d3d788cbf6
+source-git-commit: 76bd0f170b06a3f930d504b680342c954daae460
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 80%
+source-wordcount: '1382'
+ht-degree: 69%
 
 ---
 
@@ -36,6 +36,8 @@ ht-degree: 80%
 * [レプリケーションエージェントの有効化](#enable-replication-agents)
 
 * [スケジュール済みカスタムジョブの有効化](#enable-custom-scheduled-jobs)
+
+* [アドオンを再インストールまたは検証](#reinstall-or-verify-add-ons)
 
 * [テスト計画の実行](#execute-test-plan)
 
@@ -92,6 +94,19 @@ MongoMK または新しい TarMK セグメント形式を使用する場合は�
 ### スケジュール済みカスタムジョブの有効化 {#enable-custom-scheduled-jobs}
 
 この時点で、コードベースの一部としてのスケジュール済みジョブを有効にすることができます。
+
+### アドオンを再インストールまたは検証 {#reinstall-or-verify-add-ons}
+
+>[!IMPORTANT]
+>
+>AEM 6.5 LTS サービスパックのインストールは、技術的には[完全なインプレースアップグレード &#x200B;](/help/sites-deploying/in-place-upgrade.md)です（更新が適用される前に、AEM クイックスタート jarが完全に置き換えられます）。 そのため、インプレースアップグレード中に実行される標準のアップグレード前クリーンアップタスクも、サービスパックの適用時に実行されるようになりました。
+
+これらのタスクの1つは、古い`install` フォルダー（`install`、および`/libs`の下のどこかに見つかった`install.author`や`install.publish`などの実行モードのバリエーション）を削除して、古いバンドルや構成が再インストールされないようにします。 ソリューションが独自のOSGi バンドルまたは構成を`/libs`の下の`install` フォルダーに保持するアドオンに依存している場合、そのフォルダーは、過去にサービスパックのアップグレードで確認されなかった場合でも、サービスパックの適用の一環として削除できます。
+
+サービスパックの適用後：
+
+* 以前にインストールしたすべてのアドオンが引き続き存在し、それらのOSGi バンドルと設定がアクティブであることを確認します。 開始されていないバンドルについては、`/system/console/bundles`を確認してください。
+* アドオンのコンテンツが見つからない場合は、そのアドオンのコンテンツパッケージを再インストールして復元してください。
 
 ### テスト計画の実行 {#execute-test-plan}
 
