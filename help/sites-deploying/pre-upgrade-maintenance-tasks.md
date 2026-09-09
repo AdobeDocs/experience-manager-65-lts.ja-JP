@@ -10,10 +10,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
-source-git-commit: 8f7bbc3887601e10cf29e99ee54959a10c8a3f98
+source-git-commit: c93d78653e192d041830a84ea24fe5d3edde29e0
 workflow-type: tm+mt
-source-wordcount: '1153'
-ht-degree: 80%
+source-wordcount: '1332'
+ht-degree: 69%
 
 ---
 
@@ -24,6 +24,7 @@ ht-degree: 80%
 * [インデックス定義](#index-definitions)
 * [十分なディスク領域の確保](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#ensure-sufficient-disk-space)
 * [AEM の完全なバックアップ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#fully-back-up-aem)
+* [古いアップグレード前のバックアップを確認する](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#check-stale-pre-upgrade-backups)
 * [quickstart.properties ファイルの生成](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#generate-quickstart-properties)
 * [ワークフローおよび監査ログのパージの設定](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#configure-wf-audit-purging)
 * [アップグレード前のタスクのインストール、設定および実行](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#install-configure-run-pre-upgrade-tasks)
@@ -37,7 +38,7 @@ ht-degree: 80%
 
 ## インデックス定義 {#index-definitions}
 
-最新のAEM 6.5 サービスパックでリリースされた必要なインデックス定義がインストールされていることを確認します。 （詳しくは、[AEM 6.5 サービスパックのリリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/release-notes/release-notes)を参照してください）。
+最新のAEM 6.5 サービスパックでリリースされた必要なインデックス定義がインストールされていることを確認します。 （詳しくは、[AEM 6.5 サービスパックのリリースノート ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/release-notes/release-notes)を参照してください）。
 
 ## 十分なディスク領域の確保 {#ensure-sufficient-disk-space}
 
@@ -46,6 +47,18 @@ ht-degree: 80%
 ## AEM の完全なバックアップ {#fully-back-up-aem}
 
 アップグレードの開始前に、AEM を完全にバックアップする必要があります。 該当する場合は、リポジトリ、アプリケーションのインストール、データストア、Mongo インスタンスを必ずバックアップします。 AEM インスタンスのバックアップと復元についての詳細情報は、[バックアップと復元](/help/sites-administering/backup-and-restore.md)を参照してください。
+
+## 古いアップグレード前のバックアップを確認する {#check-stale-pre-upgrade-backups}
+
+アップグレードの前に、AEMは`/var/upgrade/PreUpgradeBackup/<timestamp>`の下の特定のパス（`/etc/tags`など）をバックアップし、アップグレードが完了したら復元します。 各バックアップノードには結合ステータスのプロパティがあります。`INIT`はバックアップが作成されたが、結合が元に戻されなかったことを意味し、`COMPLETED`は結合が正常に完了したことを意味します。
+
+以前のアップグレード（6.4から6.5など）のバックアップが`INIT`状態のままになっている場合、最新のアップグレード（6.5から6.5 LTS）は、その古い結合されていないバックアップを復元します。 これにより、現在のリポジトリー状態と一致しなくなった古いコンテンツや古いコンテンツがサイレントに再表示され、アップグレード完了後に予期しない問題が発生する可能性があります。
+
+これを回避するには、アップグレードを開始する前に次の手順を実行します。
+
+1. CRXDE Lite （`/crx/de/index.jsp`）を使用して、`/var/upgrade/PreUpgradeBackup/`の下にある既存のノードについてソースインスタンスを確認します。
+2. 見つかった各バックアップノードの結合ステータスプロパティを調べます。
+3. 前のアップグレードで`INIT` ステータスのノードが見つかった場合は、その内容を確認し、続行する前にそのノードを削除するか、明示的にマージするかのいずれかの操作を行います。 これにより、古いデータをサイレントに復元するのではなく、アップグレードによって新しい正確なバックアップが作成されます。
 
 ## quickstart.properties ファイルの生成 {#generate-quickstart-properties}
 
