@@ -60,4 +60,4 @@ AEM は、製品やカテゴリに割り当てられた AEM カタログテン�
 
 >[!NOTE]
 >
->AEM Managed Service または AEM オンプレミスで CIF を使用する方法に関する追加ドキュメントについて詳しくは、[Commerce Integration Framework ](https://developer.adobe.com/apis/experiencecloud/commerce-integration-framework/getting-started.html)を参照してください。
+>AEM Managed Service または AEM オンプレミスで CIF を使用する方法に関する追加ドキュメントについて詳しくは、[Commerce Integration Framework &#x200B;](https://developer.adobe.com/apis/experiencecloud/commerce-integration-framework/getting-started.html)を参照してください。
