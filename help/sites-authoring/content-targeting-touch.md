@@ -77,7 +77,7 @@ AEM または Adobe Target をターゲティングエンジンとして使用�
 
 さらに、すべての Adobe Target アクティビティの目標と指標を管理し、Adobe Target オーディエンスを管理できます。 A/B テストの勝者の採用を含む、Adobe Target のアクティビティレポートも含まれます。
 
-アクティビティを追加すると、[ アクティビティ コンソールにも表示されます。](/help/sites-authoring/activitylib.md)
+アクティビティを追加すると、[&#x200B; アクティビティ コンソールにも表示されます。](/help/sites-authoring/activitylib.md)
 
 エクスペリエンスを追加する手順は次のとおりです。
 
@@ -85,7 +85,7 @@ AEM または Adobe Target をターゲティングエンジンとして使用�
 
    >[!NOTE]
    >
-   >Adobeでは、[ アクティビティコンソールを使用してブランドを作成することをお勧めします。](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console)
+   >Adobeでは、[&#x200B; アクティビティコンソールを使用してブランドを作成することをお勧めします。](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console)
    >
    >
    >他の方法でブランドを作成する場合は、ノード `/campaigns/<brand>/master` が存在することを確認してください。ノードがなければ、アクティビティを作成しようとするとエラーが発生します。
@@ -180,7 +180,7 @@ AEM または Adobe Target をターゲティングエンジンとして使用�
 
 ### ターゲティングモードを使用したエクスペリエンスの追加と削除 {#adding-and-removing-experiences-using-targeting-mode}
 
-ターゲティングプロセス [の作成ステップ ](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings)を使用すると、エクスペリエンスを追加および削除できます。 さらに、エクスペリエンスを複製したり、名前を変更したりすることもできます。
+ターゲティングプロセス [の作成ステップ &#x200B;](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings)を使用すると、エクスペリエンスを追加および削除できます。 さらに、エクスペリエンスを複製したり、名前を変更したりすることもできます。
 
 #### ターゲティングモードを使用したエクスペリエンスの追加 {#adding-experiences-using-targeting-mode}
 
@@ -257,7 +257,7 @@ AEM または Adobe Target をターゲティングエンジンとして使用�
 
    ![Target](do-not-localize/chlimage_1.png)
 
-   このコンポーネントのコンテンツが、デフォルトエクスペリエンス用のオファーになります。 コンポーネントをターゲット設定すると、各エクスペリエンスについてデフォルトノードがレプリケートされます。 これは、特定のオーサリングエクスペリエンスで、正しいコンテンツノードを編集するために必要です。 これらのデフォルト以外のエクスペリエンスについては、[ カスタムオファーを追加](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer)するか、[ ライブラリオファーを追加](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)します。
+   このコンポーネントのコンテンツが、デフォルトエクスペリエンス用のオファーになります。 コンポーネントをターゲット設定すると、各エクスペリエンスについてデフォルトノードがレプリケートされます。 これは、特定のオーサリングエクスペリエンスで、正しいコンテンツノードを編集するために必要です。 これらのデフォルト以外のエクスペリエンスについては、[&#x200B; カスタムオファーを追加](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer)するか、[&#x200B; ライブラリオファーを追加](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)します。
 
 #### ターゲットコンポーネントを追加してオファーを作成 {#creating-an-offer-by-adding-a-target-component}
 
@@ -305,13 +305,13 @@ Target コンポーネントにドラッグされたコンポーネントは、�
 1. オファーの作成：
 
    * デフォルトエクスペリエンスの場合は、コンポーネントをターゲットドロップ領域にドラッグし、通常どおりにコンポーネントのプロパティを編集して、オファーのコンテンツを作成します。
-   * デフォルト以外のエクスペリエンスの場合は、[ カスタムオファーを追加](#adding-a-custom-offer)するか、[ ライブラリオファーを追加](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)します。
+   * デフォルト以外のエクスペリエンスの場合は、[&#x200B; カスタムオファーを追加](#adding-a-custom-offer)するか、[&#x200B; ライブラリオファーを追加](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)します。
 
 #### カスタムオファーの追加 {#adding-a-custom-offer}
 
 ターゲティングモードでターゲットコンポーネントのコンテンツをオーサリングしてオファーを作成します。 カスタムオファーを作成する場合、そのオファーは単一のエクスペリエンスのオファーとして使用されます。
 
-オファーを他のエクスペリエンスに使用できると判断した場合は、カスタムオファーを作成して[ ライブラリに追加できます。](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library) オファーコンソールを使用して再利用可能なオファーを作成する方法について詳しくは、[ オファーライブラリにオファーを追加するを参照してください。](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library)
+オファーを他のエクスペリエンスに使用できると判断した場合は、カスタムオファーを作成して[&#x200B; ライブラリに追加できます。](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library) オファーコンソールを使用して再利用可能なオファーを作成する方法について詳しくは、[&#x200B; オファーライブラリにオファーを追加するを参照してください。](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library)
 
 1. オファーを追加するエクスペリエンスを選択します。
 1. コンポーネントメニューを表示するには、オファーを追加するターゲットコンポーネントをクリックします。
@@ -369,7 +369,7 @@ Target コンポーネントにドラッグされたコンポーネントは、�
 
 複数のエクスペリエンスのオファーとして再利用する場合、カスタムオファーを[オファーライブラリ](/help/sites-authoring/offerlib.md)に追加します。 ターゲティングする現在のブランドのライブラリにオファーを追加できます。
 
-オファーコンソールを使用して再利用可能なオファーを作成する方法について詳しくは、[ オファーライブラリにオファーを追加するを参照してください。](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library)
+オファーコンソールを使用して再利用可能なオファーを作成する方法について詳しくは、[&#x200B; オファーライブラリにオファーを追加するを参照してください。](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library)
 
 1. エクスペリエンスを選択して、カスタムオファーを表示します。
 1. カスタムオファーをクリックしてオファーメニューを表示し、「**オファーをオファーライブラリに保存**」アイコンをクリックします。
@@ -392,7 +392,7 @@ Target コンポーネントにドラッグされたコンポーネントは、�
 エクスペリエンスからライブラリオファーをターゲットモードで開き、オファーを編集します。 加えた変更は、そのオファーを使用するすべてのエクスペリエンスに表示されます。
 
 1. エクスペリエンスを選択して、ライブラリオファーを表示します。
-1. ライブラリオファーをローカルまたはカスタムオファーに変換します。 [ ライブラリオファーのカスタムライブラリへの変換を参照してください。](#converting-a-library-offer-to-a-custom-library)
+1. ライブラリオファーをローカルまたはカスタムオファーに変換します。 [&#x200B; ライブラリオファーのカスタムライブラリへの変換を参照してください。](#converting-a-library-offer-to-a-custom-library)
 1. オファーのコンテンツを編集します。
 
 1. ライブラリに再度保存します。 [カスタムオファーをライブラリに追加](#adding-a-custom-offer-to-a-library)を参照してください。
@@ -409,7 +409,7 @@ Target コンポーネントにドラッグされたコンポーネントは、�
 
 セグメントに基づいてオーディエンスを定義します。 使用できるセグメントは、ページのクラウド設定によって決まります。 ページが Adobe Target クラウド設定に関連付けられていない場合、AEM セグメントを使用してオーディエンスを定義できます。 ページが Adobe Target クラウド設定に関連付けられている場合、Target セグメントを使用します。
 
-ターゲティングエンジンについて詳しくは、[ ターゲティングエンジンを参照してください。](/help/sites-authoring/personalization.md#targeting-engine)
+ターゲティングエンジンについて詳しくは、[&#x200B; ターゲティングエンジンを参照してください。](/help/sites-authoring/personalization.md#targeting-engine)
 
 オーディエンスを複数のエクスペリエンスで使用しないでください。 既に別のエクスペリエンスにマッピングされているオーディエンスにエクスペリエンスをマッピングすると、そのエクスペリエンスの横に警告シンボルが表示されます。
 
@@ -577,7 +577,7 @@ Adobe Target を使用する場合に目標と設定を指定するには：
 
    すべてのフィールドをクリアする必要がある場合は、右上隅の 3 つのドットをクリックし、「**すべてのフィールドをクリア**」を選択します。
 
-   どの指標にも定義可能な詳細設定があります。 この設定にアクセスするには、「**詳細設定**」を選択します。 前の表で成功指標のカウント方法の定義を参照し、[Adobe Target ドキュメント ](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=ja)を参照してください。
+   どの指標にも定義可能な詳細設定があります。 この設定にアクセスするには、「**詳細設定**」を選択します。 前の表で成功指標のカウント方法の定義を参照し、[Adobe Target ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=ja)を参照してください。
 
    >[!NOTE]
    >
@@ -610,7 +610,7 @@ Adobe Target を使用する場合に目標と設定を指定するには：
 
 * ユーザーのセッションストア内のデータ（Context Hub を使用）。
 * [件のアクティビティがオンです。](/help/sites-authoring/activitylib.md)
-* セグメントを定義する[ ルール。](/help/sites-administering/campaign-segmentation.md)
+* セグメントを定義する[&#x200B; ルール。](/help/sites-administering/campaign-segmentation.md)
 * ターゲットコンポーネント内のエクスペリエンスのコンテンツ。
 * ターゲティングエンジンの[設定。](/help/sites-authoring/activitylib.md)
 
