@@ -5,13 +5,11 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: aa819778006a3acb0d02772156c2af820ed353bb
+source-git-commit: e123b8357097747e1fbb598075c05180487dabdc
 workflow-type: tm+mt
-source-wordcount: '7575'
-ht-degree: 23%
-
+source-wordcount: '7277'
+ht-degree: 22%
 ---
-
 
 # Adobe Experience Manager 6.5 LTS、SP3の現在のリリースノート {#release-notes}
 
@@ -618,30 +616,6 @@ AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストール
 * Configuration Manager では、モジュールが選択されていない場合や、制限されたコンポーネントのみが選択されている場合、AEM Forms 6.5 LTS JEE Turnkey Custom モードで Bootstrap 中にデータベースの初期化が失敗します。 依存関係ファイル（xalan-2.7.2.jar）が欠落しているので、エラーが発生します。 JAR ファイルをAdobe-livecycle-jboss.ear\libに追加すると、問題が解決します。 （FORMS-24690）
 * WebSphere® Liberty Profileで実行されているForms JEE LTS Service Pack 2のデプロイメントで、メール機能が失敗します。 メール機能を使用しようとすると、サーバーが次のエラーを記録します：`Could not convert socket to TLS`。 （FORMS-24692）
 * JBoss®で動作しているForms JEE LTSで、メール関連の機能が失敗します。 メール機能を使用しようとすると、サーバーが次のエラーを記録します：`Error IMAPProvider not a subtype`。 この問題を解決するには、[&#x200B; ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-core-jboss.ear)からホットフィックスをインストールしてください。 （FORMS-24892）
-
-### オフラインコンパクション後のオンラインコンパクション中のリポジトリの破損（GRANITE-65146） {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
-
-JCR リポジトリに対して以前にオフラインコンパクションが実行されていた場合、オンラインコンパクション中にリポジトリの破損が発生することがあります。 このシナリオでは、`SegmentNotFoundException`（SNFE）が発生し、リポジトリの破損につながる場合があります。
-
-この問題を解決するには、[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-65388-1.0.zip)からホットフィックスをインストールします。 ホットフィックスには低レベルの `oak-segment-tar` バンドルが含まれているので、インストール後にインスタンスが再起動します。
-
-インスタンスを適用する際のダウンタイムを計画します。 オフラインコンパクションの場合は、ソフトウェア配布から提供されている、対応する [`oak-run` jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar) を使用します。
-
->[!NOTE]
->
-> * `oak-run` 操作の場合は、[`oak-run` 1.88.1-B006 jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar) を使用します。
->
-> * システムプロパティ `oak.compaction.legacy=true` を設定して AEM を開始します。
-
-### AEM 6.5 LTS SP2で`com.adobe.granite.apicontroller` バンドルが見つかりません（GRANITE-67640） {#missing-apicontroller-bundle-granite-67640}
-
-AEM 6.5 LTS SP2に`com.adobe.granite.apicontroller` バンドルがありません。 このバンドルは、OSGi バンドルの解決方法を制御し、バンドルが他のバンドルに解決されるのを防ぐことができます。これは、公開されたAPIを制限するのに役立ちます。
-
-この機能を使用するには、[&#x200B; ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-67640-1.0.zip)からホットフィックスをインストールします。
-
->[!NOTE]
->
-> `com.adobe.granite.apicontroller`の既定の構成で、既存のカスタム実装に影響する予期しない解決制限が導入されていないことを確認するには、ホットフィックスのインストール後、インストールされているすべてのバンドルのバンドル状態を確認します。
 
 ### Sling-Initial-Content（SP2）では JSON コメントはサポートされなくなりました {#json-comments-no-longer-supported-in-sling-initial-content}
 
