@@ -18,7 +18,7 @@ ht-degree: 9%
 
 ## アップグレード前の手順 {#pre-upgrade-steps}
 
-アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。 詳しくは、[ アップグレード前のメンテナンスタスク ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。 さらに、お使いのシステムがAEM 6.5 LTS Servicepack](/help/sites-deploying/technical-requirements.md)の[要件を満たしていることを確認し、[ アップグレード計画に関する考慮事項](/help/sites-deploying/upgrade-planning.md)を参照してください。
+アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。 詳しくは、[&#x200B; アップグレード前のメンテナンスタスク &#x200B;](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。 さらに、お使いのシステムがAEM 6.5 LTS Servicepack[&#128279;](/help/sites-deploying/technical-requirements.md)の要件を満たしていることを確認し、[&#x200B; アップグレード計画に関する考慮事項](/help/sites-deploying/upgrade-planning.md)を参照してください。
 
 
 ### 移行の前提条件 {#migration-prerequisites}
@@ -32,7 +32,7 @@ ht-degree: 9%
 
 1. AEM 6.5 LTSが既にデプロイされている場合は、バンドルが正しく機能していることを確認します。*`https://<serveraddress:port>/system/console/bundles`*
 1. 次に、AEM 6.5 LTSを停止します。 これは、次の場所にあるTomcat App Managerから実行できます：*`https://<serveraddress:port>/manager/html`*
-1. アップグレード アクティビティを実行する前に、AEM 6.5 LTS サーバーのバックアップなどの[ アップグレード前](#pre-upgrade-steps) アクティビティが完了していることを確認してください
+1. アップグレード アクティビティを実行する前に、AEM 6.5 LTS サーバーのバックアップなどの[&#x200B; アップグレード前](#pre-upgrade-steps) アクティビティが完了していることを確認してください
 1. AEM 6.5 LTS Tomcat サーバーを停止します。 ほとんどの場合、ターミナルから次のコマンドを実行して、`./catalina.sh` スクリプトを実行することで、これを行うことができます。
 
    ```
@@ -85,4 +85,4 @@ ht-degree: 9%
 
 ## アップグレード後のチェックとトラブルシューティングの実行 {#perform-post-upgrade-checks-and-troubleshooting}
 
-詳しくは、[ アップグレード後の確認とトラブルシューティング ](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)を参照してください。
+詳しくは、[&#x200B; アップグレード後の確認とトラブルシューティング &#x200B;](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)を参照してください。
