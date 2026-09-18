@@ -549,8 +549,8 @@ AEM WAR ファイルがデプロイメントガイドに従って適切に設定
 ## 関連ドキュメント
 
 - [JBoss EAP 8移行ガイド](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0/html/migration_guide/)
-- [Adobe Experience Manager 6.5 アップグレードガイド](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html)
-- [AEM サービスパックのインストール](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html)
+- [Adobe Experience Manager 6.5 アップグレードガイド](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html?lang=ja)
+- [AEM サービスパックのインストール](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=ja)
 
 ## ドキュメント情報
 
