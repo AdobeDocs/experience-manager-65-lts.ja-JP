@@ -1,13 +1,12 @@
 ---
 title: JBoss EAP 8でのAEM 6.5 LTSのアップグレード（Windows）
 description: このガイドでは、JDK 21を使用して、既存のAdobe Experience Manager（AEM） 6.5 LTS インストールをJBoss EAP 7.4からWindows上のJBoss EAP 8にアップグレードする手順を説明します。
-source-git-commit: 835530039678bc16a6de87b8d580be91a2026f94
+exl-id: 23389613-0d9f-4e0b-b133-c8e598dd9cc9
+source-git-commit: d713aac72e764849d53e8feb98ed85b89f27a44d
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 4%
-
+source-wordcount: '1430'
+ht-degree: 3%
 ---
-
 # JBoss EAP 8でのAEM 6.5 LTSのアップグレード（Windows）
 
 ## 概要
@@ -22,13 +21,13 @@ ht-degree: 4%
 >
 >これは重要なアップグレード手順です。 このアップグレードは、必ず実稼動以外の環境で実行し、完全なバックアップを維持してください。
 >
-> **&#x200B; 前提条件：**&#x200B;続行する前に、完全なシステムバックアップと文書化されたロールバックプランが必須です。
+> ** 前提条件：**続行する前に、完全なシステムバックアップと文書化されたロールバックプランが必須です。
 
 ## アップグレード前の要件
 
 ### システム要件
 
-| コンポーネント | 要件 |
+| Component | 要件 |
 |-----------|-------------|
 | オペレーティングシステム | Windows Server 2016以降（64 ビット） |
 | Source環境 | JBoss EAP 7.4 （AEM 6.5 LTS搭載） |
@@ -59,8 +58,8 @@ ht-degree: 4%
 ### バックアップチェックリスト
 
 - [ ]既存のJBoss EAP 7.4 インストールディレクトリの完全バックアップ
-- [ ] フォルダーの`crx-repository` バックアップ
-- [ ] フォルダーの`crx-quickstart` バックアップ
+- [ `crx-repository` フォルダーの] バックアップ
+- [ `crx-quickstart` フォルダーの] バックアップ
 - [ すべてのカスタム設定の]書き出し
 - [ ] データベースのバックアップ （外部データベースを使用している場合）
 - [ ]現在のシステムの状態と設定を文書化します
@@ -503,7 +502,7 @@ AEM WAR ファイルがデプロイメントガイドに従って適切に設定
 |-------|---------------|----------|
 | AEMを開始できません | 正しくないJava バージョン | `JAVA_HOME` ポイントをJDK 21に確認 |
 | リポジトリの破損エラー | 不完全なリポジトリコピー | バックアップからの復元とリポジトリの再コピー |
-| OutOfMemoryError | ヒープメモリが不十分 | `-Xmx`の`standalone.conf.bat`を増やす |
+| OutOfMemoryError | ヒープメモリが不十分 | `standalone.conf.bat`の`-Xmx`を増やす |
 | 「インストール済み」状態のバンドル | 依存関係がありません | Web コンソールでバンドルの依存関係を確認する |
 | ポート 8080は既に使用されています | ポートを使用する別のサービス | 競合するサービスを停止するか、JBoss ポートを変更します |
 
@@ -549,9 +548,9 @@ AEM WAR ファイルがデプロイメントガイドに従って適切に設定
 
 ## 関連ドキュメント
 
-- [JBoss EAP 8移行ガイド &#x200B;](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0/html/migration_guide/)
-- [Adobe Experience Manager 6.5 アップグレードガイド &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html?lang=ja)
-- [AEM サービスパックのインストール &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=ja)
+- [JBoss EAP 8移行ガイド](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0/html/migration_guide/)
+- [Adobe Experience Manager 6.5 アップグレードガイド](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html)
+- [AEM サービスパックのインストール](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html)
 
 ## ドキュメント情報
 

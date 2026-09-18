@@ -1,40 +1,38 @@
 ---
-title: JBoss ドメインコントローラーを起動できない
-description: JBoss EAP 8 を使用したAEM Forms 6.5.1 LTS クラスターのデプロイメントでは、設定ファイルに重複したタグが含まれている可能性があります。
+title: JBoss ドメインコントローラーを開始できません
+description: JBoss EAP 8を使用したAEM Forms 6.5.1 LTS クラスターのデプロイメントでは、コンフィギュレーションファイルに重複したタグが含まれている場合があります。
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+exl-id: f24e7245-7b43-4b1c-ba7a-162344ef545c
+source-git-commit: c89b742e24734fc67883b9dec966f59a01062a2a
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '152'
 ht-degree: 1%
-
 ---
-
-
-# JBoss ドメインコントローラーを起動できない
+# JBoss ドメインコントローラーを開始できません
 
 ## 問題
 
-**JBoss EAP 8** を使用した **AEM Forms 6.5.1 LTS** クラスターデプロイメントでは、設定ファイルが
-`<JBOSS_HOME>/domain/configuration/domain_oracle.xml` （およびデータベース固有のバリアント）に **重複する開始タグ `<security>` タグ** が含まれている場合があります。
+**JBoss EAP 8**&#x200B;を使用した&#x200B;**AEM Forms 6.5.1 LTS** クラスターのデプロイメントでは、設定ファイル
+`<JBOSS_HOME>/domain/configuration/domain_oracle.xml` （およびデータベース固有のバリアント）には、**重複する開始`<security>` タグ**&#x200B;が含まれている場合があります。
 
-これにより、**無効な XML 設定** が発生し、**JBoss ドメインコントローラーの起動が失敗し** クラスターが正常に初期化されなくなります。
+これにより、**無効なXML設定**&#x200B;が発生し、**JBoss Domain Controllerの起動エラー**&#x200B;が発生し、クラスターの初期化が正常に行われなくなります。
 
 ## 適用先
 
 * **製品：** AEM Forms 6.5.1 LTS
-* **展開の種類：** クラスター
-* **Application Server:** JBoss EAP 8.x
+* **デプロイメントの種類：** クラスター
+* **アプリケーションサーバー：** JBoss EAP 8.x
 * **設定ファイル：**
 
-   * `<JBOSS_HOME>/domain/configuration/domain_oracle.xml`
-   * `<JBOSS_HOME>/domain/configuration/domain_mysql.xml`
-   * `<JBOSS_HOME>/domain/configuration/domain_mssql.xml`
+  * `<JBOSS_HOME>/domain/configuration/domain_oracle.xml`
+  * `<JBOSS_HOME>/domain/configuration/domain_mysql.xml`
+  * `<JBOSS_HOME>/domain/configuration/domain_mssql.xml`
 
 ## トラブルシューティング手順
 
-1. ドメイン コントローラの起動時に、次のエラーが発生することがあります。
+1. Domain Controllerの起動時に、次のエラーが発生する場合があります。
 
    * `WFLYCTL0198: Unexpected element 'security'`
    * `IJ010061: Unexpected element: security`
@@ -46,7 +44,7 @@ ht-degree: 1%
    (or domain_mysql.xml / domain_mssql.xml)
    ```
 
-3. 複製した `<security>` の開始タグを見つけます。
+3. 重複する`<security>`開始タグを見つけます。
 
    **設定が正しくありません：**
 
@@ -58,7 +56,7 @@ ht-degree: 1%
        </security>
    ```
 
-4. 余分な開口部 `<security>` タグを削除して、次に示すように設定を修正します。
+4. 次に示すように、構成が修正されるように、追加の開始`<security>` タグを削除します。
 
    **正しい設定：**
 
@@ -71,4 +69,4 @@ ht-degree: 1%
 
 5. ファイルを保存し、JBoss ドメインコントローラーを起動します。
 
-6. 検証済みの同じ設定が、すべてのクラスターノードにわたって一貫して適用されるようにします。
+6. すべてのクラスターノードに同じ検証済み設定が一貫して適用されていることを確認します。
