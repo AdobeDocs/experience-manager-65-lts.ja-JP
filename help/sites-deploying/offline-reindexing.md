@@ -1,54 +1,53 @@
 ---
-title: AEMのオフラインインデックス再作成
-description: オフラインのインデックス再作成手法を使用して、AEM リポジトリのインデックスを再作成する方法を説明します。
+title: AEMのオフライン再インデックス作成
+description: オフラインのインデックス再作成手法を使用してAEM リポジトリをインデックス再作成する方法を説明します。
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 076db19026a0992725062ec9965ff6c1cb84333e
+exl-id: 156f245f-b185-4da4-b9c6-6d0a98405119
+source-git-commit: c89b742e24734fc67883b9dec966f59a01062a2a
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 62%
-
+source-wordcount: '1230'
+ht-degree: 65%
 ---
-
-# AEMのオフラインインデックス再作成 {#offline-reindexing-for-aem}
+# AEMのオフライン再インデックス作成 {#offline-reindexing-for-aem}
 
 ## はじめに {#introduction}
 
-大規模なデータストアと高レベルのアセットアップロードが一般的に含まれるAEM Assets プロジェクトでは、Oak インデックスのインデックス再作成に時間がかかる場合があります。
+通常、大規模なデータストアと高レベルのアセットのアップロードを備えたAEM Assets プロジェクトの場合、Oak インデックスのインデックス再作成には大幅な時間がかかります。
 
-ここでは、Oak-run ツールを使用して、オフラインでのインデックス再作成を実行する方法について説明します。 AEM 6.4 以降のバージョンでは、次に示す手順を [Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html) に適用できます。
+ここでは、Oak実行ツールを使用してオフラインのインデックス再作成を実行する方法について説明します。 AEM 6.4 以降のバージョンでは、次に示す手順を [Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html) に適用できます。
 
 ## 概要 {#overview}
 
-AEM リポジトリは、インデックス定義の変更、パフォーマンスの最適化、コンテンツの大幅な変更後など、様々な理由で、多くの場合、インデックス再作成が必要になります。 アセットのテキスト（PDF ファイルのテキストなど）が抽出されてインデックスが作成されるので、インデックス再作成はアセットのデプロイメントにはコストがかかります。 MongoMK リポジトリを使用すると、データはネットワークを介して保持され、インデックス再作成に要する時間がさらに長くなります。 解決策としては、Oak-run ツールを使用してインデックス再作成 **オフライン** を実行し、事前に作成されたインデックスを実行中のAEM インスタンスに読み込みます。 このアプローチにより、インデックス再作成時間が最小限に抑えられ、リソース管理が向上します。
+AEM リポジトリでは、インデックス定義の変更、パフォーマンスの最適化、コンテンツの大幅な変更後など、さまざまな理由でインデックスの再作成が必要になることがよくあります。 アセット内のテキスト（PDF ファイル内のテキストなど）が抽出され、インデックスが作成されるため、アセットのデプロイメントではインデックスを再作成する方がコストがかかります。 MongoMK リポジトリを使用すると、データはネットワークを介して保持され、インデックス再作成に要する時間がさらに長くなります。 解決策は、Oak実行ツールを使用して&#x200B;**offline**&#x200B;のインデックス再作成を実行し、事前定義済みのインデックスを実行中のAEM インスタンスに読み込むことです。 このアプローチにより、インデックス再作成時間を最小限に抑え、リソース管理を改善できます。
 
 ## アプローチ {#approach}
 
 ![offline-reindexing-upgrade-text-extraction](assets/offline-reindexing-upgrade-process.png)
 
-考え方としては、[Oak-run](/help/sites-deploying/indexing-via-the-oak-run-jar.md) ツールを使用してインデックスをオフラインで作成し、実行中のAEM インスタンスに読み込みます。 上の図は、オフラインでのインデックス再作成のアプローチを示しています。
+[Oak-run](/help/sites-deploying/indexing-via-the-oak-run-jar.md) ツールを使用してインデックスをオフラインで作成し、それらを実行中のAEM インスタンスに読み込むことをお勧めします。 上の図は、オフラインでのインデックス再作成のアプローチを示しています。
 
 さらに、アプローチで説明した手順の順序は次のとおりです。
 
 1. バイナリからのテキストが最初に抽出されます
 2. インデックス定義が作成または更新されます
 3. オフラインインデックスが作成されます
-4. その後、インデックスが、実行中のAEM インスタンスに読み込まれます
+4. インデックスは、実行中のAEM インスタンスに読み込まれます
 
 ### テキスト抽出 {#text-extraction}
 
-AEM で完全なインデックス作成を有効にするには、PDF などのバイナリからテキストを抽出し、インデックスに追加します。これは通常、インデックス作成プロセスの高コストな手順です。テキスト抽出は、多数のバイナリを格納するので、特にアセットリポジトリのインデックス再作成に提案される最適化手順です。
+AEM で完全なインデックス作成を有効にするには、PDF などのバイナリからテキストを抽出し、インデックスに追加します。 これは通常、インデックス作成プロセスの高コストな手順です。 テキスト抽出は、大量のバイナリを保存するアセットリポジトリのインデックスを再作成するために特に推奨される最適化ステップです。
 
 ![offline-reindexing-upgrade-text-extraction](assets/offline-reindexing-upgrade-text-extraction.png)
 
-システムに保存されたバイナリのテキストは、tika ライブラリを持つ oak-run ツールを使用して抽出できます。 実稼働システムのクローンを取得して、このテキスト抽出プロセスに使用できます。 次の手順を実行すると、この処理によってテキストストアが作成されます。
+システムに保存されているバイナリのテキストは、tika ライブラリのoak-run ツールを使用して抽出できます。 本番システムのクローンを作成し、このテキスト抽出プロセスに使用できます。 次の手順を実行すると、この処理によってテキストストアが作成されます。
 
 **1. リポジトリをトラバースし、バイナリの詳細を収集します**
 
 この手順では、パスと BLOB ID を含むバイナリのタプルを含む CSV ファイルを生成します。
 
-インデックスを作成するディレクトリから次のコマンドを実行します。次の例では、リポジトリのホームディレクトリを想定しています。
+インデックスを作成するディレクトリから次のコマンドを実行します。 次の例では、リポジトリのホームディレクトリを想定しています。
 
 ```
 java java -jar oak-run.jar tika <nodestore path> --fds-path <datastore path> --data-file text-extraction/oak-binary-stats.csv --generate
@@ -86,7 +85,7 @@ java -cp oak-run.jar:tika-app-*.jar org.apache.jackrabbit.oak.run.Main tika --da
 
 >[!NOTE]
 >
->AEMで使用されているのと同じバージョンの Tika を使用します。
+>AEMで使用されているものと同じバージョンのTikaを使用します。
 
 ここで、 `datastore path` はバイナリデータストアへのパスです。
 
@@ -98,15 +97,15 @@ java -cp oak-run.jar:tika-app-*.jar org.apache.jackrabbit.oak.run.Main tika --da
 
 ![offline-reindexing-upgrade-offline-reindexing](assets/offline-reindexing-upgrade-offline-reindexing.png)
 
-Lucene インデックスをオフラインで作成します。 MongoMK を使用する場合、MongoMK ノードの 1 つで直接実行することをお勧めします。これにより、ネットワークのオーバーヘッドが回避されます。
+Lucene インデックスをオフラインで作成します。 MongoMKを使用する場合は、ネットワークのオーバーヘッドを回避するため、MongoMK ノードの1つで直接実行することをお勧めします。
 
 インデックスをオフラインで作成するには、次の手順に従います。
 
-**1. Oak Lucene インデックス定義を生成**
+**1. Oak Lucene インデックス定義の生成**
 
-既存のインデックス定義をダンプします。インデックス定義は、Adobe Granite リポジトリーバンドルと oak-run を使用して生成できます。
+既存のインデックス定義をダンプします。 インデックス定義は、Adobe Granite リポジトリバンドルとoak-runを使用して生成できます。
 
-インデックス定義をAEM インスタンスからダンプするには、次のコマンドを実行します。
+AEM インスタンスからインデックス定義をダンプするには、次のコマンドを実行します。
 
 >[!NOTE]
 >
@@ -116,9 +115,9 @@ Lucene インデックスをオフラインで作成します。 MongoMK を使�
 java -jar oak-run.jar index --fds-path <datastore path> <nodestore path> --index-definitions
 ```
 
-ここで、`datastore path` および `nodestore path` は、AEM インスタンスです。
+ここで、`datastore path`と`nodestore path`はAEM インスタンスのものです。
 
-次に、適切な Granite リポジトリーバンドルを使用して、インデックス定義を生成します。
+次に、適切なGranite リポジトリバンドルを使用してインデックス定義を生成します。
 
 ```
 java -cp oak-run.jar:bundle-com.adobe.granite.repository.jar org.apache.jackrabbit.oak.index.IndexDefinitionUpdater --in indexing-definitions_source.json --out merge-index-definitions_target.json --initializer com.adobe.granite.repository.impl.GraniteContent
@@ -126,15 +125,15 @@ java -cp oak-run.jar:bundle-com.adobe.granite.repository.jar org.apache.jackrabb
 
 >[!NOTE]
 >
->上記のインデックス定義の作成プロセスは、 `oak-run-1.12.0` バージョン以降のみでサポートされています。ターゲティングは、Granite リポジトリーバンドル `com.adobe.granite.repository-x.x.xx.jar` を使用して行われます。
+>上記のインデックス定義の作成プロセスは、 `oak-run-1.12.0` バージョン以降のみでサポートされています。 ターゲティングは、Granite リポジトリーバンドル `com.adobe.granite.repository-x.x.xx.jar` を使用して行われます。
 
-上記の手順では、インデックス定義を含んだ `merge-index-definitions_target.json` という JSON ファイルを作成します。
+上記の手順では、インデックス定義を含む`merge-index-definitions_target.json`というJSON ファイルを作成します。
 
 **2. リポジトリー** でチェックポイントを作成
 
-実稼動AEM インスタンスに、有効期間が長いチェックポイントを作成します。 これは、リポジトリーのクローンを作成する前に行う必要があります。
+実稼動AEM インスタンスで、長期間有効なチェックポイントを作成します。 これは、リポジトリーのクローンを作成する前に行う必要があります。
 
-`http://serveraddress:serverport/system/console/jmx` にある JMX コンソールを経由して、`CheckpointMBean` に移動し、有効期間が十分に長いチェックポイントを作成します（例：200 日）。これには、`CheckpointMBean#createCheckpoint` を、有効期間（ミリ秒）の引数としての `17280000000` と併せて呼び出します。
+`http://serveraddress:serverport/system/console/jmx` にある JMX コンソールを経由して、`CheckpointMBean` に移動し、有効期間が十分に長いチェックポイントを作成します（例：200 日）。 これには、`CheckpointMBean#createCheckpoint` を、有効期間（ミリ秒）の引数としての `17280000000` と併せて呼び出します。
 
 その後、新しく作成したチェックポイント ID をコピーし、JMX `CheckpointMBean#listCheckpoints` を使用して有効期間を検証します.
 
@@ -146,7 +145,7 @@ java -cp oak-run.jar:bundle-com.adobe.granite.repository.jar org.apache.jackrabb
 
 **生成されたインデックス定義に対してオフラインでのインデックス作成を実行**
 
-Lucene のインデックス再作成は、oak-run を使用してオフラインで実行できます。このプロセスは、ディスク上の `indexing-result/indexes` の下にインデックスデータを作成します。 リポジトリへの書き込みは&#x200B;**行われない**&#x200B;ので、実行中の AEM インスタンスを停止する必要はありません。作成したテキストストアがこのプロセスに入力されます。
+Lucene のインデックス再作成は、oak-run を使用してオフラインで実行できます。 このプロセスは、`indexing-result/indexes`の下のディスクにインデックスデータを作成します。 リポジトリへの書き込みは&#x200B;**行われない**&#x200B;ので、実行中の AEM インスタンスを停止する必要はありません。 作成したテキストストアがこのプロセスに入力されます。
 
 ```
 java -Doak.indexer.memLimitInMB=500 -jar oak-run.jar index <nodestore path> --reindex --doc-traversal-mode --checkpoint <checkpoint> --fds-path <datastore path> --index-definitions-file merge-index-definitions_target.json --pre-extracted-text-dir text-extraction/store
@@ -157,15 +156,15 @@ Sample <checkpoint> looks like r16c85700008-0-8
 merge-index-definitions_target: JSON file having merged definitions for the target AEM instance. indexes in this file will be re-indexed.
 ```
 
-`--doc-traversal-mode` パラメーターの使用方法は、リポジトリコンテンツをローカルフラットファイルにスプールすることにより、再インデックス時間を大幅に改善するので、MongoMK のインストールで便利です。ただし、リポジトリの 2 倍のサイズのディスク空き容量が必要です。
+`--doc-traversal-mode` パラメーターの使用方法は、リポジトリコンテンツをローカルフラットファイルにスプールすることにより、再インデックス時間を大幅に改善するので、MongoMK のインストールで便利です。 ただし、リポジトリの 2 倍のサイズのディスク空き容量が必要です。
 
-MongoMK の場合、MongoDB インスタンスに近いインスタンスでこの手順を実行すると、このプロセスを高速化できます。同じマシン上で実行すると、ネットワークのオーバーヘッドを回避できます。
+MongoMK の場合、MongoDB インスタンスに近いインスタンスでこの手順を実行すると、このプロセスを高速化できます。 同じマシン上で実行すると、ネットワークのオーバーヘッドを回避できます。
 
 技術的な詳細については、[インデックス作成用の oak-run ドキュメント](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html)を参照してください。
 
 ### インデックスの読み込み {#importing-indexes}
 
-AEM 6.4 以降のバージョンでは、AEMには、起動シーケンス中にディスクからインデックスを読み込む機能が組み込まれています。 起動時、フォルダー `<repository>/indexing-result/indexes` にインデックスデータが存在するか確認されます。AEM インスタンスを起動する前に、事前に作成したインデックスを上記の場所にコピーすることができます。 AEM はそのインデックスをリポジトリに読み込み、対応するチェックポイントをシステムから削除します。したがって、再インデックスは完全に回避されます。
+AEM 6.4以降のバージョンでは、AEMには、起動時にディスクからインデックスを読み込む機能が組み込まれています。 起動時、フォルダー `<repository>/indexing-result/indexes` にインデックスデータが存在するか確認されます。 AEM インスタンスを開始する前に、事前に作成したインデックスを上記の場所にコピーできます。 AEM はそのインデックスをリポジトリに読み込み、対応するチェックポイントをシステムから削除します。 したがって、再インデックスは完全に回避されます。
 
 ## その他のヒントとトラブルシューティング {#troubleshooting}
 
@@ -173,14 +172,14 @@ AEM 6.4 以降のバージョンでは、AEMには、起動シーケンス中に
 
 ### 実稼動システムへの影響の軽減 {#reduce-the-impact-on-the-live-production-system}
 
-実稼働システムのクローンを作成し、そのクローンを使用して、オフラインインデックスを作成することをお勧めします。これにより、実稼動システムに与える影響を排除できます。ただし、実稼動システムには、インデックスの読み込みに必要なチェックポイントが必要です。したがって、クローンを作成する前にチェックポイントを作成することが重要です。
+実稼働システムのクローンを作成し、そのクローンを使用して、オフラインインデックスを作成することをお勧めします。 これにより、実稼動システムに与える影響を排除できます。 ただし、実稼動システムには、インデックスの読み込みに必要なチェックポイントが必要です。 したがって、クローンを作成する前にチェックポイントを作成することが重要です。
 
 ### Runbook と体験版の実行を準備する {#prepare-a-runbook-and-trial-run}
 
-実稼動環境でインデックス再作成プロセスを実行する前に、Runbook を準備し、トライアルを何回か実行することをお勧めします。
+実稼動環境でインデックス再作成プロセスを実行する前に、ランブックを準備し、いくつかの試行を実行することをお勧めします。
 
-### オフラインインデックス付きドキュメントトラバーサルモード {#doc-traversal-mode-with-offline-indexing}
+### オフラインインデックス作成時のドキュメントトラバーサルモード {#doc-traversal-mode-with-offline-indexing}
 
-オフラインのインデックス作成では、リポジトリ全体で複数のトラバーサルを実行する必要グアあります。MongoMK のインストールでは、インデックス作成プロセスのパフォーマンスに影響を与えるネットワークを介してリポジトリにアクセスします。選択肢のひとつは、MongoDB レプリカ自体でオフラインインデックス作成プロセスを実行することで、ネットワークのオーバーヘッドをなくすことです。もうひとつの選択肢は、ドキュメントトラバーサルモードの使用です。
+オフラインのインデックス作成では、リポジトリ全体で複数のトラバーサルを実行する必要グアあります。 MongoMK のインストールでは、インデックス作成プロセスのパフォーマンスに影響を与えるネットワークを介してリポジトリにアクセスします。 選択肢のひとつは、MongoDB レプリカ自体でオフラインインデックス作成プロセスを実行することで、ネットワークのオーバーヘッドをなくすことです。 もうひとつの選択肢は、ドキュメントトラバーサルモードの使用です。
 
-コマンドラインパラメーター `—doc-traversal` を oak-run コマンドに追加することで、ドキュメントトラバーサルモードを適用し、オフラインでのインデックス作成を実行します。このモードでは、ローカルディスク内のリポジトリ全体のコピーがフラットファイルとしてスプールされ、インデックス作成の実行に使用されます。
+コマンドラインパラメーター `—doc-traversal` を oak-run コマンドに追加することで、ドキュメントトラバーサルモードを適用し、オフラインでのインデックス作成を実行します。 このモードでは、ローカルディスク内のリポジトリ全体のコピーがフラットファイルとしてスプールされ、インデックス作成の実行に使用されます。

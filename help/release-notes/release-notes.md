@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: e123b8357097747e1fbb598075c05180487dabdc
+source-git-commit: 63d8bb0652c6749164d51898119418c8b649e261
 workflow-type: tm+mt
 source-wordcount: '7277'
-ht-degree: 22%
+ht-degree: 21%
 ---
 
 # Adobe Experience Manager 6.5 LTS、SP3の現在のリリースノート {#release-notes}
@@ -451,8 +451,8 @@ AEM メールサービスは、断続的な設定エラーが発生した場合�
 ### Java™ サポート  {#java-support}
 
 * Java™ 17 および Java™ 21 のサポート。
-* 最適なパフォーマンスを得るには、デフォルトの GC 値を他の値に置き換えてください。 詳しくは、[インストールとアップデート](/help/sites-deploying/custom-standalone-install.md)の節を参照してください。
-* アドビでは、Oracle から公開されていない場合、AEM 関連プロジェクトで顧客が使用できるように Java™ 17 および Java™ 21 のメンテナンスアップデートを配布します。
+* 最適なパフォーマンスを得るには、デフォルトの GC 値を他の値で上書きしてください。 詳しくは、[インストールとアップデート](/help/sites-deploying/custom-standalone-install.md)の節を参照してください。
+* アドビでは、Oracle から公開されていない場合、AEM 関連プロジェクトでお客様が使用できるように Java™ 17 および Java™ 21 のメンテナンスアップデートを配布します。
 
 ### Uberjar パッケージ {#uber-jar-packaging}
 
@@ -532,7 +532,7 @@ AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストール
 
 >[!NOTE]
 >
-> 古い 6.5 SP から LTS SP1 に直接アップグレードする場合は、6.5 から 6.5 LTS GA への[アップグレード](/help/sites-deploying/upgrade.md)の手順に従います。
+> 古い6.5 SPからLTS SP3に直接アップグレードする場合は、6.5から6.5 LTS GA [&#x200B; アップグレード &#x200B;](/help/sites-deploying/upgrade.md)の指示に従ってください。
 
 
 詳細な手順については、[&#x200B; アップグレードドキュメント &#x200B;](/help/sites-deploying/upgrade.md)を参照してください。同じドキュメントがLTS サービスパックの更新に適用されます。
@@ -559,7 +559,7 @@ AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストール
 
 <!-- CARRY OVER EACH RELEASE -->
 
-アドビでは、従来の機能を最新化または置き換えることで顧客価値を向上させるために、製品の機能を継続的にレビューし、進化させています。 これらの変更は、後方互換性を考慮して慎重に実装されます。
+アドビでは、従来の機能を最新化または置き換えることで顧客価値を向上させるために、製品の機能を継続的にレビューし、進化させています。 これらの変更は、後方互換性を慎重に検討したうえで実装されます。
 
 透明性を確保し、適切な計画を立てるために、アドビは Adobe Experience Manager（AEM）について次の非推奨（廃止予定）プロセスに従います。
 
@@ -582,10 +582,10 @@ AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストール
 
 ### 削除された機能 {#removed-features}
 
-この節では、AEM 6.5 LTS から削除された機能の一覧を示します。 以前のリリースでは、これらの機能は非推奨（廃止予定）としてマークされていました。
+このセクションでは、AEM 6.5 LTS から削除された機能の一覧を示します。 以前のリリースでは、これらの機能は非推奨（廃止予定）としてマークされていました。
 
 * Adobe CRX リポジトリの永続性に対するRDBMKのサポートが削除されました。
-* クラスター環境では、MongoMK がリポジトリの永続性に対してサポートされる唯一のオプションになりました。
+* クラスター環境では、MongoMK がリポジトリの永続化に対してサポートされる唯一のオプションになりました。
 
 | 領域 | 機能 | 代替手段 | バージョン（SP） |
 | --- | --- | --- | --- |
@@ -664,7 +664,7 @@ AEM デプロイメントで SSL のみの機能を有効にすると、Dispatch
 **影響**
 
 * HTTP 400 応答コードを使用したヘルスチェックの失敗。
-* Dispatcher インスタンスとAEM インスタンス間のトラフィックの破損。
+* Dispatcher と AEM インスタンス間のトラフィックの障害。
 * Dispatcher 経由でコンテンツを適切に配信できない。
 * Dispatcher 設定で IP アドレスを指定して HTTPS を使用した際の接続の失敗。
 * HTTPS + IP 経由で接続した際の HTTP 400「無効な SNI」エラー。
