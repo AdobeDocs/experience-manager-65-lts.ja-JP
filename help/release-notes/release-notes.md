@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 63d8bb0652c6749164d51898119418c8b649e261
+source-git-commit: a4f151470c6042bfaaa3d8f4a3260074f007a4d9
 workflow-type: tm+mt
-source-wordcount: '7277'
+source-wordcount: '7674'
 ht-degree: 21%
 ---
 
@@ -303,14 +303,16 @@ Campaign ContentServletは、コンテンツリクエスト中にJSON応答コ�
 
 >[!NOTE]
 >
-> OSGi デプロイメント用のAEM Forms 6.5 LTS サービスパック 3 （SP3）が利用可能になりました。 これには、バグの修正、セキュリティの改善、機能強化が含まれます。 JEE デプロイメント用の&#x200B;**AEM Forms 6.5 LTS Service Pack 3 （SP3）は、後日リリースされます。**
+> AEM Forms 6.5 LTS サービスパック 3 （SP3）が、OSGiとJEEの両方のデプロイメントで使用できるようになりました。 これには、バグの修正、セキュリティの改善、機能強化が含まれます。
 
 #### 機能強化 {#forms-enhancements-65-lts-sp3}
 
-* FORMS-24360:PDF Generator（PDFG）のMicrosoft Office 2024のサポートを追加しました。
+* FORMS-24360:PDF Generator（PDFG）のMicrosoft Office 2024のサポートを追加しました。 これは、OSGiとJEEの両方のデプロイメントに適用されます。
 * FORMS-24949:AEM Forms 6.5 LTSでのForms Builder Agentのサポートを追加しました。 これにより、Forms ManagerのHTTP APIと、エージェントが必要とするForm Generative AI （GenAI）のHTTP APIがバックポートされます。
 * FORMS-25180: AEM Forms ユーザーインターフェイスに`daysUntilSigningDeadline`の値を追加しました。これにより、作成者は、Adobe Signの署名期限までに残り日数を受信者に示すことができます。
-* FORMS-25182:PDF Generator（PDFG）では、1つのユーザーアカウントで設定した場合に、マルチスレッドのドキュメント変換がサポートされるようになりました。
+* FORMS-25182、FORMS-25181:PDF Generator（PDFG）は、1つのユーザーアカウントで設定された場合に、マルチスレッドのドキュメントコンバージョンをサポートするようになりました。 これは、OSGiとJEEの両方のデプロイメントに適用されます。
+* FORMS-27595: AEM Forms Document Securityの動的透かしに&#x200B;**ユーザープロファイル説明**&#x200B;属性を追加しました。これにより、透かしにユーザーのプロファイル説明を含めることができます。
+* WebSphere® Liberty Profile （WLP）は、Oracle Databaseに加えて、Microsoft® SQL Serverもサポートするようになりました。
 
 #### 修正された問題 {#forms-fixed-issues-65-lts-sp3}
 
@@ -339,6 +341,25 @@ Campaign ContentServletは、コンテンツリクエスト中にJSON応答コ�
 * FORMS-26763: Designerでは、静的テキストオブジェクト内のハイパーリンクの太字の書式設定が、テキストを編集すると失われました。 太字の書式設定は編集後も維持されるようになりました。
 * FORMS-26817：アダプティブフォームの「リセット」をクリックすると、画像コンポーネント内の作成者が設定した画像がクリアされ、壊れた画像が残った一方で、他のフィールドが正しくリセットされます。 リセットすると、設定済みの画像が保持されます。
 * FORMS-26852: Agent ユーザーインターフェイスで、日付/時刻フィールドに、保存された値よりも1日早い日付が表示されます。 フィールドに正しい日付が表示されるようになりました。
+* FORMS-26733、FORMS-26734:Apache Log4jをバージョン 2.25.5に更新しました。
+
+6.5 LTS サービスパック 3のJEE上のAEM Formsに関する次の問題が修正されました。
+
+* FORMS-27585: JEE上のAEM Formsで、`submitForm()`を呼び出すXFA ベースのPDF formsが、Adobe Readerで（および`closeDoc()`というスクリプトが呼び出されたときにAcrobatで）送信結果を表示しませんでした。 送信結果が正しく表示されるようになりました。
+* FORMS-25998: JEE上のAEM Formsで、管理コンソールでHSM接続をテストする際に、Java 21の`IllegalAccessError`でHardware Security Module （HSM）秘密鍵証明書の登録に失敗しました。 HSM秘密鍵証明書の登録が機能するようになりました。
+* FORMS-24993: JEE上のAEM Formsで、Web サービスの呼び出しステップでWSDLを読み込むと、`SAXException` （「ファイルの終了時間が短すぎます」）が発生して失敗しました。 WSDLが正しく読み込まれるようになりました。
+* FORMS-24518: JEE上のAEM Forms（JBoss）で、従来のJSTL タグリブ URIが原因で、Reader Extensions web アプリケーションが新しいインストール後に「エラー処理リクエスト」を返しました。 Reader Extensions web アプリケーションが読み込まれるようになりました。
+* FORMS-27495: JEE上のAEM Formsで、シングルユーザーモードが有効になっている場合、PDF GeneratorでExcel （`.xlsx`）ファイルが変換されず、コンバージョンが無期限にハングする。 シングルユーザーモードでExcelの変換が完了するようになりました。
+* FORMS-27098: JEE上のAEM Formsで、SOAP SDK （`/sdk`）認証ゲートが原因で管理者として`/lc`にログインできませんでした。 管理者ログインが成功しました。
+* FORMS-25869: AEM Forms JEE版では、PDF Generatorに更新されたコンバージョンエンジンの修正が組み込まれ、コンバージョンの信頼性が向上します。
+
+**JEEにAEM Forms 6.5 LTS SP3をインストール**
+
+JEEにAEM Forms 6.5 LTS SP3をインストールするには、次の手順を順番に実行します。
+
+1. アプリケーションサーバー用のAEM Forms 6.5 LTS SP3 JEE インストーラー（[AEM Forms リリース &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)からダウンロード）を使用して、標準のAEM Forms on JEE インストール手順に従ってサービスパックをインストールします。
+1. 最新のAEM Forms Workbench インストーラー（同じ[AEM Forms リリース &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) ページから利用可能）に更新します。
+1. プロジェクトで`adobe-livecycle-client.jar` SDK クライアント ライブラリを使用している場合は、プロジェクトのクラスパスで更新します。 最新バージョンは`<AEM_Forms_Installation_dir>/sdk/client-libs/common/adobe-livecycle-client.jar`で入手できます。
 
 #### 既知の問題 {#forms-known-issues-65-lts-sp3}
 
@@ -347,8 +368,6 @@ Campaign ContentServletは、コンテンツリクエスト中にJSON応答コ�
 #### セキュリティの修正 {#forms-security-fixes-65-lts-sp3}
 
 このリリースでは、複数のクロスサイトスクリプティング（XSS）の修正、サーバーサイドリクエストフォージェリー（SSRF）の修正、XML外部エンティティ（XXE）の修正、サードパーティライブラリの更新など、AEM Formsのセキュリティ上の脆弱性を解決します。
-
-<!-- TODO: Add security bulletin link. Open question, pending information from Sunny Marwaha. -->
 
 
 

@@ -9,13 +9,11 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: c532abc558084ee9b58e618b0fc16677f4c5b6a4
+source-git-commit: a4f151470c6042bfaaa3d8f4a3260074f007a4d9
 workflow-type: tm+mt
-source-wordcount: '2860'
-ht-degree: 86%
-
+source-wordcount: '2949'
+ht-degree: 87%
 ---
-
 
 # JEE 上の AEM Forms でサポートされているプラットフォーム {#supported-platforms-for-aem-forms-on-jee}
 
@@ -82,8 +80,8 @@ JEE サーバー上の AEM Forms は、サポートされているオペレー�
 
 >[!NOTE]
 >
->AEM Formsのお客様が所有コストを削減し、デプロイメントアーキテクチャを簡素化し、開発スタックを最新化できるよう、Adobe Experience Manager Enterprise PlatformはアプリケーションサーバーベースのデプロイメントからスタンドアロンのOSGi ベースのデプロイメントに移行しています。Adobeでは、インフラストラクチャのコンポーネントの行列を減らして、AEM Forms JEE スタックを引き続きサポートします。
->新しいインストールの場合、可能な場合は、最新のOSGi スタックにAEM Formsをデプロイして、モバイル向けのレスポンシブなアダプティブ Forms、マルチチャネルのインタラクティブ通信、フォームデータモデルを使用したバックエンドデータ統合に関する最新のイノベーションを使用することをお勧めします。
+>AEM Forms をご利用のお客様がオーナーシップのコストを削減し、開発アーキテクチャを簡略化し、開発スタックを近代化できるようにするために、Adobe Experience Manager のエンタープライズプラットフォームはアプリケーションサーバーベースのデプロイメントから、スタンドアロンの OSGi ベースのデプロイメントに移行します。 対応するインフラストラクチャコンポーネントは削減されますが、アドビは引き続き AEM Forms JEE スタックをサポートします。
+>新規インストールに関しては、可能な場合は AEM Forms を最新の OSGi スタックでデプロイし、モバイル向けのレスポンシブなアダプティブフォーム、マルチチャンネルのインタラクティブなコミュニケーション、そしてフォームデータモデルを使用したバックエンドのデータ統合などの最新技術を活用することが推奨されます。
 
 ### Java™ 仮想マシン（JVM） {#java-virtual-machines-jvm}
 
@@ -225,7 +223,7 @@ Adobe Experience Manager Forms を使用するには、Java™ 仮想マシン�
 
 >[!NOTE]
 >
->WebSphere® Liberty Profile （WLP）は、Oracle DatabaseおよびIBM® Sumeru JDK 21でのみサポートされています。
+>WebSphere® Liberty Profile （WLP）は、Oracle DatabaseまたはMicrosoft® SQL ServerとIBM® Sumeru JDK 21でのみサポートされています。
 
 ### サーバーオペレーティングシステム {#server-operating-systems}
 
@@ -288,7 +286,7 @@ AEM Forms on JEE サーバーの設定でプラットフォームを選択する
 
 1. CRX-repositoryは、TarMK型とMongoDB型の永続性をサポートしています。
 1. AEM Forms on JEE では、JBoss® ロールベースのアクセス制御（RBAC）をサポートしていません。
-1. AEM Forms on JEEは、Oracle DatabaseおよびIBM® Sumeru JDK 21でのみWebSphere® Liberty Profile （WLP）をサポートします。
+1. JEE上のAEM Formsは、Oracle DatabaseまたはMicrosoft® SQL ServerとIBM® Sumeru JDK 21でのみ、WebSphere® Liberty Profile （WLP）をサポートします。
 
 <!--
 1. [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312) 
@@ -671,7 +669,10 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 -->
 
 
-<!--## Revision History {#revision-history}-->
+## 変更履歴 {#revision-history}
+
+- 6.5 LTS SP3 （2026年9月）
+  - **サポートを追加**: WebSphere® Liberty Profile （WLP）が、Oracle Databaseに加え、Microsoft® SQL Serverでもサポートされるようになりました。
 
 <!--
 
