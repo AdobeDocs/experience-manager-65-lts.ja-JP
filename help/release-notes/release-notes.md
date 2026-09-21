@@ -357,8 +357,8 @@ Campaign ContentServletは、コンテンツリクエスト中にJSON応答コ�
 
 JEEにAEM Forms 6.5 LTS SP3をインストールするには、次の手順を順番に実行します。
 
-1. アプリケーションサーバー用のAEM Forms 6.5 LTS SP3 JEE インストーラー（[AEM Forms リリース ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)からダウンロード）を使用して、標準のAEM Forms on JEE インストール手順に従ってサービスパックをインストールします。
-1. 最新のAEM Forms Workbench インストーラー（同じ[AEM Forms リリース ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) ページから利用可能）に更新します。
+1. アプリケーションサーバー用のAEM Forms 6.5 LTS SP3 JEE インストーラー（[AEM Forms リリース &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)からダウンロード）を使用して、標準のAEM Forms on JEE インストール手順に従ってサービスパックをインストールします。
+1. 最新のAEM Forms Workbench インストーラー（同じ[AEM Forms リリース &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) ページから利用可能）に更新します。
 1. プロジェクトで`adobe-livecycle-client.jar` SDK クライアント ライブラリを使用している場合は、プロジェクトのクラスパスで更新します。 最新バージョンは`<AEM_Forms_Installation_dir>/sdk/client-libs/common/adobe-livecycle-client.jar`で入手できます。
 
 #### 既知の問題 {#forms-known-issues-65-lts-sp3}
@@ -551,10 +551,10 @@ AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストール
 
 >[!NOTE]
 >
-> 古い6.5 SPからLTS SP3に直接アップグレードする場合は、6.5から6.5 LTS GA [ アップグレード ](/help/sites-deploying/upgrade.md)の指示に従ってください。
+> 古い6.5 SPからLTS SP3に直接アップグレードする場合は、6.5から6.5 LTS GA [&#x200B; アップグレード &#x200B;](/help/sites-deploying/upgrade.md)の指示に従ってください。
 
 
-詳細な手順については、[ アップグレードドキュメント ](/help/sites-deploying/upgrade.md)を参照してください。同じドキュメントがLTS サービスパックの更新に適用されます。
+詳細な手順については、[&#x200B; アップグレードドキュメント &#x200B;](/help/sites-deploying/upgrade.md)を参照してください。同じドキュメントがLTS サービスパックの更新に適用されます。
 
 >[!NOTE]
 >
@@ -634,7 +634,7 @@ AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストール
 
 * Configuration Manager では、モジュールが選択されていない場合や、制限されたコンポーネントのみが選択されている場合、AEM Forms 6.5 LTS JEE Turnkey Custom モードで Bootstrap 中にデータベースの初期化が失敗します。 依存関係ファイル（xalan-2.7.2.jar）が欠落しているので、エラーが発生します。 JAR ファイルをAdobe-livecycle-jboss.ear\libに追加すると、問題が解決します。 （FORMS-24690）
 * WebSphere® Liberty Profileで実行されているForms JEE LTS Service Pack 2のデプロイメントで、メール機能が失敗します。 メール機能を使用しようとすると、サーバーが次のエラーを記録します：`Could not convert socket to TLS`。 （FORMS-24692）
-* JBoss®で動作しているForms JEE LTSで、メール関連の機能が失敗します。 メール機能を使用しようとすると、サーバーが次のエラーを記録します：`Error IMAPProvider not a subtype`。 この問題を解決するには、[ ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-core-jboss.ear)からホットフィックスをインストールしてください。 （FORMS-24892）
+* JBoss®で動作しているForms JEE LTSで、メール関連の機能が失敗します。 メール機能を使用しようとすると、サーバーが次のエラーを記録します：`Error IMAPProvider not a subtype`。 この問題を解決するには、[&#x200B; ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-core-jboss.ear)からホットフィックスをインストールしてください。 （FORMS-24892）
 
 ### Sling-Initial-Content（SP2）では JSON コメントはサポートされなくなりました {#json-comments-no-longer-supported-in-sling-initial-content}
 
@@ -702,7 +702,7 @@ AEM デプロイメントで SSL のみの機能を有効にすると、Dispatch
 
 次のzip ファイルには、このExperience Manager 6.5 LTS サービスパック リリースに含まれるOSGi バンドルとコンテンツパッケージを一覧表示するテキストドキュメントが含まれています。
 
-* [OSGi バンドル ](/help/release-notes/assets/65lts_sp3_bundles.zip)
+* [OSGi バンドル &#x200B;](/help/release-notes/assets/65lts_sp3_bundles.zip)
 * [コンテンツパッケージ](/help/release-notes/assets/65lts_sp3_packages.zip)
 
 ## 制限付き Web サイト{#restricted-sites}
