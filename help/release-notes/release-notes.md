@@ -357,8 +357,8 @@ Campaign ContentServletは、コンテンツリクエスト中にJSON応答コ�
 
 JEEにAEM Forms 6.5 LTS SP3をインストールするには、次の手順を順番に実行します。
 
-1. アプリケーションサーバー用のAEM Forms 6.5 LTS SP3 JEE インストーラー（[AEM Forms リリース ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)からダウンロード）を使用して、標準のAEM Forms on JEE インストール手順に従ってサービスパックをインストールします。
-1. 最新のAEM Forms Workbench インストーラー（同じ[AEM Forms リリース ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) ページから利用可能）に更新します。
+1. アプリケーションサーバー用のAEM Forms 6.5 LTS SP3 JEE インストーラー（[AEM Forms リリース &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)からダウンロード）を使用して、標準のAEM Forms on JEE インストール手順に従ってサービスパックをインストールします。
+1. 最新のAEM Forms Workbench インストーラー（同じ[AEM Forms リリース &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) ページから利用可能）に更新します。
 1. プロジェクトで`adobe-livecycle-client.jar` SDK クライアント ライブラリを使用している場合は、プロジェクトのクラスパスで更新します。 最新バージョンは`<AEM_Forms_Installation_dir>/sdk/client-libs/common/adobe-livecycle-client.jar`で入手できます。
 
 #### 既知の問題 {#forms-known-issues-65-lts-sp3}
@@ -551,10 +551,10 @@ AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストール
 
 >[!NOTE]
 >
-> 古い6.5 SPからLTS SP3に直接アップグレードする場合は、6.5から6.5 LTS GA [ アップグレード ](/help/sites-deploying/upgrade.md)の指示に従ってください。
+> 古い6.5 SPからLTS SP3に直接アップグレードする場合は、6.5から6.5 LTS GA [&#x200B; アップグレード &#x200B;](/help/sites-deploying/upgrade.md)の指示に従ってください。
 
 
-詳細な手順については、[ アップグレードドキュメント ](/help/sites-deploying/upgrade.md)を参照してください。同じドキュメントがLTS サービスパックの更新に適用されます。
+詳細な手順については、[&#x200B; アップグレードドキュメント &#x200B;](/help/sites-deploying/upgrade.md)を参照してください。同じドキュメントがLTS サービスパックの更新に適用されます。
 
 >[!NOTE]
 >
@@ -700,7 +700,7 @@ AEM デプロイメントで SSL のみの機能を有効にすると、Dispatch
 
 次のzip ファイルには、このExperience Manager 6.5 LTS サービスパック リリースに含まれるOSGi バンドルとコンテンツパッケージを一覧表示するテキストドキュメントが含まれています。
 
-* [OSGi バンドル ](/help/release-notes/assets/65lts_sp3_bundles.zip)
+* [OSGi バンドル &#x200B;](/help/release-notes/assets/65lts_sp3_bundles.zip)
 * [コンテンツパッケージ](/help/release-notes/assets/65lts_sp3_packages.zip)
 
 ## 制限付き Web サイト{#restricted-sites}
