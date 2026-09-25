@@ -10,11 +10,9 @@ role: User, Developer
 exl-id: e63c1dc2-9843-47ca-8f3c-c49720659aa0
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 100%
-
+source-wordcount: '683'
+ht-degree: 96%
 ---
-
 # AEM Forms アプリケーションのトラブルシューティング {#troubleshoot-aem-forms-app}
 
 この記事では、AEM Forms アプリケーションの構築中に表示される可能性のあるエラーメッセージと、その解決方法について説明します。
@@ -30,11 +28,11 @@ ht-degree: 100%
 
 ## iOS ユーザーの添付ファイルが失われる {#attachment-loss-for-ios-users}
 
-OSGi 上の AEM Forms と同期するように設定された iOS 用の AEM Forms アプリケーションは、フィールドレベルの添付ファイルのみをサポートします。すべての添付ファイルには一意の名前が付いている必要があります。複数の添付ファイルに同じ名前が付いている場合、1 つの添付ファイルのみが保持され、同じ名前が付いている他のすべての添付ファイルは失われます。iOS デバイスのユーザーがデータを損失するのを回避するには、次の手順を実行します。
+OSGi 上の AEM Forms と同期するように設定された iOS 用の AEM Forms アプリケーションは、フィールドレベルの添付ファイルのみをサポートします。 すべての添付ファイルには一意の名前が付いている必要があります。 複数の添付ファイルに同じ名前が付いている場合、1 つの添付ファイルのみが保持され、同じ名前が付いている他のすべての添付ファイルは失われます。 iOS デバイスのユーザーがデータを損失するのを回避するには、次の手順を実行します。
 
 1. 接続したサーバーで、**Adobe Experience Manager／ツール／操作／web コンソール**&#x200B;に移動します。
-1. 「**[!UICONTROL アダプティブフォームおよびインタラクティブ通信 web チャネルの設定]**」を検索してクリックします。
-1. [!UICONTROL アダプティブフォームおよびインタラクティブ通信 web チャネルの設定]ダイアログで、「**ファイル名を一意にする**」を有効にします。
+1. 「**[!UICONTROL アダプティブフォームおよびインタラクティブなコミュニケーション web チャネルの設定]**」を検索してクリックします。
+1. [!UICONTROL アダプティブフォームおよびインタラクティブなコミュニケーション web チャネルの設定]ダイアログで、「**ファイル名を一意にする**」を有効にします。
 
    「**ファイル名を一意にする**」設定が無効になっている場合、複数の添付ファイルが含まれているアダプティブフォームを送信しようとするとデータが失われます。
 
@@ -42,7 +40,7 @@ OSGi 上の AEM Forms と同期するように設定された iOS 用の AEM For
 
 ## Workspace ユーザーによって送信された HTML5 フォームドラフトがポータルに表示されない {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
 
-「**ドラフトとして保存**」HTML レンダリングプロファイルを使用する AEM Forms アプリケーションで HTML5 フォームが有効になっている場合、保存されたドラフトは Workspace ユーザーには表示されません。Workspace ユーザーから送信された HTML5 フォームの保存済みドラフトをポータルに表示するには、次の手順を実行します。
+「**ドラフトとして保存**」HTML レンダリングプロファイルを使用する AEM Forms アプリケーションで HTML5 フォームが有効になっている場合、保存されたドラフトは Workspace ユーザーには表示されません。 Workspace ユーザーから送信された HTML5 フォームの保存済みドラフトをポータルに表示するには、次の手順を実行します。
 
 1. CRXDE を開いて管理者の資格情報でログインします。
 
@@ -83,7 +81,7 @@ Windows の AEM Forms アプリケーションでは、フォームまたはそ�
 
 **エラーメッセージ：** The project is using an unsupported version of Gradle.（プロジェクトは Gradle のサポート対象でないバージョンを使用しています。）
 
-Android Studio で AEM Forms アプリケーションを構築すると、エラーメッセージが表示されます。この問題は、システムでサポートされる Gradle のサポート対象でないバージョンが原因で発生します。
+Android Studio で AEM Forms アプリケーションを構築すると、エラーメッセージが表示されます。 この問題は、システム上のサポートされていないバージョンの Gradle が原因で発生します。
 
 **解決策：**「**Fix Gradle wrapper and re-import project**」（Gradle のラッパーを修正してプロジェクトを再度インポート）をクリックして問題を解決します。
 
@@ -99,7 +97,7 @@ Android Studio のユーザーインターフェイスで、**Build** メニュ�
 
 **解決策：** **Gradle Scripts** ／ **gradle-wrapper.properties** ファイルを開き、**distributionUrl**&#x200B;プロパティを編集します。
 
-例えば、Android Studio コンソールでは Gradle のバージョンを 3.5 にダウングレードすることをお勧めします。そのバージョンを **gradle-wrapper.properties** ファイルの **distributionUrl**&#x200B;で編集します。
+例えば、Android Studio コンソールでは、Gradle バージョンを3.5にダウングレードすることをお勧めします。 **distributionUrl** of **gradle-wrapper.properties** ファイルでバージョンを編集します。
 
 **Build**／**Build APK** を再び選択し、 エラーを解決して .apk ファイルを生成します。
 
