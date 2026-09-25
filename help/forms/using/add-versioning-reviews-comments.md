@@ -17,7 +17,7 @@ ht-degree: 93%
 
 ## 前提条件 {#prerequisite-versioning}
 
-アダプティブフォームでバージョン管理、コメント、注釈機能を使用するには、AEM Forms環境で[ アダプティブフォームコアコンポーネント ](/help/forms/using/enable-adaptive-forms-core-components.md)が有効になっていることを確認します。
+アダプティブフォームでバージョン管理、コメント、注釈機能を使用するには、AEM Forms環境で[&#x200B; アダプティブフォームコアコンポーネント &#x200B;](/help/forms/using/enable-adaptive-forms-core-components.md)が有効になっていることを確認します。
 
 ## アダプティブフォームのバージョン管理 {#adaptive-form-versioning}
 
@@ -69,7 +69,7 @@ ht-degree: 93%
 
 1. **[!UICONTROL 編集]**&#x200B;モードでフォームを開きます。
 
-1. 画像に示すように、右上のパネルにある&#x200B;**追加アイコン**をクリックします。
+1. 画像に示すように、右上のパネルにある&#x200B;**追加アイコン**&#x200B;をクリックします。
    ![注釈](assets/annotation.png)
 
 1. 次に、画像に示すように、左上のパネルにある **追加アイコン** をクリックして、注釈を追加します。
