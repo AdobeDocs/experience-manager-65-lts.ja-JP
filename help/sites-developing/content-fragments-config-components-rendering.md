@@ -11,14 +11,12 @@ role: Developer
 exl-id: 4ed9232f-0e31-43bb-9f7d-3b351557288f
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '475'
 ht-degree: 100%
-
 ---
-
 # レンダリングコンポーネントのコンテンツフラグメントの設定{#content-fragments-configuring-components-for-rendering}
 
-コンテンツフラグメントのレンダリングには、いくつかの[アドバンスドサービス](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration)があります。これらのサービスを使用するには、そのようなコンポーネントのリソースタイプが、コンテンツフラグメントフレームワークに存在を認識させる必要があります。
+コンテンツフラグメントのレンダリングには、いくつかの[アドバンスドサービス](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration)があります。 これらのサービスを使用するには、そのようなコンポーネントのリソースタイプが、コンテンツフラグメントフレームワークに存在を認識させる必要があります。
 
 これは、[OSGi サービス - コンテンツフラグメントコンポーネントの設定](#osgi-service-content-fragment-component-configuration)を設定しておこないます。
 
@@ -32,7 +30,7 @@ ht-degree: 100%
 
 >[!CAUTION]
 >
->アドバンスドサービスを使用することなく、コンテンツフラグメント API のみを使用するコンポーネントを新規に作成できます。ただし、この場合は、適切な処理をおこなうようにコンポーネントを開発する必要がありますので、
+>アドバンスドサービスを使用することなく、コンテンツフラグメント API のみを使用するコンポーネントを新規に作成できます。 ただし、この場合は、適切な処理をおこなうようにコンポーネントを開発する必要がありますので、
 >
 >そのため、コアコンポーネントを使用することをお勧めします。
 

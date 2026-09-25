@@ -11,20 +11,18 @@ role: Admin, User, Developer
 exl-id: 4937e968-30d2-4852-97d3-e8955bd422e6
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '739'
 ht-degree: 97%
-
 ---
-
 # フォームでのレビューの作成と管理{#creating-and-managing-reviews-to-forms}
 
-<span class="preview">[アダプティブフォームの新規作成](/help/forms/using/create-an-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
+<span class="preview">[アダプティブフォームの新規作成](/help/forms/using/create-an-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。 これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。 この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
 
 ## 適用先 {#applies-to}
 
-このドキュメントは、**AEM 6.5 LTS Forms** に適用されます。
+このドキュメントは、**AEM 6.5 LTS Forms**&#x200B;に適用されます。
 
-AEM as a Cloud Serviceのドキュメントについては、[Cloud ServiceのAEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html?lang=ja) を参照してください。
+AEM as a Cloud Serviceのドキュメントについては、[Cloud Service上のAEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html?lang=ja)を参照してください。
 
 ## レビュー {#review}
 
@@ -33,13 +31,13 @@ AEM as a Cloud Serviceのドキュメントについては、[Cloud ServiceのAE
 ## レビューの設定 {#setting-up-a-review}
 
 1. フォームブラウザーに移動し、レビューするフォームを選択します。
-1. フォームに進行中のレビューがない場合には、「**レビューを開始**」![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) アイコンがアクションバーに表示されます。**レビューを開始** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) アイコンをクリックします。
+1. フォームに進行中のレビューがない場合には、「**レビューを開始**」![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) アイコンがアクションバーに表示されます。 **レビューを開始** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) アイコンをクリックします。
 1. 以下の情報を入力します。
 
    * **タイトル**：必須。英数字、ハイフンおよびアンダースコアを含めることができます。
    * **説明**：任意。レビューの目的／内容の説明。
-   * **期限**：任意。レビューが終了する日付。期限を過ぎている場合、タスクが「期限切れ」と表示されます。
-   * **レビュー担当者名**：少なくとも 1 つは必須です。コンボボックスを使用して、レビュー担当者を追加し、一致するすべての名前の名前リストを入力します。名前を選択し、「**追加**」をクリックします。「**レビュー担当者**」タブの次のセクションには、すべてのレビュー担当者の名前が表示されます。
+   * **期限**：任意。レビューが終了する日付。 期限を過ぎている場合、タスクが「期限切れ」と表示されます。
+   * **レビュー担当者名**：少なくとも 1 つは必須です。 コンボボックスを使用して、レビュー担当者を追加し、一致するすべての名前の名前リストを入力します。名前を選択し、「**追加**」をクリックします。 「**レビュー担当者**」タブの次のセクションには、すべてのレビュー担当者の名前が表示されます。
 
 1. 「**開始**」をクリックして、レビューを開始します。
 
@@ -53,13 +51,13 @@ AEM as a Cloud Serviceのドキュメントについては、[Cloud ServiceのAE
 本セクションでは、レビューが作成・設定された場合に起こるアクションを説明します。
 
 1. 新しいレビュータスクが作成され、選択したレビュー担当者に割り当てられます。
-1. すべてのレビュー担当者にレビュータスクが割り当てられます。タスクが通知セクションに表示されます。レビュー担当者は、通知をクリックするか、またはインボックスに移動してタスクを表示することができます。レビュー担当者は、レビュータスクを開いてフォームを表示し、コメントの入力を開始することができます。
+1. すべてのレビュー担当者にレビュータスクが割り当てられます。 タスクが通知セクションに表示されます。 レビュー担当者は、通知をクリックするか、またはインボックスに移動してタスクを表示することができます。 レビュー担当者は、レビュータスクを開いてフォームを表示し、コメントの入力を開始することができます。
 
    ![レビュー担当者通知アラート](assets/review-notification-img.png)
 
    レビュー担当者通知アラート
 
-1. フォームのレビュー担当者はコメントボックスを使用できます。他のユーザーはコメントを読むことはできますが、自分で追加することはできません。
+1. フォームのレビュー担当者はコメントボックスを使用できます。 他のユーザーはコメントを読むことはできますが、自分で追加することはできません。
 
 ## レビューの管理 {#managing-a-review}
 
@@ -70,7 +68,7 @@ AEM as a Cloud Serviceのドキュメントについては、[Cloud ServiceのAE
 
 1. 「フォーム」タブに移動し、フォームを選択します。
 
-1. フォームに進行中のレビューがあり、自分がレビューの開始者の場合、アクションバーに&#x200B;**レビューを管理** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) アイコンが表示されます。レビューのイニシエーターのみがレビューを管理（更新／終了）できます。
+1. フォームに進行中のレビューがあり、自分がレビューの開始者の場合、アクションバーに&#x200B;**レビューを管理** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) アイコンが表示されます。 レビューのイニシエーターのみがレビューを管理（更新／終了）できます。
 
    **レビューを管理** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) アイコンをクリックします。
 
@@ -82,9 +80,9 @@ AEM as a Cloud Serviceのドキュメントについては、[Cloud ServiceのAE
 
    * **レビューの説明**：編集可能です。
 
-   * **レビューの期限**：編集可能です。期限は、現在の日付と時刻よりも後の日付に変更することができます。
+   * **レビューの期限**：編集可能です。 期限は、現在の日付と時刻よりも後の日付に変更することができます。
 
-   * **レビュー担当者**：編集可能です。レビュー担当者を追加または削除できます。タスクが期限切れの場合は、期限を現在の日付以降に延長した場合にのみ、レビュー担当者を追加できます。
+   * **レビュー担当者**：編集可能です。 レビュー担当者を追加または削除できます。 タスクが期限切れの場合は、期限を現在の日付以降に延長した場合にのみ、レビュー担当者を追加できます。
 
 1. レビューを終了するには、「**レビューを終了**」をクリックします。
 
@@ -115,8 +113,8 @@ AEM as a Cloud Serviceのドキュメントについては、[Cloud ServiceのAE
 
 1. レビューが終了した場合：
 
-   1. **レビュー担当者**：レビュー担当者ごとに、レビューに関連する未完了のタスクが終了します。レビュー担当者の通知セクションに、タスクが「保留中」と表示されなくなります。
-   1. **イニシエーター**：レビューイニシエーターに割り当てられたタスクは完了とマークされます。レビューイニシエーターの通知セクションから、タスクが削除されます。
-   1. **全員**：レビューが以前のレビューセクションに表示されます。これ以上コメントを追加することはできません。
+   1. **レビュー担当者**：レビュー担当者ごとに、レビューに関連する未完了のタスクが終了します。 レビュー担当者の通知セクションに、タスクが「保留中」と表示されなくなります。
+   1. **イニシエーター**：レビューイニシエーターに割り当てられたタスクは完了とマークされます。 レビューイニシエーターの通知セクションから、タスクが削除されます。
+   1. **全員**：レビューが以前のレビューセクションに表示されます。 これ以上コメントを追加することはできません。
 
    ![レビュー完了](assets/review-complete-imgg.png)

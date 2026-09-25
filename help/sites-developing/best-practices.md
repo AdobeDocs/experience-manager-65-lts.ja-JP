@@ -11,16 +11,14 @@ role: Developer
 exl-id: fc2aa62a-3fc4-491d-aff5-74896998d7d6
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 100%
-
+source-wordcount: '441'
+ht-degree: 93%
 ---
-
 # ベストプラクティス{#best-practices}
 
 ## 開発者向けのベストプラクティス - はじめに {#best-practices-for-developers-getting-started}
 
-アドビのエンジニアリングチームとコンサルティングチームは、AEM 開発者向けの包括的なベストプラクティスを策定しました。アドビの開発者は、コアとなる AEM 製品のアップデートと顧客実装のための顧客コードを開発する際に、これらのベストプラクティスに従ってください。
+アドビのエンジニアリングチームとコンサルティングチームは、AEM 開発者向けの包括的なベストプラクティスを策定しました。 アドビの開発者は、コアとなる AEM 製品のアップデートと顧客実装のための顧客コードを開発する際に、これらのベストプラクティスに従ってください。
 
 AEM 開発プロジェクトを開始する前に、まず、次のベストプラクティスを確認してください。
 
@@ -31,7 +29,7 @@ AEM 開発プロジェクトを開始する前に、まず、次のベストプ�
 * [コードの落とし穴](/help/sites-developing/code-pitfalls.md)
 * [JCR 統合](/help/sites-developing/jcr-integration.md)
 * [OSGi バンドル](/help/sites-developing/osgi-bundles.md)
-* [Java API のベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=ja)
+* [Java APIのベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=ja)
 
 ### ベストプラクティスに関する追加情報 {#additional-best-practices-information}
 
@@ -79,7 +77,7 @@ web サイトのコンテンツの管理とオーサリングには、次のよ�
 
 ## ツール／HTL {#tooling-htl}
 
-HTML テンプレート言語（HTL）は、AEM 6.0 で導入された新しい HTML テンプレートシステムです。JSP と ESP に代わり、AEM で推奨されるテンプレートシステムになります。
+HTML Template Language （HTL）は、AEM 6.0で導入された新しいHTML テンプレートシステムです。 AEMの推奨テンプレートシステムとして、JSPおよびESPに代わるものです。
 
 |  |  |  |
 |---|---|---|
@@ -89,4 +87,4 @@ HTML テンプレート言語（HTL）は、AEM 6.0 で導入された新しい 
 >[!NOTE]
 >
 >次の複数パートのチュートリアルでは、新しい AEM プロジェクトを設定するためのベストプラクティスとして、コアコンポーネント、編集可能なテンプレート、クライアントライブラリ、コンポーネント開発について説明します。
->>[AEM Sites の概要 - WKND チュートリアル](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+>[AEM Sites の概要 - WKND チュートリアル](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
