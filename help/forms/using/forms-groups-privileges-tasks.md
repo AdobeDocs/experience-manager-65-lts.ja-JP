@@ -12,22 +12,20 @@ feature: Adaptive Forms
 exl-id: 1681e92b-2d88-4b10-a700-a516aa5a02c8
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 92%
-
+source-wordcount: '334'
+ht-degree: 93%
 ---
-
 # OSGi 上の AEM Forms のグループと権限{#aem-forms-on-osgi-groups-and-privileges}
 
 ## 適用先 {#applies-to}
 
-このドキュメントは、**AEM 6.5 LTS Forms** に適用されます。
+このドキュメントは、**AEM 6.5 LTS Forms**&#x200B;に適用されます。
 
-AEM as a Cloud Serviceのドキュメントについては、[Cloud ServiceのAEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html?lang=ja) を参照してください。
+AEM as a Cloud Serviceのドキュメントについては、[Cloud Service上のAEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html?lang=ja)を参照してください。
 
-Adobe Experience Manager（AEM）では、[グループを作成](/help/sites-administering/user-group-ac-admin.md#group-administration)して、そのグループにポリシーと[ユーザー](/help/sites-administering/user-group-ac-admin.md#user-administration)を割り当てることができます。これらのポリシーは、グループに含まれるユーザーの権限を制御します。
+Adobe Experience Manager（AEM）では、[グループを作成](/help/sites-administering/user-group-ac-admin.md#group-administration)して、そのグループにポリシーと[ユーザー](/help/sites-administering/user-group-ac-admin.md#user-administration)を割り当てることができます。 これらのポリシーは、グループに含まれるユーザーの権限を制御します。
 
-[AEM Forms アドオンパッケージ](../../forms/using/installing-configuring-aem-forms-osgi.md)をインストールすると、この記事に記載されている forms-user や forms-power-user などのグループが、自動的に割り当て可能になります。次の表に、ユーザーが OSGi 上の AEM Forms でグループの割り当てに基づいて実行できるタスクを示します。
+[AEM Forms アドオンパッケージ](../../forms/using/installing-configuring-aem-forms-osgi.md)をインストールすると、この記事に記載されている forms-user や forms-power-user などのグループが、自動的に割り当て可能になります。 次の表に、ユーザーが OSGi 上の AEM Forms でグループの割り当てに基づいて実行できるタスクを示します。
 
 <table>
  <tbody>
@@ -40,7 +38,7 @@ Adobe Experience Manager（AEM）では、[グループを作成](/help/sites-ad
    <td>
     <ul> 
      <li>アダプティブフォームを作成、プレビュー、公開、送信</li> 
-     <li>インタラクティブ通信とドキュメントフラグメントを作成、プレビュー、公開</li> 
+     <li>インタラクティブなコミュニケーションとドキュメントフラグメントを作成、プレビュー、公開</li> 
      <li>AEM インスタンスにアセットをアップロード</li> 
      <li>テーマを作成</li> 
     </ul> </td> 
@@ -50,7 +48,7 @@ Adobe Experience Manager（AEM）では、[グループを作成](/help/sites-ad
    <td>
     <ul> 
      <li>アダプティブフォームを作成、プレビュー、公開、送信</li> 
-     <li>インタラクティブ通信とドキュメントフラグメントを作成、プレビュー、公開</li> 
+     <li>インタラクティブなコミュニケーションとドキュメントフラグメントを作成、プレビュー、公開</li> 
      <li>コードエディターを使用してアダプティブフォームのスクリプトを作成</li> 
      <li>スクリプトを含むアセットをアップロード</li> 
      <li>テーマを作成</li> 
@@ -69,7 +67,7 @@ Adobe Experience Manager（AEM）では、[グループを作成](/help/sites-ad
    <td>template-authors <sup>[2]</sup></td> 
    <td>
     <ul> 
-     <li>アダプティブフォームやインタラクティブ通信テンプレートを作成およびプレビューする</li> 
+     <li>アダプティブフォームやインタラクティブなコミュニケーションテンプレートを作成およびプレビューする</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -83,7 +81,7 @@ Adobe Experience Manager（AEM）では、[グループを作成](/help/sites-ad
    <td>cm-agent-users</td> 
    <td>
     <ul> 
-     <li>エージェント UI を使用して Correspondence Management レターまたはインタラクティブ通信にアクセス</li> 
+     <li>エージェント UI を使用して Correspondence Management レターまたはインタラクティブなコミュニケーションにアクセス</li> 
     </ul> </td> 
   </tr>
   <tr>
