@@ -9,11 +9,9 @@ role: User
 exl-id: da33f43b-7375-46f1-a80f-c1891fd90312
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '249'
 ht-degree: 100%
-
 ---
-
 # ビデオレンディション {#video-renditions}
 
 Adobe Experience Manager Assets では、様々な形式（OGG、FLV など）のビデオアセット用のビデオレンディションが生成されます。
@@ -26,7 +24,7 @@ DM エンコードされたレンディションは、プロキシサーバー�
 
 Experience Manager Assets では、クライアントサイドでこのようなレンディションの再生がサポートされています。
 
-特定のビデオアセットのレンディションを表示するには、アセットのページを開いて、グローバルナビゲーションアイコンを選択します。次に、リストから「**[!UICONTROL レンディション]**」を選択します。
+特定のビデオアセットのレンディションを表示するには、アセットのページを開いて、グローバルナビゲーションアイコンを選択します。 次に、リストから「**[!UICONTROL レンディション]**」を選択します。
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
@@ -42,6 +40,6 @@ DM エンコードされたレンディションのプロキシサーバーを�
 
 >[!NOTE]
 >
->Microsoft® Internet Explorer 11 では、OGG および WAV ファイルのオーディオは再生できません。拡張子が OGG または WAV のアセットの詳細ページに、エラー `Invalid Source` が表示されます。
+>Microsoft® Internet Explorer 11 では、OGG および WAV ファイルのオーディオは再生できません。 拡張子が OGG または WAV のアセットの詳細ページに、エラー `Invalid Source` が表示されます。
 >
 >MS® Edge および iPad では、OGG ファイルは再生されず、サポートされていない形式というエラーが発生します。
