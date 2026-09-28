@@ -9,18 +9,16 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 2e03224f-b4eb-4bf5-aba9-a6cc292c96c2
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '264'
 ht-degree: 100%
-
 ---
-
 # Dynamic Media のセットアップ {#setting-up-dynamic-media}
 
-[Dynamic Media ](https://business.adobe.com/jp/products/experience-manager/assets/dynamic-media.html)では、マーチャンダイジングおよびマーケティング用のリッチなビジュアルアセットをオンデマンドで配信し、アセットを管理できます。これらのアセットは、Web、モバイルおよびソーシャルサイトでの利用に合わせて自動的に拡大縮小されます。Dynamic Media は、一連のプライマリソースアセットを使用し、パフォーマンスが最適化されスケーラビリティに優れたグローバルネットワーク経由で、複数のリッチコンテンツのバリエーションをリアルタイムで生成および配信します。
+[Dynamic Media ](https://business.adobe.com/jp/products/experience-manager/assets/dynamic-media.html)では、マーチャンダイジングおよびマーケティング用のリッチなビジュアルアセットをオンデマンドで配信し、アセットを管理できます。これらのアセットは、Web、モバイルおよびソーシャルサイトでの利用に合わせて自動的に拡大縮小されます。 Dynamic Media は、一連のプライマリソースアセットを使用し、パフォーマンスが最適化されスケーラビリティに優れたグローバルネットワーク経由で、複数のリッチコンテンツのバリエーションをリアルタイムで生成および配信します。
 
 >[!NOTE]
 >
->このドキュメントでは、Dynamic Media を Adobe Experience Manager に直接統合して使用する際の機能について説明します。Dynamic Media Classic を Experience Manager に統合して使用する場合は、[Dynamic Media Classic 統合ドキュメント](/help/sites-administering/scene7.md)を参照してください。
+>このドキュメントでは、Adobe Experience Manager に直接統合されている Dynamic Media の機能について説明します。 Dynamic Media Classic を Experience Manager に統合して使用する場合は、[Dynamic Media Classic 統合ドキュメント](/help/sites-administering/scene7.md)を参照してください。
 >
 >Experience Manager を Dynamic Media Classic と Dynamic Media の両方に統合して使用する場合は、[両方を利用するシナリオ](/help/sites-administering/scene7.md#dual-use-scenario)を参照してください。
 
@@ -41,4 +39,4 @@ Dynamic Media の管理者には、次のトピックが参考になります。
 >
 >**アップグレードする場合：**
 >
->* Experience Manager を実行状態にした後にアップロードしたすべてのアセットで、Dynamic Media が自動的に有効になります（システム管理者によって明示的に無効にされた場合を除く）。アップグレードされた Experience Manager インスタンスで Dynamic Media を新たに使用する場合、Dynamic Media を使用できるようアセットを再処理する必要があります。
+>* Experience Manager を実行状態にした後にアップロードしたすべてのアセットで、Dynamic Media が自動的に有効になります（システム管理者によって明示的に無効にされた場合を除く）。 アップグレードされた Experience Manager インスタンスで Dynamic Media を新たに使用する場合、Dynamic Media を使用できるようアセットを再処理する必要があります。

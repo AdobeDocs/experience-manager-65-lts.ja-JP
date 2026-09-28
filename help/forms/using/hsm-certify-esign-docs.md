@@ -11,16 +11,14 @@ role: Admin, User, Developer
 exl-id: 20bd6c24-ac9d-4f8d-b5c0-9b7935d4bdf8
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '699'
 ht-degree: 100%
-
 ---
-
 # ドキュメントのデジタル署名や証明に HSM を使用する {#use-hsm-to-digitally-sign-or-certify-documents}
 
-ハードウェアセキュリティモジュール（HSM）および eToken は、デジタルキーを安全に管理、処理、保管するように設計された、改ざん耐性のあるセキュリティが強化された専用計算デバイスです。これらのデバイスは、コンピューターまたはネットワークサーバーに直接接続されます。
+ハードウェアセキュリティモジュール（HSM）および eToken は、デジタルキーを安全に管理、処理、保管するように設計された、改ざん耐性のあるセキュリティが強化された専用計算デバイスです。 これらのデバイスは、コンピューターまたはネットワークサーバーに直接接続されます。
 
-Adobe Experience Manager Forms は、HSM または eToken に保存された資格情報を使用して eSign を作成したり、ドキュメントにサーバーサイドのデジタル署名を適用したりできます。AEM Forms 上で HSM または eToken デバイスを使用するには：
+Adobe Experience Manager Forms は、HSM または eToken に保存された資格情報を使用して eSign を作成したり、ドキュメントにサーバーサイドのデジタル署名を適用したりできます。 AEM Forms 上で HSM または eToken デバイスを使用するには：
 
 1. [DocAssurance サービスを有効にします](#configuredocassurance)。
 1. [AEM web コンソールから、HSM または eToken デバイスのエイリアスを作成します](#configuredeviceinaemconsole)。
@@ -29,11 +27,11 @@ Adobe Experience Manager Forms は、HSM または eToken に保存された資�
 ## AEM Forms で HSM または eToken デバイスを設定する前に {#configurehsmetoken}
 
 * [AEM Forms アドオン](https://helpx.adobe.com/jp/aem-forms/kb/aem-forms-releases.html)パッケージをインストールします。
-* AEM サーバーと同じコンピューターに HSM または eToken クライアントソフトウェアをインストールして設定します。クライアントソフトウェアは、HSM および eToken デバイスと通信する必要があります。
+* AEM サーバーと同じコンピューターに HSM または eToken クライアントソフトウェアをインストールして設定します。 クライアントソフトウェアは、HSM および eToken デバイスと通信する必要があります。
 
 ## DocAssurance サービスを有効にする {#configuredocassurance}
 
-デフォルトでは、DocAssurance サービスは無効になっています。このサービスを有効にするには、次の手順を実行します。
+デフォルトでは、DocAssurance サービスは無効になっています。 このサービスを有効にするには、次の手順を実行します。
 
 1. AEM Forms 環境のオーサーインスタンスを停止させます。
 
@@ -56,7 +54,7 @@ Adobe Experience Manager Forms は、HSM または eToken に保存された資�
 
 >[!NOTE]
 >
-> 「Ctrl + C」コマンドを使用して SDK を再起動することをお勧めします。Java プロセスの停止など、別の方法を使用して AEM SDK を再起動すると、AEM 開発環境で不整合が生じる場合があります。
+> 「Ctrl + C」コマンドを使用して SDK を再起動することをお勧めします。 Java プロセスの停止など、別の方法を使用して AEM SDK を再起動すると、AEM 開発環境で不整合が生じる場合があります。
 
 <!--
 
@@ -97,26 +95,26 @@ Perform the following steps to setup certificates:
 
 ## デバイスエイリアスの作成 {#configuredeviceinaemconsole}
 
-エイリアスには、HSM または eToken に必要なすべてのパラメーターが含まれます。eSign またはデジタル署名に必要な HSM や eToken の各資格情報に対してエイリアスを作成するには、以下の手順を実行します。
+エイリアスには、HSM または eToken に必要なすべてのパラメーターが含まれます。 eSign またはデジタル署名に必要な HSM や eToken の各資格情報に対してエイリアスを作成するには、以下の手順を実行します。
 
-1. AEM コンソールを開きます。AEM コンソールのデフォルト URL は、https://&lt;host>:&lt;port>/system/console/configMgr です。
+1. AEM コンソールを開きます。 AEM コンソールのデフォルト URL は、https://&lt;host>:&lt;port>/system/console/configMgr です。
 1. **HSM 資格情報設定サービス**&#x200B;を開き、次のフィールドに値を指定してください。
 
-   * **Credential Alias**（資格情報のエイリアス）：エイリアスを識別するための文字列を指定します。この値は、署名フィールドへの署名操作といった、Digital Signatures の一部の操作でプロパティとして使用されます。
-   * **DLL Path**：サーバー上の HSM または eToken クライアントライブラリのパスを指定します。例えば、`C:\Program Files\LunaSA\cryptoki.dll` のようになります。クラスター環境では、クラスター内のすべてのサーバーが同じパスを使用する必要があります。
+   * **Credential Alias**（資格情報のエイリアス）：エイリアスを識別するための文字列を指定します。 この値は、署名フィールドへの署名操作といった、Digital Signatures の一部の操作でプロパティとして使用されます。
+   * **DLL Path**：サーバー上の HSM または eToken クライアントライブラリのパスを指定します。 例えば、`C:\Program Files\LunaSA\cryptoki.dll` のようになります。 クラスター環境では、クラスター内のすべてのサーバーが同じパスを使用する必要があります。
    * **HSM PIN**：デバイスキーへのアクセスに必要なパスワードを指定します。
-   * **HSM Slot Id**：整数タイプのスロット識別子を指定します。スロット ID は、クライアントごとに設定されます。これは、署名または証明用の秘密鍵を含む HSM 上のスロットを識別するために使用されます。
+   * **HSM Slot Id**：整数タイプのスロット識別子を指定します。 スロット ID は、クライアントごとに設定されます。 これは、署名または証明用の秘密鍵を含む HSM 上のスロットを識別するために使用されます。
 
    >[!NOTE]
    >
-   >eToken を設定する際は、「HSM スロット ID」フィールドに数値を指定します。数値は、Signatures の操作を有効にするために必要です。
+   >eToken を設定する際は、「HSM スロット ID」フィールドに数値を指定します。 数値は、Signatures の操作を有効にするために必要です。
 
-   * **Certificate SHA1**：使用する秘密鍵証明書の公開鍵（cer）ファイルの SHA1 値（拇印）を指定します。SHA1 値にスペースが使用されていないことを確認します。
+   * **Certificate SHA1**：使用する秘密鍵証明書の公開鍵（cer）ファイルの SHA1 値（拇印）を指定します。 SHA1 値にスペースが使用されていないことを確認します。
    * **HSM デバイスタイプ**：HSM（Luna など）または eToken デバイスの発行元を選択します。
 
-   「**保存**」をクリックします。ハードウェアセキュリティモジュールは、AEM Forms 用に設定されています。これにより、AEM Forms でハードウェアセキュリティモジュールを使用して、ドキュメントの署名や証明を行えるようになりました。
+   「**保存**」をクリックします。 ハードウェアセキュリティモジュールは、AEM Forms 用に設定されています。 これにより、AEM Forms でハードウェアセキュリティモジュールを使用して、ドキュメントの署名や証明を行えるようになりました。
 
-## DocAssurance サービス API を使用して、デバイスに保存されたデジタルキーでドキュメントを署名または証明 {#programatically}
+## DocAssurance サービス API を使用して、デバイスに保存されたデジタルキーでドキュメントを署名または証明  {#programatically}
 
 次のサンプルコードでは、ドキュメントの署名や証明の際に、HSM または eToken を使用します。
 
