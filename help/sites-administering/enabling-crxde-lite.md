@@ -1,5 +1,5 @@
 ---
-title: 'AEM での CRXDE Lite の有効化 '
+title: AEM での CRXDE Lite の有効化
 description: Adobe Experience Manager で CRXDE Lite を有効にする方法について説明します。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,12 +13,10 @@ source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 100%
-
 ---
+# AEM での CRXDE Lite の有効化{#enabling-crxde-lite-in-aem}
 
-# AEM での CRXDE Lite の有効化 {#enabling-crxde-lite-in-aem}
-
-AEM のインストールを可能な限り保護するために、セキュリティチェックリストでは実稼動環境で [WebDAV を無効化](/help/sites-administering/security-checklist.md#disable-webdav)することをお勧めしています。
+AEM のインストールを可能な限り保護するために、セキュリティチェックリストでは本番環境で [WebDAV を無効化](/help/sites-administering/security-checklist.md#disable-webdav)することをお勧めしています。
 
 ただし、CRXDE Lite が正しく機能するには `org.apache.sling.jcr.davex` バンドルに依存するので、WebDAV を無効にすると CRXDE Lite も無効になります。
 
