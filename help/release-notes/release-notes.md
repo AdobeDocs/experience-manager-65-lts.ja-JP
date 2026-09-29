@@ -5,9 +5,25 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 2a5cba7da93b1915126223a7de2f9fc8198e5f08
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 606310b2214bc33ede4f2d99f7947fe05d668f64
 workflow-type: tm+mt
-source-wordcount: '7586'
+source-wordcount: '7622'
 ht-degree: 21%
 ---
 
@@ -357,13 +373,13 @@ Campaign ContentServletは、コンテンツリクエスト中にJSON応答コ�
 
 JEEにAEM Forms 6.5 LTS SP3をインストールするには、次の手順を順番に実行します。
 
-1. アプリケーションサーバー用のAEM Forms 6.5 LTS SP3 JEE インストーラー（[AEM Forms リリース &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)からダウンロード）を使用して、標準のAEM Forms on JEE インストール手順に従ってサービスパックをインストールします。
-1. 最新のAEM Forms Workbench インストーラー（同じ[AEM Forms リリース &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) ページから利用可能）に更新します。
+1. アプリケーションサーバー用のAEM Forms 6.5 LTS SP3 JEE インストーラー（[AEM Forms リリース ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)からダウンロード）を使用して、標準のAEM Forms on JEE インストール手順に従ってサービスパックをインストールします。
+1. 最新のAEM Forms Workbench インストーラー（同じ[AEM Forms リリース ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) ページから利用可能）に更新します。
 1. プロジェクトで`adobe-livecycle-client.jar` SDK クライアント ライブラリを使用している場合は、プロジェクトのクラスパスで更新します。 最新バージョンは`<AEM_Forms_Installation_dir>/sdk/client-libs/common/adobe-livecycle-client.jar`で入手できます。
 
 #### 既知の問題 {#forms-known-issues-65-lts-sp3}
 
-このリリースに関する既知の問題は報告されていません。
+* JEE 6.5 LTS SP3 **上の** AEM Formsでは、**PostScript（PS）、EPS、およびPRN ファイルをPDF**&#x200B;に変換できません。 `PsToPdfSvc` ネイティブプロセスが予期せず終了する可能性があり、コンバージョンジョブが`ALC-PDG-003-011`や`ALC-PDG-001-028`などのエラーで失敗します。 Adobe カスタマーサポートにお問い合わせください。 （FORMS-28152）
 
 #### セキュリティの修正 {#forms-security-fixes-65-lts-sp3}
 
@@ -551,10 +567,10 @@ AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストール
 
 >[!NOTE]
 >
-> 古い6.5 SPからLTS SP3に直接アップグレードする場合は、6.5から6.5 LTS GA [&#x200B; アップグレード &#x200B;](/help/sites-deploying/upgrade.md)の指示に従ってください。
+> 古い6.5 SPからLTS SP3に直接アップグレードする場合は、6.5から6.5 LTS GA [ アップグレード ](/help/sites-deploying/upgrade.md)の指示に従ってください。
 
 
-詳細な手順については、[&#x200B; アップグレードドキュメント &#x200B;](/help/sites-deploying/upgrade.md)を参照してください。同じドキュメントがLTS サービスパックの更新に適用されます。
+詳細な手順については、[ アップグレードドキュメント ](/help/sites-deploying/upgrade.md)を参照してください。同じドキュメントがLTS サービスパックの更新に適用されます。
 
 >[!NOTE]
 >
@@ -700,7 +716,7 @@ AEM デプロイメントで SSL のみの機能を有効にすると、Dispatch
 
 次のzip ファイルには、このExperience Manager 6.5 LTS サービスパック リリースに含まれるOSGi バンドルとコンテンツパッケージを一覧表示するテキストドキュメントが含まれています。
 
-* [OSGi バンドル &#x200B;](/help/release-notes/assets/65lts_sp3_bundles.zip)
+* [OSGi バンドル ](/help/release-notes/assets/65lts_sp3_bundles.zip)
 * [コンテンツパッケージ](/help/release-notes/assets/65lts_sp3_packages.zip)
 
 ## 制限付き Web サイト{#restricted-sites}
