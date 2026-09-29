@@ -5,9 +5,25 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 2a5cba7da93b1915126223a7de2f9fc8198e5f08
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 606310b2214bc33ede4f2d99f7947fe05d668f64
 workflow-type: tm+mt
-source-wordcount: '7586'
+source-wordcount: '7622'
 ht-degree: 21%
 ---
 
@@ -363,7 +379,7 @@ JEEにAEM Forms 6.5 LTS SP3をインストールするには、次の手順を�
 
 #### 既知の問題 {#forms-known-issues-65-lts-sp3}
 
-このリリースに関する既知の問題は報告されていません。
+* JEE 6.5 LTS SP3 **上の** AEM Formsでは、**PostScript（PS）、EPS、およびPRN ファイルをPDF**&#x200B;に変換できません。 `PsToPdfSvc` ネイティブプロセスが予期せず終了する可能性があり、コンバージョンジョブが`ALC-PDG-003-011`や`ALC-PDG-001-028`などのエラーで失敗します。 Adobe カスタマーサポートにお問い合わせください。 （FORMS-28152）
 
 #### セキュリティの修正 {#forms-security-fixes-65-lts-sp3}
 

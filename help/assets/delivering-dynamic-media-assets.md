@@ -5,13 +5,29 @@ role: User, Admin
 feature: Asset Management,Renditions
 solution: Experience Manager, Experience Manager Assets
 exl-id: b91173b4-f1d1-4aad-97d2-782bc8aeaeab
-source-git-commit: 47b82956b41c3f78bed5ae220c7e993ce29e0385
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 100%
-
+source-wordcount: '314'
+ht-degree: 92%
 ---
-
 # Dynamic Media アセットの配信{#delivering-dynamic-media-assets}
 
 ビデオでも画像でも、Dynamic Media アセットの配信方法は、Web サイトの実装方法によって異なります。
@@ -21,26 +37,26 @@ Dynamic Media を使用する場合、次の複数のオプションがありま
 * Web サイトが Adobe Experience Manager 上にホストされている場合は、Dynamic Media アセットを直接ページに追加します。
 * Web サイトが Experience Manager 上にない場合は、次のいずれかの方法を選択します。
 
-   * ビデオまたは画像を web サイトに埋め込みます。
-   * Web アプリケーションに URL をリンクします。ビデオプレーヤーをポップアップウィンドウまたはモーダルウィンドウとして配信する場合には、リンク機能を使用します。
-   * レスポンシブサイトの場合は、[最適化された画像を配信](/help/assets/responsive-site.md)できます。
+  * ビデオまたは画像を web サイトに埋め込みます。
+  * Web アプリケーションにURLをリンクします。 ビデオプレーヤーをポップアップウィンドウまたはモーダルウィンドウとして配信する場合は、リンクを使用します。
+  * レスポンシブサイトの場合は、[最適化された画像を配信](/help/assets/responsive-site.md)できます。
 
 >[!NOTE]
 >
->スマートイメージングは、既存の画像プリセットで機能し、配信の直前にインテリジェンスを使用して、ブラウザーまたはネットワークの接続速度に基づいて画像のファイルサイズをさらに低減します。詳しくは、[スマートイメージング](/help/assets/imaging-faq.md)を参照してください。
+>スマートイメージングは、既存の画像プリセットで機能し、配信の直前にインテリジェンスを使用して、ブラウザーまたはネットワークの接続速度に基づいて画像のファイルサイズをさらに低減します。 詳しくは、[スマートイメージング](/help/assets/imaging-faq.md)を参照してください。
 
 詳しくは、次のトピックを参照してください。
 
-* [Web ページへの Dynamic Media アセットの追加](/help/assets/adding-dynamic-media-assets-to-pages.md)
-* [ビデオまたは画像ビューアを web ページに埋め込む](/help/assets/embed-code.md)
+* [web ページへの Dynamic Media アセットの追加](/help/assets/adding-dynamic-media-assets-to-pages.md)
+* [ビデオまたは画像ビューアーを web ページに埋め込む](/help/assets/embed-code.md)
 * [Dynamic Media でホットリンク保護を有効化する](/help/assets/hotlink-protection.md)
-* [Web アプリケーションに URL をリンクする](/help/assets/linking-urls-to-yourwebapplication.md)
+* [web アプリケーションに URL をリンクする](/help/assets/linking-urls-to-yourwebapplication.md)
 * [レスポンシブサイト用に最適化された画像の配信](/help/assets/responsive-site.md)
 * [コンテンツの HTTP/2 配信](/help/assets/http2.md)
 * [ルールセットを使用して URL を変換する](/help/assets/using-rulesets-to-transform-urls.md)
 
 ## Dynamic Media アセットの HTTP/2 配信 {#http-delivery-of-dynamic-media-assets}
 
-Experience Manager では、HTTP/2 上でのすべての Dynamic Media コンテンツ（画像とビデオ）の配信をサポートするようになりました。つまり、画像やビデオの公開済み URL または埋め込みコードを、ホストされているアセットを受け入れる任意のアプリケーションと統合できるようになります。その公開済みアセットは、HTTP/2 プロトコルを使用して配信されます。この配信方法により、ブラウザーとサーバーの通信が向上し、すべての Dynamic Media アセットの応答時間と読み込み時間が短くなります。
+Experience Manager では、HTTP/2 上でのすべての Dynamic Media コンテンツ（画像とビデオ）の配信をサポートするようになりました。 つまり、画像やビデオの公開済み URL または埋め込みコードを、ホストされているアセットを受け入れる任意のアプリケーションと統合できるようになります。 その公開済みアセットは、HTTP/2 プロトコルを使用して配信されます。 この配信方法を使用すると、ブラウザーとサーバーの通信方法が改善され、すべてのDynamic Mediaアセットの応答時間と読み込み時間が向上します。
 
 詳しくは、[コンテンツの HTTP/2 配信に関するよくある質問](/help/sites-administering/scene7-http2faq.md)を参照してください。
