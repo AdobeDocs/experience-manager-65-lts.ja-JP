@@ -6,13 +6,29 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 5b3beaa6-ca0a-454e-85ee-c3653dd423fe
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '2174'
+source-wordcount: '2193'
 ht-degree: 96%
-
 ---
-
 # アダプティブフォームのスタイル設定 {#do-not-publish-style-your-adaptive-form}
 
 カスタムテーマの作成、個別コンポーネントのスタイル設定、テーマでの web フォントの使用について説明します。
@@ -23,7 +39,7 @@ ht-degree: 96%
 
 ## チュートリアルについて  {#about-the-tutorial}
 
-テーマを使用すると、アダプティブフォームに独自のアピアランスやスタイルを設定できます。 アダプティブフォームエディター標準のテーマを適用することも、独自のカスタムテーマを作成することもできます。 AEM [!DNL Forms] はカスタムテーマを作成するための[テーマエディター](https://helpx.adobe.com/jp/experience-manager/6-3/forms/using/themes.html)を提供します。 単一のテーマで、モバイル、タブレット、デスクトップで開いた同一のアダプティブフォームに異なるアピアランスを設定できます。 テーマエディターを使用する場合、CSS や LESS の予備知識は特に必要ありません。
+テーマを使用すると、アダプティブフォームに独自のアピアランスやスタイルを設定できます。 アダプティブフォームエディターに付属する標準テーマを適用することも、独自のカスタムテーマを作成することもできます。 AEM [!DNL Forms] はカスタムテーマを作成するための[テーマエディター](https://helpx.adobe.com/jp/experience-manager/6-3/forms/using/themes.html)を提供します。 単一のテーマで、モバイル、タブレット、デスクトップで開いた同一のアダプティブフォームに異なるアピアランスを設定できます。 テーマエディターを使用する場合、CSS や LESS の予備知識は特に必要ありませんが、あることが望ましいです。
 
 このチュートリアルを終了すると、以下の操作を実行できるようになります。
 
@@ -102,7 +118,7 @@ ht-degree: 96%
 
 ### テーマの作成 {#create-a-theme}
 
-1. AEM オーサーインスタンスにログインして、**[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL テーマ]**&#x200B;に移動します。 デフォルト URLは[http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes)です。
+1. AEM オーサーインスタンスにログインして、**[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL テーマ]**&#x200B;に移動します。 デフォルトのURLは[http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes)です。
 1. 「**[!UICONTROL 作成]**」を選択し、「**[!UICONTROL テーマ]**」を選択します。 テーマの作成が必要なフィールドを含む「[!UICONTROL テーマを作成]」ページが表示されます。 「**[!UICONTROL タイトル]**」フィールドと「**[!UICONTROL 名前]**」フィールドは入力必須です。
 
    * **タイトル：**&#x200B;テーマのタイトルを指定します。 例：**グローバルテーマ** タイトルは、テーマのリストからテーマを特定するのに役立ちます。
@@ -124,7 +140,7 @@ ht-degree: 96%
 
 ### ヘッダーとフッターのスタイル設定 {#style-header-and-footer}
 
-アダプティブフォームでは、ヘッダーとフッターを使用して一貫性のある外観を独自に作成できます。 通常、ヘッダーには組織のロゴと名前が含まれ、フッターには著作権情報が含まれます。これらは組織の複数のフォーム間で統一されます。 shipping-address-add-update-form アダプティブフォームのヘッダーとフッターのスタイルを設定するには、次の手順を実行します。
+ヘッダーとフッターにより、アダプティブフォームに一貫性のある特徴的な外観がもたらされます。 通常、ヘッダーには組織のロゴと名前が含まれ、フッターには著作権情報が含まれます。これらは組織の複数のフォーム間で統一されます。 shipping-address-add-update-form アダプティブフォームのヘッダーとフッターのスタイルを設定するには、次の手順を実行します。
 
 1. セレクターパネルで&#x200B;**[!UICONTROL ヘッダー]**／**[!UICONTROL テキスト]**&#x200B;オプションに移動します。 セレクターパネルはテーマエディターの左側にあります。 パネルが表示されない場合は、「![サイドパネルを切り替え](assets/toggle-side-panel.png)」を選択します。
 
@@ -175,7 +191,7 @@ ht-degree: 96%
 
 ### データ取得コンポーネントのスタイル設定とアダプティブフォームの背景の適用 {#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
 
-アダプティブフォームでは複数のコンポーネントを使用してデータを取得できます。 例えば、テキストボックスや数値ボックスなどです。 すべてのデータ取得コンポーネントに同じスタイルを設定することも、コンポーネントごとに異なるスタイルを設定することもできます。 このチュートリアルでは、数値ボックス（顧客 ID、郵便番号）とテキストボックス（顧客 ID、名前、発送先住所、状態、メール）に同じスタイルを適用します。 データ取得コンポーネントのスタイルを設定するには、次の手順を実行します。
+アダプティブフォームでは複数のコンポーネントを使用してデータを取得できます。 例えば、テキストボックスや数値ボックスなどです。 すべてのデータ取得コンポーネントに同じスタイルを設定することも、コンポーネントごとに異なるスタイルを設定することもできます。 このチュートリアルでは、数値ボックス（顧客 ID、郵便番号）とテキストボックス（顧客 ID、名前、輸送先住所、都道府県、メール）に同じスタイルを適用します。 データ取得コンポーネントのスタイルを設定するには、次の手順を実行します。
 
 1. 「**[!UICONTROL 顧客 ID]**」フィールドを選択し、「**[!UICONTROL フィールドウィジェット]**」オプションを選択します。 次のプロパティを設定し、「![aem_6_3_forms_save](assets/aem_6_3_forms_save.png)」を選択します。
 
@@ -439,21 +455,17 @@ ht-degree: 96%
 
    ![styled-adaptive-form-1](assets/styled-adaptive-form-1.png)
 
-## 手順 5：オプション：カスタムテーマでの web フォントの使用 {#step-bonus-section-using-web-fonts-in-a-custom-theme}
+## 手順 5：ボーナスセクション：カスタムテーマでの Web Fonts の使用 {#step-bonus-section-using-web-fonts-in-a-custom-theme}
 
 アダプティブフォームは各種フォントを使用してデザインできます。 アダプティブフォームのデザインに使用するフォントが、アダプティブフォームを表示するデバイスに存在しない場合があります。 Web フォントサービスを使用すると、必要なフォントを目的のデバイスで使用できます。
 
-[!DNL Adobe Fonts] は web フォントサービスです。 アダプティブフォームでこのサービスを設定、使用できます。 [!DNL Adobe Fonts] をアダプティブフォームで使用するには：
-1. [Adobe フォントのライブラリ](https://fonts.adobe.com/)を参照し、フォームをスタイル設定するフォントを選択します。
-<!--
->[!NOTE]
->
->![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).
--->
+[!DNL Adobe Fonts] は web フォントサービスです。 アダプティブフォームでこのサービスを設定して使用できます。 [!DNL Adobe Fonts] をアダプティブフォームで使用するには：
 
->[!NOTE]
->
-> タグやフィルターを追加して、フォントのリストを絞り込むことができます。
+1. [Adobe フォントのライブラリ](https://fonts.adobe.com/)を参照し、フォームをスタイル設定するフォントを選択します。
+
+   >[!NOTE]
+   >
+   > タグやフィルターを追加して、フォントのリストを絞り込むことができます。
 
 1. 「&lt;/>」ボタンをクリックして、目的のフォントが見つかった場合に備えて、web プロジェクトにファミリを追加します。
 
@@ -463,31 +475,40 @@ ht-degree: 96%
 
    >[!NOTE]
    >
-   > フォントを web プロジェクトに追加できるのは、「&lt;/>」ボタンが使用可能な場合のみです。
+   >フォントを web プロジェクトに追加できるのは、「&lt;/>」ボタンが使用可能な場合のみです。
 
-2. Web プロジェクトに名前を付けます。
-3. チェックボックスをオンにして、含めるフォントの太さとスタイルを選択します。
+1. Web プロジェクトに名前を付けます。
+1. チェックボックスをオンにして、含めるフォントの太さとスタイルを選択します。
 
    ![フォントライブラリの追加](assets/add-a-font-window.png)
 
-4. 「**クリック**」を選択して、プロジェクトを作成します。
-5. 画面から埋め込みコードと URL をコピーします。
+1. 「**クリック**」を選択して、プロジェクトを作成します。
+1. 画面から埋め込みコードと URL をコピーします。
+
    ![埋め込みコードと URL](assets/font-add-url.png)
 
-6. 「**完了**」をクリックし、web プロジェクト ウィンドウを閉じます。
-7. AEM インスタンスにログインし、URL `http://server:port/crx/de/index.jsp#` に移動します。
-8. CRXDE でフォルダー構造（`/apps/[fontslibrary]/[customlibrary(clientlibrary)]` など）を作成します。
-9. 新しく作成した `clientlibs` フォルダーに移動し、`allowProxy` プロパティと `categories` プロパティを追加します。
-10. `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` に移動して、css フォルダーを作成します。
-11. 作成したCSS フォルダーに移動し、ファイルを作成します。例えば、ファイルを`fonts.css`として作成し、埋め込みコードをURLと共に貼り付けます。
-    ![フォルダー構造](/help/forms/using/assets/fonts-add-in-crxde.png)
-12. 変更を保存します。
+1. 「**完了**」をクリックし、web プロジェクト ウィンドウを閉じます。
+1. AEM インスタンスにログインし、URL `http://server:port/crx/de/index.jsp#` に移動します。
+1. CRXDE でフォルダー構造（`/apps/[fontslibrary]/[customlibrary(clientlibrary)]` など）を作成します。
+1. 新しく作成した `clientlibs` フォルダーに移動し、`allowProxy` プロパティと `categories` プロパティを追加します。
+1. `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` に移動して、css フォルダーを作成します。
+1. 作成した CSS フォルダーに移動し、ファイルを作成します。 例えば、ファイルを `fonts.css` として作成し、埋め込みコードを URL と共に貼り付けます。
+
+   ![フォルダー構造](/help/forms/using/assets/fonts-add-in-crxde.png)
+
+1. 変更を保存します。
 
 >[!NOTE]
 >
 > アダプティブフォームで追加したカスタムフォントを使用するには、**[!UICONTROL クライアントライブラリカテゴリ]**&#x200B;内のクライアントライブラリ名が、clientlib フォルダーのカテゴリオプションで指定された名前と一致していることを確認します。
 
 含まれるフォントは、次のカスタムフォントクライアントライブラリを通じてアダプティブフォームにアクセスできるようになりました。
+
+<!--
+>[!NOTE]
+>
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).
+-->
 
 
 <!--

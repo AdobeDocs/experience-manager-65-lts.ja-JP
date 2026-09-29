@@ -8,13 +8,11 @@ role: Developer,Leader
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: dc231e6b-d656-4626-a800-ee66533b1c86
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '2400'
 ht-degree: 97%
-
 ---
-
 # デジタルアセットのメタデータの管理 {#managing-metadata-for-digital-assets}
 
 | バージョン | 記事リンク |
@@ -39,7 +37,7 @@ Scope of metadata articles:
 
 * まず、アセットを作成するネイティブアプリケーションがメタデータを追加します。 例えば、[Acrobat がいくつかのメタデータを PDF ファイルに追加](https://helpx.adobe.com/jp/acrobat/using/pdf-properties-metadata.html)する場合や、カメラが写真にいくつかの基本的なメタデータを追加する場合があります。 アセットを生成する際に、ネイティブアプリケーション自体にメタデータを追加できます。 例えば、[Adobe Lightroom で IPTC メタデータを追加する](https://helpx.adobe.com/jp/lightroom-classic/help/metadata-basics-actions.html)ことができます。
 
-* アセットを [!DNL Experience Manager] にアップロードする前に、アセットの作成に使用するネイティブアプリケーションまたは他のメタデータ編集アプリケーションを使用して、メタデータの編集および変更ができます。 アセットを Experience Manager にアップロードすると、メタデータは処理されます。 例えば、 [&#x200B; [!DNL Adobe Bridge] でのメタデータの操作](https://helpx.adobe.com/jp/bridge/using/metadata-adobe-bridge.html)を参照し、[!DNL Adobe Exchange] での [&#x200B; [!DNL Adobe Bridge] のタグパネル](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html)を参照してください。
+* アセットを [!DNL Experience Manager] にアップロードする前に、アセットの作成に使用するネイティブアプリケーションまたは他のメタデータ編集アプリケーションを使用して、メタデータの編集および変更ができます。 アセットを Experience Manager にアップロードすると、メタデータは処理されます。 例えば、 [ [!DNL Adobe Bridge] でのメタデータの操作](https://helpx.adobe.com/jp/bridge/using/metadata-adobe-bridge.html)を参照し、[!DNL Adobe Exchange] での [ [!DNL Adobe Bridge] のタグパネル](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html)を参照してください。
 
 * [!DNL Experience Manager Assets] では、[!UICONTROL プロパティ]ページでアセットのメタデータを手動で追加または編集することができます。
 

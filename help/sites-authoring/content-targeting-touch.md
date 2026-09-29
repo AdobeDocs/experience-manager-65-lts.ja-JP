@@ -10,7 +10,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
 exl-id: 650ba9be-6546-46dc-b4ab-ea0b97abff40
-source-git-commit: d49de63985f537da3e6b92dac5233c104b1ccdfe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '5374'
 ht-degree: 93%
@@ -77,7 +94,7 @@ AEM または Adobe Target をターゲティングエンジンとして使用�
 
 さらに、すべての Adobe Target アクティビティの目標と指標を管理し、Adobe Target オーディエンスを管理できます。 A/B テストの勝者の採用を含む、Adobe Target のアクティビティレポートも含まれます。
 
-アクティビティを追加すると、[&#x200B; アクティビティ コンソールにも表示されます。](/help/sites-authoring/activitylib.md)
+アクティビティを追加すると、[ アクティビティ コンソールにも表示されます。](/help/sites-authoring/activitylib.md)
 
 エクスペリエンスを追加する手順は次のとおりです。
 
@@ -85,7 +102,7 @@ AEM または Adobe Target をターゲティングエンジンとして使用�
 
    >[!NOTE]
    >
-   >Adobeでは、[&#x200B; アクティビティコンソールを使用してブランドを作成することをお勧めします。](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console)
+   >Adobeでは、[ アクティビティコンソールを使用してブランドを作成することをお勧めします。](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console)
    >
    >
    >他の方法でブランドを作成する場合は、ノード `/campaigns/<brand>/master` が存在することを確認してください。ノードがなければ、アクティビティを作成しようとするとエラーが発生します。
@@ -180,7 +197,7 @@ AEM または Adobe Target をターゲティングエンジンとして使用�
 
 ### ターゲティングモードを使用したエクスペリエンスの追加と削除 {#adding-and-removing-experiences-using-targeting-mode}
 
-ターゲティングプロセス [の作成ステップ &#x200B;](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings)を使用すると、エクスペリエンスを追加および削除できます。 さらに、エクスペリエンスを複製したり、名前を変更したりすることもできます。
+ターゲティングプロセス [の作成ステップ ](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings)を使用すると、エクスペリエンスを追加および削除できます。 さらに、エクスペリエンスを複製したり、名前を変更したりすることもできます。
 
 #### ターゲティングモードを使用したエクスペリエンスの追加 {#adding-experiences-using-targeting-mode}
 
@@ -257,7 +274,7 @@ AEM または Adobe Target をターゲティングエンジンとして使用�
 
    ![Target](do-not-localize/chlimage_1.png)
 
-   このコンポーネントのコンテンツが、デフォルトエクスペリエンス用のオファーになります。 コンポーネントをターゲット設定すると、各エクスペリエンスについてデフォルトノードがレプリケートされます。 これは、特定のオーサリングエクスペリエンスで、正しいコンテンツノードを編集するために必要です。 これらのデフォルト以外のエクスペリエンスについては、[&#x200B; カスタムオファーを追加](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer)するか、[&#x200B; ライブラリオファーを追加](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)します。
+   このコンポーネントのコンテンツが、デフォルトエクスペリエンス用のオファーになります。 コンポーネントをターゲット設定すると、各エクスペリエンスについてデフォルトノードがレプリケートされます。 これは、特定のオーサリングエクスペリエンスで、正しいコンテンツノードを編集するために必要です。 これらのデフォルト以外のエクスペリエンスについては、[ カスタムオファーを追加](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer)するか、[ ライブラリオファーを追加](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)します。
 
 #### ターゲットコンポーネントを追加してオファーを作成 {#creating-an-offer-by-adding-a-target-component}
 
@@ -305,13 +322,13 @@ Target コンポーネントにドラッグされたコンポーネントは、�
 1. オファーの作成：
 
    * デフォルトエクスペリエンスの場合は、コンポーネントをターゲットドロップ領域にドラッグし、通常どおりにコンポーネントのプロパティを編集して、オファーのコンテンツを作成します。
-   * デフォルト以外のエクスペリエンスの場合は、[&#x200B; カスタムオファーを追加](#adding-a-custom-offer)するか、[&#x200B; ライブラリオファーを追加](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)します。
+   * デフォルト以外のエクスペリエンスの場合は、[ カスタムオファーを追加](#adding-a-custom-offer)するか、[ ライブラリオファーを追加](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)します。
 
 #### カスタムオファーの追加 {#adding-a-custom-offer}
 
 ターゲティングモードでターゲットコンポーネントのコンテンツをオーサリングしてオファーを作成します。 カスタムオファーを作成する場合、そのオファーは単一のエクスペリエンスのオファーとして使用されます。
 
-オファーを他のエクスペリエンスに使用できると判断した場合は、カスタムオファーを作成して[&#x200B; ライブラリに追加できます。](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library) オファーコンソールを使用して再利用可能なオファーを作成する方法について詳しくは、[&#x200B; オファーライブラリにオファーを追加するを参照してください。](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library)
+オファーを他のエクスペリエンスに使用できると判断した場合は、カスタムオファーを作成して[ ライブラリに追加できます。](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library) オファーコンソールを使用して再利用可能なオファーを作成する方法について詳しくは、[ オファーライブラリにオファーを追加するを参照してください。](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library)
 
 1. オファーを追加するエクスペリエンスを選択します。
 1. コンポーネントメニューを表示するには、オファーを追加するターゲットコンポーネントをクリックします。
@@ -369,7 +386,7 @@ Target コンポーネントにドラッグされたコンポーネントは、�
 
 複数のエクスペリエンスのオファーとして再利用する場合、カスタムオファーを[オファーライブラリ](/help/sites-authoring/offerlib.md)に追加します。 ターゲティングする現在のブランドのライブラリにオファーを追加できます。
 
-オファーコンソールを使用して再利用可能なオファーを作成する方法について詳しくは、[&#x200B; オファーライブラリにオファーを追加するを参照してください。](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library)
+オファーコンソールを使用して再利用可能なオファーを作成する方法について詳しくは、[ オファーライブラリにオファーを追加するを参照してください。](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library)
 
 1. エクスペリエンスを選択して、カスタムオファーを表示します。
 1. カスタムオファーをクリックしてオファーメニューを表示し、「**オファーをオファーライブラリに保存**」アイコンをクリックします。
@@ -392,7 +409,7 @@ Target コンポーネントにドラッグされたコンポーネントは、�
 エクスペリエンスからライブラリオファーをターゲットモードで開き、オファーを編集します。 加えた変更は、そのオファーを使用するすべてのエクスペリエンスに表示されます。
 
 1. エクスペリエンスを選択して、ライブラリオファーを表示します。
-1. ライブラリオファーをローカルまたはカスタムオファーに変換します。 [&#x200B; ライブラリオファーのカスタムライブラリへの変換を参照してください。](#converting-a-library-offer-to-a-custom-library)
+1. ライブラリオファーをローカルまたはカスタムオファーに変換します。 [ ライブラリオファーのカスタムライブラリへの変換を参照してください。](#converting-a-library-offer-to-a-custom-library)
 1. オファーのコンテンツを編集します。
 
 1. ライブラリに再度保存します。 [カスタムオファーをライブラリに追加](#adding-a-custom-offer-to-a-library)を参照してください。
@@ -409,7 +426,7 @@ Target コンポーネントにドラッグされたコンポーネントは、�
 
 セグメントに基づいてオーディエンスを定義します。 使用できるセグメントは、ページのクラウド設定によって決まります。 ページが Adobe Target クラウド設定に関連付けられていない場合、AEM セグメントを使用してオーディエンスを定義できます。 ページが Adobe Target クラウド設定に関連付けられている場合、Target セグメントを使用します。
 
-ターゲティングエンジンについて詳しくは、[&#x200B; ターゲティングエンジンを参照してください。](/help/sites-authoring/personalization.md#targeting-engine)
+ターゲティングエンジンについて詳しくは、[ ターゲティングエンジンを参照してください。](/help/sites-authoring/personalization.md#targeting-engine)
 
 オーディエンスを複数のエクスペリエンスで使用しないでください。 既に別のエクスペリエンスにマッピングされているオーディエンスにエクスペリエンスをマッピングすると、そのエクスペリエンスの横に警告シンボルが表示されます。
 
@@ -577,7 +594,7 @@ Adobe Target を使用する場合に目標と設定を指定するには：
 
    すべてのフィールドをクリアする必要がある場合は、右上隅の 3 つのドットをクリックし、「**すべてのフィールドをクリア**」を選択します。
 
-   どの指標にも定義可能な詳細設定があります。 この設定にアクセスするには、「**詳細設定**」を選択します。 前の表で成功指標のカウント方法の定義を参照し、[Adobe Target ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=ja)を参照してください。
+   どの指標にも定義可能な詳細設定があります。 この設定にアクセスするには、「**詳細設定**」を選択します。 前の表で成功指標のカウント方法の定義を参照し、[Adobe Target ドキュメント ](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=ja)を参照してください。
 
    >[!NOTE]
    >
@@ -610,7 +627,7 @@ Adobe Target を使用する場合に目標と設定を指定するには：
 
 * ユーザーのセッションストア内のデータ（Context Hub を使用）。
 * [件のアクティビティがオンです。](/help/sites-authoring/activitylib.md)
-* セグメントを定義する[&#x200B; ルール。](/help/sites-administering/campaign-segmentation.md)
+* セグメントを定義する[ ルール。](/help/sites-administering/campaign-segmentation.md)
 * ターゲットコンポーネント内のエクスペリエンスのコンテンツ。
 * ターゲティングエンジンの[設定。](/help/sites-authoring/activitylib.md)
 
@@ -660,82 +677,82 @@ Target コンポーネントをカスタマイズするには、次の 2 つの�
 
 1. 下の表の説明に従って、ターゲットコンポーネントを設定します。
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>オプション</strong></td>
-   <td><strong>説明</strong></td>
-  </tr>
-  <tr>
-   <td><strong>場所</strong></td>
-   <td><p>場所は、Target コンテンツの場所を識別する文字列であり、オファーを配置するページ上の場所（または位置あるいはコンポーネント）とオファーとを関連付けるために使用されます。</p> <p>このフィールドは汎用値です。</p> <p>オファーをコンポーネント内に配置すると、オファーが場所 ID を記憶します。 ページが実行されると、エンジンがユーザーのセグメントを評価し、その評価に基づいて、アクティブなキャンペーンから表示すべきエクスペリエンスを選択します。 次に、ページ上の場所 ID を確認し、それらの場所 ID を持つオファーの照合を試みます。</p> </td>
-  </tr>
-  <tr>
-   <td><strong>エンジン</strong></td>
-   <td>使用したいエンジンに応じて、「<strong>クライアントサイドのルール（トラッキングなし）」、「Adobe Target」、「ContextHub」</strong>、<strong>「Adobe Campaign」</strong>から選択します。</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>オプション</strong></td>
+      <td><strong>説明</strong></td>
+   </tr>
+   <tr>
+      <td><strong>場所</strong></td>
+      <td><p>場所は、Target コンテンツの場所を識別する文字列であり、オファーを配置するページ上の場所（または位置あるいはコンポーネント）とオファーとを関連付けるために使用されます。</p> <p>このフィールドは汎用値です。</p> <p>オファーをコンポーネント内に配置すると、オファーが場所 ID を記憶します。 ページが実行されると、エンジンがユーザーのセグメントを評価し、その評価に基づいて、アクティブなキャンペーンから表示すべきエクスペリエンスを選択します。 次に、ページ上の場所 ID を確認し、それらの場所 ID を持つオファーの照合を試みます。</p> </td>
+   </tr>
+   <tr>
+      <td><strong>エンジン</strong></td>
+      <td>使用したいエンジンに応じて、「<strong>クライアントサイドのルール（トラッキングなし）」、「Adobe Target」、「ContextHub」</strong>、<strong>「Adobe Campaign」</strong>から選択します。</td>
+   </tr>
+   </tbody>
+   </table>
 
-エンジンとして Adobe Target を選択した場合：
+   エンジンとして Adobe Target を選択した場合：
 
-![chlimage_1-39](assets/chlimage_1-39.png)
+   ![chlimage_1-39](assets/chlimage_1-39.png)
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>オプション</strong></td>
-   <td><strong>説明</strong></td>
-  </tr>
-  <tr>
-   <td><strong>正確なターゲティング</strong></td>
-   <td><p>正確なターゲティングを有効にすると、リクエストを Adobe Target に送信する前に、クライアントコンテキストまたはコンテキストハブデータが利用可能になるまで待機するように、コンポーネントに指示します。 読み込み時間が長くなる場合があります。 オーサリング時は、正確なターゲティングは常に有効になっています。</p> <p>「<strong>正確なターゲティング</strong>」チェックボックスをオンにした場合、mbox はまず <code>mboxDefine</code> を実行し、後で <code>mboxUpdate</code> を実行するので、データが利用可能になった時点で Ajax リクエストが送信されます。</p> <p>「<strong>正確なターゲティング</strong>」チェックボックスをオフにした場合、mbox は <code>mboxCreate</code> を実行するので、直ちに同期リクエストが行われます（この場合、必ずしもすべてのコンテクストデータがまだ利用可能になっていないことがあります）。</p> <p><strong>メモ：</strong>特定のコンポーネントで「正確なターゲティング」を有効または無効にしても、グローバル設定には影響しません。 コンポーネントで「正確なターゲティング」を有効にすれば、その設定が常にグローバル設定よりも優先されます。</p> </td>
-  </tr>
-  <tr>
-   <td><strong>解決されたセグメントを含める</strong></td>
-   <td><p>このチェックボックスをオンにすると、mbox 呼び出しにすべての解決されたセグメントが含められ、すべての設定済みパラメーターがページおよびフレームワークに含められます。</p> <p>これは、AEM セグメントを同期している XML API を使用する状況でのみ機能します。 AEM で Adobe Target によって処理されないセグメント（スクリプトセグメントなど）がある場合、このオプションを使用すると、AEM でセグメントを解決し、セグメントがアクティブであるという情報を Adobe Target に送信できます。</p> </td>
-  </tr>
-  <tr>
-   <td><strong>継承されたコンテキストパラメーター</strong></td>
-   <td>選択したページに関連付けられている、Adobe Target フレームワークから継承されたコンテキストパラメーターがあれば、一覧表示します。</td>
-  </tr>
-  <tr>
-   <td><strong>コンテキストパラメーター</strong></td>
-   <td>追加のコンテキストパラメーター（Target フレームワークで使用可能なものと同じ）を設定するには、「<strong>フィールドを追加</strong>」をクリックします。 コンポーネントに追加されたコンテクストパラメーターは、そのコンポーネントに<i>のみ</i>適用されます。フレームワークに直接コンテクストパラメーターを追加した場合とは異なり、他のコンポーネントには適用されません。</td>
-  </tr>
-  <tr>
-   <td><strong>静的パラメーター</strong></td>
-   <td>追加の静的パラメーター（Target フレームワークで使用可能なものと同じ）を設定するには、「<strong>フィールドを追加</strong>」をクリックします。 コンポーネントに追加された静的パラメーターは、そのコンポーネントに<i>のみ</i>適用されます。フレームワークに直接静的パラメーターを追加した場合とは異なり、他のコンポーネントには適用されません。 静的パラメーターは、コンテキスト（ContextHub または ClientContext）からは得られません。</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>オプション</strong></td>
+      <td><strong>説明</strong></td>
+   </tr>
+   <tr>
+      <td><strong>正確なターゲティング</strong></td>
+      <td><p>正確なターゲティングを有効にすると、リクエストを Adobe Target に送信する前に、クライアントコンテキストまたはコンテキストハブデータが利用可能になるまで待機するように、コンポーネントに指示します。 読み込み時間が長くなる場合があります。 オーサリング時は、正確なターゲティングは常に有効になっています。</p> <p>「<strong>正確なターゲティング</strong>」チェックボックスをオンにした場合、mbox はまず <code>mboxDefine</code> を実行し、後で <code>mboxUpdate</code> を実行するので、データが利用可能になった時点で Ajax リクエストが送信されます。</p> <p>「<strong>正確なターゲティング</strong>」チェックボックスをオフにした場合、mbox は <code>mboxCreate</code> を実行するので、直ちに同期リクエストが行われます（この場合、必ずしもすべてのコンテクストデータがまだ利用可能になっていないことがあります）。</p> <p><strong>メモ：</strong>特定のコンポーネントで「正確なターゲティング」を有効または無効にしても、グローバル設定には影響しません。 コンポーネントで「正確なターゲティング」を有効にすれば、その設定が常にグローバル設定よりも優先されます。</p> </td>
+   </tr>
+   <tr>
+      <td><strong>解決されたセグメントを含める</strong></td>
+      <td><p>このチェックボックスをオンにすると、mbox 呼び出しにすべての解決されたセグメントが含められ、すべての設定済みパラメーターがページおよびフレームワークに含められます。</p> <p>これは、AEM セグメントを同期している XML API を使用する状況でのみ機能します。 AEM で Adobe Target によって処理されないセグメント（スクリプトセグメントなど）がある場合、このオプションを使用すると、AEM でセグメントを解決し、セグメントがアクティブであるという情報を Adobe Target に送信できます。</p> </td>
+   </tr>
+   <tr>
+      <td><strong>継承されたコンテキストパラメーター</strong></td>
+      <td>選択したページに関連付けられている、Adobe Target フレームワークから継承されたコンテキストパラメーターがあれば、一覧表示します。</td>
+   </tr>
+   <tr>
+      <td><strong>コンテキストパラメーター</strong></td>
+      <td>追加のコンテキストパラメーター（Target フレームワークで使用可能なものと同じ）を設定するには、「<strong>フィールドを追加</strong>」をクリックします。 コンポーネントに追加されたコンテクストパラメーターは、そのコンポーネントに<i>のみ</i>適用されます。フレームワークに直接コンテクストパラメーターを追加した場合とは異なり、他のコンポーネントには適用されません。</td>
+   </tr>
+   <tr>
+      <td><strong>静的パラメーター</strong></td>
+      <td>追加の静的パラメーター（Target フレームワークで使用可能なものと同じ）を設定するには、「<strong>フィールドを追加</strong>」をクリックします。 コンポーネントに追加された静的パラメーターは、そのコンポーネントに<i>のみ</i>適用されます。フレームワークに直接静的パラメーターを追加した場合とは異なり、他のコンポーネントには適用されません。 静的パラメーターは、コンテキスト（ContextHub または ClientContext）からは得られません。</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->コンポーネントを選択してターゲットに設定可能にすると、AEM もコンポーネントを置き換え、Adobe Target コンポーネントを挿入します。 Adobe Target コンポーネントは、ページに手動で追加する場合だけでなく、既存のコンポーネントをターゲットにする場合にも使用されます。
+   >[!NOTE]
+   >
+   >コンポーネントを選択してターゲットに設定可能にすると、AEM もコンポーネントを置き換え、Adobe Target コンポーネントを挿入します。 Adobe Target コンポーネントは、ページに手動で追加する場合だけでなく、既存のコンポーネントをターゲットにする場合にも使用されます。
 
-エンジンとして ClientContext（クライアント側）を選択した場合：
+   エンジンとして ClientContext（クライアント側）を選択した場合：
 
-![chlimage_1-40](assets/chlimage_1-40.png)
+   ![chlimage_1-40](assets/chlimage_1-40.png)
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>オプション</strong></td>
-   <td><strong>説明</strong></td>
-  </tr>
-  <tr>
-   <td><strong>クライアントサイドのオプション - 戦略</strong></td>
-   <td><p>次のいずれかを選択します。</p>
-    <ul>
-     <li><strong>第 1</strong>：キャンペーン内で順に並べられたリスト内の最上位のエクスペリエンス。</li>
-     <li><strong>ランダム</strong>：任意のエクスペリエンスが使用されます。</li>
-     <li><strong>クリックストリームのスコア</strong>：ClientContext で追跡されるタグおよび関連タグのヒットが使用されます。 ティーザーページに定義されている複数のタグのヒット率が比較されます。</li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>オプション</strong></td>
+      <td><strong>説明</strong></td>
+   </tr>
+   <tr>
+      <td><strong>クライアントサイドのオプション - 戦略</strong></td>
+      <td><p>次のいずれかを選択します。</p>
+      <ul>
+      <li><strong>第 1</strong>：キャンペーン内で順に並べられたリスト内の最上位のエクスペリエンス。</li>
+      <li><strong>ランダム</strong>：任意のエクスペリエンスが使用されます。</li>
+      <li><strong>クリックストリームのスコア</strong>：ClientContext で追跡されるタグおよび関連タグのヒットが使用されます。 ティーザーページに定義されている複数のタグのヒット率が比較されます。</li>
+      </ul> </td>
+   </tr>
+   </tbody>
+   </table>
 
-AEM と Adobe Campaign を統合している場合は、**Adobe Campaign** をエンジンとして選択します。 詳しくは、[AEM と Adobe Campaign の統合](/help/sites-administering/campaign.md)を参照してください。
+   AEM と Adobe Campaign を統合している場合は、**Adobe Campaign** をエンジンとして選択します。 詳しくは、[AEM と Adobe Campaign の統合](/help/sites-administering/campaign.md)を参照してください。
 
-ターゲティングに ContextHub を使用する場合は、**ContextHub** をエンジンとして選択します。 詳しくは、[ContextHub の設定](/help/sites-developing/ch-configuring.md)を参照してください。
+   ターゲティングに ContextHub を使用する場合は、**ContextHub** をエンジンとして選択します。 詳しくは、[ContextHub の設定](/help/sites-developing/ch-configuring.md)を参照してください。
