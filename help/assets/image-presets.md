@@ -9,24 +9,38 @@ feature: Image Presets
 role: User,Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: f4d3a5f1-9348-433f-9c9f-84075a7ab912
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: a16e03b7-8456-4383-8860-31ab5ab00e9e
+    internal-label: Image presets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '346'
 ht-degree: 100%
-
 ---
-
 # Dynamic Media 画像プリセットの適用 {#applying-image-presets}
 
-画像プリセットを使用すると、アセットは異なるサイズ、異なる形式、または動的に生成された他の画像プロパティで、画像を動的に配信できます。画像を書き出す際に、プリセットを選択できます。プリセットでは、管理者が指定した仕様に合わせて画像が再フォーマットされます。
+画像プリセットを使用すると、アセットは異なるサイズ、異なる形式、または動的に生成された他の画像プロパティで、画像を動的に配信できます。 画像を書き出す際に、プリセットを選択できます。 プリセットでは、管理者が指定した仕様に合わせて画像が再フォーマットされます。
 
 さらに、レスポンシブな画像プリセットを選択することもできます（画像プリセットを選択したら「**[!UICONTROL RESS]**」ボタンを使用して指定します）。
 
-この節では、画像プリセットの使用方法を説明します。[画像プリセットの作成と設定は管理者が行うことができます](managing-image-presets.md)。
+この節では、画像プリセットの使用方法を説明します。 [画像プリセットの作成と設定は管理者が行うことができます](managing-image-presets.md)。
 
 >[!NOTE]
 >
->スマートイメージングは、既存の画像プリセットで機能し、配信の直前にインテリジェンスを使用して、ブラウザーまたはネットワークの接続速度に基づいて画像のファイルサイズをさらに低減します。詳しくは、[スマートイメージング](imaging-faq.md)を参照してください。
+>スマートイメージングは、既存の画像プリセットで機能し、配信の直前にインテリジェンスを使用して、ブラウザーまたはネットワークの接続速度に基づいて画像のファイルサイズをさらに低減します。 詳しくは、[スマートイメージング](imaging-faq.md)を参照してください。
 
 作成者は画像をプレビューするときに、いつでも画像プリセットを適用できます。
 
@@ -40,9 +54,9 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >* 静的レンディションはウィンドウの上半分に表示されます。動的レンディションは下半分に表示されます。動的レンディションのみの場合は、URL を使用して画像を表示できます。「**[!UICONTROL URL]**」ボタンは、動的レンディションを選択した場合にのみ表示されます。「**[!UICONTROL RESS]**」ボタンは、レスポンシブ画像プリセットを選択した場合にのみ表示されます。
+   >* 静的レンディションはウィンドウの上半分に表示されます。 動的レンディションは下半分に表示されます。 動的レンディションのみの場合は、URL を使用して画像を表示できます。 「**[!UICONTROL URL]**」ボタンは、動的レンディションを選択した場合にのみ表示されます。 「**[!UICONTROL RESS]**」ボタンは、レスポンシブ画像プリセットを選択した場合にのみ表示されます。
    >
-   >* アセットの詳細表示で「**[!UICONTROL レンディション]**」を選択すると、多数のレンディションがシステムによって表示されます。表示されるプリセットの数を増やすことができます。[表示される画像プリセットの数の増加](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display)を参照してください。
+   >* アセットの詳細表示で「**[!UICONTROL レンディション]**」を選択すると、多数のレンディションがシステムによって表示されます。 表示されるプリセットの数を増やすことができます。 [表示される画像プリセットの数の増加](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display)を参照してください。
 
    ![chlimage_1-208](assets/chlimage_1-208.png)
 
