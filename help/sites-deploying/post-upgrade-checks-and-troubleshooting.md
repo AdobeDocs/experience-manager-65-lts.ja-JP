@@ -10,13 +10,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8b3d8d0f-10f7-4736-881d-8f1f21c69182
-source-git-commit: 76bd0f170b06a3f930d504b680342c954daae460
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1382'
 ht-degree: 69%
-
 ---
-
 # アップグレード後のチェックおよびトラブルシューティング{#post-upgrade-checks-and-troubleshooting}
 
 ## アップグレード後のチェック {#post-upgrade-checks}
@@ -89,7 +98,7 @@ MongoMK または新しい TarMK セグメント形式を使用する場合は�
 
 ### レプリケーションエージェントの有効化 {#enable-replication-agents}
 
-パブリッシュ環境を完全にアップグレードして検証したら、オーサー環境でレプリケーションエージェントを有効にします。 エージェントがそれぞれのパブリッシュインスタンスに接続できることを確認します。 イベントの順序について詳しくは、[&#x200B; アップグレード手順](/help/sites-deploying/upgrade-procedure.md)を参照してください。
+パブリッシュ環境を完全にアップグレードして検証したら、オーサー環境でレプリケーションエージェントを有効にします。 エージェントがそれぞれのパブリッシュインスタンスに接続できることを確認します。 イベントの順序について詳しくは、[ アップグレード手順](/help/sites-deploying/upgrade-procedure.md)を参照してください。
 
 ### スケジュール済みカスタムジョブの有効化 {#enable-custom-scheduled-jobs}
 
@@ -99,7 +108,7 @@ MongoMK または新しい TarMK セグメント形式を使用する場合は�
 
 >[!IMPORTANT]
 >
->AEM 6.5 LTS サービスパックのインストールは、技術的には[完全なインプレースアップグレード &#x200B;](/help/sites-deploying/in-place-upgrade.md)です（更新が適用される前に、AEM クイックスタート jarが完全に置き換えられます）。 そのため、インプレースアップグレード中に実行される標準のアップグレード前クリーンアップタスクも、サービスパックの適用時に実行されるようになりました。
+>AEM 6.5 LTS サービスパックのインストールは、技術的には[完全なインプレースアップグレード ](/help/sites-deploying/in-place-upgrade.md)です（更新が適用される前に、AEM クイックスタート jarが完全に置き換えられます）。 そのため、インプレースアップグレード中に実行される標準のアップグレード前クリーンアップタスクも、サービスパックの適用時に実行されるようになりました。
 
 これらのタスクの1つは、古い`install` フォルダー（`install`、および`/libs`の下のどこかに見つかった`install.author`や`install.publish`などの実行モードのバリエーション）を削除して、古いバンドルや構成が再インストールされないようにします。 ソリューションが独自のOSGi バンドルまたは構成を`/libs`の下の`install` フォルダーに保持するアドオンに依存している場合、そのフォルダーは、過去にサービスパックのアップグレードで確認されなかった場合でも、サービスパックの適用の一環として削除できます。
 
@@ -110,7 +119,7 @@ MongoMK または新しい TarMK セグメント形式を使用する場合は�
 
 ### テスト計画の実行 {#execute-test-plan}
 
-「**テスト手順**」セクション [&#128279;](/help/sites-deploying/upgrading-code-and-customizations.md#testing-procedure-testing-procedure)の「 コードとカスタマイズのアップグレード」で定義されている詳細なテストプランを実行します。
+「**テスト手順**」セクション ](/help/sites-deploying/upgrading-code-and-customizations.md#testing-procedure-testing-procedure)の「[ コードとカスタマイズのアップグレード」で定義されている詳細なテストプランを実行します。
 
 ## アップグレードに関する問題の分析 {#analyzing-issues-with-the-upgrade}
 

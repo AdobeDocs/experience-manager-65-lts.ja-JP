@@ -1,19 +1,34 @@
 ---
-title: 処理中のレポートのカスタムレポート
+title: プロセスレポートのカスタムレポート
 description: カスタムレポートを作成し、これらのレポートを JEE プロセスレポート UI 上の AEM Forms に追加できます。
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 5670fede-4567-445e-8eeb-84349405db0e
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 98%
-
 ---
-
-# 処理中のレポートのカスタムレポート{#custom-reports-in-process-reporting}
+# プロセスレポートのカスタムレポート{#custom-reports-in-process-reporting}
 
 QueryBuilder の REST インターフェイスを使用するか、QueryBuilder API を使用して OSGi サービスを作成して、カスタムレポートを作成できます。
 
@@ -22,13 +37,13 @@ QueryBuilder の REST インターフェイスを使用するか、QueryBuilder 
 カスタムレポートを追加する前に、次のテンプレート手順を実行します。
 
 1. カスタムレポートで使用するデータは、プロセスレポートで使用可能である必要があります。 データを確実に利用できるようにするには、cron ジョブをスケジュールするか、プロセスレポート UIで&#x200B;**同期** オプションを使用します。
-1. URL リクエスト（目的のクエリをカプセル化）は、適切なクエリ結果オブジェクトを返す必要があります。 クエリを作成するには、[QueryBuilder](/help/sites-developing/querybuilder-api.md) の REST インターフェイスを使用して、QueryBuilder API を使用して OSGi サービスを作成します。 動的クエリや静的クエリを作成できます。
+1. URL リクエスト（目的のクエリを含む）は、適切なクエリ結果オブジェクトを返す必要があります。 クエリを作成するには、[QueryBuilder](/help/sites-developing/querybuilder-api.md) の REST インターフェイスを使用して、QueryBuilder API を使用して OSGi サービスを作成します。 動的クエリや静的クエリを作成できます。
 
 1. 結果を表示するカスタムユーザーインターフェイスを作成します。 スタンドアロンのユーザーインターフェイスを作成したり、結果を既存のプロセスレポート UI と統合したりできます。
 
 ## QueryBuilder の REST インターフェイスの使用 {#using-the-rest-interface-of-the-querybuilder}
 
-CRX QueryBuilder REST インターフェイスは、Java API と REST API を介してアセット共有 QueryBuilder の機能を表示します。 次の手順を実行する前に [CRX QueryBuilder REST インターフェイス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=ja)の使用方法を学びます。
+CRX QueryBuilder REST インターフェイスは、Java API と REST API を介してアセット共有 QueryBuilder の機能を公開します。 次の手順を実行する前に [CRX QueryBuilder REST インターフェイス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=ja)の使用方法を学びます。
 
 1. URL `https://'[server]:[port]'/lc/bin/querybuilder.json` を参照
 1. プロセスレポートのストレージノード構造とノードプロパティに基づいてクエリを作成します。
@@ -41,7 +56,7 @@ CRX QueryBuilder REST インターフェイスは、Java API と REST API を介
 
    >[!NOTE]
    >
-   >すべてのクエリで、パスパラメーターは crx ストレージの場所を指し、文字は URL 標準に従ってエスケープされます。
+   >すべてのクエリで、パスパラメーターは CRX ストレージの場所を指し、文字は URL 標準に従ってエスケープされます。
 
 ## QueryBuilder API を使用したサービスの作成  {#creating-a-service-using-query-builder-api-nbsp}
 
@@ -424,7 +439,7 @@ public class PeriodicProcessVolume {
 
 1. `/apps` ノードに CRX ノードを作成し、適切なアクセス権限を付与します。 （PERM_PROCESS_REPORTING_USER）
 1. `/content` ノードにレンダラーを定義します。
-1. 手順 1 で作成した HTML に JSP ファイルまたはノードファイルを追加します。 また、CSS ファイルを追加することもできます。
+1. 手順 1 で作成したノードに JSP ファイルまたは HTML ファイルを追加します。 また、CSS ファイルを追加することもできます。
 
    ![JSP ファイルと CSS ファイルを含むサンプルノード](assets/nodewith_jsp_css_new.png)
 

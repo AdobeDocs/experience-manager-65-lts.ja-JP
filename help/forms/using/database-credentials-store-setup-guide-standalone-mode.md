@@ -5,13 +5,21 @@ solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
 exl-id: f6e29287-a558-43ad-8465-ebf167c79c63
-source-git-commit: b4abf61e0d30396e78ecebf228114ad2bde30633
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '844'
 ht-degree: 2%
-
 ---
-
 # データベース資格情報ストア設定ガイド （スタンドアロンモード）
 
 ## 概要
@@ -44,11 +52,11 @@ ht-degree: 2%
    - スクリプトは`embed-server`を使用しています。サーバーを停止する必要があります
    - JBossが実行されている場合、スクリプトは失敗します
    - JBossが実行されているかどうかを確認します。
-      - Windows: `java.exe` プロセスのタスク マネージャーを確認してください
-      - Linux: `ps aux | grep jboss`または`ps aux | grep java`
+     - Windows: `java.exe` プロセスのタスク マネージャーを確認してください
+     - Linux: `ps aux | grep jboss`または`ps aux | grep java`
    - 実行中の場合はJBossを停止します。
-      - JBossが実行されているターミナルで`Ctrl+C`を押します
-      - あるいは手作業でプロセスを終了させたり
+     - JBossが実行されているターミナルで`Ctrl+C`を押します
+     - あるいは手作業でプロセスを終了させたり
 
 2. **データベースのパスワードを準備しました**
 
@@ -69,7 +77,7 @@ ht-degree: 2%
 
 **スクリプト：** `create-elytron-cred-standalone.bat`
 
-`create-elytron-cred-standalone.bat` ソフトウェア配布ポータル [から](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip) スクリプトをダウンロードします。
+[ ソフトウェア配布ポータル ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip)から`create-elytron-cred-standalone.bat` スクリプトをダウンロードします。
 
 **次のプロンプトが表示されます：**
 1. **JBOSS_HOME パス** （例：`C:\Adobe\Adobe_Experience_Manager_Forms\jboss`）
@@ -82,10 +90,10 @@ ht-degree: 2%
 - 次の場所に資格情報ストアを作成します：`JBOSS_HOME\standalone\configuration\cred-store.p12`
 - 設定ファイルを一時的に変更して、資格情報ストアの作成を有効にします
 - データベースのパスワードに次のエイリアスを追加します。
-   - `EncryptDBPassword`
-   - `EncryptDBPassword_IDP_DS`
-   - `EncryptDBPassword_EDC_DS`
-   - `EncryptDBPassword_AEM_DS`
+  - `EncryptDBPassword`
+  - `EncryptDBPassword_IDP_DS`
+  - `EncryptDBPassword_EDC_DS`
+  - `EncryptDBPassword_AEM_DS`
 - 設定ファイルを元の状態に戻します
 - すべてのエイリアスが正常に追加されたことを確認します
 
@@ -93,7 +101,7 @@ ht-degree: 2%
 
 **スクリプト** `create-elytron-cred-standalone.sh`
 
-`create-elytron-cred-standalone.sh` ソフトウェア配布ポータル [から](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip) スクリプトをダウンロードします。
+[ ソフトウェア配布ポータル ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip)から`create-elytron-cred-standalone.sh` スクリプトをダウンロードします。
 
 **次のプロンプトが表示されます：**
 
@@ -107,10 +115,10 @@ ht-degree: 2%
 - 次の場所に資格情報ストアを作成します：`JBOSS_HOME/standalone/configuration/cred-store.p12`
 - 設定ファイルを一時的に変更して、資格情報ストアの作成を有効にします
 - データベースのパスワードに次のエイリアスを追加します。
-   - `EncryptDBPassword`
-   - `EncryptDBPassword_IDP_DS`
-   - `EncryptDBPassword_EDC_DS`
-   - `EncryptDBPassword_AEM_DS`
+  - `EncryptDBPassword`
+  - `EncryptDBPassword_IDP_DS`
+  - `EncryptDBPassword_EDC_DS`
+  - `EncryptDBPassword_AEM_DS`
 - 設定ファイルを元の状態に戻します
 - すべてのエイリアスが正常に追加されたことを確認します
 

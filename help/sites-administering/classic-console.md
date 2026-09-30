@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 4d4c96ea-b7dd-49b9-86b5-2507e7518ba4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 99%
-
+source-wordcount: '905'
+ht-degree: 94%
 ---
-
 # クラシック UI のタグ付けコンソール{#classic-ui-tagging-console}
 
 この節では、クラシック UI のタグ付けコンソールについて説明します。
@@ -29,7 +38,7 @@ ht-degree: 99%
 
 * オーサー環境で
 * 管理者権限でログインします
-* コンソールを参照します
+* コンソールを参照
 例：[https://localhost:4502/tagging](https://localhost:4502/tagging)
 
 ![クラシックコンソールウィンドウ](assets/managing_tags_usingthetagasministrationconsole.png)
@@ -49,18 +58,19 @@ ht-degree: 99%
 1. どちらの場合も、次のように入力します。
 
    * **タイトル**
-（*必須*）タグの表示タイトル。どのような文字でも入力できますが、以下の特殊文字は使用しないことが推奨されます。
+     （*必須*） タグの表示タイトル。 どんなキャラクターでも入力できますが，
+     次の特殊文字は使用しないことをお勧めします。
 
-      * `colon (:)` - 名前空間区切り文字
-      * `forward slash (/)` - サブタグ区切り文字
+     * `colon (:)` - 名前空間区切り文字
+     * `forward slash (/)` - サブタグ区切り文字
 
      これらの文字は入力しても表示されません。
 
-   * **名前**
-（*必須*）タグのノード名。
+   * **名**
+     （*必須*） タグのノード名。
 
    * **説明**
-（*オプション*）タグの説明。
+     （*オプション*） タグの説明。
 
    * 「**作成**」を選択します
 
@@ -109,23 +119,23 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->作成者はタグの移動やタグ ID の名前の変更は行わないでください。必要に応じて、[タグのタイトルの変更](#editing-tags)のみを行ってください。
+>作成者はタグの移動やタグ ID の名前の変更は行わないでください。 必要に応じて、[タグのタイトルの変更](#editing-tags)のみを行ってください。
 
 ## タグの統合 {#merging-tags}
 
-タグのマージは、分類が重複する場合に使用できます。タグ A がタグ B にマージされると、タグ A が付けられたすべてのページにタグ B が付けられ、作成者はタグ A を使用できなくなります。
+タグのマージは、分類が重複する場合に使用できます。 タグ A がタグ B に結合されると、タグ A が付けられたすべてのページにタグ B が付けられ、作成者はタグ A を使用できなくなります。
 
-タグを別のタグにマージするには：
+タグを別のタグに結合するには：
 
 1. **タグ付け**&#x200B;コンソールを開きます。
-1. タグを選択して、最上部のツールバー（またはコンテキストメニュー）で「**統合**」をクリックします。
-1. **タグを統合**&#x200B;ダイアログで次の項目を定義します。
+1. タグを選択して、最上部のツールバー（またはコンテキストメニュー）で「**結合**」をクリックします。
+1. **タグを結合**&#x200B;ダイアログで次の項目を定義します。
 
    * **対象**：統合先のノード。
 
-1. 「**統合**」をクリックします。
+1. 「**結合**」をクリックします。
 
-**タグを統合**&#x200B;ダイアログは次のようになります。
+**タグを結合**&#x200B;ダイアログは次のようになります。
 
 ![タグの統合](assets/mergetag.png)
 
@@ -138,7 +148,7 @@ ht-degree: 99%
 
 ## 他の言語でのタグの管理 {#managing-tags-in-different-languages}
 
-タグのオプションの `title` プロパティは複数の言語に翻訳できます。したがって、タグの `titles` はユーザー言語またはページ言語にもとづいて表示できます。
+タグのオプションの `title` プロパティは複数の言語に翻訳できます。 したがって、タグの `titles` はユーザー言語またはページ言語にもとづいて表示できます。
 
 ### 複数言語でのタグタイトルの定義 {#defining-tag-titles-in-multiple-languages}
 
@@ -164,7 +174,7 @@ ht-degree: 99%
 
 ### 指定した言語でのページプロパティにおけるタグタイトルの表示 {#displaying-tag-titles-in-page-properties-in-a-specified-language}
 
-デフォルトでは、ページプロパティで設定したタグの `titles` はページ言語に基づいて表示されます。ページプロパティ内のタグダイアログには、タグの `titles` を異なる言語で表示するための言語フィールドがあります。フランス語でタグの `titles` を表示する方法を次に示します。
+デフォルトでは、ページプロパティで設定したタグの `titles` はページ言語に基づいて表示されます。 ページプロパティ内のタグダイアログには、タグの `titles` を異なる言語で表示するための言語フィールドがあります。 フランス語でタグの `titles` を表示する方法を次に示します。
 
 1. 前の節を参照して、**タグ**／**フォトグラフィー**&#x200B;の **Animals** にフランス語の翻訳を追加します。
 1. **Geometrixx** サイトの英語分岐で、**Products** ページのページプロパティを開きます。
@@ -177,7 +187,7 @@ ht-degree: 99%
 
 デフォルトでは、ページのプロパティダイアログにはページ言語にもとづいたタグの `titles` が表示されます。
 
-ページ言語が有効な場合、タグの言語はページ言語から取得されます。[`tag`Widget](/help/sites-developing/building.md#tagging-on-the-client-side) が他のケース（フォームやダイアログボックス内など）で使われる場合、タグの言語はコンテキストに依存します。
+ページ言語が有効な場合、タグの言語はページ言語から取得されます。 [`tag`Widget](/help/sites-developing/building.md#tagging-on-the-client-side) が他のケース（フォームやダイアログボックス内など）で使われる場合、タグの言語はコンテキストに依存します。
 
 >[!NOTE]
 >

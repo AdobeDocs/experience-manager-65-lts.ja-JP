@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7fd478a6-ddc6-4c7f-b09b-e4de6ec0e897
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1091'
 ht-degree: 100%
-
 ---
-
 # AEM の開発 - ガイドラインとベストプラクティス{#aem-development-guidelines-and-best-practices}
 
 ## テンプレートとコンポーネントの使用に関するガイドライン {#guidelines-for-using-templates-and-components}
@@ -63,21 +72,21 @@ Web サイト、または一連の web サイト（グローバル企業の支�
 
   これには、コンポーネント定義のオーバーレイが含まれます。
 
-   * 既存のコンポーネントをコピーすることにより、`/apps/<website-name>/components/<MyComponent>` にコンポーネントフォルダーを作成します。
+  * 既存のコンポーネントをコピーすることにより、`/apps/<website-name>/components/<MyComponent>` にコンポーネントフォルダーを作成します。
 
-      * 例えば、テキストコンポーネントをカスタマイズするには、次のようにコピーします。
+    * 例えば、テキストコンポーネントをカスタマイズするには、次のようにコピーします。
 
-         * コピー元：`/libs/foundation/components/text`
-         * コピー先：`/apps/myProject/components/text`
+      * コピー元：`/libs/foundation/components/text`
+      * コピー先：`/apps/myProject/components/text`
 
 * [エラーハンドラーによって表示されるページをカスタマイズ](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler)
 
   この場合、サーブレットのオーバーレイを含みます。
 
-   * リポジトリで、1 つ以上のデフォルトスクリプトをコピーします。
+  * リポジトリで、1 つ以上のデフォルトスクリプトをコピーします。
 
-      * コピー元：`/libs/sling/servlet/errorhandler/`
-      * コピー先：`/apps/sling/servlet/errorhandler/`
+    * コピー元：`/libs/sling/servlet/errorhandler/`
+    * コピー先：`/apps/sling/servlet/errorhandler/`
 
 >[!CAUTION]
 >

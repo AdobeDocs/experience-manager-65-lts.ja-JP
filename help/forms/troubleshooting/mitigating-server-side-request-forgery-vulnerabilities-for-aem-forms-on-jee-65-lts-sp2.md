@@ -5,20 +5,28 @@ solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
 exl-id: 7c4a9e12-3b8f-4d6a-9f1e-2a5c8d7e6b04
-source-git-commit: 1d825cd821609504c5e2cff7f7002bf3afe30434
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 30%
-
 ---
-
 # JEE 6.5 LTS SP2上のAEM Formsのサーバーサイド要求フォージェリー（SSRF）の脆弱性を軽減する
 
 ## クイックリファレンス {#quick-reference}
 
 | 影響レベル | 影響を受けるバージョン | アクションの提案 |
 | --- | --- | --- |
-| 重大 | JEE 6.5 LTS サービスパック 2 （6.5 LTS SP2）上のAEM Forms | 手動で[&#x200B; ホットフィックス &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-edcserver-jboss.ear)をインストールする |
+| 重大 | JEE 6.5 LTS サービスパック 2 （6.5 LTS SP2）上のAEM Forms | 手動で[ ホットフィックス ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-edcserver-jboss.ear)をインストールする |
 | 影響なし | AEM Forms on OSGi、Workbench、Cloud Service | アクションは必要ありません |
 
 **対処された脆弱性：**

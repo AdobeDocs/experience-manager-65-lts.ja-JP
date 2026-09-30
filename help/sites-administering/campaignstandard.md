@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: fbc73503-efa3-480b-bdc6-9f997c3f3474
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1824'
 ht-degree: 97%
-
 ---
-
 # AEM 6.5 と Adobe Campaign Standard の統合 {#integrating-with-adobe-campaign-standard}
 
 AEM 6.5 を Adobe Campaign Standard（ACS）と統合すると、メール配信、コンテンツ、フォームを AEM で直接管理できます。 ソリューション間の双方向通信を有効にするには、Adobe Campaign Standard と AEM の両方で設定手順が必要です。
@@ -44,7 +53,7 @@ AEM と Adobe Campaign Standard 間の統合を設定するには、両方のソ
 ## 前提条件 {#prerequisites}
 
 * Adobe Campaign Standard への管理者アクセス
-   * Adobe Campaign Standard のセットアップおよび設定方法について詳しくは、[Adobe Campaign Standard ドキュメント](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=ja)を参照してください。
+  * Adobe Campaign Standard のセットアップおよび設定方法について詳しくは、[Adobe Campaign Standard ドキュメント](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=ja)を参照してください。
 * AEM への管理者アクセス
 
 ## Campaign で aemserver ユーザーを設定 {#aemserver-user}
@@ -65,7 +74,7 @@ Adobe Campaign Standard には、AEM が Adobe Campaign に接続する際に使
 
 `aemserver` ユーザーに、AEM が Adobe Campaign と通信するために必要な権限が付与されました。
 
-ただし、AEMが `aemserver` ユーザーを使用する前に、そのパスワードを設定する必要があります。 これは、Adobe Campaign では実行することができません。 この作業は、アドビのサポートエンジニアが行う必要があります。 [アドビカスタマーケアでチケットを発行](https://experienceleague.adobe.com/ja?lang=ja&support-tab=home#support)して、`aemserver` パスワードのリセットをリクエストします。 パスワードをアドビカスタマーケアから取得したら、安全な場所に保管します。
+ただし、AEMが `aemserver` ユーザーを使用する前に、そのパスワードを設定する必要があります。 これは、Adobe Campaign では実行することができません。 この作業は、アドビのサポートエンジニアが行う必要があります。 [アドビカスタマーケアでチケットを発行](https://experienceleague.adobe.com/?lang=ja&support-tab=home#support)して、`aemserver` パスワードのリセットをリクエストします。 パスワードをアドビカスタマーケアから取得したら、安全な場所に保管します。
 
 ## Campaign の AEMResourceTypeFilter を確認 {#resource-type-filter}
 

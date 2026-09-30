@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: e358ee51-c23f-4737-9dcf-3193ed541bbb
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 66%
-
 ---
-
 # プロセスインスタンスの検索{#searching-for-process-instances}
 
 >[!NOTE]
@@ -25,7 +40,7 @@ ht-degree: 66%
 
 プロセスの検索ページを使用して、プロセスインスタンスを見つけるための検索条件を入力できます。 Forms Workflow ページからプロセス検索ページにアクセスできます。 または、プロセスインスタンスページで「**検索**」をクリックします。
 
-基本条件に基づく一般検索、特定の属性に基づく詳細検索、または基本条件と特定の属性の組み合わせによる複合検索を実行できます。
+一般検索を実行するための基本条件、詳細検索を実行するための特定の属性、または複合検索を実行するための基本条件と特定の属性の組み合わせを入力できます。
 
 ## 一般検索の実行 {#perform-a-general-search}
 
@@ -43,7 +58,7 @@ ht-degree: 66%
 
 1. 「**検索**」をクリックします。 プロセスインスタンスページが表示され、見つかったインスタンスが一覧表示されます。
 
-## プロセスの詳細検索を実行する {#perform-a-detailed-search-for-a-process}
+## プロセスの詳細検索 {#perform-a-detailed-search-for-a-process}
 
 特定の属性を入力して、詳細検索を実行できます。 詳細検索は、実行中のプロセスインスタンス数が多く、特定の条件で候補を絞る必要がある場合に、最も適しています。
 
@@ -59,9 +74,9 @@ ht-degree: 66%
 1. 行を追加または削除するには「フィルターを増やす」または「フィルターを減らす」をクリックします。 1～4 行まで指定できます。
 1. 「**検索**」をクリックします。 プロセスインスタンスページが表示され、見つかったインスタンスが一覧表示されます。
 
-[&#x200B; プロセスインスタンスのステータスについて](/help/forms/using/admin-help/processes.md#about-process-instance-statuses)も参照してください。
+[ プロセスインスタンスのステータスについて](/help/forms/using/admin-help/processes.md#about-process-instance-statuses)も参照してください。
 
-## プロセスの複合検索を実行する {#perform-a-combined-search-for-a-process}
+## プロセスの複合検索 {#perform-a-combined-search-for-a-process}
 
 一般的な条件と詳細な条件の両方を使用する検索を作成するには、プロセス検索ページの両方の領域に値を入力します。 システムは、2つの領域の間に暗黙的な`AND`を適用します。
 

@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 5ac3350d-8819-4b33-b1a1-9e686b6abd9e
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 100%
-
 ---
-
 # エンドポイントの種類 {#types-of-endpoints}
 
 サービスを使用する前に、エンドポイントを設定して有効にする必要があります。 エンドポイントには、サービスを呼び出す方法が指定されています。
@@ -25,7 +40,7 @@ ht-degree: 100%
 >
 >ワークベンチでは、エンドポイントは開始ポイントと呼ばれます。
 
-次の種類のエンドポイントをサービスに追加できます。 すべてのサービスですべてのエンドポイントサポートがサポートされているわけではありません。
+次の種類のエンドポイントをサービスに追加できます。 すべてのサービスがすべてのエンドポイントをサポートしているわけではありません。
 
 **メール**：1 つ以上の添付ファイルがあるメールメッセージを指定されたメールアカウントに送信することで、ユーザーがサービスを呼び出せるようにします。 メールエンドポイントを設定する前に、必要なメールアカウントを設定する必要があります （メールエンドポイントの設定を参照）。
 
@@ -43,6 +58,6 @@ ht-degree: 100%
 
 **WSDL** ：AEM Forms プログラミング API を使用して開発されたクライアントアプリケーションから、Web サービス記述言語（WSDL）を使用してサービスを呼び出せるようにします。 コア設定ページには、AEM Forms に属するすべてのサービスで WSDL の生成を有効にするオプションが含まれています。 （一般的な AEM Forms の設定を参照）。
 
-**REST**：Representational State Transfer（REST）要求で呼び出せるように、ワークベンチで作成したプロセスを設定できます。 REST リクエストは HTML ページから送信されます。 つまり、REST 要求を使用して、web ページから直接 AEM Forms プロセスを呼び出すことができます。
+**REST**：Representational State Transfer（REST）要求で呼び出せるように、ワークベンチで作成したプロセスを設定できます。 REST リクエストは HTML ページから送信されます。 つまり、REST リクエストを使用して、web ページから直接 AEM Forms プロセスを呼び出すことができます。
 
 メール、タスクマネージャー、監視フォルダーおよびリモートの各エンドポイントでは、サービスの特定の操作のみが表示されます。 これらのエンドポイントを追加する場合は、サービスの呼び出し方法の選択、設定パラメーターの指定、入力および出力のパラメーターマッピングの指定を行うので、もう一段階の設定手順が必要になります。

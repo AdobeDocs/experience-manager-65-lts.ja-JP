@@ -1,6 +1,6 @@
 ---
 title: SPA の動的モデルとコンポーネントのマッピング
-description: Adobe Experience Manager 用 JavaScript SPA SDK で動的モデルとコンポーネントとのマッピングがどのように行われるかを説明します。
+description: Adobe Experience Manager 用 JavaScript SPA SDK で動的モデルとコンポーネントとのマッピングがどのように行われるかを学びます。
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
@@ -10,13 +10,27 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 051be106-bb15-46b2-8158-53817f68f57c
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '336'
 ht-degree: 100%
-
 ---
-
 
 # SPA の動的モデルとコンポーネントのマッピング{#dynamic-model-to-component-mapping-for-spas}
 
@@ -26,9 +40,9 @@ ht-degree: 100%
 
 ## ComponentMapping モジュール {#componentmapping-module}
 
-`ComponentMapping` モジュールは、プロントエンドプロジェクトに NPM パッケージとして提供されます。フロントエンドコンポーネントを格納し、単一ページアプリケーションがフロントエンドコンポーネントを AEM リソースタイプにマップする方法を提供します。これにより、アプリケーションの JSON モデルを構文解析する際に、コンポーネントの動的な解決が可能になります。
+`ComponentMapping` モジュールは、プロントエンドプロジェクトに NPM パッケージとして提供されます。 フロントエンドコンポーネントを格納し、単一ページアプリケーションがフロントエンドコンポーネントを AEM リソースタイプにマップする方法を提供します。 これにより、アプリケーションの JSON モデルを構文解析する際に、コンポーネントの動的な解決が可能になります。
 
-モデル内の各項目には、AEM リソースタイプを表示する `:type` フィールドが含まれます。フロントエンドコンポーネントは、マウントされると、基になるライブラリから受け取ったモデルのフラグメントを使用して自分自身をレンダリングできます。
+モデル内の各項目には、AEM リソースタイプを表示する `:type` フィールドが含まれます。 フロントエンドコンポーネントは、マウントされると、基になるライブラリから受け取ったモデルのフラグメントを使用して自分自身をレンダリングできます。
 
 モデル解析とモデルへのフロントエンドコンポーネントアクセスについて詳しくは、[SPA ブループリント](/help/sites-developing/spa-blueprint.md)を参照してください。
 
@@ -45,7 +59,7 @@ AEM 用 JavaScript SPA SDK を使用する単一ページアプリケーショ�
 
 ## アプリの初期化 {#app-initialization}
 
-各コンポーネントは、[`ModelProvider`](/help/sites-developing/spa-blueprint.md#the-model-provider) の機能で拡張されます。初期化は、次の一般的な形式をとります。
+各コンポーネントは、[`ModelProvider`](/help/sites-developing/spa-blueprint.md#the-model-provider) の機能で拡張されます。 初期化は、次の一般的な形式をとります。
 
 1. 各モデルプロバイダーは自身を初期化し、内部コンポーネントに対応するモデルの部分に対しておこなわれる変更をリッスンします。
 1. [初期化フロー](/help/sites-developing/spa-blueprint.md)で示されるとおりに、[`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) は初期化される必要があります。

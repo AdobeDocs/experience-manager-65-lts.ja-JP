@@ -1,6 +1,6 @@
 ---
 title: AEM Forms のデプロイメントの監視
-description: AEM Forms のデプロイメントは、システムレベルおよび内部レベルの両方で監視できます。 このドキュメントでは、AEM Forms のデプロイメントの監視について説明します。
+description: AEM Forms のデプロイメントは、システムレベルおよび内部レベルの両方で監視できます。 このドキュメントでは、AEM Forms のデプロイメントのモニタリングについて説明します。
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
@@ -9,21 +9,36 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: aa02139f-7e47-4979-9560-5d270c36080b
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 100%
-
 ---
+# AEM Forms のデプロイメントのモニタリング {#monitoring-aem-forms-deployments}
 
-# AEM Forms のデプロイメントの監視 {#monitoring-aem-forms-deployments}
-
-AEM Forms のデプロイメントは、システムレベルおよび内部レベルの両方で監視できます。 スペシャリスト管理ツール（HP OpenView、IBM® Tivoli、CA UniCenter およびサードパーティ JMX モニターである *JConsole* など）を使用することで、Java™ アクティビティを詳細に監視できます。 監視方法の導入により、AEM Forms デプロイメントの可用性、信頼性およびパフォーマンスが向上します。
+AEM Forms のデプロイメントは、システムレベルおよび内部レベルの両方で監視できます。 スペシャリスト管理ツール（HP OpenView、IBM® Tivoli、CA UniCenter およびサードパーティ JMX モニターである *JConsole* など）を使用することで、Java™ アクティビティを詳細に監視できます。 モニタリング方法の導入により、AEM Forms デプロイメントの可用性、信頼性およびパフォーマンスが向上します。
 
 <!-- For more information about monitoring AEM forms deployments, see [A technical guide for monitoring AEM forms deployments](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf). This URL is 404. No suitable replacement URL was found after a search. Do not make this link live if it is dead! -->
 
-## MBean を使用した監視 {#monitoring-using-mbeans}
+## MBean を使用したモニタリング {#monitoring-using-mbeans}
 
 AEM Forms には、ナビゲーションおよび統計情報を提供する 2 つの MBean が登録されています。 統合とインスペクションのためにサポートされている MBean はこれらのみです。
 
@@ -68,9 +83,9 @@ AEM Forms には、ナビゲーションおよび統計情報を提供する 2 �
  public void setExceptionMessage(String errorMessage);
 ```
 
-### MBean ツリーおよび運用の統計情報 {#mbean-tree-operation-statistics}
+### MBean ツリーおよび操作統計 {#mbean-tree-operation-statistics}
 
-JMX コンソール（JConsole）を使用すると、OperationStatistic MBean の統計情報を使用できます。 この統計情報は MBean の属性です。次の階層ツリーで移動できます。
+JMX コンソール（JConsole）を使用すると、OperationStatistic MBean の統計情報を利用できます。 この統計情報は MBean の属性です。次の階層ツリーで移動できます。
 
 **MBean ツリー**
 
@@ -102,7 +117,7 @@ JMX コンソール（JConsole）を使用すると、OperationStatistic MBean �
 
 **時間単位：** デフォルトはミリ秒です。
 
-JMX 監視を有効にするには、通常、アプリケーションサーバーに何らかの設定が必要です。 詳しくは、アプリケーションサーバーのドキュメントを参照してください。
+JMX モニタリングを有効にするには、通常、アプリケーションサーバーに何らかの設定が必要です。 詳しくは、アプリケーションサーバーのドキュメントを参照してください。
 
 ### オープン JMX アクセスをセットアップする方法の例 {#examples-of-how-to-set-up-open-jmx-access}
 

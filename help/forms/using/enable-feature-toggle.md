@@ -4,13 +4,21 @@ description: 機能切替スイッチは、管理者がランタイム環境で�
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: 8b6dea41-540b-498a-b52b-e584a9255f25
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '305'
 ht-degree: 100%
-
 ---
-
 # Adobe Experience Manager（AEM）6.5 の機能切替スイッチ{#enable-feature-toggle-aem-forms-65}
 
 機能切替スイッチは、管理者が特定の機能を動的に有効または無効にできる AEM の機能です。 この機能は、大規模なデプロイメントやコードベースの変更を必要とせずに、**早期導入機能**&#x200B;や&#x200B;**プレリリース機能**&#x200B;を管理する場合に特に役立ちます。 これにより、AEM 環境でアクセスできる機能に対する柔軟性と制御が確保されます。
@@ -35,7 +43,7 @@ ht-degree: 100%
 
 ## 機能切替スイッチの無効化 {#disable-feature-toggle-65}
 
-切替スイッチが有効になっている機能の機能切替スイッチを無効にするには、次の手順に従います。
+切替スイッチが有効になっている機能の切替スイッチを無効にするには、次の手順に従います。
 
 1. AEM Forms インスタンスにログインします。
 2. `http://<author-instance-url>:portnumber/system/console/configMgr` に移動します。

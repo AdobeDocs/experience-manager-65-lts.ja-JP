@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 29dfc265-e5e4-413f-b488-57366b000f4e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '160'
 ht-degree: 100%
-
 ---
-
 # 結果の追跡とフィードバックの提供{#tracking-results-and-providing-feedback}
 
 テストケースとその結果に基づくテスト計画を定義する方法や場所は任意に選択することができ、多数のツールが用意されています。
@@ -24,10 +33,10 @@ ht-degree: 100%
 
 * 次のようにする必要があります。
 
-   * テストケースとその結果のトラッキングに限定する。これによって、メンテナンスが容易になり、テストの進捗についての明確な概要をドキュメント化できます。
-   * 単一コピーとして維持され、プロジェクトチームの適切なメンバー全員が利用できます。
-   * 中立で、テスト結果に限定する。テスト結果に起因するすべてのアクションを決定するのは、プロジェクトマネージャーの責任です。
+  * テストケースとその結果のトラッキングに限定する。 これによって、メンテナンスが容易になり、テストの進捗についての明確な概要をドキュメント化できます。
+  * 単一コピーとして維持され、プロジェクトチームの適切なメンバー全員が利用できます。
+  * 中立で、テスト結果に限定する。 テスト結果に起因するすべてのアクションを決定するのは、プロジェクトマネージャーの責任です。
 
 * 次のようには、しないようにします。
 
-   * トラッキング情報を含めるように拡張する（バグ、新機能、後続のアクションも同様）この情報は他の場所で管理されます。繰り返しになりますが、使用できるツールは多数あります。
+  * トラッキング情報を含めるように拡張する（バグ、新機能、後続のアクションも同様） この情報は他の場所で管理されます。繰り返しになりますが、使用できるツールは多数あります。

@@ -9,13 +9,27 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: 23ffbaa6-1bd9-48c3-afa3-19737bb15de0
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1547'
 ht-degree: 94%
-
 ---
-
 # AEM Forms のアーキテクチャとデプロイメントトポロジー {#architecture-and-deployment-topologies-for-aem-forms}
 
 ## 適用先 {#applies-to}
@@ -26,19 +40,19 @@ AEM as a Cloud Serviceのドキュメントについては、[Cloud Service上�
 
 ## アーキテクチャ {#architecture}
 
-AEM Formsは、1 つの AEMパッケージとして AEM にデプロイされるアプリケーションです。 このパッケージは、AEM Forms アドオンパッケージと呼ばれます。 AEM Forms アドオンパッケージには、AEM OSGi コンテナに読み込まれるサービス（API プロバイダー）と、AEM Sling フレームワークで管理されるサーブレットまたは JSP（フロントエンド機能と REST API 機能の両方を提供）が含まれています。 次の図は、このセットアップを示しています。
+AEM Formsは、1 つの AEMパッケージとして AEM にデプロイされるアプリケーションです。 このパッケージは、AEM Forms アドオンパッケージと呼ばれます。 AEM Forms アドオンパッケージには、AEM OSGi コンテナにデプロイされるサービス（API プロバイダー）と、AEM Sling フレームワークで管理されるサーブレットまたは JSP（フロントエンド機能と REST API 機能の両方を提供）が含まれています。 次の図は、このセットアップを示しています。
 
 ![アーキテクチャ](assets/architecture.png)
 
 AEM Forms のアーキテクチャには、次のコンポーネントが含まれています。
 
 * **AEM のコアサービス：**&#x200B;デプロイされたアプリケーションに対して提供される AEM の基本サービス。 これらのサービスには、JCR に準拠したコンテンツリポジトリ、OSGI サービスコンテナ、ワークフローエンジン、トラストストア、キーストアなどがあります。 これらのサービスは AEM Forms アプリケーションで使用できますが AEM Forms パッケージには含まれていません。 これらのサービスは、AEM Forms の様々なコンポーネントで使用される、AEM スタック全体の不可欠な構成要素です。
-* **Forms サービス：** PDF ドキュメントの作成、アセンブリ、配布、アーカイブなどのフォーム関連の機能を提供し、デジタル署名を追加してドキュメントへのアクセスを制限し、バーコードフォームをデコードします。 これらのサービスは、AEM にカスタムコードを組み込んで利用する形で公開されています。
+* **Forms サービス：** PDF ドキュメントの作成、アセンブリ、配布、アーカイブなどのフォーム関連の機能を提供し、デジタル署名を追加してドキュメントへのアクセスを制限し、バーコードフォームをデコードします。 これらのサービスは、AEM に同時デプロイされたカスタムコードから利用できるように公開されています。
 * **Web レイヤー：**&#x200B;共通のサービスおよびフォームのサービス上に構築された JSP またはサーブレットで、次の機能を提供します。
 
-   * **フロントエンドのオーサリング**：フォームのオーサリングと管理に使用されるユーザーインターフェイス。
-   * **フォームのレンディションおよび送信のフロントエンド**：AEM Forms のエンドユーザー向けユーザーインターフェイス（行政機関の web サイトにアクセスするユーザー向けのユーザーインターフェイスなど）。 これにより、フォームのレンディション（web ブラウザーでのフォームの表示）と送信を行うことができます。
-   * **REST API**：JSP および サーブレットにより、モバイル SDK フォームなど、HTTP ベースのクライアントによるリモートでの利用向けにフォームサービスのサブセットがエクスポートされます。
+  * **フロントエンドのオーサリング**：フォームのオーサリングと管理に使用されるユーザーインターフェイス。
+  * **フォームのレンディションおよび送信のフロントエンド**：AEM Forms のエンドユーザー向けユーザーインターフェイス（行政機関の web サイトにアクセスするユーザー向けのユーザーインターフェイスなど）。 これにより、フォームのレンディション（web ブラウザーでのフォームの表示）と送信を行うことができます。
+  * **REST API**：JSP および サーブレットにより、モバイル SDK フォームなど、HTTP ベースのクライアントによるリモートでの利用向けにフォームサービスのサブセットがエクスポートされます。
 
 **AEM Forms on OSGi：** OSGi 環境上の AEM Forms は、AEM Forms パッケージがデプロイされた標準の AEM オーサーまたは AEM パブリッシュです。 OSGi 上の AEM Forms は、[単一サーバー環境、ファーム設定、クラスター設定](/help/sites-deploying/recommended-deploys.md)で実行できます。 クラスターを設定できるのは、AEM オーサーインスタンスの場合だけです。
 
@@ -56,7 +70,7 @@ AEM Forms on JEE also includes provides following supporting services to the AEM
 
 -->
 
-AEM Forms オーサリングユーザーインターフェイスは、レコードのドキュメント（DOR）、PDF forms、HTML5 Forms の作成をサポートしていません。 このようなアセットは、スタンドアロンのForms Designer アプリケーションを使用して設計され、個別にAEM Forms Managerにアップロードされます。<!--Alternatively, for AEM Forms on JEE, forms can be designed as application (in AEM Forms Workbench) assets and deployed into AEM Forms on JEE server.-->
+AEM Forms オーサリングユーザーインターフェイスは、レコードのドキュメント（DOR）、PDF Forms、HTML5 Forms の作成をサポートしていません。 このようなアセットは、スタンドアロンのForms Designer アプリケーションを使用して設計され、個別にAEM Forms Managerにアップロードされます。<!--Alternatively, for AEM Forms on JEE, forms can be designed as application (in AEM Forms Workbench) assets and deployed into AEM Forms on JEE server.-->
 
 OSGi <!--and AEM Forms on JEE both-->上のAEM Formsには、ワークフロー機能があります。 OSGi上のAEM フォームで、様々なタスクの基本ワークフローを迅速に構築してデプロイできます。
 <!--, without having to install the full-fledged Process Management capability of AEM Forms on JEE. There is some difference in the [features of Form-centric workflow on AEM Forms on OSGi and Process Management capability of AEM Forms on JEE](capabilities-osgi-jee-workflows.md). The development and management of Form-centric workflows on AEM Forms on OSGi uses the familiar AEM Workflow and AEM Inbox capabilities.-->
@@ -75,10 +89,10 @@ OSGi <!--and AEM Forms on JEE both-->上のAEM Formsには、ワークフロー�
 **パブリッシュ：**&#x200B;パブリッシュインスタンスは、標準のパブリッシュ実行モードで稼働する AEM Forms サーバーです。 パブリッシュインスタンスは、フォームベースのアプリケーションを使用するエンドユーザー向けのインスタンスです。例えば、公開 web サイトにアクセスしてフォームを送信するユーザーなどが、このインスタンスを使用します。 次の機能が有効になります。
 
 * エンドユーザー用のフォームのレンダリングと送信。
-* 送信済みフォームの生データを処理インスタンスに転送してさらに処理を行い、最終的な記録システムに保存する機能。 AEM Forms に付属するデフォルトの実装では、AEM のリバースレプリケーション機能を使用してこれを実現します。 代替の実装として、最初にフォームデータをローカルに保存するのではなく、フォームデータを処理インスタンスに直接プッシュすることもできます（後者はリバースレプリケーションをアクティベートするための前提条件です）。 通常、処理インスタンスはパブリッシュインスタンスよりも安全な場所に配置されるため、顧客が機密データをパブリッシュインスタンスに保存することに不安を感じている場合は、上記の[代替実装](/help/forms/using/configuring-draft-submission-storage.md)を実行してもかまいません。
-* インタラクティブなコミュニケーションとレターのレンダリングと送信：インタラクティブなコミュニケーションとレターはパブリッシュインスタンス上でレンダリングされ、対応するデータがストレージと後処理用に処理インスタンスに送信されます。 このデータは、パブリッシュインスタンスにローカルで保存して、処理インスタンスに逆複製すること（デフォルトのオプション）も、処理インスタンスに直接プッシュして、パブリッシュインスタンスには保存しないこともできます。 セキュリティを意識している顧客の場合は、後者の実装をお勧めします。
+* 送信済みフォームの生データを処理インスタンスに転送してさらに処理を行い、最終的な記録システムに保存する機能。 AEM Forms に付属するデフォルトの実装では、AEM のリバースレプリケーション機能を使用してこれを実現します。 代替の実装として、最初にフォームデータをローカルに保存するのではなく、フォームデータを処理サーバーに直接プッシュすることもできます（後者はリバースレプリケーションをアクティベートするための前提条件です）。 通常、処理インスタンスはパブリッシュインスタンスよりも安全な場所に配置されるため、顧客が機密データをパブリッシュインスタンスに保存することに不安を感じている場合は、上記の[代替実装](/help/forms/using/configuring-draft-submission-storage.md)を実行してもかまいません。
+* インタラクティブなコミュニケーションとレターのレンダリングと送信：インタラクティブなコミュニケーションとレターはパブリッシュインスタンス上でレンダリングされ、対応するデータが保存と後処理のために処理インスタンスに送信されます。 このデータは、パブリッシュインスタンスにローカルで保存し、後で処理インスタンスにリバースレプリケーションすること（デフォルトのオプション）も、パブリッシュインスタンスに保存せずに処理インスタンスに直接プッシュすることもできます。 セキュリティを意識している顧客の場合は、後者の実装をお勧めします。
 
-**処理：** forms-manager グループにユーザーが割り当てられていない状態の作成者実行モードで実行される AEM Forms のインスタンスです。 OSGiに<!--AEM Forms on JEE or--> AEM Formsを処理インスタンスとしてデプロイできます。 ユーザーが割り当てられていない場合、フォームのオーサリングと管理のアクティビティは、処理インスタンスで実行されることはなく、オーサーインスタンスでのみ実行されます。 処理インスタンスでは、次の機能が有効になります。
+**処理：** forms-manager グループにユーザーが割り当てられていない状態の作成者実行モードで実行される AEM Forms のインスタンスです。 OSGiに<!--AEM Forms on JEE or--> AEM Formsを処理インスタンスとしてデプロイできます。 ユーザーが割り当てられていない場合、フォームのオーサリングと管理のアクティビティは、処理インスタンスで実行されることはなく、オーサーインスタンスでのみ実行されます。 処理インスタンスでは、次の機能を利用できます。
 
 * **パブリッシュインスタンスから送信された未加工のフォームデータの処理：**&#x200B;この機能は、データの到着時にトリガーされる AEM ワークフロー経由の処理インスタンスで主に実現されます。 このワークフローでは、標準搭載の「フォームデータモデル」の手順を使用して、データまたはドキュメントを適切なデータストアにアーカイブできます。
 * **フォームデータの安全な保存**：処理インスタンスには、ファイアウォールの背後に配置されたリポジトリが用意されています。未加工のフォームデータは、このリポジトリに保存することにより、ユーザーから隔離できます。 オーサーインスタンス上のデザイナーも、パブリッシュインスタンス上のエンドユーザーも、このリポジトリにアクセスすることはできません。
@@ -93,7 +107,7 @@ OSGi <!--and AEM Forms on JEE both-->上のAEM Formsには、ワークフロー�
 
 次の理由から、処理インスタンスは、オーサー実行モードで稼働するように設定されています。
 
-* パブリッシュインスタンスから未加工のフォームデータへのリバースレプリケーションを有効にします。 デフォルトのデータストレージハンドラーを使用するには、リバースレプリケーション機能が必要になります。
+* パブリッシュインスタンスからの未加工のフォームデータのリバースレプリケーションを有効にします。 デフォルトのデータストレージハンドラーを使用するには、リバースレプリケーション機能が必要になります。
 * AEM ワークフローは、パブリッシュインスタンスから送信される未加工のフォームデータの主要な処理手段であるため、オーサースタイルのシステムで AEM ワークフローを実行することをお勧めします。
 
 <!--
@@ -147,7 +161,7 @@ You can make the following changes/customizations to the above-suggested topolog
 
 ### オフラインのバッチ処理で監視フォルダー機能を使用する場合のトポロジ {#topology-for-using-watched-folder-capabilities-for-offline-batch-processing}
 
-バッチ処理に監視フォルダーの使用を計画している AEM Forms のお客様は、以下に示すようなトポロジを構成することができます。 このトポロジではクラスター環境が構成されていますが、AEM Forms サーバーを 1 つのインスタンスで使用するか、ファームで使用するかは、負荷に応じて決定します。 サードパーティ製のデータソースを、専用の記録システムとして使用することになります。 このデータソースが、監視フォルダーの入力元になります。 トポロジでは、印刷ファイルの形式で出力も表示されます。 また、出力コンテンツをファイルシステムに保存し、メールで送信し、他のカスタムメソッドを使用して出力を使用することもできます。
+バッチ処理に監視フォルダーの使用を計画している AEM Forms のお客様は、以下に示すようなトポロジを構成することができます。 このトポロジではクラスター環境が表示されていますが、AEM Forms サーバーを 1 つのインスタンスで使用するか、ファームで使用するかは、負荷に応じて決定します。 サードパーティ製のデータソースを、専用の記録システムとして使用することになります。 このデータソースが、監視フォルダーの入力元になります。 トポロジでは、印刷ファイルの形式で出力も表示されます。 また、出力コンテンツをファイルシステムに保存し、メールで送信し、他のカスタムメソッドを使用して出力を使用することもできます。
 
 ![offline-batch-processing-via-watched-folders](assets/offline-batch-processing-via-watched-folders.png)
 

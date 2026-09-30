@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 35ad7804-be01-4ce9-8e68-22734b24d5a8
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 100%
-
 ---
-
 # 停止した操作および停止したブランチの使用 {#working-with-stalled-operations-and-branches}
 
 >[!NOTE]
@@ -57,14 +72,14 @@ ht-degree: 100%
 
 停止した操作ページまたは停止したブランチページでは、操作またはブランチを再試行できます。
 
-操作を再試行すると、操作を再起動するリクエストが Forms Workflow に送信されます。 プロセスの停止を引き起こしたエラーが修正され、再試行リクエストが正常に行われると、プロセスの実行は停止した時点から再開され、そのステータスが「実行中」に変わります。 操作を再起動できない場合、ステータスは「停止」のままとなり、管理者による終了が必要になります。
+操作を再試行すると、操作を再開するリクエストが Forms Workflow に送信されます。 プロセスの停止を引き起こしたエラーが修正され、再試行リクエストが正常に行われると、プロセスの実行は停止した時点から再開され、そのステータスが RUNNING に変わります。 操作を再起動できない場合、ステータスは「停止」のままとなり、管理者による終了が必要になります。
 
-### 停止した操作を終了する {#terminate-a-stalled-operation}
+### 停止した操作の終了 {#terminate-a-stalled-operation}
 
 1. 管理コンソールで、サービス／Forms Workflow／停止した操作のエラーをクリックします。
 1. 停止した操作ページで、終了するアイテムを選択し、「終了」をクリックします。
 
-### 停止した操作またはブランチを再試行する {#retry-a-stalled-operation-or-branch}
+### 停止した操作またはブランチの再試行 {#retry-a-stalled-operation-or-branch}
 
 1. 管理コンソールで、サービス／Forms Workflow をクリックし、「停止した操作のエラー」または「停止したブランチのエラー」をクリックします。
 1. 停止した操作ページまたは停止したブランチページで、再試行するアイテムを選択し、「再試行」をクリックします。

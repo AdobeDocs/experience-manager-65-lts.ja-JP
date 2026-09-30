@@ -1,25 +1,34 @@
 ---
 title: AEM Fluid Experience 機能リスト
-description: Fluid Experience 機能リスト
+description: Fluid Experiences 機能リスト
 index: false
 feature: Authoring
 solution: Experience Manager Sites,Experience Manager Assets
 role: Admin
 exl-id: 9bb1ff8b-5fcb-44df-8c45-2306e127410d
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 86%
-
 ---
-
-# AEM Fluid Experience 機能リスト{#aem-fluid-experiences-feature-list}
+# AEM Fluid Experiences 機能リスト{#aem-fluid-experiences-feature-list}
 
 Adobe Experience Manager の Fluid Experiences は、AEM Sites、AEM Dynamic Media、AEM Assets の強力な機能セットに基づいており、ヘッドレスコンテンツ配信のための堅牢なソリューションを提供します。
 
-AEM Fluid Experience は、ヘッドレス配信のユースケースにのみ対処するという点で、従来の AEM とは異なります。 ヘッドフル型コンテンツのオーサリングおよび配信と、AEMのハイブリッド型ユースケースに対する強力なサポートは、AEM Sites、Assets、Dynamic Mediaの各ソリューションでご利用いただけます。
+AEM Fluid Experiences は、ヘッドレス配信のユースケースにのみ対処するという点で、従来の AEM とは異なります。 ヘッドフル型コンテンツのオーサリングおよび配信と、AEMのハイブリッド型ユースケースに対する強力なサポートは、AEM Sites、Assets、Dynamic Mediaの各ソリューションでご利用いただけます。
 
-AEM Fluid Experience の機能と、関連するサポートドキュメントへのリンクを次の表に示します。
+AEM Fluid Experiences の機能と、関連するサポートドキュメントへのリンクを次の表に示します。
 
 * [リポジトリ](#repository-features)
 * [アクセス、API および 配信](#access-api-and-delivery-features)
@@ -28,7 +37,7 @@ AEM Fluid Experience の機能と、関連するサポートドキュメント�
 
 >[!NOTE]
 >
->AEM Fluid Experience は AEM 機能のサブセットです。 これらのテーブルでリンクされている機能には、AEM には含まれているものの、AEM Fluid Experience には含まれていない追加の機能が含まれる場合があります。
+>AEM Fluid Experiences は AEM 機能のサブセットです。 これらのテーブルでリンクされている機能には、AEM には含まれているものの、AEM Fluid Experiences には含まれていない追加の機能が含まれる場合があります。
 
 ## リポジトリーの機能 {#repository-features}
 
@@ -66,7 +75,7 @@ AEM Fluid Experience の機能と、関連するサポートドキュメント�
 | [多言語アセット管理](/help/assets/multilingual-assets.md) |
 | [インターナショナライゼーション](/help/sites-developing/i18n.md) |
 | [コンテンツの翻訳](/help/sites-administering/translation.md) |
-| [監視](/help/sites-deploying/monitoring-and-maintaining.md) |
+| [モニタリング](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [バックアップ](/help/sites-administering/backup-and-restore.md) |
 | [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ja) |
 | [PIM の統合](/help/sites-authoring/managing-product-information.md) |

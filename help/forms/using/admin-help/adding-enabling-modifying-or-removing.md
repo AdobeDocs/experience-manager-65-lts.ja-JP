@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 14264788-a05a-4a8d-b485-33ae1caac094
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 100%
-
 ---
-
 # エンドポイントの追加、有効化、変更または削除 {#adding-enabling-modifying-or-removing-endpoints}
 
 >[!NOTE]
@@ -50,9 +65,9 @@ ht-degree: 100%
 
 デフォルトで、新しいエンドポイントは自動的に有効になります。 ただし、エンドポイントを手動で無効にした場合は、有効にしない限りエンドポイントは動作しません。
 
-サービスに関する問題が発生している場合は、関連するエンドポイントを無効にすると、問題をトラブルシューティングしやすくなります。 また、システムの定期保守やサービスのアップグレードを行うときも、エンドポイントを無効にする必要があります。
+サービスに関する問題が発生している場合は、関連するエンドポイントを無効にすると、問題をトラブルシューティングしやすくなります。 また、システムの定期保守時やサービスのアップグレード時に、エンドポイントを無効にすることもできます。
 
-1. 管理コンソールで、サービス／アプリケーションおよびサービス／エンドポイントの管理をクリックします。
+1. 管理コンソールで、サービス／アプリケーションおよびサービス／エンドポイント管理をクリックします。
 1. エンドポイントの管理ページで、有効または無効にするエンドポイントのチェックボックスをオンにして、「有効にする」または「無効にする」をクリックします。
 
 ## エンドポイントの変更 {#modify-an-endpoint}
@@ -61,7 +76,7 @@ ht-degree: 100%
 >
 >管理コンソールを使用してエンドポイント設定に加えた変更は、アプリケーションのデザイン時コピーには反映されません。 アプリケーションを再デプロイすると、管理コンソールを使用してそのエンドポイントに加えた変更はすべて失われます。
 
-1. 管理コンソールで、サービス／アプリケーションおよびサービス／エンドポイントの管理をクリックします。
+1. 管理コンソールで、サービス／アプリケーションおよびサービス／エンドポイント管理をクリックします。
 1. エンドポイントの管理ページで、変更するエンドポイントをクリックします。
 1. エンドポイントの更新ページで、エンドポイントの名前、説明および設定を変更します。
 

@@ -5,14 +5,28 @@ feature: Transaction Reports
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: e2d1b548-ce30-471b-b01c-ce37b737aeb5
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: bcb3e79d-a57e-59a4-ad50-e03803c9f153
+    internal-label: Transaction Reports
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 100%
-
 ---
-
 # JEE における AEM Forms のカスタムコンポーネント API のトランザクションの記録 {#record-a-transaction-for-custom-components}
 
 カスタムコンポーネントで課金対象 API を使用する場合は、コンポーネントのトランザクションレポートを有効にできます。 トランザクションレポートを有効にするには、コンポーネントの `component.xml` ファイルを変更し、トランザクションレポートを有効にする必要がある操作の下に以下のタグを追加します。
@@ -23,7 +37,7 @@ ht-degree: 100%
 | ----------- | ----------- |
 | `<operation>`<br> `<.... tags`<br>`<...>`<br>`<operation>` | `<operation>`<br> `<.... tags`<br>`<...>`<br>`<transaction-operation-type>CONVERT</transaction-operation-type`<br>`<operation>` |
 
-トランザクション数が入力数に応じて異なるバッチ API など、API に対して複数のトランザクションを取得する必要がある場合は、API レベルでトランザクション数を処理します。
+トランザクション数が入力数に応じて異なるバッチ API など、API に対して複数のトランザクションを記録する必要がある場合は、API レベルでトランザクション数を処理します。
 
 **異なるトランザクション数を記録するには：**
 

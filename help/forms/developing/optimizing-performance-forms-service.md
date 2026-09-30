@@ -10,14 +10,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 63ddfd09-17b5-48b4-b7ee-961f2bdd2ae2
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1442'
 ht-degree: 100%
-
 ---
-
 # Forms サービスパフォーマンスの最適化 {#optimizing-the-performance-of-theforms-service}
 
 **このドキュメントのサンプルと例は、JEE 環境の AEM Forms のみを対象としています。**
@@ -28,7 +45,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Forms サービスについて詳しくは、[AEM Forms サービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
+>AEM Forms サービスについて詳しくは、『[AEM Forms サービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)』を参照してください。
 
 ### 手順の概要 {#summary-of-steps}
 
@@ -70,7 +87,7 @@ Forms サービスがフォームをレンダリングすると、クライア�
 
 **関連トピック**
 
-[AEM Forms Java ライブラリファイルを含める](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[AEM Forms Java ライブラリファイルの追加](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [接続プロパティの設定](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -84,7 +101,7 @@ Forms サービスがフォームをレンダリングすると、クライア�
 
 ### Java API を使用したパフォーマンスの最適化 {#optimize-the-performance-using-the-java-api}
 
-Forms API（Java）を使用して、最適化されたパフォーマンスでフォームをレンダリングします。
+Forms API（Java）を使用して、最適化されたパフォーマンスでフォームをレンダリングするには、次の操作を行います。
 
 1. プロジェクトファイルを含める
 
@@ -131,7 +148,7 @@ Forms API（Java）を使用して、最適化されたパフォーマンスで�
 
 ### Web サービス API を使用したパフォーマンスの最適化 {#optimize-the-performance-using-the-web-service-api}
 
-Forms API（web サービス）を使用して、最適化されたパフォーマンスでフォームをレンダリングします。
+Forms API（web サービス）を使用して、最適化されたパフォーマンスでフォームをレンダリングするには、次の操作を行います。
 
 1. プロジェクトファイルを含める
 

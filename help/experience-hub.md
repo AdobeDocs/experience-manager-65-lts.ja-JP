@@ -7,26 +7,46 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin,Developer,User
 exl-id: 6dbc943b-3bca-4926-896d-f1471a49a70f
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+feature_v2:
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: bf7fca06-df97-4229-884f-76afcfade5ad
+    internal-label: AI Assistant
+  - id: f551224f-631f-46f8-b8fc-67744f995ba0
+    internal-label: Onboarding
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 100%
-
 ---
-
 # Experience Hub について {#aem-experience-hub}
 
 Experience Hub は、Adobe Experience Manager 内のコンテンツ、アセット、サイトを一元管理する出発点となります。 パーソナライズされたエクスペリエンスを提供するように設計された Experience Hub を使用すると、役割と目標に応じて AEM エコシステムをシームレスに操作できます。 ガイドとして機能し、目的を効率的に達成するのに役立つ重要なインサイトと推奨されるアクションを提供します。 Experience Hub は、わかりやすいペルソナ主導型のレイアウトにより、重要なツールにすばやくアクセスでき、すべての AEM 機能をまたいで、合理化された効果的なエクスペリエンスをサポートします。
 
 新しく生まれ変わった AEM Experience Hub ワークスペースのクイックツアーをご覧ください（2 分 39 秒）。
 
->[!VIDEO](https://video.tv.adobe.com/v/3475193/?captions=jpn&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community.
 -->
 
-## Experience Hub の詳細を見る {#aem-experience-hub-about}
+## Experience Hub の詳細 {#aem-experience-hub-about}
 
 1. 開始するには、[Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) をクリックしてホームページを開きます。
 
@@ -56,7 +76,7 @@ Adobe Experience Manager ページが更新され、強化されたナビゲー�
 
 ![Experience Hub 環境](/help/assets/assets-experience-hub/experience-hub-author-environments-ams.png)
 
-これらの機能は、アクセス可能なプライマリ本番環境で使用できます。 また、複数の AEM インスタンスにアクセスできる場合は、対象となる特定の環境を選択できます。
+これらの機能は、アクセスできるプライマリ本番環境で使用できます。 また、複数の AEM インスタンスにアクセスできる場合は、対象となる特定の環境を選択できます。
 
 ![本番環境とステージ環境](/help/assets/assets-experience-hub/experience-hub-prod-stage-ams.png)
 
@@ -68,7 +88,7 @@ Adobe Adobe Experience Manager の中心的なハブとして機能する Experi
 
 ![Experience Hub のウィジェット](/help/assets/assets-experience-hub/experience-hub-custom-widgets-ams.png)
 
-「**オーサリング環境**」セクションには、アクセス可能なすべての AEM 環境が表示されます。 ソリューションとページには特定のショートカットが用意されており、リストの上部に表示したい特定の環境をピン留めすることもできます。
+「**オーサリング環境**」セクションには、アクセス可能なすべての AEM 環境が表示されます。 それらの環境で利用可能なソリューションやページへの特定のショートカットも用意されており、リストの上部に表示したい特定の環境をピン留めすることもできます。
 
 下の画像に表示されている「**最近使用したもの**」セクションには、最近 AEM にアクセスしたページが一覧表示されます。 テナントのライセンスに応じて、ウィジェットには、プログラム、パイプライン実行、アセット、ページエディター、フォームエディターなどの項目が含まれる場合があります。
 
@@ -122,7 +142,7 @@ Experience Hub では、ユーザーの役割に合わせて、コンテンツ�
 
 +++**Experience Hub でのウィジェットの重要性は何ですか？**
 
-Experience Hub のウィジェットは、ユーザーが作業を効率的に管理できるカスタマイズ可能な要素であり、最近のアクティビティの追跡や製品更新の把握などに役立ちます。
+Experience Hub のウィジェットは、ユーザーが作業を効率的に管理できるカスタマイズ可能な要素であり、最近のアクティビティのトラッキングや製品更新の把握などに役立ちます。
 
 +++
 

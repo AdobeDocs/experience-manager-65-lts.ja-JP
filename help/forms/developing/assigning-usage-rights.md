@@ -9,14 +9,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services, Reader Extensions
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: d8027b43-10c7-435c-8fb5-059508966d42
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 621ad6f8-3769-57bb-838c-1d26cfb18d50
+    internal-label: Reader Extensions
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3973'
 ht-degree: 98%
-
 ---
-
 # 使用権限の割り当て {#assigning-usage-rights}
 
 **このドキュメントのサンプルと例は、JEE 環境の AEM Forms のみを対象としています。**
@@ -125,14 +142,14 @@ Acrobat Reader DC エクステンション API（Java）を使用して、PDF �
 
    * コンストラクタを使用して `ReaderExtensionsOptionSpec` オブジェクトを作成します。 このオブジェクトには、Acrobat Reader DC Extensions サービスで必要な実行時オプションが含まれています。 このコンストラクターを呼び出す場合は、次の値を指定する必要があります。
 
-      * ドキュメントに適用する使用権限を含む `UsageRights` オブジェクト。
-      * Adobe Reader 7.xで権限が付与されたPDF ドキュメントを開いたときにユーザーに表示されるメッセージを指定する文字列値。 このメッセージは、Adobe Reader 8.0では表示されません。
+     * ドキュメントに適用する使用権限を含む `UsageRights` オブジェクト。
+     * Adobe Reader 7.xで権限が付与されたPDF ドキュメントを開いたときにユーザーに表示されるメッセージを指定する文字列値。 このメッセージは、Adobe Reader 8.0では表示されません。
 
    * 使用権限を PDF ドキュメントに適用するには、`ReaderExtensionsServiceClient` オブジェクトの `applyUsageRights` メソッドを呼び出して、次の値を渡します。
 
-      * 使用権限が適用される PDF ドキュメントを含む `com.adobe.idp.Document` オブジェクトです。
-      * 使用権限を適用できる資格情報のエイリアスを指定する文字列値です。
-      * 対応するパスワード値を指定する文字列値です。 （現在、このパラメーターは無視されます。 `null` を渡すことができます。）
+     * 使用権限が適用される PDF ドキュメントを含む `com.adobe.idp.Document` オブジェクトです。
+     * 使用権限を適用できる資格情報のエイリアスを指定する文字列値です。
+     * 対応するパスワード値を指定する文字列値です。 （現在、このパラメーターは無視されます。 `null` を渡すことができます。）
 
    * 実行時オプションを含む `ReaderExtensionsOptionSpec` オブジェクトです。
 
@@ -163,7 +180,7 @@ Acrobat Reader DC Extensions API（web サービス）を使用することに�
 
    >[!NOTE]
    >
-   >`localhost` を、AEM Forms をホストするサーバーの IP アドレスに置き換えます。
+   >`localhost` を AEM Forms をホストするサーバーの IP アドレスを置き換えます。
 
 1. Acrobat Reader DC エクステンションのクライアントオブジェクトを作成します。
 
@@ -173,10 +190,10 @@ Acrobat Reader DC Extensions API（web サービス）を使用することに�
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
-      * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
+     * `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 
 1. PDF ドキュメントを取得します。
 
@@ -198,9 +215,9 @@ Acrobat Reader DC Extensions API（web サービス）を使用することに�
    * Adobe Reader で権限を付与された PDF ドキュメントを開く際に、ユーザーに表示されるメッセージを指定する文字列値を `ReaderExtensionsOptionSpec` オブジェクトの `message` データメンバーに割り当てます。
    * 使用権限を PDF ドキュメントに適用するには、`ReaderExtensionsServiceClient` オブジェクトの `applyUsageRights` メソッドを呼び出して、次の値を渡します。
 
-      * 使用権限が適用される PDF ドキュメントを含む `BLOB` オブジェクトです。
-      * 使用権限を適用できる資格情報のエイリアスを指定する文字列値です。
-      * 対応するパスワード値を指定する文字列値です。 （現在、このパラメーターは無視されます。 `null` を渡すことができます。）
+     * 使用権限が適用される PDF ドキュメントを含む `BLOB` オブジェクトです。
+     * 使用権限を適用できる資格情報のエイリアスを指定する文字列値です。
+     * 対応するパスワード値を指定する文字列値です。 （現在、このパラメーターは無視されます。 `null` を渡すことができます。）
 
    * 実行時オプションを含む `ReaderExtensionsOptionSpec` オブジェクトです。
 
@@ -227,7 +244,7 @@ Acrobat Reader DC Extensions API（web サービス）を使用することに�
 
 >[!NOTE]
 >
->Acrobat Reader DC エクステンションサービスについて詳しくは、[AEM Forms サービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
+>Acrobat Reader DC Extensions サービスに関する詳細は、[AEM Forms サービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
 
 ### 手順の概要 {#summary_of_steps-1}
 
@@ -319,7 +336,7 @@ Acrobat Reader DC Extensions API（Web サービス）を使用して、権限�
 
    >[!NOTE]
    >
-   >`localhost` を、AEM Forms をホストするサーバーの IP アドレスに置き換えます。
+   >`localhost` を AEM Forms をホストするサーバーの IP アドレスを置き換えます。
 
 1. Acrobat Reader DC エクステンションのクライアントオブジェクトを作成します。
 
@@ -329,10 +346,10 @@ Acrobat Reader DC Extensions API（Web サービス）を使用して、権限�
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
-      * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
+     * `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 
 1. PDF ドキュメントを取得します。
 
@@ -366,7 +383,7 @@ Acrobat Reader DC Extensions API（Web サービス）を使用して、権限�
 
 >[!NOTE]
 >
->Acrobat Reader DC エクステンションサービスについて詳しくは、[AEM Forms サービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
+>Acrobat Reader DC エクステンションサービスに関する詳細は、『[AEM Forms サービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)』を参照してください。
 
 ### 手順の概要 {#summary_of_steps-2}
 
@@ -454,7 +471,7 @@ Acrobat Reader DC Extensions API（Web サービス）を使用して資格情�
 
    >[!NOTE]
    >
-   >`localhost` を、AEM Forms をホストするサーバーの IP アドレスに置き換えます。
+   >`localhost` を AEM Forms をホストするサーバーの IP アドレスを置き換えます。
 
 1. Acrobat Reader DC エクステンションのクライアントオブジェクトを作成します。
 
@@ -464,10 +481,10 @@ Acrobat Reader DC Extensions API（Web サービス）を使用して資格情�
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
-      * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
+     * `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 
 1. PDF ドキュメントを取得します。
 

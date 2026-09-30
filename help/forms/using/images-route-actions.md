@@ -8,13 +8,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 782043c0-79f8-42a4-ae1b-4743b480e523
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '288'
 ht-degree: 100%
-
 ---
-
 # ルートアクションで使用されるイメージのカスタマイズ {#customize-images-used-in-route-actions}
 
 ルートアクションで使用される画像をカスタマイズするには、[カスタマイズの一般的な手順](/help/forms/using/generic-steps-html-workspace-customization.md)で説明されている手順を実行した後、この記事で説明されている手順を実行します。
@@ -45,7 +59,7 @@ ht-degree: 100%
 
 ## タスクのリストタスクアクションポップアップ {#task-list-task-action-popup}
 
-1. タスクリストアクションのポップアップを作成します。[AEM Forms Workspace コードのビルド](introduction-customizing-html-workspace.md#building-html-workspace-code)を参照してください。これには、Dev パッケージを使用する必要があります。
+1. タスクリストアクションのポップアップを作成します。[AEM Forms Workspace コードのビルド](introduction-customizing-html-workspace.md#building-html-workspace-code)を参照してください。 これには、Dev パッケージを使用する必要があります。
 
 1. `/libs/ws/js/runtime/templates/task.html` を `/apps/ws/js/runtime/templates/task.html` にコピーします。
 
@@ -79,7 +93,7 @@ ht-degree: 100%
                <%}%>
    ```
 
-1. CSS スタイルの名前がサーバーからのルートアクションの名前と異なる場合は、`/apps/ws/js/runtime/templates/task.html` で以下のコードを変更します。これにより、`if-else` サーブレット条件のスタックを追加してルートアクション名でスタイルをマップします。
+1. CSS スタイルの名前がサーバーからのルートアクションの名前と異なる場合は、`/apps/ws/js/runtime/templates/task.html` で以下のコードを変更します。 これにより、`if-else` サーブレット条件のスタックを追加してルートアクション名でスタイルをマップします。
 
 ```jsp
 <%if(routeList == null){%>
@@ -139,7 +153,7 @@ To
                        <%}%>
    ```
 
-1. CSS スタイルの名前がサーバーからのルートアクションの名前と異なる場合は、`/apps/ws/js/runtime/templates/taskdetails.html` で以下のコードを変更します。これにより、`if-else` サーブレット条件のスタックを追加してルートアクション名でスタイルをマップします。
+1. CSS スタイルの名前がサーバーからのルートアクションの名前と異なる場合は、`/apps/ws/js/runtime/templates/taskdetails.html` で以下のコードを変更します。 これにより、`if-else` サーブレット条件のスタックを追加してルートアクション名でスタイルをマップします。
 
    ```jsp
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>

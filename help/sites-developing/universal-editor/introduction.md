@@ -4,13 +4,19 @@ description: ユニバーサルエディターの柔軟性と、AEM 6.5 LTSを�
 feature: Developing
 role: Developer
 exl-id: 495df631-5bdd-456b-b115-ec8561f33488
-source-git-commit: 49922325d3cc993d551683fac1effe9fc9590880
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1320'
 ht-degree: 46%
-
 ---
-
 # ユニバーサルエディターについて {#universal-editor}
 
 ユニバーサルエディターの柔軟性と、AEM 6.5 LTSを使用してヘッドレスエクスペリエンスを強化する方法について説明します。
@@ -39,9 +45,9 @@ ht-degree: 46%
 次のオプションは、ユニバーサルエディターをサポートしています。
 
 * AEM 6.5 LTS GA
-   * オンプレミスとAdobe Managed Services（AMS）*の両方のホスティングがサポートされています。
+  * オンプレミスとAdobe Managed Services（AMS）*の両方のホスティングがサポートされています。
 * [AEM 6.5](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
-   * オンプレミスとAMS*の両方のホスティングがサポートされています。
+  * オンプレミスとAMS*の両方のホスティングがサポートされています。
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) （リリース `2023.8.13099`以降）
 
 このドキュメントでは、ユニバーサルエディターのAEM 6.5 LTS サポートに焦点を当てています。 AEM 6.5 LTSでユニバーサルエディターを使用するには、次のものが必要です。
@@ -129,18 +135,18 @@ ht-degree: 46%
 マッピングの例：
 
 * AEM オーサーの `/content/foo` の下にあるすべてのページを開きます。
-   * `/content/foo:${author}${path}.html?login-token=${token}`
-   * `https://localhost:4502/content/foo/x.html?login-token=<token>`を開く結果
+  * `/content/foo:${author}${path}.html?login-token=${token}`
+  * `https://localhost:4502/content/foo/x.html?login-token=<token>`を開く結果
 * リモート NextJS サーバー上の `/content/bar` の下にあるすべてのページを開き、すべての変数を情報として指定します
-   * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
-   * `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`を開く結果
+  * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
+  * `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`を開く結果
 
 ### ユニバーサルエディターサービスの設定 {#set-up-ue}
 
 AEM を更新および設定すると、独自のローカル開発およびテスト用にローカルのユニバーサルエディターサービスを設定できます。
 
 1. Node.js バージョン 20 以降をインストールします。
-1. [&#x200B; ソフトウェア配布](https://experienceleague.adobe.com/ja/docs/experience-cloud/software-distribution/home)から最新のユニバーサルエディターサービスをダウンロードして解凍します
+1. [ ソフトウェア配布](https://experienceleague.adobe.com/ja/docs/experience-cloud/software-distribution/home)から最新のユニバーサルエディターサービスをダウンロードして解凍します
 1. 環境変数または`.env` ファイルを使用してユニバーサルエディターサービスを設定します。
    * [詳しくは、AEM as a Cloud Service ユニバーサルエディターのドキュメントを参照してください。](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
    * 内部 IP の書き換えが必要な場合は、`UES_MAPPING` オプションを使用する必要があります。

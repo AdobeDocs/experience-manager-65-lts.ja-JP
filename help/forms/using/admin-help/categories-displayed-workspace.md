@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: f9ffbe56-757b-4fd0-b33a-2522695aed35
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 94%
-
 ---
-
 # Workspace に表示されるカテゴリの管理 {#managing-the-categories-displayed-in-workspace}
 
 >[!NOTE]
@@ -25,7 +40,7 @@ ht-degree: 94%
 
 Workspace で、ユーザーが開始できるプロセスは、左側にあるナビゲーションパネルのカテゴリに表示されます。 カテゴリは管理コンソールで設定することも、プロセスデザイナーがワークベンチで設定することもできます。 プロセスデザイナーがプロセスを作成する場合は、それらをカテゴリに割り当てます。
 
-カテゴリ名を指定する際には、Workspace のナビゲーションパネルに適切に表示されるように名前を作成します。 デフォルトでは、左側のナビゲーションパネルの幅は、210 ピクセル（約 24 文字）に固定されています。 指定したカテゴリ名が長すぎて左側のナビゲーションパネルの固定幅に収まらない場合、名前の後ろの部分が切り捨てられます。 完全な名前は、その上にマウスポインタを置いた場合にのみ表示されます。 切り捨てられるカテゴリ名は作成しないようにしてください。 以下に、適切な長さのカテゴリ名と切り捨てられるカテゴリ名の例を示します。
+カテゴリ名を指定する際には、Workspace のナビゲーションパネルに適切に表示されるように名前を作成します。 デフォルトでは、左側のナビゲーションパネルの幅は、210 ピクセル（約 24 文字）に固定されています。 指定したカテゴリ名が長すぎて左側のナビゲーションパネルの固定幅に収まらない場合は、切り捨てられます。 完全な名前は、その上にマウスポインタを置いた場合にのみ表示されます。 切り捨てられるカテゴリ名は作成しないようにしてください。 以下に、適切な長さのカテゴリ名と切り捨てられるカテゴリ名の例を示します。
 
 **サイズに合うカテゴリ名：** Attendance &amp; Leave
 
@@ -46,7 +61,7 @@ AEM Forms データベースとして MySQL を使用している場合、管理
 
 ## カテゴリの編集 {#edit-a-category}
 
-1. 管理コンソールで、サービス／アプリケーションとサービス／カテゴリの管理をクリックします。
+1. 管理コンソールで、サービス／アプリケーションとサービス／カテゴリ管理をクリックします。
 1. 編集するカテゴリを選択し、「編集」をクリックします。 または、カテゴリをダブルクリックして編集することもできます。
 1. 「名前」ボックスでカテゴリの名前を編集します。
 
@@ -54,5 +69,5 @@ AEM Forms データベースとして MySQL を使用している場合、管理
 
 削除できるのは、使用されていないカテゴリのみです。
 
-1. 管理コンソールで、サービス／アプリケーションとサービス／カテゴリの管理をクリックします。
+1. 管理コンソールで、サービス／アプリケーションとサービス／カテゴリ管理をクリックします。
 1. カテゴリの管理ページで、削除するカテゴリのチェックボックスを選択して、「削除」をクリックします。 カテゴリが表示されなくなります。

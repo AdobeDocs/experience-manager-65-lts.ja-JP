@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 49e815e9-2087-4a42-b481-dc66de787d67
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 100%
-
 ---
-
 # Forms の場所の設定 {#configuring-locations-for-forms}
 
 >[!NOTE]
@@ -31,7 +46,7 @@ ht-degree: 100%
 
 ## 場所の設定 {#locations-settings}
 
-**ベース URL：**&#x200B;画像やスクリプトなどのフォームリソースが置かれるベース URL です。 HTML 変換に画像やスクリプトなどの外部依存の HREF 参照が含まれている場合は、この値が必須となります。 このようなスクリプトの 1 つに xfasubset.js があります。xfasubset.js は HTML フォームで XFA インテリジェンスを実行するのに必要です。 この値は HTTP 形式のコンテンツルート URI と同じである必要があります。
+**ベース URL：**&#x200B;画像やスクリプトなどのフォームリソースが置かれるベース URL です。 HTML 変換に画像やスクリプトなどの外部依存の HREF 参照が含まれている場合は、この値が必須となります。 このようなスクリプトの 1 つに xfasubset.js があります。xfasubset.js は HTML フォームで XFA インテリジェンスを実行するのに必要です。 この値は、コンテンツルート URI に対応する HTTP の値である必要があります。
 
 >[!NOTE]
 >
@@ -49,7 +64,7 @@ ht-degree: 100%
 
 **FS Web ルート URI：** Forms Web アプリケーションの URL です。 Forms web アプリケーションとクライアントアプリケーションを同じアプリケーションサーバーにデプロイする場合は、このボックスを空白のままにすることができます。その場合は Forms API web ルート URL が使用されます。
 
-Forms web アプリケーションとクライアントアプリケーションを同じアプリケーションサーバーにデプロイしない場合は、次の例に示すように、このボックスに Forms web アプリケーションの URL を入力する必要があります。
+Forms web アプリケーションとクライアントアプリケーションが同じアプリケーションサーバーにデプロイされていない場合は、次の例に示すように、このボックスに Forms web アプリケーションの URL を入力する必要があります。
 
 `https://<host name>:<port>/FormServer`
 
@@ -75,11 +90,11 @@ Forms web アプリケーションとクライアントアプリケーション�
 
 デフォルト値は `com/adobe/formServer/client-font-map.properties` です。
 
-次のエントリは、フォントマップファイル内のエントリの例です。
+次のエントリは、フォントマッピングファイル内のエントリの例です。
 
 `Arial=Arial,Helvetica,sans-serif`
 
-**シード PDF ファイル：** PDFForm 変換で配信を最適化するために使用する初期 PDF ファイルです。 シード PDF ファイルにフォームのデザインとデータを追加して、カスタマイズされた PDF ファイル（XFA ストリーム、画像およびフォントリソースのみを含む）を指定します。 このフォームは Acrobat 7 以降でレンダリングされ、PDFForm 変換に適用されます。
+**シード PDF ファイル：** PDFForm 変換で配信を最適化するために使用する初期 PDF ファイルです。 シード PDF ファイルは、フォームのデザインとデータが追加されるカスタマイズされた PDF ファイル（XFA ストリーム、画像およびフォントリソースのみを含む）を指定します。 このフォームは Acrobat 7 以降でレンダリングされ、PDFForm 変換に適用されます。
 
 デフォルト値は空の文字列です。
 

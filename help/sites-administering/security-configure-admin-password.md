@@ -9,13 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: cab746a0-4f50-4a0b-8d3a-7140a710fbfa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '306'
 ht-degree: 100%
-
 ---
-
 # インストール時の管理者パスワードの設定{#configure-the-admin-password-on-installation}
 
 ## 概要 {#overview}
@@ -28,7 +40,7 @@ ht-degree: 100%
 
 >[!CAUTION]
 >
->この機能は Felix コンソールには対応しておらず、このコンソールのパスワードについては手動で変更する必要があります。詳しくは、関連する[セキュリティチェックリストの節](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts)を参照してください。
+>この機能は Felix コンソールには対応しておらず、このコンソールのパスワードについては手動で変更する必要があります。 詳しくは、関連する[セキュリティチェックリストの節](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts)を参照してください。
 
 ## 使用方法 {#how-do-i-use-it}
 
@@ -50,7 +62,7 @@ java -jar aem6.3.jar
 
 ## -nointeractive フラグの使用 {#using-the-nointeractive-flag}
 
-また、プロパティファイルでパスワードを指定することもできます。これは、`-Dadmin.password.file` システムプロパティと組み合わせた `-nointeractive` フラグを使用して行われます。
+また、プロパティファイルでパスワードを指定することもできます。 これは、`-Dadmin.password.file` システムプロパティと組み合わせた `-nointeractive` フラグを使用して行われます。
 
 次に例を示します。
 
@@ -66,4 +78,4 @@ admin.password = 12345678
 
 >[!NOTE]
 >
->`-Dadmin.password.file` システムプロパティを使用せずに `-nointeractive` パラメーターだけを使用した場合は、AEM ではデフォルトの管理者パスワードが使用され、変更を求めるメッセージは表示されません（基本的に以前のバージョンの動作と同じになります）。インストールスクリプトのコマンドラインでこの非インタラクティブモードを使用して、インストールを自動化できます。
+>`-Dadmin.password.file` システムプロパティを使用せずに `-nointeractive` パラメーターだけを使用した場合は、AEM ではデフォルトの管理者パスワードが使用され、変更を求めるメッセージは表示されません（基本的に以前のバージョンの動作と同じになります）。 インストールスクリプトのコマンドラインでこの非インタラクティブモードを使用して、インストールを自動化できます。

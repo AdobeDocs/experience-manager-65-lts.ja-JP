@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: fe3735ff-5c9b-4eb8-bf1d-f2189ec7e26f
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3373'
 ht-degree: 90%
-
 ---
-
 # AEM の中心概念 {#aem-core-concepts}
 
 >[!NOTE]
@@ -28,10 +37,10 @@ AEM での開発には、以下のスキルが必要です。
 
 * 以下を含む web アプリケーション技術の基本知識
 
-   * リクエスト - 応答（XMLHttpRequest／XMLHttpResponse）のサイクル
-   * HTML
-   * CSS
-   * JavaScript
+  * リクエスト - 応答（XMLHttpRequest／XMLHttpResponse）のサイクル
+  * HTML
+  * CSS
+  * JavaScript
 
 * Content Explorer を含む Experience Server（CRX）の実務知識
 * クラシック UI で開発する場合は、JSP の簡単な例を理解および変更できる能力を含む、JSP（JavaServer Pages）の基本知識も必要です。
@@ -86,8 +95,8 @@ Sling は&#x200B;*コンテンツ中心型*&#x200B;です。 （HTTP）リクエ
 * 表面上だけでなく、RESTful であり、リソースや表示域をサーバー内で正しくモデリングされます。
 * 1 つ以上のデータモデルを削除
 
-   * 以前に必要だったもの：URL 構造、ビジネスオブジェクト、DB スキーマ
-   * これは現在、次のように短縮されています：URL = リソース = JCR 構造
+  * 以前に必要だったもの：URL 構造、ビジネスオブジェクト、DB スキーマ
+  * これは現在、次のように短縮されています：URL = リソース = JCR 構造
 
 ### URL の分解 {#url-decomposition}
 
@@ -160,11 +169,11 @@ Sling のスクリプトはすべて、`/apps` または `/libs` のサブフォ
 * メソッド（GET、POST）が必要な場合は、HTTP の仕様に従って、jobs.POST.esp のように大文字で指定します（以下を参照）。
 * 次のような様々なスクリプトエンジンがサポートされています。
 
-   * HTL（HTML テンプレート言語 - Adobe Experience Manager で優先および推奨される HTML 用のサーバーサイドのテンプレートシステム）：`.html`
-   * ECMAScript（JavaScript）ページ（サーバーサイド実行）：`.esp, .ecma`
-   * Java™ サーバーページ（サーバーサイド実行）：`.jsp`
-   * Java™ サーブレットコンパイラー（サーバーサイド実行）：`.java`
-   * JavaScript テンプレート（クライアント側実行）：`.jst`
+  * HTL（HTML テンプレート言語 - Adobe Experience Manager で優先および推奨される HTML 用のサーバーサイドのテンプレートシステム）：`.html`
+  * ECMAScript（JavaScript）ページ（サーバーサイド実行）：`.esp, .ecma`
+  * Java™ サーバーページ（サーバーサイド実行）：`.jsp`
+  * Java™ サーブレットコンパイラー（サーバーサイド実行）：`.java`
+  * JavaScript テンプレート（クライアント側実行）：`.jst`
 
 AEM の特定のインスタンスでサポートされているスクリプトエンジンのリストは、Felix Management Console（`http://<host>:<port>/system/console/slingscripting`）にあります。
 
@@ -198,24 +207,25 @@ AEM の特定のインスタンスでサポートされているスクリプト�
 
 * Sling:resourceTypeが定義されていない場合は、次の操作を行います。
 
-   * コンテンツパスは、適切なスクリプトを検索するために使用されます（パスに基づいた ResourceTypeProvider がアクティブな場合）。
+  * コンテンツパスは、適切なスクリプトを検索するために使用されます（パスに基づいた ResourceTypeProvider がアクティブな場合）。
 
-     例えば、`../content/corporate/jobs/developer.html` のスクリプトは、`/apps/content/corporate/jobs/` で検索を生成します。
+    例えば、`../content/corporate/jobs/developer.html` のスクリプトは、`/apps/content/corporate/jobs/` で検索を生成します。
 
-   * プライマリノードタイプが使用されます。
+  * プライマリノードタイプが使用されます。
 
 * スクリプトが見つからない場合は、デフォルトのスクリプトが使用されます。
 
   デフォルトのレンディションはプレーンテキスト（.txt）、HTML（.html）および JSON（.json）としてサポートされています。これらのレンディションでは、ノードのプロパティ（適切な形式）がリストされます。 拡張子 .res のデフォルトのレンディション、またはリクエスト拡張子のないリクエストは、（可能な場合は）リソースをスプールします。
 * HTTP エラー処理（コード 403 または 404）の場合、Sling は次のいずれかの場所でスクリプトを検索します。
 
-   * それぞれ、[カスタマイズされたスクリプト](/help/sites-developing/customizing-errorhandler-pages.md)の場所 /apps/sling/servlet/errorhandler
-   * または標準スクリプト /libs/sling/servlet/errorhandler/403.esp または 404.esp の場所です。
+  * それぞれ、[カスタマイズされたスクリプト](/help/sites-developing/customizing-errorhandler-pages.md)の場所 /apps/sling/servlet/errorhandler
+  * または標準スクリプト /libs/sling/servlet/errorhandler/403.esp または 404.esp の場所です。
 
 特定のリクエストに複数のスクリプトが適用される場合、最適な一致を持つスクリプトが選択されます。 一致が具体的であればあるほど良くなります。つまり、リクエストの拡張子やメソッド名の一致に関係なく、セレクターの一致が多いほど良くなります。
 
 例えば、次のリソースにアクセスするためのリクエストについて考えます。
-`/content/corporate/jobs/developer.print.a4.html` リソースのタイプは次のとおりとします。
+`/content/corporate/jobs/developer.print.a4.html`
+タイプの
 `sling:resourceType="hr/jobs"`
 
 次のスクリプトのリストが正しい場所にあると仮定します。
@@ -242,30 +252,30 @@ AEM の特定のインスタンスでサポートされているスクリプト�
 
 * ／
 
-   * a
-   * b
+  * a
+  * b
 
-      * sling:resourceSuperType = a
+    * sling:resourceSuperType = a
 
-   * c
+  * c
 
-      * sling:resourceSuperType = b
+    * sling:resourceSuperType = b
 
-   * x
+  * x
 
-      * sling:resourceType = c
+    * sling:resourceType = c
 
-   * y
+  * y
 
-      * sling:resourceType = c
-      * sling:resourceSuperType = a
+    * sling:resourceType = c
+    * sling:resourceSuperType = a
 
 タイプの階層は
 
 * `/x`
-   * `[ c, b, a, <default>]` です
+  * `[ c, b, a, <default>]` です
 * 一方、`/y` では
-   * 階層は `[ c, a, <default>]` です
+  * 階層は `[ c, a, <default>]` です
 
 これは、`/y` には `sling:resourceSuperType` プロパティがあるのに対して、`/x` にはなく、スーパータイプがリソースタイプから継承されているからです。
 
@@ -277,8 +287,8 @@ Sling 内では、スクリプトを直接呼び出しできません。REST サ
 
 * GET 以外の HTTP メソッドの自動処理。これには以下が含まれます。
 
-   * Sling のデフォルトの実装で扱う POST、PUT、DELETE
-   * sling:resourceTypeの場所にある`POST.jsp` スクリプト
+  * Sling のデフォルトの実装で扱う POST、PUT、DELETE
+  * sling:resourceTypeの場所にある`POST.jsp` スクリプト
 
 * コードアーキテクチャに必要なクリーン性や明確な構造が失われます。これは大規模な開発では最も重要です。
 
@@ -286,7 +296,7 @@ Sling 内では、スクリプトを直接呼び出しできません。REST サ
 
 これは、Sling API パッケージ、org.apache.sling.&amp;ast；およびタグライブラリを使用します。
 
-### sling:includeを使用した既存の要素の参照 {#referencing-existing-elements-using-sling-include}
+### sling:include {#referencing-existing-elements-using-sling-include}を使用した既存の要素の参照
 
 最後の考慮事項は、スクリプト内にある既存の要素の参照の必要性です。
 
@@ -469,9 +479,9 @@ FileVault は、JCR リポジトリにファイルシステムマッピングと
 * Web サイトの様々な言語バージョンを効率的に管理します。
 * ソースサイトに基づいて 1 つ以上のサイトを自動的に更新します。
 
-   * 基本構造を共通化し、複数のサイトで共通のコンテンツを使用します。
-   * 利用可能なリソースを最大限に活用します。
-   * 共通のルックアンドフィールを維持します。
-   * サイト間で異なるコンテンツの管理に労力を集中させます。
+  * 基本構造を共通化し、複数のサイトで共通のコンテンツを使用します。
+  * 利用可能なリソースを最大限に活用します。
+  * 共通のルックアンドフィールを維持します。
+  * サイト間で異なるコンテンツの管理に労力を集中させます。
 
 詳しくは、[マルチサイトマネージャー](/help/sites-administering/msm.md)を参照してください。

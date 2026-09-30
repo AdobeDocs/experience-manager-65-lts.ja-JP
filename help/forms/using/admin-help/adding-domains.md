@@ -5,14 +5,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 70b0472e-2547-4887-b761-b200dc7b714a
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 97%
-
 ---
-
 # ドメインの追加 {#adding-domains}
 
 >[!NOTE]
@@ -24,7 +39,7 @@ ht-degree: 97%
 1. 管理コンソールで、設定／User Management／ドメインの管理をクリックします。
 1. 「新規エンタープライズドメイン」をクリックします。
 1. 「ID」ボックスにドメインの一意の ID を入力し、「名前」ボックスにドメインのわかりやすい名前を入力します （[ドメイン名および ID に関する重要な考慮事項](adding-domains.md#important-considerations-for-domain-names-and-ids)を参照）。
-1. アカウントロックを有効にするかどうかを指定します （[&#x200B; アカウントロック設定の設定](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings)を参照）。 デフォルトでは、「アカウントロックを有効にする」が選択されています。
+1. アカウントロックを有効にするかどうかを指定します （[ アカウントロック設定の設定](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings)を参照）。 デフォルトでは、「アカウントロックを有効にする」が選択されています。
 1. 「認証を追加」をクリックし、「認証プロバイダー」リストで、組織が使用している認証メカニズムに応じてプロバイダーを選択します。 選択できる値は、「LDAP」、「Kerberos」、「SAML」または「カスタム」認証プロバイダーです。
 
    LDAP を選択すると、ディレクトリ設定で指定した LDAP サーバーを使用するか、異なる LDAP サーバーを選択して認証に使用することができます。 異なるサーバーを選択する場合、ユーザーは両方の LDAP サーバーに存在する必要があります。
@@ -40,7 +55,7 @@ ht-degree: 97%
 1. 管理コンソールで、設定／User Management／ドメインの管理をクリックします。
 1. 「新規ローカルドメイン」をクリックします。
 1. 「ID」ボックスにドメインの一意の ID を入力し、「名前」ボックスにドメインのわかりやすい名前を入力します （[ドメイン名および ID に関する重要な考慮事項](adding-domains.md#important-considerations-for-domain-names-and-ids)を参照）。
-1. アカウントロックを有効にするかどうかを指定して、「OK」をクリックします （[&#x200B; アカウントロック設定の設定](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings)を参照）。 デフォルトでは、「アカウントロックを有効にする」が選択されています。
+1. アカウントロックを有効にするかどうかを指定して、「OK」をクリックします （[ アカウントロック設定の設定](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings)を参照）。 デフォルトでは、「アカウントロックを有効にする」が選択されています。
 
 ## ハイブリッドドメインを追加 {#add-a-hybrid-domain}
 
@@ -83,6 +98,6 @@ MySQL を AEM Forms データベースとして使用している場合、以下
 1. データベースで、edcprincipaldomainentity テーブル内のドメインを検索します。
 
    * edcprincipaldomainentity から `*` を選択します。
-   * 拡張文字またはマルチバイト文字を含むドメイン名を検索し、そのステータスを廃止に設定します。
+   * 拡張文字またはマルチバイト文字を含むドメイン名を検索し、そのステータスを OBSOLETE に設定します。
 
 1. [設定ファイルの読み込みと書き出し](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file)の説明に従って、更新した設定ファイルを読み込みます。

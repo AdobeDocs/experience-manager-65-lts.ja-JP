@@ -9,14 +9,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 0664e8f8-fad4-40e6-871e-24bba642fb4f
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '15601'
 ht-degree: 98%
-
 ---
-
 # ポリシーを使用したドキュメントの保護 {#protecting-documents-with-policies}
 
 **このドキュメントのサンプルと例は、JEE 環境の AEM Forms のみを対象としています。**
@@ -25,7 +42,7 @@ ht-degree: 98%
 
 Document Security サービスを使用すると、ユーザーは、ドキュメントの配布範囲にかかわらず、Adobe PDF ドキュメントに機密性の設定を動的に適用したり、ドキュメントを管理したりできます。
 
-Document Security サービスは、ポリシーで保護された PDF ドキュメントを受信者がどのように使用するかをユーザーが管理できるようにすることで、ユーザーの手の届かない範囲で情報が広がるのを防ぎます。 ユーザーは、配布後に、ドキュメントを誰が開くことができるかを指定でき、ドキュメントの使用方法を制限でき、ドキュメントを監視できます。 また、ユーザーは、ポリシーで保護されたドキュメントへのアクセスを動的に制御することもでき、ドキュメントへのアクセスを動的に取り消すことさえできます。
+Document Security サービスは、ポリシーで保護された PDF ドキュメントを受信者がどのように使用するかをユーザーが管理できるようにすることで、ユーザーの手の届かない範囲で情報が広がるのを防ぎます。 ユーザーは、ドキュメントを誰が開くことができるかを指定し、その使用方法を制限し、配布後のドキュメントを監視できます。 また、ユーザーは、ポリシーで保護されたドキュメントへのアクセスを動的に制御することもでき、ドキュメントへのアクセスを動的に取り消すことさえできます。
 
 また、Document Security サービスでは、Microsoft Word ファイル（DOC ファイル）などの他のファイルタイプも保護します。 Document Security Client API を使用して、これらのファイルタイプを操作できます。 次のバージョンがサポートされています。
 
@@ -61,9 +78,9 @@ Document Security Java API または Web サービス API を使用して、プ�
 
 ポリシーを使用すると、次のタスクを実行できます。
 
-* ドキュメントを開くことができる個人の指定。 受信者は、組織に所属していても、組織の外部にいてもかまいません。
-* 受信者によるドキュメントの使用方法の指定。 Acrobat と Adobe Reader の様々な機能へのアクセスを制限できます。 これらの機能には、テキストの印刷とコピー、署名の追加、ドキュメントへのコメントの追加などが含まれます。
-* ポリシーで保護されたドキュメントの任意の時点（配布後も含む）でのアクセスおよびセキュリティ設定の変更。
+* ドキュメントを開くことができるユーザーを指定します。 受信者は、組織に所属していても、組織の外部にいてもかまいません。
+* 受信者がドキュメントをどのように使用できるかを指定します。 Acrobat と Adobe Reader の様々な機能へのアクセスを制限できます。 これらの機能には、テキストの印刷とコピー、署名の追加、ドキュメントへのコメントの追加などが含まれます。
+* ポリシーで保護されたドキュメントについては、配布後であっても、いつでもアクセスおよびセキュリティ設定を変更できます。
 * ドキュメントの配布後の使用状況の監視。 ドキュメントが誰にどのように使用されているかを確認できます。 例えば、誰かがドキュメントを開いた日時を調べることができます。
 
 ### Web サービスを使用したポリシーの作成 {#creating-a-policy-using-web-services}
@@ -158,7 +175,7 @@ Web サービス API を使用してポリシーを作成する場合は、そ�
 * jaxb-impl.jar（AEM Forms が JBoss にデプロイされている場合）
 * jaxb-libs.jar（AEM Forms が JBoss にデプロイされている場合）
 * jaxb-xjc.jar（AEM Forms が JBoss にデプロイされている場合）
-* relaxingDatatype.jar（AEM Forms が JBoss にデプロイされている場合）
+* relaxngDatatype.jar（AEM Forms が JBoss にデプロイされている場合）
 * xsdlib.jar（AEM Forms が JBoss にデプロイされている場合）
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -175,18 +192,18 @@ Document Security サービスの操作をプログラムで実行する前に�
 
 ポリシーを作成するには、ポリシー属性を設定します。 必須の属性は、ポリシー名です。 ポリシー名は、ポリシーセットごとに一意である必要があります。 ポリシーセットは、単にポリシーの集まりです。 ポリシーが別々のポリシーセットに属している場合は、同じ名前の 2 つのポリシーを使用できます。 ただし、1 つのポリシーセット内の 2 つのポリシーが同じポリシー名を持つことはできません。
 
-有効期間も役に立つ属性です。 有効期間とは、権限を持つ受信者がポリシーで保護されたドキュメントにアクセスできる期間を指します。 この属性を設定しない場合、ポリシーは常に有効です。
+設定しておくと便利な属性として、有効期間があります。 有効期間とは、権限を持つ受信者がポリシーで保護されたドキュメントにアクセスできる期間を指します。 この属性を設定しない場合、ポリシーは常に有効です。
 
 有効期間は、次のいずれかのオプションに設定できます。
 
-* ドキュメントが公開されてからドキュメントにアクセスできる日数
+* ドキュメントが公開されてからドキュメントにアクセスできる一定の日数
 * ドキュメントにアクセスできなくなる終了日
 * ドキュメントにアクセスできる特定の日付範囲
 * 常に有効
 
 開始日のみを指定した場合、ポリシーは開始日より後に有効になります。 終了日のみを指定した場合、ポリシーは終了日まで有効です。 ただし、開始日と終了日の両方が定義されていない場合は、例外が発生します。
 
-ポリシーに属する属性を設定する場合は、暗号化設定も指定できます。 これらの暗号化設定は、ポリシーがドキュメントに適用される際に影響を受けます。 次の暗号化値を指定できます。
+ポリシーに属する属性を設定する場合は、暗号化設定も指定できます。 これらの暗号化設定は、ポリシーがドキュメントに適用されると有効になります。 次の暗号化値を指定できます。
 
 * **AES256**：256 ビットキーを持つ AES 暗号化アルゴリズムを表します。
 * **AES128**：128 ビットキーを持つ AES 暗号化アルゴリズムを表します。
@@ -249,7 +266,7 @@ Document Security API（Java）を使用してポリシーを作成します。
    * `DocumentSecurityClient` オブジェクトの `getPolicyManager` メソッドを呼び出して、`PolicyManager` オブジェクトを作成します。
    * `PolicyManager` オブジェクトの `registerPolicy` メソッドを呼び出して、次の値を渡すことにより、ポリシーを登録します。
 
-      * 登録するポリシーを表す `Policy` オブジェクト。
+     * 登録するポリシーを表す `Policy` オブジェクト。
 
    * ポリシーが属するポリシーセットを表す文字列値。
 
@@ -285,9 +302,9 @@ Document Security API（web サービス）を使用してポリシーを作成�
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `RightsManagementServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `RightsManagementServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
 
    * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 
@@ -390,8 +407,8 @@ Document Security API（Java）を使用して既存のポリシーを変更し�
    * `RightsManagementClient` オブジェクトの `getPolicyManager` メソッドを呼び出して、`PolicyManager` オブジェクトを作成します。
    * 更新するポリシーを表す `Policy` オブジェクトを作成するには、`PolicyManager` オブジェクトの `getPolicy` メソッドを呼び出し、次の値を渡します。
 
-      * ポリシーが属するポリシーセット名を表す文字列値。 `null` を指定すると、`MyPolicies` ポリシーセットが使用されるようになります。
-      * ポリシー名を表す文字列値。
+     * ポリシーが属するポリシーセット名を表す文字列値。 `null` を指定すると、`MyPolicies` ポリシーセットが使用されるようになります。
+     * ポリシー名を表す文字列値。
 
 1. ポリシーの属性を設定します。
 
@@ -403,7 +420,7 @@ Document Security API（Java）を使用して既存のポリシーを変更し�
 
 **コード例**
 
-Document Security サービスを使用するコード例については、「クイックスタート（SOAP モード）：Java API を使用したポリシーの変更」の節を参照してください。
+Document Security サービスを使用するコード例については、「Quick Start（SOAP モード）：Modifying a policy using the Java API」セクションを参照してください。
 
 ### Web サービス API を使用して既存のポリシーを変更する {#modify-existing-policies-using-the-web-service-api}
 
@@ -425,9 +442,9 @@ Document Security API（web サービス）を使用して既存のポリシー�
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `RightsManagementServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `RightsManagementServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
 
    * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 
@@ -455,7 +472,7 @@ Document Security サービスを使用するコード例については、次�
 
 ## ポリシーの削除 {#deleting-policies}
 
-既存のポリシーは、Document Security Java API または web サービス API を使用して削除できます。 ポリシーを削除すると、そのポリシーをドキュメントの保護に使用できなくなります。 ただし、ポリシーを使用している既存のポリシーで保護されたドキュメントは、引き続き保護されます。 新しいポリシーが利用可能になったら、ポリシーを削除できます。
+既存のポリシーは、Document Security Java API または web サービス API を使用して削除できます。 ポリシーを削除すると、そのポリシーをドキュメントの保護に使用できなくなります。 ただし、そのポリシーを使用して保護された既存のドキュメントは、引き続き保護されます。 新しいポリシーが利用可能になったら、ポリシーを削除できます。
 
 >[!NOTE]
 >
@@ -479,7 +496,7 @@ Document Security サービスの操作をプログラムで実行する前に�
 
 **ポリシーを削除**
 
-ポリシーを削除するには、削除するポリシーと、そのポリシーが属するポリシーセットを指定します。 AEM Forms の呼び出しに設定を使用するユーザーには、ポリシーを削除する権限が必要です。権限がない場合は、例外が発生します。 同様に、存在しないポリシーを削除しようとすると、例外が発生します。
+ポリシーを削除するには、削除するポリシーと、そのポリシーが属するポリシーセットを指定します。 AEM Forms を呼び出す際に設定が使用されるユーザーには、ポリシーを削除する権限が必要です。権限がない場合は、例外が発生します。 同様に、存在しないポリシーを削除しようとすると、例外が発生します。
 
 ### Java API を使用したポリシーの削除 {#delete-policies-using-the-java-api}
 
@@ -499,8 +516,8 @@ Document Security API（Java）を使用してポリシーを削除します。
    * `RightsManagementClient` オブジェクトの `getPolicyManager` メソッドを呼び出して、`PolicyManager` オブジェクトを作成します。
    * `PolicyManager` オブジェクトの `deletePolicy` メソッドを呼び出し、次の値を渡すことにより、ポリシーを削除します。
 
-      * ポリシーが属するポリシーセット名を指定する文字列値。 `null` を指定すると、`MyPolicies` ポリシーセットが使用されます。
-      * 削除するポリシーの名前を指定する文字列値。
+     * ポリシーが属するポリシーセット名を指定する文字列値。 `null` を指定すると、`MyPolicies` ポリシーセットが使用されます。
+     * 削除するポリシーの名前を指定する文字列値。
 
 **コード例**
 
@@ -528,9 +545,9 @@ Document Security API（web サービス）を使用してポリシーを削除�
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `RightsManagementServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `RightsManagementServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
 
    * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 
@@ -552,7 +569,7 @@ Document Security サービスを使用するコード例については、次�
 
 ドキュメントを保護するために、PDF ドキュメントにポリシーを適用できます。 ポリシーを PDF ドキュメントに適用すると、ドキュメントへのアクセスを制限できます。 ドキュメントを保護しているポリシーが既にある場合は、このドキュメントにポリシーを適用することはできません。
 
-ドキュメントを開いている間は、テキストの印刷とコピー、変更、ドキュメントへの署名とコメントの追加など、Acrobat と Adobe Reader の機能へのアクセスを制限することもできます。 また、ユーザーのドキュメントへのアクセスを制限する場合に、ポリシーで保護された PDF ドキュメントを失効させることもできます。
+ドキュメントを開いている間は、テキストの印刷とコピー、変更、ドキュメントへの署名とコメントの追加など、Acrobat と Adobe Reader の機能へのアクセスを制限することもできます。 また、ユーザーにドキュメントへのアクセスを許可したくなくなった場合は、ポリシーで保護された PDF ドキュメントを失効させることもできます。
 
 ポリシーで保護されたドキュメントを配布した後で、そのドキュメントの使用を監視できます。 つまり、ドキュメントが誰によって、どのように使用されているかを確認できるということです。 例えば、誰かがそのドキュメントを開いた日時を知ることができます。
 
@@ -621,13 +638,13 @@ Document Security API（Java）を使用して、PDF ドキュメントにポリ
    * `RightsManagementClient` オブジェクトの `getDocumentManager` メソッドを呼び出して、`DocumentManager` オブジェクトを作成します。
    * `DocumentManager` オブジェクトの `protectDocument` メソッドを呼び出して、次の値を渡すことにより、PDF ドキュメントにポリシーを適用します。
 
-      * このポリシーが適用される PDF ドキュメントが格納される `com.adobe.idp.Document` オブジェクト。
-      * ドキュメントの名前を指定する文字列値。
-      * ポリシーが属しているポリシーセットの名前を表す文字列値。 `null` 値を使用すると、現在使用中の `MyPolicies` ポリシーセットが指定されます。
-      * ポリシー名を指定する文字列値。
-      * ドキュメントのパブリッシャーであるユーザーのユーザーマネージャードメインの名前を表す文字列値。 このパラメーターの値はオプションであり、null にすることができます（このパラメーターが null の場合、次のパラメーターの値も null にする必要があります）。
-      * ドキュメントのパブリッシャーであるユーザーマネージャーユーザーの正規名の名前を表す文字列値。 このパラメーター値はオプションで、`null` にできます（このパラメーターを null にする場合、前のパラメーター値は `null` である必要があります）。
-      * MS Office テンプレートの選択に使用されるロケールを表す `com.adobe.livecycle.rightsmanagement.Locale` です。 このパラメーター値はオプションで、PDF ドキュメントには使用されません。 PDF ドキュメントを保護するには、`null` を指定します。
+     * このポリシーが適用される PDF ドキュメントが格納される `com.adobe.idp.Document` オブジェクト。
+     * ドキュメントの名前を指定する文字列値。
+     * ポリシーが属しているポリシーセットの名前を表す文字列値。 `null` 値を使用すると、現在使用中の `MyPolicies` ポリシーセットが指定されます。
+     * ポリシー名を指定する文字列値。
+     * ドキュメントのパブリッシャーであるユーザーの User Manager ドメイン名を表す文字列値。 このパラメーターの値はオプションであり、null にすることができます（このパラメーターが null の場合、次のパラメーターの値も null にする必要があります）。
+     * ドキュメントのパブリッシャーであるユーザーマネージャーユーザーの正規名の名前を表す文字列値。 このパラメーター値はオプションで、`null` にできます（このパラメーターを null にする場合、前のパラメーター値は `null` である必要があります）。
+     * MS Office テンプレートの選択に使用されるロケールを表す `com.adobe.livecycle.rightsmanagement.Locale` です。 このパラメーター値はオプションで、PDF ドキュメントには使用されません。 PDF ドキュメントを保護するには、`null` を指定します。
 
      `protectDocument` メソッドは、 ポリシーで保護された PDF ドキュメントを含む `RMSecureDocumentResult` オブジェクトを返します。
 
@@ -650,7 +667,7 @@ Document Security サービスを使用するコード例については、次�
 
 [接続プロパティの設定](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Web サービス API を使用した PDF ドキュメントへのポリシーの適用 {#apply-a-policy-to-a-pdf-document-using-the-web-service-api}
+### Web サービス API を使用して、PDF ドキュメントにポリシーを適用します。 {#apply-a-policy-to-a-pdf-document-using-the-web-service-api}
 
 Document Security API（web サービス）を使用して、PDF ドキュメントにポリシーを適用します。
 
@@ -670,9 +687,9 @@ Document Security API（web サービス）を使用して、PDF ドキュメン
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `RightsManagementServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `RightsManagementServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
 
    * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 
@@ -693,7 +710,7 @@ Document Security API（web サービス）を使用して、PDF ドキュメン
    * ポリシーが属しているポリシーセットの名前を表す文字列値。 `null` 値を使用すると、現在使用中の `MyPolicies` ポリシーセットが指定されます。
    * ポリシー名を指定する文字列値。
    * ドキュメントのパブリッシャーであるユーザーのユーザーマネージャードメインの名前を表す文字列値。 このパラメーター値はオプションであり、null にすることができます（このパラメーターが null の場合、次のパラメーター値は `null` でなければなりません）。
-   * ドキュメントのパブリッシャーであるユーザーマネージャーユーザーの正規名の名前を表す文字列値。 このパラメーター値はオプションであり、null にすることができます（このパラメーターが null の場合、前のパラメーター値は `null` でなければなりません）。
+   * ドキュメントのパブリッシャーである User Manager ユーザーの正規名を表す文字列値。 このパラメーター値はオプションであり、null にすることができます（このパラメーターが null の場合、前のパラメーター値は `null` でなければなりません）。
    * ロケール値を指定する `RMLocale` 値（例えば `RMLocale.en`）。
    * ポリシー識別子の値を格納するために使用される文字列出力パラメーター。
    * ポリシーで保護された識別子の値を保存するために使用される文字列出力パラメーター。
@@ -712,10 +729,10 @@ Document Security API（web サービス）を使用して、PDF ドキュメン
 
 Document Security サービスを使用するコード例については、次のクイックスタートを参照してください。
 
-* 「クイックスタート（MTOM）：Web サービス API を使用した PDF ドキュメントへのポリシーの適用」
-* 「クイックスタート（SwaRef）：Web サービス API を使用した PDF ドキュメントのポリシーへの適用」
+* 「クイックスタート（MTOM）：web サービス API を使用してポリシーを PDF ドキュメントに適用する」
+* 「クイックスタート（SwaRef）：web サービス API を使用した PDF ドキュメントへのポリシーの適用」
 
-## PDF ドキュメントからのポリシーの削除 {#removing-policies-from-pdf-documents}
+## PDF ドキュメントのポリシー削除 {#removing-policies-from-pdf-documents}
 
 ポリシーで保護されたドキュメントからポリシーを削除して、ドキュメントからセキュリティを削除できます。 つまり、ドキュメントをポリシーで保護したくない場合です。 ポリシーで保護されたドキュメントを新しいポリシーで更新する場合は、ポリシーを削除して更新されたポリシーを追加する代わりに、ポリシーを切り替える方が効率的です。
 
@@ -793,7 +810,7 @@ Document Security API（Java）を使用して、ポリシーで保護された 
 
 Document Security サービスを使用するコード例については、次のクイックスタートを参照してください。
 
-* 「クイックスタート（SOAP モード）：Java API を使用した PDF ドキュメントからのポリシーの削除」
+* 「クイックスタート（SOAP モード）：Java API を使用した PDF ドキュメントからポリシーを削除」
 
 ### Web サービス API を使用したポリシーの削除 {#remove-a-policy-using-the-web-service-api}
 
@@ -815,13 +832,13 @@ Document Security API（web サービス）を使用して、ポリシーで保�
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `DocumentSecurityServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `DocumentSecurityServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
 
    * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 
-1. ポリシーで保護された PDF ドキュメントを取得します。
+1. ポリシー保護された PDF ドキュメントを取得します。
 
    * コンストラクタを使用して `BLOB` オブジェクトを作成します。 `BLOB` オブジェクトは、ポリシーの削除対象となる、ポリシーで保護された PDF ドキュメントを格納するために使用されます。
    * `System.IO.FileStream` オブジェクトを作成するには、コンストラクターを呼び出して、PDF ドキュメントのファイルの場所を表す文字列値とファイルを開くモードを渡します。
@@ -864,12 +881,12 @@ Document Security サービスを使用するコード例については、次�
 
 ### 手順の概要 {#summary_of_steps-5}
 
-ポリシーで保護されたドキュメントを失効するには、次の手順を実行します。
+ポリシーで保護されたドキュメントへのアクセスを失効させるには、次の手順を実行します。
 
 1. プロジェクトファイルを含めます。
 1. Document Security Client API オブジェクトを作成します。
 1. ポリシーで保護された PDF ドキュメントを取得します。
-1. ポリシーで保護されたドキュメントを失効させます。
+1. ポリシーで保護されたドキュメントへのアクセスを失効させます。
 
 **プロジェクトファイルを含める**
 
@@ -881,7 +898,7 @@ Document Security サービスの操作をプログラムで実行する前に�
 
 **ポリシーで保護された PDF ドキュメントの取得**
 
-ポリシーで保護された PDF ドキュメントを取得して、失効させます。 失効済みのドキュメントや、ポリシーで保護されたドキュメントではないドキュメントを取り消すことはできません。
+失効させるために、ポリシーで保護された PDF ドキュメントを取得します。 失効済みのドキュメントや、ポリシーで保護されたドキュメントではないドキュメントを取り消すことはできません。
 
 ポリシーで保護されたドキュメントのライセンス識別子の値がわかっている場合は、ポリシーで保護された PDF ドキュメントを取得する必要はありません。 ただし、ほとんどの場合、ライセンス識別子の値を取得するには、PDF ドキュメントを取得する必要があります。
 
@@ -901,7 +918,7 @@ Document Security サービスの操作をプログラムで実行する前に�
 
 [PDF ドキュメントへのポリシーの適用](protecting-documents-policies.md#applying-policies-to-pdf-documents)
 
-[失効したドキュメントへのアクセスの回復](protecting-documents-policies.md#reinstating-access-to-revoked-documents)
+[失効したドキュメントへのアクセスの再有効化](protecting-documents-policies.md#reinstating-access-to-revoked-documents)
 
 ### Java API を使用したドキュメントへのアクセスの取り消し {#revoke-access-to-documents-using-the-java-api}
 
@@ -921,16 +938,16 @@ Document Security API（Java）を使用して、ポリシーで保護された 
    * コンストラクターを使用して、PDF ドキュメントの場所を指定する文字列値を渡すことで、ポリシーで保護された PDF ドキュメントを表す `java.io.FileInputStream` オブジェクトを作成します。
    * コンストラクタを使用して `com.adobe.idp.Document` オブジェクトを渡すことによって、`java.io.FileInputStream` オブジェクトを作成します。
 
-1. ポリシーで保護されたドキュメントの取り消し
+1. ポリシーで保護されたドキュメントを失効させます。
 
    * `DocumentSecurityClient` オブジェクトの `getDocumentManager` メソッドを呼び出して、`DocumentManager` オブジェクトを作成します。
    * `DocumentManager` オブジェクトの `getLicenseId` メソッドを呼び出して、ポリシーで保護されたドキュメントのライセンス識別子の値を取得します。 ポリシーで保護されたドキュメントを表す `com.adobe.idp.Document` オブジェクトを渡します。 このメソッドは、ライセンス識別子の値を表す文字列値を返します。
    * `DocumentSecurityClient` オブジェクトの `getLicenseManager` メソッドを呼び出して、`LicenseManager` オブジェクトを作成します。
    * `LicenseManager` オブジェクトの `revokeLicense` メソッドを呼び出して、次の値を渡すことにより、ポリシーで保護されたドキュメントを失効させます。
 
-      * ポリシーで保護されたドキュメントのライセンス識別子の値を指定する文字列値（`DocumentManager` オブジェクトの `getLicenseId` メソッドの戻り値を指定します）。
-      * ドキュメントを取り消す理由を指定する `License` インターフェイスの静的データメンバーです。 例えば、`License.DOCUMENT_REVISED` を指定できます。
-      * 改訂済みドキュメントの場所を指定する `java.net.URL` 値です。 ユーザーを別の URL にリダイレクトしたくない場合、`null` を渡すことができます。
+     * ポリシーで保護されたドキュメントのライセンス識別子の値を指定する文字列値（`DocumentManager` オブジェクトの `getLicenseId` メソッドの戻り値を指定します）。
+     * ドキュメントを取り消す理由を指定する `License` インターフェイスの静的データメンバーです。 例えば、`License.DOCUMENT_REVISED` を指定できます。
+     * 改訂済みドキュメントの場所を指定する `java.net.URL` 値です。 ユーザーを別の URL にリダイレクトしたくない場合、`null` を渡すことができます。
 
 **コード例**
 
@@ -938,7 +955,7 @@ Document Security サービスを使用するコード例については、次�
 
 * 「クイックスタート（SOAP モード）：Java API を使用したドキュメントの失効」
 
-### Web サービス API を使用したドキュメントへのアクセスの取り消し {#revoke-access-to-documents-using-the-web-service-api}
+### Web サービス API を使用してドキュメントへのアクセスを取り消す {#revoke-access-to-documents-using-the-web-service-api}
 
 Document Security API（web サービス）を使用して、ポリシーで保護された PDF ドキュメントへのアクセスを取り消します。
 
@@ -958,9 +975,9 @@ Document Security API（web サービス）を使用して、ポリシーで保�
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `DocumentSecurityServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `DocumentSecurityServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
 
    * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 
@@ -977,9 +994,9 @@ Document Security API（web サービス）を使用して、ポリシーで保�
    * `DocumentSecurityServiceClient` オブジェクトの `getLicenseID` メソッドを呼び出して、ポリシーで保護されたドキュメントを表す `BLOB` オブジェクトを渡して、ポリシーで保護されたドキュメントのライセンス識別子の値を取得します。 このメソッドは、ライセンス識別子を表す文字列値を返します。
    * `DocumentSecurityServiceClient` オブジェクトの `revokeLicense` メソッドを呼び出して、次の値を渡すことにより、ポリシーで保護されたドキュメントを失効させます。
 
-      * ポリシーで保護されたドキュメントのライセンス識別子の値を指定する文字列値（`DocumentSecurityServiceService` オブジェクトの `getLicenseId` メソッドの戻り値を指定します）。
-      * ドキュメントを失効させる理由を指定する `Reason` 列挙の静的データメンバー。 例えば、`Reason.DOCUMENT_REVISED` を指定できます。
-      * 改訂されたドキュメントの URL の場所を指定する `string` 値。 ユーザーを別の URL にリダイレクトしたくない場合、`null` を渡すことができます。
+     * ポリシーで保護されたドキュメントのライセンス識別子の値を指定する文字列値（`DocumentSecurityServiceService` オブジェクトの `getLicenseId` メソッドの戻り値を指定します）。
+     * ドキュメントを失効させる理由を指定する `Reason` 列挙の静的データメンバー。 例えば、`Reason.DOCUMENT_REVISED` を指定できます。
+     * 改訂されたドキュメントの URL の場所を指定する `string` 値。 ユーザーを別の URL にリダイレクトしたくない場合、`null` を渡すことができます。
 
 **コード例**
 
@@ -996,9 +1013,9 @@ Document Security サービスを使用するコード例については、次�
 
 [SwaRef を使用した AEM Forms の呼び出し](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## 失効したドキュメントへのアクセスの回復 {#reinstating-access-to-revoked-documents}
+## 失効したドキュメントへのアクセスの再有効化 {#reinstating-access-to-revoked-documents}
 
-失効した PDF ドキュメントへのアクセス権を回復すると、失効したドキュメントのすべてのコピーにユーザーがアクセスできるようになります。 ユーザーが失効した回復済みドキュメントを開くと、そのドキュメントを表示できます。
+失効した PDF ドキュメントへのアクセス権を回復すると、失効したドキュメントのすべてのコピーにユーザーがアクセスできるようになります。 ユーザーが失効後に再有効化されたドキュメントを開くと、そのドキュメントを表示できます。
 
 >[!NOTE]
 >
@@ -1037,9 +1054,9 @@ Document Security サービスの操作をプログラムで実行する前に�
 
 [PDF ドキュメントへのポリシーの適用](protecting-documents-policies.md#applying-policies-to-pdf-documents)
 
-[ドキュメントへのアクセス権の失効](protecting-documents-policies.md#revoking-access-to-documents)
+[ドキュメントへのアクセスの失効](protecting-documents-policies.md#revoking-access-to-documents)
 
-### 失効したドキュメントへのアクセス権限を Java API を使用して復元する {#reinstate-access-to-revoked-documents-using-the-java-api}
+### 失効したドキュメントへのアクセスを Java API を使用して復元する {#reinstate-access-to-revoked-documents-using-the-java-api}
 
 Document Security API（Java）を使用して、失効したドキュメントへのアクセス権限を復元します。
 
@@ -1068,11 +1085,11 @@ Document Security API（Java）を使用して、失効したドキュメント�
 
 Document Security サービスを使用するコード例については、次のクイックスタートを参照してください。
 
-* 「クイックスタート（SOAP モード）：Web サービス API を使用した失効ドキュメントへのアクセス権の回復」
+* 「クイックスタート（SOAP モード）：web サービス API を使用した失効したドキュメントへのアクセス権の回復」
 
-### 失効したドキュメントへのアクセス権限を web サービス API を使用して復元する {#reinstate-access-to-revoked-documents-using-the-web-service-api}
+### 失効したドキュメントへのアクセスを web サービス API を使用して復元する {#reinstate-access-to-revoked-documents-using-the-web-service-api}
 
-Document Security API（web サービス）を使用して、失効したドキュメントへのアクセス権限を復元します。
+Document Security API（web サービス）を使用して、失効したドキュメントへのアクセスを復元します。
 
 1. プロジェクトファイルを含めます。
 
@@ -1090,9 +1107,9 @@ Document Security API（web サービス）を使用して、失効したドキ�
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `DocumentSecurityServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `DocumentSecurityServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
 
    * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 
@@ -1159,7 +1176,7 @@ Document Security サービスの操作をプログラムで実行する前に�
 
 **ポリシーで保護されたドキュメントに関する情報を取得する**
 
-ポリシーで保護された PDF ドキュメントを検査した後、そのドキュメントに関する情報を取得できます。 例えば、ドキュメントの保護に使用するポリシーを指定できます。
+ポリシーで保護された PDF ドキュメントを検査した後、そのドキュメントに関する情報を取得できます。 例えば、ドキュメントの保護に使用されているポリシーを特定できます。
 
 マイポリシーに属するポリシーでドキュメントを保護して `RMInspectResult.getPolicysetName` または `RMInspectResult.getPolicysetId` を呼び出した場合は、null が戻されます。
 
@@ -1177,7 +1194,7 @@ Document Security Service API（Java）を使用して、ポリシーで保護�
 
 1. プロジェクトファイルを含めます。
 
-   adobe-livecycle-client.jar などのクライアント JAR ファイルを Java プロジェクトのクラスパスに含めます。 これらのファイルの場所については、[AEM Forms Java ライブラリファイルを含める](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)を参照してください。
+   adobe-rightsmanagement-client.jar などのクライアント JAR ファイルを Java プロジェクトのクラスパスに含めます。 これらのファイルの場所については、[AEM Forms Java ライブラリファイルを含める](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)を参照してください。
 
 1. Document Security Client API オブジェクトを作成します。
 
@@ -1202,7 +1219,7 @@ Document Security Service API（Java）を使用して、ポリシーで保護�
 
 Document Security サービスを使用するコード例については、次のクイックスタートを参照してください。
 
-* 「クイックスタート（SOAP モード）：Java API を使用した PDF ドキュメント保護ポリシーの検査」
+* 「クイックスタート（SOAP モード）：Java API を使用したポリシーで保護された PDF ドキュメントの検査」
 
 ### Web サービス API を使用したポリシーで保護された PDF ドキュメントの検査 {#inspect-policy-protected-pdf-documents-using-the-web-service-api}
 
@@ -1224,9 +1241,9 @@ Document Security Service API（web サービス）を使用して、ポリシ�
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `RightsManagementServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `RightsManagementServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
 
    * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 
@@ -1250,8 +1267,8 @@ Document Security Service API（web サービス）を使用して、ポリシ�
 
 Document Security サービスを使用するコード例については、次のクイックスタートを参照してください。
 
-* 「クイックスタート（MTOM）：Web サービス API を使用した PDF ドキュメント保護ポリシーの検査」
-* 「クイックスタート（SwaRef）：Web サービス API を使用した PDF ドキュメント保護ポリシーの検査」
+* 「クイックスタート（MTOM）：web サービス API を使用したポリシーで保護された PDF ドキュメントの検査」
+* 「クイックスタート（SwaRef）：web サービス API を使用したポリシー保護された PDF ドキュメントの検査」
 
 **関連トピック**
 
@@ -1261,7 +1278,7 @@ Document Security サービスを使用するコード例については、次�
 
 ## 透かしの作成 {#creating-watermarks}
 
-透かしを使用すると、ドキュメントを一意に識別し、著作権侵害を制御することにより、ドキュメントのセキュリティを確保できます。 例えば、機密を示す透かしを作成して、ドキュメントのすべてのページに配置できます。 透かしを作成した後は、その透かしをポリシーの一部として含めることができます。 つまり、新しく作成した透かしにポリシーの透かし属性を設定できます。 透かしを含むポリシーがドキュメントに適用されると、その透かしはポリシーで保護されたドキュメントに表示されます。
+透かしを使用すると、ドキュメントを一意に特定し、著作権侵害を制御することにより、ドキュメントのセキュリティを確保できます。 例えば、「Confidential」と記載された透かしを作成して、ドキュメントのすべてのページに配置できます。 透かしを作成した後は、その透かしをポリシーの一部として含めることができます。 つまり、新しく作成した透かしをポリシーの透かし属性に設定できます。 透かしを含むポリシーがドキュメントに適用されると、その透かしはポリシーで保護されたドキュメントに表示されます。
 
 >[!NOTE]
 >
@@ -1340,7 +1357,7 @@ Document Security サービスの操作をプログラムで実行する前に�
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:SCALE</code></p></td>
-   <td><p>この値を指定した場合、<code>WaterBackCmd:IS_SIZE_ENABLED</code> が存在し、その値が true である必要があります。 この属性を指定しない場合、デフォルトの動作は全体表示です。</p></td>
+   <td><p>この値を指定した場合、<code>WaterBackCmd:IS_SIZE_ENABLED</code> が存在し、その値が true である必要があります。 この属性を指定しない場合、デフォルトの動作ではページに合わせます。</p></td>
    <td><p>0.0 より大きく 1.0 以下の値。</p></td>
   </tr>
   <tr>
@@ -1360,7 +1377,7 @@ Document Security サービスの操作をプログラムで実行する前に�
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:IS_SIZE_ENABLED</code></p></td>
-   <td><p>カスタムスケールが指定されている場合は true。 この値が true の場合は、SCALE も指定する必要があります。 この値が false の場合、デフォルトは全体表示です。</p></td>
+   <td><p>カスタムスケールが指定されている場合は true。 この値が true の場合は、SCALE も指定する必要があります。 この値が false の場合、デフォルトではページに合わせます。</p></td>
    <td><p>True または False</p></td>
   </tr>
   <tr>
@@ -1444,9 +1461,9 @@ Document Security API（web サービス）を使用して透かしを作成し�
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `RightsManagementServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `RightsManagementServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
 
    * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 
@@ -1512,7 +1529,7 @@ Document Security サービスの操作をプログラムで実行する前に�
 
 **変更する透かしを取得します**
 
-透かしを変更するには、既存の透かしを取得する必要があります。 名前を指定するか、識別子の値を指定し、透かしを取得することができます。
+透かしを変更するには、既存の透かしを取得する必要があります。 透かしは、名前を指定するか識別子の値を指定して取得できます。
 
 **透かし属性の設定**
 
@@ -1544,7 +1561,7 @@ Document Security API（Java）を使用して透かしを変更します。
 
 1. プロジェクトファイルを含めます。
 
-   adobe-livecycle-client.jar などのクライアント JAR ファイルを Java プロジェクトのクラスパスに含めます。
+   adobe-rightsmanagement-client.jar などのクライアント JAR ファイルを Java プロジェクトのクラスパスに含めます。
 
 1. Document Security Client API オブジェクトを作成します。
 
@@ -1569,7 +1586,7 @@ Document Security API（Java）を使用して透かしを変更します。
 
 **コード例**
 
-Document Security サービスを使用するコード例については、「クイックスタート（SOAP モード）：Java API を使用した透かしの変更」の説を参照してください。
+Document Security サービスを使用するコード例については、「クイックスタート (SOAP モード)：Java API を使用した透かしの変更」セクションを参照してください。
 
 ### Web サービス API を使用した透かしの変更 {#modify-watermarks-using-the-web-service-api}
 
@@ -1591,15 +1608,15 @@ Document Security API（web サービス）を使用して透かしを変更し�
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `DocumentSecurityServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `DocumentSecurityServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
 
    * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 
 1. 変更する透かしを取得します。
 
-   `DocumentSecurityServiceClient` オブジェクトの `getWatermarkByName` メソッドを呼び出して、変更する透かしを取得します。 透かしの名前を指定する文字列値を渡します。 このメソッドは、変更する透かしを表す `WatermarkSpec` オブジェクトを返します。
+   `DocumentSecurityServiceClient` オブジェクトの `getWatermarkByName` メソッドを呼び出して、変更する透かしを取得します。 透かし名を指定する文字列を渡します。 このメソッドは、変更する透かしを表す `WatermarkSpec` オブジェクトを返します。
 
 1. 透かしの属性を設定します。
 
@@ -1621,7 +1638,7 @@ Document Security サービスを使用するコード例については、次�
 
 ## イベントの検索 {#searching-for-events}
 
-Rights Management サービスは、ドキュメントへのポリシーの適用、ポリシーで保護されたドキュメントを開く処理、ドキュメントへのアクセス権限の失効などといった特定のアクションの発生を追跡します。 Rights Management サービスに対してイベント監査を有効にする必要があります。そうしないと、イベントが追跡されません。
+Rights Management サービスは、ドキュメントへのポリシーの適用、ポリシーで保護されたドキュメントを開く処理、ドキュメントへのアクセス権限の失効などといった特定のアクションの発生を追跡します。 Rights Management サービスでイベント監査を有効にする必要があります。そうしないと、イベントは追跡されません。
 
 イベントは、次のいずれかのカテゴリに分類されます。
 
@@ -1655,7 +1672,7 @@ Rights Management イベントを検索するには、次の手順を実行し�
 
 **検索するイベントの指定**
 
-検索するイベントの指定 例えば、新しいポリシーの作成時に発生するポリシー作成イベントを検索できます。
+検索するイベントを指定します。 例えば、新しいポリシーの作成時に発生するポリシー作成イベントを検索できます。
 
 **イベントの検索**
 
@@ -1673,7 +1690,7 @@ Rights Management API（Java）を使用してイベントを検索します。
 
 1. プロジェクトファイルを含める
 
-   クライアント JAR ファイル(adobe-rightsmanagement-client.jar など)を Java プロジェクトのクラスパスに含めます。
+   adobe-rightsmanagement-client.jar などのクライアント JAR ファイルを、Java プロジェクトのクラスパスに追加します。
 
 1. Rights Management クライアント API オブジェクトの作成
 
@@ -1719,9 +1736,9 @@ Rights Management API（web サービス）を使用してイベントを検索�
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `DocumentSecurityServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `DocumentSecurityServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
 
    * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 
@@ -1952,7 +1969,7 @@ Rights Management サービスを使用するコード例については、次�
 
 ## Word ドキュメントへのポリシーの適用 {#applying-policies-to-word-documents}
 
-Rights Management サービスでは、PDF ドキュメント以外に、Microsoft Word ドキュメント（DOC ファイル）やその他の Micosoft Office ファイルフォーマットなどのドキュメント形式もサポートしています。 例えば、Word のドキュメントに特定のポリシーを適用して、セキュリティで保護することができます。 Word のドキュメントにポリシーを適用することにより、ドキュメントへのアクセスを制限することができます。 ドキュメントを保護しているポリシーが既にある場合は、このドキュメントにポリシーを適用することはできません。
+Rights Management サービスでは、PDF ドキュメント以外に、Microsoft Word ドキュメント（DOC ファイル）やその他の Micosoft Office ファイルフォーマットなどのドキュメント形式もサポートしています。 例えば、Word ドキュメントにポリシーを適用して、セキュリティ保護を行うことができます。 Word のドキュメントにポリシーを適用することにより、ドキュメントへのアクセスを制限することができます。 ドキュメントを保護しているポリシーが既にある場合は、このドキュメントにポリシーを適用することはできません。
 
 ポリシーで保護された Word ドキュメントを配布すると、そのドキュメントの使用状況を監視できます。 つまり、ドキュメントが誰によって、どのように使用されているかを確認できるということです。 例えば、誰かがそのドキュメントを開いた日時を知ることができます。
 
@@ -1966,7 +1983,7 @@ Word ドキュメントにポリシーを適用する場合は、次の手順に
 
 1. プロジェクトファイルを含めます。
 1. Document Security Client API オブジェクトを作成します。
-1. ポリシーを適用する Word ドキュメントを取得します。
+1. ポリシーが適用されている Word ドキュメントを取得します。
 1. Word ドキュメントに既存のポリシーを適用します。
 1. ポリシーで保護された Word ドキュメントを保存します。
 
@@ -1996,7 +2013,7 @@ Document Security サービスによって Word ドキュメントにポリシ�
 
 [接続プロパティの設定](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[ドキュメントへのアクセス権の失効](protecting-documents-policies.md#revoking-access-to-documents)
+[ドキュメントへのアクセスの失効](protecting-documents-policies.md#revoking-access-to-documents)
 
 ### Java API を使用して Word ドキュメントにポリシーを適用する {#apply-a-policy-to-a-word-document-using-the-java-api}
 
@@ -2021,13 +2038,13 @@ Document Security API（Java）を使用して、Word ドキュメントにポ�
    * `DocumentSecurityClient` オブジェクトの `getDocumentManager` メソッドを呼び出して、`DocumentManager` オブジェクトを作成します。
    * `DocumentManager` オブジェクトの `protectDocument` メソッドを呼び出し、次の値を渡して、Word ドキュメントにポリシーを適用します。
 
-      * ポリシーを適用する Word ドキュメントが含まれる `com.adobe.idp.Document` オブジェクト。
-      * ドキュメントの名前を指定する文字列値。
-      * ポリシーが属しているポリシーセットの名前を表す文字列値。 `null` 値を使用すると、現在使用中の `MyPolicies` ポリシーセットが指定されます。
-      * ポリシー名を指定する文字列値。
-      * ドキュメントのパブリッシャーであるユーザーのユーザーマネージャードメインの名前を表す文字列値。 このパラメーターの値はオプションであり、null にすることができます（このパラメーターが null の場合、次のパラメーターの値も null にする必要があります）。
-      * ドキュメントのパブリッシャーであるユーザーマネージャーユーザーの正規名の名前を表す文字列値。 このパラメーター値はオプションであり、 `null` にすることができます（このパラメーターが `null` の場合、前のパラメーター値も `null` である必要があります）。
-      * MS Office テンプレートの選択に使用されるロケールを表す `com.adobe.livecycle.rightsmanagement.Locale`。 このパラメーター値はオプションであり、`null` を指定できます。
+     * ポリシーを適用する Word ドキュメントが含まれる `com.adobe.idp.Document` オブジェクト。
+     * ドキュメントの名前を指定する文字列値。
+     * ポリシーが属しているポリシーセットの名前を表す文字列値。 `null` 値を使用すると、現在使用中の `MyPolicies` ポリシーセットが指定されます。
+     * ポリシー名を指定する文字列値。
+     * ドキュメントのパブリッシャーであるユーザーの User Manager ドメイン名を表す文字列値。 このパラメーターの値はオプションであり、null にすることができます（このパラメーターが null の場合、次のパラメーターの値も null にする必要があります）。
+     * ドキュメントのパブリッシャーである User Manager ユーザーの正規名を表す文字列値。 このパラメーター値はオプションであり、 `null` にすることができます（このパラメーターが `null` の場合、前のパラメーター値も `null` である必要があります）。
+     * MS Office テンプレートの選択に使用されるロケールを表す `com.adobe.livecycle.rightsmanagement.Locale`。 このパラメーター値はオプションであり、`null` を指定できます。
 
      `protectDocument` メソッドは、ポリシーで保護された Word ドキュメントを含む `RMSecureDocumentResult` オブジェクトを返します。
 
@@ -2063,9 +2080,9 @@ Document Security API（web サービス）を使用して、Word ドキュメ�
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `DocumentSecurityServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `DocumentSecurityServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
 
    * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 
@@ -2086,7 +2103,7 @@ Document Security API（web サービス）を使用して、Word ドキュメ�
    * ポリシーが属しているポリシーセットの名前を表す文字列値。 `null` 値を使用すると、現在使用中の `MyPolicies` ポリシーセットが指定されます。
    * ポリシー名を指定する文字列値。
    * ドキュメントのパブリッシャーであるユーザーのユーザーマネージャードメインの名前を表す文字列値。 このパラメーター値はオプションであり、null にすることができます（このパラメーターが null の場合、次のパラメーター値は `null` でなければなりません）。
-   * ドキュメントのパブリッシャーであるユーザーマネージャーユーザーの正規名の名前を表す文字列値。 このパラメーター値はオプションであり、null にすることができます（このパラメーターが null の場合、前のパラメーター値は `null` でなければなりません）。
+   * ドキュメントのパブリッシャーである User Manager ユーザーの正規名を表す文字列値。 このパラメーター値はオプションであり、null にすることができます（このパラメーターが null の場合、前のパラメーター値は `null` でなければなりません）。
    * ロケール値を指定する `RMLocale` 値（例えば `RMLocale.en`）。
    * ポリシー識別子の値を格納するために使用される文字列出力パラメーター。
    * ポリシーで保護された識別子の値を保存するために使用される文字列出力パラメーター。
@@ -2185,7 +2202,7 @@ Document Security API（Java） を使用して、ポリシーで保護された
 
 Document Security サービスを使用するコード例については、次のクイックスタートを参照してください。
 
-* 「クイックスタート（SOAP モード）：Java API を使用した Word ドキュメントからのポリシーの削除 」
+* 「クイックスタート（SOAP モード）：Java API を使用して Word ドキュメントからポリシーを削除する」
 
 ### Web サービス API を使用して Word ドキュメントからポリシーを削除 {#remove-a-policy-from-a-word-document-using-the-web-service-api}
 
@@ -2207,9 +2224,9 @@ Document Security API（web サービス）を使用して、ポリシーで保�
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `RightsManagementServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `RightsManagementServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
 
    * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 

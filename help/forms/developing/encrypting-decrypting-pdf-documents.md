@@ -9,14 +9,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 9f694358-e502-4fc0-8352-4c5119573756
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '8295'
 ht-degree: 98%
-
 ---
-
 # PDF ドキュメントの暗号化および復号化 {#encrypting-and-decrypting-pdf-documents}
 
 **このドキュメントのサンプルと例は、JEE 環境の AEM Forms のみを対象としています。**
@@ -36,7 +53,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->Encryption サービスについて詳しくは、[AEM Forms のサービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
+>暗号化サービスについての詳細情報は、『[AEM Forms サービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)』を参照してください。
 
 ## パスワードを使用した PDF ドキュメントの暗号化 {#encrypting-pdf-documents-with-a-password}
 
@@ -48,7 +65,7 @@ PDF ドキュメントをパスワードで暗号化する場合、ユーザー�
 
 >[!NOTE]
 >
->Encryption サービスについて詳しくは、[AEM Forms のサービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
+>暗号化サービスについての詳細情報に関しては、『[AEM Forms サービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)』を参照してください。
 
 ### 手順の概要 {#summary-of-steps}
 
@@ -181,7 +198,7 @@ PDF ドキュメントを暗号化する際に、保護されたドキュメン�
 
    >[!NOTE]
    >
-   >`localhost` を、AEM Forms をホストするサーバーの IP アドレスに置き換えます。
+   >`localhost` を、AEM Forms をホストするサーバーの IP アドレスに置換します。
 
 1. 暗号化クライアント API オブジェクトを作成します。
 
@@ -191,10 +208,10 @@ PDF ドキュメントを暗号化する際に、保護されたドキュメン�
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `EncryptionServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `EncryptionServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
-      * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
+     * `EncryptionServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `EncryptionServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 
 1. 暗号化する PDF ドキュメントを取得します。
 
@@ -249,15 +266,15 @@ PDF ドキュメントを暗号化する際に、保護されたドキュメン�
 
 >[!NOTE]
 >
->暗号化された PDF ドキュメントを AEM Forms リポジトリにアップロードすると、PDF ドキュメントを復号化して XDP コンテンツをエクストラクトすることはできません。 ドキュメントを AEM Forms リポジトリにアップロードする前に、ドキュメントを暗号化しないことをお勧めします。 （[リソースの書き込み](/help/forms/developing/aem-forms-repository.md#writing-resources) を参照してください）。
+>暗号化された PDF ドキュメントを AEM Forms リポジトリにアップロードすると、PDF ドキュメントを復号化して XDP コンテンツをエクストラクトすることはできません。 ドキュメントを AEM Forms リポジトリにアップロードする前に、ドキュメントを暗号化しないことをお勧めします。 （[リソースの書き込み](/help/forms/developing/aem-forms-repository.md#writing-resources) を参照。）
 
 >[!NOTE]
 >
->PDF ドキュメントを証明書で暗号化する前に、AEM Forms に証明書が追加されていることを確認する必要があります。 証明書は、管理コンソールを使用して、または Trust Manager API を使用してプログラムで追加されます。 （[Trust Manager API を使用した資格情報の読み込み](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)を参照してください。）
+>PDF ドキュメントを証明書で暗号化する前に、AEM Forms に証明書が追加されていることを確認する必要があります。 証明書は、管理コンソールを使用して、または Trust Manager API を使用してプログラムで追加されます。 （[Trust Manager API を使用した資格情報のインポート](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api) を参照。）
 
 >[!NOTE]
 >
->Encryption サービスについて詳しくは、[AEM Forms のサービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
+>暗号化サービスについて詳しくは、[AEM Forms のサービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
 
 ### 手順の概要 {#summary_of_steps-1}
 
@@ -285,7 +302,7 @@ PDF ドキュメントを暗号化する際に、保護されたドキュメン�
 
 **暗号化クライアント API オブジェクトを作成**
 
-プログラムによって暗号化サービスの操作を実行するには、暗号化サービスクライアントを作成する必要があります。 Java Encryption Service API を使用している場合は、`EncrytionServiceClient` オブジェクトを作成します。 Web サービス暗号化サービス API を使用している場合は、`EncryptionServiceService` オブジェクトを作成します。
+プログラムによって暗号化サービスの操作を実行するには、暗号化サービスクライアントを作成する必要があります。 Java Encryption Service API を使用している場合は、`EncrytionServiceClient` オブジェクトを作成します。 Web サービス Encryption Service API を使用している場合は、`EncryptionServiceService` オブジェクトを作成します。
 
 **暗号化する PDF ドキュメントを取得**
 
@@ -371,7 +388,7 @@ PDF ドキュメントを証明書で暗号化するには、PDF ドキュメン
 
    `encryptPDFUsingCertificates` メソッドにより、証明書で暗号化された PDF ドキュメントが含まれる `com.adobe.idp.Document` オブジェクトが返されます。
 
-1. 暗号化された PDF ドキュメントを PDF ファイルとして保存する。
+1. 暗号化された PDF ドキュメントを PDF ファイルとして保存します。
 
    * `java.io.File` オブジェクトを作成し、ファイルの拡張子が .pdf になっていることを確認します。
    * `com.adobe.idp.Document` オブジェクトの `copyToFile` メソッドを呼び出して、`com.adobe.idp.Document` オブジェクトのコンテンツをファイルにコピーします。 `encryptPDFUsingCertificates` メソッドから返された `com.adobe.idp.Document` オブジェクトを必ず使用してください。
@@ -396,7 +413,7 @@ Encryption API（Web サービス）を使用して、PDF ドキュメントを�
 
    >[!NOTE]
    >
-   >`localhost` を、AEM Forms をホストするサーバーの IP アドレスに置き換えます。
+   >`localhost` を、AEM Forms をホストするサーバーの IP アドレスに置換します。
 
 1. 暗号化クライアント API オブジェクトを作成します。
 
@@ -406,10 +423,10 @@ Encryption API（Web サービス）を使用して、PDF ドキュメントを�
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `EncryptionServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `EncryptionServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
-      * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
+     * `EncryptionServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `EncryptionServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 
 1. 暗号化する PDF ドキュメントを取得します。
 
@@ -469,7 +486,7 @@ Encryption API（Web サービス）を使用して、PDF ドキュメントを�
 
 >[!NOTE]
 >
->Encryption サービスについて詳しくは、[AEM Forms のサービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
+>暗号化サービスについて詳しくは、[AEM Forms サービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
 
 ### 手順の概要 {#summary_of_steps-2}
 
@@ -577,7 +594,7 @@ Encryption API（Web サービス）を使用して、PDF ドキュメントを�
 
    >[!NOTE]
    >
-   >`localhost` を、AEM Forms をホストするサーバーの IP アドレスに置き換えます。
+   >`localhost` を AEM Forms をホストしているサーバーの IP アドレスに置換します。
 
 1. 暗号化サービスクライアントを作成します。
 
@@ -587,10 +604,10 @@ Encryption API（Web サービス）を使用して、PDF ドキュメントを�
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `EncryptionServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `EncryptionServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
-      * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
+     * `EncryptionServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `EncryptionServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 
 1. 暗号化された PDF ドキュメントを取得します。
 
@@ -630,7 +647,7 @@ Encryption API（Web サービス）を使用して、PDF ドキュメントを�
 
 >[!NOTE]
 >
->Encryption サービスについて詳しくは、[AEM Forms のサービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
+>暗号化サービスについて詳しくは、『[AEM Forms サービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)』を参照してください。
 
 ### 手順の概要 {#summary_of_steps-3}
 
@@ -672,7 +689,7 @@ PDF ドキュメントからパスワードベースの暗号化を削除する�
 
 **関連トピック**
 
-[AEM Forms Java ライブラリファイルを含める](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[AEM Forms Java ライブラリファイルの追加](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [接続プロパティの設定](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -726,7 +743,7 @@ Encryption API（web サービス）を使用して、パスワードベース�
 
    >[!NOTE]
    >
-   >`localhost` を、AEM Forms をホストするサーバーの IP アドレスに置き換えます。
+   >`localhost` を AEM Forms をホストしているサーバーの IP アドレスに置換します。
 
 1. 暗号化サービスクライアントを作成します。
 
@@ -736,10 +753,10 @@ Encryption API（web サービス）を使用して、パスワードベース�
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `EncryptionServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `EncryptionServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
-      * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
+     * `EncryptionServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `EncryptionServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 
 1. 暗号化された PDF ドキュメントを取得します。
 
@@ -777,7 +794,7 @@ Encryption API（web サービス）を使用して、パスワードベース�
 
 >[!NOTE]
 >
->Encryption サービスについて詳しくは、[AEM Forms のサービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
+>暗号化サービスについて詳しくは、[AEM Forms サービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
 
 ### 手順の概要 {#summary_of_steps-4}
 
@@ -891,7 +908,7 @@ Encryption API（Java）を使用して、暗号化された PDF ドキュメン
 
    >[!NOTE]
    >
-   >`localhost` を、AEM Forms をホストするサーバーの IP アドレスに置き換えます。
+   >`localhost` を AEM Forms をホストしているサーバーの IP アドレスに置換します。
 
 1. 暗号化サービスクライアントを作成します。
 
@@ -901,10 +918,10 @@ Encryption API（Java）を使用して、暗号化された PDF ドキュメン
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `EncryptionServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `EncryptionServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
-      * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
+     * `EncryptionServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `EncryptionServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 
 1. 暗号化された PDF ドキュメントを取得します。
 
@@ -1047,7 +1064,7 @@ Encryption API（web サービス）を使用して、PDF ドキュメントを�
 
    >[!NOTE]
    >
-   >`localhost` を、AEM Forms をホストするサーバーの IP アドレスに置き換えます。
+   >`localhost` を AEM Forms をホスティングしているサーバーの IP アドレスに置き換えます。
 
 1. サービスクライアントを作成します。
 
@@ -1057,10 +1074,10 @@ Encryption API（web サービス）を使用して、PDF ドキュメントを�
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `EncryptionServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `EncryptionServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
-      * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
+     * `EncryptionServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `EncryptionServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 
 1. 暗号化された PDF ドキュメントを取得します。
 

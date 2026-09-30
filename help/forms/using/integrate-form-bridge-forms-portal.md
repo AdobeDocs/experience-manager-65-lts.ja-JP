@@ -9,20 +9,35 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 41989afc-48a1-4c93-a2af-1b95e5219c4d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '394'
 ht-degree: 100%
-
 ---
-
 # Form Bridge と HTML5 フォームのカスタムポータルの統合{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
-FormBridge は、フォームの操作を可能にする HTML5 forms ブリッジ API です。FormBridge API リファレンスについては、[FormBridge API リファレンス](/help/forms/using/form-bridge-apis.md)を参照してください。
+FormBridge は、フォームの操作を可能にする HTML5 forms ブリッジ API です。 FormBridge API リファレンスについては、[FormBridge API リファレンス](/help/forms/using/form-bridge-apis.md)を参照してください。
 
-FormBridge API を使用して、HTML ページからフォームフィールドの値を取得または設定し、フォームを送信できます。例えば、API を使用してウィザードのようなエクスペリエンスを作成できます。
+FormBridge API を使用して、HTML ページからフォームフィールドの値を取得または設定し、フォームを送信できます。 例えば、API を使用してウィザードのようなエクスペリエンスを作成できます。
 
-既存の HTML アプリケーションは、FormBridge API を使用してフォームを操作し、HTML ページに埋め込むことができます。次の手順で、Form Bridge API を使用してフィールドの値を設定できます。
+既存の HTML アプリケーションは、FormBridge API を使用してフォームを操作し、HTML ページに埋め込むことができます。 次の手順で、Form Bridge API を使用してフィールドの値を設定できます。
 
 ## HTML5 フォームと web ページの統合 {#integrating-html-forms-to-a-web-page}
 
@@ -80,14 +95,14 @@ FormBridge API を使用して、HTML ページからフォームフィールド
    >**18 行目**&#x200B;の &lt;div id=&quot;rightdiv&quot;> タグには XFA フォームの HTML スニペットが含まれています。
    >
    >
-   >ページは 2 つのコンテナ、**left** と **right** にスタイル設定されます。right コンテナにはフォームがあります。left コンテナには 2 つの入力フィールドと外部 HTML ページの一部があります。
+   >ページは 2 つのコンテナ、**left** と **right** にスタイル設定されます。 right コンテナにはフォームがあります。 left コンテナには 2 つの入力フィールドと外部 HTML ページの一部があります。
    >
    >
    >次のスクリーンショットは、フォームがブラウザーでどのように表示されるかを示します。
 
    ![ポータル](assets/portal.jpg)
 
-   左側は **HTML ページ**&#x200B;の一部です。右側でフィールドを含んでいるのは **xfa フォーム**&#x200B;です。
+   左側は **HTML ページ**&#x200B;の一部です。 右側でフィールドを含んでいるのは **xfa フォーム**&#x200B;です。
 
 1. **ページからのフォームフィールドへのアクセス**
 

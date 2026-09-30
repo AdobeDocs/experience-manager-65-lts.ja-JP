@@ -1,18 +1,32 @@
 ---
 title: JEE における AEM Forms のトランザクションレポートの概要
-description: 送信されたフォーム、レンダリングされたフォーム、別の形式に変換されたフォームの合計数を保持します
+description: 送信されたフォーム、レンダリングされたフォーム、ある形式から別の形式に変換されたドキュメントなどの合計数を保持します
 feature: Transaction Reports
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: f2703820-8701-4b48-be9c-12daa73d5408
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: bcb3e79d-a57e-59a4-ad50-e03803c9f153
+    internal-label: Transaction Reports
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 98%
-
 ---
-
 # JEE 上の AEM Forms のトランザクションレポートの有効化と表示 {#transaction-reports-overview}
 
 <!--
@@ -47,7 +61,7 @@ For more information on what is considered a transaction, see [Billable APIs](..
 
 ## トランザクションレポートを表示する {#view-transaction-report}
 
-トランザクションレポートを有効にすると、[ダッシュボードを使用したトランザクションレポート](#transaction-report-dashboard)と[ログファイルを使用した詳細なトランザクションレポート](#transaction-report-logfile)から、トランザクション数に関する情報にアクセスできるようになります。 この両方について以下で説明します。
+トランザクションレポートを有効にすると、[ダッシュボードを使用したトランザクションレポート](#transaction-report-dashboard)と[ログファイルを使用した詳細なトランザクションレポート](#transaction-report-logfile)から、トランザクション数に関する情報にアクセスできるようになります。 両方について以下で説明します。
 
 ### ダッシュボードを使用したトランザクションレポート {#transaction-report-dashboard}
 
@@ -63,7 +77,7 @@ For more information on what is considered a transaction, see [Billable APIs](..
 
 ### ログファイルを使用したトランザクションレポート {#transaction-report-logfile}
 
-ログファイルを使用したトランザクションレポートには、各トランザクションに関する詳細な情報が表示されます。 トランザクションログにアクセスするには、サーバー起動を基準とした相対コンテキストパスに従います。 トランザクションは、デフォルトでは別個のログファイル `transaction_log.log` に取得されます。 **ファイルパス** は、サーバー起動コンテキストを基準とした相対パスです。 各種サーバーのデフォルトパスを以下に示します。
+ログファイルを使用したトランザクションレポートでは、各トランザクションに関する詳細情報が提供されます。 トランザクションログにアクセスするには、サーバー起動を基準とした相対コンテキストパスに従います。 トランザクションは、デフォルトでは別個のログファイル `transaction_log.log` に取得されます。 **ファイルパス** は、サーバー起動コンテキストを基準とした相対パスです。 各種サーバーのデフォルトパスを以下に示します。
 
 ```
 For Jboss Turnkey:
@@ -84,7 +98,7 @@ For Jboss Cluster:
 
 #### トランザクションレコード {#transaction-record-structure-jee}
 
-トランザクションログ構造では、サービス、操作、トランザクションタイプなどの様々なパラメーターを使用して、各トランザクションの記録方法を定義します。 それぞれの詳細について、以下で説明します。 トランザクションレポートの構造は次のとおりです。
+トランザクションログ構造では、サービス、操作、トランザクションタイプなどの様々なパラメーターを使用して、各トランザクションの記録方法を定義します。 それぞれの詳細について、以下で説明します。 トランザクションレコードの構造は次のとおりです。
 
 ```
 TransactionRecord

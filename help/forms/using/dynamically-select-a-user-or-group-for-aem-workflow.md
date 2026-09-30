@@ -1,58 +1,74 @@
 ---
 title: AEM Forms 中心のワークフローステップのためのユーザーまたはグループの動的な選択
-description: 実行時にAEM Forms Workflow のユーザーまたはグループを選択する方法について説明します。
+description: 実行時にAEM Forms ワークフローのユーザーまたはグループを選択する方法について説明します。
 content-type: troubleshooting
 topic-tags: publish
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Document Services
 exl-id: b3b3567f-df0a-4a24-849c-dcc0b745de63
-source-git-commit: 5995dda0aac101e6c0d506ac5bba786674b0735b
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 64%
-
+source-wordcount: '945'
+ht-degree: 65%
 ---
+# AEM Forms 中心のワークフローステップでユーザーまたはグループを動的に選択する {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
-# AEM Forms 中心のワークフローステップのためのユーザーまたはグループの動的な選択 {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
+実行時にAEM Forms ワークフローのユーザーまたはグループを選択する方法について説明します。
 
-実行時にAEM Forms Workflow のユーザーまたはグループを選択する方法について説明します。
+大規模な組織では、プロセスのユーザーを動的に選択する要件があります。 例えば、顧客に対するエージェントの近さに基づいて、顧客に提供するフィールドエージェントを選択します。 このシナリオでは、エージェントは動的に選択されます。
 
-大規模組織では、プロセスに対してユーザーを動的に選択する必要があります。 例えば、顧客に対するエージェントの近さに基づいて、顧客に提供するフィールドエージェントを選択します。 このシナリオでは、エージェントは動的に選択されます。
+OSGi](/help/forms/using/aem-forms-workflow.md)上の[Forms中心のワークフローのタスクの割り当てとAdobe Signの手順は、動的にユーザーを選択するオプションを提供します。 ECMAScript バンドルまたはOSGi バンドルを使用して、タスクを割り当てステップの担当者を動的に選択したり、文書に署名ステップの署名者を選択したりできます。
 
-[OSGi 上のForms中心のワークフローのタスクの割り当て手順および Adobe Sign 手順では &#x200B;](/help/forms/using/aem-forms-workflow.md) ユーザーを動的に選択するオプションが用意されています。 ECMAScript バンドルまたは OSGi バンドルを使用して、タスクの割り当て手順の担当者を動的に選択したり、ドキュメントに署名手順の署名者を選択したりできます。
+## ECMAScriptを使用して、ユーザーまたはグループを動的に選択します {#use-ecmascript-to-dynamically-select-a-user-or-group}
 
-## ECMAScript を使用したユーザーまたはグループの動的な選択 {#use-ecmascript-to-dynamically-select-a-user-or-group}
+ECMAScript はスクリプト言語です。 クライアントサイドのスクリプティングやサーバーアプリケーションに使用されます。 ECMAScriptを使用してユーザーまたはグループを動的に選択するには、次の手順を実行します。
 
-ECMAScript はスクリプト言語です。 クライアントサイドのスクリプティングやサーバーアプリケーションに使用されます。 ECMAScript を使用してユーザーまたはグループを動的に選択するには、次の手順を実行します。
-
-1. CRXDE Lite を開きます。URL は `https://'[server]:[port]'/crx/de/index.jsp` です
-1. 以下のパスに、拡張子が .ecma のファイルを作成します。パス（ノード構造）が存在しない場合は作成します。
+1. CRXDE Lite を開きます。 URL は `https://'[server]:[port]'/crx/de/index.jsp` です
+1. 以下のパスに、拡張子が .ecma のファイルを作成します。 パス（ノード構造）が存在しない場合は作成します。
 
    * （タスクの割り当て手順のパス）`/apps/fd/dashboard/scripts/participantChooser`
    * （署名手順のパス）`/apps/fd/workflow/scripts/adobesign`
 
-1. ユーザーを動的に選択するロジックを持つ ECMAScript を `.ecma` ファイルに追加します。 「**[!UICONTROL すべて保存]**」をクリックします。
+1. ユーザーを動的に選択するロジックを持つECMAScriptを`.ecma` ファイルに追加します。 「**[!UICONTROL すべて保存]**」をクリックします。
 
    サンプルスクリプトについて詳しくは、「[ユーザーまたはグループを動的に選択するためのサンプル ECMAScripts](/help/forms/using/dynamically-select-a-user-or-group-for-aem-workflow.md#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group)」を参照してください。
 
 1. スクリプトの表示名を追加します。 この名前は、ワークフローステップに表示されます。 名前を指定するには、以下の手順を実行します。
 
-   1. スクリプトノードを展開します。次に、**`jcr:content`** ノードを右クリックして、「**[!UICONTROL Mixins]**」をクリックします。
+   1. スクリプトノードを展開し、**`jcr:content`** ノードを右クリックして、**[!UICONTROL Mixins]**&#x200B;をクリックします。
    1. Mixin を編集ダイアログに `mix:title` プロパティを追加して、「**OK**」をクリックします。
-   1. スクリプトの `jcr:content` ノードに次のプロパティを追加します。
+   1. スクリプトの`jcr:content` ノードに次のプロパティを追加します。
 
-      | 名前 | タイプ | 値 |
+      | 名前 | 種類 | 値 |
       |--- |--- |--- |
-      | `jcr:title` | 文字列 | スクリプトの名前を指定します。 例えば、最も近いフィールドエージェントを選択します。 この名前は、`Assign Task` ークフローとドキュメントに署名ステップに表示されます。 |
+      | `jcr:title` | 文字列 | スクリプトの名前を指定します。 例えば、最も近いフィールドエージェントを選択します。 この名前は、`Assign Task`と文書に署名の手順に表示されます。 |
 
-   1. 「**すべて保存**」をクリックします。スクリプトがAEM Workflow のコンポーネントで選択可能になります。
+   1. 「**すべて保存**」をクリックします。 スクリプトがAEM Workflow のコンポーネントで選択可能になります。
 
       ![script](assets/script.png)
 
-### ユーザーまたはグループを動的に選択するためのサンプル ECMAScripts {#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group}
+### ユーザーまたはグループを動的に選択するためのECMAScriptsのサンプル {#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group}
 
-以下のサンプル ECMAScript では、タスクの割り当て手順に担当者を動的に選択します。このスクリプトでは、ユーザーはペイロードのパスに基づいて選択されます。 このスクリプトを使用する前に、スクリプトで言及されているすべてのユーザーがAEMに存在することを確認します。 スクリプトで指定されたユーザーがAEMに存在しない場合、関連するプロセスが失敗する可能性があります。
+以下のサンプル ECMAScript では、タスクの割り当て手順に担当者を動的に選択します。 このスクリプトでは、ユーザーはペイロードのパスに基づいて選択されます。 このスクリプトを使用する前に、スクリプトで言及されているすべてのユーザーがAEMに存在することを確認します。 スクリプトで指定されたユーザーがAEMに存在しない場合、関連するプロセスが失敗する可能性があります。
 
 ```javascript
 function getParticipant() {
@@ -72,7 +88,7 @@ var path = workflowData.getPayload().toString();
 }
 ```
 
-次のサンプル ECMAScript では、Adobe Sign 手順に担当者を動的に選択します。次のスクリプトを使用する前に、スクリプトで指定されているユーザー情報（電子メールアドレスと電話番号）が正しいことを確認してください。 スクリプトで説明されているユーザー情報が正しくない場合、関連するプロセスが失敗する可能性があります。
+次のサンプル ECMAScript では、Adobe Sign 手順に担当者を動的に選択します。 次のスクリプトを使用する前に、スクリプトで指定されているユーザー情報（電子メールアドレスと電話番号）が正しいことを確認してください。 スクリプトで説明されているユーザー情報が正しくない場合、関連するプロセスが失敗する可能性があります。
 
 >[!NOTE]
 >
@@ -113,16 +129,16 @@ function getAdobeSignRecipients() {
 }
 ```
 
-## ユーザーまたはグループを動的に選択するための Java インターフェイスの使用 {#use-java-interface-to-dynamically-choose-a-user-or-group}
+## Java インターフェイスを使用して、ユーザーまたはグループを動的に選択する {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-[RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java インターフェイスを使用すると、Adobe Sign 手順やタスクの割り当て手順でユーザーまたはグループを動的に選択できます。 [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java インターフェイスを使用する OSGi バンドルを作成して、AEM Forms Server にデプロイできます。 これにより、AEM Workflow の `Assign Task` コンポーネントと Adobe Sign コンポーネントで、オプションを選択できるようになります。
+[RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java インターフェイスを使用して、Adobe Signとタスクの割り当て手順のユーザーまたはグループを動的に選択できます。 [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java インターフェイスを使用するOSGi バンドルを作成し、それをAEM Forms Serverにデプロイできます。 このオプションは、AEM ワークフローの`Assign Task`およびAdobe Sign コンポーネントで選択できます。
 
-以下のコードサンプルをコンパイルするには、[AEM Forms Client SDK](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) jar および [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) ファイルが必要です。これらの jar ファイルを外部の依存関係として OSGi バンドルプロジェクトに追加します。 任意の Java IDE を使用して、OSGi バンドルを作成できます。 次の手順は、Eclipse を使用して OSGi バンドルを作成する手順を示しています。
+以下のコードサンプルをコンパイルするには、[AEM Forms Client SDK](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) jar および [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) ファイルが必要です。 これらの jar ファイルを外部の依存関係として OSGi バンドルプロジェクトに追加します。 任意の Java IDE を使用して、OSGi バンドルを作成できます。 次の手順は、Eclipse を使用して OSGi バンドルを作成する手順を示しています。
 
 1. Eclipse IDE を開きます。 **[!UICONTROL ファイル]**／**[!UICONTROL 新規プロジェクト]**&#x200B;に移動します。
 1. ウィザードを選択画面で、**[!UICONTROL Maven プロジェクト]**&#x200B;を選択し、「**[!UICONTROL 次へ]**」をクリックします。
-1. 新しい Maven プロジェクトで、デフォルトをそのままにして、「 **[!UICONTROL 次へ]**. アーキタイプを選択して「**[!UICONTROL 次へ]**」をクリックします。例えば、maven-archetype-quickstart などです。 指定 **[!UICONTROL グループ ID]**, **[!UICONTROL アーティファクト ID]**, **[!UICONTROL version]**、および **[!UICONTROL パッケージ]** プロジェクトの場合は、をクリックします。 **[!UICONTROL 完了]**. プロジェクト構造が作成されます。
-1. 編集用に pom.xml ファイルを開き、ファイルのすべてのコンテンツを以下に置き換えます。
+1. 新しい Maven プロジェクトで、デフォルトをそのままにして、「 **[!UICONTROL 次へ]**. アーキタイプを選択して「**[!UICONTROL 次へ]**」をクリックします。 例えば、maven-archetype-quickstart などです。 指定 **[!UICONTROL グループ ID]**, **[!UICONTROL アーティファクト ID]**, **[!UICONTROL version]**、および **[!UICONTROL パッケージ]** プロジェクトの場合は、をクリックします。 **[!UICONTROL 完了]**. プロジェクト構造が作成されます。
+1. 編集用に pom.xml ファイルを開き、ファイルの内容をすべて以下に置き換えます。
 
    ```xml
    <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
@@ -224,18 +240,18 @@ function getAdobeSignRecipients() {
    </project>
    ```
 
-1. [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java インターフェイスを使用するソースコードを追加して、タスクの割り当て手順にユーザーまたはグループを動的に選択できます。 サンプルコードについては、[Java インターフェイスを使用したユーザーまたはグループの動的な選択のサンプル &#x200B;](#-sample-scripts-for) を参照してください。
+1. 「[RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html)」 Java インターフェイスを使用して、タスクを割り当て手順のユーザーまたはグループを動的に選択するソースコードを追加します。 サンプルコードについては、[Java インターフェイスを使用してユーザーまたはグループを動的に選択するためのサンプル ](#-sample-scripts-for)を参照してください。
 1. コマンドプロンプトを開き、OSGi バンドルプロジェクトを含むディレクトリに移動します。 以下のコマンドを使用して OSGi バンドルを作成します。
 
    `mvn clean install`
 
-1. バンドルをAEM Forms Server にアップロードします。 AEM パッケージマネージャーを使用して、バンドルをAEM Forms Server に読み込むことができます。
+1. バンドルをAEM Forms Serverにアップロードします。 AEM Package Managerを使用して、バンドルをAEM Forms Serverに読み込むことができます。
 
 バンドルをインポートすると、Adobe Sign 手順やタスクの割り当て手順で、ユーザーまたはグループを動的に選択する Java インターフェイスを選択できるようになります。
 
 ### ユーザーまたはグループを動的に選択するためのサンプル Java コード {#sample-java-code-to-dynamically-choose-a-user-or-a-group}
 
-以下のサンプル Java コードでは、Adobe Sign 手順に担当者を動的に選択します。OSGi バンドルでコードを使用します。 以下に示すコードを使用する前に、コードに記載されているユーザー情報（E メールアドレスと電話番号）が正しいことを確認してください。 コードで説明されているユーザー情報が正しくない場合、関連するプロセスが失敗する可能性があります。
+以下のサンプル Java コードでは、Adobe Sign 手順に担当者を動的に選択します。 OSGi バンドルでコードを使用します。 以下に示すコードを使用する前に、コードに記載されているユーザー情報（メールアドレスと電話番号）が正しいことを確認してください。 コードで説明されているユーザー情報が正しくない場合、関連するプロセスが失敗する可能性があります。
 
 ```java
 /*************************************************************************

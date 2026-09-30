@@ -10,13 +10,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
 exl-id: cafc7120-114e-487a-8b81-9c695318731e
-source-git-commit: a061c19dcb883b94ee61be21459c46e21eaf696a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2895'
+source-wordcount: '2898'
 ht-degree: 91%
-
 ---
-
 # クライアントサイドライブラリの使用{#using-client-side-libraries}
 
 最近の web サイトは、複雑な JavaScript や CSS コードを利用したクライアント側の処理に大きく依存しています。 このコードの提供を編成および最適化することが厄介な問題となることがあります。
@@ -133,7 +144,7 @@ Web クライアントには、`cq:ClientLibraryFolder` ノードにアクセス
 
 >[!NOTE]
 >
->クライアントライブラリフォルダーの下にある静的リソースは、*resources* というフォルダーに配置する必要があります。 *resources* フォルダーの下に画像などの静的リソースがない場合、公開インスタンスで参照することはできません。 次に例を示します：https://localhost:4503/etc.clientlibs/geometrixx/components/clientlibs/resources/example.gif
+>クライアントライブラリフォルダーの下にある静的リソースは、*resources* というフォルダーに配置する必要があります。 *resources* フォルダーの下に画像などの静的リソースがない場合、公開インスタンスで参照することはできません。 次に例を示します。https://localhost:4503/etc.clientlibs/geometrixx/components/clientlibs/resources/example.gif
 
 >[!NOTE]
 >
@@ -393,7 +404,7 @@ GCC オプションについて詳しくは、[GCC ドキュメント](https://d
 
 YUI は、AEM のデフォルトの縮小ツールとして設定されています。 これを GCC に変更するには、次の手順に従います。
 
-1. [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)のApache Felix Config Managerに移動します
+1. [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)でApache Felix Config Managerに移動します
 1. **Adobe Granite HTML ライブラリマネージャー**&#x200B;を検索して編集します。
 1. 「**Minify**」オプションを有効にします（まだ有効でない場合）。
 1. **JS Processor Default Configs** の値を `min:gcc` に設定します。
@@ -446,7 +457,7 @@ AEM には、クライアントライブラリフォルダーをデバッグお�
 
    * Web ブラウザーで次の URL を開きます（必要に応じて別のホストおよびポートを使用）。
 
-      * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
+     * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
 
    デフォルトページに、categories 属性の値がないタグの出力が表示されます。
 

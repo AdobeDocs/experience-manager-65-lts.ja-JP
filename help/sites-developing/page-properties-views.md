@@ -9,16 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 027e086f-0883-45de-9531-b8119c99b118
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 100%
-
+source-wordcount: '500'
+ht-degree: 98%
 ---
-
 # ページプロパティのビューのカスタマイズ{#customizing-views-of-page-properties}
 
-どのページにも、ユーザーが表示および編集できる一連の[プロパティ](/help/sites-authoring/editing-page-properties.md)があります。ページ作成時に使用されるプロパティもあれば（作成ビュー）、後の段階で表示および編集できるプロパティもあります（編集ビュー）。これらのページプロパティは、適切なページコンポーネントのダイアログ（`cq:dialog`）で定義し、使用できるようにします。
+どのページにも、ユーザーが表示および編集できる一連の[プロパティ](/help/sites-authoring/editing-page-properties.md)があります。ページ作成時に使用されるプロパティもあれば（作成ビュー）、後の段階で表示および編集できるプロパティもあります（編集ビュー）。 これらのページプロパティは、適切なページコンポーネントのダイアログ（`cq:dialog`）で定義し、使用できるようにします。
 
 >[!CAUTION]
 >
@@ -30,19 +39,19 @@ ht-degree: 100%
 
 * 編集ビューでは表示（例：**プロパティを表示**）
 
-変更が必要な場合は、フィールドを明確に設定する必要があります。それには適切なノードプロパティを使用します。
+変更が必要な場合は、フィールドを明確に設定する必要があります。 それには適切なノードプロパティを使用します。
 
 * 作成ビューで利用できるページプロパティ（例：**ページを作成**&#x200B;ウィザード）
 
-   * 名前：`cq:showOnCreate`
-   * 型：`Boolean`
+  * 名前：`cq:showOnCreate`
+  * 型：`Boolean`
 
 * 編集ビューで利用できるページプロパティ（例：**表示**／**編集**／**プロパティ**&#x200B;オプション）
 
-   * 名前：`cq:hideOnEdit`
-   * 型：`Boolean`
+  * 名前：`cq:hideOnEdit`
+  * 型：`Boolean`
 
-例として、基盤となるページコンポーネントの「**基本**」タブの「**その他のタイトルと説明**」の下にグループ化されたフィールドの設定を参照してください。`cq:showOnCreate` が `true` に設定されているので、これらのフィールドは&#x200B;**ページを作成**&#x200B;ウィザードに表示されます。
+例として、基盤となるページコンポーネントの「**基本**」タブの「**その他のタイトルと説明**」の下にグループ化されたフィールドの設定を参照してください。 `cq:showOnCreate` が `true` に設定されているので、これらのフィールドは&#x200B;**ページを作成**&#x200B;ウィザードに表示されます。
 
 ```xml
 /libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/moretitles
@@ -56,7 +65,7 @@ ht-degree: 100%
 
 また、ページコンポーネントのダイアログを設定し、適切なノードプロパティを適用することによって、使用可能なフィールドを設定できます。
 
-例えば、デフォルトでは、[**ページを作成**&#x200B;ウィザード](/help/sites-authoring/managing-pages.md#creating-a-new-page)には「**その他のタイトルと説明**」の下にグループ化されたフィールドが表示されます。これらのフィールドを非表示にするには、次のように設定します。
+例えば、デフォルトでは、[**ページを作成**&#x200B;ウィザード](/help/sites-authoring/managing-pages.md#creating-a-new-page)には「**その他のタイトルと説明**」の下にグループ化されたフィールドが表示されます。 これらのフィールドを非表示にするには、次のように設定します。
 
 1. `/apps` の下にページコンポーネントを作成します。
 1. ページコンポーネントの`basic`セクションにオーバーライドを作成します（[Sling リソースマネージャー](/help/sites-developing/sling-resource-merger.md) が提供する *ダイアログの差分* を使用）。例を以下に示します。
@@ -80,7 +89,7 @@ ht-degree: 100%
    >1. 必要な項目（`/libs` 内に存在）を、`/apps` の下で再作成します。
    >1. `/apps` 内で必要な変更を加えます
 
-1. `basic` の `path` プロパティに、基本タブのオーバーライドを指すように設定します（次の手順も参照してください）。次に例を示します。
+1. `basic` の `path` プロパティに、基本タブのオーバーライドを指すように設定します（次の手順も参照してください）。 次に例を示します。
 
    ```xml
    /apps/demos/components/page/tabs/basic
@@ -106,10 +115,10 @@ ht-degree: 100%
 
 ## ページプロパティの設定例 {#sample-configuration-of-page-properties}
 
-この例では、[Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) のダイアログ差分比較の手法を示しており、[`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties) が使用されています。`cq:showOnCreate` と `cq:hideOnEdit` の両方を使用することも説明されています。
+この例では、[Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) のダイアログ差分比較の手法を示しており、[`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties) が使用されています。 `cq:showOnCreate` と `cq:hideOnEdit` の両方を使用することも説明されています。
 
 GitHub のコード
 
 このページのコードは GitHub にあります
 
-* [aem-authoring-extension-page-dialog プロジェクトを GitHub で公開する](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)
+* [GitHubでaem-authoring-extension-page-dialog プロジェクトを開きます](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)

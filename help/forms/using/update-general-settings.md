@@ -9,13 +9,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 735e4c4a-6580-4698-a1bf-75c4b1e47b5b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '392'
 ht-degree: 100%
-
 ---
-
 # 一般設定の更新{#updating-general-settings}
 
 AEM Forms アプリケーションの一般設定によって、添付ファイルの取得、オフラインモード、ランディング画面、デフォルトのカテゴリ、自動保存の頻度などの設定を行うことができます。
@@ -26,7 +40,7 @@ AEM Forms アプリケーションの一般設定によって、添付ファイ�
 
 アプリケーションが同期されたときに、デフォルトの AEM Forms アプリケーションソリューションは、各フォームに関連付けられた添付ファイルをダウンロードすることはありません。
 
-「一般」タブで、ダウンロードの添付ファイルや、オフラインモード、ランディング画面、自動保存、および同期設定変更してください。アプリケーションの[ホーム画面](../../forms/using/home-screen.md)を変更できます。
+「一般」タブで、添付ファイルのダウンロード、オフラインモード、ランディング画面、自動保存、および同期の設定を変更してください。 アプリケーションの[ホーム画面](../../forms/using/home-screen.md)を変更できます。
 
 **設定画面で、「一般」タブに移動**
 
@@ -46,18 +60,19 @@ AEM Forms アプリケーションの一般設定によって、添付ファイ�
 アプリの設定では、次の項目を変更することができます。
 
 * **タスク添付ファイルを取得**： 各タスクがアプリケーションにダウンロードされたときに、関連の添付ファイルをダウンロードするかどうかを指定します。
-* **オフラインモード**：AEM Forms アプリケーションのオフラインサービスを有効または無効にします。詳しくは、[オフラインモードの使用](/help/forms/using/work-offline-mode.md)を参照してください。
-* **ランディング画面**： アプリケーションの開始場所（[ホーム画面](../../forms/using/home-screen.md)）を設定します。選択可能なオプション：
+* **オフラインモード**：AEM Forms アプリケーションのオフラインサービスを有効または無効にします。 詳しくは、[オフラインモードの使用](/help/forms/using/work-offline-mode.md)を参照してください。
+* **ランディング画面**： アプリケーションの開始場所（[ホーム画面](../../forms/using/home-screen.md)）を設定します。
+選択可能なオプション：
 
-   * フォーム
-   * タスク
-   * お気に入り
+  * フォーム
+  * タスク
+  * お気に入り
 
-* **デフォルトカテゴリ**：ホーム画面に表示するフォームのカテゴリを選択できます。「すべて」を選択すると、すべてのフォームがホーム画面に表示されます。カテゴリは、アプリケーションに読み込まれるフォームに基づいて自動入力されます。フォームは、AEM Forms サーバーで指定したフォーム設定に基づいてアプリケーション内で使用できます。
+* **デフォルトカテゴリ**：ホーム画面に表示するフォームのカテゴリを選択できます。 「すべて」を選択すると、すべてのフォームがホーム画面に表示されます。 カテゴリは、アプリケーションに読み込まれるフォームに基づいて自動入力されます。 フォームは、AEM Forms サーバーで指定したフォーム設定に基づいてアプリケーション内で使用できます。
 
 * **自動保存頻度**： [モバイルアプリケーションがフォームデータをローカルに保存](../../forms/using/autosave-data-app.md)する頻度を設定します。
 * **同期頻度**：オンラインモードで AEM Forms サーバーと[モバイルアプリケーションが同期される](../../forms/using/sync-app.md)頻度を設定します。
-  **ローカルデータの消去**：デバイス上からデータベースを消去します。この中には、すべてのユーザやファイルストレージ用の設定とローカルデータが含まれます。 
+  **ローカルデータの消去**：デバイス上からデータベースを消去します。この中には、すべてのユーザやファイルストレージ用の設定とローカルデータが含まれます。
 
 >[!NOTE]
 >

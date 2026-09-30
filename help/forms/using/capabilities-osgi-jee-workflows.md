@@ -1,24 +1,41 @@
 ---
 title: OSGi 上の Forms ベース AEM ワークフローおよび AEM Forms JEE ワークフローのアクションと機能
-description: OSGi 上の Forms ベース AEM ワークフローおよび AEM Forms JEE ワークフローのアクションと機能
+description: OSGi 上のフォーム中心の AEM ワークフローおよび AEM Forms JEE ワークフローのアクションと機能
 contentOwner: khsingh
 solution: Experience Manager, Experience Manager Forms
 hide: true
+removedfrom6.5.2025: 'yes'
 feature: Adaptive Forms,AEM Forms on OSGi
 role: User, Developer
 exl-id: d0f54236-5dc2-4c64-87c5-85e5e85e8cf7
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 100%
-
 ---
-
 # OSGi 上の Forms ベース AEM ワークフローおよび AEM Forms JEE ワークフローのアクションと機能 {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
 ## AEM インボックスと HTML ワークスペース {#aem-inbox-and-html-workspace}
 
-AEM インボックスを使用して、OSGi 上で Forms ベースの AEM ワークフローを実行および監視できます。 また、HTML ワークスペースにより、AEM Forms JEE ワークフローを実行および監視することもできます。 以下の表に、OSGi 上の Forms ベース AEM ワークフローの AEM インボックスと、AEM Forms JEE ワークフローの HTML Workspace で使用できる重要なアクションを示します。
+AEM インボックスを使用して、OSGi 上で Forms ベースの AEM ワークフローを実行および監視できます。 また、HTML Workspace により、AEM Forms JEE ワークフローを実行および監視することもできます。 以下の表に、OSGi 上の Forms ベース AEM ワークフローの AEM インボックスと、AEM Forms JEE ワークフローの HTML Workspace で使用できる重要なアクションを示します。
 
 <table>
  <tbody>
@@ -287,7 +304,7 @@ OSGi 上のフォームベース AEM ワークフローと AEM Forms JEE ワー�
    <td>サポート対象</td>
   </tr>  
   <tr>
-   <td>HTML5 フォーム、インタラクティブ PDF フォーム、フォームセット</td>
+   <td>HTML5 フォーム、インタラクティブ PDF forms、フォームセット</td>
    <td>サポート対象外</td>
    <td>サポート対象</td>
   </tr>
@@ -391,7 +408,7 @@ OSGi 上のフォームベース AEM ワークフローと AEM Forms JEE ワー�
 
 1. OSGi 上の Forms 中心の AEM ワークフローを使用して、入力済みアダプティブフォームに署名することができます。 OSGi 上の Forms 中心の AEM ワークフローでは、フォーム外署名機能がサポートされています。 [フォーム内署名](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience)エクスペリエンスはサポートされていません。
 
-1. AEM Forms JEE ワークフローを実行および監視するには、AEM Forms OSGi および HTML ワークスペースで Forms 中心のワークフローを実行および監視するために AEM インボックスにアクセスする必要があります。
+1. AEM Forms OSGi 上の Forms 中心のワークフローを実行およびモニターするには AEM インボックスへのアクセスが必要であり、AEM Forms JEE ワークフローを実行およびモニターするには HTML Workspace が必要です。
 1. ネイティブの AEM Forms ドキュメントサービスは、OSGi 上のフォーム中心の AEM ワークフローと AEM Forms JEE ワークフローの両方で使用することができます。 AEM ワークフローでは、OSGi 上のフォーム中心の AEM ワークフローと AEM Forms JEE ワークフローに対して、ネイティブのドキュメントサービスが使用されます。
 1. AEM Forms JEE ワークフローでレンダリングできるのは、アダプティブフォームだけです。 アダプティブフォームを PDF ドキュメントとしてレンダリングすることはできません。
 1. AEM Forms JEE ワークフローには、Adobe Sign 用の独立したステップは存在しません。 AEM Forms JEE ワークフローに対して、Adobe Sign が有効になっているアダプティブフォームを使用する必要があります。 詳しくは、[Adobe Sign のドキュメント](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component)を参照してください。
@@ -424,12 +441,12 @@ Forms 中心のワークフローを起動するには、[AEM インボックス
   <tr>
    <td><p>タスクの委任</p> </td>
    <td><p>サポート対象</p> </td>
-   <td><p>サポートされていません</p> </td>
+   <td><p>サポート対象外</p> </td>
   </tr>
   <tr>
    <td><p>タスクの履歴と概要を追跡</p> </td>
    <td><p>サポート対象</p> </td>
-   <td><p>サポートされていません</p> </td>
+   <td><p>サポート対象外</p> </td>
   </tr>
   <tr>
    <td><p>タスクレベルの添付ファイルの追加</p> </td>
@@ -449,7 +466,7 @@ Forms 中心のワークフローを起動するには、[AEM インボックス
   <tr>
    <td><p>カレンダービューの表示</p> </td>
    <td><p>サポート対象</p> </td>
-   <td><p>サポートされていません</p> </td>
+   <td><p>サポート対象外</p> </td>
   </tr>
   <tr>
    <td><p>コメントの追加</p> </td>

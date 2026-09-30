@@ -6,22 +6,34 @@ feature: Language Copy
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c6e00da5-804f-46cf-b7a9-52e667574394
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 99%
-
+source-wordcount: '328'
+ht-degree: 98%
 ---
-
 # クラシック UI による言語ルートの作成{#creating-a-language-root-using-the-classic-ui}
 
-次の手順では、クラシック UI を使用してサイトの言語ルートを作成します。詳しくは、[言語ルートの作成](/help/sites-administering/tc-prep.md#creating-a-language-root)を参照してください。
+次の手順では、クラシック UI を使用してサイトの言語ルートを作成します。 詳しくは、[言語ルートの作成](/help/sites-administering/tc-prep.md#creating-a-language-root)を参照してください。
 
-1. Web サイトコンソールの web サイトツリーで、サイトのルートページを選択します。（[http://localhost:4502/siteadmin#](http://localhost:4502/siteadmin#)）
+1. Web サイトコンソールの web サイトツリーで、サイトのルートページを選択します。 （[http://localhost:4502/siteadmin#](http://localhost:4502/siteadmin#)）
 1. サイトの言語バージョンを表す新しい子ページを追加します。
 
    1. 新規／新しいページをクリックします。
-   1. ダイアログで、「タイトル」と「名前」を指定します。名前の形式は `<language-code>` または `<language-code>_<country-code>` です（en、en_US、en_us、en_GB、en_gb など）。
+   1. ダイアログで、「タイトル」と「名前」を指定します。 名前の形式は `<language-code>` または `<language-code>_<country-code>` です（en、en_US、en_us、en_GB、en_gb など）。
 
       * サポートされている言語コードは、ISO-639-1 で定義されている小文字 2 文字のコードです。
       * サポートされている国コードは、ISO 3166 で定義されている小文字または大文字の 2 文字のコードです。
@@ -31,15 +43,15 @@ ht-degree: 99%
    ![newpagefr](assets/newpagefr.png)
 
 1. Web サイトコンソールの web サイトツリーで、サイトのルートページを選択します。
-1. ツールメニューの「言語のコピー」を選択します。
+1. ツールメニューの「言語コピー」を選択します。
 
    ![toollanguagecopy](assets/toolslanguagecopy.png)
 
-   言語のコピーダイアログには、使用可能な言語バージョンと web ページの一覧が表示されます。言語列の「x」は、ページがその言語に対応していることを示します。
+   言語コピーダイアログには、使用可能な言語バージョンと web ページの一覧が表示されます。 言語列の「x」は、ページがその言語に対応していることを示します。
 
    ![languagecopydialog](assets/languagecopydialog.png)
 
-1. 既存のページまたはページツリーを言語バージョンにコピーするには、言語列でそのページのセルを選択します。矢印をクリックし、作成するコピーのタイプを選択します。
+1. 既存のページまたはページツリーを言語バージョンにコピーするには、言語列でそのページのセルを選択します。 矢印をクリックし、作成するコピーのタイプを選択します。
 
    次の例では、equipment/sunglasses/irian ページがフランス語の言語バージョンにコピーされています。
 

@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6ca4f66d-993b-4cfb-9b09-84bb20a54d4c
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '5298'
 ht-degree: 94%
-
 ---
-
 # レポートの開発 {#developing-reports}
 
 Adobe Experience Manager（AEM）には、レポートフレームワークに基づ様々な[標準レポート](/help/sites-administering/reporting.md)が用意されています。
@@ -360,7 +369,7 @@ N:charting
 
       * `totals`（`Boolean`）
 
-        **合計**&#x200B;を示す線を追加表示する場合は、true を指定します。
+        **合計**を示す線を追加表示する場合は、true を指定します。
         デフォルト：`false`
 
       * `series`（`Long`）
@@ -747,7 +756,7 @@ N:data
 
 以下のいずれかを指定して、前処理中に使用できます。
 
-* [&#x200B; パターンの検索と置換](#preprocessing-find-and-replace-patterns)
+* [ パターンの検索と置換](#preprocessing-find-and-replace-patterns)
 見つかった場合、指定されたパターン（正規表現として定義されている）は別のパターンに置き換えられます。例えば、これは元の部分文字列を抽出するために使用できます。
 
 * [データタイプフォーマッター](#preprocessing-data-type-formatters)

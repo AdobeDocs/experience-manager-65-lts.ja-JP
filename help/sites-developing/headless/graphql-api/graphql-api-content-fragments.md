@@ -5,13 +5,25 @@ feature: Content Fragments,GraphQL API
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 exl-id: 767f0e03-5228-4c85-a0be-9dae90fa5cbd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '5154'
 ht-degree: 98%
-
 ---
-
 # コンテンツフラグメントと共に使用する AEM GraphQL API {#graphql-api-for-use-with-content-fragments}
 
 Adobe Experience Manager（AEM） のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
@@ -33,7 +45,7 @@ AEM の GraphQL API を使用すると、ヘッドレス CMS 実装の JavaScrip
 
 ## 前提条件 {#prerequisites}
 
-GraphQLを使用しているお客様は、GraphQL インデックスパッケージ 1.0.5を使用してAEM コンテンツフラグメントをインストールする必要があります。 詳しくは、[&#x200B; リリースノート &#x200B;](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package)を参照してください。
+GraphQLを使用しているお客様は、GraphQL インデックスパッケージ 1.0.5を使用してAEM コンテンツフラグメントをインストールする必要があります。 詳しくは、[ リリースノート ](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package)を参照してください。
 
 ## GraphQL API {#graphql-api}
 
@@ -198,7 +210,7 @@ GraphQL の仕様には、特定のインスタンス上のデータをクエリ
    * そのうちの 3 つ（`author`、`main`、`referencearticle`）は、ユーザーが管理しています。
 
    * その他のフィールドは AEM によって自動的に追加されたもので、特定のコンテンツフラグメントに関する情報を提供する便利な手段となっています。 この例では，
-     （[&#x200B; ヘルパーフィールド &#x200B;](#helper-fields)） `_path`、`_metadata`、`_variations`。
+     （[ ヘルパーフィールド ](#helper-fields)） `_path`、`_metadata`、`_variations`。
 
 1. ユーザーが Article モデルに基づいてコンテンツフラグメントを作成すると、GraphQL を使用してそれをクエリできます。 例については、（[GraphQL で使用するコンテンツフラグメント構造のサンプル](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)に基づいた）[サンプルクエリ](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#graphql-sample-queries)を参照してください。
 

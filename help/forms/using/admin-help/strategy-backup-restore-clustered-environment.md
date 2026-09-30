@@ -5,14 +5,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 0fe9b02a-96b4-462f-a940-a2d6084ed0a4
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 98%
-
 ---
-
 # クラスター環境でのバックアップと復元の方策 {#strategy-for-backup-and-restore-in-a-clustered-environment}
 
 >[!NOTE]
@@ -27,11 +42,11 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->AEM Forms セットアップで使用されているその他のデータ（例えば、カスタマーフォント、コネクターデータなど）をすべてバックアップする必要があります。
+>AEM Forms セットアップで使用されているその他のデータ（例えば、顧客フォント、コネクターデータなど）をすべてバックアップする必要があります。
 
 ## クラスター環境のバックアップ {#back-up-a-clustered-environment}
 
-このトピックでは、AEM Forms クラスター環境をバックアップする次の方策について検討します。
+このトピックでは、AEM Forms クラスター環境をバックアップするための次の方策について説明します。
 
 * ダウンタイムを伴うオフラインバックアップ
 * ダウンタイムを必要としないオフラインバックアップ（シャットダウンされているセカンダリノードのバックアップ）
@@ -45,7 +60,7 @@ ht-degree: 98%
 1. AEM リポジトリをオフラインでバックアップするには、次の手順を実行します。
 
    1. クラスターの各ノードに対して、クラスターノード ID を含むファイルをバックアップします。
-   1. すべてのセカンダリクラスターノードのすべてのファイル（サブディレクトリも含む）をバックアップします。
+   1. 任意のセカンダリクラスターノードのすべてのファイル（サブディレクトリも含む）をバックアップします。
    1. 各クラスターノードのリポジトリ / システム ID を別々にバックアップします。
 
    手順について詳しくは、[バックアップと復旧](/help/sites-administering/backup-and-restore.md)を参照してください。
@@ -113,32 +128,32 @@ AEM セカンダリノードの災害時復旧シナリオのためにこのフ�
 
    >[!NOTE]
    >
-   >障害ノードが AEM プライマリノードの場合は、クラスターノード全体をシャットダウンします。
+   >障害ノードが AEM プライマリノードの場合は、クラスター全体をシャットダウンします。
 
 1. システムイメージから物理システムを再作成します。
-1. イメージの作成後に適用されたパッチまたはアップデートを AEM forms に適用します。 この情報は、バックアップ手順で記録されたものです。 システムをバックアップしたときと同じパッチレベルに AEM forms を回復する必要があります。
+1. イメージの作成後に適用されたパッチまたはアップデートを AEM Forms に適用します。 この情報は、バックアップ手順で記録されたものです。 システムをバックアップしたときと同じパッチレベルに AEM forms を回復する必要があります。
 1. （*オプション*）その他のすべてのノードが正常に動作している場合は、AEM リポジトリも破損している可能性があります。 この場合、AEM リポジトリの error.log ファイルにリポジトリ非同期メッセージが表示されます。
 
    リポジトリを復元するには、次の手順を実行します。
 
    >[!NOTE]
    >
-   >圧縮された crx-repository バックアップがオンラインになった場合は、任意の場所で展開し、オフラインの復元プロセスに従います。
+   >圧縮された crx-repository バックアップがオンラインで取得された場合は、任意の場所で展開し、オフラインの復元プロセスに従います。
 
    1. ノードの clusterNode ディレクトリにある repository、shared、version および workspaces ディレクトリを削除します。
    1. クラスターノード（サブディレクトリも含む）のバックアップをそのノードに復元します。
    1. ノードにある clusterNode/revision.log ファイルを削除します。
    1. ノードに .lock がある場合は、それを削除します。
    1. ノードに repository/system.id がある場合は、それを削除します。
-   1. ノード上の&ast;&ast;/listener.properties ファイルが存在する場合は、そのファイルを削除します。
+   1. ノード上の&amp;ast;&amp;ast;/listener.properties ファイルが存在する場合は、そのファイルを削除します。
    1. クラスターノードごとに、repository/cluster_node.id を復元します。
 
 >[!NOTE]
 >
 >次の点を考慮してください。
 
-* 障害ノードが AEM プライマリノードの場合は、セカンダリリポジトリフォルダーのすべてのコンテンツ（crx-repository\crx.0000、ここで 0000 は任意の桁数）を crx-repository\ リポジトリフォルダーにコピーし、セカンダリリポジトリフォルダーを削除します。
-* クラスターノードを再起動する前に、プライマリノードからリポジトリ /clusterd.txt を削除します。
+* 障害ノードが AEM プライマリノードの場合は、セカンダリリポジトリフォルダーのすべてのコンテンツ（crx-repository\crx.0000、ここで 0000 は任意の数字）を crx-repository\ リポジトリフォルダーにコピーし、セカンダリリポジトリフォルダーを削除します。
+* クラスターノードを再起動する前に、プライマリノードからリポジトリ /clustered.txt を削除します。
 * 最初にプライマリノードを起動し、それが完全に立ち上がったら、他のノードを起動します。
 
 ### クラスター全体の復元 {#restoring-the-entire-cluster}
@@ -151,7 +166,7 @@ AEM セカンダリノードの災害時復旧シナリオのためにこのフ�
 
    >[!NOTE]
    >
-   >圧縮された crx-repository バックアップがオンラインになった場合は、任意の場所で展開し、オフラインの復元プロセスに従います。
+   >圧縮された crx-repository バックアップがオンラインで取得された場合は、任意の場所で展開し、オフラインの復元プロセスに従います。
 
    1. すべてのクラスターノードで、clusterNode ディレクトリ内の repository、shared、version、および workspaces ディレクトリを削除します。
    1. 共有ディレクトリ内のすべてのファイルとディレクトリを削除します。
@@ -160,7 +175,7 @@ AEM セカンダリノードの災害時復旧シナリオのためにこのフ�
    1. すべてのクラスターノードで clusterNode/revision.log ファイルを削除します。
    1. .lock がある場合は、すべてのクラスターノードでそれを削除します。
    1. repository/system.id がある場合は、すべてのクラスターノードでそれを削除します。
-   1. すべてのクラスターノード上のファイル &ast;&ast;/listener.propertiesが存在する場合は削除します。
+   1. すべてのクラスターノード上のファイル &amp;ast;&amp;ast;/listener.propertiesが存在する場合は削除します。
    1. クラスターノードごとに、repository/cluster_node.id を復元します。
 
 >[!NOTE]
@@ -177,7 +192,7 @@ AEM セカンダリノードの災害時復旧シナリオのためにこのフ�
 
 ### 単一パブリッシャーノードの復元 {#recover-a-single-publisher-node}
 
-1. 回復する必要のあるノードをシャットダウンし、そのノードが再び立ち上がるまではパブリッシュ作業を行わないようにします。
+1. 回復する必要のあるノードをシャットダウンし、そのノードが再び立ち上がるまでは公開作業を行わないようにします。
 1. [復元とバックアップ](/help/sites-administering/backup-and-restore.md)に従って、パブリッシュノードを復元します。
 
 ### クラスターの復元 {#recover-a-cluster}

@@ -10,22 +10,31 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 1976047c-661a-4398-8dd8-c71cd05d53be
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '200'
 ht-degree: 100%
-
 ---
-
 # コンポーネント{#components}
 
-Adobe Experience Manager（AEM）には、すぐに使用できる様々なコンポーネントが用意されており、web サイト作成者は包括的な機能を使用できます。これらの機能は、[ページの編集](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md)時に使用でき、フィルタリングに役立つように主な機能領域（コンポーネントグループ）別にグループ化されています。
+Adobe Experience Manager（AEM）には、すぐに使用できる様々なコンポーネントが用意されており、web サイト作成者は包括的な機能を使用できます。 これらの機能は、[ページの編集](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md)時に使用でき、フィルタリングに役立つように主な機能領域（コンポーネントグループ）別にグループ化されています。
 
 >[!CAUTION]
 >
 >ここでは、標準の AEM インストールでそのまま使用できるコンポーネントについてのみ説明します。
 >
->インスタンスによっては、要件に合わせて明示的に開発されたカスタマイズコンポーネントが存在する場合があります。これらは、ここで説明するいくつかのコンポーネントと同じ名前の場合があります。
+>インスタンスによっては、要件に合わせて明示的に開発されたカスタマイズコンポーネントが存在する場合があります。 これらは、ここで説明するいくつかのコンポーネントと同じ名前の場合があります。
 
 ## コンポーネント - 主な領域 {#components-major-areas}
 
@@ -35,6 +44,6 @@ Adobe Experience Manager（AEM）には、すぐに使用できる様々なコ�
 
   標準的なページコンテンツを作成するためのコンポーネントは、主に&#x200B;**一般**、**列**&#x200B;および&#x200B;**フォーム**&#x200B;グループに格納されています。
 
-## デザインモードでのコンポーネントの設定  {#using-design-mode-to-configure-components}
+## デザインモードでのコンポーネントの設定 {#using-design-mode-to-configure-components}
 
-作成者が標準インストールのサイドキックからアクセスできるコンポーネントに加えて、他の様々なコンポーネントも使用できます。このようなコンポーネントを有効または無効にして、特定のコンポーネントのパラメーターを編集するには、[デザインモード](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#enable-disable-components)を使用します。
+作成者が標準インストールのサイドキックからアクセスできるコンポーネントに加えて、他の様々なコンポーネントも使用できます。 このようなコンポーネントを有効または無効にして、特定のコンポーネントのパラメーターを編集するには、[デザインモード](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#enable-disable-components)を使用します。

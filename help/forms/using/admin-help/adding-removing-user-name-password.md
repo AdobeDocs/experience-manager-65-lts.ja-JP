@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: d4809a55-aff5-41ac-b75e-81e3a6bf47ca
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 100%
-
 ---
-
 # ユーザー名とパスワードの資格情報の追加と削除 {#adding-and-removing-user-name-and-password-credentials}
 
 >[!NOTE]
@@ -32,7 +47,7 @@ Trust Store の管理ページから、Forms サービスが SOAP レベルの�
 1. 「**[!UICONTROL ユーザー名]**」ボックスに、一意のユーザー名を入力します。
 1. 「**[!UICONTROL パスワード]**」ボックスにユーザーのパスワードを入力して、「**[!UICONTROL OK]**」をクリックします。
 
-## ユーザー名とパスワードの秘密鍵証明書の削除 {#delete-a-user-name-and-password-credential}
+## ユーザー名とパスワードの資格情報の削除 {#delete-a-user-name-and-password-credential}
 
 1. 管理コンソールで、**[!UICONTROL 設定／Trust Store の管理／ユーザーとパスワードの秘密鍵証明書]**&#x200B;をクリックします。
 1. 削除する 秘密鍵証明書のチェックボックスを選択して「**[!UICONTROL 削除]**」をクリックし、「**[!UICONTROL OK]**」をクリックします。

@@ -9,16 +9,29 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 33b531c0-8fda-4649-bad1-d28c58a160e0
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 100%
-
+ht-degree: 91%
 ---
-
 # ページ編集時のキーボードショートカット{#keyboard-shortcuts-when-editing-pages}
 
-AEM 全体で様々なキーボードショートカットを利用できます。ページの編集時に適用されるものもあれば、[コンソール使用](/help/sites-authoring/keyboard-shortcuts.md)に適用されるものもあります。
+AEM 全体で様々なキーボードショートカットを利用できます。 ページの編集時に適用されるものもあれば、[コンソール使用](/help/sites-authoring/keyboard-shortcuts.md)に適用されるものもあります。
 
 >[!NOTE]
 >
@@ -42,7 +55,7 @@ AEM 全体で様々なキーボードショートカットを利用できます�
 
 >[!NOTE]
 >
->ユーザーがプレビューモードでページの操作を開始すると、`Ctrl-Shift-m` ショートカットは使用できなくなります。ショートカットをもう一度使用できるようにするには、エディターバーの上部をクリックするか、編集モードに戻る必要があります。
+>&amp;ast; ユーザーがプレビューモードでページを操作し始めると、`Ctrl-Shift-m` ショートカットは使用できなくなります。 ショートカットをもう一度使用できるようにするには、エディターバーの上部をクリックするか、編集モードに戻る必要があります。
 
 [コンソール](/help/sites-authoring/keyboard-shortcuts.md)の使用時には、デスクトップユーザー向けの様々なキーボードショートカットも利用できます。
 

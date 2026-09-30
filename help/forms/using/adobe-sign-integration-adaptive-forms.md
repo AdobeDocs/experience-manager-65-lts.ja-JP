@@ -5,16 +5,36 @@ feature: Adaptive Forms,Foundation Components,Acrobat Sign
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: fdf95738-3075-43d6-9d51-64c83cf0f0b7
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: a16aea24-4e85-528d-9377-cd80bb039c1d
+    internal-label: Acrobat Sign
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2206'
+source-wordcount: '2207'
 ht-degree: 94%
-
 ---
-
 # [!DNL Adobe Sign] の AEM [!DNL Forms] との統合{#integrate-adobe-sign-with-aem-forms}
 
-<span class="preview">[アダプティブフォームの新規作成](/help/forms/using/create-an-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。 これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
+<span class="preview">[アダプティブフォームの新規作成](/help/forms/using/create-an-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。 これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。 この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
 
 ## 適用先 {#applies-to}
 
@@ -76,19 +96,19 @@ AEM as a Cloud Serviceのドキュメントについては、[Cloud Service上�
 
      `https://<shard>/public/oauth/v2`
 
-     次に例を示します。
+     例：
      `https://secure.na1.echosign.com/public/oauth/v2`
 
    * **[!UICONTROL トークン URL にアクセス]** フィールドには、Adobe Sign データベースシャードを含むデフォルトの URL が含まれます。 URL の形式は次の通りです。
 
      `https://<shard>/oauth/v2/token`
 
-     次に例を示します。
+     例：
      `https://api.na1.echosign.com/oauth/v2/token`
 
    各パラメーターの意味は次のとおりです。
 
-   **na1** は、デフォルトのデータベースシャードを参照します。 データベースシャードの値を更新することができます。 [!DNL &#x200B; Adobe Acrobat Sign] クラウド設定で、[正しいシャード](https://helpx.adobe.com/jp/sign/using/identify-account-shard.html)をポイントしていることを確認します。
+   **na1** は、デフォルトのデータベースシャードを参照します。 データベースシャードの値を更新することができます。 [!DNL  Adobe Acrobat Sign] クラウド設定で、[正しいシャード](https://helpx.adobe.com/jp/sign/using/identify-account-shard.html)をポイントしていることを確認します。
 
    >[!NOTE]
    >
@@ -166,13 +186,13 @@ AEM Forms と Adobe Acrobat Sign Solutions for Government の接続は、複数�
 
 ### 事前準備 {#prerequisites-for-adobe-sign-for-acrobat-sign-for-government}
 
-AEM Forms と Adobe Acrobat Sign Solutions の接続を開始する前に、
+AEM Forms と Adobe Acrobat Sign Solution の接続を開始する前に、
 
 * [Adobe Acrobat Sign Solutions for Government](https://opensource.adobe.com/acrobat-sign/signgov/gstarted.html#account-provisioning) アカウントがプロビジョニングされていることを確認します。
 * AEM [!DNL Forms] サーバーが [SSL 有効](/help/sites-administering/ssl-by-default.md)になっていること。
 * AEM [!DNL Forms] サーバーが、オーサーインスタンスとパブリッシュインスタンスに[同一の暗号キー](/help/sites-administering/security-checklist.md#make-sure-you-properly-replicate-encryption-keys-when-needed)を使用していること。
 
-### AEM forms と Adobe Acrobat Sign Solutions for Government の接続 {#connect-adobe-acrobat-sign-for-government}
+### AEM Forms と Adobe Acrobat Sign Solutions for Government の接続 {#connect-adobe-acrobat-sign-for-government}
 
 #### AEM インスタンスのリダイレクト URL の作成
 
@@ -182,7 +202,7 @@ AEM Forms と Adobe Acrobat Sign Solutions の接続を開始する前に、
 
 1. **[!UICONTROL ツール]**![ハンマー](assets/hammer.png)／**[!UICONTROL Cloud Services]**／**[!UICONTROL Adobe Acrobat Sign]** に移動し、上記の手順で作成した設定コンテナを開きます。 アダプティブフォームを作成する際に、**[!UICONTROL 設定コンテナ]**&#x200B;フィールドにコンテナ名を指定します。
 1. 設定ページで「**[!UICONTROL 作成]**」をタップして、AEM Forms 内に [!DNL Adobe Acrobat Sign] の設定を作成します。
-1. 現在のブラウザーウィンドウの URL を、URL からメモ帳にコピーします。 この URL は `re-direct URL` と呼ばれます。 次の節では、`re-direct URL` と `Scopes` を Adobe Sign チームと共有し、資格情報（クライアント ID とクライアント秘密鍵）をリクエストします。
+1. 現在のブラウザーウィンドウの URL をメモ帳にコピーします。 この URL は `re-direct URL` と呼ばれます。 次の節では、`re-direct URL` と `Scopes` を Adobe Sign チームと共有し、資格情報（クライアント ID とクライアント秘密鍵）をリクエストします。
 
 >[!NOTE]
 >
@@ -207,7 +227,7 @@ Adobe Acrobat Sign for Government Solutions チームは、AEM Forms と Adobe A
 * [!DNL workflow_read]
 * [!DNL offline_access]
 
-担当者が資格情報を生成し、共有します。 次の節では、資格情報（クライアント ID とクライアントの秘密鍵）を使用して、AEM Forms を Adobe Acrobat Sign Solutions for Government に接続します。
+担当者が資格情報を生成し、共有します。 次の節では、資格情報（クライアント ID とクライアントシークレット）を使用して、AEM Forms を Adobe Acrobat Sign Solutions for Government に接続します。
 
 #### 受け取った資格情報を使用して、AEM Forms を Adobe Acrobat Sign Solutions for Government に接続する
 
@@ -226,19 +246,19 @@ Adobe Acrobat Sign for Government Solutions チームは、AEM Forms と Adobe A
 
      `https://<shard>/api/gateway/adobesignauthservice/api/v1/authorize`
 
-     次に例を示します。
+     例：
      `https://secure.na1.adobesign.us/api/gateway/adobesignauthservice/api/v1/authorize`
 
    * **[!UICONTROL トークン URL にアクセス]** フィールドには、Adobe Sign データベースシャードを含むデフォルトの URL が含まれます。 URL の形式は次の通りです。
 
      `https://<shard>/api/gateway/adobesignauthservice/api/v1/token`
 
-     次に例を示します。
+     例：
      `https://secure.na1.adobesign.us/api/gateway/adobesignauthservice/api/v1/token`
 
    各パラメーターの意味は次のとおりです。
 
-   **na1** は、デフォルトのデータベースシャードを参照します。 データベースシャードの値を更新することができます。 [!DNL &#x200B; Adobe Acrobat Sign] クラウド設定で、[正しいシャード](https://helpx.adobe.com/jp/sign/using/identify-account-shard.html)をポイントしていることを確認します。
+   **na1** は、デフォルトのデータベースシャードを参照します。 データベースシャードの値を更新することができます。 [!DNL  Adobe Acrobat Sign] クラウド設定で、[正しいシャード](https://helpx.adobe.com/jp/sign/using/identify-account-shard.html)をポイントしていることを確認します。
 
    >[!NOTE]
    >
@@ -274,7 +294,7 @@ Adobe Acrobat Sign for Government Solutions チームは、AEM Forms と Adobe A
    ブラウザーウィンドウで、以下の URL に移動することもできます。
    `https://[localhost]:'port'/system/console/configMgr`
 
-1. 「**[!UICONTROL Adobe Sign 設定サービス]**」オプションを探して選択します。 「**[!UICONTROL ステータス更新スケジューラーの式]**」フィールドで [Cron 式](https://en.wikipedia.org/wiki/Cron#CRON_expression)を指定して「**[!UICONTROL 保存]**」をクリックします。 例えば、午前00:00時に設定サービスを毎日実行するには、**[!UICONTROL ステータス更新スケジューラー式]** フィールドに`0 0 0 1/1 * ? *`を指定します。
+1. 「**[!UICONTROL Adobe Sign 設定サービス]**」オプションを探して選択します。 「**[!UICONTROL ステータス更新スケジューラーの式]**」フィールドで [Cron 式](https://en.wikipedia.org/wiki/Cron#CRON_expression)を指定して「**[!UICONTROL 保存]**」をクリックします。 例えば、毎日午前00:00に設定サービスを実行するには、**[!UICONTROL ステータス更新スケジューラー式]** フィールドに`0 0 0 1/1 * ? *`を指定します。
 
 これで、[!DNL Adobe Sign] のステータスを同期するデフォルトの間隔が変更されました。
 

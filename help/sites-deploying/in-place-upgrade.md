@@ -6,22 +6,31 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 46%
-
 ---
-
 # インプレースアップグレードの実行 {#performing-an-in-place-upgrade}
 
 >[!NOTE]
 >
->このページでは、AEM 6.5 LTSのインプレースアップグレード手順の概要を説明します。 インストールがアプリケーションサーバーにデプロイされている場合は、[&#x200B; アプリケーションサーバーインストールのアップグレード手順](/help/sites-deploying/app-server-upgrade.md)を参照してください。
+>このページでは、AEM 6.5 LTSのインプレースアップグレード手順の概要を説明します。 インストールがアプリケーションサーバーにデプロイされている場合は、[ アプリケーションサーバーインストールのアップグレード手順](/help/sites-deploying/app-server-upgrade.md)を参照してください。
 
 ## アップグレード前の手順 {#pre-upgrade-steps}
 
-アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。 詳しくは、[コードのアップグレードとカスタマイズ](/help/sites-deploying/upgrading-code-and-customizations.md)および[アップグレード前のメンテナンスタスク](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。 さらに、お使いのシステムがAEM 6.5 LTS[&#128279;](/help/sites-deploying/technical-requirements.md)の要件を満たしていることを確認し、[&#x200B; アップグレード計画に関する考慮事項](/help/sites-deploying/upgrade-planning.md)と、[Analyzer](/help/sites-deploying/pattern-detector.md)による複雑性の見積もり方法を確認してください。
+アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。 詳しくは、[コードのアップグレードとカスタマイズ](/help/sites-deploying/upgrading-code-and-customizations.md)および[アップグレード前のメンテナンスタスク](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。 さらに、お使いのシステムがAEM 6.5 LTS](/help/sites-deploying/technical-requirements.md)の[要件を満たしていることを確認し、[ アップグレード計画に関する考慮事項](/help/sites-deploying/upgrade-planning.md)と、[Analyzer](/help/sites-deploying/pattern-detector.md)による複雑性の見積もり方法を確認してください。
 
 ## 移行の前提条件 {#migration-prerequisites}
 
@@ -179,7 +188,7 @@ Where `/path/to/datastore` represents the path to your File Datastore.
 
 >[!NOTE]
 >
->Java 8/11引数の一部のサポートは、Java 17/21で削除されました。AEM 6.5 LTS[&#128279;](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations)の[Oracle Java™ 17 documents](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html)、[Oracle Java™ 21 documents](https://docs.oracle.com/en/java/javase/21/docs/specs/man/java.html)およびJava&amp;trade arguments considerationsを参照してください。
+>Java 8/11引数の一部のサポートは、Java 17/21で削除されました。AEM 6.5 LTS](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations)の[Oracle Java™ 17 documents](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html)、[Oracle Java™ 21 documents](https://docs.oracle.com/en/java/javase/21/docs/specs/man/java.html)および[Java&amp;trade arguments considerationsを参照してください。
 
 アップグレードを実行するには、jar ファイルを使用して AEM を起動し、インスタンスを起動することが重要です。
 
@@ -209,6 +218,6 @@ Where `/path/to/datastore` represents the path to your File Datastore.
 
 インプレースアップグレードプロセスが完了したら、更新したコードベースをデプロイする必要があります。 ターゲットバージョンの AEM で動作するようにコードベースを更新するための手順については、[コードおよびカスタマイズのアップグレード](/help/sites-deploying/upgrading-code-and-customizations.md)のページを参照してください。
 
-## アップグレード後のチェックおよびトラブルシューティングを実行 {#perform-post-upgrade-check-troubleshooting}
+## アップグレード後のチェックおよびトラブルシューティング {#perform-post-upgrade-check-troubleshooting}
 
 [アップグレード後のチェックおよびトラブルシューティング](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)を参照してください。

@@ -10,14 +10,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: de61c579-50ed-423b-adca-60329f3f0b89
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2471'
 ht-degree: 98%
-
 ---
-
 # インタラクティブ PDF Forms のレンダリング {#rendering-interactive-pdf-forms}
 
 **このドキュメントのサンプルと例は、JEE 環境の AEM Forms のみを対象としています。**
@@ -30,7 +47,7 @@ Forms サービスは、ユーザーから情報を収集するために、イ�
 
 **ローン申し込みのサンプル**
 
-Forms サービスが、どのようにしてインタラクティブフォームを使用してユーザーから情報を収集するかを示すために、サンプルのローン申し込みフォームが紹介されています。 このアプリケーションを使用すると、ユーザーはローンのセキュリティ保護に必須のデータをフォームに入力し、データを Forms サービスに送信できます。 次の図に、ローン申し込みのロジックフローを示します。
+Forms サービスが、どのようにしてインタラクティブフォームを使用してユーザーから情報を収集するかを示すために、サンプルのローンアプリケーションが紹介されています。 このアプリケーションを使用すると、ユーザーはローンを確保するために必要なデータをフォームに入力し、そのデータを Forms サービスに送信できます。 次の図に、ローン申し込みのロジックフローを示します。
 
 ![ri_ri_finsrv_loanapp_v1](assets/ri_ri_finsrv_loanapp_v1.png)
 
@@ -50,7 +67,7 @@ Forms サービスが、どのようにしてインタラクティブフォー�
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p><code>GetLoanForm</code> Java サーブレットは、Forms Service Client API を使用して、クライアント web ブラウザーにローンフォームをレンダリングします。 （ <a href="#render-an-interactive-pdf-form-using-the-java-api">Java API を使用したインタラクティブ PDF フォームのレンダリング</a>を参照してください。）</p></td>
+   <td><p>この <code>GetLoanForm</code> Java サーブレットは、Forms Service Client API を使用して、ローン申し込みフォームをクライアント web ブラウザーにレンダリングします。 （ <a href="#render-an-interactive-pdf-form-using-the-java-api">Java API を使用したインタラクティブ PDF フォームのレンダリング</a>を参照してください。）</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
@@ -83,7 +100,7 @@ Forms サービスが、どのようにしてインタラクティブフォー�
 
 **Java サーブレット**
 
-サンプルのローン申し込みフォームは、Java サーブレットとして存在する Forms サービスアプリケーションの一例です。 Java サーブレットは、WebSphere などの J2EE アプリケーションサーバー上で実行される Java プログラムで、Forms Service Client API コードを含みます。
+サンプルのローン申込アプリケーションは、Java サーブレットとして存在する Forms サービスアプリケーションの一例です。 Java サーブレットは、WebSphere などの J2EE アプリケーションサーバー上で実行される Java プログラムで、Forms サービス Client API コードを含みます。
 
 次のコードは、GetLoanForm という名前の Java サーブレットの構文を示します。
 
@@ -103,7 +120,7 @@ Forms サービスが、どのようにしてインタラクティブフォー�
 
 >[!NOTE]
 >
->Forms サービスについて詳しくは、[AEM Forms サービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
+>Forms サービスについて詳しくは、[AEM Forms のサービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
 
 **手順の概要**
 
@@ -153,7 +170,7 @@ URI 値の一例を以下に示します。
 
 ターゲット URL がフォームデザイン内で定義されている場合は、Forms サービス Client API を使用して上書きしないでください。 Forms API を使用してターゲット URL を設定すると、フォームデザインで指定された URL が、API を使用して指定された URL にリセットされます。 フォームデザインで指定したターゲット URLにPDF フォームを送信する場合は、プログラムでターゲット URLを空の文字列に設定します。
 
-「送信」ボタンと「計算」ボタン（サーバーで実行される対応するスクリプト）を含むフォームがある場合、フォームが送信されるスクリプトの URL をプログラムで定義してスクリプトを実行できます。 フォームデザインの送信ボタンを使用して、フォームデータが投稿される URL を指定します （[フォームデータの計算](/help/forms/developing/calculating-form-data.md)を参照）。
+「送信」ボタンと「計算」ボタン（サーバーで実行される対応するスクリプト）を含むフォームがある場合は、スクリプトを実行するためにフォームの送信先 URL をプログラムで定義できます。 フォームデザインの送信ボタンを使用して、フォームデータが投稿される URL を指定します （[フォームデータの計算](/help/forms/developing/calculating-form-data.md)を参照）。
 
 >[!NOTE]
 >
@@ -204,7 +221,7 @@ Forms API（Java）を使用してインタラクティブ PDF フォームを�
    * コンストラクターを使用して、添付ファイルを格納する `java.util.HashMap` オブジェクトを作成します。
    * レンダリングされたフォームに添付するファイルごとに `java.util.HashMap` オブジェクトの `put` メソッドを呼び出します。 このメソッドに次の値を渡します。
 
-      * ファイル名の拡張子を含む、添付ファイルの名前を指定する文字列値
+     * ファイル名の拡張子を含む、添付ファイルの名前を指定する文字列値
 
    * 添付ファイルを含む `com.adobe.idp.Document` オブジェクト
 
@@ -236,7 +253,7 @@ Forms API（Java）を使用してインタラクティブ PDF フォームを�
 
 ## Web サービス API を使用したインタラクティブ PDF フォームのレンダリング {#render-an-interactive-pdf-form-using-the-web-service-api}
 
-Forms API（web サービス）を使用してインタラクティブ PDF フォームをレンダリングします。
+Forms API（web サービス）を使用したインタラクティブ PDF フォームのレンダリング：
 
 1. プロジェクトファイルを含める
 
@@ -259,7 +276,7 @@ Forms API（web サービス）を使用してインタラクティブ PDF フ�
    * コンストラクターを使用して、添付ファイルを格納する `java.util.HashMap` オブジェクトを作成します。
    * レンダリングされたフォームに添付するファイルごとに `java.util.HashMap` オブジェクトの `put` メソッドを呼び出します。 このメソッドに次の値を渡します。
 
-      * ファイル名の拡張子を含む添付ファイルの名前を指定する文字列値
+     * ファイル名の拡張子を含む添付ファイルの名前を指定する文字列値
 
    * 添付ファイルを含む `BLOB` オブジェクト
 
@@ -272,7 +289,7 @@ Forms API（web サービス）を使用してインタラクティブ PDF フ�
    `FormsService` オブジェクトの `renderPDFForm` メソッドを呼び出して、以下の値を渡します。
 
    * フォームデザイン名を指定する文字列値で、ファイル名の拡張子も含まれます。 Forms アプリケーションの一部であるフォームデザインを参照する場合は、必ず次のような完全なパスを指定します。`Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`
-   * フォームに結合するデータを含む `BLOB` オブジェクト。 データを結合しない場合は、`null` を渡します。
+   * フォームと結合するデータを含んだ `BLOB` オブジェクト。 データを結合しない場合は、`null` を渡します。
    * 実行時オプションを保存する `PDFFormRenderSpec` オブジェクト。 これはオプションのパラメーターで、実行時オプションを指定しない場合は、`null` を指定できます。
    * Forms サービスで必要な URI 値を格納する `URLSpec` オブジェクト。
    * 添付ファイルを格納する `java.util.HashMap` オブジェクト。 これはオプションのパラメーターであり、フォームにファイルを添付しない場合に `null` を指定できます。

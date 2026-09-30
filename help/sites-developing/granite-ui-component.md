@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e49d1d3d-984c-4b08-b0e5-2016fbff0b80
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 100%
-
 ---
-
 # 新しい Granite UI フィールドコンポーネントの作成{#creating-a-new-granite-ui-field-component}
 
 Granite UI には、フォームで使用するようにデザインされた幅広いコンポーネントが用意されています。これらを Granite の UI 用語では「フィールド」と呼びます&#x200B;*。* 標準の Granite フォームコンポーネントは、次の場所にあります。
@@ -34,16 +43,16 @@ Granite コンポーネントを開発または拡張するには、Granite UI �
 
 * サーバーサイド：
 
-   * 基盤コンポーネントのコレクション
+  * 基盤コンポーネントのコレクション
 
-      * 基盤 - モジュール式、組み立て可能、階層化可能、再利用可能
-      * コンポーネント - Sling コンポーネント
+    * 基盤 - モジュール式、組み立て可能、階層化可能、再利用可能
+    * コンポーネント - Sling コンポーネント
 
-   * アプリケーション開発を支援するヘルパー
+  * アプリケーション開発を支援するヘルパー
 
 * クライアントサイド：
 
-   * ハイパーメディア駆動型ユーザーインターフェイスを使用して、一般的なインタラクションパターンを実現するための語彙（HTML 言語の拡張）を提供するクライアントライブラリのコレクション
+  * ハイパーメディア駆動型ユーザーインターフェイスを使用して、一般的なインタラクションパターンを実現するための語彙（HTML 言語の拡張）を提供するクライアントライブラリのコレクション
 
 一般的な Granite UI コンポーネントである `field` は、次の 2 つのファイルで構成されます。
 
@@ -56,7 +65,7 @@ Granite コンポーネントを開発または拡張するには、Granite UI �
 
 * `cqgems/customizingfield/components/colorpicker`
 
-   * [コードサンプル](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)で提供
+  * [コードサンプル](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)で提供
 
 * `granite/ui/components/foundation/form`
 

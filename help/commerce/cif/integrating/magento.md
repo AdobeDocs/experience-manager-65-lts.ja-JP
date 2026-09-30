@@ -6,13 +6,21 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: cecd9591-bff4-4b4e-a3fd-4ab4278a0b81
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 80%
-
 ---
-
 # Commerce Integration Framework を使用した、AEM と Adobe Commerce（Magento）の統合 {#aem-commerce-framework}
 
 Experience Manager と Adobe Commerce は、Commerce Integration Framework（CIF）を使用してシームレスに統合されます。 CIF を使用すると、AEM は Adobe Commerce の [GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql/) を使用して、コマースインスタンスに直接アクセスして通信できます。
@@ -28,7 +36,7 @@ Experience Manager と Adobe Commerce は、Commerce Integration Framework（CIF
 ![CIF アーキテクチャの概要](../assets/AEM_Magento_Architecture.png)
 
 CIF 内では、サーバーサイドとクライアントサイドの通信パターンがサポートされます。
-サーバーサイド API呼び出しは、ビルトインの汎用[GraphQL クライアント &#x200B;](https://github.com/adobe/commerce-cif-graphql-client)と、Commerce GraphQL スキーマの[生成データモデルのセット &#x200B;](https://github.com/adobe/commerce-cif-magento-graphql)を組み合わせて使用して実装されます。 さらに、GQL フォーマットのGraphQLクエリやミューテーションも使用できます。
+サーバーサイド API呼び出しは、ビルトインの汎用[GraphQL クライアント ](https://github.com/adobe/commerce-cif-graphql-client)と、Commerce GraphQL スキーマの[生成データモデルのセット ](https://github.com/adobe/commerce-cif-magento-graphql)を組み合わせて使用して実装されます。 さらに、GQL フォーマットのGraphQLクエリやミューテーションも使用できます。
 
 [React](https://reactjs.org/) を使用して構築されるクライアントサイドコンポーネントの場合は、[Apollo Client](https://www.apollographql.com/docs/react/) が使用されます。
 

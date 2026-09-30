@@ -7,20 +7,32 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: 45178816afbda13ee9117a0b13dcb8a9218992da
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1563'
-ht-degree: 94%
-
+source-wordcount: '1586'
+ht-degree: 89%
 ---
-
 # カスタムスタンドアロンインストール{#custom-standalone-install}
 
-この節では、スタンドアロン AEM インスタンスのインストール時に使用可能なオプションについて説明します。AEM 6 を新規インストールした後のバックエンドストレージタイプの選択について詳しくは、[ストレージ要素](/help/sites-deploying/storage-elements-in-aem-6.md)も参照してください。
+この節では、スタンドアロン AEM インスタンスのインストール時に使用可能なオプションについて説明します。 AEM 6 を新規インストールした後のバックエンドストレージタイプの選択について詳しくは、[ストレージ要素](/help/sites-deploying/storage-elements-in-aem-6.md)も参照してください。
 
 ## ファイル名の変更によるポート番号の変更 {#changing-the-port-number-by-renaming-the-file}
 
-AEM のデフォルトのポートは 4502 です。このポートが使用できない場合や、既に使用中の場合は、最初に有効なポート番号（4502、8080、8081、8082、8083、8084、8085、8888、9362、`<*random*>`）を使用するようにクイックスタートによって自動的に設定されます。
+AEM のデフォルトのポートは 4502 です。 このポートが使用できない場合や、既に使用中の場合は、最初に有効なポート番号（4502、8080、8081、8082、8083、8084、8085、8888、9362、`<*random*>`）を使用するようにクイックスタートによって自動的に設定されます。
 
 ファイル名にポート番号が含まれるようにクイックスタート jar ファイルの名前を変更して（例：`cq5-publish-p4503.jar`、`cq5-author-p6754.jar`）、ポート番号を設定することもできます。
 
@@ -44,17 +56,17 @@ AEM のデフォルトのポートは 4502 です。このポートが使用で�
 >
 >start コマンドで `-port` オプションを使用してポート番号を変更することもできます。
 
-### Java 17/Java 21 に関する考慮事項 {#java-considerations}
+### Java 17/Java 21の考慮事項 {#java-considerations}
 
-Oracle Java 17 または Java 21 を実行している場合は、AEMの起動時にコマンドラインにさらにスイッチを追加する必要があります。
+Oracle Java 17またはJava 21を実行している場合は、AEMの起動時にコマンドラインにスイッチを追加する必要があります。
 
-* 以下は、Java 17/Java 21 でAEMを起動するときに指定する JVM パラメーターのサンプルです。
+* 以下に、Java 17/Java 21でAEMを起動する際に、追加のJVM パラメーターがどのように表示されるかのサンプルを示します。
 
 ```shell
 -XX:+UseG1GC --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Djdk.util.zip.disableZip64ExtraFieldValidation=true
 ```
 
-* [Formsのみ ] AEM Formsが Java 17/Java21 で動作することを確認するためのサンプルです。次に、追加の JVM パラメーターを含めます。
+* [Formsのみ]以下は、AEM FormsがJava 17/Java21で動作することを確認するためのサンプルです。その他のJVM パラメーターを次に示します。
 
 ```shell
 --add-opens=java.base/java.util=ALL-UNNAMED --add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
@@ -62,7 +74,7 @@ Oracle Java 17 または Java 21 を実行している場合は、AEMの起動�
 
 ## 実行モード {#run-modes}
 
-**実行モード**&#x200B;を使用すると、特定の目的に合わせて AEM インスタンスを調整できます。例えば、オーサーまたはパブリッシュ、テスト、開発、イントラネットなどです。これらのモードを使用すると、サンプルコンテンツの使用を制御できます。サンプルコンテンツは、クイックスタートの構築前に定義され、パッケージや設定などを含めることができます。これは、インストールをサンプルコンテンツなしで無駄のない状態に保つ場合に、実稼動の準備が整ったインストールで特に役立ちます。詳しくは、次を参照してください。
+**実行モード**&#x200B;を使用すると、特定の目的に合わせて AEM インスタンスを調整できます。例えば、オーサーまたはパブリッシュ、テスト、開発、イントラネットなどです。 これらのモードを使用すると、サンプルコンテンツの使用を制御できます。 サンプルコンテンツは、クイックスタートの構築前に定義され、パッケージや設定などを含めることができます。 これは、インストールをサンプルコンテンツなしで無駄のない状態に保つ場合に、実稼動の準備が整ったインストールで特に役立ちます。 詳しくは、次を参照してください。
 
 * [実行モード](/help/sites-deploying/configure-runmodes.md)
 
@@ -71,13 +83,13 @@ Oracle Java 17 または Java 21 を実行している場合は、AEMの起動�
 デフォルトでは、`crx-quickstart/install` フォルダーのファイルが監視されます。
 このフォルダーは存在しませんが、実行時に作成できます。
 
-このディレクトリに追加されたバンドル、設定またはコンテンツパッケージは自動的に選択およびインストールされます。削除された場合は、アンインストールされます。
+このディレクトリに追加されたバンドル、設定またはコンテンツパッケージは自動的に選択およびインストールされます。 削除された場合は、アンインストールされます。
 これは、バンドル、コンテンツパッケージまたは設定をリポジトリに追加するためのもう 1 つの方法です。
 
 この方法は次に示すいくつかのユースケースで特に有効です。
 
 * 開発時に、ファイルシステムへの項目の追加が容易になります。
-* 問題が発生した場合は、web コンソールとリポジトリにアクセスできません。その際に、このディレクトリにバンドルを追加してインストールできます。
+* 問題が発生した場合は、web コンソールとリポジトリにアクセスできません。 その際に、このディレクトリにバンドルを追加してインストールできます。
 * クイックスタートを起動する前に `crx-quickstart/install` フォルダーを作成して、そこにパッケージを追加できます。
 
 ## Windows サービスとしての Adobe Experience Manager のインストールと起動 {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
@@ -86,7 +98,7 @@ Oracle Java 17 または Java 21 を実行している場合は、AEMの起動�
 >
 >管理者としてログオンしている間に次の手順を実行するか、またはコンテキストメニューの「**管理者として実行**」オプションを使用して手順を開始／実行してください。
 >
->管理者権限を持つユーザーとしてログオンしただけでは&#x200B;**不十分**&#x200B;です。管理者としてログオンしていない状態でこれらの手順の完了すると、「**アクセスが拒否されました**」というエラーが表示されます。
+>管理者権限を持つユーザーとしてログオンしただけでは&#x200B;**不十分**&#x200B;です。 管理者としてログオンしていない状態でこれらの手順の完了すると、「**アクセスが拒否されました**」というエラーが表示されます。
 
 AEM を Windows サービスとしてインストールして起動するには：
 
@@ -102,7 +114,7 @@ AEM を Windows サービスとしてインストールして起動するには�
 
    `instsrv.bat cq5`
 
-   サービスが作成されたことを確認するには、管理ツールコントロールパネルで「サービス」を開くか、コマンドプロンプトで「`start services.msc`」と入力します。リストに cq5 サービスが表示されます。
+   サービスが作成されたことを確認するには、管理ツールコントロールパネルで「サービス」を開くか、コマンドプロンプトで「`start services.msc`」と入力します。 リストに cq5 サービスが表示されます。
 
 1. 次のいずれかの方法でサービスを起動します。
 
@@ -114,23 +126,23 @@ AEM を Windows サービスとしてインストールして起動するには�
 
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
-1. Windows は、サービスが実行中であることを示します。AEMが起動し、prunsrv 実行可能ファイルがタスクマネージャーに表示されます。 AEM を使用開始するには、web ブラウザーで、AEM（例：`https://localhost:4502`）に移動します。 
+1. Windowsは、サービスが実行中であることを示します。 AEMが起動し、prunsrv実行可能ファイルがTask Managerに表示されます。 AEM を使用開始するには、web ブラウザーで、AEM（例：`https://localhost:4502`）に移動します。
 
    ![chlimage_1-13](assets/chlimage_1-13.png)
 
 >[!NOTE]
 >
->instsrv.bat ファイル内のプロパティ値は、Windows サービスの作成時に使用されます。instsrv.bat 内のプロパティ値を編集する場合は、サービスをアンインストールしてから再インストールする必要があります。
+>instsrv.bat ファイルのプロパティ値は、Windows サービスの作成時に使用されます。 instsrv.batでプロパティ値を編集する場合は、サービスをアンインストールしてから再インストールする必要があります。
 
 >[!NOTE]
 >
 >AEM をサービスとしてインストールする場合は、Configuration Manager から、`com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` でログディレクトリの絶対パスを指定する必要があります。
 
-サービスをアンインストールするには、コントロールパネルの「**サービス**」で「**停止**」をクリックするか、コマンドラインでフォルダーに移動して、「`instsrv.bat -uninstall cq5`」と入力します。「`net start`」と入力すると、コントロールパネルの「**サービス**」のリストまたはコマンドライン内のリストからサービスが削除されます。
+サービスをアンインストールするには、コントロールパネルの「**サービス**」で「**停止**」をクリックするか、コマンドラインでフォルダーに移動して、「`instsrv.bat -uninstall cq5`」と入力します。 「`net start`」と入力すると、コントロールパネルの「**サービス**」のリストまたはコマンドライン内のリストからサービスが削除されます。
 
 ## 一時的な作業ディレクトリの場所の再定義 {#redefining-the-location-of-the-temporary-work-directory}
 
-Java マシンの一時フォルダーのデフォルトの場所は `/tmp` です。AEM でも、パッケージの構築時などにこのフォルダーを使用します。
+Java マシンの一時フォルダーのデフォルトの場所は `/tmp` です。 AEM でも、パッケージの構築時などにこのフォルダーを使用します。
 
 一時フォルダーの場所を変更する場合（ディレクトリの空き容量を増やす必要がある場合など）は、JVM パラメーターを追加して * `<new-tmp-path>`* を定義します。
 
@@ -143,13 +155,13 @@ Java マシンの一時フォルダーのデフォルトの場所は `/tmp` で�
 
 ## クイックスタートファイルから使用可能なその他のオプション {#further-options-available-from-the-quickstart-file}
 
-「–help」 オプションを使用して表示するクイックスタートのヘルプファイルには、その他のオプションと名前変更の規則が記述されています。ヘルプにアクセスするには、次のように入力します。
+その他のオプションと名前を変更する方法については、クイックスタート ヘルプファイルを参照してください。このファイルは、-help オプションを使用して利用できます。 ヘルプにアクセスするには、次のように入力します。
 
 * `java -jar <jar-name>.jar -help`
 
 >[!CAUTION]
 >
->これらのオプションは、AEM 6.5 LTS のオリジナルのリリース以降で有効です。 サービスパックの新しいリリースでは、変更が可能です。
+>これらのオプションは、AEM 6.5 LTSの元のリリースで有効です。 以降のサービスパック リリースの変更は可能です。
 
 ```shell
 Loading quickstart properties: default
@@ -264,7 +276,7 @@ Amazon Elastic Compute Cloud（EC2）インスタンスに AEM をインスト�
 
 EC2 環境にパブリッシュインスタンスをインストールする前に、次の手順を実行してください。
 
-1. インスタンスを初めて起動する前に、パブリッシュインスタンスの jar ファイルを展開します。ファイルを展開するには、次のコマンドを使用します。
+1. インスタンスを初めて起動する前に、パブリッシュインスタンスの jar ファイルを展開します。 ファイルを展開するには、次のコマンドを使用します。
 
    ```xml
    java -jar quickstart.jar -unpack
@@ -282,7 +294,7 @@ EC2 環境にパブリッシュインスタンスをインストールする前�
 
    >[!CAUTION]
    >
-   >上記のコマンドを実行してインスタンスを展開した後は、最初にそのインスタンスを実行してください。そうしないと、quickstart.properties ファイルが生成されません。このファイルが生成されない場合は、以降の AEM のアップグレードが失敗します。
+   >上記のコマンドを実行してインスタンスを展開した後は、最初にそのインスタンスを実行してください。 そうしないと、quickstart.properties ファイルが生成されません。 このファイルが生成されない場合は、以降の AEM のアップグレードが失敗します。
 
 1. **bin** フォルダー内の **start** スクリプトを開いて、次のセクションを確認します。
 
@@ -319,7 +331,7 @@ Web コンソール
 AEM WCM の様々な設定を行うことができますが、インストール直後には、実行が必要な特定のアクションや、少なくとも確認が必要な項目があります。
 
 * システムのセキュリティを確保するために必要なタスクについて、[セキュリティチェックリスト](/help/sites-administering/security-checklist.md)を参照してください。
-* AEM WCM と共にインストールされたデフォルトのユーザーとグループのリストを確認します。また、他のアカウントに対してアクションを実行するかどうかを確認します。詳しくは、[ユーザー管理とセキュリティ](/help/sites-administering/security.md)を参照してください。
+* AEM WCM と共にインストールされたデフォルトのユーザーとグループのリストを確認します。 また、他のアカウントに対してアクションを実行するかどうかを確認します。詳しくは、[ユーザー管理とセキュリティ](/help/sites-administering/security.md)を参照してください。
 
 >[!NOTE]
 >
@@ -340,7 +352,8 @@ CRXDE Lite を開くには、スタートアップスクリーンから **CRXDE 
  https://<host>:<port>/crx/de/index.jsp
 ```
 
-次に例を示します。`https://localhost:4502/crx/de/index.jsp`
+次に例を示します。
+`https://localhost:4502/crx/de/index.jsp`
 
 ![installcq_crxdelite](assets/installcq_crxdelite.png)
 
@@ -352,9 +365,9 @@ Adobe CQ web コンソールにアクセスするには、ようこそ画面か�
  https://<host>:<port>/system/console
 ```
 
-例：
+次に例を示します。
 `https://localhost:4502/system/console`
-またはバンドルページの
+セット販売ページで
 `https://localhost:4502/system/console/bundles`
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
@@ -363,12 +376,12 @@ Adobe CQ web コンソールにアクセスするには、ようこそ画面か�
 
 ## Adobe Experience Manager のアンインストール {#uninstalling-adobe-experience-manager}
 
-AEM は単一のディレクトリにインストールされるので、アンインストールユーティリティは必要ありません。インストールディレクトリ全体を削除するだけでアンインストールできます。ただし、AEM のアンインストール方法は、その目的および使用している永続ストレージによって変わります。
+AEM は単一のディレクトリにインストールされるので、アンインストールユーティリティは必要ありません。 インストールディレクトリ全体を削除するだけでアンインストールできます。ただし、AEM のアンインストール方法は、その目的および使用している永続ストレージによって変わります。
 
 例えば、デフォルトの TarPM インストールなど、永続ストレージがインストールディレクトリに埋め込まれている場合、フォルダーを削除するとデータも削除されます。
 
 >[!NOTE]
 >
->アドビでは、AEM を削除する前にリポジトリをバックアップすることを強くお勧めします。&lt;cq-installation-directory> 全体を削除すると、リポジトリも削除されます。削除する前にリポジトリのデータを保管する場合は、&lt;cq-installation-directory>/crx-quickstart/repository フォルダーを他の場所に移動またはコピーしてから、その他のフォルダーを削除するようにしてください。
+>アドビでは、AEM を削除する前にリポジトリをバックアップすることを強くお勧めします。 &lt;cq-installation-directory> 全体を削除すると、リポジトリも削除されます。 削除する前にリポジトリのデータを保管する場合は、&lt;cq-installation-directory>/crx-quickstart/repository フォルダーを他の場所に移動またはコピーしてから、その他のフォルダーを削除するようにしてください。
 
 例えば、データベースサーバーなど、AEM のインストールが外部ストレージを使用している場合、フォルダーを削除してもデータは自動的には削除されませんが、ストレージ設定が削除されるので、JCR コンテンツの復元は困難になります。

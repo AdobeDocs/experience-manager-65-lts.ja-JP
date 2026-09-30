@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: c83fcf96-cc45-40a0-9a50-c60406096de1
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1298'
 ht-degree: 98%
-
 ---
-
 # パフォーマンスツリー{#performance-tree}
 
 ## 範囲 {#scope}
@@ -137,7 +146,7 @@ ht-degree: 98%
   <tr>
    <td><strong>手順 16</strong></td>
    <td>プロファイルサーバー</td>
-   <td><p>AEM で使用できるプロファイリングツールについて詳しくは、<a href="/help/sites-deploying/monitoring-and-maintaining.md#tools-for-monitoring-and-analyzing-performance">パフォーマンスの監視および分析のツール</a>を参照してください。<br /> </p> </td>
+   <td><p>AEM で使用できるプロファイリングツールについて詳しくは、<a href="/help/sites-deploying/monitoring-and-maintaining.md#tools-for-monitoring-and-analyzing-performance">パフォーマンスのモニタリングおよび分析のツール</a>を参照してください。<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>手順 17</strong></td>
@@ -166,7 +175,7 @@ ht-degree: 98%
   <tr>
    <td><strong>手順 21</strong></td>
    <td>ディスク I/O</td>
-   <td><p>監視およびメンテナンスのドキュメントで、<a href="/help/sites-deploying/monitoring-and-maintaining.md#disk-i-o">ディスク I/O</a> の節を参照してください。</p> </td>
+   <td><p>モニタリングおよびメンテナンスのドキュメントで、<a href="/help/sites-deploying/monitoring-and-maintaining.md#disk-i-o">ディスク I/O</a> の節を参照してください。</p> </td>
   </tr>
   <tr>
    <td><strong>手順 22 および 22.1</strong></td>

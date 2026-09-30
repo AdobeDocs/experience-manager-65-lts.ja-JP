@@ -10,13 +10,25 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 0c20efb1-9b01-41ef-b38d-261fb4b0ff91
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '6780'
 ht-degree: 97%
-
 ---
-
 # AEM の閉じられたユーザーグループ{#closed-user-groups-in-aem}
 
 ## はじめに {#introduction}
@@ -101,10 +113,10 @@ CUG を介した、制限付き読み取りアクセスを定義する際は、�
 * 保護する必要があるデータやコンテンツの脅威モデルを作成して、脅威の範囲を識別し、データの感度と、承認されたアクセスに関連付けられている役割を明確にします。
 * リポジトリコンテンツと CUG をモデル化して、承認に関する一般事項とベストプラクティスを覚えておきます。
 
-   * 特定の CUG と、設定に導入されている他のモジュールの評価によって、特定のサブジェクトが特定のリポジトリアイテムを読み取ることが許可される場合にのみ、読み取り権限が付与されます。
-   * 読み取りアクセスが既に他の承認モジュールによって制限されている場合は、冗長 CUG の作成を回避します。
-   * ネストされた CUG が大量に必要になる場合は、コンテンツデザインに問題がある可能性があります。
-   * CUG が大量に必要な場合（例えば、ページごとに CUG が必要な場合）は、そのアプリケーションやコンテンツのセキュリティニーズに見合ったカスタム承認モデルを導入することが必要な可能性があります。
+  * 特定の CUG と、設定に導入されている他のモジュールの評価によって、特定のサブジェクトが特定のリポジトリアイテムを読み取ることが許可される場合にのみ、読み取り権限が付与されます。
+  * 読み取りアクセスが既に他の承認モジュールによって制限されている場合は、冗長 CUG の作成を回避します。
+  * ネストされた CUG が大量に必要になる場合は、コンテンツデザインに問題がある可能性があります。
+  * CUG が大量に必要な場合（例えば、ページごとに CUG が必要な場合）は、そのアプリケーションやコンテンツのセキュリティニーズに見合ったカスタム承認モデルを導入することが必要な可能性があります。
 
 * CUG ポリシーのためにサポートされるパスを、リポジトリ内のいくつかのツリーに制限して、最適なパフォーマンスを維持します。 例えば、AEM 6.3 よりデフォルト値として付属している /content ノード下にのみ CUG を許可します。
 * CUG ポリシーは、少数のプリンシパルに読み取りアクセスを付与するように設計されています。 大量のプリンシパルが必要な場合は、コンテンツやアプリケーションのデザインに関する問題が発生する可能性があるので、再検討する必要があります。
@@ -146,10 +158,10 @@ Apache Sling 認証要件は、ページまたはノード階層を通じて継�
 * リダイレクトの理由として、パスワードの失効と、通常のログインに必要な処理を区別します。
 * 通常のログインに必要な処理である場合は、ログインパスを取得できるかどうかを、以下の順序で確認します。
 
-   * 新しい `com.adobe.granite.auth.requirement.impl.RequirementService` で実装される LoginPathProvider から
-   * 廃止された古い CUG 実装から
-   * `LoginSelectorHandler` で定義したログインページマッピングから
-   * 最後に、`LoginSelectorHandler` で定義したデフォルトログインページへのフォールバック
+  * 新しい `com.adobe.granite.auth.requirement.impl.RequirementService` で実装される LoginPathProvider から
+  * 廃止された古い CUG 実装から
+  * `LoginSelectorHandler` で定義したログインページマッピングから
+  * 最後に、`LoginSelectorHandler` で定義したデフォルトログインページへのフォールバック
 
 * 前述の呼び出しから有効なログインパスが取得されると、ユーザーのリクエストは、そのページにリダイレクトされます。
 
@@ -158,10 +170,10 @@ Apache Sling 認証要件は、ページまたはノード階層を通じて継�
 * ログインパスの登録は、リダイレクトの理由が、パスワードの失効であるか、通常のログインに必要な処理であるかによって異なります。
 * 通常のログインに必要な処理である場合は、ログインパスを取得できるかどうかを、以下の順序で確認します。
 
-   * 新しい `com.adobe.granite.auth.requirement.impl.RequirementService` で実装される `LoginPathProvider` から
-   * 廃止された古い CUG 実装から
-   * `LoginSelectorHandler` で定義したログインページマッピングから
-   * 最後に、`LoginSelectorHandler` で定義したデフォルトログインページへのフォールバック
+  * 新しい `com.adobe.granite.auth.requirement.impl.RequirementService` で実装される `LoginPathProvider` から
+  * 廃止された古い CUG 実装から
+  * `LoginSelectorHandler` で定義したログインページマッピングから
+  * 最後に、`LoginSelectorHandler` で定義したデフォルトログインページへのフォールバック
 
 * 前述の呼び出しから有効なログインパスが取得されると、ユーザーのリクエストは、そのページにリダイレクトされます。
 
@@ -179,9 +191,9 @@ Granite の新しい認証要件のサポートで実装される `LoginPathProv
 * リポジトリコンテンツをモデル化して、ネストされたサブツリーを認証要件から再度除外しなくてもツリー全体に認証要件が適用されるようにします。
 * 冗長なログインパスの指定とその後の登録を避けるには、次のようにします。
 
-   * 継承を利用するようにし、ネストされたログインパスを定義することは避けます。
-   * オプションのログインパスを、デフォルト値または継承値に対応する値に設定しないでください。
-   * アプリケーション開発者は、`LoginSelectorHandler` に関連付けられるグローバルなログインパス設定（デフォルトとマッピングの両方）に設定する必要があるログインパスを識別してください。
+  * 継承を利用するようにし、ネストされたログインパスを定義することは避けます。
+  * オプションのログインパスを、デフォルト値または継承値に対応する値に設定しないでください。
+  * アプリケーション開発者は、`LoginSelectorHandler` に関連付けられるグローバルなログインパス設定（デフォルトとマッピングの両方）に設定する必要があるログインパスを識別してください。
 
 ## リポジトリでの表現 {#representation-in-the-repository}
 

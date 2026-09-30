@@ -9,21 +9,38 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: b3a0eb20-5b85-45a3-a416-a16a9f44acc5
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 100%
-
 ---
-
 # 資格情報の操作 {#working-with-credentials}
 
 **このドキュメントのサンプルと例は、JEE 環境の AEM Forms のみを対象としています。**
 
 **資格情報サービスについて**
 
-資格情報には、ドキュメントへの署名や識別に必要な秘密鍵情報が格納されています。 証明書は、信頼のために設定する公開鍵情報です。 AEM Forms が証明書と資格情報を使用する目的はいくつかあります。
+資格情報には、ドキュメントへの署名や識別に必要な秘密鍵情報が格納されています。 証明書は、信頼のために設定する公開鍵情報です。 AEM Forms が証明書と資格情報を使用する目的はいくつかあります：
 
 * Acrobat Reader DC Extensions では、資格情報を使用して、PDF ドキュメントで Adobe Reader の使用権限を有効にします。 （[PDF ドキュメントへの使用権限の適用](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)を参照。）
 * Signature サービスは、PDF ドキュメントへのデジタル署名などの操作を実行しながら、証明書および資格情報にアクセスします。 （[PDF ドキュメントへのデジタル署名](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)を参照。）
@@ -41,7 +58,7 @@ Trust Manager Java API を使用して、Credential サービスとプログラ�
 
 Trust Manager API を使用して、プログラム経由で資格情報を AEM Forms に読み込むことができます。 例えば、PDF ドキュメントへの署名に使用する資格情報を読み込むことができます。 （[PDF ドキュメントへのデジタル署名](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)を参照。）
 
-資格情報を読み込む際は、資格情報のエイリアスを指定します。 エイリアスは、資格情報を必要とする Forms 操作を実行する際に使用されます。 次の図に示すように、読み込んだ資格情報は管理コンソールで表示できます。 資格情報のエイリアスは「*Secure*」です。
+資格情報を読み込む際は、資格情報のエイリアスを指定します。 エイリアスは、資格情報を必要とする AEM Forms の操作を実行する際に使用されます。 次の図に示すように、読み込んだ資格情報は管理コンソールで表示できます。 資格情報のエイリアスは「*Secure*」です。
 
 ![ww_ww_truststore](assets/ww_ww_truststore.png)
 
@@ -98,7 +115,7 @@ AEM Forms に読み込む資格情報を参照します。 このセクション
 
 ### Java API を使用した資格情報の読み込み {#import-credentials-using-the-java-api}
 
-Trust Manager API（Java）を使用して、資格情報を AEM Forms に読み込みます。
+Trust Manager API（Java）を使用して、資格情報を AEM Forms に読み込むには：
 
 1. プロジェクトファイルを含める
 
@@ -119,10 +136,10 @@ Trust Manager API（Java）を使用して、資格情報を AEM Forms に読み
    * 1 つの要素を持つ文字列配列を作成します。 値 `truststore.usage.type.sign` を要素に割り当てます。
    * `CredentialServiceClient` オブジェクトの `importCredential` メソッドを呼び出して、次の値を渡します。
 
-      * 資格情報のエイリアス値を指定する文字列値です。
-      * 資格情報を保存する `com.adobe.idp.Document` インスタンス。
-      * 資格情報に関連付けられるパスワードを指定する文字列値です。
-      * 使用量値を含む文字列配列です。 例えば、この値として `truststore.usage.type.sign` を指定します。 Reader Extension 資格情報をインポートするには、`truststore.usage.type.lcre` を指定します。
+     * 資格情報のエイリアス値を指定する文字列値です。
+     * 資格情報を保存する `com.adobe.idp.Document` インスタンス。
+     * 資格情報に関連付けられるパスワードを指定する文字列値です。
+     * 使用量値を含む文字列配列です。 例えば、この値として `truststore.usage.type.sign` を指定します。 Reader Extension 資格情報をインポートするには、`truststore.usage.type.lcre` を指定します。
 
 **関連トピック**
 

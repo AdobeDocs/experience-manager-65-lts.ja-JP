@@ -1,6 +1,6 @@
 ---
 title: PDF/A ドキュメントの操作
-description: DocConverter サービスを使用して、PDF ドキュメントが PDF/A ドキュメントかどうかを判断し、PDF ドキュメントであればこれを PDF/A ドキュメントに変換します。
+description: DocConverter サービスを使用して、PDF ドキュメントが PDF/A ドキュメントかどうかを判断し、PDF ドキュメントを PDF/A ドキュメントに変換します。
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 387f917c-eae3-4326-88f4-3b77cb9e4d46
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2382'
 ht-degree: 100%
-
 ---
-
 # PDF/A ドキュメントの操作 {#working-with-pdf-a-documents}
 
 **DocConverter サービスについて**
@@ -30,7 +47,7 @@ DocConverter サービスは、PDF ドキュメントを PDA/A ドキュメン�
 >
 >DocConverter サービスについて詳しくは、[AEM Forms のサービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
 
-## ドキュメントを PDF/A ドキュメントに変換する {#converting-documents-to-pdf-a-documents}
+## ドキュメントの PDF/A ドキュメントへの変換 {#converting-documents-to-pdf-a-documents}
 
 DocConverter サービスを使用して、PDF ドキュメントを PDF/A ドキュメントに変換できます。 PDF/A はドキュメントの内容を長期保存するためのアーカイブ形式なので、すべてのフォントが埋め込まれ、ファイルが非圧縮になります。 その結果、通常、PDF/A ドキュメントは標準の PDF ドキュメントよりも大きくなります。 なお、PDF/A ドキュメントには、オーディオおよびビデオのコンテンツは含まれません。 PDF ドキュメントを PDF/A ドキュメントに変換する前に、PDF ドキュメントが PDF/A ドキュメントでないことを確認してください。
 
@@ -48,7 +65,7 @@ PDF ドキュメントを PDF/A ドキュメントに変換するには、次の
 
 1. プロジェクトファイルを含めます。
 1. DocConvert クライアントの作成
-1. PDF ドキュメントを参照して、PDF/A ドキュメントに変換します。
+1. PDF/A ドキュメントに変換する PDF ドキュメントを参照します。
 1. トラッキング情報を設定します。
 1. ドキュメントを変換します。
 1. PDF/A ドキュメントを保存します。
@@ -81,7 +98,7 @@ PDF ドキュメントを取得して PDF/A ドキュメントに変換します
 
 **ドキュメントを変換**
 
-DocConverter サービスクライアントを作成して、変換する PDF ドキュメントを参照しながら、追跡すべき情報の量を指定する実行時オプションを設定した後、PDF ドキュメントをPDF/A ドキュメントに変換できます。
+DocConverter サービスクライアントを作成し、変換する PDF ドキュメントを参照して、追跡される情報量を指定する実行時オプションを設定した後、PDF ドキュメントを PDF/A ドキュメントに変換できます。
 
 **PDF/A ドキュメントを保存**
 
@@ -249,7 +266,7 @@ DocConverter サービスクライアントを作成し、PDFドキュメント�
 
 **関連トピック**
 
-[Java API を使用して PDF/A の準拠を判断](pdf-a-documents.md#determine-pdf-a-compliancy-using-the-java-api)
+[Java API を使用した PDF/A 準拠の判別](pdf-a-documents.md#determine-pdf-a-compliancy-using-the-java-api)
 
 [Web サービス API を使用した PDF/A の準拠の判断](pdf-a-documents.md#determine-pdf-a-compliancy-using-the-web-service-api)
 

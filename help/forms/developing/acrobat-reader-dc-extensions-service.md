@@ -8,14 +8,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Reader Extensions,APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: a8ec523c-b304-41ba-9980-8ba84e076c7d
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 621ad6f8-3769-57bb-838c-1d26cfb18d50
+    internal-label: Reader Extensions
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 93%
-
 ---
-
 # Acrobat Reader DC Extensions ServiceJava API クイックスタート (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
 
 Acrobat Reader DC Extensions サービスでは、次のクイックスタートを使用できます。
@@ -24,13 +41,13 @@ Acrobat Reader DC Extensions サービスでは、次のクイックスタート
 
 [PDF ドキュメントから使用権限を削除](#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api)
 
-[クイックスタート（SOAP モード）：Java API を使用した資格情報情報の取得](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
+[クイックスタート（SOAP モード）：Java API を使用した資格情報の取得](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
 AEM Forms の操作は、AEM Forms で厳密に型指定された API を使用して実行できます。接続モードは、SOAP に設定する必要があります。
 
 >[!NOTE]
 >
->「AEM Forms によるプログラミング」のクイックスタートは、Forms サーバーオペレーティングシステムに基づいています。 ただし、UNIX などの別のオペレーティングシステムを使用している場合は、Windows 固有のパスを、該当するオペレーティングシステムでサポートされているパスに置き換えます。 同様に、別の J2EE アプリケーションサーバーを使用している場合は、有効な接続プロパティを必ず指定してください。 （[接続プロパティの設定](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)を参照）。
+>「AEM Forms によるプログラミング」のクイックスタートは、Forms サーバーのオペレーティングシステムに基づいています。 ただし、UNIX などの別のオペレーティングシステムを使用している場合は、Windows 固有のパスを、該当するオペレーティングシステムでサポートされているパスに置き換えます。 同様に、別の J2EE アプリケーションサーバーを使用している場合は、有効な接続プロパティを必ず指定してください。 （[接続プロパティの設定](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)を参照）。
 
 ## Java APIを使用したクイックスタート（SOAP モード） :Applyingの使用権限 {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
@@ -244,7 +261,7 @@ AEM Forms の操作は、AEM Forms で厳密に型指定された API を使用�
  
 ```
 
-## クイックスタート（SOAP モード）：Java API を使用した資格情報情報の取得 {#quick-start-soap-mode-retrieving-credential-information-using-the-java-api}
+## クイックスタート（SOAP モード）：Java API を使用した資格情報の取得 {#quick-start-soap-mode-retrieving-credential-information-using-the-java-api}
 
 次の Java コードの例では、*LoanUsageRights.pdf* という名前の権限を与えられた PDF ドキュメントに使用権原を適用するために使用される資格情報に関する情報を取得します。 （[資格情報の取得](/help/forms/developing/assigning-usage-rights.md)を参照してください）。
 

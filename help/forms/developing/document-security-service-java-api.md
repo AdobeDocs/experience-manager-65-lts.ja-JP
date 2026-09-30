@@ -10,13 +10,30 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 exl-id: 7c92e9bb-aa68-4d4b-bf62-060a213e50f3
 hide: true
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+removedfrom6.5.2025: 'yes'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: 94663796-0ee7-58b9-84f4-b425ebb69e83
+    internal-label: AEM Forms on JEE
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1076'
 ht-degree: 98%
-
 ---
-
 # Document Security Service Java API Quick Start (SOAP) {#document-security-service-javaapi-quick-start-soap}
 
 Java API Quick Start(SOAP) は、次のRights Managementサービスで使用できます。
@@ -35,7 +52,7 @@ Java API Quick Start(SOAP) は、次のRights Managementサービスで使用で
 
 [クイックスタート（SOAP モード）：Java API を使用して失効したドキュメントへのアクセス権の回復](document-security-service-java-api.md#quick-start-soap-mode-reinstating-access-to-a-revoked-document-using-the-java-api)
 
-[クイックスタート（SOAP モード）：Java API を使用した PDF 保護ポリシードキュメントの検査](document-security-service-java-api.md#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api)
+[クイックスタート（SOAP モード）：Java API を使用したポリシーで保護された PDF ドキュメントの検査](document-security-service-java-api.md#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api)
 
 [クイックスタート（SOAP モード）：Java API を使用した透かしの作成](document-security-service-java-api.md#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api)
 
@@ -700,9 +717,9 @@ AEM Forms の操作は、AEM Forms で厳密に型指定された API を使用�
  
 ```
 
-## クイックスタート（SOAP モード）：Java API を使用した PDF 保護ポリシードキュメントの検査 {#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api}
+## クイックスタート（SOAP モード）：Java API を使用したポリシーで保護された PDF ドキュメントの検査 {#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api}
 
-次のJava コードの例では、*PolicyProtectedLoanDoc.pd* fという名前のポリシーで保護されたPDF ドキュメントを調べます。 （[&#x200B; ポリシーで保護されたPDF ドキュメントの調査](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)を参照してください）。
+次のJava コードの例では、*PolicyProtectedLoanDoc.pd* fという名前のポリシーで保護されたPDF ドキュメントを調べます。 （[ ポリシーで保護されたPDF ドキュメントの調査](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)を参照してください）。
 
 ```java
  /*
@@ -1057,7 +1074,7 @@ public class PDFWatermarksSOAPMode {
 }
 ```
 
-## クイックスタート（SOAP モード）：Java API を使用したテキストの透かしの作成 {#quick-start-soap-mode-creating-a-text-watermark-using-the-java-api}
+## クイックスタート（SOAP モード）：Java API を使用したテキスト透かしの作成 {#quick-start-soap-mode-creating-a-text-watermark-using-the-java-api}
 
 次の Java コードの例では、*テキストの透かしサンプル*&#x200B;という名前の新しいテキストの透かしを作成します。 この透かしは、1 つの要素を含んでいます。
 
@@ -1871,7 +1888,7 @@ public class CreateAbstractPolicySoap {
 
 ## クイックスタート（SOAP モード）：Java API を使用した抽象ポリシーの変更 {#quick-start-soap-mode-modifying-an-abstract-policy-using-the-java-api}
 
-次の Java コードの例では、AllowCopy という名前の抽象ポリシーを変更しています。 ポリシーが変更されるポリシーセットは、グローバルポリシーセットという名前になります。 このポリシーセットはデフォルトで存在します。 （ポリシーの作成を参照してください）。
+次の Java コードの例では、AllowCopy という名前の抽象ポリシーを変更しています。 ポリシーが変更されるポリシーセットの名前は、グローバルポリシーセットです。 このポリシーセットはデフォルトで存在します。 （ポリシーの作成を参照してください）。
 
 ```java
 /*

@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7b5a9485-8d07-434e-9871-5f97d6781eaf
-source-git-commit: 233657ff246bfdb20d7a4bda77ec24e599aac7d8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2359'
 ht-degree: 85%
-
 ---
-
 # コンテンツフラグメントの操作 {#working-with-content-fragments}
 
 Adobe Experience Manager（AEM）コンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーション、[公開](/help/sites-authoring/content-fragments.md)が可能になります。 複数の場所や複数のチャネルで使用できるコンテンツを準備でき、ヘッドレス配信に最適です。
@@ -191,7 +203,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
   * 個々のエンティティとして区切られた、テキストのブロック（多くの場合複数行）。
 
-  * [リッチテキスト](/help/assets/content-fragments/content-fragments-variations.md#rich-text)モードと[&#x200B; Markdown &#x200B;](/help/assets/content-fragments/content-fragments-variations.md#markdown)モードでは、段落をヘッダーとして書式設定することができます。その場合、ヘッダーとその後の段落が 1 つのユニットになります。
+  * [リッチテキスト](/help/assets/content-fragments/content-fragments-variations.md#rich-text)モードと[ Markdown ](/help/assets/content-fragments/content-fragments-variations.md#markdown)モードでは、段落をヘッダーとして書式設定することができます。その場合、ヘッダーとその後の段落が 1 つのユニットになります。
 
   * ページ作成中にコンテンツを制御できます。
 
@@ -277,7 +289,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 * **コンテンツモデル**
 
-  * [&#128279;](/help/assets/content-fragments/content-fragments-configuration-browser.md)設定ブラウザーを使用して有効化されます。
+  * ](/help/assets/content-fragments/content-fragments-configuration-browser.md)設定ブラウザーを使用して有効化[されます。
   * [ツールを使用して作成](/help/assets/content-fragments/content-fragments-models.md)されます。
   * [フラグメントを作成](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)するために必要です。
   * フラグメントの構造（タイトル、コンテンツ要素、タグ定義）を定義します。

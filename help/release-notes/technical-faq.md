@@ -5,13 +5,27 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
-source-git-commit: f994a8712a403083de1edc62579846ba99bd3afd
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 59%
-
 ---
-
 # AEM 6.5 LTS に関する技術的なよくある質問（FAQ） {#technical-faq}
 
 このページは、AEM 6.5 LTS に関する技術的なよくある質問への回答を目的としています。
@@ -50,7 +64,7 @@ AEM Groovy Consoleを使用している場合は、`com.adobe.granite.apicontrol
 
 いいえ。 AEM 6.5 LTSは、`jakarta.*` パッケージ名前空間に移行されたSling アーティファクトをサポートしていません。 コードと依存関係で`javax.*`の同等のものを使用します。例えば、`jakarta.annotation.PostConstruct`ではなく`javax.annotation.PostConstruct`をSling モデルで使用します。 AEM 6.5 LTSのSling モデルの実装では、`javax.*`個の注釈のみが認識されるため、`jakarta.*`個の注釈は初期化中に無視されます。
 
-詳しくは、ナレッジベースの記事「[Sling Models with `jakarta.annotation.PostConstruct` fail on AEM 6.5 LTS](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-30339)」を参照してください。
+詳しくは、ナレッジベースの記事「[Sling Models with `jakarta.annotation.PostConstruct` fail on AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-30339)」を参照してください。
 
 ## 追加のヘルプの入手
 

@@ -6,7 +6,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 5511817e-dcf8-463d-8e62-cbbef64ad162
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2975'
 ht-degree: 98%
@@ -334,7 +345,7 @@ RTE の設定について詳しくは、[AEM Widget API](https://developer.adobe
 
 AEM RTE 機能には次の制限があります。
 
-* RTE 機能は AEM コンポーネントダイアログでのみサポートされます。 RTEは、タッチ操作対応UIの[&#x200B; ページプロパティ &#x200B;](/help/sites-developing/page-properties-views.md)のようなウィザードやFoundation-formsではサポートされていません。
+* RTE 機能は AEM コンポーネントダイアログでのみサポートされます。 RTEは、タッチ操作対応UIの[ ページプロパティ ](/help/sites-developing/page-properties-views.md)のようなウィザードやFoundation-formsではサポートされていません。
 
 * AEM は[ハイブリッドデバイス](/help/release-notes/release-notes.md)では機能しません。
 

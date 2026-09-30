@@ -5,7 +5,25 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: User, Developer
 exl-id: 13d84b04-dab6-453f-bc0d-62a5f557c4f2
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '7736'
 ht-degree: 98%
@@ -456,10 +474,10 @@ PDF ドキュメントを選択した形式に変換します。
 * **[!UICONTROL を使用して XCI ファイルを選択]**：XCI ファイルは、フォームデザイン要素に使用されるフォントやその他のプロパティを記述するために使用されます。 XCI ファイルは、ペイロードに対する相対パス、絶対パス、またはドキュメントデータタイプの変数を使用して保持できます。
 
 * **[!UICONTROL ロケール]**：PDF ドキュメントの生成に使用する言語を設定します。 リテラル値を指定する場合、リストから言語を選択するか、次のいずれかの値を選択します。
-  * **サーバーの既定**&#x200B;を使用するには：
+  * **サーバーの既定**を使用するには：
     （デフォルト）AEM Forms Serverで設定されているロケール設定を使用します。 ロケール設定は、管理コンソールを使用して設定します （「[Designer ヘルプ](https://www.adobe.com/go/learn_aemforms_designer_65_jp)」を参照）。
 
-  * **カスタム値**&#x200B;を使用するには：
+  * **カスタム値**を使用するには：
     リテラルボックスにロケールコードを入力するか、ロケールコードを含む文字列変数を選択します。 サポートされているすべてのロケールコードのリストについては、https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html を参照してください。
 
 * **[!UICONTROL Copies]**：出力の作成部数を指定する整数値。 デフォルト値は 1 です。

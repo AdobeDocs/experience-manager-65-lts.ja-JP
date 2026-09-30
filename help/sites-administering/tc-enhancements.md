@@ -7,13 +7,25 @@ feature: Language Copy
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 59b4d716-37a2-4f67-88eb-68c93359242c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '687'
 ht-degree: 95%
-
 ---
-
 # 翻訳の機能強化{#translation-enhancements}
 
 ここでは、AEM 翻訳管理機能に対する増分的機能強化と調整について説明します。
@@ -26,7 +38,7 @@ ht-degree: 95%
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. 「**詳細**」タブに切り替えます。下部で、「**翻訳開始を自動的に促進**」を選択します。
+1. 「**詳細**」タブに切り替えます。 下部で、「**翻訳開始を自動的に促進**」を選択します。
 
    ![screen_shot_2018-04-19at223430](assets/screen_shot_2018-04-19at223430.jpg)
 
@@ -34,7 +46,7 @@ ht-degree: 95%
 
    ![screen_shot_2018-04-19at224033](assets/screen_shot_2018-04-19at224033.jpg)
 
-1. 翻訳プロジェクトの反復実行を選択するには、「**翻訳を繰り返す**」の下のドロップダウンで頻度を選択します。プロジェクトの反復実行は、指定した間隔で翻訳ジョブを自動的に作成および実行します。
+1. 翻訳プロジェクトの反復実行を選択するには、「**翻訳を繰り返す**」の下のドロップダウンで頻度を選択します。 プロジェクトの反復実行は、指定した間隔で翻訳ジョブを自動的に作成および実行します。
 
    ![screen_shot_2018-04-19at223820](assets/screen_shot_2018-04-19at223820.jpg)
 
@@ -46,7 +58,7 @@ ht-degree: 95%
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. 「**詳細**」タブに切り替えます。**ターゲット言語**&#x200B;に複数の言語を追加できます。
+1. 「**詳細**」タブに切り替えます。 **ターゲット言語**&#x200B;に複数の言語を追加できます。
 
    ![screen_shot_2018-04-22at212601](assets/screen_shot_2018-04-22at212601.jpg)
 
@@ -54,7 +66,7 @@ ht-degree: 95%
 
    ![screen_shot_2018-04-22at212941](assets/screen_shot_2018-04-22at212941.jpg)
 
-1. すべてのターゲット言語について、プロジェクトの翻訳ジョブが作成されます。プロジェクト内で 1 つずつ開始することも、プロジェクト管理でプロジェクトをグローバルに実行することで一度にすべてを開始することもできます。
+1. すべてのターゲット言語について、プロジェクトの翻訳ジョブが作成されます。 プロジェクト内で 1 つずつ開始することも、プロジェクト管理でプロジェクトをグローバルに実行することで一度にすべてを開始することもできます。
 
    ![screen_shot_2018-04-22at213854](assets/screen_shot_2018-04-22at213854.jpg)
 
@@ -66,7 +78,7 @@ ht-degree: 95%
 
    ![screen_shot_2018-04-22at234430](assets/screen_shot_2018-04-22at234430.jpg)
 
-1. リスト表示では、編集されたすべてのテキストコンポーネントについて、ソースと翻訳が横に並んで比較表示されます。翻訳メモリに同期する必要がある翻訳の更新を選択して、「**メモリを更新**」を選択します。
+1. リスト表示では、編集されたすべてのテキストコンポーネントについて、ソースと翻訳が横に並んで比較表示されます。 翻訳メモリに同期する必要がある翻訳の更新を選択して、「**メモリを更新**」を選択します。
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
@@ -80,8 +92,8 @@ AEM は、設定済みの TMS の翻訳メモリ内の既存の文字列の翻�
 
 * AEM で使用するように TMS を設定する必要があります。
 * コネクターはメソッド [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html) を実装する必要があります。
-   * このメソッド内のコードは、翻訳メモリの更新リクエストの処理を決定します。
-   * AEM 翻訳フレームワークは、このメソッドの実装を通じて、文字列の値のペア（元の翻訳と更新された翻訳）を TMS に返します。
+  * このメソッド内のコードは、翻訳メモリの更新リクエストの処理を決定します。
+  * AEM 翻訳フレームワークは、このメソッドの実装を通じて、文字列の値のペア（元の翻訳と更新された翻訳）を TMS に返します。
 
 独自の翻訳メモリを使用している場合、翻訳メモリの更新をインターセプトして、独自の宛先に送信できます。
 
@@ -93,7 +105,7 @@ AEM は、設定済みの TMS の翻訳メモリ内の既存の文字列の翻�
 
 >[!CAUTION]
 >
->1 レベルのみ許可されます。例えば、次の場合、「es」ページを言語コピーとして解釈できません。
+>1 レベルのみ許可されます。 例えば、次の場合、「es」ページを言語コピーとして解釈できません。
 >
 >* `/content/we-retail/language-masters/en`
 >* `/content/we-retail/language-masters/americas/central-america/es`
@@ -102,11 +114,11 @@ AEM は、設定済みの TMS の翻訳メモリ内の既存の文字列の翻�
 
 >[!NOTE]
 >
->言語ルートは、言語の ISO コードだけでなく、任意のページ名を持つことができます。AEMは常に最初にパスと名前を確認しますが、ページ名で言語が識別されない場合、AEMはページの cq:language プロパティを確認して言語を識別します。
+>言語ルートは、言語の ISO コードだけでなく、任意のページ名を持つことができます。 AEMでは、常に最初にパスと名前を確認しますが、ページ名で言語が識別されない場合、AEMはページのcq:language プロパティで言語を識別するかどうかを確認します。
 
 ## 翻訳ステータスのレポート {#translation-status-reporting}
 
-ページが翻訳済みである、翻訳中である、またはまだ翻訳されていないことを示すプロパティが、Sites のリストビューで選択できるようになりました。プロパティを表示するには：
+ページが翻訳済みである、翻訳中である、またはまだ翻訳されていないことを示すプロパティが、Sites のリストビューで選択できるようになりました。 プロパティを表示するには：
 
 1. Sites で、**リスト表示**&#x200B;に切り替えます。
 

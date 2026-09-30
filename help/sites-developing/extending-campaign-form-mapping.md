@@ -9,18 +9,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7b870221-2946-4e3d-b606-71a46bdfc568
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 93%
-
+source-wordcount: '538'
+ht-degree: 92%
 ---
-
 # カスタムフォームマッピングの作成{#creating-custom-form-mappings}
 
 Adobe Campaign にカスタムテーブルを作成したら、そのカスタムテーブルにマップするフォームを AEM で作成できます。
 
-このドキュメントでは、カスタムフォームマッピングの作成方法について説明します。このドキュメントのステップを完了すると、今後のイベントに登録できるイベントページを表示できます。その後、Adobe Campaign を使用して、登録したユーザーをフォローアップします。
+このドキュメントでは、カスタムフォームマッピングの作成方法について説明します。 このドキュメントのステップを完了すると、今後のイベントに登録できるイベントページを表示できます。 その後、Adobe Campaign を使用して、登録したユーザーをフォローアップします。
 
 ## 前提条件 {#prerequisites}
 
@@ -44,7 +53,7 @@ Adobe Campaign にカスタムテーブルを作成したら、そのカスタ�
 
 ### Adobe Campaign でのカスタムテーブルの作成 {#creating-the-custom-table-in-adobe-campaign}
 
-まず、Adobe Campaign でカスタムテーブルを作成します。この例では、以下の定義を使用して、イベントテーブルを作成します。
+まず、Adobe Campaign でカスタムテーブルを作成します。 この例では、以下の定義を使用して、イベントテーブルを作成します。
 
 ```xml
 <element autopk="true" label="Event" labelSingular="Event" name="event">
@@ -90,7 +99,7 @@ Adobe Campaign で、「**追加**」を選択して、**シードアドレス�
 
 この手順では、作成した&#x200B;**ターゲットマッピング**&#x200B;を使用する配信テンプレートを追加します。
 
-**リソース／テンプレート**&#x200B;で、配信テンプレートに移動し、既存の AEM 配信を複製します。「**宛先**」をクリックしたら、作成イベント「**ターゲットマッピング**」を選択します。
+**リソース／テンプレート**&#x200B;で、配信テンプレートに移動し、既存の AEM 配信を複製します。 「**宛先**」をクリックしたら、作成イベント「**ターゲットマッピング**」を選択します。
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
@@ -106,7 +115,7 @@ AEM の&#x200B;**ページのプロパティ**&#x200B;で、クラウドサー�
 
 フィールドの設定が完了したら、手動でマッピングを変更する必要があります。
 
-CRXDE-lite で、（ページの） **jcr:content** ノードに移動して、**acMapping** 値を **ターゲットマッピング** の内部名に変更します。
+CRXDE-liteで、**jcr:content** （ページの）ノードに移動し、**acMapping**&#x200B;値を&#x200B;**ターゲットマッピング**&#x200B;の内部名に変更します。
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
@@ -122,8 +131,8 @@ CRXDE-lite で、（ページの） **jcr:content** ノードに移動して、*
 
 ## トラブルシューティング {#troubleshooting}
 
-**要素「@eventdate」（タイプ「Event （[adb:event]）」のドキュメント）の値「02/02/2015」に対して無効なタイプです」**
+**「要素&#39;@eventdate&#39;の値&#39;02/02/2015&#39;の型が無効です（&#39;Event （[adb:event]）&#39;型のドキュメント）」**
 
 フォームを送信すると、このエラーが AEM の **error.log** に記録されます。
 
-日付フィールドのフォーマットが無効であることが原因です。回避策は、値を **yyyy-mm-dd** 形式で指定することです。
+日付フィールドのフォーマットが無効であることが原因です。 回避策は、値を **yyyy-mm-dd** 形式で指定することです。

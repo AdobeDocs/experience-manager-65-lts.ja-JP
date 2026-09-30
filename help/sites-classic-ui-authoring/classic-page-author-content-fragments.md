@@ -1,6 +1,6 @@
 ---
 title: コンテンツフラグメントを使用したページのオーサリング
-description: コンテンツフラグメントは、ページに依存しないアセットとして作成および管理されます。コンテンツフラグメントを使用すると、チャネルに依存しないコンテンツを、様々なバリエーションと共に作成できます。
+description: コンテンツフラグメントは、ページに依存しないアセットとして作成および管理されます。 コンテンツフラグメントを使用すると、チャネルに依存しないコンテンツを、様々なバリエーションと共に作成できます。
 page-status-flag: de-activated
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,21 +10,30 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: c4ea87f2-83a7-413f-95cb-9798b4c29570
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '113'
 ht-degree: 100%
-
 ---
-
-# コンテンツフラグメントを使用したページのオーサリング {#page-authoring-with-content-fragments}
+# コンテンツフラグメントを使用したページのオーサリング{#page-authoring-with-content-fragments}
 
 Adobe Experience Manager（AEM）のコンテンツフラグメントは、[ページに依存しないアセットとして作成および管理](/help/assets/content-fragments/content-fragments.md)されます。
 
-これにより、チャネルに依存しないコンテンツを様々なバリエーション（チャネル固有）で作成できます。その後、コンテンツページをオーサリングする際に、これらのフラグメントとそれらのバリエーションを使用できます。
+これにより、チャネルに依存しないコンテンツを様々なバリエーション（チャネル固有）で作成できます。 その後、コンテンツページをオーサリングする際に、これらのフラグメントとそれらのバリエーションを使用できます。
 
 >[!CAUTION]
 >
->クラシック UI では、コンテンフラグメント管理の全機能を利用することはできません。標準のオーサリングドキュメントの[コンテンツフラグメントを使用したページのオーサリング](/help/sites-authoring/content-fragments.md)を参照してください。
+>クラシック UI では、コンテンツフラグメント管理の全機能を利用することはできません。 標準のオーサリングドキュメントの[コンテンツフラグメントを使用したページのオーサリング](/help/sites-authoring/content-fragments.md)を参照してください。
 >
 >クラシック UI のサイドキックにはコンテンツフラグメントコンポーネントが表示されますが、それ以上の機能は使用できません。

@@ -9,41 +9,57 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: a2a2a6f3-409e-44a2-a85b-9f0bc40cc800
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '354'
 ht-degree: 100%
-
 ---
-
 # アダプティブフォームでの SOM 式の使用{#using-som-expressions-in-adaptive-forms}
 
-アダプティブフォームは AEM ページとしてモデル化され、AEM リポジトリで JCR コンテンツ構造で表示されます。コンテンツ構造のキー要素は guideContainer ノードです。guideContainer の下にある rootPanel にはネストされたパネルやフィールドが含まれる場合があります。
+アダプティブフォームは AEM ページとしてモデル化され、AEM リポジトリで JCR コンテンツ構造で表示されます。 コンテンツ構造のキー要素は guideContainer ノードです。 guideContainer の下にある rootPanel にはネストされたパネルやフィールドが含まれる場合があります。
 
-スクリプトオブジェクトモデル（SOM）を使用すると、特定のドキュメントオブジェクトモデル（DOM）内の値、プロパティ、メソッドを参照できます。DOM はメモリのオブジェクトとプロパティをツリー階層で編成します。SOM 式はフィールド／描画の要素とパネルを参照します。
+スクリプトオブジェクトモデル（SOM）を使用すると、特定のドキュメントオブジェクトモデル（DOM）内の値、プロパティ、メソッドを参照できます。 DOM はメモリのオブジェクトとプロパティをツリー階層で編成します。 SOM 式はフィールド／描画の要素とパネルを参照します。
 
-次の画像は、コンポーネントをフォームに追加する際、アダプティブフォームが変換するノード構造を示しています。例えば、パネルをルートパネルに追加し、実行時に DOM に変換されるラジオボタンをパネルに追加できます。アダプティブフォームのラジオボタンフィールドには、`guide[0].guide1[0].guideRootPanel[0].panel1[0].radiobutton[0]` のように SOM 式を指定します。
+次の画像は、コンポーネントをフォームに追加する際、アダプティブフォームが変換するノード構造を示しています。 例えば、パネルをルートパネルに追加し、実行時に DOM に変換されるラジオボタンをパネルに追加できます。 アダプティブフォームのラジオボタンフィールドには、`guide[0].guide1[0].guideRootPanel[0].panel1[0].radiobutton[0]` のように SOM 式を指定します。
 
 ![DOM ツリー](assets/hierarchy.png)
 
 DOM ツリー
 
-アダプティブフォーム内のすべての要素の SOM 式には、`guide[0].guide1[0]` という接頭辞が付けられます。ノード構造階層のコンポーネントの場所は SOM 式の派生に使用されます。
+アダプティブフォーム内のすべての要素の SOM 式には、`guide[0].guide1[0]` という接頭辞が付けられます。 ノード構造階層のコンポーネントの場所は SOM 式の派生に使用されます。
 
 ![2 つのラジオボタンを持つ DOM ツリー](assets/hierarchy_radio_button.png)
 
 2 つのラジオボタンを持つ DOM ツリー
 
-アダプティブフォームでラジオボタンの位置を変更すると、SOM 式が変更されます。オーサリングモードでは、「SOM 式を表示」オプションを使用して AEM Forms 内のフィールドや要素の SOM 式を表示できます。このオプションはフィールドや要素を右クリックするとパネル上に表示されます。
+アダプティブフォームでラジオボタンの位置を変更すると、SOM 式が変更されます。 オーサリングモードでは、「SOM 式を表示」オプションを使用して AEM Forms 内のフィールドや要素の SOM 式を表示できます。 このオプションはフィールドや要素を右クリックするとパネル上に表示されます。
 
 ![アダプティブフォームでの SOM 式の抽出](assets/som-expressions.png)
 
 アダプティブフォームでの SOM 式の抽出
 
-パネル内では、パネルツールバーからこの機能にアクセスできます。この機能により、アダプティブフォームの作成者によるスクリプト作成が容易になります。
+パネル内では、パネルツールバーからこの機能にアクセスできます。 この機能により、アダプティブフォームの作成者によるスクリプト作成が容易になります。
 
 ![パネルツールバーを使用した SOM 式の抽出](assets/som-expression.png)
 
 パネルツールバーを使用した SOM 式の抽出
 
-[GuideBridge](https://helpx.adobe.com/jp/aem-forms/6/javascript-api/GuideBridge.html) に一覧表示されている API の一部は、要素の SOM 式を使用します。例えば、アダプティブフォーム内の特定のフィールドにフォーカスを移動するには、対応する SOM 式を `guideBridge` の `getFocus` API に渡します。
+[GuideBridge](https://helpx.adobe.com/jp/aem-forms/6/javascript-api/GuideBridge.html) に一覧表示されている API の一部は、要素の SOM 式を使用します。 例えば、アダプティブフォーム内の特定のフィールドにフォーカスを移動するには、対応する SOM 式を `guideBridge` の `getFocus` API に渡します。

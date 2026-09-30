@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: ca919915-c37b-4793-b5e2-21a464c5dcdf
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 65%
-
 ---
-
 # Acrobat Reader DC Extensionsで使用される証明書の種類 {#certificate-types-used-by-acrobat-reader-dc-extensions}
 
 証明書ビューアでは、証明書に関する次の情報を参照できます。
@@ -61,8 +76,8 @@ ARE 2D Barcode Full Production V6.1 P8 0002054
   <tr>
    <td><p>P1</p></td>
    <td><p>SAP 実稼動環境</p></td>
-   <td><p>終了日</p></td>
-   <td><p>本番</p></td>
+   <td><p>Max</p></td>
+   <td><p>実稼動</p></td>
   </tr>
   <tr>
    <td><p>P2</p></td>
@@ -73,14 +88,14 @@ ARE 2D Barcode Full Production V6.1 P8 0002054
   <tr>
    <td><p>P3</p></td>
    <td><p>Acrobat Reader DC Extensions、実稼動環境</p></td>
-   <td><p>終了日</p></td>
-   <td><p>本番</p></td>
+   <td><p>Max</p></td>
+   <td><p>実稼動</p></td>
   </tr>
   <tr>
    <td><p>P4</p></td>
    <td><p>Acrobat Reader DC Extensions、内部Adobe使用状況</p></td>
    <td><p>2 年</p></td>
-   <td><p>本番</p></td>
+   <td><p>実稼動</p></td>
   </tr>
   <tr>
    <td><p>P5</p></td>
@@ -97,49 +112,49 @@ ARE 2D Barcode Full Production V6.1 P8 0002054
   <tr>
    <td><p>P8</p></td>
    <td><p>Forms、実稼動環境</p></td>
-   <td><p>終了日</p></td>
-   <td><p>本番</p></td>
+   <td><p>Max</p></td>
+   <td><p>実稼動</p></td>
   </tr>
   <tr>
    <td><p>P9</p></td>
-   <td><p>Adobe Acrobat 7.x、実稼動環境</p></td>
-   <td><p>終了日</p></td>
-   <td><p>本番</p></td>
+   <td><p>Adobe Acrobat 7.x、本番</p></td>
+   <td><p>Max</p></td>
+   <td><p>実稼動</p></td>
   </tr>
   <tr>
    <td><p>I10</p></td>
    <td><p>Forms; OEMはFormsを使用できます</p></td>
-   <td><p>終了日</p></td>
+   <td><p>Max</p></td>
    <td><p>実稼動環境および評価</p></td>
   </tr>
   <tr>
    <td><p>I11</p></td>
    <td><p>Forms; OEMはFormsを使用できます。</p></td>
-   <td><p>終了日</p></td>
+   <td><p>Max</p></td>
    <td><p>実稼動環境および評価</p></td>
   </tr>
   <tr>
    <td><p>I12</p></td>
    <td><p>署名のみ。OEMは署名のみを使用できます</p></td>
-   <td><p>終了日</p></td>
+   <td><p>Max</p></td>
    <td><p>実稼動環境および評価</p></td>
   </tr>
   <tr>
    <td><p>I13</p></td>
    <td><p>オフラインコメントのみ。OEMはオフラインコメントを使用できます</p></td>
-   <td><p>終了日</p></td>
+   <td><p>Max</p></td>
    <td><p>実稼動環境および評価</p></td>
   </tr>
   <tr>
    <td><p>I14</p></td>
    <td><p>コメントのみ：OEMはコメントのみを使用できます</p></td>
-   <td><p>終了日</p></td>
+   <td><p>Max</p></td>
    <td><p>実稼動環境および評価</p></td>
   </tr>
   <tr>
    <td><p>I15</p></td>
    <td><p>完全な権限。OEMは完全な権限を使用できます</p></td>
-   <td><p>終了日</p></td>
+   <td><p>Max</p></td>
    <td><p>実稼動環境および評価</p></td>
   </tr>
  </tbody>
@@ -159,7 +174,7 @@ Adobe内部使用証明書は、ソフトウェアの開発、統合、プロト
 
 証明書ビューアでAcrobat Reader DC Extensions証明書を確認する際に、「詳細」タブ（設定されている場合）から使用権限の項目を選択できます。 証明書で有効にできるAdobe Reader使用権限の項目別リストが表示されます。 特定の文書で有効になっている使用権限は、証明書で有効になっている使用権限のサブセットである可能性があります。
 
-コラボレーションのない環境でオンラインコメントが必要な場合は、アドビサポートにお問い合わせください。 Mode プロパティはデプロイメントの種類と一致し、「*実稼動環境*」または「*評価*」になります。
+コラボレーションのない環境でオンラインコメントが必要な場合は、詳細についてアドビサポートにお問い合わせください。 Mode プロパティはデプロイメントの種類と一致し、「*実稼動環境*」または「*評価*」になります。
 
 許可されているAcrobat Reader DC Extensionsの使用権限は、1つ以上の特定の要素で構成されています。 これらの要素を異なる組み合わせで使用することにより、ライセンスされている製品の様々な機能を使用できるようになります。
 
@@ -185,7 +200,7 @@ Adobe内部使用証明書は、ソフトウェアの開発、統合、プロト
   </tr>
   <tr>
    <td><p>SubmitStandalone</p></td>
-   <td><p>サーバーがブラウザーセッションで実行されていないときに、メールまたはオフラインでデータをサーバーに送信する。</p></td>
+   <td><p>ブラウザーセッションで実行されていないときに、メールまたはオフラインでデータをサーバーに送信する。</p></td>
   </tr>
   <tr>
    <td><p>SpawnTemplate</p></td>

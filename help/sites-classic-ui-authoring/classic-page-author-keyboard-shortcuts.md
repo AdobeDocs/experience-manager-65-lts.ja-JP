@@ -1,6 +1,6 @@
 ---
 title: ページ編集時のキーボードショートカット
-description: AEM 全体で様々なキーボードショートカットを利用できます。ページの編集時に適用されるものもあれば、コンソール使用に適用されるものもあります。
+description: AEM 全体で様々なキーボードショートカットを利用できます。 ページの編集時に適用されるものもあれば、コンソール使用に適用されるものもあります。
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -9,16 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 7a908b05-3c45-4d02-bb84-7786339485cd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 100%
-
+source-wordcount: '308'
+ht-degree: 88%
 ---
-
 # ページ編集時のキーボードショートカット{#keyboard-shortcuts-when-editing-pages}
 
-AEM 全体で様々なキーボードショートカットを利用できます。ページの編集時に適用されるものもあれば、[コンソール使用](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md)に適用されるものもあります。
+AEM 全体で様々なキーボードショートカットを利用できます。 ページの編集時に適用されるものもあれば、[コンソール使用](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md)に適用されるものもあります。
 
 >[!NOTE]
 >
@@ -69,7 +78,7 @@ AEM 全体で様々なキーボードショートカットを利用できます�
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-X</code></strong></td>
-   <td>選択した段落をカットします。<strong><br />メモ：</strong>カットされた段落は、新しい位置に貼り付けられるまでは非表示になります。</td>
+   <td>選択した段落を切り取ります。<strong><br /> 注意：</strong>切り取られた段落は、新しい場所に貼り付けられるまで消えません。</td>
   </tr>
   <tr>
    <td> </td>
@@ -94,7 +103,7 @@ AEM 全体で様々なキーボードショートカットを利用できます�
   <tr>
    <td> </td>
    <td><strong><code>Alt-right-click</code></strong></td>
-   <td>デフォルト（ブラウザー）のコンテキストメニューを強制表示します。<br /><strong>メモ：</strong>AEM のコンテキストメニューはクラシック UI にのみ表示されます。</td>
+   <td>既定（ブラウザー）のコンテキスト メニューを強制します。<br /> <strong>注意：</strong> AEMのコンテキストメニューは、クラシック UIでのみ表示されます。</td>
   </tr>
   <tr>
    <td> </td>
@@ -104,7 +113,7 @@ AEM 全体で様々なキーボードショートカットを利用できます�
   <tr>
    <td>リッチテキストエディター<br /> </td>
    <td><strong><code>Ctrl-B</code></strong><br /> </td>
-   <td>太字</td>
+   <td>Bold</td>
   </tr>
   <tr>
    <td> </td>
@@ -119,7 +128,7 @@ AEM 全体で様々なキーボードショートカットを利用できます�
   <tr>
    <td>コンテンツファインダー - 検索ボックス</td>
    <td><strong><code>down-arrow</code></strong></td>
-   <td>候補リストをトリガーします。入力された文字が少なすぎてリストが自動的にトリガーされない場合に必要です（2 文字以上入力されている場合に発生します）。</td>
+   <td>候補リストをトリガーします。 入力された文字が少なすぎてリストが自動的にトリガーされない場合に必要です（2 文字以上入力されている場合に発生します）。</td>
   </tr>
   <tr>
    <td> </td>

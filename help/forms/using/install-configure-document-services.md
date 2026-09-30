@@ -6,13 +6,29 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '10632'
+source-wordcount: '10681'
 ht-degree: 98%
-
 ---
-
 # ドキュメントサービスのインストールと設定 {#installing-and-configuring-document-services}
 
 AEM Forms は、PDF ドキュメントの作成、アセンブル、配布、アーカイブや、ドキュメントへのアクセスを制限するためのデジタル署名の追加、Barcoded Forms のデコードなど、様々なドキュメントレベルの操作を実現する一連の OSGi サービスを提供します。 これらのサービスは、AEM Forms のアドオンパッケージに含まれており、 ドキュメントサービスと総称されます。 利用可能なドキュメントサービスのリストとその主な機能は次のとおりです。
@@ -27,7 +43,7 @@ AEM Forms は、PDF ドキュメントの作成、アセンブル、配布、ア
 
 * **Encryption サービス：**&#x200B;ドキュメントの暗号化と復号を実行できます。 ドキュメントを暗号化すると、その内容は判読できなくなります。 許可されたユーザーはドキュメントを復号化して、内容にアクセスできます。 詳しくは、[Encryption サービス](/help/forms/using/overview-aem-document-services.md#encryption-service)を参照してください。
 
-* **Forms サービス：**&#x200B;通常 Forms Designer で作成されたフォームを検証、処理、変換および配信する、インタラクティブなデータキャプチャを行うクライアントアプリケーションを作成できます。 Forms サービスは、作成したあらゆるフォームデザインを PDF ドキュメントとして処理します。 詳しくは、[&#x200B; Forms サービス](/help/forms/using/forms-service.md)を参照してください。
+* **Forms サービス：**&#x200B;通常 Forms Designer で作成されたフォームを検証、処理、変換および配信する、インタラクティブなデータキャプチャを行うクライアントアプリケーションを作成できます。 Forms サービスは、作成したあらゆるフォームデザインを PDF ドキュメントとして処理します。 詳しくは、[ Forms サービス](/help/forms/using/forms-service.md)を参照してください。
 
 * **Output サービス：** PDF、レーザープリンター形式、ラベルプリンター形式など、様々な形式のドキュメントを作成します。 レーザープリンター形式には、PostScript と Printer Control Language（PCL）があります。 詳しくは、[Output サービス](/help/forms/using/output-service.md)を参照してください。
 
@@ -37,9 +53,9 @@ AEM Forms は、PDF ドキュメントの作成、アセンブル、配布、ア
 
 * **Signature サービス：** AEM サーバーでデジタル署名とドキュメントを処理できます。 例えば、通常、署名サービスは次のような状況で使用されます。
 
-   * ユーザーにフォームが送信されて Acrobat または Adobe Reader で開かれる前に、AEM サーバーでフォームを認証する場合。
-   * Acrobat または Adobe Reader を使用してフォームに追加された署名を、AEM サーバーが検証する場合。
-   * AEM サーバーが公証人に代わってフォームに署名する場合。
+  * ユーザーにフォームが送信されて Acrobat または Adobe Reader で開かれる前に、AEM サーバーでフォームを認証する場合。
+  * Acrobat または Adobe Reader を使用してフォームに追加された署名を、AEM サーバーが検証する場合。
+  * AEM サーバーが公証人に代わってフォームに署名する場合。
 
   署名サービスは、トラストストアに格納されている証明書および認証情報にアクセスします。 詳しくは、[Signature サービス](/help/forms/using/aem-document-services-programmatically.md)を参照してください。
 
@@ -64,18 +80,18 @@ AEM Forms ドキュメントサービスのインストールおよび設定に�
 * AEM インスタンスのインストールパスに空白が含まれていないこと。
 * AEM インスタンスが稼働していること。 AEM の用語では、「インスタンス」とは、サーバー上でオーサーモードまたはパブリッシュモードで実行されている AEM のコピーのことです。 通常、AEM Forms ドキュメントサービスを実行するには、1 つの AEM インスタンス（オーサーインスタンスまたはパブリッシュインスタンス）があれば十分です。
 
-   * **オーサー**：コンテンツの作成、アップロードおよび編集や web サイトの管理に使用される AEM インスタンス。 公開の準備が整ったコンテンツは、パブリッシュインスタンスにレプリケートされます。
-   * **パブリッシュ**：公開されたコンテンツをインターネットまたは社内ネットワークを通じて提供する AEM インスタンス。
+  * **オーサー**：コンテンツの作成、アップロードおよび編集や web サイトの管理に使用される AEM インスタンス。 公開の準備が整ったコンテンツは、パブリッシュインスタンスにレプリケートされます。
+  * **パブリッシュ**：公開されたコンテンツをインターネットまたは社内ネットワークを通じて提供する AEM インスタンス。
 
 * メモリ要件が満たされていること。 AEM Forms アドオンパッケージでは、次が必要です。
 
-   * Microsoft® Windows ベースのインストールの場合、15 GB の一時的な空きスペースが必要です。
-   * Unix ベースのインストールの場合、6 GB の一時的な空きスペースが必要です。
+  * Microsoft® Windows ベースのインストールの場合、15 GB の一時的な空きスペースが必要です。
+  * Unix ベースのインストールの場合、6 GB の一時的な空きスペースが必要です。
 
 * PDF Generator を使用して Microsoft® Windows や Linux® で変換を実行するには、必要なクライアントソフトウェアをインストールする必要があります。
 
-   * **Microsoft® Windows**：**Microsoft® Office** または **Apache OpenOffice** をインストールします
-   * **Linux®**：**Apache OpenOffice** をインストールします
+  * **Microsoft® Windows**：**Microsoft® Office** または **Apache OpenOffice** をインストールします
+  * **Linux®**：**Apache OpenOffice** をインストールします
 
 >[!NOTE]
 >
@@ -165,25 +181,25 @@ Unix ベースのオペレーティングシステムを使用する場合は、
 
 * **（PDF Generator のみ）** 32 ビット版の libcurl ライブラリ、libcrypto ライブラリ、および libssl ライブラリをインストールし、以下のシンボリックリンクを作成します。 シンボリックリンクは、それぞれのライブラリの最新バージョンを指すようにします。
 
-   * /usr/lib/libcurl.so
-   * /usr/lib/libcrypto.so
-   * /usr/lib/libssl.so
+  * /usr/lib/libcurl.so
+  * /usr/lib/libcrypto.so
+  * /usr/lib/libssl.so
 
 * **（PDF Generator のみ）** PDF Generator サービスは、HTML ファイルを PDF ドキュメントに変換するため、WebKit および WebToPDF の各ルートをサポートしています。 WebToPDF ルートの変換を有効にするには、下記の 64 ビットライブラリをインストールします。 通常、これらのライブラリは既にインストールされています。 不足しているライブラリがあれば、手動でインストールします。
 
-   * linux-gate.so.1
-   * libz.so.1
-   * libfontconfig.so.1
-   * libfreetype.so.6
-   * libdl.so.2
-   * librt.so.1
-   * libpthread.so.0
-   * libstdc++.so.6
-   * libm.so.6
-   * libgcc_s.so.1
-   * libc.so.6
-   * ld-linux.so.2
-   * libexpat.so.1
+  * linux-gate.so.1
+  * libz.so.1
+  * libfontconfig.so.1
+  * libfreetype.so.6
+  * libdl.so.2
+  * librt.so.1
+  * libpthread.so.0
+  * libstdc++.so.6
+  * libm.so.6
+  * libgcc_s.so.1
+  * libc.so.6
+  * ld-linux.so.2
+  * libexpat.so.1
 
 ## プリインストール設定 {#preinstallationconfigurations}
 
@@ -1091,7 +1107,7 @@ AEM Forms アドオンパッケージは AEM にデプロイされるアプリ�
 
    >[!NOTE]
    >
-   >Adobe以外の当事者から提供されたフォントを使用するお客様の権利は、その当事者から提供された使用許諾契約に準拠し、Adobe ソフトウェアの使用に関するお客様のライセンスには適用されません。Adobeでは、Adobe ソフトウェアでAdobe以外のフォントを使用する前に、適用されるすべての非Adobe使用許諾契約を確認し、遵守していることを確認することをお勧めします。特に、サーバー環境でのフォントの使用に関する点が重要です。
+   >アドビ システムズ社以外が提供しているフォントを使用するユーザーの権利は、それらのフォントを所有する会社が提供する使用許諾契約書に拘束されるもので、アドビソフトウェアを使用するための使用許諾契約書は適用されません。 アドビ以外が提供しているフォントをアドビのソフトウェアで使用する前に、適用されるすべてのアドビ以外の使用許諾契約書に準拠していることを確認してください。特に、サーバー環境でフォントを使用する際は注意が必要です。
    >新しいフォントをフォントフォルダーにインストールしたときは、AEM Forms インスタンスを再起動してください。
    >
 
@@ -1188,7 +1204,7 @@ DocAssurance サービスは PDF ドキュメントに使用権限を適用で�
 
 * 証明書ファイルとともに提供する秘密鍵パスワード。
 
-* 秘密鍵のエイリアス：Java keytool コマンドを実行して、秘密鍵エイリアスを表示できます。
+* 秘密鍵のエイリアス。 Java keytool コマンドを実行し、秘密鍵エイリアスを表示します。
   `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
 * キーストアファイルのパスワード。 アドビの Reader Extensions 証明書を使用している場合、Keystore ファイルのパスワードは常に秘密鍵のパスワードと同一です。
@@ -1347,13 +1363,13 @@ SRT ツールが報告する問題をすべて修正した後でも問題が発�
 * PDF Generator ユーザーが PDF 設定 UI に追加されていることを確認します。
 * PDF Generator ユーザーが管理グループのメンバーであり、[プロセスレベルトークンの置き換え](#grant-the-replace-a-process-level-token-privilege)権限がそのユーザーに対して設定されていることを確認します。
 * ユーザーが PDF Generator UI で設定されており、次のアクションを実行していることを確認します。
-   1. Microsoft® Windows に、PDF Generator ユーザーでログインします。
-   1. Microsoft® Office または OpenOffice アプリケーションを開き、すべてのダイアログをキャンセルします。
-   1. AdobePDF をデフォルトのプリンターとして設定します。
-   1. Acrobat を PDF ファイルのデフォルトプログラムに設定します。
-   1. Microsoft Office アプリケーションのファイル／印刷および Acrobat リボンを使用して手動変換を実行し、すべてのダイアログをキャンセルします。
-   1. winword.exe、powerpoint.exe、excel.exe など、変換に関連するすべてのプロセスを終了します。
-   1. AEM Forms サーバーを再起動します。
+  1. Microsoft® Windows に、PDF Generator ユーザーでログインします。
+  1. Microsoft® Office または OpenOffice アプリケーションを開き、すべてのダイアログをキャンセルします。
+  1. AdobePDF をデフォルトのプリンターとして設定します。
+  1. Acrobat を PDF ファイルのデフォルトプログラムに設定します。
+  1. Microsoft Office アプリケーションのファイル／印刷および Acrobat リボンを使用して手動変換を実行し、すべてのダイアログをキャンセルします。
+  1. winword.exe、powerpoint.exe、excel.exe など、変換に関連するすべてのプロセスを終了します。
+  1. AEM Forms サーバーを再起動します。
 
 **Linux®**
 
@@ -1393,29 +1409,29 @@ SRT ツールが報告する問題をすべて修正した後でも問題が発�
 * 最新バージョンの 32 ビット lib curl、libcrypto、libssl ライブラリがシステムにインストールされていることを確認します。 また、それぞれのライブラリの最新版（32 ビット）を指すシンボリックリンク `/usr/lib/libcurl.so`（AIX® では libcurl.a）、`/usr/lib/libcrypto.so`（AIX® では libcrypto.a）および `/usr/lib/libssl.so`（AIX® では libssl.a）も作成します。
 
 * 以下の手順を実行して、IBM® SSL ソケットプロバイダーを設定します。
-   1. java.security ファイルを `<WAS_Installed_JAVA>\jre\lib\security` から AEM Forms Server 上の任意の場所にコピーします。 デフォルトの場所は `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`.です。
+  1. java.security ファイルを `<WAS_Installed_JAVA>\jre\lib\security` から AEM Forms Server 上の任意の場所にコピーします。 デフォルトの場所は `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`.です。
 
-   1. コピー先の java.security ファイルを編集し、デフォルトの SSL Socket factories を JSSE2 factories に変更します（WebSphere® の代わりに JSSE2 factories を使用します）。
+  1. コピー先の java.security ファイルを編集し、デフォルトの SSL Socket factories を JSSE2 factories に変更します（WebSphere® の代わりに JSSE2 factories を使用します）。
 
-      次のデフォルトの JSSE socket factories を変更します。
+     次のデフォルトの JSSE socket factories を変更します。
 
-      ```
-      #ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
-      #ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
-      WebSphere socket factories (in cryptosf.jar)
-      ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
-      ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
-      ```
+     ```
+     #ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
+     #ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
+     WebSphere socket factories (in cryptosf.jar)
+     ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
+     ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
+     ```
 
-      以下に置き換えます。
+     以下に置き換えます。
 
-      ```
-      ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
-      ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
-      WebSphere socket factories (in cryptosf.jar)
-      #ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
-      #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
-      ```
+     ```
+     ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
+     ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
+     WebSphere socket factories (in cryptosf.jar)
+     #ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
+     #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
+     ```
 
 +++
 
@@ -1451,23 +1467,22 @@ SRT ツールが報告する問題をすべて修正した後でも問題が発�
 
 * Adobe Acrobat の既存のライセンスを持っていて、そのライセンスが期限切れの場合、[最新バージョンの Adobe Application Manager をダウンロード](https://helpx.adobe.com/jp/creative-suite/kb/aam-troubleshoot-download-install.html)し、シリアル番号を移行します。 [シリアル番号の移行](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)前に以下のことを行います。
 
-   * 次のコマンドを使用して prov.xml を生成し、[シリアル番号の移行](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)の記事で提供されているコマンドの代わりに、prov.xml ファイルを使用して既存のインストールを再シリアル化します。
+  * 次のコマンドを使用して prov.xml を生成し、[シリアル番号の移行](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)の記事で提供されているコマンドの代わりに、prov.xml ファイルを使用して既存のインストールを再シリアル化します。
 
-         ```
-         
-         adobe_prtk --tool=VolumeSerialize --generate --serial=&lt;serialnum> [--leid=&lt;LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=limited list of locales in xx_XX format or ALL>] [--provfile=&lt;Absolute path to prov.xml>]
-         
-         ```
+        ```
+        
+        adobe_prtk --tool=VolumeSerialize --generate --serial=&lt;serialnum> [--leid=&lt;LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=limited list of locales in xx_XX format or ALL>] [--provfile=&lt;Absolute path to prov.xml>]
+        
+        ```
+    
+  * パッケージをボリュームシリアライズします（prov.xml ファイルと新しいシリアルを使用して既存のインストールを再シリアライズします）。PRTK インストールフォルダーから次のコマンドを管理者として実行し、クライアントマシンにデプロイされたパッケージをシリアライズしてアクティベートします。
 
-     
-   * パッケージをボリュームシリアライズします（prov.xml ファイルと新しいシリアルを使用して既存のインストールを再シリアライズします）。PRTK インストールフォルダーから次のコマンドを管理者として実行し、クライアントマシンにデプロイされたパッケージをシリアライズしてアクティベートします。
-
-         ```
-         adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
-         
-         ```
-
-     * 大規模インストールの場合は、[Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) をクリックして、以前のバージョンの Reader と Acrobat を削除します。 インストーラーをカスタマイズし、組織のすべてのマシンにデプロイします。
+        ```
+        adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
+        
+        ```
+    
+* 大規模インストールの場合は、[Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) をクリックして、以前のバージョンの Reader と Acrobat を削除します。 インストーラーをカスタマイズし、組織のすべてのマシンにデプロイします。
 
 +++
 

@@ -1,6 +1,6 @@
 ---
 title: HSM 資格情報の管理
-description: HSM 秘密鍵証明書を管理する方法について説明します。 Trust Store の管理ページから、HSM を管理できます。 HSM コンポーネントは、表示、確認、更新、リセット、削除できます。
+description: HSM 資格情報を管理する方法について説明します。 Trust Store の管理ページから、HSM を管理できます。 HSM コンポーネントは、表示、確認、更新、リセット、削除できます。
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
@@ -9,21 +9,38 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 5e9e0371-018a-496f-aad4-04ff21391d51
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 98%
-
 ---
-
 # HSM 資格情報の管理 {#managing-hsm-credentials}
 
-Trust Store の管理ページから、ハードウェアセキュリティモジュール（HSM）秘密鍵証明書を管理できます。 HSM はサードパーティの PKCS#11 デバイスです。これを使用して、秘密鍵を安全に生成および保存することができます。 この HSM によって、秘密鍵へのアクセスおよびその使用が物理的に保護されます。
+Trust Store の管理ページから、ハードウェアセキュリティモジュール（HSM）資格情報を管理できます。 HSM はサードパーティの PKCS#11 デバイスです。これを使用して、秘密鍵を安全に生成および保存することができます。 この HSM によって、秘密鍵へのアクセスおよびその使用が物理的に保護されます。
 
-クライアントソフトウェアは、HSM と通信する必要があります。 HSM クライアントソフトウェアは、AEM Forms と同じコンピューターにインストールして設定する必要があります。
+HSM と通信するには、クライアントソフトウェアが必要です。 HSM クライアントソフトウェアは、AEM Forms と同じコンピューターにインストールして設定する必要があります。
 
-AEM forms の Digital Signatures では、HSM に保存されている秘密鍵証明書を使用して、サーバー側の電子署名を適用することができます。 この節の手順に従って、Digital Signatures で使用する HSM 秘密鍵証明書ごとにエイリアスを作成します。 エイリアスには、HSM で必要なすべてのパラメーターが含まれます。
+AEM forms の Digital Signatures では、HSM に保存されている秘密鍵証明書を使用して、サーバー側の電子署名を適用することができます。 この節の手順に従って、デジタル署名で使用する HSM 資格情報ごとにエイリアスを作成します。 エイリアスには、HSM に必要なすべてのパラメーターが含まれます。
 
 >[!NOTE]
 >
@@ -33,7 +50,7 @@ AEM forms の Digital Signatures では、HSM に保存されている秘密鍵�
 
 >[!NOTE]
 > 
-> ユーザーが管理者コンソールにアクセスする管理者権限を持っていることを確認します。
+> ユーザーが管理コンソールにアクセスする管理者権限を持っていることを確認します。
 
 1. 管理コンソールで、設定／Trust Store の管理／HSM 秘密鍵証明書をクリックし、「追加」をクリックします。
 1. 「プロファイル名」ボックスに、エイリアスの識別に使用する文字列を入力します。 この値は、署名フィールドへの署名操作といった、Digital Signatures の一部の操作でプロパティとして使用されます。
@@ -48,13 +65,13 @@ AEM forms の Digital Signatures では、HSM に保存されている秘密鍵�
 1. 「トークン PIN」ボックスに、HSM キーにアクセスするために必要なパスワードを入力し、「次へ」をクリックします。
 1. 「秘密鍵証明書」ボックスで、秘密鍵証明書を選択します。 「保存」をクリックします。
 
-## HSM デバイスがオフラインである場合の HSM 秘密鍵証明書のエイリアスの作成 {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-offline}
+## HSM デバイスがオフラインの場合の HSM 資格情報のエイリアスの作成 {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-offline}
 
-1. 管理コンソールで、設定／Trust Store の管理／HSM 秘密鍵証明書をクリックし、「追加」をクリックします。
+1. 管理コンソールで、設定／Trust Store の管理／HSM 資格情報をクリックし、「追加」をクリックします。
 1. 「プロファイル名」ボックスに、エイリアスの識別に使用する文字列を入力します。 この値は、署名フィールドへの署名操作といった、Digital Signatures の一部の操作でプロパティとして使用されます。
 1. 「PKCS11 ライブラリ」ボックスに、サーバーの HSM クライアントライブラリの完全修飾パスを入力します。 例えば、`c:\Program Files\LunaSA\cryptoki.dll` のようになります。 クラスター環境では、クラスター内のすべてのサーバーでこのパスが同じである必要があります。
 1. 「オフラインプロファイルの作成」チェックボックスをオンにします。 「次へ」をクリックします。
-1. 「HSM デバイス」リストから、秘密鍵証明書が保存されている HSM デバイスの製造元を選択します。
+1. 「HSM デバイス」リストから、資格情報が保存されている HSM デバイスの製造元を選択します。
 1. 「スロットタイプ」リストで、「スロット ID」、「スロットインデックス」または「トークン名」を選択し、「スロット情報」ボックスで値を指定します。 AEM Forms では、これらの設定を使用して、HSM 上の秘密鍵証明書の場所が特定されます。
 
    * **トークン名：**&#x200B;パーティション名に相当します（「HSMPART1」など）。
@@ -71,35 +88,35 @@ AEM forms の Digital Signatures では、HSM に保存されている秘密鍵�
 
 1. 「パスワード」ボックスに、指定したスロット情報の HSM キーにアクセスするために必要なパスワードを入力し、「保存」をクリックします。
 
-## HSM 秘密鍵証明書エイリアスのプロパティの表示 {#view-hsm-credential-alias-properties}
+## HSM 資格情報エイリアスのプロパティの表示 {#view-hsm-credential-alias-properties}
 
-1. 管理コンソールで、設定／Trust Store の管理／HSM 秘密鍵証明書をクリックします。
-1. プロパティを表示する秘密鍵証明書エイリアスのエイリアス名をクリックし、「OK」をクリックします。
+1. 管理コンソールで、設定／Trust Store の管理／HSM 資格情報をクリックします。
+1. プロパティを表示するには、資格情報エイリアスのエイリアス名をクリックし、「OK」をクリックします。
 
-## HSM 秘密鍵証明書のステータスの確認 {#check-the-status-of-an-hsm-credential}
+## HSM 資格情報のステータスの確認 {#check-the-status-of-an-hsm-credential}
 
-1. 管理コンソールで、設定／Trust Store の管理／HSM 秘密鍵証明書をクリックします。
-1. 確認する秘密鍵証明書の横にあるチェックボックスをオンにし、「ステータスを確認」をクリックします。
+1. 管理コンソールで、設定／Trust Store の管理／HSM 資格情報をクリックします。
+1. 確認する資格情報の横にあるチェックボックスをオンにし、「ステータスを確認」をクリックします。
 
-「ステータス」列に、秘密鍵証明書の現在のステータスが反映されます。 エラーが発生した場合は、「ステータス」列に赤の X が表示されます。 X の上にマウスを置くと、エラーの理由を含むツールヒントが表示されます。
+「ステータス」列に、資格情報の現在のステータスが反映されます。 エラーが発生した場合は、「ステータス」列に赤の X が表示されます。 X の上にマウスを置くと、エラーの理由を含むツールヒントが表示されます。
 
-## HSM 秘密鍵証明書エイリアスのプロパティの更新 {#update-hsm-credential-alias-properties}
+## HSM 資格情報エイリアスのプロパティの更新 {#update-hsm-credential-alias-properties}
 
-1. 管理コンソールで、設定／Trust Store の管理／HSM 秘密鍵証明書をクリックします。
-1. 秘密鍵証明書エイリアスのエイリアス名をクリックします。
-1. 「秘密鍵証明書を更新」をクリックし、必要に応じて設定を更新します。
+1. 管理コンソールで、設定／Trust Store の管理／HSM 資格情報をクリックします。
+1. 資格情報エイリアスのエイリアス名をクリックします。
+1. 「資格情報を更新」をクリックし、必要に応じて設定を更新します。
 
 ## すべての HSM 接続のリセット {#reset-all-hsm-connections}
 
 Forms サーバーと HSM デバイス間のネットワークセッションが中断された後に HSM デバイスへのオープン接続をリセットします。 例えば、ネットワーク障害が発生した場合や、ソフトウェア更新のために HSM デバイスがオフラインになったときに、セッションが中断される可能性があります。 中断が発生すると既存の接続は古くなり、これらの接続に対するすべての署名リクエストが失敗します。 「すべての HSM 接続をリセット」オプションを使用すると、古い接続がクリアされます。
 
-1. 管理コンソールで、設定／Trust Store の管理／HSM 秘密鍵証明書をクリックします。
+1. 管理コンソールで、設定／Trust Store の管理／HSM 資格情報をクリックします。
 1. 「すべての HSM 接続をリセット」をクリックします
 
-## HSM 秘密鍵証明書エイリアスの削除 {#delete-an-hsm-credential-alias}
+## HSM 資格情報エイリアスの削除 {#delete-an-hsm-credential-alias}
 
-1. 管理コンソールで、設定／Trust Store の管理／HSM 秘密鍵証明書をクリックします。
-1. 削除する HSM 秘密鍵証明書のチェックボックスをオンにして「削除」をクリックし、「OK」をクリックします。
+1. 管理コンソールで、設定／Trust Store の管理／HSM 資格情報をクリックします。
+1. 削除する HSM 資格情報のチェックボックスをオンにして「削除」をクリックし、「OK」をクリックします。
 
 ## リモート HSM サポートの設定 {#configure-remote-hsm-support}
 
@@ -108,4 +125,4 @@ AEM Forms では、web サービスベースの IPC/RPC メカニズムを使用
 このメカニズムは、HSM プロファイルのオンライン作成やステータスチェックをサポートしていません。 ただし、HSM プロファイルの作成およびステータスチェックを実行する方法には次の 2 つがあります。
 
 * 署名者の証明書を渡して、AEM Forms クライアント資格情報を作成します。 [Windows 64 ビットプラットフォームでの Sum JDK を使用した AEM Forms EX の HSM サポートの設定](https://kb2.adobe.com/cps/808/cpsid_80835.html)に記載されている手順を実行します。 Web サービスの場所は資格情報プロパティとして渡されます。 また、証明書 DER または 証明書 SHA-1 hex を使用した HSM プロファイルのオフライン作成もサポートされています。 ただし、以前のバージョンの AEM Forms から AEM Forms にアップグレードした場合は、資格情報に証明書と web サービス情報が含まれているので、クライアントに変更を加える必要があります。
-* Web サービスの場所は管理コンソールの Signatures サービスで指定します （[署名サービス設定](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings)を参照）。 ここでは、クライアントはトラストストア内のHSM プロファイルのエイリアスのみを実行しました。 この方法は、以前のバージョンの AEM Forms から AEM Forms にアップグレードした場合でもクライアントに変更を加えることなく、シームレスに使用できます。 証明書 SHA-1 を使用して作成した HSM プロファイルは、この方法ではサポートされていません。
+* Web サービスの場所は管理コンソールの Signatures サービスで指定します （[署名サービス設定](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings)を参照）。 ここでは、クライアントはトラストストア内のHSM プロファイルのエイリアスのみを実行しました。 この方法は、以前のバージョンの AEM Forms から AEM Forms にアップグレードした場合でもクライアントに変更を加えることなく、シームレスに使用できます。 証明書 SHA-1 を使用する HSM プロファイルは、この方法ではサポートされていません。

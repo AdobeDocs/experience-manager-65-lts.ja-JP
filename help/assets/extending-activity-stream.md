@@ -1,25 +1,34 @@
 ---
-title: ' [!DNL Assets]  とアクティビティストリームの統合'
-description: ' [!DNL Experience Manager]  の記録機能と、特定のイベントを記録するための設定方法について説明します。'
+title: '[!DNL Assets] とアクティビティストリームの統合'
+description: '[!DNL Experience Manager]の記録機能と、特定のイベントを記録するように設定する方法について説明します。'
 contentOwner: AG
 role: Developer
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 44604607-e49d-469c-a6f1-dedbcd657d65
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 99%
-
+source-wordcount: '258'
+ht-degree: 88%
 ---
-
 # [!DNL Assets] とアクティビティストリームの統合 {#integrating-assets-with-activity-stream}
 
-[!DNL Adobe Experience Manager Assets] ユーザーは、アセットの作成、アップロード、削除などの多くのアクションを実行します。ユーザーが実行した操作の履歴を提供できるよう、これらのアクションを記録できます。この節では、[!DNL Experience Manager] の記録機能と、特定のイベントを記録するための [!DNL Experience Manager] の設定方法について説明します。
+[!DNL Adobe Experience Manager Assets] ユーザーは、アセットの作成、アップロード、削除などの多くのアクションを実行します。 ユーザーが実行した操作の履歴を提供できるよう、これらのアクションを記録できます。 この節では、[!DNL Experience Manager] の記録機能と、特定のイベントを記録するための [!DNL Experience Manager] の設定方法について説明します。
 
 ## パフォーマンスに関する考慮事項とデフォルトの動作 {#performance-considerations-and-default-behavior}
 
-この統合は、一括して読み込む際などに多くの CPU およびディスク領域を消費する可能性があります。これらの理由から、[!DNL Assets] とアクティビティストリームの統合はデフォルトで無効になっています。
+この統合は、一括して読み込む際などに多くの CPU およびディスク領域を消費する可能性があります。 これらの理由から、[!DNL Assets] とアクティビティストリームの統合はデフォルトで無効になっています。
 
 ## サポートしているアクションイベント {#supported-action-events}
 
@@ -43,7 +52,7 @@ ht-degree: 99%
 
 ## [!DNL Assets] イベント記録の設定 {#configuring-aem-assets-events-recording}
 
-[Web コンソール](/help/sites-deploying/configuring-osgi.md)から、Assets Event Recorder のチューニングにアクセスできます。Assets Event Recorder を設定するには、次の手順を実行します。
+[Web コンソール](/help/sites-deploying/configuring-osgi.md)から、Assets Event Recorder のチューニングにアクセスできます。 Assets Event Recorder を設定するには、次の手順を実行します。
 
 1. **[!UICONTROL Web コンソール]**&#x200B;に移動します。
 
@@ -59,4 +68,4 @@ ht-degree: 99%
 
 ## 記録されたイベントの読み取り {#reading-recorded-events}
 
-記録されたイベントはアクティビティとして保存されます。[ActivityManager API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/activitystreams/ActivityManager.html) を使用すると、プログラムで読み取ることができます。
+記録されたイベントはアクティビティとして保存されます。 [ActivityManager API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/activitystreams/ActivityManager.html) を使用すると、プログラムで読み取ることができます。

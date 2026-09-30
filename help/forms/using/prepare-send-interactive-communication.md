@@ -7,13 +7,27 @@ feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2ccd8c75-e4d0-40f9-bc8f-352b408b5c62
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2029'
 ht-degree: 99%
-
 ---
-
 # エージェント UI を使用してインタラクティブなコミュニケーションの準備と送信を行う {#prepare-and-send-interactive-communication-using-the-agent-ui}
 
 エージェント UI を使用してインタラクティブなコミュニケーションの準備を行い、後処理用として送信することができます。 エージェントは、許可設定に基づいて必要な変更を行い、メールの送信や印刷出力などの後処理用としてインタラクティブなコミュニケーションを送信します。
@@ -47,7 +61,7 @@ ht-degree: 99%
 
 ### データを入力 {#enter-data}
 
-1. 「データ」タブで、変数、フォームデータモデルプロパティ、印刷テンプレート（XDP）のフィールドのデータを、必要に応じて入力します。 アスタリスク （&ast;）が付いているすべての必須フィールドに入力して、**送信** ボタンを有効にします。
+1. 「データ」タブで、変数、フォームデータモデルプロパティ、印刷テンプレート（XDP）のフィールドのデータを、必要に応じて入力します。 アスタリスク （&amp;ast;）が付いているすべての必須フィールドに入力して、**送信** ボタンを有効にします。
 
    インタラクティブなコミュニケーションのプレビュー画面でデータフィールドの値を選択すると、対応するデータフィールドが「データ」タブでハイライト表示されます（その逆も同様です）。
 
@@ -71,8 +85,8 @@ ht-degree: 99%
 
    * [書式設定オプション](#formattingtext)
 
-      * [書式設定されたテキストを他のアプリケーションからコピー＆ペースト](#pasteformattedtext)
-      * [テキストの一部をハイライト表示](#highlightemphasize)
+     * [書式設定されたテキストを他のアプリケーションからコピー＆ペースト](#pasteformattedtext)
+     * [テキストの一部をハイライト表示](#highlightemphasize)
 
    * [特殊文字](#specialcharacters)
    * [ショートカットキー](/help/forms/using/keyboard-shortcuts.md)
@@ -146,7 +160,7 @@ ht-degree: 99%
 
 ### ドキュメントフラグメント {#document-fragments}
 
-![&#x200B; &#x200B;](do-not-localize/contentoptionsdocfragments.png)
+![ ](do-not-localize/contentoptionsdocfragments.png)
 
 * **上矢印と下矢印**：上矢印と下矢印を使用して、インタラクティブなコミュニケーション内のドキュメントフラグメントを上下に移動することができます。
 * **削除**：インタラクティブなコミュニケーションからドキュメントフラグメントを削除します（削除が許可されている場合）。

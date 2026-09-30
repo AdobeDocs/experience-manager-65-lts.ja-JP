@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 5cc5c9fe-50ce-4863-bfa4-a009a6c3b06f
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 94%
-
 ---
-
 # 資格情報の使用に関する情報の確認 {#review-credential-use-information}
 
 資格情報には、Acrobat Reader DC Extensions のエンドユーザー web アプリケーションを通じてアクセスできる、その使用目的を説明する情報が含まれています。 この情報を使用して、インストールされている資格情報のタイプ (評価または実稼動) とその有効期限を判断できます。
@@ -33,7 +48,7 @@ ht-degree: 94%
 
    >[!NOTE]
    >
-   >デフォルトのユーザー名とパスワードを使用してログインするには、管理者またはスーパーユーザーの権限が必要です。 他のユーザーが Acrobat Reader DC Extensions にアクセスできるようにするには、ユーザー管理でユーザーアカウントを作成し、ユーザーに Acrobat Reader DC Extensions の web アプリケーションロールを付与します。
+   >デフォルトのユーザー名とパスワードを使用してログインするには、管理者またはスーパーユーザーの権限が必要です。 他のユーザーが Acrobat Reader DC Extensions にアクセスできるようにするには、User Management でユーザーアカウントを作成し、ユーザーに Acrobat Reader DC Extensions の web アプリケーションロールを付与します。
 
 1. 「資格情報の選択」リストから資格情報のエイリアスを選択し、有効期限と使用目的の通知に含まれる情報を確認します。
 

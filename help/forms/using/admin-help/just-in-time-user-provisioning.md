@@ -1,6 +1,6 @@
 ---
 title: ジャストインタイムのユーザープロビジョニング
-description: ジャストインタイムのプロビジョニングを使用して、正常に認証された後でユーザーを User Management に追加し、新しいユーザーに関連するロールおよびグループを動的に割り当てます。
+description: ジャストインタイムのプロビジョニングを使用して、正常に認証された後でユーザーを User Management に追加し、新しいユーザーに関連する役割およびグループを動的に割り当てます。
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
@@ -9,17 +9,32 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: a7c566f0-ec89-4e98-b31d-e3f23f7e3524
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 100%
-
 ---
-
 # ジャストインタイムのユーザープロビジョニング {#just-in-time-user-provisioning}
 
-AEM Forms では、User Management にまだ存在していないユーザーのジャストインタイムプロビジョニングをサポートしています。 ジャストインタイムプロビジョニングを使用した場合、ユーザーは、秘密鍵証明書が正常に認証されると、自動的に User Management に追加されます。 さらに、関連するロールおよびグループが新しいユーザーに動的にアサインされます。
+AEM Forms では、User Management にまだ存在していないユーザーのジャストインタイムプロビジョニングをサポートしています。 ジャストインタイムプロビジョニングを使用した場合、ユーザーは、資格情報が正常に認証されると、自動的に User Management に追加されます。 さらに、関連する役割およびグループが新しいユーザーに動的にアサインされます。
 
 ## ジャストインタイムのユーザープロビジョニングの必要性 {#need-for-just-in-time-user-provisioning}
 
@@ -88,7 +103,7 @@ public Boolean assign(User user);
 
 ### ジャストインタイムが有効なドメインの作成 {#create-a-just-in-time-enabled-domain}
 
-1. 「ジャストインタイムプロビジョニングの API」の節にある、DSC による API の実装を記述します。
+1. 「ジャストインタイムプロビジョニングの API」の節にある API を実装する DSC を記述します。
 1. DSC を Forms サーバーにデプロイします。
 1. ジャストインタイムが有効なドメインを作成します。
 
@@ -106,7 +121,7 @@ public Boolean assign(User user);
 1. `UserProvisioningBO` によって返されるドメイン情報に基づいて、ドメインの登録された `IdentityCreator` および `AssignmentProvider` を取得して呼び出します。
 1. `IdentityCreator`を呼び出します。 正常な `AuthResponse` が返される場合、資格情報マップから `UserInfo` を抽出します。 ユーザー作成後のグループ／ロールアサインおよびその他の後処理のために `AssignmentProvider` に渡します。
 1. ユーザーが正常に作成されると、成功としてユーザーのログイン試行を返します。
-1. ハイブリッドドメインの場合、認証プロバイダーに提供された認証データからユーザー情報を引き出します。 この情報が正常に取得されると、ユーザーがオンザフライで作成されます。
+1. ハイブリッドドメインの場合、認証プロバイダーに提供された認証データからユーザー情報を取り込みます。 この情報が正常に取得されると、ユーザーがオンザフライで作成されます。
 
 >[!NOTE]
 >

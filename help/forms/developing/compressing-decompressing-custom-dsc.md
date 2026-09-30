@@ -5,19 +5,34 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: c97a8651-aca7-42e3-bcd0-71d089c3e753
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 100%
-
 ---
-
 # AEM Forms on JEE のカスタム DSC を使用したファイルの圧縮と解凍 {#compressing-decompressing-files}
 
 ## 必要な知識 {#prerequisites}
 
-JEE 上の AEM Forms のプロセス管理、基本的な Java™ プログラミング、およびカスタムコンポーネントの作成を備えたエクスペリエンス。
+JEE 上の AEM Forms のプロセス管理、基本的な Java™ プログラミング、およびカスタムコンポーネントの作成に関する経験。
 
 **その他の必要な製品**
 
@@ -27,7 +42,7 @@ JEE 上の AEM Forms のプロセス管理、基本的な Java™ プログラ�
 
 中級者
 
-JEE 上の AEM Forms を使用すると、開発者はカスタム ASC（Acrobat サービスコンテナ）を作成して、強化された、すぐに使える機能を作成できます。 このようなコンポーネントを作成すると、AEM Forms on JEE ランタイム環境にプラグインでき、意図する目的に活用できます。 この記事では、カスタム ZIP サービスを作成する方法を説明します。このサービスを使用して、ファイルのリストを .zip ファイルに圧縮し、.zip をドキュメントのリストに解凍します。
+JEE 上の AEM Forms を使用すると、開発者は、すぐに使える機能を強化するためのカスタム ASC（Acrobat サービスコンテナ）を作成できます。 このようなコンポーネントを作成すると、AEM Forms on JEE ランタイム環境にプラグインでき、意図する目的に活用できます。 この記事では、カスタム ZIP サービスを作成する方法を説明します。このサービスを使用して、ファイルのリストを .zip ファイルに圧縮し、.zip をドキュメントのリストに解凍します。
 
 ## カスタム ASC コンポーネントの作成 {#create-custom-dsc-component}
 
@@ -130,7 +145,7 @@ public class ZIPService {
 
 component.xml ファイルは、サービス操作とそのパラメーターを定義したパッケージのルートフォルダー内に作成する必要があります。
 
-component.xml ファイルは、次のように表示されます。
+component.xml ファイルを次に示します。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -219,9 +234,9 @@ component.xml ファイルは、次のように表示されます。
 
 * 指定したフォルダー内のすべてのファイルを検索し、ファイルを圧縮ドキュメントとして返す。
 
-* 解凍後に Reader を拡張できる複数の PDF ドキュメントを含む ZIP ファイルを提供する。 これには、AEM Forms on JEE の Reader Extensions モジュールが必要です。
+* 解凍後に Reader Extensions を適用できる複数の PDF ドキュメントを含む ZIP ファイルを提供する。 これには、AEM Forms on JEE の Reader Extensions モジュールが必要です。
 
-* Generate PDF サービスを使用して解凍し、PDF ドキュメントに変換できる、異なるタイプのドキュメントを含んだ ZIP ファイルを提供する。
+* Generate PDF サービスを使用して解凍し、PDF 文書に変換できる、様々な種類の文書を含む ZIP ファイルを提供する。
 
 * ポリシーでドキュメントのリストを保護し、ZIP ファイルとして返す。
 

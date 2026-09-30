@@ -9,13 +9,27 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 4009c85e-cb8a-4bed-a6ff-7c76fe78a47f
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 99%
-
+source-wordcount: '810'
+ht-degree: 100%
 ---
-
 # AEM Forms サーバーのパフォーマンスチューニング{#performance-tuning-of-aem-forms-server}
 
 この記事では、ボトルネックを減らし、AEM Forms デプロイメントのパフォーマンスを最適化するために実装できる戦略とベストプラクティスについて説明します。
@@ -95,8 +109,8 @@ Apache は HTTP プロトコルを使用して CRX と通信できます。 こ�
    >
    >Linux® の場合、デフォルトの `APACHE_HOME` は `/etc/httpd/` です。
 
-1. crxのポート 4502でプロキシを設定します。
-次の設定を`APACHE_HOME/conf/httpd.conf`設定ファイルに追加します。
+1. crx のポート 4502 のプロキシを設定します。
+次の設定を `APACHE_HOME/conf/httpd.conf` 設定ファイルに追加します。
 
    ```shell
    ProxyPass / https://<server>:4502/
@@ -149,9 +163,9 @@ Apache は HTTP プロトコルを使用して CRX と通信できます。 こ�
 
 * AEM のインストールディレクトリ。 このディレクトリ全体を除外できない場合は、以下の項目を除外してください。
 
-   * [AEM インストールディレクトリ]\crx-repository\temp
-   * [AEM インストールディレクトリ]\crx-repository\repository
-   * [AEM インストールディレクトリ]\crx-repository\launchpad
+  * [AEM インストールディレクトリ]\crx-repository\temp
+  * [AEM インストールディレクトリ]\crx-repository\repository
+  * [AEM インストールディレクトリ]\crx-repository\launchpad
 
 <!--
 

@@ -1,6 +1,6 @@
 ---
 title: 証明書ベースの認証の設定
-description: 認証局（CA）証明書をトラストストアに読み込みし、証明書ベースの認証用の証明書マッピングを作成します。
+description: 認証局（CA）証明書をトラストストアに読み込み、証明書ベースの認証用の証明書マッピングを作成します。
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
@@ -9,14 +9,31 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 56603735-959e-4460-b642-bba63fa20c02
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 88%
-
 ---
-
 # 証明書ベースの認証の設定 {#configuring-certificate-based-authentication}
 
 >[!NOTE]
@@ -48,11 +65,11 @@ User Management は通常、ユーザー名とパスワードを使用して認�
 
 **証明書マッピングを追加**
 
-1. 管理コンソールで、設定／User Management／設定／システム属性の詳細設定をクリックしてください。
+1. 管理コンソールで、設定／User Management／設定／証明書マッピングをクリックしてください。
 1. 「新しい証明書マッピング」をクリックし、「発行者向け」リストで、トラストストア管理で構成された証明書のエイリアスを選択します。
 1. 証明書の属性の 1 つをユーザーの属性にマップします。 例えば、証明書の共通名をユーザーのログイン ID にマップできます。
 
-   証明書の属性の内容がユーザー管理データベースのユーザーの属性の内容と異なる場合は、Java 正規表現 (regex) を使用して 2 つの属性を照合できます。 例えば、証明書の一般的な名前が&#x200B;*Alex Pink （認証）*&#x200B;や&#x200B;*Alex Pink （署名）*&#x200B;のような名前で、User Management データベースの一般的な名前が&#x200B;*Alex Pink*&#x200B;の場合、証明書の属性の必要な部分を抽出するために正規表現を使用します（この例では&#x200B;*Alex Pink*）。 指定する正規表現は、Java正規表現の仕様に準拠している必要があります。
+   証明書の属性の内容が User Management データベースのユーザーの属性の内容と異なる場合は、Java 正規表現 (regex) を使用して 2 つの属性を照合できます。 例えば、証明書の一般的な名前が&#x200B;*Alex Pink （認証）*&#x200B;や&#x200B;*Alex Pink （署名）*&#x200B;のような名前で、User Management データベースの一般的な名前が&#x200B;*Alex Pink*&#x200B;の場合、証明書の属性の必要な部分を抽出するために正規表現を使用します（この例では&#x200B;*Alex Pink*）。 指定する正規表現は、Java正規表現の仕様に準拠している必要があります。
 
    「カスタム順序」ボックスでグループの順序を指定することにより、式を変換できます。 カスタムオーダーは、`java.util.regex.Matcher.replaceAll()` メソッドで使用します。 表示される動作はそのメソッドの動作に対応しており、それに応じて入力文字列（カスタム順序）を指定する必要があります。
 
@@ -61,7 +78,7 @@ User Management は通常、ユーザー名とパスワードを使用して認�
    正規表現では次の文字を使用できます。
 
    * . （任意の文字）
-   * &ast; （0個以上の出現）
+   * &amp;ast; （0個以上の出現）
    * ()（括弧内にグループを指定）
    * \（正規表現文字を通常の文字にエスケープするために使用）
    * $n（n 番目のグループを参照するために使用）
@@ -70,21 +87,21 @@ User Management は通常、ユーザー名とパスワードを使用して認�
 
    * 「Alex Pink (Authentication)」から「Alex Pink」を抽出するには
 
-     **正規表現：** （。&ast;） \（認証\）
+     **正規表現：** （。&amp;ast;） \（認証\）
 
    * 「Alex（認証）Pink」から「Alex Pink」を抽出するには
 
-     **正規表現：** （。&ast;）\（認証\） （。&ast;）
+     **正規表現：** （。&amp;ast;）\（認証\） （。&amp;ast;）
 
    * 「Alex (Authentication) Pink」から「Pink Alex」を抽出するには
 
-     **正規表現：** （。&ast;）\（認証\） （。&ast;）
+     **正規表現：** （。&amp;ast;）\（認証\） （。&amp;ast;）
 
      カスタム順序：$2 $1（空白文字でキャプチャされた、最初のグループに連結された 2 番目のグループを返します）
 
    * 「smtp:apink@sampleorg.com」から「apink@sampleorg.com」を抽出するには
 
-     **正規表現：** smtp:（。&ast;）
+     **正規表現：** smtp:（。&amp;ast;）
 
    正規表現の使用について詳しくは、[正規表現に関する Java チュートリアル](https://java.sun.com/docs/books/tutorial/essential/regex/)を参照してください。
 
@@ -100,5 +117,5 @@ User Management は通常、ユーザー名とパスワードを使用して認�
 
 **証明書マッピングを削除**
 
-1. 管理コンソールで、設定／User Management／設定／システム属性の詳細設定をクリックしてください。
+1. 管理コンソールで、設定／User Management／設定／証明書マッピングをクリックしてください。
 1. 削除する証明書のマッピングのチェックボックスをオンにして「削除」をクリックし、「OK」をクリックします。

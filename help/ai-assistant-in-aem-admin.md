@@ -5,28 +5,42 @@ solution: Experience Manager
 feature: Authoring, AI Assistant, AI Tools
 role: Admin,Developer,User
 exl-id: e653d37f-5802-4b0f-a71b-539b33ad5ca5
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
-workflow-type: ht
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: bf7fca06-df97-4229-884f-76afcfade5ad
+    internal-label: AI Assistant
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 100%
-
 ---
-
 # AEM の AI アシスタントの設定 {#aem-ai-asst-admin-setup}
 
 <!-- An Administrator must configure access, permissions, and settings before users in their organization can use the features in AI Assistant in AEM. -->
 
 <!-- badge: label="Beta" type="Positive" -->
 
-AEM（Adobe Experience Manager）で AI アシスタントを使用するには、AI アシスタントを通じて製品知識にアクセスする権限が必要です。この権限はデフォルトでオンになっています。
+AEM（Adobe Experience Manager）で AI アシスタントを使用するには、AI アシスタントを通じて製品知識にアクセスする権限が必要です。 この権限はデフォルトでオンになっています。
 
-製品知識にアクセスできるユーザーを管理するには、Adobe ID に関連付けられているメールアドレスから [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) にメールを送信してください。アドビでは、ユーザーレベルのアクセス制御を有効にできます。有効にすると、管理者は次の手順に従ってユーザーレベルのアクセス権を付与できます。
+製品知識にアクセスできるユーザーを管理するには、Adobe ID に関連付けられているメールアドレスから [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) にメールを送信してください。 アドビでは、ユーザーレベルのアクセス制御を有効にできます。 有効にすると、管理者は次の手順に従ってユーザーレベルのアクセス権を付与できます。
 
-ユーザーレベルのアクセス制御を要求した場合、組織は Adobe Admin Console を介してオプトインする必要があります。製品管理者がユーザーグループを作成（または選択）し、新しい「AI アシスタント」権限を付与します。そのグループに追加すれば、AEM 全体で AI アシスタントに誰でも即座にアクセスできるようになります。企業全体での利用が目的である場合、管理者はそのグループにすべてのユーザーを割り当てるだけで済みます。
+ユーザーレベルのアクセス制御を要求した場合、組織は Adobe Admin Console を介してオプトインする必要があります。 製品管理者がユーザーグループを作成（または選択）し、新しい「AI アシスタント」権限を付与します。 そのグループに追加された人は誰でも、AEM 全体で AI アシスタントに即座にアクセスできるようになります。 企業全体での利用が目的である場合、管理者はそのグループにすべてのユーザーを割り当てるだけで済みます。
 
-従業員の観点からは、このプロセスは簡単です。組織内の Adobe Experience Manager のプロダクト管理者を特定し、AI 対応ユーザーグループへの追加をリクエストするだけです。そのグループに追加されると、次回のログイン時にアシスタントアイコンが自動的に表示されます。
+従業員の観点からは、このプロセスは簡単です。組織内の Adobe Experience Manager のプロダクト管理者を特定し、AI 対応ユーザーグループへの追加をリクエストするだけです。 そのグループに追加されると、次回のログイン時にアシスタントアイコンが自動的に表示されます。
 
-管理者は、通常の Cloud Manager ガバナンスを念頭に置く必要があります。プロファイルの作成、ユーザーグループの管理、権限の編集を行うには、Admin Console の製品管理者権限を保持している必要があります。ユーザーがアシスタントの組み込み&#x200B;**サポートチケット作成**&#x200B;機能も必要な場合は、同じ個人またはグループに標準の&#x200B;**サポート管理者**&#x200B;ロール（標準の Admin Console ロール）を追加してください。
+管理者は、通常の Cloud Manager ガバナンスを念頭に置く必要があります。 プロファイルの作成、ユーザーグループの管理、権限の編集を行うには、Admin Console の製品管理者権限を保持している必要があります。 ユーザーがアシスタントの組み込み&#x200B;**サポートチケット作成**&#x200B;機能も必要な場合は、同じ個人またはグループに標準の&#x200B;**サポート管理者**&#x200B;ロール（標準の Admin Console ロール）を追加してください。
 
 AEM の AI アシスタントの設定プロセスは、次の手順で構成されます。
 
@@ -51,7 +65,7 @@ AEM の AI アシスタントの設定プロセスは、次の手順で構成さ
 * 定義済みのプロファイル：定義済みの権限プロファイルを Admin Console から削除しないでください。
 
 
-## 1 - Adobe Admin Console で新しい製品プロファイルを作成する{#create-profile}
+## 1 - Adobe Admin Console での新しい製品プロファイルの作成{#create-profile}
 
 1. Experience Platform ドキュメントにある「[Adobe Admin Console で新しい製品プロファイルを作成する](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/ui/create-profile)」の詳細な手順に従ってください。
 
@@ -65,7 +79,7 @@ AEM の AI アシスタントの設定プロセスは、次の手順で構成さ
    | 通知 | 組織の好みに応じて設定 |
 
 
-## 2 - AI アシスタント製品知識の権限を有効にする{#enable-permission}
+## 2 - AI アシスタント製品知識権限の有効化{#enable-permission}
 
 製品プロファイルにカスタム権限を割り当てるプロセスは、Adobe Cloud Manager 標準カスタム権限ワークフローに従います。
 
@@ -150,7 +164,7 @@ AEM の AI アシスタントの設定プロセスは、次の手順で構成さ
 
 >[!TAB ユーザーの一括追加]
 
-Admin Console のバルクアップロード機能を使用できます。
+Admin Console の一括アップロード機能を使用できます。
 
 1. ユーザー情報を含む CSV ファイルを準備します。
 1. 効率的な一括追加には、**`Add users by CSV`** オプションを使用します。

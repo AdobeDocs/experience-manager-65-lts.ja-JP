@@ -9,13 +9,29 @@ role: User, Admin
 feature: Publishing,Configuration
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7576e0e3-b05a-483b-9d38-316ddf0d5816
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 99%
-
 ---
-
 # コンテンツの HTTP/2 配信 {#http-delivery-of-content}
 
 アドビは、パフォーマンスの向上という全体的な利点をもたらすコンテンツの HTTP/2 配信に対応しました。
@@ -34,12 +50,12 @@ HTTP/2 とその利点については、次の web サイトで簡潔に説明�
 
 ## コンテンツ配信を HTTP/2 に移行する主なメリット {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
-パフォーマンスの向上は、大きく変化する可能性があります。 web サイトのコード、Dynamic Media の使用方法、消費者のデバイス、画面、場所など、様々な要因があります。
+パフォーマンスの向上の度合いは大きく異なる場合があります。 これは、web サイトのコード、Dynamic Media の使用方法、消費者のデバイス、画面、場所など、多くの要因に基づきます。
 
 アドビ独自のテストでは、以下の結果が出ています。
 
 * 画像の場合、デバイスおよびブラウザーに応じて、応答時間が 7％～28％向上しました。 最もパフォーマンスが向上したのは iOS デバイスでした。
-* ビューアの場合、読み込み時間のパフォーマンスが 15％向上しました。
+* ビューアーの場合、読み込み時間のパフォーマンスが最大 15％向上しました。
 
 以下のデモは、HTTP/1 と HTTP/2 の読み込み時間を比較して示しています。
 
@@ -51,7 +67,7 @@ HTTP/2 を使用するには、以下の要件を満たしている必要があ�
 
 * リッチメディアリクエストにセキュア HTTPS を使用している。
 * アドビ製品にバンドルされたコンテンツ配信ネットワーク（CDN）を Dynamic Media ライセンスの一部として使用します。
-* 専用ドメイン（company-h.assetsadobe#.com 以外）を使用している。
+* 専用ドメイン（company-h.assetsadobe#.com 以外）を使用します。
 
   既に専用ドメインがある場合、アドビのカスタマーサポート経由でオプトインできます。
 
@@ -61,7 +77,7 @@ HTTP/2 を使用するには、以下の要件を満たしている必要があ�
 
 HTTP/2 への切り替えは、お客様からのリクエストが必要となり、自動的には行われません。
 
-1. HTTP/2 に切り替えるには、アドビのカスタマーサポートにリクエストしてください。 詳しくは、[サポートチケットを開く](https://experienceleague.adobe.com/ja?support-solution=General&lang=ja&support-tab=home#support)を参照してください。
+1. HTTP/2 に切り替えるには、アドビのカスタマーサポートにリクエストしてください。 詳しくは、[サポートチケットを開く](https://experienceleague.adobe.com/?support-solution=General&lang=ja&support-tab=home#support)を参照してください。
 
    1. サポートリクエストには、以下の情報を記入してください。
 
@@ -73,7 +89,7 @@ HTTP/2 への切り替えは、お客様からのリクエストが必要とな�
 
    1. カスタマーサポートでは、リクエストの送信順に基づいて HTTP/2 の顧客待機リストに追加します。
    1. アドビでリクエストを処理する準備が整うと、移行についての調整や完了予定日の設定のため、カスタマーサポートから連絡が入ります。
-   1. 完了すると通知されるので、正常に HTTP2 へ移行されたことを確認できます。
+   1. 完了すると通知されるので、正常に HTTP/2 へ移行されたことを確認できます。
 
       ブラウザーにはこのことが表示されないので、拡張機能をダウンロードする必要があります。
 

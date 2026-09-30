@@ -9,14 +9,33 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Document Services,Reader Extensions
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: f9b01de7-1de5-43aa-bcc3-b15719bfa5c0
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 621ad6f8-3769-57bb-838c-1d26cfb18d50
+    internal-label: Reader Extensions
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 100%
-
 ---
-
 # データキャプチャのための Acrobat Reader DC Extensions の設定 {#configuring-acrobat-reader-dc-extensions-for-data-capture}
 
 >[!NOTE]
@@ -27,7 +46,7 @@ AEM Forms インストール環境のユーザーが Content Services（非推�
 
 ***メモ&#x200B;**：Adobe® LiveCycle® Content Services ES（非推奨）は LiveCycle と共にインストールされるコンテンツ管理システムです。 このサービスでは、人間中心のプロセスをデザイン、管理、監視および最適化することができます。 Content Services（非推奨）のサポートは 2014年12月31日（PT）をもって終了しています。 [アドビ製品のライフサイクルに関するドキュメント](https://helpx.adobe.com/jp/support/programs/eol-matrix.html)を参照してください。*
 
-データをキャプチャするには、SampleReaderExtensionsCredential にアクセスするために、ユーザーに役割を割り当てる必要があります。 標準のトラスト管理者の役割を割り当てることができます。 ただし、この役割を割り当てると、PKI 信頼設定を制御し PKI 認証情報を管理する管理者権限を管理者以外の一般ユーザーに与えることになるため、本番環境での AEM Forms インストールのセキュリティが危険にさらされる可能性があることを考慮してください。 AEM Forms システム管理者が Trust Store への読み取り専用アクセス権のみを含む役割を作成して、データキャプチャ機能を使用する管理者以外のユーザーにこの役割を割り当てることをお勧めします。
+データをキャプチャするには、SampleReaderExtensionsCredential にアクセスするために、ユーザーに役割を割り当てる必要があります。 標準のトラスト管理者の役割を割り当てることができます。 ただし、この役割を割り当てると、PKI 信頼設定を制御し PKI 認証情報をコントロールする管理者権限を、管理者以外の一般ユーザーに与えることになるため、本番環境での AEM Forms インストールのセキュリティが危険にさらされる可能性があることを考慮してください。 AEM Forms システム管理者が Trust Store への読み取り専用アクセス権のみを含む役割を作成して、データキャプチャ機能を使用する管理者以外のユーザーに、この役割を割り当てることをお勧めします。
 
 ## データキャプチャを行うユーザーの役割を作成 {#create-a-role-for-data-capture-users}
 
@@ -42,4 +61,4 @@ AEM Forms インストール環境のユーザーが Content Services（非推�
 1. 作成したデータキャプチャユーザーの役割をクリックします。
 1. 「ユーザー／グループの役割」タブで、「ユーザーまたはグループを検索」をクリックします。
 1. ユーザーおよびグループを検索画面で「検索」をクリックし、データキャプチャユーザーの役割を必要とするユーザーを選択して、「OK」をクリックします。
-1. 役割を編集画面で、「保存」をクリックします。
+1. 「役割を編集」画面で、「保存」をクリックします。

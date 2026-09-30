@@ -5,13 +5,28 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
 exl-id: da8a1341-55a9-46bb-b78d-ced79e22e87e
-source-git-commit: 23fa46e24f25f6aa889bc209b6742773d4535cc6
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 82%
-
 ---
-
 
 # パーソナライゼーションとコンテンツのターゲティング {#personalization}
 
@@ -35,7 +50,7 @@ AEM には、ターゲットとなるコンテンツをオーサリングして�
 
 アクティビティは、ページが使用する[ターゲティングエンジン](/help/sites-authoring/personalization.md#targeting-engine)も識別します。
 
-ブランドのアクティビティを作成および管理するには、[アクティビティコンソール](/help/sites-authoring/activitylib.md)を使用します。 また、[&#x200B; ターゲットコンテンツを作成する際にアクティビティを作成することもできます。](/help/sites-authoring/content-targeting-touch.md)
+ブランドのアクティビティを作成および管理するには、[アクティビティコンソール](/help/sites-authoring/activitylib.md)を使用します。 また、[ ターゲットコンテンツを作成する際にアクティビティを作成することもできます。](/help/sites-authoring/content-targeting-touch.md)
 
 ## エクスペリエンス {#experiences}
 
@@ -53,7 +68,7 @@ AEM には、ターゲットとなるコンテンツをオーサリングして�
 
 たとえば、We.Retail サンプル Web サイトの女性向けページでは、オファーをティーザー画像として使用して、ページ上部に表示することができます。 30 歳以上の女性向けエクスペリエンスと、30 歳未満の女性向けエクスペリエンスには、それぞれ異なるオファーをティーザーとして使用します。
 
-複数のエクスペリエンスで使用できるオファーを作成するには、[オファーコンソール](/help/sites-authoring/offerlib.md)を使用します。 ターゲットコンテンツを[&#x200B; オーサリングする際に、1回限りのオファーを作成するか、オファーライブラリからオファーを追加します。](/help/sites-authoring/content-targeting-touch.md)
+複数のエクスペリエンスで使用できるオファーを作成するには、[オファーコンソール](/help/sites-authoring/offerlib.md)を使用します。 ターゲットコンテンツを[ オーサリングする際に、1回限りのオファーを作成するか、オファーライブラリからオファーを追加します。](/help/sites-authoring/content-targeting-touch.md)
 
 ## ターゲティングエンジン {#targeting-engine}
 

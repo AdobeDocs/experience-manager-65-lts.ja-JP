@@ -9,21 +9,36 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 1172f1f2-b297-4021-a9ee-507b0a4e628a
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 100%
-
 ---
-
 # 検証メッセージの設定 {#configuring-validation-messages}
 
 >[!NOTE]
 > 
 > ユーザーが管理者コンソールにアクセスする管理者権限を持っていることを確認します。
 
-HTML としてレンダリングされるフォームの場合、発生したフォーム検証エラーがユーザーに対して表示されます。 検証メッセージの表示方法をカスタマイズできます。 検証メッセージを表示する場所に応じて、フォーム内のメッセージの位置とフレーム境界線のサイズも制御できます。
+HTML としてレンダリングされるフォームの場合、発生したフォーム検証エラーがユーザーに対して表示されます。 検証メッセージの表示方法をカスタマイズできます。 検証メッセージを表示する場所に応じて、フォーム内のメッセージの位置とフレームボーダーのサイズも制御できます。
 
 ## 検証メッセージの表示方法の指定 {#specify-how-validation-messages-are-displayed}
 
@@ -62,10 +77,10 @@ HTML としてレンダリングされるフォームの場合、発生したフ
 
 ## フレーム境界線のサイズの指定 {#specify-the-frame-border-size}
 
-「レポート」を「フレーム」に設定するとき、フレーム境界線のサイズを指定できます。
+「レポート」を「フレーム」に設定している場合は、フレームボーダーのサイズを指定できます。
 
 1. 「検証結果」の「境界線のサイズ」ボックスにフレーム境界線のサイズをピクセル単位で入力します。
 
-   境界線のサイズは 0 以上である必要があります。 デフォルト値は 1 です。
+   ボーダーのサイズは 0 以上である必要があります。 デフォルト値は 1 です。
 
 1. 「保存」をクリックします。

@@ -9,13 +9,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
 exl-id: 4def21ee-d7de-45a8-a7df-062dd2d1a3ba
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '663'
 ht-degree: 100%
-
 ---
-
 # IntelliJ IDEA を使用して AEM プロジェクトを開発する方法{#how-to-develop-aem-projects-using-intellij-idea}
 
 ## 概要 {#overview}
@@ -85,7 +96,7 @@ IntelliJ IDEA を使用して JSP をデバッグするには、次の手順を�
 
 #### プロジェクトでの web ファセットの設定 {#set-up-a-web-facet-in-the-project}
 
-デバッグ用の JSP を検索する場所を IntelliJ IDEA で認識する必要があります。IDEA では `content-package-maven-plugin` 設定を解釈できないので、これを手動で設定する必要があります。
+デバッグ用の JSP を検索する場所を IntelliJ IDEA で認識する必要があります。 IDEA では `content-package-maven-plugin` 設定を解釈できないので、これを手動で設定する必要があります。
 
 1. **ファイル／プロジェクト構造**&#x200B;に移動します。
 1. 「**コンテンツ**」モジュールを選択します。
@@ -150,4 +161,4 @@ CQ_JVM_OPTS="$CQ_JVM_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,su
 
 ### IntelliJ IDEA によるバンドルのデバッグ {#debugging-bundles-with-intellij-idea}
 
-標準の汎用リモートデバッグ接続を使用して、バンドル内のコードをデバッグできます。[リモートデバッグに関する Jetbrain のドキュメント](https://www.jetbrains.com/help/idea/remote-debugging-with-product.html#remote-interpreter)の手順に従ってください。
+標準の汎用リモートデバッグ接続を使用して、バンドル内のコードをデバッグできます。 [リモートデバッグに関する Jetbrain のドキュメント](https://www.jetbrains.com/help/idea/remote-debugging-with-product.html#remote-interpreter)の手順に従ってください。

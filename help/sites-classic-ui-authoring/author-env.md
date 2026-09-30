@@ -9,18 +9,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2f63b2af-144a-4ee8-aaf8-243c0ca2eeea
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '256'
 ht-degree: 100%
-
 ---
-
-# オーサー環境の操作 {#working-with-the-author-environment}
+# オーサー環境の操作{#working-with-the-author-environment}
 
 >[!NOTE]
 >
->以下のドキュメントでは、クラシック UI に焦点を当てています。最新のタッチ操作対応 UI でのオーサリングについて詳しくは、[標準オーサリングのドキュメント](/help/assets/assets.md)を参照してください。
+>以下のドキュメントでは、クラシック UI に焦点を当てています。 最新のタッチ操作対応 UI でのオーサリングについて詳しくは、[標準オーサリングのドキュメント](/help/assets/assets.md)を参照してください。
 
 オーサー環境では、以下に関連するタスクを実行できます。
 
@@ -36,7 +45,7 @@ ht-degree: 100%
    * 緑色を基調としています。
    * デスクトップデバイス向けに設計されたものです。
    * メンテナンスはもう行われていません。
-   * 以下のドキュメントでは、このクラシック UI に焦点を当てています。最新のタッチベースの UI でのオーサリングについて詳しくは、[標準オーサリングのドキュメント](/help/sites-authoring/author.md)を参照してください。
+   * 以下のドキュメントでは、このクラシック UI に焦点を当てています。 最新のタッチベースの UI でのオーサリングについて詳しくは、[標準オーサリングのドキュメント](/help/sites-authoring/author.md)を参照してください。
 
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
@@ -44,8 +53,8 @@ ht-degree: 100%
 
    * これは最新の標準 AEM UI です。
    * グレーが基調の、クリーンでフラットなインターフェースを備えています。
-   * タッチデバイスとデスクトップデバイスの両方で使用できるようにデザインされています（タッチ操作向けに最適化されています）。ルックアンドフィールはすべてのデバイスで同じですが、[リソースの表示と選択](/help/sites-authoring/basic-handling.md)の操作がやや異なります（タップとクリックの違い）。
-   * タッチベースの UI を使用したオーサリング方法について詳しくは、[標準オーサリングのドキュメント](/help/sites-authoring/author.md)を参照してください。以下のドキュメントでは、クラシック UI に焦点を当てています。
+   * タッチデバイスとデスクトップデバイスの両方で使用できるようにデザインされています（タッチ操作向けに最適化されています）。 ルックアンドフィールはすべてのデバイスで同じですが、[リソースの表示と選択](/help/sites-authoring/basic-handling.md)の操作がやや異なります（タップとクリックの違い）。
+   * タッチベースの UI を使用したオーサリング方法について詳しくは、[標準オーサリングのドキュメント](/help/sites-authoring/author.md)を参照してください。 以下のドキュメントでは、クラシック UI に焦点を当てています。
 
    * デスクトップ：
 

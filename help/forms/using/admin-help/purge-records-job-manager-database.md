@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: a5e6b09a-c4c7-41c0-8221-d563cb74b3b7
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 100%
-
 ---
-
 # ジョブマネージャーのデータベースからの古いレコードの削除 {#purge-records-from-the-job-manager-database}
 
 >[!NOTE]
@@ -30,9 +45,9 @@ ht-degree: 100%
 **「ジョブクリアスケジューラー」ページへのアクセス**
 
 1. 管理コンソールで、ページの右上隅にある「ヘルスモニター」をクリックします。
-1. 「ジョブクリアスケジューラー」タブをクリックします。
+1. 「ジョブ削除スケジューラー」タブをクリックします。
 
-現在スケジュールされているレコード削除についての情報が、「ジョブクリアスケジューラー情報」ボックスに表示されます。
+現在スケジュールされているレコード削除についての情報が、「ジョブ削除スケジューラー情報」ボックスに表示されます。
 
 >[!NOTE]
 >
@@ -41,7 +56,7 @@ ht-degree: 100%
 **1 回の削除のスケジュール設定**
 
 1. 「1 回のみ」を選択します。
-1. 「完了したレコードのクリアフィルター」領域で、一定期間後にレコードを古いものと見なして削除対象とする際の、その期間を表す日数または週数を指定します。
+1. 「完了したレコードの削除フィルター」領域で、一定期間後にレコードを古いものと見なして削除対象とする際の、その期間を表す日数または週数を指定します。
 
    >[!NOTE]
    >
@@ -64,7 +79,7 @@ ht-degree: 100%
    >
    >完了していないプロセスに関連するレコードは、指定された期間より古いものであっても削除されません。
 
-1. 削除を実行する日時を指定します。 「現在の日時を使用」チェックボックスをオンにするか、またはこのチェックボックスをオフにし、カレンダーおよび時計のアイコンをクリックして削除が実行される日時を指定します。
+1. 削除をいつ開始するかを指定します。 「現在の日時を使用」チェックボックスをオンにするか、またはこのチェックボックスをオフにし、カレンダーおよび時計のアイコンをクリックして削除が実行される日時を指定します。
 
    >[!NOTE]
    >

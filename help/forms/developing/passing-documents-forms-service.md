@@ -10,14 +10,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 78d72100-b67b-48ac-9479-706fdccbd3cd
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1689'
 ht-degree: 100%
-
 ---
-
 # Forms サービスにドキュメントを渡す {#passing-documents-to-the-formsservice}
 
 **このドキュメントのサンプルと例は、JEE 環境の AEM Forms のみを対象としています。**
@@ -48,7 +65,7 @@ AEM Forms サービスは、ユーザーから情報を収集するために、�
 
 **Forms と Document Management Client API オブジェクトの作成**
 
-プログラムで Forms Service API 操作を実行する前に、Forms Client API オブジェクトを作成します。 また、このワークフローはコンテンツサービス（非推奨）から XDP ファイルを取得するため、Document Management API オブジェクトを作成します。
+プログラムで Forms サービス API 操作を実行する前に、Forms Client API オブジェクトを作成します。 また、このワークフローはコンテンツサービス（非推奨）から XDP ファイルを取得するため、Document Management API オブジェクトを作成します。
 
 **コンテンツサービス（非推奨）からフォームデザインを取得する**
 
@@ -68,7 +85,7 @@ Java または web サービス API を使用して、コンテンツサービ�
 
 **関連トピック**
 
-[AEM Forms Java ライブラリファイルを含める](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[AEM Forms Java ライブラリファイルの追加](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [接続プロパティの設定](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -128,7 +145,7 @@ Forms サービスとコンテンツサービス（非推奨）API (Java) を使
 
 [接続プロパティの設定](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Web サービス API を使用してドキュメントを Forms サービスに渡す {#pass-documents-to-the-forms-service-using-the-web-service-api}
+## Web サービス API を使用した Forms サービスへのドキュメントの受け渡し {#pass-documents-to-the-forms-service-using-the-web-service-api}
 
 Forms サービスおよびコンテンツサービス（非推奨） API（web サービス）を使用してコンテンツサービス（非推奨）から取得したドキュメントを渡すには、以下の手順を実行します。
 
@@ -138,7 +155,7 @@ Forms サービスおよびコンテンツサービス（非推奨） API（web 
 
    Document Management サービスに関連付けられたサービス参照には、WSDL 定義 `http://localhost:8080/soap/services/DocumentManagementService?WSDL&lc_version=9.0.1` を使用します。
 
-   `BLOB` データタイプは、両方のサービス参照に共通であるため、`BLOB` データタイプを使用する場合は完全に修飾してください。 対応する web サービスのクイックスタートで、すべての `BLOB` インスタンスは完全に修飾されています。
+   `BLOB` データタイプは、両方のサービス参照に共通であるため、`BLOB` データタイプを使用する場合は完全に修飾してください。 対応する web サービスのクイックスタートで、`BLOB` インスタンスは完全に修飾されています。
 
    >[!NOTE]
    >
@@ -146,17 +163,17 @@ Forms サービスおよびコンテンツサービス（非推奨） API（web 
 
 1. Forms と Document Management Client API オブジェクトの作成
 
-   * デフォルトのコンストラクターを使用して `FormsServiceClient` オブジェクトを作成します。
+   * デフォルトのコンストラクタを使用して `FormsServiceClient` オブジェクトを作成します。
    * `System.ServiceModel.EndpointAddress` コンストラクタを使用して `FormsServiceClient.Endpoint.Address` オブジェクトを作成します。 WSDL を指定する文字列値を AEM Forms サービスに渡します（例：`http://localhost:8080/soap/services/FormsService?WSDL`）。 `lc_version` 属性を使用する必要はありません。 この属性は、サービス参照を作成する際に使用されます。
    * `FormsServiceClient.Endpoint.Binding` フィールドの値を取得して `System.ServiceModel.BasicHttpBinding` オブジェクトを作成します。 戻り値を `BasicHttpBinding` にキャストします。
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `FormsServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `FormsServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * `FormsServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `FormsServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
 
-   * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
+   * フィールド `BasicHttpBindingSecurity.Security.Mode` に定数値 `BasicHttpSecurityMode.TransportCredentialOnly` を割り当てます。
 
    >[!NOTE]
    >

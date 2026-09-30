@@ -10,18 +10,30 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: 7f952e69-f219-4ade-a187-2a4cbc1600f3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 100%
-
+source-wordcount: '777'
+ht-degree: 97%
 ---
-
 # 権限管理のプリンシパルビュー{#principal-view-for-permissions-management}
 
 ## 概要 {#overview}
 
-AEM 6.5 では、ユーザーとグループに対する権限管理が導入されました。主な機能は従来の UI と同じですが、よりユーザーフレンドリーで効率的です。
+AEM 6.5 では、ユーザーとグループに対する権限管理が導入されました。 主な機能は従来の UI と同じですが、よりユーザーフレンドリーで効率的です。
 
 ## 使用方法 {#how-to-use}
 
@@ -31,9 +43,9 @@ AEM 6.5 では、ユーザーとグループに対する権限管理が導入さ
 
 ![権限管理 UI](assets/screen_shot_2019-03-17at63333pm.png)
 
-新しいビューでは、権限が明示的に付与されているすべてのパスで、特定のプリンシパルに対する特権と制限のセット全体を簡単に確認できます。高度な特権と制限を管理するのに
+新しいビューでは、権限が明示的に付与されているすべてのパスで、特定のプリンシパルに対する特権と制限のセット全体を簡単に確認できます。 これにより、次に移動する必要がなくなります
 
-CRXDE に移動する必要がなくなります。同じビューに統合されました。デフォルトでは、グループ「everyone」が表示されます。
+CRXDE に移動する必要がなくなります。 同じビューに統合されました。 デフォルトでは、グループ「everyone」が表示されます。
 
 ![「everyone」グループの表示](assets/unu-1.png)
 
@@ -47,13 +59,13 @@ CRXDE に移動する必要がなくなります。同じビューに統合さ�
 
 ![プリンシパルの権限の表示](assets/doi-1.png)
 
-名前をクリックすると、割り当てられた権限が右側に表示されます。権限ウィンドウに、特定のパス上のアクセス制御エントリと、設定された制限の一覧が表示されます。
+名前をクリックすると、割り当てられた権限が右側に表示されます。 権限ウィンドウに、特定のパス上のアクセス制御エントリと、設定された制限の一覧が表示されます。
 
 ![ACL リストを表示](assets/trei-1.png)
 
 ### プリンシパルに対する新しいアクセス制御エントリの追加 {#adding-new-access-control-entry-for-a-principal}
 
-新しい権限は、アクセス制御エントリを追加することで追加できます。「ACE を追加」ボタンをクリックします。
+新しい権限は、アクセス制御エントリを追加することで追加できます。 「ACE を追加」ボタンをクリックします。
 
 ![プリンシパルに新しい ACL を追加](assets/patru.png)
 
@@ -73,7 +85,7 @@ CRXDE に移動する必要がなくなります。同じビューに統合さ�
 >
 >権限と説明の詳細なリストについては、[ユーザー、グループおよびアクセス権限の管理](/help/sites-administering/user-group-ac-admin.md#access-right-management)を参照してください。
 
-![特定のパスの権限の検索](assets/image2019-3-21_0-5-47.png) ![選択したパスの表示に従い、「dam-users」の新しいエントリを垂直列に追加します。](assets/image2019-3-21_0-6-53.png)
+![特定のパスの検索権限。](assets/image2019-3-21_0-5-47.png) ![縦列で選択されたパスに示すように、「dam-users」の新しいエントリを追加します。](assets/image2019-3-21_0-6-53.png)
 
 権限のリストが選択された後、以下に示すように、「拒否」または「許可」からアクセス権の種類を選択できます。
 
@@ -93,7 +105,7 @@ CRXDE に移動する必要がなくなります。同じビューに統合さ�
 
 ![制限タイプを追加](assets/sapte-1.png) ![制限タイプを追加](assets/opt-1.png)
 
-次のように、新しい ACE がアクセス制御リストに反映されます。`jcr:write` は、上で追加された `jcr:removeNode` を含む集計権限ですが、`jcr:write` でカバーされているので、下に表示されません。
+次のように、新しい ACE がアクセス制御リストに反映されます。 `jcr:write` は、上で追加された `jcr:removeNode` を含む集計権限ですが、`jcr:write` でカバーされているので、下に表示されません。
 
 ### ACE の編集 {#editing-aces}
 
@@ -117,7 +129,7 @@ CRXDE に移動する必要がなくなります。同じビューに統合さ�
 
 ### ACE の削除 {#deleting-aces}
 
-アクセス制御エントリを削除して、特定のパス上のプリンシパルに与えられているすべての権限を削除できます。次に示すように、ACE の横にある X アイコンを使用して ACE を削除できます。
+アクセス制御エントリを削除して、特定のパス上のプリンシパルに与えられているすべての権限を削除できます。 次に示すように、ACE の横にある X アイコンを使用して ACE を削除できます。
 
 ![ACE を削除](assets/image2019-3-21_0-53-19.png) ![ACE を削除](assets/unspe.png)
 
@@ -125,7 +137,7 @@ CRXDE に移動する必要がなくなります。同じビューに統合さ�
 
 新しい権限 UI では、付与された基本的な権限が正確に反映されていない事前定義の組み合わせの代わりに、基本的な権限のセットが明示的に使用されます。
 
-その結果、設定内容に関して混乱が生じました。次の表に、クラシック UI の権限の組み合わせと、それらを構成する実際の権限とのマッピングを示します。
+その結果、設定内容に関して混乱が生じました。 次の表に、クラシック UI の権限の組み合わせと、それらを構成する実際の権限とのマッピングを示します。
 
 <table>
  <tbody>

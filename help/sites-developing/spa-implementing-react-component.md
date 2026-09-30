@@ -11,40 +11,54 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: f4a15b51-fbb9-454f-809d-b15ed8cbdd0c
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '548'
 ht-degree: 100%
-
 ---
 
+# SPA への React コンポーネントの実装{#implementing-a-react-component-for-spa}
 
-# SPA への React コンポーネントの実装 {#implementing-a-react-component-for-spa}
+単一ページアプリケーション（SPA）により、web サイトのユーザーに魅力的なエクスペリエンスを提供することができます。 開発者は SPA フレームワークを使用してサイトを構築したいと考え、作成者はそうして構築されたサイトのコンテンツを Adobe Experience Manager（AEM）内でシームレスに編集したいと考えています。
 
-単一ページアプリケーション（SPA）により、web サイトのユーザーに魅力的なエクスペリエンスを提供することができます。開発者は SPA フレームワークを使用してサイトを構築したいと考え、作成者はそうして構築されたサイトのコンテンツを Adobe Experience Manager（AEM）内でシームレスに編集したいと考えています。
-
-SPA オーサリング機能には、AEM 内で SPA をサポートするための包括的なソリューションが用意されています。この記事では、AEM SPA Editor で動作するように既存のシンプルな React コンポーネントを適応させる方法の例を示します。
+SPA オーサリング機能には、AEM 内で SPA をサポートするための包括的なソリューションが用意されています。 この記事では、AEM SPA Editor で動作するように既存のシンプルな React コンポーネントを適応させる方法の例を示します。
 
 {{ue-over-spa}}
 
 ## はじめに {#introduction}
 
-AEM によって要求され、AEM と SPA Editor の間で確立されたシンプルで軽量な契約により、既存の JavaScript アプリケーションを使用して AEM で SPA と共に使用するよう手順は非常に簡単です。
+AEM によって要求され、SPA と SPA Editor の間で確立されたシンプルで軽量な契約により、既存の JavaScript アプリケーションを AEM の SPA で使用できるように適応させるのは簡単です。
 
 本記事では、We.Retail Journal のサンプル SPA に天気予報のコンポーネントを搭載した例を紹介します。
 
 この記事を読む前に、[AEM の SPA アプリケーション](/help/sites-developing/spa-getting-started-react.md)の構造について知っておく必要があります。
 
 >[!CAUTION]
->このドキュメントでは、[We.Retail Journal アプリ](https://github.com/adobe/aem-sample-we-retail-journal)をデモ目的でのみ使用します。どのプロジェクト作業にも使用しないでください。
+>このドキュメントでは、[We.Retail Journal アプリ](https://github.com/adobe/aem-sample-we-retail-journal)をデモ目的でのみ使用します。 どのプロジェクトの作業にも使用しないでください。
 >
 >AEM プロジェクトでは、[AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)を活用します。このアーキタイプは、React または Angular を使用する SPA プロジェクトをサポートし、SPA SDK を活用します。
 
 ## 天気予報コンポーネント {#the-weather-component}
 
-天気予報コンポーネントは、We.Retail ジャーナルアプリケーションの左上にあります。気象データを動的に取得し、定義された場所の現在の天気を表示します。
+天気予報コンポーネントは、We.Retail ジャーナルアプリケーションの左上にあります。 気象データを動的に取得し、定義された場所の現在の天気を表示します。
 
-### Weather Widget の使用 {#using-the-weather-widget}
+### 天気ウィジェットの使用 {#using-the-weather-widget}
 
 ![screen_shot_2018-06-08at143224](assets/screen_shot_2018-06-08at143224.png)
 
@@ -52,7 +66,7 @@ SPA エディターで SPA のコンテンツをオーサリングする際、�
 
 ![screen_shot_2018-06-08at143304](assets/screen_shot_2018-06-08at143304.png)
 
-市区町村は、他の AEM コンポーネントと同様に、ダイアログで更新できます。
+都市は、他の AEM コンポーネントと同様に、ダイアログで更新できます。
 
 ![screen_shot_2018-06-08at143446](assets/screen_shot_2018-06-08at143446.png)
 
@@ -62,7 +76,7 @@ SPA エディターで SPA のコンテンツをオーサリングする際、�
 
 ### 天気予報コンポーネントの実装 {#weather-component-implementation}
 
-天気コンポーネントは、[React Open Weather](https://www.npmjs.com/package/react-open-weather) と呼ばれる、公開されている React コンポーネントに基づいています。これは、We.Retail ジャーナルサンプル SPA アプリケーション内でコンポーネントとして機能するように適応されています。
+天気コンポーネントは、[React Open Weather](https://www.npmjs.com/package/react-open-weather) と呼ばれる、公開されている React コンポーネントに基づいています。 これは、We.Retail ジャーナルサンプル SPA アプリケーション内でコンポーネントとして機能するように適応されています。
 
 React Open Weather コンポーネントの使用に関する NPM ドキュメントのスニペットを以下に示します。
 

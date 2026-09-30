@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 5cbb626c-fcd8-4936-acf8-95bac80d06b6
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '748'
 ht-degree: 100%
-
 ---
-
 # Connector for IBM FileNet の設定 {#configuring-connector-for-ibm-filenet}
 
 >[!NOTE]
@@ -27,7 +42,7 @@ Connector for IBM FileNet は、AEM Forms と IBM FileNet 間の通信を実現�
 
 >[!NOTE]
 >
->以前のリリースでは、ECM リポジトリにアセットを格納できていました。 このリリースでは、アセットが AEM Forms ネイティブリポジトリに格納され、Repository Provider サービスは推奨されなくなりました。 ECM リポジトリから AEM Forms リポジトリへのアセットの移行は、AEM Forms への更新を実行する際に行われます。 詳しくは、使用しているアプリケーションサーバー版の AEM Forms アップグレードガイドを参照してください。
+>以前のリリースでは、ECM リポジトリにアセットを格納できていました。 このリリースでは、アセットが AEM Forms ネイティブリポジトリに格納され、リポジトリプロバイダサービスは非推奨になりました。 ECM リポジトリから AEM Forms リポジトリへのアセットの移行は、AEM Forms への更新を実行する際に行われます。 詳しくは、使用しているアプリケーションサーバー版の AEM Forms アップグレードガイドを参照してください。
 
 ## Content Engine への接続の設定 {#configure-the-connection-to-the-content-engine}
 
@@ -40,7 +55,7 @@ IBM FileNet P8 Content Engine では、FileNet コンテンツリポジトリで
 
    `cemp:https://ContentEngineHostNameorIP:port/wsi/FNCEWS40DIME?jaasConfigurationName=FileNetP8WSI`
 
-   EJB トランスポートで FileNet Content Engine 4.x を使用している場合は、次のように入力します。EJB トランスポートは WebLogic でのみサポートされています。
+   WebLogic でのみサポートされる EJB トランスポートで FileNet Content Engine 4.x を使用している場合は、次のように入力します。
 
    `cemp:t3://ContentEngineHostNameorIP:port/FileNet/Engine?jaasConfigurationName=FileNetP8Engine`
 
@@ -51,7 +66,7 @@ IBM FileNet P8 Content Engine では、FileNet コンテンツリポジトリで
 
 1. 「暗号化ファイルの場所」ボックスに、暗号化ファイルへのパスを入力します。
 
-   * 秘密鍵証明書の保護スキームとして「消去」を選択した場合、このキーワードとその値は無視されます。
+   * 資格情報保護スキームとして「Clear」を選択した場合、このキーワードとその値は無視されます。
    * 秘密鍵証明書の保護スキームとして「暗号化」を選択した場合、入力したパスは、使用される暗号キーを含む Forms サーバー上の暗号化ファイルの場所を指します。
 
 1. 「初期設定のオブジェクトストア」ボックスに、AEM Forms がデフォルトで接続するオブジェクトストアコネクタを入力します。
@@ -64,7 +79,7 @@ Connector for IBM FileNet には、IBM FileNet Process Engine とのやり取り
 
 1. 管理コンソールで、サービス／Connector for IBM FileNet をクリックします。
 1. Process Engine Connector for IBM FileNet サービスを使用できるようにするには、「プロセスエンジンコネクタサービスを使用」を選択します。
-1. 「プロセスルーター／接続ポイント」ボックスに、ホスト名または IP アドレス、ポート番号、プロセスルーター名を入力します。 次に例を示します。
+1. 「プロセスルーター／接続ポイント」ボックスに、ホスト名または IP アドレスとポート番号に続けて、プロセスルーター名を入力します。 次に例を示します。
 
    `rmi://ProcessEngineHostNameorIP:port/Name`
 
@@ -75,8 +90,8 @@ Connector for IBM FileNet には、IBM FileNet Process Engine とのやり取り
 
 Content Engine への接続またはプロセスエンジン設定を指定する場合に誤ったユーザー名やパスワードを入力すると、そのサービスが実行中かどうかに応じて、次の結果になります。
 
-* サービス設定情報を保存したときに IBM FileNet 用の Repository Provider サービスと Content Repository Connector for IBM FileNet サービスの両方が停止している場合、エラーは表示されません。 ただし、次回サービスを起動すると、例外が発生し、サービスは開始しません。
-* サービス設定情報を保存したときに IBM FileNet 用の Repository Provider サービスまたは Content Repository Connector for IBM FileNet サービスのいずれかが起動している場合、サービスは資格情報をすぐに確認しようとします。 この場合はエラーが発生し、設定情報は保存されません。
+* サービス設定情報を保存したときに IBM FileNet 用の リポジトリプロバイダ サービスと Content Repository Connector for IBM FileNet サービスの両方が停止している場合、エラーは表示されません。 ただし、次回サービスを起動すると、例外が発生し、サービスは開始しません。
+* サービス設定情報を保存したときに IBM FileNet 用の リポジトリプロバイダ サービスまたは Content Repository Connector for IBM FileNet サービスのいずれかが起動している場合、サービスは資格情報をすぐに確認しようとします。 この場合はエラーが発生し、設定情報は保存されません。
 
 ## リポジトリサービスプロバイダーの変更 {#change-the-repository-service-provider}
 
@@ -88,11 +103,11 @@ FileNet と共に使用するリポジトリサービスプロバイダーを設
 
 **IBM FileNet リポジトリプロバイダー：** FileNet リポジトリプロバイダーをリポジトリのプロバイダーにします。 このオプションは非推奨です。
 
-**リポジトリプロバイダー**：ネイティブのリポジトリプロバイダーをリポジトリのプロバイダーにします
+**リポジトリプロバイダー：**&#x200B;ネイティブのリポジトリプロバイダーをリポジトリのプロバイダーにします。
 
 >[!NOTE]
 >
 >リストに表示された以外のリポジトリサービスプロバイダーを選択するには、アプリケーションおよびサービスで「RepositoryService」を設定します<!-- Fix broken link(See Managing Services) -->
 
 1. 管理コンソールで、サービス／Connector for IBM FileNet をクリックします。
-1. 「リポジトリサービスプロバイダー」エリアで、代替リポジトリサービスプロバイダーを選択し、「保存」をクリックします。
+1. 「リポジトリサービスプロバイダー情報」エリアで、代替リポジトリサービスプロバイダーを選択し、「保存」をクリックします。

@@ -10,13 +10,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c8bab030-053f-47d1-94f7-b7ff08bfaab0
-source-git-commit: 0fc8e7c27cbb9e24edea6d6a9f1f6e7051742b91
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '5865'
 ht-degree: 95%
-
 ---
-
 # Adobe Experience Manager インスタンスのモニタリングと保守{#monitoring-and-maintaining-your-aem-instance}
 
 AEM インスタンスがデプロイされた後は、操作、パフォーマンス、統合性を監視および保守する必要があります。
@@ -25,7 +34,7 @@ AEM インスタンスがデプロイされた後は、操作、パフォーマ�
 
 >[!NOTE]
 >
->このページのガイダンスは、セルフマネージド（オンプレミス）デプロイメントに適用されます。 Adobe Managed Services上でAEMを実行する場合、アプリケーションとインフラストラクチャのテレメトリが収集され、Observability Insightsを通じて利用できるようになります。これにより、実稼動環境と非実稼動環境のホストビューが提供されます。 詳細については、[&#x200B; オブザーバビリティ インサイト &#x200B;](https://experienceleague.adobe.com/ja/docs/ams-observability-insights/content/overview)を参照してください。
+>このページのガイダンスは、セルフマネージド（オンプレミス）デプロイメントに適用されます。 Adobe Managed Services上でAEMを実行する場合、アプリケーションとインフラストラクチャのテレメトリが収集され、Observability Insightsを通じて利用できるようになります。これにより、実稼動環境と非実稼動環境のホストビューが提供されます。 詳細については、[ オブザーバビリティ インサイト ](https://experienceleague.adobe.com/en/docs/ams-observability-insights/content/overview)を参照してください。
 
 | チェック項目 | 検討事項 | コメント／アクション |
 |---|---|---|
@@ -228,13 +237,13 @@ AEM をインストールしたファイルサーバーには、次のような�
   * `error.log`
     エラーメッセージ（様々な深刻度レベル）はここに登録されます。
 
-  * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log` &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=ja)
+  * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log` ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=ja)
     このログは、[!DNL Dynamic Media] が有効になっている場合にのみ使用されます。 内部の ImageServer プロセスの動作を分析するための統計情報と分析情報を提供します。
 
   * `request.log`
     各アクセス要求が、応答と共にここに登録されます。
 
-  * [`s7access-<yyyy>-<mm>-<dd>.log` &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=ja)
+  * [`s7access-<yyyy>-<mm>-<dd>.log` ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=ja)
     このログは、[!DNL Dynamic Media] が有効になっている場合にのみ使用されます。 s7access ログには、`/is/image` および `/is/content` 経由で [!DNL Dynamic Media] に対して実行された各リクエストが記録されます。
 
   * `stderr.log`

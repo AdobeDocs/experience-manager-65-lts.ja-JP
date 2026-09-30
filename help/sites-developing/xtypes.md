@@ -9,20 +9,29 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 4a78de53-33bf-4999-ba3c-7d0bc33196a4
-source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '6205'
 ht-degree: 73%
-
 ---
-
 # xtypeの使用（クラシック UI）{#using-xtypes-classic-ui}
 
 このページでは、Adobe Experience Manager（AEM）で利用できるすべての xtype について説明します。
 
 ExtJS 言語では、xtype はクラスに付与されるシンボル名です。 xtype とその使用方法について詳しくは、[ExtJS 2 の概要](https://docs.sencha.com/)の「Component XTypes」の段落を参照してください。
 
-AEMで使用可能なすべてのウィジェットについて詳しくは、[widget API ドキュメント &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)を参照してください。
+AEMで使用可能なすべてのウィジェットについて詳しくは、[widget API ドキュメント ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)を参照してください。
 
 特定のxtypeがAEMで使用されているコンポーネントを調べるには、CRXDEで次の`Xpath` クエリを使用できます。 「checkbox」を興味のあるxtypeに置き換えるだけです：
 
@@ -94,7 +103,7 @@ Adobe Experience Manager で使用可能な xtype を以下に示します。
 
   [CQ.form.BrowseField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  **非推奨：代わりに [CQ.form.PathField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を使用してください。**
+  **非推奨：代わりに [CQ.form.PathField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を使用**
 
 * `bulkeditor`
 
@@ -308,7 +317,7 @@ Adobe Experience Manager で使用可能な xtype を以下に示します。
 
   [CQ.Ext.data.DirectStore](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  [CQ.Ext.data.DirectProxy](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)と[CQ.Ext.data.JsonReader](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)で構成された[CQ.Ext.data.Store](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)を作成するための小さなヘルパークラスは、[CQ.Ext.Direct](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) サーバーサイド [&#x200B; プロバイダー](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)との対話を容易にします。
+  [CQ.Ext.data.DirectProxy](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)と[CQ.Ext.data.JsonReader](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)で構成された[CQ.Ext.data.Store](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)を作成するための小さなヘルパークラスは、[CQ.Ext.Direct](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) サーバーサイド [ プロバイダー](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)との対話を容易にします。
 
 * `displayfield`
 
@@ -512,7 +521,7 @@ Adobe Experience Manager で使用可能な xtype を以下に示します。
 
   メニューオブジェクト。 メニュー項目を追加できるコンテナ。 メニューは、別のコンポーネント（[CQ.Ext.menu.DateMenu](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)など）に基づく専用メニューを必要とする場合にも、基本クラスとして機能します。
 
-  メニューには、[&#x200B; メニュー項目](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)または一般[&#x200B; コンポーネント &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)のいずれかを含めることができます。
+  メニューには、[ メニュー項目](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)または一般[ コンポーネント ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)のいずれかを含めることができます。
 
 * `menubaseitem`
 
@@ -618,7 +627,7 @@ Adobe Experience Manager で使用可能な xtype を以下に示します。
 
   [CQ.form.PathCompletion](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  **非推奨：代わりに [CQ.form.PathField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を使用してください。**
+  **非推奨：代わりに [CQ.form.PathField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を使用**
 
 * `pathfield`
 

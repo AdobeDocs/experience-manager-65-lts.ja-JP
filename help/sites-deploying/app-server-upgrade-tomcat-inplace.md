@@ -5,7 +5,18 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: a9f7494e-4a09-4999-9164-c369e0989886
-source-git-commit: 60809c26ba9591bf9e30a19e25d71ceb449a162e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 9%
@@ -18,7 +29,7 @@ ht-degree: 9%
 
 ## アップグレード前の手順 {#pre-upgrade-steps}
 
-アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。 詳しくは、[&#x200B; アップグレード前のメンテナンスタスク &#x200B;](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。 さらに、お使いのシステムがAEM 6.5 LTS Servicepack[&#128279;](/help/sites-deploying/technical-requirements.md)の要件を満たしていることを確認し、[&#x200B; アップグレード計画に関する考慮事項](/help/sites-deploying/upgrade-planning.md)を参照してください。
+アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。 詳しくは、[ アップグレード前のメンテナンスタスク ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。 さらに、お使いのシステムがAEM 6.5 LTS Servicepack](/help/sites-deploying/technical-requirements.md)の[要件を満たしていることを確認し、[ アップグレード計画に関する考慮事項](/help/sites-deploying/upgrade-planning.md)を参照してください。
 
 
 ### 移行の前提条件 {#migration-prerequisites}
@@ -32,7 +43,7 @@ ht-degree: 9%
 
 1. AEM 6.5 LTSが既にデプロイされている場合は、バンドルが正しく機能していることを確認します。*`https://<serveraddress:port>/system/console/bundles`*
 1. 次に、AEM 6.5 LTSを停止します。 これは、次の場所にあるTomcat App Managerから実行できます：*`https://<serveraddress:port>/manager/html`*
-1. アップグレード アクティビティを実行する前に、AEM 6.5 LTS サーバーのバックアップなどの[&#x200B; アップグレード前](#pre-upgrade-steps) アクティビティが完了していることを確認してください
+1. アップグレード アクティビティを実行する前に、AEM 6.5 LTS サーバーのバックアップなどの[ アップグレード前](#pre-upgrade-steps) アクティビティが完了していることを確認してください
 1. AEM 6.5 LTS Tomcat サーバーを停止します。 ほとんどの場合、ターミナルから次のコマンドを実行して、`./catalina.sh` スクリプトを実行することで、これを行うことができます。
 
    ```
@@ -85,4 +96,4 @@ ht-degree: 9%
 
 ## アップグレード後のチェックとトラブルシューティングの実行 {#perform-post-upgrade-checks-and-troubleshooting}
 
-詳しくは、[&#x200B; アップグレード後の確認とトラブルシューティング &#x200B;](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)を参照してください。
+詳しくは、[ アップグレード後の確認とトラブルシューティング ](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)を参照してください。

@@ -5,13 +5,28 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Developer
 exl-id: 2680e967-ec04-4ae6-b379-f1f0e7c6606b
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 100%
-
 ---
-
 # ワークフローへの参加{#participating-in-workflows}
 
 ワークフローには通常、ページまたはアセットでユーザーがアクティビティを実行する必要があるステップが含まれています。 ワークフローでアクティビティを実行するユーザーまたはグループを選択し、その人物やグループに作業項目を割り当てます。 ユーザーは通知を受け取ると、次のような適切なアクションを実行できます。
@@ -37,12 +52,12 @@ ht-degree: 100%
 
 * ページエディターを使用している場合、ステータスバーには次の情報が表示されます。
 
-   * アクティベーションのリクエストなど、ページに適用されるワークフローの名前。
-   * 完了、委任、詳細表示など、ワークフローの現在のステップで現在のユーザーが使用できる何らかのアクション。
-   * ページに関与するワークフローの数。 以下の操作を実行できます。
+  * アクティベーションのリクエストなど、ページに適用されるワークフローの名前。
+  * 完了、委任、詳細表示など、ワークフローの現在のステップで現在のユーザーが使用できる何らかのアクション。
+  * ページに関与するワークフローの数。 以下の操作を実行できます。
 
-      * 左／右の矢印を使用して、様々なワークフローのステータス情報を参照します。
-      * 実際の数字をクリックして、該当するすべてのワークフローのドロップダウンリストを開き、ステータスバーに表示するワークフローを選択します。
+    * 左／右の矢印を使用して、様々なワークフローのステータス情報を参照します。
+    * 実際の数字をクリックして、該当するすべてのワークフローのドロップダウンリストを開き、ステータスバーに表示するワークフローを選択します。
 
   ![wf-59](assets/wf-59.png)
 

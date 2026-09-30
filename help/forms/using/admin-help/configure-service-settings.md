@@ -9,14 +9,31 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: a2586a1e-0e7f-4ea4-87ec-fbd82df3ec4c
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 36ac8e9c-5c7a-56d8-af5e-39399fd7b101
+    internal-label: Workbench
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '10923'
 ht-degree: 97%
-
 ---
-
 # サービス設定の指定 {#configure-service-settings}
 
 >[!NOTE]
@@ -75,11 +92,11 @@ Barcoded Forms サービスでは、以下の設定を使用できます。
 
 Central Migration Bridge サービス（`CentralMigrationBridge`）は Adobe Central Pro Output Server（Central）機能のサブセットを呼び出します（JFMERGE、JFTRANS、XMLIMPORT コマンドなど）。 Central Migration Bridge サービス操作を使用すると、AEM Forms で次の Central アセットを再利用できます。
 
-* テンプレートデザイン（&ast;.ifd）
-* 出力テンプレート （&ast;.mdf）
-* データファイル（&ast;.dat ファイル）
-* プリアンブルファイル（&ast;.pre ファイル）
-* データ定義ファイル（&ast;.tdf）
+* テンプレートデザイン（&amp;ast;.ifd）
+* 出力テンプレート （&amp;ast;.mdf）
+* データファイル（&amp;ast;.dat ファイル）
+* プリアンブルファイル（&amp;ast;.pre ファイル）
+* データ定義ファイル（&amp;ast;.tdf）
 
 Central Migration Bridge サービスでは、以下の設定を使用できます。
 

@@ -6,13 +6,29 @@ role: User, Admin
 feature: Asset Insights,Asset Reports
 solution: Experience Manager, Experience Manager Assets
 exl-id: 12f457e4-f5d7-47cb-b38a-9d63e7c19475
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a4e1c1f5-18fc-592e-bfc7-453ce6ae0030
+    internal-label: Asset Insights
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: c29e3a96-cd2b-4e21-b382-a8279aa04553
+    internal-label: Asset reports
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 100%
-
 ---
-
 # アセットインサイトにデモパッケージを使用 {#using-demo-package-for-asset-insights}
 
 デモパッケージを使用して、アセットインサイトでサンプル web ページからデータを取得し、サンプル web ページのインサイトを生成できるようにします。
@@ -22,17 +38,17 @@ ht-degree: 100%
 1. [アセットインサイトの設定](configure-asset-insights.md)の手順を使用してアセットインサイトを設定します。
 1. 次に示すサンプル Assets パッケージをダウンロードして、CRXDE パッケージマネージャーでインストールします。
 
-[ファイルを入手](assets/insightsdemo.zip)
+   [ファイルを入手](assets/insightsdemo.zip)
 
 1. 次に示すサンプル web ページを含む ZIP ファイルをダウンロードして、ローカルファイルシステムに抽出します。
 
-[ファイルを入手](assets/demosite.zip)
+   [ファイルを入手](assets/demosite.zip)
 
 1. Web ブラウザーで開く Web ページをクリックします。
 
    >[!CAUTION]
    >
-   >Web ページは localhost のサーバーからアセットを読み込むように設定されます。サーバーが別の場所で実行している場合は、localhost のサーバーアドレスを web ページの HTML コンテンツのサーバーアドレスに変更してください。
+   >Web ページは localhost のサーバーからアセットを読み込むように設定されます。 サーバーが別の場所で実行している場合は、localhost のサーバーアドレスを web ページの HTML コンテンツのサーバーアドレスに変更してください。
 
    >[!NOTE]
    >

@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 4f98853d-306f-4d11-a3d8-83122b372b2d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 100%
-
+source-wordcount: '545'
+ht-degree: 96%
 ---
-
 # エラーハンドラーによって表示されるページのカスタマイズ{#customizing-pages-shown-by-the-error-handler}
 
 Adobe Experience Manager（AEM）には、HTTP エラーを処理するための標準的なエラーハンドラーが付属しています。例えば、次のようなメッセージが表示されます。
@@ -29,17 +38,17 @@ Adobe Experience Manager（AEM）には、HTTP エラーを処理するための
 
 >[!NOTE]
 >
->AEM は Apache Sling に基づいています。そのため、Sling エラー処理について詳しくは、[エラー処理](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html)を参照してください。
+>AEM は Apache Sling に基づいています。 そのため、Sling エラー処理について詳しくは、[エラー処理](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html)を参照してください。
 
 >[!NOTE]
 >
->オーサーインスタンスでは、[CQ WCM Debug Filter](/help/sites-deploying/osgi-configuration-settings.md) がデフォルトで有効になっています。これにより、常に応答コード 200 を返します。デフォルトのエラーハンドラーは、応答に対してフルスタックトレースを書き込むことで応答します。
+>オーサーインスタンスでは、[CQ WCM Debug Filter](/help/sites-deploying/osgi-configuration-settings.md) がデフォルトで有効になっています。 これにより、常に応答コード 200 を返します。 デフォルトのエラーハンドラーは、応答に対してフルスタックトレースを書き込むことで応答します。
 >
 >パブリッシュインスタンスでは、CQ WCM Debug Filter は、有効として設定されている場合も含めて&#x200B;*常に*&#x200B;無効になります。
 
 ## エラーハンドラーによって表示されるページのカスタマイズ方法 {#how-to-customize-pages-shown-by-the-error-handler}
 
-独自のスクリプトを作成して、エラーの発生時にエラーハンドラーで表示されるページをカスタマイズできます。カスタマイズしたページが `/apps` の下に作成され、デフォルトのページ（`/libs` の下）をオーバーレイします。
+独自のスクリプトを作成して、エラーの発生時にエラーハンドラーで表示されるページをカスタマイズできます。 カスタマイズしたページが `/apps` の下に作成され、デフォルトのページ（`/libs` の下）をオーバーレイします。
 
 >[!NOTE]
 >
@@ -69,29 +78,29 @@ Adobe Experience Manager（AEM）には、HTTP エラーを処理するための
 
 HTTP 500 エラーはサーバーサイドの例外によって発生します。
 
-* **[500 内部サーバーエラー](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**
-サーバーで予期しない状況が発生したので、要求を処理できません。
+* **[500内部サーバーエラー](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**
+サーバーで予期しない状態が発生したため、リクエストを処理できませんでした。
 
 リクエストの処理で例外が発生した場合、Apache Sling フレームワーク（AEM の基盤）は次の処理を実行します。
 
 * 例外をログに記録します
 * 以下のものを返します
 
-   * HTTP 応答コード 500
-   * 例外スタックトレース
+  * HTTP 応答コード 500
+  * 例外スタックトレース
 
   これらを応答の本文に返します。
 
-[エラーハンドラーで表示されるページをカスタマイズする](#how-to-customize-pages-shown-by-the-error-handler)ことで、`500.jsp` スクリプトを作成できます。ただし、このスクリプトが使用されるのは、`HttpServletResponse.sendError(500)` が明示的に（例外キャッチャーから）実行される場合に限ります。
+[エラーハンドラーで表示されるページをカスタマイズする](#how-to-customize-pages-shown-by-the-error-handler)ことで、`500.jsp` スクリプトを作成できます。 ただし、このスクリプトが使用されるのは、`HttpServletResponse.sendError(500)` が明示的に（例外キャッチャーから）実行される場合に限ります。
 
 それ以外の場合は、応答コードは 500 に設定されますが、`500.jsp` スクリプトは実行されません。
 
-500 エラーを処理するには、エラーハンドラースクリプトのファイル名を例外クラス（またはスーパークラス）と同じにする必要があります。このような例外をすべて処理するには、スクリプト `/apps/sling/servlet/errorhandler/Throwable.js`p または `/apps/sling/servlet/errorhandler/Exception.jsp` を作成します。
+500 エラーを処理するには、エラーハンドラースクリプトのファイル名を例外クラス（またはスーパークラス）と同じにする必要があります。 このような例外をすべて処理するには、スクリプト `/apps/sling/servlet/errorhandler/Throwable.js`p または `/apps/sling/servlet/errorhandler/Exception.jsp` を作成します。
 
 >[!CAUTION]
 >
->オーサーインスタンスでは、[CQ WCM Debug Filter](/help/sites-deploying/osgi-configuration-settings.md) はデフォルトで有効になっています。これにより、常に応答コード 200 を返します。デフォルトのエラーハンドラーは、応答に対してフルスタックトレースを書き込むことで応答します。
+>オーサーインスタンスでは、[CQ WCM Debug Filter](/help/sites-deploying/osgi-configuration-settings.md) はデフォルトで有効になっています。 これにより、常に応答コード 200 を返します。 デフォルトのエラーハンドラーは、応答に対してフルスタックトレースを書き込むことで応答します。
 >
->カスタムエラーハンドラーの場合、コード 500 を含む応答が必要です。そのため、[CQ WCM Debug Filter を無効にする必要があります](/help/sites-deploying/osgi-configuration-settings.md)。そうすることで、応答コード 500 が返され、それによって正しい Sling エラーハンドラーがトリガーされます。
+>カスタムエラーハンドラーの場合、コード 500 を含む応答が必要です。そのため、[CQ WCM Debug Filter を無効にする必要があります](/help/sites-deploying/osgi-configuration-settings.md)。 そうすることで、応答コード 500 が返され、それによって正しい Sling エラーハンドラーがトリガーされます。
 >
 >パブリッシュインスタンスでは、CQ WCM Debug Filter は、有効として設定されている場合も含めて&#x200B;*常に*&#x200B;無効になります。

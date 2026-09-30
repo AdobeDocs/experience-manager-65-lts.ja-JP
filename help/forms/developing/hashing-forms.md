@@ -5,15 +5,32 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 3fa1b6c9-fe73-4d76-aa72-20ce3e502941
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1234'
 ht-degree: 98%
-
 ---
-
-# 動的 PDF Forms でのハッシュの生成と操作 {#generate-work-with-hashes-dynamic-pdf-forms}
+# 動的 PDF forms でのハッシュの生成と操作 {#generate-work-with-hashes-dynamic-pdf-forms}
 
 ## 必要な知識 {#prerequisite-knowledge}
 
@@ -33,13 +50,13 @@ JEE Designer 上の AEM Forms では、スクリプトオブジェクトに様�
 
 * MD4 と MD5 - ロナルド・リベストによる設計
 
-* SHA-1 と SHA-256 - NIST で定義されるもの
+* SHA-1 と SHA-256 - NIST によって定義されているとおり
 
 ハッシュを使用する最大の利点は、パスワードを比較する際に各パスワードのハッシュを比較することができ、クリアテキストの文字列を直接比較する必要がなくなる点です。 2 つの異なる文字列が同じハッシュを持つ可能性は非常に低いので、両方のハッシュが同じであれば、比較対象の文字列（この場合はパスワード）も同一であると見なすことができます。
 
 >[!NOTE]
 >
->MD4 または MD5 には、セキュリティ上のよく知られた問題（いわゆるハッシュの衝突）があります。 これらのハッシュ衝突や他の SHA-1 ハック（レインボーテーブルなど）があるため、2 つ目のサンプルでは SHA-256 ハッシュ関数のみを使用することにしました。 詳しくは、ウィキペディアにある[衝突](https://ja.wikipedia.org/wiki/%E8%A1%9D%E7%AA%81_(%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A7%91%E5%AD%A6))および[レインボーテーブル](https://ja.wikipedia.org/wiki/レインボーテーブル)のページを参照してください。
+>MD4 または MD5 には、セキュリティ上のよく知られた問題（いわゆるハッシュの衝突）があります。 これらのハッシュ衝突や他の SHA-1 ハック（レインボーテーブルなど）があるため、2 つ目のサンプルでは SHA-256 ハッシュ関数に焦点を当てることにしました。 詳しくは、ウィキペディアにある[衝突](https://ja.wikipedia.org/wiki/%E8%A1%9D%E7%AA%81_(%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A7%91%E5%AD%A6))および[レインボーテーブル](https://ja.wikipedia.org/wiki/レインボーテーブル)のページを参照してください。
 
 ## スクリプトオブジェクトの調査 {#examining-script-objects}
 
@@ -89,7 +106,7 @@ JEE Designer 上の AEM Forms では、スクリプトオブジェクトに様�
 
 ### 例 2：一致するパスワード {#matching-passwords}
 
-2 つ目のサンプルは、実際のパスワードを公開する必要なく、バックグラウンドでハッシュを比較する仕組みを示しています。 入力したパスワードはハッシュ化されます。 実際のパスワードは、非表示のフィールドに保存され、ハッシュ化されます。 パスワードは、非表示となっているためではなく、ハッシュ化されることで保護されます。 ハッシュ値からパスワードを再構築することは不可能なので、ハッシュ化された形のパスワードは公開しても安全です。 比較はハッシュ間でのみ行われ、クリアテキスト内のパスワード間では行われません。 両方のハッシュが同じ場合は、パスワードが同一であると仮定できます。
+2 つ目のサンプルは、実際のパスワードを公開する必要なく、バックグラウンドでハッシュを比較する仕組みを示しています。 入力したパスワードはハッシュ化されます。 実際のパスワードは、非表示のフィールドに保存され、ハッシュ化されます。 パスワードは、非表示となっているためではなく、ハッシュ化されることで保護されます。 ハッシュ値からパスワードを再構築することは不可能なので、ハッシュ化された形のパスワードは公開しても安全です。 比較はハッシュ間でのみ行われ、クリアテキストのパスワード間では行われません。 両方のハッシュが同じ場合は、パスワードが同一であると仮定できます。
 
 2 番目のサンプルを試すには、次の手順に従います。
 
@@ -115,7 +132,7 @@ if (soHASHING_SHA256.hex_sha256(this.rawValue) == passwd_man_hashed.rawValue){
 
 この機能が必要となるのはどのような状況でしょうか。 PDF フォームに、承認された個人のみに入力を制限するフィールドがあるとします。 Sample_2.pdf のように、ドキュメント内のどのクリアテキストでも表示されないパスワードでこれらのフィールドを保護すると、パスワードを知っているユーザーのみがこれらのフィールドにアクセスできるようになります。
 
-引き続き 2 つのサンプル PDF ファイルを参照してください。  Sample_1.pdf で新しいハッシュ値を生成し、生成された値を使用して、Sample_2.pdf で使用するパスワードまたはハッシュ関数を変更できます。  「属性」の節に記載されているリソースでは、ハッシュとこの記事で使用される特定の JavaScript 実装に関する追加情報も提供しています。
+引き続き 2 つのサンプル PDF ファイルを参照してください。  Sample_1.pdf で新しいハッシュ値を生成し、生成された値を使用して、Sample_2.pdf で使用するパスワードまたはハッシュ関数を変更できます。  「アトリビューション」セクションに記載されているリソースでは、ハッシュ化と、この記事で使用した特定の JavaScript 実装に関する追加情報も提供しています。
 
 ## 属性 {#attributions}
 

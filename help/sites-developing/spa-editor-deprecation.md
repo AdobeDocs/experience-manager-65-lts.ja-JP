@@ -4,13 +4,21 @@ description: SPA エディターは、アドビで引き続きサポートしま
 feature: Developing
 role: Admin,Developer
 exl-id: 7c1af58f-95b3-4366-96cd-7383ac869923
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 97%
-
+source-wordcount: '1050'
+ht-degree: 87%
 ---
-
 # SPA エディターの廃止 {#spa-editor-deprecation}
 
 SPA エディターは、アドビで引き続きサポートしますが、プロジェクトに対するその廃止の意味と、今後のプロジェクトに対して使用できるオプションについて説明します。
@@ -21,7 +29,7 @@ Adobeは、[GA リリース AEM 6.5 LTS、](/help/release-notes/release-notes.md
 
 ## 廃止の詳細 {#details}
 
-SPA エディターの廃止は、**すぐに削除することを意味するものではなく**、既存の実装がある場合は、**ニーズを満たしている限り引き続き使用できます。**&#x200B;ただし、廃止には次の影響があります。
+SPA エディター&#x200B;**の非推奨化は、すぐに削除**&#x200B;するということではなく、既存の実装がある場合は、**必要に応じて使用を続けることができます。** ただし、非推奨の次の意味に注意してください。
 
 * 今後、アドビでは、P1 および P2 の問題と、セキュリティの脆弱性にのみ対処します。
 * SDK に対して追加の開発、機能強化、更新は行いません。
@@ -30,29 +38,29 @@ SPA エディターの廃止は、**すぐに削除することを意味する�
 
 * [AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype/)
 * [AEM SPA プロジェクトコア](https://github.com/adobe/aem-spa-project-core)
-* [AEM SPA ページモデルマネージャー](https://github.com/adobe/aem-spa-page-model-manager)
+* [AEM SPA Page Model Manager](https://github.com/adobe/aem-spa-page-model-manager)
 * [AEM SPA コンポーネントマッピング](https://github.com/adobe/aem-spa-component-mapping)
-* [AEM SPA React 編集可能コンポーネント](https://github.com/adobe/aem-react-editable-components)
-   * [AEM React コアコンポーネント](https://github.com/adobe/aem-react-core-wcm-components)
-   * [AEM React コアコンポーネントベース](https://github.com/adobe/aem-react-core-wcm-components-base)
-   * [AEM React コアコンポーネント SPA](https://github.com/adobe/aem-react-core-wcm-components-spa)
-   * [AEM React コアコンポーネントの例](https://github.com/adobe/aem-react-core-wcm-components-examples)
-* [AEM SPA Angular 編集可能コンポーネント](https://github.com/adobe/aem-angular-editable-components)
-   * [AEM Angular コアコンポーネント](https://github.com/adobe/aem-angular-core-wcm-components)
-   * [AEM Angular コアコンポーネントベース](https://github.com/adobe/aem-angular-core-wcm-components-base)
-   * [AEM Angular コアコンポーネント SPA](https://github.com/adobe/aem-angular-core-wcm-components-spa)
-   * [AEM Angular コアコンポーネントの例](https://github.com/adobe/aem-angular-core-wcm-components-examples)
-* [AEM SPA Vue 編集可能コンポーネント](https://github.com/mavicellc/aem-vue-editable-components)
+* [AEM SPA React編集可能コンポーネント](https://github.com/adobe/aem-react-editable-components)
+  * [AEM Reactのコアコンポーネント](https://github.com/adobe/aem-react-core-wcm-components)
+  * [AEM React コアコンポーネントベース](https://github.com/adobe/aem-react-core-wcm-components-base)
+  * [AEM React コアコンポーネント SPA](https://github.com/adobe/aem-react-core-wcm-components-spa)
+  * [AEM React コアコンポーネントの例](https://github.com/adobe/aem-react-core-wcm-components-examples)
+* [AEM SPA Angularの編集可能コンポーネント](https://github.com/adobe/aem-angular-editable-components)
+  * [AEM Angularのコアコンポーネント](https://github.com/adobe/aem-angular-core-wcm-components)
+  * [AEM Angular コアコンポーネントベース](https://github.com/adobe/aem-angular-core-wcm-components-base)
+  * [AEM Angular コアコンポーネント SPA](https://github.com/adobe/aem-angular-core-wcm-components-spa)
+  * [AEM Angular コアコンポーネントの例](https://github.com/adobe/aem-angular-core-wcm-components-examples)
+* [AEM SPA Vue編集可能コンポーネント](https://github.com/mavicellc/aem-vue-editable-components)
 
 ## SPA エディターの代替手段 {#alternatives}
 
 SPA エディターに代わる最適な代替手段は、プロジェクトのニーズに応じて異なります。
 
 * **[ユニバーサルエディター](/help/sites-developing/universal-editor/introduction.md)**&#x200B;は、SPA エディターに代わる直接的な代替手段として最適です。
-   * ユニバーサルエディターは、ビジュアルエディターでもあり、アドビの SPA エディターでのエクスペリエンスをすべて組み込んで、分離された実装向けに特別に設計しました。
-   * ユニバーサルエディターは、[AEM as a Cloud Service 用にもリリース](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)しているので、Cloud Service に加えて AMS とオンプレミスのユースケースもサポートしています。
+  * ユニバーサルエディターは、ビジュアルエディターでもあり、アドビの SPA エディターでのエクスペリエンスをすべて組み込んで、分離された実装向けに特別に設計しました。
+  * ユニバーサルエディターは、[AEM as a Cloud Service 用にもリリース](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)しているので、Cloud Service に加えて AMS とオンプレミスのユースケースもサポートしています。
 * **[コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-managing.md)**&#x200B;は、フォームベースのエディターを使用するユーザー向けの代替手段です。
-   * コンテンツフラグメントエディターは、コンテンツがページではなくコンテンツフラグメントとして構造化されている場合に最適です。
+  * コンテンツフラグメントエディターは、コンテンツがページではなくコンテンツフラグメントとして構造化されている場合に最適です。
 
 コンテンツフラグメントを使用してコンテンツを構造化すると、ビジュアルエディターとしてユニバーサルエディターの使用が除外されるわけではなく、両方のエディターを併用できます。
 
@@ -61,18 +69,18 @@ SPA エディターに代わる最適な代替手段は、プロジェクトの�
 ユニバーサルエディターには多くのメリットがあり、移行することは新しいプロジェクトにとって優れたソリューションになります。
 
 * **ビジュアル編集：** SPA エディターと同様に、作成者はプレビュー内でコンテンツを直接編集し、訪問者エクスペリエンスに影響する変更を即座に確認できます。
-* **今後の校正：** AEM のロードマップでは、ビジュアルエディターとしてユニバーサルエディターが優先されています。これを採用することで、最新のイノベーションと機能強化にアクセスできます。
+* **今後の校正：** AEM のロードマップでは、ビジュアルエディターとしてユニバーサルエディターが優先されています。 これを採用することで、最新のイノベーションと機能強化にアクセスできます。
 * **よりシンプルな統合：**&#x200B;ユニバーサルエディターを使用するのに AEM 固有の SDK は必要ないので、テクニカルスタックのロックインが軽減されます。
 * **独自のアプリを導入：**&#x200B;ユニバーサルエディターは任意の web フレームワークやアーキテクチャをサポートしているので、複雑なリファクタリングを必要とせずに導入できます。
 * **拡張性：**&#x200B;ユニバーサルエディターは、生成 AI、Workfront などとの統合を含む強力な[拡張フレームワーク](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending)のメリットを受けます。
 
-SPA エディターからユニバーサルエディターへの直接的な移行パスはありません。これは、2 つのテクノロジーの基本的な違いによるものです。
+SPA エディターからユニバーサルエディターへの直接的な移行パスはありません。 これは、2 つのテクノロジーの基本的な違いによるものです。
 
 * ユニバーサルエディターでは、テンプレートエディター、スタイルシステム、レスポンシブグリッドなどの機能は再導入されません。
-   * これらのユースケースでは、Edge Delivery Services またはヘッドレスプロジェクトの無駄のないフロントエンド CSS と JS を使用して、より効率的に処理できるようになりました。
+  * これらのユースケースでは、Edge Delivery Services またはヘッドレスプロジェクトの無駄のないフロントエンド CSS と JS を使用して、より効率的に処理できるようになりました。
 * ユニバーサルエディターはサービスとしてのエディターなので、実装者がコンポーネントダイアログに CSS または JS を挿入できません。
-   * これにより、ページエディターからのコンポーネントダイアログの自動変換を防ぐことができます。
-   * これは、カスタムウィジェット、フィールド検証、表示／非表示ルール、テンプレートベースのカスタマイズなど、ダイアログの多くの領域に影響を与えます。
+  * これにより、ページエディターからのコンポーネントダイアログの自動変換を防ぐことができます。
+  * これは、カスタムウィジェット、フィールド検証、表示／非表示ルール、テンプレートベースのカスタマイズなど、ダイアログの多くの領域に影響を与えます。
 
 これらの技術的な違いを考慮して、アドビでは次の操作をお勧めします。
 

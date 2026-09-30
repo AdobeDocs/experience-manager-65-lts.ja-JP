@@ -1,6 +1,6 @@
 ---
 title: ローンチ
-description: ローンチを作成し、既存の web ページの新しいバージョンを更新して後でアクティブ化できるようにします。ローンチの作成時には、タイトルとソースページを指定します。
+description: ローンチを作成し、既存の web ページの新しいバージョンを更新して後でアクティブ化できるようにします。 ローンチの作成時には、タイトルとソースページを指定します。
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,18 +9,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 7f1b25dd-c58b-4c83-a8f3-2b60dcd478bf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 92%
-
+source-wordcount: '185'
+ht-degree: 91%
 ---
-
 # ローンチ{#launches}
 
 ローンチを使用すると、今後のリリース用にコンテンツを効率的に開発できます。
 
-ローンチを作成すると、（現在のページを維持しながら）今後の公開に合わせて変更を加えることができます。ローンチページを編集して更新した後、それらを昇格させてソースに戻し、ソースページ（トップレベル）をアクティベートできます。昇格により、ローンチコンテンツを複製してソースページに戻します。これは、手動または自動で行うことができます（ローンチを作成および編集するときに設定されるフィールドに依存します）。
+ローンチを作成すると、（現在のページを維持しながら）今後の公開に合わせて変更を加えることができます。 ローンチページを編集して更新した後、それらを昇格させてソースに戻し、ソースページ（トップレベル）をアクティベートできます。 昇格により、ローンチコンテンツを複製してソースページに戻します。これは、手動または自動で行うことができます（ローンチを作成および編集するときに設定されるフィールドに依存します）。
 
 >[!NOTE]
 >
@@ -32,4 +41,4 @@ ht-degree: 92%
 >
 >クラシック UI では、1 つのローンチに複数のソース分岐を使用するとはできません。
 
-ローンチコンソールには、[http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html) から直接アクセスできます。
+起動コンソールには、[http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)から直接アクセスできます

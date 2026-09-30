@@ -1,6 +1,6 @@
 ---
 title: オーサリング - 環境とツール
-description: Web サイトコンソールを使用すると、web サイトを管理したり、web サイト内を移動したりできます。2 つのパネルを使用して、web サイトの構造を展開し、必要な要素に対してアクションを実行できます。
+description: Web サイトコンソールを使用すると、web サイトを管理したり、web サイト内を移動したりできます。 2 つのパネルを使用して、web サイトの構造を展開し、必要な要素に対してアクションを実行できます。
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -10,20 +10,29 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: c4ac3f14-f45a-44f6-a232-69cae483a776
-source-git-commit: dc46c3e2689df1069eea6980ef615f639db42e92
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 99%
-
+source-wordcount: '950'
+ht-degree: 90%
 ---
-
 # オーサリング - 環境とツール {#authoring-the-environment-and-tools}
 
 AEM のオーサリング環境は、コンテンツを編成および編集するための様々なメカニズムを提供しています. 提供されるツールには、様々なコンソールおよびページエディターからアクセスします。
 
 ## サイト管理 {#site-administration}
 
-**Web サイト**&#x200B;コンソールを使用すると、web サイトを管理したり、web サイト内を移動したりできます。2 つのパネルを使用して、web サイトの構造を展開し、必要な要素に対してアクションを実行できます。
+**Web サイト**&#x200B;コンソールを使用すると、web サイトを管理したり、web サイト内を移動したりできます。 2 つのパネルを使用して、web サイトの構造を展開し、必要な要素に対してアクションを実行できます。
 
 ![chlimage_1-108](assets/chlimage_1-108.png)
 
@@ -39,7 +48,7 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 
 様々な&#x200B;**ヘルプ**&#x200B;リソースには、AEM 内から直接アクセスできます。
 
-[コンソールツールバーからのヘルプ](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help)をアクセスすると、ページ編集時にサイドキックからヘルプに（？アイコンを使用して）アクセスできます。
+[コンソールツールバーからのヘルプ](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help)をアクセスすると、ページ編集時にサイドキックからヘルプに（？アイコンを使用 して）アクセスできます。
 
 ![折りたたまれた Sidekick](do-not-localize/sidekick-collapsed-2.png)
 
@@ -47,7 +56,7 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 
 ## サイドキック {#sidekick}
 
-サイドキックの「**コンポーネント**」タブでは、現在のページに追加できるコンポーネントを参照できます。必要なグループを展開し、コンポーネントをページ上の必要な場所にドラッグできます。
+サイドキックの「**コンポーネント**」タブでは、現在のページに追加できるコンポーネントを参照できます。 必要なグループを展開し、コンポーネントをページ上の必要な場所にドラッグできます。
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
@@ -55,7 +64,7 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 
 コンテンツファインダーは、ページ編集時にリポジトリ内のアセットやコンテンツを素早く簡単に見つけることができます。
 
-コンテンツファインダーを使用して、幅広いリソースを検索できます。必要に応じて、項目をページ上の段落にドラッグ＆ドロップできます。
+コンテンツファインダーを使用して、幅広いリソースを検索できます。 必要に応じて、項目をページ上の段落にドラッグ＆ドロップできます。
 
 * [画像](#finding-images)
 * [ドキュメント](#finding-documents)
@@ -95,19 +104,19 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 
 ### 製品 {#products}
 
-このタブには、製品が一覧表示されます。ページ上に適切な段落（製品など）を作成したら、その段落に項目をドラッグ＆ドロップできます。
+このタブには、製品が一覧表示されます。 ページ上に適切な段落（製品など）を作成したら、その段落に項目をドラッグ＆ドロップできます。
 
 ![chlimage_1-114](assets/chlimage_1-114.png)
 
 ### ページの検索 {#finding-pages}
 
-このタブには、すべてのページが表示されます。任意のページをダブルクリックし、編集用に開きます。
+このタブにはすべてのページが表示されます。 任意のページをダブルクリックして編集用に開きます。
 
 ![chlimage_1-115](assets/chlimage_1-115.png)
 
 ### 他のページからの段落の参照 {#referencing-paragraphs-from-other-pages}
 
-このタブを使用すると、他のページを検索できます。そのページのすべての段落が一覧表示されます。段落を現在のページにドラッグすると、元の段落への参照が作成されます。
+このタブを使用すると、他のページを検索できます。 そのページのすべての段落が一覧表示されます。 段落を現在のページにドラッグすると、元の段落への参照が作成されます。
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
@@ -119,11 +128,11 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 
 ### コンテンツブラウザーでの検索の使用 {#using-search-with-the-content-browser}
 
-すべてのオプションについて、特定の項目を検索できます。検索パターンに一致するタグとリソースが一覧表示されます。
+すべてのオプションについて、特定の項目を検索できます。 検索パターンに一致するタグとリソースが一覧表示されます。
 
 ![screen_shot_2012-02-08at100746am](assets/screen_shot_2012-02-08at100746am.png)
 
-検索にワイルドカードを使用することもできます。サポートされているワイルドカードは、次のとおりです。
+検索にワイルドカードを使用することもできます。 サポートされているワイルドカードは、次のとおりです。
 
 * `*`
 0 個以上の連続した文字に一致します。
@@ -166,7 +175,7 @@ AEM を使用すると、現在作業中のページにリンクされている�
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
-AEM では、選択したページを直接参照するすべてのページと、間接的な参照が表示されます。これは、ページを移動または削除する必要がある場合に更新されるすべてのリンクを理解するのに役立ちます。
+AEM では、選択したページを直接参照するすべてのページと、間接的な参照が表示されます。 これは、ページを移動または削除する必要がある場合に更新されるすべてのリンクを理解するのに役立ちます。
 
 ## その他のサイドキックアクション {#additional-actions}
 
@@ -181,7 +190,7 @@ AEM では、選択したページを直接参照するすべてのページと�
 
 ## 監査ログ {#audit-log}
 
-**監査ログ**&#x200B;には、サイドキックの「**情報**」タブからアクセスできます。ここには、現在のページで実行された最近のアクションが一覧表示されます。次に例を示します。
+**監査ログ**&#x200B;には、サイドキックの「**情報**」タブからアクセスできます。 ここには、現在のページで実行された最近のアクションが一覧表示されます。次に例を示します。
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
@@ -198,13 +207,13 @@ Web サイトコンソールには、[ページの現在のステータスに関
 サイドキックの下部に並ぶ 1 行のアイコンは、ページを操作するモードの切り替えに使用します。
 
 * [編集](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
-デフォルトのモードであり、ページの編集、コンポーネントの追加または削除、およびそれ以外の変更を行うことができます。
+これはデフォルトのモードで、ページの編集、コンポーネントの追加または削除、その他の変更を行うことができます。
 
-* [プレビュー](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages)
-このモードを使用すると、ページが web サイトで最終的にどのように表示されるかをプレビューできます。
+* [ プレビュー](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages)
+このモードでは、最終形式でweb サイトに表示されているかのように、ページをプレビューできます。
 
-* [デザイン](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#main-pars-procedure-0)
-このモードでは、アクセス可能なコンポーネントを設定して、ページのデザインを編集できます。
+* [ デザイン](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#main-pars-procedure-0)
+このモードでは、アクセス可能なコンポーネントを設定することで、ページのデザインを編集できます。
 
 >[!NOTE]
 >

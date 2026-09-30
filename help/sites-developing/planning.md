@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 82199140-e464-45a5-9c00-dda2d8efde74
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 100%
-
 ---
-
 # 計画{#planning}
 
 ここでは、テストを計画するために知っておく必要があることについて説明します。 テストを実施する前に、次の項目を検討する必要があります。
@@ -113,7 +122,7 @@ AEM プロジェクトをテストするときには、様々な種類のテス�
 
 その他。
 
-**既存の Web サイトからトラフィック統計を収集** — この情報は、ログファイルから抽出できます。詳しくは、パフォーマンスの監視を参照してください。
+**既存の Web サイトからトラフィック統計を収集** — この情報は、ログファイルから抽出できます。詳しくは、パフォーマンスのモニタリングを参照してください。
 
 これらの数字は、既存の Web サイト上の現在のトラフィック（量と広がり）を示し、新しい Web サイトの基点を形成する際に使用できます。
 

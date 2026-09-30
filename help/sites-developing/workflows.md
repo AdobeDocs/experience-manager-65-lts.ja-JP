@@ -9,7 +9,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 625affd0-0e1a-4db8-812f-b6ce70cfe035
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1478'
 ht-degree: 98%
@@ -39,7 +50,7 @@ AEM には、ワークフローモデルを作成し、ワークフローステ�
 >* ワークフローとワークフローインスタンスの管理については、[ワークフローの管理](/help/sites-administering/workflows.md)を参照してください。
 >* エンドツーエンドのコミュニティ記事については、[Adobe Experience Manager ワークフローを使用したデジタル Assetsの変更](/help/assets/assets-workflow.md)を参照してください。
 >* [AEM エキスパートへのワークフローに関する質問のウェビナー](https://communities.adobeconnect.com/p5s33iburd54/)を参照してください。
->* 情報の場所の変更については、[&#x200B; ワークフローのベストプラクティス – 場所](/help/sites-developing/workflows-best-practices.md#locations)を参照してください。
+>* 情報の場所の変更については、[ ワークフローのベストプラクティス – 場所](/help/sites-developing/workflows-best-practices.md#locations)を参照してください。
 
 ## モデル {#model}
 

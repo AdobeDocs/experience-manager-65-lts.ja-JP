@@ -10,14 +10,24 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: e3ef1435-d405-482f-9eb5-f9a64ff03322
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '732'
 ht-degree: 76%
-
 ---
-
 # バージョンのパージ{#version-purging}
 
 標準インストールの場合、コンテンツの更新後にページをアクティベートすると、Adobe Experience Manager（AEM）によってページまたはノードのバージョンが作成されます。
@@ -32,18 +42,18 @@ ht-degree: 76%
 
 AEM には、リポジトリの管理に役立つ様々なメカニズムが備わっています。
 
-* バージョン マネージャー[&#128279;](#version-manager)
+* バージョン マネージャー[](#version-manager)
 これは、新しいバージョンが作成されたときに古いバージョンをパージするように設定できます。
 
-* [&#x200B; バージョンのパージ &#x200B;](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) ツール
+* [ バージョンのパージ ](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) ツール
 これは、リポジトリの監視とメンテナンスの一部として使用されます。
-このツールを使用すると、次のパラメーターに従って、ノードの古いバージョンまたはノードの階層を削除するためにユーザーが介入できます。
+このツールを使用すると、次のパラメーターに従って、ノードまたはノード階層の古いバージョンを削除できます。
 
-   * リポジトリに保持されるバージョンの最大数。
-この数値を超えると、最も古いバージョンが削除されます。
+  * リポジトリに保持されるバージョンの最大数。
+    この数値を超えると、最も古いバージョンが削除されます。
 
-   * リポジトリ内に保持されているバージョンの最大有効期間。
-バージョンの年齢がこの値を超えると、リポジトリからパージされます。
+  * リポジトリ内に保持されているバージョンの最大有効期間。
+    バージョンの年齢がこの値を超えると、リポジトリからパージされます。
 
 * [バージョンパージのメンテナンスタスク](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks)。 バージョンのパージメンテナンスタスクをスケジュールして、古いバージョンを自動的に削除できます。 これにより、バージョンのパージツールを手動で実行する必要性を最小限に抑えることができます。
 
@@ -63,7 +73,7 @@ AEM には、リポジトリの管理に役立つ様々なメカニズムが備�
 
 * `versionmanager.createVersionOnActivation` （ブール値、デフォルト：true）
 ページがアクティブ化されたときにバージョンを作成するかどうかを指定します。
-レプリケーションエージェントがバージョンの作成を抑制するように設定されていない限り、バージョンが作成されます。これはバージョンマネージャーで順守されます。
+レプリケーションエージェントがバージョンの作成を抑制するように設定されている場合を除き、バージョンが作成されます。この設定はバージョンマネージャーでも尊重されます。
 アクティベーションが `versionmanager.ivPaths` に含まれているパスで行われた場合にのみバージョンが作成されます（以下を参照）。
 
 * `versionmanager.ivPaths` （String[]、既定値：`{"/"}`）
@@ -76,13 +86,13 @@ AEM には、リポジトリの管理に役立つ様々なメカニズムが備�
 新しいバージョンの作成時にバージョンをパージするパスを指定します。
 
 * `versionmanager.maxAgeDays` （int、デフォルト：30）
-バージョンのパージ時に、設定された値より古いバージョンが削除されます。 この値が 1 未満の場合、バージョンの期間に基づいたパージは実行されません。
+バージョンのパージ時に、設定された値より古いバージョンが削除されます。 この値が 1 未満の場合、バージョンの経過日数に基づくパージは実行されません。
 
 * `versionmanager.maxNumberVersions` （int、デフォルト 5）
 バージョンのパージ時に、n番目の新しいバージョンより古いバージョンが削除されます。 この値が 1 未満の場合、バージョンの数に基づいたパージは実行されません。
 
 * `versionmanager.minNumberVersions` （int、デフォルト 0）
-期間にかかわらず保持するバージョン数の最小数。 この値を 1 未満に設定すると、保持するバージョン数の最小数は設定されません。
+期間にかかわらず保持されるバージョンの最小数。 この値を 1 未満に設定すると、保持するバージョン数の最小数は設定されません。
 
 >[!NOTE]
 >
@@ -96,35 +106,35 @@ AEM には、リポジトリの管理に役立つ様々なメカニズムが備�
 
 * 設定:
 
-   * `maxNumberVersions` = 7
+  * `maxNumberVersions` = 7
 
-   * `maxAgeDays` = 30
+  * `maxAgeDays` = 30
 
 * シナリオは以下の通りです。
 
-   * 過去 60 日以内に 10 個のバージョンが作成されました。
-   * そのうちの 3 個が過去 30 日以内に作成されました。
+  * 過去 60 日以内に 10 個のバージョンが作成されました。
+  * そのうちの 3 個が過去 30 日以内に作成されました。
 
 * 結果は次の通りです。
 
-   * 最新の 3 個のバージョンが保持されます。
+  * 最新の 3 個のバージョンが保持されます。
 
 例えば、保持するバージョン数の最大数と最小数、および保持する最も古いバージョンを組み合わせて定義する場合は、次のようになります。
 
 * 設定:
 
-   * `maxNumberVersions` = 3
-   * `maxAgeDays` = 30
-   * `minNumberVersions` = 3
+  * `maxNumberVersions` = 3
+  * `maxAgeDays` = 30
+  * `minNumberVersions` = 3
 
 * シナリオは以下の通りです。
 
-   * 60 日前に 5 個のバージョンが作成されました。
+  * 60 日前に 5 個のバージョンが作成されました。
 
 * 結果は次の通りです。
 
-   * 最新の 3 個のバージョンが保持されます。
+  * 3 個のバージョンが保持されます。
 
 ## バージョンのパージツール {#purge-versions-tool}
 
-[バージョンのパージ](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool)ツールを使用すると、リポジトリ内のノードまたはノードの階層のバージョンをパージすることができます。 このツールの主な目的は、古いバージョンのノードを削除してリポジトリのサイズを縮小することです。
+[バージョンのパージ](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool)ツールを使用すると、リポジトリ内のノードまたはノードの階層のバージョンをパージすることができます。 このツールの主な目的は、ノードの古いバージョンを削除してリポジトリのサイズを縮小することです。

@@ -9,13 +9,29 @@ feature: Adaptive Forms,Foundation Components
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 exl-id: 9c516c90-1b1d-406a-b42d-909aae8bb634
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 95%
-
+source-wordcount: '878'
+ht-degree: 93%
 ---
-
 # アダプティブフォームのローカリゼーション用に新しいロケールをサポート{#supporting-new-locales-for-adaptive-forms-localization}
 
 ## 適用先 {#applies-to}
@@ -40,18 +56,18 @@ AEM as a Cloud Serviceのドキュメントについては、[Cloud Service上�
 
 * 指定した順序で次のパラメーターを確認します。
 
-   * 要求パラメーター`afAcceptLang`
-ユーザーのブラウザーロケールを上書きするには、`afAcceptLang` リクエストパラメーターを渡してロケールを強制的に指定します。例えば、次のURLは、フォームを日本語ロケールでレンダリングすることを強制しました。
-     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+  * リクエストパラメーター `afAcceptLang`
+ユーザーのブラウザーロケールを上書きするには、`afAcceptLang` リクエストパラメーターを渡してロケールを強制的に指定します。 例えば、次の URL はフォームを日本語ロケールで強制的にレンダリングします。
+    `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-   * ユーザー向けに設定されるブラウザーのロケールです。これは、`Accept-Language` ヘッダーを使用したリクエストで指定されます。
+  * ユーザー向けに設定されるブラウザーのロケールです。これは、`Accept-Language` ヘッダーを使用したリクエストで指定されます。
 
-   * AEM のユーザー指定の言語設定です。
+  * AEM のユーザー指定の言語設定です。
 
-   * ブラウザーのロケールはデフォルトで有効です。 ブラウザーロケール設定を変更するには
-      * 設定マネージャーを開きます。 URL は `http://[server]:[port]/system/console/configMgr` です
-      * 「**[!UICONTROL アダプティブフォームおよびインタラクティブなコミュニケーション Web チャネル]**」の設定を検索して開きます。
-      * 「**[!UICONTROL ブラウザーロケールを使用]**」オプションのステータスを変更して設定を「**[!UICONTROL 保存]**」します。
+  * ブラウザーのロケールはデフォルトで有効です。 ブラウザーロケール設定を変更するには
+    * 設定マネージャーを開きます。 URL は `http://[server]:[port]/system/console/configMgr` です
+    * 「**[!UICONTROL アダプティブフォームおよびインタラクティブなコミュニケーション Web チャネル]**」の設定を検索して開きます。
+    * 「**[!UICONTROL ブラウザーロケールを使用]**」オプションのステータスを変更して設定を「**[!UICONTROL 保存]**」します。
 
 ロケールが識別されると、アダプティブフォームはフォームに固有の辞書を参照します。 要求されたロケールに対応するフォーム固有の辞書が見つからない場合、アダプティブフォームが作成された言語の辞書が使用されます。
 
@@ -97,7 +113,7 @@ I18N.js
 
 ### アダプティブフォームのクライアントライブラリをロケール用に追加する {#add-adaptive-form-client-library-for-a-locale-br}
 
-カテゴリが`guides.I18N.<locale>`、依存関係が`xfaforms.3rdparty`、`xfaforms.I18N.<locale>`および`guide.common`の`etc/<folderHierarchy>`の下にタイプ `cq:ClientLibraryFolder`のノードを作成します。 &grave;&grave;
+カテゴリが`guides.I18N.<locale>`、依存関係が`xfaforms.3rdparty`、`xfaforms.I18N.<locale>`および`guide.common`の`etc/<folderHierarchy>`の下にタイプ `cq:ClientLibraryFolder`のノードを作成します。 ``
 
 クライアントライブラリに次のファイルを追加します。
 

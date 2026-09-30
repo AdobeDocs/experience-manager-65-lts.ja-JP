@@ -8,25 +8,41 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 7192ee1d-dc3f-4d90-919f-6329b434e18b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2779'
-ht-degree: 98%
-
+source-wordcount: '2866'
+ht-degree: 97%
 ---
-
 # アダプティブフォームの式{#adaptive-form-expressions}
 
 <span class="preview">[アダプティブフォームの新規作成](/help/forms/using/create-an-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。 これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。 この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
 
-アダプティブフォームは、ダイナミックなスクリプト機能によってエンドユーザーのフォームへの入力作業を最適化および簡素化します。 式を記述することで、ダイナミックなフィールドやパネルの表示／非表示などの様々な動作を追加できます。 また、レポートを作成する計算指標フィールドを追加したり、フィールドを読み取り専用にしたり、検証ロジックを追加したりすることもできます。 動的動作は、ユーザー入力や事前入力データに基づいています。
+アダプティブフォームは、ダイナミックなスクリプト機能によってエンドユーザーのフォームへの入力作業を最適化および簡素化します。 式を記述することで、ダイナミックなフィールドやパネルの表示／非表示などの様々な動作を追加できます。 また、計算フィールドを追加したり、フィールドを読み取り専用にしたり、検証ロジックを追加したりすることもできます。 動的動作は、ユーザー入力や事前入力データに基づいています。
 
 アダプティブフォームの式言語は JavaScript です。 すべての式は、有効な JavaScript™ の式で、アダプティブフォームのスクリプトモデル API を使用しています。 これらの式は、特定のタイプの値を返します。 アダプティブフォームのクラス、イベント、オブジェクトおよびパブリック API の完全なリストについては、[アダプティブフォーム用 JavaScript ライブラリ API リファレンス](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)を参照してください。
 
 ## 式を記述するためのベストプラクティス {#best-practices-for-writing-expressions}
 
 * 式を記述したり、フィールドやパネルにアクセスしたりする場合は、フィールド名またはパネル名を使用します。 フィールドの値にアクセスするには、value プロパティを使用します。 例：`field1.value`
-* フォームをまたぐフィールド名およびパネル名には、一意の名前を使用します。 式を記述する際に使用したフィールド名と競合する可能性を回避できます。
+* フォーム全体でフィールド名およびパネル名には、一意の名前を使用します。 式を記述する際に使用したフィールド名と競合する可能性を回避できます。
 * 複数行にわたる式を記述する場合、セミコロンを使用してステートメントを終了します。
 
 ## 繰り返しパネルを含む式のベストプラクティス {#best-practices-for-expressions-involving-repeating-panel}
@@ -39,10 +55,10 @@ ht-degree: 98%
 * アダプティブフォームには、合計、カウント、最小値、最大値、フィルターなど、繰り返し可能なパネルの計算を簡素化するためのいくつかの特別な機能があります。 機能の完全なリストについては、[アダプティブフォーム用 JavaScript ライブラリ API リファレンス](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)を参照してください。
 * 以下に、繰り返しパネルのインスタンスを操作するための API を示します。
 
-   * パネルインスタンスを追加する場合：`panel1.instanceManager.addInstance()`
-   * 繰り返しパネルのインデックスを取得する場合：`panel1.instanceIndex`
-   * パネルの instanceManager を取得する場合：`_panel1 or panel1.instanceManager`
-   * パネルのインスタンスを削除する場合：`_panel1.removeInstance(panel1.instanceIndex)`
+  * パネルインスタンスを追加する場合：`panel1.instanceManager.addInstance()`
+  * 繰り返しパネルのインデックスを取得する場合：`panel1.instanceIndex`
+  * パネルの instanceManager を取得する場合：`_panel1 or panel1.instanceManager`
+  * パネルのインスタンスを削除する場合：`_panel1.removeInstance(panel1.instanceIndex)`
 
 ## 式のタイプ {#expression-types}
 
@@ -71,13 +87,14 @@ ht-degree: 98%
 
 ### 計算式 {#calculate-expression}
 
-式の計算は、式を使用してフィールドの値を自動計算するのに使用されます。 通常、この式には、他のフィールドの value プロパティを使用します。 例えば、`field2.value + field3.value` のようになります。 `field2` または `field3`の値が変わるたびに、式が再トリガーされ、値が再計算されます。
+計算式は、式を使用してフィールドの値を自動計算するために使用されます。 通常、このような式では、他のフィールドの value プロパティを使用します。 例えば、`field2.value + field3.value` のようになります。 `field2` または `field3`の値が変わるたびに、式が再トリガーされ、値が再計算されます。
 
 **適用先**：フィールド
 
 **戻り値のタイプ**：式は、式の結果が表示されるフィールドに対応する値を返します（例えば、小数値）。
 
-**例**：2 つのフィールドの合計を **field1** に表示する計算式は、`field2.value + field3.value` です。
+**例**: **field1**の2つのフィールドの合計を表示する計算式は次のとおりです。
+`field2.value + field3.value`
 
 ### クリック式 {#click-expression}
 
@@ -101,11 +118,12 @@ ht-degree: 98%
 
 **戻り値のタイプ**：初期化スクリプトの式は、値を返しません。 式が値を返した場合、その値は無視されます。
 
-**例**：データの事前入力シナリオで、値が null として保存されたときにフィールドにデフォルト値 `'Adaptive Forms'` を入力するための初期化スクリプト式は、`if(this.value==null) this.value='Adaptive Forms';` です。
+**例：** データの事前入力シナリオで、値がnullとして保存されたときにフィールドにデフォルト値`'Adaptive Forms'`を入力するには、初期化スクリプト式は次のとおりです。
+`if(this.value==null) this.value='Adaptive Forms';`
 
 ### オプション式 {#options-expression}
 
-オプション式は、ドロップダウンリストのフィールドのオプションを動的に入力するために使用されます。
+オプション式は、ドロップダウンリストフィールドのオプションを動的に設定するために使用されます。
 
 **適用先**：ドロップダウンリストフィールド
 
@@ -119,9 +137,9 @@ ht-degree: 98%
 
 ### 要約式 {#summary}
 
-要約式は、アコーディオンレイアウトパネルの子パネルのタイトルを動的に計算します。 要約式はルールで指定できます。タイトルはフォームフィールドまたはカスタムロジックを使用して評価されます。 式は、フォームが起動すると実行されます。 フォームを事前入力する場合、式は、データが事前入力されてから、または式に使用されている依存するフィールドの値が変更されたときに実行されます。
+要約式は、アコーディオンレイアウトパネルの子パネルのタイトルを動的に計算します。 要約式は、フォームフィールドまたはカスタムロジックを使用してタイトルを評価するルールで指定できます。 式は、フォームの初期化時に実行されます。 フォームを事前入力する場合、式は、データが事前入力されてから、または式に使用されている依存するフィールドの値が変更されたときに実行されます。
 
-要約式は、通常、アコーディオンレイアウトパネルの子の繰り返し処理に使用され、子パネルごとに意味のあるタイトルを作成します。
+要約式は通常、アコーディオンレイアウトパネルの繰り返される子パネルに使用され、各子パネルに意味のあるタイトルを付けます。
 
 **適用先**：レイアウトがアコーディオンとして設定されているパネルの直接の子であるパネル。
 
@@ -135,8 +153,8 @@ ht-degree: 98%
 
 **適用先**：フィールド
 
-**戻り値タイプ**：式は、フィールドの検証ステータスを表すブール値を返します。値&#x200B;**false**&#x200B;はフィールドが無効であることを表し、**true**&#x200B;はフィールドが有効であることを表します。
-**例**：英国のポストコードを表すフィールドの検証式は次のとおりです。
+**戻り値のタイプ**：式は、フィールドの検証ステータスを表すブール値を返します。 **false** はそのフィールドが無効であることを表し、**true** はそのフィールドが有効であることを表します。
+**例**：英国の郵便番号を表すフィールドの検証式を以下に示します。
 
 (**this.value** &amp;&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
 
@@ -151,13 +169,14 @@ ht-degree: 98%
 値コミットスクリプトがトリガーされるのは、以下のような場合です。
 
 * ユーザーが UI からフィールドの値を変更した場合。
-* 別のフィールドの値が変更されたので、フィールドの値がプログラムによって変更された場合。
+* 別のフィールドの変更により、フィールドの値がプログラムによって変更された場合。
 
 **適用先**：フィールド
 
 **戻り値のタイプ**：値コミットスクリプトの式は、値を返しません。 式が値を返した場合、その値は無視されます。
 
-**例**：コミット時にフィールドに入力されたアルファベットを大文字を変換する場合に使用される値コミット式を以下に示します。`this.value=this.value.toUpperCase()`
+**例：** フィールドに入力されたアルファベットの大文字をコミット時に大文字に変換するには、値のコミット式は次のとおりです。
+`this.value=this.value.toUpperCase()`
 
 >[!NOTE]
 >
@@ -181,14 +200,14 @@ ht-degree: 98%
 
 **戻り値のタイプ**：式は、既存のパネルが有効か無効かを表すブール値を返します。 **True** は、現在のパネルが有効で、ユーザーが次のパネルに移動できることを表します。
 
-**例**：様々なパネルで構成されたフォームで、次のパネルに移動する前に、現在のパネルが検証されます。この場合、ステップ完了式が使用されます。一般的に、これらの式ではGuideBridge検証APIを使用します。手順の完了式の例を次に示します。
+**例**：様々なパネルに表示されるフォームでは、次のパネルに移動する前に、現在のパネルが検証されます。 このような場合は、ステップ完了の式を使用します。 一般的に、これらの式には GuideBridge 検証 API が使用されます。 手順の完了式の例を次に示します。
 `window.guideBridge.validate([],this.panel.navigationContext.currentItem.somExpression)`
 
 ## アダプティブフォームでの検証 {#validations-in-adaptive-form}
 
-アダプティブフォームにフィールド検証を追加するには、複数の方法があります。 検証チェックがフィールドに追加された場合、**True** はフィールドに入力された値が有効であることを示します。 **False** は値が無効であることを示します。 フィールドの中および外にタブを設定すると、エラーメッセージは生成されません。
+アダプティブフォームにフィールド検証を追加するには、複数の方法があります。 検証チェックがフィールドに追加された場合、**True** はフィールドに入力された値が有効であることを示します。 **False** は値が無効であることを示します。 Tab キーでフィールドに移動してからフィールドを離れても、エラーメッセージは生成されません。
 
-フィールドに検証を追加するには、以下の手順を実行します。
+フィールドに検証を追加する方法は次のとおりです。
 
 ### 必須 {#required}
 
@@ -278,8 +297,8 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 1. カスタムパターンを管理するためのフォルダーを作成します。 /apps ディレクトリの下で、タイプ sling:folder のノードを作成します。 例えば、`customPatterns` という名前でノードを作成します。 このノードの下で、タイプ `nt:unstructed` の別のノードを作成して、`textboxpatterns` という名前を付けます。 このノードには、追加したい様々なカスタムパターンが含まれています。
 1. 作成したノードの「プロパティ」タブを開きます。 例えば、`textboxpatterns` の「プロパティ」タブを開きます。 このノードに `guideComponentType` プロパティを追加して、その値を *fd/af/components/formatter/guideTextBox* に設定します。
 
-1. このプロパティの値は、パターンを定義するフィールドによって異なります。数値フィールドの場合、`guideComponentType` プロパティの値は&#x200B;*fd/af/components/formatter/guideNumericBox*&#x200B;です。Datepicker フィールドの値は&#x200B;*fd/af/components/formatter/guideDatepicker*です。
-&quot;
+1. このプロパティの値は、パターンを定義するフィールドに応じて変わります。 数値フィールドの場合、`guideComponentType` プロパティの値は、*fd/af/components/formatter/guideNumericBox* です。 Datepicker フィールドの値は&#x200B;*fd/af/components/formatter/guideDatepicker*です。
+``
 1. `textboxpatterns` ノードにプロパティを割り当てることで、カスタムパターンを追加できます。 名前の付いたプロパティ（例えば、`pattern1`）を追加して、追加するパターンにその値を設定します。 例えば、値が Fax=text{99-999-9999999} のプロパティ `pattern1` を追加します。 パターンは、アダプティブフォームで使用するすべてのテキストボックスで使用できます。
 
    ![CrxDe でのフィールドのカスタムパターンの作成](assets/creating-custom-patterns.png)

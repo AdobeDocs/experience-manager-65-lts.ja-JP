@@ -9,13 +9,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 29f1d07b-925b-4612-aa1b-34c387a5765f
-source-git-commit: b93a65226587936010c3dd53312c66e15f73cf2a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 7%
-
 ---
-
 # アップグレード後にアンインストールされる廃止されたバンドルの一覧{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
 
 AEM 6.5 LTSにアップグレードすると、アップグレードが実行されたAEM 6.5 サービスパックのバージョンに応じて、次のバンドルが自動的にアンインストールされます。
@@ -101,5 +110,5 @@ AEM 6.5 LTSにアップグレードすると、アップグレードが実行さ
 * org.apache.sling.atom.taglib
 * com.github.jknack.handlebars
 * com.adobe.granite.osgi.wrapper.guava
-* com.adobe.cq.core.wcm.components.core （[AEM 6.5 LTS互換バージョン &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/versions)に置き換えられます）
+* com.adobe.cq.core.wcm.components.core （[AEM 6.5 LTS互換バージョン ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/versions)に置き換えられます）
 * com.adobe.cq.core.wcm.components.extension.contentfragment.bundle （AEM 6.5 LTS互換バージョンに置き換えることができます）

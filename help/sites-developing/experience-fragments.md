@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: bc621086-8128-4836-a580-dca99f61c439
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1779'
 ht-degree: 63%
-
 ---
-
 # エクスペリエンスフラグメント {#experience-fragments}
 
 ## 基本知識 {#the-basics}
@@ -61,14 +70,14 @@ URL で `.plain.` セレクターを使用すると、プレーン HTML レン�
 
 ### HTML レンディション生成の設定 {#configuring-html-rendition-generation}
 
-HTML レンディションは、`Sling Rewriter` パイプラインを使用して生成されます。 パイプラインは、`/libs/experience-fragments/config/rewriter/experiencefragments` で定義されます。 HTML 変換サービスでは、次のオプションをサポートしています。
+HTML レンディションは、`Sling Rewriter` パイプラインを使用して生成されます。 パイプラインは、`/libs/experience-fragments/config/rewriter/experiencefragments` で定義されます。 HTML Transformer では、次のオプションをサポートしています。
 
 * `allowedCssClasses`
-   * 最終レンディションに残す CSS クラスに一致する正規表現。
-   * 顧客が特定のCSS クラスを削除したい場合に便利です
+  * 最終レンディションに残す CSS クラスに一致する正規表現。
+  * 顧客が特定のCSS クラスを削除したい場合に便利です
 * `allowedTags`
-   * 最終的なレンディションで許可される HTML タグのリスト。
-   * デフォルトでは、html、head、title、body、img、p、span、ul、li、a、b、i、em、strong、h1、h2、h3、h4、h5、h6、br、`noscript`、div、link、scriptの設定なしで次のタグを使用できます。
+  * 最終的なレンディションで許可される HTML タグのリスト。
+  * デフォルトでは、html、head、title、body、img、p、span、ul、li、a、b、i、em、strong、h1、h2、h3、h4、h5、h6、br、`noscript`、div、link、scriptの設定なしで次のタグを使用できます。
 
 オーバーレイを使用してリライターを設定することをお勧めします。 [オーバーレイ](/help/sites-developing/overlays.md)を参照してください
 
@@ -86,12 +95,12 @@ HTML レンディションは、`Sling Rewriter` パイプラインを使用し�
 
 * 画像を抽出するには，
 
-   * `fileReference`
-   * `fileName`
+  * `fileReference`
+  * `fileName`
 
 * テキストを抽出するには，
 
-   * `text`
+  * `text`
 
 この規則を使用するコンポーネントのみが考慮されます。
 
@@ -114,7 +123,7 @@ HTML レンディションは、`Sling Rewriter` パイプラインを使用し�
 
    1. テンプレートの名前は次の文字列で始まる必要があります。
       `experience-fragments`
-このフォルダーの`cq:allowedTemplates` プロパティには、`experience-fragment`で始まる名前を持つすべてのテンプレートが含まれているため、ユーザーは`/content/experience-fragments`でエクスペリエンスフラグメントを作成できます。 ユーザーは、このプロパティを更新して、独自の命名方式やテンプレート場所を取り入れることができます。
+      このフォルダーの`cq:allowedTemplates` プロパティには、`experience-fragment`で始まる名前を持つすべてのテンプレートが含まれているため、ユーザーは`/content/experience-fragments`でエクスペリエンスフラグメントを作成できます。 ユーザーは、このプロパティを更新して、独自の命名方式やテンプレート場所を取り入れることができます。
 
 1. [使用可能なテンプレート](/help/sites-authoring/experience-fragments.md#configure-allowed-templates-folder)はエクスペリエンスフラグメントコンソールで設定できます。
 <!--
@@ -131,7 +140,7 @@ HTML レンディションは、`Sling Rewriter` パイプラインを使用し�
 
 [エクスペリエンスフラグメントで使用するコンポーネントの開発は、標準的な方法に従って行います。](/help/sites-developing/components.md)
 
-唯一の追加設定は、コンポーネントをテンプレートで確実に使用できるようにするだけです。 この機能は、[&#x200B; コンテンツポリシー](/help/sites-developing/page-templates-editable.md#content-policies)で実現されます。
+唯一の追加設定は、コンポーネントをテンプレートで確実に使用できるようにするだけです。 この機能は、[ コンテンツポリシー](/help/sites-developing/page-templates-editable.md#content-policies)で実現されます。
 
 ## エクスペリエンスフラグメントの Link Rewriter Provider - HTML {#the-experience-fragment-link-rewriter-provider-html}
 
@@ -165,7 +174,7 @@ HTML ページを生成した後、`Sling Rewriter` パイプラインは出力�
 
 1. AEM では、HTML に存在するすべての内部リンクを変更して、公開されたリソースを指すようにします。
 
-   変更するリンクを決定するために、AEM では HTML 要素の次の属性パターンに従います。
+   変更するリンクを決定するために、AEM では HTML 要素の属性について次のパターンに従います。
 
    1. `src` 属性
    1. `href` 属性
@@ -197,7 +206,7 @@ HTML ページを生成した後、`Sling Rewriter` パイプラインは出力�
 
 >[!NOTE]
 >
->このインターフェイスでは、生成された Target オファーからの内部 HTML リンクのみ処理します。
+>このインターフェイスでは、生成された Target オファーからの内部 HTML リンクのみを処理します。
 
 Link Rewriter Provider インターフェイス（`ExperienceFragmentLinkRewriterProvider`）は次のとおりです。
 
@@ -254,7 +263,7 @@ public class GeneralLinkRewriter implements ExperienceFragmentLinkRewriterProvid
 * ` [shouldRewrite](#shouldrewrite)`
 * ` [rewriteLink](#rewritelink)`
 
-   * `rewriteLinkExample2`
+  * `rewriteLinkExample2`
 
 * ` [getPriority](#priorities-getpriority)`
 

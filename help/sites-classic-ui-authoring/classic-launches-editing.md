@@ -10,21 +10,30 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 9a29bdbf-0f5d-4656-bd65-a63fd804c9e7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 96%
-
+source-wordcount: '293'
+ht-degree: 95%
 ---
-
-# ローンチの編集 {#editing-launches}
+# ローンチの編集{#editing-launches}
 
 ## ローンチページの編集 {#editing-launch-pages}
 
 ページ（またはページのセット）にローンチが作成されている場合、ページのローンチコピーのコンテンツを編集できます。
 
 1. 編集するページを開きます。
-1. サイドキックで「**バージョン管理**」タブを選択し、「**ローンチ**」グループを展開します。現在編集中のローンチのタイトルには太字フォントが使用されています。
+1. サイドキックで「**バージョン管理**」タブを選択し、「**ローンチ**」グループを展開します。 現在編集中のローンチのタイトルには太字フォントが使用されています。
 
    ![chlimage_1-13](assets/chlimage_1-13.jpeg)
 
@@ -37,17 +46,17 @@ ht-degree: 96%
 
 ## ローンチの設定の編集 {#editing-a-launch-configuration}
 
-ローンチの作成後、ローンチ名およびローンチ日を変更できます。また、ローンチに関連付ける画像を指定できます。
+ローンチの作成後、ローンチ名およびローンチ日を変更できます。 また、ローンチに関連付ける画像を指定できます。
 
-1. ローンチの管理ページ （[http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)）を開きます。
+1. 起動管理ページ （[http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)）を開きます。
 
 1. 必要なローンチを選択し、「**編集**」をクリックしてダイアログを開きます。
 
    * 「**一般**」タブで、次の情報を編集できます。
 
-      * **タイトル**
-      * **開始日**：ローンチ日と同じ
-      * **実稼動準備完了**
+     * **タイトル**
+     * **開始日**：ローンチ日と同じ
+     * **実稼動準備完了**
 
      これらのフィールドの目的と操作について詳しくは、[ローンチ - イベントの順序](/help/sites-authoring/launches.md#launches-the-order-of-events)を参照してください。
 

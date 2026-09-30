@@ -10,33 +10,42 @@ feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: cd93bdfb-e8f1-45e8-b2a1-de70aba42581
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '300'
 ht-degree: 95%
-
 ---
-
 # Adobe Experience Manager（AEM）でのユーザー管理操作を監査する方法 {#how-to-audit-user-management-operations-in-aem}
 
 ## はじめに {#introduction}
 
 AEM では、権限の変更をログに記録して、後で監査できるようにする機能が導入されました。
 
-この機能強化により、ユーザーの権限とグループの割り当てに対する CRUD（作成、読み取り、更新、削除）アクションを監査できるようになります。具体的には、次の情報が記録されます。
+この機能強化により、ユーザーの権限とグループの割り当てに対する CRUD（作成、読み取り、更新、削除）アクションを監査できるようになります。 具体的には、次の情報が記録されます。
 
 * 新しく作成されたユーザー
 * グループに追加中のユーザー
 * 既存のユーザーまたはグループの権限の変更
 
-デフォルトでは、ログエントリは `error.log` ファイルに書き込まれます。監視を容易にするために、この情報を別のログファイルにリダイレクトすることをお勧めします。その方法について詳しくは、次の段落を参照してください。
+デフォルトでは、ログエントリは `error.log` ファイルに書き込まれます。 モニタリングを容易にするために、この情報を別のログファイルにリダイレクトすることをお勧めします。 その方法について詳しくは、次の段落を参照してください。
 
 ## 別のログファイルへの出力のリダイレクト {#redirecting-the-output-to-a-separate-log-file}
 
-別のログファイルにログ出力をリダイレクトするには、**Apache Sling Logging Logger** 設定を作成します。次の例では、別のファイルの名前として、`useraudit.log` を使用します。
+別のログファイルにログ出力をリダイレクトするには、**Apache Sling Logging Logger** 設定を作成します。 次の例では、別のファイルの名前として、`useraudit.log` を使用します。
 
-1. Web コンソールに移動します（*https://serveraddress:serverport/system/console/configMgr*）。
-1. **Apache Sling Logging Logger Configuration** を検索します。次に、エントリの右側にある「+」を押して、ファクトリ設定を作成します。
+1. *https://serveraddress:serverport/system/console/configMgr*&#x200B;を参照して、Web コンソールに移動します
+1. **Apache Sling Logging Logger Configuration** を検索します。 次に、エントリの右側にある「+」を押して、ファクトリ設定を作成します。
 1. 次の設定を作成します。
 
    * **ログレベル**：情報

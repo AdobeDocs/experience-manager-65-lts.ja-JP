@@ -1,5 +1,5 @@
 ---
-title: 通信作成用ソリューションのカスタムポータルとの統合
+title: 通信を作成ソリューションとカスタムポータルの統合
 description: 通信の作成 UI とカスタムポータルを統合する方法について説明します。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,22 +9,35 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 496b125b-b091-4843-ba9f-2479dbeba07b
-source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 46%
-
+source-wordcount: '404'
+ht-degree: 47%
 ---
-
-# `Create Correspondence` ソリューションとカスタムポータルの統合{#integrating-create-correspondence-ui-with-your-custom-portal}
+# カスタムポータルとの`Create Correspondence` ソリューションの統合{#integrating-create-correspondence-ui-with-your-custom-portal}
 
 ## 概要 {#overview}
 
-この記事では、`Create Correspondence` ソリューションをお使いの環境と統合する方法について詳しく説明します。
+この記事では、`Create Correspondence` ソリューションを環境と統合する方法について詳しく説明します。
 
 ## URL ベースの呼び出し {#url-based-invocation}
 
-カスタムポータルから `Create Correspondence` アプリケーションを呼び出す 1 つの方法は、次のリクエストパラメーターを含む URL を準備することです。
+カスタムポータルから`Create Correspondence` アプリケーションを呼び出す方法の1つは、次のリクエストパラメーターを使用してURLを準備することです。
 
 * 文字テンプレートの識別子（cmLetterId パラメーターを使用）。
 
@@ -39,11 +52,11 @@ ht-degree: 46%
 
 >[!NOTE]
 >
->`Create Correspondence` アプリケーションを呼び出す前に、データを保存してアップロードし、指定された dataURL で `Create Correspondence` UI を呼び出します。 このプロセスは、カスタムポータル自体から、または別のバックエンドプロセスを通じて実行できます。
+>`Create Correspondence` アプリケーションを呼び出す前に、データを保存してアップロードし、指定されたdataURLで`Create Correspondence` UIを呼び出します。 このプロセスは、カスタムポータル自体から、または別のバックエンドプロセスを通じて実行できます。
 
 ## インラインデータベースの呼び出し {#inline-data-based-invocation}
 
-`Create Correspondence` アプリケーションを呼び出すもう 1 つの安全な方法は、URL （https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html）に移動することです。 パラメーターとデータを送信しながら、この URL を実行して、`Create Correspondence` アプリケーションを POST リクエストとして呼び出し、エンドユーザーに対して非表示にします。 また、このワークフローでは、`Create Correspondence` アプリケーションの XML データをインラインで（同じリクエストの一部として `cmData` パラメーターを使用して）渡すことができるようになりました。 このワークフローは、以前のアプローチでは不可能または理想的でした。
+`Create Correspondence` アプリケーションを呼び出すもう1つの、より安全な方法は、URL （https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html）にアクセスすることです。 パラメーターとデータを送信する際にこのURLを実行して、`Create Correspondence` アプリケーションをPOST リクエストとして呼び出し、エンドユーザーから非表示にします。 このワークフローでは、`Create Correspondence` アプリケーションのXML データをインラインで（同じリクエストの一部として、`cmData` パラメーターを使用して）渡せるようになりました。 以前のアプローチでは、このワークフローは不可能であり、理想的でもありませんでした。
 
 ### レターを指定するパラメーター {#parameters-for-specifying-letter}
 
@@ -66,12 +79,12 @@ ht-degree: 46%
   <tr>
    <td>cmDataUrl<br /> </td> 
    <td>URL</td> 
-   <td>cq、ftp、http、file.<br /> などの基本的なプロトコルを使用するソースファイルの XML データ </td> 
+   <td>cq、ftp、http、fileなどの基本的なプロトコルを使用したソースファイルからのXML データ。<br /> </td> 
   </tr>
   <tr>
    <td>cmLetterInstanceId</td> 
    <td>文字列</td> 
-   <td>レターインスタンスで使用可能な xml データを使用します。</td> 
+   <td>レターインスタンスで使用可能なxml データを使用します。</td> 
   </tr>
   <tr>
    <td>cmUseTestData</td> 
@@ -94,7 +107,7 @@ ht-degree: 46%
   </tr>
   <tr>
    <td>cmPreview<br /> </td> 
-   <td>ブール値</td> 
+   <td>ブーリアン</td> 
    <td>「True」に設定されている場合、レターをプレビューモードで開きます<br /> </td> 
   </tr>
   <tr>
@@ -105,4 +118,4 @@ ht-degree: 46%
  </tbody>
 </table>
 
-`cmDataURL` に http または cq プロトコルを使用する場合、`http/cq` の URL には匿名でアクセスできる必要があります。
+`cmDataURL`にhttp プロトコルまたはcq プロトコルを使用する場合は、`http/cq`のURLに匿名でアクセスできる必要があります。

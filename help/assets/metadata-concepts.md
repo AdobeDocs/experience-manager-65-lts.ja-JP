@@ -6,13 +6,27 @@ role: User, Admin
 feature: Metadata
 solution: Experience Manager, Experience Manager Assets
 exl-id: 16ab2e64-9c12-43ae-a8d2-f71e63899c68
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: ed6971a3-2c12-4fd2-81f4-ff329c416250
+    internal-label: Metadata
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2751'
+source-wordcount: '2757'
 ht-degree: 97%
-
 ---
-
 # メタデータの概念について {#why-we-need-metadata}
 
 メタデータとは、データに関する情報のことです。 この点に関して、データは、例えば画像などのデジタルアセットを指します。 メタデータは、効率的なアセット管理を行うために重要です。
@@ -40,7 +54,7 @@ ht-degree: 97%
 メタデータを追加すると、以下の理由からデジタルアセットの価値が大きくなります。
 
 * アクセスが容易になる - システムやユーザーが簡単に見つけることができます。
-* 管理しやすくなる - 一連の同じプロパティを持つアセットを容易に検索し、これらのアセットに変更を適用できます。
+* 管理しやすくなる - 同じ一連のプロパティを持つアセットを見つけやすくなり、それらに変更を適用できます。
 * 完全 - アセットは、より多くの情報とコンテキスト、より多くのメタデータを保持します。
 
 したがって、[!DNL Assets] ではデジタルアセットのメタデータの作成、管理およびやり取りを行う適切な方法を提供します。
@@ -71,7 +85,7 @@ ht-degree: 97%
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform]（XMP）は、すべてのメタデータ管理に対して [!DNL Experience Manager Assets] で使用されるオープンな標準です。 XMP は、すべてのファイル形式に埋め込むことができる、ユニバーサルメタデータエンコーディングを提供します。 アドビやその他の企業は、リッチコンテンツモデルを提供する XMP 標準をサポートしています。 XMP 標準および [!DNL Experience Manager Assets] のユーザーは、基盤となる強力なプラットフォームを持っています。 詳しくは、[XMP](https://www.adobe.com/jp/products/xmp.html) を参照してください。
+[!DNL Extensible Metadata Platform]（XMP）は、すべてのメタデータ管理に対して [!DNL Experience Manager Assets] で使用されるオープンな標準です。 XMP は、すべてのファイル形式に埋め込むことができる、ユニバーサルメタデータエンコーディングを提供します。 アドビやその他の企業は、リッチコンテンツモデルを提供する XMP 標準をサポートしています。 XMP 標準および [!DNL Experience Manager Assets] のユーザーは、基盤となる強力なプラットフォームを持っています。 詳しくは、[XMP](https://www.adobe.com/products/xmp.html) を参照してください。
 
 ### ID3 {#id}
 
@@ -292,7 +306,7 @@ XMP には、`xml:lang` プロパティをテキストプロパティに追加�
 
 ### クリエイティブの評価のサポート {#creative-rating-support}
 
-プロパティページには、個々のユーザーの評価と総評価が表示されるほか、Adobe Bridge およびその他のクリエイティブアプリを通じてアセットに割り当てられた評価も表示されるようになりました。
+プロパティページには、個人ユーザーの評価と総評価が表示されるほか、Adobe Bridge およびその他のクリエイティブアプリを通じてアセットに割り当てられた評価も表示されるようになりました。
 
 これらの評価は、「**[!UICONTROL 詳細]**」タブ内の「**[!UICONTROL クリエイティブの評価]**」セクションの下に表示されます。
 

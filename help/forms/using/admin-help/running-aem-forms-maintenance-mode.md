@@ -9,26 +9,41 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: d4cfe1c1-8b44-4bd5-b6ec-29e5f70f0674
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 100%
-
 ---
-
 # メンテナンスモードでの AEM Forms の実行 {#running-aem-forms-in-maintenance-mode}
 
 メンテナンスモードは、DSC のパッチ適用、AEM Forms のアップグレード、サービスパックの適用などのタスクを実行するときに役立ちます。
 
-サーバーがメンテナンスモードのときはプロセスを一切開始しないでください。 サーバーがメンテナンスモードのときにプロセスを開始すると、次の問題が発生します。
+サーバーがメンテナンスモードのときはプロセスを一切開始しないでください。 サーバーがメンテナンスモードのときにプロセスを開始すると、次のようになります。
 
 * プロセスの有効期間が長い場合、プロセスはジョブデータベースに追加されますが開始されません。 メンテナンスモードを終了すると、メンテナンスモード中にサーバーが再起動した場合でも、キューにある長期間有効なジョブが AEM Forms で処理されます。
 * プロセスの有効期間が短い場合はすぐに処理されます。
 
 **AEM Forms をメンテナンスモードにする**
 
-1. Web ブラウザーに次のように入力します。
+1. web ブラウザーに次のように入力します。
 
    `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=[administrator username]&password=[password]`
 
@@ -40,7 +55,7 @@ ht-degree: 100%
 
 **AEM Forms がメンテナンスモードで実行中かどうかの確認**
 
-1. Web ブラウザーに次のように入力します。
+1. web ブラウザーに次のように入力します。
 
    `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=[administrator username]&password=[password]`
 
@@ -48,7 +63,7 @@ ht-degree: 100%
 
 **メンテナンスモードをオフにする**
 
-1. Web ブラウザーに次のように入力します。
+1. web ブラウザーに次のように入力します。
 
    `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=[administrator username]&password=[password]`
 
