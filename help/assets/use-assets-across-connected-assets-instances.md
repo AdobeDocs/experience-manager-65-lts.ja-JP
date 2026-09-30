@@ -60,12 +60,12 @@ Connected Assets 機能では、[!DNL Experience Manager Sites] と [!DNL Experi
 この機能を使用または設定する前に、以下を確認してください。
 
 * ユーザーがそれぞれのデプロイメント上で適切なユーザーグループに属している。
-* [!DNL Adobe Experience Manager]個のデプロイメントタイプの場合、サポートされている条件のいずれかが満たされます。[!DNL Experience Manager] 6.5 LTS [!DNL Assets]は[!DNL Experience Manager] as a Cloud Serviceで動作します。 [!DNL Experience Manager] as a [!DNL Cloud Service] におけるこの機能の動作について詳しくは、[&#x200B; Experience Manager as a Cloud Service における Connected Assets &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=ja)を参照してください。
+* [!DNL Adobe Experience Manager]個のデプロイメントタイプの場合、サポートされている条件のいずれかが満たされます。[!DNL Experience Manager] 6.5 LTS [!DNL Assets]は[!DNL Experience Manager] as a Cloud Serviceで動作します。 [!DNL Experience Manager] as a [!DNL Cloud Service] におけるこの機能の動作について詳しくは、[ Experience Manager as a Cloud Service における Connected Assets ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=ja)を参照してください。
 
   | | [!DNL Sites] as a [!DNL Cloud Service] | AMSの[!DNL Experience Manager] 6.5 LTS [!DNL Sites] | [!DNL Experience Manager] 6.5 LTS [!DNL Sites] オンプレミス |
   |---|---|---|---|
   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | サポート対象 | サポート対象 | サポート対象 |
-  | AMS **の**&#x200B;[!DNL Experience Manager] 6.5 LTS [!DNL Assets] | サポート対象 | サポート対象 | サポート対象 |
+  | AMS **の**[!DNL Experience Manager] 6.5 LTS [!DNL Assets] | サポート対象 | サポート対象 | サポート対象 |
   | **[!DNL Experience Manager]6.5 LTS [!DNL Assets] オンプレミス** | サポート対象外 | サポート対象外 | サポート対象外 |
 
 ### サポートされているファイル形式 {#mimetypes}
@@ -345,7 +345,7 @@ Connected Assets の設定後、[!DNL Dynamic Media] アセットは、[!DNL Sit
 * [!DNL Sites] 作成者は全員、リモート DAM デプロイメントへのアクセス権限を持っていなくても、取得されたコピーに対する読み取り権限を持ちます。
 * 統合をカスタマイズするための API サポートはありません。
 * この機能は、リモートアセットのシームレスな検索と使用をサポートします。 多くのリモートアセットをローカルデプロイメントで一度に利用できるようにするには、リモートアセットの移行を検討します。 詳しくは、[アセット移行ガイド](assets-migration-guide.md)を参照してください。
-* リモートアセットを[!UICONTROL ページプロパティ]ユーザーインターフェイスのページサムネールとして使用することはできません。 Web ページのサムネールは、[!UICONTROL ページプロパティ]ユーザインターフェイスの[!UICONTROL サムネール]から、「[!UICONTROL 画像を選択]」をクリックして設定できます。
+* リモートアセットを[!UICONTROL ページプロパティ]ユーザーインターフェイスのページサムネールとして使用することはできません。 Web ページのサムネールは、[!UICONTROL ページプロパティ]ユーザーインターフェイスの[!UICONTROL サムネール]から、「[!UICONTROL 画像を選択]」をクリックして設定できます。
 
 ### セットアップとライセンス {#setup-licensing}
 

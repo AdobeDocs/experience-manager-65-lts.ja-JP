@@ -82,4 +82,4 @@ Dynamic Media では、クローズドキャプションを使用したビデオ
 >[!MORELIKETHIS]
 >
 >* [アドビソリューションのアクセシビリティ](https://www.adobe.com/accessibility.html)
->* [&#x200B; [!DNL Experience Manager Assets]](/help/assets/accessibility.md)でのアクセシビリティ
+>* [ [!DNL Experience Manager Assets]](/help/assets/accessibility.md)でのアクセシビリティ
