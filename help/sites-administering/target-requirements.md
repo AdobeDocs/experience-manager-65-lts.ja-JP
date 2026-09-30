@@ -40,7 +40,7 @@ AEM と Adobe Target を統合するには、有効な Adobe Target アカウン
 >
 >Target チームは、アカウントが統合を使用できるようにしなければなりません。
 >
->そうでない場合は、[Adobe カスタマーケア](https://experienceleague.adobe.com/en/docs/target/using/cmp-resources-and-contact-information)にご連絡ください。
+>そうでない場合は、[Adobe カスタマーケア](https://experienceleague.adobe.com/ja/docs/target/using/cmp-resources-and-contact-information)にご連絡ください。
 
 ## Target レプリケーションエージェントを有効にする {#enabling-the-target-replication-agent}
 

@@ -95,10 +95,10 @@ ht-degree: 50%
 
 ## 関連トピック {#further-information}
 
-コアコンポーネントについて詳しくは、オーサリングガイド [&#x200B; コアコンポーネント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction)を参照して、機能の概要を確認してください。 技術的な概要については、ガイド [&#x200B; コアコンポーネントの開発](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview)を参照してください。
+コアコンポーネントについて詳しくは、オーサリングガイド [&#x200B; コアコンポーネント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction)を参照して、機能の概要を確認してください。 技術的な概要については、ガイド [&#x200B; コアコンポーネントの開発](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/overview)を参照してください。
 
 
 
-コアコンポーネントについて詳しくは、オーサリングドキュメント [&#x200B; コアコンポーネント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction)でコアコンポーネント機能の概要を参照し、技術情報については開発者ドキュメント [&#x200B; コアコンポーネントの開発](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview)を参照してください。
+コアコンポーネントについて詳しくは、オーサリングドキュメント [&#x200B; コアコンポーネント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction)でコアコンポーネント機能の概要を参照し、技術情報については開発者ドキュメント [&#x200B; コアコンポーネントの開発](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/overview)を参照してください。
 
 また、[編集可能なテンプレート &#x200B;](/help/sites-developing/we-retail-editable-templates.md)を調査することもできます。 編集可能なテンプレートの詳細については、オーサリングドキュメント [&#x200B; ページテンプレートの作成](/help/sites-authoring/templates.md)または開発者ドキュメント ページ [&#x200B; テンプレート – 編集可能](/help/sites-developing/page-templates-editable.md)を参照してください。

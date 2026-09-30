@@ -418,7 +418,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
     </ul>
     <div>
       シャープ化については、で説明します
-     <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/sharpening_images.pdf">画像をシャープ化</a>。
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/sharpening_images.pdf?lang=ja">画像をシャープ化</a>。
     </div> </td>
   </tr>
   <tr>

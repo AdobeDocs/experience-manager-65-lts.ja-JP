@@ -104,8 +104,8 @@ AEM Forms Designer 6.5.16.0 の最新バージョンの更新する場合、次�
 AEM Forms Designer でスタンドアロンのインストーラーを使用する場合は、以下の手順を実行します。
 
 1. **AEM Forms Designer6.5.16.0** をインストールする前に、以前のバージョンをアンインストールする必要があります。
-1. AEM Form のリリースページから [AEM Forms Designer6.5.15.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) をダウンロードしてインストールします。
-1. **AEM Forms Designer6.5.15.0** のインストールが完了したら、[AEM Forms Designer 6.5.16.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#)をダウンロードし、ダウンロードしたインストーラーファイルをダブルクリックしてインストールします。
+1. AEM Form のリリースページから [AEM Forms Designer6.5.15.0](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) をダウンロードしてインストールします。
+1. **AEM Forms Designer6.5.15.0** のインストールが完了したら、[AEM Forms Designer 6.5.16.0](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#)をダウンロードし、ダウンロードしたインストーラーファイルをダブルクリックしてインストールします。
 
 +++
 
@@ -113,7 +113,7 @@ AEM Forms Designer でスタンドアロンのインストーラーを使用す�
 
 AEM Forms Designer でスタンドアロンのインストーラーを使用する場合は、以下の手順を実行します。
 
-1. [Software Distribution Portal](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#)から最新バージョンのAEM Forms Designerをダウンロードします。
+1. [Software Distribution Portal](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#)から最新バージョンのAEM Forms Designerをダウンロードします。
 1. ダウンロードしたインストーラーファイルをダブルクリックして、最新バージョンの AEM Forms Designer をインストールします。
 
 +++

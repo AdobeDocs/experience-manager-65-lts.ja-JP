@@ -377,4 +377,4 @@ JSON ファイルが`C:\batch\mergedJsonPath.json`にあり、次のインタラ
 
 >[!NOTE]
 >
->デフォルトでは、CRX プロトコルのみが有効になっています。 その他のサポートされているプロトコルを有効にするには、[Configuration Manager を使用した事前入力サービスの設定](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en)を参照してください。
+>デフォルトでは、CRX プロトコルのみが有効になっています。 その他のサポートされているプロトコルを有効にするには、[Configuration Manager を使用した事前入力サービスの設定](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=ja)を参照してください。

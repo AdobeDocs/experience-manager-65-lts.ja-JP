@@ -60,7 +60,7 @@ Web サイトでは、さまざまな顧客向けに幅広い製品を提供し�
 
 ### 前提条件 {#prerequisite}
 
-* [AEM オーサーインスタンス](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)を設定します。
+* [AEM オーサーインスタンス](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html?lang=ja#author-and-publish-installs)を設定します。
 * [AEM Forms アドオン](../../forms/using/installing-configuring-aem-forms-osgi.md)をオーサーインスタンスにインストールします。
 * JDBC データベースドライバー（JAR ファイル）をデータベースプロバイダーから取得します。 このチュートリアルに記載されている例は、[!DNL MySQL] データベースに基づいています。これらの例では、[!DNL Oracle's] [MySQL JDBC データベースドライバー](https://dev.mysql.com/downloads/connector/j/5.1.html)を使用しています。
 

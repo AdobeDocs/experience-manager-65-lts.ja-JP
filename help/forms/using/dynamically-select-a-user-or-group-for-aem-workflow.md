@@ -133,7 +133,7 @@ function getAdobeSignRecipients() {
 
 [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java インターフェイスを使用して、Adobe Signとタスクの割り当て手順のユーザーまたはグループを動的に選択できます。 [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java インターフェイスを使用するOSGi バンドルを作成し、それをAEM Forms Serverにデプロイできます。 このオプションは、AEM ワークフローの`Assign Task`およびAdobe Sign コンポーネントで選択できます。
 
-以下のコードサンプルをコンパイルするには、[AEM Forms Client SDK](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) jar および [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) ファイルが必要です。 これらの jar ファイルを外部の依存関係として OSGi バンドルプロジェクトに追加します。 任意の Java IDE を使用して、OSGi バンドルを作成できます。 次の手順は、Eclipse を使用して OSGi バンドルを作成する手順を示しています。
+以下のコードサンプルをコンパイルするには、[AEM Forms Client SDK](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) jar および [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) ファイルが必要です。 これらの jar ファイルを外部の依存関係として OSGi バンドルプロジェクトに追加します。 任意の Java IDE を使用して、OSGi バンドルを作成できます。 次の手順は、Eclipse を使用して OSGi バンドルを作成する手順を示しています。
 
 1. Eclipse IDE を開きます。 **[!UICONTROL ファイル]**／**[!UICONTROL 新規プロジェクト]**&#x200B;に移動します。
 1. ウィザードを選択画面で、**[!UICONTROL Maven プロジェクト]**&#x200B;を選択し、「**[!UICONTROL 次へ]**」をクリックします。

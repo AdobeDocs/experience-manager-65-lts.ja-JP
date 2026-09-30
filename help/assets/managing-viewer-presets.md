@@ -53,7 +53,7 @@ ht-degree: 79%
 
 すべての標準提供ビューアでキーボードアクセシビリティがサポートされています。
 
-[キーボードアクセシビリティとナビゲーション](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility)に関するページも参照してください。
+[キーボードアクセシビリティとナビゲーション](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility)に関するページも参照してください。
 
 ## ビューアプリセットの管理 {#managing-viewer-presets-1}
 
@@ -69,7 +69,7 @@ Adobe Experience Manager でビューアプリセットの追加、編集、削�
 
 Web ページによってニーズは異なります。 例えば、HTML5 ビューアが別のブラウザーウィンドウで 開くリンクを提供する web ページが必要な場合があります。 ホスティングページに直接 HTML5 ビューアを埋め込む必要が生じる場合があります。 後者の場合は、web ページのレイアウトが静的な場合や、 「レスポンシブ」な場合があり、デバイスの違いやブラウザーウィンドウのサイズの違いによって表示が異なります。 これらのニーズに対応するために、Dynamic Media に付属する事前定義済みの標準提供 HTML5 ビューアはすべて、静的な Web ページとレスポンシブデザイン Web ページの両方をサポートしています。
 
-レスポンシブビューアをweb ページに埋め込む方法について詳しくは、[&#x200B; レスポンシブ画像ライブラリ &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library)を参照してください。
+レスポンシブビューアをweb ページに埋め込む方法について詳しくは、[&#x200B; レスポンシブ画像ライブラリ &#x200B;](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library)を参照してください。
 
 >[!NOTE]
 >
@@ -454,13 +454,13 @@ Experience Managerでは、**[!UICONTROL 詳細表示]** > **[!UICONTROL ビュ�
 
      Visual Editor を使用すると、特定のプロパティがスタイルに与える効果を確認できます。 任意のプロパティを設定または調整して、エディターの左側にあるサンプルを使用して、そのプロパティがビューアにどのような影響を与えるのかを即座に確認します。
 
-     ビューアプリセットタイプごとの CSS スタイル設定プロパティについては、『[ビューアリファレンスガイド](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources)』の「*`<viewer name>`* ビューアのカスタマイズ」のヘルプトピックを参照してください。 例えば、`Mixed_Media` タイプのビューアプリセットを作成している場合、プロパティのリストと各プロパティの説明については、[混在メディアビューアのカスタマイズ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer)を参照してください。
+     ビューアプリセットタイプごとの CSS スタイル設定プロパティについては、『[ビューアリファレンスガイド](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources)』の「*`<viewer name>`* ビューアのカスタマイズ」のヘルプトピックを参照してください。 例えば、`Mixed_Media` タイプのビューアプリセットを作成している場合、プロパティのリストと各プロパティの説明については、[混在メディアビューアのカスタマイズ](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer)を参照してください。
 
    * スタイル設定を別個の CSS ファイルで定義している場合は、その CSS ファイルを AEM Assets にアップロードできます。 「**[!UICONTROL 選択したタイプ]**」プルダウンメニューから「**[!UICONTROL CSS]**&#x200B;を読み込む」を選択します。 必要に応じて、ビジュアルエディターを上にスクロールして、アップロードしたCSS ファイルを見つけ、ビューアプリセットに関連付けます。
 
      CSS ファイルを読み込むと、Visual Editor は、その CSS に正しいビューアマーカーが使用されているかを確認します。 例えば、ズームビューアを作成している場合、読み込むすべての CSS ルールが、親のビューア要素に定義されているズームビューアのクラス名 `.s7mixedmediaviewer` を使用して定義されている必要があります。
 
-     指定ビューアの CSS マーカーが正しく定義された CSS であれば、自作した任意の CSS を読み込むことができます （CSS マーカーについては、[&#x200B; ビューアリファレンスガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources)の「Customizing *&lt;viewer name>* Viewer」ヘルプトピックで説明しています。 例えば、Zoom ViewerのCSS マーカーについて読む場合は、[Zoom Viewerのカスタマイズ &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer)を参照してください。） ただし、ビジュアルエディターが一部のCSS値を理解できない場合があります。 そのような場合、Visual Editor は、CSS が正常に機能するように、エラーを上書きしようとします。
+     指定ビューアの CSS マーカーが正しく定義された CSS であれば、自作した任意の CSS を読み込むことができます （CSS マーカーについては、[&#x200B; ビューアリファレンスガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources)の「Customizing *&lt;viewer name>* Viewer」ヘルプトピックで説明しています。 例えば、Zoom ViewerのCSS マーカーについて読む場合は、[Zoom Viewerのカスタマイズ &#x200B;](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer)を参照してください。） ただし、ビジュアルエディターが一部のCSS値を理解できない場合があります。 そのような場合、Visual Editor は、CSS が正常に機能するように、エラーを上書きしようとします。
 
    >[!NOTE]
    >
@@ -486,7 +486,7 @@ Experience Managerでは、**[!UICONTROL 詳細表示]** > **[!UICONTROL ビュ�
 
    ビジュアルエディターの多くのコンポーネントには、詳細な説明が関連付けられています。 これらの説明は、コンポーネントを展開して関連するパラメーターを表示したときに、青いボックス内に表示されます。
 
-   一部のビューアタイプには、「**[!UICONTROL IS コマンド]**」テキストフィールドに画像サービングコマンドを指定できるコンポーネントがあります。 使用できるコマンドのリストについては、[画像サービング API リファレンス（英語）](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home)を参照してください。
+   一部のビューアタイプには、「**[!UICONTROL IS コマンド]**」テキストフィールドに画像サービングコマンドを指定できるコンポーネントがあります。 使用できるコマンドのリストについては、[画像サービング API リファレンス（英語）](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home)を参照してください。
 
    >[!NOTE]
    >
