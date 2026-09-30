@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7e14471e-8bb5-4cce-9175-3bbff9d803a9
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2035'
+source-wordcount: '2047'
 ht-degree: 80%
-
 ---
-
 # プログラムによるワークフローとのやり取り{#interacting-with-workflows-programmatically}
 
 [ワークフローをカスタマイズおよび拡張する](/help/sites-developing/workflows-customizing-extending.md)際は、以下のワークフローオブジェクトにアクセスできます。
@@ -409,8 +418,8 @@ curl -u admin:admin http://localhost:4502/etc/workflow/instances.RUNNING.json
 
 * 使用するパラメーター：
 
-   * `action`：値は必ず`UPDATE`にします。
-   * `workflowTitle`：ワークフローのタイトル
+  * `action`：値は必ず`UPDATE`にします。
+  * `workflowTitle`：ワークフローのタイトル
 
 #### ワークフローのタイトルを変更する方法 - curl を使用した REST {#how-to-change-the-workflow-title-rest-using-curl}
 
@@ -491,8 +500,8 @@ var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(P
 
 * ワークフローモデルエディターでは、モデルが `/var/workflow/models` の下で特定のノード構造を使用している必要があります。 モデルの親ノードは、以下のプロパティ値の `jcr:content` ノードを持つ `cq:Page` タイプである必要があります。
 
-   * `sling:resourceType`：`cq/workflow/components/pages/model`
-   * `cq:template`：`/libs/cq/workflow/templates/model`
+  * `sling:resourceType`：`cq/workflow/components/pages/model`
+  * `cq:template`：`/libs/cq/workflow/templates/model`
 
   モデルを作成する際は、まずこの `cq:Page` ノードを作成し、その `jcr:content` ノードを model ノードの親として使用する必要があります。
 

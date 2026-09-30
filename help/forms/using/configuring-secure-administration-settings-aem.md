@@ -5,22 +5,39 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 hide: true
+removedfrom6.5.2025: 'yes'
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 exl-id: 2278a4df-2584-4a15-9aaf-bbfc0487b72a
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 100%
-
 ---
-
 # JEE 上の AEM Forms 管理者設定のセキュリティ保護の設定 {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
 非公開の開発環境では必要ですが、AEM Forms on JEE の本番環境では必要とされないユーザーアカウントやサービスの管理方法を学びます。
 
-通常、開発者は、アプリケーションのビルドとテストに 本番環境は使用しません。 したがって、プライベートな開発環境には必要でも本番環境には必要のないユーザーアカウントとサービスを管理する必要があります。
+通常、開発者はアプリケーションのビルドとテストに本番環境を使用しません。 したがって、プライベートな開発環境には必要でも本番環境には必要のないユーザーアカウントとサービスを管理する必要があります。
 
 この記事では、JEE 上の AEM Forms の管理オプションを使用して、攻撃の対象となる脆弱性を全体的に減らす方法について説明します。
 
@@ -30,11 +47,11 @@ JEE 上の AEM Forms のインストールと設定が完了したら、SOAP お
 
 JEE 上の AEM Forms サービスでは、承認された呼び出し元であることを示す有効な資格情報が要求されますが、リモートアクセスが必要なサービスに対してのみリモートアクセスを許可する必要があります。 限定的なアクセシビリティを実現するには、まず、システムとして機能するために必要な最小限のサービス群だけをリモートアクセス可能にします。その後、必要に応じて他のサービスのリモート起動を許可する必要があります。
 
-JEE 上の AEM Forms サービスには、少なくとも SOAP アクセスが常に必要です。 これらのサービスは、通常はワークベンチで使用するために必要とされますが、Workspace web アプリケーションによって呼び出されるサービスである場合もあります。
+JEE 上の AEM Forms サービスには、少なくとも SOAP アクセスが常に必要です。 これらのサービスは、通常はワークベンチで使用するために必要ですが、Workspace web アプリケーションによって呼び出されるサービスも含まれます。
 
 管理コンソールのアプリケーションおよびサービス web ページを使用して、次の手順を実行してください。
 
-1. Web ブラウザーに次の URL を入力して管理コンソールにログインします。
+1. web ブラウザーに次の URL を入力して管理コンソールにログインします。
 
    ```java
             https://[host name]:'port'/adminui
@@ -67,7 +84,7 @@ JEE 上の AEM Forms サービスには、少なくとも SOAP アクセスが�
 
 ## サービスへの不要な匿名アクセスの無効化 {#disabling-non-essential-anonymous-access-to-services}
 
-一部の Forms サーバーサービスについては、未承認（匿名）ユーザーが呼び出して一部の操作を実行することが許可されます。 つまり、サービスによって公開されている 1 つまたは複数の操作は、認証された任意のユーザーだけでなく、認証されていない任意のユーザーによって呼び出される可能性があります。
+一部の Forms サーバーサービスでは、一部の操作について、認証されていない（匿名の）呼び出しが許可されています。 つまり、サービスによって公開されている 1 つまたは複数の操作は、認証された任意のユーザーとして、またはまったく認証されていない状態で呼び出される可能性があります。
 
 1. Web ブラウザーに次の URL を入力して、管理コンソールにログインします。
 
@@ -78,7 +95,7 @@ JEE 上の AEM Forms サービスには、少なくとも SOAP アクセスが�
 1. **サービス／アプリケーションおよびサービス／サービスの管理**&#x200B;をクリックします。
 1. 無効にするサービスの名前（AuthenticationManagerService など）をクリックします。
 1. **「セキュリティ」タブ**&#x200B;をクリックし、**匿名アクセスが許可されました**&#x200B;の選択を解除して、「**保存**」をクリックしてください。
-1. 次のサービスに関して手順 3 と 4 を完了させます。
+1. 次のサービスについて、手順 3 と 4 を実行します。
 
    * AuthenticationManagerService
    * EJB
@@ -102,9 +119,9 @@ JEE 上の AEM Forms サービスには、少なくとも SOAP アクセスが�
    * OutputService
    * FormsService
 
-   これらのサービスをリモート起動できるようする場合は、匿名アクセスを無効にすることを考慮する必要があります。 そうしないと、これらのサービスにネットワークアクセス可能な任意の呼び出し元が、有効な資格情報を渡さずにサービスを起動するおそれがあります。
+   これらのサービスをリモート起動できるようする場合は、匿名アクセスを無効にすることを考慮する必要があります。 そうしないと、このサービスにネットワークアクセス可能な任意の呼び出し元が、有効な資格情報を渡さずにサービスを起動するおそれがあります。
 
-   匿名アクセスは、必要でないサービスでは無効にすることをお勧めします。 内部サービスは、原則的にシステム内のすべてのユーザーが認証なしで呼び出せる必要があるので、多くの場合、内部サービスでは匿名認証を有効にする必要があります。
+   匿名アクセスは、必要でないサービスでは無効にする必要があります。 内部サービスは、原則的にシステム内のすべてのユーザーが認証なしで呼び出せる必要があるので、多くの場合、内部サービスでは匿名認証を有効にする必要があります。
 
 ## デフォルトグローバルタイムアウトの変更 {#changing-the-default-global-time-out}
 

@@ -9,14 +9,26 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 90628021-75cb-41f3-a5f7-66c4f1ed0f3a
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 100%
-
 ---
-
 # Document Security Web ページの使用 {#using-the-document-security-webpages}
 
 >[!NOTE]
@@ -43,7 +55,7 @@ Document Security の複数のインストール環境にアクセスする場�
 
 管理者用のデフォルトの URL は、`https://[host]:[port]/adminui` です。
 
-管理者の場合、インストール時にデフォルトの上級管理者アカウントが作成されます。 Document Security を最初にインストールするときは、このアカウントを使用してログインできます。
+管理者の場合、インストール時にデフォルトの上級管理者アカウントが作成されます。 Document Security が最初にインストールされたときは、このアカウントを使用してログインできます。
 
 >[!NOTE]
 >
@@ -98,7 +110,7 @@ Document Security には、Secure Sockets Layer（SSL）経由でアクセスし
 
 **Internet Explorer でサーバー証明書をインストール**
 
-1. Web ブラウザーを開いて、「アドレス」ボックスに Document Security のベース URL を入力します。 例えば、`https://[host]:[port]` と入力します。 セキュリティの警告ダイアログボックスが表示されます。
+1. web ブラウザーを開いて、「アドレス」ボックスに Document Security のベース URL を入力します。 例えば、`https://[host]:[port]` と入力します。 セキュリティの警告ダイアログボックスが表示されます。
 1. 「証明書の表示」、「証明書のインストール」の順にクリックして、インストールのデフォルト証明書を選択します。 証明書は、「信頼されたルート証明機関」にインストールする必要があります。
 1. ブラウザーセッションを閉じます。
 1. 別のブラウザーウィンドウを開き、「アドレス」ボックスに同じ URL を入力します。 セキュリティの警告ダイアログボックスが表示されます。 このテストで、証明書が正しくインストールされていることを確認できます。

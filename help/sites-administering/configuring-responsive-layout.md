@@ -7,13 +7,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 413f15c9-5b51-4d8d-8cf0-3e98608b9d9e
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1410'
 ht-degree: 85%
-
 ---
-
 # レイアウトコンテナおよびレイアウトモードの設定{#configuring-layout-container-and-layout-mode}
 
 レイアウトコンテナおよびレイアウトモードの設定方法について学びます。
@@ -34,17 +43,17 @@ AEM は、次のメカニズムを組み合わせて使用することにより�
 
   このコンポーネントが提供するグリッド段落システムを使用すると、レスポンシブグリッド内にコンポーネントを追加および配置できるようになります。 ページのデフォルトの parsys として使用したり、コンポーネントブラウザーで作成者が使用できるようにしたりできます。
 
-   * デフォルトの&#x200B;**レイアウトコンテナ**&#x200B;コンポーネントは以下の場所で定義します。
+  * デフォルトの&#x200B;**レイアウトコンテナ**&#x200B;コンポーネントは以下の場所で定義します。
 
-     /libs/wcm/foundation/components/responsivegrid
+    /libs/wcm/foundation/components/responsivegrid
 
-   * レイアウトコンテナは次のように定義できます。
+  * レイアウトコンテナは次のように定義できます。
 
-      * ユーザーがページに追加できるコンポーネントとして。
-      * ページのデフォルトの parsys として。
-      * 両方として。
+    * ユーザーがページに追加できるコンポーネントとして。
+    * ページのデフォルトの parsys として。
+    * 両方として。
 
-        レイアウトコンテナをページの標準とし、この中でユーザーがレイアウトコンテナをさらに追加できるようにすることができます。例えば、列を制御する場合などです。
+      レイアウトコンテナをページの標準とし、この中でユーザーがレイアウトコンテナをさらに追加できるようにすることができます。例えば、列を制御する場合などです。
 
 * **[レイアウトモード](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
 レイアウトコンテナをページ上に配置したら、**レイアウト** モードを使用して、レスポンシブグリッド内にコンテンツを配置できます。
@@ -82,13 +91,13 @@ AEM は、次のメカニズムを組み合わせて使用することにより�
 * レスポンシブデザインで使用されます。
 * 次の項目を定義できます。
 
-   * ページテンプレートでは、設定は該当するテンプレートで作成されたすべてのページにコピーされます。
-   * ページノードでは、設定は子ページに継承されます。
+  * ページテンプレートでは、設定は該当するテンプレートで作成されたすべてのページにコピーされます。
+  * ページノードでは、設定は子ページに継承されます。
 
 * 次のようにタイトルおよび幅を定義します。
 
-   * タイトルは、必要に応じて向きと共に、一般的なデバイスのグループ化を表します。例えば、phone、tablet、tabletlandscape などです。
-   * 幅は、一般的なデバイスのグループ化の最大幅をピクセル単位で定義します。 例えば、電話のブレークポイントの幅が 768 である場合、これが電話デバイスに使用されるレイアウトの最大幅になります。
+  * タイトルは、必要に応じて向きと共に、一般的なデバイスのグループ化を表します。例えば、phone、tablet、tabletlandscape などです。
+  * 幅は、一般的なデバイスのグループ化の最大幅をピクセル単位で定義します。 例えば、電話のブレークポイントの幅が 768 である場合、これが電話デバイスに使用されるレイアウトの最大幅になります。
 
 * エミュレーターの使用中に、ページエディターの上部にマーカーとして表示されます。
 * 親ノード階層から継承され、自由に上書きできます。
@@ -233,11 +242,11 @@ AEM では、必要な CSS の一部の生成に LESS を使用するため、�
 
 * 前：
 
-   * `width=100px`
+  * `width=100px`
 
 * 後：
 
-   * `max-width=100px`
+  * `max-width=100px`
 
 #### サイズ変更とアダプティブ画像の整合性 {#resizing-and-adaptive-image-compliance}
 
@@ -297,11 +306,11 @@ AEM では、必要な CSS の一部の生成に LESS を使用するため、�
 
    * 使用可能な列の数：
 
-      * `columns="{String}8"`
+     * `columns="{String}8"`
 
    * 現在のコンポーネントに追加できるコンポーネント：
 
-      * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
+     * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
 
 ## ネストされたレスポンシブグリッド {#nested-responsive-grids}
 

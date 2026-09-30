@@ -1,17 +1,31 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  6.5 LTS のリリースノート'
-description: Adobe Experience Manager 6.5 LTS の最新のリリース情報について説明します。
+title: '[!DNL Adobe Experience Manager] 6.5 LTSのリリースノート'
+description: Adobe Experience Manager 6.5 LTS の最新のリリース情報を確認してください。
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: dfda31ac-765b-401d-98d0-c19f0de22aab
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 100%
-
+source-wordcount: '1161'
+ht-degree: 99%
 ---
-
 # Adobe Experience Manager 6.5 LTS の最新リリースノート {#release-notes}
 
 ## リリース情報 {#release-information}
@@ -37,8 +51,8 @@ ht-degree: 100%
 #### Java™ サポート  {#java-support}
 
 * Java™ 17 および Java™ 21 のサポート。
-* 最適なパフォーマンスを得るには、デフォルトの GC 値を他の値に置き換えてください。 詳しくは、[インストールとアップデート](/help/sites-deploying/custom-standalone-install.md)の節を参照してください。
-* アドビでは、Oracle から公開されていない場合、AEM 関連プロジェクトで顧客が使用できるように Java™ 17 および Java™ 21 のメンテナンスアップデートを配布します。
+* 最適なパフォーマンスを得るには、デフォルトの GC 値を他の値で上書きしてください。 詳しくは、[インストールとアップデート](/help/sites-deploying/custom-standalone-install.md)の節を参照してください。
+* アドビでは、Oracle から公開されていない場合、AEM 関連プロジェクトでお客様が使用できるように Java™ 17 および Java™ 21 のメンテナンスアップデートを配布します。
 
 #### Uberjar パッケージ {#uber-jar-packaging}
 
@@ -68,7 +82,7 @@ ht-degree: 100%
 
 ## 廃止される機能および削除された機能 {#deprecated-and-removed-features}
 
-アドビでは、古い機能を最新化または置き換えることで顧客価値を向上させるために、製品の機能を継続的にレビューしています。 これらの変更は、後方互換性に細心の注意を払って行われます。
+アドビでは、古い機能を最新化または置き換えることでお客様の価値を向上させるために、製品の機能を継続的にレビューしています。 これらの変更は、後方互換性に細心の注意を払って行われます。
 
 近い将来行われる Adobe Experience Manager（AEM）機能の削除や置換を通知するため、次のルールが適用されます。
 
@@ -90,12 +104,12 @@ ht-degree: 100%
 
 ### 削除された機能 {#removed-features}
 
-この節では、AEM 6.5 LTS から削除された機能の一覧を示します。 以前のリリースでは、これらの機能は非推奨（廃止予定）としてマークされていました。
+このセクションでは、AEM 6.5 LTS から削除された機能の一覧を示します。 以前のリリースでは、これらの機能は非推奨（廃止予定）としてマークされていました。
 
 | 領域 | 機能 | 代替手段 | バージョン（SP） |
 |--- |--- |--- |--- |
 | Commerce | AEM CIF Classic はサポートされていません。 | [AEM CIF](/help/commerce/cif/migration.md) に移行します。 | 6.5 LTS GA |
-| ソリューション | ソーシャル／コミュニティはサポートされていません。 | 代替手段はありません。 | 6.5 LTS GA |
+| ソリューション | Social/Communities はサポートされていません。 | 代替手段はありません。 | 6.5 LTS GA |
 | Screens | Screens はサポートされていません。 | 代替手段はありません。 | 6.5 LTS GA |
 | Assets | バンドルはソーシャルに依存しているので、`dam-pim` と `dam-rating` はサポートされていません。 | 代替手段はありません。 | 6.5 LTS GA |
 | Assets | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` は削除されました。 | 追加された代替 API `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()` を使用します。 | 6.5 LTS GA |
@@ -130,12 +144,12 @@ AEM 6.5.21、6.5.22、6.5.23 および AEM 6.5 LTS GA には、既知の問題�
 
 ### SSL のみの機能を使用した Dispatcher 接続の失敗 {#ssl-only-feature}
 
-AEM デプロイメントで SSL のみの機能を有効にすると、Dispatcher インスタンスと AEM インスタンス間の接続に影響を与える既知の問題があります。 この機能を有効にすると、ヘルスチェックが失敗し、Dispatcher インスタンスと AEM インスタンス間の通信が中断される場合があります。 この問題は、お客様が `https + IP` 経由で Dispatcher から AEM インスタンスに接続しようとした場合に特に発生します。 これは、SNI（Server Name Indication）検証の問題に関連しています。
+AEM デプロイメントで SSL のみの機能を有効にすると、Dispatcher インスタンスと AEM インスタンス間の接続に影響を与える既知の問題があります。 この機能を有効にすると、ヘルスチェックが失敗し、Dispatcher と AEM インスタンス間の通信が中断される場合があります。 この問題は、お客様が `https + IP` 経由で Dispatcher から AEM インスタンスに接続しようとした場合に特に発生します。 これは、SNI（Server Name Indication）検証の問題に関連しています。
 
 **影響：**
 
 * HTTP 400 応答コードを使用したヘルスチェックの失敗
-* Dispatcher インスタンスとAEM インスタンス間のトラフィックの破損
+* Dispatcher と AEM のインスタンス間のトラフィックの途絶
 * Dispatcher 経由でコンテンツを適切に配信できない
 * Dispatcher 設定で IP アドレスを指定して HTTPS を使用した際の接続の失敗
 * HTTPS + IP 経由で接続した際の HTTP 400「無効な SNI」エラー

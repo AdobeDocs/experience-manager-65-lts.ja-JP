@@ -6,16 +6,27 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 453331b3-41f7-4bf1-90fc-afeaf40577c8
-source-git-commit: f27795b9acf834101d82937d9f9f142361816735
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 86%
-
+source-wordcount: '226'
+ht-degree: 87%
 ---
-
 # タイムラインのアクティビティストリーム {#activity-stream-in-timeline}
 
-この機能は、タイムラインにアセットのアクティビティログを表示します。[!DNL Adobe Experience Manager Assets] で以下のアセット関連操作を実行すると、アクティビティストリーム機能により、タイムラインが更新され、そのアクティビティが反映されます。
+この機能は、タイムラインにアセットのアクティビティログを表示します。 [!DNL Adobe Experience Manager Assets] で以下のアセット関連操作を実行すると、アクティビティストリーム機能により、タイムラインが更新され、そのアクティビティが反映されます。
 
 アクティビティストリームでログに記録される操作は次のとおりです。
 
@@ -28,7 +39,7 @@ ht-degree: 86%
 * 非承認
 * 移動
 
-タイムラインに表示されるアクティビティログは、ログファイルが格納されている CRX の `/var/audit/com.day.cq.dam/content/dam` から取得されます。また、[!DNL Experience Manager]Experience Manager Asset Link または [Adobe デスクトップアプリケーション &#x200B;](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) により、新しいアセットがアップロードされたり、既存のアセットが変更されて [&#x200B; にチェックインされたりすると &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=ja) タイムラインアクティビティがログに記録されます。
+タイムラインに表示されるアクティビティログは、ログファイルが格納されている CRX の `/var/audit/com.day.cq.dam/content/dam` から取得されます。 さらに、新しいアセットがアップロードされたり、既存のアセットが[Experience Manager Asset Link](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)または[Adobe デスクトップアプリ &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=ja)を介して[!DNL Experience Manager]に変更およびチェックインされたりすると、タイムラインアクティビティがログに記録されます。
 
 >[!NOTE]
 >
@@ -44,4 +55,4 @@ ht-degree: 86%
 
 >[!NOTE]
 >
->「**[!UICONTROL 公開]**」および「**[!UICONTROL 非公開]**」タスクのデフォルトのログ保存場所は、`/var/audit/com.day.cq.replication/content` です。**[!UICONTROL 移動]**&#x200B;タスクの場合、デフォルトの場所は `/var/audit/com.day.cq.wcm.core.page` です。
+>「**[!UICONTROL 公開]**」および「**[!UICONTROL 非公開]**」タスクのデフォルトのログ保存場所は、`/var/audit/com.day.cq.replication/content` です。 **[!UICONTROL 移動]**&#x200B;タスクの場合、デフォルトの場所は `/var/audit/com.day.cq.wcm.core.page` です。

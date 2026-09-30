@@ -1,29 +1,43 @@
 ---
 title: スマートコンテンツサービスを使用したアセットのタグ付けの設定
-description: スマートコンテンツサービスを使用して、 [!DNL Adobe Experience Manager] でスマートタグと拡張スマートタグを設定する方法について説明します。
+description: スマートコンテンツサービスを使用して、[!DNL Adobe Experience Manager]でスマートタグと強化されたスマートタグを設定する方法を説明します。
 role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: 26371d15-b0e1-4892-9c52-bc9829e462ca
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 752f9248-f39f-5793-a7dd-5ddafcd403c7
+    internal-label: Tagging
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: f0e3b2ca-813f-4b7a-81df-52339e17ddcf
+    internal-label: Smart Tags
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 100%
-
+source-wordcount: '1079'
+ht-degree: 97%
 ---
-
 # OAuth 資格情報のスマートタグのトラブルシューティング {#oauth-config}
 
 スマートコンテンツサービスと安全な方法でやり取りするよう、[!DNL Adobe Experience Manager] アプリケーションに対する同意を採用するには、オープン認証設定が必要です。
 
 >[!NOTE]
 >
-> 2024年6月以降は、新しい JWT 資格情報を作成できません。今後は、OAuth サーバー間資格情報のみが作成されます。
-> > JWT 統合は、既存の AMS およびオンプレミスユーザーに対してのみ、2025年1月まで引き続き機能します。
+> 2024年6月以降は、新しい JWT 資格情報を作成できません。 今後は、OAuth サーバー間資格情報のみが作成されます。
+> JWT 統合は、既存の AMS およびオンプレミスユーザーに対してのみ、2025年1月まで引き続き機能します。
 
 ## 新しい AMS ユーザーの OAuth 設定 {#oauth-config-existing-ams-users}
 
-新しいユーザーの OAuth サービスの設定については、[スマートコンテンツサービスの設定](#integrate-adobe-io)を参照してください。完了したら、次の[手順](#prereqs-config-oauth-onprem)に従います。
+新しいユーザーの OAuth サービスの設定については、[スマートコンテンツサービスの設定](#integrate-adobe-io)を参照してください。 完了したら、次の[手順](#prereqs-config-oauth-onprem)に従います。
 
 >[!NOTE]
 >
@@ -37,14 +51,14 @@ ht-degree: 100%
 
 OAuth 設定には、次の前提条件が必要です。
 
-* [Developer Console](https://developer.adobe.com/console/user/servicesandapis) で新しい OAuth 統合を作成します。次の手順では、`ClientID`、`ClientSecret`、`OrgID`、およびその他のプロパティを使用します。
+* [Developer Console](https://developer.adobe.com/console/user/servicesandapis) で新しい OAuth 統合を作成します。 次の手順では、`ClientID`、`ClientSecret`、`OrgID`、およびその他のプロパティを使用します。
 * 次のファイルは、`/apps/system/config in crx/de` のパスにあります。
-   * `com.**adobe**.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
-   * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
+  * `com.**adobe**.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
+  * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
 
 ### 既存の AMS およびオンプレミスユーザーの OAuth 設定 {#steps-config-oauth-onprem}
 
-次の手順は、システム管理者が実行できます。AMS のお客様は、[サポートプロセス](https://experienceleague.adobe.com/ja?lang=ja&support-tab=home#support)に従ってアドビ担当者に連絡するか、サポートチケットを送信できます。
+次の手順は、システム管理者が実行できます。 AMS のお客様は、[サポートプロセス](https://experienceleague.adobe.com/ja?lang=ja&support-tab=home#support)に従ってアドビ担当者に連絡するか、サポートチケットを送信できます。
 
 1. `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`で以下のプロパティを追加または更新します。
 
@@ -69,25 +83,25 @@ OAuth 設定には、次の前提条件が必要です。
 
 ## 設定の検証 {#validate-the-configuration}
 
-設定を完了したら、JMX MBean を使用して設定を検証できます。検証するには、次の手順に従います。
+設定を完了したら、JMX MBean を使用して設定を検証できます。 検証するには、次の手順に従います。
 
 1. [!DNL Experience Manager] サーバー （`https://[aem_server]:[port]`）にアクセスします。
 
-1. **[!UICONTROL ツール]**／**[!UICONTROL 操作]**／**[!UICONTROL Web コンソール]**&#x200B;に移動して、OSGi コンソールを開きます。**[!UICONTROL メイン]／[!UICONTROL JMX]** をクリックします。
+1. **[!UICONTROL ツール]**／**[!UICONTROL 操作]**／**[!UICONTROL Web コンソール]**&#x200B;に移動して、OSGi コンソールを開きます。 **[!UICONTROL メイン]／[!UICONTROL JMX]** をクリックします。
 
-1. 「`com.day.cq.dam.similaritysearch.internal.impl`」をクリックします。**[!UICONTROL SimilaritySearch Miscellaneous Tasks]** が開きます。
+1. 「`com.day.cq.dam.similaritysearch.internal.impl`」をクリックします。 **[!UICONTROL SimilaritySearch Miscellaneous Tasks]** が開きます。
 
-1. 「`validateConfigs()`」をクリックします。**[!UICONTROL 設定を検証]**&#x200B;ダイアログで、「**[!UICONTROL 起動]**」をクリックします。
+1. 「`validateConfigs()`」をクリックします。 **[!UICONTROL 設定を検証]**&#x200B;ダイアログで、「**[!UICONTROL 起動]**」をクリックします。
 
 同じダイアログに検証結果が表示されます。
 
 ## Adobe Developer Console との統合 {#integrate-adobe-io}
 
-新しいユーザーとして Adobe Developer Console と統合する場合、[!DNL Experience Manager] サーバーはリクエストをスマートコンテンツサービスに転送する前に、Adobe Developer Console ゲートウェイを使用してサービス資格情報を認証します。統合するには、組織の管理者権限と、組織で購入して有効化されたスマートコンテンツサービスライセンスを持つ Adobe ID アカウントが必要です。
+新しいユーザーとして Adobe Developer Console と統合する場合、[!DNL Experience Manager] サーバーはリクエストをスマートコンテンツサービスに転送する前に、Adobe Developer Console ゲートウェイを使用してサービス資格情報を認証します。 統合するには、組織の管理者権限と、組織で購入して有効化されたスマートコンテンツサービスライセンスを持つ Adobe ID アカウントが必要です。
 
 スマートコンテンツサービスを設定するには、次のトップレベルの手順に従います。
 
-1. 公開鍵を生成するには、[!DNL Experience Manager] に[スマートコンテンツサービス](#obtain-public-certificate)の設定を作成します。OAuth 統合用の[公開証明書をダウンロードします](#obtain-public-certificate)。
+1. 公開鍵を生成するには、[!DNL Experience Manager] に[スマートコンテンツサービス](#obtain-public-certificate)の設定を作成します。 OAuth 統合用の[公開証明書をダウンロードします](#obtain-public-certificate)。
 
 1. *[既存ユーザーの場合は適用されません]* [Adobe Developer Console で統合を作成します](#create-adobe-i-o-integration)。
 
@@ -103,13 +117,13 @@ OAuth 設定には、次の前提条件が必要です。
 
 1. クラウドサービスページで、「**[!UICONTROL アセットのスマートタグ]**」の「**[!UICONTROL 今すぐ設定]**」をクリックします。
 
-1. **[!UICONTROL 設定を作成]**&#x200B;ダイアログで、スマートタグ設定のタイトルと名前を指定します。「**[!UICONTROL 作成]**」をクリックします。
+1. **[!UICONTROL 設定を作成]**&#x200B;ダイアログで、スマートタグ設定のタイトルと名前を指定します。 「**[!UICONTROL 作成]**」をクリックします。
 
 1. **[!UICONTROL AEM スマートコンテンツサービス]**&#x200B;ダイアログで、以下の値を使用します。
 
    **[!UICONTROL サービス URL]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
 
-   （例：`https://smartcontent.adobe.io/apac`）。Experience Manager オーサーインスタンスがホストされている地域として、`na`、`emea` または `apac` を指定することができます。
+   （例：`https://smartcontent.adobe.io/apac`）。 Experience Manager オーサーインスタンスがホストされている地域として、`na`、`emea` または `apac` を指定することができます。
 
    >[!NOTE]
    >
@@ -118,7 +132,7 @@ OAuth 設定には、次の前提条件が必要です。
 
    **[!UICONTROL 認証サーバー]**: `https://ims-na1.adobelogin.com`
 
-   その他のフィールドは現時点では空白のままにします（後で指定します）。「**[!UICONTROL OK]**」をクリックします。
+   その他のフィールドは現時点では空白のままにします（後で指定します）。 「**[!UICONTROL OK]**」をクリックします。
 
    ![コンテンツサービスの URL を指定するための Experience Manager スマートコンテンツサービスダイアログ](assets/aem_scs12.png)
 
@@ -126,9 +140,9 @@ OAuth 設定には、次の前提条件が必要です。
 
    >[!NOTE]
    >
-   >[!UICONTROL サービス URL] として提供された URL は、ブラウザーからアクセスできず、404 エラーが発生します。設定は、[!UICONTROL サービス URL] パラメーターの同じ値で正常に動作します。サービスの全体的なステータスとメンテナンススケジュールについては、[https://status.adobe.com/ja-jp](https://status.adobe.com/ja-jp) を参照してください。
+   >[!UICONTROL サービス URL] として提供された URL は、ブラウザーからアクセスできず、404 エラーが発生します。 設定は、[!UICONTROL サービス URL] パラメーターの同じ値で正常に動作します。 サービスの全体的なステータスとメンテナンススケジュールについては、[https://status.adobe.com/ja-jp](https://status.adobe.com/ja-jp) を参照してください。
 
-1. 「**[!UICONTROL OAuth 統合用の公開証明書をダウンロード]**」をクリックし、公開証明書ファイル `AEM-SmartTags.crt` をダウンロードします。この証明書は Adobe Developer Console にアップロードする必要がなくなりました。
+1. 「**[!UICONTROL OAuth 統合用の公開証明書をダウンロード]**」をクリックし、公開証明書ファイル `AEM-SmartTags.crt` をダウンロードします。 この証明書は Adobe Developer Console にアップロードする必要がなくなりました。
 
    ![スマートタグ付けサービス用に作成された設定の表現](assets/smart-tags-download-public-cert1.png)
 
@@ -138,17 +152,17 @@ OAuth 設定には、次の前提条件が必要です。
 
 スマートコンテンツサービス API を使用するには、Adobe 開発者コンソールで統合を作成して、[!UICONTROL API キー]（Adobe 開発者コンソール統合の[!UICONTROL クライアント ID] フィールドで生成）、[!UICONTROL テクニカルアカウント ID]、[!UICONTROL 組織 ID]、および[!UICONTROL クライアント秘密鍵]を、[!DNL Experience Manager] のクラウド設定の [!UICONTROL Assets スマートタグサービス設定]用に取得します。
 
-1. ブラウザーで [https://developer.adobe.com/console/](https://developer.adobe.com/console/) にアクセスします。適切なアカウントを選択し、関連付けられた組織の役割がシステム管理者であることを確認します。
+1. ブラウザーで [https://developer.adobe.com/console/](https://developer.adobe.com/console/) にアクセスします。 適切なアカウントを選択し、関連付けられた組織の役割がシステム管理者であることを確認します。
 
-1. 任意の名前でプロジェクトを作成します。「**[!UICONTROL API を追加]**」をクリックします。
+1. 任意の名前でプロジェクトを作成します。 「**[!UICONTROL API を追加]**」をクリックします。
 
-1. **[!UICONTROL API を追加]**&#x200B;ページで、「**[!UICONTROL Experience Cloud]**」を選択し、「**[!UICONTROL スマートコンテンツ]**」を選択します。「**[!UICONTROL 次へ]**」をクリックします。
+1. **[!UICONTROL API を追加]**&#x200B;ページで、「**[!UICONTROL Experience Cloud]**」を選択し、「**[!UICONTROL スマートコンテンツ]**」を選択します。 「**[!UICONTROL 次へ]**」をクリックします。
 
 1. **[!UICONTROL OAuth サーバー間]**&#x200B;認証方式を選択します。
 
-1. 必要に応じて&#x200B;**[!UICONTROL 資格情報名]**&#x200B;を追加／変更します。「**[!UICONTROL 次へ]**」をクリックします。
+1. 必要に応じて&#x200B;**[!UICONTROL 資格情報名]**&#x200B;を追加／変更します。 「**[!UICONTROL 次へ]**」をクリックします。
 
-1. 製品プロファイル「**[!UICONTROL スマートコンテンツサービス]**」を選択します。「**[!UICONTROL 設定済み API を保存]**」をクリックします。OAuth API は、今後の使用のために接続された資格情報の下に追加されます。[!UICONTROL API キー（クライアント ID）]をコピーするか、そこから[!UICONTROL アクセストークンを生成]できます。
+1. 製品プロファイル「**[!UICONTROL スマートコンテンツサービス]**」を選択します。 「**[!UICONTROL 設定済み API を保存]**」をクリックします。 OAuth API は、今後の使用のために接続された資格情報の下に追加されます。 [!UICONTROL API キー（クライアント ID）]をコピーするか、そこから[!UICONTROL アクセストークンを生成]できます。
 <!--
 1. On the **[!UICONTROL Select product profiles]** page, select **[!UICONTROL Smart Content Services]**. Click **[!UICONTROL Save configured API]**.
 
@@ -160,16 +174,16 @@ OAuth 設定には、次の前提条件が必要です。
    *Figure: Details of integration in Adobe Developer Console*
 -->
 
-![OAuth 設定](assets/oauth-config.png)
-*図：Adobe Developer Console での OAuth サーバー間の設定*
+![oauth設定](assets/oauth-config.png)
+*図：Adobe Developer Consoleで設定されたOAuth サーバー間*
 
 ## スマートコンテンツサービスの設定 {#configure-smart-content-service}
 
-統合を設定するには、Adobe 開発者コンソール統合から、[!UICONTROL テクニカルアカウント ID]、[!UICONTROL 組織 ID]、[!UICONTROL クライアント秘密鍵]、および[!UICONTROL クライアント ID] の各フィールドの値を使用します。スマートタグのクラウド設定を作成すると、[!DNL Experience Manager] デプロイメントからの API 要求を認証できるようになります。
+統合を設定するには、Adobe 開発者コンソール統合から、[!UICONTROL テクニカルアカウント ID]、[!UICONTROL 組織 ID]、[!UICONTROL クライアント秘密鍵]、および[!UICONTROL クライアント ID] の各フィールドの値を使用します。 スマートタグのクラウド設定を作成すると、[!DNL Experience Manager] デプロイメントからの API 要求を認証できるようになります。
 
 1. [!DNL Experience Manager] で、**[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／**[!UICONTROL 従来のクラウドサービス]**&#x200B;に移動して、[!UICONTROL クラウドサービス]コンソールを開きます。
 
-1. 「**[!UICONTROL アセットのスマートタグ]**」で、上記で作成した設定を開きます。サービス設定ページで、「**[!UICONTROL 編集]**」をクリックします。
+1. 「**[!UICONTROL アセットのスマートタグ]**」で、上記で作成した設定を開きます。 サービス設定ページで、「**[!UICONTROL 編集]**」をクリックします。
 
 1. **[!UICONTROL AEM スマートコンテンツサービス]**&#x200B;ダイアログで、「**[!UICONTROL サービス URL]**」および「**[!UICONTROL 認証サーバー]**」フィールドに事前入力された値を使用します。
 

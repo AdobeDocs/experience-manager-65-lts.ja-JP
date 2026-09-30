@@ -5,13 +5,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: f7d67e71-3148-4b27-a61e-ff64d3bf9b72
-source-git-commit: 887d76effd8af7ff4d061fb15d5a3572b51af20c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1948'
 ht-degree: 84%
-
 ---
-
 # ワークフローのベストプラクティス{#workflow-best-practices}
 
 ワークフローにより、Adobe Experience Manager（AEM）のアクティビティを自動化できます。
@@ -239,8 +248,8 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 * ワークフロープロセス内で、`WorkflowSession`がリポジトリの変更に使用されている場合は、セッションを明示的に保存しないでください。ワークフローは完了時にセッションを保存します。
 * `Session.Save` は、ワークフローステップから呼び出すことはできません。
 
-   * ワークフローJCR セッションを適応させることをお勧めします。ワークフローの実行が完了すると、ワークフローエンジンがセッションを自動的に保存するため、`save`は必要ありません。
-   * プロセスステップで独自のJCR セッションを作成することは推奨されません。
+  * ワークフローJCR セッションを適応させることをお勧めします。ワークフローの実行が完了すると、ワークフローエンジンがセッションを自動的に保存するため、`save`は必要ありません。
+  * プロセスステップで独自のJCR セッションを作成することは推奨されません。
 
 * 不要な保存操作をなくすことでオーバーヘッドを減らし、ワークフローの効率を高めることができます。
 
@@ -303,11 +312,11 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 * インスタンスをアップグレードする前に、すべてのカスタムワークフローモデルがバックアップされていることを確認してください。
 * 次の[場所](#locations)にカスタムワークフローが格納されていないことを確認してください。
 
-   * `/libs/settings/workflow/models/projects`
+  * `/libs/settings/workflow/models/projects`
 
 ## システムツール {#system-tools}
 
-ワークフローの監視、メンテナンスおよびトラブルシューティングに役立つ多くのシステムツールがあります。 以下に示す URL の例ではすべて `localhost:4502` を使用していますが、どのオーサーインスタンス（`<hostname>:<port>`）を使用しても構いません。
+ワークフローのモニタリング、メンテナンスおよびトラブルシューティングに役立つ多くのシステムツールがあります。 以下に示す URL の例ではすべて `localhost:4502` を使用していますが、どのオーサーインスタンス（`<hostname>:<port>`）を使用しても構いません。
 
 ### Sling ジョブ処理コンソール {#sling-job-handling-console}
 

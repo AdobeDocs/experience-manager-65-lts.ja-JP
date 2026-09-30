@@ -9,14 +9,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 7ac0a308-42fe-498e-abd8-37aa1bc6daca
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '412'
 ht-degree: 100%
-
 ---
-
-# 作成者がおこなう最初の手順 {#first-steps-for-authors}
+# 作成者がおこなう最初の手順{#first-steps-for-authors}
 
 ここでは、Adobe Experience Manager（AEM）で[コンテンツのオーサリングを開始する](/help/sites-authoring/author.md#concept-of-authoring-and-publishing)際に使用する主なタスクの概要について説明します。
 
@@ -32,7 +41,7 @@ ht-degree: 100%
 
 ### ページの場所への移動 {#navigating-to-the-page-location}
 
-Web サイトのコンテンツはツリー構造で管理されます。ページを作成または編集するには、[web サイトコンソール](/help/sites-classic-ui-authoring/author-env-basic-handling.md#navigating-with-the-websites-console)でそのページの場所に移動する必要があります。
+Web サイトのコンテンツはツリー構造で管理されます。 ページを作成または編集するには、[web サイトコンソール](/help/sites-classic-ui-authoring/author-env-basic-handling.md#navigating-with-the-websites-console)でそのページの場所に移動する必要があります。
 
 ### 新しいページの作成 {#creating-a-new-page}
 
@@ -56,7 +65,7 @@ Web サイトのコンテンツはツリー構造で管理されます。ペー�
 * [ページのロック](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
 * [ページのロック解除](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#unlocking-a-page)
 
-### ページの公開  {#publishing-a-page}
+### ページの公開 {#publishing-a-page}
 
 ページの編集が完了したら、web サイトへの訪問者がコンテンツを閲覧できるように、[ページを公開（またはアクティベート）](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#main-pars-title-10)します。
 

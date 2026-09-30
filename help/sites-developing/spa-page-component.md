@@ -1,6 +1,6 @@
 ---
 title: SPA ページコンポーネント
-description: SPA では、ページコンポーネントは子コンポーネントの HTML 要素を提供せず、代わりに SPA フレームワークに委任します。このドキュメントでは、これにより SPA のページコンポーネントがどのように一意になるかを説明します。
+description: SPA では、ページコンポーネントは子コンポーネントの HTML 要素を提供せず、代わりに SPA フレームワークに委任します。 このドキュメントでは、これにより SPA のページコンポーネントがどのように独自のものになるかを説明します。
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
@@ -11,29 +11,43 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 470636ce-3934-4aac-80ff-1fe6bd84455e
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '718'
 ht-degree: 100%
-
 ---
-
 
 # SPA ページコンポーネント{#spa-page-component}
 
-SPA では、ページコンポーネントは子コンポーネントの HTML 要素を提供せず、代わりに SPA フレームワークに委任します。このドキュメントでは、これにより SPA のページコンポーネントがどのように一意になるかを説明します。
+SPA では、ページコンポーネントは子コンポーネントの HTML 要素を提供せず、代わりに SPA フレームワークに委任します。 このドキュメントでは、これにより SPA のページコンポーネントがどのように一意になるかを説明します。
 
 {{ue-over-spa}}
 
 ## はじめに {#introduction}
 
-SPA のページコンポーネントは、JSP ファイルまたは HTL のファイルやリソースオブジェクトを介して子コンポーネントの HTML 要素を提供しません。この処理は SPA フレームワークに委任されます。子コンポーネントの表現は、JSON データ構造（モデル）として取得されます。次に、指定された JSON モデルに従って SPA コンポーネントがページに追加されます。そのため、ページコンポーネントの初期本文の構成は、その対応するプリレンダリング HTML とは異なります。
+SPA のページコンポーネントは、JSP ファイルまたは HTL のファイルやリソースオブジェクトを介して子コンポーネントの HTML 要素を提供しません。 この処理は SPA フレームワークに委任されます。 子コンポーネントの表現は、JSON データ構造（モデル）として取得されます。 次に、指定された JSON モデルに従って SPA コンポーネントがページに追加されます。 そのため、ページコンポーネントの初期本文の構成は、その対応するプリレンダリング HTML とは異なります。
 
-## ページモデルの管理  {#page-model-management}
+## ページモデルの管理 {#page-model-management}
 
-ページモデルの解決と管理は、指定の [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) モジュールに委任されます。SPA は、初期化時に `PageModelManager` モジュールとやり取りして、初期ページモデルを取得し、モデル更新の登録をおこなう必要があります。これは主に、作成者がページエディターを使用してページを編集しているときに生成されます。`PageModelManager` は、npm パッケージとして SPA プロジェクトからアクセスできます。`PageModelManager` は、AEMとSPAとの間のインタープリターなので、SPAに付随するものです。
+ページモデルの解決と管理は、指定の [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) モジュールに委任されます。 SPA は、初期化時に `PageModelManager` モジュールとやり取りして、初期ページモデルを取得し、モデル更新の登録をおこなう必要があります。これは主に、作成者がページエディターを使用してページを編集しているときに生成されます。 `PageModelManager` は、npm パッケージとして SPA プロジェクトからアクセスできます。 `PageModelManager` は、AEMとSPAとの間のインタープリターなので、SPAに付随するものです。
 
-ページを作成できるようにするには、`cq.authoring.pagemodel.messaging` という名前のクライアントライブラリを追加して、SPA とページエディターの間の通信チャネルを提供する必要があります。SPA ページコンポーネントがページ wcm/コアコンポーネントから継承している場合は、次のオプションを使用して、`cq.authoring.pagemodel.messaging` クライアントライブラリカテゴリを使用可能にします。
+ページを作成できるようにするには、`cq.authoring.pagemodel.messaging` という名前のクライアントライブラリを追加して、SPA とページエディターの間の通信チャネルを提供する必要があります。 SPA ページコンポーネントがページ wcm/コアコンポーネントから継承している場合は、次のオプションを使用して、`cq.authoring.pagemodel.messaging` クライアントライブラリカテゴリを使用可能にします。
 
 * テンプレートが編集可能な場合は、クライアントライブラリカテゴリをページポリシーに追加します。
 * ページコンポーネントの `customfooterlibs.html` を使用したクライアントライブラリカテゴリを追加します。
@@ -42,7 +56,7 @@ SPA のページコンポーネントは、JSP ファイルまたは HTL のフ�
 
 ## 通信データタイプ {#communication-data-type}
 
-通信データタイプは、`data-cq-datatype` 属性を使用して AEM ページコンポーネント内に HTML 要素を設定します。通信データタイプが JSON に設定されると、GET リクエストにより、コンポーネントの Sling Model エンドポイントにヒットします。ページエディターで更新が実行されると、更新されたコンポーネントの JSON 表現がページモデルのライブラリに送信されます。次に、ページモデルのライブラリから、SPA に更新が警告されます。
+通信データタイプは、`data-cq-datatype` 属性を使用して AEM ページコンポーネント内に HTML 要素を設定します。 通信データタイプが JSON に設定されると、GET リクエストはコンポーネントの Sling Model エンドポイントにヒットします。 ページエディターで更新が実行されると、更新されたコンポーネントの JSON 表現がページモデルのライブラリに送信されます。 次に、ページモデルのライブラリから、SPA に更新が警告されます。
 
 **SPA ページコンポーネント -`body.html`**
 
@@ -61,7 +75,7 @@ DOM の生成を遅延させないことは基本ですが、それに加えて�
 <sly data-sly-call="${clientLib.js @ categories='we-retail-journal-react'}"></sly>
 ```
 
-SPA コンテンツを記述するメタリソースプロパティです。
+SPA コンテンツを記述するメタリソースプロパティ：
 
 **SPA ページコンポーネント -`customheaderlibs.html`**
 
@@ -82,7 +96,7 @@ SPA コンテンツを記述するメタリソースプロパティです。
 ## メタプロパティ {#meta-properties}
 
 * `cq:wcmmode`：エディターの WCM モード（ページ、テンプレートなど）
-* `cq:pagemodel_root_url`：アプリのルートモデルの URL。子ページモデルはアプリのルートモデルのフラグメントなので、子ページに直接アクセスする場合に重要です。次に、` [PageModelManager](/help/sites-developing/spa-page-component.md)` は、アプリケーションの初期モデルを、そのルートエントリポイントからアプリケーションに入るときに体系的に再構成します。
+* `cq:pagemodel_root_url`：アプリのルートモデルの URL。 子ページモデルはアプリのルートモデルのフラグメントなので、子ページに直接アクセスする場合に重要です。 次に、` [PageModelManager](/help/sites-developing/spa-page-component.md)` は、アプリケーションの初期モデルを、そのルートエントリポイントからアプリケーションに入るときに体系的に再構成します。
 
 * `cq:pagemodel_router`：`PageModelManager` ライブラリの ` [ModelRouter](/help/sites-developing/spa-routing.md)` を有効化または無効化
 
@@ -90,7 +104,7 @@ SPA コンテンツを記述するメタリソースプロパティです。
 
 >[!CAUTION]
 >
->このドキュメントでは、We.Retail ジャーナルアプリケーションをデモの目的でのみ使用します。どのプロジェクト作業にも使用しないでください。
+>このドキュメントでは、We.Retail ジャーナルアプリケーションをデモの目的でのみ使用します。 プロジェクト作業には使用しないでください。
 >
 >AEM プロジェクトでは、[AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)を使用する必要があります。このアーキタイプは、React または Angular を使用する SPA プロジェクトをサポートし、SPA SDK を使用します。AEM 上のすべての SPA プロジェクトは Maven アーキタイプ SPA 向け スターターキットを基にしている必要があります。
 
@@ -98,9 +112,9 @@ SPA コンテンツを記述するメタリソースプロパティです。
 
 オーバーレイの同期は、`cq.authoring.page` カテゴリが提供するのと同じミューテーションオブザーバーが保証されます。
 
-## Sling Model JSON が書き出した構造設定 {#sling-model-json-exported-structure-configuration}
+## Sling Model JSON 書き出し構造の設定 {#sling-model-json-exported-structure-configuration}
 
-ルーティング機能を有効にすると、AEM ナビゲーションコンポーネントの JSON 書き出しによって、SPA の JSON 書き出しにアプリケーションの複数のルートが含まれるという前提になります。AEM ナビゲーションコンポーネントの JSON 出力は、次の 2 つのプロパティを使用し、SPA のルートページのコンテンツポリシーで設定することができます。
+ルーティング機能を有効にすると、AEM ナビゲーションコンポーネントの JSON 書き出しによって、SPA の JSON 書き出しにアプリケーションの複数のルートが含まれるという前提になります。 AEM ナビゲーションコンポーネントの JSON 出力は、次の 2 つのプロパティを使用し、SPA のルートページのコンテンツポリシーで設定することができます。
 
 * `structureDepth`：書き出されたツリーの深度に対応する数字。
 * `structurePatterns`：書き出すページに対応する Regex の Regex 配列。

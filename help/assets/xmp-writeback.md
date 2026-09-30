@@ -6,13 +6,27 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e3972784-9ded-4da8-b90c-ec2da9c3297a
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: ed6971a3-2c12-4fd2-81f4-ff329c416250
+    internal-label: Metadata
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '802'
 ht-degree: 100%
-
 ---
-
 # レンディションへの XMP の書き戻し {#xmp-writeback-to-renditions}
 
 | バージョン | 記事リンク |
@@ -65,7 +79,7 @@ XMP の書き戻し機能でメタデータをレンディションサムネー�
 
 1. ワークフローを保存します。
 
-メタデータの変更がアセットのレンディション thumbnail.140.100.png と thumbnail.319.319.png のみに反映され、他のレンディションには反映されなくなります。
+メタデータの変更は、アセットのレンディション thumbnail.140.100.png と thumbnail.319.319.png に反映され、他のレンディションには反映されません。
 
 >[!NOTE]
 >
@@ -75,7 +89,7 @@ XMP の書き戻し機能でメタデータをレンディションサムネー�
 
 [!DNL Experience Manager Assets] では、アセットの取り込み時にアセットバイナリから読み取られて JCR に保存される XMP メタデータに対して、ブロックリストと許可リストの両方で、プロパティやノードのフィルタリングをサポートしています。
 
-ブロックリストを使用してフィルタリングすると、除外するよう指定されたプロパティを除く、すべての XMP メタデータプロパティを読み込みます。 ただし、膨大な量の XMP メタデータ（例えば、10,000 個のプロパティを持つ 1,000 個のノード）を含む INDD ファイルなどのアセットタイプの場合、フィルタリングするノードの名前が必ずしも事前にわかるわけではありません。 ブロックリストを使用したフィルタリングで、大量の XMP メタデータを含む膨大な量のアセットを読み込むことができるようにすると、監視キューの遅滞など、安定性に関する問題が [!DNL Experience Manager] デプロイメントで発生する可能性があります。
+ブロックリストを使用してフィルタリングすると、除外するよう指定されたプロパティを除く、すべての XMP メタデータプロパティを読み込むことができます。 ただし、膨大な量の XMP メタデータ（例えば、10,000 個のプロパティを持つ 1,000 個のノード）を含む INDD ファイルなどのアセットタイプの場合、フィルタリングするノードの名前が必ずしも事前にわかるわけではありません。 ブロックリストを使用したフィルタリングで、大量の XMP メタデータを含む膨大な量のアセットを読み込むことができるようにすると、監視キューの遅滞など、安定性に関する問題が [!DNL Experience Manager] デプロイメントで発生する可能性があります。
 
 許可リストを使用した XMP メタデータのフィルタリングでは、インポートする XMP プロパティを定義できるので、この問題を解決できます。 許可リストに定義されていない XMP プロパティや不明な XMP プロパティは無視されます。 下位互換性を確保するために、ブロックリストを使用するフィルターにこれらのプロパティの一部を追加できます。
 

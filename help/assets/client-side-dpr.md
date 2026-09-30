@@ -5,13 +5,27 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Assets
 feature: Smart Imaging
 exl-id: 3b4f3624-d76d-4835-834b-e8610c2c40bd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: b39a6d56-d787-413f-8024-351803c28d44
+    internal-label: Smart Imaging
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 94%
-
+source-wordcount: '328'
+ht-degree: 100%
 ---
-
 # クライアントサイドのデバイスピクセル比（DPR）を使用したスマートイメージングについて {#client-side-dpr}
 
 現在のスマートイメージングソリューションでは、ユーザーエージェント文字列を使用して、使用されているデバイスのタイプ（デスクトップ、タブレット、モバイルなど）を判断します。
@@ -56,8 +70,8 @@ ht-degree: 94%
 
    両方の DPR スクリプトを 1 つにまとめると、複数のネットワークリクエストになることを回避できます。
 
-   Adobeでは、HTML ページ内の他のスクリプトを&#x200B;_前_に読み込むことをお勧めします。
-Adobeでは、body要素ではなくdiff HTML タグの下にアプリをBootstrapすることもできます。その理由は、`dprImageInjection.js`がHTML ページの本文セクションの上部に画像タグを動的に挿入するためです。
+   HTML ページの他のどのスクリプトより&#x200B;_前_に、これらのスクリプトを読み込むことをお勧めします。
+   また、body 要素ではなく diff HTML タグでアプリをブートストラップすることをお勧めします。 `dprImageInjection.js` が HTML ページの本文セクションの先頭に画像タグを動的に挿入するからです。
 
 ## JavaScript ファイルのダウンロード {#client-side-dpr-script}
 

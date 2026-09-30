@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 24ab494d-4a11-408e-8dc0-de16508edfac
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '380'
 ht-degree: 100%
-
 ---
-
 # ランディングページと Adobe Analytics の統合{#integrating-landing-pages-with-adobe-analytics}
 
 AEM は、次に示すコールトゥアクション（CTA）コンポーネントを使用することにより、ランディングページのソリューションを [Adobe Analytics](https://www.omniture.com/jp/products/analytics/sitecatalyst) と統合しました。
@@ -39,7 +48,7 @@ AEM で、サイドキックに表示される&#x200B;**コールトゥアクシ
 
 ランディングページコンポーネントを Adobe Analytics にマッピングするには：
 
-1. Adobe Analytics 設定を作成し、フレームワークを作成したら、ドロップダウンメニューから適切なレポートスイートを選択します。この結果、Adobe Analytics の変数が取得され、コンテンツファインダーに表示されます。
+1. Adobe Analytics 設定を作成し、フレームワークを作成したら、ドロップダウンメニューから適切なレポートスイートを選択します。 この結果、Adobe Analytics の変数が取得され、コンテンツファインダーに表示されます。
 1. コールトゥアクション（CTA）コンポーネントを、サイドキックからページ中央のマッピング領域の適切な場所にドラッグ＆ドロップします。
 
 <table>
@@ -87,8 +96,8 @@ AEM で、サイドキックに表示される&#x200B;**コールトゥアクシ
  </tbody>
 </table>
 
-1. コンテンツファインダーで、これらの公開される属性と Adobe Analytics 変数をマッピングします。これで、フレームワークを使用できるようになります。
-1. ランディングページを作成するか、既存の CTA コンポーネントを含む既存のランディングページを開き、サイドキックで「**ページプロパティ**」の「**Cloud Services**」タブをクリックし（タッチ操作向け UI では、「**プロパティを開く**」を選択して「**Cloud Services**」をクリックし）、ランディングページで使用するフレームワークを設定します。ドロップダウンリストからフレームワークを選択します。
+1. コンテンツファインダーで、これらの公開される属性と Adobe Analytics 変数をマッピングします。 これで、フレームワークを使用できるようになります。
+1. ランディングページを作成するか、既存の CTA コンポーネントを含む既存のランディングページを開き、サイドキックで「**ページプロパティ**」の「**Cloud Services**」タブをクリックし（タッチ操作向け UI では、「**プロパティを開く**」を選択して「**Cloud Services**」をクリックし）、ランディングページで使用するフレームワークを設定します。 ドロップダウンリストからフレームワークを選択します。
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 

@@ -9,21 +9,38 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 6deed56a-2e87-4444-8fb5-1d06b0792a5e
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 100%
-
 ---
-
 # XMP ユーティリティの操作 {#working-with-xmp-utilities}
 
 **このドキュメントのサンプルと例は、JEE 環境の AEM Forms のみを対象としています。**
 
 **XMP ユーティリティサービスについて**
 
-PDF ドキュメントにはメタデータが含まれます。メタデータは、ドキュメントの内容と区別されるドキュメントに関する情報（テキストやグラフィックなど）です。 Adobe Extensive Metadata Platform（XMP）は、ドキュメントのメタデータを処理するための標準です。
+PDF ドキュメントにはメタデータが含まれます。メタデータは、ドキュメントの内容と区別されるドキュメントに関する情報（テキストやグラフィックなど）です。 Adobe Extensible Metadata Platform（XMP）は、ドキュメントのメタデータを処理するための標準です。
 
 XMP ユーティリティサービスでは、XMP メタデータを PDF ドキュメントから取得して保存し、XMPメタデータを PDF ドキュメントにインポートすることができます。
 
@@ -34,11 +51,11 @@ XMP ユーティリティサービスを使用して、次のタスクを実行�
 
 >[!NOTE]
 >
->XMP ユーティリティサービスについて詳しくは、[AEM Forms サービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
+>XMP ユーティリティサービスについて詳しくは、[AEM Forms のサービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
 
 ## メタデータの PDF ドキュメントへのインポート {#importing-metadata-into-pdf-documents}
 
-XMP ユーティリティ Java および web サービス API を使用して、XMP メタデータをプログラムで PDF ドキュメントにインポートできます。 メタデータは、ドキュメントの作成者やドキュメントに関連するキーワードなど、PDF ドキュメントに関する情報を提供します。 メタデータは、次の図に示すように、ドキュメントのドキュメントプロパティダイアログに表示できます。
+XMP ユーティリティ Java および web サービス API を使用して、XMP メタデータをプログラムで PDF ドキュメントにインポートできます。 メタデータは、ドキュメントの作成者やドキュメントに関連するキーワードなど、PDF ドキュメントに関する情報を提供します。 メタデータは、次の図に示すように、ドキュメントのドキュメントプロパティダイアログに含まれる場合があります。
 
 ![ww_ww_metadatadialog](assets/ww_ww_metadatadialog.png)
 
@@ -232,7 +249,7 @@ XMP Utilities Java および web サービス API を使用すると、プログ
 
 >[!NOTE]
 >
->XMP ユーティリティサービスについて詳しくは、[AEM Forms サービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
+>XMP Utilities サービスについて詳しくは、[AEM Forms サービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
 
 ### 手順の概要 {#summary_of_steps-1}
 
@@ -248,7 +265,7 @@ PDF ドキュメントから XMP メタデータをエクスポートするに�
 
 **XMPUtilityService クライアントを作成**
 
-プログラムで XMP ユーティリティの操作をプログラムで実行する前に、XMPUtilityService クライアントを作成する必要があります。 Java API では、これは `XMPUtilityServiceClient` オブジェクトを作成することで実行されます。 Web サービス API でこれを実行するには、`XMPUtilityServiceService` オブジェクトを使用します。
+プログラムで XMP ユーティリティの操作を実行する前に、XMPUtilityService クライアントを作成する必要があります。 Java API では、これは `XMPUtilityServiceClient` オブジェクトを作成することで実行されます。 Web サービス API でこれを実行するには、`XMPUtilityServiceService` オブジェクトを使用します。
 
 **XMPメタデータのエクスポート操作を呼び出す**
 
@@ -288,7 +305,7 @@ XMP Utilities API（Java）を使用して XMP メタデータをエクスポー
 
 **関連項目**
 
-[PDF ドキュメントからのメタデータへの書き出し](xmp-utilities.md#exporting-metadata-from-pdf-documents)
+[PDF ドキュメントからのメタデータの書き出し](xmp-utilities.md#exporting-metadata-from-pdf-documents)
 
 [AEM Forms Java ライブラリファイルを含める](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

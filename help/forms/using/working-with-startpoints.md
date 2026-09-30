@@ -1,6 +1,6 @@
 ---
 title: スタートポイントの使用
-description: Workbench で定義されたモバイルデバイスから Adobe Experience Manager Forms プロセスを操作する手順。
+description: ワークベンチで定義されたモバイルデバイスから Adobe Experience Manager Forms プロセスを操作する手順。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
@@ -9,31 +9,45 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 88a4a75f-2cd7-44b8-a9d0-9a7077173c67
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 100%
-
 ---
-
 # スタートポイントの使用{#working-with-startpoints}
 
-スタートポイントは Workbench で作成されたプロセスを呼び出します。これはフォームの送信時にプロセスを呼び出すフォームに関連付けられています。
+スタートポイントはワークベンチで作成されたプロセスを呼び出します。 これはフォームの送信時にプロセスを呼び出すフォームに関連付けられています。
 
 >[!NOTE]
 >
->この概念について参照すると、スタートポイント、スタートプロセス、フォームという用語が区別なく使用される場合があります。
+>この概念を指す場合、スタートポイント、スタートプロセス、フォームという用語は同じ意味で使用されます。
 
-Adobe Experience Manager（AEM）Forms アプリケーションからプロセスを開始するには、プロセスで&#x200B;**ワークスペース**&#x200B;タイプのスタートポイントが必要です。また、スタートポイントに対して「**[!UICONTROL Mobile Workspace でスタートポイントを表示する]**」オプションをオンにする必要もあります。
+Adobe Experience Manager（AEM）Forms アプリケーションからプロセスを開始するには、プロセスで&#x200B;**ワークスペース**&#x200B;タイプのスタートポイントが必要です。 また、スタートポイントに対して「**[!UICONTROL Mobile Workspace でスタートポイントを表示する]**」オプションをオンにする必要もあります。
 
 ![mws_startpoint_select_option](assets/mws_startpoint_select_option.png)
 
-**Workbench で定義されたプロセスを開始するには**
+**ワークベンチで定義されたプロセスを開始するには**
 
 1. AEM Forms アプリケーションで使用可能なスタートポイントを表示するには、[ホーム画面](../../forms/using/home-screen.md)に移動してください。
 1. デフォルトでは、**[!UICONTROL ホーム]**&#x200B;画面に「**[!UICONTROL すべてのフォーム]**」リストが表示されます。
 
-   スタートポイントはフォームに関連付けられています。リストでスタートポイントに関連付けられているフォームを選択して開きます。
+   スタートポイントはフォームに関連付けられています。 リストでスタートポイントに関連付けられているフォームを選択して開きます。
 
    スタートポイントに関連付けられているフォームが開きます。
 

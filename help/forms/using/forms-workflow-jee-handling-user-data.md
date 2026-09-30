@@ -7,17 +7,32 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 622c4899-f75f-4b47-a6c0-f94c8427e977
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1407'
 ht-degree: 100%
-
 ---
-
 # Forms JEE ワークフロー | ユーザーデータの処理 {#forms-jee-workflows-handling-user-data}
 
-AEM Forms JEE ワークフローには、ビジネスプロセスを設計、作成および管理するためのツールが用意されています。 ワークフロープロセスは、特定の順序で実行される一連のステップで構成されます。 各ステップでは、ユーザーへのタスクの割り当てやメールメッセージの送信など、特定のアクションを実行します。 プロセスは、アセット、ユーザーアカウントおよびサービスとインタラクティブに動作し、次のいずれかの方法でトリガーできます。
+AEM Forms JEE ワークフローには、ビジネスプロセスを設計、作成および管理するためのツールが用意されています。 ワークフロープロセスは、特定の順序で実行される一連のステップで構成されます。 各ステップでは、ユーザーへのタスクの割り当てやメールメッセージの送信など、特定のアクションを実行します。 プロセスは、アセット、ユーザーアカウントおよびサービスとやり取りでき、次のいずれかの方法でトリガーできます。
 
 * AEM Forms Workspace からのプロセスの開始
 * SOAP または RESTful サービスの使用
@@ -29,7 +44,7 @@ AEM Forms JEE ワークフロープロセスの作成について詳しくは、
 
 ## ユーザーデータとデータストア {#user-data-and-data-stores}
 
-プロセスがトリガーされて進行すると、プロセスの参加者に関するデータ、プロセスに関連付られたフォームに参加者が入力したデータおよびフォームに追加された添付ファイルが取得されます。 これらのデータは AEM Forms JEE サーバーのデータベースに格納され、（設定が行われている場合）添付ファイルのような一部のデータはグローバルドキュメントストレージ（GDS）ディレクトリに格納されます。 GDS ディレクトリは、共有ファイルシステムまたはデータベース上に設定できます。
+プロセスがトリガーされて進行すると、プロセスの参加者に関するデータ、プロセスに関連付けられたフォームに参加者が入力したデータおよびフォームに追加された添付ファイルが取得されます。 これらのデータは AEM Forms JEE サーバーのデータベースに格納され、（設定が行われている場合）添付ファイルのような一部のデータはグローバルドキュメントストレージ（GDS）ディレクトリに格納されます。 GDS ディレクトリは、共有ファイルシステムまたはデータベース上に設定できます。
 
 ## ユーザーデータへのアクセスと削除 {#access-and-delete-user-data}
 
@@ -134,17 +149,17 @@ AEM Forms JEE ワークフロープロセスの作成について詳しくは、
 
    `ProcessManager.terminateProcess(<long_lived_invocation_id>)`。
 
-1. 次のメソッドを呼び出して、ワークフローインスタンスを削除します。
+1. 次のメソッドを呼び出して、ワークフローインスタンスをパージします。
 
    `ProcessManager.purgeProcessInstance(<long_lived_invocation_id>)`
 
    `purgeProcessInstance` メソッドを使用すると、AEM Forms サーバーデータベースおよび GDS から、指定された呼び出し ID のすべてのデータが完全に削除されます（設定が行われている場合）。
 
-### オーファンタスクの操作 {#orphan}
+### 孤立タスクの操作 {#orphan}
 
-オーファンタスクは、プロセスが開始されているがまだ送信されていないプロセスを含むタスクです。 この場合、`process_instance_id` は **0**（ゼロ）になります。 したがって、プロセスインスタンス ID を使用してオーファンタスクに保存されたユーザーデータを追跡することはできません。 ただし、オーファンタスクのタスク ID を使用してユーザーデータを追跡することができます。 [ワークフローイニシエーターまたは参加者が分かっている場合のプロセスインスタンス ID の特定](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant)で説明されているように、ユーザーの `tb_task` テーブルからタスク ID を特定することができます。
+孤立タスクとは、それを含むプロセスが開始されているものの、まだ送信されていないタスクです。 この場合、`process_instance_id` は **0**（ゼロ）になります。 したがって、プロセスインスタンス ID を使用してオーファンタスクに保存されたユーザーデータを追跡することはできません。 ただし、オーファンタスクのタスク ID を使用してユーザーデータを追跡することができます。 [ワークフローイニシエーターまたは参加者が分かっている場合のプロセスインスタンス ID の特定](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant)で説明されているように、ユーザーの `tb_task` テーブルからタスク ID を特定することができます。
 
-タスク ID が特定されたら、次を実行して GDS およびデータベースからオーファンタスクに関連するファイルおよびデータを削除します。
+タスク ID が特定されたら、次を実行して GDS およびデータベースから孤立タスクに関連するファイルおよびデータを削除します。
 
 1. AEM Forms サーバーデータベースで次のコマンドを実行して、特定されたタスク ID の ID を取得します。
 
@@ -162,7 +177,7 @@ AEM Forms JEE ワークフロープロセスの作成について詳しくは、
 
    1. **ファイルシステム内の GDS**
 
-      GDS ファイルシステムで次の手順を実行します。
+      GDS ファイルシステム内：
 
       1. 以下のセッション ID 文字列を拡張子として持つファイルを検索します。
 

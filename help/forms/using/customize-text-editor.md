@@ -9,18 +9,31 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: fbe61ef4-1045-49f7-8280-4bc74288cbec
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 100%
-
+source-wordcount: '623'
+ht-degree: 98%
 ---
-
 # テキストエディターのカスタマイズ{#customize-text-editor}
 
 ## 概要 {#overview}
 
-アセットを管理 UI と通信を作成 UI でテキストエディターをカスタマイズし、フォントおよびフォントサイズを追加できます。英語フォントだけでなく、日本語フォントなど英語以外のフォントも使用できます。
+アセットを管理 UI と通信を作成 UI でテキストエディターをカスタマイズし、フォントおよびフォントサイズを追加できます。 英語フォントだけでなく、日本語フォントなど英語以外のフォントも使用できます。
 
 フォント設定で、以下を変更してカスタマイズすることができます。
 
@@ -47,7 +60,7 @@ tbxeditor-config.xml ファイルを編集してフォントをカスタマイ�
 
       ![ノードをオーバーレイ](assets/1-1.png)
 
-   1. ノードをオーバーレイダイアログに次の値が表示されていることを確認します。
+   1. オーバーレイノードダイアログに次の値が設定されていることを確認します。
 
       **パス：** /libs/fd/cm/config
 
@@ -57,7 +70,7 @@ tbxeditor-config.xml ファイルを編集してフォントをカスタマイ�
 
       ![ノードをオーバーレイ](assets/2.png)
 
-   1. 「**OK**」をクリックします。apps フォルダーにフォルダー構造が作成されます。
+   1. 「**OK**」をクリックします。 apps フォルダーにフォルダー構造が作成されます。
 
    1. 「**すべて保存**」をクリックします。
 
@@ -72,7 +85,7 @@ tbxeditor-config.xml ファイルを編集してフォントをカスタマイ�
 
 1. apps/fd/cm/config の tbxeditor-config.xml ファイルを開き、必要な変更を加えます。
 
-   1. apps/fd/cm/config にある tbxeditor-config.xml ファイルをダブルクリックします。ファイルが開きます。
+   1. apps/fd/cm/config にある tbxeditor-config.xml ファイルをダブルクリックします。 ファイルが開きます。
 
       ```xml
       <editorConfig>
@@ -166,20 +179,20 @@ tbxeditor-config.xml ファイルを編集してフォントをカスタマイ�
       * フォントファミリーとサイズ、高さ、文字間隔および日付形式のデフォルト値
       * 箇条書きのインデント
 
-      例えば、Sazanami Mincho Medium という名前の日本語フォントを追加するには、XML ファイルで次の入力を行う必要があります。`<font>Sazanami Mincho Medium</font>`。アクセスしてフォントのカスタマイズを行うクライアントマシンにも、このフォントをインストールしておく必要があります。詳しくは、[クライアントコンピューターへのカスタムフォントの追加](#addcustomfonts)を参照してください。
+      例えば、Sazanami Mincho Medium という名前の日本語フォントを追加するには、XML ファイルで次の入力を行う必要があります。`<font>Sazanami Mincho Medium</font>`。 アクセスしてフォントのカスタマイズを行うクライアントマシンにも、このフォントをインストールしておく必要があります。 詳しくは、[クライアントコンピューターへのカスタムフォントの追加](#addcustomfonts)を参照してください。
 
-      また、様々な特性を持つテキストのデフォルト設定を変更したり、エントリを削除してテキストエディターからフォントを削除したりすることもできます。
+      また、テキストの様々な側面のデフォルト設定を変更したり、エントリを削除してテキストエディターからフォントを削除したりすることもできます。
 
    1. 「**すべて保存**」をクリックします。
 
 ## クライアントコンピューターへのカスタムフォントの追加 {#addcustomfonts}
 
-Correspondence Management テキストエディターに格納されたフォントにアクセスする際、Correspondence Management へアクセスするクライアントマシンにそのフォントが存在する必要があります。テキストエディターでカスタムフォントを使用するには、まずクライアントマシンに同じフォントをインストールする必要があります。
+Correspondence Management テキストエディターに格納されたフォントにアクセスする際、Correspondence Management へアクセスするクライアントマシンにそのフォントが存在する必要があります。 テキストエディターでカスタムフォントを使用するには、まずクライアントマシンに同じフォントをインストールする必要があります。
 
 フォントのインストールについて詳しくは、次を参照してください。
 
-* [Windows でフォントをインストールまたはアンインストールする](https://windows.microsoft.com/ja-jp/windows-vista/install-or-uninstall-fonts)
-* [Mac ハンドブック：Font Book](https://support.apple.com/ja-jp/HT201749)
+* [Windowsでのフォントのインストールまたはアンインストール](https://windows.microsoft.com/ja-jp/windows-vista/install-or-uninstall-fonts)
+* [Macの基本：フォントブック](https://support.apple.com/ja-jp/HT201749)
 
 ## カスタマイズしたフォントへのアクセス {#access-font-customizations}
 
@@ -191,4 +204,4 @@ CRX の `tbxeditor-config.xml` ファイルのフォントに変更を加え、�
 
 >[!NOTE]
 >
->テキストを日本語で表示するには、まず日本語の文字でテキストを入力する必要があります。カスタムの日本語フォントを適用すると、テキストは特定の形式のみで表示されます。カスタムの日本語フォントを適用しても英語やその他の言語の文字が日本語の文字に変更されることはありません。
+>テキストを日本語で表示するには、まず日本語の文字でテキストを入力する必要があります。 カスタムの日本語フォントを適用すると、テキストは特定の形式のみで表示されます。 カスタムの日本語フォントを適用しても英語やその他の言語の文字が日本語の文字に変更されることはありません。

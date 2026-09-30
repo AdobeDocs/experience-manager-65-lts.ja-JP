@@ -5,16 +5,29 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 01c2a67a-7168-4362-ad7d-f4990ea43ed8
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 94%
-
+source-wordcount: '295'
+ht-degree: 95%
 ---
-
 # リッチテキストエディターを使用したコンテンツのオーサリング {#use-rich-text-editor-to-author-content}
 
-リッチテキストエディター（RTE）は、AEM にテキストコンテンツを入力するための基本的な構成要素です。以下を含む、様々なコンポーネントの基礎を形成します。
+リッチテキストエディター（RTE）は、AEM にテキストコンテンツを入力するための基本的な構成要素です。 以下を含む、様々なコンポーネントの基礎を形成します。
 
 * [テキスト](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/wcm-components/text)
 * [テーブル](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/wcm-components/text#table)
@@ -25,7 +38,7 @@ ht-degree: 94%
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-もう一度タップまたはクリックするか、最初にコンポーネントをゆっくりダブルクリックして選択すると、インプレース編集が開始され、独自のツールバーが表示されます。ここで、コンテンツの編集や、基本的な書式変更ができます。
+もう一度タップまたはクリックするか、最初にコンポーネントをゆっくりダブルクリックして選択すると、インプレース編集が開始され、独自のツールバーが表示されます。 ここで、コンテンツの編集や、基本的な書式変更ができます。
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 
@@ -43,7 +56,7 @@ ht-degree: 94%
 
 テキストベースのコンポーネントの場合は、ツールバーから「![フルスクリーン編集モード](do-not-localize/screen_shot_2018-03-21at163236.png)」をタップすると、リッチテキストエディターが開き、ページの他のコンテンツが非表示になります。
 
-フルスクリーンモードでは、オーサリングに使用できる設定済みオプションがすべて表示されます。使用できるオプションは、[設定によって異なります](/help/sites-administering/rich-text-editor.md)。
+フルスクリーンモードでは、オーサリングに使用できる設定済みオプションがすべて表示されます。 使用できるオプションは、[設定によって異なります](/help/sites-administering/rich-text-editor.md)。
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 

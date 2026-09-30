@@ -9,14 +9,26 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 72c31f40-d1b0-47ae-bdeb-e9b92c3d27e1
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '10334'
+source-wordcount: '10338'
 ht-degree: 98%
-
 ---
-
 # Document Security サーバーの設定 {#configure-the-document-security-server}
 
 >[!NOTE]
@@ -393,7 +405,7 @@ Document Security では、保護されたドキュメントで実行される�
 1. 拡張された使用方法のトラッキングを設定するには、「トラッキングを有効にする」で「はい」または「いいえ」を選択します。
 1. ログインページの「詳細な使用状況データの収集を許可」チェックボックスの選択を設定するには、「デフォルトでトラッキングを有効にする」で「はい」または「いいえ」を選択します。
 
-トラッキングされたイベントの表示には、イベントページのドキュメントのイベントフィルターを使用できます。 JavaScript を使用してトラッキングされたイベントには、「詳細な使用方法のトラッキング」というラベルが付与されます。 イベントについて詳しくは、[イベントの監視](/help/forms/using/admin-help/monitoring-events.md#monitoring-events)を参照してください。
+トラッキングされたイベントの表示には、イベントページのドキュメントのイベントフィルターを使用できます。 JavaScript を使用してトラッキングされたイベントには、「詳細な使用方法のトラッキング」というラベルが付与されます。 イベントについて詳しくは、[イベントのモニタリング](/help/forms/using/admin-help/monitoring-events.md#monitoring-events)を参照してください。
 
 ## ドキュメントセキュリティ表示の設定 {#configure-document-security-display-settings}
 
@@ -471,10 +483,10 @@ Document Security では、保護されたドキュメントで実行される�
 * パスワードで保護された PDF ドキュメントは透かし要素として使用できません。
 * Acrobat および Adobe Reader の 10 よりも前のバージョンでは、次の透かし機能はサポートされません。
 
-   * PDF 透かし。
-   * 透かし内の複数の要素（テキスト／PDF）。
-   * ページの範囲などの高度なオプションまたは表示オプション。
-   * 指定したフォント、フォント名および色など、テキスト書式オプション。 ただし、Acrobat および Reader の以前のバージョンでは、デフォルトのフォントおよび色でテキストコンテンツを表示します。
+  * PDF 透かし。
+  * 透かし内の複数の要素（テキスト／PDF）。
+  * ページの範囲などの高度なオプションまたは表示オプション。
+  * 指定したフォント、フォント名および色など、テキスト書式オプション。 ただし、Acrobat および Reader の以前のバージョンでは、デフォルトのフォントおよび色でテキストコンテンツを表示します。
 
 * Acrobat 9.0 およびそれより前のバージョン：Acrobat 9.0 およびそれより前のバージョンでは、ポリシー名に動的な透かしを使用できません。 動的な透かしが使用されているポリシーで保護されたドキュメントを Acrobat 9.0 で開いた場合は、そのドキュメントにポリシー名やその他の動的データが含まれていても、透かしにはポリシー名が表示されません。 動的な透かしにポリシー名しか含まれていない場合は、エラーメッセージが表示されます。
 
@@ -689,7 +701,7 @@ Document Security では、保護されたドキュメントで実行される�
 
 **「表示されるユーザーとグループ」タブ：**&#x200B;ユーザーの検索結果に表示するユーザーとグループを制御するために使用します。 スーパーユーザーまたはポリシーセット管理者は、User Management で作成されたドメインを選択し、ポリシーセットごとに表示されるユーザーおよびグループに追加する必要があります。 このリストはポリシーセットコーディネーターによって参照されるものであり、ポリシーに追加するユーザーを選択するときにポリシーセットコーディネーターが参照できるドメインを制限するために使用されます。
 
-カスタムポリシーを作成する権限をユーザーに与える前に、個々のユーザーにどの程度のアクセスや制御を認めるかを検討します。 また、検索結果にユーザーとグループを表示するにあたって、ユーザーとグループをどの程度公開するかについても検討します。
+カスタムポリシーを作成する権限をユーザーに与える前に、個人ユーザーにどの程度のアクセスや制御を認めるかを検討します。 また、検索結果にユーザーとグループを表示するにあたって、ユーザーとグループをどの程度公開するかについても検討します。
 
 ### ポリシーを作成できるユーザーとグループの指定 {#specify-users-and-groups-who-can-create-policies}
 

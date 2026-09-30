@@ -9,13 +9,21 @@ thumbnail: 39476.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 22fcdadf-12c0-4545-a854-76345806386f
-source-git-commit: 5995dda0aac101e6c0d506ac5bba786674b0735b
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 55%
-
 ---
-
 # AEM Commerce の開発 {#develop}
 
 AEM用Commerce integration framework（CIF）に基づくAEM Commerce プロジェクトの開発は、他のAEM プロジェクトと同様のルールとベストプラクティスに従います。 最初に次の点を確認します。

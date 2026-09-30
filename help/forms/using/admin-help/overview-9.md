@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: aa2477a3-3870-4ba4-bcea-e94ae2d06d02
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 100%
-
 ---
-
 # Forms Workflow の概要 {#overview-of-forms-workflow}
 
 Forms Workflow では、ユーザーは人間中心のプロセスを設計、管理および最適化することができます。 Forms Workflow を使用すると、システムとユーザーをつなぐ、自動ビジネスプロセスアプリケーションを管理することもできます。
@@ -39,7 +54,7 @@ Forms Workflow では、ユーザーは人間中心のプロセスを設計、�
      <li><p>メールの設定</p></li>
      <li><p>ユーザーへのタスク通知の設定</p></li>
      <li><p>管理者通知の設定</p></li>
-     <li><p>Business Activity Monitoring の設定 </p></li>
+     <li><p>ビジネスアクティビティモニタリングの設定 </p></li>
     </ul></td>
    <td><p><a href="/help/forms/using/admin-help/configuring-server-settings.md#configuring-server-settings">サーバー設定の指定</a></p></td>
   </tr>
@@ -67,7 +82,7 @@ Forms Workflow では、ユーザーは人間中心のプロセスを設計、�
     <ul>
      <li><p>ユーザー ID またはタスク ID によるタスクの検索</p></li>
     </ul></td>
-   <td><p><a href="/help/forms/using/admin-help/tasks.md#working-with-tasks">タスクの使用</a></p></td>
+   <td><p><a href="/help/forms/using/admin-help/tasks.md#working-with-tasks">タスクの操作</a></p></td>
   </tr>
   <tr>
    <td><p>停止した操作のエラー</p></td>
@@ -76,7 +91,7 @@ Forms Workflow では、ユーザーは人間中心のプロセスを設計、�
      <li><p>停止したすべての操作とそのエラーの表示</p></li>
      <li><p>停止した操作の再試行または終了</p></li>
     </ul></td>
-   <td><p><a href="/help/forms/using/admin-help/stalled-operations-branches.md#working-with-stalled-operations-and-branches">停止した操作および停止したブランチの使用</a></p></td>
+   <td><p><a href="/help/forms/using/admin-help/stalled-operations-branches.md#working-with-stalled-operations-and-branches">停止した操作やブランチの扱い</a></p></td>
   </tr>
   <tr>
    <td><p>停止したブランチのエラー</p></td>
@@ -85,7 +100,7 @@ Forms Workflow では、ユーザーは人間中心のプロセスを設計、�
      <li><p>停止したすべてのブランチとそのエラーの表示</p></li>
      <li><p>停止したブランチの再試行</p></li>
     </ul></td>
-   <td><p><a href="/help/forms/using/admin-help/stalled-operations-branches.md#working-with-stalled-operations-and-branches">停止した操作および停止したブランチの使用</a></p></td>
+   <td><p><a href="/help/forms/using/admin-help/stalled-operations-branches.md#working-with-stalled-operations-and-branches">停止した操作やブランチの扱い</a></p></td>
   </tr>
   <tr>
    <td><p>不在</p></td>

@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 73f40fd7-69b9-436c-b6b4-a7d6bfbaae6f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '451'
 ht-degree: 100%
-
 ---
-
 # Analytics と外部プロバイダー {#analytics-with-external-providers}
 
 Analytics は、Web サイトがどのように使用されているかに関する、重要で興味深い情報を提供できます。
@@ -28,7 +37,7 @@ Analytics は、Web サイトがどのように使用されているかに関す
 
 また、**汎用分析スニペット**&#x200B;の独自のインスタンスを設定して、新しいサービス設定を定義できます。
 
-情報は、web ページに追加されるコードの小さなスニペットを使用して収集されます。例：
+情報は、web ページに追加されるコードの小さなスニペットを使用して収集されます。 例：
 
 >[!CAUTION]
 >
@@ -46,7 +55,7 @@ _gaq.push(['_trackPageview']);
 })();
 ```
 
-このようなスニペットを使用して、データを収集しレポートを生成できます。収集される実際のデータは、プロバイダーおよび実際に使用されるスニペットによって異なります。統計の例には次が含まれます。
+このようなスニペットを使用して、データを収集しレポートを生成できます。 収集される実際のデータは、プロバイダーおよび実際に使用されるスニペットによって異なります。 統計の例には次が含まれます。
 
 * 経時的な訪問者数
 * 訪問ページ数
@@ -71,7 +80,7 @@ _gaq.push(['_trackPageview']);
 
    ![汎用分析スニペット](assets/analytics_genericoverview.png)
 
-1. 「+」をクリックして、ダイアログボックスを使用して新しい設定を追加します。少なくとも名前（例：Google Analytics）を割り当てます。
+1. 「+」をクリックして、ダイアログボックスを使用して新しい設定を追加します。 少なくとも名前（例：Google Analytics）を割り当てます。
 
    ![設定の作成](assets/analytics_addconfig.png)
 
@@ -87,12 +96,12 @@ _gaq.push(['_trackPageview']);
 
 1. ページに移動します。
 1. サイドキックから&#x200B;**ページプロパティ**&#x200B;を開き、「**クラウドサービス**」タブを選択します。
-1. 「**サービスを追加**」をクリックし、必要なサービスを選択します。例：**汎用分析スニペット**。
+1. 「**サービスを追加**」をクリックし、必要なサービスを選択します。 例：**汎用分析スニペット**。
 
    ![クラウドサービスの追加](assets/analytics_selectservice.png)
 
 1. 「**OK**」をクリックして保存します。
-1. 「**クラウドサービス**」タブに戻ります。**汎用分析スニペット**&#x200B;が、`Configuration reference missing` のメッセージと共に表示されます。ドロップダウンリストを使用して、具体的なサービスインスタンスを選択します。例：google-analytics。
+1. 「**クラウドサービス**」タブに戻ります。 **汎用分析スニペット**&#x200B;が、`Configuration reference missing` のメッセージと共に表示されます。 ドロップダウンリストを使用して、具体的なサービスインスタンスを選択します。 例：google-analytics。
 
    ![クラウドサービス設定の追加](assets/analytics_selectspecificservice.png)
 

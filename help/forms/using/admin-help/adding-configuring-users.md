@@ -5,14 +5,29 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: b3f8e1d6-3e6e-4b2c-8528-3346bbda3396
-source-git-commit: d75fc7712b1428471a081508cd5d1d68ec87d9c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1724'
 ht-degree: 98%
-
 ---
-
 # ユーザーの追加および設定 {#adding-and-configuring-users}
 
 >[!NOTE]
@@ -69,7 +84,7 @@ ht-degree: 98%
 
 **ロケール：**&#x200B;ユーザーの ISO ロケール
 
-**業務カレンダーキー：**&#x200B;この設定の値に基づいて、業務カレンダーをユーザーにマップできます。 業務カレンダーでは、営業日と休業日を定義します。 AEM forms では、リマインダー、締め切り、エスカレーションなどのイベントに関する今後の日時を計算するときに、この業務カレンダーを使用できます。 業務カレンダーキーをユーザーに割り当てる方法は、エンタープライズドメイン、ローカルドメイン、ハイブリッドドメインのいずれを使用しているかによって異なります。 詳しくは、[ドメインの追加](/help/forms/using/admin-help/adding-domains.md#adding-domains)を参照してください。
+**業務カレンダーキー：**&#x200B;この設定の値に基づいて、業務カレンダーをユーザーにマップできます。 業務カレンダーでは、営業日と休業日を定義します。 AEM Forms では、リマインダー、締め切り、エスカレーションなどのイベントに関する今後の日時を計算するときに、この業務カレンダーを使用できます。 業務カレンダーキーをユーザーに割り当てる方法は、エンタープライズドメイン、ローカルドメイン、ハイブリッドドメインのいずれを使用しているかによって異なります。 詳しくは、[ドメインの追加](/help/forms/using/admin-help/adding-domains.md#adding-domains)を参照してください。
 
 ローカルドメインまたはハイブリッドドメインを使用している場合、ユーザーに関する情報は User Management データベースにのみ格納されます。 これらのユーザーについては、業務カレンダーキーを文字列に設定します。 次に、業務カレンダーキー（文字列）を Forms Workflow の業務カレンダーにマッピングします。
 
@@ -99,7 +114,7 @@ MySQL を使用する場合は、ユーザー ID に拡張文字を含めるこ�
 
 1. 管理コンソールで、設定／User Management／ユーザーとグループをクリックします。
 1. 検索を絞り込む情報を指定し、「イン」リストで「ユーザー」を選択し、「検索」をクリックします。 検索の結果がページの下部に一覧表示されます。 列見出しをクリックすると、その列でリストを並べ替えることができます。
-1. 詳細を表示するユーザーの名前をクリックします。 ユーザーを編集ページに、ユーザーに関する以下のような詳細が表示されます。
+1. 詳細を表示するユーザーの名前をクリックします。 「ユーザーを編集」ページには、ユーザーに関する次の詳細が表示されます。
 
    * 名前、メールアドレス、住所、ドメイン、組織などの一般的な識別情報
    * ユーザーに割り当てられている役割

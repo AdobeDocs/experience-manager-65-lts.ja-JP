@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 4a78de53-33bf-4999-ba3c-7d0bc33196a4
-source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '6205'
 ht-degree: 73%
-
 ---
-
 # xtypeの使用（クラシック UI）{#using-xtypes-classic-ui}
 
 このページでは、Adobe Experience Manager（AEM）で利用できるすべての xtype について説明します。
@@ -94,7 +103,7 @@ Adobe Experience Manager で使用可能な xtype を以下に示します。
 
   [CQ.form.BrowseField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  **非推奨：代わりに [CQ.form.PathField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を使用してください。**
+  **非推奨：代わりに [CQ.form.PathField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を使用**
 
 * `bulkeditor`
 
@@ -618,7 +627,7 @@ Adobe Experience Manager で使用可能な xtype を以下に示します。
 
   [CQ.form.PathCompletion](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  **非推奨：代わりに [CQ.form.PathField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を使用してください。**
+  **非推奨：代わりに [CQ.form.PathField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) を使用**
 
 * `pathfield`
 

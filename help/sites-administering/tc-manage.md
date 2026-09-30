@@ -5,13 +5,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Language Copy
 role: Admin
 exl-id: 901bd212-3daf-4b1e-a7c3-afb832959913
-source-git-commit: a0272acbf803ff40b3af9aa292ca0a4532b20a55
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3546'
 ht-degree: 90%
-
 ---
-
 # 翻訳プロジェクトの管理{#managing-translation-projects}
 
 翻訳するコンテンツの準備が完了したら、不足している言語コピーを作成して言語構造を完成し、翻訳プロジェクトを作成する必要があります。
@@ -43,8 +55,8 @@ AEM では、翻訳プロジェクトがコンテンツの初期翻訳用に作�
 * **ページが言語コピーに含まれていない場合：** AEM はこの状況を初期翻訳として処理します。 ページがすぐに言語コピーにコピーされ、プロジェクトに追加されます。 翻訳されたページが AEM に読み込まれると、AEM はそのページを言語コピーに直接コピーします。
 * **言語コピーには既に次のページが含まれています。** AEMはこの状況を更新された翻訳として扱います。 ローンチが作成され、ページのコピーがローンチに追加され、プロジェクトに含まれます。 ローンチでは、更新された翻訳を言語コピーにコミットする前に確認できます。
 
-   * 翻訳されたページが AEM に読み込まれると、ローンチ内のページがそのページによって上書きされます。
-   * ローンチが昇格された場合にのみ、言語コピーが翻訳されたページによって上書きされます。
+  * 翻訳されたページが AEM に読み込まれると、ローンチ内のページがそのページによって上書きされます。
+  * ローンチが昇格された場合にのみ、言語コピーが翻訳されたページによって上書きされます。
 
 例えば、メイン言語 /content/geometrixx/en のフランス語の翻訳用に言語ルート /content/geometrixx/fr が作成されるとします。 フランス語の言語コピーにその他のページはありません。
 

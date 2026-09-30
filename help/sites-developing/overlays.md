@@ -9,66 +9,74 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d8fe6fb6-8ede-4fa7-95da-adee313bf768
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 94%
-
+source-wordcount: '625'
+ht-degree: 85%
 ---
-
 # オーバーレイ{#overlays}
 
 Adobe Experience Manager（AEM）（旧称 CQ）は、以前からオーバーレイという原則を利用して、[コンソール](/help/sites-developing/customizing-consoles-touch.md)およびその他の機能（[ページオーサリング](/help/sites-developing/customizing-page-authoring-touch.md)など）を拡張し、カスタマイズできるようにしてきました。
 
-オーバーレイは様々なコンテキストで使用される用語です。このコンテキスト（AEM の拡張）では、オーバーレイとは、事前定義された機能を取得し、（標準機能をカスタマイズするため）その上に独自の定義を適用することを意味します。
+オーバーレイは様々なコンテキストで使用される用語です。 このコンテキスト（AEM の拡張）では、オーバーレイとは、事前定義された機能を取得し、（標準機能をカスタマイズするため）その上に独自の定義を適用することを意味します。
 
-標準インスタンスでは、事前定義された機能は `/libs` に保持されるので、オーバーレイは `/apps` ブランチに定義（カスタマイズ）することが推奨されます。AEM がリソースを見つけるために検索するパスは、最初に `/apps` ブランチを検索し、次に `/libs` ブランチを検索します（[検索パスは必要に応じて設定可能](#configuring-the-search-paths)）。このメカニズムにより、オーバーレイ（およびそこに定義されているカスタマイズ）が優先されることになります。
+標準インスタンスでは、事前定義された機能は `/libs` に保持されるので、オーバーレイは `/apps` ブランチに定義（カスタマイズ）することが推奨されます。 AEM がリソースを見つけるために検索するパスは、最初に `/apps` ブランチを検索し、次に `/libs` ブランチを検索します（[検索パスは必要に応じて設定可能](#configuring-the-search-paths)）。 このメカニズムにより、オーバーレイ（およびそこに定義されているカスタマイズ）が優先されることになります。
 
 AEM 6.0 以降、オーバーレイの実装方法と使用方法が以下のように変更されました。
 
 * AEM 6.0 以降 - [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) に関連するオーバーレイ（つまり、タッチ操作対応 UI）
 
-   * 方法
+  * 方法
 
-      * `/apps` の下に適切な `/libs` 構造を再構築します。
+    * `/apps` の下に適切な `/libs` 構造を再構築します。
 
-        これには 1:1 コピーは不要です。[Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) は、必要な元の定義を相互参照するために使用されるからです。 Sling Resource Merger は、差分メカニズムによってリソースにアクセスおよびマージするサービスを提供します。
+      これは1:1のコピーを必要としません。[Sling Resource Merger](/help/sites-developing/sling-resource-merger.md)は、必要な元の定義を相互参照するために使用されます。 Sling Resource Merger は、差分メカニズムによってリソースにアクセスおよびマージするサービスを提供します。
 
-      * `/apps` の下に、変更を加えます。
+    * `/apps` の下に、変更を加えます。
 
-   * メリット
+  * メリット
 
-      * `/libs` 以下の変更に対する堅牢性が高まります。
-      * 必須項目のみを再定義します。
+    * `/libs` 以下の変更に対する堅牢性が高まります。
+    * 必須項目のみを再定義します。
 
 * Granite 以外によるオーバーレイおよび AEM 6.0 より前のオーバーレイ
 
-   * メソッド
+  * メソッド
 
-      * コンテンツを `/libs` から `/apps` にコピーします。
+    * コンテンツを `/libs` から `/apps` にコピーします。
 
-        プロパティを含め、サブブランチ全体をコピーします。
+      プロパティを含め、サブブランチ全体をコピーします。
 
-      * `/apps` の下に、変更を加えます。
+    * `/apps` の下に、変更を加えます。
 
-   * デメリット
+  * デメリット
 
-      * `/libs` 以下で変更しても変更内容は失われませんが、`/apps` 以下のオーバーレイでは一部の変更作業をやり直す必要がある場合があります。
+    * `/libs` 以下で変更しても変更内容は失われませんが、`/apps` 以下のオーバーレイでは一部の変更作業をやり直す必要がある場合があります。
 
 >[!CAUTION]
 >
->[Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) および関連する手法は、[Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) と併用する場合に限り使用できます。つまり、オーバーレイをスケルトン構造で作成する方法は、標準のタッチ操作対応 UI にのみ適しています。
+>[Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) および関連する手法は、[Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) と併用する場合に限り使用できます。 つまり、オーバーレイをスケルトン構造で作成する方法は、標準のタッチ操作対応 UI にのみ適しています。
 >
 >他のエリア（クラシック UI を含む）のオーバーレイでは、適切なノードとサブ構造全体をコピーし、必要な変更を加えます。
 
-オーバーレイは、[コンソールの設定](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console)、[サイドパネル内にあるアセットブラウザーへの選択カテゴリの作成](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser)（ページのオーサリング時に使用）など、多くの変更において推奨される方法です。オーバーレイは、次の理由で必要になります。
+オーバーレイは、[&#x200B; コンソールの設定](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console)や[選択カテゴリをサイドパネル &#x200B;](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser)のアセットブラウザーに作成するなど、多くの変更に推奨される方法です（ページのオーサリング時に使用）。 必要な理由は次のとおりです。
 
-* `/libs` ブランチ&#x200B;**では変更&#x200B;***しないこと*
-このブランチは以下のことを実行するたびに変更される可能性があるため、行った変更が失われる可能性があります。
+* **&#x200B;**&#x200B;は`/libs` ブランチで変更を加えません&#x200B;**行った変更はすべて失われる可能性があります。このブランチは、次の操作を行うたびに変更される可能性があります。
 
-   * インスタンスをアップグレード
-   * ホットフィックスを適用
-   * 機能パックをインストール
+  * インスタンスをアップグレード
+  * ホットフィックスを適用
+  * 機能パックをインストール
 
 * オーバーレイにより、変更を 1 個所に集中させるため、必要に応じて変更の追跡、移行、バックアップまたはデバッグを実行しやすくなります。
 
@@ -78,10 +86,10 @@ AEM 6.0 以降、オーバーレイの実装方法と使用方法が以下のよ
 
 * [OSGi 設定](/help/sites-deploying/configuring-osgi.md)で **Apache Sling Resource Resolver Factory** 用に定義された、リソースの **リゾルバー検索パス**。
 
-   * 検索パスの順序は、上から下の順で、それぞれの優先順位を示します。
-   * 標準インストールの場合、主なデフォルトは `/apps` と `/libs` で、`/apps` のコンテンツの方が `/libs` のコンテンツより優先されます（つまり、前者が後者を&#x200B;*オーバーレイ*&#x200B;します）。
+  * 検索パスの順序は、上から下の順で、それぞれの優先順位を示します。
+  * 標準インストールの場合、主なデフォルトは `/apps` と `/libs` で、`/apps` のコンテンツの方が `/libs` のコンテンツより優先されます（つまり、前者が後者を&#x200B;*オーバーレイ*&#x200B;します）。
 
-* スクリプトの保存場所への JCR:READ アクセスは、2 人のサービスユーザーが必要です。 この 2 人のユーザーは、components-search-service（com.day.cq.wcm.core でコンポーネントのアクセス／キャッシュに使用）と sling-scripting（org.apache.sling.servlets.resolver でサーブレットの検索に使用）です。
+* 2人のサービスユーザーが、スクリプトが保存されている場所へのJCR:READ アクセスを必要としています。 この 2 人のユーザーは、components-search-service（com.day.cq.wcm.core でコンポーネントのアクセス／キャッシュに使用）と sling-scripting（org.apache.sling.servlets.resolver でサーブレットの検索に使用）です。
 * 次の設定も、スクリプトの保存場所に応じて設定する必要があります（この例では /etc、/libs または /apps の下）。
 
   ```

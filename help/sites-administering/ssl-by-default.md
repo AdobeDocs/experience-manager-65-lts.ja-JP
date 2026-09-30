@@ -10,20 +10,32 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: 3fd6a54b-9220-4bb2-9625-4f459c4d3aa8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '871'
 ht-degree: 97%
-
 ---
-
 # デフォルトの SSL/TLS{#ssl-tls-by-default}
 
-AEM のセキュリティを継続的に向上させる取り組みの中で、Adobe は SSL という機能をデフォルトで導入しました。AEM インスタンスへの接続で HTTPS の使用を促すことがその目的です。
+AEM のセキュリティを継続的に向上させる取り組みの中で、Adobe は SSL という機能をデフォルトで導入しました。 AEM インスタンスへの接続で HTTPS の使用を促すことがその目的です。
 
 ## デフォルトの SSL/TLS の有効化 {#enabling-ssl-tls-by-default}
 
-AEM ホーム画面から該当するインボックスメッセージをクリックすることで、デフォルトの SSL/TLS の設定を開始できます。インボックスを表示するには、画面の右上隅にあるベルのアイコンを押します。次に、「**すべて表示**」をクリックします。すべてのアラートのリストが順序付けられてリスト表示で表示されます。
+AEM ホーム画面から該当するインボックスメッセージをクリックすることで、デフォルトの SSL/TLS の設定を開始できます。 インボックスを表示するには、画面の右上隅にあるベルのアイコンを押します。 次に、「**すべて表示**」をクリックします。 すべてのアラートのリストが順序付けられてリスト表示で表示されます。
 
 リストで、**HTTPS を設定**&#x200B;アラートを選択して開きます。
 
@@ -33,13 +45,13 @@ AEM ホーム画面から該当するインボックスメッセージをクリ�
 >
 >**HTTPS を設定**&#x200B;アラートがインボックスに表示されていない場合は、*<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>* にアクセスして、直接 HTTPS ウィザードに移動できます。
 
-**ssl-service** というサービスユーザーが、この機能のために作成されています。このアラートを開くと、以下の設定ウィザードに進みます。
+**ssl-service** というサービスユーザーが、この機能のために作成されています。 このアラートを開くと、以下の設定ウィザードに進みます。
 
-1. 最初に、「ストア資格情報」を設定します。これらは、HTTPS リスナーの秘密鍵とトラストストアが格納される、**ssl-service** システムユーザーのキーストアの資格情報です。
+1. 最初に、「ストア資格情報」を設定します。 これらは、HTTPS リスナーの秘密鍵とトラストストアが格納される、**ssl-service** システムユーザーのキーストアの資格情報です。
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. 資格情報を入力したら、ページの右上隅にある「**次へ**」をクリックします。次に、関連する秘密鍵および SSL/TLS 接続用の証明書をアップロードします。
+1. 資格情報を入力したら、ページの右上隅にある「**次へ**」をクリックします。 次に、関連する秘密鍵および SSL/TLS 接続用の証明書をアップロードします。
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
@@ -92,7 +104,7 @@ Content-Disposition: form-data; name="httpsPort"
 8443
 ```
 
-サーブレットは、Sling のすべての POST サーブレットと同様に、200 OK またはエラーの HTTP ステータスコードで応答します。ステータスの詳細は、応答の HTML 本文に記載されています。
+サーブレットは、Sling のすべての POST サーブレットと同様に、200 OK またはエラーの HTTP ステータスコードで応答します。 ステータスの詳細は、応答の HTML 本文に記載されています。
 
 成功の応答とエラーの応答の両方の例を次に示します。
 
@@ -153,16 +165,16 @@ it for any subsequent updating of the private key or certificate.</dd>
 
 または、以下の必要な項目が既に含まれているパッケージをアップロードすることにより、SSL/TLS 設定を自動化できます。
 
-* ssl-service ユーザーのキーストア。これは、リポジトリの */home/users/system/security/ssl-service/keystore* にあります。
+* ssl-service ユーザーのキーストア。 これは、リポジトリの */home/users/system/security/ssl-service/keystore* にあります。
 * `GraniteSslConnectorFactory` 設定
 
 ### ウィザードで使用する秘密鍵／証明書ペアの生成 {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
-以下は、SSL/TLS ウィザードで使用できる DER 形式の自己署名証明書を作成する例です。オペレーティングシステムに応じた OpenSSL をインストールして OpenSSL コマンドプロンプトを開き、秘密鍵と証明書を生成するフォルダーにディレクトリを変更します。
+以下は、SSL/TLS ウィザードで使用できる DER 形式の自己署名証明書を作成する例です。 オペレーティングシステムに応じた OpenSSL をインストールして OpenSSL コマンドプロンプトを開き、秘密鍵と証明書を生成するフォルダーにディレクトリを変更します。
 
 >[!NOTE]
 >
->自己署名証明書の使用はサンプル目的のみです。実稼動では使用しないでください。
+>自己署名証明書の使用はサンプル目的のみです。 実稼動では使用しないでください。
 
 1. まず、秘密鍵を作成します。
 
@@ -177,13 +189,13 @@ it for any subsequent updating of the private key or certificate.</dd>
    openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj "/CN=localhost"
    ```
 
-1. SSL/TLS 証明書を生成し、秘密鍵を使用してそれに署名します。この例では、1 年後に期限切れになります。
+1. SSL/TLS 証明書を生成し、秘密鍵を使用してそれに署名します。 この例では、1 年後に期限切れになります。
 
    ```shell
    openssl x509 -req -days 365 -in localhost.csr -signkey localhostprivate.key -out localhost.crt
    ```
 
-1. 秘密鍵を DER 形式に変換します。SSL ウィザードでは鍵は DER 形式である必要があるので、このようにします。
+1. 秘密鍵を DER 形式に変換します。 SSL ウィザードでは鍵は DER 形式である必要があるので、このようにします。
 
    ```shell
    openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
@@ -197,7 +209,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 >
 >AEM で利用できる cURL コマンドをまとめたリストについては、[AEM での cURL の使用](https://helpx.adobe.com/jp/experience-manager/6-4/sites/administering/using/curl.html)を参照してください。
 
-cURL ツールを使用して SSL/TLS 設定を自動化することもできます。そのためには、設定パラメーターを次の URL に送信します。
+cURL ツールを使用して SSL/TLS 設定を自動化することもできます。 そのためには、設定パラメーターを次の URL に送信します。
 
 *https://&lt;serveraddress>:&lt;serverport>/libs/granite/security/post/sslSetup.html*
 
@@ -220,7 +232,7 @@ cURL ツールを使用して SSL/TLS 設定を自動化することもできま
 
 >[!NOTE]
 >
->SSL/TLS 設定を自動化するための cURL は、DER および CRT ファイルが存在するフォルダーから実行すると最も速く実行されます。または、`privatekeyFile` および certificateFile 引数でフルパスを指定できます。
+>SSL/TLS 設定を自動化するための cURL は、DER および CRT ファイルが存在するフォルダーから実行すると最も速く実行されます。 または、`privatekeyFile` および certificateFile 引数でフルパスを指定できます。
 >
 >また、更新の実行には認証が必要なため、cURL コマンドに `-u user:passeword` パラメーターを付加します。
 >
@@ -236,14 +248,14 @@ curl -u user:password -F "keystorePassword=password" -F "keystorePasswordConfirm
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
-コマンドを実行したら、すべての証明書がキーストアに送信されたことを確認します。以下から **キーストア** エントリを確認します。
+コマンドを実行したら、すべての証明書がキーストアに送信されたことを確認します。 **キーストア**&#x200B;のエントリを次の場所から確認します。
 [http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service)
 
 ### TLS 1.3 接続の有効化 {#enabling-tls-connection}
 
 1. Web コンソールに移動します。
 1. 次に、**OSGi**／**設定**／**Adobe Granite SSL Connector Factory** に移動します。
-1. 「**含まれる暗号スイート**」フィールドに移動して、次のエントリを追加します。それぞれのエントリを追加した後にフィールドの左にある「**+**」ボタンを押すと、追加されていることを確認できます。
+1. 「**含まれる暗号スイート**」フィールドに移動して、次のエントリを追加します。 それぞれのエントリを追加した後にフィールドの左にある「**+**」ボタンを押すと、追加されていることを確認できます。
 
    * `TLS_AES_256_GCM_SHA384`
    * `TLS_AES_128_GCM_SHA256`

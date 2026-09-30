@@ -10,14 +10,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: cd0a9205-5ccc-420b-9245-98f8bd7d6c9f
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 100%
-
 ---
-
 # クライアント側でのフォームのレンダリング {#rendering-forms-at-the-client}
 
 **このドキュメントのサンプルと例は、JEE 環境の AEM Forms のみを対象としています。**
@@ -30,11 +47,11 @@ Acrobat や Adobe Reader のクライアントサイドレンダリング機能�
 
 >[!NOTE]
 >
->Forms サービスについて詳しくは、[AEM Forms サービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
+>AEM Forms サービスについて詳しくは、[Forms 用サービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
 
 ### 手順の概要 {#summary-of-steps}
 
-クライアントでフォームをレンダリングするには、以下の作タスクを実行します。
+クライアントでフォームをレンダリングするには、以下のタスクを実行します。
 
 1. プロジェクトファイルを含めます。
 1. Forms Client API オブジェクトを作成します。
@@ -58,7 +75,7 @@ Forms Service Client API 操作をプログラムで実行する前に、Forms �
 
 Designer を使用して、シード PDF ファイルとして使用するための、シンプルなダイナミック PDF ファイルを作成することができます。 このタスクを行うには、以下の手順が必要です。
 
-1. シード PDF ファイル内にフォントを埋め込む必要があるかどうかを判断します。 シード PDF ファイルには、レンダリングされるフォームに必要なフォントを追加する必要があります。 シード PDF ファイルにフォントを埋め込む場合、フォントのライセンス契約に違反していないことを確認してください。 Designer では、合法的にフォントを埋め込むことができるかどうかを判断することができます。 保存時に、フォームに埋め込めないフォントがある場合、Designer は埋め込めないフォントのリストをメッセージで表示します。 このメッセージは、静的な PDF ドキュメントの場合は Designer に表示されません。
+1. シード PDF ファイル内にフォントを埋め込む必要があるかどうかを判断します。 シード PDF ファイルには、レンダリングされるフォームに必要な追加フォントが含まれている必要があります。 シード PDF ファイルにフォントを埋め込む場合、フォントのライセンス契約に違反していないことを確認してください。 Designer では、合法的にフォントを埋め込むことができるかどうかを判断することができます。 保存時に、フォームに埋め込めないフォントがある場合、Designer は埋め込めないフォントのリストをメッセージで表示します。 このメッセージは、静的な PDF ドキュメントの場合は Designer に表示されません。
 1. Designer でシード PDF ファイルを作成する場合、最低限、メッセージを含むテキストフィールドを追加することを推奨します。 Adobe Reader の旧バージョンを使用するユーザーに対しては、ドキュメントを表示するには Acrobat 7.0 以降、または Adobe Reader 7.0 以降が必要であることを示すメッセージが表示されます。
 1. シード PDF ファイルを、PDF ファイル名の拡張子をつけてダイナミック PDF ファイルとして保存します。
 
@@ -160,8 +177,8 @@ Forms API（Webサービス）を使用して、クライアントでフォー�
 
    `FormsService` オブジェクトの `renderPDFForm` メソッドを呼び出して、次の値を渡します。
 
-   * フォームデザイン名を指定する文字列値で、ファイル名の拡張子も含まれます。 Forms アプリケーションの一部であるフォームデザインを参照する場合は、必ず次のような完全なパスを指定します。`Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`
-   * フォームと結合するデータを含む `BLOB` オブジェクトです。 データを結合しない場合は、`null` を渡します。 （[編集可能なレイアウトを使用した Forms の事前入力](/help/forms/developing/prepopulating-forms-flowable-layouts.md)を参照してください）。
+   * ファイル名拡張子を含んだフォームデザイン名を指定する文字列値。 Forms アプリケーションの一部であるフォームデザインを参照する場合は、必ず次のような完全なパスを指定します。`Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`
+   * フォームに結合するデータを含む `BLOB` オブジェクト。 データを結合しない場合は、`null` を渡します。 （[編集可能なレイアウトを使用した Forms の事前入力](/help/forms/developing/prepopulating-forms-flowable-layouts.md)を参照してください）。
    * クライアントでフォームのレンダリングに必要な実行時オプションを格納する `PDFFormRenderSpec` オブジェクトです。
    * Forms サービスで必要な URI 値を格納する `URLSpec` オブジェクト。
    * 添付ファイルを格納する `java.util.HashMap` オブジェクト。 これはオプションのパラメーターであり、フォームにファイルを添付しない場合に `null` を指定できます。

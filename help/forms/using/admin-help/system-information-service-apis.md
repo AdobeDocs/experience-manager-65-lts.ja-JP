@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 93124f35-0323-4f51-9167-9bfcadc819e2
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 100%
-
 ---
-
 # システム情報サービス API {#system-information-service-apis}
 
 システム情報サービスは情報を取得する REST API のセットを提供します。 次のテーブルは API に関する詳細を提供します。
@@ -33,7 +48,7 @@ ht-degree: 100%
   <tr>
    <td><p>SystemInfo.properties</p></td>
    <td><p>https://'[server]:[port]'/rest/services/SystemInfo.properties'</p></td>
-   <td><p>この API は <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> Java API のラッパーです。 それは現在の作業環境の設定を取得します。 </p></td>
+   <td><p>この API は <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> Java API のラッパーです。 現在の作業環境の設定を取得します。 </p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.envVar</p></td>
@@ -43,7 +58,7 @@ ht-degree: 100%
   <tr>
    <td><p>SystemInfo.logs</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.logs</p></td>
-   <td><p>アプリケーションのサーバーログを含む zip ファイルをダウンロードします。 </p></td>
+   <td><p>アプリケーションサーバーのログを含む zip ファイルをダウンロードします。 </p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.config</p></td>
@@ -99,14 +114,14 @@ ht-degree: 100%
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.threads?delay=[n]&amp;iterations=[n]</p></td>
    <td><p>アクティブなスレッドの数とスタックトレースを取得します。 次のパラメーターを受け取ります。</p>
     <ul>
-     <li><p>iterations= [n]：反復回数を指定します。 n を数字と置き換えます。 </p></li>
+     <li><p>iterations= [n]：反復回数を指定します。 n を数値に置き換えます。 </p></li>
      <li><p>Delay= [n]：次の反復を始める前に待機するミリ秒の数値を指定します。 </p></li>
     </ul><p></p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.info</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.info</p></td>
-   <td><p>この API はすべてのシステム情報サービス API のラッパーです。 内部的に、それはすべてのシステム情報 API を実行し、情報を zip 形式でダウンロードします。 </p><p><i><strong>注意</strong>：SystemInfo.info はアクティブなスレッドの数とスタックトレースを提供しません。 </i></p></td>
+   <td><p>この API はすべてのシステム情報サービス API のラッパーです。 内部的に、すべてのシステム情報 API を実行し、情報を zip 形式でダウンロードします。 </p><p><i><strong>注意</strong>：SystemInfo.info はアクティブなスレッドの数とスタックトレースを提供しません。 </i></p></td>
   </tr>
  </tbody>
 </table>

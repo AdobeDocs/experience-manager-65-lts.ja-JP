@@ -5,16 +5,30 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Security
 role: Developer
 exl-id: abc2747f-cfd8-4ee1-bbc0-5ad89beb383a
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 99%
-
+source-wordcount: '419'
+ht-degree: 96%
 ---
-
 # セキュリティ{#security}
 
-アプリケーションのセキュリティは、開発フェーズから始まります。アドビでは、次のセキュリティのベストプラクティスを適用することをお勧めします。
+アプリケーションのセキュリティは、開発フェーズから始まります。 アドビでは、次のセキュリティのベストプラクティスを適用することをお勧めします。
 
 ## リクエストセッションの使用 {#use-request-session}
 
@@ -22,15 +36,15 @@ ht-degree: 99%
 
 ## クロスサイトスクリプティング（XSS）に対する保護 {#protect-against-cross-site-scripting-xss}
 
-クロスサイトスクリプティング（XSS）を使用すると、攻撃者が他のユーザーが閲覧した web ページにコードを挿入できます。このセキュリティ脆弱性は、悪意のある web ユーザーによって悪用され、アクセス制御をバイパスする可能性があります。
+クロスサイトスクリプティング（XSS）を使用すると、攻撃者が他のユーザーが閲覧した web ページにコードを挿入できます。 このセキュリティ脆弱性は、悪意のある web ユーザーによって悪用され、アクセス制御をバイパスする可能性があります。
 
-AEM では、ユーザーが提供するコンテンツをすべて出力時にフィルタリングする原則を適用しています。XSS を回避することは、開発とテストの両方において最優先されます。
+AEM では、ユーザーが提供するコンテンツをすべて出力時にフィルタリングする原則を適用しています。 XSS を回避することは、開発とテストの両方において最優先されます。
 
-AEM が提供する XSS 保護メカニズムは、[OWASP（The Open Web Application Security Project）](https://owasp.org/)が提供する [AntiSamy Java™ ライブラリ](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project)に基づいています。デフォルトの AntiSamy 設定は、次の場所にあります。
+AEM が提供する XSS 保護メカニズムは、[OWASP（The Open Web Application Security Project）](https://owasp.org/)が提供する [AntiSamy Java™ ライブラリ](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project)に基づいています。 デフォルトの AntiSamy 設定は、次の場所にあります。
 
 `/libs/cq/xssprotection/config.xml`
 
-設定ファイルをオーバーレイすることで、この設定を独自のセキュリティ要件に適合させることが重要です。公式の [AntiSamy ドキュメント](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project)では、セキュリティ要件の実装に必要なすべての情報が提供されています。
+設定ファイルをオーバーレイすることで、この設定を独自のセキュリティ要件に適合させることが重要です。 公式の [AntiSamy ドキュメント](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project)では、セキュリティ要件の実装に必要なすべての情報が提供されています。
 
 >[!NOTE]
 >
@@ -42,9 +56,9 @@ AEM が提供する XSS 保護メカニズムは、[OWASP（The Open Web Applica
 
 >[!NOTE]
 >
->インスタンスの保護に必要なクラウドサービス情報用の ACL と OSGi 設定は、[実稼動準備モード](/help/sites-administering/production-ready.md)の一部として自動化されます。つまり、設定を手動で変更する必要はありませんが、デプロイメントの運用を開始する前に変更を確認しておくことをお勧めします。
+>インスタンスの保護に必要なクラウドサービス情報用の ACL と OSGi 設定は、[実稼動準備モード](/help/sites-administering/production-ready.md)の一部として自動化されます。 つまり、設定を手動で変更する必要はありませんが、デプロイメントの運用を開始する前に変更を確認しておくことをお勧めします。
 
-[AEM インスタンスを Adobe Experience Cloud と統合](/help/sites-administering/marketing-cloud.md)する場合、[クラウドサービス設定](/help/sites-developing/extending-cloud-config.md)を使用します。これらの設定に関する情報は、収集された統計と共にリポジトリに保存されます。アドビでは、この機能を使用している場合、この情報に対するデフォルトのセキュリティが要件を満たしているかどうかを確認することをお勧めします。
+[AEM インスタンスを Adobe Experience Cloud と統合](/help/sites-administering/marketing-cloud.md)する場合、[クラウドサービス設定](/help/sites-developing/extending-cloud-config.md)を使用します。 これらの設定に関する情報は、収集された統計と共にリポジトリに保存されます。 アドビでは、この機能を使用している場合、この情報に対するデフォルトのセキュリティが要件を満たしているかどうかを確認することをお勧めします。
 
 webservicesupport モジュールは、統計情報と設定情報を以下に書き込みます。
 

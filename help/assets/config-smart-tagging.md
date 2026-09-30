@@ -1,20 +1,34 @@
 ---
 title: スマートコンテンツサービスを使用したアセットのタグ付けの設定
-description: スマートコンテンツサービスを使用して、 [!DNL Adobe Experience Manager] でスマートタグと拡張スマートタグを設定する方法について説明します。
+description: スマートコンテンツサービスを使用して、[!DNL Adobe Experience Manager]でスマートタグと強化されたスマートタグを設定する方法を説明します。
 role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: be7c294c-149b-4825-8376-573f9e2987e2
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 752f9248-f39f-5793-a7dd-5ddafcd403c7
+    internal-label: Tagging
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: f0e3b2ca-813f-4b7a-81df-52339e17ddcf
+    internal-label: Smart Tags
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 97%
-
+source-wordcount: '1992'
+ht-degree: 96%
 ---
-
 # スマートタグ付けのために [!DNL Assets] を準備 {#configure-asset-tagging-using-the-smart-content-service}
 
-スマートコンテンツサービスを使用してアセットのタグ付けを開始する前に、[!DNL Experience Manager Assets] と Adobe Developer Console を統合して、[!DNL Adobe AI] スマートコンテンツサービスを使用します。 設定が完了したら、いくつかの画像とタグを使用してサービスのトレーニングを行います。
+スマートコンテンツサービスを使用してアセットのタグ付けを開始する前に、[!DNL Experience Manager Assets] と Adobe Developer Console を統合して、[!DNL Adobe AI] スマートコンテンツサービスを使用します。 設定が完了したら、いくつかの画像と 1 つのタグを使用してサービスのトレーニングを行います。
 スマートコンテンツサービスを使用する前に、次を確認します。
 
 * [Adobe 開発者コンソールとの統合](#integrate-adobe-io)。
@@ -35,7 +49,7 @@ ht-degree: 97%
 
 ## と Adobe 開発者コンソールの統合 {#integrate-adobe-io}
 
-Adobe Developer Console と統合する場合、[!DNL Experience Manager] サーバーはリクエストをスマートコンテンツサービスに転送する前に、Adobe Developer Console ゲートウェイを使用してサービス資格情報を認証します。 統合するには、組織の管理者権限と、組織で購入して有効化されたスマートコンテンツサービスライセンスを持つ Adobe ID アカウントが必要です。
+Adobe Developer Console と統合する場合、[!DNL Experience Manager] サーバーはリクエストをスマートコンテンツサービスに転送する前に、Adobe Developer Console ゲートウェイを使用してサービス資格情報を認証します。 統合するには、組織の管理者権限を持つ Adobe ID アカウントと、組織向けに購入されて有効化されたスマートコンテンツサービスライセンスが必要です。
 
 スマートコンテンツサービスを設定するには、次のトップレベルの手順に従います。
 
@@ -61,13 +75,13 @@ Adobe Developer Console と統合する場合、[!DNL Experience Manager] サー
 この設定を行う方法について詳しくは、要件に応じて、Developer Console のドキュメントを参照してください。
 
    * 概要：
-      * [サーバー間の認証](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
+     * [サーバー間の認証](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
 
    * 新しい OAuth 資格情報の作成：
-      * [OAuth サーバー間の資格情報実装ガイド](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
+     * [OAuth サーバー間の資格情報実装ガイド](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
    * 既存の JWT 資格情報の OAuth 資格情報への移行：
-      * [サービスアカウント（JWT）資格情報からOAuth サーバー間資格情報への移行](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
+     * [サービスアカウント（JWT）資格情報からOAuth サーバー間資格情報への移行](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
 
 
 1. **[!UICONTROL 製品プロファイルを選択]**&#x200B;ページで、「**[!UICONTROL スマートコンテンツサービス]**」を選択します。 「**[!UICONTROL 設定済み API を保存]**」をクリックします。
@@ -122,7 +136,7 @@ Adobe Developer Console と統合する場合、[!DNL Experience Manager] サー
 
    >[!NOTE]
    >
-   >2022年9月1日（PT）より前に Experience Manager Managed Service がプロビジョニングされている場合は、次のサービス URL を使用します。
+   >2022年9月1日より前に Experience Manager Managed Service がプロビジョニングされている場合は、次のサービス URL を使用します。
    >`https://mc.adobe.io/marketingcloud/smartcontent`
 
 1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。
@@ -223,7 +237,7 @@ Adobe Developer Console と統合する場合、[!DNL Experience Manager] サー
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-フォルダーに対してこのオプションを選択すると、[!DNL Experience Manager] によりレーニングワークフローが自動的に実行され、フォルダーのアセットおよびそのタグに関するスマートコンテンツサービスのトレーニングが実施されます。 デフォルトでは、トレーニングワークフローは毎週土曜日の午前12:30時に実行されます。
+フォルダーに対してこのオプションを選択すると、[!DNL Experience Manager] によりレーニングワークフローが自動的に実行され、フォルダーのアセットおよびそのタグに関するスマートコンテンツサービスのトレーニングが実施されます。 デフォルトでは、トレーニングワークフローは毎週土曜日の午前12:30に実行されます。
 
 ### オンデマンドトレーニング {#on-demand-training}
 
@@ -251,7 +265,7 @@ Adobe Developer Console と統合する場合、[!DNL Experience Manager] サー
 1. **[!UICONTROL アセットレポート]**&#x200B;ページで、生成したレポートを選択します。 レポートを表示するには、ツールバーの「**[!UICONTROL 表示]**」アイコンをクリックします。
 1. レポートの詳細をレビューします。
 
-   レポートには、トレーニングしたタグのトレーニングステータスが表示されます。 「**[!UICONTROL トレーニングステータス]**」列の緑色は、そのタグについて、スマートコンテンツサービスのトレーニングが実施されたことを示します。 黄色は、特定のタグに関するサービスのトレーニングが完全には実施されていないことを示します。 この場合、特定のタグを含む画像をさらに追加し、トレーニングワークフローを実行して、そのタグに関するサービスのトレーニングを完全に実施します。
+   レポートには、トレーニングしたタグのトレーニングステータスが表示されます。 「**[!UICONTROL トレーニングステータス]**」列の緑色は、そのタグについて、スマートコンテンツサービスのトレーニングが実施されたことを示します。 黄色は、特定のタグについてサービスのトレーニングが完全ではないことを示します。 この場合、特定のタグを含む画像をさらに追加し、トレーニングワークフローを実行して、そのタグに関するサービスのトレーニングを完全に実施します。
 
    このレポートにタグが表示されない場合は、それらのタグに関するトレーニングワークフローを再度実行してください。
 
@@ -261,9 +275,9 @@ Adobe Developer Console と統合する場合、[!DNL Experience Manager] サー
 
 * 拡張スマートタグは、画像とそのタグの学習モデルにもとづいています。 これらのモデルは、タグを識別するうえで常に完璧であるわけではありません。 スマートコンテンツサービスの現行バージョンには次の制限事項があります。
 
-   * 画像内の細かい違いを認識することはできません。 例えば、シャツのサイズが細身か標準かなどの違いは認識できません。
-   * 画像の細かい模様や部分に基づいてタグを識別することはできません。 例えば、T シャツのロゴなどです。
-   * タグ付けは、[!DNL Experience Manager] がサポートされているロケールでサポートされています。
+  * 画像内の細かい違いを認識することはできません。 例えば、シャツがスリムフィットかレギュラーフィットかといった違いです。
+  * 画像の細かい模様や部分に基づいてタグを識別することはできません。 例えば、T シャツのロゴなどです。
+  * タグ付けは、[!DNL Experience Manager] がサポートされているロケールでサポートされています。
 
 * スマートタグ（通常または拡張）付きのアセットを検索するには、[!DNL Assets] のオムニサーチ（全文検索）を使用します。 スマートタグには個別の検索用述語はありません。
 

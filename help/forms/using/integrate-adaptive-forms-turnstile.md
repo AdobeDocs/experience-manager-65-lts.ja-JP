@@ -4,13 +4,21 @@ description: Turnstile サービスでフォームのセキュリティを容易
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: cca80e8d-496b-4d67-a90d-2eadf2931986
-source-git-commit: a5cfba70cedd1e0d1f8d5e5b447aa2941a23840f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 95%
-
+source-wordcount: '861'
+ht-degree: 96%
 ---
-
 # AEM Forms 環境と Turnstile の接続 {#connect-your-forms-environment-with-turnstile-service}
 
 
@@ -57,7 +65,7 @@ AEM Forms を Turnstile サービスと統合するには、次の手順を実�
 1. クラウドサービスを設定します。
    1. AEM オーサーインスタンスで、![tools-1](assets/tools-1.png)／**[!UICONTROL クラウドサービス]**&#x200B;に移動し、 「**[!UICONTROL Turnstile]**」をクリックします。
       ![クラウドサービスの Turnstile](assets/turnstile-in-ui.png)
-   1. 前の節で説明したように、作成または更新された設定コンテナを選択します。「**[!UICONTROL 作成]**」をクリックします。
+   1. 前の節で説明したように、作成または更新した設定コンテナを選択します。 「**[!UICONTROL 作成]**」をクリックします。
       ![設定 Turnstile](assets/config-hcaptcha.png)
    1. **[!UICONTROL ウィジェットタイプ]**&#x200B;を管理対象、非インタラクティブまたは非表示として指定します。
    1. **[!UICONTROL タイトル]**、**[!UICONTROL 名前]**&#x200B;など、その他の詳細を入力します。

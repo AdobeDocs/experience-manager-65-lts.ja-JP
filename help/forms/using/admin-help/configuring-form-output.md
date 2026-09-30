@@ -9,19 +9,34 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 2823d38e-f544-408e-9437-3d0fc622dc34
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 100%
-
 ---
-
 # フォーム出力の設定{#configuring-form-output}
 
 ## Web ブラウザーに返す HTML 出力の形式を指定 {#specify-the-type-of-html-output-returned-to-the-web-browser}
 
-1. 管理コンソールで、サービス／Forms をクリックします。
+1. 管理コンソールで、サービス／forms をクリックします。
 1. 「フォーム出力」の出力タイプのリストで次のいずれかのオプションを選択します。
 
    **完全な HTML：**&#x200B;完全な HTML タグを含む形（完全な HTML ページ）でフォームをレンダリングします。 これがデフォルト値です。
@@ -32,7 +47,7 @@ ht-degree: 100%
 
 ## PDF コンテンツをレンダリングする場所を指定 {#specify-the-location-where-pdf-content-is-rendered}
 
-1. 「フォーム出力」のレンダーのリストで次のいずれかのオプションを選択します。
+1. 「フォーム出力」の「Render at」リストで次のいずれかのオプションを選択します。
 
    **クライアント：** Adobe Acrobat または Adobe Reader 内で PDF フォームをレンダリングします。 クライアントサイドでレンダリングを行うと AEM Forms のパフォーマンスが向上します。ただし、これは PDFForm 変換にのみ適用されます。
 
@@ -52,7 +67,7 @@ ht-degree: 100%
 
 1. 管理コンソールにログインします。
 1. **サービス**／**Forms** をクリックします。
-1. 「出力形式」で「Body のみ」を指定します。
+1. 「出力タイプ」で「フォーム本文」を指定します。
 1. 設定を保存します。
 1. HTML コードの head セクションで JavaScript 変数 __CUSTOM_SCRIPTS_VERSION を宣言し、その値を 1 に設定します。
 

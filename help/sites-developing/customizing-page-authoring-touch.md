@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 8d53072b-826d-4ff4-843b-09204fb5a455
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1468'
 ht-degree: 94%
-
 ---
-
 # ページオーサリングのカスタマイズ{#customizing-page-authoring}
 
 >[!CAUTION]
@@ -28,12 +37,12 @@ Adobe Experience Manager（AEM）には、オーサーインスタンスのペ�
 
   クライアントライブラリを使用すると、デフォルトの実装を拡張して新しい機能を実現しながら、標準の関数、オブジェクト、メソッドを再利用できます。 カスタマイズする際に、独自のクライアントライブラリを `/apps.` に作成できます。新しいクライアントライブラリには次の条件があります。
 
-   * オーサリングクライアントライブラリ `cq.authoring.editor.sites.page` を使用する必要があります。
-   * 適切な `cq.authoring.editor.sites.page.hook` カテゴリに含める必要があります。
+  * オーサリングクライアントライブラリ `cq.authoring.editor.sites.page` を使用する必要があります。
+  * 適切な `cq.authoring.editor.sites.page.hook` カテゴリに含める必要があります。
 
 * オーバーレイ
 
-  オーバーレイはノード定義に基づいており、標準の機能（`/libs`）にカスタマイズした独自機能（`/apps`）をオーバーレイすることができます。 オーバーレイを作成する場合、[sling リソースの結合](/help/sites-developing/sling-resource-merger.md)で継承が可能なため、元の1:1 コピーは必要ありません。
+  オーバーレイはノード定義に基づいており、標準の機能（`/libs`）にカスタマイズした独自機能（`/apps`）をオーバーレイすることができます。 オーバーレイを作成する場合、[sling リソースの結合](/help/sites-developing/sling-resource-merger.md)で継承が可能なため、元のコピーを1:1で作成する必要はありません。
 
 >[!NOTE]
 >
@@ -151,12 +160,12 @@ GitHub のコード
 
      例：
 
-      * `/libs/foundation/components/text/cq:editConfig`
-      * `/libs/foundation/components/image/cq:editConfig`
+     * `/libs/foundation/components/text/cq:editConfig`
+     * `/libs/foundation/components/image/cq:editConfig`
 
-         * プロパティ：`editorType`
+       * プロパティ：`editorType`
 
-           そのコンポーネントに対してインプレース編集が呼び出された場合に使用されるインラインエディターのタイプを定義します（`text`、`textimage`、`image`、`title` など）。
+         そのコンポーネントに対してインプレース編集が呼び出された場合に使用されるインラインエディターのタイプを定義します（`text`、`textimage`、`image`、`title` など）。
 
 1. エディターの追加の設定の詳細は、設定が含まれている `config` ノード、および必要なプラグイン設定の詳細が含まれている `plugin` ノードを使用して設定できます。
 
@@ -192,7 +201,7 @@ GitHub のコード
 
 >[!NOTE]
 >
->例えば、次を参照してください。
+>例として、次を参照してください。
 >`/libs/cq/gui/components/authoring/editors/clientlibs/core/js/editors/editorExample.js`
 
 1. 実装方法：

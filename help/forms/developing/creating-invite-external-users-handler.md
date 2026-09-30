@@ -5,14 +5,29 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 5e1f1f3c-a2f3-4bf1-ba96-a02f8b16c180
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 96%
-
 ---
-
 # 外部ユーザー招待ハンドラーの作成 {#create-invite-external-users-handler}
 
 **このドキュメントのサンプルと例は、JEE 環境の AEM Forms のみを対象としています。**
@@ -53,7 +68,7 @@ Rights Management SPI にはプロジェクトのクラスパスに設定する 
 
 外部ユーザー招待ハンドラーの実装には、`createLocalPrincipalAccount` という名前のユーザー定義メソッドが含まれます。 このメソッドは、メールアドレスをパラメーター値として指定する文字列値を受け入れます。 `createLocalPrincipalAccount` メソッドは、 `EDC_EXTERNAL_REGISTERED` と呼ばれるローカルドメインがすでに存在することを前提としています。 このドメイン名は、必要に応じて設定できます。ただし、実稼動アプリケーションの場合は、エンタープライズドメインと統合できます。
 
-`createUsers` メソッドは、すべてのメールアドレスを反復処理し、対応するユーザーオブジェクト（`EDC_EXTERNAL_REGISTERED` ドメインのローカルユーザー）を作成します。 最後に、`doEmails` メソッドが呼び出されます。 このメソッドは、サンプル内でスタブとして意図的に残されています。 実稼動環境の実装では、新しく作成されたユーザーに招待用のメールメッセージを送信するアプリケーションロジックが含まれます。 実際のアプリケーションのアプリケーションロジックフローを示すために、サンプルに残しておきます。
+`createUsers` メソッドは、すべてのメールアドレスを反復処理し、対応するユーザーオブジェクト（`EDC_EXTERNAL_REGISTERED` ドメインのローカルユーザー）を作成します。 最後に、`doEmails` メソッドが呼び出されます。 このメソッドは、サンプル内でスタブとして意図的に残されています。 本番環境の実装では、新しく作成されたユーザーに招待用のメールメッセージを送信するアプリケーションロジックが含まれます。 実際のアプリケーションのロジックフローを示すために、サンプルに残しておきます。
 
 ### 外部ユーザー招待ハンドラー実装の定義 {#user-handler-implementation}
 
@@ -232,14 +247,14 @@ A. コンポーネント Bで必要な外部JAR ファイル。 JAVA ファイ�
 
 外部ユーザー招待ハンドラーをテストするには、管理コンソールを使用して、招待する外部ユーザーを追加します。
 
-管理コンソールを使用して、招待する外部ユーザーを追加するには、次をおこないます。
+管理コンソールを使用して、招待する外部ユーザーを追加するには、次を行います。
 
 1. ワークベンチを使用して、外部ユーザー招待ハンドラーの JAR ファイルをデプロイします。
 1. アプリケーションサーバーを再起動します。
 
    >[!NOTE]
    >
-   > SDK を再起動するには、「Ctrl + C」コマンドを使用することをお勧めします。 Java プロセスの停止など、別の方法を使用して AEM SDK を再起動すると、AEM 開発環境で不整合が生じる場合があります。
+   > 「Ctrl + C」コマンドを使用して SDK を再起動することをお勧めします。 Java プロセスの停止など、別の方法を使用して AEM SDK を再起動すると、AEM 開発環境で不整合が生じる場合があります。
 
 1. 管理コンソールにログインします。
 1. **[!UICONTROL サービス]**／**[!UICONTROL Rights Management]**／**[!UICONTROL 設定]**／ 招待済み&#x200B;**[!UICONTROL ユーザーの登録]**&#x200B;をクリックします。

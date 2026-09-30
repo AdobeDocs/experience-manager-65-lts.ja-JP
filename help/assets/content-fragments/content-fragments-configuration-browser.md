@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: b526cd3a-9b04-403a-a6f4-6abe973aaeac
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '273'
 ht-degree: 100%
-
 ---
-
 # コンテンツフラグメント - 設定ブラウザー{#content-fragments-configuration-browser}
 
 Adobe Experience Manager（AEM）の強力なヘッドレス配信機能を使用するために、設定ブラウザーで特定のコンテンツフラグメント機能を有効にする方法を説明します。
@@ -62,6 +74,6 @@ Adobe Experience Manager（AEM）の強力なヘッドレス配信機能を使�
 
 **グローバル**&#x200B;設定がコンテンツフラグメント機能に対して有効になっている場合、この設定はすべてのアセットフォルダーに適用されます。
 
-他の設定（グローバル以外）を同等のアセットフォルダーで使用するには、接続を定義する必要があります。そのためには、適切なフォルダーの「**フォルダーのプロパティ**」の「**クラウドサービス**」タブで、適切な&#x200B;**設定**&#x200B;を選択します。
+他の設定（グローバル以外）を同等のアセットフォルダーで使用するには、接続を定義する必要があります。 そのためには、適切なフォルダーの「**フォルダーのプロパティ**」の「**クラウドサービス**」タブで、適切な&#x200B;**設定**&#x200B;を選択します。
 
 ![設定の適用](assets/cfm-conf-02.png)

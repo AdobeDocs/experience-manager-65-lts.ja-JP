@@ -822,7 +822,7 @@ ht-degree: 67%
       + {hide-from-toc}[認証プロバイダーの設定](/help/forms/using/admin-help/configuring-authentication-providers.md)
       + {hide-from-toc}[&#x200B; ディレクトリの同期](/help/forms/using/admin-help/synchronizing-directories.md)
       + {hide-from-toc}[&#x200B; ディレクトリの設定](/help/forms/using/admin-help/configuring-directories.md)
-    + User Management の設定 {#configure-user-management}
+    + ユーザー管理の設定 {#configure-user-management}
       + {hide-from-toc}[認証の評価順序を変更](/help/forms/using/admin-help/change-order-evaluation-authentication.md)
       + {hide-from-toc}[LDAP バインド パスワードの設定](/help/forms/using/admin-help/configure-ldap-bind-password.md)
       + {hide-from-toc}[AEM フォームを設定してドメイン情報を先行取得する](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md)
@@ -948,7 +948,7 @@ ht-degree: 67%
       + {hide-from-toc}[Job Manager データベースからレコードをパージ &#x200B;](/help/forms/using/admin-help/purge-records-job-manager-database.md)
     + AEM Forms の保守 {#maintain-aem-forms}
       + {hide-from-toc}[&#x200B; ログファイル &#x200B;](/help/forms/using/admin-help/log-files.md)
-      + {hide-from-toc}[User Management](/help/forms/using/admin-help/user-management.md)
+      + {hide-from-toc}[ユーザー管理](/help/forms/using/admin-help/user-management.md)
       + {hide-from-toc}[AEM フォームのデプロイメントの監視](/help/forms/using/admin-help/monitoring-aem-forms-deployments.md)
       + {hide-from-toc}[作業管理者と調整](/help/forms/using/admin-help/manager-throttling.md)
       + {hide-from-toc}[&#x200B; メンテナンスモードでのAEM フォームの実行](/help/forms/using/admin-help/running-aem-forms-maintenance-mode.md)

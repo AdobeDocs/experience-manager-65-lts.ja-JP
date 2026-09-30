@@ -10,13 +10,22 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: e95f382b-ae89-46d5-b109-ea3257b6b046
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 92%
-
 ---
-
 # AEM 6.5 のカスタムユーザグループマッピング {#custom-user-group-mapping-in-aem}
 
 ## CUG（カスタムユーザーグループ）に関連する JCR コンテンツの比較 {#comparison-of-jcr-content-related-to-cug}
@@ -34,17 +43,17 @@ ht-degree: 92%
    <td><p>読み取りアクセスを制限するために、専用の CUG ポリシーがターゲットノードに適用されます。</p> <p>メモ：ポリシーは、設定されているサポート対象パスにのみ適用できます。</p> <p>名前が rep:cugPolicy およびタイプが rep:CugPolicy のノードは保護されており、通常の JCR の API 呼び出しを使用して書き込むことはできません。代わりに JCR アクセス制御管理を使用してください。</p> <p>詳しくは、<a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">このページ</a>を参照してください。</p> <p>ノードに認証要件を適用するには、Mixin タイプ granite:AuthenticationRequired を追加することで十分です。</p> <p>メモ：設定済みのサポートパスの下でのみ適用されます。</p> </td>
   </tr>
   <tr>
-   <td><p>プロパティ：cq:cugPrincipals</p> <p>ノードタイプの宣言：該当なし、残余プロパティ</p> </td>
+   <td><p>プロパティ：cq:cugPrincipals</p> <p>ノードタイプの宣言：NA、残余プロパティ</p> </td>
    <td><p>プロパティ：rep:principalNames</p> <p>ノードタイプの宣言：rep:CugPolicy</p> </td>
    <td><p>制限付き CUG の下の内容を読み取ることが許可されているプリンシパルの名前を含むプロパティは保護されており、通常の JCR の API 呼び出しを使用して書き込むことはできません。代わりに JCR アクセス制御管理を使用してください。</p> <p>実装について詳しくは、<a href="https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.html">こちらのページ</a>を参照してください。</p> </td>
   </tr>
   <tr>
-   <td><p>プロパティ：cq:cugLoginPage</p> <p>ノードタイプの宣言：該当なし、残余プロパティ</p> </td>
+   <td><p>プロパティ：cq:cugLoginPage</p> <p>ノードタイプの宣言：NA、残余プロパティ</p> </td>
    <td><p>プロパティ：granite:loginPath（オプション）</p> <p>ノードタイプの宣言：granite:AuthenticationRequired</p> </td>
    <td><p>Mixin タイプ granite:AuthenticationRequired が定義されている JCR ノードは、オプションで代替ログインパスを定義できます。</p> <p>メモ：設定済みのサポートパスの下でのみ適用されます。</p> </td>
   </tr>
   <tr>
-   <td><p>プロパティ：cq:cugRealm</p> <p>ノードタイプの宣言：該当なし、残余プロパティ</p> </td>
+   <td><p>プロパティ：cq:cugRealm</p> <p>ノードタイプの宣言：NA、残余プロパティ</p> </td>
    <td>該当なし</td>
    <td>新しい実装ではサポートされなくなりました。</td>
   </tr>
@@ -83,7 +92,7 @@ ht-degree: 92%
 **コメント**
 
 * CUG 認証の設定および評価の有効化/無効化
-CUG 認証によって影響を受けるべきではないプリンシパルの除外リストを設定するサービス。
+CUG 認証の影響を受けないプリンシパルの除外リストを設定するサービス。
 
   >[!NOTE]
   > 
@@ -91,8 +100,8 @@ CUG 認証によって影響を受けるべきではないプリンシパルの�
 
   特別なニーズがある場合は、カスタム CugExclude 実装をプラグインすることが可能です。
 
-* LoginSelectorHandler に一致するログインパスを公開する LoginPathProvider を実装する OSGi コンポーネント。 必須のRequirementHandlerへの参照があります。これは、コンテンツに保存されている変更された認証要件を、花崗岩:AuthenticationRequired mixin タイプを使用してリッスンするオブザーバーを登録するために使用されます。
-* authRequirements の変更について SlingAuthenticator に通知する RequirementHandler を実装する OSGi コンポーネント。
+* 一致するログインパスを LoginSelectorHandler に公開する LoginPathProvider を実装する OSGi コンポーネント。 必須のRequirementHandlerへの参照があります。これは、コンテンツに保存されている変更された認証要件を、花崗岩:AuthenticationRequired mixin タイプを使用してリッスンするオブザーバーを登録するために使用されます。
+* authrequirements の変更について SlingAuthenticator に通知する RequirementHandler を実装する OSGi コンポーネント。
 
   このコンポーネントの設定ポリシーは REQUIRE なことから、サポートされているパスのセットが指定されている場合にのみ有効になります。
 

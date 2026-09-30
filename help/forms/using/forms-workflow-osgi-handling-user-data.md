@@ -7,14 +7,31 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: a817fa19-ae22-4c77-8a8e-6c4deed10d67
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1032'
 ht-degree: 99%
-
 ---
-
 # OSGi 上の Forms 中心のワークフロー | ユーザーデータの処理 {#forms-centric-workflows-on-osgi-handling-user-data}
 
 Forms 中心の AEM ワークフローを使用すると、現実の Forms 中心のビジネスプロセスを自動化できます。 ワークフローは、関連するワークフローモデルで指定された順序で実行される一連のステップで構成されます。 各ステップでは、ユーザーへのタスクの割り当てやメールメッセージの送信など、特定のアクションを実行します。 ワークフローでは、リポジトリ内のアセット、ユーザーアカウントおよびサービスとやり取りができます。 このため、ワークフローでは、Experience Manager のあらゆる側面を含む複雑なアクティビティを連携させることができます。
@@ -37,7 +54,7 @@ Forms 中心の AEM ワークフローおよび機能について詳しくは、
 
 >[!NOTE]
 >
->ペイロード、ドラフトおよび履歴データを格納する場所は、ワークフローまたはアプリケーションの作成時に別の場所に設定できます。 ワークフローまたはアプリケーションでデータが格納された場所を特定するには、そのワークフローを確認します。
+>ワークフローまたはアプリケーションの作成時に、ペイロード、ドラフトおよび履歴データを格納する別の場所を設定できます。 ワークフローまたはアプリケーションでデータが格納された場所を特定するには、そのワークフローを確認します。
 
 <table>
  <tbody>
@@ -96,7 +113,7 @@ Forms 中心の AEM ワークフローおよび機能について詳しくは、
 
    `SELECT &ast; FROM [cq:WorkItem] AS s WHERE ISDESCENDANTNODE([path-to-workflow-instances]) and s.[assignee]='*assignee-id*'`
 
-   クエリを実行すると、指定されたワークフロー開始者また現在のワークフロー担当者のすべてのワークフローインスタンスの場所が返されます。
+   クエリを実行すると、指定されたワークフローイニシエーターまたは現在のワークフロー担当者のすべてのワークフローインスタンスの場所が返されます。
 
    例えば、次のクエリを実行すると、ワークフロー開始者が `/var/workflow/instances` の `srose` ノードから 2 つのワークフローインスタンスのパスが返されます。
 

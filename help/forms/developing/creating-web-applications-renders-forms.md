@@ -10,14 +10,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Workbench, APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 071781e8-990d-4d01-b46e-be1c57bdbe3a
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 36ac8e9c-5c7a-56d8-af5e-39399fd7b101
+    internal-label: Workbench
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1869'
+source-wordcount: '1870'
 ht-degree: 98%
-
 ---
-
 # Forms をレンダリングする web アプリケーションの作成 {#creating-web-applications-thatrenders-forms}
 
 **このドキュメントのサンプルと例は、JEE 環境の AEM Forms のみを対象としています。**
@@ -68,7 +85,7 @@ Web アプリケーションで使用される XML データファイルが Data
 
 ### 手順の概要 {#summary-of-steps}
 
-フラグメントに基づいて Forms をレンダリングする Web ベースのアプリケーションを作成するには、次の手順を実行します。
+フラグメントに基づいて Forms をレンダリングする web アプリケーションを作成するには、次の手順を実行します。
 
 1. Web プロジェクトを作成します。
 1. Java サーブレットを表す Java アプリケーションロジックを作成します。
@@ -153,7 +170,7 @@ Forms サービス API を使用してフラグメントに基づいてフォー
 1. `URLSpec` オブジェクトの `setTargetURL` メソッドを呼び出して、フォームデータの送信先となるターゲット URL 値を指定する文字列値を渡します。 フォームデザインでターゲット URL を定義する場合、空の文字列を渡すことができます。 また、計算を実行するためのフォームの送信先の URL を指定することもできます。
 1. `FormsServiceClient` オブジェクトの `renderPDFForm` メソッドを呼び出して、次の値を渡します。
 
-   * ファイル名拡張子を含んだフォームデザイン名を指定する文字列値。
+   * ファイル名拡張子を含むフォームデザイン名を指定する文字列。
    * フォームに結合するデータを含む `com.adobe.idp.Document` オブジェクト（手順 2 で作成）。
    * 実行時オプションを保存する `PDFFormRenderSpec` オブジェクト。 詳細情報については、「[AEM Forms API リフェレンス](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ja)」を参照してください。
    * `URLSpec` フラグメントに基づいてフォームをレンダリングするために Forms サービスで必要な URI 値を含むオブジェクト。
@@ -392,7 +409,7 @@ WAR ファイルは、AEM Forms がデプロイされている J2EE アプリケ
 
 ### Web アプリケーションのテスト {#testing-your-web-application}
 
-Web アプリケーションをデプロイした後、Web ブラウザーを使用してテストできます。 AEM Forms をホストしているコンピューターを使用している場合は、次の URL を指定できます。
+Web アプリケーションをデプロイした後、Web ブラウザーを使用してテストできます。 AEM Forms をホストしている同じコンピューターを使用している場合は、次の URL を指定できます。
 
 * http://localhost:8080/FragmentsWebApplication/index.html
 

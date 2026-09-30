@@ -1,6 +1,6 @@
 ---
 title: AEM ワークフローから Document Services API を開始
-description: DDX または指定された入力で AEM Document Services を呼び出す方法について説明します。PDF を PDF/A に変換する方法も参照してください。
+description: DDX または指定された入力で AEM Document Services を呼び出す方法について説明します。 PDF を PDF/A に変換する方法も参照してください。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
@@ -8,25 +8,39 @@ solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 role: User, Developer
 exl-id: 22a7744e-0af6-4aac-a8a1-156b563c627c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1173'
 ht-degree: 100%
-
 ---
-
 # AEM ワークフローからの Document Services API の開始  {#initiate-document-services-apis-from-aem-workflow}
 
 ## Assembler {#assembler}
 
-AEM Forms は、カスタムワークフローを提供し、以下の Assembler サービス API を呼び出します。
+AEM Forms は、カスタムワークフローを提供し、以下の Assembler Service API を呼び出します。
 
 * **呼び出し**：提供されたインプット上の入力 DDX で指定された操作を呼び出します。
 * **toPDFA**：入力 PDF ドキュメントを PDF/A ドキュメントに変換します。
 
 ### DDX を呼び出しワークフロー {#invoke-ddx-workflow}
 
-**DDX を呼び出し**&#x200B;ワークフローは、`Invoke` Assembler サービス API を呼び出します。この API を使用して、ドキュメントの作成や分解、PDF への透かしの追加などを行うことができます。
+**DDX を呼び出し**&#x200B;ワークフローは、`Invoke`Assembler Service API を呼び出します。この API を使用して、ドキュメントの作成や分解、PDF への透かしの追加などを行うことができます。
 
 1. サイドキックの「Forms Workflow」タブの下にある **[!UICONTROL DDX を呼び出し]**&#x200B;ワークフローステップをドラッグします。
 1. 追加したワークフローステップをダブルクリックして、コンポーネントを編集します。
@@ -38,13 +52,13 @@ DDX を呼び出しワークフローには以下の入力ドキュメントが�
 
 * **DDX**：DDX を呼び出しワークフローステップの必須入力項目で、以下の DDX オプションのうち 1 つを選択することで指定できます。
 
-   * *ペイロードとの関連*：DDX 入力ファイルは、ワークフロー項目のペイロードフォルダーに関連しています。
-   * *ペイロードの使用*：ワークフロー項目のペイロードは入力 DDX ドキュメントとして使用します。
-   * *絶対パス*：CRX リポジトリの DDX ドキュメントへの絶対パスです。
+  * *ペイロードとの関連*：DDX 入力ファイルは、ワークフロー項目のペイロードフォルダーに関連しています。
+  * *ペイロードの使用*：ワークフロー項目のペイロードは入力 DDX ドキュメントとして使用します。
+  * *絶対パス*：CRX リポジトリの DDX ドキュメントへの絶対パスです。
 
-* **ペイロードからマップを作成**：選択すると、ペイロードフォルダーの下のすべてのドキュメントが、Assembler の `invoke` API 用に入力ドキュメントマップに追加されます。各ドキュメントのノード名は、マップのキーとして使用されます。
+* **ペイロードからマップを作成**：選択すると、ペイロードフォルダーの下のすべてのドキュメントが、Assembler の `invoke` API 用に入力ドキュメントマップに追加されます。 各ドキュメントのノード名は、マップのキーとして使用されます。
 
-* **入力ドキュメントマップ**：入力ドキュメントマップを指定します。任意の数のエントリを追加できます。各エントリではマップのキーと、ドキュメントのソースを指定します。
+* **入力ドキュメントマップ**：入力ドキュメントマップを指定します。 任意の数のエントリを追加できます。各エントリではマップのキーと、ドキュメントのソースを指定します。
 
 #### 環境オプション {#environment-options}
 
@@ -53,20 +67,20 @@ DDX を呼び出しワークフローには以下の入力ドキュメントが�
 * *ジョブのログレベル*：処理ログのログレベルを指定します。
 * *Validate Only*：入力DDXの有効性をチェックします。
 
-* *エラー時に失敗*：エラーが発生した場合に Assembler サービスの呼び出しが失敗するかどうかを指定します。デフォルト値は false です。
+* *エラー時に失敗*：エラーが発生した場合にアセンブラーサービスの呼び出しが失敗するかどうかを指定します。 デフォルト値は false です。
 
 #### 出力ドキュメント {#output-documents}
 
-入力 DDX に応じて、呼び出し API は複数の出力ドキュメントを生成することができます。「出力ドキュメント」タブでは、出力ドキュメントを保存する場所を選択できます。
+入力 DDX に応じて、呼び出し API は複数の出力ドキュメントを生成することができます。 「出力ドキュメント」タブでは、出力ドキュメントを保存する場所を選択できます。
 
 1. *ペイロードでの出力ドキュメント保存*：ペイロードフォルダーの下で出力ドキュメントを保存したり、ペイロードがファイルの場合はペイロードを上書きしたりします。
-1. *出力ドキュメントのマップ*：出力ドキュメントごとに 1 つのエントリを追加して、各出力ドキュメントの保存場所を明示的に指定できます。各エントリでは、ドキュメントと保存場所を指定します。出力ドキュメントは、ペイロードを上書きしたり、ペイロードフォルダーの下に保存したりできます。複数の出力ドキュメントがあると役に立ちます。
+1. *出力ドキュメントのマップ*：出力ドキュメントごとに 1 つのエントリを追加して、各出力ドキュメントの保存場所を明示的に指定できます。 各エントリでは、ドキュメントと保存場所を指定します。 出力ドキュメントは、ペイロードを上書きしたり、ペイロードフォルダーの下に保存したりできます。 複数の出力ドキュメントがあると役に立ちます。
 
 1. *ジョブのログ*：エラーのトラブルシューティングに役立つ、ジョブのログドキュメントを保存する場所を指定します。
 
 ### PDF/A ワークフローへの変換 {#convert-to-pdf-a-workflow}
 
-PDF/Aワークフローステップへの変換は、「 Assembler Service API」を呼び出します。`toPDFA`PDF/Aに準拠した文書をPDFに変換するのに使用します。
+PDF/Aワークフローステップへの変換は、「Assembler Service API」を呼び出します。`toPDFA` PDF/Aに準拠した文書をPDFに変換するのに使用します。
 
 1. Sidekickのフォームワークフロータブの下にある&#x200B;**[!UICONTROL ConvertToPDFA]**&#x200B;ワークフローステップをドラッグします。
 
@@ -98,8 +112,8 @@ PDF/Aワークフローステップへの変換は、「 Assembler Service API�
 
 「出力ドキュメント」タブでは、出力ドキュメントの出力先を指定できます。
 
-* *PDFA ドキュメント*：変換された PDF/A ドキュメントを保存する場所を指定します。ペイロードドキュメントを上書きするか、ペイロードフォルダーに保存することができます。
-* *変換ログ*：変換ログが保存されている場所を明確にします。ペイロード文書に上書きするか、ペイロードフォルダーに保存できます。
+* *PDFA ドキュメント*：変換された PDF/A ドキュメントを保存する場所を指定します。 ペイロードドキュメントを上書きするか、ペイロードフォルダーに保存することができます。
+* *変換ログ*：変換ログが保存されている場所を明確にします。 ペイロード文書に上書きするか、ペイロードフォルダーに保存できます。
 
 ## Forms {#forms}
 
@@ -113,9 +127,9 @@ Render PDF Formワークフローは、`renderPDFForm`Forms service APIの周り
 
 #### 入力ドキュメント {#input-documents-2}
 
-* *テンプレートファイル*：XDP テンプレートの場所を指定します。このフィールドは必須です。
+* *テンプレートファイル*：XDP テンプレートの場所を指定します。 このフィールドは必須です。
 
-* *データドキュメント*：テンプレートとマージする必要があるデータ xml の場所を指定します。
+* *データドキュメント*：テンプレートと結合する必要があるデータ xml の場所を指定します。
 
 #### 出力ドキュメント {#output-documents-2}
 
@@ -132,9 +146,9 @@ Render PDF Formワークフローは、`renderPDFForm`Forms service APIの周り
 
 ## 出力 {#output}
 
-Generate Non Interactive PDFワークフローは、`generatePDFOutput`OutputサービスAPIの周りのラッパーです。XDP テンプレートおよびデータ xml から非インタラクティブ PDF ドキュメントを生成するのに使用されます。
+Generate Non Interactive PDFワークフローは、`generatePDFOutput`OutputサービスAPIの周りのラッパーです。 XDP テンプレートおよびデータ xml から非インタラクティブ PDF ドキュメントを生成するのに使用されます。
 
-### 非インタラクティブ PDF 出力を生成ワークフロー {#generate-non-interactive-pdf-output-workflow-nbsp}
+### 非インタラクティブ PDF 出力を生成ワークフロー   {#generate-non-interactive-pdf-output-workflow-nbsp}
 
 1. サイドキックの「Forms Workflow」タブの下にある、「非インタラクティブ PDF 出力を生成」ワークフローをドラッグします。
 1. 追加したワークフローステップをダブルクリックして、コンポーネントを編集します。
@@ -142,9 +156,9 @@ Generate Non Interactive PDFワークフローは、`generatePDFOutput`Outputサ
 
 #### 入力ドキュメント {#input-documents-3}
 
-* *テンプレートファイル*：XDP テンプレートの場所を指定します。このフィールドは必須です。
+* *テンプレートファイル*：XDP テンプレートの場所を指定します。 このフィールドは必須です。
 
-* *データドキュメント*：テンプレートとマージする必要があるデータ xml の場所を指定します。
+* *データドキュメント*：テンプレートと結合する必要があるデータ xml の場所を指定します。
 
 #### 出力ドキュメント {#output-document}
 

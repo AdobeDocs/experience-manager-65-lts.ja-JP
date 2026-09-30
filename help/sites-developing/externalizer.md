@@ -10,24 +10,33 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 5beeae99-7ef4-49a0-aaad-3ab07429ebc2
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 99%
-
+source-wordcount: '504'
+ht-degree: 94%
 ---
-
 # URL の外部化{#externalizing-urls}
 
 Adobe Experience Manager（AEM）の **Externalizer** は、あらかじめ設定された DNS を接頭辞として、リソースパス（例えば `/path/to/my/page`）をプログラム的に外部の絶対URL（例えば `https://www.mycompany.com/path/to/my/page`）に変換できる OSGi サービスです。
 
 インスタンスが Web レイヤーの背後で実行されている場合、自身の外部向け URL がわかりません。また、リンクをリクエストスコープの範囲外で作成する必要がある場合があります。これらの理由で、このサービスは、そのような外部 URL を設定して組み立てるための一元化された場所を提供します。
 
-このページでは、**Externalizer** サービスの設定方法と使用方法について説明します。詳しくは、[Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/Externalizer.html) を参照してください。
+このページでは、**Externalizer** サービスの設定方法と使用方法について説明します。 詳しくは、[Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/Externalizer.html) を参照してください。
 
 ## Externalizer サービスの設定 {#configuring-the-externalizer-service}
 
-**Externalizer** サービスでは、プログラムでリソースパスに接頭辞を付けるために使用可能な複数のドメインを一元的に定義できます。各ドメインは一意の名前によって識別され、その名前を使用して、プログラムからそのドメインを参照できます。
+**Externalizer** サービスでは、プログラムでリソースパスに接頭辞を付けるために使用可能な複数のドメインを一元的に定義できます。 各ドメインは一意の名前によって識別され、その名前を使用して、プログラムからそのドメインを参照できます。
 
 **Externalizer** サービスのドメインマッピングを定義するには：
 
@@ -51,8 +60,8 @@ Adobe Experience Manager（AEM）の **Externalizer** は、あらかじめ設�
 
    * **スキーム**&#x200B;は http または https ですが、ftp などでもかまいません。
 
-      * 必要に応じて、https を使用して https リンクを強制的に適用します。
-      * URL の外部化を要求する際にクライアントコードがスキームを上書きしない場合に使用されます。
+     * 必要に応じて、https を使用して https リンクを強制的に適用します。
+     * URL の外部化を要求する際にクライアントコードがスキームを上書きしない場合に使用されます。
 
    * **server** はホスト名です（ドメイン名または IP アドレス）。
    * **port**（オプション）はポート番号です。
@@ -68,7 +77,7 @@ Adobe Experience Manager（AEM）の **Externalizer** は、あらかじめ設�
 
    >[!NOTE]
    >
-   >カスタム設定を使用すると、`production` や `staging` などのカテゴリまたは `my-internal-webservice` などの AEM 以外の外部システムを追加できます。このような URL をプロジェクトのコードベースの様々な場所にハードコーディングするのを防ぐのに役立ちます。
+   >カスタム設定を使用すると、`production` や `staging` などのカテゴリまたは `my-internal-webservice` などの AEM 以外の外部システムを追加できます。 このような URL をプロジェクトのコードベースの様々な場所にハードコーディングするのを防ぐのに役立ちます。
 
 1. 「**保存**」をクリックして変更を保存します。
 

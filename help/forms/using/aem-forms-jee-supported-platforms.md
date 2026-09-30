@@ -9,10 +9,28 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: a4f151470c6042bfaaa3d8f4a3260074f007a4d9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 94663796-0ee7-58b9-84f4-b425ebb69e83
+    internal-label: AEM Forms on JEE
+  - id: 669dda42-2656-578e-8b9a-9960823e4401
+    internal-label: Platform Matrix
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
 workflow-type: tm+mt
-source-wordcount: '2949'
-ht-degree: 87%
+source-wordcount: '2993'
+ht-degree: 85%
 ---
 
 # JEE 上の AEM Forms でサポートされているプラットフォーム {#supported-platforms-for-aem-forms-on-jee}
@@ -407,6 +425,7 @@ AEM Forms アプリでApache Cordovaがサポートされるようになりま�
 >- 指定した期間内にKMS ホストを見つけることができないボリュームライセンスのインストールなど、何らかの理由でMicrosoft® Office インストールがディアクティベートまたはライセンス解除された場合、インストールが再ライセンス認証されて再アクティブ化されるまで、コンバージョンが失敗する可能性があります。
 >- PDF Generator は Microsoft® Office 365 をサポートしていません。
 >- OpenOffice向けPDF Generator コンバージョンは、WindowsとLinux®の両方でサポートされています。
+>- Red Hat® Enterprise Linux® 9では、32 ビット OpenOffice ビルドには`libcrypt.so.1`が必要ですが、これはデフォルトではインストールされていません。 見つからない場合、OpenOfficeはエラー`soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`で開始できず、OpenOfficeからPDFへの変換が失敗します。 `libxcrypt-compat` パッケージ （32 ビット）をインストールして、ライブラリ `sudo dnf install -y libxcrypt-compat.i686`を提供します。
 >- OCR PDF、Optimize PDF、Export PDF の各機能は、Windows でのみサポートされます。
 >- PDF Generatorは、Microsoft®Windows 11をサポートしていません。
 >- Microsoft® Office 2021 Professional Plusのサポートは廃止されました。

@@ -9,18 +9,29 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
 exl-id: 103b6fde-e001-4332-9927-5cdf2acbc40c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '987'
 ht-degree: 100%
-
 ---
-
 # AEM Brackets 拡張{#aem-brackets-extension}
 
 ## 概要 {#overview}
 
-AEM Brackets Extension は、AEM コンポーネントとクライアントライブラリを編集するためのスムーズなワークフローを提供し、[Brackets](https://brackets.io/) コードエディターのパワーを使用して、コードエディター内から Photoshop ファイルおよびレイヤーにアクセスできるようにします。この拡張機能によって（Maven や File Vault は不要）同期が容易になるので、開発者の効率性が向上すると共に、AEM に関する知識が限られているフロントエンド開発者もプロジェクトに参加できます。この拡張機能は、[HTML Template Language（HTL）](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ja)のサポートも提供しており、複雑な JSP を使用しない、より手軽でセキュアなコンポーネント開発を可能にします。
+AEM Brackets Extension は、AEM コンポーネントとクライアントライブラリを編集するためのスムーズなワークフローを提供し、[Brackets](https://brackets.io/) コードエディターのパワーを使用して、コードエディター内から Photoshop ファイルおよびレイヤーにアクセスできるようにします。 この拡張機能によって（Maven や File Vault は不要）同期が容易になるので、開発者の効率性が向上すると共に、AEM に関する知識が限られているフロントエンド開発者もプロジェクトに参加できます。 この拡張機能は、[HTML Template Language（HTL）](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ja)のサポートも提供しており、複雑な JSP を使用しない、より手軽でセキュアなコンポーネント開発を可能にします。
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 
@@ -52,7 +63,7 @@ AEM Brackets Extension は、Brackets バージョン 1.0 以上をサポート�
 
 この拡張をインストールするには、次の手順を実行します。
 
-1. Brackets を開きます。**ファイル**&#x200B;メニューで、「**Extension Manager**」を選択します。
+1. Brackets を開きます。 **ファイル**&#x200B;メニューで、「**Extension Manager**」を選択します。
 1. 検索バーに「**AEM**」と入力し、**AEM Brackets Extension** を探します。
 
    ![chlimage_1-54](assets/chlimage_1-54a.png)
@@ -76,13 +87,13 @@ Brackets の&#x200B;**ファイル**&#x200B;メニューで「**フォルダー�
 
 >[!NOTE]
 >
->コンテンツパッケージを伴うプロジェクトを所有していない場合は、[HTL TodoMVC の例](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc)を使用できます。GitHub で、「**Download ZIP**」をクリックし、ファイルをローカルに抽出し、上記の説明に従って Brackets で `jcr_root` フォルダーを開きます。次に、以下の手順に従って&#x200B;**プロジェクト設定**&#x200B;を行い、最後に「コンテンツパッケージ全体の同期」セクションの下部の説明に従って「**Export Content Package**」を実行して、パッケージ全体を AEM 開発インスタンスにアップロードします。
+>コンテンツパッケージを伴うプロジェクトを所有していない場合は、[HTL TodoMVC の例](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc)を使用できます。 GitHub で、「**Download ZIP**」をクリックし、ファイルをローカルに抽出し、上記の説明に従って Brackets で `jcr_root` フォルダーを開きます。 次に、以下の手順に従って&#x200B;**プロジェクト設定**&#x200B;を行い、最後に「コンテンツパッケージ全体の同期」セクションの下部の説明に従って「**Export Content Package**」を実行して、パッケージ全体を AEM 開発インスタンスにアップロードします。
 >
 >これらの手順が完了したら、AEM 開発インスタンス上の URL `/content/todo.html` にアクセスし、Brackets でコード変更を開始できるようになり、web ブラウザーを更新することで変更内容がただちに AEM サーバーに同期されることを確認できます。
 
 ### プロジェクト設定 {#project-settings}
 
-コンテンツを AEM 開発インスタンスに、または AEM 開発インスタンスから同期するには、プロジェクト設定を定義する必要があります。プロジェクト設定の定義は、**AEM** メニューに移動し、「**プロジェクト設定**」を選択しておこないます。
+コンテンツを AEM 開発インスタンスに、または AEM 開発インスタンスから同期するには、プロジェクト設定を定義する必要があります。 プロジェクト設定の定義は、**AEM** メニューに移動し、「**プロジェクト設定**」を選択しておこないます。
 
 ![chlimage_1-55](assets/chlimage_1-55a.png)
 
@@ -142,7 +153,7 @@ AEM Brackets Extension によって、HTL 属性および式の作成を容易�
 
 ### 属性のオートコンプリート {#attribute-auto-completion}
 
-1. HTML 属性に「`sly`」と入力します。この属性は、「`data-sly-`」にオートコンプリートされます。
+1. HTML 属性に「`sly`」と入力します。 この属性は、「`data-sly-`」にオートコンプリートされます。
 1. ドロップダウンリストでこの HTL 属性を選択します。
 
 ### 式のオートコンプリート {#expression-auto-completion}

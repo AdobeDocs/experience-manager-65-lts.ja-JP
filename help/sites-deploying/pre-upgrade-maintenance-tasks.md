@@ -10,13 +10,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
-source-git-commit: c93d78653e192d041830a84ea24fe5d3edde29e0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1332'
 ht-degree: 69%
-
 ---
-
 # アップグレード前のメンテナンスタスク{#pre-upgrade-maintenance-tasks}
 
 アップグレードの開始前に、次のメンテナンスタスクに従って、システムの準備が完了し、問題が発生した場合にロールバックができる状態にしておくことが重要です。
@@ -66,7 +75,7 @@ jar ファイルから AEM を起動すると、`crx-quickstart/conf` の下に 
 
 ## ワークフローおよび監査ログのパージの設定 {#configure-wf-audit-purging}
 
-`WorkflowPurgeTask` タスクと `com.day.cq.audit.impl.AuditLogMaintenanceTask` タスクには個別の OSGi 設定が必要であり、この設定がない場合は機能しません。 アップグレード前のタスクの実行中にこれらのタスクが失敗した場合、最も考えられる原因は、タスクに設定がないことです。 したがって、これらのタスクに OSGi 設定を追加するか、タスクを実行しない場合はアップグレード前の最適化タスクリストから完全に削除してください。 ワークフローのパージタスクの設定に関するドキュメントは[ワークフローインスタンスの管理](/help/sites-administering/workflows-administering.md)で、監査ログのメンテナンスタスクの設定に関するドキュメントは [AEM 6 の監査ログのメンテナンス](/help/sites-administering/operations-audit-log.md)で参照できます。
+`WorkflowPurgeTask` タスクと `com.day.cq.audit.impl.AuditLogMaintenanceTask` タスクには個別の OSGi 設定が必要であり、この設定がない場合は機能しません。 アップグレード前のタスクの実行中にこれらのタスクが失敗した場合、最も考えられる原因は設定が不足していることです。 したがって、これらのタスクに OSGi 設定を追加するか、タスクを実行しない場合はアップグレード前の最適化タスクリストから完全に削除してください。 ワークフローのパージタスクの設定に関するドキュメントは[ワークフローインスタンスの管理](/help/sites-administering/workflows-administering.md)で、監査ログのメンテナンスタスクの設定に関するドキュメントは [AEM 6 の監査ログのメンテナンス](/help/sites-administering/operations-audit-log.md)で参照できます。
 
 
 ## アップグレード前のタスクのインストール、設定および実行 {#install-configure-run-pre-upgrade-tasks}
@@ -163,4 +172,4 @@ CRX3 インスタンスでリビジョンクリーンアップを実行した後
 
 ## ログファイルのローテーション {#rotate-log-files}
 
-アップグレードを開始する前に、現在のログファイルをアーカイブすることをお勧めします。 これにより、アップグレード中やアップグレード後にログファイルを監視およびスキャンして、発生する可能性のある問題を特定および解決することが容易になります。
+Adobe では、アップグレードを開始する前に現在のログファイルをアーカイブすることをお勧めします。 これにより、アップグレード中やアップグレード後にログファイルを監視およびスキャンして、発生する可能性のある問題を特定および解決することが容易になります。

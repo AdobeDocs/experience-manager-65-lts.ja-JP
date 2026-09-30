@@ -1,6 +1,6 @@
 ---
-title: 証明書を Acrobat Reader DC Extensions で使用するための設定
-description: 証明書を Acrobat Reader DC Extensions で使用するための設定方法について説明します。
+title: 資格情報を Acrobat Reader DC Extensions で使用するための設定
+description: 資格情報を Acrobat Reader DC Extensions で使用するための設定方法について説明します。
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
@@ -9,43 +9,58 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 040a4db1-45e1-4501-8117-d2d41d4a73ea
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 100%
-
 ---
+# 資格情報を Acrobat Reader DC Extensions で使用するための設定{#configuring-credentials-for-use-with-acrobat-reader-dc-extensions}
 
-# 証明書を Acrobat Reader DC Extensions で使用するための設定{#configuring-credentials-for-use-with-acrobat-reader-dc-extensions}
+PDF ドキュメントに使用権限を適用するには、Acrobat Reader DC Extensions 用の有効な資格情報を使用して AEM Forms を設定します。 資格情報は、AEM Forms をインストールするときに設定されている場合があります。 Configuration Manager の実行中に Acrobat Reader DC Extensions の資格情報を設定しなかった場合や、新しい資格情報を読み込む、または資格情報を置き換える必要がある場合は、Trust Store の管理ページを使用して行うことができます。
 
-PDF ドキュメントに使用権限を適用するには、Acrobat Reader DC Extensions 用の有効な証明書を使用して AEM Forms を設定します。 証明書は、AEM Forms をインストールするときに設定されている場合があります。 Configuration Manager の実行中に Acrobat Reader DC Extensions の証明書を設定しなかった場合や、新しい証明書を読み込む、または証明書を置き換える必要がある場合は、Trust Store の管理ページを使用して行うことができます。
-
-評価用の証明書を使用している場合は、本番環境に移行するときに本番環境用の証明書に置き換えます。 期限切れの証明書または評価用の証明書を更新するには、最初に、古くなった Acrobat Reader DC Extensions 証明書を削除します。
+評価用の資格情報を使用している場合は、本番環境に移行するときに本番環境用の資格情報に置き換えます。 期限切れの証明書または評価用の証明書を更新するには、最初に、古くなった Acrobat Reader DC Extensions 証明書を削除します。
 
 証明書の取得について詳しくは、[AEM Forms のインストールの準備（シングルサーバー）](https://helpx.adobe.com/jp/pdf/aem-forms/6-3/prepare-install-single-server.pdf)を参照してください。
 
-Trust Store には複数の Acrobat Reader DC Extensions 証明書が含まれることがあります。 これらの証明書の 1 つを、デフォルトの Reader Extensions 証明書として指定します。 デフォルトの証明書は、ワークベンチユーザーがプロセス作成時に、どの証明書を使用するかを判断できない場合に使用されます。 デフォルトの証明書には以下のルールが適用されます。
+Trust Store には複数の Acrobat Reader DC Extensions 資格情報が含まれることがあります。 これらの資格情報の 1 つを、デフォルトの Reader Extensions 資格情報として指定します。 デフォルトの資格情報は、ワークベンチユーザーがプロセス作成時にどの資格情報を使用するかを判断できない場合に使用されます。 デフォルトの資格情報には以下のルールが適用されます。
 
-* Acrobat Reader DC Extensions 証明書を読み込んだときに、Trust Store に Acrobat Reader DC Extensions 証明書が 1 つしか含まれていない場合は、その証明書がデフォルトとして設定されます。
-* 「デフォルト」オプションを選択して Acrobat Reader DC Extensions 証明書を読み込むと、既存のデフォルトの証明書のデフォルト設定が解除され、 読み込まれた証明書がデフォルトになります。
-* デフォルトの Acrobat Reader DC Extensions 証明書は削除できません。 デフォルトの証明書を削除するには、最初に、他の証明書をデフォルトとして設定します。 ただし、証明書が 1 つしかない場合は例外で、デフォルトの証明書でも削除できます。
-* デフォルトの Acrobat Reader DC Extensions 証明書は更新できません。
+* Acrobat Reader DC Extensions 資格情報を読み込み、Trust Store に他の Acrobat Reader DC Extensions 資格情報が含まれていない場合は、その資格情報がデフォルトとして設定されます。
+* 「デフォルト」オプションを選択して Acrobat Reader DC Extensions 証明書を読み込むと、既存のデフォルトの証明書のデフォルト設定が解除され、 読み込まれた資格情報がデフォルトになります。
+* デフォルトの Acrobat Reader DC Extensions 資格情報は削除できません。 デフォルトの資格情報を削除するには、最初に、他の資格情報をデフォルトとして設定します。 ただし、資格情報が 1 つしかない場合は例外で、デフォルトの資格情報でも削除できます。
+* デフォルトの Acrobat Reader DC Extensions 資格情報は更新できません。
 
 >[!NOTE]
 >
->プログラムによって証明書を読み込んだり、削除したりすることもできます （[AEM Forms によるプログラミング](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ja)を参照してください）。
+>プログラムによって資格情報を読み込んだり、削除したりすることもできます （[AEM Forms によるプログラミング](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ja)を参照してください）。
 
-## Acrobat Reader DC Extensions 証明書を読み込み {#import-a-acrobat-reader-dc-extensions-credential}
+## Acrobat Reader DC Extensions 資格情報の読み込み {#import-a-acrobat-reader-dc-extensions-credential}
 
 >[!NOTE]
 > 
 > ユーザーが管理者コンソールにアクセスする管理者権限を持っていることを確認します。
 
 1. 管理コンソールで、設定／Trust Store の管理／ローカル秘密鍵証明書をクリックします。
-1. 「読み込み」をクリックし、「Trust Store の種類」で「Acrobat Reader DC Extensions 証明書」を選択します。
-1. （オプション）この証明書を Acrobat Reader DC Extensions のデフォルトの証明書として指定するには、「デフォルト」を選択します。
-1. 「エイリアス」ボックスに、証明書の ID を入力します。 この識別子は、Acrobat Reader DC Extensions で証明書の表示名として使用されます。 このエイリアスは、AEM Forms SDK を使用してプログラムから証明書にアクセスする場合にも使用されます。
+1. 「読み込み」をクリックし、「Trust Store の種類」で「Acrobat Reader DC Extensions 資格情報」を選択します。
+1. （オプション）この資格情報を Acrobat Reader DC Extensions のデフォルトの資格情報として指定するには、「デフォルト」を選択します。
+1. 「エイリアス」ボックスに、証明書の ID を入力します。 この識別子は、Acrobat Reader DC Extensions で資格情報の表示名として使用されます。 このエイリアスは、AEM Forms SDK を使用してプログラムから証明書にアクセスする場合にも使用されます。
 
    >[!NOTE]
    >
@@ -53,15 +68,15 @@ Trust Store には複数の Acrobat Reader DC Extensions 証明書が含まれ�
 
 1. 「ファイルを選択」をクリックして資格情報を探し、資格情報のパスワードを入力して「OK」をクリックします。
 
-   「ファイル形式が正しくないか、パスワードが正しくないため、証明書を読み込めませんでした」というエラーメッセージが表示される場合は、パスワードが有効であることを確認してください。
+   「ファイル形式が正しくないか、パスワードが正しくないため、資格情報を読み込めませんでした」というエラーメッセージが表示される場合は、パスワードが有効であることを確認してください。
 
-## Acrobat Reader DC Extensions 証明書を削除 {#remove-a-acrobat-reader-dc-extensions-credential}
+## Acrobat Reader DC Extensions 資格情報の削除 {#remove-a-acrobat-reader-dc-extensions-credential}
 
-1. 管理コンソールで、設定／Trust Store の管理／ローカル秘密鍵証明書をクリックします。
-1. 証明書を選択し、「削除」をクリックします。
+1. 管理コンソールで、設定／Trust Store の管理／ローカル資格情報をクリックします。
+1. 資格情報を選択し、「削除」をクリックします。
 
-## Acrobat Reader DC Extensions 証明書を置換 {#replace-a-acrobat-reader-dc-extensions-credential}
+## Acrobat Reader DC Extensions 資格情報の置換 {#replace-a-acrobat-reader-dc-extensions-credential}
 
-1. 管理コンソールで、設定／Trust Store の管理／ローカル秘密鍵証明書をクリックします。
-1. 既存の証明書のエイリアスをメモしておきます。このエイリアスを選択して「削除」をクリックします。
+1. 管理コンソールで、設定／Trust Store の管理／ローカル資格情報をクリックします。
+1. 既存の資格情報のエイリアスをメモしておきます。次に、その資格情報を選択して「削除」をクリックします。
 1. 完全に同一のエイリアス名を使用して、新しい証明書を読み込みます。

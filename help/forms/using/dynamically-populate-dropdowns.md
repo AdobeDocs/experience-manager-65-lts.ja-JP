@@ -9,25 +9,43 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components,Form Data Model
 exl-id: 1fb07518-1343-4b8d-aba0-8ec5235c5c1c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 100%
-
+source-wordcount: '351'
+ht-degree: 99%
 ---
-
 # ドロップダウンリストの動的な自動入力 {#dynamically-populating-drop-down-lists}
 
 ## 前提条件 {#prerequisites}
 
-* [OSGi バンドルの作成](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja&CID=RedirectAEMCommunityKautuk)
+* [OSGI バンドルの作成](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja&CID=RedirectAEMCommunityKautuk)
 * [AEM コンポーネントの開発](/help/sites-developing/components.md)
 * [アダプティブフオームの作成](../../forms/using/creating-adaptive-form.md)
 * [アダプティブフォームのオーサリング](../../forms/using/introduction-forms-authoring.md)
 
 ## ドロップダウンリストを動的に自動入力する手順 {#procedure-to-dynamically-populate-drop-down-lists}
 
-「**国**」ドロップダウンリストで選択した値に基づいて、「**州**」ドロップダウンリストに自動入力するシナリオを考えてみます。「**国**」ドロップダウンリストでオーストラリアを選択した場合、「**州**」ドロップダウンリストにはオーストラリアの州名が表示されます。次の手順では、このタスクを実行する手順を説明します。
+「**国**」ドロップダウンリストで選択した値に基づいて、「**州**」ドロップダウンリストに自動入力するシナリオを考えてみます。 「**国**」ドロップダウンリストでオーストラリアを選択した場合、「**州**」ドロップダウンリストにはオーストラリアの州名が表示されます。 次の手順では、このタスクを実行する手順を説明します。
 
 1. 次のモジュールでプロジェクトを作成します。
 
@@ -145,12 +163,12 @@ ht-degree: 100%
    }
    ```
 
-1. アプリケーション内の特定のフォルダー階層の下にドロップダウンノードを作成します（例えば、/apps/myfolder/demo の下にノードを作成します）。ノードの `sling:resourceType` パラメーターがサーブレットがポイントするもの（/apps/populatedropdown）と同じであるようにしてください。
+1. アプリケーション内の特定のフォルダー階層の下にドロップダウンノードを作成します（例えば、/apps/myfolder/demo の下にノードを作成します）。 ノードの `sling:resourceType` パラメーターがサーブレットがポイントするもの（/apps/populatedropdown）と同じであるようにしてください。
 
    ![ドロップダウンノードの作成](assets/dropdown-node.png)
 
-1. コンテンツノードをパッケージ化し、その .jar ファイルを特定の場所（例えば /apps/myfolder/demo/install/）に埋め込みます。同じファイルをサーバーにデプロイします。
-1. アダプティブフォームを作成し、2 つのドロップダウンリスト（国と州）をそれに追加します。国リストには、国の名前を含めることができます。 州リストは、最初のリストで選択した国の州名を動的に入力できます。
+1. コンテンツノードをパッケージ化し、その .jar ファイルを特定の場所（例えば /apps/myfolder/demo/install/）に埋め込みます。 同じファイルをサーバーにデプロイします。
+1. アダプティブフォームを作成し、2 つのドロップダウンリスト（国と州）をそれに追加します。 国リストには、国の名前を含めることができます。 州リストは、最初のリストで選択した国の州名を動的に入力できます。
 
    国リストに表示する国の名前を追加します。 州リストに、国リスト内の国の名前に基づいて入力するスクリプトを追加します。
 

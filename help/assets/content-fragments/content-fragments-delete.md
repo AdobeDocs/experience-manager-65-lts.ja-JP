@@ -1,20 +1,32 @@
 ---
 title: コンテンツフラグメント - 削除に関する考慮事項
-description: AEM でコンテンツフラグメント削除ポリシーを定義する前に、以下の重要な考慮事項を確認してください。コンテンツフラグメントはヘッドレスコンテンツを配信する強力なツールです。削除する際は、影響を慎重に考慮する必要があります。
+description: AEM でコンテンツフラグメント削除ポリシーを定義する前に、以下の重要な考慮事項を確認してください。 コンテンツフラグメントはヘッドレスコンテンツを配信する強力なツールです。削除する際は、影響を慎重に考慮する必要があります。
 feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 1460872b-415f-4392-a480-c442790fd0d9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '518'
 ht-degree: 100%
-
 ---
-
 # コンテンツフラグメント - 削除に関する考慮事項 {#content-fragments-delete-considerations}
 
-AEM でコンテンツフラグメント削除ポリシーを定義する前に、以下の重要な考慮事項を確認してください。コンテンツフラグメントはヘッドレスコンテンツを配信する強力なツールです。削除する際は、影響を考慮して慎重に行う必要があります。
+AEM でコンテンツフラグメント削除ポリシーを定義する前に、以下の重要な考慮事項を確認してください。 コンテンツフラグメントはヘッドレスコンテンツを配信する強力なツールです。削除する際は、影響を考慮して慎重に行う必要があります。
 
 ## 権限 - 削除または削除禁止 {#permissions-delete-or-not-delete}
 
@@ -29,7 +41,7 @@ AEM でコンテンツフラグメント削除ポリシーを定義する前に�
 
 2. **コンテンツフラグメントを構成する複数のサブエンティティ（例：バリエーション、サブノードなど）。**
 
-   コンテンツフラグメントエディターの基本操作を使用するには、そうした一時的なサブ要素を削除できる必要があります。例えば、バリエーションの操作、メタデータの編集、関連コンテンツの管理などをおこなう場合です。
+   コンテンツフラグメントエディターの基本操作を使用するには、そうした一時的なサブ要素を削除できる必要があります。 例えば、バリエーションの操作、メタデータの編集、関連コンテンツの管理などをおこなう場合です。
 
    * **使用例**：コンテンツフラグメントの編集または更新を必要とするユーザーが&#x200B;**フラグメント全体を削除できない**&#x200B;場合。
    * **権限**：[エディター機能のみに必要な権限](#permissions-required-for-editor-functionality-only)を参照してください。
@@ -52,7 +64,7 @@ AEM でコンテンツフラグメント削除ポリシーを定義する前に�
 >
 >コンテンツフラグメントの編集または更新に必要な削除権限は、[ユーザー管理やグループ管理で割り当てられた](/help/sites-administering/security.md#managing-permissions)削除権限に含まれています。
 
-フラグメントの編集または更新に必要な権限は、コンテンツフラグメントを含んでいるノードまたは適切な親ノード（`/content/dam` 下の任意のレベル）のどちらかに適用する必要があります。このような親ノードに割り当てられた権限は、その分岐内のすべてのノードに適用されます。
+フラグメントの編集または更新に必要な権限は、コンテンツフラグメントを含んでいるノードまたは適切な親ノード（`/content/dam` 下の任意のレベル）のどちらかに適用する必要があります。 このような親ノードに割り当てられた権限は、その分岐内のすべてのノードに適用されます。
 
 例えば、すべてのコンテンツフラグメントが格納される次のようなフォルダーです。
 
@@ -72,15 +84,15 @@ AEM でコンテンツフラグメント削除ポリシーを定義する前に�
 
 * コンテンツフラグメントノードまたはフォルダーの場合：
 
-   * `jcr:addChildNodes`、`jcr:modifyProperties`
+  * `jcr:addChildNodes`、`jcr:modifyProperties`
 
 * すべてのコンテンツフラグメントの `jcr:content` ノードの場合：
 
-   * `jcr:addChildNodes`、`jcr:modifyProperties`、`jcr:removeChildNodes`
+  * `jcr:addChildNodes`、`jcr:modifyProperties`、`jcr:removeChildNodes`
 
 * すべてのコンテンツフラグメントの `jcr:content` 下にあるすべてのノードの場合：
 
-   * `jcr:addChildNodes`、`jcr:modifyProperties`、`jcr:removeChildNodes`、`jcr:removeNode`
+  * `jcr:addChildNodes`、`jcr:modifyProperties`、`jcr:removeChildNodes`、`jcr:removeNode`
 
 これらの `remove` 権限は、[CRXDE Lite 内でアクセス制御リストを使用して管理](/help/sites-administering/user-group-ac-admin.md#access-right-management)する必要があります。
 

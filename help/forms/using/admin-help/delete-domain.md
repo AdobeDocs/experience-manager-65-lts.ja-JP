@@ -1,6 +1,6 @@
 ---
 title: ドメインの削除
-description: ドメインの管理ページを使用して、ドメインを削除する、または既存のドメインを古い情報としてマークする方法について説明します。
+description: ドメインの管理ページを使用して、ドメインを削除するか、既存のドメインを廃止としてマークする方法について説明します。
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
@@ -9,21 +9,36 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: d8117dba-fe9f-49ae-a306-08fed8a9e0af
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 100%
-
 ---
-
 # ドメインの削除 {#delete-a-domain}
 
 >[!NOTE]
 > 
 > ユーザーが管理者コンソールにアクセスする管理者権限を持っていることを確認します。
 
-ドメインの管理ページを使用して、既存のドメインを古い情報としてマークします。
+ドメインの管理ページを使用して、既存のドメインを廃止としてマークします。
 
 削除されたドメインと同じ名前でドメインを作成すると、削除されたドメインがその情報と共に復元されます。 DefaultDom ドメインは削除できません。
 

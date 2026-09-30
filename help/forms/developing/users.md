@@ -9,14 +9,27 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: e449c6f6-7b75-47ab-9abd-8031b7b151e5
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '6236'
 ht-degree: 99%
-
 ---
-
 # ユーザーの管理 {#managing-users}
 
 **このドキュメントのサンプルと例は、JEE 環境の AEM Forms のみを対象としています。**
@@ -230,10 +243,10 @@ Directory Manager サービス API（web サービス）を使用してユーザ
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `DirectoryManagerServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
-      * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
+     * `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `DirectoryManagerServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 
 1. ユーザー情報を定義します。
 
@@ -359,10 +372,10 @@ Directory Manager Service API（web サービス）を使用してユーザー�
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `DirectoryManagerServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
-      * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
+     * `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `DirectoryManagerServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 
 1. 削除するユーザーを指定します。
 
@@ -695,10 +708,10 @@ Authorization Manager Service API（Web サービス）を使用して、役割�
    * `System.ServiceModel.BasicHttpBinding` オブジェクトの `MessageEncoding` フィールドを `WSMessageEncoding.Mtom` に設定します。 この値により、MTOM が確実に使用されます。
    * 次のタスクを実行して、HTTP 基本認証を有効にします。
 
-      * `AuthorizationManagerServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
-      * 対応するパスワード値を `AuthorizationManagerServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
-      * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
-      * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
+     * `AuthorizationManagerServiceClient.ClientCredentials.UserName.UserName` フィールドに AEM Forms ユーザー名を割り当てます。
+     * 対応するパスワード値を `AuthorizationManagerServiceClient.ClientCredentials.UserName.Password` フィールドに割り当てます。
+     * 定数値 `HttpClientCredentialType.Basic` を`BasicHttpBindingSecurity.Transport.ClientCredentialType` フィールドに割り当てます。
+     * 定数値 `BasicHttpSecurityMode.TransportCredentialOnly` をフィールド `BasicHttpBindingSecurity.Security.Mode` に割り当てます。
 
 1. 適切な役割または権限の操作を呼び出します。
 

@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: e64a3b6f-7248-4426-9f13-f703eab3632d
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1774'
 ht-degree: 99%
-
 ---
-
 # プロセスレポートの概要{#getting-started-with-process-reporting}
 
 プロセスレポートを使用すると、AEM Forms のユーザーは、AEM Forms 実装で現在定義されている AEM Forms プロセスに関する情報のクエリを実行できます。 ただし、プロセスレポートは、AEM Forms のリポジトリのデータに直接アクセスしません。 まず、スケジュールに従ってプロセスレポートのリポジトリにデータが公開されます（*ProcessDataPublisher サービスおよび ProcessDataStorage サービスによって*&#x200B;行われます）。 次に、リポジトリに公開されたプロセスレポートのデータから、プロセスレポートのレポートとクエリが生成されます。 プロセスレポートは、Forms Workflow モジュールの一部としてインストールされています。
@@ -41,17 +56,17 @@ AEM Forms プロセスデータのパージについて詳しくは、[プロセ
 
 ### プロセスデータの公開をスケジュール {#schedule-process-data-publishing}
 
-プロセスレポートサービスは、AEM Forms データベースから Process Reporting リポジトリに、スケジュールに従ってデータを公開します。
+プロセスレポートサービスは、AEM Forms データベースからプロセスレポートリポジトリに、スケジュールに従ってデータを公開します。
 
 この操作はリソースを大量に消費する可能性があり、AEM Forms サーバーのパフォーマンスに影響を与える可能性があります。 プロセスデータの公開は、AEM Forms サーバーが混んでいない時間帯にスケジュールすることをお勧めします。
 
-デフォルトでは、データの公開は毎日の午前2:00時に実行するようにスケジュールされています。
+デフォルトでは、データの公開は毎日の午前2時に実行されるようにスケジュールされています。
 
 公開スケジュールを変更するには、次の手順を実行します。
 
 >[!NOTE]
 >
->クラスターで AEM Forms を実装して実行している場合は、クラスターの各ノードで次の手順を実行します。
+>AEM Forms 実装をクラスター上で実行している場合は、クラスターの各ノードで次の手順を実行します。
 
 1. AEM Forms サーバーインスタンスを停止します。
 1. &#x200B;
@@ -91,7 +106,7 @@ AEM Forms プロセスデータのパージについて詳しくは、[プロセ
 1. 次の画面で、「**設定**&#x200B;タブ」、「**サーバー起動**」タブをクリックします。
 1. 「引数」ボックスに、JVM 引数 `-Dreporting.publisher.cron = <expression>` を追加します。
 
-   **例**：次の Cron 式を使用すると、プロセスレポートは 5 時間ごとに AEM Forms データをプロセスレポートリポジトリに公開します。
+   **例**：次の Cron 式を使用すると、プロセスレポートは時間ごとに AEM Forms データをプロセスレポートリポジトリに公開します。
 
    `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
@@ -102,7 +117,7 @@ AEM Forms プロセスデータのパージについて詳しくは、[プロセ
 
 >[!NOTE]
 >
-> SDK を再起動するには、「Ctrl + C」コマンドを使用することをお勧めします。 Java プロセスの停止など、別の方法を使用して AEM SDK を再起動すると、AEM 開発環境で不整合が生じる場合があります。
+> 「Ctrl + C」コマンドを使用して SDK を再起動することをお勧めします。 Java プロセスの停止など、別の方法を使用して AEM SDK を再起動すると、AEM 開発環境で不整合が生じる場合があります。
 
 ### ProcessDataStorage サービス {#processdatastorage-service}
 
@@ -137,7 +152,7 @@ ProcessDataStorageProvider サービスは、ProcessDataPublisher サービス�
 
 ReportConfiguration サービスは、プロセスレポートのクエリサービスを設定するために、プロセスレポートで使用されます。
 
-#### ReportingConfiguration サービスを設定するには： {#to-configure-the-reportingconfiguration-service}
+#### ReportingConfiguration サービスの設定 {#to-configure-the-reportingconfiguration-service}
 
 1. CRX 管理者の資格情報で&#x200B;**設定マネージャー**&#x200B;にログインします。 設定マネージャーのデフォルトの URL は `https://'[server]:[port]'/lc/system/console/configMgr` です。
 1. **ReportingConfiguration** サービスを開きます。
@@ -145,7 +160,7 @@ ReportConfiguration サービスは、プロセスレポートのクエリサー
 
    リポジトリでクエリを実行すると、結果に多数のレコードが含まれている可能性があります。 結果セットが大きい場合、クエリの実行によってサーバーリソースが消費される可能性があります。
 
-   大きな結果セットを処理するために、ReportConfiguration サービスはクエリ処理を複数のレコードに分割します。 これにより、システムの負荷が軽減されます。
+   大きな結果セットを処理するために、ReportConfiguration サービスはクエリ処理をレコードのバッチに分割します。 これにより、システムの負荷が軽減されます。
 
    `Default`：`1000`
 
@@ -214,7 +229,7 @@ AEM Forms 環境には、環境が設定された時点からのデータが含�
 
 デフォルトでは、ProcessDataPublisher サービスは AEM Forms データベースからすべてのデータを読み込みます。
 
-レポートのニーズに応じて、特定の日時以降にデータに対してレポートやクエリを実行する予定がある場合は、日時を指定することをお勧めします。 その後、公開サービスは、その日時以降に日付を公開します。
+レポートのニーズに応じて、特定の日時以降にデータに対してレポートやクエリを実行する予定がある場合は、日時を指定することをお勧めします。 その後、公開サービスは、その日時以降のデータを公開します。
 
 `Default`：`01-01-1970 00:00:00`
 

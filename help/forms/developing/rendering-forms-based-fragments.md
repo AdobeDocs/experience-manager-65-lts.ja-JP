@@ -10,14 +10,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 3af4361d-ff30-46db-ac88-64bfae8f63a4
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2204'
 ht-degree: 100%
-
 ---
-
 # フラグメントに基づいたフォームのレンダリング {#rendering-forms-based-on-fragments}
 
 **このドキュメントのサンプルと例は、JEE 環境の AEM Forms のみを対象としています。**
@@ -42,13 +59,13 @@ Forms サービスでは、 Designer を使用して作成したフラグメン�
 
 ### フラグメントを使用して作成されたフォームデザインの作成 {#assembling-a-form-design-assembled-using-fragments}
 
-Forms サービスに渡すフォームデザインを、複数のフラグメントに基づいて作成することができます。 複数のフラグメントを作成するには、アセンブラーサービスを使用します。 別の Forms サービス（Output サービス）で使用するフォームデザインを作成するための Assemble サービスの使用例については、[フラグメントを使用した PDF ドキュメントの作成](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments)を参照してください。 Output サービスを使用する代わりに、Forms サービスを使用して同じワークフローを実行できます。
+Forms サービスに渡すフォームデザインを、複数のフラグメントに基づいて作成することができます。 複数のフラグメントをアセンブルするには、アセンブラーサービスを使用します。 別の Forms サービス（Output サービス）で使用するフォームデザインを作成するための Assemble サービスの使用例については、[フラグメントを使用した PDF ドキュメントの作成](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments)を参照してください。 Output サービスを使用する代わりに、Forms サービスを使用して同じワークフローを実行できます。
 
-アセンブラーサービスを使用する場合、フラグメントを使用して作成されたフォームデザインを渡します。 作成されたフォームデザインは、他のフラグメントを参照しません。 これに対し、このトピックでは、他のフラグメントを参照するフォームデザインを Forms サービスに渡す方法について説明します。 ただし、このフォームデザインは Assembler によって作成されたものではありません。 Designer で作成されています。
+アセンブラーサービスを使用する場合、フラグメントを使用してアセンブルされたフォームデザインを渡します。 作成されたフォームデザインは、他のフラグメントを参照しません。 これに対し、このトピックでは、他のフラグメントを参照するフォームデザインを Forms サービスに渡す方法について説明します。 ただし、このフォームデザインは Assembler でアセンブルされたものではありません。 Designer で作成されています。
 
 >[!NOTE]
 >
->Forms サービスについて詳しくは、[AEM Forms サービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
+>Forms サービスについて詳しくは、[AEM Forms のサービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
 
 >[!NOTE]
 >
@@ -76,7 +93,7 @@ Forms Service Client API 操作をプログラムで実行する前に、Forms �
 
 フラグメントに基づいてフォームを正常にレンダリングするには、フォームと、フォームデザインが参照するフラグメント（XDP ファイル）の両方を、Forms サービスが特定できるようにする必要があります。 例えば、フォームの名前が PO.xdp で、このフォームが FooterUS.xdp および FooterCanada.xdp という 2 つのフラグメントを使用しているとします。 このような場合、Forms サービスは 3 つの XDP ファイルをすべて特定できる必要があります。
 
-フォームとフラグメントを別々の場所に配置して整理することができるほか、すべての XDP ファイルを同じ場所に配置することもできます。 このセクションでは便宜上、すべての XDP ファイルが AEM Forms リポジトリ内にあると仮定します。 AEM Forms リポジトリへの XDP ファイルの配置については、[リソースの書き込み](/help/forms/developing/aem-forms-repository.md#writing-resources)を参照してください。
+フォームを 1 つの場所に、フラグメントを別の場所に配置して整理することも、すべての XDP ファイルを同じ場所に配置することもできます。 このセクションでは便宜上、すべての XDP ファイルが AEM Forms リポジトリ内にあると仮定します。 AEM Forms リポジトリへの XDP ファイルの配置については、[リソースの書き込み](/help/forms/developing/aem-forms-repository.md#writing-resources)を参照してください。
 
 フラグメントに基づいてフォームをレンダリングする場合は、フォーム自体のみを参照し、フラグメントは参照しないでください。 例えば、FooterUS.xdp や FooterCanada.xdp ではなく、PO.xdp を参照する必要があります。 フラグメントは、Forms サービスで見つけられる場所に配置してください。
 
@@ -128,7 +145,7 @@ Forms API（Java）を使用して、フラグメントに基づいてフォー�
 
    `FormsServiceClient` オブジェクトの `renderPDFForm` メソッドを呼び出して、次の値を渡します。
 
-   * フォームデザイン名を指定する文字列値で、ファイル名の拡張子も含まれます。 Forms アプリケーションの一部であるフォームデザインを参照する場合は、必ず次のような完全なパスを指定します。`Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`
+   * ファイル名拡張子を含んだフォームデザイン名を指定する文字列値。 Forms アプリケーションの一部であるフォームデザインを参照する場合は、必ず次のような完全なパスを指定します。`Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`
    * フォームに結合するデータを含む `com.adobe.idp.Document` オブジェクトです。 データを結合しない場合は、空の `com.adobe.idp.Document` オブジェクトを渡します。
    * 実行時オプションを保存する `PDFFormRenderSpec` オブジェクト。
    * `URLSpec` フラグメントに基づいてフォームをレンダリングするために Forms サービスで必要な URI 値を含むオブジェクト。
@@ -156,7 +173,7 @@ Forms API（Java）を使用して、フラグメントに基づいてフォー�
 
 [接続プロパティの設定](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Web サービス API を使用してフラグメントに基づいてフォームをレンダリング {#render-forms-based-on-fragments-using-the-web-service-api}
+### Web サービス API を使用したフラグメントベースのフォームのレンダリング {#render-forms-based-on-fragments-using-the-web-service-api}
 
 Forms API（web サービス）を使用して、フラグメントに基づいてフォームをレンダリングします。
 
@@ -180,8 +197,8 @@ Forms API（web サービス）を使用して、フラグメントに基づい�
 
    `FormsService` オブジェクトの `renderPDFForm` メソッドを呼び出して、次の値を渡します。
 
-   * フォームデザイン名を指定する文字列値で、ファイル名の拡張子も含まれます。 Forms アプリケーションの一部であるフォームデザインを参照する場合は、必ず次のような完全なパスを指定します。`Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`
-   * フォームに結合するデータを含む `BLOB` オブジェクト。 データを結合しない場合は、`null` を渡します。
+   * ファイル名拡張子を含んだフォームデザイン名を指定する文字列値。 Forms アプリケーションの一部であるフォームデザインを参照する場合は、必ず次のような完全なパスを指定します。`Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`
+   * フォームと結合するデータを含んだ `BLOB` オブジェクト。 データを結合しない場合は、`null` を渡します。
    * 実行時オプションを保存する `PDFFormRenderSpec` オブジェクト。 入力ドキュメントが PDF ドキュメントの場合、「タグ付き PDF」オプションは設定できません。 入力ファイルが XDP ファイルの場合は、「タグ付き PDF」オプションを設定できます。
    * Forms サービスで必要な URI 値を含む `URLSpec` オブジェクト。
    * 添付ファイルを格納する `java.util.HashMap` オブジェクト。 これはオプションのパラメーターであり、フォームにファイルを添付しない場合に `null` を指定できます。

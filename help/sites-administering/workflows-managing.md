@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 084c59b1-1e72-475e-8ec9-2cbc6e695876
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 90%
-
+source-wordcount: '581'
+ht-degree: 89%
 ---
-
 # ワークフローへのアクセスの管理{#managing-access-to-workflows}
 
 ユーザーアカウントに応じて ACL を設定し、ワークフローの開始およびワークフローへの参加を許可（または無効に）します。
@@ -27,21 +36,21 @@ ht-degree: 90%
 * `admin` アカウントを使用している。
 * アカウントがデフォルトグループ `workflow-users` に割り当てられている。
 
-   * このグループは、ユーザーがワークフローアクションを実行するために必要なすべての権限を保持しています。
-   * このグループに属するアカウントは、自分が開始したワークフローにのみアクセスできます。
+  * このグループは、ユーザーがワークフローアクションを実行するために必要なすべての権限を保持しています。
+  * このグループに属するアカウントは、自分が開始したワークフローにのみアクセスできます。
 
 * アカウントがデフォルトグループ `workflow-administrators` に割り当てられている。
 
-   * このグループは、ユーザーがワークフローを監視および管理するために必要なすべての権限を保持しています。
-   * このグループに属するアカウントは、すべてのワークフローにアクセスできます。
+  * このグループは、ユーザーがワークフローを監視および管理するために必要なすべての権限を保持しています。
+  * このグループに属するアカウントは、すべてのワークフローにアクセスできます。
 
 >[!NOTE]
 >
->これらは最小要件です。具体的な手順を実行するには、アカウントが割り当て済みの参加者または割り当て済みのグループのメンバーである必要があります。
+>これらは最小要件です。 具体的な手順を実行するには、アカウントが割り当て済みの参加者または割り当て済みのグループのメンバーである必要があります。
 
 ## ワークフローへのアクセスの設定 {#configuring-access-to-workflows}
 
-ワークフローモデルは、ユーザーがワークフローを操作する方法を制御するためのデフォルトのアクセス制御リスト（ACL）を継承します。ユーザーアクセスをワークフロー用にカスタマイズするには、リポジトリでワークフローモデルノードを含むフォルダーのアクセス制御リスト（ACL）を変更します。
+ワークフローモデルは、ユーザーがワークフローを操作する方法を制御するためのデフォルトのアクセス制御リスト（ACL）を継承します。 ユーザーアクセスをワークフロー用にカスタマイズするには、リポジトリでワークフローモデルノードを含むフォルダーのアクセス制御リスト（ACL）を変更します。
 
 * [特定のワークフローモデル用の ACL の /var/workflow/models への適用](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models)
 * [/var/workflow/models へのサブフォルダーの作成と、それに対する ACL の適用](/help/sites-administering/workflows-managing.md#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that)
@@ -66,7 +75,7 @@ ht-degree: 90%
    * **プリンシパル**：`content-authors`
    * **型**：`Deny`
    * **権限**：`jcr:read`
-   * **rep:glob**：特定のワークフローへの参照
+   * **担当者:glob**：特定のワークフローへの参照
 
    ![wf-108](assets/wf-108.png)
 
@@ -106,7 +115,7 @@ ht-degree: 90%
 
    >[!NOTE]
    >
-   >[&#x200B; 特定のワークフローモデル用の ACL の/var/workflow/models への適用 &#x200B;](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models) にあるように :globrep を含めて、特定のワークフローに対するアクセスを制限できます。
+   >[特定のワークフローモデルのACLを/var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models)に適用するように、担当者:globを含めて、特定のワークフローへのアクセスを制限できます。
 
    ![wf-110](assets/wf-110.png)
 

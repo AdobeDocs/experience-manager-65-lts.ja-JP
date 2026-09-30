@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 14f006f8-8751-4713-ba5a-590ce479fbb4
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1614'
 ht-degree: 98%
-
 ---
-
 # 認証プロバイダーの設定 {#configuring-authentication-providers}
 
 >[!NOTE]
@@ -84,7 +99,7 @@ SPNEGO を使用して SSO を有効にする場合、SPNEGO を有効にした 
 
 ### Kerberos 設定 {#kerberos-settings}
 
-エンタープライズドメインまたはハイブリッドドメインの認証を設定している場合、Kerberos 認証を選択するには、次の設定を使用できます。
+エンタープライズドメインまたはハイブリッドドメインの認証を設定していて、Kerberos 認証を選択した場合は、次の設定を使用できます。
 
 **DNS IP：** AEM Forms を実行しているサーバーの DNS IP アドレス。 Windows の場合、この IP アドレスは、コマンドラインで ipconfig /all を実行して確認できます。
 
@@ -100,7 +115,7 @@ SPNEGO を使用して SSO を有効にする場合、SPNEGO を有効にした 
 
 ### SAML 設定 {#saml-settings}
 
-エンタープライズドメインまたはハイブリッドドメインの認証を設定している場合、SAML 認証を選択するには、次の設定を使用できます。 SAML 設定について詳しくは、[SAML サービスプロバイダーの設定](/help/forms/using/admin-help/configure-saml-service-provider-settings.md#configure-saml-service-provider-settings)を参照してください。
+エンタープライズドメインまたはハイブリッドドメインの認証を設定していて、SAML 認証を選択した場合は、次の設定を使用できます。 SAML 設定について詳しくは、[SAML サービスプロバイダーの設定](/help/forms/using/admin-help/configure-saml-service-provider-settings.md#configure-saml-service-provider-settings)を参照してください。
 
 **SAML ID プロバイダーメタデータを選択してください
 読み込むファイル：** 「参照」をクリックして、IDPから生成されたSAML ID プロバイダーのメタデータファイルを選択し、「読み込み」をクリックします。 IDP の詳細が表示されます。
@@ -128,12 +143,12 @@ SPNEGO を使用して SSO を有効にする場合、SPNEGO を有効にした 
 
 ## ユーザーのジャストインタイムプロビジョニング {#just-in-time-provisioning-of-users}
 
-ユーザーが認証プロバイダーに認証されると、ジャストインタイムプロビジョニングによってユーザー管理データベースにユーザーが自動的に作成されます。 この新しいユーザーには、関連するロールとグループも動的に割り当てられます。 エンタープライズドメインおよびハイブリッドドメインに対して、ジャストインタイムプロビジョニングを有効にできます。
+ユーザーが認証プロバイダーに認証されると、ジャストインタイムプロビジョニングによって User Management データベースにユーザーが自動的に作成されます。 この新しいユーザーには、関連する役割とグループも動的に割り当てられます。 エンタープライズドメインおよびハイブリッドドメインに対して、ジャストインタイムプロビジョニングを有効にできます。
 
 以下では、従来の認証が AEM Forms で機能する手順を説明します。
 
 1. ユーザーが AEM Forms にログインしようとすると、User Management はユーザーの資格情報をすべての利用可能な認証プロバイダーに対して連続的に渡します （ログイン資格情報には、ユーザー名とパスワードの組み合わせ、Kerberos チケット、PKCS7 署名などが含まれます）。
-1. 認証プロバイダーは、秘密鍵証明書を検証します。
+1. 認証プロバイダーは、資格情報を検証します。
 1. 認証プロバイダーは、次に、ユーザーが User Management データベースに存在するかどうかを確認します。 可能性のあるステータスは、次のとおりです。
 
    **存在する** ユーザーが登録されており、ロックされていない場合、User Management は認証成功を返します。 これに対して、ユーザーが登録されていないか、ロックされている場合、User Management は認証失敗を返します。
@@ -145,14 +160,14 @@ SPNEGO を使用して SSO を有効にする場合、SPNEGO を有効にした 
 1. 認証プロバイダーが返した結果が評価されます。 認証プロバイダーが認証成功を返した場合、ユーザーのログインが許可されます。 そうでない場合は、User Management は次の認証プロバイダーに対して確認（手順 2～3）を行います。
 1. ユーザーの秘密鍵証明書を検証する利用可能な認証プロバイダーがなくなると、認証の失敗が返されます。
 
-ジャストインタイムプロビジョニングが有効になっているときに、いずれかの認証プロバイダーがユーザーの資格情報を検証すると、User Management に新しいユーザーが動的に作成されます （上記の手順 3 後）。
+ジャストインタイムプロビジョニングが有効になっているときに、いずれかの認証プロバイダーがユーザーの資格情報を検証すると、User Management に新しいユーザーが動的に作成されます。 （上記の手順 3 の後）
 
-ジャストインタイムプロビジョニングが有効になっていないと、ユーザーが認証されても、User Management データベースに存在しない場合は、その認証は失敗します。 ジャストインタイムプロビジョニングによって、ユーザーを作成し、そのユーザーにロールとグループを割り当てる手順が認証プロセスに追加されます。
+ジャストインタイムプロビジョニングが有効になっていないと、ユーザーが認証されても、User Management データベースに存在しない場合は、その認証は失敗します。 ジャストインタイムプロビジョニングによって、ユーザーを作成し、そのユーザーに役割とグループを割り当てる手順が認証プロセスに追加されます。
 
 ### ドメインに対するジャストインタイムプロビジョニングの有効化 {#enable-just-in-time-provisioning-for-a-domain}
 
 1. IdentityCreator および AssignmentProvider インターフェイスを実装するサービスコンテナを作成します （[AEM Forms によるプログラミング](https://www.adobe.com/go/learn_aemforms_programming_63_jp)を参照してください）。
-1. そのサービスコンテナを AEM Forms サーバーにデプロイします。
+1. そのサービスコンテナを Forms サーバーにデプロイします。
 1. 管理コンソールで、設定／User Management／ドメイン管理をクリックします。
 
    既存のドメインを選択するか、または「新規エンタープライズドメイン」をクリックします。

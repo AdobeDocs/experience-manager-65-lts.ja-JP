@@ -5,13 +5,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: eb75efb8-c59a-4d51-af54-942cca178f2e
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1999'
 ht-degree: 90%
-
 ---
-
 # AEM ワークフローの変数{#variables-in-aem-workflows}
 
 ワークフローモデルの変数は、そのデータタイプに基づいて値を格納する方法です。 ワークフローステップで変数の名前を使用して、変数に格納されている値を取得できます。 変数名を使用して、ルーティング上の決定を行う式を定義することもできます。
@@ -137,7 +146,7 @@ XML ファイルを保存する XML タイプの変数を選択します。 XML 
 
 #### OR‧分岐ステップ {#or-split-step}
 
-OR‧分岐は、ワークフロー内に分割を作成し、以降は 1 つの分岐だけがアクティブになります。 これを使用すると、ワークフローに条件付き処理パスを導入できます。 必要に応じて、各分岐にワークフローステップを追加できます。
+OR 分岐は、ワークフロー内に分割を作成し、以降は 1 つの分岐だけがアクティブになります。 これを使用すると、ワークフローに条件付き処理パスを導入できます。 必要に応じて、各分岐にワークフローステップを追加できます。
 
 分岐のルーティング式は、ルール定義、ECMA スクリプト、または外部スクリプトを使用して定義できます。
 

@@ -9,14 +9,27 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: fea20b34-2f66-460e-8b1c-4e55842bc789
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 100%
-
 ---
-
 # サービスコンテナ {#service-container}
 
 **このドキュメントのサンプルと例は、JEE 環境の AEM Forms のみを対象としています。**
@@ -47,7 +60,7 @@ ht-degree: 100%
   </tr>
   <tr>
    <td><p>REST リクエスト</p></td>
-   <td><p>AEM Forms は、REST リクエストをサポートします。 サービスは、HTML ページから直接呼出しできます。 （<a href="/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests">REST リクエストを使用した AEM Forms の呼び出し</a>を参照。）</p></td>
+   <td><p>AEM Forms は、REST リクエストをサポートします。 サービスは、HTML ページから直接呼び出せます。 （<a href="/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests">REST リクエストを使用した AEM Forms の呼び出し</a>を参照。）</p></td>
   </tr>
  </tbody>
 </table>
@@ -65,9 +78,9 @@ ht-degree: 100%
 * 呼び出しリクエストを適切なサービスにルーティングします（呼び出すサービスの名前は呼び出しリクエストの一部です）。
 * 呼び出し元が、指定されたサービス操作を呼び出す権限を持っているかどうかを判断するなどのタスクを実行します。 呼び出しリクエストには、有効な AEM Forms のユーザー名とパスワードが含まれている必要があります。
 
-  呼び出しリクエストをサービスに送信する方法は異なります。 また、必要な入力値をサービスに送信する方法は異なります。 例えば、Java API を使用して、PDF ドキュメントを必要とするサービスを呼び出すと仮定します。 対応する Java メソッドには、PDF ドキュメントを受け入れるパラメーターが含まれています。 この場合、パラメーターのデータタイプは `com.adobe.idp.Document` です。 （[Java API を使用した AEM Forms サービスへのデータの引き渡し](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)を参照）。
+  呼び出しリクエストをサービスに送信する方法は複数あります。 また、必要な入力値をサービスに送信する方法も複数あります。 例えば、Java API を使用して、PDF ドキュメントを必要とするサービスを呼び出すと仮定します。 対応する Java メソッドには、PDF ドキュメントを受け取るパラメーターが含まれています。 この場合、パラメーターのデータタイプは `com.adobe.idp.Document` です。 （[Java API を使用した AEM Forms サービスへのデータの引き渡し](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)を参照）。
 
-  監視フォルダーを使用してサービスを呼び出すと、設定済みの監視フォルダーにファイルを配置すると、呼び出しリクエストが送信されます。 メールを使用してサービスを呼び出す場合、メールメッセージが設定済みのインボックスに届くと、呼び出しリクエストがサービスに送信されます。
+  監視フォルダーを使用してサービスを呼び出す場合、設定済みの監視フォルダーにファイルを配置すると、呼び出しリクエストが送信されます。 メールを使用してサービスを呼び出す場合、メールメッセージが設定済みのインボックスに届くと、呼び出しリクエストがサービスに送信されます。
 
   サービスコンテナは、操作の実行後に呼び出し応答を返します。 呼び出し応答には、操作の結果などの情報が含まれます。 例えば、操作によって PDF ドキュメントが変更された場合、呼び出し応答には変更された PDF ドキュメントが含まれます。 操作が失敗した場合、呼び出し応答にはエラーメッセージが含まれます。
 
@@ -79,9 +92,9 @@ ht-degree: 100%
 
   クライアントアプリケーションがサービスを呼び出すと、次の 3 つのイベントが発生します。
 
-   1. クライアントアプリケーションが呼び出し要求をサービスに送信します。
-   1. サービスは、呼び出し要求で指定された操作を実行します。
-   1. サービスコンテナは、クライアントアプリケーションに呼び出し応答を返します。
+  1. クライアントアプリケーションが呼び出しリクエストをサービスに送信します。
+  1. サービスは、呼び出しリクエストで指定された操作を実行します。
+  1. サービスコンテナは、クライアントアプリケーションに呼び出し応答を返します。
 
 **関連トピック**
 

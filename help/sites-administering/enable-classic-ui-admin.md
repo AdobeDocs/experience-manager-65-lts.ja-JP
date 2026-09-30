@@ -10,22 +10,31 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 9cc6e4b6-7170-4c9a-a2c0-6ba4603cfd17
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '238'
 ht-degree: 100%
-
 ---
-
 # Admin Console{#admin-consoles}
 
-Admin Console からクラシック UI に切り替える機能は、デフォルトで無効になっています。そのため、特定のコンソールアイコンにマウスを移動したときに表示され、クラシック UI にアクセスするためのポップアップアイコンは表示されなくなりました。
+Admin Console からクラシック UI に切り替える機能は、デフォルトで無効になっています。 そのため、特定のコンソールアイコンにマウスを移動したときに表示され、クラシック UI にアクセスするためのポップアップアイコンは表示されなくなりました。
 
 `/libs/cq/core/content/nav` にクラシック UI バージョンがあるすべてのコンソールは個別に再有効化することができ、コンソールアイコンの上にマウスを移動すると、「**クラシック UI**」オプションが再びポップアップ表示されます。
 
 以下の例では、Sites コンソールのクラシック UI を再有効化しています。
 
-1. CRXDE Lite を使用して、クラシック UI を再有効化する Admin Console に対応するノードを見つけます。目的のノードは次の場所にあります。
+1. CRXDE Lite を使用して、クラシック UI を再有効化する Admin Console に対応するノードを見つけます。 目的のノードは次の場所にあります。
 
    `/libs/cq/core/content/nav`
 
@@ -33,7 +42,7 @@ Admin Console からクラシック UI に切り替える機能は、デフォ�
 
    [`https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
 
-1. クラシック UI を再有効化するコンソールのノードを選択します。以下の例では、Sites コンソールのクラシック UI を再有効化しています。
+1. クラシック UI を再有効化するコンソールのノードを選択します。 以下の例では、Sites コンソールのクラシック UI を再有効化しています。
 
    `/libs/cq/core/content/nav/sites`
 

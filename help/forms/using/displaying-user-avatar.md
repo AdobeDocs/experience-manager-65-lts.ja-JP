@@ -9,23 +9,37 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 0c72fe67-13da-4eac-8cd6-8699e546f8f4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '196'
 ht-degree: 94%
-
 ---
-
 # ユーザーアバターの表示 {#displaying-the-user-avatar}
 
-ログインユーザーのアバターは、AEM Forms Workspace の右上隅に表示されます。また、組織階層の直接レポートのアバターはマネージャービューに表示されます。AEM Forms Workspace を設定して LDAP サーバーなどのデータベースからユーザー画像を選択できます。
+ログインユーザーのアバターは、AEM Forms Workspace の右上隅に表示されます。 また、組織階層の直接レポートのアバターはマネージャービューに表示されます。 AEM Forms Workspace を設定して LDAP サーバーなどのデータベースからユーザー画像を選択できます。
 
 >[!NOTE]
 >
->サポートされているユーザー画像の縦横比は 1:1 です。
+>サポートされているユーザー画像の縦横比は1:1です。
 
-1. 次の手順に記載されている詳細説明を使用して DSC を作成してください。詳細については、[AEM Forms のプログラミング](https://www.adobe.com/go/learn_aemforms_programming_63_jp)ガイドの「AEM Forms のコンポーネントの開発」トピックを参照してください。
-1. DSC で getCurrentUserImageUrl と getUserImageUrl メソッドを公開する新しい SPI を定義して、AEM Forms ユーザーの画像 URL を取得します。Java™ コードスニペットのサンプルを以下に示します。
+1. 次の手順に記載されている詳細説明を使用して DSC を作成してください。 詳細については、[AEM Forms のプログラミング](https://www.adobe.com/go/learn_aemforms_programming_63_jp)ガイドの「AEM Forms のコンポーネントの開発」トピックを参照してください。
+1. DSC で getCurrentUserImageUrl と getUserImageUrl メソッドを公開する新しい SPI を定義して、AEM Forms ユーザーの画像 URL を取得します。 Java™ コードスニペットのサンプルを以下に示します。
 
    ```java
    public class DemoUserImageURLProviderService {
@@ -40,9 +54,9 @@ ht-degree: 94%
    }
    ```
 
-1. component.xml ファイルを作成します。spec-id が以下に表示されているコードスニペットと同じであることを確認します。
+1. component.xml ファイルを作成します。 spec-id が以下に表示されているコードスニペットと同じであることを確認します。
 
-   以下にサンプルのコードスニペットを示します。特定の要件に合うようにカスタマイズします。
+   以下にサンプルのコードスニペットを示します。 特定の要件に合うようにカスタマイズします。
 
    ```java
    <component xmlns="https://adobe.com/idp/dsc/component/document">
@@ -82,5 +96,5 @@ ht-degree: 94%
    </component>
    ```
 
-1. Workbench を介して DSC をデプロイします。再起動 `ProcessManagementClientSessionService` サービス。
+1. ワークベンチを介して DSC をデプロイします。 再起動 `ProcessManagementClientSessionService` サービス。
 1. ブラウザーを更新するか、ユーザーでログアウトまたはログインをし直す必要があります。

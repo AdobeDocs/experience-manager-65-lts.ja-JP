@@ -8,14 +8,26 @@ feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6249'
+source-wordcount: '6255'
 ht-degree: 97%
-
 ---
-
 # ファイルタイプ設定の指定 {#configuring-file-type-settings}
 
 >[!NOTE]
@@ -417,7 +429,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 **ファイル名の拡張子**：このアプリケーションで使用できるファイルタイプのファイル拡張子をコンマで区切って指定します。 デフォルトは`xls,xlsx` です。 エクステンションの前にピリオドを含めたり、間にスペースを入れたりしないでください。
 
-**PDF/A-1a準拠ファイルの作成**: PDF/A-1b:2005 RGB Adobe PDF設定を強制的に使用します。
+**PDF/A-1a準拠ファイルの作成**: PDF/A-1b:2005 RGB Adobe PDF設定の使用を強制します。
 
 **Adobe PDF にブックマークを追加**：Excel ワークシート名がブックマークに変換されます。 このオプションはデフォルトで選択されています。
 
@@ -471,7 +483,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 **[!UICONTROL 非表示のスライドを PDF ページに変換]**：非表示のスライドを変換します。
 
-**[!UICONTROL PDF/A-1a準拠ファイルの作成]**: PDF/A-1b:2005 RGB Adobe PDF設定を強制的に使用します。 PDF ファイルの生成時、PowerPoint の機能の一部は変換されません。 PowerPoint の効果と同等の効果が Acrobat では保持されない場合、同様の効果で置き換えます。 同じスライドに複数のアニメーション効果がある場合は、1 つの効果が使用されます。 ページ効果と箇条書きのフライインは変換されます。
+**[!UICONTROL PDF/A-1a準拠ファイルの作成]**: PDF/A-1b:2005 RGB Adobe PDF設定の使用を強制します。 PDF ファイルの生成時、PowerPoint の機能の一部は変換されません。 PowerPoint の効果と同等の効果が Acrobat では保持されない場合、同様の効果で置き換えます。 同じスライドに複数のアニメーション効果がある場合は、1 つの効果が使用されます。 ページ効果と箇条書きのフライインは変換されます。
 
 ## Microsoft Project の設定（Windows のみ） {#microsoft-project-settings-windows-only}
 
@@ -481,7 +493,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 1. **[!UICONTROL ドキュメント情報を変換]**：ソースファイルのプロパティダイアログボックスから、タイトル、サブジェクト、作成者、キーワード、管理者、会社情報、カテゴリおよびコメントなどのドキュメント情報が追加されます。 このオプションはデフォルトで選択されています。
 1. **[!UICONTROL Adobe PDF にソースファイルを添付]**：ソースファイルを添付ファイルとして PDF ファイルに追加します。
-1. **[!UICONTROL PDF/A-1a準拠ファイルの作成]**: PDF/A-1b:2005 RGB Adobe PDF設定を強制的に使用します。
+1. **[!UICONTROL PDF/A-1a準拠ファイルの作成]**: PDF/A-1b:2005 RGB Adobe PDF設定の使用を強制します。
 1. **[!UICONTROL マクロを自動的に実行]**：ドキュメントを変換する前に、Microsoft Project ドキュメントでマクロ（現在の時刻を挿入するマクロなど）を実行します。
 
 ## Microsoft Word の設定（Windows のみ） {#microsoft-word-settings-windows-only}
@@ -502,7 +514,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 **[!UICONTROL タグ付き Adobe PDF によってアクセシビリティと折り返しを有効にする]**：PDF ファイルにタグを埋め込みます。 このオプションはデフォルトで選択されています。
 
-**[!UICONTROL PDF/A-1a準拠ファイルを作成]**：選択した場合、PDF/A-1b:2005 RGB Adobe PDF設定が強制的に使用されます。
+**[!UICONTROL PDF/A-1a準拠ファイルを作成]**：選択すると、PDF/A-1b:2005 RGB Adobe PDF設定が強制的に使用されます。
 
 **[!UICONTROL マクロを自動的に実行]**：ドキュメントを変換する前に Word ドキュメントのマクロ（現在の時刻を挿入するマクロなど）を実行します。
 
@@ -544,7 +556,7 @@ Microsoft Word のスタイル名にコンマ（,）または等号（=）が含
 
 **Adobe Acrobat で表示するときにレイヤーパネルを開く**：Visio レイヤーを統合しない場合に、Acrobat で PDF ファイルを開くと、PDF ファイルで保持するレイヤーを指定できるウィンドウが開きます。 このオプションはデフォルトで選択されています。
 
-**PDF/A-1b準拠ファイルを作成**: Adobe PDF設定PDF/A-1b:2005 （RGB）を強制的に使用します。
+**PDF/A-1b準拠ファイルを作成**: Adobe PDF設定PDF/A-1b:2005 （RGB）の使用を強制します。
 
 **コメントを Adobe PDF コメントに変換**：Visio のメモを PDF のコメントに変換します。
 

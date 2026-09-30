@@ -8,13 +8,26 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 6c3c4d7f-fc4c-44ad-886f-f76d0532d91a
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 98%
-
 ---
-
 # Microsoft Dynamics OData の設定{#microsoft-dynamics-odata-configuration}
 
 ## 適用先 {#applies-to}
@@ -47,8 +60,8 @@ Microsoft Dynamics のセットアップおよび設定を開始する前に、�
 * [AEM Forms アドオンパッケージ](../../forms/using/installing-configuring-aem-forms-osgi.md)がインストールされている
 * Microsoft Dynamics 365 がオンライン環境で設定されているか、次のいずれかの Microsoft Dynamics バージョンのインスタンスがインストールされていること。
 
-   * オンプレミス環境の Microsoft Dynamics 365
-   * オンプレミス環境の Microsoft Dynamics 2016
+  * オンプレミス環境の Microsoft Dynamics 365
+  * オンプレミス環境の Microsoft Dynamics 2016
 
 * [Microsoft Dynamics オンラインサービスのアプリケーションを Microsoft Azure Active Directory に登録している](https://docs.microsoft.com/ja-jp/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory)。 登録済みサービスのクライアント ID（アプリケーション ID）とクライアントの秘密鍵の値を書き留めてください。 これらの値は [Microsoft Dynamics サービス用にクラウドサービスを設定する](../../forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service)ときに使用します。
 

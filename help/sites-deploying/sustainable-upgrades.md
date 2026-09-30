@@ -6,13 +6,22 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
 exl-id: 5a93918b-3b5f-49e0-9283-86776f9d8fb4
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 92%
-
 ---
-
 # 持続可能なアップグレード{#sustainable-upgrades}
 
 ## カスタマイズフレームワーク {#customization-framework}
@@ -25,7 +34,7 @@ ht-degree: 92%
 
 #### API サーフェス {#api-surface}
 
-Adobe Experience Manager（AEM）の以前のリリースでは、多くの API が Uber Jar を介して公開されていました。 これらの API の一部は、お客様による使用を意図して公開されたものではなく、複数のバンドルにまたがって AEM 機能をサポートするために公開されたものです。 今後は、アップグレードの観点からどの API が安全に使用できるかをお客様に示すために、Java™ API は、公開または非公開としてマークされます。 その以外の詳細を次に示します。
+Adobe Experience Manager（AEM）の以前のリリースでは、多くの API が Uber Jar を介して公開されていました。 これらの API の一部は、お客様による使用を意図して公開されたものではなく、複数のバンドルにまたがって AEM 機能をサポートするために公開されたものです。 今後は、アップグレードの観点からどの API が安全に使用できるかをお客様に示すために、Java™ API は Public または Private としてマークされます。 その以外の詳細を次に示します。
 
 * `Public` としてマークされた Java™ API は、カスタム実装バンドルによって使用および参照できます。
 
@@ -41,7 +50,7 @@ Adobe Experience Manager（AEM）の以前のリリースでは、多くの API 
 
 #### コンテンツ分類 {#content-classifications}
 
-AEM では、以前からオーバーレイの原理と Sling Resource Merger を使用して、ユーザーが AEM の機能の拡張およびカスタマイズを行うことができるようになっています。 AEM コンソールと UI を強化する事前定義済みの機能は、**/libs** に格納されます。 ユーザーは **/libs** の下は何も変更できませんが、**/apps** の下にコンテンツを追加して、**/libs** 内で定義されている機能をオーバーレイおよび拡張できます（詳しくは、「オーバーレイを使用した開発」を参照）。 この場合も、AEM のアップグレード時に多数の問題が発生します。**/libs** 内のコンテンツが変更され、オーバーレイ機能が予期しない動作で破損することがあるからです。 お客様は、`sling:resourceSuperType`経由の継承を通じてAEM コンポーネントを拡張したり、**/libs**&#x200B;内のコンポーネントをsling:resourceType経由で直接参照したりすることもできます。 同様のアップグレードの問題は、参照およびオーバーライドの使用例で発生する可能性があります。
+AEM では、以前からオーバーレイの原則と Sling Resource Merger を使用して、ユーザーが AEM の機能の拡張およびカスタマイズを行うことができるようになっています。 AEM コンソールと UI を強化する事前定義済みの機能は、**/libs** に格納されます。 ユーザーは **/libs** の下は何も変更できませんが、**/apps** の下にコンテンツを追加して、**/libs** 内で定義されている機能をオーバーレイおよび拡張できます（詳しくは、「オーバーレイを使用した開発」を参照）。 この場合も、AEM のアップグレード時に多数の問題が発生します。**/libs** 内のコンテンツが変更され、オーバーレイ機能が予期しない動作で破損することがあるからです。 お客様は、`sling:resourceSuperType`経由の継承を通じてAEM コンポーネントを拡張したり、**/libs**&#x200B;内のコンポーネントをsling:resourceType経由で直接参照したりすることもできます。 同様のアップグレードの問題は、参照およびオーバーライドの使用例で発生する可能性があります。
 
 安全に使用およびオーバーレイできる **/libs** の領域を容易に理解してより安全になるように、**/libs** 内のコンテンツは次の mixin によって分類されています。
 
@@ -53,11 +62,11 @@ AEM では、以前からオーバーレイの原理と Sling Resource Merger �
 
 * ***内部（花崗岩:InternalArea）*** *- *ノードを内部として定義します。 内部として分類されたノードは、オーバーレイ、継承、直接使用しないのが理想的です。 これらのノードは、AEM の内部機能専用です。
 
-* **注釈なし** - ノードはツリー階層に基づいて分類を継承します。 / root はデフォルトで公開です。 **親が内部または最終として分類されているノードも、内部として扱われます。**
+* **注釈なし** - ノードはツリー階層に基づいて分類を継承します。 / root はデフォルトで Public です。 **親が内部または最終として分類されているノードも、内部として扱われます。**
 
 >[!NOTE]
 >
->これらのポリシーは、Sling 検索パスに基づくメカニズムに対してのみ適用されます。 クライアントサイドライブラリなど **/libs** の他の領域は、`Internal` としてマークされることがありますが、標準で clientlib を含めることで使用できます。 このような場合は、お客様が引き続き内部分類に従うことが重要です。
+>これらのポリシーは、Sling 検索パスに基づくメカニズムに対してのみ適用されます。 クライアントサイドライブラリなど **/libs** の他の領域は、`Internal` としてマークされることがありますが、標準で clientlib を含めることで使用できます。 このような場合は、お客様が引き続き Internal 分類に従うことが重要です。
 
 #### CRXDE Lite コンテンツタイプインジケーター {#crxde-lite-content-type-indicators}
 

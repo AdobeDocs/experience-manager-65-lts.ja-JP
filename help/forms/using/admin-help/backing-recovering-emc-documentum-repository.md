@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 054d31c3-bd58-4596-8c06-4909d75e9569
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 98%
-
 ---
-
 # EMC Documentum リポジトリのバックアップと回復 {#backing-up-and-recovering-the-emc-documentum-repository}
 
 ここでは、AEM Forms 環境用に設定された EMC Documentum リポジトリをバックアップおよび回復するために必要なタスクについて説明します。
@@ -58,7 +73,7 @@ ht-degree: 98%
 
 1. 以下のサンプルコンテンツを使用して、*nsrnmd_win.cfg* という名前の設定ファイルを作成し、Content Server 上のアクセス可能な位置に保存します。 このファイルは、バックアップおよび復元コマンドによって呼び出されます。
 
-   次のテキストには、レイアウトのために 1 行が分割されている部分があります。 そのため、このテキストをこのドキュメント以外の場所にコピーする場合は、1 ブロックずつコピーし、ペーストしたテキストから不要な改行を削除してください。
+   次のテキストには、改行用の書式設定文字が含まれています。 そのため、このテキストをこのドキュメント以外の場所にコピーする場合は、1 ブロックずつコピーし、ペーストしたテキストから不要な改行を削除してください。
 
    ```shell
     ################################################
@@ -198,15 +213,15 @@ ht-degree: 98%
 
    * 完全なデータベースバックアップ（nsrnmddbf.bat）：
 
-     `NetWorker_database_module_root` `-s`*&lt;NetWorker_Server_Name>* `-U` `[username]` `-P`*[password ]*`-l full`*&lt;database_name>*
+     `NetWorker_database_module_root` `-s`*&lt;NetWorker_Server_Name>* `-U`&#x200B;`[username]` `-P`*[password ]*`-l full`*&lt;database_name>*
 
    * 増分データベースバックアップ（nsrnmddbi.bat）：
 
-     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U` `[username]` `-P` `[password]` `-l 1 -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U`&#x200B;`[username]` `-P`&#x200B;`[password]` `-l 1 -R`*&lt;database_name>*
 
    * データベースログバックアップ（nsrnmddbl.bat）：
 
-     `[NetWorker_database_module_root]` `-s` `<NetWorker_Server_Name>` `-U` `[username]` `-P` `[password]` `-l incr -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s`&#x200B;`<NetWorker_Server_Name>` `-U`&#x200B;`[username]` `-P`&#x200B;`[password]` `-l incr -R`*&lt;database_name>*
 
      ここで、
 
@@ -229,10 +244,10 @@ ht-degree: 98%
 
    **メディアタイプ：** `File`
 
-1. 新しいデバイスを右クリックして、「操作」をクリックします。
+1. 新しいデバイスを右クリックして、「操作」を選択します。
 1. 「ラベル」を選択し、名前を入力して、「OK」、「マウント」の順にクリックします。
 
-バックアップファイルが保存されるデバイスが追加されます。 複数のデバイスを様々な形式で追加することができます。
+バックアップファイルが保存されるデバイスが追加されます。 異なる形式のデバイスを複数追加できます。
 
 ## EMC Documentum Content Server のバックアップ {#back-up-the-emc-documentum-content-server}
 
@@ -259,7 +274,7 @@ AEM Forms データの完全バックアップを完了してから、以下の�
 
 1. 復元する Docbase サービスを停止します。
 1. データベースモジュール用の NetWorker User ユーティリティを起動します（例えば、「*NetWorker User for SQL Server*」）。
-1. Restore ツールをクリックし、「Normal」をクリックします。
+1. Restore ツールをクリックし、「Normal」を選択します。
 1. 画面の左側で、Docbase のデータベースを選択し、ツールバーの「Start」ボタンをクリックします。
 1. データベースが復元されたら、Docbase サービスを再起動します。
 1. コマンドプロンプトを開き、*[NetWorker_root]*\Legato\nsr\bin に変更します。

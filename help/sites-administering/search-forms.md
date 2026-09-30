@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 68a4d4b2-91a3-4545-a491-2a1ec08ceec5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2078'
-ht-degree: 93%
-
+source-wordcount: '2082'
+ht-degree: 94%
 ---
-
 # 検索フォームの設定{#configuring-search-forms}
 
 **検索フォーム**&#x200B;を使用すると、オーサー環境の様々な AEM コンソールやパネルで利用可能な検索パネルで使用する、検索用述語の選択をカスタマイズできます。 これらのパネルをカスタマイズすると、特定のニーズに合わせて検索機能を柔軟に利用できるようになります。
@@ -26,9 +35,9 @@ ht-degree: 93%
 
 * **ツール**
 
-   * **一般**
+  * **一般**
 
-      * **検索フォーム**
+    * **検索フォーム**
 
 このコンソールに初めてアクセスすると、すべての設定に南京錠シンボルが表示されます。 これは、該当する設定はデフォルト（標準）の設定であり、削除できないことを示します。 設定をカスタマイズすると、鍵アイコンは非表示になります。ただし、[カスタマイズした設定を削除](#deleting-a-configuration-to-reinstate-the-default)した場合は、 デフォルトの設定（および鍵アイコン）が復帰します。
 
@@ -331,10 +340,10 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->* 一般的な検索述語は、次の場所で定義されます。
+>* 一般的な検索用の述語は、次の場所で定義されています。
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->* サイト管理者（クラシック UI）のみに関連する検索述語は、次の場所にあります。
+>* siteadmin（クラシック UI）にのみ関連する検索用の述語は、次の場所にあります。
 >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * これらは非推奨であり、後方互換性のためにのみ使用できます。
 >

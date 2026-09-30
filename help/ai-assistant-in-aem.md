@@ -5,13 +5,29 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Authoring, AI Assistant, AI Tools
 role: Admin,Developer,User
 exl-id: 391d46e3-05c9-4af1-8882-ffd39b04a701
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
-workflow-type: ht
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+feature_v2:
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: bf7fca06-df97-4229-884f-76afcfade5ad
+    internal-label: AI Assistant
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+workflow-type: tm+mt
 source-wordcount: '1380'
 ht-degree: 100%
-
 ---
-
 # AEM 6.5 LTS の AI アシスタント {#about-ai-assistant-in-aem}
 
 >[!IMPORTANT]
@@ -46,11 +62,11 @@ AEM の AI アシスタントにアクセスするには、次の要件を満た
 
 >[!NOTE]
 >
->AEM の AI アシスタントのリクエストは、Adobe Identity Management サービス（IMS）を通じて認証されます。 詳しくは、[Adobe Identity Management サービスの概要](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf)を参照してください。
+>AEM の AI アシスタントのリクエストは、Adobe Identity Management Services（IMS）を通じて認証されます。 詳しくは、[Adobe Identity Management サービスの概要](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf)を参照してください。
 
 **AEM の AI アシスタントにアクセスするには：**
 
-1. Adobe Experience Manager の AI を活用したエージェント機能のほとんどにアクセスするには、お客様は追加契約を締結する必要があります。 詳しくは、アドビ担当者にお問い合わせください。
+1. Adobe Experience Manager の AI を活用した機能とエージェント型機能のほとんどにアクセスするには、お客様は追加契約を締結する必要があります。 詳しくは、アドビ担当者にお問い合わせください。
 
 1. AEM で AI アシスタントを使用するには、AI アシスタントを通じて製品知識にアクセスする権限が必要です。 この権限はデフォルトでオンになっています。
 
@@ -73,7 +89,7 @@ AEM の AI アシスタントは、プライバシー、セキュリティ、ガ
 
 * AEM の AI アシスタントでは、トレーニング目的を含め、個人データは使用されません。
 * AEM の AI アシスタントは、消費者データにアクセスできません。
-* AEM の AI アシスタントを利用するには、明示的な権限が必要です。
+* AEM の AI アシスタントとやり取りするには、明示的な権限が必要です。
 * ユーザーが提供したプロンプト（質問、クエリなど）は、他の顧客と共有されることはありません。
 
 <!-- See also [Security at Adobe whitepaper](). NEED ACTIVE LINK FROM ADRIAN NICOLAE TANASE. CURRENTLY 404. -->
@@ -89,7 +105,7 @@ AEM の AI アシスタントは、プライバシー、セキュリティ、ガ
 | 自由探索型の質問 | <ul><li>ユニバーサルエディターの使用方法を教えてください。</li><li>ある環境から別の環境にコンテンツをコピーする方法はありますか？</li></ul> |
 | トラブルシューティング | <ul><li>ユニバーサルエディターにアクセスできないのはなぜですか？</li><li>パイプラインが失敗する理由</li></ul> |
 | **チケット作成をサポート** | **サポート管理者のみが利用可能&#x200B;**<br>**例** |
-| AI アシスタントのチャット履歴とコンテキストを取得したサポートチケットの自動作成 | <ul><li>サポートチケットを作成します。</li></ul> |
+| AI アシスタントのチャット履歴とコンテキストを含むサポートチケットの自動作成 | <ul><li>サポートチケットを作成します。</li></ul> |
 | サポートチケットのステータスの取得 | <ul><li>私が開いたサポートチケットをすべて見せてください。</li><li>チケット「E-----------」のステータスを表示</li></ul> |
 
 {style="table-layout:auto"}
@@ -110,7 +126,7 @@ AEM の AI アシスタントから最も正確な回答を得るには、質問
 | --- | --- |
 | 運用上のインサイト | <ul><li>テナントに存在する開発環境の数は？</li><li>最後の実稼動パイプラインを開始したのは誰ですか？</li></ul> |
 | トラブルシューティング | <ul><li>実稼動パイプラインが失敗する理由</li></ul> |
-| タスクと自動化 | <ul><li>開発ブランチからコード品質パイプラインを設定します。</li></ul> |
+| タスクと自動化 | <ul><li>開発ブランチからコード品質パイプラインを設定してください。</li></ul> |
 
 
 ## AEM AI アシスタントの使用 {#ai-use}
@@ -135,7 +151,7 @@ See also [Custom Permissions](/help/implementing/cloud-manager/custom-permission
 -->
 
 
-### AEM で AI アシスタントとの対話を開始する
+### AEM で AI アシスタントとの対話の開始
 
 トピックを変更したい場合は、AEM の AI アシスタントをリセットして、新しい会話を開始できます。 この機能は、クエリの不具合や誤った情報を提供しているクエリのトラブルシューティングに特に役立ちます。
 
@@ -159,7 +175,7 @@ See also [Custom Permissions](/help/implementing/cloud-manager/custom-permission
 
 ### カテゴリ別のプロンプトを見つける
 
-AEM の AI アシスタントには、対応しているトピックやカテゴリを調べられる検出機能が搭載されています。
+AEM の AI アシスタントには、対応しているトピックやカテゴリを見つけやすくする機能が搭載されています。
 
 **カテゴリ別にプロンプトを見つけるには：**
 

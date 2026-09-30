@@ -10,32 +10,41 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: e1771229-b2ce-406a-95a5-99b11fafbe34
-source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 63%
-
+source-wordcount: '521'
+ht-degree: 62%
 ---
-
-# Adobe Targetとの統合の前提条件{#prerequisites-for-integrating-with-adobe-target}
+# Adobe Targetと統合するための前提条件{#prerequisites-for-integrating-with-adobe-target}
 
 [AEM と Adobe Target の統合](/help/sites-administering/target.md)の一環として、Adobe Target を登録し、レプリケーションエージェントを設定して、パブリッシュノードでアクティビティ設定を保護する必要があります。
 
-## Adobe Targetへの登録 {#registering-with-adobe-target}
+## Adobe Targetに登録 {#registering-with-adobe-target}
 
-AEM と Adobe Target を統合するには、有効な Adobe Target アカウントが必要です。このアカウントには、**承認者**&#x200B;レベル以上の権限が必要です。Adobe Target に登録すると、クライアントコードを受け取ります。AEM を Adobe Target に接続するには、クライアントコードおよび Adobe Target のログイン名とパスワードが必要です。
+AEM と Adobe Target を統合するには、有効な Adobe Target アカウントが必要です。 このアカウントには、**承認者**&#x200B;レベル以上の権限が必要です。 Adobe Target に登録すると、クライアントコードを受け取ります。 AEM を Adobe Target に接続するには、クライアントコードおよび Adobe Target のログイン名とパスワードが必要です。
 
-クライアントコードは、Adobe Target サーバーの呼び出し時にAdobe Targetのカスタマーアカウントを識別します。
+クライアントコードは、Adobe Target サーバーの呼び出し時にAdobe Target カスタマーアカウントを識別します。
 
 >[!NOTE]
 >
->Target チームが統合を使用するには、お使いのアカウントを有効にする必要があります。
+>Target チームは、アカウントが統合を使用できるようにしなければなりません。
 >
 >そうでない場合は、[Adobe カスタマーケア](https://experienceleague.adobe.com/ja/docs/target/using/cmp-resources-and-contact-information)にご連絡ください。
 
-## Target レプリケーションエージェントの有効化 {#enabling-the-target-replication-agent}
+## Target レプリケーションエージェントを有効にする {#enabling-the-target-replication-agent}
 
-Test &amp; Target [レプリケーションエージェント](/help/sites-deploying/replication.md)をオーサーインスタンス上で有効にする必要があります。AEM のインストールに [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) 実行モードを使用した場合、このレプリケーションエージェントはデフォルトでは有効になっていません。本番環境の保護に関する情報については、[セキュリティチェックリスト](/help/sites-administering/security-checklist.md)を参照してください。
+Test &amp; Target [レプリケーションエージェント](/help/sites-deploying/replication.md)をオーサーインスタンス上で有効にする必要があります。 AEM のインストールに [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) 実行モードを使用した場合、このレプリケーションエージェントはデフォルトでは有効になっていません。 本番環境の保護に関する情報については、[セキュリティチェックリスト](/help/sites-administering/security-checklist.md)を参照してください。
 
 1. AEM のホームページで、**ツール**／**デプロイメント**／**レプリケーション**&#x200B;をクリックします。
 1. 「**作成者のエージェント**」をクリックします。
@@ -44,37 +53,37 @@ Test &amp; Target [レプリケーションエージェント](/help/sites-deplo
 
    >[!NOTE]
    >
-   >Test &amp; Target レプリケーションエージェントを設定する際、「**トランスポート**」タブでは、URI はデフォルトで `tnt:///` に設定されます。 この URI を `https://admin.testandtarget.omniture.com` に置き換えないでください。
+   >テストおよびターゲットレプリケーションエージェントを設定する場合、**Transport** タブでは、URIはデフォルトで`tnt:///`に設定されます。 このURIを`https://admin.testandtarget.omniture.com`に置き換えないでください。
    >
-   >`tnt:///` を使用して接続をテストしようとすると、期待される動作であるエラーが表示されます。 URI が内部でのみ使用されるからです。 **接続をテスト** では使用しないでください。
+   >`tnt:///`との接続をテストしようとすると、予想される動作であるエラーが表示されます。 その理由は、URIが内部使用のみを目的としているためです。 **テスト接続**&#x200B;では使用しないでください。
 
-## アクティビティ設定ノードの保護 {#securing-the-activity-settings-node}
+## アクティビティ設定ノードのセキュリティを確保 {#securing-the-activity-settings-node}
 
-通常のユーザーがアクセスできないように、パブリッシュインスタンス上のアクティビティ設定ノード **cq:ActivitySettings** を保護します。 アクティビティ設定ノードには、Adobe Target へのアクティビティの同期を処理するサービスのみがアクセスできるようにしてください。
+公開インスタンス上のアクティビティ設定ノード **cq:ActivitySettings**&#x200B;をセキュリティで保護して、通常のユーザーがアクセスできないようにします。 アクティビティ設定ノードには、Adobe Target へのアクティビティの同期を処理するサービスのみがアクセスできるようにしてください。
 
-**cq:ActivitySettings** ノードは、CRXDE Liteのアクティビティ `/content/campaigns/*nameofbrand*` ノードの `jcr:content`* *の下にあります。 （例：`/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`）。このノードは、コンポーネントのターゲティング後にのみ作成されます。
+**cq:ActivitySettings** ノードは、CRXDE Liteの`/content/campaigns/*nameofbrand*`**でアクティビティ `jcr:content` ノードで利用できます。 例えば、`/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings` のようになります。 このノードは、コンポーネントのターゲティング後にのみ作成されます。
 
-アクティビティの **の下にある:ActivitySettings** cq`jcr:content` ノードは、次の ACL によって保護されています。
+アクティビティの`jcr:content`の下にある&#x200B;**cq:ActivitySettings** ノードは、次のACLによって保護されています。
 
-* 全員にすべてを拒否します。
-* `jcr:read,rep:write` に `target-activity-authors` を許可します（作成者は、標準でこのグループのメンバーです）。
-* `jcr:read,rep:write` に `targetservice` を許可します。
+* 全員に対してすべてを否定。
+* `target-activity-authors`の`jcr:read,rep:write`を許可します（作成者はこのグループのメンバーです）。
+* `targetservice`に`jcr:read,rep:write`を許可します。
 
-これらの設定により、権限を持たないユーザーがノードプロパティにアクセスできなくなります。オーサーインスタンスとパブリッシュインスタンスの両方で同じ ACL を使用します。詳しくは、[ユーザー管理とセキュリティ](/help/sites-administering/security.md)を参照してください。
+これらの設定により、権限を持たないユーザーがノードプロパティにアクセスできなくなります。 オーサーインスタンスとパブリッシュインスタンスの両方で同じ ACL を使用します。 詳しくは、[ユーザー管理とセキュリティ](/help/sites-administering/security.md)を参照してください。
 
-## AEM Link Externalizer の設定 {#configuring-the-aem-link-externalizer}
+## AEM Link Externalizerの設定 {#configuring-the-aem-link-externalizer}
 
-Adobe Target でアクティビティを編集する場合、AEM オーサーノードで URL を変更していなければ、URL は **localhost** を指しています。書き出すコンテンツを特定の&#x200B;*Publish*&#x200B;ドメインに指定する場合は、AEM Link Externalizer を設定できます。
+Adobe Target でアクティビティを編集する場合、AEM オーサーノードで URL を変更していなければ、URL は **localhost** を指しています。 書き出すコンテンツを特定の&#x200B;*Publish*&#x200B;ドメインに指定する場合は、AEM Link Externalizer を設定できます。
 
 >[!NOTE]
 >
 >[クラウド設定を追加](/help/sites-administering/experience-fragments-target.md#add-the-cloud-configuration)も参照してください。
 
-AEM Externalizer を設定するには：
+AEM Externalizerを設定するには：
 
 >[!NOTE]
 >
->詳しくは、[URL の外部化 &#x200B;](/help/sites-developing/externalizer.md) を参照してください。
+>詳しくは、[URLの外部化](/help/sites-developing/externalizer.md)を参照してください。
 
 1. **https://&lt;server>:&lt;port>/system/console/configMgr** の OSGi Web コンソールに移動します。
 1. **Day CQ Link Externalizer** を探し、オーサーノードのドメインを入力します。

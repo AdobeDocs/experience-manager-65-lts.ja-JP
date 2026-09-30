@@ -9,28 +9,40 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: d19750c4-9477-4bcb-b225-5f089b43194d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1609'
-ht-degree: 100%
-
+source-wordcount: '1657'
+ht-degree: 98%
 ---
-
 # AEM 6 での LDAP の設定 {#configuring-ldap-with-aem}
 
-LDAP（**L** ightweight **D** irectory **A** ccess **P** rotocol）は、一元化されたディレクトリサービスにアクセスするために使用されます。複数のアプリケーションからアクセスできるため、ユーザーアカウントの管理に要する負担を軽減します。このような LDAP サーバーの一例が、Active Directory です。多くの場合、LDAP はシングルサインオン（ユーザーが 1 回ログインすると複数のアプリケーションにアクセスできる機能）を実現するために使用されます。
+LDAP（**L** ightweight **D** irectory **A** ccess **P** rotocol）は、一元化されたディレクトリサービスにアクセスするために使用されます。 複数のアプリケーションからアクセスできるため、ユーザーアカウントの管理に要する負担を軽減します。 このような LDAP サーバーの一例が、Active Directory です。 多くの場合、LDAP はシングルサインオン（ユーザーが 1 回ログインすると複数のアプリケーションにアクセスできる機能）を実現するために使用されます。
 
-リポジトリに保存されている LDAP アカウントの詳細を使用して、LDAP サーバーとリポジトリの間でユーザーアカウントを同期できます。この機能を利用すると、アカウントをリポジトリグループに割り当てて、必要な権限や特権を割り当てることができます。
+リポジトリに保存されている LDAP アカウントの詳細を使用して、LDAP サーバーとリポジトリの間でユーザーアカウントを同期できます。 この機能を利用すると、アカウントをリポジトリグループに割り当てて、必要な権限や特権を割り当てることができます。
 
-リポジトリでは、LDAP 認証を使用してこれらのユーザーを認証します。認証の際は、検証用に LDAP サーバーに渡される資格情報が使用されます。この認証は、リポジトリへのアクセスを許可する前に行う必要があります。パフォーマンスを向上させるために、検証が成功した資格情報をリポジトリでキャッシュできます。有効期限のタイムアウトを使用すると、適切な期間が経過した後に再検証が実行されます。
+リポジトリでは、LDAP 認証を使用してこれらのユーザーを認証します。認証の際は、検証用に LDAP サーバーに渡される資格情報が使用されます。この認証は、リポジトリへのアクセスを許可する前に行う必要があります。 パフォーマンスを向上させるために、検証が成功した資格情報をリポジトリでキャッシュできます。有効期限のタイムアウトを使用すると、適切な期間が経過した後に再検証が実行されます。
 
-LDAP サーバーからアカウントが削除されると、検証が許可されず、リポジトリへのアクセスが拒否されます。リポジトリ保存されている LDAP アカウントの詳細をパージすることもできます。
+LDAP サーバーからアカウントが削除されると、検証が許可されず、リポジトリへのアクセスが拒否されます。 リポジトリ保存されている LDAP アカウントの詳細をパージすることもできます。
 
-このようなアカウントは、ユーザーに対して透過的に使用されます。つまり、LDAP で作成されたユーザーアカウントやグループアカウントと、リポジトリ内でのみ作成されたアカウントの間に、ユーザーが気付くような違いはありません。
+このようなアカウントは、ユーザーに対して透過的に使用されます。 つまり、LDAP で作成されたユーザーアカウントやグループアカウントと、リポジトリ内でのみ作成されたアカウントの間に、ユーザーが気付くような違いはありません。
 
 AEM 6 における LDAP のサポートには新しい実装が含まれており、以前のバージョンとは異なるタイプの設定が必要です。
 
-すべての LDAP 設定を OSGi 設定として使用できるようになりました。これらは、以下の web 管理コンソールを使用して設定できます。
+すべての LDAP 設定を OSGi 設定として使用できるようになりました。 Web管理コンソールで次の場所で設定できます。
 `https://serveraddress:4502/system/console/configMgr`
 
 LDAP と AEM を連携するには、次の 3 つの OSGi 設定を作成する必要があります。
@@ -43,7 +55,7 @@ LDAP と AEM を連携するには、次の 3 つの OSGi 設定を作成する�
 >
 >External Login Module について詳しくは、[Oak の External Login Module - LDAP との認証および詳細（英語）](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=ja)をご覧ください。
 >
->Apache DS を使用した Experience Manager の設定例については、[Apache Directory Service を使用するための Adobe Experience Manager 6.5 の設定](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805?profile.language=ja)を参照してください。
+>Apache DS を使用した Experience Manager の設定例については、[Apache Directory Service を使用するための Adobe Experience Manager 6.5 の設定](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)を参照してください。
 
 ## LDAP Identity Provider の設定 {#configuring-the-ldap-identity-provider}
 
@@ -81,7 +93,7 @@ LDAP Identity Provider では、以下の設定オプションを使用できま
   </tr>
   <tr>
    <td><strong>Bind DN</strong></td>
-   <td>認証用のユーザーの DN。このフィールドを空のままにすると、匿名バインドが実行されます。</td>
+   <td>認証用のユーザーの DN。 このフィールドを空のままにすると、匿名バインドが実行されます。</td>
   </tr>
   <tr>
    <td><strong>Bind Password</strong></td>
@@ -104,7 +116,7 @@ LDAP Identity Provider では、以下の設定オプションを使用できま
    <td>ユーザー検索用の DN</td>
   </tr>
   <tr>
-   <td><strong>User object classes</strong></td>
+   <td><strong>ユーザーオブジェクトクラス</strong></td>
    <td>ユーザーエントリに含める必要があるオブジェクトクラスのリスト。</td>
   </tr>
   <tr>
@@ -113,7 +125,7 @@ LDAP Identity Provider では、以下の設定オプションを使用できま
   </tr>
   <tr>
    <td><strong>User extra filter</strong></td>
-   <td>ユーザーの検索時に使用する追加の LDAP フィルター。最後のフィルターの形式は次のようになります：'(&amp;(&lt;idAttr&gt;=&lt;userId&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)' (user.extraFilter)</td>
+   <td>ユーザーの検索時に使用する追加の LDAP フィルター。 最後のフィルターの形式は次のようになります：'(&amp;(&lt;idAttr&gt;=&lt;userId&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)' (user.extraFilter)</td>
   </tr>
   <tr>
    <td><strong>User DN paths</strong></td>
@@ -124,7 +136,7 @@ LDAP Identity Provider では、以下の設定オプションを使用できま
    <td>グループ検索用のベース DN</td>
   </tr>
   <tr>
-   <td><strong>Group object classes</strong></td>
+   <td><strong>グループオブジェクトクラス</strong></td>
    <td>グループエントリが格納する必要のあるオブジェクトクラスのリスト</td>
   </tr>
   <tr>
@@ -133,7 +145,7 @@ LDAP Identity Provider では、以下の設定オプションを使用できま
   </tr>
   <tr>
    <td><strong>Group extra filter</strong></td>
-   <td>グループの検索時に使用する追加の LDAP フィルター。最後のフィルターの形式は次のようになります：'(&amp;(&lt;nameAttr&gt;=&lt;groupName&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)'</td>
+   <td>グループの検索時に使用する追加の LDAP フィルター。 最後のフィルターの形式は次のようになります：'(&amp;(&lt;nameAttr&gt;=&lt;groupName&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)'</td>
   </tr>
   <tr>
    <td><strong>Group DN paths</strong></td>
@@ -165,7 +177,7 @@ Sync Handler では、以下の設定オプションを使用できます。
    <td>同期されたユーザーが期限切れになるまでの期間</td>
   </tr>
   <tr>
-   <td><strong>User auto membership</strong></td>
+   <td><strong>ユーザー自動メンバーシップ</strong></td>
    <td>同期されたユーザーが自動的に追加されるグループのリスト。</td>
   </tr>
   <tr>
@@ -177,19 +189,19 @@ Sync Handler では、以下の設定オプションを使用できます。
    <td>新しいユーザーの作成時に使用されるパスの接頭辞。</td>
   </tr>
   <tr>
-   <td><strong>User Membership Expiration</strong></td>
+   <td><strong>ユーザーメンバーシップ有効期限</strong></td>
    <td>メンバーシップが期限切れになるまでの時間<br /> </td>
   </tr>
   <tr>
-   <td><strong>User membership nesting depth</strong></td>
-   <td>メンバーシップ関係が同期された場合のグループのネストの最大深さを返します。値 0 を指定すると、グループメンバーシップの参照が実質的に無効化されます。値 1 を指定すると、ユーザーの直接グループのみが追加されます。ユーザーのメンバーシップの上位を同期する場合に限定して個々のグループを同期する場合、この値は無効です。</td>
+   <td><strong>ユーザーメンバーシップのネストの深さ</strong></td>
+   <td>メンバーシップ関係が同期された場合のグループのネストの最大深さを返します。 値 0 を指定すると、グループメンバーシップの参照が実質的に無効化されます。 値 1 を指定すると、ユーザーの直接グループのみが追加されます。 ユーザーのメンバーシップの上位を同期する場合に限定して個々のグループを同期する場合、この値は無効です。</td>
   </tr>
   <tr>
    <td><strong>Group Expiration Time</strong></td>
    <td>同期されたグループが期限切れになるまでの期間</td>
   </tr>
   <tr>
-   <td><strong>Group auto membership</strong></td>
+   <td><strong>グループ自動メンバーシップ</strong></td>
    <td>同期されたグループが自動的に追加されるグループのリスト</td>
   </tr>
   <tr>
@@ -209,15 +221,15 @@ Sync Handler では、以下の設定オプションを使用できます。
 
 >[!NOTE]
 >
->Apache Jackrabbit Oak External Login Module は、Java™ 認証・承認サービス（JAAS）の仕様を実装します。詳しくは、[Oracle 公式の Java™ セキュリティリファレンスガイド](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html)を参照してください。
+>Apache Jackrabbit Oak External Login Module は、Java™ 認証・承認サービス（JAAS）の仕様を実装します。 詳しくは、[Oracle 公式の Java™ セキュリティリファレンスガイド](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html)を参照してください。
 
-このモジュールは、使用する ID プロバイダーと同期ハンドラーを定義して、2 つのモジュールを効率的にバインドします。
+このモジュールのジョブは、使用する ID プロバイダーと同期ハンドラーを定義して、2 つのモジュールを効率的にバインドします。
 
 以下の設定オプションを使用できます。
 
-| **JAAS Ranking** | このログインモジュールのエントリのランキング（つまり、並べ替え順）を指定します。エントリは降順に並べ替えられます（ランクの高い設定が先頭になります）。 |
+| **JAAS Ranking** | このログインモジュールのエントリのランキング（つまり、並べ替え順）を指定します。 エントリは降順に並べ替えられます（ランキングの高い設定が先頭になります）。 |
 |---|---|
-| **JAAS Control Flag** | LoginModule が REQUIRED、REQUISITE、SUFFICIENT、または OPTIONAL のいずれであるかを指定するプロパティ。これらのフラグの意味について詳しくは、JAAS の設定に関するドキュメントを参照してください。 |
+| **JAAS Control Flag** | LoginModule が REQUIRED、REQUISITE、SUFFICIENT、または OPTIONAL のいずれであるかを指定するプロパティ。 これらのフラグの意味について詳しくは、JAAS の設定に関するドキュメントを参照してください。 |
 | **JAAS Realm** | LoginModule が登録される領域名（またはアプリケーション名）。 領域名を指定しない場合は、Felix JAAS 設定に指定されているように、LoginModule はデフォルトの領域に登録されます。 |
 | **Identity Provider Name** | ID プロバイダーの名前。 |
 | **Sync Handler Name** | 同期ハンドラーの名前。 |
@@ -240,11 +252,11 @@ Sync Handler では、以下の設定オプションを使用できます。
 
 ### SSL 証明書の作成 {#creating-ssl-certificates}
 
-SSL 経由で LDAP を使用して認証を行うように AEM を設定する場合は、自己署名証明書を使用できます。AEM で使用する証明書の生成手順の例を次に示します。
+SSL 経由で LDAP を使用して認証を行うように AEM を設定する場合は、自己署名証明書を使用できます。 AEM で使用する証明書の生成手順の例を次に示します。
 
-1. SSL ライブラリがインストールされ、機能していることを確認します。この手順では、例として OpenSSL を使用します。
+1. SSL ライブラリがインストールされ、機能していることを確認します。 この手順では、例として OpenSSL を使用します。
 
-1. カスタマイズした OpenSSL 設定（cnf）ファイルを作成します。この設定は、デフォルトの **openssl.cnf ** 設定ファイルをコピーし、カスタマイズすることで実行できます。UNIX® システムでは、このファイルは `/usr/lib/ssl/openssl.cnf` にあります。
+1. カスタマイズした OpenSSL 設定（cnf）ファイルを作成します。 この設定は、デフォルトの **openssl.cnf &#x200B;** 設定ファイルをコピーし、カスタマイズすることで実行できます。 UNIX® システムでは、このファイルは `/usr/lib/ssl/openssl.cnf` にあります。
 
 1. ターミナルで以下のコマンドを実行して CA ルートキーを作成します。
 
@@ -260,7 +272,7 @@ SSL 経由で LDAP を使用して認証を行うように AEM を設定する�
 
    `openssl x509 -noout -text -in root-ca.crt`
 
-1. 証明書設定（.cnf）ファイルで指定したすべてのフォルダーが存在することを確認します。存在しない場合は、作成してください。
+1. 証明書設定（.cnf）ファイルで指定したすべてのフォルダーが存在することを確認します。 存在しない場合は、作成してください。
 1. コマンドを実行してランダムシードを作成します。次に例を示します。
 
    `openssl rand -out private/.rand 8192`
@@ -280,26 +292,26 @@ LDAP ID プロバイダーと外部ログインモジュールの両方に対し
 
 * ログレベル：デバッグ
 * ログファイル：logs/ldap.log
-* メッセージパターン： {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* メッセージパターン：{0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &ast;{4}&ast; {2} {3} {5}
 * ロガー：org.apache.jackrabbit.oak.security.authentication.ldap
 
 * ログレベル：デバッグ
 * ログファイル：logs/external.log
-* メッセージパターン： {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* メッセージパターン：{0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &ast;{4}&ast; {2} {3} {5}
 * Logger：org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## グループへの関連付けに関する注意事項 {#a-word-on-group-affiliation}
 
-LDAP で同期されたユーザーは、AEM の別のグループに含めることが可能です。同期プロセスの一部として AEM に追加される外部 LDAP グループにも含めることができます。ただし、別に追加される、元の LDAP グループに関連するスキームに含まれないグループに含めることもできます。
+LDAP で同期されたユーザーは、AEM の別のグループに含めることが可能です。 同期プロセスの一部として AEM に追加される外部 LDAP グループにも含めることができます。 ただし、別に追加される、元の LDAP グループに関連するスキームに含まれないグループに含めることもできます。
 
 通常、ローカルの AEM 管理者またはその他の ID プロバイダーによって追加されるグループになります。
 
-ユーザーが LDAP サーバー上のグループから削除されると、その変更は同期時に AEM 側にも反映されます。ただし、LDAP によって追加されなかったユーザーのその他のグループへの関連付けはそのまま維持されます。
+ユーザーが LDAP サーバー上のグループから削除されると、その変更は同期時に AEM 側にも反映されます。 ただし、LDAP によって追加されなかったユーザーのその他のグループへの関連付けはそのまま維持されます。
 
-AEM は `rep:externalId` プロパティを使用して、外部グループからのユーザーのパージを検出および処理します。このプロパティは同期ハンドラーよって同期されたすべてのユーザーとグループに自動的に追加されます。このプロパティには元の ID プロバイダーの情報が含まれます。
+AEM は `rep:externalId` プロパティを使用して、外部グループからのユーザーのパージを検出および処理します。 このプロパティは同期ハンドラーよって同期されたすべてのユーザーとグループに自動的に追加されます。このプロパティには元の ID プロバイダーの情報が含まれます。
 
 Apache Oak ドキュメントの [ユーザーとグループの同期](https://jackrabbit.apache.org/oak/docs/security/authentication/usersync.html)を参照してください。
 
 ## 既知の問題 {#known-issues}
 
-LDAP over SSL を使用する場合は、Netscape のコメントオプションを指定せずに、使用する証明書が作成されていることを確認してください。このオプションが有効になっている場合は、SSL ハンドシェイクエラーが発生して認証が失敗します。
+LDAP over SSL を使用する場合は、Netscape のコメントオプションを指定せずに、使用する証明書が作成されていることを確認してください。 このオプションが有効になっている場合は、SSL ハンドシェイクエラーが発生して認証が失敗します。

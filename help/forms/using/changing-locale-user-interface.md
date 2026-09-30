@@ -10,13 +10,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 3f919e4d-0535-4816-8762-9c0088e47a2c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 95%
-
+source-wordcount: '573'
+ht-degree: 96%
 ---
-
 # AEM Forms Workspace ユーザーインターフェイスのロケールの変更{#changing-the-locale-of-aem-forms-workspace-user-interface}
 
 AEM Forms Workspace では、英語、フランス語、ドイツ語、日本語によるサポートを提供しています。 また、AEM Forms Workspace ユーザーインターフェイスをその他の言語にローカライズする機能も提供しています。
@@ -37,8 +51,8 @@ AEM Forms Workspace ユーザーインターフェイスを任意の言語にロ
 
 次の手順を実行して&#x200B;*新規*&#x200B;言語のサポートおよびブラウザーのロケールコード *nw* を追加します。
 
-1. CRXDE Liteにログインします。
-CRXDE Liteのデフォルト URLは`https://'[server]:[port]'/lc/crx/de/index.jsp`です。
+1. CRXDE Lite にログインします。
+CRXDE Lite のデフォルトの URL は、 `https://'[server]:[port]'/lc/crx/de/index.jsp` です。
 1. `apps/ws/locales` の場所に移動して、「`nw.`」のフォルダーを作成します。
 1. `/apps/ws/locales/en-US`の場所から`/apps/ws/locales/nw`の場所に、`translation.json`ファイルをコピーします。
 1. `/apps/ws/locales/nw`に移動して `translation.json`を開いて編集します。 translation.json ファイルにロケール固有の変更を行います。

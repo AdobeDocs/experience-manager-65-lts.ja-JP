@@ -10,7 +10,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 1ea2f849-ef36-47bf-ac3a-49d1984efca5
-source-git-commit: 7d1ab7984bc890aa4f079357061f44784a3bd1fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '9591'
 ht-degree: 91%

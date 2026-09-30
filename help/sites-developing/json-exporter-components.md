@@ -9,29 +9,38 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: aeb8e954-dd6c-4e18-bb78-6eaac86fa4b9
-source-git-commit: cc96a14ebaf9f895a798b5f4904f5b4769b990bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 56%
-
+source-wordcount: '557'
+ht-degree: 55%
 ---
-
-# コンポーネントの JSON エクスポートを有効にする{#enabling-json-export-for-a-component}
+# コンポーネントのJSON エクスポートを有効にする{#enabling-json-export-for-a-component}
 
 モデラーフレームワークに基づいてコンテンツの JSON 書き出しを生成するように、コンポーネントを適応させることができます。
 
 ## 概要 {#overview}
 
-JSON の書き出しは、[Sling Models](https://sling.apache.org/documentation/bundles/models.html) と、[Sling Model Exporter](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) フレームワーク（それ自体は [Jackson 注釈 &#x200B;](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) に依存）に基づいて行われます。
+JSON書き出しは、[Sling Model](https://sling.apache.org/documentation/bundles/models.html)および[Sling Model Exporter](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) フレームワーク（それ自体は[Jackson注釈](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)に依存）に基づいています。
 
-つまり、JSON を書き出す必要がある場合、コンポーネントには Sling モデルが必要です。 したがって、次の 2 つの手順に従って、任意のコンポーネントで JSON 書き出しを有効にします。
+このアプローチは、JSONを書き出す必要がある場合、コンポーネントにSling モデルが必要であることを意味します。 したがって、次の 2 つの手順に従って、任意のコンポーネントで JSON 書き出しを有効にします。
 
 * [コンポーネントに Sling Model を定義する](/help/sites-developing/json-exporter-components.md#define-a-sling-model-for-the-component)
 * [Sling Model インターフェイスに注釈を付ける](#annotate-the-sling-model-interface)
 
 ## コンポーネントに Sling Model を定義する {#define-a-sling-model-for-the-component}
 
-まず、コンポーネントの Sling モデルを定義する必要があります。
+最初に、コンポーネントにSling モデルを定義する必要があります。
 
 >[!NOTE]
 >
@@ -45,13 +54,13 @@ Sling Model の実装クラスに次のような注釈を付ける必要があ�
 @JsonSerialize(as = MyComponent.class)
 ```
 
-これにより、コンポー `.model` ントセレクターと `.json` 拡張機能を使用して、コンポーネントを独自に書き出すことができます。
+これにより、`.model` セレクターと`.json`拡張機能を使用して、独自にコンポーネントを書き出すことができます。
 
-さらに、Sling Model クラスを `ComponentExporter` インターフェイスに適応させることができるかどうかを指定します。
+また、Sling Model クラスを`ComponentExporter` インターフェイスに適応させることができることを指定します。
 
 >[!NOTE]
 >
->Jackson 注釈は Sling モデルクラスレベルではなく、モデルインターフェイスレベルで指定されます。このアプローチは、JSON 書き出しが確実にコンポーネント API の一部と見なされるようにするためです。
+>Jackson 注釈は Sling モデルクラスレベルではなく、モデルインターフェイスレベルで指定されます。 このアプローチは、JSON書き出しがコンポーネント APIの一部と見なされるようにするためのものです。
 
 >[!NOTE]
 >
@@ -65,15 +74,15 @@ Sling Model の実装クラスに次のような注釈を付ける必要があ�
 https://<server>:<port>/content/page.model.selector1.selector2.json
 ```
 
-ただし、この場合 `model` セレクターは最初のセレクターで、拡張子は `.json` にする必要があります。
+ただし、そのような場合、`model` セレクターは最初のセレクターで、拡張子は`.json`である必要があります。
 
 ## Sling Model インターフェイスに注釈を付ける {#annotate-the-sling-model-interface}
 
-JSON エクスポーターフレームワークでこれを処理するには、モデルインターフェイスに `ComponentExporter` インターフェイス（またはコンテナコンポーネントの `ContainerExporter`）を実装する必要があります。
+JSON エクスポーターフレームワークで処理するには、モデルインターフェイスで`ComponentExporter` インターフェイス（コンテナコンポーネントの場合は`ContainerExporter`）を実装する必要があります。
 
 対応する Sling モデルインターフェイス（`MyComponent`）には、[Jackson 注釈](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)を使用して注釈が付けられ、どのように書き出し（シリアル化）が行われるかが定義されます。
 
-シリアル化するメソッドを定義するには、Model インターフェイスに適切な注釈を付ける必要があります。 デフォルトでは、ゲッターの通常の命名規則に従うすべてのメソッドはシリアル化され、JSON プロパティ名がゲッター名から自然に派生します。 この方法は、`@JsonIgnore` または `@JsonProperty` を使用して、JSON プロパティの名前を変更することで、防止または上書きできます。
+どのメソッドをシリアル化するかを定義するには、モデル インターフェイスに適切に注釈を付ける必要があります。 デフォルトでは、ゲッターの通常の命名規則を尊重するすべてのメソッドはシリアル化され、JSON プロパティ名はゲッター名から自然に派生します。 このアプローチは、`@JsonIgnore`または`@JsonProperty`を使用してJSON プロパティの名前を変更することで、防止または上書きできます。
 
 ## 例 {#example}
 
@@ -85,7 +94,7 @@ GitHub のコード
 
 このページのコードは GitHub にあります
 
-* [GitHub の aem-core-wcm-components プロジェクトを開きます](https://github.com/adobe/aem-core-wcm-components)
+* [GitHubでaem-core-wcm-components プロジェクトを開きます](https://github.com/adobe/aem-core-wcm-components)
 * プロジェクトを [ZIP ファイル](https://codeload.github.com/adobe/aem-core-wcm-components/zip/main)としてダウンロードします
 
 

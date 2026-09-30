@@ -9,13 +9,29 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 69734a2b-7f9d-4661-a1e9-3bf6e362c272
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2298'
+source-wordcount: '2299'
 ht-degree: 97%
-
 ---
-
 # アダプティブフォームのフィールドの事前入力{#prefill-adaptive-form-fields}
 
 <span class="preview">[アダプティブフォームの新規作成](/help/forms/using/create-an-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。 これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。 この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
@@ -242,7 +258,7 @@ JSON スキーマモデルを使用するフィールドの場合、以下の JS
 >事前サービスの設定は、アダプティブフォーム、HTML5 フォーム、HTML5 フォームセットに適用できます。
 
 1. 次の URL を使用して、**[!UICONTROL Adobe Experience Manager Web コンソール設定]**&#x200B;を開きます。\
-   https://&lt;server>:&lt;port>/system/console/configMgr
+   https://<server>:<port>/system/console/configMgr
 1. 「**[!UICONTROL デフォルトの事前入力サービス設定]**」を選択して開きます。
 
    ![事前入力設定](assets/prefill_config_new.png)
@@ -387,14 +403,14 @@ prefill-page component.zip
 AEM Forms サーバーを設定して、サーバーではなくクライアントでデータ結合アクションを実行できます。 これにより、アダプティブフォームの事前入力とレンダリングに必要な時間が大幅に削減されます。 デフォルトでは、この機能はオフになっています。 設定マネージャーまたはコマンドラインから有効にできます。
 
 * 設定マネージャーを有効または無効にするには：
-   1. AEM 設定マネージャーを開きます。
-   1. 「アダプティブフォームおよびインタラクティブなコミュニケーション Web チャネルの設定」を探して開きます
-   1. Configuration.af.clientside.datamerge.enabled.name オプションを有効にします。
+  1. AEM 設定マネージャーを開きます。
+  1. 「アダプティブフォームおよびインタラクティブなコミュニケーション Web チャネルの設定」を探して開きます
+  1. Configuration.af.clientside.datamerge.enabled.name オプションを有効にします。
 * コマンドラインで有効／無効を切り替えるには：
-   * 有効にするには、次の cURL コマンドを実行します。
-     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+  * 有効にするには、次の cURL コマンドを実行します。
+    `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
-   * 無効にするには、次の cURL コマンドを実行します。
-     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+  * 無効にするには、次の cURL コマンドを実行します。
+    `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
   クライアントでのデータの事前入力オプションを最大限に活用するには、事前入力サービスを更新して、[FileAttachmentMap](https://helpx.adobe.com/jp/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) と [CustomContext](https://helpx.adobe.com/jp/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) を返します。

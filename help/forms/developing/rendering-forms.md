@@ -10,14 +10,27 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 3f1f9ecb-be62-4428-8db8-23c57081b0f7
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 100%
-
 ---
-
 # Forms のレンダリング {#rendering-forms}
 
 **このドキュメントのサンプルと例は、JEE 環境の AEM Forms のみを対象としています。**
@@ -28,7 +41,7 @@ Forms サービスを使用すると、通常は Designer で作成されるフ�
 
 エンドユーザーがフォームを要求すると、クライアントアプリケーションが Forms サービスに要求を送信し、このサービスが適切な形式でフォームを返します。 Forms サービスは、要求を受け取るとすぐにデータをフォームデザインと結合し、目的の形式でフォームを配信します。 フォームサービスの出力は、インタラクティブなフォーム（通常は PDF ドキュメント）です。 インタラクティブフォームを使用すると、ユーザーはフォーム上のフィールドに入力できます。
 
-クライアントアプリケーションの種類に応じて、フォームをクライアント ｗeb ブラウザーに書き込んだり、フォームを PDF ファイルとして保存したりできます。 Web ベースのアプリケーションは、web ブラウザーにフォームを書き込むことができます。 デスクトップアプリケーションは、フォームを PDF ファイルとして保存できます。 Web ブラウザーや PDF ファイルに書き出す方法を示すために、「*Forms のレンダリング*」セクションにあるクイックスタートは、次のように構成されています。
+クライアントアプリケーションの種類に応じて、フォームをクライアント web ブラウザーに書き込んだり、フォームを PDF ファイルとして保存したりできます。 Web ベースのアプリケーションは、web ブラウザーにフォームを書き込むことができます。 デスクトップアプリケーションは、フォームを PDF ファイルとして保存できます。 Web ブラウザーや PDF ファイルに書き出す方法を示すために、「*Forms のレンダリング*」セクションにあるクイックスタートは、次のように構成されています。
 
 * Java API で厳密に型指定された（SOAP モード）の例は Java サーブレットです。
 * Web サービス (Java Base64) の例は Java サーブレットです。
@@ -43,7 +56,7 @@ Forms サービスを使用すると、通常は Designer で作成されるフ�
 * URL 値を使用してフォームデザインを参照できます。 このアプローチでは、`URLSpec` オブジェクトを使用します。 コンテンツルートは、`URLSpec` オブジェクトの `setContentRootURI` メソッドを使用して Forms サービスに渡されます。 フォームデザイン名（`formQuery`）は別のパラメーターとして渡されます。 2 つの値が連結され、フォームデザインへの絶対参照が取得されます。 （「*Forms のレンダリング*」セクションのクイックスタートの大半は、この方法を採用してします）。
 * フォームデザインを含む `com.adobe.idp.Document` を Forms サービスに渡すことができます。 `renderPDFForm2` および `renderHTMLForm2` という名前の 2 つの新しいメソッドは、フォームデザインを含む `com.adobe.idp.Document` オブジェクトを受け入れます。 （[Forms サービスにドキュメントを渡す](/help/forms/developing/passing-documents-forms-service.md)を参照）。
 
-Forms サービスを使用して、次のタスクを実行できます。
+AEM Forms サービスを使用して、次のタスクを実行できます。
 
 * インタラクティブ PDF Forms のレンダリング （[インタラクティブ PDF Forms のレンダリング](/help/forms/developing/rendering-interactive-pdf-forms.md)を参照）。
 * クライアントでの Forms のレンダリング （[クライアントでの Forms のレンダリング](/help/forms/developing/rendering-forms-client.md)を参照）。

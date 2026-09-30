@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: a9eae40f-531f-4354-ade0-853e84dd88d9
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1043'
 ht-degree: 98%
-
 ---
-
 # Connector for EMC Documentum の設定 {#configuring-connector-for-emc-documentum}
 
 >[!NOTE]
@@ -29,7 +44,7 @@ Connector for EMC Documentum の設定には、サーバー接続とリポジト
 
 >[!NOTE]
 >
->以前のリリースでは、ECM リポジトリにアセットを格納できました。 最新のリリースでは、アセットが AEM Forms ネイティブリポジトリに格納され、リポジトリプロバイダサービスは推奨されなくなりました。 ECM リポジトリから AEM Forms リポジトリへのアセットの移行は、AEM Forms への更新を実行する際に行われます。 詳しくは、使用しているアプリケーションサーバー版の AEM Forms アップグレードガイドを参照してください。
+>以前のリリースでは、ECM リポジトリにアセットを格納できました。 最新のリリースでは、アセットが AEM Forms ネイティブリポジトリに格納され、リポジトリプロバイダサービスは廃止されました。 ECM リポジトリから AEM Forms リポジトリへのアセットの移行は、AEM Forms への更新を実行する際に行われます。 詳しくは、使用しているアプリケーションサーバー版の AEM Forms アップグレードガイドを参照してください。
 
 ## サーバー接続の設定 {#configuring-the-server-connection}
 
@@ -53,10 +68,10 @@ Connector for EMC Documentum の設定には、サーバー接続とリポジト
 
 誤ったユーザー名やパスワードを入力すると、そのサービスが実行中かどうかに応じて、次の結果が得られます。
 
-* サービス設定情報を保存したときに EMC Documentum Repository Provider サービスと EMC Documentum Content Repository Connector サービスの両方が停止している場合、エラーは表示されません。 ただし、次回サービスを起動すると、例外が発生し、サービスは開始しません。
+* サービス設定情報を保存したときに EMC Documentum リポジトリプロバイダサービスと EMC Documentum コンテンツリポジトリコネクタサービスの両方が停止している場合、エラーは表示されません。 ただし、次回サービスを起動すると、例外が発生し、サービスは開始されません。
 * サービス設定情報を保存したときに EMC Documentum Repository Provider サービスまたは EMC Documentum Content Repository Connector サービスのいずれかが起動している場合、サービスは秘密鍵証明書の情報をすぐに確認しようとします。 この場合はエラーが発生し、設定情報は保存されません。
 
-1. 管理コンソールで、サービス／Connector for EMC Documentum／環境設定をクリックします。
+1. 管理コンソールで、サービス／Connector for EMC Documentum／設定をクリックします。
 1. 「Documentum プリンシパル秘密鍵証明書に関する情報」領域で、上級管理者特権を持つユーザーのユーザー名とパスワードを入力します。
 1. ログイン時に明示的なリポジトリ名が示されない場合は、秘密鍵証明書が関連付けられているリポジトリ名を入力します。
 1. 「保存」をクリックします。
@@ -75,17 +90,17 @@ Documentum と共に使用するリポジトリサービスプロバイダーを
 >
 >リストされている以外のリポジトリサービスプロバイダーを選択するには、アプリケーションとサービス / サービス管理でRepositoryServiceを設定します。 <!-- Fix broken link (See Managing Services) -->.
 
-1. 管理コンソールで、サービス／Connector for EMC Documentum／環境設定をクリックします。
+1. 管理コンソールで、サービス／Connector for EMC Documentum／設定をクリックします。
 1. 「リポジトリサービスプロバイダー」領域で、代替リポジトリサービスプロバイダーを選択します。
 1. 「保存」をクリックします。
 
 ## リポジトリ証明書の設定 {#configuring-repository-credentials}
 
-Documentum 秘密鍵証明書情報は、AEM Forms のシステムコンテキストで使用されます。 リポジトリ証明書は、Documentum の特定のリポジトリに固有のものです。 任意の数のリポジトリに対して秘密鍵証明書を提供することができますが、各リポジトリに指定できる秘密鍵証明書のセットは 1 つだけです。
+Documentum 資格情報は、AEM Forms のシステムコンテキストで使用されます。 リポジトリ資格情報は、Documentum の特定のリポジトリに固有のものです。 任意の数のリポジトリに対して秘密鍵証明書を提供することができますが、各リポジトリに指定できる秘密鍵証明書のセットは 1 つだけです。
 
 ### リポジトリ証明書を追加 {#add-a-repository-credential}
 
-1. 管理コンソールで、サービス／Connector for EMC Documentum／リポジトリ証明書設定をクリックします。
+1. 管理コンソールで、サービス／Connector for EMC Documentum／リポジトリ資格情報設定をクリックします。
 1. 「追加」をクリックします。 Documentum システム資格情報ページが表示されます。
 1. リポジトリの名前を入力します。
 1. ユーザー名およびパスワードを入力します。

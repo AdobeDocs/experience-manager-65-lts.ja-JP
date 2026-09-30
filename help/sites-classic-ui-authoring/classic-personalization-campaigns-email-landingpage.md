@@ -1,25 +1,36 @@
 ---
-title: '効果的なニュースレターのランディングページの作成 '
-description: 効果的なニュースレターのランディングページは、ニュースレター（または他のメールマーケティングキャンペーン）に新規登録するユーザーを増やすことができます。ニュースレターの新規登録で収集する情報は、見込み客の獲得に利用できます。
+title: 効果的なニュースレターのランディングページの作成
+description: 効果的なニュースレターのランディングページは、ニュースレター（または他のメールマーケティングキャンペーン）に新規登録するユーザーを増やすことができます。 ニュースレターの新規登録で収集する情報は、見込み客の獲得に利用できます。
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 92f4946d-1f49-4286-a51e-84b2a46a6b8a
-source-git-commit: f69262246bafca44f88ff15a4c86125f5335507e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '612'
 ht-degree: 97%
-
 ---
+# 効果的なニュースレターのランディングページの作成{#creating-an-effective-newsletter-landing-page}
 
-# 効果的なニュースレターのランディングページの作成 {#creating-an-effective-newsletter-landing-page}
-
-効果的なニュースレターのランディングページは、ニュースレター（または他のメールマーケティングキャンペーン）に新規登録するユーザーを増やすことができます。ニュースレターの新規登録で収集する情報は、見込み客の獲得に利用できます。
+効果的なニュースレターのランディングページは、ニュースレター（または他のメールマーケティングキャンペーン）に新規登録するユーザーを増やすことができます。 ニュースレターの新規登録で収集する情報は、見込み客の獲得に利用できます。
 
 効果的なニュースレターのランディングページを作成するには、以下を実行する必要があります。
 
 1. ユーザーがニュースレターを購読できるように、ニュースレターのリストを作成します。
-1. 登録フォームを作成します。その際に、ニュースレターを登録するユーザーを見込み客のリストに自動追加するワークフロー手順を追加します。
+1. 登録フォームを作成します。 その際に、ニュースレターを登録するユーザーを見込み客のリストに自動追加するワークフロー手順を追加します。
 1. ユーザーの登録への謝意を伝える確認ページを作成します。必要に応じて宣伝を記載します。
 1. ティーザーを追加します。
 
@@ -30,7 +41,7 @@ ht-degree: 97%
 
 ## ニュースレター用リストの作成 {#creating-a-list-for-the-newsletter}
 
-リストを作成します（例えば、MCM で、ユーザーが購読する必要のあるニュースレター用の **Geometrixx Newsletter** など）。リストの作成については、[リストの作成](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists)を参照してください。
+リストを作成します（例えば、MCM で、ユーザーが購読する必要のあるニュースレター用の **Geometrixx Newsletter** など）。 リストの作成については、[リストの作成](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists)を参照してください。
 
 リストの例は次のとおりです。
 
@@ -38,13 +49,13 @@ ht-degree: 97%
 
 ## 登録フォームを作成 {#create-a-sign-up-form}
 
-ユーザーがタグを購読できるニュースレター登録フォームを作成します。サンプルの Geometrixx web サイトでは、Geometrixx ツールバーにニュースレターページが用意されており、フォームを作成できます。
+ユーザーがタグを購読できるニュースレター登録フォームを作成します。 サンプルの Geometrixx web サイトでは、Geometrixx ツールバーにニュースレターページが用意されており、フォームを作成できます。
 
-独自のニュースレターフォームを作成するには、[Forms ドキュメント](/help/sites-authoring/default-components.md#form)のフォーム作成に関する情報を参照してください。ニュースレターでは、タグライブラリのタグを使用します。タグを追加するには、[タグ管理](/help/sites-authoring/tags.md#tagadministration)を参照してください。
+独自のニュースレターフォームを作成するには、[Forms ドキュメント](/help/sites-authoring/default-components.md#form)のフォーム作成に関する情報を参照してください。 ニュースレターでは、タグライブラリのタグを使用します。 タグを追加するには、[タグ管理](/help/sites-authoring/tags.md#tagadministration)を参照してください。
 
 次の例の非表示フィールドには、必要最小限の情報（メール）が示されます。また、後でフィールドを追加することもできますが、その場合は変換速度に影響があります。
 
-https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.htmlで作成するフォームの例は次のとおりです。
+次の例は、https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.htmlで作成されたフォームです。
 
 1. フォームを作成します。
 
@@ -60,23 +71,23 @@ https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.htmlで作�
 
 ### ありがとうページの作成 {#creating-a-thank-you-page}
 
-ユーザーが「**Subscribe Now**」をクリックしたら、ありがとうページが自動的に開くようにします。Geometrixx Newsletter ページのありがとうページを作成します。ニュースレターフォームを作成したら、フォームコンポーネントを編集し、ありがとうページへのパスを追加します。
+ユーザーが「**Subscribe Now**」をクリックしたら、ありがとうページが自動的に開くようにします。 Geometrixx Newsletter ページのありがとうページを作成します。 ニュースレターフォームを作成したら、フォームコンポーネントを編集し、ありがとうページへのパスを追加します。
 
-リクエストを送信すると、**ありがとう**&#x200B;ページに移動し、ユーザーにメールが送信されます。このありがとうページは、/content/geometrixx/en/toolbar/newsletter/thank_you に作成されました。
+リクエストを送信すると、**ありがとう**&#x200B;ページに移動し、ユーザーにメールが送信されます。 このありがとうページは、/content/geometrixx/en/toolbar/newsletter/thank_you に作成されました。
 
 ![mcm_newsletter_thankyoupage](assets/mcm_newsletter_thankyoupage.png)
 
 ### ティーザーの追加 {#adding-teasers}
 
-特定のオーディエンスを対象とする[ティーザー](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers)を追加します。例えば、ありがとうページとニュースレターの登録ページにティーザーを追加できます。
+特定のオーディエンスを対象とする[ティーザー](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers)を追加します。 例えば、ありがとうページとニュースレターの登録ページにティーザーを追加できます。
 
 ティーザーを追加して効果的なニュースレターのランディングページを作成するには：
 
-1. 登録プレゼントのティーザー段落を作成します。方法として「**第 1**」を選択し、贈られるプレゼントを知らせる文章を入力します。
+1. 登録プレゼントのティーザー段落を作成します。 方法として「**第 1**」を選択し、贈られるプレゼントを知らせる文章を入力します。
 
    ![dc_teaser_thankyou](assets/dc_teaser_thankyou.png)
 
-1. ありがとうページのティーザー段落を作成します。方法として「**第 1**」を選択し、プレゼントが送付されることを知らせるテキストを含めます。
+1. ありがとうページのティーザー段落を作成します。 方法として「**第 1**」を選択し、プレゼントが送付されることを知らせるテキストを含めます。
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
@@ -84,6 +95,6 @@ https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.htmlで作�
 
 ### 購読者へのコンテンツのプッシュ {#pushing-content-to-subscribers}
 
-MCM のニュースレター機能を使用して、すべての変更をページにプッシュします。次に、更新したコンテンツを購読者にプッシュします。
+MCM のニュースレター機能を使用して、すべての変更をページにプッシュします。 次に、更新したコンテンツを購読者にプッシュします。
 
 [ニュースレターの送信](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters)を参照してください。

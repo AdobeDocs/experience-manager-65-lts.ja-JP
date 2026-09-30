@@ -9,48 +9,61 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 3081dedf-ba92-4205-af67-930524719e60
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '689'
 ht-degree: 92%
-
 ---
-
 # エージェント署名画像の管理{#manage-agent-signature-images}
 
 ## 概要 {#overview}
 
-Correspondence Management では、レター内にエージェント署名を描画するために画像を使用することができます。エージェント署名画像を設定すると、レターの作成時に、送信側エージェントの署名としてエージェント署名画像がレターにレンダリングされます。
+Correspondence Management では、レター内にエージェント署名を描画するために画像を使用することができます。 エージェント署名画像を設定すると、レターの作成時に、送信側エージェントの署名としてエージェント署名画像がレターにレンダリングされます。
 
-agentSignatureImage DDE は算出された DDE であり、エージェントの署名画像を表します。算出された DDE の式では、Expression Manager 構築ブロックにより公開された新しいカスタム関数を使用します。このカスタム関数は、agentID と agentFolder を入力パラメーターとして取得し、これらのパラメーターに基づき画像コンテンツを取得します。新しい SystemContext システムデータディクショナリにより、Correspondence Management で作成されたレターは、現在のシステムコンテキストの情報にアクセスできるようになります。システムコンテキストには、現在ログイン中のユーザーとアクティブな設定パラメーターに関する情報が含まれます。
+agentSignatureImage DDE は算出された DDE であり、エージェントの署名画像を表します。 算出された DDE の式では、Expression Manager 構築ブロックにより公開された新しいカスタム関数を使用します。 このカスタム関数は、agentID と agentFolder を入力パラメーターとして取得し、これらのパラメーターに基づき画像コンテンツを取得します。 新しい SystemContext システムデータディクショナリにより、Correspondence Management で作成されたレターは、現在のシステムコンテキストの情報にアクセスできるようになります。 システムコンテキストには、現在ログイン中のユーザーとアクティブな設定パラメーターに関する情報が含まれます。
 
-画像は、cmuserroot フォルダーの下に追加することができます。[Correspondence Management 設定プロパティ](/help/forms/using/cm-configuration-properties.md)では、CM ユーザールートプロパティを使用することで、エージェント署名画像の参照先からフォルダーを変更することができます。
+画像は、cmuserroot フォルダーの下に追加することができます。 [Correspondence Management 設定プロパティ](/help/forms/using/cm-configuration-properties.md)では、CM ユーザールートプロパティを使用することで、エージェント署名画像の参照先からフォルダーを変更することができます。
 
-agentFolder DDE の値は、Correspondence Management 設定プロパティに向けて CMUserRoot 設定パラメーターから取得されます。デフォルトでは、この設定パラメーターは CRX リポジトリの /content/cmUserRoot を参照します。CMUserRoot 構成は、Configuration Properties から変更できます。
+agentFolder DDE の値は、Correspondence Management 設定プロパティに向けて CMUserRoot 設定パラメーターから取得されます。 デフォルトでは、この設定パラメーターは CRX リポジトリの /content/cmUserRoot を参照します。 CMUserRoot 構成は、Configuration Properties から変更できます。
 また、デフォルトのカスタム関数を上書きすることで、ユーザー署名画像を取得するための独自のロジックを定義することもできます。
 
 ## エージェント署名画像を追加する {#adding-agent-signature-image}
 
-1. エージェント署名画像の名前と、AEM のユーザー名が一致することを確認してください。（画像ファイル名には、拡張子は必要ありません。）
+1. エージェント署名画像の名前と、AEM のユーザー名が一致することを確認してください。 （画像ファイル名には、拡張子は必要ありません。）
 1. CRX で、コンテンツフォルダー内に `cmUserRoot` フォルダーを作成します。
 
-   1. `https://'[server]:[port]'/crx/de` にアクセスします。必要に応じて、管理者としてログインします。
+   1. `https://'[server]:[port]'/crx/de` にアクセスします。 必要に応じて、管理者としてログインします。
 
    1. **content**&#x200B;フォルダーを右クリックし、**作成**／**フォルダーの作成**&#x200B;を選択します。
 
       ![フォルダーを作成](assets/1_createnode_cmuserroot.png)
 
-   1. ファイルを作成ダイアログで、フォルダー名を「`cmUserRoot`」と入力します。「**すべて保存**」をクリックします。
+   1. ファイルを作成ダイアログで、フォルダー名を「`cmUserRoot`」と入力します。 「**すべて保存**」をクリックします。
 
       >[!NOTE]
       >
-      >デフォルトでは、AEM がエージェント署名画像を参照する際に cmUserRoot を開きます。ただし、[Correspondence Management 設定プロパティ](/help/forms/using/cm-configuration-properties.md)から CM ユーザールートプロパティを編集することで、参照先を変更することができます。
+      >デフォルトでは、AEM がエージェント署名画像を参照する際に cmUserRoot を開きます。 ただし、[Correspondence Management 設定プロパティ](/help/forms/using/cm-configuration-properties.md)から CM ユーザールートプロパティを編集することで、参照先を変更することができます。
 
 1. Content Explorer で cmUserRoot フォルダーに移動し、その中にエージェント署名画像を追加します。
 
-   1. `https://'[server]:[port]'/crx/explorer/index.jsp` にアクセスします。必要に応じて、管理者としてログインします。
-   1. 「**Content Explorer**」をクリックします。Content Explorer が新しいウィンドウで開きます。
-   1. Content Explorer でユーザーのルートフォルダーに移動し、選択します。**cmUserRoot** フォルダーを右クリックし、「**新規ノード**」を選択します。
+   1. `https://'[server]:[port]'/crx/explorer/index.jsp` にアクセスします。 必要に応じて、管理者としてログインします。
+   1. 「**Content Explorer**」をクリックします。 Content Explorer が新しいウィンドウで開きます。
+   1. Content Explorer でユーザーのルートフォルダーに移動し、選択します。 **cmUserRoot** フォルダーを右クリックし、「**新規ノード**」を選択します。
 
       ![CmUserRoot 内の新しいノード](assets/2_cmuserroot_newnode.png)
 
@@ -58,19 +71,19 @@ agentFolder DDE の値は、Correspondence Management 設定プロパティに�
 
       **名前**：JohnDoe（またはエージェント署名ファイルの名前）
 
-      **タイプ：** nt:file
+      **種類：** nt:file
 
       `cmUserRoot` フォルダーの下に、「`JohnDoe`」の名前（または前の手順で指定した名前）で新しいフォルダーが作成されます。
 
-   1. 新しく作成したフォルダーをクリックします（ここでは`JohnDoe`）。Content Explorer では、フォルダーの内容が暗く表示されます。
+   1. 新しく作成したフォルダーをクリックします（ここでは`JohnDoe`）。 Content Explorer では、フォルダーの内容が暗く表示されます。
 
-   1. **jcr:content** プロパティをダブルクリックし、タイプを **nt:resource** に設定します。その後、緑色のチェックマークをクリックしてエントリを保存します。
+   1. **jcr:content** プロパティをダブルクリックし、そのタイプを&#x200B;**nt:resource**&#x200B;に設定し、緑色のチェックマークをクリックしてエントリを保存します。
 
-      プロパティが存在しない場合は、まず、名前が「jcr:content」のプロパティを作成します。
+      プロパティが存在しない場合は、まずjcr:contentという名前のプロパティを作成します。
 
       ![jcr:content プロパティ &#x200B;](assets/3_jcrcontentntresource.png)
 
-      jcr:content のサブプロパティの中には jcr:data が含まれ、薄く表示されています。 jcr:data をダブルクリックします。 プロパティが編集可能になり、「ファイルの選択」ボタンがエントリに表示されます。「**ファイルを選択**」をクリックし、ロゴとして使用する画像ファイルを選択します。画像ファイルには、拡張子を付ける必要はありません。
+      jcr:contentのサブプロパティの中には、jcr:dataがあり、グレー表示されています。 jcr:dataをダブルクリックします。 プロパティが編集可能になり、「ファイルの選択」ボタンがエントリに表示されます。 「**ファイルを選択**」をクリックし、ロゴとして使用する画像ファイルを選択します。 画像ファイルには、拡張子を付ける必要はありません。
 
       ![JCR データ](assets/5_jcrdata.png)
 

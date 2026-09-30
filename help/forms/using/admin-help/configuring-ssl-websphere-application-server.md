@@ -5,14 +5,26 @@ solution: Experience Manager, Experience Manager Forms
 feature: Document Security
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 0caac293-98b4-4e73-9440-f1db68c94054
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 99%
-
 ---
-
 # WebSphere Application Server に対する SSL の設定 {#configuring-ssl-for-websphere-application-server}
 
 このセクションには、IBM WebSphere アプリケーションサーバーで SSL を構成するための次の手順が含まれています。
@@ -37,7 +49,7 @@ SSL を有効にするには、WebSphere は、システムを管理する権限
 
    >[!NOTE]
    >
-   >（Linux および Solaris）WebSphere Application Server のローカル OS セキュリティレジストリが機能するには、シャドーパスワードファイルが存在している必要があります。 シャドーパスワードファイルは通常、**/etc/shadow** という名前で、/etc/passwd ファイルを基にして作成されます。 シャドーパスワードファイルが存在しない場合、グローバルセキュリティを有効にしてユーザーレジストリをローカル OS として設定するとでエラーが発生します。
+   >（Linux および Solaris）WebSphere Application Server のローカル OS セキュリティレジストリが機能するには、シャドーパスワードファイルが存在している必要があります。 シャドーパスワードファイルは通常、**/etc/shadow** という名前で、/etc/passwd ファイルを基にして作成されます。 シャドーパスワードファイルが存在しない場合、グローバルセキュリティを有効にしてユーザーレジストリをローカル OS として設定するとエラーが発生します。
 
 1. /etc ディレクトリにあるグループファイルをテキストエディターで開きます。
 1. 手順 2 で作成したユーザーを `root` グループに追加します。
@@ -46,7 +58,7 @@ SSL を有効にするには、WebSphere は、システムを管理する権限
 
 ### WebSphere 用 Windows ユーザーを作成する {#create-a-windows-user-for-websphere}
 
-1. 管理者アカウントを使用して管理コンソールにログインします。
+1. 管理者ユーザーアカウントを使用して Windows にログインします。
 1. **スタート／コントロールパネル／管理ツール／コンピュータ管理／ローカルユーザーとグループ**&#x200B;を選択します。
 1. 「ユーザー」を右クリックして「**新規ユーザー**」を選択します。
 1. 適切なボックスにユーザー名とパスワードを入力し、残りのボックスに必要なその他の情報を入力します。
@@ -70,7 +82,7 @@ SSL を有効にするには、WebSphere は、システムを管理する権限
 
    1. 検索ボックスに「**&ast;**」と入力し、「検索」をクリックします。
    1. 役割の下にある「**管理者**」をクリックします。
-   1. 新しく作成したユーザーを「Mapped to role」に追加し、管理者にマップします。
+   1. 新しく作成したユーザーを「マッピング先」の役割に追加し、管理者にマップします。
 
 1. 「**OK**」をクリックして、変更を保存します。
 1. WebSphere プロファイルを再起動します。
@@ -87,7 +99,7 @@ SSL を有効にするには、WebSphere は、システムを管理する権限
 
    WebSphere は、デフォルトのキーストアとトラストストアの使用を開始します。
 
-## SSL（カスタムキーとトラストストア）を有効にする {#enable-ssl-custom-key-and-truststore}
+## SSL の有効化（カスタムキーとトラストストア） {#enable-ssl-custom-key-and-truststore}
 
 信頼ストアとキーストアは ikeyman ユーティリティまたは管理コンソールを使用して作成できます。 ikeyman を正しく動作させるには、WebSphere のインストール パスに括弧が含まれていないことを確認してください。
 
@@ -103,7 +115,7 @@ SSL を有効にするには、WebSphere は、システムを管理する権限
 1. ikeyman を使用して既に作成されたキーストアを追加した場合は、証明書が表示されます。 それ以外の場合は、次の手順を実行して、新しい自己署名証明書を追加する必要があります。
 
    1. **作成／自己署名証明書**&#x200B;を選択します。
-   1. 証明書フォームに適切な値を指定します。 エイリアスと共通名をマシンの完全修飾ドメイン名として保持していることを確認してください。
+   1. 証明書フォームに適切な値を指定します。 エイリアスと共通名は、マシンの完全修飾ドメイン名のままにしてください。
    1. 「**適用**」をクリックします。
 
 1. 手順 2 ～ 10 を繰り返して、トラストストアを作成します。
@@ -129,7 +141,7 @@ SSL を有効にするには、WebSphere は、システムを管理する権限
 1. トランスポートドロップダウンリストで「**SSL サポート**」が選択されていることを確認します。
 1. WebSphere プロファイルを再起動します。
 
-## https で始まる URL を変換するように WebSphere を設定 {#configuring-websphere-to-convert-urls-that-begins-with-https}
+## https で始まる URL を変換するための WebSphere の設定 {#configuring-websphere-to-convert-urls-that-begins-with-https}
 
 https で始まる URL を変換するには、その URL の署名者証明書を WebSphere サーバーに追加します。
 
@@ -168,7 +180,7 @@ IBM WebSphere では、グローバルセキュリティが有効な場合、ORB
    * `CSIV2_SSL_SERVERAUTH_LISTENER_ADDRESS`
    * `CSIV2_SSL_MUTUALAUTH_LISTENER_ADDRESS`
 
-## sling.properties ファイルを設定します。 {#configure-the-sling-properties-file}
+## sling.properties ファイルの設定 {#configure-the-sling-properties-file}
 
 1. 編集用に `[aem-forms_root]`\crx-repository\launchpad\sling.properties ファイルを開きます。
 1. `sling.bootdelegation.ibm` プロパティを見つけてその値フィールドに `com.ibm.websphere.ssl.*` を追加します。 更新されたフィールドは次のようになります。

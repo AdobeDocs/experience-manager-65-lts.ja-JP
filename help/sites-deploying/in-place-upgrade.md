@@ -6,13 +6,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 46%
-
 ---
-
 # インプレースアップグレードの実行 {#performing-an-in-place-upgrade}
 
 >[!NOTE]
@@ -209,6 +218,6 @@ Where `/path/to/datastore` represents the path to your File Datastore.
 
 インプレースアップグレードプロセスが完了したら、更新したコードベースをデプロイする必要があります。 ターゲットバージョンの AEM で動作するようにコードベースを更新するための手順については、[コードおよびカスタマイズのアップグレード](/help/sites-deploying/upgrading-code-and-customizations.md)のページを参照してください。
 
-## アップグレード後のチェックおよびトラブルシューティングを実行 {#perform-post-upgrade-check-troubleshooting}
+## アップグレード後のチェックおよびトラブルシューティング {#perform-post-upgrade-check-troubleshooting}
 
 [アップグレード後のチェックおよびトラブルシューティング](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)を参照してください。

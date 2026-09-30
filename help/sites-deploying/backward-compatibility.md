@@ -6,13 +6,22 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
 exl-id: 96e44da3-da89-4671-a4fb-19ce1b9a38c4
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 100%
-
 ---
-
 # AEM 6.5 における後方互換性{#backward-compatibility-in-aem}
 
 ## 概要 {#overview}
@@ -27,7 +36,7 @@ Adobe Experience Manager（AEM）6.5 では、すべての機能が後方互換�
 
 >[!NOTE]
 >
->互換性パッケージは、AEM 6.5 との互換性を保つために必要な開発を遅らせるための一時的なソリューションに過ぎません。 アップグレード直後の開発を通して互換性の問題に対処できない場合の最後の選択肢としてのみお勧めします。 さらに、6.5 ベースのカスタム開発を続行し、6.5 の全機能を利用できるようになったら、ネイティブモードに切り替えて互換性パッケージをアンインストールすることをお勧めします。
+>互換性パッケージは、AEM 6.5 との互換性を保つために必要な開発を遅らせるための一時的なソリューションに過ぎません。 アップグレード直後の開発を通して互換性の問題に対処できない場合の最後の選択肢としてのみお勧めします。 さらに、6.5 ベースのカスタム開発を進めて 6.5 の全機能を活用することを決定したら、ネイティブモードに切り替えて互換性パッケージをアンインストールすることをお勧めします。
 
 ![sase](assets/sase.png)
 
@@ -37,7 +46,7 @@ Adobe Experience Manager（AEM）6.5 では、すべての機能が後方互換�
 
 **ネイティブモード：**
 
-ネイティブモードは、AEM 6.5 のすべての新機能を使用したいお客様、およびすべての新機能のカスタマイズ作業を行うための開発の準備ができているお客様用です。
+ネイティブモードは、AEM 6.5 のすべての新機能を使用したいお客様、および自社のカスタマイズをすべての新機能で動作させるための開発を行う準備ができているお客様向けです。
 
 つまり、アップグレード後すぐにアプリケーションの調整を行う必要があります。
 
@@ -47,7 +56,7 @@ Adobe Experience Manager（AEM）6.5 では、すべての機能が後方互換�
 
 **レガシーモード：ルーティング無効で互換性パッケージをインストール**
 
-レガシーモードは、互換性パッケージで移行された AEM のレガシーコードまたは廃止されたコードに基づくカスタムインターフェイスを持つお客様用です。
+レガシーモードは、互換性パッケージに移された AEM のレガシーコードまたは廃止されたコードに基づくカスタムインターフェイスを持つお客様用です。
 
 ![sapte](assets/sapte.png)
 

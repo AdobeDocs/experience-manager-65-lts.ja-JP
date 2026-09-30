@@ -9,13 +9,26 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: f4f563ed-ccdd-49f6-885d-48f97a958a8e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '652'
 ht-degree: 100%
-
 ---
-
 # Correspondence Management でカスタム特殊文字を使用する{#custom-special-characters-in-correspondence-management}
 
 ## 概要 {#overview}
@@ -35,7 +48,7 @@ Correspondence Managementhas には 210 種類の特殊文字がビルトイン�
 
 ![specialcharactersinlinemodule](assets/specialcharactersinlinemodule.png)
 
-管理者は、カスタマイズすることで特殊文字を増やしたり、カスタムの特殊文字を追加したりすることができます。この記事では、カスタムの特殊文字を追加する方法について説明します。
+管理者は、カスタマイズすることで特殊文字を増やしたり、カスタムの特殊文字を追加したりすることができます。 この記事では、カスタムの特殊文字を追加する方法について説明します。
 
 ## Correspondence Management でカスタムの特殊文字を追加または編集 {#creatingfolderstructure}
 
@@ -58,7 +71,7 @@ Correspondence Managementhas には 210 種類の特殊文字がビルトイン�
 
       >[!NOTE]
       >
-      >/libs ブランチは変更しないでください。次の操作を行った場合はこのブランチが変更されるため、各自で加えた変更はすべて失われます。
+      >/libs ブランチは変更しないでください。 次の操作を行った場合はこのブランチが変更されるため、各自で加えた変更はすべて失われます。
       >
       >
       >
@@ -68,13 +81,13 @@ Correspondence Managementhas には 210 種類の特殊文字がビルトイン�
       >
       >
 
-   1. 「**OK**」をクリックし、「**すべて保存**」をクリックします。指定されたパスに「specialcharacters」フォルダーが作成されます。
+   1. 「**OK**」をクリックし、「**すべて保存**」をクリックします。 指定されたパスに「specialcharacters」フォルダーが作成されます。
 
-      オーバーレイを作成したら、ノード構造タグを確認します。オーバーレイを使用して /apps 内に作成された各ノードは、そのノードの /libs 内で定義されているのと同じクラスとプロパティを持つ必要があります。/apps の下にあるノード構造にプロパティまたはタグがない場合は、タグを /libs 内の対応するノードと同期させます。
+      オーバーレイを作成したら、ノード構造タグを確認します。 オーバーレイを使用して /apps 内に作成された各ノードは、そのノードの /libs 内で定義されているのと同じクラスとプロパティを持つ必要があります。 /apps の下にあるノード構造にプロパティまたはタグがない場合は、タグを /libs 内の対応するノードと同期させます。
 
 1. **[!UICONTROL textEditorConfig]** ノードには次のプロパティや値があることを確認してください。
 
-   | 名前 | タイプ | 値 |
+   | 名前 | 種類 | 値 |
    |---|---|---|
    | cmConfigurationType | 文字列 | cmTextEditorConfiguration |
    | cssPath | 文字列 | /libs/fd/cm/ma/gui/components/admin/createasset/textcontrol/clientlibs/textcontrol |
@@ -83,7 +96,7 @@ Correspondence Managementhas には 210 種類の特殊文字がビルトイン�
 
    /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;YourChildNode>
 
-1. テキストエディター\通信作成 UI のページを更新します。追加したノードは、UI 内の特殊文字リストで最後のノードです。
+1. テキストエディター\通信作成 UI のページを更新します。 追加したノードは、UI 内の特殊文字リストで最後のノードです。
 1. 「**すべて保存**」をクリックします。
 1. 必要に応じて、次のように特殊文字を変更します。
 

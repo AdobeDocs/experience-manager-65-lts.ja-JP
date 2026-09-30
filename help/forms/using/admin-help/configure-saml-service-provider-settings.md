@@ -9,21 +9,36 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 0f1b39e7-5de5-4b54-b622-61774ce839db
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '626'
 ht-degree: 95%
-
 ---
-
 # SAML サービスプロバイダーの設定{#configure-saml-service-provider-settings}
 
 >[!NOTE]
 > 
 > ユーザーが管理者コンソールにアクセスする管理者権限を持っていることを確認します。
 
-Security Assertion Markup Language（SAML）は、エンタープライズドメインまたはハイブリッドドメインの認証を設定するときに選択できるオプションの 1 つです。 SAML は主に複数ドメインにわたる SSO をサポートするときに使用されます。 SAML を認証プロバイダーとして設定すると、ユーザーは、指定したサードパーティの ID プロバイダー（IDP）経由で、ユーザーは AEM Forms にログインし、認証されます。
+Security Assertion Markup Language（SAML）は、エンタープライズドメインまたはハイブリッドドメインの認可を設定するときに選択できるオプションの 1 つです。 SAML は主に複数ドメインにわたる SSO をサポートするときに使用されます。 SAML を認証プロバイダーとして設定すると、ユーザーは指定したサードパーティの ID プロバイダー（IDP）経由で AEM Forms にログインし、認証されます。
 
 SAML について詳しくは、[Security Assertion Markup Language（SAML）V2.0 Technical Overview](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html) を参照してください。
 
@@ -32,7 +47,7 @@ SAML について詳しくは、[Security Assertion Markup Language（SAML）V2.
 1. 「サービスプロバイダーのベース URL」ボックスに、Forms サーバーのベース URL を入力します（例：`https://AEMformsserver:8080`）。
 1. （オプション）署名済みの認証リクエストを AEM Forms から IDP に送信できるようにするには、次のタスクを実行します。
 
-   * Trust Manager を使用して、「Trust Store の種類」として選択した「ドキュメント署名証明書」付きの PKCS #12 形式の証明書を読み込みます。 （[ローカル資格情報の管理](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials)を参照）。
+   * Trust Manager を使用して、「Trust Store の種類」で「ドキュメント署名資格情報」を選択した PKCS #12 形式の資格情報を読み込みます。 （[ローカル資格情報の管理](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials)を参照）。
    * 「サービスプロバイダーの資格情報キーのエイリアス」リストから、Trust Store の資格情報に割り当てたエイリアスを選択します。
    * 「書き出し」をクリックすると、URL コンテンツをファイルに保存し、そのファイルを IDP に読み込めます。
 

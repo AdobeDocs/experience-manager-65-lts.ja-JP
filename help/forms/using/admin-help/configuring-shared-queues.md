@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 6665b95a-39fd-472a-b3b5-8b97257c69a7
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 83%
-
 ---
-
 # 共有キューの設定{#configuring-shared-queues}
 
 共有キューを使用すると、ユーザーキューを効果的に設定および管理できます。 ユーザーキューは、ユーザーに割り当てられたすべてのタスクです。詳しくは、[TODO リスト](https://help.adobe.com/ja_JP/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html)を参照してください。 組織のニーズに応じて、ユーザーキューを割り当て、割り当て解除、再割り当てできます。 共有キューは 2 つの方法で管理できます。
@@ -37,7 +52,7 @@ ht-degree: 83%
 
 >[!NOTE]
 >
->AEM Forms のリリースでは Flex Workspace は廃止されています。
+>Flex Workspace は、AEM Forms のリリースで廃止されています。
 
 ### 選択したユーザーキューへのアクセスの設定 {#configuring-access-to-a-selected-user-queue}
 
@@ -63,13 +78,13 @@ ht-degree: 83%
 
 ## ユーザーに割り当てられたキューの管理 {#managing-queues-assigned-to-a-user}
 
-「ユーザーによるアクセスを管理」機能を使用すると、選択したユーザーに割り当てられたキューを管理できます。 選択したユーザーに対して、ユーザーキューへのアクセスを個別に許可または取り消すことができます。 たとえば、田中明氏とJohn Jacobs氏のユーザーキューをKara Bowman氏に割り当てます。 「ユーザーによるアクセスを管理」機能を使用して、Kara Bowman を検索し、Akira Tanaka および John Jacobs に割り当てられたタスクへのアクセスを許可できます。 後で、Kara Bowman のこれらのユーザーキューへのアクセスを取り消すことができます。
+「ユーザーによるアクセスを管理」機能を使用すると、選択したユーザーに割り当てられたキューを管理できます。 選択したユーザーに対して、ユーザーキューへのアクセスを個別に許可または取り消すことができます。 たとえば、田中明氏とJohn Jacobs氏のユーザーキューをKara Bowman氏に割り当てます。 「ユーザーによるアクセスを管理」機能を使用して、Kara Bowman を検索し、Akira Tanaka および John Jacobs に割り当てられたタスクへのアクセスを付与できます。 後で、Kara Bowman のこれらのユーザーキューへのアクセスを取り消すことができます。
 
 割り当てられたタスクは、ユーザーが Workspace を使用して完了できます。
 
 >[!NOTE]
 >
->AEM Forms のリリースでは Flex Workspace は廃止されています。
+>Flex Workspace は、AEM Forms のリリースで廃止されています。
 
 ### 選択したユーザーキューへのアクセスの許可 {#granting-access-to-a-selected-user-queue}
 

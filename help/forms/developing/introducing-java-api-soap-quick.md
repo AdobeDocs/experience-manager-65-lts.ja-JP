@@ -9,14 +9,27 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: a5ae164d-d0c0-40d0-baeb-0e646fc71f55
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 95%
-
 ---
-
 # Java™ API クイックスタートの概要 {#introducing-java-api-quickstart}
 
 **このドキュメントのサンプルと例は、JEE 環境の AEM Forms のみを対象としています。**
@@ -25,7 +38,7 @@ Adobe AEM Forms API クイックスタートは、AEM Forms サービスとや�
 
 AEM Forms の操作は、AEM Forms で厳密に型指定された API を使用して実行できます。接続モードは、SOAP に設定する必要があります。
 
-Java™ の厳密に型指定された API クイックスタートには、Java™ アプリケーションの実行に必要な JAR ファイルのリストが表示されます。 ほとんどの Java™ クイックスタートは、`main` 内で実行されるコンソールアプリケーションです。 ただし、Forms Java™ の厳密に型指定された API クイックスタートは、web アプリケーション内で実行する Java™ サーブレットとして実装されます。
+Java™ の厳密に型指定された API クイックスタートには、Java™ アプリケーションの実行に必要な JAR ファイルのリストが含まれています。 ほとんどの Java™ クイックスタートは、`main` 内で実行されるコンソールアプリケーションです。 ただし、Forms Java™ の厳密に型指定された API クイックスタートは、web アプリケーション内で実行する Java™ サーブレットとして実装されます。
 
 JAR ファイルのリストは、クイックスタートの先頭にあるコメントセクションにあります。 例えば、次のコメントは Output クイックスタートにあり、各 Java™ クイックスタートにある一般的な JAR ファイルリストです。
 
@@ -84,7 +97,7 @@ JAR ファイルのリストは、クイックスタートの先頭にあるコ�
 
 >[!NOTE]
 >
->「AEM Forms のプログラミング」にあるクイックスタートは、JBoss® Application Server と Microsoft® Windows® オペレーティングシステムにデプロイされる AEM Forms に基づいています。 ただし、UNIX® などの別のオペレーティングシステムを使用している場合は、Windows 固有のパスを該当するオペレーティングシステムでサポートされているパスに置き換えます。 同様に、別の J2EE アプリケーションサーバーを使用している場合は、有効な接続プロパティを必ず指定してください。 （[接続プロパティの設定](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)を参照）。
+>「AEM Forms によるプログラミング」のクイックスタートは、Forms サーバーが JBoss® アプリケーションサーバーおよび Microsoft® Windows オペレーティングシステムにデプロイされていることを前提としています。 ただし、UNIX® などの別のオペレーティングシステムを使用している場合は、Windows 固有のパスを該当するオペレーティングシステムでサポートされているパスに置き換えます。 同様に、別の J2EE アプリケーションサーバーを使用している場合は、有効な接続プロパティを必ず指定してください。 （[接続プロパティの設定](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)を参照。）
 
 >[!NOTE]
 >

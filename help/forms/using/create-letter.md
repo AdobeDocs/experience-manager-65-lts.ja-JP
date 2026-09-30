@@ -7,13 +7,26 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: b866ff4a-251c-4402-b426-9c4d97fd181d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '4013'
 ht-degree: 99%
-
 ---
-
 # レターの作成 {#create-letter}
 
 ## Correspondence Management のワークフロー {#correspondence-management-workflow}
@@ -152,10 +165,10 @@ Correspondence Management のワークフローは、次の 4 つのフェーズ
 * 通信テンプレートの変更頻度。 毎年、毎四半期、または特定の法律が更新された場合など。 予想される変更のタイプ。 誤植、レイアウトの変更、フィールドの追加、段落の追加などを修正する変更か。
 * 通信の要件を計画する場合、新しい通信テンプレートのリストをアセンブリします。 通信テンプレートごとに、以下のデータが必要です。
 
-   * テキストの条項、画像、テーブル
-   * バックエンドシステムのデータ値
-   * 通信のレイアウトおよびフラグメントレイアウト
-   * レターにコンテンツを配置する順序と、コンテンツの包含および除外のルール
+  * テキストの条項、画像、テーブル
+  * バックエンドシステムのデータ値
+  * 通信のレイアウトおよびフラグメントレイアウト
+  * レターにコンテンツを配置する順序と、コンテンツの包含および除外のルール
 
 * 要求処理担当者やケースワーカーなどのビジネスユーザーが、レターのコンテンツや一部を変更する条件。
 * シナリオで、レターソリューションのユーザーエクスペリエンス、要件および利点を説明。

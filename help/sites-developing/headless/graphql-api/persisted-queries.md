@@ -5,13 +5,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
 exl-id: 686d5510-8cdb-49eb-9ed0-f360be9bdc6d
-source-git-commit: d680ecf942886a61579cf72f82809e3dbbcfd394
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1390'
-ht-degree: 98%
-
+source-wordcount: '1444'
+ht-degree: 96%
 ---
-
 # 永続的な GraphQL クエリ {#persisted-queries-caching}
 
 永続的なクエリは、Adobe Experience Manager（AEM）サーバーで作成および保存される GraphQL クエリです。 永続的なクエリは、クライアントアプリケーションから GET リクエストでリクエストできます。 GET リクエストの応答は、Dispatcher および CDN（コンテンツ配信ネットワーク）レイヤーでキャッシュできるので、最終的には、要求元のクライアントアプリケーションのパフォーマンスが向上します。 これは、標準の GraphQL クエリとは異なります。標準クエリは、応答を簡単にはキャッシュできない POST リクエストを使用して実行されます。
@@ -32,7 +44,7 @@ AEM では [GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-i
 クエリはすべてのコンテンツフラグメントモデルにアクセスできます。
 * 特定のサイト設定とエンドポイント
 特定のSites設定に対して永続クエリを作成するには、対応するSites設定固有のエンドポイント（関連するコンテンツフラグメントモデルへのアクセスを提供する）が必要です。
-例えば、WKND Sites設定に特化した永続クエリを作成するには、対応するWKND固有のSites設定とWKND固有のエンドポイントを事前に作成する必要があります。
+例えば、WKND Sites 設定専用の永続クエリを作成するには、対応する WKND 固有の Sites 設定と、WKND 固有のエンドポイントを事前に作成する必要があります。
 
 >[!NOTE]
 >

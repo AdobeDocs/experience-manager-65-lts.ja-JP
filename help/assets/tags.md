@@ -6,13 +6,29 @@ feature: Viewers
 role: User,Admin,Developer
 solution: Experience Manager, Experience Manager Assets
 exl-id: 3aea14f7-052d-4f23-b65d-e648623146e7
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d17d085a-e808-49dd-b9a6-85a996b999bd
+    internal-label: Viewers
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6920'
+source-wordcount: '6924'
 ht-degree: 99%
-
 ---
-
 # Dynamic Media ビューアと Adobe Analytics および Experience Platform タグとの統合 {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## Dynamic Media ビューアと Adobe Analytics および Experience Platform タグとの統合とは？ {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
@@ -220,13 +236,13 @@ Dynamic Media ビューアは web ページ上で一意の識別子を持ちま�
 * **[!UICONTROL ZoomScale]** データ要素は、**[!UICONTROL ZOOM]** イベントとその「scale」引数を指します。
 * **[!UICONTROL TrackPan]** ルールには、次の情報が含まれます。
 
-   * Dynamic Media ビューアの **[!UICONTROL PAN]** イベントをトリガーとして使用。
-   * **[!UICONTROL ZoomScale]** データ要素の値を Adobe Analytics に送信。
+  * Dynamic Media ビューアの **[!UICONTROL PAN]** イベントをトリガーとして使用。
+  * **[!UICONTROL ZoomScale]** データ要素の値を Adobe Analytics に送信。
 
 * **[!UICONTROL TrackKey]** ルールには、次の情報が含まれます。
 
-   * Core Experience Platform タグ拡張機能のキー押下イベントをトリガーとして使用。
-   * **[!UICONTROL ZoomScale]** データ要素の値を Adobe Analytics に送信します。
+  * Core Experience Platform タグ拡張機能のキー押下イベントをトリガーとして使用。
+  * **[!UICONTROL ZoomScale]** データ要素の値を Adobe Analytics に送信します。
 
 ここで、エンドユーザーが 2 つのビューアで web ページを読み込んだとします。 *viewer1* では 50％の拡大率でズームインし、次に、*viewer2* では 25％の拡大率でズームインします。 *viewer1*&#x200B;では、画像がパンされ、最後にキーボードのキーが選択されます。
 
@@ -754,9 +770,9 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
    * **[!UICONTROL タイトル]** - 説明的なアカウントのタイトルを入力します。
    * **[!UICONTROL 認証サーバー]** - 以前に開いた統合の詳細ページに戻ります。 「**[!UICONTROL JWT]**」タブを選択します。 次にハイライト表示するように、サーバー名（パスを除く）をコピーします。
 
-   **[!UICONTROL アカウント]** ページに戻り、それぞれのフィールドに名前を貼り付けます。
-例：`https://ims-na1.adobelogin.com/`
-（サーバー名は一例です）
+   **[!UICONTROL アカウント]**&#x200B;ページに戻り、その名前を各フィールドにペーストします。
+   次に例を示します。 `https://ims-na1.adobelogin.com/`
+   （サーバー名は一例です）
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
 

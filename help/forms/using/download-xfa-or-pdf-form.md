@@ -8,16 +8,30 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: eafb1a93-8ee5-4420-830b-aee234988393
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 100%
-
 ---
-
 # XFA または PDF フォームテンプレートのダウンロード {#download-an-xfa-or-a-pdf-form-template}
 
-ダウンロード操作では、その名のとおり、リポジトリからローカルシステムにフォームを書き出すことができます。この操作をアップロード操作と組み合わせることにより、あるリポジトリから別のリポジトリへとフォームを移行することができます。
+ダウンロード操作では、その名のとおり、リポジトリからローカルシステムにフォームを書き出すことができます。 この操作をアップロード操作と組み合わせることにより、あるリポジトリから別のリポジトリへとフォームを移行することができます。
 
 AEM Forms では、次のアセットタイプのダウンロード操作がサポートされています。
 
@@ -27,7 +41,7 @@ AEM Forms では、次のアセットタイプのダウンロード操作がサ�
 
 AEM Forms では、これらのフォームタイプを個別にダウンロードするか、サポートされているフォームを 1 つまたは複数含むフォルダーでダウンロードすることができます。
 
-これらのアセットの他に、`Resource` タイプのアセットもフォルダー内に存在すればダウンロードすることができます。この機能は、XFA フォームで参照されているリソースを、フォームとともにダウンロードできるようにするためのものです。
+これらのアセットの他に、`Resource` タイプのアセットもフォルダー内に存在すればダウンロードすることができます。 この機能は、XFA フォームで参照されているリソースを、フォームとともにダウンロードできるようにするためのものです。
 
 ## 1 つまたは複数のフォームのダウンロード {#download-one-or-more-forms}
 
@@ -35,11 +49,11 @@ AEM Forms では、これらのフォームタイプを個別にダウンロー�
 
 1. ダウンロードしたいアセットの場所に移動します。
 
-1. アセットを選択します。ツールバーの「**[!UICONTROL ダウンロード]** ![aem6forms_download](assets/aem6forms_download.png)」アイコンをクリックします。
+1. アセットを選択します。 ツールバーの「**[!UICONTROL ダウンロード]** ![aem6forms_download](assets/aem6forms_download.png)」アイコンをクリックします。
 
    >[!NOTE]
    >
-   >ダウンロードするフォームは 1 つだけ選択することができます。複数のフォームをダウンロードする場合は、フォルダーとしてダウンロードする必要があります。
+   >ダウンロードするフォームは 1 つだけ選択することができます。 複数のフォームをダウンロードする場合は、フォルダーとしてダウンロードする必要があります。
 
 1. 表示されるダイアログボックスで、「**[!UICONTROL ダウンロード]**」をクリックします。
 

@@ -8,13 +8,26 @@ feature: Transaction Reports
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: d9dc7630-a157-4202-8caf-7c55e348c06e
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: bcb3e79d-a57e-59a4-ad50-e03803c9f153
+    internal-label: Transaction Reports
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2359'
 ht-degree: 96%
-
 ---
-
 # OSGi 上の AEM Forms のトランザクションレポート請求可能 API {#transaction-reports-billable-apis}
 
 ## 適用先 {#applies-to}
@@ -201,7 +214,7 @@ AEM Forms には、フォームの送信、ドキュメントの処理、ドキ�
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/jp/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PDFOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePDFOutputBatch</a></td>
-   <td>データとテンプレートを結合して、一連の PDF ドキュメントを作成します。</td>
+   <td>データとテンプレートを結合して、PDF ドキュメントのセットを作成します。</td>
    <td>処理済みドキュメント</td>
    <td> generatePDFOutputBatch API は、フォームテンプレートとレコードを組み合わせ、PDF を生成します。 レコードのバッチを処理する場合、トランザクションレポートサービスは、各レコードを個別のPDF レンディションとしてカウントします。<br> <a href="https://helpx.adobe.com/jp/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> フラグを使用すると、複数のレンディションを1つのPDF ファイルに結合できます。 フラグのステータスに関係なく、サービスは各レコードを個別の PDF レンディションとしてカウントします。 </td>
   </tr>
@@ -337,7 +350,7 @@ AEM Forms には、フォームの送信、ドキュメントの処理、ドキ�
 
 >[!NOTE]
 >
->* アセンブラーサービスの呼び出し API は、入力に応じて別のサービスの課金対象 API を内部的に呼び出すことができます。 したがって、呼び出し API は、０、単一、複数のトランザクションのいずれかとして計上される可能性があります。 カウントされるトランザクションの数は、入力と呼び出される内部 API によって異なります。
+>* アセンブラーサービスの呼び出し API は、入力に応じて別のサービスの課金対象 API を内部的に呼び出すことができます。 したがって、invoke API は、0、単一、複数のトランザクションのいずれかとして計上される可能性があります。 カウントされるトランザクションの数は、入力と呼び出される内部 API によって異なります。
 >* アセンブラーサービスを使用して生成された単一の PDF ドキュメントは、0、単一、複数のトランザクションのいずれかとして計上される可能性があります。 カウントされるトランザクションの数は、指定された DDX コードによって異なります。
 
 ### PDF ユーティリティサービス  {#pdf-utility-service}
@@ -375,7 +388,7 @@ AEM Forms には、フォームの送信、ドキュメントの処理、ドキ�
   </tr>
   <tr>
    <td>アダプティブフォームの送信</td>
-   <td>アダプティブフォームを設定済みの送信アクションに送信します。 </td>
+   <td>設定された送信アクションを使用してアダプティブフォームを送信します。 </td>
    <td>送信済みフォーム</td>
    <td>
     <ul>
@@ -505,7 +518,7 @@ OSGi 上の Form 中心の AEM Workflows のタスクとドキュメントサー
 
 ## カスタムコードのトランザクションとしての課金対象 API の記録 {#recording-billable-apis-as-transactions-for-custom-code}
 
-PDF フォームの送信、エージェント UI を使用したインタラクティブなコミュニケーションのプレビュー、非標準のフォーム送信の使用、カスタム実装などのアクションは、トランザクションとして考慮されません。 AEM Forms は、トランザクションなどのアクションを記録する API を提供します。 カスタム実装から API を呼び出して、[トランザクションを記録](/help/forms/using/record-transaction-custom-implementation.md)することができます。
+PDF フォームの送信、エージェント UI を使用したインタラクティブなコミュニケーションのプレビュー、非標準のフォーム送信の使用、カスタム実装などのアクションは、トランザクションとして考慮されません。 AEM Forms は、そのようなアクションをトランザクションとして記録するための API を提供します。 カスタム実装から API を呼び出して、[トランザクションを記録](/help/forms/using/record-transaction-custom-implementation.md)することができます。
 
 ## 関連記事 {#related-articles}
 

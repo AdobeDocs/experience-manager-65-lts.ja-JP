@@ -9,18 +9,32 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: ef0917ec-bae2-4a5c-b3ca-5b6e57f8bc93
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '569'
 ht-degree: 100%
-
 ---
-
 # 添付ファイルの追加{#adding-attachments}
 
-## AEM Forms Workflow（JEE 上の AEM Forms）と同期されたフォーム内で、添付ファイルを追加する {#adding-annotations}
+## AEM Forms Workflow サーバー（JEE 上の AEM Forms）と同期されたフォームでの添付ファイルの追加 {#adding-annotations}
 
-AEM Forms アプリでは、AEM Forms JEE サーバーと同期されたフォームに対して、画像、手書きメモやテキストメモを添付できます。フォームを AEM Forms Workflow サーバーから読み込んだ場合は、添付ファイルがフォームに追加されます。添付ファイルボタン ![attachments-app](assets/attachments-app.png) を選択すると、フォームに添付されたファイルを一括表示できます。赤色の通知は、フォームの添付ファイルの数を表示します。フォームに添付ファイルが存在しない場合、赤の通知ボタンは表示されません。フォームに添付ファイルが存在しない場合、添付ファイルボタン ![attch](assets/attch.png) を選択すると、写真や手書きメモを添付できるオプションが表示されます。
+AEM Forms アプリでは、AEM Forms JEE サーバーと同期されたフォームに対して、画像、手書きメモやテキストメモを添付できます。 フォームを AEM Forms Workflow サーバーから読み込んだ場合は、添付ファイルがフォームに追加されます。 添付ファイルボタン ![attachments-app](assets/attachments-app.png) を選択すると、フォームに添付されたファイルを一括表示できます。 赤色の通知は、フォームの添付ファイルの数を表示します。 フォームに添付ファイルが存在しない場合、赤の通知ボタンは表示されません。 フォームに添付ファイルが存在しない場合、添付ファイルボタン ![attch](assets/attch.png) を選択すると、写真や手書きメモを添付できるオプションが表示されます。
 
 以下のオプションがあります。
 
@@ -28,16 +42,16 @@ AEM Forms アプリでは、AEM Forms JEE サーバーと同期されたフォ�
 
 * **カメラ**：写真を撮ってフォームに追加できます。
 
-* **メモ**：手書きメモやテキストメモを追加できます。手書きメモを追加するには![手書き](assets/scribble.png)を、テキストメモを追加するには![キーボード](assets/keyboard.png)を使用します。
+* **メモ**：手書きメモやテキストメモを追加できます。 手書きメモを追加するには![手書き](assets/scribble.png)を、テキストメモを追加するには![キーボード](assets/keyboard.png)を使用します。
 
 >[!NOTE]
 >
->単一ユーザーによって追加された添付ファイルは、他の AEM Forms アプリケーションのユーザーにも表示されます。他のユーザーは、ユーザーが追加した添付ファイルを削除することはできません。
+>単一ユーザーによって追加された添付ファイルは、他の AEM Forms アプリケーションのユーザーにも表示されます。 他のユーザーは、ユーザーが追加した添付ファイルを削除することはできません。
 >
 
 ### 添付ファイル画面 {#the-attachments-screen}
 
-すべての添付ファイルを一括表示するには、![attachments-app](assets/attachments-app.png) を選択します。ここでは、添付ファイルの追加、名前変更、削除が可能です。
+すべての添付ファイルを一括表示するには、![attachments-app](assets/attachments-app.png) を選択します。 ここでは、添付ファイルの追加、名前変更、削除が可能です。
 
 ![すべての添付ファイルを集めた状態](assets/attachments-screen.png)
 
@@ -53,13 +67,13 @@ AEM Forms アプリでは、AEM Forms JEE サーバーと同期されたフォ�
 
    1. 「**カメラ**」を選択した場合。
 
-      写真を撮ります。次に「**使用**」![use-pic](assets/use-pic.png) ボタンを選択します。
+      写真を撮ります。 次に「**使用**」![use-pic](assets/use-pic.png) ボタンを選択します。
 
       あるいは、「**撮り直し**」![retake](assets/retake.png) ボタンを選択して写真を撮り直します。
 
    1. 「**ギャラリー**」を選択した場合。
 
-      デバイスの画像ブラウザーがポップアップ表示されます。デバイスの画像ブラウザーから、添付する画像を選択します。
+      デバイスの画像ブラウザーがポップアップ表示されます。 デバイスの画像ブラウザーから、添付する画像を選択します。
 
 ### メモを追加する {#adding-a-note}
 
@@ -73,7 +87,7 @@ AEM Forms アプリでは、AEM Forms JEE サーバーと同期されたフォ�
 
    手書き
 
-   「手書きメモ」インターフェイスでは、次のオプションを使用できます。
+   「手書き」インターフェイスでは、次のオプションを使用できます。
 
    * **クリア**：スクリーンをクリアします。
    * **「完了」ボタン**：現在の手書きメモを添付します。
@@ -86,6 +100,6 @@ AEM Forms アプリでは、AEM Forms JEE サーバーと同期されたフォ�
 
 AEM Forms OSGi サーバーと同期するモバイル向けフォームの添付ファイルは、AEM Forms JEE サーバーと同様の動作をします。
 
-フォームレベルの添付ファイルは、アプリ上で AEM Forms OSGi サーバーから読み込んだアダプティブフォームではサポートされません。画像やテキストメモを添付するには、フォームの作成時に、フィールドレベルの添付ファイルを有効にします。ファイルの添付コンポーネントを、コンポーネントブラウザーからフィールド上にドラッグ＆ドロップします。
+フォームレベルの添付ファイルは、アプリ上で AEM Forms OSGi サーバーから読み込んだアダプティブフォームではサポートされません。 画像やテキストメモを添付するには、フォームの作成時に、フィールドレベルの添付ファイルを有効にします。 ファイルの添付コンポーネントを、コンポーネントブラウザーからフィールド上にドラッグ＆ドロップします。
 
-アダプティブフォームでは、添付されたファイルをレコードのドキュメント（DoR）に表示できます。詳しくは、[XFA 以外のアダプティブフォームにおける、レコードのドキュメントの生成](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)を参照してください。
+アダプティブフォームでは、添付されたファイルをレコードのドキュメント（DoR）に表示できます。 詳しくは、[XFA 以外のアダプティブフォームにおける、レコードのドキュメントの生成](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)を参照してください。

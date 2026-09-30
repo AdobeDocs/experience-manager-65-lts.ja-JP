@@ -1,6 +1,6 @@
 ---
-title: Process Reporting の仕組み
-description: JEE 上 の AEM Forms Process Reporting を構成するサービスの説明と Process Reporting UI の概要
+title: プロセスレポートの仕組み
+description: JEE 上の AEM Forms プロセスレポートを構成するサービスの説明とプロセスレポート UI の概要
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: process-reporting
@@ -9,23 +9,38 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: c59e5a1d-a066-48e7-a57e-c28cbb959719
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 100%
-
 ---
+# プロセスレポートの仕組み{#how-process-reporting-works}
 
-# Process Reporting の仕組み{#how-process-reporting-works}
+プロセスレポートは、JEE 上の AEM Forms のレポートモジュールです。
 
-Process Reporting は、JEE 上の AEM Forms のレポートモジュールです。
+プロセスレポートを使用すると、AEM Forms のプロセスとタスクに関するレポートを実行できます。
 
-Process Reporting を使用すると、AEM Forms のプロセスとタスクに関するレポートを実行できます。
+プロセスレポートは、組み込みのプロセスレポートリポジトリを使用して Forms データを公開します。 その後、そのデータを使用してレポートを実行します。
 
-Process Reporting は、組み込みの Process Reporting リポジトリを使用して Forms データを公開します。 その後、そのデータを使用してレポートを実行します。
-
-Process Reporting は、以下のモジュールで構成されています。
+プロセスレポートは、以下のモジュールで構成されています。
 
 * [ProcessDataPublisher サービス](#processdatapublisher-service-br-p)
 * [ProcessDataStorage サービス](#processdatastorageprovider-service-br-p)
@@ -47,13 +62,13 @@ ProcessDataPublisher サーバーは、AEM Forms データベースで定期的�
 
 ### ProcessDataStorageProvider サービス {#processdatastorageprovider-service-br}
 
-ProcessDataStorageProvider サービスは、ProcessDataPublisher サービスからプロセスデータを受け取り、そのデータを Process Reporting リポジトリに保存します。
+ProcessDataStorageProvider サービスは、ProcessDataPublisher サービスからプロセスデータを受け取り、そのデータをプロセスレポートリポジトリに保存します。
 
 サービスの設定について詳しくは、[ProcessDataStorageProvider サービスの設定](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p)を参照してください。
 
 ### OSGi サービス {#osgi-service-br}
 
-QueryDataServlet は、このサービスを使用して、Process Reporting リポジトリからレポートデータを取得します。
+QueryDataServlet は、このサービスを使用して、プロセスレポートリポジトリからレポートデータを取得します。
 
 ### QueryDataServlet サービス {#querydataservlet-service-br}
 

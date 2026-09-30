@@ -6,22 +6,33 @@ role: User, Admin
 feature: Projects
 solution: Experience Manager, Experience Manager Assets
 exl-id: de9f266b-a167-4eba-be2c-8f6a0457265f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 2e0e1a8a-56e7-5bd5-b805-f35a7c0c2ca7
+    internal-label: Projects
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '449'
 ht-degree: 100%
-
 ---
-
 # 翻訳するアセットの準備 {#preparing-assets-for-translation}
 
-多言語アセットとは、複数の言語のバイナリ、メタデータ、タグを含むアセットです。通常、アセットのバイナリ、メタデータ、タグに使用される言語は 1 つですが、多言語プロジェクト用に他の言語へと翻訳されます。
+多言語アセットとは、複数の言語のバイナリ、メタデータ、タグを含むアセットです。 通常、アセットのバイナリ、メタデータ、タグに使用される言語は 1 つですが、多言語プロジェクト用に他の言語へと翻訳されます。
 
 [!DNL Adobe Experience Manager Assets] では、多言語アセットはフォルダーに含まれ、各フォルダーに異なる言語のアセットが格納されます。
 
-各言語のフォルダーは言語コピーと呼ばれます。言語コピーのルートフォルダー（言語ルート）が、言語コピー内のコンテンツの言語を識別します。例えば、*/content/dam/it* はイタリア語の言語コピー用のイタリア語言語ルートです。ソースアセットの翻訳の実行時に適切な言語がターゲットになるように、言語コピーでは、[正しく設定された言語ルート](preparing-assets-for-translation.md#creating-a-language-root)を使用する必要があります。
+各言語のフォルダーは言語コピーと呼ばれます。 言語コピーのルートフォルダー（言語ルート）が、言語コピー内のコンテンツの言語を識別します。 例えば、*/content/dam/it* はイタリア語の言語コピー用のイタリア語言語ルートです。 ソースアセットの翻訳の実行時に適切な言語がターゲットになるように、言語コピーでは、[正しく設定された言語ルート](preparing-assets-for-translation.md#creating-a-language-root)を使用する必要があります。
 
-最初にアセットを追加した言語コピーがプライマリ言語です。プライマリ言語は、他の言語に翻訳されるソースです。サンプルフォルダー階層にはいくつかの言語ルートが含まれています。
+最初にアセットを追加した言語コピーがプライマリ言語です。 プライマリ言語は、他の言語に翻訳されるソースです。 サンプルフォルダー階層にはいくつかの言語ルートが含まれています。
 
 ```shell
 /content
@@ -37,16 +48,16 @@ ht-degree: 100%
 
 翻訳するアセットを準備するには、次の手順を実行します。
 
-1. プライマリ言語の言語ルートを作成します。例えば、サンプルフォルダー階層の英語言語コピーの言語ルートは `/content/dam/en` です。[言語ルートの作成](preparing-assets-for-translation.md#creating-a-language-root)に記載の情報に従って言語ルートが正しく設定されていることを確認してください。
+1. プライマリ言語の言語ルートを作成します。 例えば、サンプルフォルダー階層の英語言語コピーの言語ルートは `/content/dam/en` です。 [言語ルートの作成](preparing-assets-for-translation.md#creating-a-language-root)に記載の情報に従って言語ルートが正しく設定されていることを確認してください。
 
 1. プライマリ言語にアセットを追加します。
 1. 言語コピーが必要な各ターゲット言語の言語ルートを作成します。
 
 ## 言語ルートの作成 {#creating-a-language-root}
 
-言語ルートを作成するには、フォルダーを作成し、名前プロパティの値に ISO 言語コードを使用します。言語ルートを作成したら、言語ルート内の任意のレベルに言語コピーを作成できます。
+言語ルートを作成するには、フォルダーを作成し、名前プロパティの値に ISO 言語コードを使用します。 言語ルートを作成したら、言語ルート内の任意のレベルに言語コピーを作成できます。
 
-例えば、サンプル階層のイタリア語言語コピーのルートページの「名前」プロパティは `it` になります。「名前」プロパティは、リポジトリ内の asset ノードの名前として使用されます。そのため、このプロパティによってアセットのパス（`https://[aem_server]:[port]/assets.html/content/dam/it/`）が指定されます。
+例えば、サンプル階層のイタリア語言語コピーのルートページの「名前」プロパティは `it` になります。 「名前」プロパティは、リポジトリー内の asset ノードの名前として使用されます。そのため、このプロパティによってアセットのパスが指定されます (`https://[aem_server]:[port]/assets.html/content/dam/it/`).
 
 1. [!DNL Assets] コンソールで「**[!UICONTROL 作成]**」をクリックし、メニューから「**[!UICONTROL フォルダー]**」を選択します。
 
@@ -56,7 +67,7 @@ ht-degree: 100%
 
    ![フォルダーに言語コードを追加](assets/Add-language-code-in-folder.png)
 
-1. 「**[!UICONTROL 作成]**」をクリックします。[!DNL Assets] コンソール内に言語ルートが作成されます。
+1. 「**[!UICONTROL 作成]**」をクリックします。 [!DNL Assets] コンソール内に言語ルートが作成されます。
 
 ## 言語ルートの表示 {#viewing-language-roots}
 
@@ -67,6 +78,6 @@ ht-degree: 100%
 
    ![chlimage_1-122](assets/chlimage_1-122.png)
 
-1. 参照パネルで、「**[!UICONTROL 言語コピー]**」をクリックします。アセットの言語コピーが[!UICONTROL 言語コピー]パネルに表示されます。
+1. 参照パネルで、「**[!UICONTROL 言語コピー]**」をクリックします。 アセットの言語コピーが[!UICONTROL 言語コピー]パネルに表示されます。
 
    ![言語コピー](assets/lang-copy2.png)

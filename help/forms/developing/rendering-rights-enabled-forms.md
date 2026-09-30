@@ -10,14 +10,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 70b2d1aa-6fcd-461d-b628-e82ddf266f48
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1488'
 ht-degree: 100%
-
 ---
-
 # 権限付きフォームのレンダリング {#rendering-rights-enabled-forms}
 
 Forms サービスでは、使用権限が適用されているフォームをレンダリングできます。 使用権限は、Acrobat ではデフォルトで利用できるが Adobe Reader では利用できない機能（フォームにコメントを追加する機能や、フォームフィールドにデータを入力してフォームを保存する機能など）に関連しています。 使用権限が適用されたフォームは、権限付きフォームと呼ばれます。 ユーザーは、権限付きフォームを Adobe Reader で開くことで、そのフォームで有効になっている操作を実行できます。
@@ -34,7 +51,7 @@ Forms サービスでは、使用権限が適用されているフォームを�
 
 >[!NOTE]
 >
->Forms サービスについて詳しくは、[AEM Forms サービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
+>Forms サービスについて詳しくは、[AEM Forms のサービスリファレンス](https://www.adobe.com/go/learn_aemforms_services_63)を参照してください。
 
 ## 手順の概要 {#summary-of-steps}
 
@@ -56,7 +73,7 @@ Forms Service Client API 操作をプログラムで実行する前に、Forms �
 
 **使用権限の実行時オプションの設定**
 
-権限付きフォームをレンダリングするには、使用権限の実行時オプションを設定します。 使用権限をフォームに適用するために使用する資格情報のエイリアスも指定します。 エイリアス値を指定したら、フォームに適用する各使用権限を指定します。
+権限付きフォームをレンダリングするには、使用権限の実行時オプションを設定します。 使用権限をフォームに適用するために使用する資格情報のエイリアスを指定します。 エイリアス値を指定したら、フォームに適用する各使用権限を指定します。
 
 **権限付きフォームのレンダリング**
 
@@ -72,7 +89,7 @@ Forms サービスが権限付きフォームをレンダリングすると、�
 
 **関連トピック**
 
-[Java API を使用して権限付きフォームをレンダリングする](#render-rights-enabled-forms-using-the-java-api)
+[Java API を使用した権限付きフォームのレンダリング](#render-rights-enabled-forms-using-the-java-api)
 
 [Web サービス API を利用したライツ対応フォームのレンダリング](#render-rights-enabled-forms-using-the-web-service-api)
 
@@ -86,7 +103,7 @@ Forms サービスが権限付きフォームをレンダリングすると、�
 
 [Forms をレンダリングする web アプリケーションの作成](/help/forms/developing/creating-web-applications-renders-forms.md)
 
-### Java API を使用して権限付きフォームをレンダリングする {#render-rights-enabled-forms-using-the-java-api}
+### Java API を使用した権限付きフォームのレンダリング {#render-rights-enabled-forms-using-the-java-api}
 
 Forms API（Java）を使用して、権限付きフォームをレンダリングします。
 
@@ -103,7 +120,7 @@ Forms API（Java）を使用して、権限付きフォームをレンダリン�
 
    * コンストラクタを使用して `ReaderExtensionSpec` オブジェクトを作成します。
    * `ReaderExtensionSpec` オブジェクトの `setReCredentialAlias` メソッドを呼び出して、資格情報のエイリアスを指定し、そのエイリアスの値を表す文字列値を指定します。
-   * `ReaderExtensionSpec` オブジェクトに属する対応するメソッドを呼び出して、各使用権限を設定します。 ただし、使用権限を設定できるのは、参照する秘密鍵証明書でその権限が与えられている場合のみです。 つまり、秘密鍵証明書で設定が許可されていない場合は、使用権限を設定できません。 以下に例を示します。 ユーザーがフォームのフィールドに入力して保存できる使用権を設定するには、`ReaderExtensionSpec` オブジェクトの `setReFillIn` メソッドを呼び出し、`true` を渡します。
+   * `ReaderExtensionSpec` オブジェクトに属する対応するメソッドを呼び出して、各使用権限を設定します。 ただし、使用権限を設定できるのは、参照する秘密鍵証明書でその権限が与えられている場合のみです。 つまり、資格情報で設定が許可されていない場合は、使用権限を設定できません。 以下に例を示します。 ユーザーがフォームのフィールドに入力して保存できる使用権を設定するには、`ReaderExtensionSpec` オブジェクトの `setReFillIn` メソッドを呼び出し、`true` を渡します。
 
    >[!NOTE]
    >

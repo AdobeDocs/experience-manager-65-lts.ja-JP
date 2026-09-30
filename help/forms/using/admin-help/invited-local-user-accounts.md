@@ -5,14 +5,26 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 194ad425-ca1a-4a6e-9f4e-094c4577cde9
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1211'
 ht-degree: 100%
-
 ---
-
 # 招待ユーザーおよびローカルユーザーのアカウントの管理 {#managing-invited-and-local-user-accounts}
 
 >[!NOTE]
@@ -26,7 +38,7 @@ ht-degree: 100%
 
 招待ユーザーおよびローカルユーザーページには 2 つのタブがあり、このタブを使用して、招待ユーザーおよびローカルユーザーのアカウントを検索、表示、編集、ロック、ロック解除および削除できます。
 
-招待ユーザーに手動で登録メールを送ることもできます。 例えば、メールで許可された登録期間が終了し、招待ユーザーが URL を使用して登録することができない場合などに、これを行うことができます。 そういう場合には、招待ユーザーに登録メールを再送信することができます。 招待ユーザーがアカウントを登録してアクティベートすると、そのユーザーはローカルユーザーになります。
+招待ユーザーに手動で登録メールを送ることもできます。 例えば、メールで許可された登録期間が終了し、招待ユーザーが URL を使用して登録することができない場合などに、これを行うことができます。 その場合には、招待ユーザーに登録メールを再送信することができます。 招待ユーザーがアカウントを登録してアクティベートすると、そのユーザーはローカルユーザーになります。
 
 >[!NOTE]
 >
@@ -39,7 +51,7 @@ ht-degree: 100%
 1. 管理コンソールで、サービス／Document Security／招待ユーザーおよびローカルユーザーをクリックし、「新しいユーザーを招待」をクリックします。
 1. 招待するユーザーのメールアドレスを入力します。 複数のアドレスは、コンマで区切って 1 行に入力します。
 
-   招待ユーザーの登録を有効にしたときに作成したメッセージがユーザーに送信されます （[招待ユーザーの登録の設定](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)を参照）。
+   招待ユーザーの登録を有効にしたときに作成したメッセージがユーザーに送信されます。 （[招待ユーザーの登録の設定](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)を参照）。
 
 1. 「OK」をクリックします。
 
@@ -62,13 +74,13 @@ ht-degree: 100%
 
 ## ローカルユーザーのパスワードのリセット {#reset-a-local-user-password}
 
-Document Security に登録済みのアクティベートした招待ユーザーがパスワードを忘れた場合、そのユーザーのパスワードをリセットすることができます。 パスワードをリセットすると、そのユーザーの新しい一時パスワードが記入されたメールが生成されます。
+Document Security に登録済みでアクティベートされた招待ユーザーがパスワードを忘れた場合、そのユーザーのパスワードをリセットすることができます。 パスワードをリセットすると、そのユーザーの新しい一時パスワードが記入されたメールが生成されます。
 
 招待ユーザーの登録プロセスを有効にしたとき、ユーザーに送信されるメールを作成しました。このメッセージはユーザーにパスワードのリセットを促します （[招待ユーザーの登録の設定](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)を参照）。
 
 1. 管理コンソールで、サービス／Document Security／招待ユーザーおよびローカルユーザーをクリックし、「ローカルユーザー」タブをクリックします。
 1. ユーザーリストで、該当するユーザーを選択します。
-1. ローカルユーザーの管理ページで、「パスワードをリセット」をクリックし、「OK」をクリックします。 新しいパスワードが記入されたパスワードリセットメールがユーザーに送信されます。
+1. ローカルユーザーの管理ページで、「パスワードのリセット」をクリックし、「OK」をクリックします。 新しいパスワードが記入されたパスワードのリセットメールがユーザーに送信されます。
 
 ## ユーザーアカウントの有効化または無効化 {#enable-or-disable-a-user-account}
 
@@ -98,7 +110,7 @@ Document Security から招待ユーザーアカウントを削除すること�
 >
 >AEM Forms User Management インターフェイスを利用して削除された招待ユーザーは、以下の手順によってもう一度削除されてからでないと、再度招待することはできません。
 
-1. 管理コンソールで、サービス／Document Security／招待ユーザーおよびローカルユーザーをクリックし、「ユーザーの招待」タブをクリックします。
+1. 管理コンソールで、サービス／Document Security／招待ユーザーおよびローカルユーザーをクリックし、「招待ユーザー」タブをクリックします。
 1. 1 人または複数のユーザーの横にあるチェックボックスを選択し、「削除」をクリックし、「OK」をクリックします。
 
 ## 招待ユーザーアカウントの検索 {#search-for-an-invited-user-account}
@@ -129,6 +141,6 @@ Document Security からローカルユーザーアカウントを削除する�
 * 上向きの三角形は昇順を示しています。
 * 下向きの三角形は降順を示しています。
 
-   1. 管理コンソールで、サービス／Document Security／招待ユーザーおよびローカルユーザーをクリックします。
-   1. 招待ユーザーをソートするには、「ユーザーの招待」タブをクリックし、該当する列見出しをクリックします。
-   1. ローカルユーザーをソートするには、「ローカルユーザー」タブをクリックし、該当する列見出しをクリックします。
+  1. 管理コンソールで、サービス／Document Security／招待ユーザーおよびローカルユーザーをクリックします。
+  1. 招待ユーザーをソートするには、「ユーザーの招待」タブをクリックし、該当する列見出しをクリックします。
+  1. ローカルユーザーをソートするには、「ローカルユーザー」タブをクリックし、該当する列見出しをクリックします。

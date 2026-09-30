@@ -6,13 +6,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: f185c622-1681-4221-a082-cac71d6b510b
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '4463'
 ht-degree: 98%
-
 ---
-
 # リッチテキストエディタープラグインの設定 {#configure-the-rich-text-editor-plug-ins}
 
 リッチテキストエディター（RTE）の各機能は一連のプラグインから使用でき、それぞれに features プロパティがあります。 features プロパティを設定すると、1 つまたは複数の RTE 機能を有効または無効にできます。 この記事では、RTE プラグインの特殊な設定方法について説明します。
@@ -38,16 +47,16 @@ ht-degree: 98%
 
    * 親ノード（コンポーネントに応じる）：
 
-      * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
-      * 代替の設定ノード：`.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
-      * `text: .../text/dialog/items/tab1/items/text`
+     * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
+     * 代替の設定ノード：`.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
+     * `text: .../text/dialog/items/tab1/items/text`
 
    * タイプは&#x200B;**jcr:primaryType** `cq:Widget`です
    * いずれも次のプロパティを持ちます。
 
-      * **名前** `name`
-      * **型** `String`
-      * **値** `./text`
+     * **名前** `name`
+     * **型** `String`
+     * **値** `./text`
 
 1. 設定するインターフェイスに応じて、ノード `<rtePlugins-node>` を作成します（まだ存在しない場合）。
 
@@ -299,7 +308,7 @@ AEM を使用して日本語コンテンツを作成する作成者は、改行�
 
 1. プロパティテキストを同じノードに追加します。 値は、スタイル選択時に作成者に表示されるスタイルの名前です。
    * 名前： `text`
-* 種類：`String`
+     * 種類：`String`
    * 値：`Japanese word-wrap`
 
 1. スタイルシートを作成してそのパスを指定します。 詳しくは、[スタイルシートの場所の指定](#locationofstylesheet)を参照してください。 次の内容をスタイルシートに追加します。 必要に応じて背景色を変更してください。
@@ -455,11 +464,11 @@ CRXDE でプロパティを保存すると、HTML 表現された文字が表示
 1. このノード（特殊文字の範囲に従って命名）の下に、次の 2 つのプロパティを追加します。
 
    * **名前** `rangeStart`
-     **型** `Long`
+     **種類** `Long`
      **値** 範囲内の最初の文字の [Unicode](https://unicode.org/) 表現（10 進数）
 
    * **名前** `rangeEnd`
-     **型** `Long`
+     **種類** `Long`
      **値** 範囲内の最後の文字の [Unicode](https://unicode.org/) 表現（10 進数）
 
 1. 変更を保存します。
@@ -506,13 +515,13 @@ CRXDE でプロパティを保存すると、HTML 表現された文字が表示
 
    * テーブル全体のスタイルを定義するには（**テーブルのプロパティ**&#x200B;の下）：
 
-      * **名前** `tableStyles`
-      * **型** `cq:WidgetCollection`
+     * **名前** `tableStyles`
+     * **型** `cq:WidgetCollection`
 
    * 個々のセルのスタイルを定義するには（**セルのプロパティ**&#x200B;の下）：
 
-      * **名前** `cellStyles`
-      * **型** `cq:WidgetCollection`
+     * **名前** `cellStyles`
+     * **型** `cq:WidgetCollection`
 
 1. ノードを作成して（必要に応じて `tableStyles` ノードまたは `cellStyles` ノードの下に）、個別のスタイルを表すようにします。
 
@@ -523,15 +532,15 @@ CRXDE でプロパティを保存すると、HTML 表現された文字が表示
 
    * 参照する CSS スタイルを定義するには
 
-      * **名前** `cssName`
-      * **型** `String`
-      * **値** CSS クラスの名前（先頭の `.` を除く。例、`.cssClass` ではなく `cssClass`）
+     * **名前** `cssName`
+     * **型** `String`
+     * **値** CSS クラスの名前（先頭の `.` を除く。例、`.cssClass` ではなく `cssClass`）
 
    * ドロップダウンセレクターに表示する説明テキストを定義するには
 
-      * **名前** `text`
-      * **型** `String`
-      * **値** 選択リストに表示するテキスト
+     * **名前** `text`
+     * **型** `String`
+     * **値** 選択リストに表示するテキスト
 
 1. すべての変更を保存します。
 
@@ -546,14 +555,14 @@ CRXDE でプロパティを保存すると、HTML 表現された文字が表示
 * `hiddenHeaderEditingCSS`：RTE が編集されたときに、非表示のヘッダーセルに適用されている CSS クラスの名前を指定します。
 * `hiddenHeaderEditingStyle`：RTE が編集されたときに、非表示のヘッダーセルに適用されているスタイル文字列を指定します。
 
-コードに CSS とスタイル文字列の両方を指定すると、CSS がスタイル文字列に優先され、スタイル文字列によって加えられたすべての設定の変更が上書きされることがあります。
+コードに CSS とスタイル文字列の両方を指定すると、CSS クラスがスタイル文字列に優先され、スタイル文字列によって加えられたすべての設定の変更が上書きされることがあります。
 
 作成者がプレビューモードで非表示のヘッダーに CSS を適用できるように、コードに次のパラメーターを追加してください。
 
 * `hiddenHeaderClassName`：プレビューモードで非表示のヘッダーセルに適用される CSS クラスの名前を指定します。
 * `hiddenHeaderStyle`：プレビューモードで非表示のヘッダーセルに適用されているスタイル文字列を指定します。
 
-コードに CSS とスタイル文字列の両方を指定すると、CSS がスタイル文字列に優先され、スタイル文字列によって加えられたすべての設定の変更が上書きされることがあります。
+コードに CSS とスタイル文字列の両方を指定すると、CSS クラスがスタイル文字列に優先され、スタイル文字列によって加えられたすべての設定の変更が上書きされることがあります。
 
 ## スペルチェッカー用の辞書の追加 {#adddict}
 
@@ -684,58 +693,58 @@ AEM にリンクを追加する場合、次の定義が可能です。
 
    * 内部リンクの CSS スタイル：
 
-      * **名前** `cssInternal`
-      * **型** `String`
-      * **値** CSS クラスの名前（「。」が先行しない。例：`.cssClass`ではなく`cssClass`）
+     * **名前** `cssInternal`
+     * **型** `String`
+     * **値** CSS クラスの名前（「。」が先行しない。例：`.cssClass`ではなく`cssClass`）
 
    * 外部リンクの CSS スタイル：
 
-      * **名前** `cssExternal`
-      * **型** `String`
-      * **値** CSS クラスの名前（「。」が先行しない。例：`.cssClass`ではなく`cssClass`）
+     * **名前** `cssExternal`
+     * **型** `String`
+     * **値** CSS クラスの名前（「。」が先行しない。例：`.cssClass`ではなく`cssClass`）
 
    * 有効な&#x200B;**プロトコル**&#x200B;の配列。 サポートされているプロトコルは `http://`、`https://`、`file://` および `mailto:` です。
 
-      * **名前** `protocols`
-      * **型** `String[]`
-      * **値** 1 つまたは複数のプロトコル
+     * **名前** `protocols`
+     * **型** `String[]`
+     * **値** 1 つまたは複数のプロトコル
 
    * **defaultProtocol**（型が **String** のプロパティ）：ユーザーが明示的に指定しなかった場合に使用されるプロトコル。
 
-      * **名前** `defaultProtocol`
-      * **型** `String`
-      * **値** 1 つまたは複数のデフォルトプロトコル
+     * **名前** `defaultProtocol`
+     * **型** `String`
+     * **値** 1 つまたは複数のデフォルトプロトコル
 
    * リンクのターゲット属性の処理方法の定義。 ノードの作成：
 
-      * **名前** `targetConfig`
-      * **型** `nt:unstructured`
+     * **名前** `targetConfig`
+     * **型** `nt:unstructured`
 
      ノード `targetConfig` 上に、次の必要なプロパティを定義します。
 
-      * ターゲットモードを指定：
+     * ターゲットモードを指定：
 
-         * **名前** `mode`
-         * **型** `String`
-         * **値**
+       * **名前** `mode`
+       * **型** `String`
+       * **値**
 
-            * `auto`：自動ターゲットが選択されたことを意味する
+         * `auto`：自動ターゲットが選択されたことを意味する
 
-              （外部リンクの `targetExternal` プロパティまたは内部リンクの `targetInternal` プロパティで指定）。
+           （外部リンクの `targetExternal` プロパティまたは内部リンクの `targetInternal` プロパティで指定）。
 
-            * `manual`：このコンテキストでは使用不可
-            * `blank`：このコンテキストでは使用不可
+         * `manual`：このコンテキストでは使用不可
+         * `blank`：このコンテキストでは使用不可
 
-      * 内部リンクのターゲット：
+     * 内部リンクのターゲット：
 
-         * **名前** `targetInternal`
-         * **型** `String`
-         * **値** 内部リンクのターゲット（モードが `auto` の場合にのみ使用）
+       * **名前** `targetInternal`
+       * **型** `String`
+       * **値** 内部リンクのターゲット（モードが `auto` の場合にのみ使用）
 
-      * 外部リンクのターゲット：
+     * 外部リンクのターゲット：
 
-         * **名前** `targetExternal`
-         * **型** `String`
-         * **値** 外部リンクのターゲット（モードが `auto` の場合にのみ使用）
+       * **名前** `targetExternal`
+       * **型** `String`
+       * **値** 外部リンクのターゲット（モードが `auto` の場合にのみ使用）
 
 1. すべての変更を保存します。

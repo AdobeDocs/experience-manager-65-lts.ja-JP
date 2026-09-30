@@ -9,14 +9,28 @@ feature: PDF Generator,Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: fee34d9e-6606-40c1-bbbe-e7975ad90a22
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 88%
-
 ---
-
 # セキュリティ設定の指定{#configuring-security-settings}
 
 パスワードを設定したり、印刷や編集などの特定の機能を制限したりすることで、PDF ドキュメントへのアクセスを制限できます。 PDF ドキュメントに制限された機能がある場合、それらの機能に関連するツールとメニュー項目は淡色表示になります。 ドキュメントの暗号化や認証など、他の方法を使用して安全なドキュメントを作成することもできます。 セキュリティ設定には、特定の PDF 変換に使用するパスワードと特定のオプションが含まれています。
@@ -33,8 +47,8 @@ ht-degree: 88%
 
 1. 管理コンソールで、サービス／PDF Generator／セキュリティ設定をクリックします。
 1. 「新規作成」をクリックするか、セキュリティ設定の名前をクリックします。
-1. 新規／セキュリティ設定を編集ページで、セキュリティ設定に必要な情報を入力します。 （[ファイルタイプ設定の指定](/help/forms/using/admin-help/configuring-file-type-settings.md#configuring-file-type-settings)を参照）。
-1. 「保存」をクリックし、表示されたダイアログボックスに設定の名前を入力して、「OK」をクリックします。
+1. 「新規／セキュリティ設定を編集」ページで、セキュリティ設定に必要な情報を入力します。 （[ファイルタイプ設定の指定](/help/forms/using/admin-help/configuring-file-type-settings.md#configuring-file-type-settings)を参照）。
+1. 「保存」をクリックし、表示されたダイアログに設定の名前を入力して、「OK」をクリックします。
 
 ### セキュリティ設定 {#security-settings}
 
@@ -48,7 +62,7 @@ ht-degree: 88%
 
 **Acrobat 6.0 以降：**&#x200B;高い暗号化（128 ビット RC4）を使用します。 このオプションでは、メタデータで検索を有効にできます。
 
-**Acrobat 7.0 以降：**&#x200B;高い暗号化（128 ビット AES）を使用します。 このオプションでは、メタデータでの検索と、添付ファイルのみの暗号化を有効にできます。
+**Acrobat 7.0 以降：**&#x200B;高い暗号化（128 ビット AES）を使用します。 このオプションでは、検索用のメタデータを有効にし、添付ファイルのみを暗号化できます。
 
 **Acrobat 9.0 以降：**&#x200B;高い暗号化（256 ビット AES）を使用します。 このオプションでは、メタデータでの検索と、添付ファイルのみの暗号化を有効にできます。
 
@@ -120,7 +134,7 @@ ht-degree: 88%
 
 **ページの抽出以外：**&#x200B;ユーザーは、変更許可リストにある任意の方法（ページの削除を除く）を使用してドキュメントを変更できます。
 
-**テキスト、画像、その他のコンテンツのコピーを有効にする：**&#x200B;ユーザーは、PDF ドキュメントの内容を選択してコピーできます。 また、PDF ファイルのコンテンツへのアクセスを必要とするユーティリティ（Acrobat Catalog など）で、それらのコンテンツを取得できます。 このオプションは、高い暗号化レベルが選択されている場合にのみ使用できます。
+**テキスト、画像、その他のコンテンツのコピーを有効にする：**&#x200B;ユーザーは、PDF ドキュメントの内容を選択してコピーできます。 また、Acrobat Catalog など、PDF ファイルのコンテンツへのアクセスを必要とするユーティリティが、それらのコンテンツにアクセスすることもできます。 このオプションは、高い暗号化レベルが選択されている場合にのみ使用できます。
 
 **Reader デバイスの画面のテキストアクセスを有効にする
 視覚障害：** スクリーン リーダーを使用すると、視覚障害のあるユーザーはドキュメントを読むことができます。 ただし、ユーザーは、ドキュメントのコンテンツのコピーまたは抽出はできません。 このオプションは、高い暗号化レベルが選択されている場合にのみ使用できます。

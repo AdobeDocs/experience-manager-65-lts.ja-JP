@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: e0984513-f70c-4409-885b-a2eb50757a7d
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 100%
-
 ---
-
 # アプリケーションの読み込みと管理{#import-and-manage-applications}
 
 AEM Forms では、*アプリケーション*&#x200B;は AEM Forms ソリューションの実装に必要なアセットを格納するコンテナです。 アセットには、フォームデザイン、フォームフラグメント、画像、プロセス、DDX ファイル、フォームガイド、HTML ページ、SWF ファイルなどがあります。 ワークベンチユーザーは、プロジェクトの開発フェーズ中、ワークベンチの Applications ビューから直接アプリケーションをデプロイできます。 アプリケーションがデプロイされると、管理コンソールのアプリケーションの管理ページにある「アプリケーション」タブに表示されます。
@@ -67,7 +82,7 @@ AEM Forms では、*アプリケーション*&#x200B;は AEM Forms ソリュー�
 
 1. 管理コンソールで、サービス／アプリケーションおよびサービス／アプリケーションの管理をクリックします。
 1. デプロイするアプリケーションの横にあるチェックボックスを選択し、「デプロイ」をクリックします。
-1. 表示される確認ダイアログボックスで「OK」をクリックします。
+1. 表示される確認ダイアログで「OK」をクリックします。
 
 ## アプリケーションのデプロイ解除 {#undeploy-an-application}
 
@@ -75,7 +90,7 @@ AEM Forms では、*アプリケーション*&#x200B;は AEM Forms ソリュー�
 
 1. 管理コンソールで、サービス／アプリケーションおよびサービス／アプリケーションの管理をクリックします。
 1. デプロイを解除するアプリケーションの横にあるチェックボックスを選択し、「デプロイ解除」をクリックします。
-1. 表示される確認ダイアログボックスで「OK」をクリックします。
+1. 表示される確認ダイアログで「OK」をクリックします。
 
 ## サーバーからのアプリケーションの削除 {#remove-an-application-from-the-server}
 
@@ -83,11 +98,11 @@ AEM Forms では、*アプリケーション*&#x200B;は AEM Forms ソリュー�
 
 1. 管理コンソールで、サービス／アプリケーションおよびサービス／アプリケーションの管理をクリックします。
 1. 削除するアプリケーションの横にあるチェックボックスを選択し、「削除」をクリックします。
-1. 表示される確認ダイアログボックスで「OK」をクリックします。
+1. 表示される確認ダイアログで「OK」をクリックします。
 
 ## アプリケーションのランタイム設定の読み込み {#import-an-application-s-runtime-configuration}
 
-アプリケーション管理者がアプリケーションのランタイム設定を書き出している場合、ユーザーはデプロイ済みのアプリケーションにそのランタイム設定を読み込むことができます。 この読み込みは、管理コンソールを使用するか、またはスクリプト化された LCA のデプロイメントを介して行うことができます。
+アプリケーション管理者がアプリケーションのランタイム設定を書き出している場合は、そのランタイム設定をデプロイ済みのアプリケーションに読み込むことができます。 この読み込みは、管理コンソールを使用するか、またはスクリプト化された LCA のデプロイメントを介して行うことができます。
 
 1. 管理コンソールで、サービス／アプリケーションおよびサービス／アプリケーションの管理をクリックします。
 1. アプリケーションの名前をクリックします。
@@ -117,4 +132,4 @@ AEM Forms では、*アプリケーション*&#x200B;は AEM Forms ソリュー�
 1. コマンドプロンプトから、*[aem-forms root]*/sdk/misc/Foundation/ArchiveManagement に移動します。
 1. ReadMe.txt ファイルで詳細な手順を確認します。
 1. readme.txt ファイルの説明に従い、scriptedDeploy.bat および sample-files/sample.xml ファイルを手動で変更します。
-1. scriptedDeploy.bat ファイルを実行します。 この操作により、AEM Forms アーカイブファイルが、変更後の設定でデプロイされます。
+1. scriptedDeploy.bat ファイルを実行します。 この操作により、AEM Forms アーカイブファイルが、上書き設定でデプロイされます。

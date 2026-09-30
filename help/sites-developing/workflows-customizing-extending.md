@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 9036e26c-74cd-4013-a63d-70ece0f80904
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3611'
 ht-degree: 94%
-
 ---
-
 # ワークフロー機能の拡張{#extending-workflow-functionality}
 
 このトピックでは、ワークフロー用のカスタムステップコンポーネントを作成する方法や、プログラムによってワークフローを操作する方法について説明します。
@@ -63,8 +72,8 @@ ht-degree: 94%
 
   ダイアログには以下のタブがあります。
 
-   * **共通**：タイトルと説明の編集用。
-   * **詳細**：メール通知プロパティの編集用。
+  * **共通**：タイトルと説明の編集用。
+  * **詳細**：メール通知プロパティの編集用。
 
   ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
@@ -104,9 +113,9 @@ WorkItem には、作業項目（ステップなど）の実行中にのみ使�
 * 型：`String`
 * 値：ベースコンポーネントに解決される次のパスのいずれか
 
-   * `cq/workflow/components/model/process`
-   * `cq/workflow/components/model/participant`
-   * `cq/workflow/components/model/dynamic_participant`
+  * `cq/workflow/components/model/process`
+  * `cq/workflow/components/model/participant`
+  * `cq/workflow/components/model/dynamic_participant`
 
 ### ステップインスタンスのデフォルトのタイトルおよび説明の指定 {#specifying-the-default-title-and-description-for-step-instances}
 
@@ -240,16 +249,16 @@ WorkItem には、作業項目（ステップなど）の実行中にのみ使�
 
 * 名前：`PROCESS_AUTO_ADVANCE`
 
-   * 型：`Boolean`
-   * 値：
+  * 型：`Boolean`
+  * 値：
 
-      * `true` に設定した場合、ワークフローはそのステップを実行して続行します。これはデフォルト値であり、推奨もされています。
-      * `false` に設定した場合、ワークフローはそのステップを実行して停止します。これには追加の処理が必要なので、`true` に設定することをお勧めします。
+    * `true` に設定した場合、ワークフローはそのステップを実行して続行します。これはデフォルト値であり、推奨もされています。
+    * `false` に設定した場合、ワークフローはそのステップを実行して停止します。これには追加の処理が必要なので、`true` に設定することをお勧めします。
 
 * 名前：`DO_NOTIFY`
 
-   * 型：`Boolean`
-   * 値：ユーザー参加ステップについて、メール通知を送信する必要があるかどうかを示します（メールサーバーが正しく設定されていると想定しています）。
+  * 型：`Boolean`
+  * 値：ユーザー参加ステップについて、メール通知を送信する必要があるかどうかを示します（メールサーバーが正しく設定されていると想定しています）。
 
 ## データの保持とアクセス {#persisting-and-accessing-data}
 
@@ -838,12 +847,12 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 
      次のいずれかを指定する必要があります。
 
-      * コラボレーションワークフロー
-      * DAM ワークフロー
-      * Forms のワークフロー
-      * プロジェクト
-      * WCM ワークフロー
-      * ワークフロー
+     * コラボレーションワークフロー
+     * DAM ワークフロー
+     * Forms のワークフロー
+     * プロジェクト
+     * WCM ワークフロー
+     * ワークフロー
 
    ![wf-35](assets/wf-35.png)
 

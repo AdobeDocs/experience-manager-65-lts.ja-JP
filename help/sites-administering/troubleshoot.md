@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 802130c3-9cb8-46b7-98c2-fd9e83d18ec3
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '497'
 ht-degree: 100%
-
 ---
-
 # Adobe Experience Manager のトラブルシューティング {#troubleshooting-aem}
 
 次の節では、AEM（Adobe Experience Manager）の使用時に発生する可能性のあるいくつかの問題を取り上げます。それらのトラブルシューティング方法に関する推奨事項についても説明します。
@@ -67,7 +76,7 @@ ht-degree: 100%
 
 ### スレッドダンプの作成 {#making-a-thread-dump}
 
-スレッドダンプは、現在アクティブなすべての Java™ スレッドのリストです。AEM が適切に応答しない場合は、デッドロックまたはその他の問題をスレッドダンプで特定できます。
+スレッドダンプは、現在アクティブなすべての Java™ スレッドのリストです。 AEM が適切に応答しない場合は、デッドロックまたはその他の問題をスレッドダンプで特定できます。
 
 ### Sling スレッドダンパーの使用 {#using-sling-thread-dumper}
 
@@ -98,7 +107,7 @@ ht-degree: 100%
 
 ### 閉じられていない JCR セッションの確認 {#checking-for-unclosed-jcr-sessions}
 
-AEM WCM 用の機能を開発する場合は、JCR セッションが開かれる可能性があります（データベース接続を開く処理に相当します）。開いたセッションが閉じられないと、システムに次の現象が発生する可能性があります。
+AEM WCM 用の機能を開発する場合は、JCR セッションが開かれる可能性があります（データベース接続を開く処理に相当します）。 開いたセッションが閉じられないと、システムに次の現象が発生する可能性があります。
 
 * システムの速度が低下します。
 * 多数の CacheManager を確認できます（ログファイル内の resizeAll エントリ）。次の数値（size=&lt;x>）はキャッシュ数を示しており、各セッションが複数のキャッシュを開きます。
@@ -114,7 +123,7 @@ AEM WCM 用の機能を開発する場合は、JCR セッションが開かれ�
 1. **OSGI** タブの下の&#x200B;**バンドル**&#x200B;を選択します。
 1. チェック項目:
 
-   * バンドルのステータス。「非アクティブ」または「未解決」と表示されているバンドルがある場合は、そのバンドルを停止してから再起動してください。問題が解決しない場合は、その他のメソッドを使用してさらに調査します。
-   * 依存関係がないバンドルがあるかどうか。個々のバンドル名（リンク）をクリックすると、詳細を確認できます（次の例では問題が発生していません）。
+   * バンドルのステータス。 「非アクティブ」または「未解決」と表示されているバンドルがある場合は、そのバンドルを停止してから再起動してください。 問題が解決しない場合は、その他のメソッドを使用してさらに調査します。
+   * 依存関係がないバンドルがあるかどうか。 個々のバンドル名（リンク）をクリックすると、詳細を確認できます（次の例では問題が発生していません）。
 
 ![screen_shot_2012-02-13at44706pm](assets/screen_shot_2012-02-13at44706pm.png)

@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: b60b198e-1683-4970-b9b4-f1d0178e00e1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2207'
 ht-degree: 97%
-
 ---
-
 # Adobe Experience Manager タッチ操作対応 UI の概念{#concepts-of-the-aem-touch-enabled-ui}
 
 Adobe Experience Manager（AEM）は、タッチデバイスとデスクトップデバイスの両方で動作するように設計されたオーサー環境向けに、[レスポンシブデザイン](/help/sites-authoring/responsive-layout.md)を採用したタッチ操作対応 UI を備えています。
@@ -28,24 +37,24 @@ Adobe Experience Manager（AEM）は、タッチデバイスとデスクトッ�
 タッチ対応 UI は以下で構成されます。
 
 * スイートヘッダー：
-   * ロゴを表示します
-   * グローバルナビゲーションへのリンクを表示します
-   * 検索、ヘルプ、Experience Cloud ソリューション、通知、ユーザー設定など、その他の汎用アクションへのリンクを表示します。
+  * ロゴを表示します
+  * グローバルナビゲーションへのリンクを表示します
+  * 検索、ヘルプ、Experience Cloud ソリューション、通知、ユーザー設定など、その他の汎用アクションへのリンクを表示します。
 * 左側のレール（必要に応じて表示／非表示の切り替えが可能）には次を表示できます。
-   * タイムライン
-   * 参照
-   * フィルター
+  * タイムライン
+  * 参照
+  * フィルター
 * ナビゲーションヘッダー：コンテキストに応じて、次を表示できます。
-   * 現在使用しているコンソールやそのコンソール内の場所、または両方
-   * 左側のパネルの選択内容
-   * パンくずリスト
-   * 適切な&#x200B;**作成**&#x200B;アクションへのアクセス
-   * 表示の選択状況
+  * 現在使用しているコンソールやそのコンソール内の場所、または両方
+  * 左側のパネルの選択内容
+  * パンくずリスト
+  * 適切な&#x200B;**作成**&#x200B;アクションへのアクセス
+  * 表示の選択状況
 * 次の特長を持つコンテンツ領域：
-   * コンテンツの項目（ページ、アセット、フォーラム投稿など）をリストします。
-   * 必要に応じて形式（コラム、カードまたはリストなど）を指定できます。
-   * レスポンシブデザインを使用します（デバイスやウィンドウのサイズに応じて自動的に表示サイズが変更されます）。
-   * 無限スクロールを使用します（ページネーションがなく、すべての項目が 1 つのウィンドウに表示されます）。
+  * コンテンツの項目（ページ、アセット、フォーラム投稿など）をリストします。
+  * 必要に応じて形式（コラム、カードまたはリストなど）を指定できます。
+  * レスポンシブデザインを使用します（デバイスやウィンドウのサイズに応じて自動的に表示サイズが変更されます）。
+  * 無限スクロールを使用します（ページネーションがなく、すべての項目が 1 つのウィンドウに表示されます）。
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 

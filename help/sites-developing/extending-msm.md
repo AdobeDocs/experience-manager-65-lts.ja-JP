@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 46300f72-730e-444c-8677-352a890e9910
-source-git-commit: c033a676eb746befd43803d1ae00c564890cb945
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2605'
+source-wordcount: '2654'
 ht-degree: 92%
-
 ---
-
 # Multi Site Manager の拡張{#extending-the-multi-site-manager}
 
 ここでは、マルチサイトマネージャーの機能を拡張する方法について説明します。
@@ -52,28 +61,28 @@ ht-degree: 92%
 
   ![ブループリント](assets/chlimage_1-74.png)
 
-   * ブループリント設定（`Blueprint`）の使用は任意ですが、次の事項が可能になります。
+  * ブループリント設定（`Blueprint`）の使用は任意ですが、次の事項が可能になります。
 
-      * 作成者がソースに対して「**ロールアウト**」オプションを使用できます（これにより、このソースから継承するライブコピーに変更を（明示的に）プッシュできます）。
-      * 作成者が「**サイトを作成**」を使用できます。これにより、ユーザーが簡単に言語を選択し、ライブコピーの構造を設定できるようになります。
-      * 結果として作成されるライブコピーのデフォルトのロールアウト設定を定義します。
+    * 作成者がソースに対して「**ロールアウト**」オプションを使用できます（これにより、このソースから継承するライブコピーに変更を（明示的に）プッシュできます）。
+    * 作成者が「**サイトを作成**」を使用できます。これにより、ユーザーが簡単に言語を選択し、ライブコピーの構造を設定できるようになります。
+    * 結果として作成されるライブコピーのデフォルトのロールアウト設定を定義します。
 
 * **`LiveRelationship`**
 
   `LiveRelationship` は、ライブコピーブランチのリソースと、同等のソースまたはブループリントのリソースとの関連付け（関係）を指定します。
 
-   * この関係は、継承およびロールアウトの実現時に使用されます。
-   * `LiveRelationship` オブジェクトは、ロールアウト設定（`RolloutConfig`）、`LiveCopy` 、および関係に関連付けた `LiveStatus` オブジェクトへのアクセス（参照）を可能にします。
+  * この関係は、継承およびロールアウトの実現時に使用されます。
+  * `LiveRelationship` オブジェクトは、ロールアウト設定（`RolloutConfig`）、`LiveCopy` 、および関係に関連付けた `LiveStatus` オブジェクトへのアクセス（参照）を可能にします。
 
-   * 例えば、`/content/we-retail/language-masters` にあるソースまたはブループリントから、`/content/copy/us` にライブコピーが作成されるとします。 リソース `/content/we.retail/language-masters/en/jcr:content` および `/content/copy/us/en/jcr:content` は関係を築きます。
+  * 例えば、`/content/we-retail/language-masters` にあるソースまたはブループリントから、`/content/copy/us` にライブコピーが作成されるとします。 リソース `/content/we.retail/language-masters/en/jcr:content` および `/content/copy/us/en/jcr:content` は関係を築きます。
 
 * **`LiveCopy`**
 
   `LiveCopy` は、ライブコピーのリソースとそのソースまたはブループリントのリソースとの関係（`LiveRelationship`）の詳細な設定を保持します。
 
-   * `LiveCopy` クラスを使用すると、ページのパスや、ソースまたはブループリントページのパス、ロールアウト設定にアクセスでき、さらに子ページも `LiveCopy` に含まれるかどうかを決めます。
+  * `LiveCopy` クラスを使用すると、ページのパスや、ソースまたはブループリントページのパス、ロールアウト設定にアクセスでき、さらに子ページも `LiveCopy` に含まれるかどうかを決めます。
 
-   * `LiveCopy` ノードは、「**サイトを作成**」または「**ライブコピーを作成**」を使用するたびに作成されます。
+  * `LiveCopy` ノードは、「**サイトを作成**」または「**ライブコピーを作成**」を使用するたびに作成されます。
 
 * **`LiveStatus`**
 
@@ -83,7 +92,7 @@ ht-degree: 92%
 
   `LiveAction` は、ロールアウトに含まれる各リソースに対して実行されるアクションです。
 
-   * LiveAction は、RolloutConfig によってのみ生成されます。
+  * LiveAction は、RolloutConfig によってのみ生成されます。
 
 * **`LiveActionFactory`**
 
@@ -93,7 +102,7 @@ ht-degree: 92%
 
   `RolloutConfig` は、呼び出し時に使用される `LiveActions` のリストを保持します。 `LiveCopy` は `RolloutConfig` を継承し、その結果が `LiveRelationship` に含まれます。
 
-   * 初めてライブコピーを設定する場合は、RolloutConfig（LiveAction をトリガーする）も使用します。
+  * 初めてライブコピーを設定する場合は、RolloutConfig（LiveAction をトリガーする）も使用します。
 
 ## 新しい同期アクションの作成 {#creating-a-new-synchronization-action}
 
@@ -106,16 +115,16 @@ ht-degree: 92%
 
 * `LiveAction` クラスには次のメソッドが含まれます。
 
-   * `getName`：アクションの名前を返します。 この名前は、（例えば、ロールアウト設定で）アクションの参照に使用されます。
-   * `execute`：アクションのタスクを実行します。
+  * `getName`：アクションの名前を返します。 この名前は、（例えば、ロールアウト設定で）アクションの参照に使用されます。
+  * `execute`：アクションのタスクを実行します。
 
 * `LiveActionFactory` クラスには次のメンバーが含まれます。
 
-   * `LIVE_ACTION_NAME`：関連付けた `LiveAction` の名前を格納するフィールド。 この名前は、`getName` クラスの `LiveAction` メソッドが返す値と一致する必要があります。
+  * `LIVE_ACTION_NAME`：関連付けた `LiveAction` の名前を格納するフィールド。 この名前は、`getName` クラスの `LiveAction` メソッドが返す値と一致する必要があります。
 
-   * `createAction`：`LiveAction` のインスタンスを作成します。 オプションの `Resource` パラメーターを使用して、設定情報を提供できます。
+  * `createAction`：`LiveAction` のインスタンスを作成します。 オプションの `Resource` パラメーターを使用して、設定情報を提供できます。
 
-   * `createsAction`：関連付けられた `LiveAction` の名前を返します。
+  * `createsAction`：関連付けられた `LiveAction` の名前を返します。
 
 ### LiveAction 設定ノードへのアクセス {#accessing-the-liveaction-configuration-node}
 
@@ -203,19 +212,19 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
    * **タイプ**：`cq:RolloutConfig`
 
 1. このノードに次のプロパティを追加します。
-   * **名前**：`jcr:title`
-     **型**：`String`
+   * **名前**： `jcr:title`
+     **種類**: `String`
      **値**：UI に表示される識別タイトルです。
-   * **名前**：`jcr:description`
-     **型**：`String`
+   * **名前**： `jcr:description`
+     **種類**: `String`
      **値**：オプションの説明です。
-   * **名前**：`cq:trigger`
-     **型**：`String`
+   * **名前**： `cq:trigger`
+     **種類**: `String`
      **値**：[ロールアウトトリガー](/help/sites-administering/msm-sync.md#rollout-triggers)を使用します。 次から選択します。
-      * `rollout`
-      * `modification`
-      * `publish`
-      * `deactivate`
+     * `rollout`
+     * `modification`
+     * `publish`
+     * `deactivate`
 
 1. 「**すべて保存**」をクリックします。
 
@@ -232,8 +241,8 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 1. 次のノードプロパティを持つノードを&#x200B;**作成** ：
 
-   * **Name**：同期アクションのノード名。
-名前は、[同期アクション &#x200B;](/help/sites-administering/msm-sync.md#installed-synchronization-actions)の下のテーブルの&#x200B;**アクション名**&#x200B;と同じである必要があります（例：`contentCopy`または`workflow`）。
+   * **名前**：同期アクションのノード名。
+     名前は、[同期アクション](/help/sites-administering/msm-sync.md#installed-synchronization-actions)の下の表の&#x200B;**アクション名**&#x200B;と同じである必要があります（`contentCopy` または `workflow` など）。
    * **タイプ**：`cq:LiveSyncAction`
 
 1. 必要な数の同期アクションノードを追加して設定します。 アクションノードの順序を、実行する順序と一致するように並べ替えます。 最上位のアクションノードが最初に実行されます。
@@ -530,7 +539,7 @@ GitHub のコード
 
    AEM の `error.log` ファイルに、バンドルが開始されたことが記録されます。
 
-   例：[https://localhost:4502/system/console/status-slinglogs](https://localhost:4502/system/console/status-slinglogs)
+   例：[https://localhost:4502/system/console/status-slinglogs](https://localhost:4502/system/console/status-slinglogs)。
 
    ```xml
    13.08.2013 14:34:55.450 *INFO* [OsgiInstallerImpl] com.adobe.example.msm.MyLiveActionFactory-bundle BundleEvent RESOLVED
@@ -655,11 +664,11 @@ MSM は、保存されている言語コードと国コードのリストを使�
 
 * 連絡先メール：
 
-   * このプロパティは各国（またはブランドなど）によって異なるので、ロールアウトする必要はありません。
+  * このプロパティは各国（またはブランドなど）によって異なるので、ロールアウトする必要はありません。
 
 * キービジュアルのスタイル：
 
-   * プロジェクトの要件としては、このプロパティは（通常は）すべての国（またはブランドなど）に共通なので、ロールアウトする必要があります。
+  * プロジェクトの要件としては、このプロパティは（通常は）すべての国（またはブランドなど）に共通なので、ロールアウトする必要があります。
 
 次のことを保証する必要があります。
 
@@ -675,28 +684,28 @@ MSM は、保存されている言語コードと国コードのリストを使�
 
 * `cq-msm-lockable`
 
-   * タッチ操作対応 UI ダイアログの項目に適用されます。
-   * ダイアログ内にチェーンリンクシンボルを作成します。
-   * 継承がキャンセルされている（チェーンリンクが解除されている）場合は、編集のみ可能です。
-   * リソースの最初の子レベルにのみ適用されます。
-      * **タイプ**：`String`
+  * タッチ操作対応 UI ダイアログの項目に適用されます。
+  * ダイアログ内にチェーンリンクシンボルを作成します。
+  * 継承がキャンセルされている（チェーンリンクが解除されている）場合は、編集のみ可能です。
+  * リソースの最初の子レベルにのみ適用されます。
+    * **タイプ**：`String`
 
-      * **値**：対象のプロパティ名を保持します（また、`name` プロパティの値と比較できます）。例として、次を参照してください。
-        `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
+    * **値**：対象のプロパティ名を保持します（また、`name` プロパティの値と比較できます）。例として、次を参照してください。
+      `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 `cq-msm-lockable` が定義されている場合は、次の方法でチェーンの解除またはクローズを MSM と連携できます。
 
 * `cq-msm-lockable` の値が次のような場合：
 
-   * **相対**（例：`myProperty` または `./myProperty`）
+  * **相対**（例：`myProperty` または `./myProperty`）
 
-      * プロパティを `cq:propertyInheritanceCancelled` から追加および削除します。
+    * プロパティを `cq:propertyInheritanceCancelled` から追加および削除します。
 
-   * **絶対**（例：`/image`）
+  * **絶対**（例：`/image`）
 
-      * チェーンを解除すると、`cq:LiveSyncCancelled` mixin を `./image` に追加し、`cq:isCancelledForChildren` を `true` に設定することで、継承がキャンセルされます。
+    * チェーンを解除すると、`cq:LiveSyncCancelled` mixin を `./image` に追加し、`cq:isCancelledForChildren` を `true` に設定することで、継承がキャンセルされます。
 
-      * チェーンを閉じると、継承が元に戻ります。
+    * チェーンを閉じると、継承が元に戻ります。
 
 >[!NOTE]
 >

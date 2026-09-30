@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 3b3cff43-4edc-4250-8e6d-08eb5906ffcd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 100%
-
 ---
-
 # テンプレート{#templates}
 
 テンプレートは、次のような AEM の様々な場面で使用されます。
@@ -45,9 +54,9 @@ AEM で開発を行う場合は、編集可能テンプレートを使用する�
 
 * テンプレートを使用して作成されたページに、次の項目を定義できるようにするために導入されました。
 
-   * 構造
-   * 初期コンテンツ
-   * コンテンツポリシー
+  * 構造
+  * 初期コンテンツ
+  * コンテンツポリシー
 
 * 新しいページが作成されると、ページとテンプレートの間に動的な接続が維持されます。 つまり、テンプレート構造の変更は、そのテンプレートで作成されたすべてのページに反映されます。初期コンテンツの変更は反映されません。
 * デザインプロパティを保持するには、テンプレートエディターから編集できるコンテンツポリシーを使用します（ページエディター内のデザインモードは使用しません）。

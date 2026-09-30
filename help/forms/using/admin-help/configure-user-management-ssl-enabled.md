@@ -1,6 +1,6 @@
 ---
 title: SSL 対応の LDAP サーバーを対象とした User Management の設定
-description: SSL 対応の LDAP サーバーを対象として User Management を設定し、同期を有効にして LDAPS 経由で正しく動作させる方法について説明します。
+description: SSL 対応の LDAP サーバーを対象として User Management を設定し、LDAPS 経由で同期が正しく機能するようにする方法について説明します。
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: a97cb5a6-4097-4f2e-b932-cb858bd5681a
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 94%
-
 ---
-
 # SSL 対応の LDAP サーバーを対象とした User Management の設定 {#configure-user-management-for-an-ssl-enabled-ldap-server}
 
 同期が LDAPS を介して正しく動作するには、認証局（CA）によって発行された LDAP 証明書をアプリケーションサーバーの Java ランタイム環境（JRE）に配置する必要があります。 証明書をアプリケーションサーバーの JRE cacerts ファイルに読み込みます。通常、このファイルは *[JAVA_HOME]*/jre/lib/security/cacerts ディレクトリにあります。

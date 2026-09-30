@@ -5,14 +5,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: b47591ac-10ff-4b87-b75d-68ed635ceca8
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '460'
 ht-degree: 97%
-
 ---
-
-# ページ分析データの表示 {#seeing-page-analytics-data}
+# ページ分析データの表示{#seeing-page-analytics-data}
 
 ページ分析データを使用して、ページコンテンツの効果を測定します。
 
@@ -20,13 +33,13 @@ ht-degree: 97%
 
 ![spad-01](assets/spad-01.png)
 
-ページ分析データは、Sites コンソールの[リスト表示](/help/sites-authoring/basic-handling.md#list-view)に表示されます。ページがリスト形式で表示されている場合、デフォルトで次の列が表示されます。
+ページ分析データは、Sites コンソールの[リスト表示](/help/sites-authoring/basic-handling.md#list-view)に表示されます。 ページがリスト形式で表示されている場合、デフォルトで次の列が表示されます。
 
 * ページ表示
 * ユニーク訪問者
 * ページ滞在時間
 
-各列には現在のレポート期間の値が表示され、その値が前のレポート期間以降に増加したか減少したかも示されます。表示されるデータは 12 時間ごとに更新されます。
+各列には現在のレポート期間の値が表示され、その値が前のレポート期間以降に増加したか減少したかも示されます。 表示されるデータは 12 時間ごとに更新されます。
 
 >[!NOTE]
 >
@@ -35,7 +48,7 @@ ht-degree: 97%
 1. **Sites** コンソールを開きます。例：[https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
 1. ツールバーの右端（右上隅）で、アイコンをクリックして、「**リスト表示**」（表示されるアイコンは、[現在の表示](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)によって異なる）を選択します。
 
-1. もう一度、ツールバーの右端（右上隅）でアイコンをクリックして、「**表示設定**」を選択します。**列を構成**&#x200B;ダイアログが開きます。必要な変更を加えて、「**更新**」で確定します。
+1. もう一度、ツールバーの右端（右上隅）でアイコンをクリックして、「**表示設定**」を選択します。 **列を構成**&#x200B;ダイアログが開きます。 必要な変更を加えて、「**更新**」で確定します。
 
    ![spad-02](assets/spad-02.png)
 
@@ -47,7 +60,7 @@ Sites コンソールに表示される分析データのレポート期間を�
 * 過去 90 日間のデータ
 * 今年のデータ
 
-現在のレポート期間が Sites コンソールのツールバー（上部のツールバーの右側）に表示されます。ドロップダウンを使用して、必要なレポート期間を選択します。
+現在のレポート期間が Sites コンソールのツールバー（上部のツールバーの右側）に表示されます。 ドロップダウンを使用して、必要なレポート期間を選択します。
 
 ![aa-05](assets/aa-05.png)
 

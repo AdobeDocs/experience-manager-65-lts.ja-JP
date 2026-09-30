@@ -6,13 +6,22 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
 exl-id: 9df608f8-cdd0-4820-aab1-eab9fd70f961
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1796'
 ht-degree: 99%
-
 ---
-
 # カスタム検索フォームのアップグレード{#upgrading-custom-search-forms}
 
 AEM 6.2 では、カスタマイズされた検索フォームのリポジトリ内の保存場所が変更されました。 アップグレードすると、次 6.1 の場所から移動します：
@@ -63,7 +72,7 @@ AEM 6.2 では、カスタマイズされた検索フォームのリポジトリ
  </tbody>
 </table>
 
-AEM 6.1 では、標準のフルテキストの述語は検索フォームの一部でした。 6.2 では、フルテキストフィールドが OmniSearch で置き換えられました。 この述語はプログラムによってスキップされ、削除可能です。
+AEM 6.1 では、標準のフルテキストプレディケートは検索フォームの一部でした。 6.2 では、フルテキストフィールドがオムニサーチに置き換えられました。 この述語はプログラムによってスキップされ、削除可能です。
 
 **アクション：** ノードを完全に削除します。
 
@@ -156,13 +165,13 @@ AEM 6.1 では、標準のフルテキストの述語は検索フォームの一
 * `pagestatuspredicate` ノードを削除する
 * ノードをコピーする
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
-   * コピー先：`/conf/global/settings/cq/search/facets/sites/jcr:content/items`
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
+  * コピー先：`/conf/global/settings/cq/search/facets/sites/jcr:content/items`
 
 * ノードをコピーする
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
-   * コピー先：`/conf/global/settings/cq/search/facets/sites/jcr:content/items`
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
+  * コピー先：`/conf/global/settings/cq/search/facets/sites/jcr:content/items`
 
 * `analyticspredicate` ノードの `listOrder` プロパティが「**8**」に設定されていることを確認します。 この設定は、競合を避けるために必要です。
 
@@ -370,7 +379,7 @@ AEM 6.1 では、標準のフルテキストの述語は検索フォームの一
 | 6.1 のリソースタイプ | dam/gui/components/admin/customsearch/searchpredicates/fulltextpredicate |
 | 6.2 のリソースタイプ | n/a |
 
-6.1 では、標準のフルテキストの述語は検索フォームの一部でした。 6.2 では、フルテキストフィールドが OmniSearch で置き換えられました。 この述語はプログラムによってスキップされ、削除可能です。
+6.1 では、標準のフルテキストプレディケートは検索フォームの一部でした。 6.2 では、フルテキストフィールドがオムニサーチに置き換えられました。 この述語はプログラムによってスキップされ、削除可能です。
 
 **アクション：**&#x200B;上述のノードを削除します。
 

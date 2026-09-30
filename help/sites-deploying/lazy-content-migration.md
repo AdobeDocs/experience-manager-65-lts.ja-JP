@@ -6,13 +6,22 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
 exl-id: 78c5486c-ed84-4ec8-b0b0-42d4e8611098
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 100%
-
 ---
-
 # 遅延コンテンツ移行 {#lazy-content-migration}
 
 後方互換性に配慮し、Adobe Experience Manager（AEM）6.3 以降では、**/etc** および **/content** 内のコンテンツと設定は、アップグレードを行ってもすぐに変更または変換されません。 これは、これらの構造上にあるお客様のアプリケーションの依存関係が変更されないようにするために行われます。 AEM 6.5 のすぐに使用できるコンテンツが別の場所でホストされていても、これらのコンテンツ構造に関連する機能は同じままです。
@@ -25,7 +34,7 @@ ht-degree: 100%
 
 これにより、移行中に `CodeUpgradeTasks` が実行されます。
 
-目的は効率的な実行ですが、このアップグレード処理は同期的です。そのため、処理される必要のあるコンテンツの量に応じたダウンタイムを伴います。 アドビでは、実稼動システムの前にステージ環境で実行時間を評価して、それに応じたメンテナンスウィンドウを計画することをお勧めします。
+目的は効率的な実行ですが、このアップグレード処理は同期的です。そのため、処理される必要のあるコンテンツの量に応じたダウンタイムを伴います。 アドビでは、本番システムの前にステージング環境で実行時間を評価して、それに応じたメンテナンス期間を計画することをお勧めします。
 
 通常、これにもアプリケーションの調整が必要となるので、このアクティビティは対応するアプリケーションのデプロイメントと共に実行する必要があります。
 
@@ -35,9 +44,9 @@ ht-degree: 100%
 |---|---|---|---|
 | `Cq561ProjectContentUpgrade` | &lt; 5.6.1 | 即時 |  |
 | `Cq60MSMContentUpgrade` | &lt; 6.0 | 即時 | 削除された `LiveRelationShips` からすべての `VersionStorage` を検出し、親に実行プロパティを追加します。 |
-| `Cq61CloudServicesContentUpgrade` | &lt; 6.1 | 即時 | デフォルトの保護設定でクラウドサービスを再構築します。 |
+| `Cq61CloudServicesContentUpgrade` | &lt; 6.1 | 即時 | デフォルトで安全な設定にするためにクラウドサービスを再構築します。 |
 | `Cq62ConfContentUpgrade` | &lt; 6.2 | 即時 | **/content** から **/conf** へのプロパティベースのリンクを削除し（OSGi メカニズムで置き換え）、対応する OSGi 設定を生成します。 |
-| `Cq62FormsContentUpgrade` | &lt; 6.2 | 即時 | merge_preserve 処理が原因で、デフォルトの保護拒否ルールが指定された権限を上書きするので、アップグレード時に並べ替えが必要になります。 |
+| `Cq62FormsContentUpgrade` | &lt; 6.2 | 即時 | merge_preserve 処理が原因で、デフォルトでセキュアな拒否ルールが既存の権限を上書きしてしまうため、アップグレード時に並び順の調整が必要になります。 |
 | `CQ62Html5SmartFileUpgrade` | &lt; 6.2 | 即時 | Html5SmartFile ウィジェットを使用するコンポーネントを検出し、コンテンツ内でのコンポーネントの使用を検索して、実質的にバイナリを下のレベルに移動してコンポーネントレベルに格納しないことで永続性を再構築します。 |
 | `Cq62ProjectsCodeUpgrade` | &lt; 6.2 | 即時 | 古いスタイルのプロジェクトを **/etc/projects** から **/content/projects** に移動します。 |
 | `Cq62TargetCampaignsContentUpgrade` | &lt; 6.2 | 即時 | 階層（領域）にコンテナレイヤーを導入し、参照を調整します。 |
@@ -48,7 +57,7 @@ ht-degree: 100%
 | `CQ63InboxItemsUpgrade` | &lt; 6.3 | 即時 | インボックス項目の順序付けのために InboxItems を更新します（効率的な並べ替えのためのメタデータの調整） |
 | `CQ63MetadataSchemaConfigUpdate` | &lt; 6.3 | 即時 | 相対パスを **/apps** の代わりに **/conf** に置き換えることで、フォルダーの metadataSchema プロパティを調整します。 |
 | `CQ63MobileAppsNavUpgrade` | &lt; 6.3 | 即時 | ナビゲーション構造の調整 |
-| `CQ63MonitoringDashboardsConfigUpdate` | &lt; 6.3 | 即時 | 監視ダッシュボードのカスタム設定を **/libs** および **/apps** から移動します。 |
+| `CQ63MonitoringDashboardsConfigUpdate` | &lt; 6.3 | 即時 | モニタリングダッシュボードのカスタム設定を **/libs** および **/apps** から移動します。 |
 | `CQ63ProcessingProfileConfigUpdate` | &lt; 6.3 | 即時 | Assets 内の processingProfile プロパティ（6.1 まで使用）を、6.3 以降の構造に一致するように変換します。 また、プロファイルの相対パスを **/apps** の代わりに **/conf** に変更します。 |
 | `CQ63ToolsMenuEntriesContentUpgrade` | &lt; 6.3 | 即時 | アップグレードがある場合に、古い CRXDE Lite および web コンソールのメニューエントリを削除するアップグレードタスク。 |
 | `CQ64CommunitiesConfigsCleanupTask` | &lt; 6.3 | 遅延 | SRP クラウド設定、コミュニティのウォッチワード設定を移動すると、**/etc/social** および **/etc/enablement** がクリーンアップされます（遅延移行を実行するときは、すべての参照とデータを調整する必要があります。アプリケーションのどの部分においてもこの構造に依存しないようにする必要があります）。 |

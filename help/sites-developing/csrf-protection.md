@@ -9,18 +9,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d6bd4028-56c9-4e09-9bba-1199a41b41b8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 100%
-
+source-wordcount: '278'
+ht-degree: 88%
 ---
-
-# CSRF 対策フレームワーク {#the-csrf-protection-framework}
+# CSRF 対策フレームワーク{#the-csrf-protection-framework}
 
 アドビでは、Apache Sling リファラーフィルター以外にも、この種の攻撃を防ぐための新しい CSRF 対策フレームワークを用意しています。
 
-このフレームワークでは、トークンを利用して、クライアントのリクエストが正当なものであることを保証します。トークンは、フォームがクライアントに送信されるときに生成され、フォームがサーバーに返されるときに検証されます。
+このフレームワークでは、トークンを利用して、クライアントのリクエストが正当なものであることを保証します。 トークンは、フォームがクライアントに送信されるときに生成され、フォームがサーバーに返されるときに検証されます。
 
 >[!NOTE]
 >
@@ -30,11 +39,11 @@ ht-degree: 100%
 
 ### 依存関係 {#dependencies}
 
-`granite.jquery` の依存関係を使用するコンポーネントは、CSRF 対策フレームワークのメリットを自動的に活用できます。いずれかのコンポーネントがこのメリットを活用できない場合は、フレームワークを使用する前に `granite.csrf.standalone` に対して依存関係を宣言する必要があります。
+`granite.jquery` の依存関係を使用するコンポーネントは、CSRF 対策フレームワークのメリットを自動的に活用できます。 いずれかのコンポーネントがこのメリットを活用できない場合は、フレームワークを使用する前に `granite.csrf.standalone` に対して依存関係を宣言する必要があります。
 
 ### 暗号鍵のレプリケーション {#replicating-crypto-keys}
 
-トークンを利用するには、デプロイメント内のすべてのインスタンスに HMAC バイナリをレプリケートする必要があります。詳しくは、[HMAC キーのレプリケーション](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key)を参照してください。
+トークンを利用するには、デプロイメント内のすべてのインスタンスに HMAC バイナリをレプリケートする必要があります。 詳しくは、[HMAC キーのレプリケーション](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key)を参照してください。
 
 >[!NOTE]
 >
@@ -45,6 +54,6 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Web アプリケーションでマニフェストキャッシュを使用する場合、トークンがオフラインで CSRF トークンの生成を呼び出さないように、「**&amp;ast;**」をマニフェストに追加してください。詳しくは、こちらの[リンク](https://www.w3.org/TR/offline-webapps/)を参照してください。
+>Web アプリケーションでマニフェストキャッシュを使用する場合は、必ず「**&ast;**」をマニフェストに追加し、トークンがCSRF トークン生成呼び出しをオフラインにしないようにします。 詳しくは、こちらの[リンク](https://www.w3.org/TR/offline-webapps/)を参照してください。
 >
 >CSRF 攻撃とその対策について詳しくは、[クロスサイトリクエストフォージェリに関する OWASP のページ](https://owasp.org/www-community/attacks/csrf)を参照してください。

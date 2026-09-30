@@ -10,21 +10,39 @@ solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
 exl-id: 9e467217-ea80-4a08-808f-9e5431b18a5e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '302'
 ht-degree: 100%
-
 ---
-
 # AEM Forms Workspace のカスタマイズの一般的な手順 {#generic-steps-for-aem-forms-workspace-customization}
 
 カスタマイズを実行するための一般的な手順を以下に示します。
 
 1. `https://'[server]:[port]'/lc/crx/de/index.jsp` にアクセスして CRXDE Lite にログインします。
-1. `/apps` に `ws` という名前の `sling:Folder` フォルダーが存在しない場合は、作成します。`sling:Folder` フォルダーを作成するには、`apps` フォルダーを右クリックし、**[!UICONTROL 作成]**／**[!UICONTROL ノードを作成]**&#x200B;を選択します。名前を `ws` として指定し、タイプを `sling:Folder` として選択して「**[!UICONTROL OK]**」をクリックします。「**[!UICONTROL すべて保存]**」をクリックします。
+1. `/apps` に `ws` という名前の `sling:Folder` フォルダーが存在しない場合は、作成します。 `sling:Folder` フォルダーを作成するには、`apps` フォルダーを右クリックし、**[!UICONTROL 作成]**／**[!UICONTROL ノードを作成]**&#x200B;を選択します。 名前を `ws` として指定し、タイプを `sling:Folder` として選択して「**[!UICONTROL OK]**」をクリックします。 「**[!UICONTROL すべて保存]**」をクリックします。
 1. `/apps/ws` を参照して「**[!UICONTROL アクセス制御]**」タブに移動します。
-1. 「**[!UICONTROL リポジトリ]**」オプションを選択します。**[!UICONTROL アクセス制御]**&#x200B;リストで「**[!UICONTROL +]**」をクリックして、エントリを追加します。もう一度「**[!UICONTROL +]**」をクリックします。
+1. 「**[!UICONTROL リポジトリ]**」オプションを選択します。 **[!UICONTROL アクセス制御]**&#x200B;リストで「**[!UICONTROL +]**」をクリックして、エントリを追加します。 もう一度「**[!UICONTROL +]**」をクリックします。
 1. **PERM_WORKSPACE_USER** プリンシパルを検索して選択します。
 
    ![HTML Workspace をカスタマイズするための汎用手順の一部として PERM_WORKSPACE_USER プリンシパルを選択します](assets/perm_workspace_user.png)
@@ -32,7 +50,7 @@ ht-degree: 100%
 1. `jcr:read` 権限をプリンシパルに付与します。
 1. 「**[!UICONTROL すべて保存]**」をクリックします。
 1. `GET.jsp`、`index` および `html.jsp` ファイルを `/libs/ws` フォルダーから `/apps/ws` フォルダーにコピーします。
-1. `/libs/ws/locales` フォルダーを `/apps/ws` フォルダーにコピーします。「**[!UICONTROL すべて保存]**」をクリックします。
+1. `/libs/ws/locales` フォルダーを `/apps/ws` フォルダーにコピーします。 「**[!UICONTROL すべて保存]**」をクリックします。
 1. 以下に示すように、`GET.jsp` ファイルの参照および相対パスを更新し、「**[!UICONTROL すべて保存]**」をクリックします。
 
    ```javascript
@@ -78,17 +96,17 @@ ht-degree: 100%
 
 1. 以下の操作を実行します。
 
-   1. `/apps/ws` に `js` という名前のフォルダーを作成します。「**[!UICONTROL すべて保存]**」をクリックします。
+   1. `/apps/ws` に `js` という名前のフォルダーを作成します。 「**[!UICONTROL すべて保存]**」をクリックします。
 
-   1. `/apps/ws/js` に `libs` という名前のフォルダーを作成します。「**[!UICONTROL すべて保存]**」をクリックします。
+   1. `/apps/ws/js` に `libs` という名前のフォルダーを作成します。 「**[!UICONTROL すべて保存]**」をクリックします。
 
-   1. `/libs/ws/js/libs/jqueryui` フォルダーを `/apps/ws/js/libs` にコピーします。「**[!UICONTROL すべて保存]**」をクリックします。
+   1. `/libs/ws/js/libs/jqueryui` フォルダーを `/apps/ws/js/libs` にコピーします。 「**[!UICONTROL すべて保存]**」をクリックします。
 
 1. HTML のカスタマイズは以下のようにして実行します。
 
-   1. `/apps/ws/js` の下に `runtime` という名前のフォルダーを作成します。「**[!UICONTROL すべて保存]**」をクリックします。
+   1. `/apps/ws/js` の下に `runtime` という名前のフォルダーを作成します。 「**[!UICONTROL すべて保存]**」をクリックします。
 
-   1. `/apps/ws/js/runtime` の下に `templates` という名前のフォルダーを作成します。「**[!UICONTROL すべて保存]**」をクリックします。
+   1. `/apps/ws/js/runtime` の下に `templates` という名前のフォルダーを作成します。 「**[!UICONTROL すべて保存]**」をクリックします。
 
    1. `/libs/ws/js/main.js` を `/apps/ws/js/main.js` にコピーします。
 
@@ -96,4 +114,4 @@ ht-degree: 100%
 
 1. 「**[!UICONTROL Save All]**」をクリックし、キャッシュをクリアして AEM Forms Workspace を更新します。
 
-   URL `https://'[server]:[port]'/lc/ws` にアクセスして、管理者とパスワードの資格情報を使用してログインします。ブラウザーが `https://'[server]:[port]'/lc/apps/ws/index.html` にリダイレクトします。
+   URL `https://'[server]:[port]'/lc/ws` にアクセスして、管理者とパスワードの資格情報を使用してログインします。 ブラウザーが `https://'[server]:[port]'/lc/apps/ws/index.html` にリダイレクトします。

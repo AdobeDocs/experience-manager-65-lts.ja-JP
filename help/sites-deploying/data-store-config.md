@@ -8,13 +8,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3508'
+source-wordcount: '3510'
 ht-degree: 88%
-
 ---
-
 # AEM 6.5 LTSでのノードストアとデータストアの設定{#configuring-node-stores-and-data-stores-in-aem}
 
 ## はじめに {#introduction}
@@ -389,7 +398,7 @@ S3 でバイナリレスレプリケーションを設定するには、次の�
    >
    >
 
-1. 最後に、設定を検証します。 検証するには、共有している各リポジトリによってデータストアに追加された一意のファイルを探します。 ファイルの形式は `repository-[UUID]` です。UUID は、個々のリポジトリーの一意の識別子です。
+1. 最後に、設定を検証します。 検証するには、共有している各リポジトリによってデータストアに追加された一意のファイルを探します。 ファイルの形式は `repository-[UUID]` です。UUID は、個々のリポジトリの一意の識別子です。
 
    したがって、適切な設定には、データストアを共有するリポジトリと同じ数の一意のファイルを含める必要があります。
 
@@ -499,7 +508,7 @@ secretKey="28932hfjlkwdo8fufsdfas\=\="
 新しいバージョンの AEM では、複数のリポジトリによって共有されるデータストアでもガベージコレクションを実行できます。 共有データストアでデータストアガベージコレクションを実行できるようにするには、次の手順に従います。
 
 1. データストアのガベージコレクション用に設定されたメンテナンスタスクが、データストアを共有するすべてのリポジトリインスタンスで無効になっていることを確認します。
-1. データストアを共有する&#x200B;**すべての**&#x200B;リポジトリーインスタンスについて、[バイナリガベージコレクション](/help/sites-deploying/data-store-config.md#data-store-garbage-collection)で指示されたステップを実行します。 ただし、呼び出しボタンをクリックする前に必ず `markOnly` パラメーターに対して `true` を入力してください。
+1. データストアを共有する&#x200B;**すべての**&#x200B;リポジトリインスタンスについて、[バイナリガベージコレクション](/help/sites-deploying/data-store-config.md#data-store-garbage-collection)で指示されたステップを個別に実行します。 ただし、呼び出しボタンをクリックする前に必ず `markOnly` パラメーターに対して `true` を入力してください。
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
