@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 98%
+source-wordcount: '821'
+ht-degree: 95%
 ---
 # ワークフローの開始{#starting-workflows}
 
@@ -182,8 +182,8 @@ ht-degree: 98%
 
      このランチャープロパティは、次のような項目のコンマ区切りリストです。
 
-     * `property-name`は、指定されたプロパティ名でトリガーされた`jcr` イベントを無視します。 &grave;&grave;
-     * `event-user-data:<*someValue*>` は、[`ObservationManager` API] (https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String）で設定した `*<someValue*`> `user-data` を含むすべてのイベントを無視します。
+     * `property-name`は、指定されたプロパティ名でトリガーされた`jcr` イベントを無視します。 ``
+     * `event-user-data:<*someValue*>`は、[`ObservationManager` API] （https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String)）を通じて設定された`*<someValue*`> `user-data`を含むイベントを無視します。
 
      次に例を示します。
 

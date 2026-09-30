@@ -21,10 +21,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2207'
-ht-degree: 97%
+source-wordcount: '2209'
+ht-degree: 96%
 ---
 # Adobe Experience Manager タッチ操作対応 UI の概念{#concepts-of-the-aem-touch-enabled-ui}
 
@@ -116,7 +116,7 @@ Granite エンジニアリングプラットフォームには、基盤 UI フ�
 ![chlimage_1-81](assets/chlimage_1-81.png)
 GraniteUI.pdf
 
-[&#x200B; ファイルを取得](assets/graniteui.pdf)
+[ ファイルを取得](assets/graniteui.pdf)
 Granite UI:
 
 * Sling の RESTful アーキテクチャを使用
@@ -205,7 +205,7 @@ Granite UI と ExtJS（クラシック UI に使用）の違いも重要です�
 
 ### Granite UI 基盤コンポーネント {#granite-ui-foundation-components}
 
-[Granite UI 基盤コンポーネント](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)は、UI の構築に必要な基本的な構築ブロックを提供します。 次に例を示します。
+[Granite UI 基盤コンポーネント](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)は、UI の構築に必要な基本的な構築ブロックを提供します。 次に例を示します。
 
 * ボタン
 * ハイパーリンク
@@ -250,19 +250,19 @@ Granite UI を使用するように ExtJS コードをアップグレードす�
 | `pathfield, paragraphreference` | `granite/ui/components/foundation/form/pathbrowser` |
 | `selection` | `granite/ui/components/foundation/form/select` |
 | `sizefield` | `cq/gui/components/authoring/dialog/sizefield` |
-| `tags` | `granite/ui/components/foundation/form/autocomplete`&#x200B;`cq/gui/components/common/datasources/tags` |
+| `tags` | `granite/ui/components/foundation/form/autocomplete``cq/gui/components/common/datasources/tags` |
 | `textarea` | `granite/ui/components/foundation/form/textarea` |
 | `textfield` | `granite/ui/components/foundation/form/textfield` |
 
 | **ノードタイプ** | **Granite UI のリソースタイプ** |
 |---|---|
 | `cq:WidgetCollection` | `granite/ui/components/foundation/container` |
-| `cq:TabPanel` | `granite/ui/components/foundation/container`&#x200B;`granite/ui/components/foundation/layouts/tabs` |
+| `cq:TabPanel` | `granite/ui/components/foundation/container``granite/ui/components/foundation/layouts/tabs` |
 | `cq:panel` | `granite/ui/components/foundation/container` |
 
 ### Granite UI 管理コンポーネント {#granite-ui-administration-components}
 
-[Granite UI 管理コンポーネント](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)は、基盤コンポーネントをベースに構築され、あらゆる管理アプリケーションが実装できる汎用構築ブロックを提供します。 次に例を示します。
+[Granite UI 管理コンポーネント](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)は、基盤コンポーネントをベースに構築され、あらゆる管理アプリケーションが実装できる汎用構築ブロックを提供します。 次に例を示します。
 
 * グローバルナビゲーションバー
 * パネル（スケルトン）
@@ -282,7 +282,7 @@ Granite UI を使用するように ExtJS コードをアップグレードす�
 
 CoralUI.pdf
 
-[&#x200B; ファイルを取得](assets/coralui.pdf)
+[ ファイルを取得](assets/coralui.pdf)
 Coral UI （CUI）は、複数の製品間でユーザーエクスペリエンスの一貫性を保つように設計された、タッチ対応UI用のAdobeのビジュアルスタイルの実装です。 Coral UI は、オーサリング環境で使用されるビジュアルスタイルを採用するのに必要なものをすべて備えています。
 
 >[!CAUTION]

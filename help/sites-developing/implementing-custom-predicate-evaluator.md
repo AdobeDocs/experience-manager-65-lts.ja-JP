@@ -25,9 +25,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '820'
 ht-degree: 94%
 ---
 # Query Builder 用のカスタム述語エバリュエーターの実装{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
@@ -68,7 +68,7 @@ GitHub のコード
 
 >[!NOTE]
 >
->`PredicateEvaluator` および `com.day.cq.search` パッケージについて詳しくは、[Java™ のドキュメント](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/search/package-summary.html)を参照してください。
+>`PredicateEvaluator` および `com.day.cq.search` パッケージについて詳しくは、[Java™ のドキュメント](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/index.html?com/day/cq/search/package-summary.html)を参照してください。
 
 ### レプリケーションメタデータ用のカスタム述語エバリュエーターの実装 {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
@@ -153,7 +153,7 @@ pom.xml
 
 >[!NOTE]
 >
->次の手順では、データをフィルタリングする `Xpath` 式を作成する方法について説明します。 この他に、データを行単位で選択する `includes` メソッドを実装する方法もあります。 詳しくは、[Java™ のドキュメント](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29)を参照してください。
+>次の手順では、データをフィルタリングする `Xpath` 式を作成する方法について説明します。 この他に、データを行単位で選択する `includes` メソッドを実装する方法もあります。 詳しくは、[Java™ のドキュメント](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29)を参照してください。
 
 1. `com.day.cq.search.eval.AbstractPredicateEvaluator` を拡張する Java™ クラスを作成します。
 1. 次のように、`@Component` を使用してクラスに注釈を付けます

@@ -24,10 +24,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '6780'
-ht-degree: 97%
+source-wordcount: '6781'
+ht-degree: 96%
 ---
 # AEM の閉じられたユーザーグループ{#closed-user-groups-in-aem}
 
@@ -217,7 +217,7 @@ Granite の新しい認証要件のサポートで実装される `LoginPathProv
 
 ### CUG ポリシーの管理 {#managing-cug-policies}
 
-CUG の読み取りアクセスを制限する新しいタイプのアクセス制御ポリシーは、JCR アクセス制御管理 API を使用して管理され、[JCR 2.0 仕様](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) に記載されるメカニズムに従います。
+CUG の読み取りアクセスを制限する新しいタイプのアクセス制御ポリシーは、JCR アクセス制御管理 API を使用して管理され、[JCR 2.0 仕様](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html) に記載されるメカニズムに従います。
 
 #### 新しい CUG ポリシーを設定 {#set-a-new-cug-policy}
 

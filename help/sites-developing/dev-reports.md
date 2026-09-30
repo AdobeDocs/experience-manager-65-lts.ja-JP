@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '5298'
+source-wordcount: '5300'
 ht-degree: 94%
 ---
 # レポートの開発 {#developing-reports}
@@ -116,7 +116,7 @@ AEM に用意されている標準レポートの特徴：
 クエリ：
 
 * [`reportbase`](#report-base) コンポーネントの一部として定義されます。
-* [CQ QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html) に基づいています。
+* [CQ QueryBuilder](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html) に基づいています。
 * レポートの基本要素として使用するデータを取得します。 結果セット（テーブル）の各行が、ノードに 1 つずつ関連付けられ、クエリから返されます。 [それぞれの列](#column-base-component)の具体的な情報はこのデータセットから抽出されます。
 
 * 通常、次で構成されます。
@@ -369,7 +369,7 @@ N:charting
 
       * `totals`（`Boolean`）
 
-        **合計**&#x200B;を示す線を追加表示する場合は、true を指定します。
+        **合計**を示す線を追加表示する場合は、true を指定します。
         デフォルト：`false`
 
       * `series`（`Long`）
@@ -389,7 +389,7 @@ N:charting
 
 各レポートには設定ダイアログを設定でき、ユーザーはレポートの様々なパラメーターを指定できます。 このダイアログには、レポートページを開いているときに、「**編集**」ボタンでアクセスできます。
 
-このダイアログは、標準の CQ [ダイアログ](/help/sites-developing/components-basics.md#dialogs)であり、そのように設定することができます（詳しくは [CQ.Dialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Dialog) を参照してください）。
+このダイアログは、標準の CQ [ダイアログ](/help/sites-developing/components-basics.md#dialogs)であり、そのように設定することができます（詳しくは [CQ.Dialog](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Dialog) を参照してください）。
 
 ダイアログの例を次に示します。
 
@@ -756,7 +756,7 @@ N:data
 
 以下のいずれかを指定して、前処理中に使用できます。
 
-* [&#x200B; パターンの検索と置換](#preprocessing-find-and-replace-patterns)
+* [ パターンの検索と置換](#preprocessing-find-and-replace-patterns)
 見つかった場合、指定されたパターン（正規表現として定義されている）は別のパターンに置き換えられます。例えば、これは元の部分文字列を抽出するために使用できます。
 
 * [データタイプフォーマッター](#preprocessing-data-type-formatters)

@@ -20,10 +20,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3286'
-ht-degree: 100%
+source-wordcount: '3287'
+ht-degree: 99%
 ---
 # ドキュメントセキュリティについて {#about-document-security}
 
@@ -144,7 +144,7 @@ Document Security は、サーバーとユーザーインターフェイスで�
 * ビジネスパートナーなどの組織外のユーザーは、Document Security ディレクトリに含まれている場合、管理者によって専用のアカウントが作成された場合、自動メール招待プロセスを通じて Document Security に登録された場合のいずれかで、ポリシーで保護されたドキュメントを使用できます。 管理者が指定するアクセス設定に応じて、招待ユーザーは、ドキュメントにポリシーを適用したり、ポリシーを作成、変更および削除したりすることができます。また、他の外部ユーザーを招待して、ポリシーで保護されたドキュメントを使用させることもできます。
 * 開発者は、AEM Forms SDK を使用して、カスタムアプリケーションとドキュメントセキュリティを統合します。
 
-Document Security 管理者は、User Management の次の権限を使用して、カスタムの役割を作成できます。
+Document Security 管理者は、ユーザー管理の次の権限を使用して、カスタムの役割を作成できます。
 
 * Document Security：設定の管理
 * Document Security 招待ユーザーおよびローカルユーザーの管理
@@ -283,4 +283,4 @@ Document Security のインストール時に、*グローバルポリシーセ�
 
   >[!NOTE]
   >
-  >[getAllPolicysetnames()](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html?lang=ja) API を使用すると、最大 1,000 個のポリシーセット名を取得できます。 内部的には、API は、API 呼び出し元がドキュメント公開者権限持つ最大 1,000 個のポリシーを取得し、取得したポリシーに関連付けられた一意のポリシーセット名のリストを作成して返します。 例えば、API が 1,000 個のポリシーを取得し、取得したポリシーが合計 200 個のポリシーセットに関連付けられている場合、API は 200 個のポリシーセット名のみを返します。
+  >[getAllPolicysetnames()](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) API を使用すると、最大 1,000 個のポリシーセット名を取得できます。 内部的には、API は、API 呼び出し元がドキュメント公開者権限持つ最大 1,000 個のポリシーを取得し、取得したポリシーに関連付けられた一意のポリシーセット名のリストを作成して返します。 例えば、API が 1,000 個のポリシーを取得し、取得したポリシーが合計 200 個のポリシーセットに関連付けられている場合、API は 200 個のポリシーセット名のみを返します。

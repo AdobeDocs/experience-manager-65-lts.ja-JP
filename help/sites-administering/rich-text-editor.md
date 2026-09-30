@@ -17,10 +17,10 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2975'
-ht-degree: 98%
+source-wordcount: '2978'
+ht-degree: 96%
 ---
 # リッチテキストエディターの設定 {#configure-the-rich-text-editor}
 
@@ -327,12 +327,12 @@ RTE ツールバーに表示される Coral アイコンと使用可能なコマ
 
 ## その他の情報 {#further-information}
 
-RTE の設定について詳しくは、[AEM Widget API](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) リファレンスを参照してください。
+RTE の設定について詳しくは、[AEM Widget API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.RichText) リファレンスを参照してください。
 
 特に、使用可能なプラグインおよび関連オプションを確認するには、以下を参照してください。
 
-* [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) コンポーネントは、スタイル設定されたテキスト情報（リッチテキスト）を編集するためのフォームフィールドを提供します。 リッチテキストフォームに使用可能なすべてのパラメーターについては、「設定オプション」を参照してください。
-* RichText コンポーネントは、[CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)にリストされているプラグインを使用して、幅広い機能を提供します。 各プラグインについて：
+* [CQ.form.RichText](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.RichText) コンポーネントは、スタイル設定されたテキスト情報（リッチテキスト）を編集するためのフォームフィールドを提供します。 リッチテキストフォームに使用可能なすべてのパラメーターについては、「設定オプション」を参照してください。
+* RichText コンポーネントは、[CQ.form.rte.plugins.Plugin](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)にリストされているプラグインを使用して、幅広い機能を提供します。 各プラグインについて：
 
   * 有効化（または無効化）が可能な機能の詳細については「機能」を参照してください。
   * 該当するプラグインの詳細設定に使用可能なすべてのパラメーターについては、「設定オプション」を参照してください。
@@ -345,7 +345,7 @@ RTE の設定について詳しくは、[AEM Widget API](https://developer.adobe
 
 AEM RTE 機能には次の制限があります。
 
-* RTE 機能は AEM コンポーネントダイアログでのみサポートされます。 RTEは、タッチ操作対応UIの[&#x200B; ページプロパティ &#x200B;](/help/sites-developing/page-properties-views.md)のようなウィザードやFoundation-formsではサポートされていません。
+* RTE 機能は AEM コンポーネントダイアログでのみサポートされます。 RTEは、タッチ操作対応UIの[ ページプロパティ ](/help/sites-developing/page-properties-views.md)のようなウィザードやFoundation-formsではサポートされていません。
 
 * AEM は[ハイブリッドデバイス](/help/release-notes/release-notes.md)では機能しません。
 

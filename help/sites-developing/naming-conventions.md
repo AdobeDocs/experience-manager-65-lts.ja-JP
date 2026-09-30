@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 89%
+source-wordcount: '318'
+ht-degree: 88%
 ---
 # 命名規則 {#naming-conventions}
 
@@ -42,7 +42,7 @@ ht-degree: 89%
 
 ### JCR ユーティリティ {#jcr-utilities}
 
-[JcrUtil](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) は JCR ユーティリティの AEM 実装です。 名前の検証では特に、制御する文字マッピングおよび次の点が確認されます。
+[JcrUtil](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) は JCR ユーティリティの AEM 実装です。 名前の検証では特に、制御する文字マッピングおよび次の点が確認されます。
 
 * `isValidName`
 
@@ -56,7 +56,7 @@ ht-degree: 89%
 
 ### ページマネージャー {#page-manager}
 
-[ページマネージャー](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html)は、[JCRUtil](#jcr-utilities) に基づいて、ページレベル操作用のメソッドを提供します。
+[ページマネージャー](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html)は、[JCRUtil](#jcr-utilities) に基づいて、ページレベル操作用のメソッドを提供します。
 
 ### 標準 UI {#standard-ui}
 

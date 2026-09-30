@@ -21,10 +21,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 99%
+source-wordcount: '790'
+ht-degree: 96%
 ---
 # UI のテスト{#testing-your-ui}
 
@@ -39,7 +39,7 @@ AEM テストフレームワークでは、Javascript で記述されたテス�
 
 >[!NOTE]
 >
->この API について詳しくは、Hobbes.js の[ドキュメント](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)を参照してください。
+>この API について詳しくは、Hobbes.js の[ドキュメント](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html)を参照してください。
 
 ## テストの構造 {#structure-of-tests}
 
@@ -112,7 +112,7 @@ AEM 内で自動化されたテストを使用する場合は、次の用語を�
 
 次の手順は、[We.Retail のコンテンツ](/help/sites-developing/we-retail.md)を使用したテストスイートの作成と実行の方法を説明するものですが、別の web ページを使用するよう簡単にテストを変更できます。
 
-独自のテストスイートの作成について詳しくは、[Hobbes.js API のドキュメント](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)を参照してください。
+独自のテストスイートの作成について詳しくは、[Hobbes.js API のドキュメント](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html)を参照してください。
 
 1. CRXDE Lite を開きます。 （[https://localhost:4502/crx/de](https://localhost:4502/crx/de)）
 1. `/etc/clientlibs` フォルダーを右クリックして、**作成／フォルダーを作成**&#x200B;をクリックしてください。 名前に`myTests`と入力して、「**OK**」をクリックします。

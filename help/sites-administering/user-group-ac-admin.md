@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3107'
-ht-degree: 96%
+source-wordcount: '3109'
+ht-degree: 95%
 ---
 # ユーザー、グループおよびアクセス権限の管理{#user-group-and-access-rights-administration}
 
@@ -72,7 +72,7 @@ CRX では、ユーザーアカウントとグループアカウントの両方�
 
 >[!NOTE]
 >
->CRX は、[JSR-283 で定義されるアクセス制御](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html)を実装しています。
+>CRX は、[JSR-283 で定義されるアクセス制御](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html)を実装しています。
 >
 >CRX リポジトリの標準インストールは、リソースベースのアクセス制御リストを使用するように設定されます。 これは、JSR-283 アクセス制御の実装と、Jackrabbit に存在する実装の 1 つとして考えられます。
 
@@ -503,7 +503,7 @@ CRXDE Lite の「**アクセス制御**」タブを使用して、アクセス�
 
 ### 権限 {#privileges}
 
-アクセス制御エントリを追加する場合は、以下に示す権限を選択できます（詳しくは、[セキュリティ API](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) に関するページを参照）。
+アクセス制御エントリを追加する場合は、以下に示す権限を選択できます（詳しくは、[セキュリティ API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) に関するページを参照）。
 
 <table>
  <tbody>

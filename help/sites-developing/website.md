@@ -21,10 +21,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '5032'
-ht-degree: 89%
+source-wordcount: '5034'
+ht-degree: 88%
 ---
 # 完全な機能を備えた web サイトの作成（JSP）{#create-a-fully-featured-website-jsp}
 
@@ -68,7 +68,7 @@ Web サイトコンテンツパッケージ
 
 ## Adobe Experience Manager のインストール {#installing-adobe-experience-manager}
 
-Web サイトを開発するためのAEM インスタンスをインストールするには、オーサーインスタンスとパブリッシュインスタンス [&#128279;](/help/sites-deploying/deploy.md#author-and-publish-installs)を使用して デプロイメント環境を設定する手順に従うか、[汎用インストール &#x200B;](/help/sites-deploying/deploy.md#default-local-install)を実行します。 汎用インストールでは、AEM クイックスタート JAR ファイルをダウンロードし、license.properties ファイルをJAR ファイルと同じディレクトリに配置し、JAR ファイルをダブルクリックします。
+Web サイトを開発するためのAEM インスタンスをインストールするには、オーサーインスタンスとパブリッシュインスタンス ](/help/sites-deploying/deploy.md#author-and-publish-installs)を使用して[ デプロイメント環境を設定する手順に従うか、[汎用インストール ](/help/sites-deploying/deploy.md#default-local-install)を実行します。 汎用インストールでは、AEM クイックスタート JAR ファイルをダウンロードし、license.properties ファイルをJAR ファイルと同じディレクトリに配置し、JAR ファイルをダブルクリックします。
 
 AEM をインストールしたら、ようこそページで CRXDE Lite のリンクをクリックして CRXDE Lite 開発環境にアクセスします。
 
@@ -532,9 +532,9 @@ topnav コンポーネントのレンダリングスクリプトを強化して�
 
 1. 以下のコードを `navimage.png.java.` にコピーします。このコードによって、AbstractImageServlet クラスが拡張されます。
 
-   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) は、現在のリソースのプロパティを格納する ImageContext オブジェクトを作成します。
+   * [AbstractImageServlet](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) は、現在のリソースのプロパティを格納する ImageContext オブジェクトを作成します。
    * リソースの親ページは、ImageContext オブジェクトから抽出されます。 次に、ページタイトルとサブタイトルが取得されます。
-   * [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/ImageHelper.html) は、サイトデザインの navimage_bg.jpg ファイル、ページタイトルおよびページサブタイトルから画像を生成するために使用されます。
+   * [ImageHelper](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/ImageHelper.html) は、サイトデザインの navimage_bg.jpg ファイル、ページタイトルおよびページサブタイトルから画像を生成するために使用されます。
 
    ```java
    package apps.mywebsite.components.contentpage;
@@ -1298,7 +1298,7 @@ parsys コンポーネント（基盤コンポーネントの 1 つ）を conten
 1. 次のノードをコピーし、apps/mywebsite/components/search ノードに貼り付けます。
 
    * `/libs/foundation/components/search/dialog`
-   * &grave;&grave; `/libs/foundation/components/search/i18n`
+   * `` `/libs/foundation/components/search/i18n`
 
    * `/libs/foundation/components/search/icon.png`
 
@@ -1539,6 +1539,6 @@ contentpage ページの左側のセクションに検索入力ボックスを�
    ```
 
 1. 変更を保存します。
-1. ブラウザーで、**&#x200B; Products** ページをリロードします。 ページ全体は次のようになります。
+1. ブラウザーで、** Products** ページをリロードします。 ページ全体は次のようになります。
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)

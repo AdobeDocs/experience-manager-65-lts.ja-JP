@@ -1,5 +1,5 @@
 ---
-title: AEM Forms 中心のワークフローステップのためのユーザーまたはグループの動的な選択
+title: AEM Forms 中心のワークフローステップでユーザーまたはグループを動的に選択する
 description: 実行時にAEM Forms ワークフローのユーザーまたはグループを選択する方法について説明します。
 content-type: troubleshooting
 topic-tags: publish
@@ -25,10 +25,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '945'
-ht-degree: 65%
+source-wordcount: '948'
+ht-degree: 60%
 ---
 # AEM Forms 中心のワークフローステップでユーザーまたはグループを動的に選択する {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
@@ -36,7 +36,7 @@ ht-degree: 65%
 
 大規模な組織では、プロセスのユーザーを動的に選択する要件があります。 例えば、顧客に対するエージェントの近さに基づいて、顧客に提供するフィールドエージェントを選択します。 このシナリオでは、エージェントは動的に選択されます。
 
-OSGi[&#128279;](/help/forms/using/aem-forms-workflow.md)上のForms中心のワークフローのタスクの割り当てとAdobe Signの手順は、動的にユーザーを選択するオプションを提供します。 ECMAScript バンドルまたはOSGi バンドルを使用して、タスクを割り当てステップの担当者を動的に選択したり、文書に署名ステップの署名者を選択したりできます。
+OSGi](/help/forms/using/aem-forms-workflow.md)上の[Forms中心のワークフローのタスクの割り当てとAdobe Signの手順は、動的にユーザーを選択するオプションを提供します。 ECMAScript バンドルまたはOSGi バンドルを使用して、タスクを割り当てステップの担当者を動的に選択したり、文書に署名ステップの署名者を選択したりできます。
 
 ## ECMAScriptを使用して、ユーザーまたはグループを動的に選択します {#use-ecmascript-to-dynamically-select-a-user-or-group}
 
@@ -131,9 +131,9 @@ function getAdobeSignRecipients() {
 
 ## Java インターフェイスを使用して、ユーザーまたはグループを動的に選択する {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-[RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java インターフェイスを使用して、Adobe Signとタスクの割り当て手順のユーザーまたはグループを動的に選択できます。 [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java インターフェイスを使用するOSGi バンドルを作成し、それをAEM Forms Serverにデプロイできます。 このオプションは、AEM ワークフローの`Assign Task`およびAdobe Sign コンポーネントで選択できます。
+[RecipientInfoSpecifier](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java インターフェイスを使用して、Adobe Signとタスクの割り当て手順のユーザーまたはグループを動的に選択できます。 [RecipientInfoSpecifier](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java インターフェイスを使用するOSGi バンドルを作成し、それをAEM Forms Serverにデプロイできます。 このオプションは、AEM ワークフローの`Assign Task`およびAdobe Sign コンポーネントで選択できます。
 
-以下のコードサンプルをコンパイルするには、[AEM Forms Client SDK](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) jar および [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) ファイルが必要です。 これらの jar ファイルを外部の依存関係として OSGi バンドルプロジェクトに追加します。 任意の Java IDE を使用して、OSGi バンドルを作成できます。 次の手順は、Eclipse を使用して OSGi バンドルを作成する手順を示しています。
+以下のコードサンプルをコンパイルするには、[AEM Forms Client SDK](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) jar および [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) ファイルが必要です。 これらの jar ファイルを外部の依存関係として OSGi バンドルプロジェクトに追加します。 任意の Java IDE を使用して、OSGi バンドルを作成できます。 次の手順は、Eclipse を使用して OSGi バンドルを作成する手順を示しています。
 
 1. Eclipse IDE を開きます。 **[!UICONTROL ファイル]**／**[!UICONTROL 新規プロジェクト]**&#x200B;に移動します。
 1. ウィザードを選択画面で、**[!UICONTROL Maven プロジェクト]**&#x200B;を選択し、「**[!UICONTROL 次へ]**」をクリックします。
@@ -240,7 +240,7 @@ function getAdobeSignRecipients() {
    </project>
    ```
 
-1. 「[RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html)」 Java インターフェイスを使用して、タスクを割り当て手順のユーザーまたはグループを動的に選択するソースコードを追加します。 サンプルコードについては、[Java インターフェイスを使用してユーザーまたはグループを動的に選択するためのサンプル &#x200B;](#-sample-scripts-for)を参照してください。
+1. 「[RecipientInfoSpecifier](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html)」 Java インターフェイスを使用して、タスクを割り当て手順のユーザーまたはグループを動的に選択するソースコードを追加します。 サンプルコードについては、[Java インターフェイスを使用してユーザーまたはグループを動的に選択するためのサンプル ](#-sample-scripts-for)を参照してください。
 1. コマンドプロンプトを開き、OSGi バンドルプロジェクトを含むディレクトリに移動します。 以下のコマンドを使用して OSGi バンドルを作成します。
 
    `mvn clean install`

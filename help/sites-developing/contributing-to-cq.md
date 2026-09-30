@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2738'
+source-wordcount: '2739'
 ht-degree: 95%
 ---
 # AEM への貢献{#contributing-to-aem}
@@ -53,7 +53,7 @@ AEM のコンポーネントに貢献する場合は、オープンソースプ�
 * ブラウザーの cookie
 * その他の最新の web 開発概念
 
-Adobe Experience Manager のテクノロジースタックは、[Apache Felix](https://felix.apache.org/documentation/index.html) OSGI コンテナと [Apache Sling](https://sling.apache.org/index.html) web フレームワークに基づいており、Java コンテンツリポジトリ（[JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)）を、[Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html) に基づいて埋め込みます。 これらの個々のプロジェクト、および貢献する領域で使用されるその他のオープンソースコンポーネント（Apache Lucene など）に関して熟知しておいてください。
+Adobe Experience Manager のテクノロジースタックは、[Apache Felix](https://felix.apache.org/documentation/index.html) OSGI コンテナと [Apache Sling](https://sling.apache.org/index.html) web フレームワークに基づいており、Java コンテンツリポジトリ（[JCR](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html)）を、[Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html) に基づいて埋め込みます。 これらの個々のプロジェクト、および貢献する領域で使用されるその他のオープンソースコンポーネント（Apache Lucene など）に関して熟知しておいてください。
 
 ## 業界知識 {#tribal-knowledge}
 

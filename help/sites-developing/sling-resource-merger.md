@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1262'
 ht-degree: 39%
 ---
 # AEMでのSling Resource Mergerの使用{#using-the-sling-resource-merger-in-aem}
@@ -43,7 +43,7 @@ Sling Resource Mergerは、オーバーレイとオーバーライドリソー�
 
 >[!CAUTION]
 >
->Sling Resource Merger および関連する手法は、[Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html) に対してのみ使用できます。 この状況は、標準のタッチ対応UIにのみ適していることを意味します。この方法で定義された特定のオーバーライドは、コンポーネントのタッチ対応ダイアログにのみ適用されます。
+>Sling Resource Merger および関連する手法は、[Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/index.html) に対してのみ使用できます。 この状況は、標準のタッチ対応UIにのみ適していることを意味します。この方法で定義された特定のオーバーライドは、コンポーネントのタッチ対応ダイアログにのみ適用されます。
 >
 >他の領域（タッチ対応コンポーネントまたはクラシック UIの他の部分を含む）をオーバーレイまたはオーバーライドするには、元の領域から適切なノードと構造をコピーします。 カスタマイズを定義する場所にコピーを配置します。
 
@@ -153,7 +153,7 @@ AEM で Sling Resource Merger を使用する目的は、次のとおりです�
   プロパティは`/libs`定義に存在しませんが、`/apps` オーバーレイ / オーバーライドで必要です。
 
   1. `/apps` 内に、対応するノードを作成します。
-  1. このノード&grave;&grave;で新しいプロパティを作成します。
+  1. このノード``で新しいプロパティを作成します。
 
 * **プロパティの再定義（自動作成されたプロパティ以外）**
 

@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '951'
 ht-degree: 90%
 ---
 # オーサリング - 環境とツール {#authoring-the-environment-and-tools}
@@ -159,7 +159,7 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 
 >[!NOTE]
 >
->[SQL2](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) 検索を使用することもできます。
+>[SQL2](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) 検索を使用することもできます。
 
 ## 参照の表示 {#showing-references}
 
@@ -209,10 +209,10 @@ Web サイトコンソールには、[ページの現在のステータスに関
 * [編集](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 これはデフォルトのモードで、ページの編集、コンポーネントの追加または削除、その他の変更を行うことができます。
 
-* [&#x200B; プレビュー](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages)
+* [ プレビュー](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages)
 このモードでは、最終形式でweb サイトに表示されているかのように、ページをプレビューできます。
 
-* [&#x200B; デザイン](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#main-pars-procedure-0)
+* [ デザイン](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#main-pars-procedure-0)
 このモードでは、アクセス可能なコンポーネントを設定することで、ページのデザインを編集できます。
 
 >[!NOTE]

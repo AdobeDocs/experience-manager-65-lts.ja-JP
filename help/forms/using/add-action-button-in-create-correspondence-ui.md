@@ -24,9 +24,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1903'
 ht-degree: 97%
 ---
 # 通信作成 UI へのカスタムアクションボタンの追加 {#add-custom-action-button-in-create-correspondence-ui}
@@ -437,11 +437,11 @@ Correspondence Management API を使用するには、DSCSample.jar（このド�
    >
    >サーバーサイドで変更を加えるたびに LiveCycle サーバーは再起動します。
 
-   DSCSample.jar ファイルは renderLetter API を使用します。 renderLetter API について詳しくは、[インターフェイス LetterRenderService](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html)を参照してください。
+   DSCSample.jar ファイルは renderLetter API を使用します。 renderLetter API について詳しくは、[インターフェイス LetterRenderService](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html)を参照してください。
 
 #### LiveCyle への DSC の読み込み {#import-dsc-to-livecyle}
 
-DSCSample.jar ファイルは renderLetter API を使用して、DSC で入力された XML データの PDF バイトとしてレターをレンダリングします。 renderLetter およびその他の API について詳しくは、[レターのレンダリングサービス](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html)を参照してください。
+DSCSample.jar ファイルは renderLetter API を使用して、DSC で入力された XML データの PDF バイトとしてレターをレンダリングします。 renderLetter およびその他の API について詳しくは、[レターのレンダリングサービス](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html)を参照してください。
 
 1. ワークベンチを起動してログインします。
 1. **Window／表示を確認／コンポーネント**&#x200B;をクリックします。 コンポーネント表示がワークベンチ ES2 に追加されます。

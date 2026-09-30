@@ -21,10 +21,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2446'
-ht-degree: 99%
+source-wordcount: '2449'
+ht-degree: 97%
 ---
 # Adobe Experience Manager（AEM）コンポーネント（クラシック UI）の開発{#developing-aem-components-classic-ui}
 
@@ -32,7 +32,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->コンポーネント開発の多くの側面はクラシック UI とタッチ操作向け UI に共通なので、このページを使用する[&#128279;](/help/sites-developing/components-basics.md)前に&#x200B;**、AEM コンポーネント - 基本**&#x200B;を必ずお読みください。クラシック UI の詳細が記載されています。
+>コンポーネント開発の多くの側面はクラシック UI とタッチ操作向け UI に共通なので、このページを使用する](/help/sites-developing/components-basics.md)前に&#x200B;**、AEM コンポーネント - 基本**&#x200B;を必ずお読みください[。クラシック UI の詳細が記載されています。
 
 >[!NOTE]
 >
@@ -101,7 +101,7 @@ AEM WCM のコンテンツにアクセスするには、次の 3 つの方法が
 
 * `global.jsp` に設定されている `currentPage` オブジェクト経由：
 
-  `currentPage` オブジェクトは、ページのインスタンスです（[AEM API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html) を参照）。 ページクラスには、コンテンツにアクセスするためのメソッドがいくつかあります。
+  `currentPage` オブジェクトは、ページのインスタンスです（[AEM API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html) を参照）。 ページクラスには、コンテンツにアクセスするためのメソッドがいくつかあります。
 
   例：`String pageTitle = currentPage.getTitle();`
 
@@ -185,8 +185,8 @@ CQ と Sling のタグライブラリを使用すると、テンプレートや�
    >
    >使用するコンポーネント：
    >
-   >* タッチ操作対応 UI では [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) コンポーネントを使用します
-   >* クラシック UI では [ExtJS ウィジェット](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)を使用します
+   >* タッチ操作対応 UI では [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) コンポーネントを使用します
+   >* クラシック UI では [ExtJS ウィジェット](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html)を使用します
 
    >[!NOTE]
    >

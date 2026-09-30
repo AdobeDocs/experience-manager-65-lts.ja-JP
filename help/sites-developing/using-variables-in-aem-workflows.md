@@ -16,9 +16,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1999'
+source-wordcount: '2003'
 ht-degree: 90%
 ---
 # AEM ワークフローの変数{#variables-in-aem-workflows}
@@ -31,7 +31,7 @@ AEM ワークフローモデルでは、次のことができます。
 * [変数の値を設定する](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable)には、「変数を設定する」ワークフローステップを使用します。
 * OR 分岐と移動 AEM ワークフローステップで[変数を使用](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable)して、ルーティングを決定するための式を定義できるようにします。 また、AEM Forms のすべてのワークフローステップで変数を使用することもできます。
 
-変数は、[MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) インターフェイスの拡張です。 ECMAScript で [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) を使用すると、変数を使用して保存されたメタデータにアクセスできます。
+変数は、[MetaDataMap](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) インターフェイスの拡張です。 ECMAScript で [MetaDataMap](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) を使用すると、変数を使用して保存されたメタデータにアクセスできます。
 
 ## 変数の作成 {#create-a-variable}
 
@@ -152,7 +152,7 @@ OR 分岐は、ワークフロー内に分割を作成し、以降は 1 つの�
 
 変数を使用して、式エディターを使用したルーティング式を定義できます。 OR‧分岐ステップでルーティング式を使用する方法について詳しくは、「[OR‧分岐ステップ](/help/sites-developing/workflows-step-ref.md#or-split)」を参照してください。
 
-この例では、ルーティング式を定義する前に、[例 2 &#x200B;](/help/sites-developing/using-variables-in-aem-workflows.md#example2)を使用して **totalvalue** 変数の値を設定します。 **totalvalue** 変数の値が 50000 より大きい場合、分岐 1 はアクティブになります。 同様に、**totalvalue** 変数の値が 50000 未満の場合に、Branch 2 をアクティブにするルールを定義できます。
+この例では、ルーティング式を定義する前に、[例 2 ](/help/sites-developing/using-variables-in-aem-workflows.md#example2)を使用して **totalvalue** 変数の値を設定します。 **totalvalue** 変数の値が 50000 より大きい場合、分岐 1 はアクティブになります。 同様に、**totalvalue** 変数の値が 50000 未満の場合に、Branch 2 をアクティブにするルールを定義できます。
 
 同様に、外部スクリプトパスを選択するか、ルーティング式の ECMA スクリプトを指定して、アクティブな分岐を評価します。 「**[!UICONTROL 分岐名の変更]**」を選択して、分岐に別名を指定します。
 
@@ -178,7 +178,7 @@ OR‧分岐ステップと同様に、ルール定義、ECMA スクリプト、�
 
 ### 変数をサポートしないワークフローステップ {#workflow-steps-without-support-for-variables}
 
-[MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) インターフェイスを使用して、変数をサポートしないワークフロー手順の変数にアクセスできます。
+[MetaDataMap](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) インターフェイスを使用して、変数をサポートしないワークフロー手順の変数にアクセスできます。
 
 #### 変数値の取得 {#retrieve-the-variable-value}
 
@@ -220,7 +220,7 @@ workItem.getWorkflowData().getMetaDataMap().put(salary, 50000)
 
 API を使用して変数を設定し、それらを渡してワークフローインスタンスを呼び出すことができます。
 
-[workflowSession.startWorkflows](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) は、モデル、wfData、metaData を引数として使用します。 MetaDataMap を使用して変数の値を設定します。
+[workflowSession.startWorkflows](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) は、モデル、wfData、metaData を引数として使用します。 MetaDataMap を使用して変数の値を設定します。
 
 この API では、 **variableName** 変数は metaData.put(variableName, value) を使用して **value** に設定されます。
 

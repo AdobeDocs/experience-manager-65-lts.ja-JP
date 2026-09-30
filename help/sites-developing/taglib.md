@@ -22,7 +22,7 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
 source-wordcount: '2466'
 ht-degree: 98%
@@ -49,7 +49,7 @@ global では、[Sling ライブラリ](/help/sites-developing/taglib.md#sling-t
 
 ### &lt;ui:includeClientLib> {#ui-includeclientlib}
 
-`<ui:includeClientLib>` タグは、AEM html クライアントライブラリをインクルードします。js、css または theme の各ライブラリを指定できます。 異なるタイプ（JS や CSS など）の複数のインクルードがある場合は、このタグを JSP で複数回使用する必要があります。 このタグは、` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)` サービスインターフェイスを囲む便利なラッパーです。
+`<ui:includeClientLib>` タグは、AEM html クライアントライブラリをインクルードします。js、css または theme の各ライブラリを指定できます。 異なるタイプ（JS や CSS など）の複数のインクルードがある場合は、このタグを JSP で複数回使用する必要があります。 このタグは、` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)` サービスインターフェイスを囲む便利なラッパーです。
 
 このタグの属性を以下に示します。
 
@@ -187,7 +187,7 @@ JSP における `<cq:text>` タグの使用例を次に示します。
 
 `source` 属性が設定されていない場合：
 
-* `language` 属性が設定されている場合は、`source` 属性のデフォルト値が &grave;&grave; `static` になります。
+* `language` 属性が設定されている場合は、`source` 属性のデフォルト値が `` `static` になります。
 
 * `language` 属性が設定されていない場合は、`source` 属性のデフォルト値が `auto` になります。
 

@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1468'
-ht-degree: 94%
+source-wordcount: '1472'
+ht-degree: 90%
 ---
 # ページオーサリングのカスタマイズ{#customizing-page-authoring}
 
@@ -46,7 +46,7 @@ Adobe Experience Manager（AEM）には、オーサーインスタンスのペ�
 
 >[!NOTE]
 >
->詳しくは、[JS ドキュメント](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)を参照してください。
+>詳しくは、[JS ドキュメント](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/jsdoc/ui-touch/editor-core/index.html)を参照してください。
 
 これらをさまざまな方法で使用して、AEM インスタンスのページオーサリング機能を拡張できます。 一部については、以降で（大まかに）説明します。
 
@@ -56,7 +56,7 @@ Adobe Experience Manager（AEM）には、オーサーインスタンスのペ�
 >
 >* [クライアントライブラリ](/help/sites-developing/clientlibs.md)の使用と作成
 >* [オーバーレイ](/help/sites-developing/overlays.md)の使用と作成
->* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+>* [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* ページオーサリングに使用される構造について詳しくは、[AEM タッチ操作対応 UI の構造](/help/sites-developing/touch-ui-structure.md)を参照してください。
 >
 
@@ -116,9 +116,9 @@ GitHub のコード
 
 ページをオーサリングする際、ユーザーは頻繁にリソース（ページ、コンポーネント、アセットなど）から選択する必要があります。 これは、作成者が項目を選択する必要があるリストの形式などで表示されます。
 
-リストを適切なサイズに保ち、使用事例にも関連するように、フィルターをカスタム述語の形式で実装できます。 例えば、[`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) コンポーネントを使用してユーザーが特定のリソースへのパスを選択できるようにするには、表示されるパスを次のようにフィルタリングできます。
+リストを適切なサイズに保ち、使用事例にも関連するように、フィルターをカスタム述語の形式で実装できます。 例えば、[`pathbrowser`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) コンポーネントを使用してユーザーが特定のリソースへのパスを選択できるようにするには、表示されるパスを次のようにフィルタリングできます。
 
-* [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/predicate/package-summary.html) インターフェイスを実装してカスタム述語を実装します。
+* [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/predicate/package-summary.html) インターフェイスを実装してカスタム述語を実装します。
 * 述語の名前を指定し、`pathbrowser`を使用するときにその名前を参照します。
 
 カスタム述語の作成について詳しくは、[Query Builder 用のカスタム述語エバリュエーターの実装](/help/sites-developing/implementing-custom-predicate-evaluator.md)を参照してください。
