@@ -4,7 +4,19 @@ description: AEM アダプティブフォームのコアコンポーネントを
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: 53645880-92e2-4dfd-9c5d-50c849d6e32b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 93%
@@ -57,8 +69,8 @@ ht-degree: 93%
 レビューとは、1 人以上のレビュー担当者に対してフォームへのコメントを許可するメカニズムです。 フォームユーザーは誰でもフォームにコメントしたり、コメントを通じてフォームをレビューしたりできます。 フォームにコメントするには、「**[!UICONTROL フォーム]**」を選択し、フォームに&#x200B;**[!UICONTROL コメント]**&#x200B;を追加します。
 
 >[!NOTE]
-> 上記で説明したように、アダプティブフォームのコアコンポーネントでコメントを使用すると、フォーム機能の[フォームへのレビュアーの追加](/help/forms/using/create-reviews-forms.md)が無効になります。
-
+>
+>上記で説明したように、アダプティブフォームのコアコンポーネントでコメントを使用すると、フォーム機能の[フォームへのレビュアーの追加](/help/forms/using/create-reviews-forms.md)が無効になります。
 
 ![フォームにコメントの追加](assets/form-comments.png)
 

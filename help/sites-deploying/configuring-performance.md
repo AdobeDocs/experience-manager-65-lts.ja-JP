@@ -9,13 +9,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '5215'
 ht-degree: 97%
-
 ---
-
 # パフォーマンスの最適化 {#performance-optimization}
 
 >[!NOTE]
@@ -151,11 +160,11 @@ JVM および OS レベルの調整は、通常、大幅なパフォーマンス
 
 * すべての編集の 80％が 20％の時間内に行われるため、ピーク時には平均のデータレートの 4 倍になります。 このようなパフォーマンスを目標にします。
 
-## パフォーマンスの監視 {#performance-monitoring}
+## パフォーマンスのモニタリング {#performance-monitoring}
 
 パフォーマンス（またはパフォーマンスの不足）は、ユーザーが最初に認識する事柄の 1 つであるため、ユーザーインターフェイスを備えた他のアプリケーションと同様に、パフォーマンスは非常に重要です。 AEM インストールのパフォーマンスを最適化するには、インスタンスの様々な属性とインスタンスの動作を監視する必要があります。
 
-パフォーマンスの監視を実行する方法について詳しくは、[パフォーマンスの監視](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance)を参照してください。
+パフォーマンスのモニタリングを実行する方法について詳しくは、[パフォーマンスのモニタリング](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance)を参照してください。
 
 多くの場合、パフォーマンスの問題を引き起こす原因をトラックするのは、その影響が明白に確認できる状態であったとしても困難です。
 
@@ -356,7 +365,7 @@ Maximum Parallel Jobs という名前のプロパティを設定します。
 
 * 各コンポーネントには、パフォーマンスに関連する特定のブレークポイント（限界点）があります。 つまり、特定のポイントに達するまではコンポーネントのパフォーマンスが良好で、そのポイントを超えるとパフォーマンスが急激に低下します。
 * アプリケーションの概要をすべて把握するには、最初にコンポーネントを検証して、それぞれのブレークポイントを確認しておく必要があります。
-* ブレークポイントを検出するために、負荷テストを実施できます。このテストでは、ある特定の期間にわたってユーザー数を増やして負荷を上げていきます。 この負荷およびコンポーネントの応答を監視することにより、コンポーネントのブレークポイントに達したときの特定のパフォーマンスの動作を確認できます。 このポイントは、1 秒あたりの同時トランザクションの数と同時ユーザーの数によって限定できます（コンポーネントがこの KPI の影響を受ける場合）。
+* ブレークポイントを検出するために、負荷テストを実施できます。このテストでは、ある特定の期間にわたってユーザー数を増やして負荷を上げていきます。 この負荷およびコンポーネントの応答をモニタリングすることにより、コンポーネントのブレークポイントに達したときの特定のパフォーマンスの動作を確認できます。 このポイントは、1 秒あたりの同時トランザクションの数と同時ユーザーの数によって限定できます（コンポーネントがこの KPI の影響を受ける場合）。
 * この情報は、改善のためのベンチマークとして機能し、使用される測定の効率を示し、テストシナリオの定義に役立ちます。
 
 #### トランザクション {#transactions}
@@ -451,7 +460,7 @@ Web サイトが公開されてからの最初の数日間は、より高い関�
 * 機能に影響を及ぼさない
 * リリース前に負荷テストを実施して検証済みである
 
-負荷の生成、パフォーマンスの監視および結果の分析に役立つ様々なツールが用意されています。 これらのツールの一部を次に示します。
+負荷の生成、パフォーマンスのモニタリングおよび結果の分析に役立つ様々なツールが用意されています。 これらのツールの一部を次に示します。
 
 * [JMeter](https://jmeter.apache.org/)
 * [OpenText Professional Performance Engineering](https://www.opentext.com/products/professional-performance-engineering)。
@@ -597,11 +606,13 @@ www.myCompany.com/news/main.large.html
 * これに対して、10 個の異なる開始ページを選択できるようにする場合は、各ページをキャッシュして、パフォーマンスを向上させることができます。
 
 >[!TIP]
+>
 >Dispatcher キャッシュの設定について詳しくは、[AEM Dispatcher Cache チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html?lang=ja)および[保護されたコンテンツのキャッシュ](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html?lang=ja#dispatcher-tips-and-tricks)の節を参照してください。
 
 （例えば）ユーザーの名前をタイトルバーに入れて各ページをパーソナライズすると、パフォーマンスに影響を与えます。
 
 >[!TIP]
+>
 >保護されたコンテンツのキャッシュについて詳しくは、Dispatcher ガイドの[セキュリティ保護されたコンテンツのキャッシュ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ja)を参照してください。
 
 1 つのページに制限付きコンテンツと公開コンテンツを混在させる場合、Dispatcher のサーバーサイドインクルードを利用する方法や、ブラウザーの Ajax 経由でクライアントサイドインクルードを利用する方法を検討します。

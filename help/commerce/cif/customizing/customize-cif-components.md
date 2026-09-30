@@ -5,13 +5,21 @@ feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: e8f2a771-b2e3-4f3e-85a0-480f783fc313
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '2662'
+source-wordcount: '2667'
 ht-degree: 95%
-
 ---
-
 # Adobe Experience Manager CIF コアコンポーネントをカスタマイズ {#customize-cif-components}
 
 [CIF Venia プロジェクト](https://github.com/adobe/aem-cif-guides-venia)は、[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)を使用するための参照用コードベースです。 このチュートリアルでは、[製品ティーザー](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser)コンポーネントをさらに拡張して、Adobe Commerce のカスタム属性を表示します。 また、Adobe Experience Manager（AEM）と Adobe Commerce 間の GraphQL 統合および CIF コアコンポーネントによって提供される拡張フックについても説明します。
@@ -65,7 +73,7 @@ Venia ブランドは最近、持続可能な資材を使用して一部の製�
 
 製品ティーザーコンポーネントの拡張は、このチュートリアル全体で行われます。 最初の手順として、製品ティーザーのインスタンスをホームページに追加し、ベースライン機能を理解します。
 
-1. サイト [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)の&#x200B;**ホームページ**&#x200B;に移動します。
+1. サイト [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)の&#x200B;**ホームページ**&#x200B;に移動します
 
 2. ページのメインレイアウトコンテナに新しい&#x200B;**製品ティーザー**&#x200B;コンポーネントを挿入します。
 
