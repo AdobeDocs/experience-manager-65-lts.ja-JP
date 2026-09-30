@@ -31,7 +31,7 @@ ht-degree: 2%
 
 1. Java互換性：Java™ 17で実行するには、AEM 6.5 LTSをインストールして設定する必要があります。 設定が完了したら、AEM インスタンスを起動し、すべてのバンドルがアクティブで問題なく実行されていることを確認します
 1. システムリソース：移行プロセス中に両方のリポジトリを処理するのに十分なディスク容量とメモリが利用可能であることを確認します
-1. Oak-upgrade Tool: [公式Maven リポジトリ ](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade)から`oak-upgrade` jarをダウンロードします。 バージョンが、AEM 6.5 LTSで使用されるOak コアバージョンと一致していることを確認します。 Oak アップグレードツールは、Oracle® Java™ 11以降で実行されます
+1. Oak-upgrade Tool: [公式Maven リポジトリ &#x200B;](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade)から`oak-upgrade` jarをダウンロードします。 バージョンが、AEM 6.5 LTSで使用されるOak コアバージョンと一致していることを確認します。 Oak アップグレードツールは、Oracle® Java™ 11以降で実行されます
 
 ## 移行プロセス {#step-by-step-migration-process}
 
@@ -95,6 +95,6 @@ Checkpoints are not copied, because no external datastore has been specified. Th
 
 警告も無視される可能性がありますが、この場合、リポジトリは最初の起動時に完全にインデックスが作成されます。 特に大規模な組織にとっては、長いプロセスかもしれません。 インデックス再作成プロセスが完了するまで、リポジトリは使用できません。 警告を抑制するには、`--skip-checkpoints` オプションを使用します。
 
-また、AEMを開始する前に、[ オフラインのインデックス再作成](/help/sites-deploying/offline-reindexing.md)を使用してリポジトリをオフラインでインデックス再作成し、最初の起動時に完全なインデックス再作成を行わないようにすることもできます。
+また、AEMを開始する前に、[&#x200B; オフラインのインデックス再作成](/help/sites-deploying/offline-reindexing.md)を使用してリポジトリをオフラインでインデックス再作成し、最初の起動時に完全なインデックス再作成を行わないようにすることもできます。
 
-Oak アップグレードツールと高度な使用方法について詳しくは、[公式ドキュメント ](https://jackrabbit.apache.org/oak/docs/migration.html)を参照してください。
+Oak アップグレードツールと高度な使用方法について詳しくは、[公式ドキュメント &#x200B;](https://jackrabbit.apache.org/oak/docs/migration.html)を参照してください。

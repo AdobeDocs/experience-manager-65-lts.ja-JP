@@ -77,7 +77,7 @@ ht-degree: 2%
 
 **スクリプト：** `create-elytron-cred-standalone.bat`
 
-[ ソフトウェア配布ポータル ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip)から`create-elytron-cred-standalone.bat` スクリプトをダウンロードします。
+[&#x200B; ソフトウェア配布ポータル &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip)から`create-elytron-cred-standalone.bat` スクリプトをダウンロードします。
 
 **次のプロンプトが表示されます：**
 1. **JBOSS_HOME パス** （例：`C:\Adobe\Adobe_Experience_Manager_Forms\jboss`）
@@ -101,7 +101,7 @@ ht-degree: 2%
 
 **スクリプト** `create-elytron-cred-standalone.sh`
 
-[ ソフトウェア配布ポータル ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip)から`create-elytron-cred-standalone.sh` スクリプトをダウンロードします。
+[&#x200B; ソフトウェア配布ポータル &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip)から`create-elytron-cred-standalone.sh` スクリプトをダウンロードします。
 
 **次のプロンプトが表示されます：**
 

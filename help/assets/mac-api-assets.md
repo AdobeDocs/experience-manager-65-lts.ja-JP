@@ -54,7 +54,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 ## コンテンツフラグメント {#content-fragments}
 
-[ コンテンツフラグメント ](/help/assets/content-fragments/content-fragments.md)は特殊なタイプのアセットです。 テキスト、数値、日付などの構造化データにアクセスするために使用できます。 `standard` アセット（画像やドキュメントなど）とはいくつかの違いがあるので、コンテンツフラグメントの処理にはいくつかの追加ルールが適用されます。
+[&#x200B; コンテンツフラグメント &#x200B;](/help/assets/content-fragments/content-fragments.md)は特殊なタイプのアセットです。 テキスト、数値、日付などの構造化データにアクセスするために使用できます。 `standard` アセット（画像やドキュメントなど）とはいくつかの違いがあるので、コンテンツフラグメントの処理にはいくつかの追加ルールが適用されます。
 
 詳しくは、[AEM Assets HTTP API でのコンテンツフラグメントのサポート](/help/assets/assets-api-content-fragments.md)を参照してください。
 

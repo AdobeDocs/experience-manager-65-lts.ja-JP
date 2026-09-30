@@ -36,7 +36,7 @@ ht-degree: 65%
 
 大規模な組織では、プロセスのユーザーを動的に選択する要件があります。 例えば、顧客に対するエージェントの近さに基づいて、顧客に提供するフィールドエージェントを選択します。 このシナリオでは、エージェントは動的に選択されます。
 
-OSGi](/help/forms/using/aem-forms-workflow.md)上の[Forms中心のワークフローのタスクの割り当てとAdobe Signの手順は、動的にユーザーを選択するオプションを提供します。 ECMAScript バンドルまたはOSGi バンドルを使用して、タスクを割り当てステップの担当者を動的に選択したり、文書に署名ステップの署名者を選択したりできます。
+OSGi[&#128279;](/help/forms/using/aem-forms-workflow.md)上のForms中心のワークフローのタスクの割り当てとAdobe Signの手順は、動的にユーザーを選択するオプションを提供します。 ECMAScript バンドルまたはOSGi バンドルを使用して、タスクを割り当てステップの担当者を動的に選択したり、文書に署名ステップの署名者を選択したりできます。
 
 ## ECMAScriptを使用して、ユーザーまたはグループを動的に選択します {#use-ecmascript-to-dynamically-select-a-user-or-group}
 
@@ -240,7 +240,7 @@ function getAdobeSignRecipients() {
    </project>
    ```
 
-1. 「[RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html)」 Java インターフェイスを使用して、タスクを割り当て手順のユーザーまたはグループを動的に選択するソースコードを追加します。 サンプルコードについては、[Java インターフェイスを使用してユーザーまたはグループを動的に選択するためのサンプル ](#-sample-scripts-for)を参照してください。
+1. 「[RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html)」 Java インターフェイスを使用して、タスクを割り当て手順のユーザーまたはグループを動的に選択するソースコードを追加します。 サンプルコードについては、[Java インターフェイスを使用してユーザーまたはグループを動的に選択するためのサンプル &#x200B;](#-sample-scripts-for)を参照してください。
 1. コマンドプロンプトを開き、OSGi バンドルプロジェクトを含むディレクトリに移動します。 以下のコマンドを使用して OSGi バンドルを作成します。
 
    `mvn clean install`

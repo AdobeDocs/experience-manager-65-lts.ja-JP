@@ -27,7 +27,7 @@ ht-degree: 18%
 ---
 # 受け入れとサインオフ{#acceptance-and-sign-off}
 
-前述したように、[受け入れテスト ](/help/sites-developing/planning.md)は、次の検証に使用されるテストの特別なカテゴリです。
+前述したように、[受け入れテスト &#x200B;](/help/sites-developing/planning.md)は、次の検証に使用されるテストの特別なカテゴリです。
 
 * このプロジェクトは顧客の要件を満たしています。
 * 顧客がプロジェクトを承認する。

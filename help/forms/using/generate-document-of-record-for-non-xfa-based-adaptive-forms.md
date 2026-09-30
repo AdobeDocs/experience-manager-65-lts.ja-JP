@@ -53,7 +53,7 @@ AEM as a Cloud Serviceのドキュメントについては、[Cloud Service上�
 
 アダプティブフォームの作成時に、フォームモデルを選択できます。 以下のオプションがあります。
 
-* [ フォームテンプレート](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)
+* [&#x200B; フォームテンプレート](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)
 アダプティブフォームのXFA テンプレートを選択できます。 XFA テンプレートを選択した場合は、上記のように、レコードのドキュメントに関連付けられている XDP ファイルを使用することができます。
 
 * [XML スキーマ](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)
@@ -428,10 +428,10 @@ AEM as a Cloud Serviceのドキュメントについては、[Cloud Service上�
 **フォームレベルの設定**
 
 * **[!UICONTROL 基本]**
-  * **テンプレート：**テンプレートは、「デフォルト」または「カスタム」から選択できます。
+  * **テンプレート：**&#x200B;テンプレートは、「デフォルト」または「カスタム」から選択できます。
     ![代替テキスト](image.png)
-  * **アクセントカラー：**[!UICONTROL レコードのドキュメント]のテンプレートカラーを事前に定義できます。
-  * **フォントファミリー：**[!UICONTROL レコードのドキュメント]のテキストのフォントタイプを選択します。
+  * **アクセントカラー：**&#x200B;[!UICONTROL レコードのドキュメント]のテンプレートカラーを事前に定義できます。
+  * **フォントファミリー：**&#x200B;[!UICONTROL レコードのドキュメント]のテキストのフォントタイプを選択します。
   * **バインドされていないフィールドをレコードのドキュメントに含める：**&#x200B;このプロパティを設定すると、スキーマベースのアダプティブフォームのバインドされていないフィールドが、[!UICONTROL レコードのドキュメント]に追加されます。 デフォルトでは true になっています。
   * **非表示の場合に DoR からフィールドを除外：**&#x200B;フォーム送信時に[!UICONTROL レコードのドキュメント]から非表示のフィールドを除外するようにプロパティを設定します。 [サーバーで再検証](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)を有効にすると、サーバーは非表示のフィールドを再計算してから、[!UICONTROL レコードのドキュメント]から非表示のフィールドを除外します。
 * **[!UICONTROL フォームフィールドのプロパティ]**
@@ -540,7 +540,7 @@ XCI ファイルを使用すると、ドキュメントの様々なプロパテ�
 ### ローカルの Forms 開発環境でのカスタム XCI ファイルの使用
 
 1. XCI ファイルをローカル開発環境にアップロードします。
-1. <!--Cloud Service SDK-->設定マネージャーを開きます。
+1. &#x200B;<!--Cloud Service SDK-->設定マネージャーを開きます。
 
    <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
 

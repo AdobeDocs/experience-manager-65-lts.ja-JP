@@ -600,7 +600,7 @@ IMS の設定が完了したら、AEM でクラウド設定を確認できます
 
 1. この設定では、2つのチェックボックス値は空のままでした。
 
-   これらのオプションについて詳しくは、[ クラウドサービスの設定](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service)を参照してください。
+   これらのオプションについて詳しくは、[&#x200B; クラウドサービスの設定](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service)を参照してください。
 
 #### クラウド設定の設定（`We.Finance` AFC実稼動） {#configure-cloud-configuration-wefinance}
 
@@ -730,7 +730,7 @@ IMS設定が完了したら、AEMでクラウド設定を作成します。
 
 [スタイルシステム](../../sites-authoring/style-system.md)
 
-サポートされているスタイルについて詳しくは、[ テンプレートのカスタマイズ スタイル システム ](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates)も参照してください。
+サポートされているスタイルについて詳しくは、[&#x200B; テンプレートのカスタマイズ スタイル システム &#x200B;](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates)も参照してください。
 
 ### アダプティブフォームのカスタマイズ {#adaptive-forms-customization}
 

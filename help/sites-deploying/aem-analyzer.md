@@ -46,7 +46,7 @@ AEM 6.5 LTS アナライザーレポートには、次のカテゴリが含ま�
 
 ## 入手方法 {#analyzer-availability}
 
-AEM Analyzerは、[ ソフトウェア配布ポータル ](https://experience.adobe.com/#/downloads/content/software-distribution/ja/aem.html)からzip ファイルとしてダウンロードできます。 パッケージは、[Package Manager](/help/sites-administering/package-manager.md)を介してソース AEM インスタンスにインストールできます。
+AEM Analyzerは、[&#x200B; ソフトウェア配布ポータル &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/ja/aem.html)からzip ファイルとしてダウンロードできます。 パッケージは、[Package Manager](/help/sites-administering/package-manager.md)を介してソース AEM インスタンスにインストールできます。
 
 ## AEM Analyzerを使用する際の重要な考慮事項 {#important-considerations-for-using-aem-analyzer}
 
@@ -69,23 +69,23 @@ AEM Analyzer レポートを表示するには、次の手順に従います。
 
 1. Adobe Experience Managerを選択し、**ツール – オペレーション - 6.5 LTS Modernizer**&#x200B;に移動します
 
-   ![ アナライザーレポートを表示1](/help/sites-deploying/assets/view-analyzer-report-1.png)
+   ![&#x200B; アナライザーレポートを表示1](/help/sites-deploying/assets/view-analyzer-report-1.png)
 
 1. **AEM 6.5 LTS Analyzer**&#x200B;をクリックして開きます
 
-   ![ アナライザーレポートを表示2](/help/sites-deploying/assets/view-analyzer-report-2.png)
+   ![&#x200B; アナライザーレポートを表示2](/help/sites-deploying/assets/view-analyzer-report-2.png)
 
 1. 「**レポートを生成**」をクリックして、AEM Analyzerを実行します
 
-   ![ アナライザーレポートを表示3](/help/sites-deploying/assets/view-analyzer-report-3.png)
+   ![&#x200B; アナライザーレポートを表示3](/help/sites-deploying/assets/view-analyzer-report-3.png)
 
 1. AEM Analyzerがレポートを生成している間、画面に表示されたツールによる進行状況を確認できます。 完了した割合で進捗状況が表示されます。 また、分析項目の数と調査結果の数も表示されます
 
-   ![ アナライザーレポートを表示4](/help/sites-deploying/assets/view-analyzer-report-4.png)
+   ![&#x200B; アナライザーレポートを表示4](/help/sites-deploying/assets/view-analyzer-report-4.png)
 
 1. 6.5 LTS アナライザーレポートを生成すると、結果の概要と数が、結果のタイプと重要度レベルで整理された表形式で表示されます。 特定の検索の詳細を取得するには、テーブル内の検索のタイプに対応する番号をクリックします
 
-   ![ アナライザーレポートを表示5](/help/sites-deploying/assets/view-analyzer-report-5.png)
+   ![&#x200B; アナライザーレポートを表示5](/help/sites-deploying/assets/view-analyzer-report-5.png)
 
 1. 「**CSV に書き出し**」をクリックすると、レポートをコンマ区切り値（CSV）形式でダウンロードできます。 アナライザーがキャッシュをクリアし、**レポートの更新**&#x200B;をクリックしてレポートを再生成するように強制できます。 キャッシュが期限切れになった場合は、レポートを再生成する必要があります。
 
@@ -105,7 +105,7 @@ AEM Analyzer レポートを表示するには、次の手順に従います。
 * **System Overview**: Analyzerが実行されたAEM システムに関する情報
 * **発見カテゴリ**：各セクションが同じカテゴリの 1 つ以上の発見に対応する複数セクション。 各セクションには次の内容が含まれます。カテゴリ名、サブタイプ、発見数と重要度、概要、カテゴリドキュメントへのリンク、個々の発見情報。
 
-  ![ アナライザーレポートの概要](/help/sites-deploying/assets/analyzer-report-summary.png)
+  ![&#x200B; アナライザーレポートの概要](/help/sites-deploying/assets/analyzer-report-summary.png)
 
   アクションの大まかな優先度を示すために、各発見に重要度レベルが割り当てられます。
 
@@ -196,40 +196,40 @@ Content Transformerは、Software Distribution Portalからzip ファイルと�
 1. ソース AEM インスタンスに管理者としてログインし、*https://host:port/aem/start.htm*&#x200B;のスタートページに移動します
 1. **ツール – オペレーション - 6.5 LTS Modernizer**&#x200B;に移動します
 
-   ![ コンテンツ トランスフォーマ 1](/help/sites-deploying/assets/opening-content-transformer-1.png)を開いています
+   ![&#x200B; コンテンツ トランスフォーマ 1](/help/sites-deploying/assets/opening-content-transformer-1.png)を開いています
 
 1. 6.5 LTS アナライザーレポート **の** Content Transformer カードをクリックします
 
-   ![ コンテンツ トランスフォーマ 2](/help/sites-deploying/assets/opening-content-transformer-2.png)を開いています
+   ![&#x200B; コンテンツ トランスフォーマ 2](/help/sites-deploying/assets/opening-content-transformer-2.png)を開いています
 
 1. アナライザーレポートが生成されない場合、**コンテンツの変換** ページには&#x200B;**レポートなし**&#x200B;と表示されます。 コンテンツに関連するすべての調査結果が削除された場合、同じ&#x200B;**レポートなし** メッセージも表示されます
 
-   ![ コンテンツ トランスフォーマ 3](/help/sites-deploying/assets/opening-content-transformer-3.png)を開いています
+   ![&#x200B; コンテンツ トランスフォーマ 3](/help/sites-deploying/assets/opening-content-transformer-3.png)を開いています
 
 1. 以下に、AEM Analyzer レポートの作成が成功した場合と、コンテンツに関連する問題が見つかった場合に、Content Transformerの概要ページがどのように表示されるかを示す例を示します。
 
 AEM Analyzer レポートの有効期限がサイドパネルに表示されます。 コンテンツ関連の結果を見落とさないようにするには、最新のAEM Analyzer レポートでContent Transformerを実行することをお勧めします
 
-![ コンテンツ トランスフォーマ 4](/help/sites-deploying/assets/opening-content-transformer-4.png)を開いています
+![&#x200B; コンテンツ トランスフォーマ 4](/help/sites-deploying/assets/opening-content-transformer-4.png)を開いています
 
 1. パターンコード、サブタイプ、重要度、Sourceに基づいて問題をフィルタリングできます
 
-   ![ コンテンツ トランスフォーマ 5](/help/sites-deploying/assets/opening-content-transformer-5.png)を開いています
+   ![&#x200B; コンテンツ トランスフォーマ 5](/help/sites-deploying/assets/opening-content-transformer-5.png)を開いています
 
 ### パスの削除 {#removing-paths}
 
 1. すべての問題または特定の問題を選択し、**削除**&#x200B;を選択して解決できます
 
-   ![ パス 1](/help/sites-deploying/assets/removing-paths-1.png)を削除しています
+   ![&#x200B; パス 1](/help/sites-deploying/assets/removing-paths-1.png)を削除しています
 
    >[!NOTE]
    >削除操作では、変換の前に、デフォルトで`/etc/packages/modernizer-content-transformation`の下にあるソースパスのバックアップパッケージが作成されます。 「操作を削除」ダイアログには、バックアップパッケージの作成を無効または有効にするオプションがありますが、「パッケージ作成を有効にする」を常に選択することを強くお勧めします。
 
-   ![ パス 2](/help/sites-deploying/assets/removing-paths-2.png)を削除しています
+   ![&#x200B; パス 2](/help/sites-deploying/assets/removing-paths-2.png)を削除しています
 
 1. パスの削除操作のために作成されたバックアップパッケージの例を以下に示します。 「**インストール**」をクリックして、ソースパスを復元できます
 
-   ![ パス 3](/help/sites-deploying/assets/removing-paths-3.png)を削除しています
+   ![&#x200B; パス 3](/help/sites-deploying/assets/removing-paths-3.png)を削除しています
 
    >[!CAUTION]
    >
@@ -237,7 +237,7 @@ AEM Analyzer レポートの有効期限がサイドパネルに表示されま�
 
 1. 必要に応じて、選択したコンテンツの結果を後で使用するためにパッケージ化できます。 これを行うには、含める調査結果を選択し、左上の「**パッケージ**」をクリックします。 パッケージ名を入力し、パッケージパスを選択し、**パッケージ** ボタンをクリックしてプロセスを完了します。
 
-   ![ パス 3](/help/sites-deploying/assets/removing-paths-4.png)を削除しています
+   ![&#x200B; パス 3](/help/sites-deploying/assets/removing-paths-4.png)を削除しています
 
 ### 既知の問題 {#known-issues}
 

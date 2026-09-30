@@ -33,14 +33,14 @@ ht-degree: 64%
 
 +++ 64 ビット版 AEM Forms Designer の場合（推奨）
 
-* 64 ビット版の[Visual C++ 2019 Redistributable （x64） ](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)をインストールします。 インストールを開始する前に、前述の再頒布可能ランタイムパッケージがインストールされていることを確認してください。
+* 64 ビット版の[Visual C++ 2019 Redistributable （x64） &#x200B;](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)をインストールします。 インストールを開始する前に、前述の再頒布可能ランタイムパッケージがインストールされていることを確認してください。
 * AEM Forms Designer をインストールまたはアンインストールするには、管理者権限を持っている必要があります。
 
 +++
 
 +++ 32 ビット版 AEM Forms Designer の場合
 
-* 32 ビット版の[Visual C++ 2019 Redistributable （x64） ](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)をインストールします。 インストールを開始する前に、前述の再頒布可能ランタイムパッケージがインストールされていることを確認してください。
+* 32 ビット版の[Visual C++ 2019 Redistributable （x64） &#x200B;](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)をインストールします。 インストールを開始する前に、前述の再頒布可能ランタイムパッケージがインストールされていることを確認してください。
 * AEM Forms Designer をインストールまたはアンインストールするには、管理者権限を持っている必要があります。
 
 +++
@@ -48,8 +48,8 @@ ht-degree: 64%
 >[!NOTE]
 >
 >* 64 ビット版のDesignerは、AEM 6.5 Forms サービスパック 19 （6.5.19.0）で導入されました。
->* 32 ビット版のDesignerは、[AEM Forms Service Pack 21 （6.5.21.0） ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)のリリース以降、非推奨となっています。
-> * Forms Designer でサポートされているプラットフォームは、AEM Forms でサポートされているプラットフォームと一致します。 Forms Designerでサポートされているプラットフォームについて詳しくは、[ここをクリック ](/help/sites-deploying/technical-requirements.md)
+>* 32 ビット版のDesignerは、[AEM Forms Service Pack 21 （6.5.21.0） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)のリリース以降、非推奨となっています。
+> * Forms Designer でサポートされているプラットフォームは、AEM Forms でサポートされているプラットフォームと一致します。 Forms Designerでサポートされているプラットフォームについて詳しくは、[ここをクリック &#x200B;](/help/sites-deploying/technical-requirements.md)
 
 フォーム designer のインストールに関して詳しくは、[よくある質問](#fandq)を参照してください。
 
@@ -71,7 +71,7 @@ ht-degree: 64%
 
    >[!NOTE]
    >
-   >* Forms Designerのライセンスキーを[Adobeライセンス Web サイト ](https://licensing.adobe.com/)から取得します。
+   >* Forms Designerのライセンスキーを[Adobeライセンス Web サイト &#x200B;](https://licensing.adobe.com/)から取得します。
 
 1. 使用許諾契約に同意する場合は、「次へ」をクリックして先に進みます。
 1. （オプション）Designer を選択した場所にインストールする場合は、既定のインストールパスを変更します。 「次へ」をクリックします。
@@ -134,6 +134,6 @@ AEM Forms Designer でスタンドアロンのインストーラーを使用す�
 
     1. Designerを開きます。
     1. 「**ヘルプ**」 > 「**Designerについて**」をクリックして、Designerのバージョンとビット数を確認します。
-例えば、次の例に示すように、バージョン文字列は**64 ビット**で終わります。
+例えば、次の例に示すように、バージョン文字列は&#x200B;**64 ビット**&#x200B;で終わります。
        `6.5.21.20240522.1.161 | 64 bit`
     1. Designerを開くと、左上に64 ビットの商品名を含むブランディングアイコンが表示されます。

@@ -116,7 +116,7 @@ Adobe Workfront ドキュメントと Assets 間のメタデータマッピン�
    * タスクのカスタムフォームフィールド
    * プロジェクトの概要フィールド（ID、名前、説明、参照番号）
 
-1. [!UICONTROL Workfront カスタムフォームフィールド ]で選択された[!DNL Workfront] フィールドがWorkfront User type-ahead フィールドである場合、マッピングするWorkfront User フィールドを指定する必要があります。 これを行うには、「Workfront の参照オブジェクトから値を取得」フィールドをオンにしてから、マッピングする値を取得する [!UICONTROL Workfront ユーザーカスタムフォームフィールド]の名前を指定します。
+1. [!UICONTROL Workfront カスタムフォームフィールド &#x200B;]で選択された[!DNL Workfront] フィールドがWorkfront User type-ahead フィールドである場合、マッピングするWorkfront User フィールドを指定する必要があります。 これを行うには、「Workfront の参照オブジェクトから値を取得」フィールドをオンにしてから、マッピングする値を取得する [!UICONTROL Workfront ユーザーカスタムフォームフィールド]の名前を指定します。
 
    ![メタデータマッピング設定](/help/assets/assets/wf-metadata-mapping-config1.png)
 

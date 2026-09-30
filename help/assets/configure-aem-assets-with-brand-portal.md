@@ -76,15 +76,15 @@ AEM Assets と Brand Portal の連携を設定するには以下が必要です�
 
 AEM オーサーインスタンスを設定するには、AEM 6.5 LTSを使用することをお勧めします。 AEM が稼働していない場合は、以下の場所から AEM をダウンロードしてください。
 
-* 既存のAEMをご利用の場合は、[AEM ライセンス web サイト ](https://licensing.adobe.com)からAdobe 6.5 LTSをダウンロードしてください。
+* 既存のAEMをご利用の場合は、[AEM ライセンス web サイト &#x200B;](https://licensing.adobe.com)からAdobe 6.5 LTSをダウンロードしてください。
 
-* Adobe パートナーの場合は、[Adobe パートナートレーニング プログラム ](https://solutionpartners.adobe.com/)を使用してAEM 6.5 LTSをリクエストしてください。
+* Adobe パートナーの場合は、[Adobe パートナートレーニング プログラム &#x200B;](https://solutionpartners.adobe.com/)を使用してAEM 6.5 LTSをリクエストしてください。
 
 AEM をダウンロードしたら、[デプロイとメンテナンス](/help/sites-deploying/deploy.md#default-local-install)の説明に従って、AEM オーサーインスタンスの設定を行ってください。
 
 ### 最新の AEM サービスパックをダウンロードしてインストールする {#servicepack}
 
-詳細な手順については、現在の[AEM 6.5 LTS サービスパックのリリースノート ](/help/release-notes/release-notes.md)を参照してください。
+詳細な手順については、現在の[AEM 6.5 LTS サービスパックのリリースノート &#x200B;](/help/release-notes/release-notes.md)を参照してください。
 
 最新の AEM パッケージまたはサービスパックが見つからない場合、**Adobe カスタマーサポートにお問い合わせください**。
 

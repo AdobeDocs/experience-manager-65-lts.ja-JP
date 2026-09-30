@@ -29,7 +29,7 @@ ht-degree: 16%
 
 ## アップグレード前の手順 {#pre-upgrade-steps}
 
-アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。 詳しくは、[コードのアップグレードとカスタマイズ](/help/sites-deploying/upgrading-code-and-customizations.md)および[アップグレード前のメンテナンスタスク](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。 さらに、お使いのシステムがAEM 6.5 LTS](/help/sites-deploying/technical-requirements.md)の[要件を満たしていることを確認し、[ アップグレード計画に関する考慮事項](/help/sites-deploying/upgrade-planning.md)と、[Analyzer](/help/sites-deploying/aem-analyzer.md)による複雑性の見積もり方法を参照してください。
+アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。 詳しくは、[コードのアップグレードとカスタマイズ](/help/sites-deploying/upgrading-code-and-customizations.md)および[アップグレード前のメンテナンスタスク](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。 さらに、お使いのシステムがAEM 6.5 LTS[&#128279;](/help/sites-deploying/technical-requirements.md)の要件を満たしていることを確認し、[&#x200B; アップグレード計画に関する考慮事項](/help/sites-deploying/upgrade-planning.md)と、[Analyzer](/help/sites-deploying/aem-analyzer.md)による複雑性の見積もり方法を参照してください。
 
 
 ### 移行の前提条件 {#migration-prerequisites}
@@ -43,7 +43,7 @@ ht-degree: 16%
 
 1. AEM 6.5が既にデプロイされている場合は、バンドルが正しく機能していることを確認します。*`https://<serveraddress:port>/system/console/bundles`*
 1. 次に、AEM 6.5を停止します。 これは、次の場所にあるTomcat App Managerから実行できます：*`https://<serveraddress:port>/manager/html`*
-1. アップグレード アクティビティを実行する前に、AEM 6.5 サーバーのバックアップなどの[ アップグレード前](#pre-upgrade-steps) アクティビティが完了していることを確認してください
+1. アップグレード アクティビティを実行する前に、AEM 6.5 サーバーのバックアップなどの[&#x200B; アップグレード前](#pre-upgrade-steps) アクティビティが完了していることを確認してください
 1. Java 17/Java 21をインストールし、コマンドを実行して正しくインストールされていることを確認します。
 
    ```
@@ -82,4 +82,4 @@ ht-degree: 16%
 
 ## アップグレード後のチェックとトラブルシューティングの実行 {#perform-post-upgrade-checks-and-troubleshooting}
 
-詳しくは、[ アップグレード後の確認とトラブルシューティング ](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)を参照してください。
+詳しくは、[&#x200B; アップグレード後の確認とトラブルシューティング &#x200B;](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)を参照してください。

@@ -29,9 +29,9 @@ ht-degree: 18%
 
 ## アップグレード前の手順 {#pre-upgrade-steps}
 
-アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。 詳しくは、[コードのアップグレードとカスタマイズ](/help/sites-deploying/upgrading-code-and-customizations.md)および[アップグレード前のメンテナンスタスク](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。 さらに、お使いのシステムがAEM 6.5 LTS](/help/sites-deploying/technical-requirements.md)の[要件を満たしていることを確認してください。
+アップグレードを実行する前に、いくつかの手順を完了しておく必要があります。 詳しくは、[コードのアップグレードとカスタマイズ](/help/sites-deploying/upgrading-code-and-customizations.md)および[アップグレード前のメンテナンスタスク](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)を参照してください。 さらに、お使いのシステムがAEM 6.5 LTS[&#128279;](/help/sites-deploying/technical-requirements.md)の要件を満たしていることを確認してください。
 
-[ アップグレードの計画](/help/sites-deploying/upgrade-planning.md)と、[AEM Analyzer](/help/sites-deploying/aem-analyzer.md)がAEMのアップグレードに関する複雑さを見積もるのに役立つことを確認してください。
+[&#x200B; アップグレードの計画](/help/sites-deploying/upgrade-planning.md)と、[AEM Analyzer](/help/sites-deploying/aem-analyzer.md)がAEMのアップグレードに関する複雑さを見積もるのに役立つことを確認してください。
 
 ### 移行の前提条件 {#migration-prerequisites}
 
@@ -39,10 +39,10 @@ ht-degree: 18%
 
 ### アップグレードの実行 {#performing-the-upgrade}
 
-1. アップグレード アクティビティを実行する前に、AEM 6.5 サーバーのバックアップなど、[ アップグレード前](#pre-upgrade-steps)の手順を完了していることを確認してください
+1. アップグレード アクティビティを実行する前に、AEM 6.5 サーバーのバックアップなど、[&#x200B; アップグレード前](#pre-upgrade-steps)の手順を完了していることを確認してください
 1. 要件に応じて、次のいずれかのアップグレードパスを選択します。
    1. **インプレースアップグレード**：現在のWLP サーバーがServlet 6をサポートしている場合、インプレースアップグレードを実行して手順3に進むことができます。
-   1. **Sidegrade**：新しいセットアップを希望する場合、またはWLP サーバーがServlet 6をサポートしていない場合は、[AEM 6.5からAEM 6.5 LTSへのコンテンツ移行Oak-upgrade](/help/sites-deploying/aem-65-to-aem-65lts-content-migration-using-oak-upgrade.md) ガイドに従って新しいWLP インスタンスを設定し、[ アップグレードされたCodebase](#deploy-upgraded-codebase) セクションにスキップしてコンテンツを移行します
+   1. **Sidegrade**：新しいセットアップを希望する場合、またはWLP サーバーがServlet 6をサポートしていない場合は、[AEM 6.5からAEM 6.5 LTSへのコンテンツ移行Oak-upgrade](/help/sites-deploying/aem-65-to-aem-65lts-content-migration-using-oak-upgrade.md) ガイドに従って新しいWLP インスタンスを設定し、[&#x200B; アップグレードされたCodebase](#deploy-upgraded-codebase) セクションにスキップしてコンテンツを移行します
 
 1. AEM インスタンスを停止します。 これは通常、次のコマンドを使用して実行できます。
 

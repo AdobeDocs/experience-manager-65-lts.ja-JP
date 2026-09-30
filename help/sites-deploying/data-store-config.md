@@ -143,7 +143,7 @@ Amazon の Simple Storage Service（S3）にデータを格納するように AE
 >
 >AEM 6.5 LTSは、Amazon S3でのデータの保存をサポートしていますが、その他のプラットフォームへのデータの保存にはサポートが拡張されていません。その他のプラットフォームでは、そのベンダーが独自のAmazon S3 APIを実装している可能性があります。
 
-S3 データストア機能を有効にするには、S3 データストアコネクタを含む機能パックをダウンロードしてインストールする必要があります。 [Adobe リポジトリ ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)に移動し、機能パックの1.60.x バージョン（com.adobe.granite.oak.s3connector-1.60.2.zipなど）から最新バージョンをダウンロードします。 また、[AEM 6.5 LTS リリースノート ](/help/release-notes/release-notes.md)に記載されている最新のAEM サービスパックをダウンロードしてインストールする必要があります。
+S3 データストア機能を有効にするには、S3 データストアコネクタを含む機能パックをダウンロードしてインストールする必要があります。 [Adobe リポジトリ &#x200B;](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)に移動し、機能パックの1.60.x バージョン（com.adobe.granite.oak.s3connector-1.60.2.zipなど）から最新バージョンをダウンロードします。 また、[AEM 6.5 LTS リリースノート &#x200B;](/help/release-notes/release-notes.md)に記載されている最新のAEM サービスパックをダウンロードしてインストールする必要があります。
 
 >[!NOTE]
 >
@@ -411,7 +411,7 @@ S3 でバイナリレスレプリケーションを設定するには、次の�
 
 AEM は、Microsoft®の Azure ストレージサービスにデータを保存するように設定できます。 このストアでは、`org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` という PID を設定に使用します。
 
-Azure データストア機能を有効にするには、Azure コネクタを含む機能パックをダウンロードしてインストールする必要があります。 [ ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/azure-connector/6-5-lts/com.adobe.granite.oak.azureblobconnector-1.9.16.zip)に移動し、機能パックの1.9.x バージョン（com.adobe.granite.oak.azureblobconnector-1.9.16.zipなど）から最新バージョンをダウンロードします。
+Azure データストア機能を有効にするには、Azure コネクタを含む機能パックをダウンロードしてインストールする必要があります。 [&#x200B; ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/azure-connector/6-5-lts/com.adobe.granite.oak.azureblobconnector-1.9.16.zip)に移動し、機能パックの1.9.x バージョン（com.adobe.granite.oak.azureblobconnector-1.9.16.zipなど）から最新バージョンをダウンロードします。
 
 >[!NOTE]
 >
@@ -442,7 +442,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 
 設定ファイルは、次のオプションと共に使用できます。
 
-* azureSas=&quot;&quot;：コネクタのバージョン 1.6.3 で、Azure Shared Access Signature（SAS）のサポートが追加されました。 **設定ファイルにSASとストレージの両方の資格情報が存在する場合、SASには優先度があります。** SASについて詳しくは、[公式ドキュメント ](https://learn.microsoft.com/ja-jp/azure/storage/common/storage-sas-overview)を参照してください。 「=」文字は必ず、「\=」のようにエスケープしてください。
+* azureSas=&quot;&quot;：コネクタのバージョン 1.6.3 で、Azure Shared Access Signature（SAS）のサポートが追加されました。 **設定ファイルにSASとストレージの両方の資格情報が存在する場合、SASには優先度があります。** SASについて詳しくは、[公式ドキュメント &#x200B;](https://learn.microsoft.com/ja-jp/azure/storage/common/storage-sas-overview)を参照してください。 「=」文字は必ず、「\=」のようにエスケープしてください。
 
 * azureBlobEndpoint=&quot;&quot;：Azure Blob エンドポイントです。 例えば、https://&lt;storage-account>.blob.core.windows.net などです。
 * accessKey=&quot;&quot;：ストレージアカウント名です。 Microsoft® Azure の認証資格情報について詳しくは、[公式ドキュメント](https://learn.microsoft.com/ja-jp/azure/storage/common/storage-account-create?tabs=azure-portal)を参照してください。

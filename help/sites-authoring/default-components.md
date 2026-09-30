@@ -27,7 +27,7 @@ ht-degree: 61%
 ---
 # コンポーネント{#components}
 
-Adobe Experience Manager（AEM）には、すぐに使用できる様々なコンポーネントが付随しており、web サイト作成者に包括的な機能を提供します。 これらは、[ ページの編集時](/help/sites-authoring/editing-content.md)に使用できます。 コンポーネントグループと呼ばれる主要な機能領域ごとにグループ化し、フィルタリングに役立てます。
+Adobe Experience Manager（AEM）には、すぐに使用できる様々なコンポーネントが付随しており、web サイト作成者に包括的な機能を提供します。 これらは、[&#x200B; ページの編集時](/help/sites-authoring/editing-content.md)に使用できます。 コンポーネントグループと呼ばれる主要な機能領域ごとにグループ化し、フィルタリングに役立てます。
 
 コンポーネントは、[ページの編集](/help/sites-authoring/editing-content.md)時に使用できます。 主要な機能領域（コンポーネントグループ）でコンポーネントをグループ化し、フィルタリングを支援します。
 
@@ -65,11 +65,11 @@ Adobe Experience Manager（AEM）には、すぐに使用できる様々なコ�
 
 次のページには、コンポーネントに関する重要な追加情報へのリンクが記載されています。
 
-* [ コアコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction) - コアコンポーネントは、柔軟で豊富な機能を備えたオーサリング機能を提供し、ページを作成するための基本的なコンテンツタイプを提供します。
+* [&#x200B; コアコンポーネント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction) - コアコンポーネントは、柔軟で豊富な機能を備えたオーサリング機能を提供し、ページを作成するための基本的なコンテンツタイプを提供します。
 
 ### コンポーネントの設定 {#configuring-components}
 
 作成者が標準インストールからアクセスできるコンポーネントに加えて、他の様々なコンポーネントも使用できます。
 
-* ページが推奨される、最新の、編集可能なテンプレートに基づいている場合は、[ テンプレートを変更し](/help/sites-authoring/templates.md)、有効または無効にし、特定のコンポーネントのパラメーターを編集できます。
-* ページが静的テンプレートに基づいている場合は、[ デザインモード ](/help/sites-authoring/default-components-designmode.md#enable-disable-components)を使用して有効または無効にしたり、特定のコンポーネントのパラメーターを編集したりできます。
+* ページが推奨される、最新の、編集可能なテンプレートに基づいている場合は、[&#x200B; テンプレートを変更し](/help/sites-authoring/templates.md)、有効または無効にし、特定のコンポーネントのパラメーターを編集できます。
+* ページが静的テンプレートに基づいている場合は、[&#x200B; デザインモード &#x200B;](/help/sites-authoring/default-components-designmode.md#enable-disable-components)を使用して有効または無効にしたり、特定のコンポーネントのパラメーターを編集したりできます。

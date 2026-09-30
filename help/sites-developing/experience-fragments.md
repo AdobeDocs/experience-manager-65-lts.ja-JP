@@ -140,7 +140,7 @@ HTML レンディションは、`Sling Rewriter` パイプラインを使用し�
 
 [エクスペリエンスフラグメントで使用するコンポーネントの開発は、標準的な方法に従って行います。](/help/sites-developing/components.md)
 
-唯一の追加設定は、コンポーネントをテンプレートで確実に使用できるようにするだけです。 この機能は、[ コンテンツポリシー](/help/sites-developing/page-templates-editable.md#content-policies)で実現されます。
+唯一の追加設定は、コンポーネントをテンプレートで確実に使用できるようにするだけです。 この機能は、[&#x200B; コンテンツポリシー](/help/sites-developing/page-templates-editable.md#content-policies)で実現されます。
 
 ## エクスペリエンスフラグメントの Link Rewriter Provider - HTML {#the-experience-fragment-link-rewriter-provider-html}
 
