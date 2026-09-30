@@ -24,10 +24,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
 workflow-type: tm+mt
-source-wordcount: '10681'
-ht-degree: 98%
+source-wordcount: '10771'
+ht-degree: 97%
 ---
 # ドキュメントサービスのインストールと設定 {#installing-and-configuring-document-services}
 
@@ -43,7 +43,7 @@ AEM Forms は、PDF ドキュメントの作成、アセンブル、配布、ア
 
 * **Encryption サービス：**&#x200B;ドキュメントの暗号化と復号を実行できます。 ドキュメントを暗号化すると、その内容は判読できなくなります。 許可されたユーザーはドキュメントを復号化して、内容にアクセスできます。 詳しくは、[Encryption サービス](/help/forms/using/overview-aem-document-services.md#encryption-service)を参照してください。
 
-* **Forms サービス：**&#x200B;通常 Forms Designer で作成されたフォームを検証、処理、変換および配信する、インタラクティブなデータキャプチャを行うクライアントアプリケーションを作成できます。 Forms サービスは、作成したあらゆるフォームデザインを PDF ドキュメントとして処理します。 詳しくは、[&#x200B; Forms サービス](/help/forms/using/forms-service.md)を参照してください。
+* **Forms サービス：**&#x200B;通常 Forms Designer で作成されたフォームを検証、処理、変換および配信する、インタラクティブなデータキャプチャを行うクライアントアプリケーションを作成できます。 Forms サービスは、作成したあらゆるフォームデザインを PDF ドキュメントとして処理します。 詳しくは、[ Forms サービス](/help/forms/using/forms-service.md)を参照してください。
 
 * **Output サービス：** PDF、レーザープリンター形式、ラベルプリンター形式など、様々な形式のドキュメントを作成します。 レーザープリンター形式には、PostScript と Printer Control Language（PCL）があります。 詳しくは、[Output サービス](/help/forms/using/output-service.md)を参照してください。
 
@@ -200,6 +200,10 @@ Unix ベースのオペレーティングシステムを使用する場合は、
   * libc.so.6
   * ld-linux.so.2
   * libexpat.so.1
+
+* Red Hat® Enterprise Linux® 9では、32 ビット OpenOffice ビルドには`libcrypt.so.1`が必要ですが、これはデフォルトではインストールされていません。 見つからない場合、OpenOfficeはエラー`soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`で開始できず、OpenOfficeからPDFへの変換が失敗します。 `libxcrypt-compat` パッケージ （32 ビット）をインストールして、ライブラリを提供します。
+
+  `sudo dnf install -y libxcrypt-compat.i686`
 
 ## プリインストール設定 {#preinstallationconfigurations}
 
@@ -1378,6 +1382,10 @@ SRT ツールが報告する問題をすべて修正した後でも問題が発�
 * 環境変数 `OpenOffice_PATH` を作成し、[コンソール](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/)または dt（デバイスツリー）プロファイルに設定されている OpenOffice のインストール先を指すように設定します。
 * OpenOffice のインストールに問題がある場合は、OpenOffice のインストールに必要な [32 ビットライブラリ](#extrarequirements)が利用可能であることを確認します。
 
+* Red Hat® Enterprise Linux® 9では、32 ビット OpenOffice ビルドには`libcrypt.so.1`が必要ですが、これはデフォルトではインストールされていません。 見つからない場合、OpenOfficeはエラー`soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`で開始できず、OpenOfficeからPDFへの変換が失敗します。 `libxcrypt-compat` パッケージ （32 ビット）をインストールして、ライブラリを提供します。
+
+  `sudo dnf install -y libxcrypt-compat.i686`
+
 +++
 
 +++HTMLからPDFへの変換の問題
@@ -1474,7 +1482,6 @@ SRT ツールが報告する問題をすべて修正した後でも問題が発�
         adobe_prtk --tool=VolumeSerialize --generate --serial=&lt;serialnum> [--leid=&lt;LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=limited list of locales in xx_XX format or ALL>] [--provfile=&lt;Absolute path to prov.xml>]
         
         ```
-
     
   * パッケージをボリュームシリアライズします（prov.xml ファイルと新しいシリアルを使用して既存のインストールを再シリアライズします）。PRTK インストールフォルダーから次のコマンドを管理者として実行し、クライアントマシンにデプロイされたパッケージをシリアライズしてアクティベートします。
 
@@ -1482,8 +1489,8 @@ SRT ツールが報告する問題をすべて修正した後でも問題が発�
         adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
         
         ```
-
-    * 大規模インストールの場合は、[Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) をクリックして、以前のバージョンの Reader と Acrobat を削除します。 インストーラーをカスタマイズし、組織のすべてのマシンにデプロイします。
+    
+* 大規模インストールの場合は、[Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) をクリックして、以前のバージョンの Reader と Acrobat を削除します。 インストーラーをカスタマイズし、組織のすべてのマシンにデプロイします。
 
 +++
 
