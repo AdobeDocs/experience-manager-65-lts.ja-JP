@@ -9,13 +9,11 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: c044d541-24d6-4975-9b38-6a4317a16358
-source-git-commit: a85b54d5a7c3b00f95f439941a390dcfee883187
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2354'
+source-wordcount: '2358'
 ht-degree: 63%
-
 ---
-
 # Query Builder の述語リファレンス{#query-builder-predicate-reference}
 
 >[!CAUTION]
@@ -229,7 +227,7 @@ group.2_group.type=dam:Asset
 
 ### hasPermission {#haspermission}
 
-指定された [JCR 権限](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)が現在のセッションに含まれる項目に、結果を制限します。
+指定された [JCR 権限](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)が現在のセッションに含まれる項目に、結果を制限します。
 
 フィルターのみの述語で、検索インデックスは使用できません。 ファセットの抽出には対応していません。
 
@@ -269,7 +267,7 @@ group.2_group.type=dam:Asset
 
 ### memberOf {#memberof}
 
-特定の [sling リソースコレクション](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html)のメンバーであるアイテムを検索します。
+特定の [sling リソースコレクション](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html)のメンバーであるアイテムを検索します。
 
 フィルターのみの述語で、検索インデックスは使用できません。 ファセットの抽出には対応していません。
 
@@ -475,18 +473,18 @@ JCR プロパティと間隔を一致します。 `LONG`、`DOUBLE`、`DECIMAL`�
 
   （JSON サーブレット専用）ヒットを JSON として記述する方法を、次の標準的なものの中から選択します（ResultHitWriter サービスを使用して拡張可能）。
 
-   * **simple**：
+  * **simple**：
 
-     `path`、`title`、`lastmodified`、`excerpt`（設定されている場合）などの最小限の項目。
+    `path`、`title`、`lastmodified`、`excerpt`（設定されている場合）などの最小限の項目。
 
-   * **full**：
+  * **full**：
 
-     結果は各ノードのSling JSONとしてレンダリングされ、`jcr:path`にはヒットパスが表示されます。 デフォルトでは、応答にはノードの直接プロパティのみが含まれます。より深いコンテンツを含めるには`p.nodedepth=N`を使用します。ここで、`0`はサブツリー全体を返します。 各項目に対する現在のセッションのJCR権限を含めるには、`p.acls=true`を設定します（`create` = `add_node`, `modify` = `set_property`, `delete` = `remove`）。
+    結果は各ノードのSling JSONとしてレンダリングされ、`jcr:path`にはヒットパスが表示されます。 デフォルトでは、応答にはノードの直接プロパティのみが含まれます。より深いコンテンツを含めるには`p.nodedepth=N`を使用します。ここで、`0`はサブツリー全体を返します。 各項目に対する現在のセッションのJCR権限を含めるには、`p.acls=true`を設定します（`create` = `add_node`, `modify` = `set_property`, `delete` = `remove`）。
 
 
-   * **selective**：
+  * **selective**：
 
-     応答には、相対パスのスペース区切りリストである`p.properties`にリストされているプロパティのみが含まれます（URLに`+`を使用）。 相対パスの深さが1より大きい場合、出力は子オブジェクトとしてネストします。 特殊な`jcr:path` プロパティには、常にヒット パスが含まれます。
+    応答には、相対パスのスペース区切りリストである`p.properties`にリストされているプロパティのみが含まれます（URLに`+`を使用）。 相対パスの深さが1より大きい場合、出力は子オブジェクトとしてネストします。 特殊な`jcr:path` プロパティには、常にヒット パスが含まれます。
 
 
 ### `savedquery` {#savedquery}

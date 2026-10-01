@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3373'
-ht-degree: 90%
+source-wordcount: '3379'
+ht-degree: 89%
 ---
 # AEM の中心概念 {#aem-core-concepts}
 
@@ -49,11 +49,11 @@ AEM での開発には、以下のスキルが必要です。
 
 ## Java™ コンテンツリポジトリ {#java-content-repository}
 
-Java™ コンテンツリポジトリ（JCR）の規格である [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html) では、コンテンツリポジトリ内で、任意の精度レベルでコンテンツに双方向アクセスするための、ベンダーにも実装にも依存しない方法が指定されています。
+Java™ コンテンツリポジトリ（JCR）の規格である [JSR 283](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html) では、コンテンツリポジトリ内で、任意の精度レベルでコンテンツに双方向アクセスするための、ベンダーにも実装にも依存しない方法が指定されています。
 
 仕様を主導しているのは、Adobe Research（スイス）AG です。
 
-[JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) パッケージ javax.jcr.&amp;ast；は、リポジトリコンテンツへの直接アクセスと操作に使用されます。
+[JCR API 2.0](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/index.html) パッケージ javax.jcr.&amp;ast；は、リポジトリコンテンツへの直接アクセスと操作に使用されます。
 
 ## Experience Server（CRX）と Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -345,7 +345,7 @@ OSGi は、モジュラー型アプリケーションとライブラリを開発
 
 **項目** - ノードまたはプロパティのアイテム。
 
-Item オブジェクトの操作方法について詳しくは、javax.jcr Interface Item の [Java™ docs](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) を参照してください。
+Item オブジェクトの操作方法について詳しくは、javax.jcr Interface Item の [Java™ docs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) を参照してください。
 
 **ノード（およびそのプロパティ）** - ノードとそのプロパティは、JCR API 2.0 仕様（JSR 283）で定義されています。 コンテンツ、オブジェクト定義、レンダリングスクリプトおよびその他のデータを格納します。
 
@@ -361,7 +361,7 @@ Item オブジェクトの操作方法について詳しくは、javax.jcr Inter
 
 currentNode は現在のノードオブジェクトです。
 
-Node オブジェクトの操作方法について詳しくは、[Java™ docs](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html) を参照してください。
+Node オブジェクトの操作方法について詳しくは、[Java™ docs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html) を参照してください。
 
 **Widget** - AEMでは、すべてのユーザー入力はウィジェットで管理されます。 多くの場合、コンテンツの一部の編集を制御するために使用されます。
 
@@ -400,7 +400,7 @@ AEM 内では、多くの場合、コンポーネントを使用してリソー�
 
 S`tring pageName = currentPage.getName();`
 
-TcurrentPage は現在のページオブジェクトです。 Page オブジェクトの操作方法について詳しくは、[Java™ docs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html) を参照してください。
+TcurrentPage は現在のページオブジェクトです。 Page オブジェクトの操作方法について詳しくは、[Java™ docs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html) を参照してください。
 
 **ページマネージャー** - ページマネージャーは、ページレベルの操作方法を提供するインターフェイスです。
 
@@ -408,7 +408,7 @@ TcurrentPage は現在のページオブジェクトです。 Page オブジェ�
 
 Page myPage = pageManager.getContainingPage(myResource);
 
-pageManager はページマネージャーオブジェクトで、myResource はリソースオブジェクトです。 ページマネージャーが提供するメソッドについて詳しくは、[Java™ docs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html) を参照してください。
+pageManager はページマネージャーオブジェクトで、myResource はリソースオブジェクトです。 ページマネージャーが提供するメソッドについて詳しくは、[Java™ docs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html) を参照してください。
 
 ## リポジトリ内の構造 {#structure-within-the-repository}
 

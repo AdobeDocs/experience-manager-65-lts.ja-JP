@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 88%
+source-wordcount: '520'
+ht-degree: 86%
 ---
 # OWASP Top 10{#owasp-top}
 
@@ -74,7 +74,7 @@ AEMでは、[Apache Jackrabbit](https://jackrabbit.apache.org/jcr/index.html)お
 
 ## &#x200B;8. URL アクセス制限の失敗 {#failure-to-restrict-url-access}
 
-リポジトリでは、アクセス制御エントリを使用して、特定のパスの特定のユーザーまたはグループに対して[（JCR で指定された）詳細な権限](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html)を設定できます。 アクセス制限はリポジトリによって適用されます。
+リポジトリでは、アクセス制御エントリを使用して、特定のパスの特定のユーザーまたはグループに対して[（JCR で指定された）詳細な権限](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html)を設定できます。 アクセス制限はリポジトリによって適用されます。
 
 ## &#x200B;9. トランスポート層の保護が不十分 {#insufficient-transport-layer-protection}
 

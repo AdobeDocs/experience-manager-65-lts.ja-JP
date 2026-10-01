@@ -26,10 +26,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2866'
-ht-degree: 97%
+source-wordcount: '2871'
+ht-degree: 95%
 ---
 # アダプティブフォームの式{#adaptive-form-expressions}
 
@@ -37,7 +37,7 @@ ht-degree: 97%
 
 アダプティブフォームは、ダイナミックなスクリプト機能によってエンドユーザーのフォームへの入力作業を最適化および簡素化します。 式を記述することで、ダイナミックなフィールドやパネルの表示／非表示などの様々な動作を追加できます。 また、計算フィールドを追加したり、フィールドを読み取り専用にしたり、検証ロジックを追加したりすることもできます。 動的動作は、ユーザー入力や事前入力データに基づいています。
 
-アダプティブフォームの式言語は JavaScript です。 すべての式は、有効な JavaScript™ の式で、アダプティブフォームのスクリプトモデル API を使用しています。 これらの式は、特定のタイプの値を返します。 アダプティブフォームのクラス、イベント、オブジェクトおよびパブリック API の完全なリストについては、[アダプティブフォーム用 JavaScript ライブラリ API リファレンス](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)を参照してください。
+アダプティブフォームの式言語は JavaScript です。 すべての式は、有効な JavaScript™ の式で、アダプティブフォームのスクリプトモデル API を使用しています。 これらの式は、特定のタイプの値を返します。 アダプティブフォームのクラス、イベント、オブジェクトおよびパブリック API の完全なリストについては、[アダプティブフォーム用 JavaScript ライブラリ API リファレンス](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/index.html)を参照してください。
 
 ## 式を記述するためのベストプラクティス {#best-practices-for-writing-expressions}
 
@@ -52,7 +52,7 @@ ht-degree: 97%
 * 繰り返しパネルを作成するには、パネルダイアログで設定を開いて、最大カウントの値を 1 より上に設定します。
 * 繰り返しパネル設定の最小カウントの値は、1 またはそれ以上に設定できますが、最大値を超えることはできません。
 * 式が繰り返しパネルのフィールドを参照する場合、その式のフィールド名は、一番近い繰り返し要素に解決されます。
-* アダプティブフォームには、合計、カウント、最小値、最大値、フィルターなど、繰り返し可能なパネルの計算を簡素化するためのいくつかの特別な機能があります。 機能の完全なリストについては、[アダプティブフォーム用 JavaScript ライブラリ API リファレンス](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)を参照してください。
+* アダプティブフォームには、合計、カウント、最小値、最大値、フィルターなど、繰り返し可能なパネルの計算を簡素化するためのいくつかの特別な機能があります。 機能の完全なリストについては、[アダプティブフォーム用 JavaScript ライブラリ API リファレンス](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/index.html)を参照してください。
 * 以下に、繰り返しパネルのインスタンスを操作するための API を示します。
 
   * パネルインスタンスを追加する場合：`panel1.instanceManager.addInstance()`
@@ -98,7 +98,7 @@ ht-degree: 97%
 
 ### クリック式 {#click-expression}
 
-クリック式は、ボタンのクリックイベント時に実行されるアクションを処理します。 すぐに使用できる GuideBridge は、送信、検証など、クリック式と共に使用される様々な機能を実行するための API を提供します。 API の完全なリストについては、[GuideBridge API](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html) を参照してください。
+クリック式は、ボタンのクリックイベント時に実行されるアクションを処理します。 すぐに使用できる GuideBridge は、送信、検証など、クリック式と共に使用される様々な機能を実行するための API を提供します。 API の完全なリストについては、[GuideBridge API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/GuideBridge.html) を参照してください。
 
 **適用先**：ボタンフィールド
 
@@ -229,7 +229,7 @@ ht-degree: 97%
 
 ### GuideBridge - API とイベント {#guidebridge-apis-and-events}
 
-GuideBridge は、ブラウザーのメモリーモデルでアダプティブフォームとやり取りするのに使用できる API のコレクションです。 Guide Bridge API、クラスメソッド、公開されたイベントについて詳しくは、[アダプティブフォーム用 JavaScript ライブラリ API リファレンス](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)を参照してください。
+GuideBridge は、ブラウザーのメモリーモデルでアダプティブフォームとやり取りするのに使用できる API のコレクションです。 Guide Bridge API、クラスメソッド、公開されたイベントについて詳しくは、[アダプティブフォーム用 JavaScript ライブラリ API リファレンス](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/index.html)を参照してください。
 
 >[!NOTE]
 >
@@ -275,7 +275,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
 #### GuideBridge イベント {#guidebridge-events}
 
-また、GuideBridge は、ホスティングページ上の外部スクリプト用に特定のイベントを提供します。 外部スクリプトは、これらのイベントをリッスンして様々な操作を実行できます。 例えば、フォームのユーザー名が変更される場合は、ページのヘッダーに表示される名前も常に変更されます。 これらのイベントについて詳しくは、[アダプティブフォームの JavaScript ライブラリ API リファレンス](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)を参照してください。
+また、GuideBridge は、ホスティングページ上の外部スクリプト用に特定のイベントを提供します。 外部スクリプトは、これらのイベントをリッスンして様々な操作を実行できます。 例えば、フォームのユーザー名が変更される場合は、ページのヘッダーに表示される名前も常に変更されます。 これらのイベントについて詳しくは、[アダプティブフォームの JavaScript ライブラリ API リファレンス](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/GuideBridge.html)を参照してください。
 
 以下のコードを使用してハンドラーを登録します。
 

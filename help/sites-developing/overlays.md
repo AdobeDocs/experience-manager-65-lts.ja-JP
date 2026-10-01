@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 85%
+source-wordcount: '627'
+ht-degree: 80%
 ---
 # オーバーレイ{#overlays}
 
@@ -35,7 +35,7 @@ Adobe Experience Manager（AEM）（旧称 CQ）は、以前からオーバー�
 
 AEM 6.0 以降、オーバーレイの実装方法と使用方法が以下のように変更されました。
 
-* AEM 6.0 以降 - [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) に関連するオーバーレイ（つまり、タッチ操作対応 UI）
+* AEM 6.0 以降 - [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) に関連するオーバーレイ（つまり、タッチ操作対応 UI）
 
   * 方法
 
@@ -66,7 +66,7 @@ AEM 6.0 以降、オーバーレイの実装方法と使用方法が以下のよ
 
 >[!CAUTION]
 >
->[Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) および関連する手法は、[Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) と併用する場合に限り使用できます。 つまり、オーバーレイをスケルトン構造で作成する方法は、標準のタッチ操作対応 UI にのみ適しています。
+>[Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) および関連する手法は、[Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) と併用する場合に限り使用できます。 つまり、オーバーレイをスケルトン構造で作成する方法は、標準のタッチ操作対応 UI にのみ適しています。
 >
 >他のエリア（クラシック UI を含む）のオーバーレイでは、適切なノードとサブ構造全体をコピーし、必要な変更を加えます。
 

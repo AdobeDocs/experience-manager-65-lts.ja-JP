@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 89%
+source-wordcount: '890'
+ht-degree: 87%
 ---
 # Adobe Experience Manager タッチ操作対応 UI の構造{#structure-of-the-aem-touch-enabled-ui}
 
@@ -176,4 +176,4 @@ AEM には、編集、プレビュー、注釈など、ページオーサリン�
 
 タッチ操作対応 UI に関する概念について詳しくは、[AEM タッチ操作対応 UI の概念](/help/sites-developing/touch-ui-concepts.md)の記事を参照してください。
 
-技術情報について詳しくは、タッチ操作対応ページエディター用の [JS ドキュメントセット](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)を参照してください。
+技術情報について詳しくは、タッチ操作対応ページエディター用の [JS ドキュメントセット](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/jsdoc/ui-touch/editor-core/index.html)を参照してください。

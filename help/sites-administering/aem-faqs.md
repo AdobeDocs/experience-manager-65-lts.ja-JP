@@ -16,9 +16,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1084'
 ht-degree: 90%
 ---
 # AEM FAQ {#aem-faqs}
@@ -114,9 +114,9 @@ AEM には、オーサーインスタンスのコンソールおよびページ�
 
 #### CoralUI 2 と CoralUI 3 ベースのコンポーネントの違いを教えてください。 {#what-is-the-difference-between-coralui-and-coralui-based-components}
 
-Granite UI Foundationの新しいSling コンポーネントのセットがCoral3用に作成され、[/libs/granite/ui/components/coral/foundationの下にあります。](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) CoralUI 2 ベースのコンポーネント用とCoralUI 3 ベースのコンポーネント用に1つのセットがあります。 新しいセットは、古いセットをただコピー＆ペーストしたものではなく、（合理化、廃止予定の機能を削除するなど）クリーンアップしたものです。 そのため、ページは CoralUI 3 ベースまたは CoralUI 2 ベースのいずれかのセットのみを使用することをお勧めします。
+Granite UI Foundationの新しいSling コンポーネントのセットがCoral3用に作成され、[/libs/granite/ui/components/coral/foundationの下にあります。](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) CoralUI 2 ベースのコンポーネント用とCoralUI 3 ベースのコンポーネント用に1つのセットがあります。 新しいセットは、古いセットをただコピー＆ペーストしたものではなく、（合理化、廃止予定の機能を削除するなど）クリーンアップしたものです。 そのため、ページは CoralUI 3 ベースまたは CoralUI 2 ベースのいずれかのセットのみを使用することをお勧めします。
 
-詳しくは、[CoralUI 3 ベースの移行ガイド](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html)を参照してください。
+詳しくは、[CoralUI 3 ベースの移行ガイド](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html)を参照してください。
 
 #### AEM Assets の検索コンポーネントをカスタマイズする方法を教えてください。 {#how-to-customize-the-search-component-in-aem-assets}
 

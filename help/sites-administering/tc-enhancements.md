@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 95%
+source-wordcount: '688'
+ht-degree: 93%
 ---
 # 翻訳の機能強化{#translation-enhancements}
 
@@ -91,7 +91,7 @@ AEM は、設定済みの TMS の翻訳メモリ内の既存の文字列の翻�
 この機能を使用するには：
 
 * AEM で使用するように TMS を設定する必要があります。
-* コネクターはメソッド [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html) を実装する必要があります。
+* コネクターはメソッド [`storeTranslation`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html) を実装する必要があります。
   * このメソッド内のコードは、翻訳メモリの更新リクエストの処理を決定します。
   * AEM 翻訳フレームワークは、このメソッドの実装を通じて、文字列の値のペア（元の翻訳と更新された翻訳）を TMS に返します。
 

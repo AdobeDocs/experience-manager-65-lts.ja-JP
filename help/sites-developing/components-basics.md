@@ -16,10 +16,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '4952'
-ht-degree: 95%
+source-wordcount: '4955'
+ht-degree: 94%
 ---
 # Adobe Experience Manager（AEM）コンポーネント - 基本{#aem-components-the-basics}
 
@@ -210,7 +210,7 @@ AEM コンポーネントの構造は強力で、柔軟性があります。主�
 
 コンポーネントのアイコンまたは省略形は、デベロッパーがコンポーネントを作成する際にコンポーネントの JCR プロパティで定義します。 これらのプロパティは、次の順序で評価され、最初に見つかった有効なプロパティが使用されます。
 
-1. `cq:icon` - コンポーネントブラウザーで表示するための [Coral UI ライブラリ](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/Coral.Icon.html)の標準的なアイコンを指定する String プロパティ
+1. `cq:icon` - コンポーネントブラウザーで表示するための [Coral UI ライブラリ](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/coral-ui/coralui3/Coral.Icon.html)の標準的なアイコンを指定する String プロパティ
    * Coral アイコンの HTML 属性の値を使用します。
 1. `abbreviation` - コンポーネントブラウザーでのコンポーネント名の省略形をカスタマイズするための String プロパティ
    * 省略形は最大 2 文字までにする必要があります。
@@ -1042,7 +1042,7 @@ AEM 内のコンポーネントは、次の 3 つの異なる階層の影響を�
 
 >[!NOTE]
 >
->クラシック UI の場合、ハンドラーで使用できるパラメーターについては、[`CQ.wcm.EditBar`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) および [`CQ.wcm.EditRollover`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) ウィジェットのドキュメントに記載されている「`before<action>` イベントおよび `after<action>` イベント」のセクションを参照してください。
+>クラシック UI の場合、ハンドラーで使用できるパラメーターについては、[`CQ.wcm.EditBar`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) および [`CQ.wcm.EditRollover`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) ウィジェットのドキュメントに記載されている「`before<action>` イベントおよび `after<action>` イベント」のセクションを参照してください。
 
 次の設定では、コンポーネントを削除、編集、挿入または移動した後にページが更新されます。
 

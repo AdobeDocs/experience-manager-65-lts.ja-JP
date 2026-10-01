@@ -22,9 +22,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2826'
+source-wordcount: '2831'
 ht-degree: 93%
 ---
 # コンテンツフラグメントのカスタマイズと拡張{#customizing-and-extending-content-fragments}
@@ -255,7 +255,7 @@ ht-degree: 93%
 
 サーバー側 API を使用して、コンテンツフラグメントにアクセスできます。以下を参照してください。
 
-[com.adobe.cq.dam.cfm](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
+[com.adobe.cq.dam.cfm](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
 
 >[!CAUTION]
 >
@@ -265,7 +265,7 @@ ht-degree: 93%
 
 次の 3 つのインターフェイスが、入口の役割を果たします。
 
-* **フラグメントテンプレート**（[FragmentTemplate](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)）
+* **フラグメントテンプレート**（[FragmentTemplate](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)）
 
   フラグメントを作成する場合は、`FragmentTemplate.createFragment()` を使用します。
 
@@ -308,7 +308,7 @@ ht-degree: 93%
 
     * 基本データ（名前、タイトル、説明）を取得
 
-* **コンテンツフラグメント**（[ContentFragment](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html)）
+* **コンテンツフラグメント**（[ContentFragment](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html)）
 
   このインターフェイスでは、コンテンツフラグメントを抽象化して使用できます。
 
@@ -340,7 +340,7 @@ ht-degree: 93%
 
   フラグメントの主要要素を表すインターフェイスは、次のとおりです。
 
-  * **コンテンツ要素**（[ContentElement](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html)）
+  * **コンテンツ要素**（[ContentElement](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html)）
 
     * 基本データ（名前、タイトル、説明）を取得
     * コンテンツを取得／設定する
@@ -354,7 +354,7 @@ ht-degree: 93%
 
     * バリエーションを解決するためのショートカット（要素に指定されたバリエーションを使用できない場合は実装固有の追加のフォールバックロジックを適用）
 
-  * **コンテンツのバリエーション**（[ContentVariation](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html)）
+  * **コンテンツのバリエーション**（[ContentVariation](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html)）
 
     * 基本データ（名前、タイトル、説明）を取得
     * コンテンツを取得／設定する

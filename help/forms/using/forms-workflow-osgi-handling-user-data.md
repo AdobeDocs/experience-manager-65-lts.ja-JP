@@ -27,10 +27,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 99%
+source-wordcount: '1033'
+ht-degree: 97%
 ---
 # OSGi 上の Forms 中心のワークフロー | ユーザーデータの処理 {#forms-centric-workflows-on-osgi-handling-user-data}
 
@@ -175,5 +175,5 @@ Forms 中心の AEM ワークフローおよび機能について詳しくは、
 また、API を使用してノードおよびプロパティにアクセスしてこれらを削除することもできます。 詳しくは、次のドキュメントを参照してください。
 
 * [AEM JCR へのプログラムからのアクセス方法](/help/sites-developing/access-jcr.md)
-* [ノードとプロパティの削除](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html?lang=ja#10.9%20Removing%20Nodes%20and%20Properties)
+* [ノードとプロパティの削除](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
 * [API リファレンス](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ja)

@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '5215'
+source-wordcount: '5216'
 ht-degree: 97%
 ---
 # パフォーマンスの最適化 {#performance-optimization}
@@ -227,7 +227,7 @@ AEM 6.0 以降、Adobe Experience Manager は Oak ベースのリポジトリア
 
 <!-- TODO: Change the reference to 6.5 LTS javadocs -->
 * Granite Workflow Queue：ワークフローのほとんどのステップ（DAM アセットを処理するステップなど）では、Granite Granite Workflow Queue サービスを使用します。
-* Granite ワークフロー外部プロセスジョブキュー：このサービスは、通常は外部システムへのアクセスや結果のポーリングに使用される、特殊な外部ワークフローのステップに使用します。 例えば、InDesign のメディア抽出プロセスステップは外部プロセスとして実装されます。 ワークフローエンジンでは、ポーリングの処理に外部キューを使用します。 （[com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html) を参照してください）。
+* Granite ワークフロー外部プロセスジョブキュー：このサービスは、通常は外部システムへのアクセスや結果のポーリングに使用される、特殊な外部ワークフローのステップに使用します。 例えば、InDesign のメディア抽出プロセスステップは外部プロセスとして実装されます。 ワークフローエンジンでは、ポーリングの処理に外部キューを使用します。 （[com.day.cq.workflow.exec.WorkflowExternalProcess](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html) を参照してください）。
 
 これらのサービスを設定して、同時に実行するワークフロープロセスの最大数を制限します。
 

@@ -21,10 +21,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 94%
+source-wordcount: '506'
+ht-degree: 93%
 ---
 # URL の外部化{#externalizing-urls}
 
@@ -32,7 +32,7 @@ Adobe Experience Manager（AEM）の **Externalizer** は、あらかじめ設�
 
 インスタンスが Web レイヤーの背後で実行されている場合、自身の外部向け URL がわかりません。また、リンクをリクエストスコープの範囲外で作成する必要がある場合があります。これらの理由で、このサービスは、そのような外部 URL を設定して組み立てるための一元化された場所を提供します。
 
-このページでは、**Externalizer** サービスの設定方法と使用方法について説明します。 詳しくは、[Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/Externalizer.html) を参照してください。
+このページでは、**Externalizer** サービスの設定方法と使用方法について説明します。 詳しくは、[Javadocs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/Externalizer.html) を参照してください。
 
 ## Externalizer サービスの設定 {#configuring-the-externalizer-service}
 
@@ -137,4 +137,4 @@ Adobe Experience Manager（AEM）の **Externalizer** は、あらかじめ設�
 
    * `https://publish-3.internal/contextpath/my/page.html`
 
-1. 他の例については、関連する [Javadoc](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/Externalizer.html) を参照してください。
+1. 他の例については、関連する [Javadoc](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/Externalizer.html) を参照してください。

@@ -20,15 +20,15 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 66%
+source-wordcount: '225'
+ht-degree: 61%
 ---
 
 # カスタム名前空間{#custom-namespaces}
 
-カスタム [名前空間](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/4.5_Namespaces.html)を定義してAEM 6.5 LTSにデプロイする方法について説明します。
+カスタム [名前空間](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/1.0/4.5_Namespaces.html)を定義してAEM 6.5 LTSにデプロイする方法について説明します。
 
 カスタム名前空間は、JCR プロパティの「`:`」の前にあるオプション部分です。 AEM では、次のようないくつかの名前空間を使用します。
 

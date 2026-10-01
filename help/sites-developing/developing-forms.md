@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1952'
 ht-degree: 90%
 ---
 # Forms の開発（クラシック UI）{#developing-forms-classic-ui}
@@ -324,7 +324,7 @@ JavaScript の場合、条件にはエレメント名プロパティの値を使
 
 ### Forms で使用するスクリプトの作成 {#developing-scripts-for-use-with-forms}
 
-スクリプトを記述する際に使用できる API 要素について詳しくは、[フォームに関連する javadoc](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html) を参照してください。
+スクリプトを記述する際に使用できる API 要素について詳しくは、[フォームに関連する javadoc](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html) を参照してください。
 
 これは、フォームが送信される前にサービスを呼び出し、呼び出しに失敗した場合にサービスをキャンセルするなどのアクションに使用できます。
 

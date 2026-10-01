@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 100%
+source-wordcount: '550'
+ht-degree: 93%
 ---
 # 新しい Granite UI フィールドコンポーネントの作成{#creating-a-new-granite-ui-field-component}
 
@@ -37,7 +37,7 @@ Granite UI には、フォームで使用するようにデザインされた幅
 
 >[!NOTE]
 >
->フィールドについて詳しくは、[Granite UI ドキュメント](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)を参照してください。
+>フィールドについて詳しくは、[Granite UI ドキュメント](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)を参照してください。
 
 Granite コンポーネントを開発または拡張するには、Granite UI の基盤フレームワークを使用します。 このフレームワークには次の 2 つの要素があります。
 
@@ -59,7 +59,7 @@ Granite コンポーネントを開発または拡張するには、Granite UI �
 * `init.jsp`：ラベル付けや説明などの一般的な処理を扱い、フィールドをレンダリングする際に必要なフォーム値を提供します。
 * `render.jsp`：ここで、フィールドの実際のレンダリングが実行され、カスタムフィールドの場合は上書きされる必要があります。`init.jsp` に含まれます。
 
-詳しくは、[Granite UI ドキュメント - フィールド](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html)を参照してください。
+詳しくは、[Granite UI ドキュメント - フィールド](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html)を参照してください。
 
 詳しくは、例えば、以下を参照してください。
 

@@ -17,10 +17,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 91%
+source-wordcount: '828'
+ht-degree: 89%
 ---
 # Assets の検索機能の拡張 {#extending-assets-search}
 
@@ -61,7 +61,7 @@ ht-degree: 91%
 
 [!DNL Experience Manager] デベロッパーは、既存の述語を使用するだけでなく、[Query Builder API](/help/sites-developing/querybuilder-api.md) を使用して独自の述語を作成することもできます。
 
-カスタム述語を作成するには、[ウィジェットフレームワーク](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)に関する基本的な知識が必要です。
+カスタム述語を作成するには、[ウィジェットフレームワーク](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html)に関する基本的な知識が必要です。
 
 ベストプラクティスは、既存の述語をコピー後に変更することです。 サンプルの述語は、**/libs/cq/search/components/predicates** にあります。
 

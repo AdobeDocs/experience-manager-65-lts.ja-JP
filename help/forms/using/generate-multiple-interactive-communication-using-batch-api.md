@@ -25,9 +25,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2268'
 ht-degree: 95%
 ---
 # Batch API を使用して複数のインタラクティブなコミュニケーションを生成する {#use-batch-api-to-generate-multiple-ic}
@@ -185,7 +185,7 @@ JSON ファイルに保存されたレコードからインタラクティブな
 
 ## REST リクエストを使用した Batch API の呼び出し
 
-[Batch API](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html) は Representational State Transfer（REST）リクエストを通じて呼び出すことができます。 これにより、他のユーザーに REST エンドポイントを提供し、API へのアクセス、インタラクティブなコミュニケーションの処理、保存とカスタマイズのための独自のメソッドを設定できます。 独自のカスタム Java™ サーブレットを開発して、AEM インスタンスに API をデプロイできます。
+[Batch API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/index.html) は Representational State Transfer（REST）リクエストを通じて呼び出すことができます。 これにより、他のユーザーに REST エンドポイントを提供し、API へのアクセス、インタラクティブなコミュニケーションの処理、保存とカスタマイズのための独自のメソッドを設定できます。 独自のカスタム Java™ サーブレットを開発して、AEM インスタンスに API をデプロイできます。
 
 Java™ サーブレットをデプロイする前に、インタラクティブなコミュニケーションがあり、対応するデータファイルの準備が整っていることを確認します。 次の手順を実行して、Java™ サーブレットの作成とデプロイを行います。
 

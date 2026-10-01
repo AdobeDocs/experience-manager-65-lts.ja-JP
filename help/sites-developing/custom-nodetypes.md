@@ -20,16 +20,16 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1738'
-ht-degree: 82%
+source-wordcount: '1739'
+ht-degree: 81%
 ---
 # カスタムノードタイプ{#custom-node-types}
 
 Adobe Experience Manager（AEM）はSlingに基づいており、JCR リポジトリを使用するため、両方で提供されるノードタイプは次の場合に使用できます。
 
-* [JCR ノードタイプ](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
+* [JCR ノードタイプ](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling ノードタイプ](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
 これらのノードタイプに加えて、AEM では、様々なカスタムノードタイプも提供しています。
