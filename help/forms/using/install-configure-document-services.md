@@ -24,10 +24,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
+source-git-commit: 1b62d0d980c9916d03ed6a14d7e42a4923967243
 workflow-type: tm+mt
-source-wordcount: '10771'
-ht-degree: 97%
+source-wordcount: '10979'
+ht-degree: 96%
 ---
 # ドキュメントサービスのインストールと設定 {#installing-and-configuring-document-services}
 
@@ -43,7 +43,7 @@ AEM Forms は、PDF ドキュメントの作成、アセンブル、配布、ア
 
 * **Encryption サービス：**&#x200B;ドキュメントの暗号化と復号を実行できます。 ドキュメントを暗号化すると、その内容は判読できなくなります。 許可されたユーザーはドキュメントを復号化して、内容にアクセスできます。 詳しくは、[Encryption サービス](/help/forms/using/overview-aem-document-services.md#encryption-service)を参照してください。
 
-* **Forms サービス：**&#x200B;通常 Forms Designer で作成されたフォームを検証、処理、変換および配信する、インタラクティブなデータキャプチャを行うクライアントアプリケーションを作成できます。 Forms サービスは、作成したあらゆるフォームデザインを PDF ドキュメントとして処理します。 詳しくは、[&#x200B; Forms サービス](/help/forms/using/forms-service.md)を参照してください。
+* **Forms サービス：**&#x200B;通常 Forms Designer で作成されたフォームを検証、処理、変換および配信する、インタラクティブなデータキャプチャを行うクライアントアプリケーションを作成できます。 Forms サービスは、作成したあらゆるフォームデザインを PDF ドキュメントとして処理します。 詳しくは、[ Forms サービス](/help/forms/using/forms-service.md)を参照してください。
 
 * **Output サービス：** PDF、レーザープリンター形式、ラベルプリンター形式など、様々な形式のドキュメントを作成します。 レーザープリンター形式には、PostScript と Printer Control Language（PCL）があります。 詳しくは、[Output サービス](/help/forms/using/output-service.md)を参照してください。
 
@@ -1123,6 +1123,27 @@ PDF Generator サービスを実行するには、ローカルユーザーのア
 
 1. 「**[!UICONTROL ユーザーアカウント]**」タブでローカルユーザーのアカウントの資格情報を入力し、「**[!UICONTROL 送信]**」をクリックします。 Microsoft® Windows のプロンプトが表示されたら、ユーザーにアクセスを許可します。 正常に追加されると、設定されたユーザーが「**[!UICONTROL ユーザーアカウント]**」タブの「**[!UICONTROL ユーザーアカウント]**」セクションに表示されます。
 
+### （Windowsのみ） マルチスレッド PDF Generator コンバージョンを有効にする
+
+AEM FormsがWindows サービスとして実行されている間に、マルチスレッドのドキュメント変換を実行するには、PDF Generatorは1つの設定済みユーザーアカウントの下で変換を処理します。
+
+>[!NOTE]
+>
+> このモードでは、**Microsoft® Word** （doc/docx）と&#x200B;**Excel** （xls/xlsx）の複数のインスタンスが同じユーザーの下で実行され、コンバージョンを同時に処理します。 **Microsoft® PowerPoint** （ppt/pptx）はこのモードをサポートしていません。 PDF Generatorは一度に1つのPowerPoint インスタンスのみを起動するので、PowerPointではマルチスレッドコンバージョンはサポートされていません。
+
+WordとExcelのマルチスレッド変換を有効にするには：
+
+1. PDF Generatorの[ ローカルユーザーアカウント ](#configure-a-local-user-account-to-run-the-pdf-generator-service)を設定します。
+1. AEM オーサーインスタンスにログインし、**[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL ツール]**／**[!UICONTROL Forms]**／**[!UICONTROL PDF Generator を設定]**&#x200B;に移動します。 デフォルトの URL は <http://localhost:4502/libs/fd/pdfg/config/ui.html> です。
+1. 「**[!UICONTROL 一般設定]**」タブで、次のオプションを設定します（WordではPDFMaker、ExcelではNative2PDFを設定）。
+
+   * **PDFMakerの単一ユーザーモードを有効にする：** **true**
+   * **PDFMaker単一ユーザープロセスプールサイズ：**&#x200B;必要に応じて設定します。 この値は、コンバージョンを同時に実行できるWord インスタンスの最大数です。
+   * **Native2PDFのシングルユーザーモードを有効にする：** **true**
+   * **Native2PDF Single User Process Pool Size:**&#x200B;必要に応じて設定します。 この値は、コンバージョンを同時に実行できるExcel インスタンスの最大数です。
+
+1. AEM Forms サーバーを再起動します。
+
 ### タイムアウトの設定 {#configure-the-time-out-settings}
 
 1. [AEM Configuration Manager](http://localhost:4502/system/console/configMgr) で、**[!UICONTROL Jacorb ORB Provider]** サービスを開きます。
@@ -1482,7 +1503,6 @@ SRT ツールが報告する問題をすべて修正した後でも問題が発�
         adobe_prtk --tool=VolumeSerialize --generate --serial=&lt;serialnum> [--leid=&lt;LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=limited list of locales in xx_XX format or ALL>] [--provfile=&lt;Absolute path to prov.xml>]
         
         ```
-
     
   * パッケージをボリュームシリアライズします（prov.xml ファイルと新しいシリアルを使用して既存のインストールを再シリアライズします）。PRTK インストールフォルダーから次のコマンドを管理者として実行し、クライアントマシンにデプロイされたパッケージをシリアライズしてアクティベートします。
 
@@ -1490,8 +1510,8 @@ SRT ツールが報告する問題をすべて修正した後でも問題が発�
         adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
         
         ```
-
-    * 大規模インストールの場合は、[Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) をクリックして、以前のバージョンの Reader と Acrobat を削除します。 インストーラーをカスタマイズし、組織のすべてのマシンにデプロイします。
+    
+* 大規模インストールの場合は、[Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) をクリックして、以前のバージョンの Reader と Acrobat を削除します。 インストーラーをカスタマイズし、組織のすべてのマシンにデプロイします。
 
 +++
 
