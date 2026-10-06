@@ -24,10 +24,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
+source-git-commit: 1b62d0d980c9916d03ed6a14d7e42a4923967243
 workflow-type: tm+mt
-source-wordcount: '10771'
-ht-degree: 97%
+source-wordcount: '10979'
+ht-degree: 96%
 ---
 # ドキュメントサービスのインストールと設定 {#installing-and-configuring-document-services}
 
@@ -1122,6 +1122,27 @@ PDF Generator サービスを実行するには、ローカルユーザーのア
 1. [AEM Forms PDF Generator の設定](http://localhost:4502/libs/fd/pdfg/config/ui.html)ページを開きます。
 
 1. 「**[!UICONTROL ユーザーアカウント]**」タブでローカルユーザーのアカウントの資格情報を入力し、「**[!UICONTROL 送信]**」をクリックします。 Microsoft® Windows のプロンプトが表示されたら、ユーザーにアクセスを許可します。 正常に追加されると、設定されたユーザーが「**[!UICONTROL ユーザーアカウント]**」タブの「**[!UICONTROL ユーザーアカウント]**」セクションに表示されます。
+
+### （Windowsのみ） マルチスレッド PDF Generator コンバージョンを有効にする
+
+AEM FormsがWindows サービスとして実行されている間に、マルチスレッドのドキュメント変換を実行するには、PDF Generatorは1つの設定済みユーザーアカウントの下で変換を処理します。
+
+>[!NOTE]
+>
+> このモードでは、**Microsoft® Word** （doc/docx）と&#x200B;**Excel** （xls/xlsx）の複数のインスタンスが同じユーザーの下で実行され、コンバージョンを同時に処理します。 **Microsoft® PowerPoint** （ppt/pptx）はこのモードをサポートしていません。 PDF Generatorは一度に1つのPowerPoint インスタンスのみを起動するので、PowerPointではマルチスレッドコンバージョンはサポートされていません。
+
+WordとExcelのマルチスレッド変換を有効にするには：
+
+1. PDF Generatorの[&#x200B; ローカルユーザーアカウント &#x200B;](#configure-a-local-user-account-to-run-the-pdf-generator-service)を設定します。
+1. AEM オーサーインスタンスにログインし、**[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL ツール]**／**[!UICONTROL Forms]**／**[!UICONTROL PDF Generator を設定]**&#x200B;に移動します。 デフォルトの URL は <http://localhost:4502/libs/fd/pdfg/config/ui.html> です。
+1. 「**[!UICONTROL 一般設定]**」タブで、次のオプションを設定します（WordではPDFMaker、ExcelではNative2PDFを設定）。
+
+   * **PDFMakerの単一ユーザーモードを有効にする：** **true**
+   * **PDFMaker単一ユーザープロセスプールサイズ：**&#x200B;必要に応じて設定します。 この値は、コンバージョンを同時に実行できるWord インスタンスの最大数です。
+   * **Native2PDFのシングルユーザーモードを有効にする：** **true**
+   * **Native2PDF Single User Process Pool Size:**&#x200B;必要に応じて設定します。 この値は、コンバージョンを同時に実行できるExcel インスタンスの最大数です。
+
+1. AEM Forms サーバーを再起動します。
 
 ### タイムアウトの設定 {#configure-the-time-out-settings}
 
