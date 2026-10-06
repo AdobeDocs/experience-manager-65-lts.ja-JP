@@ -8,18 +8,21 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 425c6194-0b87-4b01-a013-f620755072b3
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 92%
-
+source-wordcount: '646'
+ht-degree: 84%
 ---
-
 # Android™ Studio プロジェクトの設定と Android™ アプリケーションの作成 {#set-up-the-android-studio-project-and-build-the-android-app}
+
+>[!NOTE]
+>
+>AEM Forms アプリのAndroid版とiOS版は提供を終了しました。 Android アプリは2026年9月にGoogle Playから非公開になり、iOS アプリはApple App Storeから削除されました。
+>これらのアプリはインストールできなくなりました。 Android アプリについて詳しくは、[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)にお問い合わせください。
 
 この記事は、AEM Forms アプリ 6.3.1.1以降のバージョンを構築するためのものです。 AEM Forms App 6.3 のソースコードを使用してアプリケーションを作成する手順については、[Eclipse プロジェクトの設定と Android™ アプリケーションの作成](/help/forms/using/setup-eclipse-project-build-installer.md)を参照してください。
 
-AEM Forms では、AEM Forms アプリケーションの完全なソースコードを提供しています。 このソースには、カスタムの AEM Forms アプリケーションを構築するためのすべてのコンポーネントが含まれています。 ソースコードアーカイブ `adobe-lc-mobileworkspace-src-<version>.zip` は、ソフトウェア配布の `adobe-aemfd-forms-app-src-pkg-<version>.zip` パッケージの一部です。
+AEM Forms では、AEM Forms アプリケーションの完全なソースコードを提供しています。 このソースには、カスタムの AEM Forms アプリケーションを作成するためのすべてのコンポーネントが含まれています。 ソースコードアーカイブ `adobe-lc-mobileworkspace-src-<version>.zip` は、ソフトウェア配布の `adobe-aemfd-forms-app-src-pkg-<version>.zip` パッケージの一部です。
 
 AEM Forms アプリケーションソースを入手するには、以下の手順を実行します。
 
@@ -52,9 +55,9 @@ AEM Forms アプリケーションソースを入手するには、以下の手�
 
    **Windows® ユーザーの場合**：`%HOMEPATH%\Projects`
 
-   >[!NOTE]
-   >
-   >Windows® の場合は、Android™ プロジェクトをシステムドライブに保存することをお勧めします。
+>[!NOTE]
+>
+>Windows® の場合は、Android™ プロジェクトをシステムドライブに保存することをお勧めします。
 
 1. アーカイブを次のディレクトリに展開します。
 
@@ -62,9 +65,9 @@ AEM Forms アプリケーションソースを入手するには、以下の手�
 
    **Windows® ユーザーの場合**：`%HOMEPATH%\Projects\[your-project]`
 
-   >[!NOTE]
-   >
-   >抽出した Android プロジェクトを Android™ Studio に読み込む前に、そのプロジェクトをシステムドライブに保存することをお勧めします。
+>[!NOTE]
+>
+>抽出した Android プロジェクトを Android™ Studio に読み込む前に、そのプロジェクトをシステムドライブに保存することをお勧めします。
 
 1. Android™ Studio を起動します。
 
@@ -74,7 +77,7 @@ AEM Forms アプリケーションソースを入手するには、以下の手�
 
 1. プロジェクトをビルドするには、**[!UICONTROL 完了]**&#x200B;をクリックします。
 
-   プロジェクトが ADT Project Explorer で使用できるようになります。
+   プロジェクトが ADT Project Explorer に表示されます。
 
    ![アプリケーション構築後の Eclipse プロジェクト](assets/eclipsebuildmws.png)
 
@@ -85,11 +88,11 @@ AEM Forms アプリケーションソースを入手するには、以下の手�
 
    **Windows® ユーザーの場合：** %HOMEPATH%¥Projects¥MobileWorkspace¥src¥android
 
-1. プロジェクトの読み込みが完了すると、ポップアップが表示されます。このポップアップには、Android™ プラグインの Gradle を更新するためのオプションが表示されます。 要件に応じて、適切なボタンをクリックします。
+1. プロジェクトの読み込みが完了すると、Android™ プラグイン Gradle を更新するためのオプションを含むポップアップが表示されます。 必要に応じて、適切なボタンをクリックします。
 
    ![dontremindmeagainforthisproject](assets/dontremindmeagainforthisproject.png)
 
-1. Gradle が正しく作成されると、以下の画面が表示されます。 適切なデバイスまたはエミュレーターをシステムに接続し、「**[!UICONTROL Android™ を実行]**」をクリックします。
+1. Gradle のビルドが正常に完了すると、以下の画面が表示されます。 適切なデバイスまたはエミュレーターをシステムに接続し、「**[!UICONTROL Android™ を実行]**」をクリックします。
 
    ![gradleconsole](assets/gradleconsole.png)
 

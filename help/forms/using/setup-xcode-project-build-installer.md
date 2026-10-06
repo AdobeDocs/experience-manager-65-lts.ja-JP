@@ -9,14 +9,17 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: c5092e61-c3f9-4770-91be-247e6a02cdb4
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 98%
-
+source-wordcount: '838'
+ht-degree: 97%
 ---
-
 # Xcode プロジェクトの設定と iOS アプリケーションの構築{#set-up-the-xcode-project-and-build-the-ios-app}
+
+>[!NOTE]
+>
+>IOS用のAEM Forms アプリは廃止され、Apple App Storeから削除されました。
+>インストールに使用できなくなりました。
 
 AEM Forms では、AEM Forms アプリケーションの完全なソースコードを提供しています。 このソースには、カスタムの AEM Forms アプリケーションを構築するためのすべてのコンポーネントが含まれています。 ソースコードアーカイブ `adobe-lc-mobileworkspace-src-<version>.zip` は、ソフトウェア配布の `adobe-aemfd-forms-app-src-pkg-<version>.zip` パッケージの一部です。
 
@@ -31,7 +34,7 @@ AEM Forms アプリケーションソースを入手するには、以下の手�
 1. [パッケージマネージャー](/help/sites-administering/package-manager.md)を開き「**[!UICONTROL パッケージをアップロード]**」をクリックしてパッケージをアップロードします。
 1. パッケージを選択して、「**[!UICONTROL インストール]**」をクリックします。
 
-1. ソースコードのアーカイブをダウンロードするには、お使いのブラウザーで`https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip`を開いてください。
+1. ソースコードアーカイブをダウンロードするには、ブラウザーで `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` を開きます。
 ソースパッケージがデバイスにダウンロードされます。
 
 次の画像には、`adobe-lc-mobileworkspace-src-<version>.zip` から抽出した内容が表示されています。
@@ -69,7 +72,7 @@ AEM Forms アプリケーションソースを入手するには、以下の手�
 
 ## 標準的な AEM Forms アプリケーションの構築 {#set-up-the-xcode-project}
 
-1. 以下の手順を実行して、Xcode でプロジェクトを設定し、署名 ID を決定してください。
+1. 以下の手順を実行して、Xcode でプロジェクトを設定し、署名 ID を指定してください。
 
    Xcode と iOS SDK がインストールされて設定されている Mac マシンにログインします。
 
@@ -122,9 +125,9 @@ AEM Forms アプリケーションソースを入手するには、以下の手�
    </dict>
    ```
 
-   >[!NOTE]
-   >
-   >このステップは、AEM Forms アプリケーションがアプリケーション転送セキュリティ要件に従っていないサーバーに接続する必要がある場合にのみ必要となります。
+>[!NOTE]
+>
+>このステップは、AEM Forms アプリケーションがアプリケーション転送セキュリティ要件に従っていないサーバーに接続する必要がある場合にのみ必要となります。
 
 1. **プロジェクト**&#x200B;の **AEM Forms** を選択し、**コード署名 ID**、**デバッグ**、**リリース**、**任意の iOS SDK** に対して適切な署名が選択されていることを確認してください。
 1. プロビジョニング済み iPad を Mac マシンに接続します。
