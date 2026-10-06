@@ -27,25 +27,26 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 2b710c6ef8d291a42b4a7658bf84f5e764422d5c
 workflow-type: tm+mt
-source-wordcount: '2386'
-ht-degree: 94%
+source-wordcount: '2414'
+ht-degree: 91%
 ---
 # AEM Forms アプリケーションの概要 {#aem-forms-app}
 
+>[!NOTE]
+>
+>AEM Forms アプリのAndroid版とiOS版は提供を終了しました。 Android アプリは2026年9月にGoogle Playから非公開になり、iOS アプリはApple App Storeから削除されました。
+>これらのアプリはインストールできなくなりました。 Android アプリについて詳しくは、[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)にお問い合わせください。
+
 ## 概要 {#overview}
 
-AEM Forms アプリケーションでは、アダプティブフォーム、モバイルフォーム、モバイルデバイスのフォームセットをサーバーに基づいて同期することができます。 OSGi&rbrack;(/help/forms/using/aem-forms-workflow.md) <!--or Forms workflows on JEE-->で&lbrack;Forms中心のワークフローを定義できます。 例えば、金融関係の会社を経営していて、顧客の申請とコミュニケーションの管理に AEM Forms を使用するとします。 顧客はフォームを記入し、それを送信して承認を求めます。 モバイルデバイスのフォームを有効にしている場合、顧客はフォームを AEM Forms アプリケーションで記入することができます。 また、モバイルデバイスで確認フォームを有効にすることで、確認ワークフローを管理することもできます。 フィールドワーカーはモバイルデバイスを顧客のところに持参し、詳細を確認して、フォームを送信します。 AEM Forms アプリケーションは AEM Forms サーバーと同期して、モバイルデバイスで有効になっているフォームを取得します。 アプリケーションがオフラインの場合、データはローカルに保存されます。
+AEM Forms アプリケーションでは、アダプティブフォーム、モバイルフォーム、モバイルデバイスのフォームセットをサーバーに基づいて同期することができます。 OSGi](/help/forms/using/aem-forms-workflow.md) <!--or Forms workflows on JEE-->で[Forms中心のワークフローを定義できます。 例えば、金融関係の会社を経営していて、顧客の申請とコミュニケーションの管理に AEM Forms を使用するとします。 顧客はフォームを記入し、それを送信して承認を求めます。 モバイルデバイスのフォームを有効にしている場合、顧客はフォームを AEM Forms アプリケーションで記入することができます。 また、モバイルデバイスで確認フォームを有効にすることで、確認ワークフローを管理することもできます。 フィールドワーカーはモバイルデバイスを顧客のところに持参し、詳細を確認して、フォームを送信します。 AEM Forms アプリケーションは AEM Forms サーバーと同期して、モバイルデバイスで有効になっているフォームを取得します。 アプリケーションがオフラインの場合、データはローカルに保存されます。
 
 AEM Forms アプリケーションのソースコードは、ソフトウェアディストリビューションにより、使用することができます。 ソフトウエア配布のソースコードパッケージは、`adobe-aemfd-forms-app-src-pkg-<version>.zip` として入手できます。
 
-AEM Forms アプリケーションは、iOS、Android、および Windows デバイスでサポートされます。 Android 向けの AEM Forms アプリケーションは Google Play から、iOS 向けの AEM Forms アプリケーションは App Store から、Windows 向けの AEM Forms アプリケーションは Windows ストアからインストールできます。
+AndroidおよびiOSのAEM Forms アプリのサポートは終了しました。 AndroidおよびiOS アプリケーションは、Google PlayまたはApple App Storeから使用できなくなります。
 
-    [ ![google_play] （assets/google_play.png） ] （https://play.google.com/store/apps/details?id=com.adobe.aem.forms） 
-    
-    [ ![app_store] （assets/app_store.png） ] （https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&mt=8） 
-    
     [ ![microsoft-badge-icon] （assets/microsoft-badge-icon.png） ] （https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt） 
 
 iOS、Android、または Windows デバイスに AEM Forms アプリケーションをインストール、カスタマイズ、配布する方法については、[AEM Forms アプリケーションのカスタマイズ、構築、配布](#customize-build-distribute)を参照してください。

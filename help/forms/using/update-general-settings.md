@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 100%
+source-wordcount: '449'
+ht-degree: 87%
 ---
 # 一般設定の更新{#updating-general-settings}
+
+>[!NOTE]
+>
+>AEM Forms アプリのAndroid版とiOS版は提供を終了しました。 Android アプリは2026年9月にGoogle Playから非公開になり、iOS アプリはApple App Storeから削除されました。
+>これらのアプリはインストールできなくなりました。 Android アプリについて詳しくは、[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)にお問い合わせください。
 
 AEM Forms アプリケーションの一般設定によって、添付ファイルの取得、オフラインモード、ランディング画面、デフォルトのカテゴリ、自動保存の頻度などの設定を行うことができます。
 
@@ -51,9 +56,9 @@ AEM Forms アプリケーションの一般設定によって、添付ファイ�
 
    一般設定画面
 
-   >[!NOTE]
-   >
-   >このオプションは、モバイルデバイスごとに表示が異なる場合があります。
+>[!NOTE]
+>
+>このオプションは、モバイルデバイスごとに表示が異なる場合があります。
 
 ### 一般設定 {#general-settings}
 

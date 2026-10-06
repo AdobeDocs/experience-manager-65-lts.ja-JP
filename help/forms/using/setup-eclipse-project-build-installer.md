@@ -8,14 +8,17 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: a804ba9b-c5c6-4d76-96e4-5d729b673ca4
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: d8150dc7cb8ec161b875263ecfaaca6424ff629f
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 95%
-
+source-wordcount: '785'
+ht-degree: 88%
 ---
-
 # AEM Forms Android アプリケーションの構築 {#build-the-aem-forms-android-app}
+
+>[!NOTE]
+>
+>AEM Forms アプリのAndroid版とiOS版は提供を終了しました。 Android アプリは2026年9月にGoogle Playから非公開になり、iOS アプリはApple App Storeから削除されました。
+>これらのアプリはインストールできなくなりました。 Android アプリについて詳しくは、[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)にお問い合わせください。
 
 AEM Forms 用の Android アプリを構築するには、次の手順を推奨される順序で実行します。
 
@@ -54,14 +57,14 @@ AEM Forms アプリケーションの構築プロセスを開始する前に、�
 
 ## 標準的な AEM Forms アプリケーションの構築 {#set-up-the-xcode-project}
 
-adobe-lc-mobileworkspace-src-&lt;version>.zip ファイルをローカルファイルシステムに保存し、環境変数を設定した後、次のいずれかのオプションを使用して、標準的な AEM Forms Android アプリケーションを構築します。
+adobe-lc-mobileworkspace-src-&lt;version>.zip ファイルをローカルファイルシステムに保存し、環境変数を設定した後、次のいずれかのオプションを使用して、標準的な AEM Forms Android アプリケーションをビルドします。
 
 * [Android Studio を使用した AEM Forms アプリケーションの構築](#using-android-studio)
 * [Android Studio を使用した .apk ファイルの生成](#generate-apk-android-studio)
 
 ### Android Studio を使用した AEM Forms アプリケーションの構築 {#using-android-studio}
 
-Android Studio を使用して AEM Forms アプリを構築するには、次の手順を実行します。
+Android Studio を使用して AEM Forms アプリをビルドするには、次の手順を実行します。
 
 1. お使いのマシンで Android Studio アプリケーションを起動します。
 1. 「**Open an existing Android Studio project**」をクリックします。 既存のプロジェクトを開くダイアログボックスが自動的に表示されない場合は、**File**／**Open** を選択します。

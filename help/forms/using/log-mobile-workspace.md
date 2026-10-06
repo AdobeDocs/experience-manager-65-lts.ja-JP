@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 100%
+source-wordcount: '214'
+ht-degree: 73%
 ---
 # Adobe Experience Manager Forms アプリケーションへのログイン{#logging-in-to-aem-forms-app}
+
+>[!NOTE]
+>
+>AEM Forms アプリのAndroid版とiOS版は提供を終了しました。 Android アプリは2026年9月にGoogle Playから非公開になり、iOS アプリはApple App Storeから削除されました。
+>これらのアプリはインストールできなくなりました。 Android アプリについて詳しくは、[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)にお問い合わせください。
 
 Adobe Experience Manager（AEM）Forms アプリケーションを起動するときは、最初にログイン情報と AEM Forms サーバーの URL を指定する必要があります。
 
@@ -39,12 +44,12 @@ Adobe Experience Manager（AEM）Forms アプリケーションを起動する�
 1. モバイルデバイス上の AEM Forms アプリケーションのアイコンを選択します。
 1. アプリケーションにログインするには、ユーザー名、パスワードおよび AEM Forms サーバーの URL を入力します。
 
-   >[!NOTE]
-   >
-   >モバイルアプリは、入力したすべての AEM Forms サーバーの URL をキャッシュします。
-   >
-   >    * サーバーの URL のリストを表示するには、「サーバーの URL」テキストボックスの右隅にあるリスト矢印をクリックします。
-   >    * AEM Forms サーバーの URL を選択し、アプリケーションにログインします。
+>[!NOTE]
+>
+>モバイルアプリは、入力したすべての AEM Forms サーバーの URL をキャッシュします。
+>
+>    * サーバーの URL のリストを表示するには、「サーバーの URL」テキストボックスの右隅にあるリスト矢印をクリックします。
+>    * AEM Forms サーバーの URL を選択し、アプリケーションにログインします。
 
 アプリケーションにログインすると、[**ホーム**](../../forms/using/home-screen.md)画面に誘導されます。
 

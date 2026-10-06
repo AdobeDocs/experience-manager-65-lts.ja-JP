@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 100%
+source-wordcount: '953'
+ht-degree: 94%
 ---
 # ブランディングのカスタマイズ {#branding-customization}
+
+>[!NOTE]
+>
+>AEM Forms アプリのAndroid版とiOS版は提供を終了しました。 Android アプリは2026年9月にGoogle Playから非公開になり、iOS アプリはApple App Storeから削除されました。
+>これらのアプリはインストールできなくなりました。 Android アプリについて詳しくは、[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)にお問い合わせください。
 
 アプリケーションアイコン、アプリケーション名、起動画像およびログインページをカスタマイズすることで、AEM Forms アプリケーションに組織固有のユニークな外観を与えることができます。 例えば、組織のロゴを使用するために画像を変更できます。 AEM Forms アプリケーションは次のカスタマイズをサポートしています。
 
@@ -60,9 +65,9 @@ ht-degree: 100%
 
    これらのファイルをキャプチャプロジェクトにアップロードして、プロジェクトの既存のファイルと置き換えます。
 
-   >[!NOTE]
-   >
-   >画像の名前と解像度が、プロジェクト内の置き換える画像と一致していることを確認します。
+>[!NOTE]
+>
+>画像の名前と解像度が、プロジェクト内の置き換える画像と一致していることを確認します。
 
 1. iOS デバイスまたは iOS シミュレーター上で AEM Forms アプリケーションを構築して実行します。
 
@@ -80,9 +85,9 @@ ht-degree: 100%
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xxhdpi`
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xxxhdpi`
 
-   >[!NOTE]
-   >
-   >画像の名前と解像度が、プロジェクト内の置き換える画像と一致していることを確認します。
+>[!NOTE]
+>
+>画像の名前と解像度が、プロジェクト内の置き換える画像と一致していることを確認します。
 
 1. AEM Forms アプリケーションを再構築します。
 
@@ -96,9 +101,9 @@ ht-degree: 100%
 
    `%HOMEPATH%\adobe-lc-mobileworkspace-src-<version>\src\windows\MWSWindows\res\screens\windows`
 
-   >[!NOTE]
-   >
-   >画像の名前と解像度が、プロジェクト内の置き換える画像と一致していることを確認します。
+>[!NOTE]
+>
+>画像の名前と解像度が、プロジェクト内の置き換える画像と一致していることを確認します。
 
 1. AEM Forms アプリケーションを再構築します。
 

@@ -8,31 +8,34 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 840dadca-6691-4244-9383-7dbc8e14f0a0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d8150dc7cb8ec161b875263ecfaaca6424ff629f
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 100%
-
+source-wordcount: '302'
+ht-degree: 81%
 ---
-
 # AEM Forms アプリの配布 {#distribute-aem-forms-app}
+
+>[!NOTE]
+>
+>AEM Forms アプリのAndroid版とiOS版は提供を終了しました。 Android アプリは2026年9月にGoogle Playから非公開になり、iOS アプリはApple App Storeから削除されました。
+>これらのアプリはインストールできなくなりました。 Android アプリについて詳しくは、[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)にお問い合わせください。
 
 モバイルデバイス管理（MDM）により、モバイルデバイスでアプリケーションの大規模なデプロイメントを実行できます。
 
 >[!NOTE]
 >
->今回の公開は、iOS および Android™ デバイスのみ該当します。
+>この配布は、iOS および Android™ デバイスにのみ適用されます。
 
-## MDM ソリューションによって提供される主な機能： {#main-features-generally-provided-by-mdm-solutions}
+## MDM ソリューションによって提供される主な機能 {#main-features-generally-provided-by-mdm-solutions}
 
 * エンタープライズ環境でのデバイス登録の有効化
-* デバイス設定の設定と更新の許可
+* デバイス設定の構成と更新の許可
 * セキュリティコンプライアンスの執行
 * 企業リソースへのモバイルアクセスの保護
 
 MDM ソリューションとモバイルアプリケーション管理により、企業のモバイルデバイスにおける社内用、公共用、および購入済みのアプリケーションを管理できます。
 
-MDM 管理者は ipa ファイルと apk ファイルの両方を MDM サーバーにアップロードし、ipa ファイルまたは apk ファイルにアクセスできるユーザーを管理できます。管理者は、各アプリケーションに対応するプロファイル設定を管理することもできます。
+MDM 管理者は ipa ファイルと apk ファイルの両方を MDM サーバーにアップロードし、ipa ファイルまたは apk ファイルにアクセスできるユーザーを管理できます。 管理者は、各アプリケーションに対応するプロファイル設定を管理することもできます。
 
 ## AEM Forms アプリケーションに影響するプロファイル設定 {#profile-settings-affecting-the-aem-forms-app-br}
 
@@ -40,8 +43,8 @@ MDM 管理者は ipa ファイルと apk ファイルの両方を MDM サーバ�
 
 * 「**Device functionality**」セクションの「**Allow use of camera**」
 
-「**Allow use of camera**」を無効にすると、[写真注釈](/help/forms/using/add-attachments.md)のカメラ機能は使えません。アプリでカメラを使用するには、このオプションを有効にします。
+「**Allow use of camera**」を無効にすると、[写真注釈](/help/forms/using/add-attachments.md)のカメラ機能は使えません。 アプリでカメラを使用するには、このオプションを有効にします。
 
 * 「Passcode policies」セクションの「**Require passcode on device**」
 
-**アプリケーションデータの暗号化** を有効にするには、デバイスの **パスコード** を有効にすることをお勧めします。デバイスでパスコードが設定されていないと、デバイスに保存されているアプリケーションデータは暗号化されません。
+**アプリケーションデータの暗号化** を有効にするには、デバイスの **パスコード** を有効にすることをお勧めします。 デバイスでパスコードが設定されていないと、デバイスに保存されているアプリケーションデータは暗号化されません。
