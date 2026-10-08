@@ -21,10 +21,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 606310b2214bc33ede4f2d99f7947fe05d668f64
+source-git-commit: 75901153628ecb69c0a30c28b1e0834f5fc27da5
 workflow-type: tm+mt
-source-wordcount: '7622'
-ht-degree: 21%
+source-wordcount: '7505'
+ht-degree: 20%
 ---
 
 # Adobe Experience Manager 6.5 LTS、SP3の現在のリリースノート {#release-notes}
@@ -342,14 +342,14 @@ Campaign ContentServletは、コンテンツリクエスト中にJSON応答コ�
 * FORMS-25045：繁体字中国語（香港）の翻訳がアップグレード後にレンダリングされなくなったため、フォームがデフォルト言語に戻りました。 ローカライズされたテキストが正しくレンダリングされるようになりました。
 * FORMS-25170：開始インスタンス数が0の場合、`addInstance()`を呼び出しても、動的に追加されたパネルが表示されませんでした。 追加されたパネルがすぐに表示されるようになりました。
 * FORMS-25225：サーバー側の再検証により、アダプティブFormsのフラグメントの外側にあるフィールド翻訳が削除され、ラベルがベース言語に戻りました。 これらの翻訳は保持されます。
-* FORMS-25233: Open Services Gateway Initiative （OSGi）のデプロイメントで、Assembler サービスはマスターXDPを直接フラグメントでステッチしましたが、ヘッダー、フッター、再利用可能なサブフォームなどのネストされたフラグメント参照を解決しなかったため、組み立てられた出力から見つかりませんでした。 ネストされたフラグメントが解決されました。
+* FORMS-25233: OSGi デプロイメントで、Assembler サービスがXDP ファイル内のネストされたフラグメント参照を解決できなかったため、アセンブリされた出力に含まれていません。 ネストされたフラグメントが解決されました。
 * FORMS-25289: Forms レンダリングサービスが、サービスパック全体で同じ入力に対して異なる出力を返し、Correspondence Management レターに影響を与えました。 レンダリング出力が一貫するようになりました。
 * FORMS-25290: Saved Correspondence Managementのレターがスペースを失い、再び開いたときに一部の場所で迷子「x」が表示されました。 保存されたレターコンテンツが変更されなくなりました。
 * FORMS-25346: サービスパックのアップグレード後、インタラクティブ通信（IC）のレターが読み込み中のスピナーでフリーズし、プレビューで読み込みの間隔が失われたレターが読み込まれる。 読み込みと間隔が正しく機能するようになりました。
 * FORMS-25431: フォームフラグメントを作成ウィザードで、タイトルフィールドのキーストロークごとにネットワークリクエストが送信されました。 冗長な呼び出しが削除されました。
 * FORMS-25645：インラインアップロードされたJSON スキーマからコアコンポーネントベースのアダプティブフォームフラグメントを作成すると、「ALC-FMG-700-009無効なフォームモデルが指定されました」で失敗する。 インライン JSON スキーマが受け入れられるようになりました。
 * FORMS-25646: JSON スキーマから構築されたコアコンポーネントベースのアダプティブフォームフラグメントに、エディターの空のデータソースパネルが表示されました。 これで、パネルにスキーマデータソースが一覧表示されます。
-* FORMS-25674: Interactive Communications （IC）のエージェントユーザーインターフェイスが空白ページに開いたため、エージェントがIC コンテンツを表示できません。 エージェントユーザーインターフェイスがレンダリングされるようになりました。
+* FORMS-25674: インタラクティブ通信（IC）エージェントユーザーインターフェイスが空白ページに開き、エージェントがIC コンテンツを表示できなくなります。 エージェントユーザーインターフェイスがレンダリングされるようになりました。
 * FORMS-25686：アダプティブフォームフラグメントを作成ウィザードでスキーマタイプオプションを切り替えると、前のオプションのステータスがクリアされず、スキーマが一致しません。 ウィザードが非アクティブなオプションをリセットするようになりました。
 * FORMS-25757: テーマを適用しても基本クライアントライブラリが更新されないので、テーマの変更は影響を受けないようです。 テーマは、ベースクライアントライブラリを更新するようになりました。
 * FORMS-25825：モバイルハンバーガーメニューがタップに反応せず、モバイルデバイスでナビゲーションが使用できなくなりました。 メニューが正常に開くようになりました。
@@ -361,7 +361,7 @@ Campaign ContentServletは、コンテンツリクエスト中にJSON応答コ�
 
 6.5 LTS サービスパック 3のJEE上のAEM Formsに関する次の問題が修正されました。
 
-* FORMS-27585: JEE上のAEM Formsで、`submitForm()`を呼び出すXFA ベースのPDF formsが、Adobe Readerで（および`closeDoc()`というスクリプトが呼び出されたときにAcrobatで）送信結果を表示しませんでした。 送信結果が正しく表示されるようになりました。
+* FORMS-27585: JEE上のAEM Formsで、`submitForm()`を呼び出すXFA ベースのPDF formsで、スクリプトが`closeDoc()`を呼び出したときに、Adobe ReaderまたはAcrobatで送信結果を表示できませんでした。 送信結果が正しく表示されるようになりました。
 * FORMS-25998: JEE上のAEM Formsで、管理コンソールでHSM接続をテストする際に、Java 21の`IllegalAccessError`でHardware Security Module （HSM）秘密鍵証明書の登録に失敗しました。 HSM秘密鍵証明書の登録が機能するようになりました。
 * FORMS-24993: JEE上のAEM Formsで、Web サービスの呼び出しステップでWSDLを読み込むと、`SAXException` （「ファイルの終了時間が短すぎます」）が発生して失敗しました。 WSDLが正しく読み込まれるようになりました。
 * FORMS-24518: JEE上のAEM Forms（JBoss）で、従来のJSTL タグリブ URIが原因で、Reader Extensions web アプリケーションが新しいインストール後に「エラー処理リクエスト」を返しました。 Reader Extensions web アプリケーションが読み込まれるようになりました。
@@ -373,17 +373,17 @@ Campaign ContentServletは、コンテンツリクエスト中にJSON応答コ�
 
 JEEにAEM Forms 6.5 LTS SP3をインストールするには、次の手順を順番に実行します。
 
-1. アプリケーションサーバー用のAEM Forms 6.5 LTS SP3 JEE インストーラー（[AEM Forms リリース &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)からダウンロード）を使用して、標準のAEM Forms on JEE インストール手順に従ってサービスパックをインストールします。
+1. アプリケーションサーバー用のAEM Forms 6.5 LTS SP3 JEE インストーラー（[AEM Forms リリース &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)からダウンロード）を使用してサービスパックをインストールし、標準のAEM Forms on JEE インストール手順に従います。
 1. 最新のAEM Forms Workbench インストーラー（同じ[AEM Forms リリース &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) ページから利用可能）に更新します。
 1. プロジェクトで`adobe-livecycle-client.jar` SDK クライアント ライブラリを使用している場合は、プロジェクトのクラスパスで更新します。 最新バージョンは`<AEM_Forms_Installation_dir>/sdk/client-libs/common/adobe-livecycle-client.jar`で入手できます。
 
 #### 既知の問題 {#forms-known-issues-65-lts-sp3}
 
-* JEE 6.5 LTS SP3 **上の** AEM Formsでは、**PostScript（PS）、EPS、およびPRN ファイルをPDF**&#x200B;に変換できません。 `PsToPdfSvc` ネイティブプロセスが予期せず終了する可能性があり、コンバージョンジョブが`ALC-PDG-003-011`や`ALC-PDG-001-028`などのエラーで失敗します。 Adobe カスタマーサポートにお問い合わせください。 （FORMS-28152）
+* **JEE 6.5 LTS SP3**&#x200B;上のAEM Formsで、**PostScript（PS）、EPS、およびPRN ファイルをPDF**&#x200B;に変換できません。 `PsToPdfSvc` ネイティブプロセスが予期せず終了する可能性があり、コンバージョンジョブが`ALC-PDG-003-011`や`ALC-PDG-001-028`などのエラーで失敗します。 Adobe カスタマーサポートにお問い合わせください。 （FORMS-28152）
 
 #### セキュリティの修正 {#forms-security-fixes-65-lts-sp3}
 
-このリリースでは、複数のクロスサイトスクリプティング（XSS）の修正、サーバーサイドリクエストフォージェリー（SSRF）の修正、XML外部エンティティ（XXE）の修正、サードパーティライブラリの更新など、AEM Formsのセキュリティ上の脆弱性を解決します。
+このリリースでは、XSS、SSRF、XXEなどのAEM Formsのセキュリティの脆弱性を解決し、ライブラリを更新します。
 
 
 
@@ -486,7 +486,7 @@ AEM メールサービスは、断続的な設定エラーが発生した場合�
 ### Java™ サポート  {#java-support}
 
 * Java™ 17 および Java™ 21 のサポート。
-* 最適なパフォーマンスを得るには、デフォルトの GC 値を他の値で上書きしてください。 詳しくは、[インストールとアップデート](/help/sites-deploying/custom-standalone-install.md)の節を参照してください。
+* 最適なパフォーマンスを得るには、デフォルトのGC値を異なる値で上書きします。 詳しくは、[インストールとアップデート](/help/sites-deploying/custom-standalone-install.md)の節を参照してください。
 * アドビでは、Oracle から公開されていない場合、AEM 関連プロジェクトでお客様が使用できるように Java™ 17 および Java™ 21 のメンテナンスアップデートを配布します。
 
 ### Uberjar パッケージ {#uber-jar-packaging}
@@ -531,7 +531,7 @@ UberJar for AEM 6.5 LTS SP3では、AEM 6.5 LTS UberJar バージョン 6.6.3が
 適用対象：AEM 6.5 LTS （オンプレミス）のお客様によるService Pack 3 （SP3）のインストール。 SP3はクイックスタート JARとして配信されます。
 
 **このアップグレードプラクティスが重要な理由**
-AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストールする ZIP ではなく、クイックスタート JAR として出荷されます。 オンプレミスのお客様は、クイックスタート JARを置き換え、解凍して再起動することでアップグレードします。 この方法は、Adobeの標準アップグレード手順と一致しています。
+AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストールする ZIP ではなく、クイックスタート JAR として出荷されます。 オンプレミスのお客様は、クイックスタート JARの置き換え、抽出、再起動を行うことでアップグレードできます。 この方法は、Adobeの標準アップグレード手順と一致しています。
 
 
 **推奨アップグレードフロー（オーサーまたはパブリッシュ）**
@@ -662,29 +662,44 @@ AEM 6.5 LTS SP2 以降、`Sling-Initial-Content` バンドルで使用される 
 >
 > AEM 6.5 LTS SP2にアップグレードした後のコンテンツ読み込みエラーを回避するには、`Sling-Initial-Content` バンドル内のJSON ファイルからすべてのコメントを削除します。
 
+
 ### Jackson バンドルのアップグレードがGlobalLink コネクタに影響する {#jackson-upgrade-globallink-connector}
 
-AEM 6.5 LTS SP3は、`jackson` バンドルをアップグレードします。 この変更は、GlobalLink翻訳コネクタを使用するデプロイメントに影響します。
+AEM 6.5 LTS SP3は、ジャクソンバンドルをアップグレードします。 この変更は、GlobalLink翻訳コネクタを使用するデプロイメントに影響します。
 
-3.4.0より前のバージョンで`gs4tr-globallink-adaptors-aem.core` バンドルを使用する場合は、バンドルを互換性のあるバージョンにアップグレードします。 バージョン 3.4.0以降は、SP3でアップグレードされた`jackson` バンドルで動作します。
+`gs4tr-globallink-adaptors-aem.core` バンドルを3.4.4.7より前のバージョンで使用する場合は、バンドルを互換性のあるバージョンにアップグレードしてください。 バージョン 3.4.4.7以降は、SP3でアップグレードされたジャクソンバンドルで動作します。
 
 >[!NOTE]
 >
-> GlobalLink コネクタとの互換性の問題を回避するために、SP3の更新前または更新中に`gs4tr-globallink-adaptors-aem.core` バンドルを3.4.0以降にアップグレードします。
+>GlobalLink コネクタとの互換性の問題を回避するために、SP3の更新前または更新中に`gs4tr-globallink-adaptors-aem.core` バンドルを3.4.4.7以降にアップグレードします。
+
+<!--
+
+AEM 6.5 LTS SP3 upgrades the `jackson` bundle. This change affects deployments that use the GlobalLink translation connector.
+
+If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.0, upgrade the bundle to a compatible version. Version 3.4.0 or later works with the upgraded `jackson` bundle in SP3.
+
+>[!NOTE]
+>
+> Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.0 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
 
 
-### Sites Headless API に必要な Oak インデックスのインストール{#site-headless-api}
+### Install required Oak indexes for Sites Headless APIs{#site-headless-api}
 
-Sites ヘッドレスに移行した一部の API では、完全な機能に対して追加の Oak インデックスが必要です。
+Some APIs that moved to Sites Headless require additional Oak indexes for full functionality. 
 
-次の機能を使用するには、`cq-dam-cfm-indices` パッケージをインストールします。
+To use the following features, install the `cq-dam-cfm-indices` package:
 
-* コンテンツフラグメントモデルを一覧表示
-* コンテンツフラグメントを一覧表示
-* 検索 API
-* workflows
+* List Content Fragment Models
+* List Content Fragments
+* Search API
+* Workflows
 
-Adobe ソフトウェア配布ポータルからインデックスパッケージ [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) をダウンロードします。
+Download the index package [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) from the Adobe Software Distribution portal. 
+
+-->
+
+&#x200B;###
 
 ### SSL のみの機能を使用した Dispatcher 接続の失敗（AEM 6.5 LTS SP1 以降で修正）{#ssl-only-feature}
 
