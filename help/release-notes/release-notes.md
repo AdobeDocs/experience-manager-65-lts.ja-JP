@@ -21,10 +21,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 75901153628ecb69c0a30c28b1e0834f5fc27da5
+source-git-commit: 60fd1764a1b2a6440d306d21a8a84a8f9d879811
 workflow-type: tm+mt
-source-wordcount: '7505'
-ht-degree: 20%
+source-wordcount: '7432'
+ht-degree: 21%
 ---
 
 # Adobe Experience Manager 6.5 LTS、SP3の現在のリリースノート {#release-notes}
@@ -373,8 +373,8 @@ Campaign ContentServletは、コンテンツリクエスト中にJSON応答コ�
 
 JEEにAEM Forms 6.5 LTS SP3をインストールするには、次の手順を順番に実行します。
 
-1. アプリケーションサーバー用のAEM Forms 6.5 LTS SP3 JEE インストーラー（[AEM Forms リリース &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)からダウンロード）を使用してサービスパックをインストールし、標準のAEM Forms on JEE インストール手順に従います。
-1. 最新のAEM Forms Workbench インストーラー（同じ[AEM Forms リリース &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) ページから利用可能）に更新します。
+1. アプリケーションサーバー用のAEM Forms 6.5 LTS SP3 JEE インストーラー（[AEM Forms リリース ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)からダウンロード）を使用してサービスパックをインストールし、標準のAEM Forms on JEE インストール手順に従います。
+1. 最新のAEM Forms Workbench インストーラー（同じ[AEM Forms リリース ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) ページから利用可能）に更新します。
 1. プロジェクトで`adobe-livecycle-client.jar` SDK クライアント ライブラリを使用している場合は、プロジェクトのクラスパスで更新します。 最新バージョンは`<AEM_Forms_Installation_dir>/sdk/client-libs/common/adobe-livecycle-client.jar`で入手できます。
 
 #### 既知の問題 {#forms-known-issues-65-lts-sp3}
@@ -567,10 +567,10 @@ AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストール
 
 >[!NOTE]
 >
-> 古い6.5 SPからLTS SP3に直接アップグレードする場合は、6.5から6.5 LTS GA [&#x200B; アップグレード &#x200B;](/help/sites-deploying/upgrade.md)の指示に従ってください。
+> 古い6.5 SPからLTS SP3に直接アップグレードする場合は、6.5から6.5 LTS GA [ アップグレード ](/help/sites-deploying/upgrade.md)の指示に従ってください。
 
 
-詳細な手順については、[&#x200B; アップグレードドキュメント &#x200B;](/help/sites-deploying/upgrade.md)を参照してください。同じドキュメントがLTS サービスパックの更新に適用されます。
+詳細な手順については、[ アップグレードドキュメント ](/help/sites-deploying/upgrade.md)を参照してください。同じドキュメントがLTS サービスパックの更新に適用されます。
 
 >[!NOTE]
 >
@@ -662,19 +662,21 @@ AEM 6.5 LTS SP2 以降、`Sling-Initial-Content` バンドルで使用される 
 >
 > AEM 6.5 LTS SP2にアップグレードした後のコンテンツ読み込みエラーを回避するには、`Sling-Initial-Content` バンドル内のJSON ファイルからすべてのコメントを削除します。
 
+<!--
+### Jackson bundle upgrade affects the GlobalLink connector {#jackson-upgrade-globallink-connector}
 
-### Jackson バンドルのアップグレードがGlobalLink コネクタに影響する {#jackson-upgrade-globallink-connector}
-
-AEM 6.5 LTS SP3は、ジャクソンバンドルをアップグレードします。 この変更は、GlobalLink翻訳コネクタを使用するデプロイメントに影響します。
-
-`gs4tr-globallink-adaptors-aem.core` バンドルを3.4.4.7より前のバージョンで使用する場合は、バンドルを互換性のあるバージョンにアップグレードしてください。 バージョン 3.4.4.7以降は、SP3でアップグレードされたジャクソンバンドルで動作します。
-
+AEM 6.5 LTS SP3 upgrades the jackson bundle. This change affects deployments that use the GlobalLink translation connector.
+ 
+If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.4.7, upgrade the bundle to a compatible version. Version 3.4.4.7 or later works with the upgraded jackson bundle in SP3.
+ 
 >[!NOTE]
 >
->GlobalLink コネクタとの互換性の問題を回避するために、SP3の更新前または更新中に`gs4tr-globallink-adaptors-aem.core` バンドルを3.4.4.7以降にアップグレードします。
+>Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.4.7 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
+-->
+
+
 
 <!--
-
 AEM 6.5 LTS SP3 upgrades the `jackson` bundle. This change affects deployments that use the GlobalLink translation connector.
 
 If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.0, upgrade the bundle to a compatible version. Version 3.4.0 or later works with the upgraded `jackson` bundle in SP3.
@@ -699,7 +701,7 @@ Download the index package [cq-dam-cfm-indices](https://experience.adobe.com/#/d
 
 -->
 
-&#x200B;###
+###
 
 ### SSL のみの機能を使用した Dispatcher 接続の失敗（AEM 6.5 LTS SP1 以降で修正）{#ssl-only-feature}
 
@@ -731,7 +733,7 @@ AEM デプロイメントで SSL のみの機能を有効にすると、Dispatch
 
 次のzip ファイルには、このExperience Manager 6.5 LTS サービスパック リリースに含まれるOSGi バンドルとコンテンツパッケージを一覧表示するテキストドキュメントが含まれています。
 
-* [OSGi バンドル &#x200B;](/help/release-notes/assets/65lts_sp3_bundles.zip)
+* [OSGi バンドル ](/help/release-notes/assets/65lts_sp3_bundles.zip)
 * [コンテンツパッケージ](/help/release-notes/assets/65lts_sp3_packages.zip)
 
 ## 制限付き Web サイト{#restricted-sites}
