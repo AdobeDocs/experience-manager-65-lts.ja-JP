@@ -7,9 +7,9 @@ user-guide-description: Adobe Experience Manager 6.5 LTS ドキュメントを�
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: 4df5a9888532afd86562678a76c35841ac5634b8
+source-git-commit: 8781bd3762ec04424802d899d3517754e0c81fc5
 workflow-type: tm+mt
-source-wordcount: '7804'
+source-wordcount: '7799'
 ht-degree: 67%
 ---
 # Adobe Experience Manager 6.5 LTS ドキュメント {#content}
@@ -1111,7 +1111,6 @@ ht-degree: 67%
 + AEM の AI {#ai-in-aem}
   + [概要](/help/ai-in-aem/overview.md)
   + AI アシスタント {#ai-assistant}
-    + [AEM の AI アシスタントの設定](/help/ai-assistant-in-aem-admin.md)
     + [AEM の AI アシスタントについて](/help/ai-assistant-in-aem.md)
 + コンテンツとコマース {#commerce}
   + [概要](/help/commerce/cif/introduction.md)

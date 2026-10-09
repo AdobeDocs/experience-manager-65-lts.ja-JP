@@ -21,10 +21,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 75901153628ecb69c0a30c28b1e0834f5fc27da5
+source-git-commit: 60fd1764a1b2a6440d306d21a8a84a8f9d879811
 workflow-type: tm+mt
-source-wordcount: '7505'
-ht-degree: 20%
+source-wordcount: '7432'
+ht-degree: 21%
 ---
 
 # Adobe Experience Manager 6.5 LTS、SP3の現在のリリースノート {#release-notes}
@@ -662,19 +662,21 @@ AEM 6.5 LTS SP2 以降、`Sling-Initial-Content` バンドルで使用される 
 >
 > AEM 6.5 LTS SP2にアップグレードした後のコンテンツ読み込みエラーを回避するには、`Sling-Initial-Content` バンドル内のJSON ファイルからすべてのコメントを削除します。
 
+<!--
+### Jackson bundle upgrade affects the GlobalLink connector {#jackson-upgrade-globallink-connector}
 
-### Jackson バンドルのアップグレードがGlobalLink コネクタに影響する {#jackson-upgrade-globallink-connector}
-
-AEM 6.5 LTS SP3は、ジャクソンバンドルをアップグレードします。 この変更は、GlobalLink翻訳コネクタを使用するデプロイメントに影響します。
-
-`gs4tr-globallink-adaptors-aem.core` バンドルを3.4.4.7より前のバージョンで使用する場合は、バンドルを互換性のあるバージョンにアップグレードしてください。 バージョン 3.4.4.7以降は、SP3でアップグレードされたジャクソンバンドルで動作します。
-
+AEM 6.5 LTS SP3 upgrades the jackson bundle. This change affects deployments that use the GlobalLink translation connector.
+ 
+If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.4.7, upgrade the bundle to a compatible version. Version 3.4.4.7 or later works with the upgraded jackson bundle in SP3.
+ 
 >[!NOTE]
 >
->GlobalLink コネクタとの互換性の問題を回避するために、SP3の更新前または更新中に`gs4tr-globallink-adaptors-aem.core` バンドルを3.4.4.7以降にアップグレードします。
+>Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.4.7 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
+-->
+
+
 
 <!--
-
 AEM 6.5 LTS SP3 upgrades the `jackson` bundle. This change affects deployments that use the GlobalLink translation connector.
 
 If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.0, upgrade the bundle to a compatible version. Version 3.4.0 or later works with the upgraded `jackson` bundle in SP3.
