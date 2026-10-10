@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 60fd1764a1b2a6440d306d21a8a84a8f9d879811
+source-git-commit: 7fb04d7017fa8f6183508cf4f880077eb533c057
 workflow-type: tm+mt
-source-wordcount: '7432'
+source-wordcount: '7577'
 ht-degree: 21%
 ---
 
@@ -674,30 +674,27 @@ If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier 
 >Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.4.7 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
 -->
 
+AEM 6.5 LTS SP3は、`jackson` バンドルをアップグレードします。 この変更は、GlobalLink翻訳コネクタを使用するデプロイメントに影響します。
 
-
-<!--
-AEM 6.5 LTS SP3 upgrades the `jackson` bundle. This change affects deployments that use the GlobalLink translation connector.
-
-If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.0, upgrade the bundle to a compatible version. Version 3.4.0 or later works with the upgraded `jackson` bundle in SP3.
+3.4.0より前のバージョンで`gs4tr-globallink-adaptors-aem.core` バンドルを使用する場合は、バンドルを互換性のあるバージョンにアップグレードします。 バージョン 3.4.0以降は、SP3でアップグレードされた`jackson` バンドルで動作します。
 
 >[!NOTE]
 >
-> Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.0 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
+> GlobalLink コネクタとの互換性の問題を回避するために、SP3の更新前または更新中に`gs4tr-globallink-adaptors-aem.core` バンドルを3.4.0以降にアップグレードします。
 
 
-### Install required Oak indexes for Sites Headless APIs{#site-headless-api}
+### Sites Headless API に必要な Oak インデックスのインストール{#site-headless-api}
 
-Some APIs that moved to Sites Headless require additional Oak indexes for full functionality. 
+Sites ヘッドレスに移行した一部の API では、完全な機能に対して追加の Oak インデックスが必要です。
 
-To use the following features, install the `cq-dam-cfm-indices` package:
+次の機能を使用するには、`cq-dam-cfm-indices` パッケージをインストールします。
 
-* List Content Fragment Models
-* List Content Fragments
-* Search API
-* Workflows
+* コンテンツフラグメントモデルを一覧表示
+* コンテンツフラグメントを一覧表示
+* 検索 API
+* workflows
 
-Download the index package [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) from the Adobe Software Distribution portal. 
+Adobe ソフトウェア配布ポータルからインデックスパッケージ [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) をダウンロードします。
 
 -->
 
