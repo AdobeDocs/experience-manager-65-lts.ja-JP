@@ -7,9 +7,9 @@ user-guide-description: Adobe Experience Manager 6.5 LTS ドキュメントを�
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: 8781bd3762ec04424802d899d3517754e0c81fc5
+source-git-commit: a895c5e5cb2a4e21d7460d598bd260a5292ed2ad
 workflow-type: tm+mt
-source-wordcount: '7799'
+source-wordcount: '7801'
 ht-degree: 67%
 ---
 # Adobe Experience Manager 6.5 LTS ドキュメント {#content}
@@ -332,6 +332,7 @@ ht-degree: 67%
     + [メタデータ機能の設定](/help/assets/metadata-config.md)
     + [メタデータスキーマ](/help/assets/metadata-schemas.md)
     + [レンディションへの XMP の書き戻し](/help/assets/xmp-writeback.md)
+    + [C2PA メタデータ](/help/assets/c2pa-metadata.md)
     + [アセットのリンク共有](/help/assets/link-sharing.md)
     + [アセットレポート](/help/assets/asset-reports.md)
     + [タグ付け用のスマートコンテンツサービスの設定](/help/assets/config-smart-tagging.md)
