@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 168e33d380dcef163d43d6d10dc21c840c55e96c
+source-git-commit: 0eb20f3494bb75de7adf27745ddfb13d024af59c
 workflow-type: tm+mt
-source-wordcount: '7799'
+source-wordcount: '7882'
 ht-degree: 21%
 ---
 
@@ -382,6 +382,23 @@ JEEにAEM Forms 6.5 LTS SP3をインストールするには、次の手順を�
 #### 既知の問題 {#forms-known-issues-65-lts-sp3}
 
 * **JEE 6.5 LTS SP3**&#x200B;上のAEM Formsで、**PostScript（PS）、EPS、およびPRN ファイルをPDF**&#x200B;に変換できません。 `PsToPdfSvc` ネイティブプロセスが予期せず終了する可能性があり、コンバージョンジョブが`ALC-PDG-003-011`や`ALC-PDG-001-028`などのエラーで失敗します。 Adobe カスタマーサポートにお問い合わせください。 （FORMS-28152）
+
+JEE上のAEM Formsでは、Reader ExtensionsはWebSphere® Liberty Profile （WLP）プラットフォームで動作しません。 LTS SP3に含まれているEAR ファイルのクラスパスに、必要なバウンシーキャッスル ライブラリがありません。
+
+**回避策**
+
+1. `<AEM Forms JEE installation>\Adobe_Experience_Manager_Forms\configurationManager\export` にアクセスします。
+1. `adobe-livecycle-websphere.ear\adobe-dscf.jar\META-INF\MANIFEST.MF`を開き、次のエントリを`Class-Path`要素に追加します。
+
+   ```
+   bcmail-jdk18on-1.84.jar bcprov-jdk18on-1.84.jar bcpkix-jdk18on-1.84.jar bcutil-jdk18on-1.84.jar
+   ```
+
+1. 変更したEAR ファイルをWebSphere® Liberty Profile `dropins` フォルダーに再デプロイします。
+   1. WebSphere® Liberty Profile サーバーを停止し、`<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`から`adobe-livecycle-websphere.ear`を削除します。
+   1. `<WebSphere Liberty Profile install location>\usr\servers\<server-name>\apps\expanded\`から`adobe-livecycle-websphere.ear` ディレクトリを削除します。
+   1. 変更したEAR ファイルを手順2から`<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`にコピーします。
+   1. WebSphere® Liberty Profile サーバーを起動します。
 
 #### セキュリティの修正 {#forms-security-fixes-65-lts-sp3}
 
