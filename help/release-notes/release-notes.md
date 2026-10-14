@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 0eb20f3494bb75de7adf27745ddfb13d024af59c
+source-git-commit: fe79cf30a6062d86ac2ecd5cb1b87b83a57e2480
 workflow-type: tm+mt
-source-wordcount: '7882'
+source-wordcount: '7815'
 ht-degree: 21%
 ---
 
@@ -694,27 +694,6 @@ AEM 6.5 LTS SP2 以降、`Sling-Initial-Content` バンドルで使用される 
 >[!CAUTION]
 >
 > AEM 6.5 LTS SP2にアップグレードした後のコンテンツ読み込みエラーを回避するには、`Sling-Initial-Content` バンドル内のJSON ファイルからすべてのコメントを削除します。
-
-<!--
-### Jackson bundle upgrade affects the GlobalLink connector {#jackson-upgrade-globallink-connector}
-
-AEM 6.5 LTS SP3 upgrades the jackson bundle. This change affects deployments that use the GlobalLink translation connector.
- 
-If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.4.7, upgrade the bundle to a compatible version. Version 3.4.4.7 or later works with the upgraded jackson bundle in SP3.
- 
->[!NOTE]
->
->Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.4.7 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
--->
-
-AEM 6.5 LTS SP3は、`jackson` バンドルをアップグレードします。 この変更は、GlobalLink翻訳コネクタを使用するデプロイメントに影響します。
-
-3.4.0より前のバージョンで`gs4tr-globallink-adaptors-aem.core` バンドルを使用する場合は、バンドルを互換性のあるバージョンにアップグレードします。 バージョン 3.4.0以降は、SP3でアップグレードされた`jackson` バンドルで動作します。
-
->[!NOTE]
->
-> GlobalLink コネクタとの互換性の問題を回避するために、SP3の更新前または更新中に`gs4tr-globallink-adaptors-aem.core` バンドルを3.4.0以降にアップグレードします。
-
 
 ### Sites Headless API に必要な Oak インデックスのインストール{#site-headless-api}
 
