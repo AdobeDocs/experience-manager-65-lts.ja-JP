@@ -109,7 +109,7 @@ AEM Forms は、以下の障害から確実に回復します。
 
    * **スタンドアロン**
 
-     *オーサーインスタンスとパブリッシュインスタンスの復元*：災害が発生した場合、[ バックアップと復元](/help/sites-administering/backup-and-restore.md)で説明されている手順を実行して、リポジトリを最後のバックアップ状態に復元できます。
+     *オーサーインスタンスとパブリッシュインスタンスの復元*：災害が発生した場合、[&#x200B; バックアップと復元](/help/sites-administering/backup-and-restore.md)で説明されている手順を実行して、リポジトリを最後のバックアップ状態に復元できます。
 
      Author ノードを完全に復元すると、Forms Manager および AEM Forms Workspace データも復元されます。
 

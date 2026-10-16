@@ -29,7 +29,7 @@ ht-degree: 92%
 ---
 # AEM Forms のアセットとドキュメントの移行{#migrate-aem-forms-assets-and-documents}
 
-移行ユーティリティは、[ アダプティブ Forms assets](../../forms/using/introduction-forms-authoring.md)、[ クラウド構成](/help/sites-developing/extending-cloud-config.md)、[Correspondence Management assets](/help/forms/using/cm-overview.md)を、以前のバージョンで使用していたフォーマットからAdobe Experience Manager （AEM） 6.5 LTS Formsで使用していたフォーマットに変換します。 移行ユーティリティを実行すると、以下の項目が移行されます。
+移行ユーティリティは、[&#x200B; アダプティブ Forms assets](../../forms/using/introduction-forms-authoring.md)、[&#x200B; クラウド構成](/help/sites-developing/extending-cloud-config.md)、[Correspondence Management assets](/help/forms/using/cm-overview.md)を、以前のバージョンで使用していたフォーマットからAdobe Experience Manager （AEM） 6.5 LTS Formsで使用していたフォーマットに変換します。 移行ユーティリティを実行すると、以下の項目が移行されます。
 
 * アダプティブフォームのカスタムコンポーネント
 * アダプティブフォームとCorrespondence Management テンプレート
@@ -42,11 +42,11 @@ ht-degree: 92%
 
 ## 移行のアプローチ {#approach-to-migration}
 
-AEM Forms 6.5.22.0](/help/forms/using/upgrade-forms-osgi.md)から[ アップグレード ](../../forms/using/upgrade.md)して[AEM Forms 6.5 LTSにアップグレードできます。 以前のインストールをアップグレードしたか、新規インストールを実行したかに応じて、次のいずれかを実行する必要があります。
+AEM Forms 6.5.22.0[&#128279;](/help/forms/using/upgrade-forms-osgi.md)から[&#x200B; アップグレード &#x200B;](../../forms/using/upgrade.md)してAEM Forms 6.5 LTSにアップグレードできます。 以前のインストールをアップグレードしたか、新規インストールを実行したかに応じて、次のいずれかを実行する必要があります。
 
 **インプレースアップグレードの場合**
 
-[ インプレースアップグレード ](/help/sites-deploying/in-place-upgrade.md)を実行した場合、アップグレードされたインスタンスにはアセットとドキュメントが既に含まれています。 ただし、アセットとドキュメントを使用する前に、[AEMFD互換性パッケージ ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ja)をインストールする必要があります（Correspondence Management互換性パッケージを含む）。
+[&#x200B; インプレースアップグレード &#x200B;](/help/sites-deploying/in-place-upgrade.md)を実行した場合、アップグレードされたインスタンスにはアセットとドキュメントが既に含まれています。 ただし、アセットとドキュメントを使用する前に、[AEMFD互換性パッケージ &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ja)をインストールする必要があります（Correspondence Management互換性パッケージを含む）。
 
 その後、[移行ユーティリティを実行](#runningmigrationutility)して、アセットとドキュメントを更新する必要があります。
 
