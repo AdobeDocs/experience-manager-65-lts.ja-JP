@@ -21,7 +21,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 59%
@@ -30,9 +30,9 @@ ht-degree: 59%
 
 ## 概要 {#overview}
 
-インタラクティブ通信は、AEM Forms 6.5 LTSでお客様との通信を作成する際にデフォルトで推奨される方法です。 AEM Forms 6.5 LTSで引き続き文字を使用するには、最新の[AEMFD互換性パッケージ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)をインストールする必要があります。
+インタラクティブ通信は、AEM Forms 6.5 LTSでお客様との通信を作成する際にデフォルトで推奨される方法です。 AEM Forms 6.5 LTSで引き続き文字を使用するには、最新の[AEMFD互換性パッケージ ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)をインストールする必要があります。
 
-AEMFD互換性パッケージでは、AEM Forms 6.5 LTS[&#128279;](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)でAEM Forms 6.5.22.0、6.4、6.3、6.2の次のアセットを使用することもできます
+AEMFD互換性パッケージでは、AEM Forms 6.5 LTS](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms-6.5.lts)で[AEM Forms 6.5.22.0、6.4、6.3、6.2の次のアセットを使用することもできます
 
 * ドキュメントフラグメント
 * レター
@@ -47,7 +47,7 @@ AEMFD互換性パッケージでは、AEM Forms 6.5 LTS[&#128279;](../../forms/u
 
 [AEM 互換性パッケージ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)が事前にインストールされていることを確認します。
 
-1. 最新のAEM 6.5 LTS [互換性パッケージ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)をインストールします。
+1. 最新のAEM 6.5 LTS [互換性パッケージ ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)をインストールします。
 
    パッケージのアップロードおよびインストールについて詳しくは、[パッケージの操作方法](/help/sites-administering/package-manager.md)を参照してください。
 

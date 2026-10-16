@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1650'
 ht-degree: 100%
@@ -40,9 +40,9 @@ ht-degree: 100%
 
 また、アドホッククエリは、プロセスおよびタスクのプロパティフィルターを使用して定義できます。 その後、これらのフィルターを保存し、後でレポートを実行するために使用できます。
 
-[**プロセスの検索**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-search-p)：プロセス属性に基づいて、ユーザー定義の検索フィルターを使用してプロセスインスタンスを検索します。
+[**プロセスの検索**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#process-task-search)：プロセス属性に基づいて、ユーザー定義の検索フィルターを使用してプロセスインスタンスを検索します。
 
-[**プロセスの詳細**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-details-p)：プロセス ID を指定して、プロセスインスタンスの詳細を表示します。
+[**プロセスの詳細**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#process-task-details)：プロセス ID を指定して、プロセスインスタンスの詳細を表示します。
 
 **タスクの検索**：タスク属性に基づいて、ユーザー定義の検索フィルターを使用してタスクインスタンスを検索します。
 

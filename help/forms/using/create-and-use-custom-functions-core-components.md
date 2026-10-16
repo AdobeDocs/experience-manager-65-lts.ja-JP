@@ -18,7 +18,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3533'
 ht-degree: 98%
@@ -94,7 +94,7 @@ AEM Forms 6.5 には、ルールエディターを使用して複雑なビジネ
   * date[]：日付値の配列を表します。
   * array：様々なタイプの値を含む汎用の配列を表します。
   * object：値を直接渡す代わりに、カスタム関数に渡されるフォームオブジェクトを表します。
-  * scope：globals オブジェクトを表します。このオブジェクトには、フォームインスタンス、ターゲットフィールドインスタンス、カスタム関数内でフォームの変更を実行するためのメソッドなどの読み取り専用変数が含まれています。 これは JavaScript 注釈の最後のパラメーターとして宣言され、アダプティブフォームのルールエディターには表示されません。 scope パラメーターは、フォームまたはコンポーネントのオブジェクトにアクセスして、フォームの処理に必要なルールまたはイベントをトリガーします。 Globals オブジェクトとその使用方法について詳しくは、[こちらをクリック](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)してください。
+  * scope：globals オブジェクトを表します。このオブジェクトには、フォームインスタンス、ターゲットフィールドインスタンス、カスタム関数内でフォームの変更を実行するためのメソッドなどの読み取り専用変数が含まれています。 これは JavaScript 注釈の最後のパラメーターとして宣言され、アダプティブフォームのルールエディターには表示されません。 scope パラメーターは、フォームまたはコンポーネントのオブジェクトにアクセスして、フォームの処理に必要なルールまたはイベントをトリガーします。 Globals オブジェクトとその使用方法について詳しくは、[こちらをクリック](/help/forms/using/create-and-use-custom-functions-core-components.md#support-field-and-global-objects)してください。
 
 パラメータータイプでは&#x200B;**大文字と小文字が区別されず**、パラメーター名にスペースは使用できません。
 
@@ -543,7 +543,7 @@ jsdoc コメントを含むまたは含まないカスタム関数を作成で�
 
 ![カスタム関数のクライアントライブラリを追加](/help/forms/using//assets/calculateage-customfunction.png)
 
-次に、[AEM Forms 6.5 でルールエディターのサービスの呼び出し](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)を使用して、カスタム関数を設定および使用する方法について説明します。
+次に、[AEM Forms 6.5 でルールエディターのサービスの呼び出し](/help/forms/using/rule-editor-core-components.md#invoke)を使用して、カスタム関数を設定および使用する方法について説明します。
 
 ## アダプティブフォームでカスタム関数を使用 {#use-custom-functions}
 
@@ -583,7 +583,7 @@ jsdoc コメントを含むまたは含まないカスタム関数を作成で�
 
 >[!NOTE]
 >
-> 次の[カスタム関数](/help/forms/using/assets/customfunctions.zip)フォルダーを参照できます。 [パッケージマネージャー](https://experienceleague.adobe.com/ja/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager)を使用して、このフォルダーをダウンロードして AEM インスタンスにインストールします。
+> 次の[カスタム関数](/help/forms/using/assets/customfunctions.zip)フォルダーを参照できます。 [パッケージマネージャー](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager)を使用して、このフォルダーをダウンロードして AEM インスタンスにインストールします。
 
 ### カスタム関数での非同期関数のサポート {#support-of-async-functions}
 
@@ -868,7 +868,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 また、コンソールウィンドウを調べて、サーバーに送信されたデータを表示することもできます。
 
-![&#x200B; コンソール ウィンドウのデータを調べる](/help/forms/using/assets/custom-function-submit-data-console-data.png)
+![ コンソール ウィンドウのデータを調べる](/help/forms/using/assets/custom-function-submit-data-console-data.png)
 
 <!--
 

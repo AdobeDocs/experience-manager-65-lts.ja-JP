@@ -32,7 +32,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1790'
 ht-degree: 100%
@@ -148,11 +148,11 @@ CSS カスタマイズのためのトップレベルの手順を次に示しま�
 * この CSS にスタイルアイテムを追加します。 詳しくは、CSS スタイルについてを参照してください。
 * `html.jsp` の参照を更新します。
 
-これらのカスタマイズを行うための正確な手順については、[AEM Forms Workspace カスタマイズの一般的な手順](../../forms/using/generic-steps-html-workspace-customization.md)を参照してください。 AEM Forms Workspace に付属している CSS ファイルは、/libs/ws/css/ にあります。 CSS 関連のカスタマイズの場合は、[Ship パッケージ](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)を使用します。 CSS 関連のカスタマイズの特殊な例について詳しくは、この記事の最後にある関連ヘルプトピックを参照してください。
+これらのカスタマイズを行うための正確な手順については、[AEM Forms Workspace カスタマイズの一般的な手順](../../forms/using/generic-steps-html-workspace-customization.md)を参照してください。 AEM Forms Workspace に付属している CSS ファイルは、/libs/ws/css/ にあります。 CSS 関連のカスタマイズの場合は、[Ship パッケージ](../../forms/using/introduction-customizing-html-workspace.md#crx-package)を使用します。 CSS 関連のカスタマイズの特殊な例について詳しくは、この記事の最後にある関連ヘルプトピックを参照してください。
 
 #### 画像 {#image}
 
-AEM Forms Workspace をカスタマイズしてユーザーのアバターを追加したり、組織のロゴを追加することができます。 これらのカスタマイズの場合は、[Ship パッケージ](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)を使用します。
+AEM Forms Workspace をカスタマイズしてユーザーのアバターを追加したり、組織のロゴを追加することができます。 これらのカスタマイズの場合は、[Ship パッケージ](../../forms/using/introduction-customizing-html-workspace.md#crx-package)を使用します。
 
 画像をカスタマイズするためのトップレベルの手順を次に示します。
 
@@ -173,7 +173,7 @@ HTML テンプレートをカスタマイズするためのトップレベルの
 * 新しいテンプレートをユーザー定義フォルダーに追加します。
 * 新しいテンプレートのパスなど、コピーしたファイルに関連する更新を行います。
 
-このようなカスタマイズの特殊な例について詳しくは、この記事の最後にある関連ヘルプトピックを参照してください。 カスタマイズするテンプレートに応じて、[Ship パッケージ](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)または [Dev パッケージ](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)のいずれかを選択します。
+このようなカスタマイズの特殊な例について詳しくは、この記事の最後にある関連ヘルプトピックを参照してください。 カスタマイズするテンプレートに応じて、[Ship パッケージ](../../forms/using/introduction-customizing-html-workspace.md#crx-package)または [Dev パッケージ](../../forms/using/introduction-customizing-html-workspace.md#crx-package)のいずれかを選択します。
 
 ### セマンティックの変更 {#semantic-changes}
 
@@ -202,7 +202,7 @@ AEM Forms Workspace は容易にカスタマイズや再利用が可能なコン
 
 これは主としてカスタマイズ向けで、次を生成する機能を提供します。
 
-* Ship、Debug および Dev プロファイルの CRX パッケージ（下記の [CRX パッケージ](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)に記載しています）
+* Ship、Debug および Dev プロファイルの CRX パッケージ（下記の [CRX パッケージ](../../forms/using/introduction-customizing-html-workspace.md#crx-package)に記載しています）
 * カスタマイズされたコードの縮小バージョン（セマンティックの変更用）
 
 #### WS コンテンツ {#ws-content}

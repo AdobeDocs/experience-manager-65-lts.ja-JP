@@ -27,7 +27,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 100%
@@ -70,7 +70,7 @@ ht-degree: 100%
   * `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>` の代わりに `http://host:port/content/forms/af/<afName>.<locale>.html` の URL 形式を使用して、アダプティブフォームのローカライズ版をリクエストします。
   * [ 形式の URL に対するブラウザーロケール](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) `http://host:port/content/forms/af/<adaptivefName>.html` の使用を無効にします。
   * URL 形式 `http://host:port/content/forms/af/<adaptivefName>.html` を使用し、設定マネージャーで&#x200B;**[!UICONTROL ブラウザーロケールを使用]**&#x200B;が無効になっている場合、アダプティブフォームの非ローカライズ版が提供されます。 非ローカライズ言語とは、アダプティブフォームの開発時に使用される言語です。 ブラウザーに設定されているロケール（ブラウザーロケール）は考慮されず、アダプティブフォームの非ローカライズ版が提供されます。
-  * URL 形式 `http://host:port/content/forms/af/<adaptivefName>.html` を使用し、設定マネージャーで&#x200B;**[!UICONTROL ブラウザーロケールを使用]**&#x200B;が有効になっている場合、アダプティブフォームのローカライズ版が提供されます（利用可能な場合）。 ローカライズされたアダプティブフォームの言語は、ブラウザーに設定されたロケール（ブラウザーロケール）に基づきます。 これは、[アダプティブフォームの最初のインスタンスのみがキャッシュされる]原因になる可能性があります。 インスタンスで問題が発生しないようにするには、[トラブルシューティング](#only-first-insatnce-of-adptive-forms-is-cached)を参照してください。
+  * URL 形式 `http://host:port/content/forms/af/<adaptivefName>.html` を使用し、設定マネージャーで&#x200B;**[!UICONTROL ブラウザーロケールを使用]**&#x200B;が有効になっている場合、アダプティブフォームのローカライズ版が提供されます（利用可能な場合）。 ローカライズされたアダプティブフォームの言語は、ブラウザーに設定されたロケール（ブラウザーロケール）に基づきます。 これは、[アダプティブフォームの最初のインスタンスのみがキャッシュされる]原因になる可能性があります。 インスタンスで問題が発生しないようにするには、[トラブルシューティング](#only-first-instance-of-adaptive-forms-is-cached)を参照してください。
 
 ### Dispatcher でのキャッシュの有効化
 

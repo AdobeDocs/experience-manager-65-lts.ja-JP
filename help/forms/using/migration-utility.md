@@ -22,14 +22,14 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1765'
 ht-degree: 92%
 ---
 # AEM Forms のアセットとドキュメントの移行{#migrate-aem-forms-assets-and-documents}
 
-移行ユーティリティは、[&#x200B; アダプティブ Forms assets](../../forms/using/introduction-forms-authoring.md)、[&#x200B; クラウド構成](/help/sites-developing/extending-cloud-config.md)、[Correspondence Management assets](/help/forms/using/cm-overview.md)を、以前のバージョンで使用していたフォーマットからAdobe Experience Manager （AEM） 6.5 LTS Formsで使用していたフォーマットに変換します。 移行ユーティリティを実行すると、以下の項目が移行されます。
+移行ユーティリティは、[ アダプティブ Forms assets](../../forms/using/introduction-forms-authoring.md)、[ クラウド構成](/help/sites-developing/extending-cloud-config.md)、[Correspondence Management assets](/help/forms/using/cm-overview.md)を、以前のバージョンで使用していたフォーマットからAdobe Experience Manager （AEM） 6.5 LTS Formsで使用していたフォーマットに変換します。 移行ユーティリティを実行すると、以下の項目が移行されます。
 
 * アダプティブフォームのカスタムコンポーネント
 * アダプティブフォームとCorrespondence Management テンプレート
@@ -42,11 +42,11 @@ ht-degree: 92%
 
 ## 移行のアプローチ {#approach-to-migration}
 
-AEM Forms 6.5.22.0[&#128279;](/help/forms/using/upgrade-forms-osgi.md)から[&#x200B; アップグレード &#x200B;](../../forms/using/upgrade.md)してAEM Forms 6.5 LTSにアップグレードできます。 以前のインストールをアップグレードしたか、新規インストールを実行したかに応じて、次のいずれかを実行する必要があります。
+AEM Forms 6.5.22.0](/help/forms/using/upgrade-forms-osgi.md)から[ アップグレード ](../../forms/using/upgrade.md)して[AEM Forms 6.5 LTSにアップグレードできます。 以前のインストールをアップグレードしたか、新規インストールを実行したかに応じて、次のいずれかを実行する必要があります。
 
 **インプレースアップグレードの場合**
 
-[&#x200B; インプレースアップグレード &#x200B;](/help/sites-deploying/in-place-upgrade.md)を実行した場合、アップグレードされたインスタンスにはアセットとドキュメントが既に含まれています。 ただし、アセットとドキュメントを使用する前に、[AEMFD互換性パッケージ &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ja)をインストールする必要があります（Correspondence Management互換性パッケージを含む）。
+[ インプレースアップグレード ](/help/sites-deploying/in-place-upgrade.md)を実行した場合、アップグレードされたインスタンスにはアセットとドキュメントが既に含まれています。 ただし、アセットとドキュメントを使用する前に、[AEMFD互換性パッケージ ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ja)をインストールする必要があります（Correspondence Management互換性パッケージを含む）。
 
 その後、[移行ユーティリティを実行](#runningmigrationutility)して、アセットとドキュメントを更新する必要があります。
 
@@ -181,7 +181,7 @@ Correspondence Management のアセットを移行する場合は、以下の点
 
 1. レイアウトおよびフラグメントレイアウトの XFA バージョンが 3.3 以降であることを確認してください。 旧バージョンのレイアウトおよびフラグメントレイアウトを使用している場合、レターのレンダリングで問題が発生する可能性があります。 旧バージョンの XFA を最新バージョンの XFA に更新するには、以下の手順を行います。
 
-   1. Forms ユーザーインターフェイスから [XFA を zip ファイルとしてダウンロード](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p)します。
+   1. Forms ユーザーインターフェイスから [XFA を zip ファイルとしてダウンロード](../../forms/using/import-export-forms-templates.md#import-and-export-assets-in-correspondence-management)します。
    1. ファイルを解凍します。
    1. 最新の Designer で XFA ファイルを開き、保存します。 XFA が最新バージョンに更新されます。
    1. XFA を Forms ユーザーインターフェイスでアップロードします。

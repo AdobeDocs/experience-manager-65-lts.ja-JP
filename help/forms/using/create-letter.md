@@ -22,7 +22,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '4013'
 ht-degree: 99%
@@ -244,7 +244,7 @@ Correspondence Management のワークフローは、次の 4 つのフェーズ
 * レターのパーツを形成するその他の XDP（[レイアウトフラグメント](document-fragments.md#document-fragments)）。 XDPs\Layouts は [Designer](https://www.adobe.com/go/learn_aemforms_designer_65_jp) 内に作成されます。
 * 関連する[データディクショナリ](/help/forms/using/data-dictionary.md)（オプション）。
 * 通信に使用する[データモジュール](/help/forms/using/document-fragments.md)。
-* [テストデータ](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) は、テストデータが格納される XML ファイルです。 データディクショナリを使用する場合は、テストデータが必要です。
+* [テストデータ](/help/forms/using/data-dictionary.md#working-with-test-data) は、テストデータが格納される XML ファイルです。 データディクショナリを使用する場合は、テストデータが必要です。
 
 ## レターテンプレートを作成 {#create-a-letter-template}
 
@@ -263,7 +263,7 @@ Correspondence Management のワークフローは、次の 4 つのフェーズ
 1. 次の Correspondence のプロパティを入力し、「**保存**」を選択します。
 
    * **タイトル（オプション）：**&#x200B;レターのタイトルを入力します。 タイトルは一意である必要はなく、特殊文字や英語以外の文字を含めることもできます。
-   * **名前： &#x200B;**&#x200B;レターの一意の名前。 どの状態でも、2 つのレターに同じ名前を付けることはできません。 「名前」フィールドに入力できるのは、英語の文字、数字、ハイフンのみです。 「名前」フィールドは、「タイトル」フィールドに基づいて自動的に入力されます。 「タイトル」フィールドに入力した特殊文字、スペース、および英数字以外の文字はハイフンに置き換えられます。 「タイトル」フィールドの値は「名前」フィールドに自動的にコピーされますが、値を編集することもできます。
+   * **名前： **&#x200B;レターの一意の名前。 どの状態でも、2 つのレターに同じ名前を付けることはできません。 「名前」フィールドに入力できるのは、英語の文字、数字、ハイフンのみです。 「名前」フィールドは、「タイトル」フィールドに基づいて自動的に入力されます。 「タイトル」フィールドに入力した特殊文字、スペース、および英数字以外の文字はハイフンに置き換えられます。 「タイトル」フィールドの値は「名前」フィールドに自動的にコピーされますが、値を編集することもできます。
    * **説明（オプション）：**&#x200B;参考のための、レターの説明。
    * **データディクショナリ（オプション）：**&#x200B;データディクショナリを通信に関連付けることができます。 この通信に後で挿入するアセットは、ここで通信に選択したものと同じデータディクショナリを持っているアセットか、データディクショナリを持たないアセットである必要があります。
    * **タグ（オプション）：**&#x200B;通信に適用するタグを選択します。 新しいタグ名またはカスタムのタグ名を入力して Enter キーを押すと、タグを作成できます。
@@ -275,7 +275,7 @@ Correspondence Management のワークフローは、次の 4 つのフェーズ
 
    ![アラートメッセージ：レターが正しく作成されました](assets/createcorrespondencecreated.png)
 
-   **次へ**：「**開く**」を選択すると、Correspondence Management にレイアウトが表示され、レイアウト（XDP）内のすべてのコンポーネントが一覧表示されます。 [データモジュールとレイアウトフラグメントの挿入と構成](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p)の手順に進みます。
+   **次へ**：「**開く**」を選択すると、Correspondence Management にレイアウトが表示され、レイアウト（XDP）内のすべてのコンポーネントが一覧表示されます。 [データモジュールとレイアウトフラグメントの挿入と構成](/help/forms/using/create-letter.md#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them)の手順に進みます。
 
 ### レターへのデータモジュールとレイアウトフラグメントの挿入と構成 {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 

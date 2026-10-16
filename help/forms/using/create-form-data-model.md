@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1629'
 ht-degree: 96%
@@ -256,4 +256,4 @@ AEM [!DNL Forms] には、設定済みデータソースから[フォームデ�
 
 >[!NOTE]
 >
-> アダプティブフォームのフォームデータモデルを使用して SharePoint リスト設定を作成および使用し、データや生成済みレコードのドキュメントを SharePoint リストに保存できます。 手順について詳しくは、[Microsoft® SharePoint リストへアダプティブフォームを接続](/help/forms/using/configuring-submit-actions.md#create-a-sharepoint-list-configuration)を参照してください。
+> アダプティブフォームのフォームデータモデルを使用して SharePoint リスト設定を作成および使用し、データや生成済みレコードのドキュメントを SharePoint リストに保存できます。 手順について詳しくは、[Microsoft® SharePoint リストへアダプティブフォームを接続](/help/forms/using/configuring-submit-actions.md#connect-af-sharepoint-list)を参照してください。

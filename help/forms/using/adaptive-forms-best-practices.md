@@ -16,7 +16,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '5707'
 ht-degree: 99%
@@ -102,11 +102,11 @@ AEM プロジェクトのセットアップを完了したら、アダプティ�
   * /libs のすぐに使用できるアダプティブフォームコンポーネントのレイアウトをカスタマイズするには、[デフォルトレイアウト](/help/forms/using/layout-capabilities-adaptive-forms.md)に加えて、[カスタマイズレイアウトコンポーネントを作成](/help/forms/using/custom-layout-components-forms.md)します。
   * カスタムのウィジェットやアピアランスを作成することにより、カスタムのインタラクティブ機能を導入します。 デフォルトのコンポーネントを変更することはお勧めしません。 詳しくは、[アピアランスのフレームワーク](/help/forms/using/introduction-widgets.md)を参照してください。
 
-* PII データの取り扱いに関するレコメンデーションについては、[個人を特定できる情報の取り扱い](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p)を参照してください。
+* PII データの取り扱いに関するレコメンデーションについては、[個人を特定できる情報の取り扱い](/help/forms/using/adaptive-forms-best-practices.md#handling-personally-identifiable-information)を参照してください。
 
 ### フォームテンプレートの作成
 
-**設定ブラウザー**&#x200B;で有効になっているフォームテンプレートを使用して、アダプティブ フォームを作成できます。 フォームテンプレートを有効にするには、[アダプティブフォームテンプレートの作成](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template)を参照してください。
+**設定ブラウザー**&#x200B;で有効になっているフォームテンプレートを使用して、アダプティブ フォームを作成できます。 フォームテンプレートを有効にするには、[アダプティブフォームテンプレートの作成](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template)を参照してください。
 
 フォームテンプレートは、別のオーサーマシンで作成されたアダプティブフォームパッケージからアップロードすることもできます。 [aemforms-references-* パッケージ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)をインストールすると、フォームテンプレートが利用可能になります。 推奨されるベストプラクティスの一部を次に示します。
 
@@ -288,7 +288,7 @@ AEM Forms が提供する[ルールエディター](/help/forms/using/rule-edito
 
 クライアント側で検証をすり抜ける試みを阻止するためにも、データ送信の侵害やビジネスルール違反の可能性を阻止するためにも、サーバーサイドの検証が必要です。 サーバーサイドの検証は、必要なクライアントライブラリを読み込むことにより、サーバー上で実行されます。
 
-* アダプティブフォーム内の式を検証するための関数をクライアントライブラリに含め、アダプティブフォームのコンテナダイアログでクライアントライブラリを指定します。 詳しくは、[サーバーサイドの再検証](/help/forms/using/configuring-submit-actions.md#p-server-side-revalidation-in-adaptive-form-p)を参照してください。
+* アダプティブフォーム内の式を検証するための関数をクライアントライブラリに含め、アダプティブフォームのコンテナダイアログでクライアントライブラリを指定します。 詳しくは、[サーバーサイドの再検証](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form)を参照してください。
 * サーバーサイド検証により、フォームモデルが検証されます。 検証のために別個のクライアントライブラリを作成し、1 つのクライアントライブラリに HTML のスタイルや DOM 操作を混在させないことをお勧めします。
 
 ### アダプティブフォームのローカライズ {#localizing-adaptive-forms}
@@ -373,11 +373,11 @@ AEM プロジェクトをある環境から別の環境に移動する必要が�
 
 AEM Forms ルールエディターは、ルールを作成および管理するための視覚的なインターフェイスを備えているので、大がかりなコーディングの必要性が軽減されます。 この機能は、高度なプログラミングスキルを持たないが、フォーム内のビジネスルールを定義および管理する必要があるビジネスユーザーやフォームデザイナーに特に役に立ちます。ここでは、ルールエディターで以下を行えるいくつかのユースケースについて説明します。
 
-* &#x200B;<!-- Allows you --> 大がかりなプログラミングを必要とせずにフォームのビジネスルールを定義する。
-* &#x200B;<!-- Use the Rule Editor when you need --> フォーム内に条件ロジックを実装する。 これには、フォーム要素の表示／非表示の切り替え、特定の条件に基づくフィールド値の変更、フォームの動作の動的な変更などが含まれます。
-* &#x200B;<!--When you want --> フォーム送信時にデータ検証ルールを強制的に適用する。ルールエディターを使用して、検証条件を定義できます。
-* &#x200B;<!-- When you need --> フォームを外部のデータソース（FDM）またはサービスと統合する。ルールエディターを使用して、フォームの操作中にデータを取得、表示または操作するためのルールを定義できます。
-* &#x200B;<!-- If you want -->ユーザーの操作に応じた動的でインタラクティブなフォームを作成する。ルールエディターを使用すると、フォーム要素の動作をリアルタイムで制御するルールを定義できます。
+* <!-- Allows you --> 大がかりなプログラミングを必要とせずにフォームのビジネスルールを定義する。
+* <!-- Use the Rule Editor when you need --> フォーム内に条件ロジックを実装する。 これには、フォーム要素の表示／非表示の切り替え、特定の条件に基づくフィールド値の変更、フォームの動作の動的な変更などが含まれます。
+* <!--When you want --> フォーム送信時にデータ検証ルールを強制的に適用する。ルールエディターを使用して、検証条件を定義できます。
+* <!-- When you need --> フォームを外部のデータソース（FDM）またはサービスと統合する。ルールエディターを使用して、フォームの操作中にデータを取得、表示または操作するためのルールを定義できます。
+* <!-- If you want -->ユーザーの操作に応じた動的でインタラクティブなフォームを作成する。ルールエディターを使用すると、フォーム要素の動作をリアルタイムで制御するルールを定義できます。
 
 ルールエディターは、AEM Forms 基盤コンポーネントとコアコンポーネントの両方で使用できます。
 

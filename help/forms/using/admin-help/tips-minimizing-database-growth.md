@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 94%
@@ -50,4 +50,4 @@ ht-degree: 94%
 
 グローバルドキュメントストレージ（GDS）を、効率的に使用してください。 Forms サーバー上の GDS ディレクトリは、特にプロセス内の AEM Forms に属するサービスに渡されるファイルを格納するために使用されます。 パフォーマンス向上のために、小さなドキュメントは代わりにメモリ内に保持され、データベースに格納されます。
 
-メモリ内に保持されデータベースに格納されるドキュメントの最大サイズを設定できるように、管理コンソールには「デフォルトのドキュメント最大インラインサイズ」プロパティがあります （[一般的な AEM Forms の設定](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)を参照してください。） このプロパティを低い値に設定すると、ほとんどのドキュメントはデータベースではなくGDS ディレクトリに保持されます。 ファイルを GDS ディレクトリに保存した場合の長所は、不要になったときに簡単に削除できることです。
+メモリ内に保持されデータベースに格納されるドキュメントの最大サイズを設定できるように、管理コンソールには「デフォルトのドキュメント最大インラインサイズ」プロパティがあります （[一般的な AEM Forms の設定](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#general-aem-forms-settings)を参照してください。） このプロパティを低い値に設定すると、ほとんどのドキュメントはデータベースではなくGDS ディレクトリに保持されます。 ファイルを GDS ディレクトリに保存した場合の長所は、不要になったときに簡単に削除できることです。

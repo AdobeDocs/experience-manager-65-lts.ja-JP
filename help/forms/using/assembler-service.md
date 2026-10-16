@@ -23,14 +23,14 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2167'
 ht-degree: 97%
 ---
 # アセンブラーサービスの使用{#using-assembler-service}
 
-アセンブラーサービスでは、PDF ドキュメントや XDP ドキュメントの結合、並べ替えおよび拡張と、PDF ドキュメントに関する情報の取得ができます。 アセンブラーサービスに送信される各ジョブには、Document Description XML（DDX）ドキュメント、ソースドキュメントおよび外部リソース（文字列とグラフィック）が含まれます。 アセンブラーサービスについて詳しくは、[アセンブラーサービスの概要](../../forms/using/overview-aem-document-services.md#p-assembler-service-p)を参照してください。
+アセンブラーサービスでは、PDF ドキュメントや XDP ドキュメントの結合、並べ替えおよび拡張と、PDF ドキュメントに関する情報の取得ができます。 アセンブラーサービスに送信される各ジョブには、Document Description XML（DDX）ドキュメント、ソースドキュメントおよび外部リソース（文字列とグラフィック）が含まれます。 アセンブラーサービスについて詳しくは、[アセンブラーサービスの概要](../../forms/using/overview-aem-document-services.md#assembler-service)を参照してください。
 
 以下の操作において Assembler サービスを使用できます。
 

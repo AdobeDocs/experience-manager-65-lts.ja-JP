@@ -21,7 +21,7 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1137'
 ht-degree: 13%
@@ -31,7 +31,7 @@ ht-degree: 13%
 この記事では、既知の問題に対処し、システムの安定性を向上させ、AEM Forms 6.5 LTSの全体的なパフォーマンスを向上させるために実装された重要な修正を紹介します。
 
 
-この記事は、AEM Forms 6.5 LTSに適用されます。 AEM 6.5 （LTS以外）のデプロイメントについては、[Adobe Experience Manager Forms ホットフィックス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/release-notes/aem-forms-hotfix)を参照してください。
+この記事は、AEM Forms 6.5 LTSに適用されます。 AEM 6.5 （LTS以外）のデプロイメントについては、[Adobe Experience Manager Forms ホットフィックス ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-hotfix)を参照してください。
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ ht-degree: 13%
 
 ホットフィックスをダウンロードしてインストールするには、次の手順を実行します。
 
-1. ソフトウェア配布リンクから[ホットフィックス](#hotfix-for-adaptive-forms)をダウンロードします。
+1. ソフトウェア配布リンクから[ホットフィックス](#hotfix-for-aem-forms)をダウンロードします。
 1. ホットフィックスアーカイブファイルを抽出して、Experience Manager パッケージ（.zip）とバンドル（.jar）ファイルを取得できるようにします。
 1. [パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=ja#accessing)を通じてパッケージ（.zip）をアップロードしてインストールします。
 1. 設定マネージャーのバンドル `https://server:host/system/console/bundles` を開き、バンドル（.jar）をアップロードしてインストールします。 ホットフィックスがインストールされます。

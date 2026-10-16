@@ -27,7 +27,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2057'
 ht-degree: 98%
@@ -57,7 +57,7 @@ AEM as a Cloud Serviceのドキュメントについては、[Cloud Service上�
    >デフォルトのインストールでは、ログインは `admin`、パスワードは `admin` に設定されています。
 
 1. 「**[!UICONTROL 作成]**」を選択して、「**[!UICONTROL アダプティブフォーム]**」を選択します。
-1. テンプレートを選択するためのオプションが表示されます。 テンプレートについて詳しくは、[アダプティブフォームテンプレート](creating-adaptive-form.md#p-adaptive-form-templates-p)を参照してください。 テンプレートを選択し、「次へ」を選択します。
+1. テンプレートを選択するためのオプションが表示されます。 テンプレートについて詳しくは、[アダプティブフォームテンプレート](creating-adaptive-form.md#adaptive-form-templates)を参照してください。 テンプレートを選択し、「次へ」を選択します。
 1. 「プロパティの追加」オプションが表示されます。 以下のプロパティフィールドの値を指定します。 「タイトル」フィールドと「ドキュメント名」フィールドは必須です。
 
    * **[!UICONTROL タイトル：]**&#x200B;フォームの表示名を指定します。 タイトルを指定すると、[!DNL Experience Manager Forms] ユーザーインターフェイス内のフォームを特定しやすくなります。

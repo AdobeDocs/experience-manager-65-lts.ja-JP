@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 98%
@@ -96,7 +96,7 @@ JBoss® サーバーに加えて、アプリケーションサーバーのサー
 
 >[!NOTE]
 >
->設定した Target URL を後で更新する場合は、実行中の A/B テストを必ず更新し、現在の URL が指定されるようにしてください。 A/B テストの更新について詳しくは、[A/B テストを更新](/help/forms/using/ab-testing-adaptive-forms.md#p-update-a-b-test-p)を参照してください。
+>設定した Target URL を後で更新する場合は、実行中の A/B テストを必ず更新し、現在の URL が指定されるようにしてください。 A/B テストの更新について詳しくは、[A/B テストを更新](/help/forms/using/ab-testing-adaptive-forms.md#update-a-b-test)を参照してください。
 >
 
 ## AEM 内でのオーディエンスの作成 {#create-audiences-within-aem}
@@ -125,7 +125,7 @@ AEM では、オーディエンスを作成し、A/B テストに使用できま
 1. ツールバーの&#x200B;**選択**&#x200B;ツールをクリックして、アダプティブフォームを選択します。
 1. ツールバーの&#x200B;**詳細**&#x200B;をクリックして、「**A/B テストを設定**」を選択します。 「A/B テストを設定」ページが開きます。
 
-[アダプティブフォームの![A/B テスト設定ページ &#x200B;](assets/ab-test-configure.png)](assets/ab-test-configure-1.png)
+[アダプティブフォームの![A/B テスト設定ページ ](assets/ab-test-configure.png)](assets/ab-test-configure-1.png)
 
 1. A/B テストの「**アクティビティ名**」を指定します。
 
@@ -169,7 +169,7 @@ A/B テストレポートを表示し分析するには：
 
 1. アダプティブフォームを選択し、「**詳細**」、「**A/B テストレポート**」の順にクリックします。 レポートが表示されます。
 
-[![A/B テスト レポート &#x200B;](assets/ab-test-report-2.png)](assets/ab-test-report-3.png)
+[![A/B テスト レポート ](assets/ab-test-report-2.png)](assets/ab-test-report-3.png)
 
 1. レポートを分析して、結果が良い方のエクスペリエンスを推奨結果として宣言するのに十分なデータポイントが得られていることを確認します。 同じ A/B テストをさらに時間をかけて継続する、または推奨結果を宣言する、あるいは A/B テストを終了するかを選択できます。
 1. 推奨結果を宣言して A/B テストを終了するには、レポートダッシュボードで「**A/B テストを終了**」ボタンをクリックします。 2 つのエクスペリエンスのいずれかを推奨結果として宣言するように求めるダイアログが表示されます。 推奨結果を選択し、A/B テストの終了を確認します。

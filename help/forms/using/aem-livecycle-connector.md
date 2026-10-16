@@ -24,7 +24,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 100%
@@ -66,7 +66,7 @@ AEM LiveCycle Connector は「[AEM Forms アドオンパッケージ](/help/form
 
 AEM LiveCycle コネクタは、標準的な OSGi の方法を使ってアクセスできる OSGi サービスとしてこれらのクライアントインスタンスを公開して、フローを簡素化します。 LiveCycle コネクターには、以下の機能が用意されています。
 
-* OSGi サービスとしてのクライアントインスタンス：OSGI バンドルとしてパッケージ済みのクライアントは、[Acrobat Services リスト](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p)セクションに一覧表示されます。 各クライアント jar は、OSGi サービスレジストリを使用する OSGi サービスとしてクライアントインスタンスを登録します。
+* OSGi サービスとしてのクライアントインスタンス：OSGI バンドルとしてパッケージ済みのクライアントは、[Acrobat Services リスト](/help/forms/using/aem-livecycle-connector.md#document-services-list)セクションに一覧表示されます。 各クライアント jar は、OSGi サービスレジストリを使用する OSGi サービスとしてクライアントインスタンスを登録します。
 * ユーザー資格情報の伝播：LiveCycle サーバーに接続するために必要な接続の詳細情報は、一元的に管理されます。
 * ServiceClientFactory サービス：プロセスを開始するために、クライアントアプリケーションは ServiceClientFactory インスタンスにアクセスできます。
 
@@ -94,7 +94,7 @@ AEM LiveCycle コネクタは、標準的な OSGi の方法を使ってアクセ
    </dependency>
    ```
 
-   サービスを開始するには、サービスに対応する Maven 依存性を追加します。 依存性のリストについて詳しくは、[Acrobat サービスリスト](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p)を参照してください。 例えば、Generate PDF サービスの場合は、次の依存関係を追加します。
+   サービスを開始するには、サービスに対応する Maven 依存性を追加します。 依存性のリストについて詳しくは、[Acrobat サービスリスト](/help/forms/using/aem-livecycle-connector.md#document-services-list)を参照してください。 例えば、Generate PDF サービスの場合は、次の依存関係を追加します。
 
    ```xml
    <dependency>

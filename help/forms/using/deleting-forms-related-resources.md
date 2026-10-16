@@ -24,7 +24,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 100%
@@ -58,6 +58,6 @@ ht-degree: 100%
 
 AEM Forms では、XFA フォームテンプレートは、アダプティブフォームまたは別の XFA フォームテンプレートによって参照できます。 またテンプレートは、リソースまたは別の XFA テンプレートを参照することもできます。
 
-アダプティブフォームによって参照されている XFA フォームを削除すると、アダプティブフォームを破損する可能性があるのでお勧めできません。 アダプティブフォームが XFA フォームを参照しているときは、それらのフィールドは連結されています。 XFA の削除後に、アダプティブフォームはそのフィールドを XFA のフィールドと同期できず、これらのフィールドに対してエラーメッセージを表示します。 参照先 XFA の削除の影響と dirty アダプティブフォームの詳細については、[参照先 XFA フォームの更新](/help/forms/using/get-xdp-pdf-documents-aem.md#p-updating-referenced-xfa-forms-p)を参照してください。
+アダプティブフォームによって参照されている XFA フォームを削除すると、アダプティブフォームを破損する可能性があるのでお勧めできません。 アダプティブフォームが XFA フォームを参照しているときは、それらのフィールドは連結されています。 XFA の削除後に、アダプティブフォームはそのフィールドを XFA のフィールドと同期できず、これらのフィールドに対してエラーメッセージを表示します。 参照先 XFA の削除の影響と dirty アダプティブフォームの詳細については、[参照先 XFA フォームの更新](/help/forms/using/get-xdp-pdf-documents-aem.md#updating-referenced-xfa-forms)を参照してください。
 
 このような XFA フォームを削除するには、アダプティブフォームを更新し、XFA フィールドとの連結を削除します。

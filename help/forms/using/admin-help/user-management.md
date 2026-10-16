@@ -1,6 +1,6 @@
 ---
 title: User Management
-description: User Management では、SAML を使用して、AEM Forms モジュールと Netegrity SiteMinder で保護されたアプリケーションとの間で SSO を有効にできます。 このドキュメントでは、User Management について詳しく説明します。
+description: ユーザー管理では、SAML を使用して、AEM Forms モジュールと Netegrity SiteMinder で保護されたアプリケーションとの間で SSO を有効にできます。 このドキュメントでは、ユーザー管理について詳しく説明します。
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 100%
@@ -38,13 +38,13 @@ ht-degree: 100%
 > 
 > ユーザーが管理者コンソールにアクセスする管理者権限を持っていることを確認します。
 
-User Management では、Security Assertion Markup Language（SAML）を使用して、AEM Forms モジュールと Netegrity SiteMinder で保護されたアプリケーションとの間でシングルサインオン（SSO）を有効にできます。 SSO を実装すると、AEM Forms のユーザーログインページは不要になります。ユーザーが会社のポータルで既に認証されている場合は表示されません。
+ユーザー管理では、Security Assertion Markup Language（SAML）を使用して、AEM Forms モジュールと Netegrity SiteMinder で保護されたアプリケーションとの間でシングルサインオン（SSO）を有効にできます。 SSO を実装すると、AEM Forms のユーザーログインページは不要になります。ユーザーが会社のポータルで既に認証されている場合は表示されません。
 
-DB2 のデータベースおよびディレクトリ同期のパフォーマンスを向上させる方法については、[IBM DB2 データベース：定期保守のコマンドの実行](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance)を参照してください。
+DB2 のデータベースおよびディレクトリ同期のパフォーマンスを向上させる方法については、[IBM DB2 データベース：定期保守のコマンドの実行](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db-database-running-commands-for-regular-maintenance)を参照してください。
 
-## SSL 対応の LDAP サーバーを対象とした User Management の設定 {#configuring-user-management-for-an-ssl-enabled-ldap-server}
+## SSL 対応の LDAP サーバーを対象としたユーザー管理の設定 {#configuring-user-management-for-an-ssl-enabled-ldap-server}
 
-SSL 対応の LDAP サーバーがある場合は、それと連携するように User Management を設定します （[SSL 対応の LDAP サーバーを対象とした User Management の設定](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server)を参照）。
+SSL 対応の LDAP サーバーがある場合は、それと連携するようにユーザー管理を設定します （[SSL 対応の LDAP サーバーを対象としたユーザー管理の設定](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server)を参照）。
 
 ## Document Security で使用するユーザー権限の設定 {#setting-user-privileges-for-use-with-document-security}
 
@@ -60,7 +60,7 @@ SSL 対応の LDAP サーバーがある場合は、それと連携するよう�
 
 ### 表示されるユーザーおよびグループを設定 {#set-visible-users-and-groups}
 
-AEM Forms 環境と Document Security をインストールして設定した後に、User Management で適切なドメインをすべて設定します。
+AEM Forms 環境と Document Security をインストールして設定した後に、ユーザー管理で適切なドメインをすべて設定します。
 
 1. 管理コンソールで、サービス／Document Security／ポリシーをクリックし、「ポリシーセット」タブをクリックします。
 1. 「グローバルポリシーセット」を選択し、「表示されるユーザーとグループ」タブをクリックします。

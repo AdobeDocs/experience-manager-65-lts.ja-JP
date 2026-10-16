@@ -29,7 +29,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1740'
 ht-degree: 96%
@@ -66,7 +66,7 @@ AEM Forms で前述のいずれの方法を使用してもユーザーが認証�
    * **ドメインの HTTP ヘッダー：**（非必須）ドメイン名を値に含むヘッダー名です。 この設定は、ユーザーを一意に識別する単一の HTTP ヘッダーが存在しない場合にのみ使用します。 この設定は、複数のドメインが存在し、固有な識別子がそのドメイン内でのみ一意である場合に使用します。 この場合、このテキストボックスでヘッダー名を指定し、「ドメインマッピング」ボックスに複数のドメインのドメインマッピングを指定します （[既存のドメインの編集と変換](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains)を参照）。
    * **ドメインマッピング：**（必須）複数のドメインのマッピングは、「*header value=domain name*」の形式で指定します。
 
-     例えば、ドメインの HTTP ヘッダーが domainName で、その値に domain1、domain2 または domain3 を使用できる状況を考えます。 この場合は、ドメインマッピングを使用して domainName の値を User Management のドメイン名にマップします。 各マッピングは、異なる行で指定する必要があります。
+     例えば、ドメインの HTTP ヘッダーが domainName で、その値に domain1、domain2 または domain3 を使用できる状況を考えます。 この場合は、ドメインマッピングを使用して domainName の値をユーザー管理のドメイン名にマップします。 各マッピングは、異なる行で指定する必要があります。
 
      domain1=UMdomain1
 
@@ -80,7 +80,7 @@ AEM Forms で前述のいずれの方法を使用してもユーザーが認証�
 
 ### ユーザーおよびグループへの役割の割り当て
 
-手順を確認するには、[ユーザーおよびグループへの役割の割り当て](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups)をクリックしてください。
+手順を確認するには、[ユーザーおよびグループへの役割の割り当て](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-groups)をクリックしてください。
 
 ## SPNEGO を使用した SSO の有効化 {#enable-sso-using-spnego}
 
@@ -93,7 +93,7 @@ Windows 環境で LDAP サーバーに Active Directory を使用している場
 >JEE での AEM Forms は複数の子ドメイン環境で Kerberos／SPNEGO を使用した SSO の設定をサポートしていません。
 
 1. SSO を有効化するために使用するドメインを決定します。 AEM Forms サーバーとユーザーは、同じ Windows ドメインまたは信頼されたドメインの一部である必要があります。
-1. Active Directory に、AEM Forms サーバーを表すユーザーを作成します。 （[&#x200B; ユーザーアカウントの作成](enabling-single-sign-on-aem.md#create-a-user-account)を参照）。 SPNEGOを使用するように複数のドメインを設定する場合は、これらの各ユーザーのパスワードが異なることを確認してください。 パスワードが同じ場合、SPNEGO SSO は機能しません。
+1. Active Directory に、AEM Forms サーバーを表すユーザーを作成します。 （[ ユーザーアカウントの作成](enabling-single-sign-on-aem.md#create-a-user-account)を参照）。 SPNEGOを使用するように複数のドメインを設定する場合は、これらの各ユーザーのパスワードが異なることを確認してください。 パスワードが同じ場合、SPNEGO SSO は機能しません。
 1. サービスプリンシパル名をマップします （[サービスプリンシパル名（SPN）のマッピング](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn)を参照）。
 1. ドメインコントローラーを設定します （[Kerberos 整合性チェックの失敗の回避](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures)を参照）。
 1. [ドメインの追加](/help/forms/using/admin-help/adding-domains.md#adding-domains)または[既存のドメインの編集と変換](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains)で説明されているとおりに、エンタープライズドメインを追加または編集します。 エンタープライズドメインを作成または編集するときは、次のタスクを実行します。
@@ -198,12 +198,12 @@ https://lcserver:8080などのコンピューター名を使用してサーバ�
 
 1. アプリケーションにアクセスして、設定をテストします。 ターゲットアプリケーションのようこそページが表示されます。
 
-手順を確認するには、[ユーザーおよびグループへの役割の割り当て](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups)をクリックしてください。
+手順を確認するには、[ユーザーおよびグループへの役割の割り当て](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-groups)をクリックしてください。
 
 ## ユーザーおよびグループへの役割の割り当て {#assign-roles-to-users-groups}
 
 1. JEE 上の AEM Forms 環境にログインします。
-1. 管理コンソールで、設定／User Management／ドメインの管理をクリックします。
+1. 管理コンソールで、設定／ユーザー管理／ドメインの管理をクリックします。
 1. ドメイン設定（LDAP など）を選択し、クリックします。 ディレクトリに、作成したすべてのユーザーおよびグループが表示されます。 必要に応じて、新しいユーザーまたはグループを作成できます。
    ![ドメイン管理ページ](/help/forms/using/assets/domain-mgmt-page.png)
 1. 「認証」をクリックし、新しいページで、LDAP などの認証プロバイダーを選択します。

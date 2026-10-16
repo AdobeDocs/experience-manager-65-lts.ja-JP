@@ -22,7 +22,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1168'
 ht-degree: 94%
@@ -109,7 +109,7 @@ AEM Forms は、以下の障害から確実に回復します。
 
    * **スタンドアロン**
 
-     *オーサーインスタンスとパブリッシュインスタンスの復元*：災害が発生した場合、[&#x200B; バックアップと復元](/help/sites-administering/backup-and-restore.md)で説明されている手順を実行して、リポジトリを最後のバックアップ状態に復元できます。
+     *オーサーインスタンスとパブリッシュインスタンスの復元*：災害が発生した場合、[ バックアップと復元](/help/sites-administering/backup-and-restore.md)で説明されている手順を実行して、リポジトリを最後のバックアップ状態に復元できます。
 
      Author ノードを完全に復元すると、Forms Manager および AEM Forms Workspace データも復元されます。
 
@@ -130,7 +130,7 @@ GDS が元の場所以外の場所に復元された場合は、LCSetGDS スク�
 
 >[!NOTE]
 >
->この状況は、このスクリプトを使用して GDS の場所を変更する必要がある唯一の状況です。 AEM Forms の実行中に GDS の場所を変更するには、管理コンソールを使用します。 （[一般的な AEM Forms の設定](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)を参照してください。）
+>この状況は、このスクリプトを使用して GDS の場所を変更する必要がある唯一の状況です。 AEM Forms の実行中に GDS の場所を変更するには、管理コンソールを使用します。 （[一般的な AEM Forms の設定](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#general-aem-forms-settings)を参照してください。）
 
 >[!NOTE]
 >

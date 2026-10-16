@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2871'
 ht-degree: 95%
@@ -93,7 +93,7 @@ ht-degree: 95%
 
 **戻り値のタイプ**：式は、式の結果が表示されるフィールドに対応する値を返します（例えば、小数値）。
 
-**例**: **field1**&#x200B;の2つのフィールドの合計を表示する計算式は次のとおりです。
+**例**: **field1**の2つのフィールドの合計を表示する計算式は次のとおりです。
 `field2.value + field3.value`
 
 ### クリック式 {#click-expression}
@@ -219,7 +219,7 @@ ht-degree: 95%
 
 ### 検証式 {#validation-expressions}
 
-フィールドの検証は、別のフィールドの式を使用して計算することもできます。 これらの式は、コンポーネントの&#x200B;**編集**&#x200B;ダイアログにある「**スクリプト**」タブの「**検証スクリプト**」フィールド内で記述されます。 フィールドの検証ステータスは、式が返す値に依存します。 このような式の記述方法について詳しくは、「[検証式](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p)」を参照してください。
+フィールドの検証は、別のフィールドの式を使用して計算することもできます。 これらの式は、コンポーネントの&#x200B;**編集**&#x200B;ダイアログにある「**スクリプト**」タブの「**検証スクリプト**」フィールド内で記述されます。 フィールドの検証ステータスは、式が返す値に依存します。 このような式の記述方法について詳しくは、「[検証式](../../forms/using/adaptive-form-expressions.md#validate-expression)」を参照してください。
 
 ## 追加情報 {#additional-information}
 
@@ -298,7 +298,7 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 1. 作成したノードの「プロパティ」タブを開きます。 例えば、`textboxpatterns` の「プロパティ」タブを開きます。 このノードに `guideComponentType` プロパティを追加して、その値を *fd/af/components/formatter/guideTextBox* に設定します。
 
 1. このプロパティの値は、パターンを定義するフィールドに応じて変わります。 数値フィールドの場合、`guideComponentType` プロパティの値は、*fd/af/components/formatter/guideNumericBox* です。 Datepicker フィールドの値は&#x200B;*fd/af/components/formatter/guideDatepicker*です。
-&grave;&grave;
+``
 1. `textboxpatterns` ノードにプロパティを割り当てることで、カスタムパターンを追加できます。 名前の付いたプロパティ（例えば、`pattern1`）を追加して、追加するパターンにその値を設定します。 例えば、値が Fax=text{99-999-9999999} のプロパティ `pattern1` を追加します。 パターンは、アダプティブフォームで使用するすべてのテキストボックスで使用できます。
 
    ![CrxDe でのフィールドのカスタムパターンの作成](assets/creating-custom-patterns.png)

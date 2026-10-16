@@ -27,7 +27,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 93%
@@ -81,13 +81,13 @@ AEM as a Cloud Serviceのドキュメントについては、[Cloud Service上�
 
 アダプティブフォーム実行時に新しいロケールのサポートを追加するには、次を参照してください。
 
-1. [GuideLocalizationService へのロケールの追加](../../forms/using/supporting-new-language-localization.md#p-add-a-locale-to-the-guide-localization-service-br-p)
+1. [GuideLocalizationService へのロケールの追加](../../forms/using/supporting-new-language-localization.md#add-a-locale-to-the-guide-localization-service-br)
 
-1. [XFA クライアントライブラリをロケール用に追加](../../forms/using/supporting-new-language-localization.md#p-add-xfa-client-library-for-a-locale-br-p)
+1. [XFA クライアントライブラリをロケール用に追加](../../forms/using/supporting-new-language-localization.md#add-xfa-client-library-for-a-locale-br)
 
-1. [アダプティブフォームのクライアントライブラリをロケール用に追加する](../../forms/using/supporting-new-language-localization.md#p-add-adaptive-form-client-library-for-a-locale-br-p)
-1. [辞書のロケールサポートの追加](../../forms/using/supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
-1. [サーバーの再起動](../../forms/using/supporting-new-language-localization.md#p-restart-the-server-p)
+1. [アダプティブフォームのクライアントライブラリをロケール用に追加する](../../forms/using/supporting-new-language-localization.md#add-adaptive-form-client-library-for-a-locale-br)
+1. [辞書のロケールサポートの追加](../../forms/using/supporting-new-language-localization.md#add-locale-support-for-the-dictionary-br)
+1. [サーバーの再起動](../../forms/using/supporting-new-language-localization.md#restart-the-server)
 
 ### Guide Localization Service へのロケールの追加 {#add-a-locale-to-the-guide-localization-service-br}
 
@@ -113,7 +113,7 @@ I18N.js
 
 ### アダプティブフォームのクライアントライブラリをロケール用に追加する {#add-adaptive-form-client-library-for-a-locale-br}
 
-カテゴリが`guides.I18N.<locale>`、依存関係が`xfaforms.3rdparty`、`xfaforms.I18N.<locale>`および`guide.common`の`etc/<folderHierarchy>`の下にタイプ `cq:ClientLibraryFolder`のノードを作成します。 &grave;&grave;
+カテゴリが`guides.I18N.<locale>`、依存関係が`xfaforms.3rdparty`、`xfaforms.I18N.<locale>`および`guide.common`の`etc/<folderHierarchy>`の下にタイプ `cq:ClientLibraryFolder`のノードを作成します。 ``
 
 クライアントライブラリに次のファイルを追加します。
 

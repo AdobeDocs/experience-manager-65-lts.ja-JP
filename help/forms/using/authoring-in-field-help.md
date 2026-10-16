@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 95%
@@ -45,8 +45,8 @@ ht-degree: 95%
 
 文脈依存ヘルプは、サイドバーにある「プロパティ」タブの「ヘルプコンテンツ」セクションで、以下のオプションを利用して指定できます。
 
-* [簡単な説明](../../forms/using/authoring-in-field-help.md#p-short-description-p)
-* [詳細な説明](../../forms/using/authoring-in-field-help.md#p-long-description-p)
+* [簡単な説明](../../forms/using/authoring-in-field-help.md#short-description)
+* [詳細な説明](../../forms/using/authoring-in-field-help.md#long-description)
 
 ![フォームのフィールドのための文脈依存ヘルプ](assets/descriptions.png)
 

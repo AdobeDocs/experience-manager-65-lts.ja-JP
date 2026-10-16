@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '6510'
 ht-degree: 99%
@@ -34,11 +34,11 @@ ht-degree: 99%
 
 このドキュメントのサンプルと例は、OSGi 環境の AEM Forms で AEM ドキュメントサービスを理解し、使用する際に役立ちます。 JEE 上の AEM Forms 環境のサンプルと例については、以下を参照してください。
 
-* [Signature Service Java API クイックスタート](/help/forms/developing/signature-service-java-api-quick.md#programming-aem-forms-jee)
+* [Signature Service Java API クイックスタート](/help/forms/developing/signature-service-java-api-quick.md#signature-service-java-api-quickstart-soap)
 
-* [Encryption Service Java API クイックスタート](/help/forms/developing/encryption-service-java-api-quick.md#developer-reference)
+* [Encryption Service Java API クイックスタート](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quickstart-soap)
 
-* [Acrobat Reader extensions Service Java API クイックスタート](/help/forms/developing/acrobat-reader-dc-extensions-service.md#developer-reference)
+* [Acrobat Reader extensions Service Java API クイックスタート](/help/forms/developing/acrobat-reader-dc-extensions-service.md#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap)
 
 ## 前提条件 {#prerequisite}
 
@@ -58,31 +58,31 @@ DocAssurance サービスには以下のサービスが含まれています。
 
 DocAssurance サービスを使用して、以下の操作を実行できます。
 
-* [非表示署名の追加](/help/forms/using/aem-document-services-programmatically.md#p-adding-an-invisible-signature-field-p)
+* [非表示署名の追加](/help/forms/using/aem-document-services-programmatically.md#adding-an-invisible-signature-field)
 
-* [署名フィールドの追加](/help/forms/using/aem-document-services-programmatically.md#p-adding-a-signature-field-nbsp-p)
+* [署名フィールドの追加](/help/forms/using/aem-document-services-programmatically.md#adding-a-signature-field-nbsp)
 * [ドキュメントのタイムスタンプを適用](/help/forms/using/aem-document-services-programmatically.md#apply-document-timestamp)
 
-* [署名の取得](/help/forms/using/aem-document-services-programmatically.md#p-getting-signature-p)
-* [署名フィールドリストの取得](/help/forms/using/aem-document-services-programmatically.md#p-getting-signature-field-list-nbsp-p)
-* [署名フィールドの変更](/help/forms/using/aem-document-services-programmatically.md#p-modifying-signature-fields-nbsp-p)
+* [署名の取得](/help/forms/using/aem-document-services-programmatically.md#getting-signature)
+* [署名フィールドリストの取得](/help/forms/using/aem-document-services-programmatically.md#getting-signature-field-list-nbsp)
+* [署名フィールドの変更](/help/forms/using/aem-document-services-programmatically.md#modifying-signature-fields-nbsp)
 
-* [ドキュメントを保護](/help/forms/using/aem-document-services-programmatically.md#p-securing-documents-p)
+* [ドキュメントを保護](/help/forms/using/aem-document-services-programmatically.md#securing-documents)
 
-* [資格情報の使用権限の取得](/help/forms/using/aem-document-services-programmatically.md#p-getting-credential-usage-rights-p)
+* [資格情報の使用権限の取得](/help/forms/using/aem-document-services-programmatically.md#getting-credential-usage-rights)
 
-* [ドキュメントの使用権限の取得](/help/forms/using/aem-document-services-programmatically.md#p-getting-document-usage-rights-p)
+* [ドキュメントの使用権限の取得](/help/forms/using/aem-document-services-programmatically.md#getting-document-usage-rights)
 
-* [使用権限の削除](/help/forms/using/aem-document-services-programmatically.md#p-removing-usage-rights-p)
-* [デジタル署名の検証](/help/forms/using/aem-document-services-programmatically.md#p-verifying-digital-signatures-p)
-* [複数のデジタル署名の検証](/help/forms/using/aem-document-services-programmatically.md#p-verifying-multiple-digital-signatures-p)
-* [デジタル署名の削除](/help/forms/using/aem-document-services-programmatically.md#p-removing-digital-signatures-p)
+* [使用権限の削除](/help/forms/using/aem-document-services-programmatically.md#removing-usage-rights)
+* [デジタル署名の検証](/help/forms/using/aem-document-services-programmatically.md#verifying-digital-signatures)
+* [複数のデジタル署名の検証](/help/forms/using/aem-document-services-programmatically.md#verifying-multiple-digital-signatures)
+* [デジタル署名の削除](/help/forms/using/aem-document-services-programmatically.md#removing-digital-signatures)
 
-* [認証署名フィールドの取得](/help/forms/using/aem-document-services-programmatically.md#p-getting-certifying-signature-field-p)
-* [PDF の暗号化タイプの取得](/help/forms/using/aem-document-services-programmatically.md#p-getting-pdf-encryption-type-p)
-* [パスワード暗号化の削除](/help/forms/using/aem-document-services-programmatically.md#p-removing-password-encryption-from-pdf-p)
+* [認証署名フィールドの取得](/help/forms/using/aem-document-services-programmatically.md#getting-certifying-signature-field)
+* [PDF の暗号化タイプの取得](/help/forms/using/aem-document-services-programmatically.md#getting-pdf-encryption-type)
+* [パスワード暗号化の削除](/help/forms/using/aem-document-services-programmatically.md#removing-password-encryption-from-pdf)
 
-* [証明書暗号化の削除](/help/forms/using/aem-document-services-programmatically.md#p-removing-certificate-encryption-p)
+* [証明書暗号化の削除](/help/forms/using/aem-document-services-programmatically.md#removing-certificate-encryption)
 
 >[!NOTE]
 >
@@ -3651,17 +3651,17 @@ PDF ドキュメントからパスワードベースの暗号化を削除する�
 
 Output サービスは、XDP ファイルをレンダリングするための API を .pdf、.pcl、.zpl、.ps 形式で提供します。 このサービスは、以下の API をサポートしています。
 
-* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p)：**&#x200B;フォームデザインと、ネットワーク、ローカルファイルシステム、または HTTP 上の場所にリテラル値で保存されたデータをマージして PDF ドキュメントを生成します。
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutput)：**&#x200B;フォームデザインと、ネットワーク、ローカルファイルシステム、または HTTP 上の場所にリテラル値で保存されたデータをマージして PDF ドキュメントを生成します。
 
-* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p)：**&#x200B;フォームデザインとアプリケーションに保存されたデータをマージして PDF ドキュメントを生成します。
-* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p)：**&#x200B;フォームデザインとデータを結合して PDF ドキュメントを生成します。 オプションで、レコードごとのメタデータファイルを生成したり、出力を PDF ファイルに保存したりできます。
-* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p)：**&#x200B;フォームデザインと、ネットワーク、ローカルファイルシステム、または HTTP 上の場所にリテラル値で保存されたデータをマージして、PCL、PostScript、および ZPL 出力を生成します。
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutput)：**&#x200B;フォームデザインとアプリケーションに保存されたデータをマージして PDF ドキュメントを生成します。
+* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutputbatch)：**&#x200B;フォームデザインとデータを結合して PDF ドキュメントを生成します。 オプションで、レコードごとのメタデータファイルを生成したり、出力を PDF ファイルに保存したりできます。
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#generateprintedoutput)：**&#x200B;フォームデザインと、ネットワーク、ローカルファイルシステム、または HTTP 上の場所にリテラル値で保存されたデータをマージして、PCL、PostScript、および ZPL 出力を生成します。
 
-* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p)：**&#x200B;フォームデザインと、アプリケーションに保存されたデータをマージして PCL、PostScript、および ZPL 出力を生成します。
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#generateprintedoutput)：**&#x200B;フォームデザインと、アプリケーションに保存されたデータをマージして PCL、PostScript、および ZPL 出力を生成します。
 
 ### generatePDFOutput {#generatepdfoutput}
 
-generatePDFOutput API は、フォームデザインとデータをマージして PDF ドキュメントを生成します。 オプションで、レコードごとのメタデータファイルを生成したり、出力を PDF ファイルに保存したりできます。 フォームデザイン、またはネットワーク、ローカルファイルシステム、HTTP の場所にリテラル値で保存されているデータの場合は、generatePDFOutput API を使用します。 フォームデザインと XML データがアプリケーションに保存されている場合は、[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) API を使用します。
+generatePDFOutput API は、フォームデザインとデータをマージして PDF ドキュメントを生成します。 オプションで、レコードごとのメタデータファイルを生成したり、出力を PDF ファイルに保存したりできます。 フォームデザイン、またはネットワーク、ローカルファイルシステム、HTTP の場所にリテラル値で保存されているデータの場合は、generatePDFOutput API を使用します。 フォームデザインと XML データがアプリケーションに保存されている場合は、[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutput) API を使用します。
 
 **構文**：`Document generatePDFOutput(String uriOrFileName, Document data, PDFOutputOptions options);`
 
@@ -3768,7 +3768,7 @@ generatePDFOutput API は、フォームデザインとデータをマージし�
 
 ### generatePDFOutput {#generatepdfoutput-1}
 
-generatePDFOutput API は、フォームデザインとデータをマージして PDF ドキュメントを生成します。 オプションで、レコードごとのメタデータファイルを生成したり、出力を PDF ファイルに保存したりできます。 フォームデザインまたはアプリケーションに保存されているデータの場合は、generatePrintedOutput API を使用します。 フォームデザインと XML データが、ネットワーク上の場所、ローカル、または HTTP 上の場所にリテラル値で保存されている場合は、[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) API を使用します。
+generatePDFOutput API は、フォームデザインとデータをマージして PDF ドキュメントを生成します。 オプションで、レコードごとのメタデータファイルを生成したり、出力を PDF ファイルに保存したりできます。 フォームデザインまたはアプリケーションに保存されているデータの場合は、generatePrintedOutput API を使用します。 フォームデザインと XML データが、ネットワーク上の場所、ローカル、または HTTP 上の場所にリテラル値で保存されている場合は、[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutput) API を使用します。
 
 **構文**：`Document generatePDFOutput(Document inputdocument, Document data, PDFOutputOptions options)`
 
@@ -4310,8 +4310,8 @@ String outputFolder="C:/Output";
 
 この Forms サービスは、インタラクティブ PDF フォームからデータを読み込む、または書き出すための API を提供します。 インタラクティブ PDF フォームとは、ユーザーからの情報の表示と収集に使用される 1 つまたは複数のフィールドを含む PDF ドキュメントです。 このサービスは、以下の API をサポートしています。
 
-* **[exportData](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p)：** PDF フォームからデータをエクスポートします。
-* **[importData](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p)：**&#x200B;インタラクティブ PDF フォームにデータをインポートします。
+* **[exportData](/help/forms/using/aem-document-services-programmatically.md#exportdata)：** PDF フォームからデータをエクスポートします。
+* **[importData](/help/forms/using/aem-document-services-programmatically.md#importdata)：**&#x200B;インタラクティブ PDF フォームにデータをインポートします。
 
 ### exportData {#exportdata}
 

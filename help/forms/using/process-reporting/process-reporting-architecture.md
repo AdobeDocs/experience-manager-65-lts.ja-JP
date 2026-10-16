@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 100%
@@ -42,11 +42,11 @@ ht-degree: 100%
 
 プロセスレポートは、以下のモジュールで構成されています。
 
-* [ProcessDataPublisher サービス](#processdatapublisher-service-br-p)
-* [ProcessDataStorage サービス](#processdatastorageprovider-service-br-p)
-* [OSGi サービス](#osgi-service-br-p)
-* [クエリデータサーブレット](#querydataservlet-service-br-p)
-* [Process Reporting ユーザーインターフェイス](#process-reporting-user-interface-br-p)
+* [ProcessDataPublisher サービス](#processdatapublisher-service-br)
+* [ProcessDataStorage サービス](#processdatastorageprovider-service-br)
+* [OSGi サービス](#osgi-service-br)
+* [クエリデータサーブレット](#querydataservlet-service-br)
+* [Process Reporting ユーザーインターフェイス](#process-reporting-user-interface-br)
 
 ## Process Reporting のアーキテクチャー {#process-reporting-architecture-br}
 
@@ -58,13 +58,13 @@ ht-degree: 100%
 
 ProcessDataPublisher サーバーは、AEM Forms データベースで定期的に実行され、サービスの最後の実行以降に変更されたデータを抽出します。 その後、Process Data Storage サービスにデータを公開します。
 
-サービスの設定について詳しくは、[ProcessDataPublisher サービスの設定](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p)を参照してください。
+サービスの設定について詳しくは、[ProcessDataPublisher サービスの設定](/help/forms/using/process-reporting/install-start-process-reporting.md#reportconfiguration-service)を参照してください。
 
 ### ProcessDataStorageProvider サービス {#processdatastorageprovider-service-br}
 
 ProcessDataStorageProvider サービスは、ProcessDataPublisher サービスからプロセスデータを受け取り、そのデータをプロセスレポートリポジトリに保存します。
 
-サービスの設定について詳しくは、[ProcessDataStorageProvider サービスの設定](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p)を参照してください。
+サービスの設定について詳しくは、[ProcessDataStorageProvider サービスの設定](/help/forms/using/process-reporting/install-start-process-reporting.md#to-configure-the-process-reporting-repository-locations)を参照してください。
 
 ### OSGi サービス {#osgi-service-br}
 

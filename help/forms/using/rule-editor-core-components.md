@@ -18,7 +18,7 @@ level_v2:
     internal-label: Beginner
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '5748'
 ht-degree: 98%
@@ -66,11 +66,11 @@ ht-degree: 98%
 >
 >利用可能なルールタイプ（ルールエディターで定義した条件やアクションを含む）は、ルールを作成しているフォームオブジェクトの種類によっても異なります。 ルールエディターには、特定のフォームオブジェクトタイプに対して条件およびアクションステートメントを記述するための、有効なルールタイプとオプションのみが表示されます。 例えば、パネルオブジェクトでは、「Validate」タイプと「Set value of」タイプは表示されません。
 
-ルールエディターで使用可能なルールタイプついて詳しくは、[ルールエディターで利用できるルールタイプ](rule-editor.md#p-available-rule-types-in-rule-editor-p)を参照してください。
+ルールエディターで使用可能なルールタイプついて詳しくは、[ルールエディターで利用できるルールタイプ](rule-editor.md#available-rule-types-in-rule-editor)を参照してください。
 
 ### ルール構文の選択ガイドライン {#guidelines-for-choosing-a-rule-construct}
 
-どのルール構文を使用しても大部分の使用例を満たすことはできますが、ここでは特定のルールを選択するための、いくつかのガイドラインを紹介します。 ルールエディターで使用可能なルールの詳細については、「[ルールエディターで利用できるルールタイプ](rule-editor.md#p-available-rule-types-in-rule-editor-p)」を参照してください。
+どのルール構文を使用しても大部分の使用例を満たすことはできますが、ここでは特定のルールを選択するための、いくつかのガイドラインを紹介します。 ルールエディターで使用可能なルールの詳細については、「[ルールエディターで利用できるルールタイプ](rule-editor.md#available-rule-types-in-rule-editor)」を参照してください。
 
 * ルールを作成する際は一般に、ルールを作成するオブジェクトのコンテキストでルールを考えることです。 「フィールド A」にユーザーが入力した値に応じて、「フィールド B」の表示／非表示を切り替える場合を想定します。この場合、「フィールド A」の状態を評価し、その戻り値に基づいて「フィールド B」のアクションをトリガーします。
 
@@ -111,7 +111,7 @@ ht-degree: 98%
 
 ## ルールエディターで利用可能なルールタイプ {#available-rule-types-in-rule-editor}
 
-ルールエディターでは、ルールを記述するための、事前定義された一連のルールタイプを利用できます。 ここからは、各ルールタイプについて詳しく説明します。 ルールエディターでルールを記述する詳細については、「[ルールの記述](rule-editor.md#p-write-rules-p)」を参照してください。
+ルールエディターでは、ルールを記述するための、事前定義された一連のルールタイプを利用できます。 ここからは、各ルールタイプについて詳しく説明します。 ルールエディターでルールを記述する詳細については、「[ルールの記述](rule-editor.md#write-rules)」を参照してください。
 
 ### [!UICONTROL When] {#whenruletype}
 
@@ -413,7 +413,7 @@ To define a rule based on a form data model:
 
    ![create-rules](assets/create-rules.png)
 
-   選択したフォームオブジェクトの既存のルールが、このビューに一覧表示されます。 既存ルールの詳細な管理方法については、[ルール管理](rule-editor.md#p-manage-rules-p)を参照してください。
+   選択したフォームオブジェクトの既存のルールが、このビューに一覧表示されます。 既存ルールの詳細な管理方法については、[ルール管理](rule-editor.md#manage-rules)を参照してください。
 
 1. 「**[!UICONTROL 作成]**」を選択して、新しいルールを記述します。 ルールエディターの初回起動時は、ルールエディターの UI がビジュアルエディターモード（デフォルト）で表示されます。
 
@@ -443,7 +443,7 @@ To define a rule based on a form data model:
 >
 >「フォームオブジェクト」と「関数」の各タブ内では、オブジェクトや関数の名前やタイトルを基にテキスト検索を行うことができます。
 
-フォームオブジェクトの左側のツリーで、フォームオブジェクトを選択すると、各オブジェクトに適用されるルールが表示されます。 様々なフォームオブジェクトのルール間を移動できるだけでなく、フォームオブジェクト間でルールをコピー＆ペーストすることもできます。 詳しくは、[ルールをコピー＆ペースト](rule-editor.md#p-copy-paste-rules-p)を参照してください。
+フォームオブジェクトの左側のツリーで、フォームオブジェクトを選択すると、各オブジェクトに適用されるルールが表示されます。 様々なフォームオブジェクトのルール間を移動できるだけでなく、フォームオブジェクト間でルールをコピー＆ペーストすることもできます。 詳しくは、[ルールをコピー＆ペースト](rule-editor.md#copy-paste-rules)を参照してください。
 
 ### C. フォームオブジェクトと関数の切り替え {#c-form-objects-and-functions-toggle-br}
 
@@ -453,7 +453,7 @@ To define a rule based on a form data model:
 
 ルールを記述するビジュアルエディターは、ルールエディターのユーザーインターフェイスをビジュアルエディターモードに切り替えると表示されます。 ルールタイプを選択し、それに応じて条件とアクションを定義できます。 ルールで条件やアクションを定義する場合、フォームオブジェクトと関数ペインからフォームオブジェクトと関数をドラッグ＆ドロップできます。
 
-ルールのビジュアルエディターの詳細については、「[ルールの作成](rule-editor.md#p-write-rules-p)」を参照してください。
+ルールのビジュアルエディターの詳細については、「[ルールの作成](rule-editor.md#write-rules)」を参照してください。
 <!-- 
 ### E. Visual-code editors switcher {#e-visual-code-editors-switcher}
 
@@ -470,7 +470,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E. 「完了」ボタンと「キャンセル」ボタン {#done-and-cancel-buttons}
 
-ルールを保存するには、「**[!UICONTROL 完了]**」ボタンを押します。 不完全なルールでも保存できます。 ただし、不完全なルールは無効なため、実行されることはありません。 フォームオブジェクトに保存されたルールは、同じフォームオブジェクトから次回ルールエディターを起動すると一覧表示されます。 このビューでは、既存のルールを管理できます。 詳しくは、[ルールを管理](rule-editor.md#p-manage-rules-p)を参照してください。
+ルールを保存するには、「**[!UICONTROL 完了]**」ボタンを押します。 不完全なルールでも保存できます。 ただし、不完全なルールは無効なため、実行されることはありません。 フォームオブジェクトに保存されたルールは、同じフォームオブジェクトから次回ルールエディターを起動すると一覧表示されます。 このビューでは、既存のルールを管理できます。 詳しくは、[ルールを管理](rule-editor.md#manage-rules)を参照してください。
 
 「**[!UICONTROL キャンセル]**」ボタンは、ルールに加えた変更を破棄し、ルールエディターを閉じます。
 
@@ -570,7 +570,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    * 「**[!UICONTROL 演算子を選択]**」フィールドから「**[!UICONTROL プラス]**」を選択します。
 
-   * 「フォームオブジェクト」タブから、他の&#x200B;**[!UICONTROL ドロップオブジェクトの「**&#x200B;[!UICONTROL &#x200B; Spouse Salary （配偶者の給与）]&#x200B;**」フィールドを選択またはドラッグ＆ドロップするか、「ここ」]**&#x200B;フィールドを選択します。
+   * 「フォームオブジェクト」タブから、他の&#x200B;**[!UICONTROL ドロップオブジェクトの「**[!UICONTROL  Spouse Salary （配偶者の給与）]**」フィールドを選択またはドラッグ＆ドロップするか、「ここ」]**&#x200B;フィールドを選択します。
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
@@ -628,7 +628,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/jp/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -730,7 +730,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=ja#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
@@ -853,7 +853,7 @@ var c = {
 
    ![ルールのコピー](assets/copyrule.png)
 
-   既存ルールの詳細な管理方法については、[ルール管理](rule-editor.md#p-manage-rules-p)を参照してください。
+   既存ルールの詳細な管理方法については、[ルール管理](rule-editor.md#manage-rules)を参照してください。
 
 1. ルールタイトルの横にあるチェックボックスを選択すると、ルールを管理するオプションが表示されます。 「**[!UICONTROL コピー]**」を選択します。
 

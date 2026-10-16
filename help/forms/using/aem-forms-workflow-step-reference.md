@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '7736'
 ht-degree: 98%
@@ -36,7 +36,7 @@ ht-degree: 98%
 
 AEM as a Cloud Serviceのドキュメントについては、[Cloud Service上のAEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference)を参照してください。
 
-ワークフローモデルを使用して、ビジネスロジックを、自動化された繰り返しプロセスに変換します。 モデルは、一連の手順を定義して実行するのに役立ちます。 ワークフローを一時的なものにするか、複数のリソースを使用するかなど、モデルのプロパティを定義することもできます。 [ビジネスロジックを達成するために、様々な AEM ワークフローステップをモデルに含めることができます](/help/sites-developing/workflows-models.md#extending-aem)。
+ワークフローモデルを使用して、ビジネスロジックを、自動化された繰り返しプロセスに変換します。 モデルは、一連の手順を定義して実行するのに役立ちます。 ワークフローを一時的なものにするか、複数のリソースを使用するかなど、モデルのプロパティを定義することもできます。 [ビジネスロジックを達成するために、様々な AEM ワークフローステップをモデルに含めることができます](/help/sites-developing/workflows-models.md#adding-a-step-to-a-model)。
 
 ## Forms のワークフローステップ {#forms-workflow-steps}
 
@@ -474,10 +474,10 @@ PDF ドキュメントを選択した形式に変換します。
 * **[!UICONTROL を使用して XCI ファイルを選択]**：XCI ファイルは、フォームデザイン要素に使用されるフォントやその他のプロパティを記述するために使用されます。 XCI ファイルは、ペイロードに対する相対パス、絶対パス、またはドキュメントデータタイプの変数を使用して保持できます。
 
 * **[!UICONTROL ロケール]**：PDF ドキュメントの生成に使用する言語を設定します。 リテラル値を指定する場合、リストから言語を選択するか、次のいずれかの値を選択します。
-  * **サーバーの既定**&#x200B;を使用するには：
+  * **サーバーの既定**を使用するには：
     （デフォルト）AEM Forms Serverで設定されているロケール設定を使用します。 ロケール設定は、管理コンソールを使用して設定します （「[Designer ヘルプ](https://www.adobe.com/go/learn_aemforms_designer_65_jp)」を参照）。
 
-  * **カスタム値**&#x200B;を使用するには：
+  * **カスタム値**を使用するには：
     リテラルボックスにロケールコードを入力するか、ロケールコードを含む文字列変数を選択します。 サポートされているすべてのロケールコードのリストについては、https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html を参照してください。
 
 * **[!UICONTROL Copies]**：出力の作成部数を指定する整数値。 デフォルト値は 1 です。

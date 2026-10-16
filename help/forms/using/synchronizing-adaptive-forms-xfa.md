@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 100%
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 ## はじめに {#introduction}
 
-XFA フォームテンプレート（`*.XDP`ファイル）を基にアダプティブフォームを作成できます。 この方法では既存の XFA フォームが再利用でき、投資効率が得られます。 XFA フォームテンプレートを使用したアダプティブフォームの作成方法については、「[テンプレートに基づくアダプティブフォームの作成](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p)」を参照してください。
+XFA フォームテンプレート（`*.XDP`ファイル）を基にアダプティブフォームを作成できます。 この方法では既存の XFA フォームが再利用でき、投資効率が得られます。 XFA フォームテンプレートを使用したアダプティブフォームの作成方法については、「[テンプレートに基づくアダプティブフォームの作成](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)」を参照してください。
 
 アダプティブフォームで XDP ファイルのフィールドを再利用できます。 このフィールドは、バインドされたフィールドと呼ばれます。 バインドされたフィールドのプロパティ（スクリプト、ラベル、表示形式など）は、XDP ファイルからコピーされます。 これらのプロパティには、値をオーバーライドできるものもあります。
 
@@ -55,11 +55,11 @@ AEM Forms のオーサリング環境では、XFA フォーム（左）からア
 
 * XFA（XML Forms Architecture）
 
-この記事の例に示されているアセットを使用するには、次のセクション「[サンプルパッケージ](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-sample-package-p)」で説明されているとおりにサンプルパッケージをダウンロードしてください。
+この記事の例に示されているアセットを使用するには、次のセクション「[サンプルパッケージ](../../forms/using/synchronizing-adaptive-forms-xfa.md#sample-package)」で説明されているとおりにサンプルパッケージをダウンロードしてください。
 
 ## サンプルパッケージ {#sample-package}
 
-この記事では、更新された XFA フォームテンプレートを使用したアダプティブフォームの同期方法を、例を使用して示しています。 例で使用しているアセットは、この記事の「[ダウンロード](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-downloads-p)」の節からダウンロードできるパッケージに含まれています。
+この記事では、更新された XFA フォームテンプレートを使用したアダプティブフォームの同期方法を、例を使用して示しています。 例で使用しているアセットは、この記事の「[ダウンロード](../../forms/using/synchronizing-adaptive-forms-xfa.md#downloads)」の節からダウンロードできるパッケージに含まれています。
 
 パッケージをアップロードすると、これらのアセットが AEM Forms UI に表示されます。
 
@@ -122,7 +122,7 @@ XDP ファイルからアダプティブフォームにコピーされたプロ�
 
 >[!NOTE]
 >
->AF Numeric Field のラベルが変更されなかったのは、「[アダプティブフォームへのコンテンツの追加](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-add-content-to-adaptive-form-br-p)」で説明したとおり、コンポーネントプロパティダイアログでこのプロパティを上書きしたためです。
+>AF Numeric Field のラベルが変更されなかったのは、「[アダプティブフォームへのコンテンツの追加](../../forms/using/synchronizing-adaptive-forms-xfa.md#add-content-to-adaptive-form-br)」で説明したとおり、コンポーネントプロパティダイアログでこのプロパティを上書きしたためです。
 
 ### XDP ファイルからアダプティブフォームへの新しいフィールドの追加   {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 
