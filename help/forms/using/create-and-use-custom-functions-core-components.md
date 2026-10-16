@@ -583,7 +583,7 @@ jsdoc コメントを含むまたは含まないカスタム関数を作成で�
 
 >[!NOTE]
 >
-> 次の[カスタム関数](/help/forms/using/assets/customfunctions.zip)フォルダーを参照できます。 [パッケージマネージャー](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager)を使用して、このフォルダーをダウンロードして AEM インスタンスにインストールします。
+> 次の[カスタム関数](/help/forms/using/assets/customfunctions.zip)フォルダーを参照できます。 [パッケージマネージャー](https://experienceleague.adobe.com/ja/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager)を使用して、このフォルダーをダウンロードして AEM インスタンスにインストールします。
 
 ### カスタム関数での非同期関数のサポート {#support-of-async-functions}
 
