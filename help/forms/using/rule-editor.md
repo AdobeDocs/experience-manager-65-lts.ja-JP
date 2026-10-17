@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '6814'
 ht-degree: 98%
@@ -215,7 +215,7 @@ _
 
 **Remove Instance （インスタンスの削除）**：指定した繰り返し可能なパネルまたは表の行のインスタンスを削除します。
 
-「**移動先**」は、他のインタラクティブなコミュニケーション、他のアダプティブフォーム、画像やドキュメントフラグメントなどの他のアセット、または外部 URL に移動します。 詳しくは、 [インタラクティブなコミュニケーションにボタンを追加する](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel)を参照してください。
+「**移動先**」は、他のインタラクティブなコミュニケーション、他のアダプティブフォーム、画像やドキュメントフラグメントなどの他のアセット、または外部 URL に移動します。 詳しくは、 [インタラクティブなコミュニケーションにボタンを追加する](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel)を参照してください。
 
 ### 次の値を設定 {#set-value-of}
 

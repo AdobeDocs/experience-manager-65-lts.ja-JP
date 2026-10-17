@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '7736'
 ht-degree: 98%
@@ -36,7 +36,7 @@ ht-degree: 98%
 
 AEM as a Cloud Serviceのドキュメントについては、[Cloud Service上のAEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference)を参照してください。
 
-ワークフローモデルを使用して、ビジネスロジックを、自動化された繰り返しプロセスに変換します。 モデルは、一連の手順を定義して実行するのに役立ちます。 ワークフローを一時的なものにするか、複数のリソースを使用するかなど、モデルのプロパティを定義することもできます。 [ビジネスロジックを達成するために、様々な AEM ワークフローステップをモデルに含めることができます](/help/sites-developing/workflows-models.md#extending-aem)。
+ワークフローモデルを使用して、ビジネスロジックを、自動化された繰り返しプロセスに変換します。 モデルは、一連の手順を定義して実行するのに役立ちます。 ワークフローを一時的なものにするか、複数のリソースを使用するかなど、モデルのプロパティを定義することもできます。 [ビジネスロジックを達成するために、様々な AEM ワークフローステップをモデルに含めることができます](/help/sites-developing/workflows-models.md#adding-a-step-to-a-model)。
 
 ## Forms のワークフローステップ {#forms-workflow-steps}
 

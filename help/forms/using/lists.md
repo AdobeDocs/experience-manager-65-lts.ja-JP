@@ -20,7 +20,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '6929'
 ht-degree: 98%
@@ -65,7 +65,7 @@ Correspondence Management Solution は、動的データ項目（可変データ
 
    ブラウザーのデフォルトのスペルチェッカーは、テキストエディターでスペルチェックを行います。 スペルチェックや文法チェックを管理するには、ブラウザーのスペルチェッカー設定を編集するか、またはスペルチェックや文法チェックを行うためのブラウザプラグインやアドオンをインストールします。
 
-   また、テキストエディターでは、様々なキーボードショートカットを使用して、テキストの管理、編集や書式設定を行うこともできます。 [テキストエディター](/help/forms/using/keyboard-shortcuts.md#p-formatting-p)キーボードショートカットについて詳しくは、「Correspondence Management キーボードショートカット」を参照してください。
+   また、テキストエディターでは、様々なキーボードショートカットを使用して、テキストの管理、編集や書式設定を行うこともできます。 [テキストエディター](/help/forms/using/keyboard-shortcuts.md#formatting)キーボードショートカットについて詳しくは、「Correspondence Management キーボードショートカット」を参照してください。
 
 1. テキストエディターが開くので、テキストを入力します。 ページの最上部にあるツールバーを使用して、テキストの書式設定や、条件、リンク、改ページの挿入を行います。
 
@@ -501,7 +501,7 @@ DD には Nominee_details コレクション要素があります。このコレ
 
    次に、DD を選択し、サンプルデータを書き出します。 取得する XML ファイルには、Employee データと Nominee_details 用の 3 つのインスタンスが含まれています（デフォルトでは、3 つのインスタンスがダウンロードされます。 必要に応じて追加または削除できます）。 値を更新し、DD にテストデータを読み込みます。 CMP ファイルはパッケージで、DD が含まれています。 DD を Correspondence Management に読み込みます。
 
-   データディクショナリとテストデータの使用について詳しくは、[データディクショナリ](/help/forms/using/data-dictionary.md#p-working-with-test-data-p)をご覧ください。
+   データディクショナリとテストデータの使用について詳しくは、[データディクショナリ](/help/forms/using/data-dictionary.md#working-with-test-data)をご覧ください。
 
    ![データディクショナリの構造](assets/dd.jpeg)
 

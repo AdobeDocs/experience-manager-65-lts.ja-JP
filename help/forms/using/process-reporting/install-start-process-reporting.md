@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 99%
@@ -289,7 +289,7 @@ AEM Forms 環境には、環境が設定された時点からのデータが含�
 
 最終更新時間には、データの更新がプロセスレポートリポジトリにプッシュされた最終日時が表示されます。
 
-データ公開サービスおよびこのサービスのスケジュール方法について詳しくは、「プロセスレポートの概要」の[プロセスデータの公開をスケジュール](/help/forms/using/process-reporting/install-start-process-reporting.md#p-schedule-process-data-publishing-p)を参照してください。
+データ公開サービスおよびこのサービスのスケジュール方法について詳しくは、「プロセスレポートの概要」の[プロセスデータの公開をスケジュール](/help/forms/using/process-reporting/install-start-process-reporting.md#schedule-process-data-publishing)を参照してください。
 
 **プロセスレポートのユーザー：**&#x200B;ログインしたユーザーの名前が、最終更新時間の右側に表示されます。
 

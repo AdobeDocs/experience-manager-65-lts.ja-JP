@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 100%
@@ -68,7 +68,7 @@ ht-degree: 100%
 
    **[!UICONTROL 件名]**&#x200B;および&#x200B;**[!UICONTROL メールテンプレート]**&#x200B;フィールドに、それぞれ件名とメール本文を指定します。
 
-   フィールドに変数プレースホルダーを指定することもできます。この場合、フィールドの値は、フォームがエンドユーザーによって正しく送信されたときに処理されます。 詳しくは、[アダプティブフォームのフィールド名を使用したメールコンテンツの動的作成](../../forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p)を参照してください。
+   フィールドに変数プレースホルダーを指定することもできます。この場合、フィールドの値は、フォームがエンドユーザーによって正しく送信されたときに処理されます。 詳しくは、[アダプティブフォームのフィールド名を使用したメールコンテンツの動的作成](../../forms/using/form-submission-receipt-via-email.md#using-adaptive-form-field-names-to-dynamically-create-email-content)を参照してください。
 
    フォームに添付ファイルがあり、それをメールに添付する場合は、**[!UICONTROL 添付ファイルを含める]**&#x200B;を選択してください。
 

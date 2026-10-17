@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 96%
@@ -148,7 +148,7 @@ AEM Formsアドオンパッケージには、すぐに使用できるグラフ�
 
 ### カスタム関数 {#custom-functions}
 
-グラフでデフォルトの関数を使用するだけでなく、JavaScript で[カスタム関数](/help/forms/using/rule-editor.md#custom-functions-in-rule-editor-custom-functions)を作成し、グラフコンポーネントの関数リストに追加できます。
+グラフでデフォルトの関数を使用するだけでなく、JavaScript で[カスタム関数](/help/forms/using/rule-editor.md#custom-functions)を作成し、グラフコンポーネントの関数リストに追加できます。
 
 関数は入力された配列または値とカテゴリ名を使用して、値を返します。 例：
 

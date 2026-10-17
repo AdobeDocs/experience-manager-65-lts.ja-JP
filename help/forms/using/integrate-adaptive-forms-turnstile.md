@@ -14,7 +14,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 96%
@@ -86,7 +86,7 @@ AEM Forms を Turnstile サービスと統合するには、次の手順を実�
 1. アダプティブフォームを選択して、「**[!UICONTROL プロパティ]**」をクリックします。 **[!UICONTROL 設定コンテナ]**&#x200B;で、AEM Forms と Turnstile を接続するクラウド設定が含まれる設定コンテナを選択します。
 1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。
 
-   Captcha サービスを設定するための設定コンテナがない場合、設定コンテナを作成する方法について詳しくは、[Turnstile の設定](#configure-turnstile-steps-to-configure-hcaptcha)の節を参照してください。
+   Captcha サービスを設定するための設定コンテナがない場合、設定コンテナを作成する方法について詳しくは、[Turnstile の設定](#steps-to-configure-hcaptcha)の節を参照してください。
 
    ![設定コンテナの選択](assets/captcha-properties.png)
 

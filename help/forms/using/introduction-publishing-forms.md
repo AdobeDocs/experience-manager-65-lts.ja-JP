@@ -24,7 +24,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 95%
@@ -84,7 +84,7 @@ AEM Forms は以下の標準ポータルコンポーネントを、**ドキュ�
 1. **フォームポータルコンポーネントを有効にする**：標準提供のフォームポータルコンポーネントは使用できません。 AEM Sites ページ用に [AEM サイドキックからコンポーネントを有効にします](/help/forms/using/enabling-forms-portal-components.md)。
 1. **ページ上のフォームを一覧表示（フォームポータルページを作成）：** AEM Sites ページと非 AEM Site ページの両方でフォームを一覧表示できます。 リストには、パブリッシュインスタンスで使用できるフォームが含まれています。 ユーザーはフォームを開き、入力を開始できます。 ユーザーがフォームを開くたびに、フォームの新しいインスタンスが作成されます。
 
-   1. **AEM Sites ページ上のフォームを一覧表示**：**[Search &amp; Lister](../../forms/using/creating-form-portal-page.md)** コンポーネントをページに追加してその中に&#x200B;**[リストペイン](../../forms/using/creating-form-portal-page.md#p-list-pane-p)**&#x200B;を設定し、 ページ上のフォームを一覧表示します。 **検索ペイン**&#x200B;コンポーネントを **Search &amp; Lister** コンポーネントに追加して設定し、ページにも検索機能を追加します。 フォームポータルコンポーネントを含むページは、[フォームポータルページ](../../forms/using/creating-form-portal-page.md)と呼ばれます。
+   1. **AEM Sites ページ上のフォームを一覧表示**：**[Search &amp; Lister](../../forms/using/creating-form-portal-page.md)** コンポーネントをページに追加してその中に&#x200B;**[リストペイン](../../forms/using/creating-form-portal-page.md#list-pane)**&#x200B;を設定し、 ページ上のフォームを一覧表示します。 **検索ペイン**&#x200B;コンポーネントを **Search &amp; Lister** コンポーネントに追加して設定し、ページにも検索機能を追加します。 フォームポータルコンポーネントを含むページは、[フォームポータルページ](../../forms/using/creating-form-portal-page.md)と呼ばれます。
 
    1. **非 AEM Sites ページ上のフォームを一覧表示：** [フォームポータル検索 API](/help/forms/using/listing-forms-webpage-using-apis.md) を使用して、非 AEM Sites のページのフォームをクエリ、取得、一覧表示します。
 

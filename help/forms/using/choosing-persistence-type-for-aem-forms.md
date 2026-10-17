@@ -25,7 +25,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 96%
@@ -71,7 +71,7 @@ ht-degree: 96%
  </tbody>
 </table>
 
-TarMK はパフォーマンスを考慮して設計されています。一方、MongoMK と RDBMK はスケーラビリティを考慮して設計されています。 オーサーインスタンスとパブリッシュインスタンスの両方において、「[TarMK の代わりに Mongo またはリレーショナルデータベース Microkernel を選択する](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p)」セクションで説明されている使用例を除き、すべての AEM Forms デプロイメントシナリオのデフォルトの永続性テクノロジーとして TarMK を使用することを強くお勧めします。
+TarMK はパフォーマンスを考慮して設計されています。一方、MongoMK と RDBMK はスケーラビリティを考慮して設計されています。 オーサーインスタンスとパブリッシュインスタンスの両方において、「[TarMK の代わりに Mongo またはリレーショナルデータベース Microkernel を選択する](#choosing-mongo-or-a-relational-database-microkernel-over-tarmk)」セクションで説明されている使用例を除き、すべての AEM Forms デプロイメントシナリオのデフォルトの永続性テクノロジーとして TarMK を使用することを強くお勧めします。
 
 サポートされているマイクロカーネルの一覧については、[OSGi技術要件に関するAEM Forms](/help/sites-deploying/technical-requirements.md) <!--or [AEM Forms on JEE supported platform combinations](/help/forms/using/aem-forms-jee-supported-platforms.md) articles-->を参照してください。
 

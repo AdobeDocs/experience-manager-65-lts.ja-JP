@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 100%
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 フォーム内で使用されているフォントが、AEM Forms をホストする J2EE アプリケーションサーバーで使用できることを確認します。 例えば、次のようなシナリオが考えられます。 フォームデザイナーが、Designer で使用するフォントをフォントディレクトリに追加し、そのフォントを使用するフォームを別のコンピューターで作成します。 Output サービスでそのフォントを使用するには、カスタマーフォントディレクトリにフォントを配置します。 カスタマーフォントディレクトリが存在しない場合は、AEM Forms をホストする J2EE アプリケーションサーバー上にディレクトリを作成します。
 
-その他のフォント設定について詳しくは、[一般的な AEM Forms の設定](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)を参照してください。
+その他のフォント設定について詳しくは、[一般的な AEM Forms の設定](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#general-aem-forms-settings)を参照してください。
 
 **カスタマーフォントディレクトリの場所の指定**
 

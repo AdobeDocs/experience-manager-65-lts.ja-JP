@@ -24,7 +24,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2193'
 ht-degree: 96%
@@ -126,7 +126,7 @@ ht-degree: 96%
 
 1. 「**[!UICONTROL 作成]**」を選択します。 テーマが作成され、フォームを編集用に開くためのダイアログが表示されます。 「**[!UICONTROL 開く]**」を選択し、新規作成されたテーマを新しいタブで開きます。 テーマエディターでテーマが開きます。 テーマエディターでは、スタイル設定に AEM に付属している標準提供のアダプティブフォームを使用します。[!DNL Forms]
 
-   テーマエディター UI の使用について詳しくは、[テーマエディターについて](/help/forms/using/themes.md#aboutthethemeeditor)を参照してください。
+   テーマエディター UI の使用について詳しくは、[テーマエディターについて](/help/forms/using/themes.md#about-the-theme-editor)を参照してください。
 
 1. **[!UICONTROL テーマオプション]** ![theme-options](assets/theme-options.png)／**[!UICONTROL 設定]**&#x200B;を選択します。 「**[!UICONTROL フォームのプレビュー]**」フィールドで **shipping-address-add-update-form** アダプティブフォームを選択し、「![aem_6_3_forms_save](assets/aem_6_3_forms_save.png)」、「**[!UICONTROL 保存]**」の順に選択します。 テーマエディターで、デフォルトのアダプティブフォームではなく独自のアダプティブフォームを使用できるようになります。 テーマエディターに戻るには、「**[!UICONTROL キャンセル]**」を選択します。
 

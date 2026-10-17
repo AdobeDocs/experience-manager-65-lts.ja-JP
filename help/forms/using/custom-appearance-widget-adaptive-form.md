@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 98%
@@ -179,7 +179,7 @@ Maven アーキタイプは、カスタム外観作成の開始点です。 使�
    * `getEventMap` メソッドは、そのウィジェットによりトリガーされるイベントを、アダプティブフォームモデルが必要とするイベントとあわせてマッピングします。 デフォルト値ではデフォルトのウィジェットの標準 HTML イベントがマッピングされ、代替のイベントがトリガーされる場合は更新の必要があります。
    * `showDisplayValue` および `showValue` は、表示値を適用し、パターン形式文字列を編集します。また、別の動作にオーバーライドすることができます。
 
-   * `getCommitValue` メソッドは `commit` イベント発生時にアダプティブフォームのフレームワークにより呼び出されます。 通常これは exit イベントですが、変更により生じるドロップダウン、ラジオボタン、チェックボックス要素は例外とします。 詳しくは、[アダプティブフォームの数式](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p)を参照してください。
+   * `getCommitValue` メソッドは `commit` イベント発生時にアダプティブフォームのフレームワークにより呼び出されます。 通常これは exit イベントですが、変更により生じるドロップダウン、ラジオボタン、チェックボックス要素は例外とします。 詳しくは、[アダプティブフォームの数式](../../forms/using/adaptive-form-expressions.md#value-commit-script)を参照してください。
 
    * テンプレートファイルでは、様々なメソッドでの導入例が紹介されています。 拡張しないメソッドは削除してください。
 

@@ -22,7 +22,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '4013'
 ht-degree: 99%
@@ -244,7 +244,7 @@ Correspondence Management のワークフローは、次の 4 つのフェーズ
 * レターのパーツを形成するその他の XDP（[レイアウトフラグメント](document-fragments.md#document-fragments)）。 XDPs\Layouts は [Designer](https://www.adobe.com/go/learn_aemforms_designer_65_jp) 内に作成されます。
 * 関連する[データディクショナリ](/help/forms/using/data-dictionary.md)（オプション）。
 * 通信に使用する[データモジュール](/help/forms/using/document-fragments.md)。
-* [テストデータ](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) は、テストデータが格納される XML ファイルです。 データディクショナリを使用する場合は、テストデータが必要です。
+* [テストデータ](/help/forms/using/data-dictionary.md#working-with-test-data) は、テストデータが格納される XML ファイルです。 データディクショナリを使用する場合は、テストデータが必要です。
 
 ## レターテンプレートを作成 {#create-a-letter-template}
 
@@ -275,7 +275,7 @@ Correspondence Management のワークフローは、次の 4 つのフェーズ
 
    ![アラートメッセージ：レターが正しく作成されました](assets/createcorrespondencecreated.png)
 
-   **次へ**：「**開く**」を選択すると、Correspondence Management にレイアウトが表示され、レイアウト（XDP）内のすべてのコンポーネントが一覧表示されます。 [データモジュールとレイアウトフラグメントの挿入と構成](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p)の手順に進みます。
+   **次へ**：「**開く**」を選択すると、Correspondence Management にレイアウトが表示され、レイアウト（XDP）内のすべてのコンポーネントが一覧表示されます。 [データモジュールとレイアウトフラグメントの挿入と構成](/help/forms/using/create-letter.md#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them)の手順に進みます。
 
 ### レターへのデータモジュールとレイアウトフラグメントの挿入と構成 {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 

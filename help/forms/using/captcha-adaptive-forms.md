@@ -29,7 +29,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1968'
 ht-degree: 98%
@@ -123,7 +123,7 @@ reCAPTCHA Enterprise サービスを有効にすると、アダプティブフ�
    1. バージョンとして reCAPTCHA v2 を選択し、名前を指定します。reCAPTCHA サービスのサイトキーと秘密鍵（手順 1 で取得）を入力し、「**[!UICONTROL 作成]**」を選択してクラウドサービス設定を作成します。
    1. コンポーネントを編集ダイアログで、サイトおよび手順 1 で取得した秘密鍵を指定します。 「**[!UICONTROL 設定を保存]**」を選択してから、「**OK**」を選択して設定を完了します。
 
-   reCAPTCHA サービスを設定すると、アダプティブフォームで使用できるようになります。 詳細情報は、[アダプティブフォームでの CAPTCHA の使用](#using-captcha)を参照してください。
+   reCAPTCHA サービスを設定すると、アダプティブフォームで使用できるようになります。 詳細情報は、[アダプティブフォームでの CAPTCHA の使用](#using-captcha-in-adaptive-forms)を参照してください。
 
 ![reCAPTCHA v2](/help/forms/using/assets/recaptcha-v2.png)
 

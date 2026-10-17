@@ -25,14 +25,14 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 100%
 ---
 # ブランディングのための組織ロゴの変更 {#changing-the-organization-logo-for-branding}
 
-組織のロゴは、AEM Forms Workspace の左上隅に表示されます。 ロゴを更新するには、[AEM Forms Workspace のカスタマイズの一般的な手順](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization)に従い、次の手順を実行します。
+組織のロゴは、AEM Forms Workspace の左上隅に表示されます。 ロゴを更新するには、[AEM Forms Workspace のカスタマイズの一般的な手順](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-aem-forms-workspace-customization)に従い、次の手順を実行します。
 
 1. ロゴを作成してファイルに `NewWorkspace.png` と名前を付けます。 WebDAV クライアントを使用して、/apps/ws/images フォルダーに画像ファイルを配置します。
 

@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3758'
 ht-degree: 100%
@@ -288,7 +288,7 @@ AEM ワークフローの「タスクの割り当て」ステップと「メー�
 
 ### ワークフローインスタンスの削除 {#purge-workflow-instances}
 
-ワークフローインスタンスの数を最小限に抑えるとワークフローエンジンのパフォーマンスが向上します。完了したワークフローインスタンスや実行中のワークフローインスタンスはリポジトリーから定期的に削除できます。 詳しくは、「[ワークフローインスタンスの定期的なパージ](/help/sites-administering/workflows-administering.md#regular)」ワークフローインスタンスのパージを参照してください.
+ワークフローインスタンスの数を最小限に抑えるとワークフローエンジンのパフォーマンスが向上します。完了したワークフローインスタンスや実行中のワークフローインスタンスはリポジトリーから定期的に削除できます。 詳しくは、「[ワークフローインスタンスの定期的なパージ](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances)」ワークフローインスタンスのパージを参照してください.
 
 ## 機密データをワークフロー変数にパラメーター化し、外部データストアに保存 {#externalize-wf-variables}
 

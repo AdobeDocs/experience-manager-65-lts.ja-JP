@@ -27,7 +27,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2993'
 ht-degree: 85%
@@ -314,7 +314,7 @@ AEM Forms on JEE サーバーの設定でプラットフォームを選択する
 
 - JEE版AEM Formsでは、指定したメジャーバージョンとマイナーバージョンのサポート対象ソフトウェアに加えて、アップデートとパックの修正が行われます。 ただし、次のメジャーバージョンまたはマイナーバージョンに対するアップデートは、特に記載がない限りサポートされていません。
 - クラスターベースのインストールは、TarMK 永続性をサポートしていません。 サポートされている永続性については、[AEM Forms のインストールでの永続性タイプの選択](/help/forms/using/choosing-persistence-type-for-aem-forms.md)を参照してください。
-- AEM Forms on JEE では、弊社の[サードパーティソフトウェアサポートポリシー](#third-party-patch-support-policy-third-party-patch-support-policy)に従い、様々なサードパーティソフトウェアをサポートしています。
+- AEM Forms on JEE では、弊社の[サードパーティソフトウェアサポートポリシー](#third-party-patch-support-policy)に従い、様々なサードパーティソフトウェアをサポートしています。
 - AEM Forms on JEE では、サードパーティベンダーが提供するサポートに基づいて、プラットフォームをサポートします。 組み合わせによっては、サードパーティベンダーが許可しない場合があります。 例えば、多くのベンダーが、自社のアプリケーションサーバーを Oracle で使用することを認めていません。 そのため、AEM Forms on JEE でもこれらの組み合わせをサポートしていません。 対応のソフトウェアバージョンを確実に選択するには、サードパーティベンダーのサポート一覧も確認してください。
 - AEM Forms on JEE では TarMK コールドスタンバイをサポートしていません。
 - AEM Forms on JEE では垂直クラスタリングをサポートしていません。

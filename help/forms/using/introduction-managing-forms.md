@@ -25,7 +25,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 97%
@@ -114,8 +114,8 @@ AEM ツールパネルには、様々なコンポーネント用のツールが�
   ![AEM Forms ツール](assets/aem_forms_tools_new.png)
 
 * **PDF Generator を設定：**&#x200B;管理者は、AEM [!DNL Forms] PDF Generator の設定、ユーザーアカウントの追加、PDF Generator 設定のインポートまたはエクスポートを行うことができます。
-* **Correspondence Management アセットを公開：** AEM [!DNL Forms] では、すべてのレター、ドキュメントフラグメント、データディクショナリおよび関連する依存関係をオーサーインスタンスから同時に公開できます。 公開済みのアセットには、すべての Correspondence Management アセットと関連する依存性が含まれます。 詳しくは、[フォームとドキュメントの公開と非公開](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets)を参照してください。
-* **Correspondence Management アセットをエクスポート：**&#x200B;すべての Correspondence Management アセットおよび関連する依存関係を、AEM [!DNL Forms] インスタンスからパッケージとしてダウンロードできます。 手順について詳しくは、[AEM Forms におけるアセットのインポートとエクスポート](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)を参照してください。
+* **Correspondence Management アセットを公開：** AEM [!DNL Forms] では、すべてのレター、ドキュメントフラグメント、データディクショナリおよび関連する依存関係をオーサーインスタンスから同時に公開できます。 公開済みのアセットには、すべての Correspondence Management アセットと関連する依存性が含まれます。 詳しくは、[フォームとドキュメントの公開と非公開](../../forms/using/publishing-unpublishing-forms.md#publish-all-the-correspondence-management-assets)を参照してください。
+* **Correspondence Management アセットをエクスポート：**&#x200B;すべての Correspondence Management アセットおよび関連する依存関係を、AEM [!DNL Forms] インスタンスからパッケージとしてダウンロードできます。 手順について詳しくは、[AEM Forms におけるアセットのインポートとエクスポート](../../forms/using/import-export-forms-templates.md#import-and-export-assets-in-correspondence-management)を参照してください。
 
 ## 共通のユーザーインターフェイス要素 {#commonelements}
 

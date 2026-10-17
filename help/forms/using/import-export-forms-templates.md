@@ -27,7 +27,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2481'
 ht-degree: 100%
@@ -136,7 +136,7 @@ AEM Forms では、テーマを作成、ダウンロード、アップロード�
 
 このオプションを使用して、すべての Correspondence Management アセットおよび関連する依存関係を、AEM Forms インスタンスからパッケージとしてダウンロードします。
 
-例えば、Correspondence Management に画像とテキストを使用しているレターが含まれている場合、ダウンロードしたパッケージにもレターに関連する画像とテキストが含まれます。 そのアセットに関連付けられているすべてのメタデータプロパティ（カスタムプロパティを含む）も同様にダウンロードされます。 パッケージ（.cmp）をダウンロードすると、[パッケージを別の AEM Forms インスタンスに読み込む](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p)ことができます。
+例えば、Correspondence Management に画像とテキストを使用しているレターが含まれている場合、ダウンロードしたパッケージにもレターに関連する画像とテキストが含まれます。 そのアセットに関連付けられているすべてのメタデータプロパティ（カスタムプロパティを含む）も同様にダウンロードされます。 パッケージ（.cmp）をダウンロードすると、[パッケージを別の AEM Forms インスタンスに読み込む](../../forms/using/import-export-forms-templates.md#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management)ことができます。
 
 すべての Correspondence Management アセットおよび関連する依存関係をパッケージとしてダウンロードするには、次の手順を実行します。
 
@@ -161,7 +161,7 @@ AEM Forms では、テーマを作成、ダウンロード、アップロード�
 
 1. 「**書き出したパッケージをダウンロード**」リンクを選択して、パッケージファイルをダウンロードします。
 
-   パッケージ内のアセットを Correspondence Management の別のインスタンスに追加するには、[パッケージを AEM Forms インスタンスにインポート](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p)します。
+   パッケージ内のアセットを Correspondence Management の別のインスタンスに追加するには、[パッケージを AEM Forms インスタンスにインポート](../../forms/using/import-export-forms-templates.md#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management)します。
 
 ### ドキュメントフラグメント、レターまたはデータ辞書の Correspondence Management への読み込み {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
 

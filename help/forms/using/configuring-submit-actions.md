@@ -28,7 +28,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2700'
 ht-degree: 97%
@@ -186,7 +186,7 @@ REST エンドポイント送信アクションの設定
 
 アダプティブフォームエディターには **Microsoft Power Automate フローの呼び出し**&#x200B;送信アクションが用意されており、アダプティブフォームのデータ、添付ファイル、レコードのドキュメントを Power Automate クラウドのフローに送信できます。 キャプチャしたデータを送信アクションを使用して Microsoft® Power Automate に送信するには、[AEM Forms インスタンスを Microsoft® Power Automate に接続します](/help/forms/using/forms-microsoft-power-automate-integration.md)。
 
-正しく設定したら、[Microsoft® Power Automateフローの呼び出し](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action)送信アクションを使用して、Power Automate フローにデータを送信します。
+正しく設定したら、[Microsoft® Power Automateフローの呼び出し](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-microsoft-power-automate-flow-submit-action)送信アクションを使用して、Power Automate フローにデータを送信します。
 
 ## Microsoft® SharePoint リストに送信{#submit-to-sharedrive}
 

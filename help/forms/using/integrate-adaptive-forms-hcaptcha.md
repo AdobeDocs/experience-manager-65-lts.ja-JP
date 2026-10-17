@@ -14,7 +14,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 96%
@@ -84,7 +84,7 @@ AEM Forms を hCaptcha® サービスと統合するには、次の手順を実�
 1. **[!UICONTROL 設定コンテナ]**&#x200B;で、AEM Forms と hCaptcha を接続するクラウド設定が含まれる設定コンテナを選択します。
 1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。
 
-   hCaptcha 用の設定コンテナがない場合、設定コンテナを作成する方法について詳しくは、[AEM Forms 環境と hCaptcha® の接続](#configure-hcaptcha-steps-to-configure-hcaptcha)の節を参照してください。
+   hCaptcha 用の設定コンテナがない場合、設定コンテナを作成する方法について詳しくは、[AEM Forms 環境と hCaptcha® の接続](#connect-your-forms-environment-with-hcaptcha-service)の節を参照してください。
 
    ![設定コンテナの選択](/help/forms/using/assets/captcha-properties.png)
 

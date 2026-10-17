@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 60%
@@ -240,7 +240,7 @@ function getAdobeSignRecipients() {
    </project>
    ```
 
-1. 「[RecipientInfoSpecifier](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html)」 Java インターフェイスを使用して、タスクを割り当て手順のユーザーまたはグループを動的に選択するソースコードを追加します。 サンプルコードについては、[Java インターフェイスを使用してユーザーまたはグループを動的に選択するためのサンプル &#x200B;](#-sample-scripts-for)を参照してください。
+1. 「[RecipientInfoSpecifier](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html)」 Java インターフェイスを使用して、タスクを割り当て手順のユーザーまたはグループを動的に選択するソースコードを追加します。 サンプルコードについては、[Java インターフェイスを使用してユーザーまたはグループを動的に選択するためのサンプル &#x200B;](#sample-java-code-to-dynamically-choose-a-user-or-a-group)を参照してください。
 1. コマンドプロンプトを開き、OSGi バンドルプロジェクトを含むディレクトリに移動します。 以下のコマンドを使用して OSGi バンドルを作成します。
 
    `mvn clean install`

@@ -16,7 +16,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '5707'
 ht-degree: 99%
@@ -102,7 +102,7 @@ AEM プロジェクトのセットアップを完了したら、アダプティ�
   * /libs のすぐに使用できるアダプティブフォームコンポーネントのレイアウトをカスタマイズするには、[デフォルトレイアウト](/help/forms/using/layout-capabilities-adaptive-forms.md)に加えて、[カスタマイズレイアウトコンポーネントを作成](/help/forms/using/custom-layout-components-forms.md)します。
   * カスタムのウィジェットやアピアランスを作成することにより、カスタムのインタラクティブ機能を導入します。 デフォルトのコンポーネントを変更することはお勧めしません。 詳しくは、[アピアランスのフレームワーク](/help/forms/using/introduction-widgets.md)を参照してください。
 
-* PII データの取り扱いに関するレコメンデーションについては、[個人を特定できる情報の取り扱い](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p)を参照してください。
+* PII データの取り扱いに関するレコメンデーションについては、[個人を特定できる情報の取り扱い](/help/forms/using/adaptive-forms-best-practices.md#handling-personally-identifiable-information)を参照してください。
 
 ### フォームテンプレートの作成
 
@@ -288,7 +288,7 @@ AEM Forms が提供する[ルールエディター](/help/forms/using/rule-edito
 
 クライアント側で検証をすり抜ける試みを阻止するためにも、データ送信の侵害やビジネスルール違反の可能性を阻止するためにも、サーバーサイドの検証が必要です。 サーバーサイドの検証は、必要なクライアントライブラリを読み込むことにより、サーバー上で実行されます。
 
-* アダプティブフォーム内の式を検証するための関数をクライアントライブラリに含め、アダプティブフォームのコンテナダイアログでクライアントライブラリを指定します。 詳しくは、[サーバーサイドの再検証](/help/forms/using/configuring-submit-actions.md#p-server-side-revalidation-in-adaptive-form-p)を参照してください。
+* アダプティブフォーム内の式を検証するための関数をクライアントライブラリに含め、アダプティブフォームのコンテナダイアログでクライアントライブラリを指定します。 詳しくは、[サーバーサイドの再検証](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form)を参照してください。
 * サーバーサイド検証により、フォームモデルが検証されます。 検証のために別個のクライアントライブラリを作成し、1 つのクライアントライブラリに HTML のスタイルや DOM 操作を混在させないことをお勧めします。
 
 ### アダプティブフォームのローカライズ {#localizing-adaptive-forms}

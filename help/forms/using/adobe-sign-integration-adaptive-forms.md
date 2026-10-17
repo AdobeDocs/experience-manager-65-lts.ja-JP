@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2207'
 ht-degree: 94%
@@ -231,7 +231,7 @@ Adobe Acrobat Sign for Government Solutions チームは、AEM Forms と Adobe A
 
 #### 受け取った資格情報を使用して、AEM Forms を Adobe Acrobat Sign Solutions for Government に接続する
 
-1. ブラウザーで `re-direct URL` を開きます。 「[AEM インスタンスにリダイレクト URL を作成](#create-redirect-url)」セクションの最後の手順で `re-direct URL` を作成し、書き留めました。
+1. ブラウザーで `re-direct URL` を開きます。 「[AEM インスタンスにリダイレクト URL を作成](#create-a-redirect-url-for-your-aem-instance)」セクションの最後の手順で `re-direct URL` を作成し、書き留めました。
 
 1. **[!UICONTROL Adobe Sign 設定を作成]**&#x200B;ページの「**[!UICONTROL 一般]**」タブで、設定の&#x200B;**[!UICONTROL 名前]**&#x200B;を指定して「**[!UICONTROL 次へ]**」を選択します。 必要に応じて&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定し、設定の&#x200B;**[!UICONTROL サムネイル]**&#x200B;を参照して選択することもできます。 「**[!UICONTROL 次へ]**」をクリックします。
 
@@ -282,7 +282,7 @@ Adobe Acrobat Sign for Government Solutions チームは、AEM Forms と Adobe A
 1. 設定を公開します。
 1. [レプリケーション](/help/sites-deploying/replication.md)を使用して、対応する公開インスタンスに同一の構成を作成します。
 
-[アダプティブフォーム](working-with-adobe-sign.md)または [AEM ワークフロー](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)に Adobe Acrobat Sign フィールドを追加できるようになりました。 [!DNL Adobe Acrobat Sign] に対して有効化するすべてのアダプティブフォームに、クラウドサービス設定に使用する設定コンテナを必ず追加してください。 設定コンテナは、アダプティブフォームのプロパティから指定できます。
+[アダプティブフォーム](working-with-adobe-sign.md)または [AEM ワークフロー](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step)に Adobe Acrobat Sign フィールドを追加できるようになりました。 [!DNL Adobe Acrobat Sign] に対して有効化するすべてのアダプティブフォームに、クラウドサービス設定に使用する設定コンテナを必ず追加してください。 設定コンテナは、アダプティブフォームのプロパティから指定できます。
 
 
 ## [!DNL Adobe Sign] スケジューラーを設定して署名ステータスを同期する {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
@@ -301,5 +301,5 @@ Adobe Acrobat Sign for Government Solutions チームは、AEM Forms と Adobe A
 ## 関連記事 {#related-articles}
 
 * [アダプティブフォームで Adobe Sign を使用する](../../forms/using/working-with-adobe-sign.md)
-* [Adobe Sign と Forms 中心のワークフロー](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)
+* [Adobe Sign と Forms 中心のワークフロー](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step)
 * [AEM FormsでのAdobe Signの使用（ビデオ）](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/forms-and-sign/introduction.html?lang=ja)

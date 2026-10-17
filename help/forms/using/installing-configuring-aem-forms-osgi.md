@@ -28,7 +28,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1962'
 ht-degree: 98%
@@ -254,7 +254,7 @@ AEM Forms で Adobe Analytics を使用するには、「[分析とレポート�
 
 顧客は、フォームのエクスペリエンスに魅力がない場合、フォームを放棄してしまいます。 顧客にとって不満が生じる一方で、組織のサポート量とコストが増加する可能性もあります。 コンバージョン率を向上させるカスタマーエクスペリエンス（顧客体験）を正しく認識して提供することは非常に重要であり、難題でもあります。 この問題を解決する鍵は AEM Forms にあります。
 
-AEM Forms は Adobe Marketing Cloud ソリューションである Adobe Target と統合することで、個々の顧客に合わせてパーソナライズした魅力的な顧客体験を、複数のデジタルチャネルにわたって提供します。 Adobe Target を A/B テストのアダプティブフォームに対して使用するには、「[Adobe Target を AEM Forms に統合する](/help/forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms)」を参照してください。
+AEM Forms は Adobe Marketing Cloud ソリューションである Adobe Target と統合することで、個々の顧客に合わせてパーソナライズした魅力的な顧客体験を、複数のデジタルチャネルにわたって提供します。 Adobe Target を A/B テストのアダプティブフォームに対して使用するには、「[Adobe Target を AEM Forms に統合する](/help/forms/using/ab-testing-adaptive-forms.md#set-up-and-integrate-target-in-aem-forms)」を参照してください。
 
 ## 次の手順 {#next-steps}
 

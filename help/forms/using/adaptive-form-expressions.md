@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2871'
 ht-degree: 95%
@@ -219,7 +219,7 @@ ht-degree: 95%
 
 ### 検証式 {#validation-expressions}
 
-フィールドの検証は、別のフィールドの式を使用して計算することもできます。 これらの式は、コンポーネントの&#x200B;**編集**&#x200B;ダイアログにある「**スクリプト**」タブの「**検証スクリプト**」フィールド内で記述されます。 フィールドの検証ステータスは、式が返す値に依存します。 このような式の記述方法について詳しくは、「[検証式](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p)」を参照してください。
+フィールドの検証は、別のフィールドの式を使用して計算することもできます。 これらの式は、コンポーネントの&#x200B;**編集**&#x200B;ダイアログにある「**スクリプト**」タブの「**検証スクリプト**」フィールド内で記述されます。 フィールドの検証ステータスは、式が返す値に依存します。 このような式の記述方法について詳しくは、「[検証式](../../forms/using/adaptive-form-expressions.md#validate-expression)」を参照してください。
 
 ## 追加情報 {#additional-information}
 

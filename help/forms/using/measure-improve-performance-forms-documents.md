@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1295'
 ht-degree: 100%
@@ -88,7 +88,7 @@ AEM Forms は、[Adobe Marketing Cloud](https://www.adobe.com/jp/marketing-cloud
 
 **Target の設定**
 
-アダプティブフォームで A/B テストを作成および実行するには、[AEM Forms での Target の設定と統合](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p)を参考にして AEM Forms で Target を設定してください。
+アダプティブフォームで A/B テストを作成および実行するには、[AEM Forms での Target の設定と統合](../../forms/using/ab-testing-adaptive-forms.md#set-up-and-integrate-target-in-aem-forms)を参考にして AEM Forms で Target を設定してください。
 
 #### 手順 2：分析レポートの表示 {#step-view-analytics-report-br}
 

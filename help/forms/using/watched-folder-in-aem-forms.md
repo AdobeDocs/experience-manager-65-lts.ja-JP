@@ -27,9 +27,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
-source-wordcount: '7272'
+source-wordcount: '7270'
 ht-degree: 96%
 ---
 # AEM Forms の監視フォルダー{#watched-folder-in-aem-forms}
@@ -100,7 +100,7 @@ ht-degree: 96%
 >
 >監視フォルダーをホストしているサーバーで実行モードが指定されていない場合、サーバー上の実行モードにかかわらず、監視フォルダーはアクティブになります。
 
-* **outputFilePattern（文字列）**：出力ファイルのパターン。 フォルダーまたはファイルパターンを指定できます。 フォルダーパターンを指定した場合は、出力ファイル名はワークフローでの設定に従います。 絶対パスではなく相対パスを指定すると、そのフォルダーは監視フォルダーの中に作成されます。 「[ファイルとフォルダーのパターン](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)」では、出力ファイルのディレクトリ構造を指定することもできます。 これは必須プロパティです。
+* **outputFilePattern（文字列）**：出力ファイルのパターン。 フォルダーまたはファイルパターンを指定できます。 フォルダーパターンを指定した場合は、出力ファイル名はワークフローでの設定に従います。 絶対パスではなく相対パスを指定すると、そのフォルダーは監視フォルダーの中に作成されます。 「[ファイルとフォルダーのパターン](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns)」では、出力ファイルのディレクトリ構造を指定することもできます。 これは必須プロパティです。
 
 * **stageFileExpirationDuration（長い形式、デフォルトは -1）**：処理のために既に取得された入力ファイルまたは入力フォルダーがタイムアウトしたと見なされ、エラーとしてマークされるまで待機する秒数。 この有効期限メカニズムは、このプロパティの値が正数の場合にのみ有効になります。
 
@@ -112,7 +112,7 @@ ht-degree: 96%
 
 * **pollInterval（長い形式）**：入力用の監視フォルダーをスキャンする間隔（秒）。 「スロットル」の設定が有効になっていない限り、ポーリング間隔は平均的なジョブの処理時間より長くする必要があります。そうしないと、システムが過負荷になるおそれがあります。 デフォルト値は 5 です。 追加情報については、「バッチサイズの説明」を参照してください。 pollinterval の値は 1 以上にする必要があります。
 * **xcludeFilePattern（文字列）**：監視フォルダーがスキャンして取得するファイルとフォルダーを決定するために使用する、パターンのセミコロン（;）区切りのリスト。 このパターンを持つファイルまたはフォルダーは、処理のためにスキャンされません。 この設定は、複数のファイルが存在するフォルダーが入力の場合に便利です。 フォルダーの内容を、監視フォルダーが選択した名前のフォルダーにコピーできます。 これにより、フォルダーが入力フォルダーに完全にコピーされる前に、監視フォルダーが処理対象のフォルダーを選択することがなくなります。 デフォルト値は null です。
-次のように、除外する[ファイルパターン](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)を指定できます。
+次のように、除外する[ファイルパターン](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns)を指定できます。
 
   * 特定の拡張子をファイル名に持つファイル。例えば &#42;.dat、&#42;.xml、.pdf、&#42;.&#42;
   * 特定の文字列をファイル名に持つファイル。例えば data&#42; を指定すると、data1、data2 などの名前を持つファイルおよびフォルダーが除外されます。
@@ -122,7 +122,7 @@ ht-degree: 96%
     * &#42;.`[dD][Aa]`&#39;port&#39;
     * &#42;.`[Xx][Mm][Ll]`
 
-ファイルパターンについて詳しくは、「[ファイルパターンについて](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)」を参照してください。
+ファイルパターンについて詳しくは、「[ファイルパターンについて](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns)」を参照してください。
 
 * **includeFilePattern（文字列）**：スキャンおよび取得の対象とするファイルとフォルダーを決めるために、監視フォルダーで使用されるパターンのセミコロン（;）区切りのリスト。 例えば、IncludeFilePattern に input&#42; を指定すると、input&#42; に一致する名前を持つすべてのファイルおよびフォルダーが取得されます。 input1、input2 などの名前を持つファイルおよびフォルダーが含まれます。 デフォルト値は &#42; です。すべてのファイルとフォルダーが対象となります。 次のように、含めるファイルパターンを指定できます。
 
@@ -136,7 +136,7 @@ ht-degree: 96%
     * &#42;.`[dD][Aa]`&#39;port&#39;
     * &#42;.`[Xx][Mm][Ll]`
 
-ファイルパターンについて詳しくは、[ファイルパターンについて](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)を参照してください。
+ファイルパターンについて詳しくは、[ファイルパターンについて](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns)を参照してください。
 
 * **waitTime（Long）**：フォルダーまたはファイルの作成からスキャンするまでの待機時間（ミリ秒）です。 例えば、待機時間が 3,600,000 ミリ秒（1 時間）のときに、1 分前にファイルが作成されたとすると、59 分以上が経過した後でこのファイルが取得されます。 デフォルト値は 0 です。 この設定は、ファイルまたはフォルダーを入力フォルダーにコピーする処理を確実に完了するために役立ちます。 例えば、処理の対象となるファイルが大きく、そのファイルをダウンロードするのに 10 分かかる場合は、待機時間を 10&#42;60&#42;1000 ミリ秒に設定します。 この設定により、ファイルが作成されてから 10 分が経過していない場合は、監視フォルダーはそのファイルをスキャンしなくなります。
 * **purgeDuration（Long）**：結果フォルダー内にこの値より古いファイルおよびフォルダーがある場合、それらは削除されます。 この値の単位は日です。 この設定は、結果フォルダーに常に空き容量を確保しておきたい場合に役立ちます。 -1 を指定すると、結果フォルダーの削除は行われません。 デフォルト値は -1 です。
@@ -159,7 +159,7 @@ ht-degree: 96%
 
   例えば、2009年7月17日午後 8 時で、C:/Test/WF0/failure/%Y/%M/%D/%H/ と指定した場合、結果フォルダーは C:/Test/WF0/failure/2009/07/17/20 となります。
 
-  絶対パスではなく相対パスを指定すると、そのフォルダーは監視フォルダーの中に作成されます。 デフォルト値は result/%Y/%M/%D/ であり、監視フォルダー内の結果フォルダーです。 ファイルパターンについて詳しくは、「[ファイルパターンについて](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)」を参照してください。
+  絶対パスではなく相対パスを指定すると、そのフォルダーは監視フォルダーの中に作成されます。 デフォルト値は result/%Y/%M/%D/ であり、監視フォルダー内の結果フォルダーです。 ファイルパターンについて詳しくは、「[ファイルパターンについて](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns)」を参照してください。
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ ht-degree: 96%
 
   ファイルが監視フォルダーに配置されると、監視フォルダーは入力中のファイルのリストを作成します。これにより、スキャンが 1 秒ごとに行われている場合、パフォーマンスが低下するおそれがあります。 スキャンの間隔を大きくすると、パフォーマンスが向上する可能性があります。 配置されるファイルの量が少ない場合は、それに従ってバッチサイズとポール間隔の値を調整します。 例えば、毎秒 10 個のファイルが配置される場合は、pollinterval に 1 秒を、batchSize に 10 を指定します。
 
-* **throttleOn（ブーリアン）**：このオプションを選択すると、AEM Forms で同時に処理できる監視フォルダーのジョブ数が制限されます。 ジョブの最大数は、バッチサイズ値によって決まります デフォルト値は true です （[ジョブ数の制限について](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p)を参照）。
+* **throttleOn（ブーリアン）**：このオプションを選択すると、AEM Forms で同時に処理できる監視フォルダーのジョブ数が制限されます。 ジョブの最大数は、バッチサイズ値によって決まります デフォルト値は true です （[ジョブ数の制限について](../../forms/using/watched-folder-in-aem-forms.md#about-throttling)を参照）。
 
 * **overwriteDuplicateFilename（ブーリアン）**：この値を true に設定すると、結果フォルダーと保存用フォルダーにあるファイルが上書きされます。 False に設定すると、ファイル名とフォルダー名に数字のインデックス接尾辞が付加されます。 デフォルト値は false です。
 * **preserveOnFailure（ブーリアン）**：サービスで操作の実行に失敗した場合に、入力ファイルを保存します。 デフォルト値は true です。
@@ -260,9 +260,9 @@ APIを使用して、出力ドキュメントを結果フォルダーに書き�
 public class OutputWriter implements ContentProcessor {
 ```
 
-[監視フォルダーの設定](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p)中、inputProcessorId プロパティを（foo=bar）として指定し、inputProcessorType プロパティをサービスとして指定した場合、上記のサービス（カスタム実装）は、監視フォルダーの入力ファイルの処理に使用されます。
+[監視フォルダーの設定](../../forms/using/watched-folder-in-aem-forms.md#create-watched-folder-configuration-node)中、inputProcessorId プロパティを（foo=bar）として指定し、inputProcessorType プロパティをサービスとして指定した場合、上記のサービス（カスタム実装）は、監視フォルダーの入力ファイルの処理に使用されます。
 
-以下の例も ContentProcessor インターフェイスのカスタム実装です。 この例では、サービスは入力ファイルを受け取り、ファイルを一時領域にコピーして、ファイルのコンテンツを持つドキュメントオブジェクトを返します。 ドキュメントオブジェクトのコンテンツは結果フォルダーに保存されます。 結果フォルダーの物理パスは、[監視フォルダー設定ノード](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p)に設定されます。
+以下の例も ContentProcessor インターフェイスのカスタム実装です。 この例では、サービスは入力ファイルを受け取り、ファイルを一時領域にコピーして、ファイルのコンテンツを持つドキュメントオブジェクトを返します。 ドキュメントオブジェクトのコンテンツは結果フォルダーに保存されます。 結果フォルダーの物理パスは、[監視フォルダー設定ノード](../../forms/using/watched-folder-in-aem-forms.md#create-watched-folder-configuration-node)に設定されます。
 
 ```java
 @Component(immediate = true)
@@ -290,7 +290,7 @@ public class TestContentProcessor1 implements ContentProcessor {
 * **setResult**：この API は、ContentProcessor 実装が
 出力ドキュメントを結果フォルダーに書き出す際に使用されます。 setResult API には出力ファイルの名前を指定できます。 この API は、指定された出力フォルダーパターンまたは出力ファイルパターンに応じて、提供されたファイルを使用または無視する場合があります。 フォルダーパターンを指定した場合は、出力ファイル名はワークフローでの設定に従います。 ファイルパターンを指定した場合は、出力ファイル名はファイルパターンでの設定に従います。
 
-以下のコードは ECMAScript の一例です。 入力ファイルを受け取ると、ファイルを一時領域にコピーし、ファイルのコンテンツを持つドキュメントオブジェクトを返します。 ドキュメントオブジェクトのコンテンツは結果フォルダーに保存されます。 結果フォルダーの物理パスは、[監視フォルダー設定ノード](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p)に設定されます。
+以下のコードは ECMAScript の一例です。 入力ファイルを受け取ると、ファイルを一時領域にコピーし、ファイルのコンテンツを持つドキュメントオブジェクトを返します。 ドキュメントオブジェクトのコンテンツは結果フォルダーに保存されます。 結果フォルダーの物理パスは、[監視フォルダー設定ノード](../../forms/using/watched-folder-in-aem-forms.md#create-watched-folder-configuration-node)に設定されます。
 
 >[!NOTE]
 >
@@ -353,7 +353,7 @@ processWorkflowContext() へ渡される引数は、com.adobe.aemfd.watchfolder.
 * getMetadata: メタデータ変数の値を返します。変数はWorkflowContextService.execute （） メソッドに渡されます。
 * getCommittedVariables：読み取り専用オブジェクトマップを返します。マップには以前のステップで設定された変数が表示されます。 変数が以前のステップで変更されていない場合、監視フォルダーの設定時に指定したデフォルトの値を返します。
 * getCommittedResults：読み取り専用のドキュメントマップを返します。 マップには以前のステップで生成された出力ファイルが表示されます。
-* setVariable：WorkflowContextProcessor の実装はこの変数を使用して、各ステップ間で受け渡されるカスタムダイナミックデータを表す変数を操作します。 変数の名前とデータ型は、[監視フォルダーの設定](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)時に指定した変数名と一致します。 変数の値を変更するには、setVariable API を呼び出し、null でない値を指定します。 変数を消去するには、setVariable() を呼び出し、値に nulll を指定します。
+* setVariable：WorkflowContextProcessor の実装はこの変数を使用して、各ステップ間で受け渡されるカスタムダイナミックデータを表す変数を操作します。 変数の名前とデータ型は、[監視フォルダーの設定](../../forms/using/watched-folder-in-aem-forms.md#configure-the-watched-folder)時に指定した変数名と一致します。 変数の値を変更するには、setVariable API を呼び出し、null でない値を指定します。 変数を消去するには、setVariable() を呼び出し、値に nulll を指定します。
 
 以下の ProcessorContext API も使用可能です。
 
@@ -532,8 +532,8 @@ log.info("Exiting workflow script!")
 ジョブ数の制限を有効にすると、前回のジョブが完了していない場合は、監視フォルダーが新たにジョブを呼び出さなくなります。 監視フォルダーは、進行中のジョブを検出し、バッチサイズから進行中のジョブを差し引いた値に基づいて新しいジョブを処理します。 例えば、2 回目の呼び出しを実行したとき、完了したジョブの数が 3 つで、まだ進行中のジョブが 1 つある場合、監視フォルダーはジョブを 3 つのみ呼び出します。
 
 * 監視フォルダーは、ステージフォルダーに存在しているファイルの数に基づいて進行中のジョブがいくつあるかを判断します。 ステージフォルダーにファイルが未処理のまま残っている場合、監視フォルダーはそれ以上ジョブを呼び出しません。 例えば、バッチサイズが 4 で、3 つのジョブが停止している場合、監視フォルダーは以降の呼び出しでジョブを 1 つのみ呼び出します。 ステージフォルダーにファイルが未処理のまま残る原因として、いくつかのシナリオが考えられます。 ジョブが停止している場合、管理者はプロセス管理の管理ページでプロセスを終了できるため、監視フォルダーはステージフォルダーからファイルを移動することができます。
-* 監視フォルダーがジョブを呼び出す前に AEM Forms サーバーがダウンした場合は、管理者がステージフォルダーからファイルを移動できます。 詳しくは、[失敗ポイントおよび回復](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p)を参照してください。
-* サービスが正しい順序で開始されず、Job Manager サービスのコールバックが発生したとき、AEM Forms サーバーが動作している一方で監視フォルダーが動作していない場合は、管理者がステージフォルダーからファイルを移動できます。 詳しくは、[失敗ポイントおよび回復](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p)を参照してください。
+* 監視フォルダーがジョブを呼び出す前に AEM Forms サーバーがダウンした場合は、管理者がステージフォルダーからファイルを移動できます。 詳しくは、[失敗ポイントおよび回復](../../forms/using/watched-folder-in-aem-forms.md#failure-points-and-recoveryfailure-points-and-recovery)を参照してください。
+* サービスが正しい順序で開始されず、Job Manager サービスのコールバックが発生したとき、AEM Forms サーバーが動作している一方で監視フォルダーが動作していない場合は、管理者がステージフォルダーからファイルを移動できます。 詳しくは、[失敗ポイントおよび回復](../../forms/using/watched-folder-in-aem-forms.md#failure-points-and-recoveryfailure-points-and-recovery)を参照してください。
 
 ### 失敗ポイントおよび回復 {#failure-points-and-recoveryfailure-points-and-recovery}
 
@@ -616,9 +616,9 @@ log.info("Exiting workflow script!")
 
 PDF Generator と連携するように監視フォルダーを設定するには、以下の手順を実行します。
 
-1. [ECMAScript の作成](../../forms/using/watched-folder-in-aem-forms.md#p-create-an-ecmascript-p)
-1. [ワークフローの作成](../../forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p)
-1. [監視フォルダーの設定](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)
+1. [ECMAScript の作成](../../forms/using/watched-folder-in-aem-forms.md#create-an-ecmascript)
+1. [ワークフローの作成](../../forms/using/watched-folder-in-aem-forms.md#create-a-workflow)
+1. [監視フォルダーの設定](../../forms/using/watched-folder-in-aem-forms.md#configure-the-watched-folder)
 
 ### ECMAScript の作成 {#create-an-ecmascript}
 
@@ -672,7 +672,7 @@ ECMAScript で PDF Generator の createPDF API を使用して、Microsoft Word 
 
 1. プロセスステップを右クリックし、「**編集**」を選択します。 ステップのプロパティウィンドウが表示されます。
 
-1. 「プロセス」タブで ECMAScript を選択します。 例えば、「[ECMAScript の作成](#p-create-an-ecmascript-p)」で作成した pdfg-openOffice-sample.ecma スクリプトです。 「**ハンドラー処理の設定**」オプションを有効にして「**OK**」をクリックします。
+1. 「プロセス」タブで ECMAScript を選択します。 例えば、「[ECMAScript の作成](#create-an-ecmascript)」で作成した pdfg-openOffice-sample.ecma スクリプトです。 「**ハンドラー処理の設定**」オプションを有効にして「**OK**」をクリックします。
 
    ![create-a-workflow3-pdf](assets/create-a-workflow3-pdf.png)
 
