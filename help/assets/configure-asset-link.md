@@ -24,7 +24,7 @@ ht-degree: 99%
 ---
 # Experience Manager Assets を Adobe Asset Link 用に設定 {#adobe-asset-link}
 
-[Adobe Asset Link（AAL）](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html) を使用すると、コンテンツ作成プロセスでのクリエイターとマーケターの共同作業を効率化できます。 Adobe Experience Manager Assets を Creative Cloud デスクトップアプリケーションの Adobe InDesign、Adobe Photoshop および Adobe Illustrator に接続します。 Adobe Asset Link パネルを使用すると、クリエイターが最も慣れているクリエイティブアプリから離れることなく、AEM Assets に保存されたコンテンツをアクセスしたり、変更したりすることができます。
+[Adobe Asset Link（AAL）](https://www.adobe.com/jp/creativecloud/business/enterprise/adobe-asset-link.html) を使用すると、コンテンツ作成プロセスでのクリエイターとマーケターの共同作業を効率化できます。 Adobe Experience Manager Assets を Creative Cloud デスクトップアプリケーションの Adobe InDesign、Adobe Photoshop および Adobe Illustrator に接続します。 Adobe Asset Link パネルを使用すると、クリエイターが最も慣れているクリエイティブアプリから離れることなく、AEM Assets に保存されたコンテンツをアクセスしたり、変更したりすることができます。
 
 Experience Manager Assetsを Asset Link と共に使用するように設定するには、次のタスクを実行します。 Experience Manager 管理者アカウントを使用して設定を行います。
 

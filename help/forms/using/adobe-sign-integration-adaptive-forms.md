@@ -57,7 +57,7 @@ AEM as a Cloud Serviceのドキュメントについては、[Cloud Service上�
 
 [!DNL Adobe Sign] を AEM [!DNL Forms] に統合するには、以下のものが必要になります。
 
-* 有効な [Adobe Sign 開発者アカウント](https://www.adobe.com/acrobat/business/developer-form.html)
+* 有効な [Adobe Sign 開発者アカウント](https://www.adobe.com/jp/acrobat/business/developer-form.html)
 * [SSL が有効になっている](/help/sites-administering/ssl-by-default.md) AEM サーバー[!DNL Forms]
 * [Adobe Sign API アプリケーション](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md)。
 * [!DNL Adobe Sign] API アプリケーションの資格情報（クライアント ID およびクライアントの秘密鍵）。

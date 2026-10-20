@@ -219,7 +219,7 @@ PDF Generator サービスを使用して、Microsoft® Word、Microsoft® Excel
 >* Adobe Acrobat、Microsoft® Word、Excel および PowerPoint は、Microsoft® Windows でのみ使用できます。 UNIX ベースのオペレーティングシステムを使用している場合は、OpenOffice をインストールして、リッチテキストファイルやサポートされている Microsoft® Office ファイルを PDF ドキュメントに変換します。
 >* PDF Generator サービスを使用できるすべてのユーザーに対して、Adobe Acrobat およびサードパーティソフトウェアのインストール後に表示されるすべてのダイアログボックスを閉じます。
 >* インストールされているすべてのソフトウェアを少なくとも 1 回起動します。 PDF Generator サービスを使用するように設定されているすべてのユーザーに対して、すべてのダイアログボックスを解除します。
->* [Adobe Acrobat シリアル番号の有効期限を確認](https://helpx.adobe.com/jp/enterprise/kb/volume-license-expiration-check.html)してライセンスを更新する日付を設定するか、有効期限に基づいて[シリアル番号を移行](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)します。
+>* [Adobe Acrobat シリアル番号の有効期限を確認](https://helpx.adobe.com/jp/enterprise/kb/volume-license-expiration-check.html)してライセンスを更新する日付を設定するか、有効期限に基づいて[シリアル番号を移行](https://www.adobe.com/jp/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)します。
 
 Acrobat をインストールしてから、Microsoft® Word を開きます。 「**Acrobat**」タブで「**PDFを作成**」をクリックし、マシン上にある .doc または .docx のファイルを PDF ドキュメントに変換します。 変換が成功すれば、AEM Forms が PDF Generator サービスで Acrobat を使用する準備が整います。
 
@@ -1494,9 +1494,9 @@ SRT ツールが報告する問題をすべて修正した後でも問題が発�
 
 +++AEM Forms ServerにインストールされたAdobe Acrobatのライセンスの有効期限
 
-* Adobe Acrobat の既存のライセンスを持っていて、そのライセンスが期限切れの場合、[最新バージョンの Adobe Application Manager をダウンロード](https://helpx.adobe.com/jp/creative-suite/kb/aam-troubleshoot-download-install.html)し、シリアル番号を移行します。 [シリアル番号の移行](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)前に以下のことを行います。
+* Adobe Acrobat の既存のライセンスを持っていて、そのライセンスが期限切れの場合、[最新バージョンの Adobe Application Manager をダウンロード](https://helpx.adobe.com/jp/creative-suite/kb/aam-troubleshoot-download-install.html)し、シリアル番号を移行します。 [シリアル番号の移行](https://www.adobe.com/jp/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)前に以下のことを行います。
 
-  * 次のコマンドを使用して prov.xml を生成し、[シリアル番号の移行](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)の記事で提供されているコマンドの代わりに、prov.xml ファイルを使用して既存のインストールを再シリアル化します。
+  * 次のコマンドを使用して prov.xml を生成し、[シリアル番号の移行](https://www.adobe.com/jp/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)の記事で提供されているコマンドの代わりに、prov.xml ファイルを使用して既存のインストールを再シリアル化します。
 
         ```
         
@@ -1512,7 +1512,7 @@ SRT ツールが報告する問題をすべて修正した後でも問題が発�
         
         ```
 
-    * 大規模インストールの場合は、[Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) をクリックして、以前のバージョンの Reader と Acrobat を削除します。 インストーラーをカスタマイズし、組織のすべてのマシンにデプロイします。
+    * 大規模インストールの場合は、[Acrobat Customization Wizard](https://www.adobe.com/jp/devnet-docs/acrobatetk/tools/Wizard/index.html) をクリックして、以前のバージョンの Reader と Acrobat を削除します。 インストーラーをカスタマイズし、組織のすべてのマシンにデプロイします。
 
 +++
 
