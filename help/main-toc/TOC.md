@@ -7,10 +7,10 @@ user-guide-description: Adobe Experience Manager 6.5 LTS ドキュメントを�
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: a895c5e5cb2a4e21d7460d598bd260a5292ed2ad
+source-git-commit: 82ad777feafc14635e26f445a1be6001a2b82672
 workflow-type: tm+mt
-source-wordcount: '7801'
-ht-degree: 67%
+source-wordcount: '7809'
+ht-degree: 66%
 ---
 # Adobe Experience Manager 6.5 LTS ドキュメント {#content}
 
@@ -462,6 +462,7 @@ ht-degree: 67%
     + [Designer のインストールと設定](/help/forms/using/installing-configuring-designer.md)
     + AEM Forms の設定 {#configure-aem-forms}
       + [AEM Forms サーバーのパフォーマンスチューニング](/help/forms/using/performance-tuning-aem-forms.md)
+      + [アダプティブフォーム参照用のカスタムインデックスの作成](/help/forms/using/create-custom-index-for-adaptive-forms-references.md)
       + [アダプティブフォームのキャッシュの設定](/help/forms/using/configure-adaptive-forms-cache.md)
       + [AEM DS の設定](/help/forms/using/configuring-the-processing-server-url.md)
       + [同期スケジューラの設定](/help/forms/using/configure-synchronization-scheduler.md)
