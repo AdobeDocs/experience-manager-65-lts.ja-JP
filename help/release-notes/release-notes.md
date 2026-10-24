@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a09b87b0103e007d357b8901233ae890998a307d
+source-git-commit: 7c3cc17781a4f5ca68ed738e76063a75c18beaeb
 workflow-type: tm+mt
-source-wordcount: '7815'
+source-wordcount: '7886'
 ht-degree: 21%
 ---
 
@@ -382,6 +382,8 @@ JEEにAEM Forms 6.5 LTS SP3をインストールするには、次の手順を�
 #### 既知の問題 {#forms-known-issues-65-lts-sp3}
 
 * **JEE 6.5 LTS SP3**&#x200B;上のAEM Formsで、**PostScript（PS）、EPS、およびPRN ファイルをPDF**&#x200B;に変換できません。 `PsToPdfSvc` ネイティブプロセスが予期せず終了する可能性があり、コンバージョンジョブが`ALC-PDG-003-011`や`ALC-PDG-001-028`などのエラーで失敗します。 Adobe カスタマーサポートにお問い合わせください。 （FORMS-28152）
+
+* JEE 6.5 LTS SP3 **の** AEM Formsで、デジタル署名されたPDFがAEM Forms JEE Workspaceのタスクにアタッチされた場合、アップロードはアップロード状態のままになるか、「無効なファイル」エラーで失敗します。 これにより、署名済みの大きなPDFの添付ファイルをタスクに追加できません。 この問題は、新しいバージョンで修正されています。 現在のバージョンのホットフィックスについては、Adobe サポートにお問い合わせください。 （FORMS-28517）
 
 JEE上のAEM Formsでは、Reader ExtensionsはWebSphere® Liberty Profile （WLP）プラットフォームで動作しません。 LTS SP3に含まれているEAR ファイルのクラスパスに、必要なバウンシーキャッスル ライブラリがありません。
 
