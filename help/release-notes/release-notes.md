@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a09b87b0103e007d357b8901233ae890998a307d
+source-git-commit: 7c3cc17781a4f5ca68ed738e76063a75c18beaeb
 workflow-type: tm+mt
-source-wordcount: '7815'
+source-wordcount: '7886'
 ht-degree: 21%
 ---
 
@@ -375,13 +375,15 @@ Campaign ContentServletは、コンテンツリクエスト中にJSON応答コ�
 
 JEEにAEM Forms 6.5 LTS SP3をインストールするには、次の手順を順番に実行します。
 
-1. アプリケーションサーバー用のAEM Forms 6.5 LTS SP3 JEE インストーラー（[AEM Forms リリース &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)からダウンロード）を使用してサービスパックをインストールし、標準のAEM Forms on JEE インストール手順に従います。
-1. 最新のAEM Forms Workbench インストーラー（同じ[AEM Forms リリース &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) ページから利用可能）に更新します。
+1. アプリケーションサーバー用のAEM Forms 6.5 LTS SP3 JEE インストーラー（[AEM Forms リリース ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)からダウンロード）を使用してサービスパックをインストールし、標準のAEM Forms on JEE インストール手順に従います。
+1. 最新のAEM Forms Workbench インストーラー（同じ[AEM Forms リリース ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) ページから利用可能）に更新します。
 1. プロジェクトで`adobe-livecycle-client.jar` SDK クライアント ライブラリを使用している場合は、プロジェクトのクラスパスで更新します。 最新バージョンは`<AEM_Forms_Installation_dir>/sdk/client-libs/common/adobe-livecycle-client.jar`で入手できます。
 
 #### 既知の問題 {#forms-known-issues-65-lts-sp3}
 
 * **JEE 6.5 LTS SP3**&#x200B;上のAEM Formsで、**PostScript（PS）、EPS、およびPRN ファイルをPDF**&#x200B;に変換できません。 `PsToPdfSvc` ネイティブプロセスが予期せず終了する可能性があり、コンバージョンジョブが`ALC-PDG-003-011`や`ALC-PDG-001-028`などのエラーで失敗します。 Adobe カスタマーサポートにお問い合わせください。 （FORMS-28152）
+
+* JEE 6.5 LTS SP3 **の** AEM Formsで、デジタル署名されたPDFがAEM Forms JEE Workspaceのタスクにアタッチされた場合、アップロードはアップロード状態のままになるか、「無効なファイル」エラーで失敗します。 これにより、署名済みの大きなPDFの添付ファイルをタスクに追加できません。 この問題は、新しいバージョンで修正されています。 現在のバージョンのホットフィックスについては、Adobe サポートにお問い合わせください。 （FORMS-28517）
 
 JEE上のAEM Formsでは、Reader ExtensionsはWebSphere® Liberty Profile （WLP）プラットフォームで動作しません。 LTS SP3に含まれているEAR ファイルのクラスパスに、必要なバウンシーキャッスル ライブラリがありません。
 
@@ -586,10 +588,10 @@ AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストール
 
 >[!NOTE]
 >
-> 古い6.5 SPからLTS SP3に直接アップグレードする場合は、6.5から6.5 LTS GA [&#x200B; アップグレード &#x200B;](/help/sites-deploying/upgrade.md)の指示に従ってください。
+> 古い6.5 SPからLTS SP3に直接アップグレードする場合は、6.5から6.5 LTS GA [ アップグレード ](/help/sites-deploying/upgrade.md)の指示に従ってください。
 
 
-詳細な手順については、[&#x200B; アップグレードドキュメント &#x200B;](/help/sites-deploying/upgrade.md)を参照してください。同じドキュメントがLTS サービスパックの更新に適用されます。
+詳細な手順については、[ アップグレードドキュメント ](/help/sites-deploying/upgrade.md)を参照してください。同じドキュメントがLTS サービスパックの更新に適用されます。
 
 >[!NOTE]
 >
@@ -710,7 +712,7 @@ Adobe ソフトウェア配布ポータルからインデックスパッケー�
 
 -->
 
-&#x200B;###
+###
 
 ### SSL のみの機能を使用した Dispatcher 接続の失敗（AEM 6.5 LTS SP1 以降で修正）{#ssl-only-feature}
 
@@ -742,7 +744,7 @@ AEM デプロイメントで SSL のみの機能を有効にすると、Dispatch
 
 次のzip ファイルには、このExperience Manager 6.5 LTS サービスパック リリースに含まれるOSGi バンドルとコンテンツパッケージを一覧表示するテキストドキュメントが含まれています。
 
-* [OSGi バンドル &#x200B;](/help/release-notes/assets/65lts_sp3_bundles.zip)
+* [OSGi バンドル ](/help/release-notes/assets/65lts_sp3_bundles.zip)
 * [コンテンツパッケージ](/help/release-notes/assets/65lts_sp3_packages.zip)
 
 ## 制限付き Web サイト{#restricted-sites}
