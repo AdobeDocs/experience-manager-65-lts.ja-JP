@@ -3,6 +3,7 @@ title: Adobe Experience Manager 6.5 LTS、SP3の現在のリリースノート
 description: Adobe Experience Manager 6.5 LTS、Service Pack 3の最新のリリース情報を確認します。
 solution: Experience Manager
 feature: Release Information
+owner: Rick Brough
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 product_v2:
@@ -21,10 +22,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7c3cc17781a4f5ca68ed738e76063a75c18beaeb
+source-git-commit: dc085d8f240ae633d82c0b03e8e30ccb82a92008
 workflow-type: tm+mt
-source-wordcount: '7886'
-ht-degree: 21%
+source-wordcount: '7820'
+ht-degree: 20%
 ---
 
 # Adobe Experience Manager 6.5 LTS、SP3の現在のリリースノート {#release-notes}
@@ -43,7 +44,7 @@ ht-degree: 21%
 
 >[!IMPORTANT]
 >
-> **必須のホットフィックス** - スタンバイ時のオンラインコンパクション中にSNFE （SegmentNotFoundException）の問題が発生するのを防ぐには、[既知の問題 – オンラインコンパクション中のリポジトリの破損](#repository-corruption-during-online-compaction-granite-73045)に記載されているホットフィックスをインストールします。
+> **必須のホットフィックス** - スタンバイ時のオンラインコンパクション中にSNFE （SegmentNotFoundException）の問題が発生するのを防ぐには、[既知の問題 – オンラインコンパクション中のリポジトリの破損](#repository-corruption-during-online-compaction-on-standby)に記載されているホットフィックスをインストールします。
 
 ## [!DNL Adobe Experience Manager] 6.5 LTS、SP3に含まれるもの {#what-is-new}
 
@@ -93,7 +94,7 @@ ht-degree: 21%
 
 * カスタムプロパティエディターで、書式設定コントロールによるキーボード操作がサポートされるようになりました。 作成者は、ツールバーオプション間でフォーカスを移動したり、テキストスタイルを選択したり、キーボードのみを使用してプロパティ値を書式設定したりできます。 （SITES-40333） メジャー
 
-* 使用可能なインタラクションでドラッグ&amp;ドロップが必要な場合、キーボードフォーカスがサイドパネルコンポーネントリストをスキップするようになりました。 この変更により、キーボードユーザーは使用できないコンポーネント選択ワークフローに入れなくなります。 （SITES-40752）
+* 使用可能なインタラクションで手動移動が必要な場合、キーボードフォーカスでサイドパネルの「コンポーネント」リストがスキップされるようになりました。 この変更により、キーボードユーザーは使用できないコンポーネント選択ワークフローに入れなくなります。 （SITES-40752）
 * オーバーレイを閉じると、フォーカスがトリガーコントロールに戻るようになりました。 キーボードとスクリーンリーダーのユーザーがオーバーレイに戻ったり、インターフェイス内での位置を失ったりすることはなくなりました。 （SITES-40819）
 * キーボードナビゲーションで、非表示のページコンテンツにフォーカスが移動しなくなりました。 この変更により、予測可能なフォーカスシーケンスを維持し、ナビゲーションの中断を防ぐことができます。 （SITES-41430）
 * 「ロック」ボタンは、タイトルに基づいて正確なスクリーンリーダーのフィードバックを提供するようになりました。 オーディエンスには、長い説明ではなく、明確なアクションラベルが表示されます。 （SITES-41431）
@@ -148,7 +149,7 @@ ht-degree: 21%
 * ヘッダーメニューボタンは、ダイアログボックスを開くことをスクリーンリーダーに伝えなくなりました。 代わりに、スクリーンリーダーは、メニューの動作を正確に説明する各ボタンの展開状態または折りたたみ状態を通知します。 （SITES-24742）
 * 「削除」ボタンのテキストが、赤い背景に対して十分なコントラストを提供するようになりました。 ユーザーは、削除を確認する前に、アクションをより簡単に特定できます。 （SITES-24772）
 * カンバスカードで、同じ宛先にリンクする別々の画像と見出しのリンクが表示されなくなりました。 単一のリンクを使用すると、重複するキーボード停止やスクリーンリーダーの通知を繰り返し行う必要がなくなります。 （SITES-24947）
-* リスト表示で、ドラッグ&amp;ドロップのボタンがより視覚的に際立つようになりました。 アイコンのサイズ、重み、コントラストが更新され、コントロールの検索と使用が容易になりました。 （SITES-24951）
+* リストビューに、手動移動ボタンが表示され、視覚的に目立つようになりました。 アイコンのサイズ、重み、コントラストが更新され、コントロールの検索と使用が容易になりました。 （SITES-24951）
 * ヘッダーボタンには、検索、アプリ、ヘルプ、受信トレイ、ユーザーなど、わかりやすい名前が表示されるようになりました。 スクリーンリーダーは、キーボードナビゲーション中に「クリック可能」や「グラフィック」などの冗長な用語を通知しなくなりました。 （SITES-24715）
 * アプリナビゲーションのリンクに、より強い視覚的強調が表示されるようになりました。 テキストのサイズと太さが増加すると、視力や色覚の違いが少ないユーザーでも読みやすくなります。 （SITES-24723）
 * インボックスリンクでセマンティックリストマークアップが使用されるようになりました。 スクリーンリーダーは、リンクを関連グループとして識別し、項目数を通知し、より効率的なナビゲーションをサポートできます。 （SITES-24730）
@@ -175,7 +176,7 @@ ht-degree: 21%
 
 #### 管理ユーザーインターフェイス{#sites-adminui-65-lts-sp3}
 
-* AEMでは、管理者グループのメンバーがページのロックを解除したり、ユーザーになりすましたりできるようになりました。 グループメンバーは、既存のアクセスを通じて両方の管理タスクを完了できます。 （SITES-14732）
+* AEMでは、管理者グループのメンバーがページのロックを解除し、ユーザーになりすませるようになりました。 グループメンバーは、既存のアクセスを通じて両方の管理タスクを完了できます。 （SITES-14732）
 * 作成者がタイムラインで「**このバージョンに戻す**」を選択すると、Assets管理ビューでアセットカードが更新されるようになりました。 サムネールには、復元されたバージョンがすぐに表示され、古いプレビューコンテンツは表示されなくなります。 （SITES-46590）
 
 
@@ -242,7 +243,7 @@ ht-degree: 21%
 
 #### コンポーネントコンソール{#sites-component-console-65-lts-sp3}
 
-コンテンツファインダーに、失敗したり例外を生成したりすることなく、エンコードできない文字を含む名前のアセットが一覧表示されるようになりました。 コンポーネントのライブ使用状況ページでは、スクロール時に空の行を表示することなく、大きな結果セットを継続的に読み込むこともできます。 （SITES-44672） メジャー
+コンテンツファインダーに、失敗したり例外を生成したりすることなく、エンコードできない文字を含む名前のアセットが一覧表示されるようになりました。 コンポーネントのライブ使用状況ページでは、スクロール時に空の行を表示することなく、大きな結果セットを継続的に読み込むこともできます。 （SITES-44672）
 
 <!--
 #### Content API{#sites-content-api-65-lts-sp3}
@@ -325,65 +326,65 @@ Campaign ContentServletは、コンテンツリクエスト中にJSON応答コ�
 
 #### 機能強化 {#forms-enhancements-65-lts-sp3}
 
-* FORMS-24360:PDF Generator（PDFG）のMicrosoft Office 2024のサポートを追加しました。 これは、OSGiとJEEの両方のデプロイメントに適用されます。
-* FORMS-24949:AEM Forms 6.5 LTSでのForms Builder Agentのサポートを追加しました。 これにより、Forms ManagerのHTTP APIと、エージェントが必要とするForm Generative AI （GenAI）のHTTP APIがバックポートされます。
-* FORMS-25180: AEM Forms ユーザーインターフェイスに`daysUntilSigningDeadline`の値を追加しました。これにより、作成者は、Adobe Signの署名期限までに残り日数を受信者に示すことができます。
-* FORMS-25182、FORMS-25181:PDF Generator（PDFG）は、1つのユーザーアカウントで設定された場合に、マルチスレッドのドキュメントコンバージョンをサポートするようになりました。 これは、OSGiとJEEの両方のデプロイメントに適用されます。
-* FORMS-27595: AEM Forms Document Securityの動的透かしに&#x200B;**ユーザープロファイル説明**&#x200B;属性を追加しました。これにより、透かしにユーザーのプロファイル説明を含めることができます。
+* Microsoft Office 2024のPDF Generator（PDFG）サポートを追加しました。 これは、OSGiとJEEの両方のデプロイメントに適用されます。 （FORMS-24360）
+* AEM Forms 6.5 LTSでのForms Builder Agentのサポートを追加しました。 これにより、Forms ManagerのHTTP APIと、エージェントが必要とするForm Generative AI （GenAI）のHTTP APIがバックポートされます。 （FORMS-24949）
+* AEM Forms ユーザーインターフェイスに`daysUntilSigningDeadline`値を追加しました。これにより、作成者は、Adobe Signの署名期限までに残っている日数を受信者に表示できます。 （FORMS-25180）
+* PDF Generator（PDFG）では、1つのユーザーアカウントで設定した場合に、マルチスレッドドキュメント変換がサポートされるようになりました。 これは、OSGiとJEEの両方のデプロイメントに適用されます。 （FORMS25182、FORMS25181）
+* AEM Forms Document Securityの動的な透かしに&#x200B;**User Profile Description**&#x200B;属性を追加しました。これにより、透かしにユーザーのプロファイルの説明を含めることができます。 （FORMS-27595）
 * WebSphere® Liberty Profile （WLP）は、Oracle Databaseに加えて、Microsoft® SQL Serverもサポートするようになりました。
 
 #### 修正された問題 {#forms-fixed-issues-65-lts-sp3}
 
-* FORMS-23726: `xsom` ライブラリの競合により、アダプティブ Forms プロパティでのXML スキーマの適用に失敗しました。 スキーマ選択が機能するようになりました。
-* FORMS-24296：基盤コンポーネントファイル添付フィールドは、アップロード時に許可されていないファイルタイプ（例：`.xsd`）を受け入れ、他のブロックされたタイプとは異なり、送信時にのみ拒否しました。 許可されていないタイプは、アップロード時にブロックされるようになりました。
-* FORMS-24603: Correspondence Management レターで、条件を含むテキストフラグメントが、ドラフトとして保存されたときに改行を失いました。 ドラフトは、元の改行を保持するようになりました。
-* FORMS-24783: ファイルの添付ファイルが、Forms ワークフローに基づくOpen Services Gateway イニシアチブ （OSGi）の`assignTask` ステップから削除されました。 添付ファイルは、タスクの割り当てによって保存されるようになりました。
-* FORMS-24877：表示パターンが適用された場合、日付選択カレンダーアイコンでアクセシブルなラベルが表示されないため、NVDA スクリーンリーダーは「クリック可能」のみを発表しました。 アイコンに説明ラベルが表示されるようになりました。
-* FORMS-24913：署名ステータスが返されないため、Adobe Sign ステップの後にAEM Forms ワークフローが停止する。 署名が完了すると、ワークフローが続行されるようになりました。
-* FORMS-25033：手書き署名コンポーネントがキーボードタブの順序でスキップされ、キーボードのみのユーザーにアクセシビリティの問題が生じました。 タブナビゲーションがフィールドに到達するようになりました。
-* FORMS-25045：繁体字中国語（香港）の翻訳がアップグレード後にレンダリングされなくなったため、フォームがデフォルト言語に戻りました。 ローカライズされたテキストが正しくレンダリングされるようになりました。
-* FORMS-25170：開始インスタンス数が0の場合、`addInstance()`を呼び出しても、動的に追加されたパネルが表示されませんでした。 追加されたパネルがすぐに表示されるようになりました。
-* FORMS-25225：サーバー側の再検証により、アダプティブFormsのフラグメントの外側にあるフィールド翻訳が削除され、ラベルがベース言語に戻りました。 これらの翻訳は保持されます。
-* FORMS-25233: OSGi デプロイメントで、Assembler サービスがXDP ファイル内のネストされたフラグメント参照を解決できなかったため、アセンブリされた出力に含まれていません。 ネストされたフラグメントが解決されました。
-* FORMS-25289: Forms レンダリングサービスが、サービスパック全体で同じ入力に対して異なる出力を返し、Correspondence Management レターに影響を与えました。 レンダリング出力が一貫するようになりました。
-* FORMS-25290: Saved Correspondence Managementのレターがスペースを失い、再び開いたときに一部の場所で迷子「x」が表示されました。 保存されたレターコンテンツが変更されなくなりました。
-* FORMS-25346: サービスパックのアップグレード後、インタラクティブ通信（IC）のレターが読み込み中のスピナーでフリーズし、プレビューで読み込みの間隔が失われたレターが読み込まれる。 読み込みと間隔が正しく機能するようになりました。
-* FORMS-25431: フォームフラグメントを作成ウィザードで、タイトルフィールドのキーストロークごとにネットワークリクエストが送信されました。 冗長な呼び出しが削除されました。
-* FORMS-25645：インラインアップロードされたJSON スキーマからコアコンポーネントベースのアダプティブフォームフラグメントを作成すると、「ALC-FMG-700-009無効なフォームモデルが指定されました」で失敗する。 インライン JSON スキーマが受け入れられるようになりました。
-* FORMS-25646: JSON スキーマから構築されたコアコンポーネントベースのアダプティブフォームフラグメントに、エディターの空のデータソースパネルが表示されました。 これで、パネルにスキーマデータソースが一覧表示されます。
-* FORMS-25674: インタラクティブ通信（IC）エージェントユーザーインターフェイスが空白ページに開き、エージェントがIC コンテンツを表示できなくなります。 エージェントユーザーインターフェイスがレンダリングされるようになりました。
-* FORMS-25686：アダプティブフォームフラグメントを作成ウィザードでスキーマタイプオプションを切り替えると、前のオプションのステータスがクリアされず、スキーマが一致しません。 ウィザードが非アクティブなオプションをリセットするようになりました。
-* FORMS-25757: テーマを適用しても基本クライアントライブラリが更新されないので、テーマの変更は影響を受けないようです。 テーマは、ベースクライアントライブラリを更新するようになりました。
-* FORMS-25825：モバイルハンバーガーメニューがタップに反応せず、モバイルデバイスでナビゲーションが使用できなくなりました。 メニューが正常に開くようになりました。
-* FORMS-26333: フォームが非公開になった後、公開アクションが消え、再公開がブロックされました。 非公開後に公開できるようになりました。
-* FORMS-26763: Designerでは、静的テキストオブジェクト内のハイパーリンクの太字の書式設定が、テキストを編集すると失われました。 太字の書式設定は編集後も維持されるようになりました。
-* FORMS-26817：アダプティブフォームの「リセット」をクリックすると、画像コンポーネント内の作成者が設定した画像がクリアされ、壊れた画像が残った一方で、他のフィールドが正しくリセットされます。 リセットすると、設定済みの画像が保持されます。
-* FORMS-26852: Agent ユーザーインターフェイスで、日付/時刻フィールドに、保存された値よりも1日早い日付が表示されます。 フィールドに正しい日付が表示されるようになりました。
-* FORMS-26733、FORMS-26734:Apache Log4jをバージョン 2.25.5に更新しました。
+* アダプティブ Forms プロパティでXML スキーマを適用できませんでした。`xsom` ライブラリの競合が原因です。 スキーマ選択が機能するようになりました。 （FORMS-23726）
+* 基盤コンポーネントファイル添付フィールドは、アップロード時に許可されていないファイルタイプ（例：`.xsd`）を受け入れ、他のブロックされたタイプとは異なり、送信時にのみ拒否しました。 許可されていないタイプは、アップロード時にブロックされるようになりました。 （FORMS-24296）
+* Correspondence Management レターでは、条件を含むテキストフラグメントは、ドラフトとして保存すると改行が失われます。 ドラフトは、元の改行を保持するようになりました。 （FORMS-24603）
+* ファイルの添付ファイルは、Forms ワークフローに基づくOpen Services Gateway initiative （OSGi）の`assignTask` ステップから削除されました。 添付ファイルは、タスクの割り当てによって保存されるようになりました。 （FORMS-24783）
+* 日付選択カレンダーアイコンは、表示パターンが適用されたときにアクセシブルなラベルを表示しないため、NVDA スクリーンリーダーは「クリック可能」のみを発表しました。 アイコンに説明ラベルが表示されるようになりました。 （FORMS-24877）
+* 署名ステータスが返されなかったため、Adobe Sign ステップの後にAEM Forms ワークフローが停止しました。 署名が完了すると、ワークフローが続行されるようになりました。 （FORMS-24913）
+* 手書き署名コンポーネントがキーボードタブの順序でスキップされ、キーボードのみのユーザーにアクセシビリティの壁が生じました。 タブナビゲーションがフィールドに到達するようになりました。 （FORMS-25033）
+* 繁体字中国語（香港）の翻訳がアップグレード後にレンダリングを停止したため、フォームがデフォルト言語に戻りました。 ローカライズされたテキストが正しくレンダリングされるようになりました。 （FORMS-25045）
+* 開始インスタンス数が0の場合、`addInstance()`を呼び出しても、動的に追加されたパネルは表示されませんでした。 追加されたパネルがすぐに表示されるようになりました。 （FORMS-25170）
+* サーバーサイドの再検証により、アダプティブFormsのフラグメントの外側にあるフィールド翻訳が削除され、ラベルがベース言語に戻りました。 これらの翻訳は保持されます。 （FORMS-25225）
+* OSGi デプロイメントで、Assembler サービスがXDP ファイル内のネストされたフラグメント参照を解決できませんでした。これにより、アセンブリされた出力からネストされたフラグメント参照が見つかりません。 ネストされたフラグメントが解決されました。 （FORMS-25233）
+* Forms レンダリングサービスは、サービスパック間で同じ入力に対して異なる出力を返し、Correspondence Management レターに影響を与えました。 レンダリング出力が一貫するようになりました。 （FORMS-25289）
+* Saved Correspondence Managementのレターは、スペースを失い、再び開いたときに一部の場所で迷子「x」を示しました。 保存されたレターコンテンツが変更されなくなりました。 （FORMS-25290）
+* サービスパックのアップグレード後、インタラクティブ通信（IC）のレターが読み込み中のスピナーでフリーズし、プレビューで読み込まれたレターの間隔が失われます。 読み込みと間隔が正しく機能するようになりました。 （FORMS-25346）
+* フォームフラグメントを作成ウィザードは、タイトルフィールドのキーストロークごとにネットワークリクエストを送信しました。 冗長な呼び出しが削除されました。 （FORMS-25431）
+* インラインアップロードされたJSON スキーマからコアコンポーネントベースのアダプティブフォームフラグメントを作成すると、「ALC-FMG-700-009無効なフォームモデルが指定されました」で失敗しました。 インライン JSON スキーマが受け入れられるようになりました。 （FORMS-25645）
+* JSON スキーマから作成されたコアコンポーネントベースのアダプティブフォームフラグメントに、エディターの空のデータソースパネルが表示されました。 これで、パネルにスキーマデータソースが一覧表示されます。 （FORMS-25646）
+* インタラクティブ通信（IC）エージェントユーザーインターフェイスが空白のページに開き、エージェントがIC コンテンツを表示できなくなります。 エージェントユーザーインターフェイスがレンダリングされるようになりました。 （FORMS-25674）
+* アダプティブフォームフラグメントの作成ウィザードでスキーマタイプオプションを切り替えると、前のオプションの状態がクリアされず、スキーマの不一致が発生します。 ウィザードが非アクティブなオプションをリセットするようになりました。 （FORMS-25686）
+* テーマを適用しても基本クライアントライブラリは更新されなかったので、テーマの変更は影響を与えなかったようです。 テーマは、ベースクライアントライブラリを更新するようになりました。 （FORMS-25757）
+* モバイルハンバーガーメニューがタップに反応せず、モバイルデバイスではナビゲーションが使用できなくなりました。 メニューが正常に開くようになりました。 （FORMS-25825）
+* フォームが非公開になった後、「公開」アクションが消え、再公開がブロックされました。 非公開後に公開できるようになりました。 （FORMS-26333）
+* Designerでは、静的テキストオブジェクト内のハイパーリンクの太字の書式設定は、テキストを編集した後に失われました。 太字の書式設定は編集後も維持されるようになりました。 （FORMS-26763）
+* アダプティブフォームの「リセット」をクリックすると、画像コンポーネント内のオーサー設定の画像がクリアされ、壊れた画像が残った一方で、他のフィールドが正しくリセットされます。 リセットすると、設定済みの画像が保持されます。 （FORMS-26817）
+* エージェントのユーザーインターフェイスでは、日付/時刻フィールドに、保存された値よりも1日早い日付が表示されます。 フィールドに正しい日付が表示されるようになりました。 （FORMS-26852）
+* Apache Log4jをバージョン 2.25.5に更新しました。 （FORMS26733、FORMS26734）
 
 6.5 LTS サービスパック 3のJEE上のAEM Formsに関する次の問題が修正されました。
 
-* FORMS-27585: JEE上のAEM Formsで、`submitForm()`を呼び出すXFA ベースのPDF formsで、スクリプトが`closeDoc()`を呼び出したときに、Adobe ReaderまたはAcrobatで送信結果を表示できませんでした。 送信結果が正しく表示されるようになりました。
-* FORMS-25998: JEE上のAEM Formsで、管理コンソールでHSM接続をテストする際に、Java 21の`IllegalAccessError`でHardware Security Module （HSM）秘密鍵証明書の登録に失敗しました。 HSM秘密鍵証明書の登録が機能するようになりました。
-* FORMS-24993: JEE上のAEM Formsで、Web サービスの呼び出しステップでWSDLを読み込むと、`SAXException` （「ファイルの終了時間が短すぎます」）が発生して失敗しました。 WSDLが正しく読み込まれるようになりました。
-* FORMS-24518: JEE上のAEM Forms（JBoss）で、従来のJSTL タグリブ URIが原因で、Reader Extensions web アプリケーションが新しいインストール後に「エラー処理リクエスト」を返しました。 Reader Extensions web アプリケーションが読み込まれるようになりました。
-* FORMS-27495: JEE上のAEM Formsで、シングルユーザーモードが有効になっている場合、PDF GeneratorでExcel （`.xlsx`）ファイルが変換されず、コンバージョンが無期限にハングする。 シングルユーザーモードでExcelの変換が完了するようになりました。
-* FORMS-27098: JEE上のAEM Formsで、SOAP SDK （`/sdk`）認証ゲートが原因で管理者として`/lc`にログインできませんでした。 管理者ログインが成功しました。
-* FORMS-25869: AEM Forms JEE版では、PDF Generatorに更新されたコンバージョンエンジンの修正が組み込まれ、コンバージョンの信頼性が向上します。
+* JEE上のAEM Formsで、`submitForm()`を呼び出すXFA ベースのPDF formsで、スクリプトが`closeDoc()`を呼び出したときに、Acrobat ReaderまたはAcrobatで送信結果を表示できませんでした。 送信結果が正しく表示されるようになりました。 （FORMS-27585）
+* JEE上のAEM Formsで、管理コンソールでHSM接続をテストする際に、Java 21の`IllegalAccessError`でハードウェアセキュリティモジュール（HSM）秘密鍵証明書の登録に失敗しました。 HSM秘密鍵証明書の登録が機能するようになりました。 （FORMS-25998）
+* JEE上のAEM Formsで、Web サービスの呼び出しステップでWSDLの読み込みに失敗し、`SAXException` （「ファイルの終了が早すぎます」）が発生しました。 WSDLが正しく読み込まれるようになりました。 （FORMS-24993）
+* JEE上のAEM Forms（JBoss）で、従来のJSTL タグリブ URIが原因で、Reader Extensions web アプリケーションが新しいインストール後に「エラー処理リクエスト」を返しました。 Reader Extensions web アプリケーションが読み込まれるようになりました。 （FORMS-24518）
+* JEE上のAEM Formsでは、シングルユーザーモードが有効になっている場合、PDF GeneratorでExcel （`.xlsx`）ファイルが変換されず、コンバージョンが無期限にハングします。 シングルユーザーモードでExcelの変換が完了するようになりました。 （FORMS-27495）
+* JEE上のAEM Formsで、SOAP SDK （`/sdk`）認証ゲートが原因で管理者として`/lc`にログインできませんでした。 管理者ログインが成功しました。 （FORMS-27098）
+* JEE上のAEM Formsでは、PDF Generatorに更新されたコンバージョンエンジンの修正が組み込まれ、コンバージョンの信頼性が向上します。 （FORMS-25869）
 
 **JEEにAEM Forms 6.5 LTS SP3をインストール**
 
 JEEにAEM Forms 6.5 LTS SP3をインストールするには、次の手順を順番に実行します。
 
-1. アプリケーションサーバー用のAEM Forms 6.5 LTS SP3 JEE インストーラー（[AEM Forms リリース &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)からダウンロード）を使用してサービスパックをインストールし、標準のAEM Forms on JEE インストール手順に従います。
-1. 最新のAEM Forms Workbench インストーラー（同じ[AEM Forms リリース &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) ページから利用可能）に更新します。
+1. アプリケーションサーバー用のAEM Forms 6.5 LTS SP3 JEE インストーラー（[AEM Forms リリース ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)からダウンロード）を使用してサービスパックをインストールし、標準のAEM Forms on JEE インストール手順に従います。
+1. 最新のAEM Forms Workbench インストーラー（同じ[AEM Forms リリース ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) ページから利用可能）に更新します。
 1. プロジェクトで`adobe-livecycle-client.jar` SDK クライアント ライブラリを使用している場合は、プロジェクトのクラスパスで更新します。 最新バージョンは`<AEM_Forms_Installation_dir>/sdk/client-libs/common/adobe-livecycle-client.jar`で入手できます。
 
 #### 既知の問題 {#forms-known-issues-65-lts-sp3}
 
 * **JEE 6.5 LTS SP3**&#x200B;上のAEM Formsで、**PostScript（PS）、EPS、およびPRN ファイルをPDF**&#x200B;に変換できません。 `PsToPdfSvc` ネイティブプロセスが予期せず終了する可能性があり、コンバージョンジョブが`ALC-PDG-003-011`や`ALC-PDG-001-028`などのエラーで失敗します。 Adobe カスタマーサポートにお問い合わせください。 （FORMS-28152）
 
-* JEE 6.5 LTS SP3 **の** AEM Formsで、デジタル署名されたPDFがAEM Forms JEE Workspaceのタスクにアタッチされた場合、アップロードはアップロード状態のままになるか、「無効なファイル」エラーで失敗します。 これにより、署名済みの大きなPDFの添付ファイルをタスクに追加できません。 この問題は、新しいバージョンで修正されています。 現在のバージョンのホットフィックスについては、Adobe サポートにお問い合わせください。 （FORMS-28517）
+* JEE 6.5 LTS SP3 **の** AEM Formsで、デジタル署名されたPDFをAEM Forms JEE Workspaceのタスクにアップロードすると、失敗またはハングします。 これにより、署名済みの大きなPDFの添付ファイルをタスクに追加できません。 この問題は、新しいバージョンで修正されています。 現在のバージョンのホットフィックスについては、Adobe サポートにお問い合わせください。 （FORMS-28517）
 
 JEE上のAEM Formsでは、Reader ExtensionsはWebSphere® Liberty Profile （WLP）プラットフォームで動作しません。 LTS SP3に含まれているEAR ファイルのクラスパスに、必要なバウンシーキャッスル ライブラリがありません。
 
@@ -396,7 +397,7 @@ JEE上のAEM Formsでは、Reader ExtensionsはWebSphere® Liberty Profile （WL
    bcmail-jdk18on-1.84.jar bcprov-jdk18on-1.84.jar bcpkix-jdk18on-1.84.jar bcutil-jdk18on-1.84.jar
    ```
 
-1. 変更したEAR ファイルをWebSphere® Liberty Profile `dropins` フォルダーに再デプロイします。
+1. 変更したEAR ファイルをWebSphere® Liberty Profile `dropins` フォルダーに再デプロイします
    1. WebSphere® Liberty Profile サーバーを停止し、`<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`から`adobe-livecycle-websphere.ear`を削除します。
    1. `<WebSphere Liberty Profile install location>\usr\servers\<server-name>\apps\expanded\`から`adobe-livecycle-websphere.ear` ディレクトリを削除します。
    1. 変更したEAR ファイルを手順2から`<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`にコピーします。
@@ -404,9 +405,7 @@ JEE上のAEM Formsでは、Reader ExtensionsはWebSphere® Liberty Profile （WL
 
 #### セキュリティの修正 {#forms-security-fixes-65-lts-sp3}
 
-このリリースでは、XSS、SSRF、XXEなどのAEM Formsのセキュリティの脆弱性を解決し、ライブラリを更新します。
-
-
+このリリースでは、XSS、SSRF、XXEなどのAEM Forms セキュリティの脆弱性を解決し、ライブラリを更新します。
 
 
 ### 基盤 {#foundation-65-lts-sp3}
@@ -551,7 +550,7 @@ UberJar for AEM 6.5 LTS SP3では、AEM 6.5 LTS UberJar バージョン 6.6.3が
 
 適用対象：AEM 6.5 LTS （オンプレミス）のお客様によるService Pack 3 （SP3）のインストール。 SP3はクイックスタート JARとして配信されます。
 
-**このアップグレードプラクティスが重要な理由**
+**このアップグレード プラクティスが重要な理由**
 AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストールする ZIP ではなく、クイックスタート JAR として出荷されます。 オンプレミスのお客様は、クイックスタート JARの置き換え、抽出、再起動を行うことでアップグレードできます。 この方法は、Adobeの標準アップグレード手順と一致しています。
 
 
@@ -588,10 +587,10 @@ AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストール
 
 >[!NOTE]
 >
-> 古い6.5 SPからLTS SP3に直接アップグレードする場合は、6.5から6.5 LTS GA [&#x200B; アップグレード &#x200B;](/help/sites-deploying/upgrade.md)の指示に従ってください。
+> 古い6.5 SPからLTS SP3に直接アップグレードする場合は、6.5から6.5 LTS GA [ アップグレード ](/help/sites-deploying/upgrade.md)の指示に従ってください。
 
 
-詳細な手順については、[&#x200B; アップグレードドキュメント &#x200B;](/help/sites-deploying/upgrade.md)を参照してください。同じドキュメントがLTS サービスパックの更新に適用されます。
+詳細な手順については、[ アップグレードドキュメント ](/help/sites-deploying/upgrade.md)を参照してください。同じドキュメントがLTS サービスパックの更新に適用されます。
 
 >[!NOTE]
 >
@@ -667,19 +666,15 @@ AEM 6.5 LTS の SP2 は、パッケージマネージャーでインストール
 
 ## 既知の問題 {#known-issues}
 
-### スタンバイでのオンラインコンパクション中にリポジトリが破損する（GRANITE-73045） {#repository-corruption-during-online-compaction-granite-73045}
+### スタンバイ時のオンラインコンパクション中にリポジトリが破損する {#repository-corruption-during-online-compaction-on-standby}
 
-インスタンスが以前にTarMK コールドスタンバイとして実行され、後にプライマリに昇格された場合、オンラインコンパクション中にリポジトリの破損が発生する可能性があります。 このシナリオでは、`SegmentNotFoundException`（SNFE）が発生し、リポジトリの破損につながる場合があります。
+インスタンスが以前にTarMK コールドスタンバイとして実行され、後にプライマリに昇格された場合、オンラインコンパクションで`SegmentNotFoundException` （SNFE）を含むJCR リポジトリが破損する可能性があります。
 
-この問題を解決するには、[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/cq-6.5.lts.3-hotfix-GRANITE-74457-1.0.zip)からホットフィックスをインストールします。 ホットフィックスには低レベルの `oak-segment-tar` バンドルが含まれているので、インストール後にインスタンスが再起動します。
+**解決方法**
 
-変更を適用する際に発生するインスタンスのダウンタイムを計画します。 オフラインコンパクションの場合は、ソフトウェア配布から提供されている、対応する [`oak-run` jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar) を使用します。
-
->[!NOTE]
->
-> * 任意の`oak-run`操作には、[`oak-run` 2.4.1-B002 jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar)を使用します。
->
-> * システムプロパティ `oak.segment.cleanup.skipDanglingFutureReclaim=true` を設定して AEM を開始します。
+1. ソフトウェア配布から[ ホットフィックス ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/cq-6.5.lts.3-hotfix-GRANITE-74457-1.0.zip)をインストールします。 低レベルの`oak-segment-tar` バンドルが含まれているため、インスタンスはインストール後に再起動し、ダウンタイムを計画します。
+1. AEMの起動時に、システム プロパティ `oak.segment.cleanup.skipDanglingFutureReclaim=true`を設定します。 このフラグは、AEMの起動時に必要ですが、オフラインコンパクションの実行中には必要ありません。
+1. 任意の`oak-run`操作では、ソフトウェア配布から一致する[`oak-run` 2.4.1-B002 jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar)を使用します。
 
 ### AEM Forms
 
@@ -710,9 +705,8 @@ Sites ヘッドレスに移行した一部の API では、完全な機能に対
 
 Adobe ソフトウェア配布ポータルからインデックスパッケージ [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) をダウンロードします。
 
--->
 
-&#x200B;###
+###
 
 ### SSL のみの機能を使用した Dispatcher 接続の失敗（AEM 6.5 LTS SP1 以降で修正）{#ssl-only-feature}
 
@@ -744,7 +738,7 @@ AEM デプロイメントで SSL のみの機能を有効にすると、Dispatch
 
 次のzip ファイルには、このExperience Manager 6.5 LTS サービスパック リリースに含まれるOSGi バンドルとコンテンツパッケージを一覧表示するテキストドキュメントが含まれています。
 
-* [OSGi バンドル &#x200B;](/help/release-notes/assets/65lts_sp3_bundles.zip)
+* [OSGi バンドル ](/help/release-notes/assets/65lts_sp3_bundles.zip)
 * [コンテンツパッケージ](/help/release-notes/assets/65lts_sp3_packages.zip)
 
 ## 制限付き Web サイト{#restricted-sites}
