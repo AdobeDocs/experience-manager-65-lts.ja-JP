@@ -33,8 +33,8 @@ ht-degree: 3%
 AEM Forms Designerは、Adobe Experience Manager FormsでPDFおよびXFA ベースのアダプティブフォームを作成および管理するためのデスクトップアプリケーションです。 以下のリソースを使用して、この6.5 LTS リリースのDesignerのスクリプト機能を開始、サンプルを探索、参照してください。
 
 * [Designerの使用](https://www.adobe.com/go/learn_aemforms_designer_65_lts) - Designer ワークスペースとコア オーサリングの概念の概要。
-* [Designer クイックスタートチュートリアル ](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_lts) - Designerの使い方を学ぶためのステップバイステップチュートリアル。
-* [Designer サンプル ](https://www.adobe.com/go/learn_aemforms_designer_samples_65_lts) - Designerで開いて調整できるダウンロード可能なサンプルフォーム。
+* [Designer クイックスタートチュートリアル &#x200B;](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_lts) - Designerの使い方を学ぶためのステップバイステップチュートリアル。
+* [Designer サンプル &#x200B;](https://www.adobe.com/go/learn_aemforms_designer_samples_65_lts) - Designerで開いて調整できるダウンロード可能なサンプルフォーム。
 * [Designer スクリプトの基本](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_lts) - Designer フォーム内でのスクリプトの概要。
 * [Designer スクリプティング参照](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_lts) - Designerのスクリプトオブジェクトとメソッドの完全な参照。
 * [Designer FormCalc Reference](https://www.adobe.com/go/learn_aemforms_formCalc_65_lts) - FormCalc、Designerの組み込み計算言語の完全なリファレンス。
