@@ -7,10 +7,10 @@ user-guide-description: Adobe Experience Manager 6.5 LTS ドキュメントを�
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: 82ad777feafc14635e26f445a1be6001a2b82672
+source-git-commit: bac5d173f2b6c822f2aa59a6647b5cb127788d2d
 workflow-type: tm+mt
-source-wordcount: '7809'
-ht-degree: 66%
+source-wordcount: '7768'
+ht-degree: 67%
 ---
 # Adobe Experience Manager 6.5 LTS ドキュメント {#content}
 
@@ -773,12 +773,6 @@ ht-degree: 66%
     + [別のユーザーの代わりにドキュメントを保護する](/help/forms/using/protect-document-on-behalf-of-another-user.md)
   + Forms Designer {#use-forms-designer}
     + [Forms Designer ヘルプ](/help/forms/using/forms-designer-help.md)
-    + [Designer の使用](https://www.adobe.com/go/learn_aemforms_designer_65_jp)
-    + [Designer クイックスタートチュートリアル](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_jp)
-    + [Designer サンプル](https://www.adobe.com/go/learn_aemforms_designer_samples_65_jp)
-    + [Designer スクリプティングの基本](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_jp)
-    + [Designer スクリプティングリファレンス](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_jp)
-    + [Designer FormCalc リファレンス](https://www.adobe.com/go/learn_aemforms_formCalc_65_jp)
     + [HTML5 Forms での手書き署名の使用](/help/forms/using/scribble-signature.md)
     + [Designer でページゼロコンテンツを変更する](/help/forms/using/changing-page-zero-content-designer.md)
     + アクセシビリティのベストプラクティス {#accessibility-best-practices}
